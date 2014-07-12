@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.phcr.tularemia/src"
+    editDirectory="/org.openhealthtools.mdht.uml.cda.phcr.tularemia.edit/src" editorDirectory="/org.openhealthtools.mdht.uml.cda.phcr.tularemia.editor/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.phcr.tularemia" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" modelName="tularemia_Ecore" modelPluginClass="TularemiaPlugin"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    editPluginID="org.openhealthtools.mdht.uml.cda.phcr.tularemia.edit" editorPluginID="org.openhealthtools.mdht.uml.cda.phcr.tularemia.editor"
+    runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda ../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.genmodel#//ccd ../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.genmodel#//phcr ../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>tularemia_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Tularemia" basePackage="org.openhealthtools.mdht.uml.cda.phcr"
+      resource="XML" disposableProviderFactory="true" ecorePackage="tularemia.ecore#/"
+      operationsPackage="org.openhealthtools.mdht.uml.cda.phcr.tularemia.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaCaseReport">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRSocialHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRSocialHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRSocialHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRClinicalInformationSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRClinicalInformationSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRClinicalInformationSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRTreatmentInformationSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRTreatmentInformationSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRTreatmentInformationSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportPhcrEncountersSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportPhcrEncountersSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportPhcrEncountersSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRRelevantDxTestsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRRelevantDxTestsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseReport/TularemiaCaseReportTularemiaPHCRRelevantDxTestsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseReport/getTularemiaPHCRSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseReport/getTularemiaPHCRClinicalInformationSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseReport/getTularemiaPHCRTreatmentInformationSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseReport/gettularemiaPhcrEncountersSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseReport/getTularemiaPHCRRelevantDxTestsSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaPHCRSocialHistorySection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRSocialHistorySection/TularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRSocialHistorySection/TularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRSocialHistorySection/TularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRSocialHistorySection/getTularemiaPossibleExposureLocationAndTypeActs"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPossibleExposureLocationAndTypeAct/TularemiaPossibleExposureLocationAndTypeActStatusCodeP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaPHCRClinicalInformationSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRClinicalInformationSection/TularemiaPHCRClinicalInformationSectionTularemiaCaseObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRClinicalInformationSection/TularemiaPHCRClinicalInformationSectionTularemiaCaseObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRClinicalInformationSection/TularemiaPHCRClinicalInformationSectionTularemiaCaseObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRClinicalInformationSection/getTularemiaCaseObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaCaseObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseObservation/TularemiaCaseObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseObservation/TularemiaCaseObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseObservation/TularemiaCaseObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseObservation/TularemiaCaseObservationTularemiaSignsAndSymptomsObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseObservation/TularemiaCaseObservationTularemiaSignsAndSymptomsObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseObservation/TularemiaCaseObservationTularemiaSignsAndSymptomsObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseObservation/TularemiaCaseObservationLocationOfLesionObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseObservation/TularemiaCaseObservationLocationOfLesionObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaCaseObservation/TularemiaCaseObservationLocationOfLesionObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseObservation/getTularemiaSignsAndSymptomsObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaCaseObservation/getLocationOfLesionObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaSignsAndSymptomsObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaSignsAndSymptomsObservation/TularemiaSignsAndSymptomsObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaSignsAndSymptomsObservation/TularemiaSignsAndSymptomsObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaSignsAndSymptomsObservation/TularemiaSignsAndSymptomsObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//LocationOfLesionObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationTargetSiteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationTargetSiteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//LocationOfLesionObservation/LocationOfLesionObservationTargetSiteCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaPHCRTreatmentInformationSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRTreatmentInformationSection/TularemiaPHCRTreatmentInformationSectionTularemiaTherapeuticRegimenAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRTreatmentInformationSection/TularemiaPHCRTreatmentInformationSectionTularemiaTherapeuticRegimenAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRTreatmentInformationSection/TularemiaPHCRTreatmentInformationSectionTularemiaTherapeuticRegimenAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRTreatmentInformationSection/getTularemiaTherapeuticRegimenAct"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaTherapeuticRegimenAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaTherapeuticRegimenAct/TularemiaTherapeuticRegimenActTularemiaTreatmentGivenSubstanceAdministration">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaTherapeuticRegimenAct/TularemiaTherapeuticRegimenActTularemiaTreatmentGivenSubstanceAdministration/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaTherapeuticRegimenAct/TularemiaTherapeuticRegimenActTularemiaTreatmentGivenSubstanceAdministration/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaTherapeuticRegimenAct/TularemiaTherapeuticRegimenActTularemiaTreatmentNotGivenSubstanceAdministration">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaTherapeuticRegimenAct/TularemiaTherapeuticRegimenActTularemiaTreatmentNotGivenSubstanceAdministration/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaTherapeuticRegimenAct/TularemiaTherapeuticRegimenActTularemiaTreatmentNotGivenSubstanceAdministration/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaTherapeuticRegimenAct/getTularemiaTreatmentGivenSubstanceAdministrations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaTherapeuticRegimenAct/getTularemiaTreatmentNotGivenSubstanceAdministrations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaTreatmentGivenSubstanceAdministration"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaTreatmentNotGivenSubstanceAdministration"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/TularemiaPHCRRelevantDxTestsSectionTularemiaResultOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/TularemiaPHCRRelevantDxTestsSectionTularemiaResultOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/TularemiaPHCRRelevantDxTestsSectionTularemiaResultOrganizer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/TularemiaPHCRRelevantDxTestsSectionTularemiaResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/TularemiaPHCRRelevantDxTestsSectionTularemiaResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/TularemiaPHCRRelevantDxTestsSectionTularemiaResultObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/TularemiaPHCRRelevantDxTestsSectionImagingObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/TularemiaPHCRRelevantDxTestsSectionImagingObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/TularemiaPHCRRelevantDxTestsSectionImagingObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/getTularemiaResultOrganizers"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/getTularemiaResultObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/gettularemiaImagingObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaResultOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerTularemiaResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerTularemiaResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerTularemiaResultObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaResultOrganizer/getTularemiaResultObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaResultObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCode/context"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

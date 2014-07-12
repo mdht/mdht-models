@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Infection Present - Live Birth</title>
+<shortdesc conref="generated/_InfectionPresentLiveBirth.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_InfectionPresentLiveBirth.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_InfectionPresentLiveBirth.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_InfectionPresentLiveBirth.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_InfectionPresentLiveBirth.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_InfectionPresentLiveBirth.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Infection Present - Live Birth example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.30"/>
+							<code code="72519-2" displayName="Infections present and or treated during this pregnancy for live birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="CD" code="260413007" displayName="None" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+						</observation>
+					</entry>]]>
+</codeblock>
+</body>
+</topic>

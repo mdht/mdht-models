@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Medication Administered"/>
+<meta name="abstract" content="[SubstanceAdministration: templateId 2.16.840.1.1133883.17.3.10.1.72]"/>
+<meta name="description" content="[SubstanceAdministration: templateId 2.16.840.1.1133883.17.3.10.1.72]"/>
+<meta name="DC.Coverage" content="SubstanceAdministration"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Medication Administered</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Medication Administered</h1>
+
+
+
+<div class="body"><p class="shortdesc">[SubstanceAdministration: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.72</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">Medications administered in response to the emergency--usually by the EMS crew</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.1133883.17.3.10.1.72"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationActivity.html">Consol Medication Activity</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.16</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="SBADM" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:10445)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@negationInd</strong></tt> (CONF:10448)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.03 negative action values<br/>
+If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with an entryRelationship such that it<br/>
+SHALL contain exactly one [1..1] @typeCode="RSON" Has reason (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)<br/>
+SHALL contain exactly one [1..1] @inversionInd="true" True<br/>
+SHALL contain exactly one /Observation with code = "Assertion" and value drawn from  2.16.840.1.113883.17.3.5.42 Medication omission reason</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10447)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.01</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">routeCode</strong></tt> (CONF:10450), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationAdministrationRoute.html">MedicationAdministrationRoute</a> 2.16.840.1.113883.17.3.11.43</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10449)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.04<br/>
+<br/>
+See appendix for mapping NEMSIS values to FDA values and for postcoordination of device information.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10451) <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@inversionInd</strong>="TRUE" </tt> (CONF:10458)</li>
+<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong></tt> (CONF:10460)<tt class="ph tt"><strong class="ph b">/@code</strong>="RSON" </tt><em class="ph i">Reason</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1002 HL7ActRelationshipType</tt>) (CONF:10459)</li>
+<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="MedicationNotAdministeredReasonObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.105]">Medication Not Administered Reason Observation</a> (CONF:10461)<ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationNotAdministeredReasonObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.105]">Medication Not Administered Reason Observation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.105</tt>)</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">consumable</strong></tt> (CONF:10452) <ol class="ol" type="a"><li class="li"> This consumable <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturedProduct</strong></tt> (CONF:10465) <ol class="ol" type="i"><li class="li"> This manufacturedProduct <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationInformation.html">Consol Medication Information</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.23</tt>)</li>
+<li class="li"> This manufacturedProduct <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturedMaterial</strong></tt> (CONF:10466) <ol class="ol"><li class="li"> This manufacturedMaterial <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:10467)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.03<br/>
+Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list at http://www.nemsis.org/v3/resources.html</em></p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10453) <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="MedicationResponseObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.106]">Medication Response Observation</a> (CONF:10468)<ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationResponseObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.106]">Medication Response Observation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.106</tt>)</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10454) <ol class="ol" type="a"><li class="li"> Such entryRelationships <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="MedicationComplicationObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.107]">Medication Complication Observation</a> (CONF:10472)<ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationComplicationObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.107]">Medication Complication Observation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.107</tt>)</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10455) <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="MedicationPriorAdministrationObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.108]">Medication Prior Administration Observation</a> (CONF:10477)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.02</em></p>
+</div>
+<ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationPriorAdministrationObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.108]">Medication Prior Administration Observation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.108</tt>)</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:10456) <div class="p"><p class="lines"><em class="ph i">This participation is required if the medication is administered by the crew; i.e., if EMSMedicationPriorAdministrationObservation is FALSE.</em></p>
+</div>
+<ol class="ol" type="a"><li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:10481) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10484)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.09</em></p>
+</div>
+</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10482), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProviderRole.html">ProviderRole</a> 2.16.840.1.113883.17.3.11.46</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10483)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.10</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10457) <div class="p"><p class="lines"><em class="ph i">This relationship is required if the medication is administered by the crew; i.e., if EMSMedicationPriorAdministrationObservation is FALSE.</em></p>
+</div>
+<ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">act</strong></tt> (CONF:10485) <ol class="ol" type="i"><li class="li"> This act <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt> (CONF:10486)<tt class="ph tt"><strong class="ph b">/@code</strong>="INFRM" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:10487)</li>
+<li class="li"> This act <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationAuthorizationType.html">MedicationAuthorizationType</a> 2.16.840.1.113883.17.3.11.47</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10488)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.11</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">approachSiteCode</strong></tt> (CONF:11180)<tt class="ph tt"><strong class="ph b">/@code</strong>="15562006" </tt><em class="ph i">structure of respiratory region of nose</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:11181)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">If route is "endotracheal," to be used to specify nasal approach for "nasotracheal tube"</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">doseQuantity</strong></tt> (CONF:10446)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.05, 06<br/>
+Note: rate values should be recorded in rateQuantity, not doseQuantity</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:11074) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="DEV" </tt> (CONF:11182)</li>
+<li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:11075) <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="MANU" </tt> (CONF:11183)</li>
+<li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">playingDevice</strong></tt> (CONF:11076) <ol class="ol"><li class="li"> This playingDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:11184), which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:11185)<div class="p"><p class="lines"><em class="ph i">For NEMSIS route codes that imply devices:<br/>
+@ value = "39849001" @codeSystem = "2.16.840.1.113883.6.5" @displayName="nasal oxygen cannula"<br/>
+@ value = "427591007" @codeSystem = "2.16.840.1.113883.6.5" @displayName="nonrebreather oxygen mask"<br/>
+@ value = "425926003" @codeSystem = "2.16.840.1.113883.6.5" @displayName="partial rebreather oxygen mask"<br/>
+@ value = "428285009" @codeSystem = "2.16.840.1.113883.6.5" @displayName="Venturi mask"</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">rateQuantity</strong></tt> (CONF:7517)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.05, 06<br/>
+Note: rate values should be recorded in rateQuantity, not doseQuantity</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+
+
+
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

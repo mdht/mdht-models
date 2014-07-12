@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Version: 0.7.0.qualifier
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.emspatientcarereport;singleton:=true
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin

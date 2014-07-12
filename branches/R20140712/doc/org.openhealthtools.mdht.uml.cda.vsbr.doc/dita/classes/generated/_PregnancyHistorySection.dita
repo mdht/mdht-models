@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Pregnancy History Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.26.12</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.26.12"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The pregnancy history section contains entries describing the patient history of pregnancies.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.12"</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
+<ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DateOfLastLiveBirth.dita">Date of Last Live Birth</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.20</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LastMenstrualPeriodDate.dita">Last Menstrual Period Date</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.33</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfBirthsStillLiving.dita">Number of Births Still Living</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.36</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfLiveBirthsNowDead.dita">Number of Live Births now Dead</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.38</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OtherPregnancyOutcomes.dita">Other Pregnancy Outcomes</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.40</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfInfantsBornAlive.dita">Number of Infants Born Alive</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.37</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EstimateOfGestation.dita">Estimate of Gestation</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.21</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MaternalMorbidities.dita">Maternal Morbidities</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.234</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../RiskFactors.dita">Risk Factors</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.44</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
+<ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DateOfLastLiveBirth.dita">Date of Last Live Birth</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.20</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LastMenstrualPeriodDate.dita">Last Menstrual Period Date</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.33</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfBirthsStillLiving.dita">Number of Births Still Living</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.36</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfLiveBirthsNowDead.dita">Number of Live Births now Dead</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.38</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OtherPregnancyOutcomes.dita">Other Pregnancy Outcomes</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.40</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfInfantsBornAlive.dita">Number of Infants Born Alive</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.37</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EstimateOfGestation.dita">Estimate of Gestation</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.21</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MaternalMorbidities.dita">Maternal Morbidities</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.234</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../RiskFactors.dita">Risk Factors</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.44</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Pregnancy History Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>date of Last Live Birth</entry><entry>cda:entry/cda:observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Date of Last Live Birth</entry><entry></entry><entry> </entry></row> 
+<row><entry>estimate of Gestation</entry><entry>cda:entry/cda:observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Estimate of Gestation</entry><entry></entry><entry> </entry></row> 
+<row><entry>last Menstrual Period Date</entry><entry>cda:entry/cda:observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Last Menstrual Period Date</entry><entry></entry><entry> </entry></row> 
+<row><entry>maternal Morbidities</entry><entry>cda:entry/cda:observation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Maternal Morbidities</entry><entry></entry><entry> </entry></row> 
+<row><entry>number of Births Still Living</entry><entry>cda:entry/cda:observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Number of Births Still Living</entry><entry></entry><entry> </entry></row> 
+<row><entry>number of Infants Born Alive</entry><entry>cda:entry/cda:observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Number of Infants Born Alive</entry><entry></entry><entry> </entry></row> 
+<row><entry>number of Live Births now Dead</entry><entry>cda:entry/cda:observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Number of Live Births now Dead</entry><entry></entry><entry> </entry></row> 
+<row><entry>other Pregnancy Outcomes</entry><entry>cda:entry/cda:observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Other Pregnancy Outcomes</entry><entry></entry><entry> </entry></row> 
+<row><entry>pregnancy History</entry><entry>pregnancy History</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Pregnancy History Section</entry><entry></entry><entry> </entry></row> 
+<row><entry>risk Factors</entry><entry>cda:entry/cda:observation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Risk Factors</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="819482859"/>
+  <code code="1305863581"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <observation/>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="1765548930"/>
+      <code code="1593893335"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation/>
+  </entry>
+  <entry>
+    <observation/>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="1981751473"/>
+      <code code="383723431"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation/>
+  </entry>
+  <entry>
+    <observation/>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="1808397788"/>
+      <code code="52356883"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="15153225"/>
+      <code code="1912151729"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <entryRelationship typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN"/>
+      </entryRelationship>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Pregnancy History Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.26.12</tt>]</p>
+</body>
+</topic>

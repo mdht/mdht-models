@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.phcr.pertussis/src"
+    editDirectory="/org.openhealthtools.mdht.uml.cda.phcr.pertussis.edit/src" editorDirectory="/org.openhealthtools.mdht.uml.cda.phcr.pertussis.editor/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.phcr.pertussis" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" modelName="pertussis_Ecore" modelPluginClass="PertussisPlugin"
+    editPluginClass="org.openhealthtools.mdht.uml.cda.phcr.pertussis.provider.pertussis_EcoreEditPlugin"
+    editorPluginClass="org.openhealthtools.mdht.uml.cda.phcr.pertussis.presentation.pertussis_EcoreEditorPlugin"
+    testSuiteClass="org.openhealthtools.mdht.uml.cda.phcr.pertussis.tests.pertussis_EcoreAllTests"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    editPluginID="org.openhealthtools.mdht.uml.cda.phcr.pertussis.edit" editorPluginID="org.openhealthtools.mdht.uml.cda.phcr.pertussis.editor"
+    runtimeVersion="2.5" usedGenPackages="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd.genmodel#//ccd ../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab ../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.genmodel#//phcr platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>pertussis_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Pertussis" basePackage="org.openhealthtools.mdht.uml.cda.phcr"
+      disposableProviderFactory="true" ecorePackage="pertussis.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.phcr.pertussis.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisCaseReport">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisSocialHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisSocialHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisSocialHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisClinicalInformationSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisClinicalInformationSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisClinicalInformationSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisTreatmentInformationSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisTreatmentInformationSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisTreatmentInformationSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisRelevantDxTestsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisRelevantDxTestsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisRelevantDxTestsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisImmunizationsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisImmunizationsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseReport/PertussisCaseReportPertussisImmunizationsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseReport/getPertussisSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseReport/getPertussisClinicalInformationSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseReport/getPertussisTreatmentInformationSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseReport/getPertussisRelevantDxTestsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseReport/getPertussisImmunizationsSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisSocialHistorySection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisSocialHistorySection/PertussisSocialHistorySectionPertussisPossibleExposureLocationAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisSocialHistorySection/PertussisSocialHistorySectionPertussisPossibleExposureLocationAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisSocialHistorySection/PertussisSocialHistorySectionPertussisPossibleExposureLocationAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisSocialHistorySection/PertussisSocialHistorySectionPertussisPossibleCaseContactLocationAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisSocialHistorySection/PertussisSocialHistorySectionPertussisPossibleCaseContactLocationAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisSocialHistorySection/PertussisSocialHistorySectionPertussisPossibleCaseContactLocationAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisSocialHistorySection/getPertussisPossibleExposureLocationActs"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisSocialHistorySection/getPertussisPossibleCaseContactLocationActs"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisPossibleExposureLocationAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleExposureLocationAct/PertussisPossibleExposureLocationActStatusCodeP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisPossibleCaseContactLocationAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisPossibleCaseContactLocationAct/PertussisPossibleCaseContactLocationActStatusCodeP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisClinicalInformationSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisClinicalInformationSection/PertussisClinicalInformationSectionPertussisCaseObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisClinicalInformationSection/PertussisClinicalInformationSectionPertussisCaseObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisClinicalInformationSection/PertussisClinicalInformationSectionPertussisCaseObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisClinicalInformationSection/getPertussisCaseObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisCaseObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseObservation/PertussisCaseObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseObservation/PertussisCaseObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseObservation/PertussisCaseObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseObservation/PertussisCaseObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseObservation/PertussisCaseObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseObservation/PertussisCaseObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseObservation/PertussisCaseObservationPertussisSignsAndSymptomsObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseObservation/PertussisCaseObservationPertussisSignsAndSymptomsObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisCaseObservation/PertussisCaseObservationPertussisSignsAndSymptomsObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisCaseObservation/getPertussisSignsAndSymptomsObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisSignsAndSymptomsObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisSignsAndSymptomsObservation/PertussisSignsAndSymptomsObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisSignsAndSymptomsObservation/PertussisSignsAndSymptomsObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisSignsAndSymptomsObservation/PertussisSignsAndSymptomsObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisSignsAndSymptomsObservation/PertussisSignsAndSymptomsObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisSignsAndSymptomsObservation/PertussisSignsAndSymptomsObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisSignsAndSymptomsObservation/PertussisSignsAndSymptomsObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisTreatmentInformationSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisTreatmentInformationSection/PertussisTreatmentInformationSectionPertussisTherapeuticRegimen">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisTreatmentInformationSection/PertussisTreatmentInformationSectionPertussisTherapeuticRegimen/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisTreatmentInformationSection/PertussisTreatmentInformationSectionPertussisTherapeuticRegimen/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisTreatmentInformationSection/getPertussisTherapeuticRegimen"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisTherapeuticRegimenAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisTherapeuticRegimenAct/PertussisTherapeuticRegimenActPertussisTreatmentGivenSubstanceAdministration">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisTherapeuticRegimenAct/PertussisTherapeuticRegimenActPertussisTreatmentGivenSubstanceAdministration/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisTherapeuticRegimenAct/PertussisTherapeuticRegimenActPertussisTreatmentGivenSubstanceAdministration/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisTherapeuticRegimenAct/PertussisTherapeuticRegimenActPertussisTreatmentNotGivenSubstanceAdministration">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisTherapeuticRegimenAct/PertussisTherapeuticRegimenActPertussisTreatmentNotGivenSubstanceAdministration/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisTherapeuticRegimenAct/PertussisTherapeuticRegimenActPertussisTreatmentNotGivenSubstanceAdministration/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisTherapeuticRegimenAct/getPertussisTreatmentGivenSubstanceAdministrations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisTherapeuticRegimenAct/getPertussisTreatmentNotGivenSubstanceAdministrations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisTreatmentGivenSubstanceAdministration"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisTreatmentNotGivenSubstanceAdministration"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisRelevantDxTestsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisRelevantDxTestsSection/PertussisRelevantDxTestsSectionPertussisResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisRelevantDxTestsSection/PertussisRelevantDxTestsSectionPertussisResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisRelevantDxTestsSection/PertussisRelevantDxTestsSectionPertussisResultObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisRelevantDxTestsSection/PertussisRelevantDxTestsSectionPertussisResultOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisRelevantDxTestsSection/PertussisRelevantDxTestsSectionPertussisResultOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisRelevantDxTestsSection/PertussisRelevantDxTestsSectionPertussisResultOrganizer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisRelevantDxTestsSection/getPertussisResultObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisRelevantDxTestsSection/getPertussisResultOrganizers"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisResultObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisResultObservation/PertussisResultObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisResultObservation/PertussisResultObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisResultObservation/PertussisResultObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisResultObservation/PertussisResultObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisResultObservation/PertussisResultObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisResultObservation/PertussisResultObservationCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisResultOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisResultOrganizer/PertussisResultOrganizerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisResultOrganizer/PertussisResultOrganizerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisResultOrganizer/PertussisResultOrganizerCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisResultOrganizer/PertussisResultOrganizerPertussisResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisResultOrganizer/PertussisResultOrganizerPertussisResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisResultOrganizer/PertussisResultOrganizerPertussisResultObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisResultOrganizer/getPertussisResultObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisImmunizationsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisImmunizationsSection/PertussisImmunizationsSectionPertussisImmunizationActivity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisImmunizationsSection/PertussisImmunizationsSectionPertussisImmunizationActivity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisImmunizationsSection/PertussisImmunizationsSectionPertussisImmunizationActivity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisImmunizationsSection/getPertussisImmunizationActivities"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisImmunizationActivity">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pertussis.ecore#//PertussisImmunizationActivity/PertussisImmunizationActivityMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisImmunizationActivity/PertussisImmunizationActivityMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pertussis.ecore#//PertussisImmunizationActivity/PertussisImmunizationActivityMoodCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="pertussis.ecore#//PertussisImmunizationProduct"/>
+  </genPackages>
+</genmodel:GenModel>

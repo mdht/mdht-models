@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Labor and Delivery Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.26.8</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.26.8"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This section SHALL contain information pertinent to the labor and delivery process and outcome (e.g. type of labor, method of delivery, membrane detail, placenta detail, admission reason, gestational age at delivery, fetal surveillance, labor complications, and delivery complications).  This section shall include the following sections:  Procedures and Interventions, Vital Signs, and  Event Outcomes subsections.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.8"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:43)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:45)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="34079-4" </tt><i>Labor and delivery section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:44)
+<ul><li><p><lines><i>A code value that indicates the nature of the section - it is the labor and delivery section.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:46)
+<ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:47)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcess.dita">Labor and Delivery Process</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.31</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:48)
+<ul><li><p><lines><i>Onset of labor information is collected for a live birth certificate, but not for a fetal death report.</i></lines></p></li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../OnsetOfLabor.dita">Onset of Labor</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.32</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:50)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcedureSection.dita">Labor and Delivery Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:449)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MothersVitalSignsSection.dita">Mothers Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.14</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:43)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:45)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="34079-4" </tt><i>Labor and delivery section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:44)
+<ul><li><p><lines><i>A code value that indicates the nature of the section - it is the labor and delivery section.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:46)
+<ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:47)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcess.dita">Labor and Delivery Process</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.31</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:48)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OnsetOfLabor.dita">Onset of Labor</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.32</tt>)</li></ol><ul><li><p><lines><i>Onset of labor information is collected for a live birth certificate, but not for a fetal death report.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:50)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcedureSection.dita">Labor and Delivery Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:449)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MothersVitalSignsSection.dita">Mothers Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.14</tt>)</li></ol></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Labor and Delivery Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.26.8</tt>]</p>
+</body>
+</topic>

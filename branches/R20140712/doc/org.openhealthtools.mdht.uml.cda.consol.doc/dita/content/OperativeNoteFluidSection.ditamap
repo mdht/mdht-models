@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Operative Note Fluid Section</title>
+	<topicref href="../classes/OperativeNoteFluidSection.dita" type="topic" >
+		<topicref href="../classes/OperativeNoteFluidSectionTable.dita" type="topic" />
+		<topicref href="../classes/OperativeNoteFluidSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
+

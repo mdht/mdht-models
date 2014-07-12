@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Encounter Activity - conformance rules</title>
+<shortdesc id="shortdesc">[Encounter: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.14</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Encounter</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/EncountersActivity.html">CCD Encounters Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.21</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../EncounterEntry.dita">Encounter Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.14</tt>)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../EncounterEntry.dita">Encounter Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.14</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/EncountersActivity.html">CCD Encounters Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.21</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-459)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-460)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.13955 EncounterCode</tt><b> STATIC</b> (CONF-462, CONF-463)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-461)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF-464)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>encounterLocation</b></tt> (CONF-471), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncounterLocation.dita">Encounter Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.45</tt>)</li></ol></li>
+<li><b>MAY</b> contain one or more [1..*] entryRelationship with @typecode='RSON' where target represents the indication for the activity<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;exists(er : cda::EntryRelationship | er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)</codeblock></li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] performer, used to define the practioners involved in an encounter<ul><li><codeblock>[OCL]: self.performer-&gt;size() &gt;= 0</codeblock></li></ul></li>
+<li><b>MAY</b> contain one [0..1] performer / assignedEntity / code, to define the role of the practioner<ul><li><codeblock>[OCL]: self.performer.assignedEntity.code-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHALL</b> contain one or more sources of information (CONF-470)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN">
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
+  <templateId root="2.16.840.1.113883.10.20.1.21"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
+  <id root="398914719"/>
+  <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActEncounterCode"/>
+  <text/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+</encounter>]]></codeblock>
+</body>
+</topic>

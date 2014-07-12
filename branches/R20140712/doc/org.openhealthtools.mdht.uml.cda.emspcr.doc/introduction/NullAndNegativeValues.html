@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Null and Negative Values"/>
+<meta name="DC.Relation" scheme="URI" content="../introduction/Approach.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="nullandnegativevalues"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Null and Negative Values</title>
+</head>
+<body id="nullandnegativevalues">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+		<h1 class="title topictitle1">Null and Negative Values</h1>
+
+		<div class="body">
+			<p class="p">We use RIM attributes for observations that may require explicit negation or null values. A
+			provider who has checked for signs of drug use can assert that a particular sign was
+			found (with a proper value), that whether there were signs is unknown (with a null) or
+			that there were no signs (with negation).</p>
+
+
+			<p class="p">However, in collections of acts other than observations, epistemological attributes may have
+			uncertain semantics. If a procedure is negated, it may not be clear whether the provider
+			is asserting that the procedure has never been performed on the patient or was not performed 
+			in a particular context. Similarly, one may document a history of specific
+			disorders, but including a single, general but negated disorder implies assumptions
+			about the scope of the negated disorder that are not explicitly modeled.</p>
+
+
+			<p class="p">As a result, we manage negation and uncertainty for procedures with explicit Boolean observations. Using an
+			observation allows the clinician to assert a history of zero disorders, or a lack of knowledge about
+			disorders, without tying that assertion to a notional disorder that may imply unanticipated facts or
+			questions. </p>
+
+			
+			<p class="p">In the interest of conformance with other guides, we also represent these null and negative
+			acts with null and negated acts, in line with Consolidation Project recommendations.
+			These notional classes should be annotated to ensure that it is clear that they restate the
+			explicit observations, and are not distinct facts.</p>
+
+		</div>
+
+	
+	
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../introduction/Approach.html">Approach</a></div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medication Administered - conformance rules</title>
+<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.1133883.17.3.10.1.72</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>SubstanceAdministration</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.72"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>Medications administered in response to the emergency--usually by the EMS crew</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.72"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:10445)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10448)
+<ul><li><p><lines><i>NEMSIS Trace: EMedications.03 negative action values
+If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with an entryRelationship such that it
+SHALL contain exactly one [1..1] @typeCode="RSON" Has reason (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)
+SHALL contain exactly one [1..1] @inversionInd="true" True
+SHALL contain exactly one /Observation with code = "Assertion" and value drawn from  2.16.840.1.113883.17.3.5.42 Medication omission reason</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10447)
+<ul><li><p><lines><i>NEMSIS Trace: EMedications.01</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>routeCode</b></tt> (CONF:10450), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationAdministrationRoute.dita">MedicationAdministrationRoute</xref> 2.16.840.1.113883.17.3.11.43</tt><b> DYNAMIC</b> (CONF:10449)
+<ul><li><p><lines><i>NEMSIS Trace: EMedications.04
+
+See appendix for mapping NEMSIS values to FDA values and for postcoordination of device information.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10451) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10458)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt> (CONF:10460)<tt><b>/@code</b>="RSON" </tt><i>Reason</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1002 HL7ActRelationshipType</tt>) (CONF:10459)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MedicationNotAdministeredReasonObservation.dita">Medication Not Administered Reason Observation</xref> (CONF:10461)<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationNotAdministeredReasonObservation.dita">Medication Not Administered Reason Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.105</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:10452) <ol><li> This consumable <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedProduct</b></tt> (CONF:10465) <ol><li> This manufacturedProduct <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationInformation.html">Consol Medication Information</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.23</tt>)</li><li> This manufacturedProduct <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedMaterial</b></tt> (CONF:10466) <ol><li> This manufacturedMaterial <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:10467)<p><lines><i>NEMSIS Trace: EMedications.03
+Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list at http://www.nemsis.org/v3/resources.html</i></lines></p></li></ol></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10453) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MedicationResponseObservation.dita">Medication Response Observation</xref> (CONF:10468)<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationResponseObservation.dita">Medication Response Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.106</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:10454) <ol><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MedicationComplicationObservation.dita">Medication Complication Observation</xref> (CONF:10472)<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationComplicationObservation.dita">Medication Complication Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.107</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10455) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MedicationPriorAdministrationObservation.dita">Medication Prior Administration Observation</xref> (CONF:10477)<p><lines><i>NEMSIS Trace: EMedications.02</i></lines></p><ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationPriorAdministrationObservation.dita">Medication Prior Administration Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.108</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:10456) <p><lines><i>This participation is required if the medication is administered by the crew; i.e., if EMSMedicationPriorAdministrationObservation is FALSE.</i></lines></p><ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10481) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10484)<p><lines><i>NEMSIS Trace: EMedications.09</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10482), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> DYNAMIC</b> (CONF:10483)<p><lines><i>NEMSIS Trace: EMedications.10</i></lines></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10457) <p><lines><i>This relationship is required if the medication is administered by the crew; i.e., if EMSMedicationPriorAdministrationObservation is FALSE.</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt> (CONF:10485) <ol><li> This act <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt> (CONF:10486)<tt><b>/@code</b>="INFRM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:10487)</li><li> This act <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationAuthorizationType.dita">MedicationAuthorizationType</xref> 2.16.840.1.113883.17.3.11.47</tt><b> DYNAMIC</b> (CONF:10488)<p><lines><i>NEMSIS Trace: EMedications.11</i></lines></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:11180)<tt><b>/@code</b>="15562006" </tt><i>structure of respiratory region of nose</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:11181)
+<ul><li><p><lines><i>If route is "endotracheal," to be used to specify nasal approach for "nasotracheal tube"</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:10446)
+<ul><li><p><lines><i>NEMSIS Trace: EMedications.05, 06
+Note: rate values should be recorded in rateQuantity, not doseQuantity</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:11074) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DEV" </tt> (CONF:11182)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:11075) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:11183)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:11076) <ol><li> This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11184), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:11185)<p><lines><i>For NEMSIS route codes that imply devices:
+@ value = "39849001" @codeSystem = "2.16.840.1.113883.6.5" @displayName="nasal oxygen cannula"
+@ value = "427591007" @codeSystem = "2.16.840.1.113883.6.5" @displayName="nonrebreather oxygen mask"
+@ value = "425926003" @codeSystem = "2.16.840.1.113883.6.5" @displayName="partial rebreather oxygen mask"
+@ value = "428285009" @codeSystem = "2.16.840.1.113883.6.5" @displayName="Venturi mask"</i></lines></p></li></ol> </li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>rateQuantity</b></tt> (CONF:7517)
+<ul><li><p><lines><i>NEMSIS Trace: EMedications.05, 06
+Note: rate values should be recorded in rateQuantity, not doseQuantity</i></lines></p></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:10445)
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type x_DocumentSubstanceMood
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10448)
+<ul><li><p><lines><i>NEMSIS Trace: EMedications.03 negative action values
+If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with an entryRelationship such that it
+SHALL contain exactly one [1..1] @typeCode="RSON" Has reason (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)
+SHALL contain exactly one [1..1] @inversionInd="true" True
+SHALL contain exactly one /Observation with code = "Assertion" and value drawn from  2.16.840.1.113883.17.3.5.42 Medication omission reason</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10447)
+<ul><li><p><lines><i>NEMSIS Trace: EMedications.01</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>routeCode</b></tt> (CONF:10450), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationAdministrationRoute.dita">MedicationAdministrationRoute</xref> 2.16.840.1.113883.17.3.11.43</tt><b> DYNAMIC</b> (CONF:10449)
+<ul><li><p><lines><i>NEMSIS Trace: EMedications.04
+
+See appendix for mapping NEMSIS values to FDA values and for postcoordination of device information.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:11180)<tt><b>/@code</b>="15562006" </tt><i>structure of respiratory region of nose</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:11181)
+<ul><li><p><lines><i>If route is "endotracheal," to be used to specify nasal approach for "nasotracheal tube"</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:10446)
+<ul><li><p><lines><i>NEMSIS Trace: EMedications.05, 06
+Note: rate values should be recorded in rateQuantity, not doseQuantity</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>rateQuantity</b></tt> (CONF:7517)
+<ul><li><p><lines><i>NEMSIS Trace: EMedications.05, 06
+Note: rate values should be recorded in rateQuantity, not doseQuantity</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10451) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10458)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt> (CONF:10460)<tt><b>/@code</b>="RSON" </tt><i>Reason</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1002 HL7ActRelationshipType</tt>) (CONF:10459)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MedicationNotAdministeredReasonObservation.dita">Medication Not Administered Reason Observation</xref> (CONF:10461)<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationNotAdministeredReasonObservation.dita">Medication Not Administered Reason Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.105</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:10452) <ol><li> This consumable <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedProduct</b></tt> (CONF:10465) <ol><li> This manufacturedProduct <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationInformation.html">Consol Medication Information</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.23</tt>)</li><li> This manufacturedProduct <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedMaterial</b></tt> (CONF:10466) <ol><li> This manufacturedMaterial <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:10467)<p><lines><i>NEMSIS Trace: EMedications.03
+Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list at http://www.nemsis.org/v3/resources.html</i></lines></p></li></ol></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10453) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MedicationResponseObservation.dita">Medication Response Observation</xref> (CONF:10468)<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationResponseObservation.dita">Medication Response Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.106</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:10454) <ol><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MedicationComplicationObservation.dita">Medication Complication Observation</xref> (CONF:10472)<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationComplicationObservation.dita">Medication Complication Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.107</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10455) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MedicationPriorAdministrationObservation.dita">Medication Prior Administration Observation</xref> (CONF:10477)<p><lines><i>NEMSIS Trace: EMedications.02</i></lines></p><ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationPriorAdministrationObservation.dita">Medication Prior Administration Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.108</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:10456) <p><lines><i>This participation is required if the medication is administered by the crew; i.e., if EMSMedicationPriorAdministrationObservation is FALSE.</i></lines></p><ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10481) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10484)<p><lines><i>NEMSIS Trace: EMedications.09</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10482), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> DYNAMIC</b> (CONF:10483)<p><lines><i>NEMSIS Trace: EMedications.10</i></lines></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10457) <p><lines><i>This relationship is required if the medication is administered by the crew; i.e., if EMSMedicationPriorAdministrationObservation is FALSE.</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt> (CONF:10485) <ol><li> This act <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt> (CONF:10486)<tt><b>/@code</b>="INFRM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:10487)</li><li> This act <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationAuthorizationType.dita">MedicationAuthorizationType</xref> 2.16.840.1.113883.17.3.11.47</tt><b> DYNAMIC</b> (CONF:10488)<p><lines><i>NEMSIS Trace: EMedications.11</i></lines></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:11074) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DEV" </tt> (CONF:11182)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:11075) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:11183)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:11076) <ol><li> This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11184), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:11185)<p><lines><i>For NEMSIS route codes that imply devices:
+@ value = "39849001" @codeSystem = "2.16.840.1.113883.6.5" @displayName="nasal oxygen cannula"
+@ value = "427591007" @codeSystem = "2.16.840.1.113883.6.5" @displayName="nonrebreather oxygen mask"
+@ value = "425926003" @codeSystem = "2.16.840.1.113883.6.5" @displayName="partial rebreather oxygen mask"
+@ value = "428285009" @codeSystem = "2.16.840.1.113883.6.5" @displayName="Venturi mask"</i></lines></p></li></ol> </li></ol> </li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::MedicationAdministered</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::substanceadministration[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.72]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:10445</entry><entry> SBADM</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry>MAY</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:10448</entry><entry> </entry></row> 
+<row><entry>approachSiteCode</entry><entry>approachSiteCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry>CONF:11180</entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 15562006</entry></row> 
+<row><entry>doseQuantity</entry><entry>doseQuantity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_PQ</entry><entry>CONF:10446</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SXCM_TS</entry><entry>CONF:10447</entry><entry> </entry></row> 
+<row><entry>rateQuantity</entry><entry>rateQuantity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_PQ</entry><entry>CONF:7517</entry><entry> </entry></row> 
+<row><entry>routeCode</entry><entry>routeCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10449</entry><entry> null</entry></row> 
+<row><entry>medicationAdministered</entry><entry>medicationAdministered</entry><entry>0..*</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationAdministered</entry><entry>CONF:10989</entry><entry> </entry></row> 
+<row><entry>medicationAdministeredResponseRelationship</entry><entry>medicationAdministeredResponseRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationAdministeredResponseRelationship</entry><entry>CONF:10453</entry><entry> </entry></row> 
+<row><entry>medicationAdministrationDeviceParticipant</entry><entry>medicationAdministrationDeviceParticipant</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationAdministrationDeviceParticipant</entry><entry>CONF:11074</entry><entry> </entry></row> 
+<row><entry>MedicationAuthorizationRelationship</entry><entry>MedicationAuthorizationRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationAuthorizationRelationship</entry><entry>CONF:10457</entry><entry> </entry></row> 
+<row><entry>MedicationComplicationRelationship</entry><entry>MedicationComplicationRelationship</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationComplicationRelationship</entry><entry>CONF:10454</entry><entry> </entry></row> 
+<row><entry>MedicationConsumable</entry><entry>MedicationConsumable</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationAdministeredConsumable</entry><entry>CONF:10452</entry><entry> </entry></row> 
+<row><entry>medicationNotAdministeredEntryRelationship</entry><entry>medicationNotAdministeredEntryRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationNotAdministeredReasonEntryRelationship</entry><entry>CONF:10451</entry><entry> </entry></row> 
+<row><entry>MedicationPerformerParticipation</entry><entry>MedicationPerformerParticipation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationPerformerParticipation</entry><entry>CONF:10456</entry><entry> </entry></row> 
+<row><entry>MedicationPriorAdministrationRelationship</entry><entry>MedicationPriorAdministrationRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationPriorAdministrationRelationship</entry><entry>CONF:10455</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="SBADM">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.72"/>
+  <id root="MDHT" extension="1316784942"/>
+  <effectiveTime value="20140321"/>
+  <routeCode codeSystem="2.16.840.1.113883.3.26.1.1.1" codeSystemName="FDA Route of Administration"/>
+  <approachSiteCode code="15562006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="structure of respiratory region of nose"/>
+  <doseQuantity/>
+  <rateQuantity/>
+  <consumable>
+    <manufacturedProduct>
+      <id root="MDHT" extension="1276828309"/>
+      <manufacturedMaterial>
+        <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </consumable>
+  <performer>
+    <assignedEntity>
+      <id root="MDHT" extension="614867525"/>
+      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    </assignedEntity>
+  </performer>
+  <participant typeCode="DEV">
+    <participantRole classCode="MANU">
+      <playingDevice>
+        <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      </playingDevice>
+    </participantRole>
+  </participant>
+  <entryRelationship typeCode="RSON" inversionInd="true">
+    <observation>
+      <code code="1417030197"/>
+      <value xsi:type="CD" code="1648853623"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="1452982164"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="974547076"/>
+      <value xsi:type="CD" code="425323850"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="671935055"/>
+      <value xsi:type="BL"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="INFRM">
+      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    </act>
+  </entryRelationship>
+</substanceadministration>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medication Administered</ph></p>
+<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.1133883.17.3.10.1.72</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Delay Organizer - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.95</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.95"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>Kinds of delays experienced by a responder</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.95"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10583) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchDelay.dita">Dispatch Delay</xref> (CONF:10588)<p><lines><i>NEMSIS Trace: EResponse.08</i></lines></p><ol>
+<li>Contains exactly one [1..1] <xref href="../DispatchDelay.dita">Dispatch Delay</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.153</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10584) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseDelay.dita">Response Delay</xref> (CONF:10593)<ol>
+<li>Contains exactly one [1..1] <xref href="../ResponseDelay.dita">Response Delay</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.154</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10585) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SceneDelay.dita">Scene Delay</xref> (CONF:10598)<ol>
+<li>Contains exactly one [1..1] <xref href="../SceneDelay.dita">Scene Delay</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.155</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10586) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../TransportDelay.dita">Transport Delay</xref> (CONF:10603)<ol>
+<li>Contains exactly one [1..1] <xref href="../TransportDelay.dita">Transport Delay</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.156</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10587) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../TurnaroundDelay.dita">Turnaround Delay</xref> (CONF:10608)<ol>
+<li>Contains exactly one [1..1] <xref href="../TurnaroundDelay.dita">Turnaround Delay</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.157</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type x_ActClassDocumentEntryOrganizer
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type ActMood
+</li>
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10583) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchDelay.dita">Dispatch Delay</xref> (CONF:10588)<p><lines><i>NEMSIS Trace: EResponse.08</i></lines></p><ol>
+<li>Contains exactly one [1..1] <xref href="../DispatchDelay.dita">Dispatch Delay</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.153</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10584) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseDelay.dita">Response Delay</xref> (CONF:10593)<ol>
+<li>Contains exactly one [1..1] <xref href="../ResponseDelay.dita">Response Delay</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.154</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10585) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SceneDelay.dita">Scene Delay</xref> (CONF:10598)<ol>
+<li>Contains exactly one [1..1] <xref href="../SceneDelay.dita">Scene Delay</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.155</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10586) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../TransportDelay.dita">Transport Delay</xref> (CONF:10603)<ol>
+<li>Contains exactly one [1..1] <xref href="../TransportDelay.dita">Transport Delay</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.156</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10587) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../TurnaroundDelay.dita">Turnaround Delay</xref> (CONF:10608)<ol>
+<li>Contains exactly one [1..1] <xref href="../TurnaroundDelay.dita">Turnaround Delay</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.157</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::DelayOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.95]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>delayOrganizer</entry><entry>delayOrganizer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DelayOrganizer</entry><entry>CONF:10995</entry><entry> </entry></row> 
+<row><entry>DispatchDelayRelationship</entry><entry>DispatchDelayRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DispatchDelayRelationship</entry><entry>CONF:10583</entry><entry> </entry></row> 
+<row><entry>ResponseDelayRelationship</entry><entry>ResponseDelayRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ResponseDelayRelationship</entry><entry>CONF:10584</entry><entry> </entry></row> 
+<row><entry>SceneDelayRelationship</entry><entry>SceneDelayRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SceneDelayRelationship</entry><entry>CONF:10585</entry><entry> </entry></row> 
+<row><entry>TransportDelayRelationship</entry><entry>TransportDelayRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TransportDelayRelationship</entry><entry>CONF:10586</entry><entry> </entry></row> 
+<row><entry>TurnaoundDelayRelationship</entry><entry>TurnaoundDelayRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TurnaoundDelayRelationship</entry><entry>CONF:10587</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.95"/>
+  <id root="MDHT" extension="2087453177"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2014"/>
+    <high value="2014"/>
+  </effectiveTime>
+  <component>
+    <observation>
+      <code code="1836617251"/>
+      <value xsi:type="CD" code="1443524688"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1181325979"/>
+      <value xsi:type="CD" code="132520196"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="695363718"/>
+      <value xsi:type="CD" code="1394261217"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="536285107"/>
+      <value xsi:type="CD" code="1562991465"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="422285865"/>
+      <value xsi:type="CD" code="1014195908"/>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Delay Organizer</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.95</tt>]</p>
+</body>
+</topic>

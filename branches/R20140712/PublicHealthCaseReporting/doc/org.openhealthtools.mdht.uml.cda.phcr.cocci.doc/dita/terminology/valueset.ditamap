@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Value Sets">
+<topicref href="Comorbid Conditions.dita" type="topic" />
+<topicref href="Lab Test Name (Coccidioidomycosis).dita" type="topic" />
+<topicref href="Medication Treatment (Coccidioidomycosis).dita" type="topic" />
+<topicref href="Signs and Symptoms (Coccidioidomycosis).dita" type="topic" />
+</map>

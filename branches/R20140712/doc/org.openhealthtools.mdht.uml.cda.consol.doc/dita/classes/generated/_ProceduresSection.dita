@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedures Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.7.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.7.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of "procedure" is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).
+The length of an encounter is documented in the documentationOf/encompassingEncounter/effectiveTime and length of service in documentationOf/ServiceEvent/effectiveTime.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:10447 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.7.1"</li></ol></li>
+<li><b>SHALL</b> conform to <xref href="../ProceduresSectionEntriesOptional.dita">Procedures Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.7</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7893)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15425)<tt><b>/@code</b>="47519-4" </tt><i>History of procedures</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15426)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7894)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7895, CONF:7896)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityProcedure.dita">Procedure Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8017, CONF:8018)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityObservation.dita">Procedure Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.13</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8019, CONF:8020)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityAct.dita">Procedure Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.12</tt>)</li></ol></li>
+<li>There <b>SHALL</b> be at least one procedure, observation or act entry conformant to Procedure Activity Procedure template, Procedure Activity Observation template or Procedure Activity Act template in the Procedure Section. (CONF:8021)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../ProceduresSectionEntriesOptional.dita">Procedures Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.7</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15425)<tt><b>/@code</b>="47519-4" </tt><i>History of procedures</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15426)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7893)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7894)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:6274, CONF:15509)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityProcedure.dita">Procedure Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:6278, CONF:15510)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityObservation.dita">Procedure Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.13</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8533, CONF:15511)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityAct.dita">Procedure Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.12</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7895, CONF:7896)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityProcedure.dita">Procedure Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8017, CONF:8018)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityObservation.dita">Procedure Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.13</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8019, CONF:8020)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityAct.dita">Procedure Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.12</tt>)</li></ol></li>
+<li>There <b>SHALL</b> be at least one procedure, observation or act entry conformant to Procedure Activity Procedure template, Procedure Activity Observation template or Procedure Activity Act template in the Procedure Section. (CONF:8021)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProceduresSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15426</entry><entry>LOINC 2.16.840.1.113883.6.1LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7893</entry><entry> </entry></row> 
+<row><entry>procedureActivityAct</entry><entry>cda:entry/cda:act</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityAct</entry><entry>CONF:8019CONF:8020</entry><entry> </entry></row> 
+<row><entry>procedureActivityObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityObservation</entry><entry>CONF:8017CONF:8018</entry><entry> </entry></row> 
+<row><entry>procedureActivityProcedure</entry><entry>cda:entry/cda:procedure</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityProcedure</entry><entry>CONF:7895CONF:7896</entry><entry> </entry></row> 
+<row><entry>proceduresSection</entry><entry>proceduresSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProceduresSection</entry><entry>CONF:9451</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7894</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1948497486"/>
+  <code code="1429662573"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <procedure>
+      <id root="MDHT" extension="917786575"/>
+      <code code="834863880"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <specimen>
+        <specimenRole/>
+      </specimen>
+      <performer>
+        <assignedEntity/>
+      </performer>
+      <entryRelationship typeCode="COMP" inversionInd="true">
+        <encounter classCode="ENC" moodCode="EVN"/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="457693644"/>
+          <code code="1713643553"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <substanceAdministration>
+          <id root="MDHT" extension="1587788563"/>
+          <code code="1963528504"/>
+          <text>Text Value</text>
+          <effectiveTime value="20130627"/>
+          <consumable/>
+          <performer/>
+          <entryRelationship>
+            <supply/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <act/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <supply/>
+          </entryRelationship>
+          <precondition/>
+        </substanceAdministration>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <id root="MDHT" extension="467552097"/>
+          <code code="1563365826"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </procedure>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="1803024349"/>
+      <code code="1304014936"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <performer>
+        <assignedEntity/>
+      </performer>
+      <entryRelationship typeCode="COMP" inversionInd="true">
+        <encounter classCode="ENC" moodCode="EVN"/>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <id root="MDHT" extension="116185003"/>
+          <code code="298451250"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1788362568"/>
+          <code code="100713222"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <substanceAdministration>
+          <id root="MDHT" extension="841511373"/>
+          <code code="1895529341"/>
+          <text>Text Value</text>
+          <effectiveTime value="20130627"/>
+          <consumable/>
+          <performer/>
+          <entryRelationship>
+            <supply/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <act/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <supply/>
+          </entryRelationship>
+          <precondition/>
+        </substanceAdministration>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <act>
+      <id root="MDHT" extension="2081871481"/>
+      <code code="976407295"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <performer>
+        <assignedEntity/>
+      </performer>
+      <entryRelationship typeCode="COMP" inversionInd="true">
+        <encounter classCode="ENC" moodCode="EVN"/>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <id root="MDHT" extension="310310233"/>
+          <code code="758811616"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="383123301"/>
+          <code code="1808218536"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <substanceAdministration>
+          <id root="MDHT" extension="435072101"/>
+          <code code="846218797"/>
+          <text>Text Value</text>
+          <effectiveTime value="20130627"/>
+          <consumable/>
+          <performer/>
+          <entryRelationship>
+            <supply/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <act/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <supply/>
+          </entryRelationship>
+          <precondition/>
+        </substanceAdministration>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedures Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.7.1</tt>]</p>
+</body>
+</topic>

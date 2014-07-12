@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.15"/>
+  <templateId root="2.16.840.1.113883.10.20.15.1.5"/>
+  <id root="30558a90-5ae9-4aba-aee9-af29f0c8bae5"/>
+  <code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Public Health Case Report"/>
+  <title>Public Health Case Report - Pertussis</title>
+  <effectiveTime value="20111219080000-0500"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <versionNumber value="2"/>
+  <recordTarget>
+    <patientRole>
+      <id root="1.3.6.1.4.1.19376.1.3.4" extension="NY214365"/>
+      <addr><streetAddressLine>12 W Main Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+      <telecom value="tel:+1-845-555-5555"/>
+      <patient>
+        <name><family>Trenton</family><given>Taylor</given></name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7" displayName="Male"/>
+        <birthTime value="20010627000000-0500"/>
+        <raceCode code="2106-3" codeSystem="2.16.840.1.113883.1.11.14914" codeSystemName="Race &amp; Ethnicity - CDC" displayName="White"/>
+        <ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Ethnicity Group" displayName="Not Hispanic or Latino"/>
+        <guardian>
+          <id nullFlavor="UNK"/>
+          <code code="MTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role Code" displayName="Mother"/>
+          <addr><streetAddressLine>12 W Main Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+          <telecom value="tel:+1-845-555-5555"/>
+          <guardianPerson>
+            <name><family>Trenton</family><given>Lisa</given></name>
+          </guardianPerson>
+        </guardian>
+        <birthplace>
+          <place>
+            <addr><country>USA</country></addr>
+          </place>
+        </birthplace>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20111219080000-0500"/>
+    <assignedAuthor>
+      <id nullFlavor="UNK"/>
+      <addr><streetAddressLine>14 Grove Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+      <telecom value="tel:+1-845-344-2273"/>
+      <assignedPerson>
+        <name><family>Smith</family><given>Barry</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="UNK"/>
+        <name>Taconic Health Information Network and Community</name>
+        <telecom value="tel:+1-845-896-4726"/>
+        <addr><streetAddressLine>300 Westage Business Center Drive, Suite 320</streetAddressLine><city>Fishkill</city><state>NY</state><postalCode>12524</postalCode></addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator>
+    <time value="20111219080000-0500"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <id nullFlavor="UNK"/>
+      <addr><streetAddressLine>14 Grove Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+      <telecom value="tel:+1-845-344-2273"/>
+      <assignedPerson>
+        <name><family>Smith</family><given>Barry</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <relatedDocument typeCode="RPLC">
+    <parentDocument>
+      <id root="ccbcad11-ac40-4948-a19b-d6bae604ae14"/>
+    </parentDocument>
+  </relatedDocument>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.15"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.22"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.24"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
+          <title>Social History</title>
+          <text><list>
+                        <caption>Pertussis Social History Section</caption>
+                        <item>Race - White</item>
+                        <item>Possible Exposure Location - Maple Hill Elementary School, 491 County Road, Middletown, NY (tel:845-326-1740)</item>
+                        <item>Possible Case Contact - Home Exposure, Lisa Trenton (mother)</item>
+                        <item>Possible Case Contact - Home Exposure, Mary Trenton (sister)</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.9"/>
+              <code code="32624-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Race"/>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" code="2106-3" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="White"/>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.63"/>
+              <code code="413350009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding with explicit context">
+                <qualifier>
+                  <name code="246090004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Associated finding"/>
+                  <value code="444387000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Exposure to Bordetella pertussis"/>
+                </qualifier>
+                <qualifier>
+                  <name code="408729009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding context"/>
+                  <value code="410590009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Known possible"/>
+                </qualifier>
+              </code>
+              <statusCode code="completed"/>
+              <participant typeCode="LOC">
+                <time value="20111219080000-0500"/>
+                <participantRole classCode="LOCE">
+                  <addr><streetAddressLine>491 County Road</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+                  <telecom value="tel:+1-845-326-1740"/>
+                  <playingEntity classCode="PLC">
+                    <code code="257698009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="School"/>
+                    <name>Maple Hill Elementary School</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.64"/>
+              <code code="413350009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding with explicit context">
+                <qualifier>
+                  <name code="246090004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Associated finding"/>
+                  <value code="444387000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Case Contact"/>
+                </qualifier>
+                <qualifier>
+                  <name code="408729009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding context"/>
+                  <value code="410590009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Known possible"/>
+                </qualifier>
+              </code>
+              <statusCode code="completed"/>
+              <participant typeCode="LOC">
+                <time value="20111205090000-0500"/>
+                <participantRole classCode="LOCE">
+                  <addr><streetAddressLine>12 W Main Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+                  <telecom value="tel:+1-845-555-5555"/>
+                  <playingEntity classCode="PLC">
+                    <code code="264362003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Home"/>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <participant typeCode="DIR">
+                <participantRole classCode="EXPR">
+                  <playingEntity classCode="PSN">
+                    <code code="MTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="Mother"/>
+                    <name><family>Trenton</family><given>Lisa</given></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <participant typeCode="DIR">
+                <participantRole classCode="EXPR">
+                  <playingEntity classCode="PSN">
+                    <code code="SIS" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="Sister"/>
+                    <name><family>Trenton</family><given>Mary</given></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.15.2.1"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.25"/>
+          <code code="55752-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical Information"/>
+          <title>Clinical Information</title>
+          <text><list>
+                        <caption>Pertussis Clinical Information Section</caption>
+                        <item>Condition - Pertussis</item>
+                        <item>Condition diagnosed 2011/12/15</item>
+                        <item>Condition diagnosed by Dr Barry Smith</item>
+                        <item>Problem remains active at time of report</item>
+                        <item>Signs and Symptoms - Persistent Cough REPORTED starting on 2011/11/05</item>
+                        <item>Signs and Symptoms - Whooping Respiration not reported</item>
+                        <item>Signs and Symptoms - Paroxysms Of Coughing REPORTED starting on 2011/12/14</item>
+                        <item>Signs and Symptoms - Post-tussive vomiting not reported</item>
+                        <item>Patient is alive 2011/12/19</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.28"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.54"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.65"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20111215103000-0500"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="27836007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Pertussis"/>
+              <author>
+                <time value="20111219080000-0500"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>14 Grove Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+                  <telecom value="tel:+1-845-344-2273"/>
+                  <assignedPerson>
+                    <name><family>Smith</family><given>Barry</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name><family>Smith</family><given>Barry</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.66"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20111219080000-0500"/>
+                  <value xsi:type="CD" code="284523002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Persistent Cough"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.66"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20111219080000-0500"/>
+                  <value xsi:type="CD" code="60537006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Whooping Respiration"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.66"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20111219080000-0500"/>
+                  <value xsi:type="CD" code="43025008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Paroxysms Of Coughing"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.66"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20111219080000-0500"/>
+                  <value xsi:type="CD" code="424580008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Post-tussive vomiting"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.42"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20111219080000-0500"/>
+              <value xsi:type="CD" code="438949009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Alive"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.15.2.4"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.26"/>
+          <code code="55753-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment Information"/>
+          <title>Treatment Information</title>
+          <text><list>
+                        <caption>Pertussis Treatment Information Section</caption>
+                        <item>Condition ID - NY214365</item>
+                        <item>Prescribed Azithromycin on 2011/12/15 for 5 days</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.15.3.57"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.67"/>
+              <code code="133877004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Therapeutic regimen"/>
+              <statusCode code="completed"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="NY214365"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <value xsi:type="CD" code="27836007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Pertussis"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.55"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.68"/>
+                  <statusCode code="active"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="20111215103000-0500"/>
+                    <high value="20111220000000-0500"/>
+                  </effectiveTime>
+                  <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+                  <consumable>
+                    <manufacturedProduct>
+                      <manufacturedMaterial>
+                        <code code="18631" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Azithromycin"/>
+                        <name>Azithromycin 100 MG/ML [Zithromax]</name>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </consumable>
+                </substanceAdministration>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.2"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text><list>
+                        <caption>Encounters Section</caption>
+                        <item>2011/12/05 at Middletown Community Health Center, 14 Grove Street, Middletown, NY (tel:845-344-2273)</item>
+                        <item>Pediatrics encounter with Dr. Barry Smith MD</item>
+                        <item>2011/12/15 at Middletown Community Health Center, 14 Grove Street, Middletown, NY (tel:845-344-2273)</item>
+                        <item>Pediatrics encounter with Dr. Barry Smith MD</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="NY214365-1"/>
+              <code code="PED" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActEncounterCode" displayName="Pediatrics"/>
+              <effectiveTime value="20111205090000-0500"/>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>14 Grove Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+                  <telecom value="tel:+1-845-344-2273"/>
+                  <assignedPerson>
+                    <name><family>Smith</family><given>Barry</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>14 Grove Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+                  <telecom value="tel:+1-845-344-2273"/>
+                  <playingEntity classCode="PLC">
+                    <name>Middletown Community Health Center</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="NY214365-2"/>
+              <code code="PED" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActEncounterCode" displayName="Pediatrics"/>
+              <effectiveTime value="20111215103000-0500"/>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>14 Grove Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+                  <telecom value="tel:+1-845-344-2273"/>
+                  <assignedPerson>
+                    <name><family>Smith</family><given>Barry</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>14 Grove Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+                  <telecom value="tel:+1-845-344-2273"/>
+                  <playingEntity classCode="PLC">
+                    <name>Middletown Community Health Center</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.14"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.27"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+          <title>Relevant diagnostic tests and/or laboratory data</title>
+          <text><list>
+                        <caption>Pertussis Relevant Diagnostics Tests Section</caption>
+                        <item>Nasopharyngeal Swab collected on 2011/12/15, B pert DNA Nph Ql PCR accession 11MD89206 result: Positive</item>
+                        <item>Middletown Medical Laboratories, 210 East Main Street, Middletown, NY  (tel:845-344-4594)</item>
+                        <item>Nasopharyngeal Swab collected on 2011/12/15, B pert Nph Ql Cult accession 11MD89206 result: Bordetella pertussis</item>
+                        <item>Middletown Medical Laboratories, 210 East Main Street, Middletown, NY  (tel:845-344-4594)</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.31"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.71"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="11MD89206"/>
+              <code code="43913-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="B pert DNA Nph Ql PCR"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20111215103000-0500"/>
+              <value xsi:type="CD" code="10828004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Positive"/>
+              <specimen>
+                <specimenRole>
+                  <specimenPlayingEntity>
+                    <code code="258500001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Nasopharyngeal Swab"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="NI"/>
+                  <addr><streetAddressLine>210 East Main Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+                  <telecom value="tel:+1-845-344-4594"/>
+                  <representedOrganization>
+                    <name>Middletown Medical Laboratories</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="REFR">
+                <procedure classCode="PROC" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.2"/>
+                  <code code="313273004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Pertussis swab"/>
+                  <effectiveTime value="20111215103000-0500"/>
+                  <targetSiteCode xsi:type="CE" code="71836000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Nasopharyngeal structure"/>
+                  <performer>
+                    <assignedEntity>
+                      <id nullFlavor="NI"/>
+                      <representedOrganization>
+                        <name>Middletown Community Health Center</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                  <participant typeCode="PRD">
+                    <participantRole classCode="SPEC">
+                      <id nullFlavor="NI"/>
+                      <playingEntity>
+                        <code code="258500001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Nasopharyngeal Swab"/>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                </procedure>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.31"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.71"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="11MD89206"/>
+              <code code="48741-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="B pert Nph Ql Cult"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20111215103000-0500"/>
+              <value xsi:type="CD" code="5247005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Bordetella pertussis"/>
+              <specimen>
+                <specimenRole>
+                  <specimenPlayingEntity>
+                    <code code="258500001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Nasopharyngeal Swab"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="NI"/>
+                  <addr><streetAddressLine>210 East Main Street</streetAddressLine><city>Middletown</city><state>NY</state><postalCode>10940</postalCode></addr>
+                  <telecom value="tel:+1-845-344-4594"/>
+                  <representedOrganization>
+                    <name>Middletown Medical Laboratories</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="REFR">
+                <procedure classCode="PROC" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.2"/>
+                  <code code="313273004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Pertussis swab"/>
+                  <effectiveTime value="20111215103000-0500"/>
+                  <targetSiteCode xsi:type="CE" code="71836000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Nasopharyngeal structure"/>
+                  <performer>
+                    <assignedEntity>
+                      <id nullFlavor="NI"/>
+                      <representedOrganization>
+                        <name>Middletown Community Health Center</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                  <participant typeCode="PRD">
+                    <participantRole classCode="SPEC">
+                      <id nullFlavor="NI"/>
+                      <playingEntity>
+                        <code code="258500001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Nasopharyngeal Swab"/>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                </procedure>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.6"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.28"/>
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+          <title>Pertussis Immunizations</title>
+          <text><list>
+                        <caption>Pertussis Immunizations Section</caption>
+                        <item>DTaP/IPV/HiB - Aventis lot C3923AA given on 2000/08/27</item>
+                        <item>DTaP/IPV/HiB - Aventis lot C3923AA given on 2000/10/30</item>
+                        <item>DTaP/IPV/HiB - Aventis lot C3923AA given on 2001/01/02</item>
+                        <item>DTaP/IPV/HiB - Aventis lot C3923AA given on 2001/12/22</item>
+                        <item>DTaP - Infanrix lot SKB-AC14B136BB given on 2004/07/15</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.72"/>
+              <id nullFlavor="NI"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="20000827000000-0500"/>
+              <routeCode code="IM" codeSystem="2.16.840.1.113883.5.112" codeSystemName="RouteOfAdministration" displayName="Intramuscular injection"/>
+              <consumable>
+                <manufacturedProduct>
+                  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.73"/>
+                  <manufacturedMaterial>
+                    <code code="120" codeSystem="2.16.840.1.113883.6.59" codeSystemName="CVX" displayName="DTap-IPV-Hib">
+                      <originalText>DTap-IPV-Hib</originalText>
+                    </code>
+                    <name>DTap-IPV-Hib</name>
+                    <lotNumberText>C3923AA</lotNumberText>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name>Aventis</name>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name><family>Smith</family><given>Barry</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.72"/>
+              <id nullFlavor="NI"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="20001030000000-0500"/>
+              <routeCode code="IM" codeSystem="2.16.840.1.113883.5.112" codeSystemName="RouteOfAdministration" displayName="Intramuscular injection"/>
+              <consumable>
+                <manufacturedProduct>
+                  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.73"/>
+                  <manufacturedMaterial>
+                    <code code="120" codeSystem="2.16.840.1.113883.6.59" codeSystemName="CVX" displayName="DTap-IPV-Hib">
+                      <originalText>DTap-IPV-Hib</originalText>
+                    </code>
+                    <name>DTap-IPV-Hib</name>
+                    <lotNumberText>C3923AA</lotNumberText>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name>Aventis</name>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name><family>Smith</family><given>Barry</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.72"/>
+              <id nullFlavor="NI"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="20010102000000-0500"/>
+              <routeCode code="IM" codeSystem="2.16.840.1.113883.5.112" codeSystemName="RouteOfAdministration" displayName="Intramuscular injection"/>
+              <consumable>
+                <manufacturedProduct>
+                  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.73"/>
+                  <manufacturedMaterial>
+                    <code code="120" codeSystem="2.16.840.1.113883.6.59" codeSystemName="CVX" displayName="DTap-IPV-Hib">
+                      <originalText>DTap-IPV-Hib</originalText>
+                    </code>
+                    <name>DTap-IPV-Hib</name>
+                    <lotNumberText>C3923AA</lotNumberText>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name>Aventis</name>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name><family>Smith</family><given>Barry</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.72"/>
+              <id nullFlavor="NI"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="20011222000000-0500"/>
+              <routeCode code="IM" codeSystem="2.16.840.1.113883.5.112" codeSystemName="RouteOfAdministration" displayName="Intramuscular injection"/>
+              <consumable>
+                <manufacturedProduct>
+                  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.73"/>
+                  <manufacturedMaterial>
+                    <code code="120" codeSystem="2.16.840.1.113883.6.59" codeSystemName="CVX" displayName="DTap-IPV-Hib">
+                      <originalText>DTap-IPV-Hib</originalText>
+                    </code>
+                    <name>DTap-IPV-Hib</name>
+                    <lotNumberText>C3923AA</lotNumberText>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name>Aventis</name>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name><family>Smith</family><given>Barry</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.72"/>
+              <id nullFlavor="NI"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="20040715000000-0500"/>
+              <routeCode code="IM" codeSystem="2.16.840.1.113883.5.112" codeSystemName="RouteOfAdministration" displayName="Intramuscular injection"/>
+              <consumable>
+                <manufacturedProduct>
+                  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.73"/>
+                  <manufacturedMaterial>
+                    <code code="20" codeSystem="2.16.840.1.113883.6.59" codeSystemName="CVX" displayName="DTaP">
+                      <originalText>DTaP</originalText>
+                    </code>
+                    <name>DTaP</name>
+                    <lotNumberText>SKB-AC14B136BB</lotNumberText>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name>Infanrix</name>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name><family>Smith</family><given>Barry</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

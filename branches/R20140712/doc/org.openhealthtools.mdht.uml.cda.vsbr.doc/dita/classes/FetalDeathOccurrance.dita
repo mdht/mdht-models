@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Fetal Death Occurrance</title>
+<shortdesc conref="generated/_FetalDeathOccurrance.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_FetalDeathOccurrance.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_FetalDeathOccurrance.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_FetalDeathOccurrance.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_FetalDeathOccurrance.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Fetal Death Occurrance example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.22"/>
+							<code code="73811-2" displayName="Estimated time of fetal death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="CD" code="634661000124111" displayName="Died during labor, after first assessment" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+						</observation>
+					</entry>]]>
+</codeblock>
+</body>
+</topic>

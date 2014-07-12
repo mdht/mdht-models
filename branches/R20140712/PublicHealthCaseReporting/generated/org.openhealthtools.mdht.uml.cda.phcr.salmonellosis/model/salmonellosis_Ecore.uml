@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_e5FgkII4EeG1NNkgO3XQ5g" name="salmonellosis">
+    <packageImport xmi:id="_fDvRYII4EeG1NNkgO3XQ5g">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_fDv4cII4EeG1NNkgO3XQ5g">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_fDv4cYI4EeG1NNkgO3XQ5g">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_fDv4coI4EeG1NNkgO3XQ5g">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_fDv4c4I4EeG1NNkgO3XQ5g">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_fDv4dII4EeG1NNkgO3XQ5g">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fAS70YI4EeG1NNkgO3XQ5g" name="SalmonellosisCaseReport">
+      <ownedRule xmi:id="_4FFAsQdHEeK9gYpImj-Uyw" name="PublicHealthCaseReportTemplateId" constrainedElement="_fAS70YI4EeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4FFAsgdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.9')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4Fq2kAdHEeK9gYpImj-Uyw" name="SalmonellosisCaseReportTitle" constrainedElement="_fAS70YI4EeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4Fq2kQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report -  Salmonellosis')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4F0nlQdHEeK9gYpImj-Uyw" name="SalmonellosisCaseReportSalmonellosisSocialHistorySection" constrainedElement="_fAS70YI4EeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4F0nlgdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRSocialHistorySection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4GRTgQdHEeK9gYpImj-Uyw" name="SalmonellosisCaseReportSalmonellosisRelevantDxTestsSection" constrainedElement="_fAS70YI4EeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4GRTggdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRRelevantDxTestsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4GRTiAdHEeK9gYpImj-Uyw" name="SalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection" constrainedElement="_fAS70YI4EeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4GRTiQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRClinicalInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fAVYEYI4EeG1NNkgO3XQ5g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_4GHigAdHEeK9gYpImj-Uyw" name="getSalmonellosisSocialHistorySection" isQuery="true" bodyCondition="_4GHigwdHEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_4GHigwdHEeK9gYpImj-Uyw" name="body" constrainedElement="_4GHigAdHEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_4GHihAdHEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisPHCRSocialHistorySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_4GHigQdHEeK9gYpImj-Uyw" type="_ECxkcIJDEeG1NNkgO3XQ5g" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4GHiggdHEeK9gYpImj-Uyw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_4GRTgwdHEeK9gYpImj-Uyw" name="getSalmonellosisRelevantDxTestsSection" isQuery="true" bodyCondition="_4GRThgdHEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_4GRThgdHEeK9gYpImj-Uyw" name="body" constrainedElement="_4GRTgwdHEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_4GRThwdHEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRRelevantDxTestsSection))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisPHCRRelevantDxTestsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_4GRThAdHEeK9gYpImj-Uyw" type="_VL9yoIJGEeG1NNkgO3XQ5g" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4GRThQdHEeK9gYpImj-Uyw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_4GRTigdHEeK9gYpImj-Uyw" name="getSalmonellosisPHCRClinicalInformationSection" isQuery="true" bodyCondition="_4GRTjQdHEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_4GRTjQdHEeK9gYpImj-Uyw" name="body" constrainedElement="_4GRTigdHEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_4GRTjgdHEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisPHCRClinicalInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_4GRTiwdHEeK9gYpImj-Uyw" type="_xjcQcIJEEeG1NNkgO3XQ5g" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4GRTjAdHEeK9gYpImj-Uyw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ECxkcIJDEeG1NNkgO3XQ5g" name="SalmonellosisPHCRSocialHistorySection">
+      <ownedRule xmi:id="_4F0nkgdHEeK9gYpImj-Uyw" name="SocialHistorySectionTemplateId" constrainedElement="_ECxkcIJDEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4F0nkwdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.36')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4HwhQAdHEeK9gYpImj-Uyw" name="SalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct" constrainedElement="_ECxkcIJDEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4HwhQQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4IgIJAdHEeK9gYpImj-Uyw" name="SalmonellosisPHCRSocialHistorySectionHIVStatusObservation" constrainedElement="_ECxkcIJDEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4IgIJQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(salmonellosis::HIVStatusObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_ECyLgIJDEeG1NNkgO3XQ5g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_4HwhQgdHEeK9gYpImj-Uyw" name="getSalmonellosisPossibleExposureLocationAndTypeActs" isQuery="true" bodyCondition="_4HwhRQdHEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_4HwhRQdHEeK9gYpImj-Uyw" name="body" constrainedElement="_4HwhQgdHEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_4HwhRgdHEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct)).oclAsType(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_4HwhQwdHEeK9gYpImj-Uyw" type="_L-PaIIhtEeG_q_uXE1KvCg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4HwhRAdHEeK9gYpImj-Uyw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_4IgIJgdHEeK9gYpImj-Uyw" name="getHIVStatusObservation" isQuery="true" bodyCondition="_4IgIKQdHEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_4IgIKQdHEeK9gYpImj-Uyw" name="body" constrainedElement="_4IgIJgdHEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_4IgIKgdHEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::HIVStatusObservation))->asSequence()->any(true).oclAsType(salmonellosis::HIVStatusObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_4IgIJwdHEeK9gYpImj-Uyw" type="_DYmowJIrEeG8oN-7sTL44Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4IgIKAdHEeK9gYpImj-Uyw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xjcQcIJEEeG1NNkgO3XQ5g" name="SalmonellosisPHCRClinicalInformationSection">
+      <ownedRule xmi:id="_4GHihgdHEeK9gYpImj-Uyw" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_xjcQcIJEEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4GHihwdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.37')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4HA6YAdHEeK9gYpImj-Uyw" name="SalmonellosisPHCRClinicalInformationSectionSalmonellosisCaseObservation" constrainedElement="_xjcQcIJEEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4HA6YQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(salmonellosis::SalmonellosisCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_xjcQcYJEEeG1NNkgO3XQ5g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_4HA6YgdHEeK9gYpImj-Uyw" name="getSalmonellosisCaseObservation" isQuery="true" bodyCondition="_4HA6ZQdHEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_4HA6ZQdHEeK9gYpImj-Uyw" name="body" constrainedElement="_4HA6YgdHEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_4HA6ZgdHEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisCaseObservation))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisCaseObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_4HA6YwdHEeK9gYpImj-Uyw" type="_hzaeAIhqEeG_q_uXE1KvCg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4HA6ZAdHEeK9gYpImj-Uyw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VL9yoIJGEeG1NNkgO3XQ5g" name="SalmonellosisPHCRRelevantDxTestsSection">
+      <ownedRule xmi:id="_4GHiiwdHEeK9gYpImj-Uyw" name="ResultsSectionTemplateId" constrainedElement="_VL9yoIJGEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4GHijAdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.38')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4IDcMAdHEeK9gYpImj-Uyw" name="SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultOrganizer" constrainedElement="_VL9yoIJGEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4IDcMQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(salmonellosis::SalmonellosisResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4INNMAdHEeK9gYpImj-Uyw" name="SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultObservation" constrainedElement="_VL9yoIJGEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4INNMQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_VL9yoYJGEeG1NNkgO3XQ5g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedOperation xmi:id="_4IDcMgdHEeK9gYpImj-Uyw" name="getSalmonellosisResultOrganizers" isQuery="true" bodyCondition="_4IDcNQdHEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_4IDcNQdHEeK9gYpImj-Uyw" name="body" constrainedElement="_4IDcMgdHEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_4IDcNgdHEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(salmonellosis::SalmonellosisResultOrganizer)).oclAsType(salmonellosis::SalmonellosisResultOrganizer)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_4IDcMwdHEeK9gYpImj-Uyw" type="_EYnv4I48EeGy-7mVPNtnag" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4IDcNAdHEeK9gYpImj-Uyw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_4INNMgdHEeK9gYpImj-Uyw" name="getSalmonellosisResultObservations" isQuery="true" bodyCondition="_4INNNQdHEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_4INNNQdHEeK9gYpImj-Uyw" name="body" constrainedElement="_4INNMgdHEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_4INNNgdHEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation)).oclAsType(salmonellosis::SalmonellosisResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_4INNMwdHEeK9gYpImj-Uyw" type="_eNmUYI49EeGy-7mVPNtnag" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4INNNAdHEeK9gYpImj-Uyw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hzaeAIhqEeG_q_uXE1KvCg" name="SalmonellosisCaseObservation">
+      <ownedRule xmi:id="_4GRTkQdHEeK9gYpImj-Uyw" name="ProblemObservationTemplateId" constrainedElement="_hzaeAIhqEeG_q_uXE1KvCg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4GRTkgdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.116')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4G3JYAdHEeK9gYpImj-Uyw" name="SalmonellosisCaseObservationTargetSiteCode" constrainedElement="_hzaeAIhqEeG_q_uXE1KvCg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4G3JYQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4Ip5IQdHEeK9gYpImj-Uyw" name="SalmonellosisCaseObservationSalmonellosisSignsAndSymptomsObservation" constrainedElement="_hzaeAIhqEeG_q_uXE1KvCg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4Ip5IgdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(salmonellosis::SalmonellosisSignsAndSymptomsObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_h2m78IhqEeG_q_uXE1KvCg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_4Ip5IwdHEeK9gYpImj-Uyw" name="getSalmonellosisSignsAndSymptomsObservations" isQuery="true" bodyCondition="_4Ip5JgdHEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_4Ip5JgdHEeK9gYpImj-Uyw" name="body" constrainedElement="_4Ip5IwdHEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_4Ip5JwdHEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisSignsAndSymptomsObservation)).oclAsType(salmonellosis::SalmonellosisSignsAndSymptomsObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_4Ip5JAdHEeK9gYpImj-Uyw" type="_c5NQAJI9EeG8oN-7sTL44Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Ip5JQdHEeK9gYpImj-Uyw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_L-PaIIhtEeG_q_uXE1KvCg" name="SalmonellosisPossibleExposureLocationAndTypeAct">
+      <ownedRule xmi:id="_4HA6ZwdHEeK9gYpImj-Uyw" name="SalmonellosisPossibleExposureLocationAndTypeActTemplateId" constrainedElement="_L-PaIIhtEeG_q_uXE1KvCg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4HA6aAdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.115')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4HKEUAdHEeK9gYpImj-Uyw" name="SalmonellosisPossibleExposureLocationAndTypeActCode" constrainedElement="_L-PaIIhtEeG_q_uXE1KvCg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4HKEUQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4HT1UAdHEeK9gYpImj-Uyw" name="SalmonellosisPossibleExposureLocationAndTypeActStatusCode" constrainedElement="_L-PaIIhtEeG_q_uXE1KvCg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4HT1UQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xD;&#xA;value.code = 'completed')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4HdmUAdHEeK9gYpImj-Uyw" name="SalmonellosisPossibleExposureLocationAndTypeActClassCode" constrainedElement="_L-PaIIhtEeG_q_uXE1KvCg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4HdmUQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>isDefined('classCode')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_L-PaIYhtEeG_q_uXE1KvCg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EYnv4I48EeGy-7mVPNtnag" name="SalmonellosisResultOrganizer">
+      <ownedRule xmi:id="_4HwhSQdHEeK9gYpImj-Uyw" name="ResultOrganizerTemplateId" constrainedElement="_EYnv4I48EeGy-7mVPNtnag">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4HwhSgdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.118')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4INNNwdHEeK9gYpImj-Uyw" name="SalmonellosisResultOrganizerSalmonellosisResultObservation" constrainedElement="_EYnv4I48EeGy-7mVPNtnag">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4INNOAdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_EYoW8I48EeGy-7mVPNtnag">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedOperation xmi:id="_4INNOQdHEeK9gYpImj-Uyw" name="getSalmonellosisResultObservations" isQuery="true" bodyCondition="_4INNPAdHEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_4INNPAdHEeK9gYpImj-Uyw" name="body" constrainedElement="_4INNOQdHEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_4INNPQdHEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation)).oclAsType(salmonellosis::SalmonellosisResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_4INNOgdHEeK9gYpImj-Uyw" type="_eNmUYI49EeGy-7mVPNtnag" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4INNOwdHEeK9gYpImj-Uyw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eNmUYI49EeGy-7mVPNtnag" name="SalmonellosisResultObservation">
+      <ownedRule xmi:id="_4IDcOQdHEeK9gYpImj-Uyw" name="ResultObservationTemplateId" constrainedElement="_eNmUYI49EeGy-7mVPNtnag">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4IDcOgdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.119')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_eNm7cI49EeGy-7mVPNtnag">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DYmowJIrEeG8oN-7sTL44Q" name="HIVStatusObservation">
+      <ownedRule xmi:id="_4INNPgdHEeK9gYpImj-Uyw" name="HIVStatusObservationTemplateId" constrainedElement="_DYmowJIrEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4INNPwdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.4')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4INNQQdHEeK9gYpImj-Uyw" name="HIVStatusObservationCode" constrainedElement="_DYmowJIrEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4INNQgdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4IWXIAdHEeK9gYpImj-Uyw" name="HIVStatusObservationStatusCode" constrainedElement="_DYmowJIrEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4IWXIQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xD;&#xA;value.code = 'completed')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4IgIIAdHEeK9gYpImj-Uyw" name="HIVStatusObservationClassCode" constrainedElement="_DYmowJIrEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4IgIIQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>isDefined('classCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4IgIIgdHEeK9gYpImj-Uyw" name="HIVStatusObservationMoodCode" constrainedElement="_DYmowJIrEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4IgIIwdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_DYmowZIrEeG8oN-7sTL44Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_c5NQAJI9EeG8oN-7sTL44Q" name="SalmonellosisSignsAndSymptomsObservation">
+      <ownedRule xmi:id="_4IgILAdHEeK9gYpImj-Uyw" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_c5NQAJI9EeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4IgILQdHEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.117')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_c5NQAZI9EeG8oN-7sTL44Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+    </packagedElement>
+    <profileApplication xmi:id="_e5FgmYI4EeG1NNkgO3XQ5g">
+      <eAnnotations xmi:id="_e5FgmoI4EeG1NNkgO3XQ5g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_e5Fgm4I4EeG1NNkgO3XQ5g">
+      <eAnnotations xmi:id="_e5FgnII4EeG1NNkgO3XQ5g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_4ELo0AdHEeK9gYpImj-Uyw">
+      <eAnnotations xmi:id="_4EVZ0AdHEeK9gYpImj-Uyw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_fAS70II4EeG1NNkgO3XQ5g" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="salmonellosis" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/salmonellosis" packageName="salmonellosis" prefix="Salmonellosis" base_Namespace="_e5FgkII4EeG1NNkgO3XQ5g"/>
+  <CDA:CDATemplate xmi:id="_fAVYEII4EeG1NNkgO3XQ5g" base_Class="_fAS70YI4EeG1NNkgO3XQ5g" templateId="2.16.840.1.113883.10.20.15.1.9" assigningAuthorityName=""/>
+  <CDA:TextValue xmi:id="_gWqtUIJCEeG1NNkgO3XQ5g"/>
+  <CDA:PropertyValidation xmi:id="_mwDw8IJFEeG1NNkgO3XQ5g">
+    <ruleId>CONF:599</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_mwEYAIJFEeG1NNkgO3XQ5g" value="Encounters">
+    <ruleId>CONF:598</ruleId>
+  </CDA:TextValue>
+  <CDA:ClassValidation xmi:id="_G1lJIIhrEeG_q_uXE1KvCg" severity="WARNING" base_Class="_hzaeAIhqEeG_q_uXE1KvCg"/>
+  <CDA:ClassValidation xmi:id="_OfEYIIhtEeG_q_uXE1KvCg" severity="WARNING" base_Class="_L-PaIIhtEeG_q_uXE1KvCg"/>
+  <CDA:ClassValidation xmi:id="_7SRRoIikEeGq1aD5yIKm9w"/>
+  <CDA:AssociationValidation xmi:id="_leK4cI4QEeGnn9Ym-bOQjQ" severity="WARNING"/>
+  <CDA:Entry xmi:id="_GID7wI4REeGnn9Ym-bOQjQ" severity="WARNING" typeCode="DRIV"/>
+  <CDA:PropertyValidation xmi:id="_sMigAI4zEeGy-7mVPNtnag">
+    <ruleId>CONF:1868</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_sMjuIY4zEeGy-7mVPNtnag" code="ASSERTION">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1871</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_sMljUI4zEeGy-7mVPNtnag" severity="WARNING">
+    <ruleId>CONF:1873</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_sMmKYI4zEeGy-7mVPNtnag" severity="INFO">
+    <ruleId>CONF:1870</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_sMmxcI4zEeGy-7mVPNtnag">
+    <ruleId>CONF:1869</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_sMomoI4zEeGy-7mVPNtnag" code="completed">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1872</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_3gE0UI40EeGy-7mVPNtnag" message="SHALL contain [1..1] time &#xA;SHALL contain [1..1] assignedAuthor, which&#xA;&#x9;SHALL contain [1..*] id&#xA;&#x9;    MAY contain [0..*] addr &#xA;&#x9;MAY contain [0..*] telecom &#xA;&#x9;MAY contain [0..1] assignedPerson, which if present&#xA;&#x9;&#x9;MAY contain [0..1] name &#xA;&#x9;MAY contain [0..1] representedOrganization" severity="WARNING"/>
+  <CDA:PropertyValidation xmi:id="_ibfVUI42EeGy-7mVPNtnag"/>
+  <CDA:PropertyValidation xmi:id="_NgTGEo48EeGy-7mVPNtnag">
+    <ruleId>CONF:1996</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_NgUUM448EeGy-7mVPNtnag" mandatory="true">
+    <ruleId>CONF:2001</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_NgUUN448EeGy-7mVPNtnag">
+    <ruleId>CONF-395</ruleId>
+    <ruleId>CONF:1998</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_NgU7Qo48EeGy-7mVPNtnag">
+    <ruleId>CONF-394</ruleId>
+    <ruleId>CONF:1997</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_NgViUY48EeGy-7mVPNtnag">
+    <ruleId>CONF-396</ruleId>
+    <ruleId>CONF:2000</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_NgWJYI48EeGy-7mVPNtnag" code="completed">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_NgX-ko48EeGy-7mVPNtnag" severity="WARNING">
+    <ruleId>CONF-399</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_rO_HEo49EeGy-7mVPNtnag"/>
+  <CDA:PropertyValidation xmi:id="_rO_uJI49EeGy-7mVPNtnag" severity="WARNING">
+    <ruleId>CONF-411</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rPAVM449EeGy-7mVPNtnag">
+    <ruleId>CONF-409</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rPA8Qo49EeGy-7mVPNtnag">
+    <ruleId>CONF-408</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rPA8RI49EeGy-7mVPNtnag">
+    <ruleId>CONF-410</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_rPBjUI49EeGy-7mVPNtnag" code="completed">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_rPCxcI49EeGy-7mVPNtnag">
+    <ruleId>CONF-416</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_ZxvXoI4-EeGy-7mVPNtnag" message="MAY contain [0..1] specimen, which if present&#xA;&#x9;SHALL contain [1..1] specimenRole, which &#xA;&#x9;&#x9;SHOULD contain [0..1] id&#xA;&#x9;&#x9;MAY contain [0..1] specimenPlayingEntity, which if present &#xA;&#x9;&#x9;&#x9;SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.946 Specimen DYNAMIC" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_6nE18I4-EeGy-7mVPNtnag" message="SHOULD contain [0..1] performer, which if present&#xA;&#x9;SHOULD contain [0..1] time &#xA;&#x9;SHALL contain [1..1] assignedEntity, which&#xA;&#x9;&#x9;SHALL contain [1..*] id" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_SHgaYI4_EeGy-7mVPNtnag" message="MAY contain [0..1] participant (CONF:790) (specialized branch), which if present&#xA;&#x9;SHALL contain [1..1] @typeCode=&quot;SBJ&quot; Subject (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC &#xA;&#x9;SHALL contain [1..1] participantRole, which&#xA;&#x9;&#x9;SHALL contain [1..1] @classCode=&quot;ISLT&quot; Isolate (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC &#xA;&#x9;&#x9;SHOULD contain [0..*] id &#xA;&#x9;&#x9;SHOULD contain [0..1] playingEntity, which if present&#xA;&#x9;&#x9;&#x9;SHOULD contain [0..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.1009 Microorganism DYNAMIC" severity="INFO"/>
+  <CDA:PropertyValidation xmi:id="_agAPAo5CEeGy-7mVPNtnag">
+    <ruleId>CONF-238</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_agA2F45CEeGy-7mVPNtnag">
+    <ruleId>CONF-240</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_agBdIo5CEeGy-7mVPNtnag">
+    <ruleId>CONF-239</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_agCENo5CEeGy-7mVPNtnag">
+    <ruleId>CONF-241</ruleId>
+    <ruleId>CONF-242</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_agCrQI5CEeGy-7mVPNtnag" code="completed" displayName="">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_IJ-dcI5DEeGy-7mVPNtnag"/>
+  <CDA:CodeSystemConstraint xmi:id="_KZC9EI5DEeGy-7mVPNtnag" code="ASSERTION">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_UwTEwI5DEeGy-7mVPNtnag" severity="WARNING"/>
+  <CDA:PropertyValidation xmi:id="_ZNg28I5DEeGy-7mVPNtnag"/>
+  <CDA:PropertyValidation xmi:id="_qCAu4I5DEeGy-7mVPNtnag"/>
+  <CDA:PropertyValidation xmi:id="_--NcAI5DEeGy-7mVPNtnag">
+    <ruleId>CONF:1940</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_--ODEI5DEeGy-7mVPNtnag" code="133877004" displayName="Therapeutic regimen">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1943</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_--OqIo5DEeGy-7mVPNtnag">
+    <ruleId>CONF:1941</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_--PRM45DEeGy-7mVPNtnag">
+    <ruleId>CONF:1942</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_--P4QI5DEeGy-7mVPNtnag">
+    <ruleId>CONF:1944</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_--P4QY5DEeGy-7mVPNtnag" code="completed">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_9D7EII5EEeGy-7mVPNtnag" message="SHALL contain [1..1] observation which&#xA;&#x9;SHALL contain [1..1] @classCode=&quot;OBS&quot; Observation (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) STATIC &#xA;&#x9;SHALL contain [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) STATIC &#xA;     observation/id SHALL be present, and SHALL equal the tuberculosis case observation's observation/id &#xA;&#x9;SHALL contain [1..1] code/@code=&quot;ASSERTION&quot; (CodeSystem: 2.16.840.1.113883.5.4 HL7ActCode) STATIC&#xA;&#x9;SHALL contain [1..1] value/@code, which SHALL be selected from ValueSet XX Disease Type (Salm) (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) DYNAMIC"/>
+  <CDA:PropertyValidation xmi:id="_MFm1IJIrEeG8oN-7sTL44Q"/>
+  <CDA:PropertyValidation xmi:id="_NmRWoJIrEeG8oN-7sTL44Q"/>
+  <CDA:PropertyValidation xmi:id="_SwKZ4JIxEeG8oN-7sTL44Q"/>
+  <CDA:CodeSystemConstraint xmi:id="_aiFeEJIxEeG8oN-7sTL44Q" code="413350009" displayName="Finding with explicit context">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_enaUsJIxEeG8oN-7sTL44Q"/>
+  <CDA:CodeSystemConstraint xmi:id="_j7NwoJIxEeG8oN-7sTL44Q" code="EVN" displayName="Event">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_o0X38JIxEeG8oN-7sTL44Q" code="completed">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_b2MU0JIyEeG8oN-7sTL44Q" message="SHALL contain [1..1] qualifier, which&#xA;&#x9;SHALL contain [1..1] name/@code=&quot;246090004&quot; Associated finding (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC&#x9;&#xA;&#x9;SHALL contain [1..1] value/@code=&quot;XXX&quot; Exposure to Silica dust"/>
+  <CDA:ConstraintValidation xmi:id="_cb50gJIzEeG8oN-7sTL44Q" message="code SHALL contain [1..1] qualifier, which&#xA;&#x9;SHALL contain [1..1] name=&quot;408729009&quot; Finding context (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:765)&#xA;&#x9;SHALL contain [1..1] value=&quot;410590009&quot; Known possible (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:766)"/>
+  <CDA:ConstraintValidation xmi:id="_Lb-TMJI0EeG8oN-7sTL44Q" message="SHALL contain [1..*] participant, which &#xA;&#x9;SHALL contain [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC &#xA;&#x9;SHOULD contain [0..1] time (CONF:860)&#xA;&#x9;SHALL contain [1..1] participantRole, which&#xA;&#x9;&#x9;SHALL contain [1..1] @classCode=&quot;LOCE&quot; Located entity (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC &#xA;&#x9;&#x9;SHOULD contain [0..*] addr &#xA;&#x9;&#x9;SHOULD contain [0..*] telecom&#xA;&#x9;&#x9;SHOULD contain [0..1] playingEntity, which if present&#xA;&#x9;&#x9;&#x9;SHALL contain [1..1] @classCode=&quot;PLC&quot; Place (CodeSystem: 2.16.840.1.113883.5.41 HL7EntityClass) STATIC&#xA;&#x9;&#x9;&#x9;SHALL contain [1..1] code/@code, which &#xA;&#x9;&#x9;&#x9;&#x9;SHALL be selected from ValueSet 2.16.840.1.114222.4.11.3209 Exposure Location DYNAMIC"/>
+  <CDA:Entry xmi:id="_SRCiAJI-EeG8oN-7sTL44Q" typeCode="DRIV"/>
+  <CDA:AssociationValidation xmi:id="_PDnekJJQEeG8oN-7sTL44Q" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_YJs5UJJQEeG8oN-7sTL44Q" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_qdR-YJJQEeG8oN-7sTL44Q" message="SalmonellosisTreatmentGivenConsumable&#xA;SHALL contain [1..1] manufacturedProduct, which&#xA;&#x9;SHALL contain [1..1] manufacturedMaterial, which&#xA;&#x9;&#x9;SHALL contain [1..1] code/@code, which &#xA;&#x9;&#x9;&#x9;SHALL be selected from ValueSet XXX Medication Treatment (salmonellosis) DYNAMIC (CONF:1347), which&#xA;&#x9;&#x9;&#x9;&#x9;SHOULD contain [0..1] originalText (CONF:1348)"/>
+  <CDA:PropertyValidation xmi:id="_FQGEIpJSEeG8oN-7sTL44Q">
+    <ruleId>CONF-238</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_FQGrMJJSEeG8oN-7sTL44Q">
+    <ruleId>CONF-239</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_3yMtkJYgEeGwC60EDMdk2g"/>
+  <CDA:ValueSetConstraint xmi:id="_9rk7wJYgEeGwC60EDMdk2g">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.model/model/salmonellosis-vocab.uml#_CGdFYJIgEeG8oN-7sTL44Q"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_4aeVIKQvEeGRePMoDoYb3A" base_Class="_ECxkcIJDEeG1NNkgO3XQ5g" templateId="2.16.840.1.113883.10.20.15.2.36"/>
+  <CDA:CDATemplate xmi:id="_6592YKQvEeGRePMoDoYb3A" base_Class="_xjcQcIJEEeG1NNkgO3XQ5g" templateId="2.16.840.1.113883.10.20.15.2.37"/>
+  <CDA:CDATemplate xmi:id="__KXUkKQvEeGRePMoDoYb3A" base_Class="_VL9yoIJGEeG1NNkgO3XQ5g" templateId="2.16.840.1.113883.10.20.15.2.38"/>
+  <CDA:CDATemplate xmi:id="_BWFlQKQwEeGRePMoDoYb3A" base_Class="_L-PaIIhtEeG_q_uXE1KvCg" templateId="2.16.840.1.113883.10.20.15.3.115"/>
+  <CDA:CDATemplate xmi:id="_HG6UYKQwEeGRePMoDoYb3A" templateId="2.16.840.1.113883.10.20.15.3.81"/>
+  <CDA:CDATemplate xmi:id="_Lu6aQKQwEeGRePMoDoYb3A" base_Class="_hzaeAIhqEeG_q_uXE1KvCg" templateId="2.16.840.1.113883.10.20.15.3.116"/>
+  <CDA:CDATemplate xmi:id="_Oxs10KQwEeGRePMoDoYb3A" base_Class="_c5NQAJI9EeG8oN-7sTL44Q" templateId="2.16.840.1.113883.10.20.15.3.117"/>
+  <CDA:CDATemplate xmi:id="_QsP28KQwEeGRePMoDoYb3A" base_Class="_EYnv4I48EeGy-7mVPNtnag" templateId="2.16.840.1.113883.10.20.15.3.118"/>
+  <CDA:CDATemplate xmi:id="_TNEN4KQwEeGRePMoDoYb3A" base_Class="_eNmUYI49EeGy-7mVPNtnag" templateId="2.16.840.1.113883.10.20.15.3.119"/>
+  <CDA:CDATemplate xmi:id="_f_jB4KQwEeGRePMoDoYb3A" base_Class="_DYmowJIrEeG8oN-7sTL44Q" templateId="2.16.840.1.113883.10.20.15.3.4"/>
+  <CDA:CodeSystemConstraint xmi:id="_7nGacKQ1EeGRePMoDoYb3A" code="102445001" displayName="Exposure to toxic dust, occupational">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <Ecore:EPackage xmi:id="_4EVZ0QdHEeK9gYpImj-Uyw" base_Package="_e5FgkII4EeG1NNkgO3XQ5g" packageName="salmonellosis" nsPrefix="salmonellosis" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/salmonellosis" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="Salmonellosis">
+    <annotation>http://www.openhealthtools.org/mdht/uml initializers='org.openhealthtools.mdht.uml.cda.phcr.salmonellosis'</annotation>
+  </Ecore:EPackage>
+  <CDA:ConformsTo xmi:id="_4FFAsAdHEeK9gYpImj-Uyw" base_Generalization="_fAVYEYI4EeG1NNkgO3XQ5g"/>
+  <Ecore:EClass xmi:id="_4FFAswdHEeK9gYpImj-Uyw" base_Class="_fAS70YI4EeG1NNkgO3XQ5g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisCaseReportTemplateId SalmonellosisCaseReportTitle SalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection' templateId.root='2.16.840.1.113883.10.20.15.1.9' title.mixed='Public Health Case Report -  Salmonellosis' constraints.validation.warning='SalmonellosisCaseReportSalmonellosisSocialHistorySection SalmonellosisCaseReportSalmonellosisRelevantDxTestsSection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_4F0nkAdHEeK9gYpImj-Uyw" base_Generalization="_ECyLgIJDEeG1NNkgO3XQ5g"/>
+  <Ecore:EClass xmi:id="_4F0nlAdHEeK9gYpImj-Uyw" base_Class="_ECxkcIJDEeG1NNkgO3XQ5g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisPHCRSocialHistorySectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.36' constraints.validation.warning='SalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct SalmonellosisPHCRSocialHistorySectionHIVStatusObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_4GHihQdHEeK9gYpImj-Uyw" base_Generalization="_xjcQcYJEEeG1NNkgO3XQ5g"/>
+  <Ecore:EClass xmi:id="_4GHiiAdHEeK9gYpImj-Uyw" base_Class="_xjcQcIJEEeG1NNkgO3XQ5g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisPHCRClinicalInformationSectionTemplateId SalmonellosisPHCRClinicalInformationSectionSalmonellosisCaseObservation' templateId.root='2.16.840.1.113883.10.20.15.2.37'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_4GHiiQdHEeK9gYpImj-Uyw" base_Generalization="_VL9yoYJGEeG1NNkgO3XQ5g"/>
+  <Ecore:EClass xmi:id="_4GRTgAdHEeK9gYpImj-Uyw" base_Class="_VL9yoIJGEeG1NNkgO3XQ5g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisPHCRRelevantDxTestsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.38' constraints.validation.info='SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultOrganizer' constraints.validation.warning='SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_4GRTjwdHEeK9gYpImj-Uyw" base_Generalization="_h2m78IhqEeG_q_uXE1KvCg"/>
+  <Ecore:EClass xmi:id="_4GadcAdHEeK9gYpImj-Uyw" base_Class="_hzaeAIhqEeG_q_uXE1KvCg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisCaseObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.116' constraints.validation.warning='SalmonellosisCaseObservationTargetSiteCode SalmonellosisCaseObservationSalmonellosisSignsAndSymptomsObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_4HA6aQdHEeK9gYpImj-Uyw" base_Class="_L-PaIIhtEeG_q_uXE1KvCg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisPossibleExposureLocationAndTypeActTemplateId SalmonellosisPossibleExposureLocationAndTypeActCode SalmonellosisPossibleExposureLocationAndTypeActStatusCode SalmonellosisPossibleExposureLocationAndTypeActClassCode' templateId.root='2.16.840.1.113883.10.20.15.3.115' code.code='413350009' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Finding with explicit context' statusCode.code='completed' moodCode='EVN' classCode='ACT'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_4HwhRwdHEeK9gYpImj-Uyw" base_Generalization="_EYoW8I48EeGy-7mVPNtnag"/>
+  <Ecore:EClass xmi:id="_4HwhSwdHEeK9gYpImj-Uyw" base_Class="_EYnv4I48EeGy-7mVPNtnag">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisResultOrganizerTemplateId SalmonellosisResultOrganizerSalmonellosisResultObservation' templateId.root='2.16.840.1.113883.10.20.15.3.118'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_4IDcNwdHEeK9gYpImj-Uyw" base_Generalization="_eNm7cI49EeGy-7mVPNtnag"/>
+  <Ecore:EClass xmi:id="_4IDcOwdHEeK9gYpImj-Uyw" base_Class="_eNmUYI49EeGy-7mVPNtnag">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisResultObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.119'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_4INNQAdHEeK9gYpImj-Uyw" base_Class="_DYmowJIrEeG8oN-7sTL44Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HIVStatusObservationTemplateId HIVStatusObservationCode HIVStatusObservationStatusCode HIVStatusObservationClassCode HIVStatusObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.15.3.4' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' statusCode.code='completed' classCode='OBS' moodCode='EVN'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_4IgIKwdHEeK9gYpImj-Uyw" base_Generalization="_c5NQAZI9EeG8oN-7sTL44Q"/>
+  <Ecore:EClass xmi:id="_4Ip5IAdHEeK9gYpImj-Uyw" base_Class="_c5NQAJI9EeG8oN-7sTL44Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisSignsAndSymptomsObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.117'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

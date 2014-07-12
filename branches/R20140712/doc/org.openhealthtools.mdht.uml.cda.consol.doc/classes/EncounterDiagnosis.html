@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Encounter Diagnosis"/>
+<meta name="abstract" content="[Act: templateId 2.16.840.1.113883.10.20.22.4.80]"/>
+<meta name="description" content="[Act: templateId 2.16.840.1.113883.10.20.22.4.80]"/>
+<meta name="DC.Coverage" content="Act"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Encounter Diagnosis</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1"><span class="ph">Encounter Diagnosis</span></h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[Act: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.80</tt>]</p>
+
+		
+		<div class="section">
+<div class="p"><p class="lines"><em class="ph i">This template wraps relevant problems or diagnoses at the close of a visit or that need to be followed after the visit. If the encounter is associated with a Hospital Discharge, the Hospital Discharge Diagnosis must be used. This entry requires at least one Problem Observation entry.</em></p>
+</div>
+
+</div>
+
+		
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:14895, CONF:14896 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.80"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:14889)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:14890)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:14891)<tt class="ph tt"><strong class="ph b">/@code</strong>="29308-4" </tt><em class="ph i">Diagnosis</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:14897)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:14892, CONF:14893, CONF:14898)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.4]">Problem Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.4</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+		
+		<p class="p">
+		</p>
+
+		<p class="p">
+			<strong class="ph b"><span class="ph">Encounter Diagnosis</span> example</strong>
+		</p>
+		
+		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="2032880711"/&gt;
+  &lt;code code="1849063684"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="1691871746"/&gt;
+      &lt;code code="2131468015"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="302919471"/&gt;
+          &lt;code code="1018737162"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="223231490"/&gt;
+          &lt;code code="672294964"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="1311738189"/&gt;
+          &lt;code code="1105070956"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+&lt;/act&gt;</pre>
+
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Birth and Fetal Death Financial Class (NCHS)</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.7163"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Birth and Fetal Death Financial Class (NCHS) - 2.16.840.1.114222.4.11.7163</entry></row>
+<row><entry>Code System</entry><entry>Source of Payment Typology (PHDSC) - 2.16.840.1.113883.3.221.5</entry></row>
+<row><entry>Version</entry><entry>December 1, 2013</entry></row>
+<row><entry>Description</entry><entry>A list of different types of payment that may be used to support the expense of labor and delivery.  The value set is drawn from the Source of payment typology created by the Public Health Data Consortium
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>5</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Private Health Insurance</entry></row>
+<row><entry>2</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Medicaid</entry></row>
+<row><entry>81</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Self Pay</entry></row>
+<row><entry>33</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Indian Health Service or Tribe</entry></row>
+<row><entry>38</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Other Government (Federal, State, Local not specified)</entry></row>
+<row><entry>311</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>TRICARE (CHAMPUS)</entry></row>
+<row><entry>99</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Other</entry></row>
+<row><entry>ZZZ</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Unknown</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

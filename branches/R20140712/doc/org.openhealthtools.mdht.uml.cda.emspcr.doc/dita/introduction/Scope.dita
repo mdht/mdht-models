@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Scope</title>
+	<body>
+		<p>The NEMSIS data specification content has been developed over the past 20 years by a variety of 
+		partners. Professional organizations contributing to the content include American Ambulance Association (AAA), 
+		American College of Emergency Physicians (ACEP), American College of Surgeons: Committee on Trauma (ACS-COT),
+		American Heart Association (AHA), Emergency Medical Services Outcomes Project (EMSOP), International 
+		Association of Fire Chiefs (IAFC), International Association of Fire Fighters (IAFF), National Academy 
+		of Emergency Medical Dispatch (NAEMD), National Association of Emergency Medical Technicians (NAEMT), 
+		National Association of EMS Physicians (NAEMSP), National Association of State EMS Officers (NASEMSO), 
+		National EMS Management Association ( NEMSMA, formerly NAEMSQP), and the National Emergency Number 
+		Association (NENA). Supporting federal partners include National Highway Traffic Safety Administration 
+		(NHTSA), Health Resources and Services Administration (HRSA), Emergency Medical Services for Children 
+		Program (EMSC), EMSC National Resource Center (NRC), EMSC National EMSC Data Analysis Resource Center 
+		(NEDARC), Centers for Disease Control and Prevention (CDC), Federal Emergency Management Administration 
+		(FEMA), and HRSA's Office of Rural Health Policy (ORHP). NEMSIS has been adopted in 46 states and 
+		territories and implemented by scores of software providers.</p>
+		 
+		<p> The NEMSIS data set supports many uses, including the transfer of patient care reports from
+			EMS crews to emergency departments, the prepopulation of hospital electronic health
+			records, identification of trauma registry candidates, and preparation of data for
+			submission to NEMSIS for research. The current specification is designed for the first
+			of these use cases.</p>
+		<p> Implementers may generate the same patient care reports that they generate today and
+			attach them under the CDA header in “level one” documents, or they may populate the structured 
+			sections as specified herein. </p>
+<p>A separate effort to develop an implementation guide is the Emergency Transfer of Care specified 
+by Integrating the Healthcare Enterprise (IHE) as the level two template 1.3.6.1.4.1.19376.1.5.3.1.1.19.1. 
+These templates may be harmonized in the future; at this point, they are distinct.</p>
+	</body>
+</topic>

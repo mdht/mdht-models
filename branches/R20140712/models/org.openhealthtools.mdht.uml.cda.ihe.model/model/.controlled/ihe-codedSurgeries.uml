@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Class xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_9fsJYMftEd6VjLXh4DcWSg" name="CodedSurgeriesSection">
+  <ownedComment xmi:id="_JeA8kMfuEd6VjLXh4DcWSg" annotatedElement="_9fsJYMftEd6VjLXh4DcWSg">
+    <body>The list of surgeries section shall include entries for procedures and references to procedure reports when known as&#xD;
+described in the Entry Content Modules.</body>
+  </ownedComment>
+  <generalization xmi:id="_CZnswMfuEd6VjLXh4DcWSg">
+    <general xmi:type="uml:Class" href="ihe-surgeries.uml#_jgutAMftEd6VjLXh4DcWSg"/>
+  </generalization>
+  <ownedAttribute xmi:id="_9F6NgFWKEeCrQoPO8cZUSQ" name="externalReference">
+    <type xmi:type="uml:Class" href="ihe-codedResults.uml#_hBLMcBj6EeCf9aMNaCAtDQ"/>
+    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LknSwFWLEeCrQoPO8cZUSQ" value="1"/>
+    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LknSwVWLEeCrQoPO8cZUSQ"/>
+    <association href="../ihe.uml#_9F60kFWKEeCrQoPO8cZUSQ"/>
+  </ownedAttribute>
+  <ownedAttribute xmi:id="__ORoMFWKEeCrQoPO8cZUSQ" name="procedureEntryProcedureActivityProcedure">
+    <type xmi:type="uml:Class" href="../ihe.uml#_6yfdEDuNEd-B8KE6Jx0UNQ"/>
+    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MehWQFWLEeCrQoPO8cZUSQ" value="*"/>
+    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MehWQVWLEeCrQoPO8cZUSQ" value="1"/>
+    <association href="../ihe.uml#__OSPQFWKEeCrQoPO8cZUSQ"/>
+  </ownedAttribute>
+</uml:Class>

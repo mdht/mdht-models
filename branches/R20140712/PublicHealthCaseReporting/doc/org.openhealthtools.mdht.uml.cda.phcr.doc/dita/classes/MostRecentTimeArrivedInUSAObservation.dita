@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Most Recent Time Arrived In USA Observation</title>
+<shortdesc conref="generated/_MostRecentTimeArrivedInUSAObservation.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_MostRecentTimeArrivedInUSAObservation.dita#classId/prolog"></prolog>
+<body>
+<p>This clinical statement represents the date that the subject most recently arrived into
+the US.</p>
+<section conref="generated/_MostRecentTimeArrivedInUSAObservation.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_MostRecentTimeArrivedInUSAObservation.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_MostRecentTimeArrivedInUSAObservation.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_MostRecentTimeArrivedInUSAObservation.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>Most Recent Time Arrived In USA Observation example</b></p>
+<!-- generated instance example follows -->
+<codeblock conref="generated/_MostRecentTimeArrivedInUSAObservation.dita#classId/example">
+</codeblock>
+</body>
+</topic>

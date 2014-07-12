@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.phcr.streppneumo/src"
+    editDirectory="/org.openhealthtools.mdht.uml.cda.phcr.streppneumo.edit/src" editorDirectory="/org.openhealthtools.mdht.uml.cda.phcr.streppneumo.editor/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.phcr.streppneumo" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" modelName="streppneumo_Ecore" modelPluginClass="StrepPneumoPlugin"
+    editPluginClass="org.openhealthtools.mdht.uml.cda.phcr.streppneumo.provider.streppneumo_EcoreEditPlugin"
+    editorPluginClass="org.openhealthtools.mdht.uml.cda.phcr.streppneumo.presentation.streppneumo_EcoreEditorPlugin"
+    testSuiteClass="org.openhealthtools.mdht.uml.cda.phcr.streppneumo.tests.streppneumo_EcoreAllTests"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    editPluginID="org.openhealthtools.mdht.uml.phcr.cda.streppneumo.edit" editorPluginID="org.openhealthtools.mdht.uml.cda.phcr.streppneumo.editor"
+    runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.genmodel#//ccd platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.genmodel#//phcr platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>streppneumo_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="StrepPneumo" basePackage="org.openhealthtools.mdht.uml.cda.phcr"
+      resource="XML" disposableProviderFactory="true" ecorePackage="streppneumo.ecore#/"
+      operationsPackage="org.openhealthtools.mdht.uml.cda.phcr.streppneumo.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoCaseReport">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoPHCRClinicalInformationSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoPHCRClinicalInformationSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoPHCRClinicalInformationSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoPHCRTreatmentInformationSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoPHCRTreatmentInformationSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoPHCRTreatmentInformationSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoSocialHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoSocialHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoSocialHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoImmunizationSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoImmunizationSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseReport/StrepPneumoCaseReportStrepPneumoImmunizationSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseReport/getStrepPneumoPHCRClinicalInformationSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseReport/getStrepPneumoPHCRTreatmentInformationSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseReport/getStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseReport/getStrepPneumoSocialHistorySections"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseReport/getStrepPneumoImmunizationSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoPHCRClinicalInformationSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoPHCRClinicalInformationSection/StrepPneumoPHCRClinicalInformationSectionStrepPneumoCaseObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPHCRClinicalInformationSection/StrepPneumoPHCRClinicalInformationSectionStrepPneumoCaseObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPHCRClinicalInformationSection/StrepPneumoPHCRClinicalInformationSectionStrepPneumoCaseObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoPHCRClinicalInformationSection/getStrepPneumoCaseObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoCaseObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseObservation/StrepPneumoCaseObservationStrepPneumoSignsAndSymptomsObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseObservation/StrepPneumoCaseObservationStrepPneumoSignsAndSymptomsObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoCaseObservation/StrepPneumoCaseObservationStrepPneumoSignsAndSymptomsObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoCaseObservation/getStrepPneumoSignsAndSymptomsObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoSignsAndSymptomsObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoSignsAndSymptomsObservation/StrepPneumoSignsAndSymptomsObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoSignsAndSymptomsObservation/StrepPneumoSignsAndSymptomsObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoSignsAndSymptomsObservation/StrepPneumoSignsAndSymptomsObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoPHCRTreatmentInformationSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoPHCRTreatmentInformationSection/StrepPneumoPHCRTreatmentInformationSectionStrepPneumoTherapeuticRegimenAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPHCRTreatmentInformationSection/StrepPneumoPHCRTreatmentInformationSectionStrepPneumoTherapeuticRegimenAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPHCRTreatmentInformationSection/StrepPneumoPHCRTreatmentInformationSectionStrepPneumoTherapeuticRegimenAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoPHCRTreatmentInformationSection/getStrepPneumoTherapeuticRegimenAct"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoTherapeuticRegimenAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoTherapeuticRegimenAct/StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentGivenSubstanceAdministration">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoTherapeuticRegimenAct/StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentGivenSubstanceAdministration/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoTherapeuticRegimenAct/StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentGivenSubstanceAdministration/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoTherapeuticRegimenAct/StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentNotGivenSubstanceAdministration">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoTherapeuticRegimenAct/StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentNotGivenSubstanceAdministration/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoTherapeuticRegimenAct/StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentNotGivenSubstanceAdministration/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoTherapeuticRegimenAct/getStrepPneumoTreatmentGivenSubstanceAdministrations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoTherapeuticRegimenAct/getStrepPneumoTreatmentNotGivenSubstanceAdministrations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoTreatmentGivenSubstanceAdministration"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoTreatmentNotGivenSubstanceAdministration"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection/StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection/StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection/StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection/StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection/StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection/StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultOrganizer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection/getStrepPneumoResultObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection/getStrepPneumoResultOrganizers"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoResultObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoResultOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoResultOrganizer/StrepPneumoResultOrganizerStrepPneumoResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoResultOrganizer/StrepPneumoResultOrganizerStrepPneumoResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoResultOrganizer/StrepPneumoResultOrganizerStrepPneumoResultObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoResultOrganizer/getStrepPneumoResultObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoSocialHistorySection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoSocialHistorySection/StrepPneumoSocialHistorySectionStrepPneumoPossibleExposureLocationAndTypeAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoSocialHistorySection/StrepPneumoSocialHistorySectionStrepPneumoPossibleExposureLocationAndTypeAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoSocialHistorySection/StrepPneumoSocialHistorySectionStrepPneumoPossibleExposureLocationAndTypeAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoSocialHistorySection/getStrepPneumoPossibleExposureLocationAndTypeActs"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoPossibleExposureLocationAct/StrepPneumoPossibleExposureLocationActStatusCodeP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoImmunizationSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoImmunizationSection/StrepPneumoImmunizationSectionStrepPneumoImmunizationActivity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoImmunizationSection/StrepPneumoImmunizationSectionStrepPneumoImmunizationActivity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoImmunizationSection/StrepPneumoImmunizationSectionStrepPneumoImmunizationActivity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoImmunizationSection/getStrepPneumoImmunizationActivities"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoImmunizationActivity"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="streppneumo.ecore#//StrepPneumoImmunizationProduct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="streppneumo.ecore#//StrepPneumoImmunizationProduct/StrepPneumoImmunizationProductTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoImmunizationProduct/StrepPneumoImmunizationProductTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="streppneumo.ecore#//StrepPneumoImmunizationProduct/StrepPneumoImmunizationProductTemplateId/context"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

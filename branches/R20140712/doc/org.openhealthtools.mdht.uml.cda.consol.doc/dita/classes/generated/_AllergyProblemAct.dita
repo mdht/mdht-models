@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Allergy Problem Act - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.30</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.30"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This clinical statement act represents a concern relating to a patient's allergies or adverse events. A concern is a term used when referring to patient's problems that are related to one another. Observations of problems or other clinical statements captured at a point in time are wrapped in a Allergy Problem Act, or "Concern" act, which represents the ongoing process tracked over time. This outer Allergy Problem Act (representing the "Concern") can contain nested problem observations or other nested clinical statements relevant to the allergy concern.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7471, CONF:10489 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.30"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7469)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7470)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7472)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48765-2" </tt><i>Allergies, adverse reactions, alerts</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7477)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProblemActStatusCode.dita">ProblemActStatusCode</xref> 2.16.840.1.113883.11.20.9.19</tt><b> STATIC</b> 2011-09-09 (CONF:7485)
+<ul><li><p><lines><i><p>
+The statusCode associated with any concern must be one of the following values:
+</p>
+<p>
+<b>active</b>: A concern that is still being tracked.
+<b>suspended</b>: A concern that is active, but which may be set aside. For example, this value might be used to suspend concern
+about a patient problem after some period of remission, but before assumption that the concern has been resolved.
+<b>aborted</b>: A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved.
+This value might be used to mark a concern as being aborted after a patient leaves care against medical advice.
+<b>completed</b>:
+The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for
+historical purposes.
+</p></i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7498)
+<ul><li><p><lines><i>The effectiveTime element records the starting and ending times during which the concern was active.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:7509, CONF:7915, CONF:14925)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../AllergyObservation.dita">Allergy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.7</tt>)</li></ol></li>
+<li>If statusCode = "active" Active, then effectiveTime <b>SHALL</b> contain [1..1] low (CONF:7504). (CONF:7504)</li>
+<li>If statusCode = "completed" Completed, then effectiveTime <b>SHALL</b> contain  high [1..1] (CONF:10085). (CONF:10085)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7469)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7470)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7472)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48765-2" </tt><i>Allergies, adverse reactions, alerts</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7477)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProblemActStatusCode.dita">ProblemActStatusCode</xref> 2.16.840.1.113883.11.20.9.19</tt><b> STATIC</b> 2011-09-09 (CONF:7485)
+<ul><li><p><lines><i><p>
+The statusCode associated with any concern must be one of the following values:
+</p>
+<p>
+<b>active</b>: A concern that is still being tracked.
+<b>suspended</b>: A concern that is active, but which may be set aside. For example, this value might be used to suspend concern
+about a patient problem after some period of remission, but before assumption that the concern has been resolved.
+<b>aborted</b>: A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved.
+This value might be used to mark a concern as being aborted after a patient leaves care against medical advice.
+<b>completed</b>:
+The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for
+historical purposes.
+</p></i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7498)
+<ul><li><p><lines><i>The effectiveTime element records the starting and ending times during which the concern was active.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:7509, CONF:7915, CONF:14925)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../AllergyObservation.dita">Allergy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.7</tt>)</li></ol></li>
+<li>If statusCode = "active" Active, then effectiveTime <b>SHALL</b> contain [1..1] low (CONF:7504). (CONF:7504)</li>
+<li>If statusCode = "completed" Completed, then effectiveTime <b>SHALL</b> contain  high [1..1] (CONF:10085). (CONF:10085)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AllergyProblemAct</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:7469</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:7470</entry><entry> APT</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7477</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:7498</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:7472</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7485</entry><entry> </entry></row> 
+<row><entry>allergyObservation</entry><entry>allergyObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AllergyObservation</entry><entry>CONF:7509CONF:7915CONF:14925</entry><entry> </entry></row> 
+<row><entry>allergyProblemAct</entry><entry>allergyProblemAct</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AllergyProblemAct</entry><entry>CONF:7531CONF:7532</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<act xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="998361317"/>
+  <code code="1831912191"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <entryRelationship>
+    <observation>
+      <id root="MDHT" extension="1037874438"/>
+      <code code="2016130599"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <participant typeCode="CSM">
+        <participantRole classCode="MANU"/>
+      </participant>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1739782535"/>
+          <code code="538904509"/>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <procedure/>
+          </entryRelationship>
+          <entryRelationship>
+            <substanceAdministration/>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="311588566"/>
+          <code code="251348003"/>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="298863746"/>
+          <code code="2060836331"/>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+</act>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Allergy Problem Act</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.30</tt>]</p>
+</body>
+</topic>

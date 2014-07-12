@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcc="urn:ihe:pcc:hl7v3"
+    xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2" xmlns:sdtc="urn:hl7-org:sdtc"
+    xsi:schemaLocation="urn:hl7-org:v3 http://xreg2.nist.gov:8080/hitspValidation/schema/cdar2/infrastructure/cda/CDA.xsd">
+    <realmCode code="US"/>
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+    <templateId root="2.16.840.1.113883.10" extension="IMPL_CDAR2_LEVEL1"/>
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.2"/>
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.18.1.2"/>
+    <templateId root="2.16.840.1.113883.10.20.3"/>
+    <id extension="sid" root="2.16.840.1.113883.19.4"/>
+    <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <title representation="TXT" mediaType="text/plain">Sample Immunization Detail</title>
+    <effectiveTime value="20071204121212+0500"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+    <languageCode code="en-US"/>
+    <recordTarget>
+        <patientRole>
+            <id extension="996-756-495" root="2.16.840.1.113883.19.5"/>
+            <addr/>
+            <telecom nullFlavor="UNK"/>
+            <patient>
+                <name>
+                    <given>Henry</given>
+                    <family>Levin</family>
+                    <suffix>the 7th</suffix>
+                </name>
+                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                <birthTime value="19320924"/>
+                <maritalStatusCode code="S"/>
+            </patient>
+            <providerOrganization>
+                <id root="2.16.840.1.113883.19.5"/>
+                <name>Good Health Clinic</name>
+                <telecom nullFlavor="UNK"/>
+                <addr/>
+            </providerOrganization>
+        </patientRole>
+    </recordTarget>
+    <author>
+        <time value="20000407130000+0500"/>
+        <assignedAuthor>
+            <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+            <addr/>
+            <telecom nullFlavor="UNK"/>
+            <assignedPerson>
+                <name>
+                    <prefix>Dr.</prefix>
+                    <given>Robert</given>
+                    <family>Dolin</family>
+                </name>
+            </assignedPerson>
+            <representedOrganization>
+                <id root="2.16.840.1.113883.19.5"/>
+                <name>Good Health Clinic</name>
+                <telecom nullFlavor="UNK"/>
+                <addr/>
+            </representedOrganization>
+        </assignedAuthor>
+    </author>
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id/>
+                <name nullFlavor="ASKU"/>
+                <telecom nullFlavor="ASKU"/>
+                <addr nullFlavor="ASKU"/>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <documentationOf>
+        <serviceEvent classCode="PCPR">
+            <effectiveTime>
+                <low value="19320924"/>
+                <high value="20000407"/>
+            </effectiveTime>
+            <performer typeCode="PRF">
+                <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
+                <time>
+                    <low value="1990"/>
+                    <high value="20000407"/>
+                </time>
+                <assignedEntity>
+                    <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+                    <addr/>
+                    <telecom nullFlavor="UNK"/>
+                    <assignedPerson>
+                        <name>
+                            <prefix>Dr.</prefix>
+                            <given>Robert</given>
+                            <family>Dolin</family>
+                        </name>
+                    </assignedPerson>
+                    <representedOrganization>
+                        <id root="2.16.840.1.113883.19.5"/>
+                        <name>Good Health Clinic</name>
+                        <telecom nullFlavor="UNK"/>
+                        <addr/>
+                    </representedOrganization>
+                </assignedEntity>
+            </performer>
+        </serviceEvent>
+    </documentationOf>
+    <component>
+        <structuredBody>
+
+<!-- Immunizations Section -->
+
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.1.6"/>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.23"/>
+                    <code code="11369-6" displayName="HISTORY OF IMMUNIZATIONS"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Immunizations</title>
+                    <text>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Vaccine</th>
+                                    <th>Admin Site</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Adverse Reactions(s)</th>
+                                    <th>Source of Information</th>
+                                </tr>
+                                <tr>
+                                    <td>Influenza</td>
+                                    <td>Left arm</td>
+                                    <td>2007.11.10</td>
+                                    <td>?</td>
+                                    <td>None</td>
+                                    <td>Schnucks Pharmacy</td>
+                                </tr>
+                                <tr>
+                                    <td>Tetanus</td>
+                                    <td>Left arm</td>
+                                    <td>2005.08.10</td>
+                                    <td>?</td>
+                                    <td>None</td>
+                                    <td>Eastern University Health Services</td>
+                                </tr>
+                                <tr>
+                                    <td>DTaP (Diphtheria, Tetanus &amp; Acellular Pertussis Vaccine)</td>
+                                    <td>Arm</td>
+                                    <td>19800115</td>
+                                    <td>?</td>
+                                    <td>None</td>
+                                    <td>Pediatrician Office: Dr. Flanders</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry>
+                        <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="true">
+                            <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                            <id/>
+                            <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4"
+                                codeSystemName="ActCode"/>
+                            <text>
+                                <reference value="#ignore"/>
+                            </text>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="20071010"/>
+                            <routeCode code="ignore" displayName="ignore"/>
+                            
+                            <approachSiteCode code="ignore" codeSystem="ignore">
+                                <originalText>
+                                    <reference value="#ignore"/>
+                                </originalText>
+                            </approachSiteCode>
+                            <doseQuantity>
+                                <low value="1"/>
+                                <high value="2"/>
+                            </doseQuantity>
+                            <consumable>
+                                <manufacturedProduct>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                                    <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                                    <manufacturedMaterial>
+                                        <code code="code" codeSystem="Mine">
+                                            <originalText>
+                                                <reference value="#something"/>
+                                            </originalText>
+                                        </code>
+                                        <name>This is my name</name>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                            
+                            <entryRelationship typeCode="REFR" inversionInd="false">
+                                <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+                                <sequenceNumber value="1"/>
+                                <supply classCode="SPLY" moodCode="INT">
+                                    <templateId root="2.16.840.1.113883.10.20.1.34"/>
+                                    <id/>
+                                    <statusCode code="ignore"/>
+                                    <repeatNumber value="1"/>
+                                    <quantity unit="1" value="1"/>
+                                    <performer typeCode="PRF">
+                                        <time value="20071010"/>
+                                        <assignedEntity>
+                                            <id root="ignore" extension="ignore"/>
+                                            <addr/>
+                                            <telecom nullFlavor="UNK"/>
+                                            <assignedPerson>
+                                                <name/>
+                                            </assignedPerson>
+                                        </assignedEntity>
+                                        
+                                    </performer>
+                                    <entryRelationship typeCode="SUBJ">
+                                        <act classCode="ACT" moodCode="INT">
+                                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+                                            <templateId root="2.16.840.1.113883.10.20.1.43"/>
+                                            <code code="FINSTRUCT"
+                                                codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
+                                                codeSystemName="IHEActCode"/>
+                                            <text>
+                                                <reference value="#ignore"/>
+                                            </text>
+                                            <statusCode code="completed"/>
+                                        </act>
+                                        
+                                        
+                                    </entryRelationship>
+                                    
+                                </supply>
+                            </entryRelationship>
+                            
+                        </substanceAdministration>
+                        
+                    </entry>
+                    
+                </section>
+            </component>
+
+        </structuredBody>
+    </component>
+
+</ClinicalDocument>

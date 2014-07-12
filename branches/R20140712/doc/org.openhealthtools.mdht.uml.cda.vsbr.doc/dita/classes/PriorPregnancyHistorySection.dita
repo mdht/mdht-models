@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Prior Pregnancy History Section</title>
+<shortdesc conref="generated/_PriorPregnancyHistorySection.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_PriorPregnancyHistorySection.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_PriorPregnancyHistorySection.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_PriorPregnancyHistorySection.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_PriorPregnancyHistorySection.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_PriorPregnancyHistorySection.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Prior Pregnancy History Section example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.26.12"/>
+					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="57073-9" displayName="Prenatal events"/>
+					<text>
+						...
+					</text>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.20"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.33"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.36"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.38"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.40"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.21"/>
+							...
+						</observation>
+					</entry>
+				</section>
+			</component>]]>
+</codeblock>
+</body>
+</topic>

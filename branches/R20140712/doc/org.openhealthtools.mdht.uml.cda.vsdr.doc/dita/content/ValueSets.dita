@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>VALUE SETS</title>
+	<body>
+		<p>The following tables summarize the value sets used in this Implementation Guide.</p>
+		
+		<p>The vocabulary content within this implementation guide is based on the value sets identified
+		 in the US national standard. States/jurisdictions can introduce other values such as "hospice" 
+		 and translate to "Other" prior to reporting.</p>
+	</body>
+</topic>

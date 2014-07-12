@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Implementation Guide Templates</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Implementation Guide Templates - (OID not specified)</entry></row>
+<row><entry>Description</entry><entry>A list of the templates that are used within the implementation guide.   Note, the codes used are imaginary and are expected to be replaced with code values from a widely used code system.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>ACN</entry><entry></entry><entry>Abnormal Condition of the Newborn</entry></row>
+<row><entry>APS</entry><entry></entry><entry>Apgar Score</entry></row>
+<row><entry>AP</entry><entry></entry><entry>Autopsy Performance</entry></row>
+<row><entry>BO</entry><entry></entry><entry>Birth Order</entry></row>
+<row><entry>BWD</entry><entry></entry><entry>Body weight at delivery</entry></row>
+<row><entry>CLD</entry><entry></entry><entry>Characteristic of Labor and Delivery</entry></row>
+<row><entry>COAN</entry><entry></entry><entry>Congenital Anomaly</entry></row>
+<row><entry>DLLB</entry><entry></entry><entry>Date of Last Live Birth</entry></row>
+<row><entry>EG</entry><entry></entry><entry>Estimate of Gestation</entry></row>
+<row><entry>FDO</entry><entry></entry><entry>Fetal Death Occurance</entry></row>
+<row><entry>FDT</entry><entry></entry><entry>Fetal Delivery Time</entry></row>
+<row><entry>HGT</entry><entry></entry><entry>Height</entry></row>
+<row><entry>HBP</entry><entry></entry><entry>Home Birth Plan</entry></row>
+<row><entry>IB</entry><entry></entry><entry>Infant Breastfed</entry></row>
+<row><entry>IL</entry><entry></entry><entry>Infant Living</entry></row>
+<row><entry>INT</entry><entry></entry><entry>Infant Transfer</entry></row>
+<row><entry>IP</entry><entry></entry><entry>Infection Present</entry></row>
+<row><entry>LDI</entry><entry></entry><entry>Labor and Delivery Information</entry></row>
+<row><entry>LMPD</entry><entry></entry><entry>Last Menstrual Period Date</entry></row>
+<row><entry>MM</entry><entry></entry><entry>Maternal Morbidity</entry></row>
+<row><entry>MT</entry><entry></entry><entry>Maternal Transfer</entry></row>
+<row><entry>NBSL</entry><entry></entry><entry>Number of Births Still Living</entry></row>
+<row><entry>NIBA</entry><entry></entry><entry>Number of Infants Born Alive</entry></row>
+<row><entry>NLD</entry><entry></entry><entry>Number of Live Births now Dead</entry></row>
+<row><entry>OP</entry><entry></entry><entry>Obstetric Procedure</entry></row>
+<row><entry>OL</entry><entry></entry><entry>Onset of Labor</entry></row>
+<row><entry>OPO</entry><entry></entry><entry>Other Pregnancy Outcome</entry></row>
+<row><entry>PL</entry><entry></entry><entry>Plurality</entry></row>
+<row><entry>RF</entry><entry></entry><entry>Pregnancy Risk Factor</entry></row>
+<row><entry>PNC</entry><entry></entry><entry>PreNatal Care</entry></row>
+<row><entry>PPBW</entry><entry></entry><entry>PrePregnancy Body Weight</entry></row>
+<row><entry>WGT</entry><entry></entry><entry>Weight</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

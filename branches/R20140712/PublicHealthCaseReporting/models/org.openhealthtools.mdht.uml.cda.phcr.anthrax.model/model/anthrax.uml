@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_eWLToEhXEeGyYa7NPQtntA" name="anthrax">
+    <packageImport xmi:id="_eYtDMEhXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_eYtDMUhXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_eYtDMkhXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_eYtDM0hXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_eYtDNEhXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_eYtDNUhXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eYGmQUhXEeGyYa7NPQtntA" name="AnthraxCaseReport">
+      <generalization xmi:id="_eYGmQ0hXEeGyYa7NPQtntA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_Vyx7wGf_EeGcR5CQkyNBsg" name="title" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PUytkKCHEeGzToMRDovxkA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PUytkaCHEeGzToMRDovxkA" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Bn1soEAJEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_eLQHkHjfEeG0i6R1ZtiJBQ" name="anthraxPhcrSocialHistorySection" type="_v4IaUGPpEeGGv9UUQ3_AWw" association="_eLQHknjfEeG0i6R1ZtiJBQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eLQHkXjfEeG0i6R1ZtiJBQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_gvBE0HjfEeG0i6R1ZtiJBQ" name="anthraxPhcrClinicalInformationSection" type="_9rizAGM9EeGGv9UUQ3_AWw" association="_gvBE0njfEeG0i6R1ZtiJBQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p9jQ8HjfEeG0i6R1ZtiJBQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p9jQ8XjfEeG0i6R1ZtiJBQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_nuy6YHjfEeG0i6R1ZtiJBQ" name="anthraxPhcrTreatmentInformationSection" type="_GWalQGPqEeGGv9UUQ3_AWw" association="_nuy6YnjfEeG0i6R1ZtiJBQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nuy6YXjfEeG0i6R1ZtiJBQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CRMqoIQbEeGRypoUd5okyA" name="anthraxPhcrRelevantDxTestsSection" type="_0rqQMGPoEeGGv9UUQ3_AWw" association="_CRMqooQbEeGRypoUd5okyA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CRMqoYQbEeGRypoUd5okyA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9rizAGM9EeGGv9UUQ3_AWw" name="AnthraxPhcrClinicalInformationSection">
+      <generalization xmi:id="_9rmdYGM9EeGGv9UUQ3_AWw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_ObInUHjrEeG0i6R1ZtiJBQ" name="anthraxCaseObservation" type="_PIsscGSpEeGFY81qWTDU9g" association="_ObInUnjrEeG0i6R1ZtiJBQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P2oU8HjrEeG0i6R1ZtiJBQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P2oU8XjrEeG0i6R1ZtiJBQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0rqQMGPoEeGGv9UUQ3_AWw" name="AnthraxPhcrRelevantDxTestsSection">
+      <generalization xmi:id="_sok8YIQaEeGRypoUd5okyA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedAttribute xmi:id="_AOUjUHjrEeG0i6R1ZtiJBQ" name="anthraxResultOrganizer" type="_jVNpMGgDEeGcR5CQkyNBsg" association="_AOUjUnjrEeG0i6R1ZtiJBQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DJLK4HjrEeG0i6R1ZtiJBQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DJLK4XjrEeG0i6R1ZtiJBQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_BtYiUHjrEeG0i6R1ZtiJBQ" name="anthraxResultObservation" type="_LKRIIGgDEeGcR5CQkyNBsg" association="_BtYiUnjrEeG0i6R1ZtiJBQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DiNV8HjrEeG0i6R1ZtiJBQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DiNV8XjrEeG0i6R1ZtiJBQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_v4IaUGPpEeGGv9UUQ3_AWw" name="AnthraxPhcrSocialHistorySection">
+      <generalization xmi:id="_v4IaUWPpEeGGv9UUQ3_AWw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_ycd9AHjqEeG0i6R1ZtiJBQ" name="anthraxPossibleExpossureLocationAndTypeAct" type="_h8I9AGh9EeGcR5CQkyNBsg" association="_ycd9AnjqEeG0i6R1ZtiJBQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Du1wHjqEeG0i6R1ZtiJBQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0Du1wXjqEeG0i6R1ZtiJBQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GWalQGPqEeGGv9UUQ3_AWw" name="AnthraxPhcrTreatmentInformationSection">
+      <generalization xmi:id="_GWalQWPqEeGGv9UUQ3_AWw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_pCwboHjqEeG0i6R1ZtiJBQ" name="anthraxTherapeuticRegimenAct" type="_jN9RkGh6EeGcR5CQkyNBsg" association="_pCwbonjqEeG0i6R1ZtiJBQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sYJDEHjqEeG0i6R1ZtiJBQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sYJDEXjqEeG0i6R1ZtiJBQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PIsscGSpEeGFY81qWTDU9g" name="AnthraxCaseObservation">
+      <generalization xmi:id="_PIvvwGSpEeGFY81qWTDU9g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_jyaQQGe7EeGcR5CQkyNBsg" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jyaQQWe7EeGcR5CQkyNBsg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jyaQQme7EeGcR5CQkyNBsg" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_0_CcKdTCEeC18pmrrt-Mbg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_WFFbQHjrEeG0i6R1ZtiJBQ" name="anthraxSignsAndSymptomsObservation" type="_51RKEGSzEeGFY81qWTDU9g" association="_WFFbQnjrEeG0i6R1ZtiJBQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W8hZkHjrEeG0i6R1ZtiJBQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W8hZkXjrEeG0i6R1ZtiJBQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_51RKEGSzEeGFY81qWTDU9g" name="AnthraxSignsAndSymptomsObservation">
+      <ownedRule xmi:id="_gWK8cGfHEeGcR5CQkyNBsg" name="InversionIndTrue" constrainedElement="_51RKEGSzEeGFY81qWTDU9g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYckYGfHEeGcR5CQkyNBsg">
+          <language>Analysis</language>
+          <body>SHALL contain [1..1] @inversionInd=&quot;true&quot; (CONF:1322) Page 75</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_51RxIGSzEeGFY81qWTDU9g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_tO_NgGe9EeGcR5CQkyNBsg" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tO_NgWe9EeGcR5CQkyNBsg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tO_Ngme9EeGcR5CQkyNBsg" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_BZzEBdQQEeC4C5jYVS2kfQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LKRIIGgDEeGcR5CQkyNBsg" name="AnthraxResultObservation">
+      <generalization xmi:id="_LKa5IGgDEeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_RNOwIGgDEeGcR5CQkyNBsg" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_H1HqAK6xEd6_ioDelDcPPg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jVNpMGgDEeGcR5CQkyNBsg" name="AnthraxResultOrganizer">
+      <generalization xmi:id="_jVNpMWgDEeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_kj64AGgDEeGcR5CQkyNBsg" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_UbVD8K6uEd6_ioDelDcPPg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_wE70IDL9EeGXS8s8x7j2Fg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G3SmIHkREeG0i6R1ZtiJBQ" name="anthraxResultObservation" type="_LKRIIGgDEeGcR5CQkyNBsg" association="_G3SmInkREeG0i6R1ZtiJBQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zfoCoIPsEeGRypoUd5okyA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zfoCoYPsEeGRypoUd5okyA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jN9RkGh6EeGcR5CQkyNBsg" name="AnthraxTherapeuticRegimenAct">
+      <ownedRule xmi:id="_FolSsGh7EeGcR5CQkyNBsg" name="AnthraxTherapeuticRegimenAct" constrainedElement="_jN9RkGh6EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dgdt0Gh7EeGcR5CQkyNBsg">
+          <language>Analysis</language>
+          <body>PHCR IG - pg 122 - the value of the observation needs to use the value set called Disease Type Anthrax</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_jN9RkWh6EeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2p558NSrEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_SX9esHjqEeG0i6R1ZtiJBQ" name="anthraxTreatmentGivenSubstanceAdministration" type="_oH9Q8Gh7EeGcR5CQkyNBsg" association="_SYHPsXjqEeG0i6R1ZtiJBQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WZ1ZsH3BEeGJy90-OjG4-A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WZ1ZsX3BEeGJy90-OjG4-A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_UFL1gHjqEeG0i6R1ZtiJBQ" name="anthraxTreatmentNotGivenSubstanceAdministration" type="_MquqUGh8EeGcR5CQkyNBsg" association="_UFL1gnjqEeG0i6R1ZtiJBQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wi_UsHjqEeG0i6R1ZtiJBQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wi_UsXjqEeG0i6R1ZtiJBQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oH9Q8Gh7EeGcR5CQkyNBsg" name="AnthraxTreatmentGivenSubstanceAdministration">
+      <ownedRule xmi:id="_ZELBQJoWEeGEN6HcFUBXBQ" name="Consumable" constrainedElement="_oH9Q8Gh7EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Z7cAcJoWEeGEN6HcFUBXBQ">
+          <language>Analysis</language>
+          <body>manufacturedProduct/code/@code shall come from the MedicationTreatment(Anthrax) value set</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_oH9Q8Wh7EeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XOKZ4NStEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MquqUGh8EeGcR5CQkyNBsg" name="AnthraxTreatmentNotGivenSubstanceAdministration">
+      <ownedRule xmi:id="_CorEkJoWEeGEN6HcFUBXBQ" name="Consumable" constrainedElement="_MquqUGh8EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_P7LccJoWEeGEN6HcFUBXBQ">
+          <language>Analysis</language>
+          <body>manufacturedProduct/code/@code shall come from the MedicationTreatment(Anthrax) value set</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_MquqUWh8EeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_NbgssNSwEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_h8I9AGh9EeGcR5CQkyNBsg" name="AnthraxPossibleExpossureLocationAndTypeAct">
+      <generalization xmi:id="_h8I9AWh9EeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_QMut4G0QEeGzmo_M42Lv-g" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_ia7jsG0QEeGzmo_M42Lv-g" value="ACT"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QMvU8G0QEeGzmo_M42Lv-g" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_wY0lcG0REeGzmo_M42Lv-g" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QMut4W0QEeGzmo_M42Lv-g" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QMvU8W0QEeGzmo_M42Lv-g" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QMvU8m0QEeGzmo_M42Lv-g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QMvU820QEeGzmo_M42Lv-g"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_eLQHknjfEeG0i6R1ZtiJBQ" memberEnd="_eLQHkHjfEeG0i6R1ZtiJBQ _eLQHk3jfEeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_eLQHk3jfEeG0i6R1ZtiJBQ" type="_eYGmQUhXEeGyYa7NPQtntA" association="_eLQHknjfEeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gvBE0njfEeG0i6R1ZtiJBQ" memberEnd="_gvBE0HjfEeG0i6R1ZtiJBQ _gvBE03jfEeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_gvBE03jfEeG0i6R1ZtiJBQ" type="_eYGmQUhXEeGyYa7NPQtntA" association="_gvBE0njfEeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nuy6YnjfEeG0i6R1ZtiJBQ" memberEnd="_nuy6YHjfEeG0i6R1ZtiJBQ _nuy6Y3jfEeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_nuy6Y3jfEeG0i6R1ZtiJBQ" type="_eYGmQUhXEeGyYa7NPQtntA" association="_nuy6YnjfEeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SYHPsXjqEeG0i6R1ZtiJBQ" memberEnd="_SX9esHjqEeG0i6R1ZtiJBQ _SYHPsnjqEeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_SYHPsnjqEeG0i6R1ZtiJBQ" type="_jN9RkGh6EeGcR5CQkyNBsg" association="_SYHPsXjqEeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UFL1gnjqEeG0i6R1ZtiJBQ" memberEnd="_UFL1gHjqEeG0i6R1ZtiJBQ _UFL1g3jqEeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_UFL1g3jqEeG0i6R1ZtiJBQ" type="_jN9RkGh6EeGcR5CQkyNBsg" association="_UFL1gnjqEeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pCwbonjqEeG0i6R1ZtiJBQ" memberEnd="_pCwboHjqEeG0i6R1ZtiJBQ _pCwbo3jqEeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_pCwbo3jqEeG0i6R1ZtiJBQ" type="_GWalQGPqEeGGv9UUQ3_AWw" association="_pCwbonjqEeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ycd9AnjqEeG0i6R1ZtiJBQ" memberEnd="_ycd9AHjqEeG0i6R1ZtiJBQ _ycd9A3jqEeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_ycd9A3jqEeG0i6R1ZtiJBQ" type="_v4IaUGPpEeGGv9UUQ3_AWw" association="_ycd9AnjqEeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_AOUjUnjrEeG0i6R1ZtiJBQ" memberEnd="_AOUjUHjrEeG0i6R1ZtiJBQ _AOUjU3jrEeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_AOUjU3jrEeG0i6R1ZtiJBQ" type="_0rqQMGPoEeGGv9UUQ3_AWw" association="_AOUjUnjrEeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_BtYiUnjrEeG0i6R1ZtiJBQ" memberEnd="_BtYiUHjrEeG0i6R1ZtiJBQ _BtYiU3jrEeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_BtYiU3jrEeG0i6R1ZtiJBQ" type="_0rqQMGPoEeGGv9UUQ3_AWw" association="_BtYiUnjrEeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ObInUnjrEeG0i6R1ZtiJBQ" memberEnd="_ObInUHjrEeG0i6R1ZtiJBQ _ObInU3jrEeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_ObInU3jrEeG0i6R1ZtiJBQ" type="_9rizAGM9EeGGv9UUQ3_AWw" association="_ObInUnjrEeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WFFbQnjrEeG0i6R1ZtiJBQ" memberEnd="_WFFbQHjrEeG0i6R1ZtiJBQ _WFFbQ3jrEeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_WFFbQ3jrEeG0i6R1ZtiJBQ" type="_PIsscGSpEeGFY81qWTDU9g" association="_WFFbQnjrEeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G3SmInkREeG0i6R1ZtiJBQ" memberEnd="_G3SmIHkREeG0i6R1ZtiJBQ _G3SmI3kREeG0i6R1ZtiJBQ">
+      <ownedEnd xmi:id="_G3SmI3kREeG0i6R1ZtiJBQ" type="_jVNpMGgDEeGcR5CQkyNBsg" association="_G3SmInkREeG0i6R1ZtiJBQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CRMqooQbEeGRypoUd5okyA" memberEnd="_CRMqoIQbEeGRypoUd5okyA _CRMqo4QbEeGRypoUd5okyA">
+      <ownedEnd xmi:id="_CRMqo4QbEeGRypoUd5okyA" type="_eYGmQUhXEeGyYa7NPQtntA" association="_CRMqooQbEeGRypoUd5okyA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_eWLTqUhXEeGyYa7NPQtntA">
+      <eAnnotations xmi:id="_eWLTqkhXEeGyYa7NPQtntA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_eWLTq0hXEeGyYa7NPQtntA">
+      <eAnnotations xmi:id="_eWLTrEhXEeGyYa7NPQtntA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_eYGmQEhXEeGyYa7NPQtntA" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="anthrax" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/anthrax" packageName="anthrax" prefix="anthrax" base_Namespace="_eWLToEhXEeGyYa7NPQtntA"/>
+  <CDA:CDATemplate xmi:id="_eYGmQkhXEeGyYa7NPQtntA" base_Class="_eYGmQUhXEeGyYa7NPQtntA" templateId="2.16.840.1.113883.10.20.15.1.3" assigningAuthorityName="HL7">
+    <ruleId>CONF:1533</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_cwFCEGM-EeGGv9UUQ3_AWw" code="55752-0" displayName="Clinical Information">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:540</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_cwJTgGM-EeGGv9UUQ3_AWw">
+    <ruleId>CONF:542</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_cpPq8GPmEeGGv9UUQ3_AWw" value="Clinical Information">
+    <ruleId>CONF:541</ruleId>
+  </CDA:TextValue>
+  <CDA:ClassValidation xmi:id="_74nRAGPmEeGGv9UUQ3_AWw" base_Class="_9rizAGM9EeGGv9UUQ3_AWw"/>
+  <CDA:CDATemplate xmi:id="_KYh3MGPnEeGGv9UUQ3_AWw" base_Class="_9rizAGM9EeGGv9UUQ3_AWw" templateId="2.16.840.1.113883.10.20.15.2.15"/>
+  <CDA:CodeSystemConstraint xmi:id="_AduwEGPpEeGGv9UUQ3_AWw" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-389</ruleId>
+    <ruleId>CONF:735</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_AdyacGPpEeGGv9UUQ3_AWw">
+    <ruleId>CONF-388</ruleId>
+    <ruleId>CONF:737</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_AdzBgGPpEeGGv9UUQ3_AWw" value="Relevant diagnostic tests and/or laboratory data">
+    <ruleId>CONF-391</ruleId>
+    <ruleId>CONF:736</ruleId>
+  </CDA:TextValue>
+  <CDA:CDATemplate xmi:id="_RzaCcGPpEeGGv9UUQ3_AWw" base_Class="_0rqQMGPoEeGGv9UUQ3_AWw" templateId="2.16.840.1.113883.10.20.15.2.16"/>
+  <CDA:CodeSystemConstraint xmi:id="_zIuoY2PpEeGGv9UUQ3_AWw" code="29762-2" displayName="Social History">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1894</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_zI0H82PpEeGGv9UUQ3_AWw">
+    <ruleId>CONF:1896</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_zI1WEGPpEeGGv9UUQ3_AWw" value="Social History">
+    <ruleId>CONF:1895</ruleId>
+  </CDA:TextValue>
+  <CDA:CDATemplate xmi:id="_2UbIUGPpEeGGv9UUQ3_AWw" base_Class="_v4IaUGPpEeGGv9UUQ3_AWw" templateId="2.16.840.1.113883.10.20.15.2.17"/>
+  <CDA:CodeSystemConstraint xmi:id="_NXDWcGPqEeGGv9UUQ3_AWw" code="55753-8" displayName="Treatment Information">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:663</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_NXFys2PqEeGGv9UUQ3_AWw">
+    <ruleId>CONF:665</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_NXHA0GPqEeGGv9UUQ3_AWw" value="Treatment Information">
+    <ruleId>CONF:664</ruleId>
+  </CDA:TextValue>
+  <CDA:CDATemplate xmi:id="_k1n5sGPqEeGGv9UUQ3_AWw" base_Class="_GWalQGPqEeGGv9UUQ3_AWw" templateId="2.16.840.1.113883.10.20.15.2.14"/>
+  <CDA:CodeSystemConstraint xmi:id="_DnOwQGPsEeGGv9UUQ3_AWw" code="55751-2" displayName="Public Health Case Report">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_RYE_EGPuEeGGv9UUQ3_AWw" severity="WARNING">
+    <ruleId>CONF:1536</ruleId>
+    <ruleId>CONF:1537</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_XWvV4GPuEeGGv9UUQ3_AWw">
+    <ruleId>CONF:1538</ruleId>
+    <ruleId>CONF:1539</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_fQan4GPuEeGGv9UUQ3_AWw" severity="WARNING">
+    <ruleId>CONF:1540</ruleId>
+    <ruleId>CONF:1541</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_m7rDYGPuEeGGv9UUQ3_AWw" severity="WARNING">
+    <ruleId>CONF:1542</ruleId>
+    <ruleId>CONF:1543</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_zABmEGPuEeGGv9UUQ3_AWw" severity="WARNING">
+    <ruleId>CONF:1544</ruleId>
+    <ruleId>CONF:1545</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConformsTo xmi:id="_MT1OkGSdEeGBmZYSG584sw" base_Generalization="_eYGmQ0hXEeGyYa7NPQtntA"/>
+  <CDA:PropertyValidation xmi:id="_mcgxMGSpEeGFY81qWTDU9g">
+    <ruleId>CONF:1868</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_mcimYGSpEeGFY81qWTDU9g" code="ASSERTION">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1871</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_mckbkmSpEeGFY81qWTDU9g">
+    <ruleId>CONF:1869</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_mcmQwGSpEeGFY81qWTDU9g" code="completed">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1872</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_mcoF82SpEeGFY81qWTDU9g">
+    <ruleId>CONF:1874</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="__OeO8GSpEeGFY81qWTDU9g" base_Class="_PIsscGSpEeGFY81qWTDU9g" templateId="2.16.840.1.113883.10.20.15.3.36"/>
+  <CDA:PropertyValidation xmi:id="_Ws450GStEeGFY81qWTDU9g" severity="WARNING">
+    <ruleId>CONF:1873</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_ARuQIGS0EeGFY81qWTDU9g" base_Class="_51RKEGSzEeGFY81qWTDU9g" templateId="2.16.840.1.113883.10.20.15.3.35"/>
+  <CDA:ValueSetConstraint xmi:id="_m56zwGe7EeGcR5CQkyNBsg" base_Property="_jyaQQGe7EeGcR5CQkyNBsg">
+    <reference href="anthrax-vocab.uml#_aQfhbWf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF:1303</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ActRelationship xmi:id="_aogakGe9EeGcR5CQkyNBsg"/>
+  <CDA:Entry xmi:id="_eHXuIGe9EeGcR5CQkyNBsg" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_qT2coGe-EeGcR5CQkyNBsg"/>
+  <CDA:ValueSetConstraint xmi:id="_taAf0Ge_EeGcR5CQkyNBsg" base_Property="_tO_NgGe9EeGcR5CQkyNBsg">
+    <reference href="anthrax-vocab.uml#_fZIPIGf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF:1294</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:EntryRelationship xmi:id="_DFZKAGfHEeGcR5CQkyNBsg" severity="WARNING" typeCode="MFST"/>
+  <CDA:TextValue xmi:id="_nwzAgGf_EeGcR5CQkyNBsg" base_Property="_Vyx7wGf_EeGcR5CQkyNBsg" value="Public Health Case Report - Anthrax">
+    <ruleId>CONF:1534</ruleId>
+  </CDA:TextValue>
+  <CDA:ValueSetConstraint xmi:id="_U8KgAGgDEeGcR5CQkyNBsg" base_Property="_RNOwIGgDEeGcR5CQkyNBsg">
+    <reference href="anthrax-vocab.uml#_MOfmQmf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF-412</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_lrx38GgDEeGcR5CQkyNBsg" base_Property="_kj64AGgDEeGcR5CQkyNBsg">
+    <reference href="anthrax-vocab.uml#_MOfmQmf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF-397</ruleId>
+    <ruleId>CONF:1999</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_yDxZ0Gh7EeGcR5CQkyNBsg">
+    <reference href="anthrax-vocab.uml#_dEghIGf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF:1347</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_WCx-0Gh8EeGcR5CQkyNBsg">
+    <reference href="anthrax-vocab.uml#_dEghIGf4EeGcR5CQkyNBsg"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_n9ZKQ2h8EeGcR5CQkyNBsg">
+    <ruleId>CONF:1933</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_jQNbUG0PEeGzmo_M42Lv-g" base_Class="_h8I9AGh9EeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.41">
+    <ruleId>CONF:1523</ruleId>
+  </CDA:CDATemplate>
+  <CDA:Entry xmi:id="_uVDBwG0PEeGzmo_M42Lv-g" typeCode="DRIV">
+    <ruleId>CONF:1521</ruleId>
+    <ruleId>CONF:1522</ruleId>
+  </CDA:Entry>
+  <CDA:PropertyValidation xmi:id="_XLWF0G0QEeGzmo_M42Lv-g" base_Property="_QMut4G0QEeGzmo_M42Lv-g">
+    <ruleId>CONF:1447</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_uwGJkG0QEeGzmo_M42Lv-g" code="413350009" displayName="Finding with explicit context" base_Property="_QMut4W0QEeGzmo_M42Lv-g">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1451</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_Ujy_UG0REeGzmo_M42Lv-g" base_Property="_QMvU8G0QEeGzmo_M42Lv-g">
+    <ruleId>CONF:1448</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_5FUbgG0REeGzmo_M42Lv-g" code="completed" base_Property="_QMvU8W0QEeGzmo_M42Lv-g">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1450</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:EntryRelationship xmi:id="_Lyq2AG0TEeGzmo_M42Lv-g" severity="WARNING" typeCode="COMP"/>
+  <CDA:CDATemplate xmi:id="_Ve9VIG0TEeGzmo_M42Lv-g" base_Class="_oH9Q8Gh7EeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.38"/>
+  <CDA:EntryRelationship xmi:id="_0WmXsG0TEeGzmo_M42Lv-g" severity="INFO" typeCode="COMP">
+    <ruleId>CONF:1777</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:Entry xmi:id="_Pe_E0G0VEeGzmo_M42Lv-g" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_65JMwG0VEeGzmo_M42Lv-g" severity="WARNING" typeCode="DRIV">
+    <ruleId>CONF:1530</ruleId>
+    <ruleId>CONF1531</ruleId>
+  </CDA:Entry>
+  <CDA:Entry xmi:id="_AvAM4G0WEeGzmo_M42Lv-g" severity="INFO" typeCode="DRIV">
+    <ruleId>CONF:1441</ruleId>
+  </CDA:Entry>
+  <CDA:CDATemplate xmi:id="_-aeB0G0-EeG6npjfLK1zBQ" base_Class="_jVNpMGgDEeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.40"/>
+  <CDA:CDATemplate xmi:id="_GTOGwG0_EeG6npjfLK1zBQ" base_Class="_LKRIIGgDEeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.39"/>
+  <CDA:CDATemplate xmi:id="_wKeEwHSCEeGrlOWGH_gMIg" base_Class="_jN9RkGh6EeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.37"/>
+  <CDA:CDATemplate xmi:id="_IEl7kHSDEeGrlOWGH_gMIg" base_Class="_MquqUGh8EeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.56"/>
+  <CDA:AssociationValidation xmi:id="_fHwMEHjfEeG0i6R1ZtiJBQ" severity="WARNING" base_Association="_eLQHknjfEeG0i6R1ZtiJBQ">
+    <ruleId>CONF:1536</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_ihAm4HjfEeG0i6R1ZtiJBQ" base_Association="_gvBE0njfEeG0i6R1ZtiJBQ">
+    <ruleId>CONF:1538</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_oxtI4HjfEeG0i6R1ZtiJBQ" severity="WARNING" base_Association="_nuy6YnjfEeG0i6R1ZtiJBQ">
+    <ruleId>CONF:1540</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_umOsQHjfEeG0i6R1ZtiJBQ" severity="WARNING">
+    <ruleId>CONF:1544</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:Entry xmi:id="_tU8CgHjqEeG0i6R1ZtiJBQ" base_Association="_pCwbonjqEeG0i6R1ZtiJBQ" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_7MTa8HjqEeG0i6R1ZtiJBQ" severity="INFO" base_Association="_ycd9AnjqEeG0i6R1ZtiJBQ" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_Jm-70HjrEeG0i6R1ZtiJBQ" severity="INFO" base_Association="_AOUjUnjrEeG0i6R1ZtiJBQ" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_KKvwMHjrEeG0i6R1ZtiJBQ" severity="WARNING" base_Association="_BtYiUnjrEeG0i6R1ZtiJBQ" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_QhsrMHjrEeG0i6R1ZtiJBQ" base_Association="_ObInUnjrEeG0i6R1ZtiJBQ" typeCode="DRIV"/>
+  <CDA:EntryRelationship xmi:id="_jK-6gHjrEeG0i6R1ZtiJBQ" severity="WARNING" base_Association="_WFFbQnjrEeG0i6R1ZtiJBQ" typeCode="MFST"/>
+  <CDA:EntryRelationship xmi:id="_efHwgH2aEeGJy90-OjG4-A" severity="WARNING" base_Association="_SYHPsXjqEeG0i6R1ZtiJBQ" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_k-pYsH2aEeGJy90-OjG4-A" severity="INFO" base_Association="_UFL1gnjqEeG0i6R1ZtiJBQ" typeCode="COMP"/>
+  <CDA:ActRelationship xmi:id="_S-Zp4H2bEeGJy90-OjG4-A" base_Association="_G3SmInkREeG0i6R1ZtiJBQ"/>
+  <CDA:AssociationValidation xmi:id="_W1XUYH2bEeGJy90-OjG4-A" base_Association="_G3SmInkREeG0i6R1ZtiJBQ">
+    <ruleId>CONF:1436</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_DDj7sIQbEeGRypoUd5okyA" severity="WARNING" base_Association="_CRMqooQbEeGRypoUd5okyA">
+    <ruleId>CONF:1544</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_8svL8IfdEeGddaWGBJA2Aw"/>
+  <CDA:ValueSetConstraint xmi:id="_9BvLkIfdEeGddaWGBJA2Aw">
+    <reference href="anthrax-vocab.uml#_dEghIGf4EeGcR5CQkyNBsg"/>
+  </CDA:ValueSetConstraint>
+</xmi:XMI>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Implementation Guide Scope</title>
+	<body>
+<p> The scope of this Implementation Guide, which relies on the
+ Clinical Document Architecture, is intended to allow communication of the
+ relevant information captured for a study subject during the conduct of the
+ study.  Although this specification can be used for company-to-company 
+communication, the initial intent is for communication from
+ applicant to regulatory authority. 
+</p>
+		<p><b>Working with the HL7 data structures</b></p>
+		<p>
+Any CDA document – and the subject data report is a CDA document – makes use
+ of data structures defined in the HL7 RIM and in the HL7 data type
+ specifications.  Implementing and working with these is not always
+ intuitive, and some of the types are used in particular ways for this
+ Implementation Guide.  These issues are discussed below.</p>
+ <p></p>
+<ul>
+<li><b>Working with Act Identifier</b>: Identifiers – the attribute “id” –
+ are implemented with the instance identifier (II) data type.  This type has 
+two properties: root – which identifies the namespace from which an 
+identifier value is drawn, and extension – which carries the identifier 
+itself.  Most of the identifiers used within this guide are identified as 
+“sequence numbers” they are used within an SDTM or SEND domain to keep track of 
+individual records, and are only meaningful within the context of a single 
+report.  It would be both burdensome and unnecessary to attempt to identify 
+the name space (Wikipedia: A namespace (sometimes also called a name scope) 
+is an abstract container or environment created to hold a logical grouping of 
+unique identifiers or symbols (i.e., names). An identifier defined in a 
+namespace is associated only with that namespace. The same identifier can be 
+independently defined in multiple namespaces.) for the identifier.  In such 
+cases, the HL7 null indicator should be valued as “NI” – No information.  
+Note, the subject data report also includes unique subject identifiers as 
+well as identifiers for the study and the study sponsor.  If reporters are, 
+practically speaking, unable to manage the assignment of object identifiers 
+to these namespaces, it is possible to make use of a GUID, or to use a 
+generic OID that indicates the type of identifier being provided. <p></p>
+For example:
+<codeblock id="idExample">
+<![CDATA[
+<id root=”1.9.9.9” extension=”12348899B”/>]]>
+</codeblock>
+<p></p>
+Note that the id element may appear in a number of different contexts,
+ e.g., within observation, within role.<p></p>
+</li>
+<li><b>Working with Act Code</b>: A great number of the important concepts 
+within subject data reporting, e.g., adverse event, subject age, whether an 
+item was predefined on a CRF, a body weight observation are modeled as acts 
+or as specializations of act, e.g., observation, within CDA.  In such cases, 
+the attribute act.code (observation.code) is evaluated to discover what kind 
+of information is being passed.  In SEND and SDTM, these items often occur as 
+records within a domain with data items identified as –TESTCD = an 
+identifying code, -TEST = a text or verbatim description, -MODIFY = a 
+modified term for the item.  These concepts should be supported within the CD 
+data type by using the CD code property for the code value. Text values which 
+are simply descriptive text for a code use the display Name property, while 
+verbatim text uses the original Text property. Modified terms – whether code 
+or text should use the translation property of the CD type.  Note, any time a 
+code value is used within the CD or CE data types, the code system the code 
+is drawn from should be identified.  If the code system is centrally managed, 
+within NCI EVS, the OID to be used can be looked up within this document. <p></p>
+For example:
+<codeblock id="codeExample1">
+<![CDATA[
+<code code="C66734" displayName="Domain Abbreviation" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>]]>
+</codeblock>
+<p></p>
+<codeblock id="codeExample2">
+<![CDATA[
+<code code="-TESTCD" displayName="TESTCD Description" codeSystem="2.9.9.9">
+<originalText mediaType="text/plan">-TEST</originalText>
+<translation code="-MODIFY" codeSystem="2.9.9.10"/>
+</code>]]>
+</codeblock>
+<p></p>
+Note that the code element will appear within an act - observation, or procedure - or 
+within an entity - person, organization, or manufactured material,
+ e.g., within observation, within role.<p></p>
+</li>
+<li><b>Working with Physical Quantity</b>:  HL7 defines a physical quantity 
+as “A dimensioned quantity expressing the result of measuring.”  There is a 
+general expectation that all such quantities will use a single scheme for 
+expressing units of measure – the Unified Code for Units of Measure.  
+However, it is possible to refer to alternate representations of the units 
+using the Physical Quantity Representation (PQR) data type. Physical 
+quantities in this guide will use the PQR type, so that it is possible to 
+distinguish between the use of standard and localized units of measure.
+<p> HL7 recommends the use of the UCUM (Unified Codes of Measure) specification
+ for use in physical quantities.  Within this guide, UCUM items are represented
+  using the unit concept IDs provided by the NCI EVS.
+			</p>
+
+<p></p>
+For example:
+<codeblock id="valueExample">
+<![CDATA[
+	
+	<value xsi:type="PQR" value="64.4625" code="C49670" displayName="MMHG"  codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+	<!-- A quantity using CDISC Units of measure  -->]]>
+	</codeblock>
+<p></p>
+Note that quantities can be passed using either CDISC or local units of measure.  The physical
+quantity usually, but not always, appears as an observation value.<p></p>
+</li>
+<li><b>Working with Observation Value</b>: The HL7 Reference Information 
+Model uses a single attribute – observation.value – to capture the result of 
+any observation.  In order to implement this attribute within an XML schema, 
+it is necessary to use the xs:type property to designate the particular data 
+type to be used.  Within SDTM and SEND, findings and event descriptions are 
+provided as either numeric values (what HL7 would treat as a physical 
+quantity given the presence of units of measure)or as character (text) 
+values.  In addition, the data is characterized as original – with original 
+units or locally controlled text values – or as normalized – with standard 
+units of measure or “normalized” character based content.  Within the subject 
+data report, multiple expressions of a result should be managed as multiple 
+instances of the value attribute.  The type, numeric, physical quantity, 
+coded, or text is given by the xsi:type property.  The use of standard or 
+local units of measure is expressed by the OID the code system within the 
+unit of measure – see below.  Similarly, the use of local or standard codes 
+is indicated by the OID for the code system of the code being passed.  Note, 
+all the standard codes are supported as concepts within NCI EVS. The OID for 
+the EVS can be used, without exception, when NCI EVS concept IDs are being 
+provided to identify the concept in question.<p></p>
+For example:
+<codeblock id="valueExample">
+<![CDATA[
+	<value xsi:type="PQR" value="64.4625" code="MMHG"   codeSystem="1.22.115"/>
+	<!-- Result using original units of measure.  --> 
+	<value xsi:type="PQR" value="64.4625" code="C49670" displayName="MMHG"  codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+	<!-- Result using CDISC Units of measure  -->
+	<value xsi:type="ED" mediaType="text/plain">64.4625</value>]]>
+	<!-- Result using a text representation -->
+</codeblock>
+<p></p>
+Note that not all of the different representations of the result are required.  Also,
+the result may be a coded value as opposed to a physical quantity.<p></p>
+</li>
+
+<li><b>Working with Effective Time</b>: The HL7 effective time attribute is
+ used for all varieties of acts to express the time or times of either 
+relevance or occurrence.  The attribute can be used to express a time point, 
+a time interval or a collection of time points (i.e., a frequency).  The 
+implementation guide defines how to use this attribute to capture the 
+different timing expressions currently used in subject data reporting (as 
+defined for SEND and SDTM). 
+<p></p>
+Here is an example of a point in time.
+<codeblock id="timingExample1">
+<![CDATA[
+<effectiveTime value="20120704"/>]]>
+</codeblock>
+<p></p>
+Here is an example of a time interval.
+
+<codeblock id="timingExample2">
+<![CDATA[
+<effectiveTime>
+	<low value="19990517"/>
+	<high value="19990524"/>
+</effectiveTime>]]>
+</codeblock>
+<p></p>
+Here is an example of a intervention frequency in which both the 
+periodicity of the intervention and its start and stop time points are shown..
+<codeblock id="codeExample1">
+<![CDATA[
+<effectiveTime xsi:type="SXPR_TS">
+	<comp xsi:type="IVL_TS">
+		<low value="1990517"/>
+		<high value="1990523"/>
+	</comp>
+	<comp xsi:type="PIVL_TS" operator="A">
+		<period value="24" unit="h"/>
+	</comp>
+</effectiveTime>]]>
+</codeblock>
+<p></p>
+These details are also where applicable for a data element.<p></p>
+</li>
+<li><b>Working with Interpretation Code</b>: In the HL7 RIM, the 
+interpretation code “provides a qualitative interpretation of the observation”.
+  The code is used, for example, with laboratory results to express the relationship
+   of a result to the normal values.  However, it also used more broadly within subject
+    data reporting to express the notions of baseline flag, derived value flag, and
+     exclusion flag that are seen in SDTM and SEND.
+</li>
+</ul>
+<p></p>
+<p><b> HL7 Vocabulary Concepts</b></p>
+<p>The HL7 approach to organizing vocabulary is oriented around three concepts:</p>
+<ul>
+<li><b>Concept Domain</b>: A named category of like concepts (a semantic type) that will be bound to one
+ or more attributes in a static model whose data types are coded.  HL7 specifications define concept domains 
+ for each coded attribute - in CDA these assignmens are extremely general.  The implementation guide has to 
+ get more specific in order to guide implementation. <p></p>
+</li>
+<li><b>Code System</b>: A collection of coded concepts. each having associated designations and meanings. 
+Code systems assign definite codes to individual, useful concepts.
+Two key points are: 1) Effective and useful interoperability requires sharing of codes for important concepts. 2( Code
+ systems are managed by a sponsoring party.  Having a unified code system managed by a single, agreed upon 
+ source is a key goal for integrating subject data from studies.<p></p></li> 
+<li><b>Value Set</b>: A uniquely identifiable set of valid concept representations (AKA code), where any concept
+ representation can be tested to determine whether or not it is a member of the value set.   The value set lists those
+ codes which are relevant to a particular purpose, it provides the specification for implementation.<p></p>
+</li>
+</ul>
+<p>The Implementation Guide lists the collection of value sets needed to support subject data reporting.  Many of these - in fact
+wherever feasible - are drawn from the NCI Enterprise Vocabulary Services.  However, others are listed as defined by the study
+sponsor.  In these cases, it is best to think of the study sponsor as creating their own local code system for some need, perhaps a
+set of exposure categories.  The value set that is used will simply be the content of that code system.  Given this double
+identity, it is not necessary to define both code system and value set in cases where the collection of contained codes is identical.</p>
+<p><b> Additional Vocabulary considerations</b></p>
+<p>HL7's Clinical Document Architecture takes a very general
+ approach to vocabulary issues.  It encourages the development of templates
+ to express structures for which definite conformance rules are defined, and 
+which may repeat both across documents and within a single document. The CDA 
+also identifies coded attributes - those attributes whose value is expected 
+to be drawn from a defined vocabulary or code set.  In addition, the CDA 
+schema includes a special feature - the observation (a class drawn from the 
+HL7 information model)- which can be used to convey virtually any type of 
+ information.  Within the observation, the content of <i>observation code</i> 
+tells you what kind of information is included, and the content of 
+<i>observation value</i> gives you the information itself.  
+ CDA does not, and cannot, define the types of observation which are 
+relevant.</p>
+		  
+ <p>A key role of the implementation guide is to provide the additional 
+detail that is needed.  It defines:
+<ul>
+<li> the set of requirements, the list of observation types that are needed.  
+Each needed observation or act type will be supported within NCI EVS, and its
+ content will be expressed as an EVS concept code within the subject data document. <p></p>
+</li>
+<li>the collection of value sets(code tables) needed to properly define 
+allowable values for the coded attributes used for conveying study subject.  Some
+ of the value sets that are used are centrally managed, and are housed – or to be 
+ housed – within the NCI EVS. Others are supplied by the study sponsor 
+data. <p></p>
+</li>
+</ul>
+The vocabulary section of the guide is designed to meet these two requirements.  
+The vocabulary items not left to study sponsors are managed
+ by NCI within the EVS Thesaurus.  NCI EVS will provide a file for the Subject Data 
+ Report user community to be located at: 
+  <xref href="http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda."/>
+  
+   Material
+   at this site will contain all pertinent CDISC terminology subsets as well as 
+   additional value sets as needed.  This material is available for download 24/7 
+   and updates to terminology will be completed by the NCI EVS team.   NC EVS 
+   currently provides terminology in Excel and Text formats.
+</p>
+<p>The consistent use of vocabularies - of code systems and value sets - by study 
+data submitters greatly improves the usefulness of the data, and makes it possible
+to compare data across submissions.  However, there are situations in which the defined
+value set does not contain all the needed concepts.  For this reason, the value sets used
+within this guide have been defined as extensible value sets.  This means that data 
+submitters are expected to use the given value set wherever possible.  However the value set can
+be extended - additional code values may be provided when needed.</p>
+
+		<p><b>Supporting SEND/SDTM data structures</b></p>
+		
+		<p>Building a CDA Implementation Guide that supports the content of an SDTM or SEND based
+		submission involves the definition of translations or mappings between the data structures defined
+		within the CDISC implementation guides and those supported by HL7's Clinical Document Architecture.  This 
+		section focuses on areas where the relationships between the two sets of specifications are potentially unclear,
+		and discusses the conventions used in the mapping </p>
+		<ul>
+		<li><b>Subject Identifiers</b>: Each SEND and SDTM domain contains information to identify the subject of the 
+		data being provided.  In CDA, a document has a single subject identified in the header.  The identifier appears
+		as a feature of the "patient" which is associated with the clinical document as its record target.
+		<p></p>
+		For example:
+		<codeblock id="timingExample2">
+<![CDATA[
+<recordTarget typeCode="RCT">
+		<patientRole classCode="PAT">
+			<id root="1.11.1121" extension="COMPOUNDA_STUDY1_11951"/>
+			<!-- We need an OID that says Unique Subject ID -->
+			<id root="1.11.1122" extension="11951"/>
+			<!-- We need an OID that says  Subject ID -->
+			<patient classCode="PSN" determinerCode="INSTANCE">
+			</patient>
+		</patientRole>
+	</recordTarget>]]>
+</codeblock>
+<p></p>
+Note, the root attribute within the id element is used to distinguish between the unique subject id
+and a study specific identifier. <p></p>
+		</li>
+		<li><b>Pool Identifier</b>:</li> A pool, which only appears in SEND is a group of subjects
+		about which data is collected.  In other words, a CDA instance will have either a single subject
+		or a subject pool as its subject - as the record target.  The pool id is treated in the same 
+		way as the subject id in the example above.<p></p>
+		<li><b>Collection Date/Time</b>:</li> A finding can refer to a physical process or condition that 
+		takes place over a period of time, and the start and stop dates for a fact related to a subject, e.g., a 
+		disease or pattern of behavior, may be recorded as the effectiveTime for that act.  It may also be 
+		relevant to capture the date/time on which this information was collected.  The Implementation Guide handles
+		this situation by defining a template - "Data Collection" - for capturing this information.  This template
+		also supports capturing the study day of data collection by including a "Study Day" observation which may
+		be associated with the data collection one.
+				<p></p>
+		For example:
+		<codeblock id="timingExample2">
+<![CDATA[
+<entryRelationship typeCode="COMP">
+	<observation classCode="OBS" moodCode="EVN">
+		<code code="CXXXXXX" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+		<!-- Indicate data collection -->
+		<effectiveTime value="1990508"/>
+		<entryRelationship typeCode="REFR">
+			<observation classCode="OBS" moodCode="EVN">
+				<code code="ESDtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+				<!-- Indicate study day  -->
+				<value xsi:type="INT" value="-16"/>
+			</observation>
+		</entryRelationship>
+	</observation>
+</entryRelationship>]]>
+</codeblock>
+<p></p>
+Note, it may be relevant to capture both the start and stop dates of data collection and, consequently, the
+start and stop study days.  In this case, an interval of effectiveTimes or of integer values may be used.<p></p>
+		<li><b>Test or Observation Names</b>:Virtually all SEND and SDTM domains contain information about something, be it
+		a measurement, a test, a particular type of observation.  The implementation guides make it possible to capture the
+		name of an item, as well as short name, reported name, modified name and standardized name.  Each of these is treated
+		differently within CDA as discussed above in the section on Observation code. </li>
+		<li><b>Category and Sub-Category</b>: Many domains include the notion of category and sub-category.  In each case, there
+		is a domain specific value set(vocabulary)that contains the list of valid categories or sub-categories. For the most part
+		these are sponsor defined.  A single template has been defined for category, and an analogous one for sub-category.  In this
+		template, unlike many of the others, the value of observation code is not fixed, it indicates the domain that a category value 
+		is drawn from.  In other words, the value set used to constrain observation value is based on the content of observation code.  
+		For example:
+		<codeblock id="timingExample2">
+<![CDATA[
+<entryRelationship typeCode="COMP">
+	<observation classCode="OBS" moodCode="EVN">
+		<code code="CXXXXX" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+		<!-- Indicate this is a lab category observation.  -->
+		<value xsi:type="CD" code="xxx" displayName="BLOOD CHEMISTRY" codeSystem="1.22.116"/>
+		<!-- We need an OID to designate a local code system for lab result categories.  -->
+	</observation>
+</entryRelationship>]]>
+</codeblock>
+<p></p>
+		</li>
+		<li><b>Baseline, Derived, Excluded Values</b>:</li>
+		<li><b>Study Day of Start, Study Day of End</b>:</li>
+		<li><b>Association to Reference Time Points</b>:</li>
+		<li><b>Results: Character and Numeric</b>:</li>
+		<li><b>Specimen Information</b>:</li>	
+		<li><b>Specimen Anatomic Region</b>:</li>	
+		<li><b>Visit Name and Number</b>:</li></ul>
+</body>
+</topic>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="cdabook">
+	<booktitle>
+		<booklibrary>Implementation Guide for CDA R2</booklibrary>
+		<mainbooktitle>Consolidated CDA Templates</mainbooktitle>	
+	</booktitle>
+	<bookmeta>
+		<bookid>
+			<booknumber></booknumber>
+			<maintainer>
+				<organization>Health Level Seven, Inc.</organization>
+				<person></person>
+			</maintainer>
+		</bookid>
+		<bookrights>
+			<copyrfirst>
+				<year>2005</year>
+			</copyrfirst>
+			<copyrlast>
+				<year>2012</year>
+			</copyrlast>
+			<bookowner>
+				<organization>Health Level Seven, Inc.</organization>
+			</bookowner>
+		</bookrights>
+	</bookmeta>
+	<frontmatter>
+		<preface>
+			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments"
+				type="topic" />
+		</preface>
+		<booklists>
+			<toc />
+			<figurelist />
+			<tablelist />
+		</booklists>
+	</frontmatter>
+
+
+	<chapter format="ditamap" href="introduction/introduction.ditamap" />
+	<chapter format="ditamap" href="generalheader.ditamap" />
+	<chapter format="ditamap" href="documentlevel.ditamap" />
+	<chapter format="ditamap" href="sections.ditamap" />
+	<chapter format="ditamap" href="clinicalstatement.ditamap" />
+	<chapter format="ditamap" href="valuesets.ditamap" />
+
+
+
+
+
+</bookmap>

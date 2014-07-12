@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="CDA_IG_DeathReportJan2014">
+	<booktitle>
+		<booklibrary>Implementation Guide for CDA Release 2:</booklibrary>
+		<mainbooktitle>Vital Records Death Report, Release 1</mainbooktitle>
+		<booktitlealt id="image"><image href="images/hl7logo.gif"/></booktitlealt>
+		<booktitlealt>HL7 Draft Standard for Trial Use</booktitlealt>
+		<booktitlealt>Implementation guide: US Realm</booktitlealt>
+		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>	
+	</booktitle>
+	
+	 <bookmeta>
+    	<author>Public Health and Emergency Response Work Group</author>
+    	<prodinfo>
+			<prodname>CDAR2L3_IG_RDIVR</prodname>
+			<vrmlist>
+				<vrm release="R1_N1" version="2014JAN" ></vrm>
+			</vrmlist>
+			<brand>HL7 IG for CDA R2</brand>
+			<series>DSTU</series>
+			<platform>US Realm</platform>
+		</prodinfo>
+        <bookid>
+            <booknumber/>
+            <maintainer>
+                <organization>Health Level Seven</organization>
+                <person/>
+            </maintainer>
+        </bookid>
+        <bookrights>
+            <copyrfirst>
+                <year>2013</year>
+            </copyrfirst>
+            <copyrlast>
+                <year>2013</year>
+            </copyrlast>
+            <bookowner>
+                <organization/>
+            </bookowner>
+        </bookrights>
+    </bookmeta>
+  
+	<frontmatter>
+		<preface>
+			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
+			<topicref href="preface/Contributors.dita" navtitle="Contributors" type="topic"/>
+		</preface>
+		<booklists>
+			<toc/><figurelist/><tablelist/>
+		</booklists> 
+	</frontmatter>
+	
+	<chapter format="ditamap" href="introduction/introduction.ditamap"/>
+	
+	<chapter format="ditamap" href="content/content.ditamap"/>
+	
+		<chapter format="ditamap" href="introduction/example.ditamap"/>
+
+	<backmatter>
+		<topicref href="References.dita" navtitle="REFERENCES" type="topic"/>
+	</backmatter>
+</bookmap>

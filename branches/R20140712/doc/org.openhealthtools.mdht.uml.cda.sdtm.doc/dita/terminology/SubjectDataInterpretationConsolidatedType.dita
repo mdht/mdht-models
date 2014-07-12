@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Subject Data Interpretation Consolidated Type</title>
+<prolog id="prolog">
+<resourceid id="CXXXXX"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Subject Data Interpretation Consolidated Type - CXXXXX</entry></row>
+<row><entry>Code System</entry><entry>NCI Thesaurus - 2.16.840.1.113883.3.26.1.1</entry></row>
+<row><entry>Source</entry><entry>NCI EVS</entry></row>
+<row><entry>Source URL</entry><entry>http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda</entry></row>
+<row><entry>Description</entry><entry>A collection of values used to aid in interpreting subject data laboratory results.  It includes values that are defined to indicate that a data item should be excluded from tabulation, treated as a baseline value, or that the item vaue is derived. The value set also includes statements  about the relationship between a laboratory test result, and the reference range defined for the relevant lab test.  Note, this  value set consolidates the content of the Refence Range and Subject Data Interpretation value sets.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>C78802</entry><entry>Abnormal</entry><entry>NCI Thesaurus</entry><entry></entry></row>
+<row><entry>C78800</entry><entry>High</entry><entry>NCI Thesaurus</entry><entry></entry></row>
+<row><entry>78801</entry><entry>Low</entry><entry>NCI Thesaurus</entry><entry></entry></row>
+<row><entry>78727</entry><entry>Normal</entry><entry>NCI Thesaurus</entry><entry></entry></row>
+<row><entry>CXXXXX</entry><entry>Baseline Value</entry><entry>NCI Thesaurus</entry><entry></entry></row>
+<row><entry>CXXXXX</entry><entry>Derived Value</entry><entry>NCI Thesaurus</entry><entry></entry></row>
+<row><entry>CXXXXX</entry><entry>Excluded value</entry><entry>NCI Thesaurus</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

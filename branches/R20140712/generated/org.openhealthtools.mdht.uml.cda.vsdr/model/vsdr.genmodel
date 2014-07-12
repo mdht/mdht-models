@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.vsdr/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.vsdr" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" modelName="vsdr_Ecore" modelPluginClass="VsdrPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>vsdr_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Vsdr" basePackage="org.openhealthtools.mdht.uml.cda"
+      disposableProviderFactory="true" ecorePackage="vsdr.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.vsdr.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBody">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBody/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBody/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/ReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//ReportingDeathInformationfromaClinicalSettingtoVitalRecords/getDeathReportDocumentBody"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//DeathReportDocumentBody">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyTimeofDeath">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyTimeofDeath/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyTimeofDeath/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyLocationofDeath">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyLocationofDeath/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyLocationofDeath/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCertifyingDeath">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCertifyingDeath/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCertifyingDeath/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyMannerofDeath">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyMannerofDeath/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyMannerofDeath/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyPregnancyStatus">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyPregnancyStatus/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyPregnancyStatus/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyTobaccoUse">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyTobaccoUse/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyTobaccoUse/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyInjury">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyInjury/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyInjury/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCauseofDeath">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCauseofDeath/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCauseofDeath/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyAutopsyPerformance">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyAutopsyPerformance/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyAutopsyPerformance/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyAutopsyResults">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyAutopsyResults/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyAutopsyResults/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCoronerReferral">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCoronerReferral/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCoronerReferral/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCoronerCaseTransfer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCoronerCaseTransfer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCoronerCaseTransfer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyDeathLocationType">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyDeathLocationType/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyDeathLocationType/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyPronouncingDeath">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyPronouncingDeath/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyPronouncingDeath/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getTimeofDeath"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getLocationofDeath"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getCertifyingDeath"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getMannerofDeath"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getPregnancyStatus"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getTobaccoUse"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getInjury"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getCauseofDeath"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getAutopsyPerformance"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getAutopsyResults"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getCoronerReferral"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getCoronerCaseTransfer"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getDeathLocationType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getPronouncingDeath"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//DateandTimeofDeath">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DateandTimeofDeath/DateandTimeofDeathText/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//LocationofDeath">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//LocationofDeath/LocationofDeathTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//LocationofDeath/LocationofDeathClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//LocationofDeath/LocationofDeathMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//LocationofDeath/LocationofDeathCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//LocationofDeath/LocationofDeathCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//LocationofDeath/LocationofDeathText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//LocationofDeath/LocationofDeathValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//LocationofDeath/LocationofDeathValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//CertifyingDeath">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CertifyingDeath/CertifyingDeathTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CertifyingDeath/CertifyingDeathClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CertifyingDeath/CertifyingDeathMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CertifyingDeath/CertifyingDeathCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CertifyingDeath/CertifyingDeathEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CertifyingDeath/CertifyingDeathCertificationPerformer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathCertificationPerformer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CertifyingDeath/CertifyingDeathCertificationPerformer/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//MannerofDeath">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//MannerofDeath/MannerofDeathTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//MannerofDeath/MannerofDeathClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//MannerofDeath/MannerofDeathMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//MannerofDeath/MannerofDeathCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//MannerofDeath/MannerofDeathCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//MannerofDeath/MannerofDeathValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//PregnancyStatus">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PregnancyStatus/PregnancyStatusTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PregnancyStatus/PregnancyStatusClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PregnancyStatus/PregnancyStatusMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PregnancyStatus/PregnancyStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PregnancyStatus/PregnancyStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PregnancyStatus/PregnancyStatusValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//TobaccoUse">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//TobaccoUse/TobaccoUseTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//TobaccoUse/TobaccoUseTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//TobaccoUse/TobaccoUseTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//TobaccoUse/TobaccoUseClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//TobaccoUse/TobaccoUseClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//TobaccoUse/TobaccoUseClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//TobaccoUse/TobaccoUseMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//TobaccoUse/TobaccoUseMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//TobaccoUse/TobaccoUseMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//TobaccoUse/TobaccoUseCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//TobaccoUse/TobaccoUseCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//TobaccoUse/TobaccoUseCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//TobaccoUse/TobaccoUseValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//TobaccoUse/TobaccoUseValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//TobaccoUse/TobaccoUseValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//Injury">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentWorkAssociation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationAssociation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationship/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentWorkAssociationTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentWorkAssociationWorkAssociation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationAssociationTransportationAssociation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationshipValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentTransportationRelationshipTransportationRelationship/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//DeathCausalInformation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCause">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCause/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCause/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantCondition">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantCondition/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantCondition/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseSequenceNumber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseSequenceNumber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseSequenceNumber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCause">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCause/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCause/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantCondition">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantCondition/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentOtherSignificantConditionOtherSignificantCondition/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//AutopsyPerformance">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyPerformance/AutopsyPerformanceAutopsyPerformerAutopsyPerformerRole/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//AutopsyResults">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyResults/AutopsyResultsTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyResults/AutopsyResultsClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyResults/AutopsyResultsMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyResults/AutopsyResultsCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyResults/AutopsyResultsCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyResults/AutopsyResultsValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyResults/AutopsyResultsAutopsyReport">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsAutopsyReport/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsAutopsyReport/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//CoronerReferral">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerReferral/CoronerReferralTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerReferral/CoronerReferralClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerReferral/CoronerReferralMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerReferral/CoronerReferralCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerReferral/CoronerReferralCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerReferral/CoronerReferralValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerReferral/CoronerReferralValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//CoronerCaseTransfer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferCoronerCase">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferCoronerCase/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//CoronerCaseTransfer/CoronerCaseTransferCoronerCase/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//DeathLocationType">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathLocationType/DeathLocationTypeTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathLocationType/DeathLocationTypeClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathLocationType/DeathLocationTypeMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathLocationType/DeathLocationTypeCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathLocationType/DeathLocationTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathLocationType/DeathLocationTypeValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathLocationType/DeathLocationTypeValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathLocationType/DeathLocationTypeValueP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//PronouncingDeath">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyDeterminerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyDeterminerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyDeterminerCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingParty">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingParty/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingParty/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRole/context"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

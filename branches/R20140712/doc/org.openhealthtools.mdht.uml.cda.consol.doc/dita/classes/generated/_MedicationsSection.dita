@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medications Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.1.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7568, CONF:10433 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.1.1"</li></ol></li>
+<li><b>SHALL</b> conform to <xref href="../MedicationsSectionEntriesOptional.dita">Medications Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10160-0" </tt><i>History of medication use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7569)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7570)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7571)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:7572, CONF:7573)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+<li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../MedicationsSectionEntriesOptional.dita">Medications Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10160-0" </tt><i>History of medication use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7569)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7570)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7571)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7795, CONF:7573)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:7572, CONF:7573)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+<li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>
+<li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::MedicationsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:7569</entry><entry>LOINC 2.16.840.1.113883.6.1LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7570</entry><entry> </entry></row> 
+<row><entry>medication</entry><entry>cda:entry/cda:substanceAdministration</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationActivity</entry><entry>CONF:7572CONF:7573</entry><entry> </entry></row> 
+<row><entry>medicationsSection</entry><entry>medicationsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationsSection</entry><entry>CONF:9447</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7571</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="556866077"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <substanceAdministration>
+      <id root="MDHT" extension="1504242107"/>
+      <text>Text Value</text>
+      <effectiveTime value="20130627"/>
+      <consumable>
+        <manufacturedProduct/>
+      </consumable>
+      <performer/>
+      <entryRelationship>
+        <supply>
+          <id root="MDHT" extension="806616903"/>
+          <text>Text Value</text>
+          <effectiveTime value="20130627"/>
+          <author/>
+          <entryRelationship>
+            <act/>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="843787070"/>
+          <code code="901712100"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <procedure/>
+          </entryRelationship>
+          <entryRelationship>
+            <substanceAdministration/>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <id root="MDHT" extension="1834260433"/>
+          <code code="1445923977"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="176503305"/>
+          <code code="1629277299"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <supply>
+          <id root="MDHT" extension="1747238659"/>
+          <text>Text Value</text>
+          <effectiveTime value="20130627"/>
+          <performer/>
+          <entryRelationship>
+            <supply/>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
+      <precondition>
+        <criterion/>
+      </precondition>
+    </substanceAdministration>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medications Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>]</p>
+</body>
+</topic>

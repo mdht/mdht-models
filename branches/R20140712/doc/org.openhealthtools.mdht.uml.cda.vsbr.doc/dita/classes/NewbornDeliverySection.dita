@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Newborn Delivery Section</title>
+<shortdesc conref="generated/_NewbornDeliverySection.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_NewbornDeliverySection.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_NewbornDeliverySection.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_NewbornDeliverySection.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_NewbornDeliverySection.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Newborn Delivery Section example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.26.10"/>
+					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="57075-4" displayName="Newborn delivery information from newborn Narrative"/>
+					<text>
+						...
+					</text>
+					<subject typeCode="SBJ">
+						<relatedSubject classCode="PRS">
+							<subject classCode="PSN" determinerCode="INSTANCE">
+								<sdtc:id root="2.1.33" extension="123-MR-8233"/>
+								<!-- The root OID for the newborn identifier indicates the name space the identifier value is drawn from.  -->
+								<name>
+									<family>Johnson</family>
+									<given>Baby Girl</given>
+								</name>
+								<administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+								<birthTime value="201301211300"/>
+							</subject>
+						</relatedSubject>
+					</subject>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.41"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.13"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.13"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.19"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.19"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.19"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.29"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.28"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.27"/>
+							...
+						</observation>
+					</entry>
+					<!--
+********************************************************
+Newborn's Vital Signs Section
+********************************************************
+-->
+					<component>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.11"/>
+							...
+						</section>
+					</component>
+					<!--
+********************************************************
+Assessment Section
+********************************************************
+-->
+					<component>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.2.8"/>
+							<templateId root="2.16.840.1.113883.10.20.26.9"/>
+							...
+						</section>
+					</component>
+				</section>
+			</component>]]>
+</codeblock>
+</body>
+</topic>

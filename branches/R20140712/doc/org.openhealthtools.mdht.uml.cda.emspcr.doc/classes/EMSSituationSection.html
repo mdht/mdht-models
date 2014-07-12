@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="EMS Situation Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.17.3.10.1.9]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.17.3.10.1.9]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>EMS Situation Section</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">EMS Situation Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.17.3.10.1.9</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">Information about patient symptoms and complaints</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.9"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10755)<tt class="ph tt"><strong class="ph b">/@code</strong>="67666-8" </tt><em class="ph i">EMS situation Narrative NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10756)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Situation Section" (CONF:10758)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:10757)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:11039)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Complaint.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.63]">Complaint</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.63</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:11041)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PossibleInjury.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.64]">Possible Injury</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.64</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:11043)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProviderPrimaryImpression.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.65]">Provider Primary Impression</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.65</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:11045)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PrimarySymptom.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.66]">Primary Symptom</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.66</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:11047)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="OtherSymptoms.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.67]">Other Symptoms</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.67</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:11049)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProviderSecondaryImpressions.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.68]">Provider Secondary Impressions</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.68</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:11051)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="InitialPatientAcuity.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.69]">Initial Patient Acuity</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.69</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+
+
+
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

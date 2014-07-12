@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_eWLToEhXEeGyYa7NPQtntA" name="anthrax">
+    <packageImport xmi:id="_eYtDMEhXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_eYtDMUhXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_eYtDMkhXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_eYtDM0hXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_eYtDNEhXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_eYtDNUhXEeGyYa7NPQtntA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eYGmQUhXEeGyYa7NPQtntA" name="AnthraxCaseReport">
+      <ownedRule xmi:id="_vMZ-kAdBEeKunpQtSh6JQg" name="PublicHealthCaseReportTemplateId" constrainedElement="_eYGmQUhXEeGyYa7NPQtntA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vMZ-kQdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.3')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vMZ-kwdBEeKunpQtSh6JQg" name="AnthraxCaseReportTitle" constrainedElement="_eYGmQUhXEeGyYa7NPQtntA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vMZ-lAdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Anthrax')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNdHcgdBEeKunpQtSh6JQg" name="AnthraxCaseReportAnthraxPhcrSocialHistorySection" constrainedElement="_eYGmQUhXEeGyYa7NPQtntA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNdHcwdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrSocialHistorySection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNdHeQdBEeKunpQtSh6JQg" name="AnthraxCaseReportAnthraxPhcrClinicalInformationSection" constrainedElement="_eYGmQUhXEeGyYa7NPQtntA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNdHegdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrClinicalInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNmRYAdBEeKunpQtSh6JQg" name="AnthraxCaseReportAnthraxPhcrTreatmentInformationSection" constrainedElement="_eYGmQUhXEeGyYa7NPQtntA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNmRYQdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrTreatmentInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vN5zbAdBEeKunpQtSh6JQg" name="AnthraxCaseReportAnthraxPhcrRelevantDxTestsSection" constrainedElement="_eYGmQUhXEeGyYa7NPQtntA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vN5zbQdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrRelevantDxTestsSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_eYGmQ0hXEeGyYa7NPQtntA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_vNdHdAdBEeKunpQtSh6JQg" name="getAnthraxPhcrSocialHistorySection" isQuery="true" bodyCondition="_vNdHdwdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vNdHdwdBEeKunpQtSh6JQg" name="body" constrainedElement="_vNdHdAdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNdHeAdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrSocialHistorySection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrSocialHistorySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vNdHdQdBEeKunpQtSh6JQg" type="_v4IaUGPpEeGGv9UUQ3_AWw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNdHdgdBEeKunpQtSh6JQg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_vNdHewdBEeKunpQtSh6JQg" name="getAnthraxPhcrClinicalInformationSection" isQuery="true" bodyCondition="_vNdHfgdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vNdHfgdBEeKunpQtSh6JQg" name="body" constrainedElement="_vNdHewdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNdHfwdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrClinicalInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vNdHfAdBEeKunpQtSh6JQg" type="_9rizAGM9EeGGv9UUQ3_AWw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNdHfQdBEeKunpQtSh6JQg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_vNmRYgdBEeKunpQtSh6JQg" name="getAnthraxPhcrTreatmentInformationSection" isQuery="true" bodyCondition="_vNmRZQdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vNmRZQdBEeKunpQtSh6JQg" name="body" constrainedElement="_vNmRYgdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNmRZgdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrTreatmentInformationSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrTreatmentInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vNmRYwdBEeKunpQtSh6JQg" type="_GWalQGPqEeGGv9UUQ3_AWw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNmRZAdBEeKunpQtSh6JQg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_vN5zbgdBEeKunpQtSh6JQg" name="getAnthraxPhcrRelevantDxTestsSection" isQuery="true" bodyCondition="_vN5zcQdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vN5zcQdBEeKunpQtSh6JQg" name="body" constrainedElement="_vN5zbgdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vN5zcgdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrRelevantDxTestsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vN5zbwdBEeKunpQtSh6JQg" type="_0rqQMGPoEeGGv9UUQ3_AWw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vN5zcAdBEeKunpQtSh6JQg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9rizAGM9EeGGv9UUQ3_AWw" name="AnthraxPhcrClinicalInformationSection">
+      <ownedRule xmi:id="_vMZ-lgdBEeKunpQtSh6JQg" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_9rizAGM9EeGGv9UUQ3_AWw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vMZ-lwdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.15')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNwCcwdBEeKunpQtSh6JQg" name="AnthraxPhcrClinicalInformationSectionAnthraxCaseObservation" constrainedElement="_9rizAGM9EeGGv9UUQ3_AWw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNwCdAdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(anthrax::AnthraxCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_9rmdYGM9EeGGv9UUQ3_AWw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_vNwCdQdBEeKunpQtSh6JQg" name="getAnthraxCaseObservation" isQuery="true" bodyCondition="_vNwCeAdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vNwCeAdBEeKunpQtSh6JQg" name="body" constrainedElement="_vNwCdQdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNwCeQdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(anthrax::AnthraxCaseObservation))->asSequence()->any(true).oclAsType(anthrax::AnthraxCaseObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vNwCdgdBEeKunpQtSh6JQg" type="_PIsscGSpEeGFY81qWTDU9g" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNwCdwdBEeKunpQtSh6JQg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0rqQMGPoEeGGv9UUQ3_AWw" name="AnthraxPhcrRelevantDxTestsSection">
+      <ownedRule xmi:id="_vMjvkAdBEeKunpQtSh6JQg" name="ResultsSectionTemplateId" constrainedElement="_0rqQMGPoEeGGv9UUQ3_AWw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vMjvkQdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.16')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNwCZQdBEeKunpQtSh6JQg" name="AnthraxPhcrRelevantDxTestsSectionAnthraxResultOrganizer" constrainedElement="_0rqQMGPoEeGGv9UUQ3_AWw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNwCZgdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(anthrax::AnthraxResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNwCbAdBEeKunpQtSh6JQg" name="AnthraxPhcrRelevantDxTestsSectionAnthraxResultObservation" constrainedElement="_0rqQMGPoEeGGv9UUQ3_AWw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNwCbQdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(anthrax::AnthraxResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_sok8YIQaEeGRypoUd5okyA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedOperation xmi:id="_vNwCZwdBEeKunpQtSh6JQg" name="getAnthraxResultOrganizers" isQuery="true" bodyCondition="_vNwCagdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vNwCagdBEeKunpQtSh6JQg" name="body" constrainedElement="_vNwCZwdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNwCawdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(anthrax::AnthraxResultOrganizer)).oclAsType(anthrax::AnthraxResultOrganizer)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vNwCaAdBEeKunpQtSh6JQg" type="_jVNpMGgDEeGcR5CQkyNBsg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNwCaQdBEeKunpQtSh6JQg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_vNwCbgdBEeKunpQtSh6JQg" name="getAnthraxResultObservations" isQuery="true" bodyCondition="_vNwCcQdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vNwCcQdBEeKunpQtSh6JQg" name="body" constrainedElement="_vNwCbgdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNwCcgdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(anthrax::AnthraxResultObservation)).oclAsType(anthrax::AnthraxResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vNwCbwdBEeKunpQtSh6JQg" type="_LKRIIGgDEeGcR5CQkyNBsg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNwCcAdBEeKunpQtSh6JQg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_v4IaUGPpEeGGv9UUQ3_AWw" name="AnthraxPhcrSocialHistorySection">
+      <ownedRule xmi:id="_vMjvlQdBEeKunpQtSh6JQg" name="SocialHistorySectionTemplateId" constrainedElement="_v4IaUGPpEeGGv9UUQ3_AWw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vMjvlgdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.17')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNmRfAdBEeKunpQtSh6JQg" name="AnthraxPhcrSocialHistorySectionAnthraxPossibleExpossureLocationAndTypeAct" constrainedElement="_v4IaUGPpEeGGv9UUQ3_AWw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNmRfQdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(anthrax::AnthraxPossibleExpossureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_v4IaUWPpEeGGv9UUQ3_AWw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_vNwCYAdBEeKunpQtSh6JQg" name="getAnthraxPossibleExpossureLocationAndTypeActs" isQuery="true" bodyCondition="_vNwCYwdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vNwCYwdBEeKunpQtSh6JQg" name="body" constrainedElement="_vNwCYAdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNwCZAdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(anthrax::AnthraxPossibleExpossureLocationAndTypeAct)).oclAsType(anthrax::AnthraxPossibleExpossureLocationAndTypeAct)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vNwCYQdBEeKunpQtSh6JQg" type="_h8I9AGh9EeGcR5CQkyNBsg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNwCYgdBEeKunpQtSh6JQg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GWalQGPqEeGGv9UUQ3_AWw" name="AnthraxPhcrTreatmentInformationSection">
+      <ownedRule xmi:id="_vMjvmQdBEeKunpQtSh6JQg" name="PhcrTreatmentInformationSectionTemplateId" constrainedElement="_GWalQGPqEeGGv9UUQ3_AWw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vMjvmgdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.14')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNmRdQdBEeKunpQtSh6JQg" name="AnthraxPhcrTreatmentInformationSectionAnthraxTherapeuticRegimenAct" constrainedElement="_GWalQGPqEeGGv9UUQ3_AWw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNmRdgdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(anthrax::AnthraxTherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_GWalQWPqEeGGv9UUQ3_AWw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_vNmRdwdBEeKunpQtSh6JQg" name="getAnthraxTherapeuticRegimenAct" isQuery="true" bodyCondition="_vNmRegdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vNmRegdBEeKunpQtSh6JQg" name="body" constrainedElement="_vNmRdwdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNmRewdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(anthrax::AnthraxTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(anthrax::AnthraxTherapeuticRegimenAct)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vNmReAdBEeKunpQtSh6JQg" type="_jN9RkGh6EeGcR5CQkyNBsg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNmReQdBEeKunpQtSh6JQg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PIsscGSpEeGFY81qWTDU9g" name="AnthraxCaseObservation">
+      <ownedRule xmi:id="_vMjvngdBEeKunpQtSh6JQg" name="ProblemObservationTemplateId" constrainedElement="_PIsscGSpEeGFY81qWTDU9g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vMtgkAdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.36')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vMtgkgdBEeKunpQtSh6JQg" name="AnthraxCaseObservationValue" constrainedElement="_PIsscGSpEeGFY81qWTDU9g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vMtgkwdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '409498004' or value.code = '195902009' or value.code = '14972006' or value.code = '84980006' or value.code = '111798006' or value.code = '11389007')))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNwCegdBEeKunpQtSh6JQg" name="AnthraxCaseObservationAnthraxSignsAndSymptomsObservation" constrainedElement="_PIsscGSpEeGFY81qWTDU9g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNwCewdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(anthrax::AnthraxSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_PIvvwGSpEeGFY81qWTDU9g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_vN5zYAdBEeKunpQtSh6JQg" name="getAnthraxSignsAndSymptomsObservations" isQuery="true" bodyCondition="_vN5zYwdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vN5zYwdBEeKunpQtSh6JQg" name="body" constrainedElement="_vN5zYAdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vN5zZAdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(anthrax::AnthraxSignsAndSymptomsObservation)).oclAsType(anthrax::AnthraxSignsAndSymptomsObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vN5zYQdBEeKunpQtSh6JQg" type="_51RKEGSzEeGFY81qWTDU9g" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vN5zYgdBEeKunpQtSh6JQg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_51RKEGSzEeGFY81qWTDU9g" name="AnthraxSignsAndSymptomsObservation">
+      <ownedRule xmi:id="_vMtglQdBEeKunpQtSh6JQg" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_51RKEGSzEeGFY81qWTDU9g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vMtglgdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.35')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_51RxIGSzEeGFY81qWTDU9g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LKRIIGgDEeGcR5CQkyNBsg" name="AnthraxResultObservation">
+      <ownedRule xmi:id="_vM2qggdBEeKunpQtSh6JQg" name="ResultObservationTemplateId" constrainedElement="_LKRIIGgDEeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vM2qgwdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.39')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vM2qhQdBEeKunpQtSh6JQg" name="AnthraxResultObservationCode" constrainedElement="_LKRIIGgDEeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vM2qhgdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11468-6' or value.code = '33697-4' or value.code = '22866-8' or value.code = '22867-6' or value.code = '51976-9' or value.code = '44269-9' or value.code = '33698-2' or value.code = '44270-7' or value.code = '11469-4' or value.code = '17928-3' or value.code = '17915-0' or value.code = '622-1' or value.code = '21020-3' or value.code = '41622-2'))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_LKa5IGgDEeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jVNpMGgDEeGcR5CQkyNBsg" name="AnthraxResultOrganizer">
+      <ownedRule xmi:id="_vNAbggdBEeKunpQtSh6JQg" name="ResultOrganizerTemplateId" constrainedElement="_jVNpMGgDEeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNAbgwdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.40')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNAbhQdBEeKunpQtSh6JQg" name="AnthraxResultOrganizerCode" constrainedElement="_jVNpMGgDEeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNAbhgdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11468-6' or value.code = '33697-4' or value.code = '22866-8' or value.code = '22867-6' or value.code = '51976-9' or value.code = '44269-9' or value.code = '33698-2' or value.code = '44270-7' or value.code = '11469-4' or value.code = '17928-3' or value.code = '17915-0' or value.code = '622-1' or value.code = '21020-3' or value.code = '41622-2'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vN5zZQdBEeKunpQtSh6JQg" name="AnthraxResultOrganizerAnthraxResultObservation" constrainedElement="_jVNpMGgDEeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vN5zZgdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(anthrax::AnthraxResultObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_jVNpMWgDEeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedOperation xmi:id="_vN5zZwdBEeKunpQtSh6JQg" name="getAnthraxResultObservations" isQuery="true" bodyCondition="_vN5zagdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vN5zagdBEeKunpQtSh6JQg" name="body" constrainedElement="_vN5zZwdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vN5zawdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(anthrax::AnthraxResultObservation)).oclAsType(anthrax::AnthraxResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vN5zaAdBEeKunpQtSh6JQg" type="_LKRIIGgDEeGcR5CQkyNBsg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vN5zaQdBEeKunpQtSh6JQg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jN9RkGh6EeGcR5CQkyNBsg" name="AnthraxTherapeuticRegimenAct">
+      <ownedRule xmi:id="_vNJlcQdBEeKunpQtSh6JQg" name="TherapeuticRegimenActTemplateId" constrainedElement="_jN9RkGh6EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNJlcgdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.37')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNmRZwdBEeKunpQtSh6JQg" name="AnthraxTherapeuticRegimenActAnthraxTreatmentGivenSubstanceAdministration" constrainedElement="_jN9RkGh6EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNmRaAdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(anthrax::AnthraxTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNmRbgdBEeKunpQtSh6JQg" name="AnthraxTherapeuticRegimenActAnthraxTreatmentNotGivenSubstanceAdministration" constrainedElement="_jN9RkGh6EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNmRbwdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(anthrax::AnthraxTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_jN9RkWh6EeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2p558NSrEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_vNmRaQdBEeKunpQtSh6JQg" name="getAnthraxTreatmentGivenSubstanceAdministrations" isQuery="true" bodyCondition="_vNmRbAdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vNmRbAdBEeKunpQtSh6JQg" name="body" constrainedElement="_vNmRaQdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNmRbQdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(anthrax::AnthraxTreatmentGivenSubstanceAdministration)).oclAsType(anthrax::AnthraxTreatmentGivenSubstanceAdministration)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vNmRagdBEeKunpQtSh6JQg" type="_oH9Q8Gh7EeGcR5CQkyNBsg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNmRawdBEeKunpQtSh6JQg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_vNmRcAdBEeKunpQtSh6JQg" name="getAnthraxTreatmentNotGivenSubstanceAdministrations" isQuery="true" bodyCondition="_vNmRcwdBEeKunpQtSh6JQg">
+        <ownedRule xmi:id="_vNmRcwdBEeKunpQtSh6JQg" name="body" constrainedElement="_vNmRcAdBEeKunpQtSh6JQg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNmRdAdBEeKunpQtSh6JQg">
+            <language>OCL</language>
+            <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(anthrax::AnthraxTreatmentNotGivenSubstanceAdministration)).oclAsType(anthrax::AnthraxTreatmentNotGivenSubstanceAdministration)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_vNmRcQdBEeKunpQtSh6JQg" type="_MquqUGh8EeGcR5CQkyNBsg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNmRcgdBEeKunpQtSh6JQg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oH9Q8Gh7EeGcR5CQkyNBsg" name="AnthraxTreatmentGivenSubstanceAdministration">
+      <ownedRule xmi:id="_vNJldQdBEeKunpQtSh6JQg" name="TreatmentGivenSubstanceAdministrationTemplateId" constrainedElement="_oH9Q8Gh7EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNJldgdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.38')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_oH9Q8Wh7EeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_XOKZ4NStEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MquqUGh8EeGcR5CQkyNBsg" name="AnthraxTreatmentNotGivenSubstanceAdministration">
+      <ownedRule xmi:id="_vNJleQdBEeKunpQtSh6JQg" name="TreatmentNotGivenSubstanceAdministrationTemplateId" constrainedElement="_MquqUGh8EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNJlegdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.56')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_MquqUWh8EeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_NbgssNSwEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_h8I9AGh9EeGcR5CQkyNBsg" name="AnthraxPossibleExpossureLocationAndTypeAct">
+      <ownedRule xmi:id="_vNJlfAdBEeKunpQtSh6JQg" name="AnthraxPossibleExpossureLocationAndTypeActTemplateId" constrainedElement="_h8I9AGh9EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNJlfQdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.41')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNTWcAdBEeKunpQtSh6JQg" name="AnthraxPossibleExpossureLocationAndTypeActClassCode" constrainedElement="_h8I9AGh9EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNTWcQdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNTWcgdBEeKunpQtSh6JQg" name="AnthraxPossibleExpossureLocationAndTypeActMoodCode" constrainedElement="_h8I9AGh9EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNTWcwdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNTWdAdBEeKunpQtSh6JQg" name="AnthraxPossibleExpossureLocationAndTypeActCode" constrainedElement="_h8I9AGh9EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNTWdQdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vNdHcAdBEeKunpQtSh6JQg" name="AnthraxPossibleExpossureLocationAndTypeActStatusCode" constrainedElement="_h8I9AGh9EeGcR5CQkyNBsg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vNdHcQdBEeKunpQtSh6JQg">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xD;&#xA;value.code = 'completed')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_h8I9AWh9EeGcR5CQkyNBsg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <profileApplication xmi:id="_eWLTqUhXEeGyYa7NPQtntA">
+      <eAnnotations xmi:id="_eWLTqkhXEeGyYa7NPQtntA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_eWLTq0hXEeGyYa7NPQtntA">
+      <eAnnotations xmi:id="_eWLTrEhXEeGyYa7NPQtntA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_vMQ0oAdBEeKunpQtSh6JQg">
+      <eAnnotations xmi:id="_vMQ0oQdBEeKunpQtSh6JQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_eYGmQEhXEeGyYa7NPQtntA" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="anthrax" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/anthrax" packageName="anthrax" prefix="anthrax" base_Namespace="_eWLToEhXEeGyYa7NPQtntA"/>
+  <CDA:CDATemplate xmi:id="_eYGmQkhXEeGyYa7NPQtntA" base_Class="_eYGmQUhXEeGyYa7NPQtntA" templateId="2.16.840.1.113883.10.20.15.1.3" assigningAuthorityName="HL7">
+    <ruleId>CONF:1533</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_cwFCEGM-EeGGv9UUQ3_AWw" code="55752-0" displayName="Clinical Information">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:540</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_cwJTgGM-EeGGv9UUQ3_AWw">
+    <ruleId>CONF:542</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_cpPq8GPmEeGGv9UUQ3_AWw" value="Clinical Information">
+    <ruleId>CONF:541</ruleId>
+  </CDA:TextValue>
+  <CDA:ClassValidation xmi:id="_74nRAGPmEeGGv9UUQ3_AWw" base_Class="_9rizAGM9EeGGv9UUQ3_AWw"/>
+  <CDA:CDATemplate xmi:id="_KYh3MGPnEeGGv9UUQ3_AWw" base_Class="_9rizAGM9EeGGv9UUQ3_AWw" templateId="2.16.840.1.113883.10.20.15.2.15"/>
+  <CDA:CodeSystemConstraint xmi:id="_AduwEGPpEeGGv9UUQ3_AWw" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-389</ruleId>
+    <ruleId>CONF:735</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_AdyacGPpEeGGv9UUQ3_AWw">
+    <ruleId>CONF-388</ruleId>
+    <ruleId>CONF:737</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_AdzBgGPpEeGGv9UUQ3_AWw" value="Relevant diagnostic tests and/or laboratory data">
+    <ruleId>CONF-391</ruleId>
+    <ruleId>CONF:736</ruleId>
+  </CDA:TextValue>
+  <CDA:CDATemplate xmi:id="_RzaCcGPpEeGGv9UUQ3_AWw" base_Class="_0rqQMGPoEeGGv9UUQ3_AWw" templateId="2.16.840.1.113883.10.20.15.2.16"/>
+  <CDA:CodeSystemConstraint xmi:id="_zIuoY2PpEeGGv9UUQ3_AWw" code="29762-2" displayName="Social History">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1894</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_zI0H82PpEeGGv9UUQ3_AWw">
+    <ruleId>CONF:1896</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_zI1WEGPpEeGGv9UUQ3_AWw" value="Social History">
+    <ruleId>CONF:1895</ruleId>
+  </CDA:TextValue>
+  <CDA:CDATemplate xmi:id="_2UbIUGPpEeGGv9UUQ3_AWw" base_Class="_v4IaUGPpEeGGv9UUQ3_AWw" templateId="2.16.840.1.113883.10.20.15.2.17"/>
+  <CDA:CodeSystemConstraint xmi:id="_NXDWcGPqEeGGv9UUQ3_AWw" code="55753-8" displayName="Treatment Information">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:663</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_NXFys2PqEeGGv9UUQ3_AWw">
+    <ruleId>CONF:665</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_NXHA0GPqEeGGv9UUQ3_AWw" value="Treatment Information">
+    <ruleId>CONF:664</ruleId>
+  </CDA:TextValue>
+  <CDA:CDATemplate xmi:id="_k1n5sGPqEeGGv9UUQ3_AWw" base_Class="_GWalQGPqEeGGv9UUQ3_AWw" templateId="2.16.840.1.113883.10.20.15.2.14"/>
+  <CDA:CodeSystemConstraint xmi:id="_DnOwQGPsEeGGv9UUQ3_AWw" code="55751-2" displayName="Public Health Case Report">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_RYE_EGPuEeGGv9UUQ3_AWw" severity="WARNING">
+    <ruleId>CONF:1536</ruleId>
+    <ruleId>CONF:1537</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_XWvV4GPuEeGGv9UUQ3_AWw">
+    <ruleId>CONF:1538</ruleId>
+    <ruleId>CONF:1539</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_fQan4GPuEeGGv9UUQ3_AWw" severity="WARNING">
+    <ruleId>CONF:1540</ruleId>
+    <ruleId>CONF:1541</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_m7rDYGPuEeGGv9UUQ3_AWw" severity="WARNING">
+    <ruleId>CONF:1542</ruleId>
+    <ruleId>CONF:1543</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_zABmEGPuEeGGv9UUQ3_AWw" severity="WARNING">
+    <ruleId>CONF:1544</ruleId>
+    <ruleId>CONF:1545</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConformsTo xmi:id="_MT1OkGSdEeGBmZYSG584sw" base_Generalization="_eYGmQ0hXEeGyYa7NPQtntA"/>
+  <CDA:PropertyValidation xmi:id="_mcgxMGSpEeGFY81qWTDU9g">
+    <ruleId>CONF:1868</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_mcimYGSpEeGFY81qWTDU9g" code="ASSERTION">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1871</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_mckbkmSpEeGFY81qWTDU9g">
+    <ruleId>CONF:1869</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_mcmQwGSpEeGFY81qWTDU9g" code="completed">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1872</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_mcoF82SpEeGFY81qWTDU9g">
+    <ruleId>CONF:1874</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="__OeO8GSpEeGFY81qWTDU9g" base_Class="_PIsscGSpEeGFY81qWTDU9g" templateId="2.16.840.1.113883.10.20.15.3.36"/>
+  <CDA:PropertyValidation xmi:id="_Ws450GStEeGFY81qWTDU9g" severity="WARNING">
+    <ruleId>CONF:1873</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_ARuQIGS0EeGFY81qWTDU9g" base_Class="_51RKEGSzEeGFY81qWTDU9g" templateId="2.16.840.1.113883.10.20.15.3.35"/>
+  <CDA:ActRelationship xmi:id="_aogakGe9EeGcR5CQkyNBsg"/>
+  <CDA:Entry xmi:id="_eHXuIGe9EeGcR5CQkyNBsg" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_qT2coGe-EeGcR5CQkyNBsg"/>
+  <CDA:EntryRelationship xmi:id="_DFZKAGfHEeGcR5CQkyNBsg" severity="WARNING" typeCode="MFST"/>
+  <CDA:ValueSetConstraint xmi:id="_yDxZ0Gh7EeGcR5CQkyNBsg">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.anthrax.model/model/anthrax-vocab.uml#_dEghIGf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF:1347</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_WCx-0Gh8EeGcR5CQkyNBsg">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.anthrax.model/model/anthrax-vocab.uml#_dEghIGf4EeGcR5CQkyNBsg"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_n9ZKQ2h8EeGcR5CQkyNBsg">
+    <ruleId>CONF:1933</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_jQNbUG0PEeGzmo_M42Lv-g" base_Class="_h8I9AGh9EeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.41">
+    <ruleId>CONF:1523</ruleId>
+  </CDA:CDATemplate>
+  <CDA:Entry xmi:id="_uVDBwG0PEeGzmo_M42Lv-g" typeCode="DRIV">
+    <ruleId>CONF:1521</ruleId>
+    <ruleId>CONF:1522</ruleId>
+  </CDA:Entry>
+  <CDA:EntryRelationship xmi:id="_Lyq2AG0TEeGzmo_M42Lv-g" severity="WARNING" typeCode="COMP"/>
+  <CDA:CDATemplate xmi:id="_Ve9VIG0TEeGzmo_M42Lv-g" base_Class="_oH9Q8Gh7EeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.38"/>
+  <CDA:EntryRelationship xmi:id="_0WmXsG0TEeGzmo_M42Lv-g" severity="INFO" typeCode="COMP">
+    <ruleId>CONF:1777</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:Entry xmi:id="_Pe_E0G0VEeGzmo_M42Lv-g" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_65JMwG0VEeGzmo_M42Lv-g" severity="WARNING" typeCode="DRIV">
+    <ruleId>CONF:1530</ruleId>
+    <ruleId>CONF1531</ruleId>
+  </CDA:Entry>
+  <CDA:Entry xmi:id="_AvAM4G0WEeGzmo_M42Lv-g" severity="INFO" typeCode="DRIV">
+    <ruleId>CONF:1441</ruleId>
+  </CDA:Entry>
+  <CDA:CDATemplate xmi:id="_-aeB0G0-EeG6npjfLK1zBQ" base_Class="_jVNpMGgDEeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.40"/>
+  <CDA:CDATemplate xmi:id="_GTOGwG0_EeG6npjfLK1zBQ" base_Class="_LKRIIGgDEeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.39"/>
+  <CDA:CDATemplate xmi:id="_wKeEwHSCEeGrlOWGH_gMIg" base_Class="_jN9RkGh6EeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.37"/>
+  <CDA:CDATemplate xmi:id="_IEl7kHSDEeGrlOWGH_gMIg" base_Class="_MquqUGh8EeGcR5CQkyNBsg" templateId="2.16.840.1.113883.10.20.15.3.56"/>
+  <CDA:AssociationValidation xmi:id="_umOsQHjfEeG0i6R1ZtiJBQ" severity="WARNING">
+    <ruleId>CONF:1544</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_8svL8IfdEeGddaWGBJA2Aw"/>
+  <CDA:ValueSetConstraint xmi:id="_9BvLkIfdEeGddaWGBJA2Aw">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.anthrax.model/model/anthrax-vocab.uml#_dEghIGf4EeGcR5CQkyNBsg"/>
+  </CDA:ValueSetConstraint>
+  <Ecore:EPackage xmi:id="_vMQ0ogdBEeKunpQtSh6JQg" base_Package="_eWLToEhXEeGyYa7NPQtntA" packageName="anthrax" nsPrefix="anthrax" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/anthrax" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="anthrax">
+    <annotation>http://www.openhealthtools.org/mdht/uml initializers='org.openhealthtools.mdht.uml.cda.phcr.anthrax'</annotation>
+  </Ecore:EPackage>
+  <Ecore:EClass xmi:id="_vMZ-kgdBEeKunpQtSh6JQg" base_Class="_eYGmQUhXEeGyYa7NPQtntA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxCaseReportTemplateId AnthraxCaseReportTitle AnthraxCaseReportAnthraxPhcrClinicalInformationSection' templateId.root='2.16.840.1.113883.10.20.15.1.3' title.mixed='Public Health Case Report - Anthrax' constraints.validation.warning='AnthraxCaseReportAnthraxPhcrSocialHistorySection AnthraxCaseReportAnthraxPhcrTreatmentInformationSection AnthraxCaseReportAnthraxPhcrRelevantDxTestsSection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_vMZ-lQdBEeKunpQtSh6JQg" base_Generalization="_9rmdYGM9EeGGv9UUQ3_AWw"/>
+  <Ecore:EClass xmi:id="_vMZ-mAdBEeKunpQtSh6JQg" base_Class="_9rizAGM9EeGGv9UUQ3_AWw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxPhcrClinicalInformationSectionTemplateId AnthraxPhcrClinicalInformationSectionAnthraxCaseObservation' templateId.root='2.16.840.1.113883.10.20.15.2.15'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_vMZ-mQdBEeKunpQtSh6JQg" base_Generalization="_sok8YIQaEeGRypoUd5okyA"/>
+  <Ecore:EClass xmi:id="_vMjvkgdBEeKunpQtSh6JQg" base_Class="_0rqQMGPoEeGGv9UUQ3_AWw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxPhcrRelevantDxTestsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.16' constraints.validation.info='AnthraxPhcrRelevantDxTestsSectionAnthraxResultOrganizer' constraints.validation.warning='AnthraxPhcrRelevantDxTestsSectionAnthraxResultObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_vMjvkwdBEeKunpQtSh6JQg" base_Generalization="_v4IaUWPpEeGGv9UUQ3_AWw"/>
+  <Ecore:EClass xmi:id="_vMjvlwdBEeKunpQtSh6JQg" base_Class="_v4IaUGPpEeGGv9UUQ3_AWw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxPhcrSocialHistorySectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.17' constraints.validation.info='AnthraxPhcrSocialHistorySectionAnthraxPossibleExpossureLocationAndTypeAct'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_vMjvmAdBEeKunpQtSh6JQg" base_Generalization="_GWalQWPqEeGGv9UUQ3_AWw"/>
+  <Ecore:EClass xmi:id="_vMjvmwdBEeKunpQtSh6JQg" base_Class="_GWalQGPqEeGGv9UUQ3_AWw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxPhcrTreatmentInformationSectionTemplateId AnthraxPhcrTreatmentInformationSectionAnthraxTherapeuticRegimenAct' templateId.root='2.16.840.1.113883.10.20.15.2.14'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_vMjvnAdBEeKunpQtSh6JQg" base_Generalization="_PIvvwGSpEeGFY81qWTDU9g"/>
+  <Ecore:EClass xmi:id="_vMtgkQdBEeKunpQtSh6JQg" base_Class="_PIsscGSpEeGFY81qWTDU9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxCaseObservationTemplateId AnthraxCaseObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.36' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='AnthraxCaseObservationAnthraxSignsAndSymptomsObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_vMtglAdBEeKunpQtSh6JQg" base_Generalization="_51RxIGSzEeGFY81qWTDU9g"/>
+  <Ecore:EClass xmi:id="_vMtglwdBEeKunpQtSh6JQg" base_Class="_51RKEGSzEeGFY81qWTDU9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxSignsAndSymptomsObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.35'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_vM2qgAdBEeKunpQtSh6JQg" base_Generalization="_LKa5IGgDEeGcR5CQkyNBsg"/>
+  <Ecore:EClass xmi:id="_vM2qhAdBEeKunpQtSh6JQg" base_Class="_LKRIIGgDEeGcR5CQkyNBsg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxResultObservationTemplateId AnthraxResultObservationCode' templateId.root='2.16.840.1.113883.10.20.15.3.39' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_vNAbgAdBEeKunpQtSh6JQg" base_Generalization="_jVNpMWgDEeGcR5CQkyNBsg"/>
+  <Ecore:EClass xmi:id="_vNAbhAdBEeKunpQtSh6JQg" base_Class="_jVNpMGgDEeGcR5CQkyNBsg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxResultOrganizerTemplateId AnthraxResultOrganizerCode AnthraxResultOrganizerAnthraxResultObservation' templateId.root='2.16.840.1.113883.10.20.15.3.40' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_vNJlcAdBEeKunpQtSh6JQg" base_Generalization="_jN9RkWh6EeGcR5CQkyNBsg"/>
+  <Ecore:EClass xmi:id="_vNJlcwdBEeKunpQtSh6JQg" base_Class="_jN9RkGh6EeGcR5CQkyNBsg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxTherapeuticRegimenActTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.37' constraints.validation.warning='AnthraxTherapeuticRegimenActAnthraxTreatmentGivenSubstanceAdministration' constraints.validation.info='AnthraxTherapeuticRegimenActAnthraxTreatmentNotGivenSubstanceAdministration'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_vNJldAdBEeKunpQtSh6JQg" base_Generalization="_oH9Q8Wh7EeGcR5CQkyNBsg"/>
+  <Ecore:EClass xmi:id="_vNJldwdBEeKunpQtSh6JQg" base_Class="_oH9Q8Gh7EeGcR5CQkyNBsg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxTreatmentGivenSubstanceAdministrationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.38'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_vNJleAdBEeKunpQtSh6JQg" base_Generalization="_MquqUWh8EeGcR5CQkyNBsg"/>
+  <Ecore:EClass xmi:id="_vNJlewdBEeKunpQtSh6JQg" base_Class="_MquqUGh8EeGcR5CQkyNBsg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxTreatmentNotGivenSubstanceAdministrationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.56'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_vNJlfgdBEeKunpQtSh6JQg" base_Class="_h8I9AGh9EeGcR5CQkyNBsg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxPossibleExpossureLocationAndTypeActTemplateId AnthraxPossibleExpossureLocationAndTypeActClassCode AnthraxPossibleExpossureLocationAndTypeActMoodCode AnthraxPossibleExpossureLocationAndTypeActCode AnthraxPossibleExpossureLocationAndTypeActStatusCode' templateId.root='2.16.840.1.113883.10.20.15.3.41' classCode='ACT' moodCode='EVN' code.code='413350009' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Finding with explicit context' statusCode.code='completed'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

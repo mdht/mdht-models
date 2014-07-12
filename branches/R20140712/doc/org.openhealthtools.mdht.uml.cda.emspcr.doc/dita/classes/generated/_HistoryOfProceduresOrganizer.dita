@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>History Of Procedures Organizer - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.62</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.62"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.62"</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10073) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt> (CONF:10077) <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> <ol><li> Such components <b>SHALL</b> contain zero or one [0..1] <tt><b>procedure</b></tt> <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type x_ActClassDocumentEntryOrganizer
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type ActMood
+</li>
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10073) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt> (CONF:10077) <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> <ol><li> Such components <b>SHALL</b> contain zero or one [0..1] <tt><b>procedure</b></tt> <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">History Of Procedures Organizer</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.62</tt>]</p>
+</body>
+</topic>

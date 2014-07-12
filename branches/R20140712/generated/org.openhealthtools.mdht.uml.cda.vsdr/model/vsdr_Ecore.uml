@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_W7svwEj_EeGtBMy1ENLCpQ" name="vsdr">
+    <packageImport xmi:id="_W_H3MEj_EeGtBMy1ENLCpQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_W_H3MUj_EeGtBMy1ENLCpQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_W9yacUj_EeGtBMy1ENLCpQ" name="Reporting Death Information from a Clinical Setting to Vital Records">
+      <ownedRule xmi:id="_avqXAGESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsTemplateId" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_avqXAWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_avqXA2ESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsClassCode" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_avqXBGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('classCode') and self.classCode=vocab::ActClinicalDocument::DOCCLIN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_avqXBWESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsMoodCode" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_avqXBmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('moodCode') and self.moodCode=vocab::ActMood::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_avwdomESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsCodeP" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_avwdo2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_avwdoGESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsCode" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_avwdoWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;
+value.code = '69409-1' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_av2kQWESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsConfidentialityCodeP" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_av2kQmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_avwdpGESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsConfidentialityCode" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_av2kQGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and &#xD;
+let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in &#xD;
+value.codeSystem = '2.16.840.1.11.3883.5.25')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_av2kQ2ESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsId" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_av2kRGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.id.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_av8q4GESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsLanguageCode" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_av8q4WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_awCxgGESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsRealmCode" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_awCxgWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and &#xD;
+let value : datatypes::CS = element.oclAsType(datatypes::CS) in &#xD;
+value.code = 'US')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_awCxgmESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsRealmCodeP" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_awCxg2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.realmCode->size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_awI4IGESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsTitle" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_awI4IWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_awI4ImESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsEffectiveTime" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_awI4I2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3e2RGESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsCustodian" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3e2RWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3e2SWESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsDeath Report Document Body" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3e2SmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsdr::Death Report Document Body))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3k84GESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsAuthor" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3k84WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3k85mESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsRecordTarget" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3k852ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a4h_ImESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationName" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4h_I2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a4h_JGESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationId" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4h_JWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a4h_JmESEeOucruFG1usrQ" name="Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodian" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4h_J2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.custodian->excluding(null)->reject(assignedCustodian->one(assignedCustodian : cda::AssignedCustodian | not assignedCustodian.oclIsUndefined() and assignedCustodian.oclIsKindOf(cda::AssignedCustodian)))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_do13EFlvEeGYU_6eTM1M0g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedOperation xmi:id="_a3e2S2ESEeOucruFG1usrQ" name="getDeath Report Document Body" isQuery="true" bodyCondition="_a3e2TmESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_a3e2TmESEeOucruFG1usrQ" name="body" constrainedElement="_a3e2S2ESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3e2T2ESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsdr::Death Report Document Body))->asSequence()->any(true).oclAsType(vsdr::Death Report Document Body)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_a3e2TGESEeOucruFG1usrQ" type="_2l1UUEkBEeGtBMy1ENLCpQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a3e2TWESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TwEEwEkAEeGtBMy1ENLCpQ" name="Date and Time of Death">
+      <ownedComment xmi:id="_2dxZ8EkAEeGtBMy1ENLCpQ">
+        <body>The template provides information about the decedent's date and time of death.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_awzmgGESEeOucruFG1usrQ" name="Date and Time of DeathTemplateId" constrainedElement="_TwEEwEkAEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_awzmgWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.13')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_awzmg2ESEeOucruFG1usrQ" name="Date and Time of DeathClassCode" constrainedElement="_TwEEwEkAEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_awzmhGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.classCode=vocab::ActClassObservation::OBS</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_awzmhWESEeOucruFG1usrQ" name="Date and Time of DeathMoodCode" constrainedElement="_TwEEwEkAEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_awzmhmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_aw5tImESEeOucruFG1usrQ" name="Date and Time of DeathCodeP" constrainedElement="_TwEEwEkAEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aw5tI2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_aw5tIGESEeOucruFG1usrQ" name="Date and Time of DeathCode" constrainedElement="_TwEEwEkAEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aw5tIWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = '31211-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_aw_zwGESEeOucruFG1usrQ" name="Date and Time of DeathEffectiveTime" constrainedElement="_TwEEwEkAEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aw_zwWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_aw_zwmESEeOucruFG1usrQ" name="Date and Time of DeathText" constrainedElement="_TwEEwEkAEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aw_zw2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_TwEEwUkAEeGtBMy1ENLCpQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2l1UUEkBEeGtBMy1ENLCpQ" name="Death Report Document Body">
+      <ownedRule xmi:id="_aw_zxGESEeOucruFG1usrQ" name="Death Report Document BodyTemplateId" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aw_zxWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axF6YGESEeOucruFG1usrQ" name="Death Report Document BodyCode" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axF6YWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;
+value.code = '69409-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axF6YmESEeOucruFG1usrQ" name="Death Report Document BodyCodeP" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axF6Y2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axMBAGESEeOucruFG1usrQ" name="Death Report Document BodyText" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axMBAWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.text.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axMBAmESEeOucruFG1usrQ" name="Death Report Document BodyTime of Death" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axMBA2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Date and Time of Death) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axYORmESEeOucruFG1usrQ" name="Death Report Document BodyLocation of Death" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axYOR2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Location of Death) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ax82AmESEeOucruFG1usrQ" name="Death Report Document BodyCertifying Death" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ax82A2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Certifying Death) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_aytrAmESEeOucruFG1usrQ" name="Death Report Document BodyManner of Death" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aytrA2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Manner of Death) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_aytrCWESEeOucruFG1usrQ" name="Death Report Document BodyPregnancy Status" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aytrCmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Pregnancy Status) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ayzxpWESEeOucruFG1usrQ" name="Death Report Document BodyTobacco Use" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayzxpmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Tobacco Use) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a1erIGESEeOucruFG1usrQ" name="Death Report Document BodyInjury" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a1erIWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(vsdr::Injury) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a1erJ2ESEeOucruFG1usrQ" name="Death Report Document BodyCause of Death" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a1erKGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(vsdr::Death Causal Information) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3AVImESEeOucruFG1usrQ" name="Death Report Document BodyAutopsy Performance" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3AVI2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Autopsy Performance) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3AVKWESEeOucruFG1usrQ" name="Death Report Document BodyAutopsy Results" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3AVKmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Autopsy Results) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3GbxWESEeOucruFG1usrQ" name="Death Report Document BodyCoroner Referral" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3GbxmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Coroner Referral) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3k87GESEeOucruFG1usrQ" name="Death Report Document BodyCoroner Case Transfer" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3k87WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Coroner Case Transfer) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a39XYGESEeOucruFG1usrQ" name="Death Report Document BodyDeathLocationType" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a39XYWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Death LocationType) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a4b4gGESEeOucruFG1usrQ" name="Death Report Document BodyPronouncing Death" constrainedElement="_2l1UUEkBEeGtBMy1ENLCpQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4b4gWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Pronouncing Death) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_2l1UUUkBEeGtBMy1ENLCpQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedOperation xmi:id="_axMBBGESEeOucruFG1usrQ" name="getTime of Death" isQuery="true" bodyCondition="_axMBB2ESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_axMBB2ESEeOucruFG1usrQ" name="body" constrainedElement="_axMBBGESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_axMBCGESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Date and Time of Death))->asSequence()->any(true).oclAsType(vsdr::Date and Time of Death)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_axMBBWESEeOucruFG1usrQ" type="_TwEEwEkAEeGtBMy1ENLCpQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_axMBBmESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_axeU4GESEeOucruFG1usrQ" name="getLocation of Death" isQuery="true" bodyCondition="_axeU42ESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_axeU42ESEeOucruFG1usrQ" name="body" constrainedElement="_axeU4GESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_axeU5GESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Location of Death))->asSequence()->any(true).oclAsType(vsdr::Location of Death)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_axeU4WESEeOucruFG1usrQ" type="_GBayYEkfEeGqCpGMXULTvg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_axeU4mESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ax82BGESEeOucruFG1usrQ" name="getCertifying Death" isQuery="true" bodyCondition="_ax82B2ESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_ax82B2ESEeOucruFG1usrQ" name="body" constrainedElement="_ax82BGESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ax82CGESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Certifying Death))->asSequence()->any(true).oclAsType(vsdr::Certifying Death)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ax82BWESEeOucruFG1usrQ" type="_sLKXUEkkEeGZuYViNfIskw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ax82BmESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aytrBGESEeOucruFG1usrQ" name="getManner of Death" isQuery="true" bodyCondition="_aytrB2ESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_aytrB2ESEeOucruFG1usrQ" name="body" constrainedElement="_aytrBGESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_aytrCGESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Manner of Death))->asSequence()->any(true).oclAsType(vsdr::Manner of Death)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_aytrBWESEeOucruFG1usrQ" type="_ZzKdMEtREeGCUrfdtxCbHg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aytrBmESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ayzxoGESEeOucruFG1usrQ" name="getPregnancy Status" isQuery="true" bodyCondition="_ayzxo2ESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_ayzxo2ESEeOucruFG1usrQ" name="body" constrainedElement="_ayzxoGESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayzxpGESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Pregnancy Status))->asSequence()->any(true).oclAsType(vsdr::Pregnancy Status)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ayzxoWESEeOucruFG1usrQ" type="_LHUeYEtSEeGCUrfdtxCbHg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ayzxomESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ayzxp2ESEeOucruFG1usrQ" name="getTobacco Use" isQuery="true" bodyCondition="_ayzxqmESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_ayzxqmESEeOucruFG1usrQ" name="body" constrainedElement="_ayzxp2ESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayzxq2ESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Tobacco Use))->asSequence()->any(true).oclAsType(vsdr::Tobacco Use)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ayzxqGESEeOucruFG1usrQ" type="_nmWDwEtSEeGCUrfdtxCbHg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ayzxqWESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_a1erImESEeOucruFG1usrQ" name="getInjury" isQuery="true" bodyCondition="_a1erJWESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_a1erJWESEeOucruFG1usrQ" name="body" constrainedElement="_a1erImESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_a1erJmESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(vsdr::Injury))->asSequence()->any(true).oclAsType(vsdr::Injury)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_a1erI2ESEeOucruFG1usrQ" type="_zXPkAFGqEeGSqNO1bVTZyw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a1erJGESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_a1erKWESEeOucruFG1usrQ" name="getCause of Death" isQuery="true" bodyCondition="_a1erLGESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_a1erLGESEeOucruFG1usrQ" name="body" constrainedElement="_a1erKWESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_a1erLWESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(vsdr::Death Causal Information))->asSequence()->any(true).oclAsType(vsdr::Death Causal Information)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_a1erKmESEeOucruFG1usrQ" type="_K6HN4FGqEeGSqNO1bVTZyw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a1erK2ESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_a3AVJGESEeOucruFG1usrQ" name="getAutopsy Performance" isQuery="true" bodyCondition="_a3AVJ2ESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_a3AVJ2ESEeOucruFG1usrQ" name="body" constrainedElement="_a3AVJGESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3AVKGESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Autopsy Performance))->asSequence()->any(true).oclAsType(vsdr::Autopsy Performance)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_a3AVJWESEeOucruFG1usrQ" type="_YpKeMFGyEeGSqNO1bVTZyw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a3AVJmESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_a3GbwGESEeOucruFG1usrQ" name="getAutopsy Results" isQuery="true" bodyCondition="_a3Gbw2ESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_a3Gbw2ESEeOucruFG1usrQ" name="body" constrainedElement="_a3GbwGESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3GbxGESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Autopsy Results))->asSequence()->any(true).oclAsType(vsdr::Autopsy Results)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_a3GbwWESEeOucruFG1usrQ" type="_V-OFcFGzEeGSqNO1bVTZyw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a3GbwmESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_a3Gbx2ESEeOucruFG1usrQ" name="getCoroner Referral" isQuery="true" bodyCondition="_a3GbymESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_a3GbymESEeOucruFG1usrQ" name="body" constrainedElement="_a3Gbx2ESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3Gby2ESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Coroner Referral))->asSequence()->any(true).oclAsType(vsdr::Coroner Referral)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_a3GbyGESEeOucruFG1usrQ" type="_v3dWgFHCEeGSqNO1bVTZyw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a3GbyWESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_a3rDgGESEeOucruFG1usrQ" name="getCoroner Case Transfer" isQuery="true" bodyCondition="_a3rDg2ESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_a3rDg2ESEeOucruFG1usrQ" name="body" constrainedElement="_a3rDgGESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3rDhGESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Coroner Case Transfer))->asSequence()->any(true).oclAsType(vsdr::Coroner Case Transfer)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_a3rDgWESEeOucruFG1usrQ" type="_Zf8sgFHDEeGSqNO1bVTZyw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a3rDgmESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_a39XYmESEeOucruFG1usrQ" name="getDeathLocationType" isQuery="true" bodyCondition="_a39XZWESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_a39XZWESEeOucruFG1usrQ" name="body" constrainedElement="_a39XYmESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_a39XZmESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Death LocationType))->asSequence()->any(true).oclAsType(vsdr::Death LocationType)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_a39XY2ESEeOucruFG1usrQ" type="_-IassG-oEeGducFY2S5l3A" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a39XZGESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_a4b4gmESEeOucruFG1usrQ" name="getPronouncing Death" isQuery="true" bodyCondition="_a4b4hWESEeOucruFG1usrQ">
+        <ownedRule xmi:id="_a4b4hWESEeOucruFG1usrQ" name="body" constrainedElement="_a4b4gmESEeOucruFG1usrQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4b4hmESEeOucruFG1usrQ">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Pronouncing Death))->asSequence()->any(true).oclAsType(vsdr::Pronouncing Death)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_a4b4g2ESEeOucruFG1usrQ" type="_TLji0F6VEeO_5svOqPnaJg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a4b4hGESEeOucruFG1usrQ" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GBayYEkfEeGqCpGMXULTvg" name="Location of Death">
+      <ownedComment xmi:id="_Q4taoFGnEeGSqNO1bVTZyw">
+        <body>This template contains information to document the place (geographic location) where the death occurred.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_axMBCWESEeOucruFG1usrQ" name="Location of DeathTemplateId" constrainedElement="_GBayYEkfEeGqCpGMXULTvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axMBCmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.10')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axMBDGESEeOucruFG1usrQ" name="Location of DeathClassCode" constrainedElement="_GBayYEkfEeGqCpGMXULTvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axSHoGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('classCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axSHoWESEeOucruFG1usrQ" name="Location of DeathMoodCode" constrainedElement="_GBayYEkfEeGqCpGMXULTvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axSHomESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axYOQGESEeOucruFG1usrQ" name="Location of DeathCodeP" constrainedElement="_GBayYEkfEeGqCpGMXULTvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axYOQWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axSHo2ESEeOucruFG1usrQ" name="Location of DeathCode" constrainedElement="_GBayYEkfEeGqCpGMXULTvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axSHpGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axYOQmESEeOucruFG1usrQ" name="Location of DeathText" constrainedElement="_GBayYEkfEeGqCpGMXULTvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axYOQ2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axYORGESEeOucruFG1usrQ" name="Location of DeathValue" constrainedElement="_GBayYEkfEeGqCpGMXULTvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axYORWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::AD)))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_GBayYUkfEeGqCpGMXULTvg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_sLKXUEkkEeGZuYViNfIskw" name="Certifying Death">
+      <ownedComment xmi:id="_2v8z8FGkEeGSqNO1bVTZyw">
+        <body>The template contains information on the certification of the person's death.  This information may not be available if a case has been assigned to the coroner or medical examiner.&#xD;
+&#xD;
+The certifying physician certifies or reports the cause of death.  In addition the certifying physician is responsible for including additional items, e.g., pregnancy status, tobacco use.  In most cases, a physician will both pronounce death and certify or report the cause of death.  A different physician will pronounce death only when the attending physician is unavailable to certify the cause of death at the time of death and if State law provides for this option. If an inquiry is required by a State Post-Mortem Examinations Act, a medical examiner or coroner is responsible for determining cause of death.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_axeU5WESEeOucruFG1usrQ" name="Certifying DeathTemplateId" constrainedElement="_sLKXUEkkEeGZuYViNfIskw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axeU5mESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.7')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axeU6GESEeOucruFG1usrQ" name="Certifying DeathClassCode" constrainedElement="_sLKXUEkkEeGZuYViNfIskw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axeU6WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('classCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axeU6mESEeOucruFG1usrQ" name="Certifying DeathMoodCode" constrainedElement="_sLKXUEkkEeGZuYViNfIskw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axeU62ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axkbgGESEeOucruFG1usrQ" name="Certifying DeathCode" constrainedElement="_sLKXUEkkEeGZuYViNfIskw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axkbgWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69437-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_axqiIGESEeOucruFG1usrQ" name="Certifying DeathEffectiveTime" constrainedElement="_sLKXUEkkEeGZuYViNfIskw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_axqiIWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3SpCmESEeOucruFG1usrQ" name="Certifying DeathCertificationPerformer" constrainedElement="_sLKXUEkkEeGZuYViNfIskw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3SpC2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->one(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_sLUIUEkkEeGZuYViNfIskw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZzKdMEtREeGCUrfdtxCbHg" name="Manner of Death">
+      <ownedComment xmi:id="_dBjbwFGnEeGSqNO1bVTZyw">
+        <body>This template contains information on the manner in which the death occurred.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_ax82CWESEeOucruFG1usrQ" name="Manner of DeathTemplateId" constrainedElement="_ZzKdMEtREeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ax82CmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.11')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ax82DGESEeOucruFG1usrQ" name="Manner of DeathClassCode" constrainedElement="_ZzKdMEtREeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ax82DWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.classCode=vocab::ActClassObservation::OBS</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ax82DmESEeOucruFG1usrQ" name="Manner of DeathMoodCode" constrainedElement="_ZzKdMEtREeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ax82D2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ayC8omESEeOucruFG1usrQ" name="Manner of DeathCodeP" constrainedElement="_ZzKdMEtREeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayC8o2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ayC8oGESEeOucruFG1usrQ" name="Manner of DeathCode" constrainedElement="_ZzKdMEtREeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayC8oWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69449-7' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ayJDQGESEeOucruFG1usrQ" name="Manner of DeathValue" constrainedElement="_ZzKdMEtREeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayJDQWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Z0HfcEtREeGCUrfdtxCbHg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LHUeYEtSEeGCUrfdtxCbHg" name="Pregnancy Status">
+      <ownedComment xmi:id="_vfZ3IFGnEeGSqNO1bVTZyw">
+        <body>This template contains information on the pregnancy status of the decedent.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_ayJDQmESEeOucruFG1usrQ" name="Pregnancy StatusTemplateId" constrainedElement="_LHUeYEtSEeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayJDQ2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.12')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ayJDRWESEeOucruFG1usrQ" name="Pregnancy StatusClassCode" constrainedElement="_LHUeYEtSEeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayJDRmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.classCode=vocab::ActClassObservation::OBS</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ayPJ4GESEeOucruFG1usrQ" name="Pregnancy StatusMoodCode" constrainedElement="_LHUeYEtSEeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayPJ4WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ayVQgmESEeOucruFG1usrQ" name="Pregnancy StatusCodeP" constrainedElement="_LHUeYEtSEeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayVQg2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ayVQgGESEeOucruFG1usrQ" name="Pregnancy StatusCode" constrainedElement="_LHUeYEtSEeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayVQgWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69442-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_aybXIGESEeOucruFG1usrQ" name="Pregnancy StatusValue" constrainedElement="_LHUeYEtSEeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aybXIWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_LHVFcEtSEeGCUrfdtxCbHg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nmWDwEtSEeGCUrfdtxCbHg" name="Tobacco Use">
+      <ownedComment xmi:id="_PuexQFGpEeGSqNO1bVTZyw">
+        <body>this template includes information about the decedent's use of tobacco.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_aybXImESEeOucruFG1usrQ" name="Tobacco UseTemplateId" constrainedElement="_nmWDwEtSEeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayhdwGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.14')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ayhdwmESEeOucruFG1usrQ" name="Tobacco UseClassCode" constrainedElement="_nmWDwEtSEeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayhdw2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.classCode=vocab::ActClassObservation::OBS</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_aynkYGESEeOucruFG1usrQ" name="Tobacco UseMoodCode" constrainedElement="_nmWDwEtSEeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aynkYWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_aynkYmESEeOucruFG1usrQ" name="Tobacco UseCode" constrainedElement="_nmWDwEtSEeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aynkY2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69443-0' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_aytrAGESEeOucruFG1usrQ" name="Tobacco UseValue" constrainedElement="_nmWDwEtSEeGCUrfdtxCbHg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aytrAWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_nmWq0EtSEeGCUrfdtxCbHg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_K6HN4FGqEeGSqNO1bVTZyw" name="Death Causal Information">
+      <ownedComment xmi:id="_XIpAQFGqEeGSqNO1bVTZyw">
+        <body>The template contains information provided by the clinican to indicate the cause or causes behind the person's death.  The information includes the chain of events that directly caused the death, and includes other significant conditions contributing to death.  There may be up to four causal elements provided, along with a single statement of the other significant conditions.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_ayzxrGESEeOucruFG1usrQ" name="Death Causal InformationTemplateId" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayzxrWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.6')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ayzxr2ESEeOucruFG1usrQ" name="Death Causal InformationClassCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ayzxsGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('classCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ay54QGESEeOucruFG1usrQ" name="Death Causal InformationMoodCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ay54QWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ay54QmESEeOucruFG1usrQ" name="Death Causal InformationCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ay54Q2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69453-9' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ay_-4mESEeOucruFG1usrQ" name="Death Causal InformationStatusCodeP" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ay_-42ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ay_-4GESEeOucruFG1usrQ" name="Death Causal InformationStatusCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ay_-4WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xD;
+value.code = 'Active')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3GbzmESEeOucruFG1usrQ" name="Death Causal InformationComponentCause" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3Gbz2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>1..4->includes(self.component->select(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))->size())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3MiYGESEeOucruFG1usrQ" name="Death Causal InformationComponentOtherSignificantCondition" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3MiYWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->exists(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a46ZoGESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a46ZoWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)..observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a46ZomESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a46Zo2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)..observation->excluding(null)->reject(not code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a46ZpGESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a46ZpWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)..observation->excluding(null)->reject(not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69440-6' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a46ZpmESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a46Zp2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)..observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a46ZqGESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a46ZqWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)..observation->excluding(null)->reject(value->forAll(element | element.oclIsTypeOf(datatypes::ED)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a46ZqmESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a46Zq2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null).->reject(not sequenceNumber.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a46ZrGESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a46ZrWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null).->reject(isDefined('typeCode') and typeCode=vocab::ActRelationshipHasComponent::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a46ZrmESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a46Zr2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null).->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a46ZsGESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseClassCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a46ZsWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a46ZsmESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseCodeP" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a46Zs2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5AgQGESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5AgQWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = code.oclAsType(datatypes::CD) in &#xD;
+value.code = '21984-0' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5AgQmESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseMoodCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5AgQ2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5AgRGESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCauseValue" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5AgRWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5AgRmESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseSequenceNumber" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5AgR2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(not sequenceNumber.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5AgSGESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseTypeCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5AgSWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(isDefined('typeCode') and typeCode=vocab::ActRelationshipHasComponent::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5AgSmESEeOucruFG1usrQ" name="Death Causal InformationComponentCauseDeathCause" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5AgS2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5AgTGESEeOucruFG1usrQ" name="Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionClassCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5AgTWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5AgTmESEeOucruFG1usrQ" name="Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5AgT2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5AgUGESEeOucruFG1usrQ" name="Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCodeP" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5AgUWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5AgUmESEeOucruFG1usrQ" name="Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5AgU2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69441-4' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5Gm4GESEeOucruFG1usrQ" name="Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionValue" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5Gm4WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::ED))))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5Gm4mESEeOucruFG1usrQ" name="Death Causal InformationComponentOtherSignificantConditionTypeCode" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5Gm42ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(isDefined('typeCode') and typeCode=vocab::ActRelationshipHasComponent::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5Gm5GESEeOucruFG1usrQ" name="Death Causal InformationComponentOtherSignificantConditionOtherSignificantCondition" constrainedElement="_K6HN4FGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5Gm5WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_K6HN4VGqEeGSqNO1bVTZyw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zXPkAFGqEeGSqNO1bVTZyw" name="Injury">
+      <ownedComment xmi:id="_UvrIUFGrEeGSqNO1bVTZyw">
+        <body>The template includes information, only provided if relevant, on an injury that contributed to the person's death.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_az26hGESEeOucruFG1usrQ" name="InjuryTemplateId" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_az26hWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.9')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_az26h2ESEeOucruFG1usrQ" name="InjuryClassCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_az26iGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('classCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_az9BIGESEeOucruFG1usrQ" name="InjuryMoodCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_az9BIWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_az9BImESEeOucruFG1usrQ" name="InjuryCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_az9BI2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = '71481-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_az9BJGESEeOucruFG1usrQ" name="InjuryCodeP" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_az9BJWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a0DHwGESEeOucruFG1usrQ" name="InjuryStatusCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a0DHwWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3MiZmESEeOucruFG1usrQ" name="InjuryComponentInjuryInformation" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3MiZ2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3MiaGESEeOucruFG1usrQ" name="InjuryComponentWorkAssociation" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3MiaWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3SpAGESEeOucruFG1usrQ" name="InjuryComponentTransportationAssociation" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3SpAWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3SpAmESEeOucruFG1usrQ" name="InjuryComponentTransportationRelationship" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3SpA2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5fBYGESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5fBYWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null).participant->excluding(null).participantRole->excluding(null).scopingEntity->excluding(null)->reject(isDefined('classCode') and classCode=vocab::EntityClassRoot::PLC)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5fBYmESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5fBY2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null).participant->excluding(null).participantRole->excluding(null).scopingEntity->excluding(null)->reject(isDefined('determinerCode'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5fBZGESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5fBZWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null).participant->excluding(null).participantRole->excluding(null).scopingEntity->excluding(null)->reject((desc.oclIsUndefined() or desc.isNullFlavorUndefined()) implies (not desc.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5fBZmESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5fBZ2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null).participant->excluding(null).participantRole->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5fBaGESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5fBaWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null).participant->excluding(null).participantRole->excluding(null)->reject(isDefined('classCode') and classCode=vocab::RoleClassRoot::ISDLOC)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5fBamESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5fBa2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null).participant->excluding(null).participantRole->excluding(null)->reject(scopingEntity->one(scopingEntity : cda::Entity | not scopingEntity.oclIsUndefined() and scopingEntity.oclIsKindOf(cda::Entity)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5fBbGESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5lIAGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null).participant->excluding(null)->reject(typeCode=vocab::ParticipationType::LOC)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5lIAWESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5lIAmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null).participant->excluding(null)->reject(participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(cda::ParticipantRole)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5lIA2ESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationClassCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5lIBGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5lIBWESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationMoodCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5lIBmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5lIB2ESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationCodeP" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5lICGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5lICWESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5lICmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = code.oclAsType(datatypes::CD) in &#xD;
+value.code = '11374-6' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5lIC2ESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationText" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5lIDGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject((text.oclIsUndefined() or text.isNullFlavorUndefined()) implies (not text.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5lIDWESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationValue" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5lIDmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::BL))))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5lID2ESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationEffectiveTime" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5lIEGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5lIEWESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformationLocationParticipation" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5lIEmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5rOoGESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationTypeCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5rOoWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(isDefined('typeCode') and typeCode=vocab::ActRelationshipHasComponent::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5rOomESEeOucruFG1usrQ" name="InjuryComponentInjuryInformationInjuryInformation" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5rOo2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5rOpGESEeOucruFG1usrQ" name="InjuryComponentWorkAssociationWorkAssociationClassCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5rOpWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5rOpmESEeOucruFG1usrQ" name="InjuryComponentWorkAssociationWorkAssociationMoodCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5rOp2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5rOqGESEeOucruFG1usrQ" name="InjuryComponentWorkAssociationWorkAssociationCodeP" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5rOqWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5rOqmESEeOucruFG1usrQ" name="InjuryComponentWorkAssociationWorkAssociationCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5rOq2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69444-8' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5rOrGESEeOucruFG1usrQ" name="InjuryComponentWorkAssociationWorkAssociationValue" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5rOrWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::BL))))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5rOrmESEeOucruFG1usrQ" name="InjuryComponentWorkAssociationTypeCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5rOr2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(isDefined('typeCode') and typeCode=vocab::ActRelationshipHasComponent::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5xVQGESEeOucruFG1usrQ" name="InjuryComponentWorkAssociationWorkAssociation" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5xVQWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5xVQmESEeOucruFG1usrQ" name="InjuryComponentTransportationAssociationTransportationAssociationClassCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5xVQ2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5xVRGESEeOucruFG1usrQ" name="InjuryComponentTransportationAssociationTransportationAssociationMoodCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5xVRWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5xVRmESEeOucruFG1usrQ" name="InjuryComponentTransportationAssociationTransportationAssociationCodeP" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5xVR2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a5xVSGESEeOucruFG1usrQ" name="InjuryComponentTransportationAssociationTransportationAssociationCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5xVSWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69448-9' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a53b4GESEeOucruFG1usrQ" name="InjuryComponentTransportationAssociationTransportationAssociationValue" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a53b4WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::BL))))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a53b4mESEeOucruFG1usrQ" name="InjuryComponentTransportationAssociationTypeCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a53b42ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(isDefined('typeCode') and typeCode=vocab::ActRelationshipHasComponent::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a53b5GESEeOucruFG1usrQ" name="InjuryComponentTransportationAssociationTransportationAssociation" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a53b5WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a53b5mESEeOucruFG1usrQ" name="InjuryComponentTransportationRelationshipTransportationRelationshipClassCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a53b52ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a53b6GESEeOucruFG1usrQ" name="InjuryComponentTransportationRelationshipTransportationRelationshipMoodCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a53b6WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a59igGESEeOucruFG1usrQ" name="InjuryComponentTransportationRelationshipTransportationRelationshipCodeP" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a59igWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a59igmESEeOucruFG1usrQ" name="InjuryComponentTransportationRelationshipTransportationRelationshipCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a59ig2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject(not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69451-3' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a59ihGESEeOucruFG1usrQ" name="InjuryComponentTransportationRelationshipTransportationRelationshipValue" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a59ihWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '303980003' or value.code = '257500003' or value.code = '257518000'))))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a59ihmESEeOucruFG1usrQ" name="InjuryComponentTransportationRelationshipTransportationRelationshipValueP" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a59ih2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CD))))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a59iiGESEeOucruFG1usrQ" name="InjuryComponentTransportationRelationshipTypeCode" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a59iiWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(isDefined('typeCode') and typeCode=vocab::ActRelationshipHasComponent::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a59iimESEeOucruFG1usrQ" name="InjuryComponentTransportationRelationshipTransportationRelationship" constrainedElement="_zXPkAFGqEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a59ii2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.component->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_zXQLEFGqEeGSqNO1bVTZyw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YpKeMFGyEeGSqNO1bVTZyw" name="Autopsy Performance">
+      <ownedComment xmi:id="_kztDMFKIEeG6eOb5pyaZOw">
+        <body>Information on the performance of an autopsy.  Minimally, information on whether or not an autopsy was performed is recorded.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_a1erLmESEeOucruFG1usrQ" name="Autopsy PerformanceTemplateId" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a1erL2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.2')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a1kxwGESEeOucruFG1usrQ" name="Autopsy PerformanceClassCode" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a1kxwWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.classCode=vocab::ActClassObservation::OBS</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a1kxwmESEeOucruFG1usrQ" name="Autopsy PerformanceMoodCode" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a1kxw2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a1q4YGESEeOucruFG1usrQ" name="Autopsy PerformanceCodeP" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a1q4YWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a1kxxGESEeOucruFG1usrQ" name="Autopsy PerformanceCode" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a1kxxWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = '21986-5' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a1q4YmESEeOucruFG1usrQ" name="Autopsy PerformanceEffectiveTime" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a1q4Y2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a1q4ZGESEeOucruFG1usrQ" name="Autopsy PerformanceValue" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a1q4ZWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::BL)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3YvpGESEeOucruFG1usrQ" name="Autopsy PerformanceAutopsyPerformer" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3YvpWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->one(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6P2amESEeOucruFG1usrQ" name="Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6P2a2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null).assignedPerson->excluding(null)->reject(isDefined('classCode') and classCode=vocab::EntityClass::PSN)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6P2bGESEeOucruFG1usrQ" name="Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6P2bWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null).assignedPerson->excluding(null)->reject(isDefined('determinerCode') and determinerCode=vocab::EntityDeterminer::INSTANCE)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6P2bmESEeOucruFG1usrQ" name="Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6P2b2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null).assignedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (name->size() = 1))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6P2cGESEeOucruFG1usrQ" name="Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleClassCode" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6P2cWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null)->reject(isDefined('classCode') and classCode=vocab::RoleClassAssignedEntity::ASSIGNED)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6V9AGESEeOucruFG1usrQ" name="Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6V9AWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6V9AmESEeOucruFG1usrQ" name="Autopsy PerformanceAutopsyPerformerTypeCode" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6V9A2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null)->reject(isDefined('typeCode') and typeCode=vocab::ParticipationPhysicalPerformer::PRF)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6V9BGESEeOucruFG1usrQ" name="Autopsy PerformanceAutopsyPerformerAutopsyPerformerRole" constrainedElement="_YpKeMFGyEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6V9BWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_YpLFQFGyEeGSqNO1bVTZyw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_V-OFcFGzEeGSqNO1bVTZyw" name="Autopsy Results">
+      <ownedComment xmi:id="_oDR9kFKIEeG6eOb5pyaZOw">
+        <body>The template contains information regarding the availability of results from an autopsy.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_a13FomESEeOucruFG1usrQ" name="Autopsy ResultsTemplateId" constrainedElement="_V-OFcFGzEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a13Fo2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.3')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a13FpWESEeOucruFG1usrQ" name="Autopsy ResultsClassCode" constrainedElement="_V-OFcFGzEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a13FpmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.classCode=vocab::ActClassObservation::OBS</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a19MQGESEeOucruFG1usrQ" name="Autopsy ResultsMoodCode" constrainedElement="_V-OFcFGzEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a19MQWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2DS4GESEeOucruFG1usrQ" name="Autopsy ResultsCodeP" constrainedElement="_V-OFcFGzEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2DS4WESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a19MQmESEeOucruFG1usrQ" name="Autopsy ResultsCode" constrainedElement="_V-OFcFGzEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a19MQ2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69436-4' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2DS4mESEeOucruFG1usrQ" name="Autopsy ResultsValue" constrainedElement="_V-OFcFGzEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2DS42ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::BL)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a39XZ2ESEeOucruFG1usrQ" name="Autopsy ResultsAutopsy Report" constrainedElement="_V-OFcFGzEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a39XaGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_V-OFcVGzEeGSqNO1bVTZyw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_v3dWgFHCEeGSqNO1bVTZyw" name="Coroner Referral">
+      <ownedComment xmi:id="_B7MBsFHDEeGSqNO1bVTZyw">
+        <body>The template contains information regarding the referral of a case to the coroner or medical examiner.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_a2VmwGESEeOucruFG1usrQ" name="Coroner ReferralTemplateId" constrainedElement="_v3dWgFHCEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2VmwWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.5')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2Vmw2ESEeOucruFG1usrQ" name="Coroner ReferralClassCode" constrainedElement="_v3dWgFHCEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2VmxGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.classCode=vocab::ActClassObservation::OBS</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2VmxWESEeOucruFG1usrQ" name="Coroner ReferralMoodCode" constrainedElement="_v3dWgFHCEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2VmxmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2btYmESEeOucruFG1usrQ" name="Coroner ReferralCodeP" constrainedElement="_v3dWgFHCEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2btY2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2btYGESEeOucruFG1usrQ" name="Coroner ReferralCode" constrainedElement="_v3dWgFHCEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2btYWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = '69438-0' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2btZGESEeOucruFG1usrQ" name="Coroner ReferralValue" constrainedElement="_v3dWgFHCEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2btZWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::ED)))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_v3dWgVHCEeGSqNO1bVTZyw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Zf8sgFHDEeGSqNO1bVTZyw" name="Coroner Case Transfer">
+      <ownedComment xmi:id="_if0xkFHDEeGSqNO1bVTZyw">
+        <body>An observation to indicate whether or not the case has been transferred to a coroner or medical examiner for investigative purposes.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_a2h0AGESEeOucruFG1usrQ" name="Coroner Case TransferTemplateId" constrainedElement="_Zf8sgFHDEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2h0AWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.4')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2h0A2ESEeOucruFG1usrQ" name="Coroner Case TransferClassCode" constrainedElement="_Zf8sgFHDEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2h0BGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.classCode=vocab::ActClassObservation::OBS</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2h0BWESEeOucruFG1usrQ" name="Coroner Case TransferMoodCode" constrainedElement="_Zf8sgFHDEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2h0BmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2n6omESEeOucruFG1usrQ" name="Coroner Case TransferCodeP" constrainedElement="_Zf8sgFHDEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2n6o2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2n6oGESEeOucruFG1usrQ" name="Coroner Case TransferCode" constrainedElement="_Zf8sgFHDEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2n6oWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a2uBQGESEeOucruFG1usrQ" name="Coroner Case TransferValue" constrainedElement="_Zf8sgFHDEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a2uBQWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::BL)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a39XaWESEeOucruFG1usrQ" name="Coroner Case TransferCoroner Case" constrainedElement="_Zf8sgFHDEeGSqNO1bVTZyw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a39XamESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Zf8sgVHDEeGSqNO1bVTZyw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-IassG-oEeGducFY2S5l3A" name="Death LocationType">
+      <ownedComment xmi:id="_I1EcoG-pEeGducFY2S5l3A">
+        <body>This template makes it possible to record the type of location, e.g.,hospital inpatient room, at which the person died.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_a3rDhWESEeOucruFG1usrQ" name="Death LocationTypeTemplateId" constrainedElement="_-IassG-oEeGducFY2S5l3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3rDhmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.8')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3rDiGESEeOucruFG1usrQ" name="Death LocationTypeClassCode" constrainedElement="_-IassG-oEeGducFY2S5l3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3rDiWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.classCode=vocab::ActClassObservation::OBS</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3xKIGESEeOucruFG1usrQ" name="Death LocationTypeMoodCode" constrainedElement="_-IassG-oEeGducFY2S5l3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3xKIWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3xKJGESEeOucruFG1usrQ" name="Death LocationTypeCodeP" constrainedElement="_-IassG-oEeGducFY2S5l3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3xKJWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a3xKImESEeOucruFG1usrQ" name="Death LocationTypeCode" constrainedElement="_-IassG-oEeGducFY2S5l3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a3xKI2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = '58332-8' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a33QwGESEeOucruFG1usrQ" name="Death LocationTypeValue" constrainedElement="_-IassG-oEeGducFY2S5l3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a33QwWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;
+value.codeSystem = '2.16.840.1.114222.4.5.274' and (value.code = 'H-IN' or value.code = 'H-ER/OP' or value.code = 'H-DOA' or value.code = 'NH' or value.code = 'RES' or value.code = 'OTH')))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a33QwmESEeOucruFG1usrQ" name="Death LocationTypeValueP" constrainedElement="_-IassG-oEeGducFY2S5l3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a33Qw2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_-IassW-oEeGducFY2S5l3A">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_15ZWcHIREeGL-K1S1E9LrQ" name="Reporting death information from a clinical setting to vital recordsSample" fileName="Reporting death information from a clinical setting to vital recordsSample.xml"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TLji0F6VEeO_5svOqPnaJg" name="Pronouncing Death">
+      <ownedComment xmi:id="_TLji0V6VEeO_5svOqPnaJg">
+        <body>The template contains information on the pronouncing of the person's death.  &#xD;
+In most cases, a physician will both pronounce death and certify or report the cause of death.  A different physician will pronounce death only when the attending physician is unavailable to certify the cause of death at the time of death and if State law provides for this option.&#xD;
+&#xD;
+Note, information on the pronouncing physician is only provided when the pronouncing physician and the certifying physician are different persons.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_a39Xa2ESEeOucruFG1usrQ" name="Pronouncing DeathTemplateId" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a39XbGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.15')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a4DeAWESEeOucruFG1usrQ" name="Pronouncing DeathClassCode" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4DeAmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('classCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a4DeA2ESEeOucruFG1usrQ" name="Pronouncing DeathMoodCode" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4DeBGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a4DeBWESEeOucruFG1usrQ" name="Pronouncing DeathCode" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4DeBmESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;
+value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a4JkoGESEeOucruFG1usrQ" name="Pronouncing DeathEffectiveTime" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4JkoWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a4b4h2ESEeOucruFG1usrQ" name="Pronouncing DeathPronouncer" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4b4iGESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->one(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6cDoGESEeOucruFG1usrQ" name="Pronouncing DeathPronouncerPronouncerRolePronouncingPartyClassCode" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6cDoWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null).assignedPerson->excluding(null)->reject(isDefined('classCode'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6cDomESEeOucruFG1usrQ" name="Pronouncing DeathPronouncerPronouncerRolePronouncingPartyDeterminerCode" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6cDo2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null).assignedPerson->excluding(null)->reject(isDefined('determinerCode'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6cDpGESEeOucruFG1usrQ" name="Pronouncing DeathPronouncerPronouncerRolePronouncingPartyName" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6cDpWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null).assignedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (name->size() = 1))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6cDpmESEeOucruFG1usrQ" name="Pronouncing DeathPronouncerPronouncerRoleAddr" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6cDp2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6cDqGESEeOucruFG1usrQ" name="Pronouncing DeathPronouncerPronouncerRoleClassCode" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6cDqWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null)->reject(isDefined('classCode') and classCode=vocab::RoleClassAssignedEntity::ASSIGNED)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6cDqmESEeOucruFG1usrQ" name="Pronouncing DeathPronouncerPronouncerRoleId" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6cDq2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6iKQGESEeOucruFG1usrQ" name="Pronouncing DeathPronouncerPronouncerRolePronouncingParty" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6iKQWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6iKQmESEeOucruFG1usrQ" name="Pronouncing DeathPronouncerTypeCode" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6iKQ2ESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null)->reject(isDefined('typeCode') and typeCode=vocab::ParticipationPhysicalPerformer::PRF)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_a6iKRGESEeOucruFG1usrQ" name="Pronouncing DeathPronouncerPronouncerRole" constrainedElement="_TLji0F6VEeO_5svOqPnaJg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6iKRWESEeOucruFG1usrQ">
+          <language>OCL</language>
+          <body>self.performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_TLji0l6VEeO_5svOqPnaJg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <profileApplication xmi:id="_W7svyUj_EeGtBMy1ENLCpQ">
+      <eAnnotations xmi:id="_W7svykj_EeGtBMy1ENLCpQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_W7svy0j_EeGtBMy1ENLCpQ">
+      <eAnnotations xmi:id="_W7svzEj_EeGtBMy1ENLCpQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_avR8gGESEeOucruFG1usrQ">
+      <eAnnotations xmi:id="_avR8gWESEeOucruFG1usrQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_W9yacEj_EeGtBMy1ENLCpQ" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="vsdr" nsURI="http://www.openhealthtools.org/mdht/uml/cda/vsdr" packageName="vsdr" prefix="vsdr" base_Namespace="_W7svwEj_EeGtBMy1ENLCpQ"/>
+  <CDA:CDATemplate xmi:id="_W9yackj_EeGtBMy1ENLCpQ" base_Class="_W9yacUj_EeGtBMy1ENLCpQ" templateId="2.16.840.1.113883.10.20.26.1" assigningAuthorityName=""/>
+  <CDA:ClassValidation xmi:id="_k09JIEkAEeGtBMy1ENLCpQ" base_Class="_TwEEwEkAEeGtBMy1ENLCpQ">
+    <ruleId>2.16.840.113883.10.20.24.1.3</ruleId>
+  </CDA:ClassValidation>
+  <CDA:CDATemplate xmi:id="_63vrEEklEeGZuYViNfIskw" base_Class="_sLKXUEkkEeGZuYViNfIskw" templateId="2.16.840.1.113883.10.20.26.1.7"/>
+  <CDA:CDATemplate xmi:id="_yV6lMEkrEeGZuYViNfIskw" base_Class="_GBayYEkfEeGqCpGMXULTvg" templateId="2.16.840.1.113883.10.20.26.1.10"/>
+  <CDA:CDATemplate xmi:id="_4sqr4EkrEeGZuYViNfIskw" base_Class="_TwEEwEkAEeGtBMy1ENLCpQ" templateId="2.16.840.1.113883.10.20.26.1.13"/>
+  <CDA:CDATemplate xmi:id="_h0ngoEksEeGZuYViNfIskw" base_Class="_2l1UUEkBEeGtBMy1ENLCpQ" templateId="2.16.840.1.113883.10.20.26.1.1"/>
+  <CDA:AssociationValidation xmi:id="_9XETkEktEeGZuYViNfIskw" mandatory="true"/>
+  <CDA:CDATemplate xmi:id="_P1s8oEkvEeGZuYViNfIskw" templateId="2.16.840.1.113883.10.24.1.6"/>
+  <CDA:PropertyValidation xmi:id="_idq9UEkvEeGZuYViNfIskw"/>
+  <CDA:CodeSystemConstraint xmi:id="_JHLZsEkwEeGZuYViNfIskw">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_gB8FQEkwEeGZuYViNfIskw"/>
+  <CDA:CDATemplate xmi:id="_EIPMYEtSEeGCUrfdtxCbHg" base_Class="_ZzKdMEtREeGCUrfdtxCbHg" templateId="2.16.840.1.113883.10.20.26.1.11"/>
+  <CDA:CDATemplate xmi:id="_A0jG4Et6EeGCUrfdtxCbHg" base_Class="_LHUeYEtSEeGCUrfdtxCbHg" templateId="2.16.840.1.113883.10.20.26.1.12"/>
+  <CDA:ClassValidation xmi:id="_D72PAEt6EeGCUrfdtxCbHg" base_Class="_nmWDwEtSEeGCUrfdtxCbHg"/>
+  <CDA:CDATemplate xmi:id="_G59l8Et6EeGCUrfdtxCbHg" base_Class="_nmWDwEtSEeGCUrfdtxCbHg" templateId="2.16.840.1.113883.10.20.26.1.14"/>
+  <CDA:CDATemplate xmi:id="_J8eUsEt6EeGCUrfdtxCbHg" templateId="2.16.840.1.113883.10.20.24.1.10"/>
+  <CDA:AssociationValidation xmi:id="_h9YwAEt6EeGCUrfdtxCbHg" mandatory="true"/>
+  <CDA:CDATemplate xmi:id="_mG_cAE0iEeGecLanFT3k9Q" mandatory="true" templateId="2.16.840.1.113883.10.20.24.1.11"/>
+  <CDA:PropertyValidation xmi:id="_oOMZEE0iEeGecLanFT3k9Q"/>
+  <CDA:PropertyValidation xmi:id="_CaefwE0jEeGecLanFT3k9Q"/>
+  <CDA:CodeSystemConstraint xmi:id="_EhAucE0jEeGecLanFT3k9Q" mandatory="true">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_fZgcoE2sEeG1mJGvTJrqBg" mandatory="true"/>
+  <CDA:CDATemplate xmi:id="_Q_pBsFGqEeGSqNO1bVTZyw" base_Class="_K6HN4FGqEeGSqNO1bVTZyw" templateId="2.16.840.1.113883.10.20.26.1.6"/>
+  <CDA:CDATemplate xmi:id="_6zWwQFGqEeGSqNO1bVTZyw" base_Class="_zXPkAFGqEeGSqNO1bVTZyw" templateId="2.16.840.1.113883.10.20.26.1.9"/>
+  <CDA:CDATemplate xmi:id="_9fNloFHCEeGSqNO1bVTZyw" severity="INFO" base_Class="_v3dWgFHCEeGSqNO1bVTZyw" templateId="2.16.840.1.113883.10.20.26.1.5"/>
+  <CDA:CDATemplate xmi:id="_kqwYEFHDEeGSqNO1bVTZyw" base_Class="_Zf8sgFHDEeGSqNO1bVTZyw" templateId="2.16.840.1.113883.10.20.26.1.4"/>
+  <CDA:PropertyValidation xmi:id="_xeSHYFHjEeGSqNO1bVTZyw"/>
+  <CDA:CDATemplate xmi:id="_gsYBcFKIEeG6eOb5pyaZOw" base_Class="_YpKeMFGyEeGSqNO1bVTZyw" templateId="2.16.840.1.113883.10.20.26.1.2"/>
+  <CDA:CDATemplate xmi:id="_rPuEYFKIEeG6eOb5pyaZOw" severity="INFO" base_Class="_V-OFcFGzEeGSqNO1bVTZyw" templateId="2.16.840.1.113883.10.20.26.1.3"/>
+  <CDA:PropertyValidation xmi:id="_pthQw1NXEeGRGfOtxXFQuA"/>
+  <CDA:CodeSystemConstraint xmi:id="_pth30FNXEeGRGfOtxXFQuA"/>
+  <CDA:TextValue xmi:id="_W1fjEFmzEeGlsI-eW0rVvQ" value="Test"/>
+  <CDA:PropertyValidation xmi:id="_jxODkFm8EeGlsI-eW0rVvQ" severity="WARNING"/>
+  <CDA:CDATemplate xmi:id="_LgF6oLQUEeGe-s6YNMP6eg" base_Class="_-IassG-oEeGducFY2S5l3A" templateId="2.16.840.1.113883.10.20.26.1.8"/>
+  <CDA:PropertyValidation xmi:id="_ZbRhoF0aEeO_5svOqPnaJg"/>
+  <CDA:CDATemplate xmi:id="_TLre0l6VEeO_5svOqPnaJg" base_Class="_TLji0F6VEeO_5svOqPnaJg" templateId="2.16.840.1.113883.10.20.26.1.15"/>
+  <CDA:PropertyValidation xmi:id="_TLre3F6VEeO_5svOqPnaJg"/>
+  <CDA:CodeSystemConstraint xmi:id="_TLre3V6VEeO_5svOqPnaJg"/>
+  <Ecore:EPackage xmi:id="_avkQYGESEeOucruFG1usrQ" base_Package="_W7svwEj_EeGtBMy1ENLCpQ" packageName="vsdr" nsPrefix="vsdr" nsURI="http://www.openhealthtools.org/mdht/uml/cda/vsdr" basePackage="org.openhealthtools.mdht.uml.cda" prefix="vsdr">
+    <annotation>http://www.openhealthtools.org/mdht/uml initializers='org.openhealthtools.mdht.uml.cda.vsdr'</annotation>
+  </Ecore:EPackage>
+  <Ecore:EClass xmi:id="_avqXAmESEeOucruFG1usrQ" base_Class="_W9yacUj_EeGtBMy1ENLCpQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Reporting Death Information from a Clinical Setting to Vital RecordsTemplateId Reporting Death Information from a Clinical Setting to Vital RecordsClassCode Reporting Death Information from a Clinical Setting to Vital RecordsMoodCode Reporting Death Information from a Clinical Setting to Vital RecordsCode Reporting Death Information from a Clinical Setting to Vital RecordsCodeP Reporting Death Information from a Clinical Setting to Vital RecordsConfidentialityCode Reporting Death Information from a Clinical Setting to Vital RecordsConfidentialityCodeP Reporting Death Information from a Clinical Setting to Vital RecordsId Reporting Death Information from a Clinical Setting to Vital RecordsRealmCode Reporting Death Information from a Clinical Setting to Vital RecordsRealmCodeP Reporting Death Information from a Clinical Setting to Vital RecordsEffectiveTime Reporting Death Information from a Clinical Setting to Vital RecordsCustodian Reporting Death Information from a Clinical Setting to Vital RecordsDeath Report Document Body Reporting Death Information from a Clinical Setting to Vital RecordsAuthor Reporting Death Information from a Clinical Setting to Vital RecordsRecordTarget Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationName Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationId Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodian' templateId.root='2.16.840.1.113883.10.20.26.1' classCode='DOCCLIN' moodCode='EVN' code.code='69409-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='U.S. standard certificate of death - 2003 revision' constraints.validation.dependOn.Reporting Death Information from a Clinical Setting to Vital RecordsCode='Reporting Death Information from a Clinical Setting to Vital RecordsCodeP' confidentialityCode.codeSystem='2.16.840.1.11.3883.5.25' confidentialityCode.codeSystemName='Confidentiality' constraints.validation.dependOn.Reporting Death Information from a Clinical Setting to Vital RecordsConfidentialityCode='Reporting Death Information from a Clinical Setting to Vital RecordsConfidentialityCodeP' constraints.validation.warning='Reporting Death Information from a Clinical Setting to Vital RecordsLanguageCode Reporting Death Information from a Clinical Setting to Vital RecordsTitle' realmCode.code='US' constraints.validation.query='Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationName Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationId Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodian'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian constraints.validation.error='CustodianAssignedCustodian CustodianAssignedCustodianCustodianOrganizationName CustodianAssignedCustodianCustodianOrganizationId' constraints.validation.query='CustodianAssignedCustodianCustodianOrganizationName CustodianAssignedCustodianCustodianOrganizationId'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganization constraints.validation.error='CustodianOrganizationName CustodianOrganizationId'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor typeCode='AUT' constraints.validation.error='AuthorTypeCode AuthorTime AuthorAssignedAuthor'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthorAssignedAuthor classCode='ASSIGNED' constraints.validation.error='AssignedAuthorClassCode AssignedAuthorId AssignedAuthorAuthoringPerson'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthorAssignedAuthorAuthoringPerson classCode='PSN' constraints.validation.error='AuthoringPersonClassCode AuthoringPersonDeterminerCode AuthoringPersonName' determinerCode='INSTANCE'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget typeCode='RCT' constraints.validation.error='RecordTargetTypeCode RecordTargetPatient'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTargetPatient classCode='PAT' constraints.validation.error='PatientClassCode PatientId PatientAddr PatientPerson'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTargetPatientPerson administrativeGenderCode.codeSystem='2.16.840.1.113883.5.1' administrativeGenderCode.codeSystemName='AdministrativeGenderCode' constraints.validation.error='PersonAdministrativeGenderCode PersonAdministrativeGenderCodeP PersonClassCode PersonDeterminerCode PersonName' classCode='PSN' determinerCode='INSTANCE'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_awzmgmESEeOucruFG1usrQ" base_Class="_TwEEwEkAEeGtBMy1ENLCpQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Date and Time of DeathTemplateId Date and Time of DeathClassCode Date and Time of DeathMoodCode Date and Time of DeathCode Date and Time of DeathCodeP Date and Time of DeathEffectiveTime' templateId.root='2.16.840.1.113883.10.20.26.1.13' classCode='OBS' moodCode='EVN' code.code='31211-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Date of Death' constraints.validation.dependOn.Date and Time of DeathCode='Date and Time of DeathCodeP' constraints.validation.info='Date and Time of DeathText'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_aw_zxmESEeOucruFG1usrQ" base_Class="_2l1UUEkBEeGtBMy1ENLCpQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Death Report Document BodyTemplateId Death Report Document BodyCode Death Report Document BodyCodeP Death Report Document BodyText Death Report Document BodyTime of Death Death Report Document BodyLocation of Death Death Report Document BodyManner of Death Death Report Document BodyPregnancy Status Death Report Document BodyTobacco Use Death Report Document BodyCause of Death Death Report Document BodyAutopsy Performance Death Report Document BodyCoroner Case Transfer Death Report Document BodyDeathLocationType Death Report Document BodyPronouncing Death' templateId.root='2.16.840.1.113883.10.20.26.1.1' code.code='69409-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='U.S. standard certificate of death - 2003 revision' constraints.validation.warning='Death Report Document BodyCertifying Death Death Report Document BodyInjury' constraints.validation.info='Death Report Document BodyAutopsy Results Death Report Document BodyCoroner Referral'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_axMBC2ESEeOucruFG1usrQ" base_Class="_GBayYEkfEeGqCpGMXULTvg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Location of DeathTemplateId Location of DeathClassCode Location of DeathMoodCode Location of DeathCode Location of DeathCodeP Location of DeathValue' templateId.root='2.16.840.1.113883.10.20.26.1.10' classCode='OBS' moodCode='EVN' code.code='LOINC TBD' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Location of Death' constraints.validation.dependOn.Location of DeathCode='Location of DeathCodeP' constraints.validation.info='Location of DeathText'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_axeU52ESEeOucruFG1usrQ" base_Class="_sLKXUEkkEeGZuYViNfIskw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Certifying DeathTemplateId Certifying DeathClassCode Certifying DeathMoodCode Certifying DeathCode Certifying DeathEffectiveTime Certifying DeathCertificationPerformer' templateId.root='2.16.840.1.113883.10.20.26.1.7' code.code='69437-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Death Certifier'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCertifyingDeathCertificationPerformer typeCode='PRF' constraints.validation.error='CertificationPerformerTypeCode CertificationPerformerCertifierRole CertificationPerformerCertifierRoleCertifyingPartyClassCode CertificationPerformerCertifierRoleCertifyingPartyDeterminerCode CertificationPerformerCertifierRoleCertifyingPartyName CertificationPerformerCertifierRoleAddr CertificationPerformerCertifierRoleClassCode CertificationPerformerCertifierRoleCode CertificationPerformerCertifierRoleId CertificationPerformerCertifierRoleCertifyingParty' constraints.validation.query='CertificationPerformerCertifierRoleCertifyingPartyClassCode CertificationPerformerCertifierRoleCertifyingPartyDeterminerCode CertificationPerformerCertifierRoleCertifyingPartyName CertificationPerformerCertifierRoleAddr CertificationPerformerCertifierRoleClassCode CertificationPerformerCertifierRoleCode CertificationPerformerCertifierRoleId CertificationPerformerCertifierRoleCertifyingParty'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCertifyingDeathCertificationPerformerCertifierRole constraints.validation.error='CertifierRoleAddr CertifierRoleClassCode CertifierRoleCode CertifierRoleId CertifierRoleCertifyingParty CertifierRoleCertifyingPartyClassCode CertifierRoleCertifyingPartyDeterminerCode CertifierRoleCertifyingPartyName' classCode='ASSIGNED' constraints.validation.query='CertifierRoleCertifyingPartyClassCode CertifierRoleCertifyingPartyDeterminerCode CertifierRoleCertifyingPartyName'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCertifyingDeathCertificationPerformerCertifierRoleCertifyingParty classCode='PSN' constraints.validation.error='CertifyingPartyClassCode CertifyingPartyDeterminerCode CertifyingPartyName' determinerCode='INSTANCE'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ax82C2ESEeOucruFG1usrQ" base_Class="_ZzKdMEtREeGCUrfdtxCbHg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Manner of DeathTemplateId Manner of DeathClassCode Manner of DeathMoodCode Manner of DeathCode Manner of DeathCodeP Manner of DeathValue' templateId.root='2.16.840.1.113883.10.20.26.1.11' classCode='OBS' moodCode='EVN' code.code='69449-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Manner of Death' constraints.validation.dependOn.Manner of DeathCode='Manner of DeathCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ayJDRGESEeOucruFG1usrQ" base_Class="_LHUeYEtSEeGCUrfdtxCbHg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Pregnancy StatusTemplateId Pregnancy StatusClassCode Pregnancy StatusMoodCode Pregnancy StatusCode Pregnancy StatusCodeP Pregnancy StatusValue' templateId.root='2.16.840.1.113883.10.20.26.1.12' classCode='OBS' moodCode='EVN' code.code='69442-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Timing of recent pregancy related to death' constraints.validation.dependOn.Pregnancy StatusCode='Pregnancy StatusCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ayhdwWESEeOucruFG1usrQ" base_Class="_nmWDwEtSEeGCUrfdtxCbHg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Tobacco UseTemplateId Tobacco UseClassCode Tobacco UseMoodCode Tobacco UseCode Tobacco UseValue' templateId.root='2.16.840.1.113883.10.20.26.1.14' classCode='OBS' moodCode='EVN' code.code='69443-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Tobacco Use'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ayzxrmESEeOucruFG1usrQ" base_Class="_K6HN4FGqEeGSqNO1bVTZyw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Death Causal InformationTemplateId Death Causal InformationClassCode Death Causal InformationMoodCode Death Causal InformationCode Death Causal InformationStatusCode Death Causal InformationStatusCodeP Death Causal InformationComponentCause Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval Death Causal InformationComponentCauseDeathCauseClassCode Death Causal InformationComponentCauseDeathCauseCodeP Death Causal InformationComponentCauseDeathCauseCode Death Causal InformationComponentCauseDeathCauseMoodCode Death Causal InformationComponentCauseDeathCauseValue Death Causal InformationComponentCauseSequenceNumber Death Causal InformationComponentCauseTypeCode Death Causal InformationComponentCauseDeathCause Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionClassCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCodeP Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionValue Death Causal InformationComponentOtherSignificantConditionTypeCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantCondition' templateId.root='2.16.840.1.113883.10.20.26.1.6' classCode='CLUSTER' moodCode='EVN' code.code='69453-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Cause Of Death' statusCode.code='Active' constraints.validation.dependOn.Death Causal InformationStatusCode='Death Causal InformationStatusCodeP' constraints.validation.warning='Death Causal InformationComponentOtherSignificantCondition' constraints.validation.query='Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval Death Causal InformationComponentCauseDeathCauseClassCode Death Causal InformationComponentCauseDeathCauseCodeP Death Causal InformationComponentCauseDeathCauseCode Death Causal InformationComponentCauseDeathCauseMoodCode Death Causal InformationComponentCauseDeathCauseValue Death Causal InformationComponentCauseSequenceNumber Death Causal InformationComponentCauseTypeCode Death Causal InformationComponentCauseDeathCause Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionClassCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCodeP Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionValue Death Causal InformationComponentOtherSignificantConditionTypeCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantCondition' constraints.validation.dependOn.Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode='Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP' constraints.validation.dependOn.Death Causal InformationComponentCauseDeathCauseCode='Death Causal InformationComponentCauseDeathCauseCodeP' constraints.validation.dependOn.Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCode='Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCodeP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentOtherSignificantCondition typeCode='COMP' constraints.validation.error='ComponentOtherSignificantConditionTypeCode ComponentOtherSignificantConditionOtherSignificantCondition ComponentOtherSignificantConditionOtherSignificantConditionClassCode ComponentOtherSignificantConditionOtherSignificantConditionMoodCode ComponentOtherSignificantConditionOtherSignificantConditionCodeP ComponentOtherSignificantConditionOtherSignificantConditionCode ComponentOtherSignificantConditionOtherSignificantConditionValue' constraints.validation.query='ComponentOtherSignificantConditionOtherSignificantConditionClassCode ComponentOtherSignificantConditionOtherSignificantConditionMoodCode ComponentOtherSignificantConditionOtherSignificantConditionCodeP ComponentOtherSignificantConditionOtherSignificantConditionCode ComponentOtherSignificantConditionOtherSignificantConditionValue' constraints.validation.dependOn.ComponentOtherSignificantConditionOtherSignificantConditionCode='ComponentOtherSignificantConditionOtherSignificantConditionCodeP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentOtherSignificantConditionOtherSignificantCondition classCode='OBS' constraints.validation.error='OtherSignificantConditionClassCode OtherSignificantConditionMoodCode OtherSignificantConditionCode OtherSignificantConditionCodeP OtherSignificantConditionValue' moodCode='EVN' code.code='69441-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Other Significant Condition' constraints.validation.dependOn.OtherSignificantConditionCode='OtherSignificantConditionCodeP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCause constraints.validation.error='ComponentCauseSequenceNumber ComponentCauseTypeCode ComponentCauseDeathCause ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue ComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber ComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval ComponentCauseDeathCauseClassCode ComponentCauseDeathCauseCodeP ComponentCauseDeathCauseCode ComponentCauseDeathCauseMoodCode ComponentCauseDeathCauseValue' typeCode='COMP' constraints.validation.query='ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue ComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber ComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval ComponentCauseDeathCauseClassCode ComponentCauseDeathCauseCodeP ComponentCauseDeathCauseCode ComponentCauseDeathCauseMoodCode ComponentCauseDeathCauseValue' constraints.validation.dependOn.ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode='ComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP' constraints.validation.dependOn.ComponentCauseDeathCauseCode='ComponentCauseDeathCauseCodeP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCauseDeathCause classCode='OBS' constraints.validation.error='DeathCauseClassCode DeathCauseCode DeathCauseCodeP DeathCauseMoodCode DeathCauseValue DeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode DeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP DeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode DeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode DeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue DeathCauseComponentDeathCauseIntervalSequenceNumber DeathCauseComponentDeathCauseIntervalTypeCode DeathCauseComponentDeathCauseIntervalDeathCauseInterval' code.code='21984-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Cause of Death' constraints.validation.dependOn.DeathCauseCode='DeathCauseCodeP' moodCode='EVN' constraints.validation.query='DeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode DeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP DeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode DeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode DeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue DeathCauseComponentDeathCauseIntervalSequenceNumber DeathCauseComponentDeathCauseIntervalTypeCode DeathCauseComponentDeathCauseIntervalDeathCauseInterval' constraints.validation.dependOn.DeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode='DeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseInterval constraints.validation.error='ComponentDeathCauseIntervalSequenceNumber ComponentDeathCauseIntervalTypeCode ComponentDeathCauseIntervalDeathCauseInterval ComponentDeathCauseIntervalDeathCauseIntervalClassCode ComponentDeathCauseIntervalDeathCauseIntervalCodeP ComponentDeathCauseIntervalDeathCauseIntervalCode ComponentDeathCauseIntervalDeathCauseIntervalMoodCode ComponentDeathCauseIntervalDeathCauseIntervalValue' typeCode='COMP' constraints.validation.query='ComponentDeathCauseIntervalDeathCauseIntervalClassCode ComponentDeathCauseIntervalDeathCauseIntervalCodeP ComponentDeathCauseIntervalDeathCauseIntervalCode ComponentDeathCauseIntervalDeathCauseIntervalMoodCode ComponentDeathCauseIntervalDeathCauseIntervalValue' constraints.validation.dependOn.ComponentDeathCauseIntervalDeathCauseIntervalCode='ComponentDeathCauseIntervalDeathCauseIntervalCodeP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval classCode='OBS' constraints.validation.error='DeathCauseIntervalClassCode DeathCauseIntervalCode DeathCauseIntervalCodeP DeathCauseIntervalMoodCode DeathCauseIntervalValue' code.code='69440-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Disease onset to death interval' constraints.validation.dependOn.DeathCauseIntervalCode='DeathCauseIntervalCodeP' moodCode='EVN'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_az26hmESEeOucruFG1usrQ" base_Class="_zXPkAFGqEeGSqNO1bVTZyw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InjuryTemplateId InjuryClassCode InjuryMoodCode InjuryCode InjuryCodeP InjuryStatusCode InjuryComponentInjuryInformation InjuryComponentWorkAssociation InjuryComponentTransportationAssociation InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury InjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole InjuryComponentInjuryInformationInjuryInformationClassCode InjuryComponentInjuryInformationInjuryInformationMoodCode InjuryComponentInjuryInformationInjuryInformationCodeP InjuryComponentInjuryInformationInjuryInformationCode InjuryComponentInjuryInformationInjuryInformationText InjuryComponentInjuryInformationInjuryInformationValue InjuryComponentInjuryInformationInjuryInformationEffectiveTime InjuryComponentInjuryInformationInjuryInformationLocationParticipation InjuryComponentInjuryInformationTypeCode InjuryComponentInjuryInformationInjuryInformation InjuryComponentWorkAssociationWorkAssociationClassCode InjuryComponentWorkAssociationWorkAssociationMoodCode InjuryComponentWorkAssociationWorkAssociationCodeP InjuryComponentWorkAssociationWorkAssociationCode InjuryComponentWorkAssociationWorkAssociationValue InjuryComponentWorkAssociationTypeCode InjuryComponentWorkAssociationWorkAssociation InjuryComponentTransportationAssociationTransportationAssociationClassCode InjuryComponentTransportationAssociationTransportationAssociationMoodCode InjuryComponentTransportationAssociationTransportationAssociationCodeP InjuryComponentTransportationAssociationTransportationAssociationCode InjuryComponentTransportationAssociationTransportationAssociationValue InjuryComponentTransportationAssociationTypeCode InjuryComponentTransportationAssociationTransportationAssociation InjuryComponentTransportationRelationshipTransportationRelationshipClassCode InjuryComponentTransportationRelationshipTransportationRelationshipMoodCode InjuryComponentTransportationRelationshipTransportationRelationshipCodeP InjuryComponentTransportationRelationshipTransportationRelationshipCode InjuryComponentTransportationRelationshipTransportationRelationshipValue InjuryComponentTransportationRelationshipTransportationRelationshipValueP InjuryComponentTransportationRelationshipTypeCode InjuryComponentTransportationRelationshipTransportationRelationship' templateId.root='2.16.840.1.113883.10.20.26.1.9' classCode='CLUSTER' moodCode='EVN' code.code='71481-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Did the death of this person involve injury of any kind?' constraints.validation.info='InjuryComponentTransportationRelationship' constraints.validation.query='InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury InjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole InjuryComponentInjuryInformationInjuryInformationClassCode InjuryComponentInjuryInformationInjuryInformationMoodCode InjuryComponentInjuryInformationInjuryInformationCodeP InjuryComponentInjuryInformationInjuryInformationCode InjuryComponentInjuryInformationInjuryInformationText InjuryComponentInjuryInformationInjuryInformationValue InjuryComponentInjuryInformationInjuryInformationEffectiveTime InjuryComponentInjuryInformationInjuryInformationLocationParticipation InjuryComponentInjuryInformationTypeCode InjuryComponentInjuryInformationInjuryInformation InjuryComponentWorkAssociationWorkAssociationClassCode InjuryComponentWorkAssociationWorkAssociationMoodCode InjuryComponentWorkAssociationWorkAssociationCodeP InjuryComponentWorkAssociationWorkAssociationCode InjuryComponentWorkAssociationWorkAssociationValue InjuryComponentWorkAssociationTypeCode InjuryComponentWorkAssociationWorkAssociation InjuryComponentTransportationAssociationTransportationAssociationClassCode InjuryComponentTransportationAssociationTransportationAssociationMoodCode InjuryComponentTransportationAssociationTransportationAssociationCodeP InjuryComponentTransportationAssociationTransportationAssociationCode InjuryComponentTransportationAssociationTransportationAssociationValue InjuryComponentTransportationAssociationTypeCode InjuryComponentTransportationAssociationTransportationAssociation InjuryComponentTransportationRelationshipTransportationRelationshipClassCode InjuryComponentTransportationRelationshipTransportationRelationshipMoodCode InjuryComponentTransportationRelationshipTransportationRelationshipCodeP InjuryComponentTransportationRelationshipTransportationRelationshipCode InjuryComponentTransportationRelationshipTransportationRelationshipValue InjuryComponentTransportationRelationshipTransportationRelationshipValueP InjuryComponentTransportationRelationshipTypeCode InjuryComponentTransportationRelationshipTransportationRelationship' constraints.validation.dependOn.InjuryComponentInjuryInformationInjuryInformationCode='InjuryComponentInjuryInformationInjuryInformationCodeP' constraints.validation.dependOn.InjuryComponentWorkAssociationWorkAssociationCode='InjuryComponentWorkAssociationWorkAssociationCodeP' constraints.validation.dependOn.InjuryComponentTransportationAssociationTransportationAssociationCode='InjuryComponentTransportationAssociationTransportationAssociationCodeP' constraints.validation.dependOn.InjuryComponentTransportationRelationshipTransportationRelationshipCode='InjuryComponentTransportationRelationshipTransportationRelationshipCodeP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformation typeCode='COMP' constraints.validation.error='ComponentInjuryInformationTypeCode ComponentInjuryInformationInjuryInformation'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformation classCode='OBS' constraints.validation.error='InjuryInformationClassCode InjuryInformationMoodCode InjuryInformationCode InjuryInformationCodeP InjuryInformationText InjuryInformationValue InjuryInformationEffectiveTime InjuryInformationLocationParticipation InjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode InjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode InjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc InjuryInformationLocationParticipationInjuryLocationRoleAddr InjuryInformationLocationParticipationInjuryLocationRoleClassCode InjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury InjuryInformationLocationParticipationTypeCode InjuryInformationLocationParticipationInjuryLocationRole' moodCode='EVN' code.code='11374-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Injury incident description' constraints.validation.dependOn.InjuryInformationCode='InjuryInformationCodeP' constraints.validation.query='InjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode InjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode InjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc InjuryInformationLocationParticipationInjuryLocationRoleAddr InjuryInformationLocationParticipationInjuryLocationRoleClassCode InjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury InjuryInformationLocationParticipationTypeCode InjuryInformationLocationParticipationInjuryLocationRole'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipation typeCode='LOC' constraints.validation.error='LocationParticipationTypeCode LocationParticipationInjuryLocationRole LocationParticipationInjuryLocationRolePlaceOfInjuryClassCode LocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode LocationParticipationInjuryLocationRolePlaceOfInjuryDesc LocationParticipationInjuryLocationRoleAddr LocationParticipationInjuryLocationRoleClassCode LocationParticipationInjuryLocationRolePlaceOfInjury' constraints.validation.query='LocationParticipationInjuryLocationRolePlaceOfInjuryClassCode LocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode LocationParticipationInjuryLocationRolePlaceOfInjuryDesc LocationParticipationInjuryLocationRoleAddr LocationParticipationInjuryLocationRoleClassCode LocationParticipationInjuryLocationRolePlaceOfInjury'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole constraints.validation.error='InjuryLocationRoleAddr InjuryLocationRoleClassCode InjuryLocationRolePlaceOfInjury InjuryLocationRolePlaceOfInjuryClassCode InjuryLocationRolePlaceOfInjuryDeterminerCode InjuryLocationRolePlaceOfInjuryDesc' classCode='ISDLOC' constraints.validation.query='InjuryLocationRolePlaceOfInjuryClassCode InjuryLocationRolePlaceOfInjuryDeterminerCode InjuryLocationRolePlaceOfInjuryDesc'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury classCode='PLC' constraints.validation.error='PlaceOfInjuryClassCode PlaceOfInjuryDeterminerCode PlaceOfInjuryDesc' determinerCode='INSTANCE'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentWorkAssociation typeCode='COMP' constraints.validation.error='ComponentWorkAssociationTypeCode ComponentWorkAssociationWorkAssociation'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentWorkAssociationWorkAssociation classCode='OBS' constraints.validation.error='WorkAssociationClassCode WorkAssociationMoodCode WorkAssociationCode WorkAssociationCodeP WorkAssociationValue' moodCode='EVN' code.code='69444-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Did death result from injury at work' constraints.validation.dependOn.WorkAssociationCode='WorkAssociationCodeP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationAssociation typeCode='COMP' constraints.validation.error='ComponentTransportationAssociationTypeCode ComponentTransportationAssociationTransportationAssociation ComponentTransportationAssociationTransportationAssociationClassCode ComponentTransportationAssociationTransportationAssociationMoodCode ComponentTransportationAssociationTransportationAssociationCodeP ComponentTransportationAssociationTransportationAssociationCode ComponentTransportationAssociationTransportationAssociationValue' constraints.validation.query='ComponentTransportationAssociationTransportationAssociationClassCode ComponentTransportationAssociationTransportationAssociationMoodCode ComponentTransportationAssociationTransportationAssociationCodeP ComponentTransportationAssociationTransportationAssociationCode ComponentTransportationAssociationTransportationAssociationValue' constraints.validation.dependOn.ComponentTransportationAssociationTransportationAssociationCode='ComponentTransportationAssociationTransportationAssociationCodeP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationAssociationTransportationAssociation classCode='OBS' constraints.validation.error='TransportationAssociationClassCode TransportationAssociationMoodCode TransportationAssociationCode TransportationAssociationCodeP TransportationAssociationValue' moodCode='EVN' code.code='69448-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Injury leading to death associated with transportation event' constraints.validation.dependOn.TransportationAssociationCode='TransportationAssociationCodeP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationRelationship typeCode='COMP' constraints.validation.error='ComponentTransportationRelationshipTypeCode ComponentTransportationRelationshipTransportationRelationship'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationRelationshipTransportationRelationship classCode='OBS' constraints.validation.error='TransportationRelationshipClassCode TransportationRelationshipMoodCode TransportationRelationshipCode TransportationRelationshipCodeP TransportationRelationshipValue TransportationRelationshipValueP' moodCode='EVN' code.code='69451-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Transportation role of decedent' constraints.validation.dependOn.TransportationRelationshipCode='TransportationRelationshipCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_a1erMGESEeOucruFG1usrQ" base_Class="_YpKeMFGyEeGSqNO1bVTZyw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Autopsy PerformanceTemplateId Autopsy PerformanceClassCode Autopsy PerformanceMoodCode Autopsy PerformanceCode Autopsy PerformanceCodeP Autopsy PerformanceEffectiveTime Autopsy PerformanceValue Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician Autopsy PerformanceAutopsyPerformerTypeCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRole' templateId.root='2.16.840.1.113883.10.20.26.1.2' classCode='OBS' moodCode='EVN' code.code='21986-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Autopsy Status' constraints.validation.dependOn.Autopsy PerformanceCode='Autopsy PerformanceCodeP' constraints.validation.warning='Autopsy PerformanceAutopsyPerformer' constraints.validation.query='Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician Autopsy PerformanceAutopsyPerformerTypeCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRole'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyPerformanceAutopsyPerformer typeCode='PRF' constraints.validation.error='AutopsyPerformerTypeCode AutopsyPerformerAutopsyPerformerRole AutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode AutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode AutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName AutopsyPerformerAutopsyPerformerRoleClassCode AutopsyPerformerAutopsyPerformerRoleAutopsyClinician' constraints.validation.query='AutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode AutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode AutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName AutopsyPerformerAutopsyPerformerRoleClassCode AutopsyPerformerAutopsyPerformerRoleAutopsyClinician'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyPerformanceAutopsyPerformerAutopsyPerformerRole classCode='ASSIGNED' constraints.validation.error='AutopsyPerformerRoleClassCode AutopsyPerformerRoleAutopsyClinician AutopsyPerformerRoleAutopsyClinicianClassCode AutopsyPerformerRoleAutopsyClinicianDeterminerCode AutopsyPerformerRoleAutopsyClinicianName' constraints.validation.query='AutopsyPerformerRoleAutopsyClinicianClassCode AutopsyPerformerRoleAutopsyClinicianDeterminerCode AutopsyPerformerRoleAutopsyClinicianName'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician classCode='PSN' constraints.validation.error='AutopsyClinicianClassCode AutopsyClinicianDeterminerCode AutopsyClinicianName' determinerCode='INSTANCE'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_a13FpGESEeOucruFG1usrQ" base_Class="_V-OFcFGzEeGSqNO1bVTZyw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Autopsy ResultsTemplateId Autopsy ResultsClassCode Autopsy ResultsMoodCode Autopsy ResultsCode Autopsy ResultsCodeP Autopsy ResultsValue' templateId.root='2.16.840.1.113883.10.20.26.1.3' classCode='OBS' moodCode='EVN' code.code='69436-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Autopsy results available' constraints.validation.dependOn.Autopsy ResultsCode='Autopsy ResultsCodeP' constraints.validation.info='Autopsy ResultsAutopsy Report'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyResultsAutopsyReport classCode='OBS' constraints.validation.error='Autopsy ReportClassCode Autopsy ReportMoodCode Autopsy ReportCode Autopsy ReportCodeP Autopsy ReportValue' moodCode='EVN' code.code='18743-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Autopsy Report' constraints.validation.dependOn.Autopsy ReportCode='Autopsy ReportCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_a2VmwmESEeOucruFG1usrQ" base_Class="_v3dWgFHCEeGSqNO1bVTZyw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Coroner ReferralTemplateId Coroner ReferralClassCode Coroner ReferralMoodCode Coroner ReferralCode Coroner ReferralCodeP Coroner ReferralValue' templateId.root='2.16.840.1.113883.10.20.26.1.5' classCode='OBS' moodCode='EVN' code.code='69438-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Forensic medicine Referral note' constraints.validation.dependOn.Coroner ReferralCode='Coroner ReferralCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_a2h0AmESEeOucruFG1usrQ" base_Class="_Zf8sgFHDEeGSqNO1bVTZyw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Coroner Case TransferTemplateId Coroner Case TransferClassCode Coroner Case TransferMoodCode Coroner Case TransferCode Coroner Case TransferCodeP Coroner Case TransferValue' templateId.root='2.16.840.1.113883.10.20.26.1.4' classCode='OBS' moodCode='EVN' code.code='LOINC TBD' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Coroner Assignment' constraints.validation.dependOn.Coroner Case TransferCode='Coroner Case TransferCodeP' constraints.validation.info='Coroner Case TransferCoroner Case'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCoronerCaseTransferCoronerCase constraints.validation.error='Coroner CaseClassCode Coroner CaseCode Coroner CaseCodeP Coroner CaseValue' code.code='69452-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Coroner-medical examiner case number' constraints.validation.dependOn.Coroner CaseCode='Coroner CaseCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_a3rDh2ESEeOucruFG1usrQ" base_Class="_-IassG-oEeGducFY2S5l3A">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Death LocationTypeTemplateId Death LocationTypeClassCode Death LocationTypeMoodCode Death LocationTypeCode Death LocationTypeCodeP Death LocationTypeValue Death LocationTypeValueP' templateId.root='2.16.840.1.113883.10.20.26.1.8' classCode='OBS' moodCode='EVN' code.code='58332-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Location of Death' constraints.validation.dependOn.Death LocationTypeCode='Death LocationTypeCodeP' value.codeSystem='2.16.840.1.114222.4.5.274' value.codeSystemName='PHIN VS (CDC Local Coding System)'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_a4DeAGESEeOucruFG1usrQ" base_Class="_TLji0F6VEeO_5svOqPnaJg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Pronouncing DeathTemplateId Pronouncing DeathClassCode Pronouncing DeathMoodCode Pronouncing DeathCode Pronouncing DeathEffectiveTime Pronouncing DeathPronouncerPronouncerRolePronouncingPartyClassCode Pronouncing DeathPronouncerPronouncerRolePronouncingPartyDeterminerCode Pronouncing DeathPronouncerPronouncerRolePronouncingPartyName Pronouncing DeathPronouncerPronouncerRoleAddr Pronouncing DeathPronouncerPronouncerRoleClassCode Pronouncing DeathPronouncerPronouncerRoleId Pronouncing DeathPronouncerPronouncerRolePronouncingParty Pronouncing DeathPronouncerTypeCode Pronouncing DeathPronouncerPronouncerRole' templateId.root='2.16.840.1.113883.10.20.26.1.15' code.code='LOINC TBD' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Death Pronouncer' constraints.validation.info='Pronouncing DeathPronouncer' constraints.validation.query='Pronouncing DeathPronouncerPronouncerRolePronouncingPartyClassCode Pronouncing DeathPronouncerPronouncerRolePronouncingPartyDeterminerCode Pronouncing DeathPronouncerPronouncerRolePronouncingPartyName Pronouncing DeathPronouncerPronouncerRoleAddr Pronouncing DeathPronouncerPronouncerRoleClassCode Pronouncing DeathPronouncerPronouncerRoleId Pronouncing DeathPronouncerPronouncerRolePronouncingParty Pronouncing DeathPronouncerTypeCode Pronouncing DeathPronouncerPronouncerRole'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrPronouncingDeathPronouncer typeCode='PRF' constraints.validation.error='PronouncerTypeCode PronouncerPronouncerRole'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrPronouncingDeathPronouncerPronouncerRole constraints.validation.error='PronouncerRoleAddr PronouncerRoleClassCode PronouncerRoleId PronouncerRolePronouncingParty' classCode='ASSIGNED'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrPronouncingDeathPronouncerPronouncerRolePronouncingParty classCode='PSN' constraints.validation.error='PronouncingPartyClassCode PronouncingPartyDeterminerCode PronouncingPartyName' determinerCode='INSTANCE'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

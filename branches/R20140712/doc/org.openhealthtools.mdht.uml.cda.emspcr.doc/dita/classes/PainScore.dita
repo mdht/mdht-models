@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Pain Score</title>
+<shortdesc conref="generated/_PainScore.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_PainScore.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_PainScore.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_PainScore.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_PainScore.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_PainScore.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="examples"><b>Pain Score example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock audience="examples" conref="generated/_PainScore.dita#classId/example">
+</codeblock>
+</body>
+</topic>

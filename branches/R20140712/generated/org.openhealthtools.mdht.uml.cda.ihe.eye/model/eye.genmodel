@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.ihe.eye/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.ihe.eye" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" modelName="eye_Ecore" modelPluginClass="EyePlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab ../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.genmodel#//ihe ../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.genmodel#//cdt ../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd.genmodel#//ccd"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>eye_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Eye" basePackage="org.openhealthtools.mdht.uml.cda.ihe"
+      resource="XML" disposableProviderFactory="true" ecorePackage="eye.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.ihe.eye.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="eye.ecore#//OcularListOfSurgeriesSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularListOfSurgeriesSection/OcularListOfSurgeriesSectionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularListOfSurgeriesSection/OcularListOfSurgeriesSectionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularListOfSurgeriesSection/OcularListOfSurgeriesSectionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularListOfSurgeriesSection/OcularListOfSurgeriesSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularListOfSurgeriesSection/OcularListOfSurgeriesSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularListOfSurgeriesSection/OcularListOfSurgeriesSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularListOfSurgeriesSection/OcularListOfSurgeriesSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularListOfSurgeriesSection/OcularListOfSurgeriesSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularListOfSurgeriesSection/OcularListOfSurgeriesSectionText/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="eye.ecore#//OcularCodedListOfSurgeriesSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularCodedListOfSurgeriesSection/OcularCodedListOfSurgeriesSectionProcedureEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularCodedListOfSurgeriesSection/OcularCodedListOfSurgeriesSectionProcedureEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularCodedListOfSurgeriesSection/OcularCodedListOfSurgeriesSectionProcedureEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularCodedListOfSurgeriesSection/OcularCodedListOfSurgeriesSectionExternalReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularCodedListOfSurgeriesSection/OcularCodedListOfSurgeriesSectionExternalReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularCodedListOfSurgeriesSection/OcularCodedListOfSurgeriesSectionExternalReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularCodedListOfSurgeriesSection/getProcedureEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularCodedListOfSurgeriesSection/getEyeExternalReference"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="eye.ecore#//OcularHistorySection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularHistorySection/OcularHistorySectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularHistorySection/OcularHistorySectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularHistorySection/OcularHistorySectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularHistorySection/OcularHistorySectionOcularListOfSurgeriesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularHistorySection/OcularHistorySectionOcularListOfSurgeriesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularHistorySection/OcularHistorySectionOcularListOfSurgeriesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularHistorySection/OcularHistorySectionOcularCodedListOfSurgeriesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularHistorySection/OcularHistorySectionOcularCodedListOfSurgeriesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularHistorySection/OcularHistorySectionOcularCodedListOfSurgeriesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularHistorySection/getOcularListOfSurgeriesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularHistorySection/getOcularCodedListOfSurgeriesSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="eye.ecore#//OphthalmicMedicationsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OphthalmicMedicationsSection/OphthalmicMedicationsSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OphthalmicMedicationsSection/OphthalmicMedicationsSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OphthalmicMedicationsSection/OphthalmicMedicationsSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OphthalmicMedicationsSection/OphthalmicMedicationsSectionMedication">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OphthalmicMedicationsSection/OphthalmicMedicationsSectionMedication/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OphthalmicMedicationsSection/OphthalmicMedicationsSectionMedication/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OphthalmicMedicationsSection/getEyeMedication"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="eye.ecore#//RoutineEyeExamSection"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="eye.ecore#//OcularPhysicalExamSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularPhysicalExamSection/OcularPhysicalExamSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularPhysicalExamSection/OcularPhysicalExamSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularPhysicalExamSection/OcularPhysicalExamSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularPhysicalExamSection/OcularPhysicalExamSectionRoutineEyeExamSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularPhysicalExamSection/OcularPhysicalExamSectionRoutineEyeExamSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//OcularPhysicalExamSection/OcularPhysicalExamSectionRoutineEyeExamSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//OcularPhysicalExamSection/getRoutineEyeExamSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="eye.ecore#//GeneralEyeEvaluation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationChiefComplaintSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationChiefComplaintSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationChiefComplaintSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationOcularHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationOcularHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationOcularHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationHistoryOfPastIllnessSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationHistoryOfPastIllnessSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationHistoryOfPastIllnessSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationSurgeriesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationSurgeriesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationSurgeriesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCodedSurgeriesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCodedSurgeriesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCodedSurgeriesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationMedicationsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationMedicationsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationMedicationsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationOphthalmicMedicationsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationOphthalmicMedicationsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationOphthalmicMedicationsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationAllergiesReactionsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationAllergiesReactionsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationAllergiesReactionsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationActiveProblemsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationActiveProblemsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationActiveProblemsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationFamilyMedicalHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationFamilyMedicalHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationFamilyMedicalHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationSocialHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationSocialHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationSocialHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationOcularPhysicalExamSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationOcularPhysicalExamSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationOcularPhysicalExamSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationAssessmentAndPlanSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationAssessmentAndPlanSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationAssessmentAndPlanSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationHistoryOfPresentIllness">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationHistoryOfPresentIllness/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationHistoryOfPresentIllness/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationReviewOfSystemsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationReviewOfSystemsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationReviewOfSystemsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCodedSocialHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCodedSocialHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCodedSocialHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationFunctionalStatusSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationFunctionalStatusSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationFunctionalStatusSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCodedFamilyMedicalHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCodedFamilyMedicalHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="eye.ecore#//GeneralEyeEvaluation/GeneralEyeEvaluationCodedFamilyMedicalHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getChiefComplaintSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getOcularHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getHistoryOfPastIllnessSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getSurgeriesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getCodedSurgeriesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getMedicationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getOphthalmicMedicationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getAllergiesReactionsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getActiveProblemsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getFamilyMedicalHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getOcularPhysicalExamSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getAssessmentAndPlanSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getHistoryOfPresentIllness"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getReviewOfSystemsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getCodedSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getFunctionalStatusSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="eye.ecore#//GeneralEyeEvaluation/getCodedFamilyMedicalHistorySection"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

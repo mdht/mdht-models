@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Instructions Section</title>
+	<topicref href="../classes/InstructionsSection.dita" type="topic" >
+		<topicref href="../classes/InstructionsSectionTable.dita" type="topic" />
+		<topicref href="../classes/InstructionsSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Autopsy Performer Role - conformance rules</title>
+<shortdesc id="shortdesc">[AssignedEntity: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>AssignedEntity</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+<p>INLINE</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="ASSIGNED" </tt>
+</li>
+<li>Contains zero or one [0..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PSN" </tt></li><li> This assignedPerson <b>SHALL</b> contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt><p><i>This field is valued with the authority who performed the autopsy.</i></p></li></ol> 
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="ASSIGNED" </tt>
+</li>
+<li>Contains at least one [1..*] <tt><b>id</b></tt>, where its data type is II
+</li>
+<li>Contains zero or one [0..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PSN" </tt></li><li> This assignedPerson <b>SHALL</b> contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt><p><i>This field is valued with the authority who performed the autopsy.</i></p></li></ol> 
+</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Autopsy Performer Role</ph></p>
+<p id="shortdesc">[AssignedEntity: templateId <tt>null</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Obstetric Procedure (NCHS)</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.7136"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Obstetric Procedure (NCHS) - 2.16.840.1.114222.4.11.7136</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>December 1, 2013</entry></row>
+<row><entry>Description</entry><entry>A list of obstetric procedures which may be performed during pregnancy.  Note, SNOMED is being used as the primary source for codes within the value set.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>265636007</entry><entry>SNOMEDCT</entry><entry>Cerclage of cervix</entry></row>
+<row><entry>103747003</entry><entry>SNOMEDCT</entry><entry>Tocolysis</entry></row>
+<row><entry>240278000</entry><entry>SNOMEDCT</entry><entry>External cephalic version</entry></row>
+<row><entry>260413007</entry><entry>SNOMEDCT</entry><entry>None</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

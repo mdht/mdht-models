@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Social History Section</title>
+	<topicref href="../classes/SocialHistorySection.dita" type="topic" >
+		<topicref href="../classes/SocialHistorySectionTable.dita" type="topic" />
+		<topicref href="../classes/SocialHistorySectionSample.dita" type="topic" />	
+	</topicref>
+</map>
+

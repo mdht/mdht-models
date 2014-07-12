@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medication Product Form Value Set</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.3.88.12.3221.8.11"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Medication Product Form Value Set - 2.16.840.1.113883.3.88.12.3221.8.11</entry></row>
+<row><entry>Code System</entry><entry>NCI Thesaurus - 2.16.840.1.113883.3.26.1.1</entry></row>
+<row><entry>Version</entry><entry>1</entry></row>
+<row><entry>Definition</entry><entry>This is the physical form of the product as presented to the individual. For example: tablet, capsule, liquid or ointment. NCI concept code for pharmaceutical dosage form: C42636</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>C42887</entry><entry>NCI Thesaurus</entry><entry>AEROSOL</entry></row>
+<row><entry>C42888</entry><entry>NCI Thesaurus</entry><entry>AEROSOL, FOAM</entry></row>
+<row><entry>C42960</entry><entry>NCI Thesaurus</entry><entry>AEROSOL, METERED</entry></row>
+<row><entry>C42971</entry><entry>NCI Thesaurus</entry><entry>AEROSOL, POWDER</entry></row>
+<row><entry>C42889</entry><entry>NCI Thesaurus</entry><entry>AEROSOL, SPRAY</entry></row>
+<row><entry>C42892</entry><entry>NCI Thesaurus</entry><entry>BAR, CHEWABLE</entry></row>
+<row><entry>C42890</entry><entry>NCI Thesaurus</entry><entry>BEAD</entry></row>
+<row><entry>C43451</entry><entry>NCI Thesaurus</entry><entry>BEAD, IMPLANT, EXTENDED RELEASE</entry></row>
+<row><entry>C42891</entry><entry>NCI Thesaurus</entry><entry>BLOCK</entry></row>
+<row><entry>C25158</entry><entry>NCI Thesaurus</entry><entry>CAPSULE</entry></row>
+<row><entry>C42895</entry><entry>NCI Thesaurus</entry><entry>CAPSULE, COATED</entry></row>
+<row><entry>C42896</entry><entry>NCI Thesaurus</entry><entry>CAPSULE, COATED PELLETS</entry></row>
+<row><entry>C42917</entry><entry>NCI Thesaurus</entry><entry>CAPSULE, COATED, EXTENDED RELEASE</entry></row>
+<row><entry>C42902</entry><entry>NCI Thesaurus</entry><entry>CAPSULE, DELAYED RELEASE</entry></row>
+<row><entry>C42904</entry><entry>NCI Thesaurus</entry><entry>CAPSULE, DELAYED RELEASE PELLETS</entry></row>
+<row><entry>C42916</entry><entry>NCI Thesaurus</entry><entry>CAPSULE, EXTENDED RELEASE</entry></row>
+<row><entry>C42928</entry><entry>NCI Thesaurus</entry><entry>CAPSULE, FILM COATED, EXTENDED RELEASE</entry></row>
+<row><entry>C42936</entry><entry>NCI Thesaurus</entry><entry>CAPSULE, GELATIN COATED</entry></row>
+<row><entry>C42954</entry><entry>NCI Thesaurus</entry><entry>CAPSULE, LIQUID FILLED</entry></row>
+<row><entry>C45414</entry><entry>NCI Thesaurus</entry><entry>CEMENT</entry></row>
+<row><entry>C42678</entry><entry>NCI Thesaurus</entry><entry>CIGARETTE</entry></row>
+<row><entry>C60884</entry><entry>NCI Thesaurus</entry><entry>CLOTH</entry></row>
+<row><entry>C60891</entry><entry>NCI Thesaurus</entry><entry>CONCENTRATE</entry></row>
+<row><entry>C42900</entry><entry>NCI Thesaurus</entry><entry>CONE</entry></row>
+<row><entry>C42919</entry><entry>NCI Thesaurus</entry><entry>CORE, EXTENDED RELEASE</entry></row>
+<row><entry>C28944</entry><entry>NCI Thesaurus</entry><entry>CREAM</entry></row>
+<row><entry>C60897</entry><entry>NCI Thesaurus</entry><entry>CREAM, AUGMENTED</entry></row>
+<row><entry>C42901</entry><entry>NCI Thesaurus</entry><entry>CRYSTAL</entry></row>
+<row><entry>C45415</entry><entry>NCI Thesaurus</entry><entry>CULTURE</entry></row>
+<row><entry>C47890</entry><entry>NCI Thesaurus</entry><entry>DIAPHRAGM</entry></row>
+<row><entry>C43525</entry><entry>NCI Thesaurus</entry><entry>DISC</entry></row>
+<row><entry>C42679</entry><entry>NCI Thesaurus</entry><entry>DOUCHE</entry></row>
+<row><entry>C42763</entry><entry>NCI Thesaurus</entry><entry>DRESSING</entry></row>
+<row><entry>C17423</entry><entry>NCI Thesaurus</entry><entry>DRUG DELIVERY SYSTEM</entry></row>
+<row><entry>C42912</entry><entry>NCI Thesaurus</entry><entry>ELIXIR</entry></row>
+<row><entry>C42913</entry><entry>NCI Thesaurus</entry><entry>EMULSION</entry></row>
+<row><entry>C42915</entry><entry>NCI Thesaurus</entry><entry>ENEMA</entry></row>
+<row><entry>C42929</entry><entry>NCI Thesaurus</entry><entry>EXTRACT</entry></row>
+<row><entry>C60926</entry><entry>NCI Thesaurus</entry><entry>FIBER, EXTENDED RELEASE</entry></row>
+<row><entry>C42932</entry><entry>NCI Thesaurus</entry><entry>FILM</entry></row>
+<row><entry>C42920</entry><entry>NCI Thesaurus</entry><entry>FILM, EXTENDED RELEASE</entry></row>
+<row><entry>C42984</entry><entry>NCI Thesaurus</entry><entry>FILM, SOLUBLE</entry></row>
+<row><entry>C60927</entry><entry>NCI Thesaurus</entry><entry>FOR SOLUTION</entry></row>
+<row><entry>C60928</entry><entry>NCI Thesaurus</entry><entry>FOR SUSPENSION</entry></row>
+<row><entry>C60929</entry><entry>NCI Thesaurus</entry><entry>FOR SUSPENSION, EXTENDED RELEASE</entry></row>
+<row><entry>C42933</entry><entry>NCI Thesaurus</entry><entry>GAS</entry></row>
+<row><entry>C42934</entry><entry>NCI Thesaurus</entry><entry>GEL</entry></row>
+<row><entry>C42906</entry><entry>NCI Thesaurus</entry><entry>GEL, DENTIFRICE</entry></row>
+<row><entry>C60930</entry><entry>NCI Thesaurus</entry><entry>GEL, METERED</entry></row>
+<row><entry>C48193</entry><entry>NCI Thesaurus</entry><entry>GENERATOR</entry></row>
+<row><entry>C42937</entry><entry>NCI Thesaurus</entry><entry>GLOBULE</entry></row>
+<row><entry>C45416</entry><entry>NCI Thesaurus</entry><entry>GRAFT</entry></row>
+<row><entry>C42938</entry><entry>NCI Thesaurus</entry><entry>GRANULE</entry></row>
+<row><entry>C42903</entry><entry>NCI Thesaurus</entry><entry>GRANULE, DELAYED RELEASE</entry></row>
+<row><entry>C42909</entry><entry>NCI Thesaurus</entry><entry>GRANULE, EFFERVESCENT</entry></row>
+<row><entry>C42939</entry><entry>NCI Thesaurus</entry><entry>GRANULE, FOR SOLUTION</entry></row>
+<row><entry>C42940</entry><entry>NCI Thesaurus</entry><entry>GRANULE, FOR SUSPENSION</entry></row>
+<row><entry>C42921</entry><entry>NCI Thesaurus</entry><entry>GRANULE, FOR SUSPENSION, EXTENDED RELEASE</entry></row>
+<row><entry>C42941</entry><entry>NCI Thesaurus</entry><entry>GUM</entry></row>
+<row><entry>C42894</entry><entry>NCI Thesaurus</entry><entry>GUM, CHEWING</entry></row>
+<row><entry>C42978</entry><entry>NCI Thesaurus</entry><entry>GUM, RESIN</entry></row>
+<row><entry>C42942</entry><entry>NCI Thesaurus</entry><entry>IMPLANT</entry></row>
+<row><entry>C42944</entry><entry>NCI Thesaurus</entry><entry>INHALANT</entry></row>
+<row><entry>C60931</entry><entry>NCI Thesaurus</entry><entry>INJECTABLE, LIPOSOMAL</entry></row>
+<row><entry>C42946</entry><entry>NCI Thesaurus</entry><entry>INJECTION</entry></row>
+<row><entry>C42914</entry><entry>NCI Thesaurus</entry><entry>INJECTION, EMULSION</entry></row>
+<row><entry>C42950</entry><entry>NCI Thesaurus</entry><entry>INJECTION, LIPID COMPLEX</entry></row>
+<row><entry>C42974</entry><entry>NCI Thesaurus</entry><entry>INJECTION, POWDER, FOR SOLUTION</entry></row>
+<row><entry>C42976</entry><entry>NCI Thesaurus</entry><entry>INJECTION, POWDER, FOR SUSPENSION</entry></row>
+<row><entry>C42977</entry><entry>NCI Thesaurus</entry><entry>INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE</entry></row>
+<row><entry>C42959</entry><entry>NCI Thesaurus</entry><entry>INJECTION, POWDER, LYOPHILIZED, FOR LIPOSOMAL SUSPENSION</entry></row>
+<row><entry>C42957</entry><entry>NCI Thesaurus</entry><entry>INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION</entry></row>
+<row><entry>C42958</entry><entry>NCI Thesaurus</entry><entry>INJECTION, POWDER, LYOPHILIZED, FOR SUSPENSION</entry></row>
+<row><entry>C42956</entry><entry>NCI Thesaurus</entry><entry>INJECTION, POWDER, LYOPHILIZED, FOR SUSPENSION, EXTENDED RELEASE</entry></row>
+<row><entry>C42945</entry><entry>NCI Thesaurus</entry><entry>INJECTION, SOLUTION</entry></row>
+<row><entry>C42899</entry><entry>NCI Thesaurus</entry><entry>INJECTION, SOLUTION, CONCENTRATE</entry></row>
+<row><entry>C42995</entry><entry>NCI Thesaurus</entry><entry>INJECTION, SUSPENSION</entry></row>
+<row><entry>C42926</entry><entry>NCI Thesaurus</entry><entry>INJECTION, SUSPENSION, EXTENDED RELEASE</entry></row>
+<row><entry>C42951</entry><entry>NCI Thesaurus</entry><entry>INJECTION, SUSPENSION, LIPOSOMAL</entry></row>
+<row><entry>C42988</entry><entry>NCI Thesaurus</entry><entry>INJECTION, SUSPENSION, SONICATED</entry></row>
+<row><entry>C60933</entry><entry>NCI Thesaurus</entry><entry>INSERT</entry></row>
+<row><entry>C42922</entry><entry>NCI Thesaurus</entry><entry>INSERT, EXTENDED RELEASE</entry></row>
+<row><entry>C47915</entry><entry>NCI Thesaurus</entry><entry>INTRAUTERINE DEVICE</entry></row>
+<row><entry>C42947</entry><entry>NCI Thesaurus</entry><entry>IRRIGANT</entry></row>
+<row><entry>C42948</entry><entry>NCI Thesaurus</entry><entry>JELLY</entry></row>
+<row><entry>C47916</entry><entry>NCI Thesaurus</entry><entry>KIT</entry></row>
+<row><entry>C45413</entry><entry>NCI Thesaurus</entry><entry>LINER, DENTAL</entry></row>
+<row><entry>C42949</entry><entry>NCI Thesaurus</entry><entry>LINIMENT</entry></row>
+<row><entry>C42952</entry><entry>NCI Thesaurus</entry><entry>LIPSTICK</entry></row>
+<row><entry>C42953</entry><entry>NCI Thesaurus</entry><entry>LIQUID</entry></row>
+<row><entry>C60934</entry><entry>NCI Thesaurus</entry><entry>LIQUID, EXTENDED RELEASE</entry></row>
+<row><entry>C29167</entry><entry>NCI Thesaurus</entry><entry>LOTION</entry></row>
+<row><entry>C60957</entry><entry>NCI Thesaurus</entry><entry>LOTION, AUGMENTED</entry></row>
+<row><entry>C60958</entry><entry>NCI Thesaurus</entry><entry>LOTION/SHAMPOO</entry></row>
+<row><entry>C42955</entry><entry>NCI Thesaurus</entry><entry>LOZENGE</entry></row>
+<row><entry>C29269</entry><entry>NCI Thesaurus</entry><entry>MOUTHWASH</entry></row>
+<row><entry>C42965</entry><entry>NCI Thesaurus</entry><entry>OIL</entry></row>
+<row><entry>C42966</entry><entry>NCI Thesaurus</entry><entry>OINTMENT</entry></row>
+<row><entry>C60984</entry><entry>NCI Thesaurus</entry><entry>OINTMENT, AUGMENTED</entry></row>
+<row><entry>C47887</entry><entry>NCI Thesaurus</entry><entry>PACKING</entry></row>
+<row><entry>C42967</entry><entry>NCI Thesaurus</entry><entry>PASTE</entry></row>
+<row><entry>C42907</entry><entry>NCI Thesaurus</entry><entry>PASTE, DENTIFRICE</entry></row>
+<row><entry>C60985</entry><entry>NCI Thesaurus</entry><entry>PASTILLE</entry></row>
+<row><entry>C42968</entry><entry>NCI Thesaurus</entry><entry>PATCH</entry></row>
+<row><entry>C42923</entry><entry>NCI Thesaurus</entry><entry>PATCH, EXTENDED RELEASE</entry></row>
+<row><entry>C42911</entry><entry>NCI Thesaurus</entry><entry>PATCH, EXTENDED RELEASE, ELECTRICALLY CONTROLLED</entry></row>
+<row><entry>C42969</entry><entry>NCI Thesaurus</entry><entry>PELLET</entry></row>
+<row><entry>C42943</entry><entry>NCI Thesaurus</entry><entry>PELLET, IMPLANTABLE</entry></row>
+<row><entry>C42918</entry><entry>NCI Thesaurus</entry><entry>PELLETS, COATED, EXTENDED RELEASE</entry></row>
+<row><entry>C25394</entry><entry>NCI Thesaurus</entry><entry>PILL</entry></row>
+<row><entry>C42970</entry><entry>NCI Thesaurus</entry><entry>PLASTER</entry></row>
+<row><entry>C47913</entry><entry>NCI Thesaurus</entry><entry>POULTICE</entry></row>
+<row><entry>C42972</entry><entry>NCI Thesaurus</entry><entry>POWDER</entry></row>
+<row><entry>C42908</entry><entry>NCI Thesaurus</entry><entry>POWDER, DENTIFRICE</entry></row>
+<row><entry>C42973</entry><entry>NCI Thesaurus</entry><entry>POWDER, FOR SOLUTION</entry></row>
+<row><entry>C42975</entry><entry>NCI Thesaurus</entry><entry>POWDER, FOR SUSPENSION</entry></row>
+<row><entry>C42961</entry><entry>NCI Thesaurus</entry><entry>POWDER, METERED</entry></row>
+<row><entry>C60988</entry><entry>NCI Thesaurus</entry><entry>RING</entry></row>
+<row><entry>C42979</entry><entry>NCI Thesaurus</entry><entry>RINSE</entry></row>
+<row><entry>C42980</entry><entry>NCI Thesaurus</entry><entry>SALVE</entry></row>
+<row><entry>C42981</entry><entry>NCI Thesaurus</entry><entry>SHAMPOO</entry></row>
+<row><entry>C42982</entry><entry>NCI Thesaurus</entry><entry>SHAMPOO, SUSPENSION</entry></row>
+<row><entry>C42983</entry><entry>NCI Thesaurus</entry><entry>SOAP</entry></row>
+<row><entry>C42986</entry><entry>NCI Thesaurus</entry><entry>SOLUTION</entry></row>
+<row><entry>C42898</entry><entry>NCI Thesaurus</entry><entry>SOLUTION, CONCENTRATE</entry></row>
+<row><entry>C42987</entry><entry>NCI Thesaurus</entry><entry>SOLUTION, FOR SLUSH</entry></row>
+<row><entry>C60994</entry><entry>NCI Thesaurus</entry><entry>SOLUTION, GEL FORMING / DROPS</entry></row>
+<row><entry>C42935</entry><entry>NCI Thesaurus</entry><entry>SOLUTION, GEL FORMING, EXTENDED RELEASE</entry></row>
+<row><entry>C60992</entry><entry>NCI Thesaurus</entry><entry>SOLUTION/ DROPS</entry></row>
+<row><entry>C47912</entry><entry>NCI Thesaurus</entry><entry>SPONGE</entry></row>
+<row><entry>C42989</entry><entry>NCI Thesaurus</entry><entry>SPRAY</entry></row>
+<row><entry>C42962</entry><entry>NCI Thesaurus</entry><entry>SPRAY, METERED</entry></row>
+<row><entry>C42990</entry><entry>NCI Thesaurus</entry><entry>SPRAY, SUSPENSION</entry></row>
+<row><entry>C42991</entry><entry>NCI Thesaurus</entry><entry>STICK</entry></row>
+<row><entry>C47914</entry><entry>NCI Thesaurus</entry><entry>STRIP</entry></row>
+<row><entry>C42993</entry><entry>NCI Thesaurus</entry><entry>SUPPOSITORY</entry></row>
+<row><entry>C42924</entry><entry>NCI Thesaurus</entry><entry>SUPPOSITORY, EXTENDED RELEASE</entry></row>
+<row><entry>C42994</entry><entry>NCI Thesaurus</entry><entry>SUSPENSION</entry></row>
+<row><entry>C42925</entry><entry>NCI Thesaurus</entry><entry>SUSPENSION, EXTENDED RELEASE</entry></row>
+<row><entry>C60995</entry><entry>NCI Thesaurus</entry><entry>SUSPENSION/ DROPS</entry></row>
+<row><entry>C47889</entry><entry>NCI Thesaurus</entry><entry>SUTURE</entry></row>
+<row><entry>C47898</entry><entry>NCI Thesaurus</entry><entry>SWAB</entry></row>
+<row><entry>C42996</entry><entry>NCI Thesaurus</entry><entry>SYRUP</entry></row>
+<row><entry>C42998</entry><entry>NCI Thesaurus</entry><entry>TABLET</entry></row>
+<row><entry>C42893</entry><entry>NCI Thesaurus</entry><entry>TABLET, CHEWABLE</entry></row>
+<row><entry>C42897</entry><entry>NCI Thesaurus</entry><entry>TABLET, COATED</entry></row>
+<row><entry>C60997</entry><entry>NCI Thesaurus</entry><entry>TABLET, COATED PARTICLES</entry></row>
+<row><entry>C42905</entry><entry>NCI Thesaurus</entry><entry>TABLET, DELAYED RELEASE</entry></row>
+<row><entry>C42997</entry><entry>NCI Thesaurus</entry><entry>TABLET, DELAYED RELEASE PARTICLES</entry></row>
+<row><entry>C42910</entry><entry>NCI Thesaurus</entry><entry>TABLET, EFFERVESCENT</entry></row>
+<row><entry>C42927</entry><entry>NCI Thesaurus</entry><entry>TABLET, EXTENDED RELEASE</entry></row>
+<row><entry>C42931</entry><entry>NCI Thesaurus</entry><entry>TABLET, FILM COATED</entry></row>
+<row><entry>C42930</entry><entry>NCI Thesaurus</entry><entry>TABLET, FILM COATED, EXTENDED RELEASE</entry></row>
+<row><entry>C61004</entry><entry>NCI Thesaurus</entry><entry>TABLET, FOR SOLUTION</entry></row>
+<row><entry>C61005</entry><entry>NCI Thesaurus</entry><entry>TABLET, FOR SUSPENSION</entry></row>
+<row><entry>C42964</entry><entry>NCI Thesaurus</entry><entry>TABLET, MULTILAYER</entry></row>
+<row><entry>C42963</entry><entry>NCI Thesaurus</entry><entry>TABLET, MULTILAYER, EXTENDED RELEASE</entry></row>
+<row><entry>C42999</entry><entry>NCI Thesaurus</entry><entry>TABLET, ORALLY DISINTEGRATING</entry></row>
+<row><entry>C61006</entry><entry>NCI Thesaurus</entry><entry>TABLET, ORALLY DISINTEGRATING, DELAYED RELEASE</entry></row>
+<row><entry>C42985</entry><entry>NCI Thesaurus</entry><entry>TABLET, SOLUBLE</entry></row>
+<row><entry>C42992</entry><entry>NCI Thesaurus</entry><entry>TABLET, SUGAR COATED</entry></row>
+<row><entry>C47892</entry><entry>NCI Thesaurus</entry><entry>TAMPON</entry></row>
+<row><entry>C47897</entry><entry>NCI Thesaurus</entry><entry>TAPE</entry></row>
+<row><entry>C43000</entry><entry>NCI Thesaurus</entry><entry>TINCTURE</entry></row>
+<row><entry>C43001</entry><entry>NCI Thesaurus</entry><entry>TROCHE</entry></row>
+<row><entry>C43002</entry><entry>NCI Thesaurus</entry><entry>UNASSIGNED</entry></row>
+<row><entry>C43003</entry><entry>NCI Thesaurus</entry><entry>WAFER</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

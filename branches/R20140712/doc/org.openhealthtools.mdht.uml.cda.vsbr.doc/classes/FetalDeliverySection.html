@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Fetal Delivery Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.26.4]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.26.4]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Fetal Delivery Section</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Fetal Delivery Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.26.4</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">The section contains information on the delivered fetus.  Note, if there is a multiple delivery, there will be a separate report for each delivered fetus.  The content of the section is drawn from labor and delivery records and from the patient's medical record.  <br/>
+<br/>
+The reader should note that the subject of this section - the delivered fetus - is different from the overall subject of the clinical document - which is the mother.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.26.4"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="DOCSECT" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:76)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:78)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:77)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the section - it contains information regarding the delivered fetus.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:79)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">subject</strong></tt> <ol class="ol" type="a"><li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="SBJ" </tt> (CONF:65)</li>
+<li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">relatedSubject</strong></tt> <ol class="ol" type="i"><li class="li"> This relatedSubject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PRS" </tt> (CONF:67)</li>
+<li class="li"> This relatedSubject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">subject</strong></tt> <ol class="ol"><li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt> (CONF:69)</li>
+<li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt> (CONF:70)</li>
+<li class="li"> This subject <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:72)<div class="p"><p class="lines"><em class="ph i">A name provided for the fetus.</em></p>
+</div>
+</li>
+<li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt> (CONF:73), where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:81)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Plurality.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.41]">Plurality</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.41</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:82)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Record birth order if not a single delivery.</em></p>
+</div>
+</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="BirthOrder.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.16]">Birth Order</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.16</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:83)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="NumberOfInfantsBornAlive.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.37]">Number of Infants Born Alive</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.37</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:85)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AutopsyPerformance.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.15]">Autopsy Performance</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.15</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:86)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="FetalDeathOccurrance.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.22]">Fetal Death Occurrance</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.22</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:87)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">There may be multiple congenital anomalies recorded.  At least one observation will be present in the case that none are present.</em></p>
+</div>
+</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CongenitalAnomaly.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.19]">Congenital Anomaly</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.19</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:88)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="FetalDeliveryTime.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.23]">Fetal Delivery Time</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.23</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Fetal Delivery Section example</strong></p>
+
+
+
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Procedure Activity Procedure"/>
+<meta name="abstract" content="[Procedure: templateId 2.16.840.1.113883.10.20.22.4.14]"/>
+<meta name="description" content="[Procedure: templateId 2.16.840.1.113883.10.20.22.4.14]"/>
+<meta name="DC.Coverage" content="Procedure"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Procedure Activity Procedure</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1"><span class="ph">Procedure Activity Procedure</span></h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[Procedure: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.14</tt>]</p>
+
+		
+		<div class="section">
+<div class="p"><p class="lines"><em class="ph i">The common notion of "procedure" is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). <br/>
+This clinical statement represents procedures whose immediate and primary outcome (post-condition) is the alteration of the physical condition of the patient. Examples of these procedures are an appendectomy, hip replacement and a creation of a gastrostomy.</em></p>
+</div>
+
+</div>
+
+		
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:7654 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.14"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PROC" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7652)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MoodCodeEvnInt.html">MoodCodeEvnInt</a> 2.16.840.1.113883.11.20.9.18</tt><strong class="ph b"> STATIC</strong> 2011-04-03 (CONF:7653)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7655)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:7656)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProcedureActStatusCode.html">ProcedureActStatusCode</a> 2.16.840.1.113883.11.20.9.22</tt><strong class="ph b"> DYNAMIC</strong> (CONF:7661)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:7662)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">specimen</strong></tt> (CONF:7697) <div class="p"><p class="lines"><em class="ph i">This specimen is for representing specimens obtained from a procedure.</em></p>
+</div>
+<ol class="ol" type="a"><li class="li"> Such specimens <strong class="ph b">SHALL</strong> contain exactly one [1..1] specimenRole (CONF:7704)</li>
+<li class="li"> Such specimens specimenRole <strong class="ph b">SHOULD</strong> contain zero or more [0..*] id (CONF:7716)</li>
+<li class="li"> Such specimens To indicate that the Procedure and the Results are referring to the same specimen, the Procedure/specimen/specimenRole/id <strong class="ph b">SHOULD</strong> be set to equal an Organizer/specimen/ specimenRole/id. (CONF:7717)</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:7765, CONF:7752, CONF:15912)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ServiceDeliveryLocation.html">Service Delivery Location</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.32</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:7718) <ol class="ol" type="a"><li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:7720) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7722)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:7731)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:7732)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">representedOrganization</strong></tt> (CONF:7733) <ol class="ol"><li class="li"> This representedOrganization <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7734)</li>
+<li class="li"> This representedOrganization <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:7735)</li>
+<li class="li"> This representedOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:7737)</li>
+<li class="li"> This representedOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:7736)</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7886, CONF:7887, CONF:15915)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationActivity.html" title="[SubstanceAdministration: templateId 2.16.840.1.113883.10.20.22.4.16]">Medication Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.16</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7775, CONF:7776, CONF:15913)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Instructions.html" title="[Act: templateId 2.16.840.1.113883.10.20.22.4.20]">Instructions</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.20</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7779, CONF:7780, CONF:15914)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>RSON" </tt><em class="ph i">RSON</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Indication.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.19]">Indication</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.19</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">priorityCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ActPriority.html">ActPriority</a> 2.16.840.1.113883.1.11.16866</tt><strong class="ph b"> STATIC</strong> (CONF:7668)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:7670)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">targetSiteCode</strong></tt> (CONF:7683), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BodySiteValueSet.html">Body Site Value Set</a> 2.16.840.1.113883.3.88.12.3221.8.9</tt><strong class="ph b"> STATIC</strong> 2 (CONF:16082)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:7751, CONF:7752, CONF:15911)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ProductInstance.html">Product Instance</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.37</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7768) <ol class="ol" type="a"><li class="li"> Such entryRelationships <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@inversionInd</strong>="true" </tt> (CONF:8009)</li>
+<li class="li"> Such entryRelationships <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt> (CONF:7769)</li>
+<li class="li"> Such entryRelationships <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">encounter</strong></tt> (CONF:7770) <ol class="ol" type="i"><li class="li"> This encounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ENC" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7771)</li>
+<li class="li"> This encounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7772)</li>
+<li class="li"> This encounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7773)</li>
+<li class="li"> This encounter <strong class="ph b">MAY</strong> satisfy: Set the encounter ID to the ID of an encounter in another section to signify they are the same encounter. (CONF:16843)</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li">code in a procedure activity <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4) (CONF:7657)</li>
+
+<li class="li">code <strong class="ph b">SHOULD</strong> contain zero or one [0..1] originalText (CONF:7658)</li>
+
+<li class="li">originalText, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference (CONF:15908)</li>
+
+<li class="li">reference, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @value (CONF:15909)</li>
+
+<li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15910)</li>
+
+<li class="li">methodCode <strong class="ph b">SHALL NOT</strong> conflict with the method inherent in Procedure / code (CONF:7890)</li>
+
+<li class="li">entryRelationship with target entry encounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" (CONF:8009)</li>
+
+<li class="li">participant with target entry Product Instance <strong class="ph b">SHALL</strong> contain exactly one [1..1] @typeCode="DEV" Device (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:7752)</li>
+
+<li class="li">participant with target entry Service Delivery Location <strong class="ph b">SHALL</strong> contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:7766)</li>
+
+<li class="li">entryRelationship with target entry Instructions <strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" (CONF:7777)</li>
+
+</ol>
+
+		
+		<p class="p">
+		</p>
+
+		<p class="p">
+			<strong class="ph b"><span class="ph">Procedure Activity Procedure</span> example</strong>
+		</p>
+		
+		<pre class="pre codeblock">&lt;procedure xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="49616260"/&gt;
+  &lt;code code="1213953883"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;priorityCode code="756082600"/&gt;
+  &lt;methodCode code="719526095"/&gt;
+  &lt;targetSiteCode code="525600506"/&gt;
+  &lt;specimen&gt;
+    &lt;specimenRole/&gt;
+  &lt;/specimen&gt;
+  &lt;performer&gt;
+    &lt;assignedEntity&gt;
+      &lt;id root="MDHT" extension="939245944"/&gt;
+      &lt;addr/&gt;
+      &lt;telecom/&gt;
+      &lt;representedOrganization/&gt;
+    &lt;/assignedEntity&gt;
+  &lt;/performer&gt;
+  &lt;entryRelationship typeCode="COMP" inversionInd="true"&gt;
+    &lt;encounter classCode="ENC" moodCode="EVN"&gt;
+      &lt;id root="MDHT" extension="1159158159"/&gt;
+    &lt;/encounter&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="610557087"/&gt;
+      &lt;code code="1052247058"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;priorityCode code="681274142"/&gt;
+      &lt;methodCode code="2023910897"/&gt;
+      &lt;targetSiteCode code="4177949"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;substanceAdministration&gt;
+      &lt;id root="MDHT" extension="126392017"/&gt;
+      &lt;code code="1656110118"/&gt;
+      &lt;effectiveTime value="20130627"/&gt;
+      &lt;priorityCode code="628779298"/&gt;
+      &lt;consumable&gt;
+        &lt;manufacturedProduct/&gt;
+      &lt;/consumable&gt;
+      &lt;performer/&gt;
+      &lt;entryRelationship&gt;
+        &lt;supply&gt;
+          &lt;id root="MDHT" extension="728767468"/&gt;
+          &lt;code code="64115580"/&gt;
+          &lt;effectiveTime value="20130627"/&gt;
+          &lt;priorityCode code="1823561627"/&gt;
+          &lt;author/&gt;
+          &lt;entryRelationship&gt;
+            &lt;act/&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/supply&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="545717816"/&gt;
+          &lt;code code="548755630"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;priorityCode code="926589209"/&gt;
+          &lt;methodCode code="1393541453"/&gt;
+          &lt;targetSiteCode code="1101221103"/&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;procedure/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;substanceAdministration/&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act&gt;
+          &lt;id root="MDHT" extension="1207789238"/&gt;
+          &lt;code code="930736782"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;priorityCode code="998732683"/&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="335496608"/&gt;
+          &lt;code code="1683373812"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;priorityCode code="988769000"/&gt;
+          &lt;methodCode code="304821618"/&gt;
+          &lt;targetSiteCode code="621724066"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;supply&gt;
+          &lt;id root="MDHT" extension="754438495"/&gt;
+          &lt;code code="1632256130"/&gt;
+          &lt;effectiveTime value="20130627"/&gt;
+          &lt;priorityCode code="692603474"/&gt;
+          &lt;performer/&gt;
+          &lt;entryRelationship&gt;
+            &lt;supply/&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/supply&gt;
+      &lt;/entryRelationship&gt;
+      &lt;precondition&gt;
+        &lt;criterion/&gt;
+      &lt;/precondition&gt;
+    &lt;/substanceAdministration&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act&gt;
+      &lt;id root="MDHT" extension="2096313891"/&gt;
+      &lt;code code="1585984501"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;priorityCode code="34037693"/&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+&lt;/procedure&gt;</pre>
+
+	</div>
+
+
+</body>
+</html>

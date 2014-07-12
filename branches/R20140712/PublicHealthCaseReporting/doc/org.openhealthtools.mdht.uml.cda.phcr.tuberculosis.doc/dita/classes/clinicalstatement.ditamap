@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Clinical Statement Templates">
+<topicref href="HIVStatusObservation.dita" type="topic" />
+<topicref href="SmokingStatusObservation.dita" type="topic" />
+<topicref href="TuberculosisCaseObservation.dita" type="topic" />
+<topicref href="TuberculosisImmunizationActivitySubstanceAdministration.dita" type="topic" />
+<topicref href="TuberculosisPossibleExposureLocationAct.dita" type="topic" />
+<topicref href="TuberculosisRelevantMedicalConditionHistoryObservation.dita" type="topic" />
+<topicref href="TuberculosisRelevantMedicalConditionProblemObservation.dita" type="topic" />
+<topicref href="TuberculosisResultObservation.dita" type="topic" />
+<topicref href="TuberculosisResultOrganizer.dita" type="topic" />
+<topicref href="TuberculosisSignsAndSymptomsObservation.dita" type="topic" />
+<topicref href="TuberculosisSiteOfTBDiseaseObservation.dita" type="topic" />
+<topicref href="TuberculosisSocioBehavioralBooleanRiskFactorObservation.dita" type="topic" />
+<topicref href="TuberculosisTherapeuticRegimenAct.dita" type="topic" />
+<topicref href="TuberculosisTreatmentGivenSubstanceAdministration.dita" type="topic" />
+<topicref href="TuberculosisTreatmentNotGivenSubstanceAdministration.dita" type="topic" />
+</map>

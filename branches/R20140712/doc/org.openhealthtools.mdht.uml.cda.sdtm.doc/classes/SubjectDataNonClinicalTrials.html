@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Subject Data Non-Clinical Trials"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.23.12]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.23.12]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Relation" scheme="URI" content="../content/DocumentTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Subject Data Non-Clinical Trials</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Draft/Pre-ballot</b> The Normative content on which this specification
+	 is based is provided by Health Level 7.</p>
+</div>
+
+<h1 class="title topictitle1">Subject Data Non-Clinical Trials</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.10.20.23.12</tt>]</p>
+
+
+<div class="section">
+<p class="p">This fundamental template contains the core document related information for reporting the experience of a non-human subject within a trial.</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="DOCCLIN" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="TBD" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">confidentialityCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.25 Confidentiality</tt>)
+<ul class="ul"><li class="li">Documents the confidentiality level of the document.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<ul class="ul"><li class="li">The effective date for the contents of the document.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt>
+<ul class="ul"><li class="li">The identifier assigned to the subject data report.   It is needed to uniquely identify a particular report of subject data from a study.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt>
+<ul class="ul"><li class="li">The language used for the document.  The entry may be left out, if the language used is English.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">realmCode</strong></tt>
+<ul class="ul"><li class="li">Identifies a country or other administrative unit that has defined particular rules for the format or content of the clinical document.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">setId</strong></tt>
+<ul class="ul"><li class="li">An identifier that remains consistent across all revisions derived from a common original.  In the first version of the document - VersonNumber = 1, setId and id will be identical.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">versionNumber</strong></tt>
+<ul class="ul"><li class="li">A unique identifier for a version of a report.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="NonhumanSubjectDataDocumentBody.html" title="[Section: templateId 2.16.840.1.113883.10.20.23.15]">Non-human Subject Data Document Body</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.23.15</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">author</strong></tt> <ol class="ol" type="a"><li class="li"> This author <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="AUT" </tt></li>
+<li class="li"> This author <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ASSIGNED" </tt></li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt><p class="p"><em class="ph i">An identifier for the investigator responsible for the document.   [SDTM: INVID]</em></p>
+</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt></li>
+<li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt></li>
+<li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">name</strong></tt><p class="p"><em class="ph i">The name of the investigator.  [SDTM: INVNAM].</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">representedOrganization</strong></tt> <ol class="ol"><li class="li"> This representedOrganization <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ORG" </tt></li>
+<li class="li"> This representedOrganization <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt></li>
+<li class="li"> This representedOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt><p class="p"><em class="ph i">Contains the identifier of the study site for the investigator.  [SDTM: SITEID].</em></p>
+</li>
+<li class="li"> This representedOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt><p class="p"><em class="ph i">The only part of the address that is required is the country.  This records the country of the investigational site associated with the subject's participation in the study.  [SDTM: COUNTRY].</em></p>
+</li>
+<li class="li"> This representedOrganization <strong class="ph b">SHALL</strong> satisfy: Country shall be valued where addressPartType="country".</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">documentationOf</strong></tt> <ol class="ol" type="a"><li class="li"> This documentationOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="DOC" </tt></li>
+<li class="li"> This documentationOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">serviceEvent</strong></tt> <ol class="ol" type="i"><li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><p class="p"><em class="ph i">The code value indicates the related act refers to the study.</em></p>
+</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt><p class="p"><em class="ph i">The identifier of the study.  [SDTM: STUDYID]</em></p>
+</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt><p class="p"><em class="ph i">The reference time period for the subject's participation within the study.  This is usually captured as the time period starting with the subject's first exposure to study treatment, and ending with the point in time at which the subject left the study.  [SEND: RFSTDTC, RFENDTC]</em></p>
+</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt> <ol class="ol" type="a"><li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="RCT" </tt></li>
+<li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PAT" </tt></li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain  [2..2] <tt class="ph tt"><strong class="ph b">id</strong></tt><p class="p"><em class="ph i">A set of identifiers for the study subject.   These include the unique study ID (SDTM: USUBJID) which identifies the subject across all studies for a product, and a study specific ID (SDTM:SUBJID) which identifies the subject within the context of a single study.</em></p>
+</li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> <ol class="ol"><li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt></li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt></li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p class="p"><em class="ph i">[SDTM: SEX]</em></p>
+</li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">birthTime</strong></tt><p class="p"><em class="ph i">The date of the study subject's birth.  [SDTM: BRTHDTC]</em></p>
+</li>
+<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">ethnicGroupCode</strong></tt><p class="p"><em class="ph i">[SDTM: ETHNIC</em></p>
+</li>
+<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">raceCode</strong></tt><p class="p"><em class="ph i">[SDTM: RACE]</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> satisfy: The unique subject ID shall be present.  [SDTM, USUBJID].</li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> satisfy: Shall include an identifer for the subject within the study.  [SDTM, SUBJID].</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+</ol>
+
+
+<div class="section"><div class="p">
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d705855e594">sdtm::Subject Data Non-Clinical Trials</th>
+  </tr>
+  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d705855e599">cda::clinicaldocument[cda:templateId/@root = 2.16.840.1.113883.10.20.23.12]/</th>
+  </tr>
+  <tr class="row"><th class="entry" align="left" valign="top" id="d705855e604">Name</th>
+<th class="entry" align="left" valign="top" id="d705855e606">XPath</th>
+<th class="entry" align="left" valign="top" id="d705855e608">Cardinality</th>
+<th class="entry" align="left" valign="top" id="d705855e610">Severity</th>
+<th class="entry" align="left" valign="top" id="d705855e612">Nullable</th>
+<th class="entry" align="left" valign="top" id="d705855e614">Data Type</th>
+<th class="entry" align="left" valign="top" id="d705855e616">Conformance</th>
+<th class="entry" align="left" valign="top" id="d705855e618">Value(s)</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">classCode</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">@classCode</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">ActClinicalDocument</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> DOCCLIN</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">moodCode</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">@moodCode</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">ActMood</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> EVN</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">nullFlavor</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">@nullFlavor</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">NullFlavor</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> ASKU</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">code</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">code</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">CE</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 ">LOINC 2.16.840.1.113883.6.1 TBD</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">confidentialityCode</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">confidentialityCode</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHOULD</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">CE</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 ">Confidentiality 2.16.840.1.113883.5.25 null</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">copyTime</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">copyTime</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">TS</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">effectiveTime</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">effectiveTime</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">TS</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">id</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">id</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">II</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">languageCode</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">languageCode</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">CS</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">realmCode</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">realmCode</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">CS</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">setId</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">setId</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">II</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">templateId</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">templateId</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">II</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> 2.16.840.1.113883.10.20.23.12</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">title</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">title</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">ST</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">versionNumber</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">versionNumber</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">INT</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">authenticator</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">authenticator</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">Authenticator</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">author</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">author</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..*</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">Author</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">authorization</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">authorization</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">Authorization</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">authorParticipation2</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">authorParticipation2</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">AuthorParticipation</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">component</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">component</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">Component2</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">componentOf</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">componentOf</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">Component1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">custodian</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">custodian</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">Custodian</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">dataEnterer</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">dataEnterer</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">DataEnterer</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">documentationOf</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">documentationOf</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">DocumentationOf</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">informant</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">informant</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">Informant12</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">informationRecipient</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">informationRecipient</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">InformationRecipient</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">inFulfillmentOf</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">inFulfillmentOf</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">InFulfillmentOf</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">legalAuthenticator</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">legalAuthenticator</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">LegalAuthenticator</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">non-human Subject Data Document Body</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">non-human Subject Data Document Body</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">Non-human Subject Data Document Body</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">participant</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">participant</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">Participant1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">recordTarget</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">recordTarget</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..*</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">RecordTarget</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">relatedDocument</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">relatedDocument</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">RelatedDocument</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">studyRelationship2</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">studyRelationship2</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">StudyRelationship</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">subjectParticipation2</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">subjectParticipation2</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">SubjectParticipation</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e604 ">typeId</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e606 ">typeId</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e608 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e610 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e612 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e614 ">InfrastructureRootTypeId</td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e616 "> </td>
+<td class="entry" align="left" valign="top" headers="d705855e594 d705855e599 d705855e618 "> </td>
+</tr>
+ 
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Subject Data Non-Clinical Trials example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;realmCode code="Code forrealmCode"/&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.23.12"/&gt;
+  &lt;id root="974690560" extension="MDHT"/&gt;
+  &lt;code code="TBD" codeSystem="2.16.840.1.113883.6.1"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality"/&gt;
+  &lt;languageCode code="Code forlanguageCode"/&gt;
+  &lt;setId root="aff46b6b-d282-4e71-b00d-caabb7f05e01" extension="MDHT"/&gt;
+  &lt;versionNumber value="1"/&gt;
+  &lt;recordTarget typeCode="RCT"&gt;
+    &lt;patientRole classCode="PAT"&gt;
+      &lt;id root="2144870283" extension="MDHT"/&gt;
+      &lt;patient classCode="PSN" determinerCode="INSTANCE"&gt;
+        &lt;administrativeGenderCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+      &lt;/patient&gt;
+    &lt;/patientRole&gt;
+  &lt;/recordTarget&gt;
+  &lt;author typeCode="AUT"&gt;
+    &lt;time/&gt;
+    &lt;assignedAuthor classCode="ASSIGNED"&gt;
+      &lt;id root="574708752" extension="MDHT"/&gt;
+      &lt;assignedPerson classCode="PSN" determinerCode="INSTANCE"/&gt;
+      &lt;representedOrganization classCode="ORG" determinerCode="INSTANCE"/&gt;
+    &lt;/assignedAuthor&gt;
+  &lt;/author&gt;
+  &lt;custodian/&gt;
+  &lt;documentationOf typeCode="DOC"&gt;
+    &lt;serviceEvent classCode="ACT" moodCode="EVN"&gt;
+      &lt;id root="2072411703" extension="MDHT"/&gt;
+      &lt;code code="1636877958"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/serviceEvent&gt;
+  &lt;/documentationOf&gt;
+  &lt;component&gt;
+    &lt;structuredBody&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+    &lt;/structuredBody&gt;
+  &lt;/component&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/DocumentTemplates.html">DOCUMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Tuberculosis Immunization Product - conformance rules</title>
+<shortdesc id="shortdesc">[ManufacturedProduct: templateId <tt>2.16.840.1.113883.10.20.1.53</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ManufacturedProduct</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.53"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Product.html">CCD Product</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.53</tt>)</li>
+<li><b>SHALL</b> contain [1..1] code</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Product.html">CCD Product</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.53</tt>)</li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-366)
+<ul><li>uniquely represents a particular kind of product</li></ul></li>
+<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial. (CONF-357)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial / code. (CONF-358)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.code.oclIsUndefined()</codeblock></li></ul></li>
+<li>The value for "manufacturedMaterial / code" in a product template <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations10, or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017. (CONF-359)<ul><li><codeblock>[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.59' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.96'</codeblock></li></ul></li>
+<li>The value for "manufacturedMaterial / code" in a product template <b>MAY</b> contain a precoordinated product strength, product form, or product concentration (e.g. "metoprolol 25mg tablet", "amoxicillin 400mg/5mL suspension"). (CONF-360)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li>If manufacturedMaterial / code contains a precoordinated unit dose (e.g. "metoprolol 25mg tablet"), then SubstanceAdministration / doseQuantity <b>SHALL</b> be a unitless number that indicates the number of products given per administration. (CONF-361)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li>If manufacturedMaterial / code does not contain a precoordinated unit dose (e.g. "metoprolol product"), then SubstanceAdministration / doseQuantity <b>SHALL</b> be a physical quantity that indicates the amount of product given per administration. (CONF-362)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li><b>SHALL</b> satisfy: A manufacturedMaterial in a product template contains exactly one code / originalText, which represents the generic name of the product. (CONF-363)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.code.originalText.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: A manufacturedMaterial in a product template contains exactly one name, which represents the brand name of the product. (CONF-364)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.name.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: contains exactly one manufacturedProduct / manufacturerOrganization, which represents the manufacturer of the Material. (CONF-365)<ul><li><codeblock>[OCL]: self.manufacturerOrganization-&gt;size() = 1</codeblock></li></ul></li>
+<li>If ManufacturedProduct in a product template contains manufacturedProduct / id, then ManufacturedProduct <b>SHOULD</b> also contain manufacturedProduct / manufacturerOrganization. (CONF-367)<ul><li><codeblock>[OCL]: self.id-&gt;size() &gt; 0 implies self.manufacturerOrganization-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li><b>SHALL</b> contain [1..1] code</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Tuberculosis Immunization Product</ph></p>
+<p id="shortdesc">[ManufacturedProduct: templateId <tt>2.16.840.1.113883.10.20.1.53</tt>]</p>
+</body>
+</topic>

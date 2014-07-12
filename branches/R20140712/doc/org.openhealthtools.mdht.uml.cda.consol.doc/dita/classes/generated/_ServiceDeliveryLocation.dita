@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Service Delivery Location - conformance rules</title>
+<shortdesc id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.22.4.32</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ParticipantRole</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.32"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7635, CONF:10524 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.32"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SDLOC" </tt> (CONF:7758)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HealthcareServiceLocation.dita">HealthcareServiceLocation</xref> 2.16.840.1.113883.1.11.20275</tt><b> DYNAMIC</b> (CONF:16850)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> (CONF:7760)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>telecom</b></tt> (CONF:7761)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] playingEntity (CONF:7762)</li>
+<li>playingEntity, if present, <b>SHALL</b> contain exactly one [1..1] @classCode="PLC" (CodeSystem: EntityClass 2.16.840.1.113883.5.41) (CONF:7763)</li>
+<li>playingEntity, if present, <b>MAY</b> contain zero or one [0..1] name (CONF:16037)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SDLOC" </tt> (CONF:7758)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HealthcareServiceLocation.dita">HealthcareServiceLocation</xref> 2.16.840.1.113883.1.11.20275</tt><b> DYNAMIC</b> (CONF:16850)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> (CONF:7760)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>telecom</b></tt> (CONF:7761)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] playingEntity (CONF:7762)</li>
+<li>playingEntity, if present, <b>SHALL</b> contain exactly one [1..1] @classCode="PLC" (CodeSystem: EntityClass 2.16.840.1.113883.5.41) (CONF:7763)</li>
+<li>playingEntity, if present, <b>MAY</b> contain zero or one [0..1] name (CONF:16037)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ServiceDeliveryLocation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::participantrole[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>RoleClassRoot</entry><entry>CONF:7758</entry><entry> ROL</entry></row> 
+<row><entry>addr</entry><entry>addr</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>AD</entry><entry>CONF:7760</entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:16850</entry><entry> </entry></row> 
+<row><entry>telecom</entry><entry>telecom</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>TEL</entry><entry>CONF:7761</entry><entry> </entry></row> 
+<row><entry>serviceDeliveryLocation</entry><entry>serviceDeliveryLocation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ServiceDeliveryLocation</entry><entry>CONF:8738CONF:14903</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<participantrole xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="2074175206"/>
+  <addr/>
+  <telecom/>
+</participantrole>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Service Delivery Location</ph></p>
+<p id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.22.4.32</tt>]</p>
+</body>
+</topic>

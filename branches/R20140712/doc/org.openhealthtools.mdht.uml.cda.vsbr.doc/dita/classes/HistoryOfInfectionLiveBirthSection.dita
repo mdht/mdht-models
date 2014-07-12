@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>History of Infection - Live Birth Section</title>
+<shortdesc conref="generated/_HistoryOfInfectionLiveBirthSection.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_HistoryOfInfectionLiveBirthSection.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_HistoryOfInfectionLiveBirthSection.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_HistoryOfInfectionLiveBirthSection.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_HistoryOfInfectionLiveBirthSection.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_HistoryOfInfectionLiveBirthSection.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>History of Infection - Live Birth Section example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[	<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.26.48"/>
+					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="71459-2" displayName="Infection Panel"/>
+					<text>
+						...
+					</text>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.49"/>
+							...
+						</observation>
+					</entry>
+				</section>
+			</component>]]>
+</codeblock>
+</body>
+</topic>

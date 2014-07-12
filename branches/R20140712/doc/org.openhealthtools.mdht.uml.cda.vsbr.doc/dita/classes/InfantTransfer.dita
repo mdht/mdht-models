@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>infant Transfer</title>
+<shortdesc conref="generated/_InfantTransfer.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_InfantTransfer.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_InfantTransfer.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_InfantTransfer.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_InfantTransfer.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>infant Transfer example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.29"/>
+							<code code="73758-5" displayName="Infant was transferred within 24 hours of delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="BL" value="false"/>
+						</observation>
+					</entry>]]>
+</codeblock>
+</body>
+</topic>

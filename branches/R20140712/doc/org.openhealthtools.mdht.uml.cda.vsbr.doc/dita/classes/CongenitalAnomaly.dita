@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Congenital Anomaly</title>
+<shortdesc conref="generated/_CongenitalAnomaly.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_CongenitalAnomaly.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_CongenitalAnomaly.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_CongenitalAnomaly.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_CongenitalAnomaly.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_CongenitalAnomaly.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Congenital Anomaly example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[	<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.19"/>
+							<code code="73780-9" displayName="Congenital anomalies of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="CD" code="17190001" displayName="Congenital diaphragmatic hernia" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.19"/>
+							<code code="73780-9" displayName="Congenital anomalies of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="CD" code="70156005" displayName="Anomaly of chromosome pair 21" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="73779-1" displayName="Down syndrome karyotype status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="442124003" displayName="Karyotype evaluation abnormal" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.19"/>
+							<code code="73780-9" displayName="Congenital anomalies of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="CD" code="409709004" displayName="Chromosomal disorder" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="73778-3" displayName="Suspected chromosomal disorder karyotype status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="312948004" displayName="Karyotype determination" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entry>]]>
+</codeblock>
+</body>
+</topic>

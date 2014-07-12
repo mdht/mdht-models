@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Obstetric Procedure</title>
+<shortdesc conref="generated/_ObstetricProcedure.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_ObstetricProcedure.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_ObstetricProcedure.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_ObstetricProcedure.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_ObstetricProcedure.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_ObstetricProcedure.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Obstetric Procedure example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[<entry>
+								<procedure classCode="PROC" moodCode="EVN" negationInd="false">
+									<templateId root="2.16.840.1.113883.10.20.26.39"/>
+									<code code="240278000" displayName="External cephalic version" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</procedure>
+							</entry>
+							<entry>
+								<procedure classCode="PROC" moodCode="EVN" negationInd="false">
+									<templateId root="2.16.840.1.113883.10.20.26.45"/>
+									<code code="72149-8" displayName="Delivery method" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.26.44"/>
+											<code code="73761-9" displayName="Fetal presentation at birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<value xsi:type="CD" code="70028003" displayName="Vertex presentation" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.26.44"/>
+											<code code="73762-7" displayName="Final route and method of delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<value xsi:type="CD" code="200144004" displayName="Deliveries by cesarean" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+											<entryRelationship typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN">
+													<templateId root="2.16.840.1.113883.10.20.26.44"/>
+													<code code="73760-1" displayName="If cesarean, a trial of labor was attempted" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+													<value xsi:type="BL" value="true"/>
+												</observation>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</procedure>
+							</entry>]]>
+</codeblock>
+</body>
+</topic>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Advance Directive Observation"/>
+<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.1.17]"/>
+<meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.1.17]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Advance Directive Observation</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Advance Directive Observation</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.1.17</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.17"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-83)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-84)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-85)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-86, CONF-87)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-88)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF-89)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-93)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectiveVerification.html" title="[Participant2: templateId 2.16.840.1.113883.10.20.1.58]">Advance Directive Verification</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.58</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-98)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectiveStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.37]">Advance Directive Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.37</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">reference</strong></tt> (CONF-102, CONF-103)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">ddddd</em></p>
+</div>
+</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectiveReference.html" title="[Reference: templateId 2.16.840.1.113883.10.20.1.36]">Advance Directive Reference</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.36</tt>)</li>
+</ol>
+</li>
+
+<li class="li">The value for Observation / code in an advance directive observation <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.20.2 AdvanceDirectiveTypeCode STATIC 20061017. (CONF-90)</li>
+
+<li class="li">There <strong class="ph b">SHOULD</strong> be an advance directive observation whose value for Observation / code is '304251008' 'Resuscitation status' 2.16.840.1.113883.6.96 SNOMED CT STATIC (CONF-91)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information (CONF-97)</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Advance Directive Observation example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;id root="MDHT" extension="282169162"/&gt;
+  &lt;code code="294313122"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;participant&gt;
+    &lt;time&gt;
+      &lt;low value="2012"/&gt;
+      &lt;high value="2012"/&gt;
+    &lt;/time&gt;
+    &lt;participantRole/&gt;
+  &lt;/participant&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="594016630"/&gt;
+      &lt;code code="1145089639"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;reference&gt;
+    &lt;externalDocument/&gt;
+  &lt;/reference&gt;
+&lt;/observation&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

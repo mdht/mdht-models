@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Pertussis Therapeutic Regimen Act - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.15.3.67</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.67"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/TherapeuticRegimenAct.html">PHCR Therapeutic Regimen Act</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15.3.57</tt>)</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
+<li>Contains exactly one [1..1] <xref href="../PertussisTreatmentGivenSubstanceAdministration.dita">Pertussis Treatment Given Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.68</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
+<li>Contains exactly one [1..1] <xref href="../PertussisTreatmentNotGivenSubstanceAdministration.dita">Pertussis Treatment Not Given Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.69</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/TherapeuticRegimenAct.html">PHCR Therapeutic Regimen Act</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15.3.57</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:1940)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:1941)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b></tt> (CONF:1942)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="133877004" </tt><i>Therapeutic regimen</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:1943)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1944)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
+<li>Contains exactly one [1..1] <xref href="../PertussisTreatmentGivenSubstanceAdministration.dita">Pertussis Treatment Given Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.68</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
+<li>Contains exactly one [1..1] <xref href="../PertussisTreatmentNotGivenSubstanceAdministration.dita">Pertussis Treatment Not Given Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.69</tt>)</li></ol></li>
+<li><b>SHALL</b></li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Pertussis Therapeutic Regimen Act</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.15.3.67</tt>]</p>
+</body>
+</topic>

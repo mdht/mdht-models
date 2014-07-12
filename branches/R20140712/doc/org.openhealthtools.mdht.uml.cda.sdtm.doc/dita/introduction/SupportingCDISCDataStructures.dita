@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Supporting CDISC data structures</title>
+	<body>
+		
+		<p>Building a CDA Implementation Guide that supports the content of an SDTM or SEND based
+		submission involves the definition of translations or mappings between the data structures defined
+		within the CDISC implementation guides and those supported by HL7's Clinical Document Architecture.  This 
+		section focuses on areas where the relationships between the two sets of specifications are potentially unclear,
+		and discusses the conventions used in the mapping </p>
+		<ul>
+		<li><b>Subject Identifiers</b>: Each SEND and SDTM domain contains information to identify the subject of the 
+		data being provided.  In CDA, a document has a single subject identified in the header.  The identifier appears
+		as a feature of the "patient" which is associated with the clinical document as its record target.
+		<p></p>
+		For example:
+		<codeblock id="subjectIDExample">
+<![CDATA[
+<recordTarget typeCode="RCT">
+		<patientRole classCode="PAT">
+			<id root="1.11.1121" extension="COMPOUNDA_STUDY1_11951"/>
+			<!-- We need an OID that says Unique Subject ID -->
+			<id root="1.11.1122" extension="11951"/>
+			<!-- We need an OID that says  Subject ID -->
+			<patient classCode="PSN" determinerCode="INSTANCE">
+			</patient>
+		</patientRole>
+	</recordTarget>]]>
+</codeblock>
+<p></p>
+Note, the root attribute within the id element is used to distinguish between the unique subject id
+and a study specific identifier. <p></p>
+		</li>
+		<li><b>Pool Identifier</b>: A pool, which only appears in SEND, is a group of subjects
+		about which data is collected.  In other words, a CDA instance will have either a single subject
+		or a subject pool as its subject - as the record target.  The pool id is treated in the same 
+		way as the subject id in the example above.<p></p></li>
+		<li><b>Collection Date/Time</b>: A finding can refer to a physical process or condition that 
+		takes place over a period of time, and the start and stop dates for a fact related to a subject, e.g., a 
+		disease or pattern of behavior, may be recorded as the effectiveTime for that act.  It may also be 
+		relevant to capture the date/time on which this information was collected.  The Implementation Guide handles
+		this situation by defining a template - "Data Collection" - for capturing this information.  This template
+		also supports capturing the study day of data collection by including a "Study Day" observation which may
+		be associated with the data collection one.
+				<p></p>
+		For example:
+		<codeblock id="CollectionTimeExample">
+<![CDATA[
+<entryRelationship typeCode="COMP">
+	<observation classCode="OBS" moodCode="EVN">
+		<code code="CXXXXXX" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+		<!-- Indicate data collection -->
+		<effectiveTime value="1990508"/>
+		<entryRelationship typeCode="REFR">
+			<observation classCode="OBS" moodCode="EVN">
+				<code code="ESDtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+				<!-- Indicate study day  -->
+				<value xsi:type="INT" value="-16"/>
+			</observation>
+		</entryRelationship>
+	</observation>
+</entryRelationship>]]>
+</codeblock>
+<p></p>
+Note, it may be relevant to capture both the start and stop dates of data collection and, consequently, the
+start and stop study days.  In this case, an interval of effectiveTimes or of integer values may be used.<p></p>
+</li>
+		<li><b>Test or Observation Names</b>:Virtually all SEND and SDTM domains contain information about something, be it
+		a measurement, a test, a particular type of observation.  The implementation guides make it possible to capture the
+		name of an item, as well as short name, reported name, modified name and standardized name.  Each of these is treated
+		differently within CDA as discussed above in the section on Observation code. <p></p>
+		</li>
+		<li><b>Category and Sub-Category</b>: Many domains include the notion of category and sub-category.  In each case, there
+		is a domain specific value set(vocabulary)that contains the list of valid categories or sub-categories. For the most part
+		these are sponsor defined.  A single template has been defined for category, and an analogous one for sub-category.  In this
+		template, unlike many of the others, the value of observation code is not fixed, it indicates the domain that a category value 
+		is drawn from.  In other words, the value set used to constrain observation value is based on the content of observation code.  
+		<p></p>
+		For example:
+		<codeblock id="CatogoryExample">
+<![CDATA[
+<entryRelationship typeCode="COMP">
+	<observation classCode="OBS" moodCode="EVN">
+		<code code="CXXXXX" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+		<!-- Indicate this is a lab category observation.  -->
+		<value xsi:type="CD" code="xxx" displayName="BLOOD CHEMISTRY" codeSystem="1.22.116"/>
+		<!-- We need an OID to designate a local code system for lab result categories.  -->
+	</observation>
+</entryRelationship>]]>
+</codeblock>
+<p></p>
+		</li>
+		<li><b>Baseline, Derived, Excluded Values</b>:  A data item may be characterized as a baseline value, as a value that
+		has been derived from other data points, or (in SEND) as a value to be excluded from calculations.  Since these 
+		characterizations are used to aid in interpreting the associated data item, they are treated as interpretation codes
+		within CDA.<p></p>
+		For example:
+		<codeblock id="interpretationCodeExample">
+<![CDATA[
+	<interpretationCode code="CXXXXX" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+	<!-- The IG captures the Baseline designation as an interpretation code value. This requires the needed concept within NCI.  -->]]>
+</codeblock>
+<p></p>
+Note that, since interpretation code repeats, an item may be characterized in multiple ways.  In the case of laboratory results, 
+intpretation code values such as "normal," "high" may be passed as well. <p></p>
+		</li>
+		<li><b>Study Day of Start, Study Day of End</b>:In many cases, the timing of an event, intervention or finding is oriented
+		both with reference to a calendar date and time but also to "study day".  This captures the number of days since a reference
+		date that has been set as the point of origin for the subject's participation in the study.  Since events and interventions
+		can take place over a number of days, it is possible to record both the beginning and ending study days.  	
+		<p></p>For example:
+		<codeblock id="StudyDayExample">
+<![CDATA[
+<entryRelationship typeCode="REFR">
+	<observation classCode="OBS" moodCode="EVN">
+		<code code="SDPtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+		<!-- Study Day Period -->
+		<value xsi:type="IVL_INT">
+			<low value="1"/>
+			<high value="2"/>
+		</value>
+	</observation>
+</entryRelationship>]]>
+</codeblock>
+<p></p>
+		</li>
+		<li><b>Association to Reference Time Points</b>: One of the more complex notions within the study data tabulation model
+		is the notion of relating an activity to a defined reference time point.  It is possible to indicate when some act needs 
+		to be performed (or when it has been performed) as a timing offset from a reference point.  This reference point may be 
+		assigned a date/time in its own right, or it may be a particular event, e.g., first dose of the study drug, in the course
+		of the study or the life of the study subject. The Implementation Guides support this notion through creation of the "Timing 
+		Reference" template.  This template contains two linked observations. The first specified the timing offset, and the second 
+		identifies the reference point - the "anchoring time point" - that the offset is measured against.
+		<p></p>For example:
+		<codeblock id="timingReferenceExample">
+<![CDATA[
+<entryRelationship typeCode="REFR">
+	<observation classCode="OBS" moodCode="EVN">
+		<code code="TRtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+		<!-- Indicate "timing reference" -->
+		<effectiveTime>
+			<width value="15" unit="min"/>
+			</effectiveTime>
+		<entryRelationship typeCode="COMP">
+			<observation classCode="OBS" moodCode="EVN">
+				<code code="ATPtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+				<!-- Indicate "anchor time point" -->
+				<text mediaType="text/plain>First Dose</text>
+			</observation>
+		</entryRelationship>
+	</observation>
+</entryRelationship>
+	]]>
+</codeblock>
+<p></p>
+		</li>
+		<li><b>Results: Character and Numeric</b>: The explanatory text for the CDISC implementation
+		guides makes it clear that finding results typically are recorded as physical quantities using standard
+		and local units of measure. It is also possible for a result to be provided as text, or as a coded value.
+		In the case of coded values, the codes may be drawn from a locally defined code system or from a standard
+		code system.  Note, for our purposes, a standard code system is one that is defined within, or accessible
+		through, EVS.
+		<p></p>A typical example, capturing body weight shows physical quantities, with the numeric value also provided as a text field:
+		<codeblock id="resultExample">
+<![CDATA[
+<value xsi:type="PQR" value="143" code="g" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+<!-- CDISC Units of measure  -->
+<value xsi:type="PQR" value="143" code="g" codeSystem="1.22.155"/>
+<!-- We need an OID to designate a local code system for  original units of measure.  -->
+<value xsi:type="ED" mediaType="text/plain">143</value>
+	]]>
+</codeblock>
+<p></p></li>
+		<li><b>Specimen Information</b>: Within CDA, a specimen is captured in relationship to the act of 
+		specimen collection.  Therefore, the effectiveTime of the collection act records the date/time of specimen
+		collection, while specimen type is recorded as the .code value for the specimen entity itself. An identifier
+		for the specimen may be recorded as well.   When it is relevant to capture information about the specimen
+		usability or condition, these are recorded as observations associated with specimen collection. 
+		<p></p>For example:
+		<codeblock id="specimenExample">
+<![CDATA[
+<entryRelationship typeCode="COMP">
+	<procedure classCode="PROC" moodCode="EVN">
+		<code code="CXXXXX" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+		<!-- The act of specimen collection.  -->
+		<effectiveTime>
+			<low value="20071104"/>
+		</effectiveTime>
+		<specimen typeCode="SPC">
+			<specimenRole classCode="SPEC">
+				<specimenPlayingEntity classCode="MAT" determinerCode="INSTANCE">
+					<code code="CXXXXX" displayName="WHOLE_BLOOD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+					<!-- Assuming that specimen type values are captured within EVS.  -->
+				</specimenPlayingEntity>
+			</specimenRole>
+		</specimen>
+		<entryRelationship typeCode="REFR">
+			<observation classCode="OBS" moodCode="EVN">
+				<code code="C83450" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+					<!-- Planned Study Day -->
+					<value xsi:type="INT" value="1"/>
+			</observation>
+		</entryRelationship>
+	</procedure>
+</entryRelationship>
+	]]>
+</codeblock>
+<p></p>
+Note, within this example, the planned study day for specimen collection has been included.<p></p> </li>	
+		<li><b>Specimen Anatomic Region</b>: It may be relevant (SEND only) to collect information on the 
+		anatomic region for the specimen.  It is possible to record an anatomic region for the specimen, as well as 
+		to indicate the laterality and directionality of the specimen collection within that body site.  Each of these items
+		are captured as target site codes within HL7 - they would be used to characterize the specimen collection act.  In addition,
+		if the report records whether the specimen represents a portion of the totality of the anatomic region, this will be recorded
+		as an observation associated with the specimen collection.
+		<p></p>For example:
+		<codeblock id="anatomicLocationExample">
+<![CDATA[
+<entryRelationship typeCode="COMP">
+	<procedure classCode="PROC" moodCode="EVN">
+		<code code="CXXXXX" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+		<!-- The act of specimen collection.  -->
+		<targetSiteCode code="CXXXXX" displayName="MEDULLA" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+		<!-- The anatomic site.  -->
+		<targetSiteCode code="CXXXXX" displayName="LEFT" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+		<!-- Laterality  -->
+		<targetSiteCode code="CXXXXX" displayName="PROXIMAL" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+		<!-- Directionality  -->
+		<!- .... omitting the specimen type information ->
+		<entryRelationship typeCode="COMP">
+			<observation classCode="OBS" moodCode="EVN">
+				<code code="POTtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+					<!-- Portion or Totality -->
+					<value xsi:type="CD" code="CXXXXX" displayName="SEGMENT" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+			</observation>
+		</entryRelationship>
+	</procedure>
+</entryRelationship>
+	]]>
+</codeblock>
+<p></p>
+</li>	
+		<li><b>Visit Name and Number</b>: In many cases (SDTM only) information is recorded within the context of a visit.  In the SDTM Implementation
+		Guide, visit name and number may be recorded for an item.   This feature is supported within the CDA implementation Guide by providing a Visit
+		template, and including information for these domains, i.e., ECG Test, Human Clinical Laboratory, Physical Examination, Questionnaire
+     Finding, Vital Sign, Pharmacokinetic Concentration, Pharmacokinetic Parameter, Drug Accountability, as entries within the Visit section.
+     		<p></p>Here is an example showing the visit section, and two vital sign findings:
+		<codeblock id="visitExample">
+<![CDATA[
+<section classCode="DOCSECT">
+					<code code="CXXXXXX" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+					<!-- Indicate subject visit section,  Note, the Lab and Vital Signs content will be found nested within. -->
+					<title>Subject Visits Section</title>
+					<text>Autogenerated Text Goes here</text>
+					<!-- Begin Visit #1 -->
+					<entry typeCode="COMP">
+						<encounter classCode="ENC" moodCode="EVN">
+							<id root="1.11.1125" extension="1"/>
+							<code code="SCREENING" codeSystem="1.22.113"/>
+							<!-- We need an OID to designate a local code system for different visit names or types.  -->
+							<effectiveTime>
+								<low value="19980508"/>
+								<high value="19990523"/>
+							</effectiveTime>
+							<entryRelationship typeCode="REFR">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="C66734" displayName="Domain Abbreviation" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+									<value xsi:type="CD" code="C49617" displayName="subject visits" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="REFR">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="C83450" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+									<!-- Planned Study Day -->
+									<value xsi:type="INT" value="-7"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="REFR">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="SDPtdb" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+									<!-- Study Day Period -->
+									<value xsi:type="IVL_INT">
+										<low value="-381"/>
+										<high value="-1"/>
+									</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<id root="1.11.1126" extension="1"/>
+									<code code="DIAPB" displayName="Diastolic Blood Pressure" codeSystem="1.22.117">
+										<!-- We need an OID to designate a local code system for vital sign observations.  -->
+									</code>
+									<effectiveTime value="199905081510"/>
+									<value xsi:type="PQR" value="64.4625" code="MMHG"   codeSystem="1.22.115"/>
+									<!-- We need an OID to designate a local code system for  original units of measure.  --> 
+									<value xsi:type="PQR" value="64.4625" code="C49670" displayName="MMHG"  codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+									<!-- CDISC Units of measure  -->
+									<value xsi:type="ED" mediaType="text/plain">64.4625</value>
+									<entryRelationship typeCode="REFR">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="C66734" displayName="Domain Abbreviation" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+											<value xsi:type="CD" code="C49622" displayName="vital signs" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="CXXXXX" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+											<!-- Indicate this is a vital sign category observation.  -->
+											<value xsi:type="CD" code="xxx" displayName="BLOOD CHEMISTRY" codeSystem="1.22.117"/>
+											<!-- We need an OID to designate a local code system for Vital Sign categories.  -->
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="C71148" displayName="Position" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+											<value xsi:type="CD" code="62122" displayName="SITTING" codeSystem="1.22.118"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="REFR">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="C83450" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+											<!-- Planned Study Day -->
+											<value xsi:type="INT" value="-16"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+	]]>
+</codeblock>
+<p></p>
+     </li>
+		</ul>
+</body>
+</topic>

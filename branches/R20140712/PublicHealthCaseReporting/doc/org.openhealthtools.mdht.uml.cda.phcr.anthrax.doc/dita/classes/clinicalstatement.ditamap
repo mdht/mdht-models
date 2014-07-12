@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Clinical Statement Templates">
+<topicref href="AnthraxCaseObservation.dita" type="topic" />
+<topicref href="AnthraxPossibleExpossureLocationAndTypeAct.dita" type="topic" />
+<topicref href="AnthraxResultObservation.dita" type="topic" />
+<topicref href="AnthraxResultOrganizer.dita" type="topic" />
+<topicref href="AnthraxSignsAndSymptomsObservation.dita" type="topic" />
+<topicref href="AnthraxTherapeuticRegimenAct.dita" type="topic" />
+<topicref href="AnthraxTreatmentGivenSubstanceAdministration.dita" type="topic" />
+<topicref href="AnthraxTreatmentNotGivenSubstanceAdministration.dita" type="topic" />
+</map>

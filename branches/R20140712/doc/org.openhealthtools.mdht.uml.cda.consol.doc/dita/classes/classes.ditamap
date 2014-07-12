@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Other Classes">
+<topicref href="DrugVehicle.dita" type="topic" />
+<topicref href="FetusSubjectContext.dita" type="topic" />
+<topicref href="ImmunizationMedicationInformation.dita" type="topic" />
+<topicref href="MedicationInformation.dita" type="topic" />
+<topicref href="ObserverContext.dita" type="topic" />
+<topicref href="PhysicianReadingStudyPerformer.dita" type="topic" />
+<topicref href="PhysicianofRecordParticipant.dita" type="topic" />
+<topicref href="PreconditionForSubstanceAdministration.dita" type="topic" />
+<topicref href="ProductInstance.dita" type="topic" />
+<topicref href="ServiceDeliveryLocation.dita" type="topic" />
+</map>

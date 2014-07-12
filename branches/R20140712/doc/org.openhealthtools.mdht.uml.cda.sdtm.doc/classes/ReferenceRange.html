@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Reference Range"/>
+<meta name="abstract" content="[ObservationRange: templateId 2.16.840.1.113883.10.20.23.xxxx]"/>
+<meta name="description" content="[ObservationRange: templateId 2.16.840.1.113883.10.20.23.xxxx]"/>
+<meta name="DC.Coverage" content="ObservationRange"/>
+<meta name="DC.Relation" scheme="URI" content="../content/OtherClasses.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Reference Range</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Draft/Pre-ballot</b> The Normative content on which this specification
+	 is based is provided by Health Level 7.</p>
+</div>
+
+<h1 class="title topictitle1">Reference Range</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ObservationRange: templateId <tt class="ph tt">2.16.840.1.113883.10.20.23.xxxx</tt>]</p>
+
+
+<div class="section">
+<p class="p">The reference range structure is used to convey information about the standard - normal - values for a given finding.  The values provided which can indicate the upper and lower bounds of  the normal range for a test, or which can indicate which values of a categorical test are normal, support interpretation of the value recorded for the study subject.</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN.CRT" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)
+<ul class="ul"><li class="li">The code value indicates the observation includes reference range information.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">interpretationCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.83 ObservationInterpretation</tt>)
+<ul class="ul"><li class="li">The value is used to interpret the meaning of the range information.  Is it the upper bound of the range, the lower bound of the range, or a characterization of the normal range for character based results?</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>
+<ul class="ul"><li class="li">Contains the actual reference range value as an interval of physical quantities.  Note,  the predetermined value of interpretation code  indicates that the normal range is being reported.  Standard referemce range values go into the base value and unt, while the orginal values use the translation property of the PQR type.  [SDTM: LBORNRLO, LBORNRHI, LBSTRRLO, LBSTNRHI, LBSTNRC ], [SEND: LBORNRLO, LBORNRHI, LBSTRRLO, LBSTNRHI, LBSTNRC] [Study Data Tabulation Model: -STRNLO, STRNHI, STRNC]  The data type for .value is listed as "ANY" since it may either be coded - type = CD - or a physical quantity - type = PQR.  (Note, the PQR form is used to allow the use units of measure expressed as coded values.) The value presented by the investigator or party entering the data is captured as the base value.  If this value is transformed to use standard units, or a standard code set, the transformed or normalized values are included as translations.</li>
+</ul>
+</li>
+
+</ol>
+
+
+<div class="section"><div class="p">
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d553533e126">sdtm::Reference Range</th>
+  </tr>
+  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d553533e131">cda::observationrange[cda:templateId/@root = 2.16.840.1.113883.10.20.23.xxxx]/</th>
+  </tr>
+  <tr class="row"><th class="entry" align="left" valign="top" id="d553533e136">Name</th>
+<th class="entry" align="left" valign="top" id="d553533e138">XPath</th>
+<th class="entry" align="left" valign="top" id="d553533e140">Cardinality</th>
+<th class="entry" align="left" valign="top" id="d553533e142">Severity</th>
+<th class="entry" align="left" valign="top" id="d553533e144">Nullable</th>
+<th class="entry" align="left" valign="top" id="d553533e146">Data Type</th>
+<th class="entry" align="left" valign="top" id="d553533e148">Conformance</th>
+<th class="entry" align="left" valign="top" id="d553533e150">Value(s)</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e136 ">classCode</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e138 ">@classCode</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e140 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e142 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e144 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e146 ">ActClassObservation</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e148 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e150 "> OBS</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e136 ">moodCode</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e138 ">@moodCode</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e140 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e142 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e144 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e146 ">ActMood</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e148 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e150 "> EVN.CRT</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e136 ">nullFlavor</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e138 ">@nullFlavor</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e140 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e142 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e144 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e146 ">NullFlavor</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e148 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e150 "> ASKU</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e136 ">code</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e138 ">code</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e140 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e142 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e144 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e146 ">CD</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e148 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e150 ">NCI Thesaurus 2.16.840.1.113883.3.26.1.1 null</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e136 ">interpretationCode</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e138 ">interpretationCode</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e140 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e142 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e144 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e146 ">CE</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e148 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e150 ">ObservationInterpretation 2.16.840.1.113883.5.83 null</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e136 ">realmCode</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e138 ">realmCode</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e140 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e142 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e144 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e146 ">CS</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e148 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e150 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e136 ">templateId</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e138 ">templateId</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e140 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e142 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e144 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e146 ">II</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e148 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e150 "> 2.16.840.1.113883.10.20.23.xxxx</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e136 ">text</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e138 ">text</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e140 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e142 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e144 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e146 ">ED</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e148 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e150 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e136 ">value</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e138 ">value</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e140 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e142 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e144 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e146 ">ANY</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e148 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e150 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e136 ">typeId</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e138 ">typeId</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e140 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e142 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e144 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e146 ">InfrastructureRootTypeId</td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e148 "> </td>
+<td class="entry" align="left" valign="top" headers="d553533e126 d553533e131 d553533e150 "> </td>
+</tr>
+ 
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Reference Range example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;observationrange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN.CRT"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.23.xxxx"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+  &lt;interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/&gt;
+&lt;/observationrange&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/OtherClasses.html">OTHER CLASSES</a></div>
+</div>
+</div>
+
+</body>
+</html>

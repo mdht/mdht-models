@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Pregnancy Risk Factors</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.7126"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Pregnancy Risk Factors - 2.16.840.1.114222.4.11.7126</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>December 1, 2013</entry></row>
+<row><entry>Description</entry><entry>A list of risk factors for a pregnancy.  Note, SNOMED is being used as the primary source for codes within the value set.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>73211009</entry><entry>SNOMEDCT</entry><entry>Diabetes mellitus</entry></row>
+<row><entry>11687002</entry><entry>SNOMEDCT</entry><entry>Gestational diabetes mellitus</entry></row>
+<row><entry>38341003</entry><entry>SNOMEDCT</entry><entry>Hypertensive disorder, systemic arterial</entry></row>
+<row><entry>48194001</entry><entry>SNOMEDCT</entry><entry>Pregnancy-induced hypertension</entry></row>
+<row><entry>15938005</entry><entry>SNOMEDCT</entry><entry>Eclampsia</entry></row>
+<row><entry>161765003</entry><entry>SNOMEDCT</entry><entry>History of - premature delivery</entry></row>
+<row><entry>271903000</entry><entry>SNOMEDCT</entry><entry>History of - pregnancy</entry></row>
+<row><entry>65046005</entry><entry>SNOMEDCT</entry><entry>Infertility Therapy</entry></row>
+<row><entry>58533008</entry><entry>SNOMEDCT</entry><entry>Artificial insemination</entry></row>
+<row><entry>63487001</entry><entry>SNOMEDCT</entry><entry>Assisted fertilization</entry></row>
+<row><entry>200144004</entry><entry>SNOMEDCT</entry><entry>Deliveries by cesarean</entry></row>
+<row><entry>260413007</entry><entry>SNOMEDCT</entry><entry>None</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

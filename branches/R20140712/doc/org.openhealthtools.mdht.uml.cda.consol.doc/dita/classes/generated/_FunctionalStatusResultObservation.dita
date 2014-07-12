@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Functional Status Result Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.67</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.67"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This clinical statement represents details of an evaluation or assessment of a patient's functional status. The evaluation may include assessment of a patient's language, vision, hearing, activities of daily living, behavior, general function, mobility, and self-care status. The statement, if present,  will include supporting caregivers, non-medical devices, and the time period for which the evaluation and assessment were performed.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:13889, CONF:13890 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.67"</li></ol></li>
+<li><b>SHALL</b> conform to <xref href="../ResultObservation.dita">Result Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.2</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:13905)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:13906)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:13907)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:13908), where the @code <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:13926)
+<ol>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:13927)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:13929)<tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:13930)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:13932)
+<ol>
+<li>If value/@xsi:type=CD, <b>SHOULD</b> contain a code from SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96) (CONF:14234)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt> (CONF:13933)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:13934)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:13935)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt> (CONF:13936)
+<ol>
+<li>Contains exactly one [1..1] CDA Author</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:13892, CONF:14596, CONF:14218)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../NonMedicinalSupplyActivity.dita">Non Medicinal Supply Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.50</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:13895, CONF:14597, CONF:13897)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../CaregiverCharacteristics.dita">Caregiver Characteristics</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.72</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:14465, CONF:14598, CONF:14466)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../AssessmentScaleObservation.dita">Assessment Scale Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.69</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>referenceRange</b></tt> (CONF:13937) <ol><li> Such referenceRanges <b>SHALL</b> contain exactly one [1..1] <tt><b>observationRange</b></tt> (CONF:13938) <ol><li> This observationRange observationRange <b>SHALL NOT</b> contain [0..0] code (CONF:13939)</li></ol> </li></ol>
+</li>
+<li>This reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:13928)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../ResultObservation.dita">Result Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.2</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:13905)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:13906)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:13907)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:13908), where the @code <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:13926)
+<ol>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:13927)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:13929)<tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:13930)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:13932)
+<ol>
+<li>If value/@xsi:type=CD, <b>SHOULD</b> contain a code from SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96) (CONF:14234)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt> (CONF:13933)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:13934)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:13935)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt> (CONF:13936)
+<ol>
+<li>Contains exactly one [1..1] CDA Author</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:13892, CONF:14596, CONF:14218)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../NonMedicinalSupplyActivity.dita">Non Medicinal Supply Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.50</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:13895, CONF:14597, CONF:13897)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../CaregiverCharacteristics.dita">Caregiver Characteristics</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.72</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:14465, CONF:14598, CONF:14466)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../AssessmentScaleObservation.dita">Assessment Scale Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.69</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>referenceRange</b></tt> (CONF:13937) <ol><li> Such referenceRanges <b>SHALL</b> contain exactly one [1..1] <tt><b>observationRange</b></tt> (CONF:13938) <ol><li> This observationRange observationRange <b>SHALL NOT</b> contain [0..0] code (CONF:13939)</li></ol> </li></ol>
+</li>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15924)</li>
+<li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15925)</li>
+<li>This reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15926)</li>
+<li>The value for 'code' in a result observation <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)
+Laboratory results <b>SHOULD</b> be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency. Local and/or regional codes for laboratory results are allowed. The Local and/or regional codes <b>SHOULD</b> be sent in the translation element. (CONF:7166)</li>
+<li><b>SHOULD</b> contain zero or more [0..*] referenceRange. Such referenceRanges, if present, <b>SHALL</b> contain exactly one [1..1] observationRange. This observationRange <b>SHALL NOT</b> contain [0..0] code (CONF:7152)</li>
+<li><b>MAY</b> contain zero or one [0..1] author (CONF:7149)</li>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:13927)</li>
+<li>This reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:13928)</li>
+<li>If value/@xsi:type=CD, <b>SHOULD</b> contain a code from SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96) (CONF:14234)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::FunctionalStatusResultObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:13905</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:13906</entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:13908</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:13930</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:13907</entry><entry> </entry></row> 
+<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>CE</entry><entry>CONF:13933</entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF:13934</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:13929</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF:13935</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ED</entry><entry>CONF:13926</entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ANY</entry><entry>CONF:13932</entry><entry> </entry></row> 
+<row><entry>assessmentScaleObservation</entry><entry>assessmentScaleObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AssessmentScaleObservation</entry><entry>CONF:14465CONF:14598CONF:14466</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Author</entry><entry>CONF:13936</entry><entry> </entry></row> 
+<row><entry>caregiverCharacteristics</entry><entry>caregiverCharacteristics</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CaregiverCharacteristics</entry><entry>CONF:13895CONF:14597CONF:13897</entry><entry> </entry></row> 
+<row><entry>functionalStatusResultObservation</entry><entry>functionalStatusResultObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>FunctionalStatusResultObservation</entry><entry>CONF:14418CONF:14419</entry><entry> </entry></row> 
+<row><entry>nonMedicinalSupplyActivity</entry><entry>nonMedicinalSupplyActivity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>NonMedicinalSupplyActivity</entry><entry>CONF:13892CONF:14596CONF:14218</entry><entry> </entry></row> 
+<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ReferenceRange</entry><entry>CONF:13937</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="209561481"/>
+  <code code="455239781"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <interpretationCode code="1024473455"/>
+  <methodCode code="9988762"/>
+  <targetSiteCode xsi:type="CE" code="1760974137"/>
+  <author/>
+  <entryRelationship>
+    <supply>
+      <id root="MDHT" extension="1838515884"/>
+      <code code="957580877"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime value="20130627"/>
+    </supply>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="MDHT" extension="1173080155"/>
+      <code code="1515442758"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="769524852"/>
+      <interpretationCode code="2013259994"/>
+      <methodCode code="1785276183"/>
+      <targetSiteCode code="228080161"/>
+      <participant>
+        <time>
+          <low value="2013"/>
+          <high value="2013"/>
+        </time>
+        <participantRole/>
+      </participant>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="MDHT" extension="867929790"/>
+      <code code="787275912"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <interpretationCode code="547548872"/>
+      <methodCode code="2004145192"/>
+      <targetSiteCode code="980917265"/>
+      <author/>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="992161001"/>
+          <code code="877588208"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <interpretationCode code="1316339303"/>
+          <methodCode code="1634908763"/>
+          <targetSiteCode code="1350429191"/>
+        </observation>
+      </entryRelationship>
+      <referenceRange>
+        <observationRange/>
+      </referenceRange>
+    </observation>
+  </entryRelationship>
+  <referenceRange>
+    <observationRange/>
+  </referenceRange>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Functional Status Result Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.67</tt>]</p>
+</body>
+</topic>

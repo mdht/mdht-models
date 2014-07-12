@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Allergy Observation"/>
+<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.22.4.7]"/>
+<meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.22.4.7]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Allergy Observation</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1"><span class="ph">Allergy Observation</span></h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.7</tt>]</p>
+
+		
+		<div class="section">
+<div class="p"><p class="lines"><em class="ph i">This clinical statement represents that an allergy or adverse reaction exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a manufactured material participant playing entity in the allergy - intolerance observation. While the agent is often implicit in the alert observation (e.g. "allergy to penicillin"), it should also be asserted explicitly as an entity. The manufactured material participant is used to represent natural and non-natural occurring substances.<br/>
+NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent.</em></p>
+</div>
+
+</div>
+
+		
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:7381, CONF:10488 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.7"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7379)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7380)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7382)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:15947)<tt class="ph tt"><strong class="ph b">/@code</strong>="ASSERTION" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:15948)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7386)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:7387)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AllergyAdverseEventType.html">Allergy/Adverse Event Type</a> 2.16.840.1.113883.3.88.12.3221.6.2</tt><strong class="ph b"> DYNAMIC</strong> (CONF:7390, CONF:9139)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7447, CONF:7907, CONF:15955)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>MFST" </tt><em class="ph i">MFST</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ReactionObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.9]">Reaction Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.9</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9961, CONF:9962, CONF:15956)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="SeverityObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.8]">Severity Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.8</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7440, CONF:7906, CONF:15954)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AllergyStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.28]">Allergy Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.28</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:7402) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="CSM" </tt><em class="ph i">Consumable</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.90 HL7ParticipationType</tt>) (CONF:7403)</li>
+<li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:7404) <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="MANU" </tt><em class="ph i">Manufactured Product</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.110 HL7RoleClass</tt>) (CONF:7405)</li>
+<li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">playingEntity</strong></tt> (CONF:7406) <ol class="ol"><li class="li"> This playingEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="MMAT" </tt> (CONF:7407)</li>
+<li class="li"> This playingEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:7419)</li>
+<li class="li"> This playingEntity In an allergy to a specific medication the code <strong class="ph b">SHALL</strong> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC (CONF:7421)</li>
+<li class="li"> This playingEntity In an allergy to a class of medications the code <strong class="ph b">SHALL</strong> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC (CONF:10083)</li>
+<li class="li"> This playingEntity In an allergy to a food or other substance the code <strong class="ph b">SHALL</strong> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC (CONF:10084)</li>
+<li class="li"> This playingEntity code <strong class="ph b">SHOULD</strong> contain zero or one [0..1] originalText (CONF:7424)</li>
+<li class="li"> This playingEntity originalText, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference (CONF:7425)</li>
+<li class="li"> This playingEntity reference, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @value (CONF:15952)</li>
+<li class="li"> This playingEntity reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 (CONF:15953)</li>
+<li class="li"> This playingEntity code <strong class="ph b">MAY</strong> contain zero or more [0..*] translation (CONF:7431)</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li">If it is unknown when the allergy began, this effectiveTime <strong class="ph b">SHALL</strong> contain low/@nullFLavor="UNK" (CONF:9103)</li>
+
+<li class="li">If the allergy is no longer a concern, this effectiveTime <strong class="ph b">MAY</strong> contain zero or one [0..1] high (CONF:10082)</li>
+
+<li class="li">value <strong class="ph b">SHOULD</strong> contain zero or one [0..1] originalText (CONF:7422)</li>
+
+<li class="li">originalText, if present, <strong class="ph b">MAY</strong> contain zero or one [0..1] reference (CONF:15949)</li>
+
+<li class="li">reference, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference/@value (CONF:15950)</li>
+
+<li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (CONF:15951)</li>
+
+<li class="li">entryRelationship with target entry AllergyStatusObservation <strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" True (CONF:7446)</li>
+
+<li class="li">entryRelationship with target entry Reaction Observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" True (CONF:7449)</li>
+
+<li class="li">entryRelationship with target entry Severity Observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" True (CONF:9964)</li>
+
+<li class="li">In an allergy to a specific medication the code <strong class="ph b">SHALL</strong> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC. In an allergy to a class of medications the code <strong class="ph b">SHALL</strong> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC. In an allergy to a food or other substance the code <strong class="ph b">SHALL</strong> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC (CONF:7421, CONF:10083, CONF:10084)</li>
+
+</ol>
+
+		
+		<p class="p">
+		</p>
+
+		<p class="p">
+			<strong class="ph b"><span class="ph">Allergy Observation</span> example</strong>
+		</p>
+		
+		<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1440553728"/&gt;
+  &lt;code code="648947846"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;participant typeCode="CSM"&gt;
+    &lt;participantRole classCode="MANU"&gt;
+      &lt;playingEntity classCode="MMAT"/&gt;
+    &lt;/participantRole&gt;
+  &lt;/participant&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="246080946"/&gt;
+      &lt;code code="120672386"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="1058685405"/&gt;
+          &lt;code code="225738189"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;procedure&gt;
+          &lt;id root="MDHT" extension="1994060805"/&gt;
+          &lt;code code="1729544607"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;specimen/&gt;
+          &lt;performer/&gt;
+          &lt;entryRelationship typeCode="COMP" inversionInd="true"/&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;substanceAdministration/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;act/&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/procedure&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;substanceAdministration&gt;
+          &lt;id root="MDHT" extension="2079902944"/&gt;
+          &lt;code code="748602723"/&gt;
+          &lt;effectiveTime value="20130627"/&gt;
+          &lt;consumable/&gt;
+          &lt;performer/&gt;
+          &lt;entryRelationship&gt;
+            &lt;supply/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;act/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;supply/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;precondition/&gt;
+        &lt;/substanceAdministration&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="1667661204"/&gt;
+      &lt;code code="1304571072"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="111925052"/&gt;
+      &lt;code code="323866413"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+&lt;/observation&gt;</pre>
+
+	</div>
+
+
+</body>
+</html>

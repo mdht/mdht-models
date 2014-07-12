@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Geographical location history</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.3201"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Geographical location history - 2.16.840.1.114222.4.11.3201</entry></row>
+<row><entry>Source</entry><entry>PHIN VADS</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3201</entry></row>
+<row><entry>Definition</entry><entry>Locations out of US (Birth Country) and jurisdictions within US (states) that are potentially relevent to current condition. This value set is based upon ISO 3166 (Countries) as well as FIPS 5-2 (States).</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

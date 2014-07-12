@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Body Weight Gain - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.19</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.19"/>
+</prolog>
+<body>
+<section id="description">
+<p>The template captures information for the SEND Body Weight Gain domain.  It is used to record changes in the body weight of a study subject.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:958)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:959)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:960)
+<ul><li>A sequence number used to identify the body weight change observation.  [SEND: BGSEQ]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:961), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BodyWeightGain.dita">Body Weight Gain</xref> CXXXXX</tt><b> STATIC</b> (CONF:962)
+<ul><li>A value to indicate the nature of the observation recording the subject's the subject's change in weight. Use the code property of the CD type to capture the test code, and the original text property to capture a verbatim description of the test. [SEND: BGTESTCD, BGTEST]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:963), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1548)
+<ul><li>Used to indicate whether or not a measurement has been performed.  [SEND: BGSTAT]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:964)
+<ul><li>Date/times that the subject was weighed which are captured as a time interval.  This should include both the starting and ending points for the measure of weight change.  [SEND: BGDTC, BGENDTC]</li></ul></li>
+<li><b>SHOULD</b> contain  [0..3] <tt><b>value</b></tt> (CONF:965)
+<ul><li>The recorded test result.  Use up to three observations if needed.  Use of standard or non-standard units of measure is indicated by the OID provided for the PQR -physical quantity representation - type supporting physical quantities.  Character data is sent using the ED - encapsulated data - type. [SEND: BGORRES, BGORRESU, BGSTRESC, BGSTRESN, BGSTRESU]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:966)
+<ul><li>Identifies the SDTM or SEND domain the record is assigned to.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:967)
+<ul><li>Information on the reason a scheduled activity was not carried out.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:968)
+<ul><li>Information on the reason that a data item is to be excluded from tabulation.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../ExclusionReason.dita">Exclusion Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:969)
+<ul><li>A reference to the study days corresponding to the time period of the observation.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StudyDayPeriod.dita">Study Day Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.82</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:970)
+<ul><li>Creates an assoication between the timing of an activity and a defined reference time point.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.97</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>interpretationCode</b></tt> (CONF:971), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/SubjectDataInterpretationType.dita">Subject Data Interpretation Type</xref> CXXXXX</tt><b> STATIC</b> (CONF:972)
+<ul><li>Includes information used to better interpret the observation value (result).  Includes information used to better interpret the observation value (result).  Namely, whether the result should be excluded from tabulations.   [SEND: BGEXCLFL]</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:973)
+<ul><li>Establishes a relationship between this record and another record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:974)
+<ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:975)
+<ul><li>A place to insert comments related to a particular finding.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:958)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:959)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:960)
+<ul><li>A sequence number used to identify the body weight change observation.  [SEND: BGSEQ]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:961), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BodyWeightGain.dita">Body Weight Gain</xref> CXXXXX</tt><b> STATIC</b> (CONF:962)
+<ul><li>A value to indicate the nature of the observation recording the subject's the subject's change in weight. Use the code property of the CD type to capture the test code, and the original text property to capture a verbatim description of the test. [SEND: BGTESTCD, BGTEST]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:963), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1548)
+<ul><li>Used to indicate whether or not a measurement has been performed.  [SEND: BGSTAT]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:964)
+<ul><li>Date/times that the subject was weighed which are captured as a time interval.  This should include both the starting and ending points for the measure of weight change.  [SEND: BGDTC, BGENDTC]</li></ul></li>
+<li><b>SHOULD</b> contain  [0..3] <tt><b>value</b></tt> (CONF:965)
+<ul><li>The recorded test result.  Use up to three observations if needed.  Use of standard or non-standard units of measure is indicated by the OID provided for the PQR -physical quantity representation - type supporting physical quantities.  Character data is sent using the ED - encapsulated data - type. [SEND: BGORRES, BGORRESU, BGSTRESC, BGSTRESN, BGSTRESU]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>interpretationCode</b></tt> (CONF:971), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/SubjectDataInterpretationType.dita">Subject Data Interpretation Type</xref> CXXXXX</tt><b> STATIC</b> (CONF:972)
+<ul><li>Includes information used to better interpret the observation value (result).  Includes information used to better interpret the observation value (result).  Namely, whether the result should be excluded from tabulations.   [SEND: BGEXCLFL]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:966)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol><ul><li>Identifies the SDTM or SEND domain the record is assigned to.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:967)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol><ul><li>Information on the reason a scheduled activity was not carried out.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:968)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../ExclusionReason.dita">Exclusion Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.38</tt>)</li></ol><ul><li>Information on the reason that a data item is to be excluded from tabulation.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:969)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StudyDayPeriod.dita">Study Day Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.82</tt>)</li></ol><ul><li>A reference to the study days corresponding to the time period of the observation.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:970)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.97</tt>)</li></ol><ul><li>Creates an assoication between the timing of an activity and a defined reference time point.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:973)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol><ul><li>Establishes a relationship between this record and another record.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:974)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol><ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:975)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol><ul><li>A place to insert comments related to a particular finding.</li></ul></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Body Weight Gain</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.19]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:958</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:959</entry><entry> DEF</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:961</entry><entry> null</entry></row> 
+<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:964</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:960</entry><entry> </entry></row> 
+<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CE</entry><entry>CONF:971</entry><entry> null</entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CS</entry><entry>CONF:963</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.19</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>0..3</entry><entry>SHOULD</entry><entry>YES</entry><entry>ANY</entry><entry>CONF:965</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>comment</entry><entry>comment</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Comment</entry><entry>CONF:975</entry><entry> </entry></row> 
+<row><entry>domain Assignment</entry><entry>domain Assignment</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Domain Assignment</entry><entry>CONF:966</entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>exclusion Reason</entry><entry>exclusion Reason</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Exclusion Reason</entry><entry>CONF:968</entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>non Performance Reason</entry><entry>non Performance Reason</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Non Performance Reason</entry><entry>CONF:967</entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
+<row><entry>related Record</entry><entry>related Record</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Related Record</entry><entry>CONF:973</entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>study Day Period</entry><entry>study Day Period</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Study Day Period</entry><entry>CONF:969</entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>supplemental Value</entry><entry>supplemental Value</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Supplemental Value</entry><entry>CONF:974</entry><entry> </entry></row> 
+<row><entry>timing Reference</entry><entry>timing Reference</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Timing Reference</entry><entry>CONF:970</entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.23.19"/>
+  <id root="2091654270" extension="MDHT"/>
+  <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <interpretationCode codeSystemName="NCI Thesaurus"/>
+  <entryRelationship>
+    <observation classCode="OBS">
+      <templateId root="2.16.840.1.113883.10.20.23.56"/>
+      <id root="1006279108" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1772375120"/>
+      <interpretationCode code="960063583"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="546243622" extension="MDHT"/>
+      <code code="1943637511"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="IVL_INT" value="1"/>
+      <interpretationCode code="1791857100"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act>
+      <templateId root="2.16.840.1.113883.10.20.23.97"/>
+      <id root="1104070957" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship typeCode="COMP"/>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS">
+      <templateId root="2.16.840.1.113883.10.20.23.38"/>
+      <id root="1854600159" extension="MDHT"/>
+      <code code="EXCtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Baseline Indicator"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1393628234"/>
+      <interpretationCode code="805697542"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.23"/>
+      <id root="651970972" extension="MDHT"/>
+      <code code="C49569" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="ED">Text Value</value>
+      <interpretationCode code="943736085"/>
+      <participant/>
+      <entryRelationship/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.30"/>
+      <id root="1183172591" extension="MDHT"/>
+      <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="2041054070"/>
+      <interpretationCode code="1944917767"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.23.75"/>
+      <id root="2072561181" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.96"/>
+      <id root="434623856" extension="MDHT"/>
+      <code codeSystem="locally defined" codeSystemName="Supplemental Value Type"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <interpretationCode code="1083145048"/>
+      <participant/>
+      <entryRelationship typeCode="COMP"/>
+    </observation>
+  </entryRelationship>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Body Weight Gain</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.19</tt>]</p>
+</body>
+</topic>

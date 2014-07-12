@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Plan Of Care Activity Encounter - conformance rules</title>
+<shortdesc id="shortdesc">[Encounter: templateId <tt>2.16.840.1.113883.10.20.22.4.40</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Encounter</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.40"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8566, CONF:10511 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.40"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8564)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PlanOfCareMoodCodeActEncounterProcedure.dita">Plan of Care moodCode (Act/Encounter/Procedure)</xref> 2.16.840.1.113883.11.20.9.23</tt><b> STATIC</b> (CONF:8565)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8567)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8564)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PlanOfCareMoodCodeActEncounterProcedure.dita">Plan of Care moodCode (Act/Encounter/Procedure)</xref> 2.16.840.1.113883.11.20.9.23</tt><b> STATIC</b> (CONF:8565)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8567)
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::PlanOfCareActivityEncounter</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::encounter[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:8564</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentEncounterMood</entry><entry>CONF:8565</entry><entry> APT</entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:8567</entry><entry> </entry></row> 
+<row><entry>planOfCareActivityEncounter</entry><entry>planOfCareActivityEncounter</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityEncounter</entry><entry>CONF:8805CONF:8806</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<encounter xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1332804863"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+</encounter>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Plan Of Care Activity Encounter</ph></p>
+<p id="shortdesc">[Encounter: templateId <tt>2.16.840.1.113883.10.20.22.4.40</tt>]</p>
+</body>
+</topic>

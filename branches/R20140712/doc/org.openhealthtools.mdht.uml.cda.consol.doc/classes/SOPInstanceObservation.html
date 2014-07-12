@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="SOP Instance Observation"/>
+<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.6.2.8]"/>
+<meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.6.2.8]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>SOP Instance Observation</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1"><span class="ph">SOP Instance Observation</span></h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.6.2.8</tt>]</p>
+
+		
+		<div class="section">
+<div class="p"><p class="lines"><em class="ph i">A SOP Instance Observation contains the DICOM Service Object Pair (SOP) Instance information for referenced DICOM composite objects. The SOP Instance act class is used to reference both image and non-image DICOM instances. The text attribute contains the DICOM WADO reference.</em></p>
+</div>
+
+</div>
+
+		
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.6.2.8"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="DGIMG" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9240)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:9250)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:9242)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The @root contains an OID representing the DICOM SOP Instance UID</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:9246)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9254, CONF:9255, CONF:9256)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="SOPInstanceObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.6.2.8]">SOP Instance Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.6.2.8</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9257, CONF:9258, CONF:15935)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>RSON" </tt><em class="ph i">RSON</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PurposeofReferenceObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.6.2.9]">Purposeof Reference Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.6.2.9</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9260, CONF:9261, CONF:15936)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">This entryRelationship SHALL be present if the referenced DICOM object is a multiframe object and the reference does not apply to all frames</em></p>
+</div>
+</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ReferencedFramesObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.6.2.10]">Referenced Frames Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.6.2.10</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:9244), where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 1.2.840.10008.2.6.1 DCMUID</tt>)
+</li>
+
+<li class="li">The effectiveTime, if present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] @value (CONF:9251)</li>
+
+<li class="li">The effectiveTime, if present, <strong class="ph b">SHALL NOT</strong> contain [0..0] low (CONF:9252)</li>
+
+<li class="li">The effectiveTime, if present, <strong class="ph b">SHALL NOT</strong> contain [0..0] high (CONF:9253)</li>
+
+<li class="li">code <strong class="ph b">SHALL</strong> contain codeSystem 1.2.840.10008.2.6.1 DCMUID and @code is an OID for a valid SOP class name UID (CONF:9245)</li>
+
+<li class="li">text, if present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] @mediaType="application/dicom" (CONF:9247)</li>
+
+<li class="li">The text, if present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] reference (CONF:9248)</li>
+
+<li class="li">text/reference <strong class="ph b">SHALL</strong> contain a @value which contains a WADO reference as a URI (CONF:9249)</li>
+
+</ol>
+
+		
+		<p class="p">
+		</p>
+
+		<p class="p">
+			<strong class="ph b"><span class="ph">SOP Instance Observation</span> example</strong>
+		</p>
+		
+		<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="628518804"/&gt;
+  &lt;code code="653988573"/&gt;
+  &lt;text&gt;Text Value&lt;/text&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="486190181"/&gt;
+      &lt;code code="503175506"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="2005535108"/&gt;
+      &lt;code code="1077437072"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="1768652912"/&gt;
+          &lt;code code="2067525933"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+&lt;/observation&gt;</pre>
+
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Record Target - conformance rules</title>
+<shortdesc id="shortdesc">[RecordTarget: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>RecordTarget</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li>Contains zero or one [0..1] <tt><b>patientRole</b></tt>, where its type is <xref href="../EMSPatientRole.dita">EMS Patient Role</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EMSPatientRole.dita">EMS Patient Role</xref></li></ol></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>patientRole</b></tt>, where its type is <xref href="../PatientRole.dita">Patient Role</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>patientRole</b></tt>, where its type is <xref href="../EMSPatientRole.dita">EMS Patient Role</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EMSPatientRole.dita">EMS Patient Role</xref></li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspatientcarereport::EMSRecordTarget</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::recordtarget[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>contextControlCode</entry><entry>@contextControlCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ContextControl</entry><entry></entry><entry> OP</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>typeCode</entry><entry>@typeCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ParticipationType</entry><entry></entry><entry> RCT</entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>patientRole</entry><entry>patientRole</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>EMSPatientRole</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<recordtarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <patientRole/>
+</recordtarget>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Record Target</ph></p>
+<p id="shortdesc">[RecordTarget: templateId <tt>null</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_8BmxsE6tEeG_dcj91TvCTg" name="streppneumo">
+    <packageImport xmi:id="_8F7RAE6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RAU6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RAk6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RA06tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RBE6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RBU6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8El0QU6tEeG_dcj91TvCTg" name="StrepPneumoCaseReport">
+      <generalization xmi:id="_8El0Q06tEeG_dcj91TvCTg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_YIzREKPNEeGdKsw0tXkvXQ" name="title" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zv3VgKPNEeGdKsw0tXkvXQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zv38kKPNEeGdKsw0tXkvXQ" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Bn1soEAJEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_aZH-wKl8EeGL4eMpKdmcrw" name="StrepPneumoPHCRClinicalInformationSection" type="_em2vEKPMEeGdKsw0tXkvXQ" association="_aZH-wql8EeGL4eMpKdmcrw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0wTH4MEXEeG-Z92mbpCVHw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0wTH4cEXEeG-Z92mbpCVHw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ditl4Kl8EeGL4eMpKdmcrw" name="StrepPneumoPHCRTreatmentInformationSection" type="_k71UIKPMEeGdKsw0tXkvXQ" association="_ditl4ql8EeGL4eMpKdmcrw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ditl4al8EeGL4eMpKdmcrw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fxZD8Kl8EeGL4eMpKdmcrw" name="StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection" type="_ybeJEKPMEeGdKsw0tXkvXQ" association="_fxZD8ql8EeGL4eMpKdmcrw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxZD8al8EeGL4eMpKdmcrw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iPihYKl8EeGL4eMpKdmcrw" name="StrepPneumoSocialHistorySection" type="_Knig8KPMEeGdKsw0tXkvXQ" association="_iPihYql8EeGL4eMpKdmcrw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3KaZ4MEXEeG-Z92mbpCVHw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3KaZ4cEXEeG-Z92mbpCVHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FyvPEMVTEeGkBcxdId9TbA" name="StrepPneumoImmunizationSection" type="_VQO98KPMEeGdKsw0tXkvXQ" association="_FyvPEsVTEeGkBcxdId9TbA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FyvPEcVTEeGkBcxdId9TbA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Knig8KPMEeGdKsw0tXkvXQ" name="StrepPneumoSocialHistorySection">
+      <generalization xmi:id="_KnjIAKPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_qllv0KpMEeGIk6WTSrP2zg" name="StrepPneumoPossibleExposureLocationAndTypeAct" type="_rucyIKpIEeGIk6WTSrP2zg" association="_qlmW4apMEeGIk6WTSrP2zg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iJo9sME2EeGQ1oYRXtYJxg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iJo9scE2EeGQ1oYRXtYJxg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VQO98KPMEeGdKsw0tXkvXQ" name="StrepPneumoImmunizationSection">
+      <generalization xmi:id="_VQO98aPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_CinbMHDPEd6eItyqb1FoWg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_cEa0MKmCEeGIk6WTSrP2zg" name="StrepPneumoImmunizationActivity" type="_Utq7AKmAEeGIk6WTSrP2zg" association="_cEbbQamCEeGIk6WTSrP2zg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lX6Y0KmCEeGIk6WTSrP2zg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lX6Y0amCEeGIk6WTSrP2zg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_em2vEKPMEeGdKsw0tXkvXQ" name="StrepPneumoPHCRClinicalInformationSection">
+      <generalization xmi:id="_em2vEaPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_1dcgsKl8EeGL4eMpKdmcrw" name="StrepPneumoCaseObservation" type="_3faHkKPNEeGdKsw0tXkvXQ" association="_1dcgsql8EeGL4eMpKdmcrw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5fSr4KmEEeGIk6WTSrP2zg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5fTS8KmEEeGIk6WTSrP2zg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_k71UIKPMEeGdKsw0tXkvXQ" name="StrepPneumoPHCRTreatmentInformationSection">
+      <generalization xmi:id="_k717MKPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_lHhSwKmKEeGIk6WTSrP2zg" name="StrepPneumoTherapeuticRegimenAct" type="_hcBOMKmGEeGIk6WTSrP2zg" association="_lHh50amKEeGIk6WTSrP2zg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_muOK0KmKEeGIk6WTSrP2zg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_muOK0amKEeGIk6WTSrP2zg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ybeJEKPMEeGdKsw0tXkvXQ" name="StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection">
+      <generalization xmi:id="_ybewIKPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedAttribute xmi:id="_gETloKmMEeGIk6WTSrP2zg" name="StrepPneumoResultObservation" type="_6xj9UKmKEeGIk6WTSrP2zg" association="_gETloqmMEeGIk6WTSrP2zg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i9YrkKmMEeGIk6WTSrP2zg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i9YrkamMEeGIk6WTSrP2zg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_cS8jAMEpEeG-Z92mbpCVHw" name="StrepPneumoResultOrganizer" type="_p8aAIMEaEeG-Z92mbpCVHw" association="_cS8jAsEpEeG-Z92mbpCVHw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gx_hMMEpEeG-Z92mbpCVHw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gx_hMcEpEeG-Z92mbpCVHw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3faHkKPNEeGdKsw0tXkvXQ" name="StrepPneumoCaseObservation">
+      <generalization xmi:id="_L0_ykMEYEeG-Z92mbpCVHw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_gQCBcKPOEeGdKsw0tXkvXQ" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oIAqUKPOEeGdKsw0tXkvXQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oIAqUaPOEeGdKsw0tXkvXQ" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_w36gAKl8EeGL4eMpKdmcrw" name="StrepPneumoSignsAndSymptomsObservation" type="_yQIJ0KPOEeGdKsw0tXkvXQ" association="_w36gAql8EeGL4eMpKdmcrw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PiKioKmEEeGIk6WTSrP2zg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PiKioamEEeGIk6WTSrP2zg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yQIJ0KPOEeGdKsw0tXkvXQ" name="StrepPneumoSignsAndSymptomsObservation">
+      <generalization xmi:id="_80rGoKPOEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_Oh-14KPPEeGdKsw0tXkvXQ" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oh-14aPPEeGdKsw0tXkvXQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oh-14qPPEeGdKsw0tXkvXQ" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_BZzEBdQQEeC4C5jYVS2kfQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_aZH-wql8EeGL4eMpKdmcrw" memberEnd="_aZH-wKl8EeGL4eMpKdmcrw _aZH-w6l8EeGL4eMpKdmcrw">
+      <ownedEnd xmi:id="_aZH-w6l8EeGL4eMpKdmcrw" type="_8El0QU6tEeG_dcj91TvCTg" association="_aZH-wql8EeGL4eMpKdmcrw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ditl4ql8EeGL4eMpKdmcrw" memberEnd="_ditl4Kl8EeGL4eMpKdmcrw _ditl46l8EeGL4eMpKdmcrw">
+      <ownedEnd xmi:id="_ditl46l8EeGL4eMpKdmcrw" type="_8El0QU6tEeG_dcj91TvCTg" association="_ditl4ql8EeGL4eMpKdmcrw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fxZD8ql8EeGL4eMpKdmcrw" memberEnd="_fxZD8Kl8EeGL4eMpKdmcrw _fxZD86l8EeGL4eMpKdmcrw">
+      <ownedEnd xmi:id="_fxZD86l8EeGL4eMpKdmcrw" type="_8El0QU6tEeG_dcj91TvCTg" association="_fxZD8ql8EeGL4eMpKdmcrw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_iPihYql8EeGL4eMpKdmcrw" memberEnd="_iPihYKl8EeGL4eMpKdmcrw _iPihY6l8EeGL4eMpKdmcrw">
+      <ownedEnd xmi:id="_iPihY6l8EeGL4eMpKdmcrw" type="_8El0QU6tEeG_dcj91TvCTg" association="_iPihYql8EeGL4eMpKdmcrw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_w36gAql8EeGL4eMpKdmcrw" memberEnd="_w36gAKl8EeGL4eMpKdmcrw _w36gA6l8EeGL4eMpKdmcrw">
+      <ownedEnd xmi:id="_w36gA6l8EeGL4eMpKdmcrw" type="_3faHkKPNEeGdKsw0tXkvXQ" association="_w36gAql8EeGL4eMpKdmcrw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_1dcgsql8EeGL4eMpKdmcrw" memberEnd="_1dcgsKl8EeGL4eMpKdmcrw _1dcgs6l8EeGL4eMpKdmcrw">
+      <ownedEnd xmi:id="_1dcgs6l8EeGL4eMpKdmcrw" type="_em2vEKPMEeGdKsw0tXkvXQ" association="_1dcgsql8EeGL4eMpKdmcrw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Utq7AKmAEeGIk6WTSrP2zg" name="StrepPneumoImmunizationActivity">
+      <ownedRule xmi:id="_f24rIKmAEeGIk6WTSrP2zg" name="StrepPneumoImmunizationProduct" constrainedElement="_Utq7AKmAEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_gvB0EKmAEeGIk6WTSrP2zg">
+          <language>Analysis</language>
+          <body>SHALL contain [1..1] consumable, which&#xD;&#xA;a. SHALL contain [1..1] Streptococcus pneumoniae immunization product&#xD;&#xA;(templateId: 2.16.840.1.113883.10.20.15.3.123)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_UtriEKmAEeGIk6WTSrP2zg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hTDRsKmBEeGIk6WTSrP2zg" name="StrepPneumoImmunizationProduct">
+      <ownedRule xmi:id="_t1vWMKmBEeGIk6WTSrP2zg" constrainedElement="_hTDRsKmBEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2YfaYKmBEeGIk6WTSrP2zg">
+          <language>Analysis</language>
+          <body>2.&#x9;SHALL contain [1..1] manufacturedMaterial, which &#xD;&#xA;a.&#x9;SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.6032 PHVS_VaccinesAdministered_StrepPneumo DYNAMIC</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_hTDRsamBEeGIk6WTSrP2zg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UCUw8EcaEd6besF9iFIJkQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cEbbQamCEeGIk6WTSrP2zg" memberEnd="_cEa0MKmCEeGIk6WTSrP2zg _cEbbQqmCEeGIk6WTSrP2zg">
+      <ownedEnd xmi:id="_cEbbQqmCEeGIk6WTSrP2zg" type="_VQO98KPMEeGdKsw0tXkvXQ" association="_cEbbQamCEeGIk6WTSrP2zg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hcBOMKmGEeGIk6WTSrP2zg" name="StrepPneumoTherapeuticRegimenAct">
+      <ownedRule xmi:id="_rSSIsKmGEeGIk6WTSrP2zg" name="StrepPneumoTherapeuticRegimen" constrainedElement="_hcBOMKmGEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4nDKYKmGEeGIk6WTSrP2zg">
+          <language>Analysis</language>
+          <body>7.&#x9;SHALL contain [1..1] entryRelationship  (specialized branch), which &#xD;&#xA;a.&#x9;SHALL contain [1..1] @typeCode=&quot;REFR&quot; Refers to (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC &#xD;&#xA;b.&#x9;SHALL contain [1..1] observation , which &#xD;&#xA;i.&#x9;SHALL contain [1..1] @classCode=&quot;OBS&quot; Observation (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) STATIC &#xD;&#xA;ii.&#x9;SHALL contain [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) STATIC  &#xD;&#xA;iii.&#x9;observation/id SHALL be present, and SHALL equal Streptococcus pneumoniae case observation's observation/id .&#xD;&#xA;iv.&#x9;SHALL contain [1..1] code/@code=&quot;ASSERTION&quot; (CodeSystem: 2.16.840.1.113883.5.4 HL7ActCode) STATIC &#xD;&#xA;v.&#x9;SHALL contain [1..1] value/@code=&quot;406617004&quot; Invasive Streptococcus pneumoniae disease  (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_mJ3dYKmGEeGIk6WTSrP2zg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2p558NSrEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_zzw08MU6EeGkBcxdId9TbA" name="StrepPneumoTreatmentGivenSubstanceAdministration" type="_UJ6NAKmIEeGIk6WTSrP2zg" association="_z0EW8cU6EeGkBcxdId9TbA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_18HBgMU6EeGkBcxdId9TbA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_18HBgcU6EeGkBcxdId9TbA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1KfXUMU6EeGkBcxdId9TbA" name="StrepPneumoTreatmentNotGivenSubstanceAdministration" type="_9SEdIKmIEeGIk6WTSrP2zg" association="_1KpIUcU6EeGkBcxdId9TbA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2mIO4MU6EeGkBcxdId9TbA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2mIO4cU6EeGkBcxdId9TbA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UJ6NAKmIEeGIk6WTSrP2zg" name="StrepPneumoTreatmentGivenSubstanceAdministration">
+      <ownedRule xmi:id="_bt_pgKmIEeGIk6WTSrP2zg" name="medicationTreatmentStrepPneumo" constrainedElement="_UJ6NAKmIEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_efjyMKmIEeGIk6WTSrP2zg">
+          <language>Analysis</language>
+          <body>8.&#x9;SHALL contain [1..1] consumable , which &#xD;&#xA;a.&#x9;SHALL contain [1..1] manufacturedProduct , which &#xD;&#xA;i.&#x9;SHALL contain [1..1] manufacturedMaterial , which &#xD;&#xA;1.&#x9;SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.6033 PHVS_MedicationTreatment_StrepPneumo DYNAMIC ), which &#xD;&#xA;a.&#x9;SHOULD contain [0..1] originalText</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_itEocMEWEeG-Z92mbpCVHw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XOKZ4NStEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9SEdIKmIEeGIk6WTSrP2zg" name="StrepPneumoTreatmentNotGivenSubstanceAdministration">
+      <ownedRule xmi:id="_H8DTkKmJEeGIk6WTSrP2zg" name="StrepPneumoTreatmentNotGiven" constrainedElement="_9SEdIKmIEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Lprb4KmJEeGIk6WTSrP2zg">
+          <language>Analysis</language>
+          <body>6.&#x9;SHALL contain [1..1] consumable , which &#xD;&#xA;a.&#x9;SHALL contain [1..1] manufacturedProduct , which &#xD;&#xA;i.&#x9;SHALL contain [1..1] manufacturedMaterial ), which &#xD;&#xA;1.&#x9;SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.6033 PHVS_MedicationTreatment_StrepPneumo DYNAMIC ), which &#xD;&#xA;a.&#x9;SHOULD contain [0..1] originalText</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_mPuP0MEWEeG-Z92mbpCVHw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_NbgssNSwEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lHh50amKEeGIk6WTSrP2zg" memberEnd="_lHhSwKmKEeGIk6WTSrP2zg _lHh50qmKEeGIk6WTSrP2zg">
+      <ownedEnd xmi:id="_lHh50qmKEeGIk6WTSrP2zg" type="_k71UIKPMEeGdKsw0tXkvXQ" association="_lHh50amKEeGIk6WTSrP2zg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6xj9UKmKEeGIk6WTSrP2zg" name="StrepPneumoResultObservation">
+      <ownedRule xmi:id="_RMWkwKpOEeGIk6WTSrP2zg" name="StrepPneumoSterileSiteSpecimen" constrainedElement="_6xj9UKmKEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_VLUUsKpOEeGIk6WTSrP2zg">
+          <language>Analysis</language>
+          <body>9.&#x9;SHOULD contain [0..1] specimen , which if present &#xD;&#xA;a.&#x9;SHALL contain [1..1] specimenRole , which &#xD;&#xA;i.&#x9;SHOULD contain [0..1] id &#xD;&#xA;ii.&#x9;MAY contain [0..1] specimenPlayingEntity , which if present &#xD;&#xA;1.&#x9;SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.3321 PHVS_SterileSpecimen_IPD DYNAMIC</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_6xj9UamKEeGIk6WTSrP2zg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_BojDQKmLEeGIk6WTSrP2zg" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_H1HqAK6xEd6_ioDelDcPPg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gETloqmMEeGIk6WTSrP2zg" memberEnd="_gETloKmMEeGIk6WTSrP2zg _gETlo6mMEeGIk6WTSrP2zg">
+      <ownedEnd xmi:id="_gETlo6mMEeGIk6WTSrP2zg" type="_ybeJEKPMEeGdKsw0tXkvXQ" association="_gETloqmMEeGIk6WTSrP2zg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rucyIKpIEeGIk6WTSrP2zg" name="StrepPneumoPossibleExposureLocationAct">
+      <ownedRule xmi:id="_OwTLUKpJEeGIk6WTSrP2zg" name="StrepPneumoPossibleExposureLocationAndTypeParticipant" constrainedElement="_rucyIKpIEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_c3vnIKpJEeGIk6WTSrP2zg">
+          <language>Analysis</language>
+          <body>1, SHALL contain [1..*] participant (specialized branch), which &#xD;&#xA;a.&#x9;SHALL contain [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC &#xD;&#xA;b.&#x9;SHOULD contain [0..1] time  &#xD;&#xA;c.&#x9;SHALL contain [1..1] participantRole , which &#xD;&#xA;i.&#x9;SHALL contain [1..1] @classCode=&quot;LOCE&quot; Located entity (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC &#xD;&#xA;ii.&#x9;SHOULD contain [0..*] addr &#xD;&#xA;iii.&#x9;SHOULD contain [0..*] telecom &#xD;&#xA;iv.&#x9;SHOULD contain [0..1] playingEntity , which if present &#xD;&#xA;1.&#x9;SHALL contain [1..1] @classCode=&quot;PLC&quot; Place (CodeSystem: 2.16.840.1.113883.5.41 HL7EntityClass) STATIC &#xD;&#xA;2.&#x9;SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.3209 Exposure Location DYNAMIC</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_rucyIapIEeGIk6WTSrP2zg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_vUXv8KpIEeGIk6WTSrP2zg" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yRSNAKpIEeGIk6WTSrP2zg" value="ACT"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vUYXAKpIEeGIk6WTSrP2zg" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vUYXAapIEeGIk6WTSrP2zg" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_zeMFAKpIEeGIk6WTSrP2zg" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vUYXAqpIEeGIk6WTSrP2zg" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3uutIKpIEeGIk6WTSrP2zg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3uutIapIEeGIk6WTSrP2zg" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qlmW4apMEeGIk6WTSrP2zg" memberEnd="_qllv0KpMEeGIk6WTSrP2zg _qlmW4qpMEeGIk6WTSrP2zg">
+      <ownedEnd xmi:id="_qlmW4qpMEeGIk6WTSrP2zg" type="_Knig8KPMEeGdKsw0tXkvXQ" association="_qlmW4apMEeGIk6WTSrP2zg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_p8aAIMEaEeG-Z92mbpCVHw" name="StrepPneumoResultOrganizer">
+      <generalization xmi:id="_p8anMMEaEeG-Z92mbpCVHw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_yfjF4MEaEeG-Z92mbpCVHw" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_UbVD8K6uEd6_ioDelDcPPg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_wE70IDL9EeGXS8s8x7j2Fg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_E5lP4MEpEeG-Z92mbpCVHw" name="StrepPneumoResultObservation" type="_6xj9UKmKEeGIk6WTSrP2zg" association="_E5meAMEpEeG-Z92mbpCVHw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J4R-gMEpEeG-Z92mbpCVHw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J4SlkMEpEeG-Z92mbpCVHw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_E5meAMEpEeG-Z92mbpCVHw" memberEnd="_E5lP4MEpEeG-Z92mbpCVHw _E5nFEMEpEeG-Z92mbpCVHw">
+      <ownedEnd xmi:id="_E5nFEMEpEeG-Z92mbpCVHw" type="_p8aAIMEaEeG-Z92mbpCVHw" association="_E5meAMEpEeG-Z92mbpCVHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cS8jAsEpEeG-Z92mbpCVHw" memberEnd="_cS8jAMEpEeG-Z92mbpCVHw _cS8jA8EpEeG-Z92mbpCVHw">
+      <ownedEnd xmi:id="_cS8jA8EpEeG-Z92mbpCVHw" type="_ybeJEKPMEeGdKsw0tXkvXQ" association="_cS8jAsEpEeG-Z92mbpCVHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_z0EW8cU6EeGkBcxdId9TbA" memberEnd="_zzw08MU6EeGkBcxdId9TbA _z0EW8sU6EeGkBcxdId9TbA">
+      <ownedEnd xmi:id="_z0EW8sU6EeGkBcxdId9TbA" type="_hcBOMKmGEeGIk6WTSrP2zg" association="_z0EW8cU6EeGkBcxdId9TbA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_1KpIUcU6EeGkBcxdId9TbA" memberEnd="_1KfXUMU6EeGkBcxdId9TbA _1KpIUsU6EeGkBcxdId9TbA">
+      <ownedEnd xmi:id="_1KpIUsU6EeGkBcxdId9TbA" type="_hcBOMKmGEeGIk6WTSrP2zg" association="_1KpIUcU6EeGkBcxdId9TbA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FyvPEsVTEeGkBcxdId9TbA" memberEnd="_FyvPEMVTEeGkBcxdId9TbA _FyvPE8VTEeGkBcxdId9TbA">
+      <ownedEnd xmi:id="_FyvPE8VTEeGkBcxdId9TbA" type="_8El0QU6tEeG_dcj91TvCTg" association="_FyvPEsVTEeGkBcxdId9TbA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_8BmxuU6tEeG_dcj91TvCTg">
+      <eAnnotations xmi:id="_8Bmxuk6tEeG_dcj91TvCTg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_8Bmxu06tEeG_dcj91TvCTg">
+      <eAnnotations xmi:id="_8BmxvE6tEeG_dcj91TvCTg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_8El0QE6tEeG_dcj91TvCTg" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="streppneumo" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/streppneumo" packageName="streppneumo" prefix="StrepPneumo" base_Namespace="_8BmxsE6tEeG_dcj91TvCTg"/>
+  <CDA:CDATemplate xmi:id="_8El0Qk6tEeG_dcj91TvCTg" base_Class="_8El0QU6tEeG_dcj91TvCTg" templateId="2.16.840.1.113883.10.20.15.1.12" assigningAuthorityName=""/>
+  <CDA:AssociationValidation xmi:id="_LLdQ4KPNEeGdKsw0tXkvXQ"/>
+  <CDA:AssociationValidation xmi:id="_MYEN8KPNEeGdKsw0tXkvXQ" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_NPAdAKPNEeGdKsw0tXkvXQ" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_OKVc0KPNEeGdKsw0tXkvXQ" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_PTby4KPNEeGdKsw0tXkvXQ" severity="WARNING"/>
+  <CDA:TextValue xmi:id="_aKO9UKPNEeGdKsw0tXkvXQ" base_Property="_YIzREKPNEeGdKsw0tXkvXQ" value="Public Health Case Report - Streptococcus pneumoniae"/>
+  <CDA:ValueSetConstraint xmi:id="_kQsagKPOEeGdKsw0tXkvXQ" base_Property="_gQCBcKPOEeGdKsw0tXkvXQ">
+    <reference href="streppneumo-vocab.uml#_O3MGUKPOEeGdKsw0tXkvXQ"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ConformsTo xmi:id="_ImRscKPPEeGdKsw0tXkvXQ" base_Generalization="_80rGoKPOEeGdKsw0tXkvXQ"/>
+  <CDA:ValueSetConstraint xmi:id="_PXh90KPPEeGdKsw0tXkvXQ" base_Property="_Oh-14KPPEeGdKsw0tXkvXQ">
+    <reference href="streppneumo-vocab.uml#_5cu8kKmDEeGIk6WTSrP2zg"/>
+    <ruleId>CONF:1867</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:AssociationValidation xmi:id="_pKovgKPPEeGdKsw0tXkvXQ"/>
+  <CDA:EntryRelationship xmi:id="_CQNs0KPQEeGdKsw0tXkvXQ" typeCode="MFST"/>
+  <CDA:ActRelationship xmi:id="_HJvAgKPQEeGdKsw0tXkvXQ"/>
+  <CDA:CDATemplate xmi:id="_dTNC4Kl_EeGIk6WTSrP2zg" base_Class="_VQO98KPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.52"/>
+  <CDA:CDATemplate xmi:id="_ftIusKl_EeGIk6WTSrP2zg" base_Class="_k71UIKPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.53"/>
+  <CDA:CDATemplate xmi:id="_iBIKkKl_EeGIk6WTSrP2zg" base_Class="_Knig8KPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.54"/>
+  <CDA:CDATemplate xmi:id="_jvyEwKl_EeGIk6WTSrP2zg" base_Class="_em2vEKPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.55"/>
+  <CDA:CDATemplate xmi:id="_llNVUKl_EeGIk6WTSrP2zg" base_Class="_ybeJEKPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.56"/>
+  <CDA:CDATemplate xmi:id="_HuXL8KmAEeGIk6WTSrP2zg" base_Class="_yQIJ0KPOEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.3.121"/>
+  <CDA:CDATemplate xmi:id="_TI-YoKmBEeGIk6WTSrP2zg" base_Class="_Utq7AKmAEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.124"/>
+  <CDA:CDATemplate xmi:id="_jq1ocKmBEeGIk6WTSrP2zg" base_Class="_hTDRsKmBEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.123"/>
+  <CDA:ConstraintValidation xmi:id="_KsEBQKmCEeGIk6WTSrP2zg" base_Constraint="_t1vWMKmBEeGIk6WTSrP2zg"/>
+  <CDA:ConstraintValidation xmi:id="_Vq4fQKmCEeGIk6WTSrP2zg" base_Constraint="_f24rIKmAEeGIk6WTSrP2zg"/>
+  <CDA:Entry xmi:id="_hkcuQKmCEeGIk6WTSrP2zg" base_Association="_cEbbQamCEeGIk6WTSrP2zg" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_iR5qIKmCEeGIk6WTSrP2zg" base_Association="_cEbbQamCEeGIk6WTSrP2zg"/>
+  <CDA:AssociationValidation xmi:id="_1KXk8KmCEeGIk6WTSrP2zg" severity="WARNING"/>
+  <CDA:ActRelationship xmi:id="_D8_rwKmDEeGIk6WTSrP2zg"/>
+  <CDA:EntryRelationship xmi:id="_MnPpoKmEEeGIk6WTSrP2zg" severity="WARNING" base_Association="_w36gAql8EeGL4eMpKdmcrw" typeCode="MFST"/>
+  <CDA:ActRelationship xmi:id="_NWyQMKmEEeGIk6WTSrP2zg" base_Association="_w36gAql8EeGL4eMpKdmcrw"/>
+  <CDA:CDATemplate xmi:id="_l9gHQKmEEeGIk6WTSrP2zg" base_Class="_3faHkKPNEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.3.125"/>
+  <CDA:Entry xmi:id="_2QDvwKmEEeGIk6WTSrP2zg" base_Association="_1dcgsql8EeGL4eMpKdmcrw" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_27AxQKmEEeGIk6WTSrP2zg" base_Association="_1dcgsql8EeGL4eMpKdmcrw"/>
+  <CDA:AssociationValidation xmi:id="_38DiEKmFEeGIk6WTSrP2zg" base_Association="_aZH-wql8EeGL4eMpKdmcrw"/>
+  <CDA:ConstraintValidation xmi:id="_uozYkKmGEeGIk6WTSrP2zg" base_Constraint="_rSSIsKmGEeGIk6WTSrP2zg"/>
+  <CDA:PropertyValidation xmi:id="_VM7wQKmIEeGIk6WTSrP2zg">
+    <ruleId>CONF:1942</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_94F7UKmIEeGIk6WTSrP2zg">
+    <ruleId>CONF:1942</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_BW3IQKmJEeGIk6WTSrP2zg" base_Class="_9SEdIKmIEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.127"/>
+  <CDA:CDATemplate xmi:id="_QXE_IKmJEeGIk6WTSrP2zg" base_Class="_UJ6NAKmIEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.126"/>
+  <CDA:EntryRelationship xmi:id="_Z-xSIKmJEeGIk6WTSrP2zg" severity="WARNING" typeCode="COMP"/>
+  <CDA:ActRelationship xmi:id="_arwT8KmJEeGIk6WTSrP2zg"/>
+  <CDA:EntryRelationship xmi:id="_diLugKmJEeGIk6WTSrP2zg" severity="INFO" typeCode="COMP"/>
+  <CDA:ActRelationship xmi:id="_eNZOsKmJEeGIk6WTSrP2zg"/>
+  <CDA:CDATemplate xmi:id="_v9S-8KmJEeGIk6WTSrP2zg" base_Class="_hcBOMKmGEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.122"/>
+  <CDA:Entry xmi:id="_n2v5IKmKEeGIk6WTSrP2zg" base_Association="_lHh50amKEeGIk6WTSrP2zg" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_ongAoKmKEeGIk6WTSrP2zg" base_Association="_lHh50amKEeGIk6WTSrP2zg"/>
+  <CDA:AssociationValidation xmi:id="_s45kYKmKEeGIk6WTSrP2zg" severity="WARNING" base_Association="_ditl4ql8EeGL4eMpKdmcrw"/>
+  <CDA:PropertyValidation xmi:id="_BokRYKmLEeGIk6WTSrP2zg" severity="WARNING">
+    <ruleId>CONF-418</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_mRyRAKmLEeGIk6WTSrP2zg" base_Property="_BojDQKmLEeGIk6WTSrP2zg">
+    <reference href="streppneumo-vocab.uml#_VPTncKmLEeGIk6WTSrP2zg"/>
+    <ruleId>CONF-412</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_y9GtEKmLEeGIk6WTSrP2zg">
+    <ruleId>CONF-416</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_6B928KmLEeGIk6WTSrP2zg">
+    <reference href="streppneumo-vocab.uml#_7By8QamLEeGIk6WTSrP2zg"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_aScUsKmMEeGIk6WTSrP2zg" base_Class="_6xj9UKmKEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.128"/>
+  <CDA:Entry xmi:id="_jZAQkKmMEeGIk6WTSrP2zg" severity="WARNING" base_Association="_gETloqmMEeGIk6WTSrP2zg" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_j7_B0KmMEeGIk6WTSrP2zg" base_Association="_gETloqmMEeGIk6WTSrP2zg"/>
+  <CDA:CodeSystemConstraint xmi:id="_J9DewKpJEeGIk6WTSrP2zg" code="413350009" base_Property="_vUYXAKpIEeGIk6WTSrP2zg">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_dyjCgKpJEeGIk6WTSrP2zg" base_Constraint="_OwTLUKpJEeGIk6WTSrP2zg"/>
+  <CDA:PropertyValidation xmi:id="_MZNQwKpMEeGIk6WTSrP2zg" base_Property="_vUXv8KpIEeGIk6WTSrP2zg"/>
+  <CDA:PropertyValidation xmi:id="_Ptx_4KpMEeGIk6WTSrP2zg" base_Property="_vUYXAqpIEeGIk6WTSrP2zg"/>
+  <CDA:PropertyValidation xmi:id="_QV_2cKpMEeGIk6WTSrP2zg" base_Property="_vUYXAapIEeGIk6WTSrP2zg"/>
+  <CDA:Entry xmi:id="_xZhhwKpMEeGIk6WTSrP2zg" severity="WARNING" base_Association="_qlmW4apMEeGIk6WTSrP2zg" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_x_NBsKpMEeGIk6WTSrP2zg" base_Association="_qlmW4apMEeGIk6WTSrP2zg"/>
+  <CDA:AssociationValidation xmi:id="_A2kekKpNEeGIk6WTSrP2zg" severity="WARNING" base_Association="_iPihYql8EeGL4eMpKdmcrw"/>
+  <CDA:ConstraintValidation xmi:id="_lM4T0KpOEeGIk6WTSrP2zg" severity="WARNING" base_Constraint="_RMWkwKpOEeGIk6WTSrP2zg"/>
+  <CDA:AssociationValidation xmi:id="_wFtekKpOEeGIk6WTSrP2zg" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_2DS3UKpOEeGIk6WTSrP2zg" severity="WARNING" base_Association="_fxZD8ql8EeGL4eMpKdmcrw"/>
+  <CDA:CDATemplate xmi:id="_DfazUKpREeGIk6WTSrP2zg" base_Class="_rucyIKpIEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.129"/>
+  <CDA:CDATemplate xmi:id="_3mE8cK0yEeGiKq3XX8XCzA" message="NOT CURRENTLY USED" templateId="2.16.840.1.113883.10.20.15.3.130"/>
+  <CDA:CodeSystemConstraint xmi:id="_Fc19sMEYEeG-Z92mbpCVHw" code="completed" base_Property="_vUYXAqpIEeGIk6WTSrP2zg">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_74vC0MEaEeG-Z92mbpCVHw" base_Property="_yfjF4MEaEeG-Z92mbpCVHw">
+    <reference href="streppneumo-vocab.uml#_VPTncKmLEeGIk6WTSrP2zg"/>
+    <ruleId>CONF-397</ruleId>
+    <ruleId>CONF:1999</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:AssociationValidation xmi:id="_Ka_qAMEpEeG-Z92mbpCVHw" base_Association="_E5meAMEpEeG-Z92mbpCVHw"/>
+  <CDA:Entry xmi:id="_iXITAMEpEeG-Z92mbpCVHw" severity="INFO" base_Association="_cS8jAsEpEeG-Z92mbpCVHw" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_jdrrYMEpEeG-Z92mbpCVHw" base_Association="_cS8jAsEpEeG-Z92mbpCVHw"/>
+  <CDA:CDATemplate xmi:id="_EfopYMEqEeG-Z92mbpCVHw" base_Class="_p8aAIMEaEeG-Z92mbpCVHw" templateId="2.16.840.1.113883.10.20.15.3.130"/>
+  <CDA:EntryRelationship xmi:id="_3ZF84MU6EeGkBcxdId9TbA" severity="WARNING" base_Association="_z0EW8cU6EeGkBcxdId9TbA" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_4KQ7IMU6EeGkBcxdId9TbA" severity="INFO" base_Association="_1KpIUcU6EeGkBcxdId9TbA" typeCode="COMP"/>
+  <CDA:AssociationValidation xmi:id="_Hm9lwMVTEeGkBcxdId9TbA" severity="WARNING" base_Association="_FyvPEsVTEeGkBcxdId9TbA"/>
+</xmi:XMI>

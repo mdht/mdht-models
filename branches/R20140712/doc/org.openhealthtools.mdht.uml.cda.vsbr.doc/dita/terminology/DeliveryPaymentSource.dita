@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Delivery Payment Source</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Delivery Payment Source - (OID not specified)</entry></row>
+<row><entry>Description</entry><entry>A list of different types of payment that may be used to support the expense of labor and delivery.  Note, the codes used are based on the current worksheet, and may be replaced with code values from a widely used code system.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>PI</entry><entry></entry><entry>Private Insurance</entry></row>
+<row><entry>MD</entry><entry></entry><entry>Medicaid</entry></row>
+<row><entry>SP</entry><entry></entry><entry>Self Pay</entry></row>
+<row><entry>OTH</entry><entry></entry><entry>Other</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

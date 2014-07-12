@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Prior Pregnancy History Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.26.12]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.26.12]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Prior Pregnancy History Section</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Prior Pregnancy History Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.26.12</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">The pregnancy history section contains entries describing the patient's prior pregancy history.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.26.12"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="DOCSECT" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:368)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:370)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:369)<tt class="ph tt"><strong class="ph b">/@code</strong>="57073-9" </tt><em class="ph i">Prenatal events</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:371)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:372)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="DateOfLastLiveBirth.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.20]">Date of Last Live Birth</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.20</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:373)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="LastMenstrualPeriodDate.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.33]">Last Menstrual Period Date</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.33</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:374)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="NumberOfBirthsNowLiving.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.36]">Number of Births Now Living</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.36</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:375)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="NumberOfLiveBirthsNowDead.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.38]">Number of Live Births Now Dead</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.38</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:376)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="OtherPregnancyOutcome.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.40]">Other Pregnancy Outcome</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.40</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:377)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EstimateOfGestation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.21]">Estimate of Gestation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.21</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Prior Pregnancy History Section example</strong></p>
+
+
+
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

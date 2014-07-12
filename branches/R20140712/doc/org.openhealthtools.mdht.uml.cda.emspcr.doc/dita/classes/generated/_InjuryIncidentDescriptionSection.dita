@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Injury Incident Description Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.17</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.17"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>Observations concerning a patient injury</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.17"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67800-3" </tt><i>EMS injury incident description Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10094)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Injury Incident Description Section" (CONF:10914)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10916)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10917)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryCauseCategory.dita">Injury Cause Category</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.50</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10919)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryMechanism.dita">Injury Mechanism</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.51</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10921)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TraumaCenterCriteria.dita">Trauma Center Criteria</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.52</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10923)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryRiskFactor.dita">Injury Risk Factor</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.53</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10925)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VehicleImpactArea.dita">Vehicle Impact Area</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.54</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10927)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientLocationInVehicle.dita">Patient Location In Vehicle</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.55</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10929)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VehicleOccupantSafetyEquipment.dita">Vehicle Occupant Safety Equipment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.56</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10931)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AirbagDeploymentStatus.dita">Airbag Deployment Status</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.57</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10933)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HeightOfFall.dita">Height Of Fall</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.58</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10935)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DisasterType.dita">Disaster Type</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.59</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67800-3" </tt><i>EMS injury incident description Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10094)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Injury Incident Description Section" (CONF:10914)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10916)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10917)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryCauseCategory.dita">Injury Cause Category</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.50</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10919)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryMechanism.dita">Injury Mechanism</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.51</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10921)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TraumaCenterCriteria.dita">Trauma Center Criteria</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.52</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10923)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryRiskFactor.dita">Injury Risk Factor</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.53</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10925)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VehicleImpactArea.dita">Vehicle Impact Area</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.54</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10927)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientLocationInVehicle.dita">Patient Location In Vehicle</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.55</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10929)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VehicleOccupantSafetyEquipment.dita">Vehicle Occupant Safety Equipment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.56</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10931)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AirbagDeploymentStatus.dita">Airbag Deployment Status</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.57</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10933)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HeightOfFall.dita">Height Of Fall</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.58</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10935)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DisasterType.dita">Disaster Type</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.59</tt>)</li></ol></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Injury Incident Description Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.17</tt>]</p>
+</body>
+</topic>

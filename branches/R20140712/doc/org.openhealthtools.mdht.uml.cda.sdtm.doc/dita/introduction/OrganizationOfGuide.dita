@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Organization of This Guide</title>
+	<body>
+	<p>The document is generated from UML models developed in
+			the Open Health Tools (OHT) Model-Driven Health Tools (MDHT) project.
+			The data specifications have been formalized into computational
+			models expressed in UML. These models are used by automated tooling
+			to generate this publication, plus validation tools and Java libraries
+			for implementers.</p>
+			<p>The implementation guide organization is intended to highlight the several templates defined to 
+			convey the functional content of a compliant document.</p>
+			
+	</body>
+	<topic id="templates">
+		<title>Templates</title>
+		<body>
+			<p>Templates are organized by document (see Document Templates), by
+				section (see Section Templates), and by clinical statements (see
+				Clinical Statement Templates). Each template defines the particular data 
+				structure that is intended for use.  In CDA terms, these templates are closed.  They define
+				the content that is expected to be provided, and express the position that a conformant
+				document instance will not add additional content.</p>
+		</body>
+	</topic>
+	<topic id="vocabulary">
+		<title>Vocabulary and Value Sets</title>
+		<body>
+			<p>The Implementation Guide provides definition for the vocabulary items that are 
+			needed as content for those elements using coded data types.  The use of coded types, and 
+			the precise expression of the valid content of code sets is essential to enable efficient 
+			processing of subject data report content, and to allow the proper use of the contained data. Within this
+			guide, the vocabulary section documents the various act code values used to define structural elements - to
+			identify particular acts or observations.  It also defines the several value sets needed to constrain the 
+			semantic content of coded items.  In principle, all the vocabulary needed to support subject data reporting
+			would draw on a common set of concepts.  This has been done wherever possible, and the NCI Enterprise Vocabulary
+			Services are used as the repository and source for the commonly agreed upon vocabulary items. In order to streamline
+			the processing of vocabulary items, EVS itself has been treated as the code system for all its contained concepts - therefore
+			the NCI concept id is used as the value in coded fields, and the HL7 assigned OID for the EVS is used as the code system OID.
+			We have provided a reference to the EVS website within this guide, as opposed to including the lists of codes for each value set.
+			This has been done to a) address the problem of updating the vocabulary section when new codes are added, and b) to reduce the
+			size of the document.</p>
+			
+			<p>However, not all of the coded items used are supported within EVS. These include such items as the set of categories
+			used to organize records within the various SEND and SDTM  domains.  Items which cannot currently be centrally managed have
+			been defined as code systems in their own right, and are listed as sponsor defined.  It is expected that study sponsors will
+			provide reference material to allow these items to be evaluated.</p>
+		</body>
+	</topic>
+</topic>

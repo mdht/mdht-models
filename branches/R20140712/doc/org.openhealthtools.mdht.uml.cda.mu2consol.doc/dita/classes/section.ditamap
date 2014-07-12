@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Section Templates">
+<topicref href="FunctionalStatusSection.dita" type="topic" />
+<topicref href="MedicationsAdministeredSection.dita" type="topic" />
+<topicref href="ProceduresSection.dita" type="topic" />
+<topicref href="ResultsSection.dita" type="topic" />
+<topicref href="SocialHistorySection.dita" type="topic" />
+</map>

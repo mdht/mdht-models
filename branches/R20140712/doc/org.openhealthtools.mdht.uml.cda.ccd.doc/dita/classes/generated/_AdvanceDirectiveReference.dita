@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Advance Directive Reference - conformance rules</title>
+<shortdesc id="shortdesc">[Reference: templateId <tt>2.16.840.1.113883.10.20.1.36</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Reference</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.36"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF-101 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.36"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="REFR" </tt> (CONF-104)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>externalDocument</b></tt> (CONF-102)
+<ol>
+<li>Contains exactly one [1..1] CDA External Document</li></ol></li>
+<li>The URL of a referenced advance directive document <b>MAY</b> be present, and <b>SHALL</b> be represented in Observation / reference / ExternalDocument / text / reference. A &lt;linkHTML&gt; element containing the same URL <b>SHOULD</b> be present in the associated CDA Narrative Block (CONF-106)</li>
+<li>The MIME type of a referenced advance directive document <b>MAY</b> be present, and <b>SHALL</b> be represented in Observation / reference / ExternalDocument / text / @mediaType (CONF-107)</li>
+<li>Where the value of Observation / reference / seperatableInd is "false", the referenced advance directive document <b>SHOULD</b> be included in the CCD exchange package. The exchange mechanism <b>SHOULD</b> be based on Internet standard RFC 2557 "MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)" (http://www.ietf.org/rfc/rfc2557.txt) (CONF-108)</li>
+<li>CONF-105: ExternalDocument <b>SHALL</b> contain at least one ExternalDocument / id. (CONF-105)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="REFR" </tt> (CONF-104)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>externalDocument</b></tt> (CONF-102)
+<ol>
+<li>Contains exactly one [1..1] CDA External Document</li></ol></li>
+<li>The URL of a referenced advance directive document <b>MAY</b> be present, and <b>SHALL</b> be represented in Observation / reference / ExternalDocument / text / reference. A &lt;linkHTML&gt; element containing the same URL <b>SHOULD</b> be present in the associated CDA Narrative Block (CONF-106)</li>
+<li>The MIME type of a referenced advance directive document <b>MAY</b> be present, and <b>SHALL</b> be represented in Observation / reference / ExternalDocument / text / @mediaType (CONF-107)</li>
+<li>Where the value of Observation / reference / seperatableInd is "false", the referenced advance directive document <b>SHOULD</b> be included in the CCD exchange package. The exchange mechanism <b>SHOULD</b> be based on Internet standard RFC 2557 "MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)" (http://www.ietf.org/rfc/rfc2557.txt) (CONF-108)</li>
+<li>CONF-105: ExternalDocument <b>SHALL</b> contain at least one ExternalDocument / id. (CONF-105)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::AdvanceDirectiveReference</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::reference[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>typeCode</entry><entry>@typeCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActRelationshipExternalReference</entry><entry>CONF-104</entry><entry> ELNK</entry></row> 
+<row><entry>advanceDirectiveReference</entry><entry>advanceDirectiveReference</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AdvanceDirectiveReference</entry><entry>CONF-102CONF-103</entry><entry> </entry></row> 
+<row><entry>externalDocument</entry><entry>externalDocument</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ExternalDocument</entry><entry>CONF-102</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <externalDocument/>
+</reference>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Advance Directive Reference</ph></p>
+<p id="shortdesc">[Reference: templateId <tt>2.16.840.1.113883.10.20.1.36</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Advance Directives Section Entries Optional - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.21</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.21"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+<p>Known Subclasses: <xref href="../AdvanceDirectivesSection.dita">Advance Directives Section</xref></p>
+</section>
+<section id="description">
+<p>
+This section contains data defining the patient's advance directives and any reference to supporting documentation. The most recent and up-to-date directives are required, if known, and should be listed in as much detail as possible. This section contains data such as the existence of living wills, healthcare proxies, and CPR and resuscitation status. If referenced documents are available, they can be included in the CCD exchange package. 
+</p>
+<p>
+NOTE: The descriptions in this section differentiate between "advance directives" and "advance directive documents". The former are the directions whereas the latter are legal documents containing those directions. Thus, an advance directive might be "no cardiopulmonary resuscitation", and this directive might be stated in a legal advance directive document.
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7928, CONF:10376 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.21"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15340)<tt><b>/@code</b>="42348-3" </tt><i>Advance Directives</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15342)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7930)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7931)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7957, CONF:8800)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveObservation.dita">Advance Directive Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.48</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15340)<tt><b>/@code</b>="42348-3" </tt><i>Advance Directives</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15342)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7930)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7931)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7957, CONF:8800)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveObservation.dita">Advance Directive Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.48</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AdvanceDirectivesSectionEntriesOptional</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15342</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7930</entry><entry> </entry></row> 
+<row><entry>advanceDirectiveObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>AdvanceDirectiveObservation</entry><entry>CONF:7957CONF:8800</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7931</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="230259556"/>
+  <code code="1313230679"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="473637044"/>
+      <code code="1136977998"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <participant typeCode="VRF">
+        <time>
+          <low value="2013"/>
+          <high value="2013"/>
+        </time>
+        <participantRole/>
+      </participant>
+      <participant typeCode="CST">
+        <participantRole classCode="AGNT"/>
+      </participant>
+      <reference typeCode="REFR">
+        <externalDocument/>
+      </reference>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Advance Directives Section Entries Optional</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.21</tt>]</p>
+</body>
+</topic>

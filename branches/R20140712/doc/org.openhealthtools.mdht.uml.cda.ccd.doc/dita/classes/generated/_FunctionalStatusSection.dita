@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Functional Status Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.1.5</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.5"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p>
+    <i>Functional Status</i> describes the patient's status of normal functioning at the time the Care Record
+    was created. Functional statuses include information regarding the patient relative to:
+</p>
+
+    <ul><li>Ambulatory ability</li>
+       <li>Mental status or competency</li>
+        <li>Activities of Daily Living (ADLs), including bathing, dressing, feeding, grooming</li>
+        <li>Home / living situation having an effect on the health status of the patient</li>
+        <li>Ability to care for self</li>
+        <li>Social activity, including issues with social cognition, participation with
+        friends and acquaintances other than family members</li>
+       <li>Occupation activity, including activities partly or directly related to working, housework or volunteering, family
+        and home responsibilities or activities related to home and family</li>
+      <li>Communication ability, including issues with speech, writing or cognition required for communication</li>
+       <li> Perception, including sight, hearing, taste, skin sensation, kinesthetic sense, proprioception, or
+        balance</li>
+</ul>
+<p>
+    Any
+    deviation from normal function that the patient displays and is recorded in the record should be included. Of
+    particular interest are those limitations that would in any way interfere with self care or the medical therapeutic
+    process. In addition, an improvement, any change in or noting that the patient has normal functioning status is also
+    valid for inclusion.
+</p>
+<p>Functional Statuses can be expressed in 3 different forms. They can occur as a Problem, a Result or as text. Text can be employed if and only if the Functional Status is neither a Problem nor a Result. Functional Statuses expressed as Problems include relevant clinical conditions, diagnoses, symptoms and findings. Results are the interpretation or conclusion derived from a clinical assessment or test battery, such as the Instrumental Activities of Daily Living (IADL) scale or the Functional Status Index (FSI).
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.5"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="47420-5" </tt><i>Functional status assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-124, CONF-125)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-126)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHOULD</b> satisfy: Contains one or more Problem Act and/or Result Organizer (CONF-123)</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'functional status'. (CONF-127)</li>
+<li>problem observation or result observation in the functional status section <b>SHALL</b> contain exactly one observation / code (CONF-128)</li>
+<li>The value for Observation / code in a problem observation or result observation in the functional status section <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.6 FunctionalStatusTypeCode STATIC 20061017 (CONF-129)</li>
+<li>If the functional status was collected using a standardized assessment instrument, then the instrument itself <b>SHOULD</b> be represented in the Organizer / code of a result organizer, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) (CONF-130)</li>
+<li>If the functional status was collected using a standardized assessment instrument, then the question within that instrument <b>SHOULD</b> be represented in the Observation / code of a result observation, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96). (CONF-131)</li>
+<li>If the functional status was collected using a standardized assessment instrument containing questions with enumerated values as answers, then the answer <b>SHOULD</b> be represented in the Observation / value of a result observation (CONF-132)</li>
+<li>If Observation / value in a result observation in the functional status section is of data type CE or CD, then it <b>SHOULD</b> use the same code system used to code the question in Observation / code. (CONF-133)</li>
+<li>Observation / value in a result observation in the functional status section <b>MAY</b> be of datatype CE or CD and <b>MAY</b> contain one or more Observation / value / translation, to represent equivalent values from other code systems. (CONF-134)</li>
+<li>A problem observation or result observation in the functional status section <b>MAY</b> use codes from the International Classification of Functioning, Disability, and Health (ICF, http://www.who.int/classifications/icf/en/) (codeSystem 2.16.840.1.113883.6.254). (CONF-135)</li>
+<li>A problem observation in the functional status section <b>SHALL</b> contain exactly one status of functional status observation (CONF-136)</li>
+<li>A result observation in the functional status section <b>SHALL</b> contain exactly one status of functional status observation. (CONF-137)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="47420-5" </tt><i>Functional status assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-124, CONF-125)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-126)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHOULD</b> satisfy: Contains one or more Problem Act and/or Result Organizer (CONF-123)</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'functional status'. (CONF-127)</li>
+<li>problem observation or result observation in the functional status section <b>SHALL</b> contain exactly one observation / code (CONF-128)</li>
+<li>The value for Observation / code in a problem observation or result observation in the functional status section <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.6 FunctionalStatusTypeCode STATIC 20061017 (CONF-129)</li>
+<li>If the functional status was collected using a standardized assessment instrument, then the instrument itself <b>SHOULD</b> be represented in the Organizer / code of a result organizer, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) (CONF-130)</li>
+<li>If the functional status was collected using a standardized assessment instrument, then the question within that instrument <b>SHOULD</b> be represented in the Observation / code of a result observation, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96). (CONF-131)</li>
+<li>If the functional status was collected using a standardized assessment instrument containing questions with enumerated values as answers, then the answer <b>SHOULD</b> be represented in the Observation / value of a result observation (CONF-132)</li>
+<li>If Observation / value in a result observation in the functional status section is of data type CE or CD, then it <b>SHOULD</b> use the same code system used to code the question in Observation / code. (CONF-133)</li>
+<li>Observation / value in a result observation in the functional status section <b>MAY</b> be of datatype CE or CD and <b>MAY</b> contain one or more Observation / value / translation, to represent equivalent values from other code systems. (CONF-134)</li>
+<li>A problem observation or result observation in the functional status section <b>MAY</b> use codes from the International Classification of Functioning, Disability, and Health (ICF, http://www.who.int/classifications/icf/en/) (codeSystem 2.16.840.1.113883.6.254). (CONF-135)</li>
+<li>A problem observation in the functional status section <b>SHALL</b> contain exactly one status of functional status observation (CONF-136)</li>
+<li>A result observation in the functional status section <b>SHALL</b> contain exactly one status of functional status observation. (CONF-137)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::FunctionalStatusSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF-124CONF-125</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF-126</entry><entry> </entry></row> 
+<row><entry>functionalStatusSection</entry><entry>functionalStatusSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>FunctionalStatusSection</entry><entry>CONF-123</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="1094698606"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Functional Status Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.1.5</tt>]</p>
+</body>
+</topic>

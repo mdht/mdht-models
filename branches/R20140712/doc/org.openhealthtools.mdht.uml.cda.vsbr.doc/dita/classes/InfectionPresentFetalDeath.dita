@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Infection Present - Fetal Death</title>
+<shortdesc conref="generated/_InfectionPresentFetalDeath.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_InfectionPresentFetalDeath.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_InfectionPresentFetalDeath.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_InfectionPresentFetalDeath.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_InfectionPresentFetalDeath.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_InfectionPresentFetalDeath.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Infection Present - Fetal Death example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[	<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.49"/>
+							<code code="73769-2" displayName="Infections present and or treated during this pregnancy for fetal death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="CD" code="4241002" displayName="Listeriosis" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+						</observation>
+					</entry>]]>
+</codeblock>
+</body>
+</topic>

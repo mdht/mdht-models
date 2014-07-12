@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>PHV S_ Disease Type_ Flu</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.6034"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>PHVS_DiseaseType_Flu - 2.16.840.1.114222.4.11.6034</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Source</entry><entry>PHIN-VADS</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6034</entry></row>
+<row><entry>Definition</entry><entry>Influenza disease type value set has problems or disease related to influenza. 
+This value set is based upon SNOMED CT</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>442696006</entry><entry>Influenza due to Influenza A virus subtype H1N1 (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>442438000</entry><entry>Influenza due to Influenza A virus (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>441345003</entry><entry>Influenza B virus present (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>441049004</entry><entry>Influenza A virus subtype H3 present (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>441043003</entry><entry>Influenza A virus subtype H1 present (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>427873006</entry><entry>Influenza due to influenza virus type A, avian, H5N1 strain (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>408687004</entry><entry>Healthcare associated influenza disease (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>406588006</entry><entry>Influenza of the central nervous system (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>315642008</entry><entry>Influenza-like symptoms (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>195929004</entry><entry>Influenza with gastrointestinal tract involvement (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>195924009</entry><entry>Influenza with pharyngitis (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>195923003</entry><entry>Influenza with laryngitis (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>195920000</entry><entry>Influenza with pneumonia, influenza virus identified (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>195878008</entry><entry>Pneumonia and influenza (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>194946005</entry><entry>Acute myocarditis - influenzal (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>95891005</entry><entry>Influenza-like illness (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>88152000</entry><entry>Equine influenza (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>81524006</entry><entry>Influenza due to Influenza virus, type C (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>78046005</entry><entry>Myocarditis due to influenza virus (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>74644004</entry><entry>Influenza with encephalopathy (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>63039003</entry><entry>Influenza with respiratory manifestation other than pneumonia (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>61700007</entry><entry>Influenza with non-respiratory manifestation (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>55604004</entry><entry>Avian influenza (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>43692000</entry><entry>Influenzal acute upper respiratory infection (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>41269000</entry><entry>Influenzal bronchopneumonia (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>24662006</entry><entry>Influenza due to Influenza virus, type B (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>6142004</entry><entry>Influenza (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Waveform Series Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.9.12</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.9.12"/>
+</prolog>
+<body>
+<section id="description">
+<p>Some devices, such as the pulse oximeter, report a series of equidistant time-spaced observations that can be represented as a waveform.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBSSER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMED CT</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>pHMRProductInstanceReference</b></tt>, such that
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+</li>
+<li>A code element <b>SHALL</b> be present where @code is either 364681001 Waveform-observable or from the Waveform-observable hierarchy in SNOMED CT®, and @codeSystem is 2.16.840.1.113883.6.96 SNOMED CT (DYNAMIC).</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBSSER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMED CT</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>pHMRProductInstanceReference</b></tt>, such that
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+</li>
+<li>A code element <b>SHALL</b> be present where @code is either 364681001 Waveform-observable or from the Waveform-observable hierarchy in SNOMED CT®, and @codeSystem is 2.16.840.1.113883.6.96 SNOMED CT (DYNAMIC).</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Waveform Series Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.9.12</tt>]</p>
+</body>
+</topic>

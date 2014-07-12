@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Advance Directive Reference"/>
+<meta name="abstract" content="[Reference: templateId 2.16.840.1.113883.10.20.1.36]"/>
+<meta name="description" content="[Reference: templateId 2.16.840.1.113883.10.20.1.36]"/>
+<meta name="DC.Coverage" content="Reference"/>
+<meta name="DC.Relation" scheme="URI" content="../content/OtherClasses.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Advance Directive Reference</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Advance Directive Reference</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Reference: templateId <tt class="ph tt">2.16.840.1.113883.10.20.1.36</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF-101 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.36"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="REFR" </tt> (CONF-104)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">externalDocument</strong></tt> (CONF-102)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] CDA External Document</li>
+</ol>
+</li>
+
+<li class="li">The URL of a referenced advance directive document <strong class="ph b">MAY</strong> be present, and <strong class="ph b">SHALL</strong> be represented in Observation / reference / ExternalDocument / text / reference. A &lt;linkHTML&gt; element containing the same URL <strong class="ph b">SHOULD</strong> be present in the associated CDA Narrative Block (CONF-106)</li>
+
+<li class="li">The MIME type of a referenced advance directive document <strong class="ph b">MAY</strong> be present, and <strong class="ph b">SHALL</strong> be represented in Observation / reference / ExternalDocument / text / @mediaType (CONF-107)</li>
+
+<li class="li">Where the value of Observation / reference / seperatableInd is "false", the referenced advance directive document <strong class="ph b">SHOULD</strong> be included in the CCD exchange package. The exchange mechanism <strong class="ph b">SHOULD</strong> be based on Internet standard RFC 2557 "MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)" (http://www.ietf.org/rfc/rfc2557.txt) (CONF-108)</li>
+
+<li class="li">CONF-105: ExternalDocument <strong class="ph b">SHALL</strong> contain at least one ExternalDocument / id. (CONF-105)</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<div class="section"><div class="p">
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d835e124">ccd::AdvanceDirectiveReference</th>
+  </tr>
+  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d835e129">cda::reference[cda:templateId/@root = ]/</th>
+  </tr>
+  <tr class="row"><th class="entry" align="left" valign="top" id="d835e134">Name</th>
+<th class="entry" align="left" valign="top" id="d835e136">XPath</th>
+<th class="entry" align="left" valign="top" id="d835e138">Cardinality</th>
+<th class="entry" align="left" valign="top" id="d835e140">Severity</th>
+<th class="entry" align="left" valign="top" id="d835e142">Nullable</th>
+<th class="entry" align="left" valign="top" id="d835e144">Data Type</th>
+<th class="entry" align="left" valign="top" id="d835e146">Conformance</th>
+<th class="entry" align="left" valign="top" id="d835e148">Value(s)</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e134 ">typeCode</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e136 ">@typeCode</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e138 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e140 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e142 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e144 ">x_ActRelationshipExternalReference</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e146 ">CONF-104</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e148 "> ELNK</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e134 ">advanceDirectiveReference</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e136 ">advanceDirectiveReference</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e138 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e140 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e142 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e144 ">AdvanceDirectiveReference</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e146 ">CONF-102CONF-103</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e148 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e134 ">externalDocument</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e136 ">externalDocument</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e138 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e140 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e142 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e144 ">ExternalDocument</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e146 ">CONF-102</td>
+<td class="entry" align="left" valign="top" headers="d835e124 d835e129 d835e148 "> </td>
+</tr>
+ 
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<p class="p"> </p>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Advance Directive Reference example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;externalDocument/&gt;
+&lt;/reference&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/OtherClasses.html">OTHER CLASSES</a></div>
+</div>
+</div>
+
+</body>
+</html>

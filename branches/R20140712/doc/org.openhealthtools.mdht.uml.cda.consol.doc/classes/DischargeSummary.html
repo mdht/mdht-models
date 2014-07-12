@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Discharge Summary"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.8]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.8]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Discharge Summary</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1">
+		<span class="ph">Discharge Summary</span>
+	</h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.1.8</tt>]</p>
+
+		
+		<div class="section">
+</div>
+
+
+		<div class="section"><h2 class="title sectiontitle"><span class="ph">Discharge Summary</span> Header Constraints</h2>
+			
+		</div>
+
+
+
+		<div class="section"><h2 class="title sectiontitle">
+				<span class="ph">Discharge Summary</span> Body Constraints	</h2>
+			
+				<div class="p">
+				<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.1.8"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="GeneralHeaderConstraints.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]">General Header Constraints</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:17178), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/DischargeSummaryDocumentTypeCode.html">DischargeSummaryDocumentTypeCode</a> 2.16.840.1.113883.11.20.4.1</tt><strong class="ph b"> DYNAMIC</strong> (CONF:17179)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10111)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../HospitalAdmissionMedicationsSectionEntriesOptional.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.44]">Hospital Admission Medications Section Entries Optional</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.44</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9928)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalAdmissionDiagnosisSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.43]">Hospital Admission Diagnosis Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.43</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9546)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalDischargeDiagnosisSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.24]">Hospital Discharge Diagnosis Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.24</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9558)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="DischargeDietSection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.5.3.1.3.33]">Discharge Diet Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.33</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9548)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../HospitalDischargeMedicationsSectionEntriesOptional.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.11]">Hospital Discharge Medications Section Entries Optional</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.11</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9562)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="FunctionalStatusSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.14]">Functional Status Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.14</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9566)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfPresentIllnessSection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.5.3.1.3.4]">History Of Present Illness Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.4</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9544)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalCourseSection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.5.3.1.3.5]">Hospital Course Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.5</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9550)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PlanOfCareSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.10]">Plan Of Care Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.10</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9564)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfPastIllnessSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.20]">History Of Past Illness Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.20</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">componentOf</strong></tt> (CONF:9539) <ol class="ol" type="a"><li class="li"> This componentOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">encompassingEncounter</strong></tt> (CONF:8472) <ol class="ol" type="i"><li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">dischargeDispositionCode</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/NUBCUB04FL17PatientStatus.html">NUBC UB-04 FL17-Patient Status</a> 2.16.840.1.113883.6.301.5</tt><strong class="ph b"> STATIC</strong> (CONF:8476)</li>
+<li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:8473, CONF:8475)</li>
+<li class="li"> This encompassingEncounter <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">responsibleParty</strong></tt> (CONF:8479) <ol class="ol"><li class="li"> This responsibleParty <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt>, where its type is CDA Assigned Entity (CONF:8479)<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] CDA Assigned Entity</li>
+</ol>
+</li>
+<li class="li"> This responsibleParty The responsibleParty element, if present, <strong class="ph b">SHALL</strong> contain an assignedEntity element which <strong class="ph b">SHALL</strong> contain an assignedPerson element, a representedOrganization element, or both. (CONF:8479)</li>
+</ol>
+ </li>
+<li class="li"> This encompassingEncounter <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">encounterParticipant</strong></tt> (CONF:8478) <ol class="ol"><li class="li"> This encounterParticipant <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt>, where its type is CDA Assigned Entity (CONF:8478)<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] CDA Assigned Entity</li>
+</ol>
+</li>
+<li class="li"> This encounterParticipant The responsibleParty element, if present, <strong class="ph b">SHALL</strong> contain an assignedEntity element which <strong class="ph b">SHALL</strong> contain an assignedPerson element, a representedOrganization element, or both. (CONF:8478)</li>
+</ol>
+ </li>
+<li class="li"> This encompassingEncounter This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] effectiveTime/low (CONF:8473)</li>
+<li class="li"> This encompassingEncounter This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] effectiveTime/high (CONF:8475)</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9556)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ChiefComplaintAndReasonForVisitSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.13]">Chief Complaint And Reason For Visit Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.13</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9554)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ChiefComplaintSection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1]">Chief Complaint Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9560)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="FamilyHistorySection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.15]">Family History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.15</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9924)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalConsultationsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.42]">Hospital Consultations Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.42</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9926)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalDischargeInstructionsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.41]">Hospital Discharge Instructions Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.41</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9568)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalDischargePhysicalSection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.5.3.1.3.26]">Hospital Discharge Physical Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.26</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9570)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalDischargeStudiesSummarySection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.16]">Hospital Discharge Studies Summary Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.16</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9572)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ImmunizationsSectionEntriesOptional.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.2]">Immunizations Section Entries Optional</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.2</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9574)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ProblemSectionEntriesOptional.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.5]">Problem Section Entries Optional</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.5</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9576)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ProceduresSectionEntriesOptional.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.7]">Procedures Section Entries Optional</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.7</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9578)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ReasonForVisitSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.12]">Reason For Visit Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.12</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9580)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ReviewOfSystemsSection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.5.3.1.3.18]">Review Of Systems Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.18</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9582)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="SocialHistorySection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.17]">Social History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.17</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9542)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../AllergiesSectionEntriesOptional.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.6]">Allergies Section Entries Optional</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.6</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9584)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../VitalSignsSectionEntriesOptional.html">Vital Signs Section Entries Optional</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.4</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL NOT</strong> include a Chief Complaint and Reason for Visit Section with either a Chief Complaint Section or a Reason for Visit Section. (CONF:10055)</li>
+
+</ol>
+
+				
+				</div>
+
+		</div>
+
+
+
+		<div class="section"><h2 class="title sectiontitle"><span class="ph">Discharge Summary</span> Example</h2>
+			
+			<div class="p">
+			<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;id root="MDHT" extension="1477736030"/&gt;
+  &lt;code code="467202907"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode code="1124086430"/&gt;
+  &lt;setId root="MDHT" extension="58a500d3-d9be-438c-8132-da61015f6813"/&gt;
+  &lt;versionNumber value="1"/&gt;
+  &lt;recordTarget&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;patientRole/&gt;
+  &lt;/recordTarget&gt;
+  &lt;author&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;time/&gt;
+    &lt;assignedAuthor/&gt;
+  &lt;/author&gt;
+  &lt;custodian/&gt;
+  &lt;componentOf&gt;
+    &lt;encompassingEncounter&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;dischargeDispositionCode codeSystem="2.16.840.1.113883.12.112" codeSystemName="HL7DischargeDisposition"/&gt;
+      &lt;responsibleParty/&gt;
+      &lt;encounterParticipant/&gt;
+    &lt;/encompassingEncounter&gt;
+  &lt;/componentOf&gt;
+  &lt;component&gt;
+    &lt;structuredBody&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="2143241607"/&gt;
+          &lt;code code="1663297042"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1846593212"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="313827286"/&gt;
+              &lt;code code="680888243"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;substanceAdministration classCode="SBADM"/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="2041887241"/&gt;
+          &lt;code code="1568878486"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1699091110"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1741947981"/&gt;
+              &lt;code code="580193498"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1482650199"/&gt;
+          &lt;code code="1776206732"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1534736076"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1039989226"/&gt;
+              &lt;code code="37493975"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1108479390"/&gt;
+          &lt;code code="1708912515"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="318962281"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1168233350"/&gt;
+          &lt;code code="1927019208"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="2128077620"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1786158220"/&gt;
+              &lt;code code="1217007050"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;substanceAdministration classCode="SBADM"/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1938366028"/&gt;
+          &lt;code code="570650716"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="499272252"/&gt;
+          &lt;entry&gt;
+            &lt;organizer&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="112240994"/&gt;
+              &lt;code code="1634552062"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;component&gt;
+                &lt;observation/&gt;
+              &lt;/component&gt;
+            &lt;/organizer&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;organizer&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1497605888"/&gt;
+              &lt;code code="1390233542"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;component&gt;
+                &lt;observation/&gt;
+              &lt;/component&gt;
+            &lt;/organizer&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="191961161"/&gt;
+              &lt;code code="369092814"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;author/&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;referenceRange/&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="354595539"/&gt;
+              &lt;code code="843582008"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;author/&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;referenceRange/&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1106195867"/&gt;
+              &lt;code code="962586752"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1394297219"/&gt;
+              &lt;code code="293438402"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="488645285"/&gt;
+              &lt;code code="379227142"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;participant/&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1896893654"/&gt;
+              &lt;code code="1737260509"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;author/&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;referenceRange/&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;supply classCode="SPLY"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1677154938"/&gt;
+              &lt;code code="171575004"/&gt;
+              &lt;effectiveTime value="20130627"/&gt;
+            &lt;/supply&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="421767418"/&gt;
+              &lt;code code="515061444"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship typeCode="COMP"/&gt;
+              &lt;entryRelationship typeCode="COMP"/&gt;
+              &lt;entryRelationship typeCode="COMP"/&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1236619646"/&gt;
+              &lt;code code="538296493"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;author/&gt;
+              &lt;entryRelationship typeCode="SUBJ"/&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="501902982"/&gt;
+              &lt;code code="1156682460"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="247837368"/&gt;
+          &lt;code code="1324702735"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="420541802"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="794197584"/&gt;
+          &lt;code code="147224590"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="701718108"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="542507106"/&gt;
+          &lt;code code="459122082"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="430500546"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="558841816"/&gt;
+              &lt;code code="1109028564"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;encounter&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="5947779"/&gt;
+              &lt;code code="2011706559"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/encounter&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="315467505"/&gt;
+              &lt;code code="745398817"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;procedure&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1533836568"/&gt;
+              &lt;code code="1958279244"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/procedure&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1564868656"/&gt;
+              &lt;code code="2104947360"/&gt;
+              &lt;effectiveTime value="20130627"/&gt;
+              &lt;consumable/&gt;
+            &lt;/substanceAdministration&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;supply classCode="SPLY"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="667540632"/&gt;
+              &lt;code code="294231376"/&gt;
+              &lt;effectiveTime value="20130627"/&gt;
+            &lt;/supply&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="981325524"/&gt;
+              &lt;code code="1287320450"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="742820786"/&gt;
+          &lt;code code="810499094"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="977883645"/&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1372838625"/&gt;
+              &lt;code code="1128302449"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="470490590"/&gt;
+          &lt;code code="871062038"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="476286261"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1717999766"/&gt;
+          &lt;code code="1455194317"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1336088070"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1627074523"/&gt;
+          &lt;code code="1442049672"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="555022279"/&gt;
+          &lt;entry&gt;
+            &lt;organizer&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="741255028"/&gt;
+              &lt;code code="1289345180"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;subject/&gt;
+              &lt;component&gt;
+                &lt;observation/&gt;
+              &lt;/component&gt;
+            &lt;/organizer&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1089976122"/&gt;
+          &lt;code code="252576738"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="392722231"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1097050508"/&gt;
+          &lt;code code="399208261"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="2141298676"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="569017439"/&gt;
+          &lt;code code="1815963117"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1174053341"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1776666274"/&gt;
+          &lt;code code="94403627"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1048346921"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1140542570"/&gt;
+          &lt;code code="1434641170"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="750041676"/&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1181379292"/&gt;
+              &lt;code code="305229824"/&gt;
+              &lt;effectiveTime value="20130627"/&gt;
+              &lt;consumable/&gt;
+              &lt;performer/&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;act/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;precondition/&gt;
+            &lt;/substanceAdministration&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="317442343"/&gt;
+          &lt;code code="1077170610"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="735794712"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1139522952"/&gt;
+              &lt;code code="872568080"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="794047781"/&gt;
+          &lt;code code="1646767737"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="161081446"/&gt;
+          &lt;entry&gt;
+            &lt;procedure&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1250362331"/&gt;
+              &lt;code code="1636741266"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;specimen/&gt;
+              &lt;performer/&gt;
+              &lt;entryRelationship typeCode="COMP" inversionInd="true"/&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;substanceAdministration classCode="SBADM"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;act/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/procedure&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1467205638"/&gt;
+              &lt;code code="572467029"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;performer/&gt;
+              &lt;entryRelationship typeCode="COMP" inversionInd="true"/&gt;
+              &lt;entryRelationship&gt;
+                &lt;act/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;substanceAdministration classCode="SBADM"/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1497949034"/&gt;
+              &lt;code code="243585170"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;performer/&gt;
+              &lt;entryRelationship typeCode="COMP" inversionInd="true"/&gt;
+              &lt;entryRelationship&gt;
+                &lt;act/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;substanceAdministration classCode="SBADM"/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1564615097"/&gt;
+          &lt;code code="685168380"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1351895943"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1011496132"/&gt;
+          &lt;code code="1522404635"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="410460846"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="785928928"/&gt;
+          &lt;code code="7242572"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="956424073"/&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1143878489"/&gt;
+              &lt;code code="640185423"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1956195620"/&gt;
+              &lt;code code="279209434"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1337091333"/&gt;
+              &lt;code code="1892714977"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1046875270"/&gt;
+              &lt;code code="411568841"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="2029981942"/&gt;
+          &lt;code code="1948242810"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="886926317"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="277190191"/&gt;
+              &lt;code code="2040895986"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1448468702"/&gt;
+          &lt;code code="1786784456"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1625883164"/&gt;
+          &lt;entry&gt;
+            &lt;organizer&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="2029117734"/&gt;
+              &lt;code code="696496350"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;component&gt;
+                &lt;observation/&gt;
+              &lt;/component&gt;
+            &lt;/organizer&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+    &lt;/structuredBody&gt;
+  &lt;/component&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+			</div>
+
+		</div>
+	
+	</div>
+
+
+</body>
+</html>

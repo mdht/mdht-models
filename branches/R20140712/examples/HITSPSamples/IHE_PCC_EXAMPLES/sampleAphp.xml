@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcc="urn:ihe:pcc:hl7v3"
+    xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2" xmlns:sdtc="urn:hl7-org:sdtc"
+    xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+    <templateId root="2.16.840.1.113883.10" extension="IMPL_CDAR2_LEVEL1"/>
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.2"/>
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.16.1.1"/>
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.16.1.4"/>
+    <id extension="apHandP" root="2.16.840.1.113883.19.4"/>
+    <code code="34117-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <title>Sample Antepartum History and Physical Document</title>
+    <effectiveTime value="20071204121212+0500"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+    <languageCode code="en-US"/>
+    <recordTarget>
+        <patientRole>
+            <id extension="996-756-495" root="2.16.840.1.113883.19.5"/>
+            <addr/>
+            <telecom nullFlavor="UNK"/>
+            <patient>
+                <name>
+                    <given>Henry</given>
+                    <family>Levin</family>
+                    <suffix>the 7th</suffix>
+                </name>
+                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                <birthTime value="19320924"/>
+                <maritalStatusCode code="S"/>
+                <ethnicGroupCode code="AAA"/>
+            </patient>
+            <providerOrganization>
+                <id root="2.16.840.1.113883.19.5"/>
+                <name>Good Health Clinic</name>
+                <telecom nullFlavor="UNK"/>
+                <addr/>
+            </providerOrganization>
+        </patientRole>
+    </recordTarget>
+
+    <author>
+        <time value="20000407130000+0500"/>
+        <assignedAuthor>
+            <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+            <addr/>
+            <telecom nullFlavor="UNK"/>
+            <assignedPerson>
+                <name>
+                    <prefix>Dr.</prefix>
+                    <given>Robert</given>
+                    <family>Dolin</family>
+                </name>
+            </assignedPerson>
+            <representedOrganization>
+                <id root="2.16.840.1.113883.19.5"/>
+                <name>Good Health Clinic</name>
+                <telecom nullFlavor="UNK"/>
+                <addr/>
+            </representedOrganization>
+        </assignedAuthor>
+    </author>
+
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id/>
+                <name nullFlavor="ASKU"/>
+                <telecom nullFlavor="ASKU"/>
+                <addr nullFlavor="ASKU"/>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+
+    <!-- Husband/Domestic Partner -->
+    <participant typeCode="IND">
+        <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
+        <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4.1"/>
+        <associatedEntity classCode="PRS">
+            <!-- 
+                12/09/2008: The following is a known issue.  The code comes from SNOMED-CT, but
+                the codeSystem identifies this as part of HL7 PersonalRelationshipRoleType.  There is 
+                a problem with a conflict between the two IHE templates listed above (Spouse and
+                Patient Contacts).  Awaiting clarification.
+            -->
+            <code code="184142008" displayName="patient's next of kin"
+                codeSystem="2.16.840.1.113883.5.111"/>
+            <addr>
+                <streetAddressLine>45 Chunn Dr.</streetAddressLine>
+                <city>Spring Hill</city>
+                <state>TN</state>
+                <postalCode>37174</postalCode>
+                <country>USA</country>
+            </addr>
+            <telecom value="tel:(999)555-1212" use="WP"/>
+            <associatedPerson>
+                <name>
+                    <prefix>Mr.</prefix>
+                    <given>John</given>
+                    <family>Youngston</family>
+                </name>
+            </associatedPerson>
+        </associatedEntity>
+    </participant>
+
+
+
+    <!-- Father of baby -->
+    <participant typeCode="IND">
+        <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
+        <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4.2"/>
+        <associatedEntity classCode="PRS">
+            <!-- 
+                12/09/2008: The following is a known issue.  The code comes from SNOMED-CT, but
+                the codeSystem identifies this as part of HL7 PersonalRelationshipRoleType.  There is 
+                a problem with a conflict between the two IHE templates listed above (Natural Father
+                of Fetus and Patient Contacts).  Awaiting clarification.
+            -->
+            <code code="xx-fatherofbaby" displayName="Father of Baby"
+                codeSystem="2.16.840.1.113883.5.111" codeSystemName="SNOMED CT"/>
+            <addr>
+                <streetAddressLine>18 Oak Valley Dr.</streetAddressLine>
+                <city>Monteagle</city>
+                <state>TN</state>
+                <postalCode>37205</postalCode>
+                <country>USA</country>
+            </addr>
+            <telecom value="tel:(999)555-1212" use="WP"/>
+            <associatedPerson>
+                <name>
+                    <prefix>Mr.</prefix>
+                    <given>Thomas</given>
+                    <family>Caster</family>
+                </name>
+            </associatedPerson>
+        </associatedEntity>
+    </participant>
+
+    <documentationOf>
+        <serviceEvent classCode="PCPR">
+            <effectiveTime>
+                <low value="19320924"/>
+                <high value="20000407"/>
+            </effectiveTime>
+            <performer typeCode="PRF">
+                <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
+                <time>
+                    <low value="1990"/>
+                    <high value="20000407"/>
+                </time>
+                <assignedEntity>
+                    <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+                    <addr/>
+                    <telecom nullFlavor="UNK"/>
+                    <assignedPerson>
+                        <name>
+                            <prefix>Dr.</prefix>
+                            <given>Robert</given>
+                            <family>Dolin</family>
+                        </name>
+                    </assignedPerson>
+                    <representedOrganization>
+                        <id root="2.16.840.1.113883.19.5"/>
+                        <name>Good Health Clinic</name>
+                        <telecom nullFlavor="UNK"/>
+                        <addr/>
+                    </representedOrganization>
+                </assignedEntity>
+            </performer>
+        </serviceEvent>
+    </documentationOf>
+    <component>
+        <structuredBody>
+
+
+            <!-- History of Present Illness -->
+
+            <component>
+                <section>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4"/>
+
+                    <code code="10164-2" displayName="HISTORY OF PRESENT ILLNESS"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <text> Text as described above </text>
+
+                </section>
+            </component>
+
+
+
+
+            <!-- Chief Complaint -->
+
+            <component>
+                <section>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
+                    <code code="10154-3" displayName="CHIEF COMPLAINT"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <text> Chief Complaint text </text>
+                </section>
+            </component>
+
+            <!-- History of Past Illness -->
+
+
+            <component>
+                <section>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.8"/>
+                    <code code="11348-0" displayName="HISTORY OF PAST ILLNESS"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Resolved Problems</title>
+                    <text>None</text>
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+
+                            <!-- Required Problem Concern Entry element -->
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                            <id/>
+                            <code nullFlavor="NA"/>
+                            <statusCode code="active"/>
+                            <effectiveTime>
+                                <low value="20071011"/>
+                                <!-- <high value="20071012"/> -->
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ" inversionInd="false">
+                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                    <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <id root="2.1.160"/>
+                                    <code code="64572001" codeSystem="2.16.840.1.113883.6.96"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime>
+                                        <low nullFlavor="UNK"/>
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="thing" codeSystem="thing"
+                                        codeSystemName="myName" displayName="myName"/>
+
+                                    <!-- Health Status Observation -->
+                                    <entryRelationship typeCode="REFR" inversionInd="false">
+                                        <observation classCode="OBS" moodCode="EVN">
+
+                                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+                                            <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                                            <code code="11323-3" displayName="Health Status"
+                                                codeSystem="2.16.840.1.113883.6.1"
+                                                codeSystemName="LOINC"/>
+
+                                            <text>
+                                                <reference/>
+                                            </text>
+                                            <statusCode code="completed"/>
+                                            <value xsi:type="CE" code="81323004"
+                                                displayName="Alive and well"
+                                                codeSystem="2.16.840.1.113883.6.96"
+                                                codeSystemName="SNOMED CT"/>
+                                        </observation>
+                                    </entryRelationship>
+
+                                    <!-- Severity -->
+
+                                    <entryRelationship typeCode="SUBJ" inversionInd="true">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+                                            <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                                            <code code="SEV" codeSystem="2.16.840.1.113883.5.4"/>
+                                            <text>
+                                                <reference/>
+                                            </text>
+                                            <statusCode code="completed"/>
+                                            <value xsi:type="CD" code="H"
+                                                codeSystem="2.16.840.1.113883.5.1063"/>
+                                        </observation>
+
+                                    </entryRelationship>
+
+
+
+                                    <!-- Problem Status -->
+
+
+                                    <entryRelationship typeCode="REFR">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                                            <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+                                            <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                                            <text>
+                                                <reference/>
+                                            </text>
+                                            <statusCode code="completed"/>
+                                            <value xsi:type="CE" code="55561003" displayName=" "
+                                                codeSystem="2.16.840.1.113883.6.96"
+                                                codeSystemName="SNOMED CT"/>
+                                        </observation>
+                                    </entryRelationship>
+
+                                    <!-- Comment -->
+                                    <entryRelationship typeCode="SUBJ">
+                                        <act classCode="ACT" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+                                            <code code="48767-8" displayName="Annotation Comment"
+                                                codeSystem="2.16.840.1.113883.6.1"/>
+                                            <text>
+                                                <reference/>
+                                            </text>
+                                            <statusCode code="completed"/>
+                                            <author>
+                                                <time value="20081010121212"/>
+                                                <assignedAuthor>
+                                                  <id/>
+                                                  <addr/>
+                                                  <telecom nullFlavor="UNK"/>
+                                                  <assignedPerson>
+
+                                                  <name/>
+
+                                                  </assignedPerson>
+                                                  <representedOrganization>
+                                                  <name/>
+                                                  <telecom nullFlavor="UNK"/>
+                                                  <addr/>
+                                                  </representedOrganization>
+                                                </assignedAuthor>
+
+
+                                            </author>
+
+                                        </act>
+
+                                    </entryRelationship>
+
+                                </observation>
+                            </entryRelationship>
+
+                            <!-- Allergies and Intolerance -->
+
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code/>
+                                </observation>
+
+                            </entryRelationship>
+
+                        </act>
+                    </entry>
+
+                </section>
+            </component>
+
+            <!-- History of Infection -->
+
+            <component>
+                <section>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.16.2.1.1"/>
+                    <code code="XX-HistoryOfInfection" displayName="HISTORY OF INFECTION"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <text> Text as described above </text>
+
+                </section>
+
+            </component>
+
+
+            <!-- Pregnancy History -->
+            <component>
+                <section>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4"/>
+                    <code code="10162-6" displayName="HISTORY OF PREGNANCIES"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <text>History of pregnancy</text>
+
+                    <entry>
+
+                        <!-- Required Pregnancy Observation  element -->
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"/>
+                            <id root="pregid" extension=" "/>
+                            <code code="11449-6" displayName=" " codeSystem="2.16.840.1.113883.6.1"
+                                codeSystemName="LOINC"/>
+                            <text>
+                                <reference value="#xxx"/>
+                            </text>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="20071010"/>
+                            <value xsi:type="CE"/>
+                        </observation>
+
+                    </entry>
+
+                </section>
+            </component>
+
+
+            <!-- Social History -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.1.15"/>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.16"/>
+                    <code code="29762-2" displayName="SOCIAL HISTORY"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Social History</title>
+                    <text>Social History </text>
+
+                </section>
+            </component>
+
+            <!-- Coded Family Member History -->
+            <component>
+                <section>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.14"/>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.15"/>
+                    <templateId root="2.16.840.1.113883.10.20.1.4"/>
+                    <code code="10157-6" displayName="HISTORY OF FAMILY MEMBER DISEASES"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Family History</title>
+                    <text>Unknown</text>
+                    <entry>
+
+                        <!-- Required Family History Organizer element -->
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.1.23"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.15"/>
+                            <statusCode code="completed"/>
+                            <subject typeCode="SBJ">
+                                <relatedSubject classCode="PRS">
+                                    <code code="ignore" codeSystem="2.16.840.1.113883.5.111"
+                                        codeSystemName="RoleCode"/>
+
+                                    <addr/>
+                                    <telecom nullFlavor="UNK"/>
+                                    <subject>
+                                        <name/>
+                                        <administrativeGenderCode/>
+                                    </subject>
+                                </relatedSubject>
+                            </subject>
+
+                            <!-- one or more ??? for family history observations -->
+                            <component typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.3"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="2.16.840.1.113883.10.20.1.22"/>
+                                    <id/>
+                                    <code code="64572001"/>
+                                    <text>
+                                        <reference value="#ignore"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime nullFlavor="UNK"/>
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.26"/>
+
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+
+
+                    <!-- Review of Systems -->
+                    <component>
+                        <section>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
+                            <code code="10187-3" displayName="REVIEW OF SYSTEMS"
+                                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                            <title>Review of Systems</title>
+                            <text>None.</text>
+
+                        </section>
+                    </component>
+
+                    <!-- Physical Examination -->
+
+                    <component>
+                        <section>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.24"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.15"/>
+                            <code code="29545-1" displayName="PHYSICAL EXAMINATION"
+                                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                            <text>Physical Examination</text>
+                            <component>
+                                <section>
+                                    <!-- Optional Vital Signs Section content -->
+
+                                    <templateId root="2.16.840.1.113883.10.20.1.16"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.25"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2"/>
+                                    <code code="8716-3" displayName="VITAL SIGNS"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <title>Vital Signs</title>
+                                    <text> Text as described above </text>
+                                    <entry>
+                                        <organizer classCode="CLUSTER" moodCode="EVN">
+                                            <!-- Required Vital Signs Organizer element -->
+                                            <templateId root="2.16.840.1.113883.10.20.1.32"/>
+                                            <templateId root="2.16.840.1.113883.10.20.1.35"/>
+                                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+                                            <id/>
+                                            <code code="46680005" displayName="Vital signs"
+                                                codeSystem="2.16.840.1.113883.6.96"
+                                                codeSystemName="SNOMED CT"/>
+                                            <statusCode code="completed"/>
+                                            <effectiveTime/>
+                                            <author>
+                                                <time value="20081010121212"/>
+                                                <assignedAuthor>
+                                                  <id/>
+                                                  <addr/>
+                                                  <telecom nullFlavor="UNK"/>
+                                                  <assignedPerson>
+                                                  <name/>
+                                                  </assignedPerson>
+                                                </assignedAuthor>
+                                            </author>
+                                            <component typeCode="COMP">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                  <templateId
+                                                  root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                                  <templateId
+                                                  root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                                  <id/>
+                                                  <code code="9279-1"
+                                                  codeSystem="2.16.840.1.113883.6.1"/>
+                                                  <text>
+                                                  <reference value="#ignore"/>
+                                                  </text>
+                                                  <statusCode code="completed"/>
+
+                                                  <effectiveTime nullFlavor="UNK"/>
+                                                  <value xsi:type="PQ" value="0" unit="/min"/>
+                                                  <referenceRange>
+                                                  <observationRange>
+                                                  <text>Reference Range Text Here</text>
+                                                  </observationRange>
+                                                  </referenceRange>
+                                                </observation>
+                                            </component>
+                                        </organizer>
+                                    </entry>
+                                </section>
+                            </component>
+
+                            <!-- Optional Vital Signs Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.16"/>
+                                    <code code="10210-3" displayName="GENERAL STATUS"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Visible Implanted Medical Devices Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.48"/>
+                                    <code code="TBD" displayName="TBD"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Integumentary System Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.17"/>
+                                    <code code="29302-7" displayName="INTEGUMENTARY SYSTEM"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+                                </section>
+                            </component>
+
+                            <!-- Optional Head Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.18"/>
+                                    <code code="10199-8" displayName="HEAD"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Eyes Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.19"/>
+                                    <code code="10197-2" displayName="EYE"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+                                </section>
+                            </component>
+
+                            <!-- Optional Ears, Nose, Mouth and Throat Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.20"/>
+                                    <code code="11393-6"
+                                        displayName="EARS &amp; NOSE &amp; MOUTH &amp; THROAT"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+                            <!-- Optional Ears Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.21"/>
+                                    <code code="10195-6" displayName="EAR"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Nose Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.22"/>
+                                    <code code="10203-8" displayName="NOSE"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Mouth, Throat, and Teeth Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.23"/>
+                                    <code code="10201-2"
+                                        displayName="MOUTH &amp; THROAT &amp; TEETH"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Neck Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.24"/>
+                                    <code code="11411-6" displayName="NECK"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Endocrine System Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.25"/>
+                                    <code code="29307-6" displayName="ENDOCRINE SYSTEM"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Thorax and Lungs Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.26"/>
+                                    <code code="10207-9" displayName="THORAX+LUNGS"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Chest Wall Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.27"/>
+                                    <code code="11392-8" displayName="CHEST WALL"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Breasts Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.28"/>
+                                    <code code="10193-1" displayName="BREASTS"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Heart Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.29"/>
+                                    <code code="10200-4" displayName="HEART"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Respiratory System Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.30"/>
+                                    <code code="11412-4" displayName="RESPIRATORY SYSTEM"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Abdomen Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.31"/>
+                                    <code code="10191-5" displayName="ABDOMEN"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Lymphatic System Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.32"/>
+                                    <code code="11447-0"
+                                        displayName="HEMATOLOGIC+LYMPHATIC+IMMUNOLOGIC SYSTEM"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Musculoskeletal System Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.34"/>
+                                    <code code="11410-8" displayName="MUSCULOSKELETAL SYSTEM"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Neurologic System Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.35"/>
+                                    <code code="10202-0" displayName="NEUROLOGIC SYSTEM"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+                                </section>
+                            </component>
+
+                            <!-- Optional Genitalia Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.36"/>
+                                    <code code="11400-9" displayName="GENITALIA"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Rectum Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.37"/>
+                                    <code code="10205-3" displayName="RECTUM"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+
+                                </section>
+                            </component>
+
+                            <!-- Optional Vessels Section content -->
+                            <component>
+                                <section>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.33"/>
+                                    <code code="10208-7" displayName="VESSELS"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <text> Text as described above </text>
+                                </section>
+                            </component>
+                        </section>
+                    </component>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

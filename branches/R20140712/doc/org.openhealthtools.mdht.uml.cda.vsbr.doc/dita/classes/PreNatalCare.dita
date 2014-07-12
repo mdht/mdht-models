@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Pre-Natal Care</title>
+<shortdesc conref="generated/_PreNatalCare.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_PreNatalCare.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_PreNatalCare.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_PreNatalCare.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_PreNatalCare.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Pre-Natal Care example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[<entry>
+						<act classCode="ACT" moodCode="EVN" negationInd="true">
+							<templateId root="2.16.840.1.113883.10.20.26.42"/>
+							<code code="73776-7" displayName="No Prenatal Care" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<effectiveTime>
+								<low value="20120521"/>
+								<high value="20121218"/>
+							</effectiveTime>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="68493-6" displayName="Prenatal visits for this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="INT" value="8"/>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>]]>
+</codeblock>
+</body>
+</topic>

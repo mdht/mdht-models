@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Implementation Guide Sections</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Implementation Guide Sections - (OID not specified)</entry></row>
+<row><entry>Description</entry><entry>A list of the sections that have been created for the implementation guide.  Note, the codes used are imaginary and are expected to be replaced with code values from a widely used code system.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>ATS</entry><entry></entry><entry>Antenatal Testing and Surveillance</entry></row>
+<row><entry>Fetal Delivery</entry><entry></entry><entry>Fetus</entry></row>
+<row><entry>HI</entry><entry></entry><entry>History of Infection</entry></row>
+<row><entry>LDO</entry><entry></entry><entry>Labor and Delivery Outcome</entry></row>
+<row><entry>LDP</entry><entry></entry><entry>Labor and Delivery Procedure</entry></row>
+<row><entry>LD</entry><entry></entry><entry>Labor and Delivery</entry></row>
+<row><entry>VSM</entry><entry></entry><entry>Mother's Vital Signs</entry></row>
+<row><entry>ND</entry><entry></entry><entry>Newborn Delivery</entry></row>
+<row><entry>VSN</entry><entry></entry><entry>Newborn's Vital Signs</entry></row>
+<row><entry>PH</entry><entry></entry><entry>Prior Pregancy History</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

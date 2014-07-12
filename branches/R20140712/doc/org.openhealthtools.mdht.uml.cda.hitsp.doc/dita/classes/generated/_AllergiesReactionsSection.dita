@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Allergies Reactions Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.3.88.11.83.102</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.3.88.11.83.102"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p>
+    The Allergies and Other Adverse Reactions Section contains data on the substance intolerances and the
+    associated adverse reactions suffered by the patient. At a minimum, currently active and any relevant historical
+    allergies and adverse reactions shall be listed. 
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.3.88.11.83.102"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AllergiesReactionsSection.html">IHE Allergies Reactions Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.13</tt>) (C83-[CT-102-2])</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AllergyDrugSensitivity.dita">Allergy Drug Sensitivity</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.6</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AllergiesReactionsSection.html">IHE Allergies Reactions Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.13</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48765-2" </tt><i>Allergies, adverse reactions, alerts</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-258, CONF-259)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-260)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-256)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-256)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AllergyDrugSensitivity.dita">Allergy Drug Sensitivity</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.6</tt>)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li>
+<li>The absence of known allergies, adverse reactions or alerts <b>SHALL</b> be explicitly asserted. (CONF-257)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::AllergiesReactionsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>allergiesReactionsSection</entry><entry>allergiesReactionsSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AllergiesReactionsSection</entry><entry>C32-[CT1-2]</entry><entry> </entry></row> 
+<row><entry>allergyDrugSensitivity</entry><entry>cda:entry/cda:act</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AllergyDrugSensitivity</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="1863782106"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <act>
+      <id root="MDHT" extension="1180502789"/>
+      <code code="1292751891"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Allergies Reactions Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.3.88.11.83.102</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Maternal Transfer</title>
+<shortdesc conref="generated/_MaternalTransfer.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_MaternalTransfer.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_MaternalTransfer.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_MaternalTransfer.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_MaternalTransfer.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Maternal Transfer example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.35"/>
+									<code code="73763-5" displayName="Mother was transferred for maternal medical or fetal indications for delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="BL" value="false"/>
+								</observation>
+							</entryRelationship>]]>
+</codeblock>
+</body>
+</topic>

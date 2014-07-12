@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Section Templates">
+<topicref href="EMSAdvanceDirectivesSection.dita" type="topic" />
+<topicref href="EMSAllergiesAndAdverseReactionsSection.dita" type="topic" />
+<topicref href="EMSBillingSection.dita" type="topic" />
+<topicref href="EMSCardiacArrestEventSection.dita" type="topic" />
+<topicref href="EMSCurrentMedicationSection.dita" type="topic" />
+<topicref href="EMSDispatchSection.dita" type="topic" />
+<topicref href="EMSDispositionSection.dita" type="topic" />
+<topicref href="EMSInjuryIncidentDescriptionSection.dita" type="topic" />
+<topicref href="EMSMedicationsAdministeredSection.dita" type="topic" />
+<topicref href="EMSPastMedicalHistorySection.dita" type="topic" />
+<topicref href="EMSPatientCareNarrativeSection.dita" type="topic" />
+<topicref href="EMSPersonnelAdverseEventSection.dita" type="topic" />
+<topicref href="EMSPhysicalAssessmentSection.dita" type="topic" />
+<topicref href="EMSProceduresPerformedSection.dita" type="topic" />
+<topicref href="EMSProtocolSection.dita" type="topic" />
+<topicref href="EMSResponseSection.dita" type="topic" />
+<topicref href="EMSSceneSection.dita" type="topic" />
+<topicref href="EMSSituationSection.dita" type="topic" />
+<topicref href="EMSSocialHistorySection.dita" type="topic" />
+<topicref href="EMSVitalSignsSection.dita" type="topic" />
+<topicref href="TimesSection.dita" type="topic" />
+</map>

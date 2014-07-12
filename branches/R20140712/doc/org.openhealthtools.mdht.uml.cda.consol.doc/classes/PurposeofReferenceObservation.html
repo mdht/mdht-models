@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Purposeof Reference Observation"/>
+<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.6.2.9]"/>
+<meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.6.2.9]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Purposeof Reference Observation</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1"><span class="ph">Purposeof Reference Observation</span></h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.6.2.9</tt>]</p>
+
+		
+		<div class="section">
+<div class="p"><p class="lines"><em class="ph i">A Purpose of Reference Observation describes the purpose of the DICOM composite object reference. Appropriate codes, such as externally defined DICOM codes, may be used to specify the semantics of the purpose of reference. When this observation is absent, it implies that the reason for the reference is unknown.</em></p>
+</div>
+
+</div>
+
+		
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:9266, CONF:10531 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.6.2.9"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9264)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9265)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:9267)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/DICOMPurposeOfReference.html">DICOMPurposeOfReference </a> 2.16.840.1.113883.11.20.9.28</tt><strong class="ph b"> DYNAMIC</strong> (CONF:9273)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The value element is a SHOULD to allow backwards compatibility with the DICOM CMET.  Note that the use of ASSERTION for the code differs from the DICOM CMET. This is intentional. The DICOM CMET was created before the Term Info guidelines describing the use of the assertion pattern were released. It was determined that this IG should follow the latest Term Info guidelines. Implementers using both this IG and the DICOM CMET will need to be aware of this difference and apply appropriate transformations</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li">code <strong class="ph b">SHOULD</strong> contain zero or one [0..1] code="ASSERTION" (CodeSystem: ActCode 2.16.840.1.113883.5.4) (CONF:9268)</li>
+
+</ol>
+
+		
+		<p class="p">
+		</p>
+
+		<p class="p">
+			<strong class="ph b"><span class="ph">Purposeof Reference Observation</span> example</strong>
+		</p>
+		
+		<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1354665181"/&gt;
+  &lt;code code="1284982534"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
+  &lt;/effectiveTime&gt;
+&lt;/observation&gt;</pre>
+
+	</div>
+
+
+</body>
+</html>

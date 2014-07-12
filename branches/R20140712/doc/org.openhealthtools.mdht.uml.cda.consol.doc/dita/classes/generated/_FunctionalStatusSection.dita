@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Functional Status Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.14</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.14"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Functional Status section describes the patient's physical state, status of functioning, and environmental status at the time the document was created. 
+A patient's physical state may include information regarding the patient's physical findings as they relate to problems, including but not limited to:
+Pressure Ulcers
+Amputations
+Heart murmur
+Ostomies
+A patient's functional status may include information regarding the patient relative to their general functional and cognitive ability, including:
+Ambulatory ability
+Mental status or competency
+Activities of Daily Living (ADLs), including bathing, dressing, feeding, grooming
+Home or living situation having an effect on the health status of the patient
+Ability to care for self
+Social activity, including issues with social cognition, participation with friends and acquaintances other than family members
+Occupation activity, including activities partly or directly related to working, housework or volunteering, family and home responsibilities or activities related to home and family
+Communication ability, including issues with speech, writing or cognition required for communication
+Perception, including sight, hearing, taste, skin sensation, kinesthetic sense, proprioception, or balance
+A patient's environmental status may include information regarding the patient's current exposures from their daily environment, including but not limited to:
+Airborne hazards such as second-hand smoke, volatile organic compounds, dust, or other allergens
+Radiation
+Safety hazards in home, such as throw rugs, poor lighting, lack of railings/grab bars, etc.
+Safety hazards at work, such as communicable diseases, excessive heat, excessive noise, etc.
+The patient's functional status may be expressed as a problem or as a result observation. A functional or cognitive status problem observation describes a patient's problem, symptoms or condition. A functional or cognitive status result observation may include observations resulting from an assessment scale, evaluation or question and answer assessment.
+Any deviation from normal function displayed by the patient and recorded in the record should be included. Of particular interest are those limitations that would interfere with self-care or the medical therapeutic process in any way. In addition, a note of normal function, an improvement, or a change in functioning status may be included.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:10389 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.14"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="47420-5" </tt><i>Functional status assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7921)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7922)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7923)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14414, CONF:14415)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusResultOrganizer.dita">Functional Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.66</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14416, CONF:14417)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CognitiveStatusResultOrganizer.dita">Cognitive Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.75</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14418, CONF:14419)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusResultObservation.dita">Functional Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.67</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14420, CONF:14421)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CognitiveStatusResultObservation.dita">Cognitive Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.74</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14422, CONF:14423)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusProblemObservation.dita">Functional Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.68</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14424, CONF:14425)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CognitiveStatusProblemObservation.dita">Cognitive Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.73</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14426, CONF:14427)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CaregiverCharacteristics.dita">Caregiver Characteristics</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.72</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14580, CONF:14581)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AssessmentScaleObservation.dita">Assessment Scale Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.69</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14582, CONF:14583)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NonMedicinalSupplyActivity.dita">Non Medicinal Supply Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.50</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:16777, CONF:16778)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PressureUlcerObservation.dita">Pressure Ulcer Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.70</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:16779, CONF:16780)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfPressureUlcersObservation.dita">Number Of Pressure Ulcers Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.76</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:16781, CONF:16782)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HighestPressureUlcerStage.dita">Highest Pressure Ulcer Stage</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.77</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="47420-5" </tt><i>Functional status assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7921)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7922)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7923)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14414, CONF:14415)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusResultOrganizer.dita">Functional Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.66</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14416, CONF:14417)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CognitiveStatusResultOrganizer.dita">Cognitive Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.75</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14418, CONF:14419)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusResultObservation.dita">Functional Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.67</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14420, CONF:14421)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CognitiveStatusResultObservation.dita">Cognitive Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.74</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14422, CONF:14423)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusProblemObservation.dita">Functional Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.68</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14424, CONF:14425)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CognitiveStatusProblemObservation.dita">Cognitive Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.73</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14426, CONF:14427)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CaregiverCharacteristics.dita">Caregiver Characteristics</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.72</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14580, CONF:14581)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AssessmentScaleObservation.dita">Assessment Scale Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.69</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14582, CONF:14583)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NonMedicinalSupplyActivity.dita">Non Medicinal Supply Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.50</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:16777, CONF:16778)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PressureUlcerObservation.dita">Pressure Ulcer Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.70</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:16779, CONF:16780)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfPressureUlcersObservation.dita">Number Of Pressure Ulcers Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.76</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:16781, CONF:16782)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HighestPressureUlcerStage.dita">Highest Pressure Ulcer Stage</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.77</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::FunctionalStatusSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:7921</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7922</entry><entry> </entry></row> 
+<row><entry>assessmentScaleObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>AssessmentScaleObservation</entry><entry>CONF:14580CONF:14581</entry><entry> </entry></row> 
+<row><entry>caregiverCharacteristics</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CaregiverCharacteristics</entry><entry>CONF:14426CONF:14427</entry><entry> </entry></row> 
+<row><entry>cognitiveStatusProblemObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CognitiveStatusProblemObservation</entry><entry>CONF:14424CONF:14425</entry><entry> </entry></row> 
+<row><entry>cognitiveStatusResultObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CognitiveStatusResultObservation</entry><entry>CONF:14420CONF:14421</entry><entry> </entry></row> 
+<row><entry>cognitiveStatusResultOrganizer</entry><entry>cda:entry/cda:organizer</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CognitiveStatusResultOrganizer</entry><entry>CONF:14416CONF:14417</entry><entry> </entry></row> 
+<row><entry>functionalStatusProblemObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>FunctionalStatusProblemObservation</entry><entry>CONF:14422CONF:14423</entry><entry> </entry></row> 
+<row><entry>functionalStatusResultObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>FunctionalStatusResultObservation</entry><entry>CONF:14418CONF:14419</entry><entry> </entry></row> 
+<row><entry>functionalStatusResultOrganizer</entry><entry>cda:entry/cda:organizer</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>FunctionalStatusResultOrganizer</entry><entry>CONF:14414CONF:14415</entry><entry> </entry></row> 
+<row><entry>functionalStatusSection</entry><entry>functionalStatusSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>FunctionalStatusSection</entry><entry>CONF:9562</entry><entry> </entry></row> 
+<row><entry>highestPressureUlcerStage</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>HighestPressureUlcerStage</entry><entry>CONF:16781CONF:16782</entry><entry> </entry></row> 
+<row><entry>nonMedicinalSupplyActivity</entry><entry>cda:entry/cda:supply</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>NonMedicinalSupplyActivity</entry><entry>CONF:14582CONF:14583</entry><entry> </entry></row> 
+<row><entry>numberOfPressureUlcersObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>NumberOfPressureUlcersObservation</entry><entry>CONF:16779CONF:16780</entry><entry> </entry></row> 
+<row><entry>pressureUlcerObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PressureUlcerObservation</entry><entry>CONF:16777CONF:16778</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7923</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="603230397"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <organizer>
+      <id root="MDHT" extension="2028931850"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <component>
+        <observation>
+          <id root="MDHT" extension="767801576"/>
+          <code code="1007704749"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <author/>
+          <entryRelationship>
+            <supply/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <referenceRange/>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+  <entry>
+    <organizer>
+      <id root="MDHT" extension="702650438"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <component>
+        <observation>
+          <id root="MDHT" extension="1715758555"/>
+          <code code="441893818"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <author/>
+          <entryRelationship>
+            <supply/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <referenceRange/>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="245908998"/>
+      <code code="267919103"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <author/>
+      <entryRelationship>
+        <supply>
+          <id root="MDHT" extension="1246260319"/>
+          <text>Text Value</text>
+          <effectiveTime value="20130627"/>
+        </supply>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1115153286"/>
+          <code code="1981246432"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <participant/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1584064040"/>
+          <code code="35799049"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <author/>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <referenceRange/>
+        </observation>
+      </entryRelationship>
+      <referenceRange>
+        <observationRange/>
+      </referenceRange>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="1758012617"/>
+      <code code="1062722463"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <author/>
+      <entryRelationship>
+        <supply>
+          <id root="MDHT" extension="949318132"/>
+          <text>Text Value</text>
+          <effectiveTime value="20130627"/>
+        </supply>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1564789357"/>
+          <code code="1965454770"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <participant/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1792576553"/>
+          <code code="2060956795"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <author/>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <referenceRange/>
+        </observation>
+      </entryRelationship>
+      <referenceRange>
+        <observationRange/>
+      </referenceRange>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="982385073"/>
+      <code code="1967384997"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <entryRelationship>
+        <supply>
+          <id root="MDHT" extension="1103249899"/>
+          <text>Text Value</text>
+          <effectiveTime value="20130627"/>
+        </supply>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1536547363"/>
+          <code code="637153598"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <participant/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="968537037"/>
+          <code code="623190518"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <author/>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <referenceRange/>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="1387637806"/>
+      <code code="1826147312"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <entryRelationship>
+        <supply>
+          <id root="MDHT" extension="1832352280"/>
+          <text>Text Value</text>
+          <effectiveTime value="20130627"/>
+        </supply>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1647773208"/>
+          <code code="2055650454"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <participant/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="867930457"/>
+          <code code="1485637170"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+          <author/>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <referenceRange/>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="469649115"/>
+      <code code="1172981762"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <participant>
+        <time>
+          <low value="2013"/>
+          <high value="2013"/>
+        </time>
+        <participantRole/>
+      </participant>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="765409864"/>
+      <code code="2113848719"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <author/>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="686290420"/>
+          <code code="259847537"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <referenceRange>
+        <observationRange/>
+      </referenceRange>
+    </observation>
+  </entry>
+  <entry>
+    <supply>
+      <id root="MDHT" extension="735952764"/>
+      <text>Text Value</text>
+      <effectiveTime value="20130627"/>
+    </supply>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="782465683"/>
+      <code code="856869159"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <entryRelationship typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+          <code code="401238003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Length of Wound"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+          <code code="401239006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Width of Wound"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+          <code code="425094009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Depth of Wound"/>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="788610969"/>
+      <code code="485314946"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <author/>
+      <entryRelationship typeCode="SUBJ">
+        <observation classCode="OBS" moodCode="EVN"/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="1500957525"/>
+      <code code="1543382161"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Functional Status Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.14</tt>]</p>
+</body>
+</topic>

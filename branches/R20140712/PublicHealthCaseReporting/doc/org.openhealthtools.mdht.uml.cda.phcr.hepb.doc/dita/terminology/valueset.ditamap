@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Value Sets">
+<topicref href="PHVS_BloodOrBodyFluidExposureEvent_CDC.dita" type="topic" />
+<topicref href="PHVS_BloodOrBodyFluidExposureFrequency_CDC.dita" type="topic" />
+<topicref href="PHVS_BloodorBodyFluidExposureRelatedProcedure_CDC.dita" type="topic" />
+<topicref href="PHVS_ContactType_HepatitisB.dita" type="topic" />
+<topicref href="PHVS_DiseaseType_AcuteHepatitisB.dita" type="topic" />
+<topicref href="PHVS_DiseaseType_Hepatitis.dita" type="topic" />
+<topicref href="PHVS_DiseaseType_STD.dita" type="topic" />
+<topicref href="PHVS_LabTestResultName_Hepatitis.dita" type="topic" />
+<topicref href="PHVS_ObservationInterpretation_HL7_V3.dita" type="topic" />
+<topicref href="PHVS_SignsSymptoms_AcuteHepatitisB.dita" type="topic" />
+<topicref href="PHVS_SocioBehavioralRiskFactor_CDC.dita" type="topic" />
+<topicref href="PHVS_VaccineAdministered_HepatitisB.dita" type="topic" />
+</map>

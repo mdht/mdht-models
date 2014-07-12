@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Anesthesia Section Sample"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/AnesthesiaSection.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Anesthesia Section Sample</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1"><span class="ph">Anesthesia Section</span> Sample</h1>
+
+	<div class="body">
+		<p class="p">
+			The following XML snippet is a sample for
+			<span class="ph">Anesthesia Section</span>
+		</p>
+
+		<p class="p"/>
+
+		<div class="fig fignone"><span class="figcap">Figure 1. 
+				<span class="ph">Anesthesia Section</span>
+				example
+			</span>
+			
+			<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1369256816"/&gt;
+  &lt;code code="530634976"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;procedure&gt;
+      &lt;id root="MDHT" extension="46452274"/&gt;
+      &lt;code code="277730556"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;specimen&gt;
+        &lt;specimenRole/&gt;
+      &lt;/specimen&gt;
+      &lt;performer&gt;
+        &lt;assignedEntity/&gt;
+      &lt;/performer&gt;
+      &lt;entryRelationship typeCode="COMP" inversionInd="true"&gt;
+        &lt;encounter classCode="ENC" moodCode="EVN"/&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="362529214"/&gt;
+          &lt;code code="1862704157"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;substanceAdministration&gt;
+          &lt;id root="MDHT" extension="1439791688"/&gt;
+          &lt;code code="1123097231"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime value="20130627"/&gt;
+          &lt;consumable/&gt;
+          &lt;performer/&gt;
+          &lt;entryRelationship&gt;
+            &lt;supply/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;act/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;supply/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;precondition/&gt;
+        &lt;/substanceAdministration&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act&gt;
+          &lt;id root="MDHT" extension="997757886"/&gt;
+          &lt;code code="1489286919"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/procedure&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;substanceAdministration&gt;
+      &lt;id root="MDHT" extension="212619412"/&gt;
+      &lt;code code="632827901"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime value="20130627"/&gt;
+      &lt;consumable&gt;
+        &lt;manufacturedProduct/&gt;
+      &lt;/consumable&gt;
+      &lt;performer/&gt;
+      &lt;entryRelationship&gt;
+        &lt;supply&gt;
+          &lt;id root="MDHT" extension="1782504435"/&gt;
+          &lt;code code="2012112954"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime value="20130627"/&gt;
+          &lt;author/&gt;
+          &lt;entryRelationship&gt;
+            &lt;act/&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/supply&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="852052947"/&gt;
+          &lt;code code="1124437027"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;procedure/&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;substanceAdministration/&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act&gt;
+          &lt;id root="MDHT" extension="27440355"/&gt;
+          &lt;code code="1032175829"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="2070937521"/&gt;
+          &lt;code code="417699532"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;supply&gt;
+          &lt;id root="MDHT" extension="1630233574"/&gt;
+          &lt;code code="1822560108"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime value="20130627"/&gt;
+          &lt;performer/&gt;
+          &lt;entryRelationship&gt;
+            &lt;supply/&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/supply&gt;
+      &lt;/entryRelationship&gt;
+      &lt;precondition&gt;
+        &lt;criterion/&gt;
+      &lt;/precondition&gt;
+    &lt;/substanceAdministration&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
+
+		</div>
+
+		<p class="p"/>
+
+	</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../classes/AnesthesiaSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.25]">Anesthesia Section</a></div>
+</div>
+</div>
+
+</body>
+</html>

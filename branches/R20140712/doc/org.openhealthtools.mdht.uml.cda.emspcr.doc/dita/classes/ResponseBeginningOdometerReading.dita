@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Response Beginning Odometer Reading</title>
+<shortdesc conref="generated/_ResponseBeginningOdometerReading.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_ResponseBeginningOdometerReading.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_ResponseBeginningOdometerReading.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_ResponseBeginningOdometerReading.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_ResponseBeginningOdometerReading.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_ResponseBeginningOdometerReading.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="examples"><b>Response Beginning Odometer Reading example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock audience="examples" conref="generated/_ResponseBeginningOdometerReading.dita#classId/example">
+</codeblock>
+</body>
+</topic>

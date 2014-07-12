@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>VALUE SETS</title>
+	<body>
+		<p>The following tables provide information on the vocabulary items provided within the Implementation Guide.  The content
+		 includes both those items used for human clinical and for non-human studies. </p> 
+		 
+		 <p>The value set -
+		Act Type - provides a reference to the act code values used to clarify the semantics of included content.  </p>
+		
+		<p>Value sets will be either centrally controlled or locally created by the study sponsor. Currently, all the centrally
+		controlled value sets are managed within the NCI Enterprise Vocabulary Services.  We are treating the EVS as the code system
+		for all of the relevant codes.  Therefore, for those value sets
+		that have the NCI Thesaurus listed as the code system, and NCI EVS listed as the source, it is expected that NCI concept codes
+		 will be provided in document instances. These values sets will be both maintained and distributed by NCI.  
+		  NCI EVS will provide a file for the Subject Data 
+ Report user community to be located at: 
+  <xref href="http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda."/></p>
+  
+  <p>The locally defined value sets draw are developed by study sponsors, and are drawn from code systems - typically with the same name
+  as the value set - created and maintained by the study sponsor.  It is expected that protocol submissions using the Study Design Structured
+  Document specification will provide a listing of the relevant value sets.</p>
+	</body>
+	
+</topic>

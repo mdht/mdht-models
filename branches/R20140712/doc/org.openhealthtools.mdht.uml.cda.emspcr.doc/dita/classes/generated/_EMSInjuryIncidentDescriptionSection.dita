@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Injury Incident Description Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.17</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.17"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>Observations concerning a patient's injury mechanism</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.17"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67800-3" </tt><i>EMS injury incident description Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10094)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Injury Incident Description Section" (CONF:10914)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10916)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10917)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryCauseCategory.dita">Injury Cause Category</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.50</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10919)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryMechanism.dita">Injury Mechanism</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.51</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10921)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TraumaCenterCriteria.dita">Trauma Center Criteria</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.52</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10923)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryRiskFactor.dita">Injury Risk Factor</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.53</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10925)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VehicleImpactArea.dita">Vehicle Impact Area</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.54</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10927)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientLocationInVehicle.dita">Patient Location In Vehicle</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.55</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10929)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VehicleOccupantSafetyEquipment.dita">Vehicle Occupant Safety Equipment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.56</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10931)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AirbagDeploymentStatus.dita">Airbag Deployment Status</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.57</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10933)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HeightOfFall.dita">Height Of Fall</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.58</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10935)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DisasterType.dita">Disaster Type</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.59</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67800-3" </tt><i>EMS injury incident description Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10094)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Injury Incident Description Section" (CONF:10914)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10916)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10917)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryCauseCategory.dita">Injury Cause Category</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.50</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10919)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryMechanism.dita">Injury Mechanism</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.51</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10921)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TraumaCenterCriteria.dita">Trauma Center Criteria</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.52</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10923)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InjuryRiskFactor.dita">Injury Risk Factor</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.53</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10925)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VehicleImpactArea.dita">Vehicle Impact Area</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.54</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10927)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientLocationInVehicle.dita">Patient Location In Vehicle</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.55</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10929)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VehicleOccupantSafetyEquipment.dita">Vehicle Occupant Safety Equipment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.56</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10931)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AirbagDeploymentStatus.dita">Airbag Deployment Status</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.57</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10933)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HeightOfFall.dita">Height Of Fall</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.58</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10935)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DisasterType.dita">Disaster Type</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.59</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSInjuryIncidentDescriptionSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.17]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10094</entry><entry>LOINC 2.16.840.1.113883.6.1 67800-3</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10914</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>airbagDeploymentStatus</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.57]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>AirbagDeploymentStatus</entry><entry>CONF:10931</entry><entry> </entry></row> 
+<row><entry>disasterType</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.59]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DisasterType</entry><entry>CONF:10935</entry><entry> </entry></row> 
+<row><entry>heightOfFall</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.58]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>HeightOfFall</entry><entry>CONF:10933</entry><entry> </entry></row> 
+<row><entry>injuryCauseCategory</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.50]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InjuryCauseCategory</entry><entry>CONF:10917</entry><entry> </entry></row> 
+<row><entry>injuryIncidentDescriptionSection</entry><entry>injuryIncidentDescriptionSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSInjuryIncidentDescriptionSection</entry><entry>CONF:10869</entry><entry> </entry></row> 
+<row><entry>injuryMechanism</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.51]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InjuryMechanism</entry><entry>CONF:10919</entry><entry> </entry></row> 
+<row><entry>injuryRiskFactor</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.53]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InjuryRiskFactor</entry><entry>CONF:10923</entry><entry> </entry></row> 
+<row><entry>patientLocationInVehicle</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.55]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PatientLocationInVehicle</entry><entry>CONF:10927</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10916</entry><entry> </entry></row> 
+<row><entry>traumaCenterCriteria</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.52]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TraumaCenterCriteria</entry><entry>CONF:10921</entry><entry> </entry></row> 
+<row><entry>vehicleImpactArea</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.54]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>VehicleImpactArea</entry><entry>CONF:10925</entry><entry> </entry></row> 
+<row><entry>vehicleOccupantSafetyEquipment</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.56]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>VehicleOccupantSafetyEquipment</entry><entry>CONF:10929</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.17"/>
+  <id root="MDHT" extension="2140229"/>
+  <code code="67800-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS injury incident description Narrative NEMSIS"/>
+  <title>Injury Incident Description Section</title>
+  <text/>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.50"/>
+      <id root="MDHT" extension="848335286"/>
+      <code code="69543-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of injury NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.51"/>
+      <id root="MDHT" extension="612363222"/>
+      <code code="67494-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="General mechanism of the forces which caused the injury NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.52"/>
+      <id root="MDHT" extension="2035467854"/>
+      <code code="67495-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CDC field triage criteria NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.53"/>
+      <id root="MDHT" extension="1234703335"/>
+      <code code="67496-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other injury risk factors NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.54"/>
+      <id root="MDHT" extension="428759111"/>
+      <code code="67497-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of impact on the vehicle NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.55"/>
+      <id root="MDHT" extension="124704502"/>
+      <code code="67498-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of patient in vehicle NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.56"/>
+      <id root="MDHT" extension="192845090"/>
+      <code code="67499-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Safety equipment NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.57"/>
+      <id root="MDHT" extension="1114883664"/>
+      <code code="67500-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Airbag deployment NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.58"/>
+      <id root="MDHT" extension="1911987092"/>
+      <code code="67501-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height of fall NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.59"/>
+      <id root="MDHT" extension="1219264145"/>
+      <code code="69463-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Suspected intentional or unintentional disaster NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Injury Incident Description Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.17</tt>]</p>
+</body>
+</topic>

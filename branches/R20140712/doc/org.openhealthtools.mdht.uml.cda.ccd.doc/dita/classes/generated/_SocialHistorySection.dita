@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Social History Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.1.15</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.15"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p>
+    This section contains data defining the patient's occupational, personal (e.g. lifestyle), social, and
+    environmental history and health risk factors, as well as administrative data such as marital status, race, ethnicity
+    and religious affiliation. Social history can have significant influence on a patient's physical, psychological and
+    emotional health and wellbeing so should be considered in the development of a complete record.
+</p>
+
+<p>
+The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnicity, nationality, and religious preferences' in the Social History section. CDA R2 differentiates between administrative data and clinical observations, supporting the former in the CDA Header and the latter in the CDA Body. As a result, it is necessary at times to populate attributes in the CDA Header, and to provide richer clinical details in the CDA Body.
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF-232 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.15"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-233, CONF-234)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-235)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SocialHistoryObservation.dita">Social History Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.33</tt>)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'social history'. (CONF-236)</li>
+<li>Marital status <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / maritalStatusCode. Additional information <b>MAY</b> be represented as social history observations (CONF-250)</li>
+<li>Religious affiliation <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / religiousAffiliationCode. Additional information <b>MAY</b> be represented as social history observations (CONF-251)</li>
+<li>A patients race <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / raceCode. Additional information <b>MAY</b> be represented as social history observations (CONF-252)</li>
+<li>The value for ClinicalDocument / recordTarget / patientRole / patient / raceCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.104 (Race) (CONF-253)</li>
+<li>A patients ethnicity <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode. Additional information <b>MAY</b> be represented as social history observations. (CONF-254)</li>
+<li>The value for ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.50 (Ethnicity). (CONF-255)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-233, CONF-234)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-235)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SocialHistoryObservation.dita">Social History Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.33</tt>)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'social history'. (CONF-236)</li>
+<li>Marital status <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / maritalStatusCode. Additional information <b>MAY</b> be represented as social history observations (CONF-250)</li>
+<li>Religious affiliation <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / religiousAffiliationCode. Additional information <b>MAY</b> be represented as social history observations (CONF-251)</li>
+<li>A patients race <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / raceCode. Additional information <b>MAY</b> be represented as social history observations (CONF-252)</li>
+<li>The value for ClinicalDocument / recordTarget / patientRole / patient / raceCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.104 (Race) (CONF-253)</li>
+<li>A patients ethnicity <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode. Additional information <b>MAY</b> be represented as social history observations. (CONF-254)</li>
+<li>The value for ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.50 (Ethnicity). (CONF-255)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::SocialHistorySection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF-233CONF-234</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF-235</entry><entry> </entry></row> 
+<row><entry>socialHistoryObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>SocialHistoryObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>socialHistorySection</entry><entry>socialHistorySection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>SocialHistorySection</entry><entry>CONF-232</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="702098738"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="1749523162"/>
+      <code code="1289851433"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1858222687"/>
+          <code code="168041688"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1584649250"/>
+          <code code="2024143485"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Social History Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.1.15</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Assessment Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.26.47</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.26.47"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The section includes assessments, namely Apgar scores, that are recorded for the infant.  A single Apgar score - at 5 minutes after delivery is expected.  A second score - at 10 minutes after birth - is to be provided if the 5 minute score is less than 6.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.47"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:334)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:337)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ApgarAssessmentNCHS.dita">Apgar Assessment (NCHS)</xref> 2.16.840.1.114222.4.11.7210</tt><b> STATIC</b> (CONF:540)
+<ul><li><p><lines><i>A code value that indicates the nature of the observation.   The value is drawn from the Newborn Vital Signs value set.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:339)
+<ul><li><p><lines><i>The measured vital sign amount.  The meaning of the observation is dependent on the value of observation code.  The datatype for assessment value depends on the nature of the assessment.</i></lines></p></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:334)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:337)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ApgarAssessmentNCHS.dita">Apgar Assessment (NCHS)</xref> 2.16.840.1.114222.4.11.7210</tt><b> STATIC</b> (CONF:540)
+<ul><li><p><lines><i>A code value that indicates the nature of the observation.   The value is drawn from the Newborn Vital Signs value set.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:339)
+<ul><li><p><lines><i>The measured vital sign amount.  The meaning of the observation is dependent on the value of observation code.  The datatype for assessment value depends on the nature of the assessment.</i></lines></p></li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Assessment Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.26.47</tt>]</p>
+</body>
+</topic>

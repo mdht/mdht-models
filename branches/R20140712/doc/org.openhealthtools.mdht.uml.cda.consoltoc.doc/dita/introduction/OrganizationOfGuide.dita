@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Organization of This Guide</title>
+	<body>
+		<p>This guide includes a set of CDA Templates, and prescribes their use for a set of specific 
+			document types. The main chapters are:</p>
+		<p><u>Chapter 1. Introduction.</u> This chapter provides a brief introduction and the scope about this document.</p>
+		<p><u>Chapter 2. Document-level Templates.</u>  This chapter defines each of the four document types. 
+			It defines header constraints specific to each and the section-level templates (required) for each.</p> 
+		<p><u>Chapter 3. Section-level Templates.</u> This chapter defines the section templates referenced within the 
+			document types described here. Sections are atomic units, and can be reused by future specifications. 
+			<b><i>All section level templates defined for the document types are referenced from the HL7 CDA Consolidation Guide DSTU (Dec 2011).</i></b></p>
+		<p><u>Chapter 4. Value Sets.</u> This chapter defines the value sets referenced within the ToC CDA document templates.</p>
+	</body>
+</topic>

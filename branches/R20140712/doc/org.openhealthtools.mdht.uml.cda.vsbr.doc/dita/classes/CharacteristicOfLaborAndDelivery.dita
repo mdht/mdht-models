@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Characteristic of Labor and Delivery</title>
+<shortdesc conref="generated/_CharacteristicOfLaborAndDelivery.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_CharacteristicOfLaborAndDelivery.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_CharacteristicOfLaborAndDelivery.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_CharacteristicOfLaborAndDelivery.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_CharacteristicOfLaborAndDelivery.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_CharacteristicOfLaborAndDelivery.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Characteristic of Labor and Delivery example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.18"/>
+									<code code="73813-8" displayName="Characteristics of labor and delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="231064003" displayName="Intrathecal injection of local anesthetic agent" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</observation>
+							</entryRelationship>]]>
+</codeblock>
+</body>
+</topic>

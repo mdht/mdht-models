@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Race Category ValueSet</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Race Category ValueSet - (OID not specified)</entry></row>
+<row><entry>Code System</entry><entry>Race and Ethnicity - CDC - 2.16.840.1.113883.6.238</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>1002-5</entry><entry>Race and Ethnicity - CDC</entry><entry>American Indian or Alaska Native</entry></row>
+<row><entry>2028-9</entry><entry>Race and Ethnicity - CDC</entry><entry>Asian</entry></row>
+<row><entry>2076-8</entry><entry>Race and Ethnicity - CDC</entry><entry>Native Hawaiian or Other Pacific Islander</entry></row>
+<row><entry>2106-3</entry><entry>Race and Ethnicity - CDC</entry><entry>White</entry></row>
+<row><entry>2054-5</entry><entry>Race and Ethnicity - CDC</entry><entry>Black or African American</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

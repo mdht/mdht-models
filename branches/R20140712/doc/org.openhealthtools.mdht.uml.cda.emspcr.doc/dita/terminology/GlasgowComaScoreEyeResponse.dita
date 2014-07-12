@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Glasgow Coma Score Eye Response</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.99"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>GlasgowComaScoreEyeResponse - 2.16.840.1.113883.17.3.11.99</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Patient's ocular response to stimulation</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA17798-2</entry><entry>LOINC</entry><entry>No eye movement when assessed</entry></row>
+<row><entry>LA9345-5</entry><entry>LOINC</entry><entry>Opens eyes in response to painful stimulation</entry></row>
+<row><entry>LA9346-3</entry><entry>LOINC</entry><entry>Opens eyes in response to verbal stimulation</entry></row>
+<row><entry>LA9347-1</entry><entry>LOINC</entry><entry>Opens eyes spontaneously</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

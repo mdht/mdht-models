@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Body Site</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.3.88.12.3221.8.9"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Body Site - 2.16.840.1.113883.3.88.12.3221.8.9</entry></row>
+<row><entry>Source</entry><entry>PHIN VADS</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.113883.3.88.12.3221.8.9</entry></row>
+<row><entry>Definition</entry><entry>Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy.</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

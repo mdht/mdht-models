@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Maternal Morbidity</title>
+<shortdesc conref="generated/_MaternalMorbidity.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_MaternalMorbidity.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_MaternalMorbidity.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_MaternalMorbidity.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_MaternalMorbidity.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_MaternalMorbidity.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Maternal Morbidity example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.34"/>
+									<code code="73781-7" displayName="Maternal morbidity" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="260413007" displayName="None" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</observation>
+							</entryRelationship>]]>
+</codeblock>
+</body>
+</topic>

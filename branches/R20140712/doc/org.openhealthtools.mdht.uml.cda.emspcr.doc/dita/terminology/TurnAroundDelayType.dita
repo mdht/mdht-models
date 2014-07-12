@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Turn Around Delay Type</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.54"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>TurnAroundDelayType - 2.16.840.1.113883.17.3.11.54</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Kind of circumstance delaying EMS readiness after an incident</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA17059-9</entry><entry>LOINC</entry><entry>Other (not listed)</entry></row>
+<row><entry>LA17587-9</entry><entry>LOINC</entry><entry>Distance</entry></row>
+<row><entry>LA17590-3</entry><entry>LOINC</entry><entry>Staff delay</entry></row>
+<row><entry>LA17592-9</entry><entry>LOINC</entry><entry>Vehicle crash involving this unit</entry></row>
+<row><entry>LA17593-7</entry><entry>LOINC</entry><entry>Vehicle failure of this unit</entry></row>
+<row><entry>LA17594-5</entry><entry>LOINC</entry><entry>Weather</entry></row>
+<row><entry>LA17598-6</entry><entry>LOINC</entry><entry>Clean-up</entry></row>
+<row><entry>LA17599-4</entry><entry>LOINC</entry><entry>Decontamination</entry></row>
+<row><entry>LA17600-0</entry><entry>LOINC</entry><entry>Documentation</entry></row>
+<row><entry>LA17601-8</entry><entry>LOINC</entry><entry>ED overcrowding/transfer of care</entry></row>
+<row><entry>LA17602-6</entry><entry>LOINC</entry><entry>Equipment/supply replenishment</entry></row>
+<row><entry>LA17603-4</entry><entry>LOINC</entry><entry>Transport unavailable</entry></row>
+<row><entry>LA18081-2</entry><entry>LOINC</entry><entry>None/no delay</entry></row>
+<row><entry>LA18270-1</entry><entry>LOINC</entry><entry>Rendezvous transport unavailable</entry></row>
+<row><entry>LA18271-9</entry><entry>LOINC</entry><entry>Route obstruction (e.g., train)</entry></row>
+<row><entry>LA7497-6</entry><entry>LOINC</entry><entry>Equipment failure</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Clinical Office Visit Summary"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Relation" scheme="URI" content="../content/DocumentTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Clinical Office Visit Summary</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Note</b> This Implementation Guide is an extension of Consolidated Implementation Guide to support Meaning Use Stage 2, Final Rule Certification. The same guide used by NIST for certification.</p>
+</div>
+
+<h1 class="title topictitle1">Clinical Office Visit Summary</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">MU2 170.314(e)(2) Clinical Summary</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.1.1"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="GeneralHeaderConstraints.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]">General Header Constraints</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemSection.html">Consol Problem Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.5.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AllergiesSection.html">Consol Allergies Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.6.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ResultsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.3.1]">Results Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.3.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProceduresSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.7.1]">Procedures Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.7.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ImmunizationsSection.html">Consol Immunizations Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.2.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/InstructionsSection.html">Consol Instructions Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.45</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="SocialHistorySection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.17]">Social History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.17</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationsAdministeredSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.38]">Medications Administered Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.38</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> have one Reason for Visit Section (TemplateID = 2.16.840.1.113883.10.20.22.2.12)
+or Chief Complaint Section (TemplateID = 1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1)
+or Chief Complaint and Reason for Visit Section (2.16.840.1.113883.10.20.22.2.13)
+or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) 
+or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Shall have one documentationOf/serviceEvent/effectiveTime
+or componentOf/encompassingEncounter/effectiveTime
+or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) 
+or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Shall have componentOf/encompassingEncounter/location
+or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) 
+or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> have at least one documentationOf/serviceEvent/performer/assignedEntity including
+a documentationOf/serviceEvent/performer/assignedEntity/assignedPerson/name
+and documentationOf/serviceEvent/performer/assignedEntity/telecom
+and documentationOf/serviceEvent/performer/assignedEntity/addr
+
+OR at least one componentOf/encompassingEncounter/responsibleParty including
+a componentOf/encompassingEncounter/responsibleParty/assignedEntity/assignedPerson/name
+and componentOf/encompassingEncounter/responsibleParty/assignedEntity/telecom
+and componentOf/encompassingEncounter/responsibleParty/assignedEntity/addr
+
+OR at least one componentOf/encompassingEncounter/encounterParticipant including
+a componentOf/encompassingEncounter/encounterParticipant/assignedEntity/assignedPerson/name
+and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/telecom
+and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> have one Vital Signs Section with entries optional (TemplateID = 2.16.840.1.113883.10.20.22.2.4)
+or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.4.1)</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Clinical Office Visit Summary example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;id root="MDHT" extension="1077244209"/&gt;
+  &lt;code code="390841696"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode code="1622445143"/&gt;
+  &lt;setId root="MDHT" extension="68e42d22-0e44-4a33-b18b-208a64df00cf"/&gt;
+  &lt;versionNumber value="1"/&gt;
+  &lt;recordTarget&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;patientRole/&gt;
+  &lt;/recordTarget&gt;
+  &lt;author&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;time/&gt;
+    &lt;assignedAuthor/&gt;
+  &lt;/author&gt;
+  &lt;custodian/&gt;
+  &lt;component&gt;
+    &lt;structuredBody&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1636506093"/&gt;
+          &lt;code code="1707460128"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="170942048"/&gt;
+          &lt;entry&gt;
+            &lt;organizer&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1234532359"/&gt;
+              &lt;code code="1058325139"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;component&gt;
+                &lt;observation/&gt;
+              &lt;/component&gt;
+            &lt;/organizer&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1489742142"/&gt;
+          &lt;code code="1313507807"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1506759290"/&gt;
+          &lt;entry&gt;
+            &lt;procedure&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="566155645"/&gt;
+              &lt;code code="2015959858"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/procedure&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="401503842"/&gt;
+          &lt;code code="1663119613"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="166460063"/&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1309122455"/&gt;
+              &lt;code code="637995732"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1592157542"/&gt;
+          &lt;code code="1506070402"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="274830342"/&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM"/&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+    &lt;/structuredBody&gt;
+  &lt;/component&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/DocumentTemplates.html">DOCUMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

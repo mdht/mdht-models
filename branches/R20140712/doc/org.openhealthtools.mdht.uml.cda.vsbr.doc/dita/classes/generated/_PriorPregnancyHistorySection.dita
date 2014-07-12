@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Prior Pregnancy History Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.26.12</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.26.12"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The pregnancy history section contains entries describing the patient's prior pregancy history.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.12"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:368)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:370)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:369)<tt><b>/@code</b>="57073-9" </tt><i>Prenatal events</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:515)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:371)
+<ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:372)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DateOfLastLiveBirth.dita">Date of Last Live Birth</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.20</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:373)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LastMenstrualPeriodDate.dita">Last Menstrual Period Date</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.33</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:374)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfBirthsNowLiving.dita">Number of Births Now Living</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.36</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:375)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfLiveBirthsNowDead.dita">Number of Live Births Now Dead</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.38</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:376)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OtherPregnancyOutcome.dita">Other Pregnancy Outcome</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.40</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:377)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EstimateOfGestation.dita">Estimate of Gestation</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.21</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:368)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:370)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:369)<tt><b>/@code</b>="57073-9" </tt><i>Prenatal events</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:515)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:371)
+<ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:372)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DateOfLastLiveBirth.dita">Date of Last Live Birth</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.20</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:373)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LastMenstrualPeriodDate.dita">Last Menstrual Period Date</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.33</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:374)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfBirthsNowLiving.dita">Number of Births Now Living</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.36</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:375)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfLiveBirthsNowDead.dita">Number of Live Births Now Dead</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.38</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:376)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OtherPregnancyOutcome.dita">Other Pregnancy Outcome</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.40</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:377)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EstimateOfGestation.dita">Estimate of Gestation</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.21</tt>)</li></ol></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Prior Pregnancy History Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.26.12</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Social History Observation"/>
+<meta name="abstract" content="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.13.4]"/>
+<meta name="description" content="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.13.4]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Social History Observation</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Social History Observation</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.13.4</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="SimpleObservation.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.13]">Simple Observation</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.13</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistoryObservation.html">CCD Social History Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.33</tt>)</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt>
+<ul class="ul"><li class="li"><p class="p">
+The data type to use for each observation should be drawn from the table below.
+Observations in the table above using the PQ data type have a unit in the form {xxx}/d,
+{xxx}/wk or {xxx}/a represent the number of items per day, week or year respectively. The value attribute indicates the number of times of the act performed, and the units represent the
+frequency.
+</p>
+
+
+<p class="p">
+229819007 Smoking  PQ  {pack}/d or {pack}/wk or {pack}/a
+256235009 Exercise PQ {times}/wk
+160573003 ETOH (Alcohol) Use PQ {drink}/d or {drink}/wk
+364393001 Diet  CD  N/A
+364703007 Employment CD  N/A
+425400000 Toxic Exposure CD  N/A
+363908000 Drug Use CD  N/A
+228272008 Other Social History ANY N/A
+</p>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The &lt;repeatNumber&gt; element should not be used in a social history observation<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.repeatNumber-&gt;size() = 0</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The &lt;interpretationCode&gt; element should not be used in
+a social history observation<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.interpretationCode-&gt;size() = 0</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The &lt;methodCode&gt; element should not be used in
+a social history observation<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.methodCode-&gt;size() = 0</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The targetSiteCode element should not be used in
+a social history observation<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.targetSiteCode-&gt;size() = 0</pre>
+</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+
+<p class="p"> </p>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Social History Observation example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.33"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.4"/&gt;
+  &lt;id root="34992105"/&gt;
+  &lt;code code="471370117"/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+&lt;/observation&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

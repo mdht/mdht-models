@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Operative Note"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.7]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.7]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Operative Note</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1">
+		<span class="ph">Operative Note</span>
+	</h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.1.7</tt>]</p>
+
+		
+		<div class="section">
+<div class="p"><p class="lines"><em class="ph i">The Operative Note Fluids section may be used to record fluids administered during the surgical procedure.</em></p>
+</div>
+
+</div>
+
+
+		<div class="section"><h2 class="title sectiontitle"><span class="ph">Operative Note</span> Header Constraints</h2>
+			
+		</div>
+
+
+
+		<div class="section"><h2 class="title sectiontitle">
+				<span class="ph">Operative Note</span> Body Constraints	</h2>
+			
+				<div class="p">
+				<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:8483, CONF:10048 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.1.7"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="GeneralHeaderConstraints.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]">General Header Constraints</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>) (CONF:9914, CONF:10047)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:17187), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/SurgicalOperationNoteDocumentTypeCode.html">SurgicalOperationNoteDocumentTypeCode</a> 2.16.840.1.113883.11.20.1.1</tt><strong class="ph b"> DYNAMIC</strong> (CONF:17188)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">documentationOf</strong></tt> (CONF:8486) <ol class="ol" type="a"><li class="li"> Such documentationOfs <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">serviceEvent</strong></tt> (CONF:8493) <ol class="ol" type="i"><li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:8489) <div class="p"><p class="lines"><em class="ph i">The performer represents clinicians who actually and principally carry out the serviceEvent.  Typically, these are clinicians who have surgical privileges in their institutions such as Surgeons, Obstetrician/Gynecologists, and Family Practice Physicians.  The performer may also be Nonphysician Providers (NPP) who have surgical privileges. There may be more than one primary performer in the case of complicated surgeries.  There are occasionally co-surgeons.  Usually they will be billing separately and will each dictate their own notes.  An example may be spinal surgery , where a general surgeon and an orthopaedic surgeon both are present and billing off the same Current Procedural Terminology (CPT) codes.  Typically two Operative Notes are generated; however, each will list the other as a co-surgeon.</em></p>
+</div>
+<ol class="ol"><li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="PPRF" </tt> (CONF:8495)</li>
+<li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:10917) <ol class="ol" type="a"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:8490, CONF:8491), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProviderType.html">ProviderType</a> 2.16.840.1.113883.3.88.12.3221.4</tt><strong class="ph b"> DYNAMIC</strong></li>
+</ol>
+ </li>
+</ol>
+ <div class="p"><p class="lines"><em class="ph i">The performer represents clinicians who actually and principally carry out the serviceEvent.  Typically, these are clinicians who have surgical privileges in their institutions such as Surgeons, Obstetrician/Gynecologists, and Family Practice Physicians.  The performer may also be Nonphysician Providers (NPP) who have surgical privileges. There may be more than one primary performer in the case of complicated surgeries.  There are occasionally co-surgeons.  Usually they will be billing separately and will each dictate their own notes.  An example may be spinal surgery , where a general surgeon and an orthopaedic surgeon both are present and billing off the same Current Procedural Terminology (CPT) codes.  Typically two Operative Notes are generated; however, each will list the other as a co-surgeon.</em></p>
+</div>
+</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (i., CONF:8487)</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:8494)</li>
+<li class="li"> This serviceEvent i. The value of Clinical Document /documentationOf/serviceEvent/code <strong class="ph b">SHALL</strong> be from ICD9 CM Procedures (CodeSystem 2.16.840.1.113883.6.104), CPT-4 (CodeSystem 2.16.840.1.113883.6.12), or values descending from 71388002 (Procedure) from the SNOMED CT (CodeSystem 2.16.840.1.113883.6.96) ValueSet Procedure 2.16.840.1.113883.3.88.12.80.28 DYNAMIC. (CONF:8487)</li>
+<li class="li"> This serviceEvent The serviceEvent/effectiveTime <strong class="ph b">SHALL</strong> be present with effectiveTime/low (CONF:8488)</li>
+<li class="li"> This serviceEvent If a width is not present, the serviceEvent/effectiveTime <strong class="ph b">SHALL</strong> include effectiveTime/high. (CONF:10058)</li>
+<li class="li"> This serviceEvent When only the date and the length of the procedure are known a width element <strong class="ph b">SHALL</strong> be present and the serviceEvent/effectiveTime/high <strong class="ph b">SHALL</strong> not be present. (CONF:10060)</li>
+<li class="li"> This serviceEvent Any assistants <strong class="ph b">SHALL</strong> be identified and <strong class="ph b">SHALL</strong> be identified as secondary performers (SPRF)</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9883)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AnesthesiaSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.25]">Anesthesia Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.25</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9885)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ComplicationsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.37]">Complications Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.37</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9913)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PostoperativeDiagnosisSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.35]">Postoperative Diagnosis Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.35</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9888)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PreoperativeDiagnosisSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.34]">Preoperative Diagnosis Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.34</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9890)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureEstimatedBloodLossSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.18.2.9]">Procedure Estimated Blood Loss Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.18.2.9</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9892)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureFindingsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.28]">Procedure Findings Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.28</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9894)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureSpecimensTakenSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.31]">Procedure Specimens Taken Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.31</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9896)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureDescriptionSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.27]">Procedure Description Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.27</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9898)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureImplantsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.40]">Procedure Implants Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.40</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9900)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="OperativeNoteFluidSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.7.12]">Operative Note Fluid Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.7.12</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9902)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="OperativeNoteSurgicalProcedureSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.7.14]">Operative Note Surgical Procedure Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.7.14</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9904)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PlanOfCareSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.10]">Plan Of Care Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.10</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9906)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PlannedProcedureSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.30]">Planned Procedure Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.30</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9908)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureDispositionSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.18.2.12]">Procedure Disposition Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.18.2.12</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9910)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureIndicationsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.29]">Procedure Indications Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.29</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9912)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="SurgicalDrainsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.7.13]">Surgical Drains Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.7.13</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+				
+				</div>
+
+		</div>
+
+
+
+		<div class="section"><h2 class="title sectiontitle"><span class="ph">Operative Note</span> Example</h2>
+			
+			<div class="p">
+			<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;id root="MDHT" extension="2039487761"/&gt;
+  &lt;code code="218427040"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode code="1654694806"/&gt;
+  &lt;setId root="MDHT" extension="054fb651-2ab9-43fa-ba8a-f516fcea0c27"/&gt;
+  &lt;versionNumber value="1"/&gt;
+  &lt;recordTarget&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;patientRole/&gt;
+  &lt;/recordTarget&gt;
+  &lt;author&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;time/&gt;
+    &lt;assignedAuthor/&gt;
+  &lt;/author&gt;
+  &lt;custodian/&gt;
+  &lt;documentationOf&gt;
+    &lt;serviceEvent&gt;
+      &lt;code code="1771019455"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;performer typeCode="PPRF"/&gt;
+    &lt;/serviceEvent&gt;
+  &lt;/documentationOf&gt;
+  &lt;component&gt;
+    &lt;structuredBody&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="574861437"/&gt;
+          &lt;code code="1467658955"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="739968957"/&gt;
+          &lt;entry&gt;
+            &lt;procedure&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="836508182"/&gt;
+              &lt;code code="1263850359"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;specimen/&gt;
+              &lt;performer/&gt;
+              &lt;entryRelationship typeCode="COMP" inversionInd="true"/&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;substanceAdministration classCode="SBADM"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;act/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/procedure&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="2105790990"/&gt;
+              &lt;code code="2128961070"/&gt;
+              &lt;effectiveTime value="20130627"/&gt;
+              &lt;consumable/&gt;
+              &lt;performer/&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;act/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;precondition/&gt;
+            &lt;/substanceAdministration&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1982571603"/&gt;
+          &lt;code code="929829417"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1312290176"/&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1550084836"/&gt;
+              &lt;code code="1405678025"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="603289480"/&gt;
+          &lt;code code="1055564406"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="312341784"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="100671312"/&gt;
+          &lt;code code="509898435"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1417077862"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="897830349"/&gt;
+              &lt;code code="1811649884"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1807649295"/&gt;
+          &lt;code code="755584944"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="109672256"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="144469222"/&gt;
+          &lt;code code="1300436445"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1263082895"/&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1878992763"/&gt;
+              &lt;code code="2110145450"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="622240102"/&gt;
+          &lt;code code="1065168568"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="822055844"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="211560550"/&gt;
+          &lt;code code="548840264"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1313507040"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1868631379"/&gt;
+          &lt;code code="361633166"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1451905321"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1933484853"/&gt;
+          &lt;code code="228963609"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1836607186"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1929239217"/&gt;
+          &lt;code code="996116134"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1147362382"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="2025120712"/&gt;
+          &lt;code code="1301167590"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="198412724"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="310673927"/&gt;
+              &lt;code code="197655244"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;encounter&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1699227492"/&gt;
+              &lt;code code="1980372407"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/encounter&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="2004207245"/&gt;
+              &lt;code code="316858127"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;procedure&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1617543065"/&gt;
+              &lt;code code="1987161381"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/procedure&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1897297446"/&gt;
+              &lt;code code="89505602"/&gt;
+              &lt;effectiveTime value="20130627"/&gt;
+              &lt;consumable/&gt;
+            &lt;/substanceAdministration&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;supply classCode="SPLY"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1979235282"/&gt;
+              &lt;code code="143914593"/&gt;
+              &lt;effectiveTime value="20130627"/&gt;
+            &lt;/supply&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1227199110"/&gt;
+              &lt;code code="1978084853"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="873821187"/&gt;
+          &lt;code code="988190347"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="418972070"/&gt;
+          &lt;entry&gt;
+            &lt;procedure&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1970287535"/&gt;
+              &lt;code code="1194153518"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/procedure&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1246071921"/&gt;
+          &lt;code code="175887151"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="208210186"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="474826187"/&gt;
+          &lt;code code="1049032143"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="106574143"/&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="187941282"/&gt;
+              &lt;code code="1795542594"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2013"/&gt;
+                &lt;high value="2013"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="853386811"/&gt;
+          &lt;code code="1982550802"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;confidentialityCode code="1429173706"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+    &lt;/structuredBody&gt;
+  &lt;/component&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+			</div>
+
+		</div>
+	
+	</div>
+
+
+</body>
+</html>

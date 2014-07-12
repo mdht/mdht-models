@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Discharge Summary"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.3.88.11.48.2]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.3.88.11.48.2]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Relation" scheme="URI" content="../content/DocumentTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Discharge Summary</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Discharge Summary</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.48.2</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.3.88.11.48.2"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/MedicalSummary.html">IHE Medical Summary</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.1.2</tt>) (C48-[CT3-1])</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-1])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemListSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.103]">Problem List Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.103</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-2])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdmissionMedicationHistorySection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.113]">Admission Medication History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.113</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-3])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalAdmissionDiagnosisSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.110]">Hospital Admission Diagnosis Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.110</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-4])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectivesSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.116]">Advance Directives Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.116</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-5])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AllergiesReactionsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.102]">Allergies Reactions Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.102</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-6])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="DischargeDiagnosisSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.111]">Discharge Diagnosis Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.111</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-7])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/DischargeDiet.html">IHE Discharge Diet</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.33</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-8])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalDischargeMedicationsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.114]">Hospital Discharge Medications Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.114</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-9])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="DiagnosticResultsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.122]">Diagnostic Results Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.122</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-10])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="FunctionalStatusSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.109]">Functional Status Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.109</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-11])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfPresentIllness.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.107]">History Of Present Illness</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.107</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-12])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalCourseSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.121]">Hospital Course Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.121</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-13])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicalEquipmentSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.128]">Medical Equipment Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.128</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-15])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PhysicalExamSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.118]">Physical Exam Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.118</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-16])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PlanOfCareSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.124]">Plan Of Care Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.124</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-17])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfPastIllnessSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.104]">History Of Past Illness Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.104</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-18])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ReviewOfSystemsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.120]">Review Of Systems Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.120</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-19])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationsAdministeredSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.115]">Medications Administered Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.115</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-20])
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="VitalSignsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.119]">Vital Signs Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.119</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<div class="section"><div class="p">
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d4107e567">hitsp::DischargeSummary</th>
+  </tr>
+  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d4107e572">cda::clinicaldocument[cda:templateId/@root = ]/</th>
+  </tr>
+  <tr class="row"><th class="entry" align="left" valign="top" id="d4107e577">Name</th>
+<th class="entry" align="left" valign="top" id="d4107e579">XPath</th>
+<th class="entry" align="left" valign="top" id="d4107e581">Cardinality</th>
+<th class="entry" align="left" valign="top" id="d4107e583">Severity</th>
+<th class="entry" align="left" valign="top" id="d4107e585">Nullable</th>
+<th class="entry" align="left" valign="top" id="d4107e587">Data Type</th>
+<th class="entry" align="left" valign="top" id="d4107e589">Conformance</th>
+<th class="entry" align="left" valign="top" id="d4107e591">Value(s)</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">activeProblems ( problemListSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">problemListSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">ProblemListSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-1]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">admissionMedications ( admissionMedicationHistorySection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">admissionMedicationHistorySection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHOULD</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">AdmissionMedicationHistorySection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-2]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">admittingDiagnosis ( hospitalAdmissionDiagnosisSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">hospitalAdmissionDiagnosisSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">HospitalAdmissionDiagnosisSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-3]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">advanceDirectives ( advanceDirectivesSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">advanceDirectivesSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">AdvanceDirectivesSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-4]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">allergies ( allergiesReactionsSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">allergiesReactionsSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">AllergiesReactionsSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-5]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">dischargeDiagnosis ( dischargeDiagnosisSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">dischargeDiagnosisSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">DischargeDiagnosisSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-6]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">dischargeDiet</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">dischargeDiet</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">DischargeDiet</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-7]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">dischargeMeds ( hospitalDischargeMedicationsSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">hospitalDischargeMedicationsSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">HospitalDischargeMedicationsSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-8]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">dischargeProceduresTestsAndReports ( diagnosticResultsSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">diagnosticResultsSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">DiagnosticResultsSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-9]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">functionalStatus ( functionalStatusSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">functionalStatusSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">FunctionalStatusSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-10]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">historyOfPresentIllness</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">historyOfPresentIllness</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHOULD</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">HistoryOfPresentIllness</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-11]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">hospitalCourse ( hospitalCourseSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">hospitalCourseSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">HospitalCourseSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-12]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">medicalEquipment ( medicalEquipmentSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">medicalEquipmentSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHOULD</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">MedicalEquipmentSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-13]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">physicalExamination ( physicalExamSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">physicalExamSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">PhysicalExamSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-15]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">planOfCare ( planOfCareSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">planOfCareSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">PlanOfCareSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-16]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">resolvedProblems ( historyOfPastIllnessSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">historyOfPastIllnessSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">HistoryOfPastIllnessSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-17]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">reviewOfSystems ( reviewOfSystemsSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">reviewOfSystemsSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">ReviewOfSystemsSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-18]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">selectedMedicationsAdministered ( medicationsAdministeredSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">medicationsAdministeredSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHOULD</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">MedicationsAdministeredSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-19]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e577 ">vitalSigns ( vitalSignsSection )</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e579 ">vitalSignsSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e581 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e583 ">SHOULD</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e585 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e587 ">VitalSignsSection</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e589 ">C48-[CT2-20]</td>
+<td class="entry" align="left" valign="top" headers="d4107e567 d4107e572 d4107e591 "> </td>
+</tr>
+ 
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<p class="p"> </p>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Discharge Summary example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;id root="MDHT" extension="463305664"/&gt;
+  &lt;code code="1359823927"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode code="1103080507"/&gt;
+  &lt;languageCode code="Code forlanguageCode"/&gt;
+  &lt;recordTarget&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;patientRole/&gt;
+  &lt;/recordTarget&gt;
+  &lt;author&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;time/&gt;
+    &lt;assignedAuthor/&gt;
+  &lt;/author&gt;
+  &lt;custodian/&gt;
+  &lt;component&gt;
+    &lt;structuredBody&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="2086705321"/&gt;
+          &lt;code code="615703875"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="552639841"/&gt;
+              &lt;code code="1363607115"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode code="Code forlanguageCode"/&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="252666966"/&gt;
+          &lt;code code="508267659"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1596285626"/&gt;
+          &lt;code code="53604306"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1221465221"/&gt;
+              &lt;code code="1797477443"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode code="Code forlanguageCode"/&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1963897614"/&gt;
+          &lt;code code="790592606"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1294539177"/&gt;
+              &lt;code code="785029370"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode code="Code forlanguageCode"/&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1139333773"/&gt;
+          &lt;code code="1135530843"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="121105268"/&gt;
+              &lt;code code="2060278325"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode code="Code forlanguageCode"/&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1099244387"/&gt;
+          &lt;code code="531027794"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="474531856"/&gt;
+              &lt;code code="1713536999"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode code="Code forlanguageCode"/&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="989006245"/&gt;
+          &lt;code code="67842718"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="274774369"/&gt;
+              &lt;code code="1925000236"/&gt;
+              &lt;effectiveTime xsi:type="IVL_TS"&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;consumable/&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/substanceAdministration&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="71863390"/&gt;
+          &lt;code code="617208080"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+          &lt;entry&gt;
+            &lt;observation&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="523812532"/&gt;
+              &lt;code code="1142512072"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode code="Code forlanguageCode"/&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;organizer&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="522187267"/&gt;
+              &lt;code code="829387387"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;component&gt;
+                &lt;observation/&gt;
+              &lt;/component&gt;
+            &lt;/organizer&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="476175575"/&gt;
+          &lt;code code="1022120952"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="833806517"/&gt;
+          &lt;code code="28217903"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1938253688"/&gt;
+          &lt;code code="456564837"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1848944326"/&gt;
+          &lt;code code="534226543"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1873542017"/&gt;
+          &lt;code code="277625882"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="2061127625"/&gt;
+              &lt;code code="1606829670"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode code="Code forlanguageCode"/&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="1484696858"/&gt;
+          &lt;code code="1858791388"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="1726930784"/&gt;
+              &lt;code code="428865982"/&gt;
+              &lt;effectiveTime xsi:type="IVL_TS"&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;consumable/&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY"/&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/substanceAdministration&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="524327270"/&gt;
+              &lt;code code="788336209"/&gt;
+              &lt;effectiveTime value="20121102"/&gt;
+              &lt;consumable/&gt;
+            &lt;/substanceAdministration&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;encounter&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="678148565"/&gt;
+              &lt;code code="1694419607"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/encounter&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="424971753"/&gt;
+          &lt;code code="1925217763"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+          &lt;entry&gt;
+            &lt;act&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;id root="MDHT" extension="236631971"/&gt;
+              &lt;code code="55920853"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode code="Code forlanguageCode"/&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation/&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="2015781679"/&gt;
+          &lt;code code="416010380"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="864461373"/&gt;
+          &lt;code code="1485817290"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;id root="MDHT" extension="176085188"/&gt;
+          &lt;code code="1011588017"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;languageCode code="Code forlanguageCode"/&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+    &lt;/structuredBody&gt;
+  &lt;/component&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/DocumentTemplates.html">DOCUMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

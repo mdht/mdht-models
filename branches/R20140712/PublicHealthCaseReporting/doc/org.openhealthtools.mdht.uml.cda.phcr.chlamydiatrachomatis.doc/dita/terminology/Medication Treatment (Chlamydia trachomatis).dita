@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medication Treatment (Chlamydia trachomatis)</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Medication Treatment (Chlamydia trachomatis) - (OID not specified)</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>NewCode</entry><entry>Azithromycin</entry><entry>Unique Ingredient Identifier (UNII)</entry><entry></entry></row>
+<row><entry>NewCode</entry><entry>Doxycycline</entry><entry>Unique Ingredient Identifier (UNII)</entry><entry></entry></row>
+<row><entry>NewCode</entry><entry>Levoflaxacin</entry><entry>Unique Ingredient Identifier (UNII)</entry><entry></entry></row>
+<row><entry>NewCode</entry><entry>Erythromycin</entry><entry>Unique Ingredient Identifier (UNII)</entry><entry></entry></row>
+<row><entry>NewCode</entry><entry>Ofloxacin</entry><entry>Unique Ingredient Identifier (UNII)</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

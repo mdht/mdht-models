@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+	<title><ph
+					conref="generated/_CLASSNAME.dita#classId/classformalname" /></title>
+					
+					<prolog conref="generated/_CLASSNAME.dita#classId/prolog"></prolog>
+					
+	<body>		
+	
+		<section conref="generated/_CLASSNAME.dita#classId/description"></section>
+	
+		<section conref="generated/_NARRATIVECLASSNAME.dita#classId/description"></section>
+
+		<p>
+			<b>Optional Entries</b>
+		</p>
+		
+
+		<p conref="generated/_NARRATIVECLASSNAME.dita#classId/shortdesc" />
+
+		<p>
+			The following constraints apply to a
+			<ph conref="generated/_CLASSNAME.dita#classId/classformalname" />
+			in which entries are not required.
+		</p>
+
+
+		<ol conref="generated/_NARRATIVECLASSNAME.dita#classId/conformance">
+			<li></li>
+		</ol>
+		<p>
+			<b>Required Entries</b>
+		</p>
+		<p>
+			The following constraints apply to a
+			<ph conref="generated/_CLASSNAME.dita#classId/classformalname" />
+			in which entries are required.
+		</p>
+
+		<ol conref="generated/_CLASSNAME.dita#classId/conformance">
+			<li></li>
+		</ol>
+	</body>
+</topic>

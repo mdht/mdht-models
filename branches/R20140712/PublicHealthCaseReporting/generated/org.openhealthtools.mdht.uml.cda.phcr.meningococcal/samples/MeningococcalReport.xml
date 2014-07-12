@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.15"/>
+  <templateId root="2.16.840.1.113883.10.20.15.1.15"/>
+  <id root="052e6afb-1122-46a3-b749-3be1c2162a66"/>
+  <code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Public Health Case Report"/>
+  <title>Public Health Case Report - Meningococcal</title>
+  <effectiveTime value="20100310102500-0500"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id root="1.3.6.1.4.1.19376.1.3.4" extension="214365"/>
+      <addr><streetAddressLine>555 Baker Court</streetAddressLine><city>Claremore</city><state>OK</state><postalCode>73001</postalCode></addr>
+      <telecom value="tel:+1-580-455-6919"/>
+      <patient>
+        <name><family>Smith</family><given>Robert</given></name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7" displayName="Male"/>
+        <birthTime value="20030101102500-0500"/>
+        <raceCode code="2106-3" codeSystem="2.16.840.1.113883.1.11.14914" codeSystemName="Race &amp; Ethnicity - CDC" displayName="White"/>
+        <ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Ethnicity Group" displayName="Not Hispanic or Latino"/>
+        <guardian>
+          <id nullFlavor="UNK"/>
+          <code code="MTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role Code" displayName="Mother"/>
+          <addr><streetAddressLine>555 Baker Court</streetAddressLine><city>Claremore</city><state>OK</state><postalCode>73001</postalCode></addr>
+          <telecom value="tel:+1-580-456-1234"/>
+          <guardianPerson>
+            <name><family>Smith</family><given>Ruby</given></name>
+          </guardianPerson>
+        </guardian>
+        <birthplace>
+          <place>
+            <addr><country>USA</country></addr>
+          </place>
+        </birthplace>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20100310102500-0500"/>
+    <assignedAuthor>
+      <id root="1.3.6.1.4.1.19376.1.3.4" extension="999"/>
+      <addr><streetAddressLine>600 Wellness Way</streetAddressLine><city>Claremore</city><state>OK</state></addr>
+      <telecom value="tel:+1-580-455-6919"/>
+      <assignedPerson>
+        <name><family>Windel</family><given>Albert</given></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="1.3.6.1.4.1.19376.1.3.4" extension="3902"/>
+        <name>Oklahoma State Dept. of Health</name>
+        <telecom value="tel:+1-714-123-1234"/>
+        <addr><city>Oklahoma City</city><state>73002</state></addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator>
+    <time value="20100310102500-0500"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <id root="1.3.6.1.4.1.19376.1.3.4" extension="5555"/>
+      <addr><city>Claremore</city><state>OK</state></addr>
+      <telecom value="tel:+1-580-455-6919"/>
+      <assignedPerson>
+        <name><family>Windel</family><given>Albert</given></name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.15"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.22"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
+          <title>Social History</title>
+          <text><list>
+                        <caption>Meningococcal PHCR Social History Section</caption>
+                        <item>Race - White</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.9"/>
+              <code code="32624-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Race"/>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" code="2106-3" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="White"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.15.2.1"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.59"/>
+          <code code="55752-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical Information"/>
+          <title>Clinical Information</title>
+          <text><list>
+                        <caption>Meningococcal PHCR Clinical Information Section</caption>
+                        <item>Condition - Meningococcal Meningitis</item>
+                        <item>Condition diagnosed 2010/03/10</item>
+                        <item>Diagnosed by Dr Albert Windel</item>
+                        <item>Problem is active</item>
+                        <item>Signs and Symptoms - Patient has Petechial Rash</item>
+                        <item>Signs and Symptoms - Patient has a fever</item>
+                        <item>Patient alive 2010/03/10</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.28"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.54"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.138"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20100310102500-0500"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="192644005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Meningococcal Meningitis"/>
+              <author>
+                <time value="20100310102500-0500"/>
+                <assignedAuthor>
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="999"/>
+                  <addr><city>Claremore</city><state>OK</state></addr>
+                  <telecom value="tel:+1-580-455-6919"/>
+                  <assignedPerson>
+                    <name><family>TRENTON</family><given>BETTY</given></name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <informant>
+                <assignedEntity>
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="999"/>
+                  <assignedPerson>
+                    <name><family>Windel</family><given>Albert</given></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20100310102500-0500"/>
+                  <value xsi:type="CD" code="271813007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Petechial Rash"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20100310102500-0500"/>
+                  <value xsi:type="CD" code="386661006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Fever"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.42"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20100310102500-0500"/>
+              <value xsi:type="CD" code="438949009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Alive"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.15.2.4"/>
+          <code code="55753-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment Information"/>
+          <title>Treatment Information</title>
+          <text><list>
+                        <caption>Treatment Information Section</caption>
+                        <item>Condition ID - 9999</item>
+                        <item>Prescribed Ceftriaxone 350 MG/ML Injectable Solution every 12 hours.</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.15.3.57"/>
+              <code code="133877004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Therapeutic regimen"/>
+              <statusCode code="completed"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="9999"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <value xsi:type="CD" code="192644005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Meningococcal Meningitis"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.55"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="20100310102500-0500"/>
+                  </effectiveTime>
+                  <routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="INTRAVENOUS"/>
+                  <doseQuantity value="2.0"/>
+                  <rateQuantity value="12.0" unit="H"/>
+                  <consumable>
+                    <manufacturedProduct>
+                      <manufacturedMaterial>
+                        <code code="105212|204871" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Ceftriaxone 350 MG/ML Injectable Solution"/>
+                        <name>Rocephin</name>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </consumable>
+                </substanceAdministration>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.2"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text><list>
+                        <caption>Meningococcal PHCR Encounters Section</caption>
+                        <item>Encounter Date 2010/03/10</item>
+                        <item>Encounter Type Inpatient</item>
+                        <item>Encounter source location -  Claremore Regional Hospital, Claremore, OK</item>
+                        <item>Encounter source performer - Dr. Albert Windel</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="111"/>
+              <code code="INP" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActEncounterCode" displayName="Inpatient"/>
+              <effectiveTime value="20100310102500-0500"/>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="123"/>
+                  <addr><streetAddressLine> 600 Wellness Way</streetAddressLine><city>Claremore</city><state>OK</state><streetAddressLine> 600 Wellness Way</streetAddressLine></addr>
+                  <telecom value="tel:+1-580-455-6919"/>
+                  <assignedPerson>
+                    <name><family>WINDEL</family><given>ALBERT</given></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="555"/>
+                  <addr><city>Claremore</city><state>OK</state></addr>
+                  <telecom value="tel:+1-580-455-6919"/>
+                  <playingEntity classCode="PLC">
+                    <name>Claremore Regional Hospital</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.14"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.60"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+          <title>Relevant diagnostic tests and/or laboratory data</title>
+          <text><list>
+                        <caption>Meningococcal PHCR Relevant Diagnostic Section</caption>
+                        <item>Gram Stn CSF for Cerebrospinal fluid cytologic material</item>
+                        <item>Gram Stn CSF result: Gram-negative diplococcus</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.32"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.59"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="123456"/>
+              <code code="14357-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Gram Stn CSF"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20100310102500-0500"/>
+              <specimen>
+                <specimenRole>
+                  <specimenPlayingEntity>
+                    <code code="110969006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Cerebrospinal fluid cytologic material"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <informant>
+                <assignedEntity>
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="27364276"/>
+                  <representedOrganization>
+                    <name>Claremore Regional Hospital Laboratory</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="123456-1"/>
+                  <code code="14357-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Gram Stn CSF"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20100310102500-0500"/>
+                  <value xsi:type="CD" code="83410001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Gram-negative diplococcus"/>
+                  <informant>
+                    <assignedEntity>
+                      <id root="1.3.6.1.4.1.19376.1.3.4" extension="27364276"/>
+                      <representedOrganization>
+                        <name>Claremore Regional Hospital Laboratory</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

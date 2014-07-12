@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Patient Immunocompromised Reason Medical Condition (Coccidioidomycosis)</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Patient Immunocompromised Reason Medical Condition (Coccidioidomycosis) - (OID not specified)</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>19829001</entry><entry>Pulmonary Disease</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>195967001</entry><entry>Asthma</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>87433001</entry><entry>Pulmonary Emphysema</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>86406008</entry><entry>HIV Infection</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>62479008</entry><entry>AIDS</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>161663000</entry><entry>Tissue/Organ Recipient</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>42343007</entry><entry>Congestive Heart Failure</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>22298006</entry><entry>Myocardial Infarction</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>235856003</entry><entry>Liver Disease</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>90708001</entry><entry>Kidney Disease</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>46635009</entry><entry>Diabetes Type I</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>44054006</entry><entry>Diabetes Type II</entry><entry>SNOMEDCT</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

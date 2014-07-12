@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Pressure Ulcer Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.70</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.70"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The pressure ulcer observation contains details about the pressure ulcer such as the stage of the ulcer, location, and dimensions. If the pressure ulcer is a diagnosis, you may find this on the problem list. An example of how this would appear is in the Problem Section.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:14387, CONF:14388 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.70"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:14383)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:14384)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:14385)
+<ul><li><p><lines><i>NegationInd="true" SHALL be used to represent that the problem was not observed</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:14389)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14759)<tt><b>/@code</b>="ASSERTION" </tt><i>Assertion</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:14760)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:14391)
+</li>
+<li>Contains zero or one [0..1] <tt><b>statusCode</b></tt>
+</li>
+<li>Contains zero or one [0..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:14396), where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/PressureUlcerStage.dita">Pressure Ulcer Stage</xref> 2.16.840.1.113883.11.20.9.35</tt><b> DYNAMIC</b>
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>targetSiteCode</b></tt> (CONF:14797), where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/PressurePoint.dita">Pressure Point</xref> 2.16.840.1.113883.11.20.9.36</tt><b> DYNAMIC</b> (CONF:14798)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:14410) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt> (CONF:14411)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:14619) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:14685)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:14686)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14620)<tt><b>/@code</b>="401238003" </tt><i>Length of Wound</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:14621)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:14622)</li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:14601) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt> (CONF:14602)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:14623) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:14687)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:14688)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14624)<tt><b>/@code</b>="401239006" </tt><i>Width of Wound</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:14625)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:14626)</li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:14605) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt> (CONF:14606)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:14627) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:14689)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:14690)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14628)<tt><b>/@code</b>="425094009" </tt><i>Depth of Wound</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:14629)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:14630)</li></ol> </li></ol>
+</li>
+<li>The text, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:14392)</li>
+<li>reference, if present, <b>SHALL</b> contain exactly one [1..1] @value (CONF:15585)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15586)</li>
+<li>value <b>MAY</b> contain zero or one [0..1] @nullFlavor (CONF:14397)</li>
+<li>If the diagnosis is unknown or the SNOMED code is unknown, @nullFlavor <b>SHOULD</b> be 
+UNK.  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be OTH and the other code <b>SHOULD</b> be placed in the translation element (CONF:14398)</li>
+<li>targetSiteCodes <b>MAY</b> contain exactly one [1..1] qualifier (CONF:14799)</li>
+<li>qualifier <b>SHALL</b> contain exactly one [1..1] name (CONF:14800)</li>
+<li>name <b>MAY</b> contain exactly one [1..1] @code="272741003" laterality (CodeSystem: SNOMED-CT 2.16.840.1.113883.6.96) (CONF:14801)</li>
+<li>qualifier <b>SHALL</b> contain exactly one [1..1] value (CONF:14802)</li>
+<li>value <b>SHOULD</b> contain exactly one [1..1] @code, which <b>SHOULD</b> be selected from ValueSet TargetSite Qualifiers  2.16.840.1.113883.11.20.9.37 (CONF:14803)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:14383)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:14384)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:14385)
+<ul><li><p><lines><i>NegationInd="true" SHALL be used to represent that the problem was not observed</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:14389)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14759)<tt><b>/@code</b>="ASSERTION" </tt><i>Assertion</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:14760)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:14391)
+</li>
+<li>Contains zero or one [0..1] <tt><b>statusCode</b></tt>
+</li>
+<li>Contains zero or one [0..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:14396), where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/PressureUlcerStage.dita">Pressure Ulcer Stage</xref> 2.16.840.1.113883.11.20.9.35</tt><b> DYNAMIC</b>
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>targetSiteCode</b></tt> (CONF:14797), where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/PressurePoint.dita">Pressure Point</xref> 2.16.840.1.113883.11.20.9.36</tt><b> DYNAMIC</b> (CONF:14798)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:14410) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt> (CONF:14411)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:14619) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:14685)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:14686)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14620)<tt><b>/@code</b>="401238003" </tt><i>Length of Wound</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:14621)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:14622)</li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:14601) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt> (CONF:14602)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:14623) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:14687)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:14688)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14624)<tt><b>/@code</b>="401239006" </tt><i>Width of Wound</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:14625)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:14626)</li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:14605) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt> (CONF:14606)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:14627) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:14689)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:14690)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14628)<tt><b>/@code</b>="425094009" </tt><i>Depth of Wound</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:14629)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:14630)</li></ol> </li></ol>
+</li>
+<li>The text, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:14392)</li>
+<li>reference, if present, <b>SHALL</b> contain exactly one [1..1] @value (CONF:15585)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15586)</li>
+<li>value <b>MAY</b> contain zero or one [0..1] @nullFlavor (CONF:14397)</li>
+<li>If the diagnosis is unknown or the SNOMED code is unknown, @nullFlavor <b>SHOULD</b> be 
+UNK.  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be OTH and the other code <b>SHOULD</b> be placed in the translation element (CONF:14398)</li>
+<li>targetSiteCodes <b>MAY</b> contain exactly one [1..1] qualifier (CONF:14799)</li>
+<li>qualifier <b>SHALL</b> contain exactly one [1..1] name (CONF:14800)</li>
+<li>name <b>MAY</b> contain exactly one [1..1] @code="272741003" laterality (CodeSystem: SNOMED-CT 2.16.840.1.113883.6.96) (CONF:14801)</li>
+<li>qualifier <b>SHALL</b> contain exactly one [1..1] value (CONF:14802)</li>
+<li>value <b>SHOULD</b> contain exactly one [1..1] @code, which <b>SHOULD</b> be selected from ValueSet TargetSite Qualifiers  2.16.840.1.113883.11.20.9.37 (CONF:14803)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::PressureUlcerObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:14383</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:14384</entry><entry> DEF</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry>MAY</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:14385</entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:14759</entry><entry>HL7ActCode 2.16.840.1.113883.5.4 </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:14389</entry><entry> </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:14797</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ED</entry><entry>CONF:14391</entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>EntryRelationship1</entry><entry>CONF:14410</entry><entry> </entry></row> 
+<row><entry>entryRelationship2</entry><entry>entryRelationship2</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>EntryRelationship2</entry><entry>CONF:14601</entry><entry> </entry></row> 
+<row><entry>entryRelationship3</entry><entry>entryRelationship3</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>EntryRelationship3</entry><entry>CONF:14605</entry><entry> </entry></row> 
+<row><entry>pressureUlcerObservation</entry><entry>pressureUlcerObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PressureUlcerObservation</entry><entry>CONF:16777CONF:16778</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1421335301"/>
+  <code code="1515972609"/>
+  <text>Text Value</text>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="1894936624"/>
+  <targetSiteCode code="1346416174"/>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <code code="401238003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Length of Wound"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <code code="401239006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Width of Wound"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <code code="425094009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Depth of Wound"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </entryRelationship>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Pressure Ulcer Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.70</tt>]</p>
+</body>
+</topic>

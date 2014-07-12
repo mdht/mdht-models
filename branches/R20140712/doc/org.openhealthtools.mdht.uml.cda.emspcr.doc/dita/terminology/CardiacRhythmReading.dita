@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Cardiac Rhythm Reading</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.16"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>CardiacRhythmReading - 2.16.840.1.113883.17.3.11.16</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Kind of rhythm found in a cardiac arrest patient</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA12904-1</entry><entry>LOINC</entry><entry>Artifact</entry></row>
+<row><entry>LA17059-9</entry><entry>LOINC</entry><entry>Other (not listed)</entry></row>
+<row><entry>LA17068-0</entry><entry>LOINC</entry><entry>Asystole</entry></row>
+<row><entry>LA17070-6</entry><entry>LOINC</entry><entry>PEA</entry></row>
+<row><entry>LA17071-4</entry><entry>LOINC</entry><entry>Unknown AED non-shockable rhythm</entry></row>
+<row><entry>LA17072-2</entry><entry>LOINC</entry><entry>Unknown AED shockable rhythm</entry></row>
+<row><entry>LA17073-0</entry><entry>LOINC</entry><entry>Ventricular fibrillation</entry></row>
+<row><entry>LA17074-8</entry><entry>LOINC</entry><entry>Ventricular tachycardia-pulseless</entry></row>
+<row><entry>LA17083-9</entry><entry>LOINC</entry><entry>Agonal/idioventricular</entry></row>
+<row><entry>LA17084-7</entry><entry>LOINC</entry><entry>Atrial fibrillation</entry></row>
+<row><entry>LA17085-4</entry><entry>LOINC</entry><entry>Atrial flutter</entry></row>
+<row><entry>LA17086-2</entry><entry>LOINC</entry><entry>AV block-1st degree</entry></row>
+<row><entry>LA17087-0</entry><entry>LOINC</entry><entry>AV block-2nd degree-type 1</entry></row>
+<row><entry>LA17088-8</entry><entry>LOINC</entry><entry>AV block-2nd degree-type 2</entry></row>
+<row><entry>LA17089-6</entry><entry>LOINC</entry><entry>AV block-3rd degree</entry></row>
+<row><entry>LA17090-4</entry><entry>LOINC</entry><entry>Junctional</entry></row>
+<row><entry>LA17091-2</entry><entry>LOINC</entry><entry>Left bundle branch block</entry></row>
+<row><entry>LA17093-8</entry><entry>LOINC</entry><entry>Paced rhythm</entry></row>
+<row><entry>LA17094-6</entry><entry>LOINC</entry><entry>Premature atrial contractions</entry></row>
+<row><entry>LA17095-3</entry><entry>LOINC</entry><entry>Premature ventricular contractions</entry></row>
+<row><entry>LA17096-1</entry><entry>LOINC</entry><entry>Right bundle branch block</entry></row>
+<row><entry>LA17097-9</entry><entry>LOINC</entry><entry>Sinus arrhythmia</entry></row>
+<row><entry>LA17394-0</entry><entry>LOINC</entry><entry>Bradycardia</entry></row>
+<row><entry>LA17099-5</entry><entry>LOINC</entry><entry>Sinus tachycardia</entry></row>
+<row><entry>LA17100-1</entry><entry>LOINC</entry><entry>Supraventricular tachycardia</entry></row>
+<row><entry>LA17101-9</entry><entry>LOINC</entry><entry>Torsades de points</entry></row>
+<row><entry>LA17703-2</entry><entry>LOINC</entry><entry>STEMI-anterior ischemia</entry></row>
+<row><entry>LA17704-0</entry><entry>LOINC</entry><entry>STEMI-inferior ischemia</entry></row>
+<row><entry>LA17705-7</entry><entry>LOINC</entry><entry>STEMI-lateral ischemia</entry></row>
+<row><entry>LA17706-5</entry><entry>LOINC</entry><entry>STEMI-posterior ischemia</entry></row>
+<row><entry>LA17708-1</entry><entry>LOINC</entry><entry>Ventricular tachycardia with pulse</entry></row>
+<row><entry>LA17718-0</entry><entry>LOINC</entry><entry>Sinus rhythm</entry></row>
+<row><entry>LA18205-7</entry><entry>LOINC</entry><entry>Non-STEMI anterior ischemia</entry></row>
+<row><entry>LA18206-5</entry><entry>LOINC</entry><entry>Non-STEMI inferior ischemia</entry></row>
+<row><entry>LA18207-3</entry><entry>LOINC</entry><entry>Non-STEMI lateral ischemia</entry></row>
+<row><entry>LA18208-1</entry><entry>LOINC</entry><entry>Non-STEMI posterior ischemia</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

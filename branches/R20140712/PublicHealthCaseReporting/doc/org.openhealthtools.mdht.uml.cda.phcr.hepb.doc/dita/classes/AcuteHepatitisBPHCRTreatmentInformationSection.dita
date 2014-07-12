@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Acute Hepatitis BPHCR Treatment Information Section</title>
+<shortdesc conref="generated/_AcuteHepatitisBPHCRTreatmentInformationSection.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_AcuteHepatitisBPHCRTreatmentInformationSection.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_AcuteHepatitisBPHCRTreatmentInformationSection.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_AcuteHepatitisBPHCRTreatmentInformationSection.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_AcuteHepatitisBPHCRTreatmentInformationSection.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_AcuteHepatitisBPHCRTreatmentInformationSection.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>Acute Hepatitis BPHCR Treatment Information Section example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_AcuteHepatitisBPHCRTreatmentInformationSection.dita#classId/example">
+</codeblock>
+</body>
+</topic>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Clinical Event - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.21</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.21"/>
+</prolog>
+<body>
+<section id="description">
+<p>The template is based on the Clincial Event domain.  It captures clinical events of interest that are not classified as adverse events.  The data for a clinical event may include information about episodes of symptoms of the disease under study (often known as signs and symptoms), or about events that do not constitute adverse events in themselves, though they might lead to the identification of an adverse event.  For example, in a study of an investigational treatment for migraine headaches, migraine headaches may not be considered to be adverse events per protocol. The occurrence of migraines or associated signs and symptoms might be reported as a clinical event.  Other studies might track the occurrence of specific events as efficacy endpoints.  For example, in a study of an investigational treatment for prevention of ischemic stroke, all occurrences of TIA, stroke and death might be captured as clinical events and assessed as to whether they meet endpoint criteria.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:458)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:459)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:460)<tt><b>/@code</b>="CEtbd" </tt> (CONF:1529)
+<ul><li>The code value indicates that this observation records a clinical event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:462)
+<ul><li>The start and stop date/times of the clinical event. The high and low properties of the IVL_TS type are used to capture the start and stop date/times of the event.  [SDTM: CESTDTC, CEENDTC]</li></ul></li>
+<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt> (CONF:463)
+<ul><li>A value that is provided to ensure the uniqueness of clincal event items.  [SDTM: CESEQ, CEREFID, CESPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:464), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1530)
+<ul><li>Used to indicate whether the activity - occurrence of the clinical event - did occur.  Use statusCode "Completed" if the event occurred. [SDTM: CEOCCUR]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:465), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ClinicalEvent.dita">Clinical Event</xref> locally defined</tt><b> STATIC</b> (CONF:1531)
+<ul><li>A code value and descriptive text to provide information on the nature of the clinical event. Use the original text property of the CD type to capture the verbatim tem for the event.   [SDTM: CETERM, CEDECOD]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:466)
+<ul><li>Identifies the SDTM or SEND domain the record is assigned to.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:467)
+<ul><li>Carries information regarding the timing of data collection related to the clinical event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../DataCollection.dita">Data Collection</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.27</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:468)
+<ul><li>Indicates whether or not the event was prespecified on the CRF.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../PreSpecifiedEvent.dita">Pre-Specified Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.70</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:469)
+<ul><li>Information on the reason the clinical event was not carried out.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:470)
+<ul><li>Indicates the body system or organ class associated with the clinical event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../BodySystemOrOrganClass.dita">Body System or Organ Class</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.17</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:471)
+<ul><li>Captures information about the severity of the clinical event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventOrFindingSeverity.dita">Event or Finding Severity</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.34</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:472)
+<ul><li>Allows positioning of the start of the event with relationship to a defined reference time period.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StartRelativeToReferencePeriod.dita">Start Relative to Reference Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.79</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:473)
+<ul><li>Allows positioning of the termination of the event with relationship to a defined reference time period.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StopRelativeToReferencePeriod.dita">Stop Relative to Reference Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.80</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:474)
+<ul><li>The record of a category to be used in organizing information items.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Category.dita">Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>The record of a sub-category to be used in organizing information items.</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../SubCategory.dita">Sub- Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.91</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:475)
+<ul><li>Establishes a relationship between this record and another record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:476)
+<ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:477)
+<ul><li>A place to insert comments related to a particular finding.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:478)
+<ul><li>Allows recording of additional findings related to the event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../FindingAbout.dita">Finding About</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.40</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:458)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:459)
+</li>
+<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt> (CONF:463)
+<ul><li>A value that is provided to ensure the uniqueness of clincal event items.  [SDTM: CESEQ, CEREFID, CESPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:460)<tt><b>/@code</b>="CEtbd" </tt> (CONF:1529)
+<ul><li>The code value indicates that this observation records a clinical event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:464), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1530)
+<ul><li>Used to indicate whether the activity - occurrence of the clinical event - did occur.  Use statusCode "Completed" if the event occurred. [SDTM: CEOCCUR]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:462)
+<ul><li>The start and stop date/times of the clinical event. The high and low properties of the IVL_TS type are used to capture the start and stop date/times of the event.  [SDTM: CESTDTC, CEENDTC]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:465), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ClinicalEvent.dita">Clinical Event</xref> locally defined</tt><b> STATIC</b> (CONF:1531)
+<ul><li>A code value and descriptive text to provide information on the nature of the clinical event. Use the original text property of the CD type to capture the verbatim tem for the event.   [SDTM: CETERM, CEDECOD]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:466)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol><ul><li>Identifies the SDTM or SEND domain the record is assigned to.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:467)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../DataCollection.dita">Data Collection</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.27</tt>)</li></ol><ul><li>Carries information regarding the timing of data collection related to the clinical event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:468)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../PreSpecifiedEvent.dita">Pre-Specified Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.70</tt>)</li></ol><ul><li>Indicates whether or not the event was prespecified on the CRF.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:469)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol><ul><li>Information on the reason the clinical event was not carried out.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:470)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../BodySystemOrOrganClass.dita">Body System or Organ Class</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.17</tt>)</li></ol><ul><li>Indicates the body system or organ class associated with the clinical event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:471)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventOrFindingSeverity.dita">Event or Finding Severity</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.34</tt>)</li></ol><ul><li>Captures information about the severity of the clinical event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:472)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StartRelativeToReferencePeriod.dita">Start Relative to Reference Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.79</tt>)</li></ol><ul><li>Allows positioning of the start of the event with relationship to a defined reference time period.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:473)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StopRelativeToReferencePeriod.dita">Stop Relative to Reference Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.80</tt>)</li></ol><ul><li>Allows positioning of the termination of the event with relationship to a defined reference time period.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:474)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Category.dita">Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol><ul><li>The record of a category to be used in organizing information items.</li></ul></li>
+<li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SubCategory.dita">Sub- Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.91</tt>)</li></ol><ul><li>The record of a sub-category to be used in organizing information items.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:475)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol><ul><li>Establishes a relationship between this record and another record.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:476)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol><ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:477)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol><ul><li>A place to insert comments related to a particular finding.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:478)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../FindingAbout.dita">Finding About</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.40</tt>)</li></ol><ul><li>Allows recording of additional findings related to the event.</li></ul></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Clinical Event</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:458</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:459</entry><entry> DEF</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:460</entry><entry>null null </entry></row> 
+<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:462</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..3</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:463</entry><entry> </entry></row> 
+<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CS</entry><entry>CONF:464</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:465</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>body System or Organ Class</entry><entry>body System or Organ Class</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Body System or Organ Class</entry><entry>CONF:470</entry><entry> </entry></row> 
+<row><entry>category</entry><entry>category</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Category</entry><entry>CONF:474</entry><entry> </entry></row> 
+<row><entry>comment</entry><entry>comment</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Comment</entry><entry>CONF:477</entry><entry> </entry></row> 
+<row><entry>data Collection</entry><entry>data Collection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Data Collection</entry><entry>CONF:467</entry><entry> </entry></row> 
+<row><entry>domain Assignment</entry><entry>domain Assignment</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Domain Assignment</entry><entry>CONF:466</entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>event Severity</entry><entry>event Severity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Event or Finding Severity</entry><entry>CONF:471</entry><entry> </entry></row> 
+<row><entry>finding About</entry><entry>finding About</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Finding About</entry><entry>CONF:478</entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>nonPerformanceReason</entry><entry>nonPerformanceReason</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Non Performance Reason</entry><entry>CONF:469</entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>pre-Specified Event</entry><entry>pre-Specified Event</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Pre-Specified Event</entry><entry>CONF:468</entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
+<row><entry>related Record</entry><entry>related Record</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Related Record</entry><entry>CONF:475</entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>start Relative to Reference Period</entry><entry>start Relative to Reference Period</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Start Relative to Reference Period</entry><entry>CONF:472</entry><entry> </entry></row> 
+<row><entry>stop Relative to Reference Period</entry><entry>stop Relative to Reference Period</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Stop Relative to Reference Period</entry><entry>CONF:473</entry><entry> </entry></row> 
+<row><entry>sub-Category</entry><entry>sub-Category</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Sub-Category</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>supplemental Value</entry><entry>supplemental Value</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Supplemental Value</entry><entry>CONF:476</entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="76886054" extension="MDHT"/>
+  <code code="1574563468"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="1125321012"/>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS">
+      <templateId root="2.16.840.1.113883.10.20.23.56"/>
+      <id root="2089338682" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="543237601"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <act>
+      <id root="413756547" extension="MDHT"/>
+      <code code="955895866"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.23"/>
+      <id root="17141072" extension="MDHT"/>
+      <code code="C49569" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="ED">Text Value</value>
+      <participant/>
+      <entryRelationship/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.30"/>
+      <id root="2008717894" extension="MDHT"/>
+      <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="149220615"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.23.75"/>
+      <id root="210479636" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.96"/>
+      <id root="659080913" extension="MDHT"/>
+      <code codeSystem="locally defined" codeSystemName="Supplemental Value Type"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant/>
+      <entryRelationship typeCode="COMP"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.20"/>
+      <id root="536272874" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="309755791"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="1572014007" extension="MDHT"/>
+      <code code="2133994633"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant/>
+      <entryRelationship typeCode="REFR"/>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.42"/>
+          <code code="C83204" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.56"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.20"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.30"/>
+          <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Clinical Event</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.21</tt>]</p>
+</body>
+</topic>

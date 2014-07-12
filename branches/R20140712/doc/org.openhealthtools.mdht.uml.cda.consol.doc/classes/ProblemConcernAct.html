@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Problem Concern Act"/>
+<meta name="abstract" content="[Act: templateId 2.16.840.1.113883.10.20.22.4.3]"/>
+<meta name="description" content="[Act: templateId 2.16.840.1.113883.10.20.22.4.3]"/>
+<meta name="DC.Coverage" content="Act"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Problem Concern Act</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1"><span class="ph">Problem Concern Act</span></h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[Act: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.3</tt>]</p>
+
+		
+		<div class="section">
+<div class="p"><p class="lines"><em class="ph i">Observations of problems or other clinical statements captured at a point in time are wrapped in a "Concern" act, which represents the ongoing process tracked over time. This allows for binding related observations of problems. For example, the observation of "Acute MI" in 2004 can be related to the observation of "History of MI" in 2006 because they are the same concern. The conformance statements in this section define an outer "problem act" (representing the "Concern") that can contain a nested "problem observation" or other nested clinical statements.</em></p>
+</div>
+
+</div>
+
+		
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:16772, CONF:16773 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.3"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9024)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9025)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:9026)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:9027)<tt class="ph tt"><strong class="ph b">/@code</strong>="CONC" </tt><em class="ph i">Concern</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9440)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProblemActStatusCode.html">ProblemActStatusCode</a> 2.16.840.1.113883.11.20.9.19</tt><strong class="ph b"> STATIC</strong> 2011-09-09 (CONF:9029)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i"><p class="p"><br/>
+The statusCode associated with any concern must be one of the following values:<br/>
+</p>
+<br/>
+<p class="p"><br/>
+<strong class="ph b">active</strong>: A concern that is still being tracked.<br/>
+<strong class="ph b">suspended</strong>: A concern that is active, but which may be set aside. For example, this value might be used to suspend concern<br/>
+about a patient problem after some period of remission, but before assumption that the concern has been resolved.<br/>
+<strong class="ph b">aborted</strong>: A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved.<br/>
+This value might be used to mark a concern as being aborted after a patient leaves care against medical advice.<br/>
+<strong class="ph b">completed</strong>:<br/>
+The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for<br/>
+historical purposes.<br/>
+</p>
+</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:9030)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The effectiveTime element records the starting and ending times during which the concern was active on the Problem List.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:15980)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.4]">Problem Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.4</tt>)</li>
+</ol>
+</li>
+
+<li class="li">effectiveTime <strong class="ph b">SHALL</strong> contain exactly one [1..1] low (CONF:9032)</li>
+
+<li class="li">effectiveTime <strong class="ph b">SHOULD</strong> contain zero or one [0..1] high (CONF:9033)</li>
+
+</ol>
+
+		
+		<p class="p">
+		</p>
+
+		<p class="p">
+			<strong class="ph b"><span class="ph">Problem Concern Act</span> example</strong>
+		</p>
+		
+		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1651397096"/&gt;
+  &lt;code code="346872066"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="1413743626"/&gt;
+      &lt;code code="1503919933"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="208977757"/&gt;
+          &lt;code code="216380380"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="2080502556"/&gt;
+          &lt;code code="2071409445"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="1951903357"/&gt;
+          &lt;code code="1471958264"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+&lt;/act&gt;</pre>
+
+	</div>
+
+
+</body>
+</html>

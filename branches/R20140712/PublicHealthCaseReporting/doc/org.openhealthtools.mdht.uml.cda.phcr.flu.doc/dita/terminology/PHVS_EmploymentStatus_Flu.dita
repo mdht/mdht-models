@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>PHV S_ Employment Status_ Flu</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.3254"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>PHVS_EmploymentStatus_Flu - 2.16.840.1.114222.4.11.3254</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Source</entry><entry>PHIN-VADS</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3254</entry></row>
+<row><entry>Definition</entry><entry>Type of work at the time of hospitalization within 7 days prior to illness onset</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>224372004</entry><entry>Does voluntary work (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>275139002</entry><entry>Homemaker (situation)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>406156006</entry><entry>In paid employment (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>105493001</entry><entry>Retired, life event (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>160906004</entry><entry>Self-employed (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>65853000</entry><entry>Student (occupation)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>440337002</entry><entry>Temporarily unable to perform work activities due to medical condition (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>73438004</entry><entry>Unemployed (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

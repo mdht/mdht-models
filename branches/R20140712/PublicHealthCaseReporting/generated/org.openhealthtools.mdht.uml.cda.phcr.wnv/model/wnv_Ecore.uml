@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_ItV7MEkhEeG_D8F8rok7RQ" name="wnv">
+    <packageImport xmi:id="_Iva-0EkhEeG_D8F8rok7RQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_Iva-0UkhEeG_D8F8rok7RQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_Iva-0kkhEeG_D8F8rok7RQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_Iva-00khEeG_D8F8rok7RQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_Iva-1EkhEeG_D8F8rok7RQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_Iva-1UkhEeG_D8F8rok7RQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Iu-S4UkhEeG_D8F8rok7RQ" name="WestNileVirusCaseReport">
+      <ownedRule xmi:id="_GkZ7lAdJEeK9gYpImj-Uyw" name="PublicHealthCaseReportTemplateId" constrainedElement="_Iu-S4UkhEeG_D8F8rok7RQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GkZ7lQdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.7')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_GkZ7lwdJEeK9gYpImj-Uyw" name="WestNileVirusCaseReportTitle" constrainedElement="_Iu-S4UkhEeG_D8F8rok7RQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GkZ7mAdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Public Health Case Report - West Nile Virus')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_GkjsmQdJEeK9gYpImj-Uyw" name="WestNileVirusCaseReportWnvPhcrClinicalInformationSection" constrainedElement="_Iu-S4UkhEeG_D8F8rok7RQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GkjsmgdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(wnv::WnvPhcrClinicalInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_GkjsoAdJEeK9gYpImj-Uyw" name="WestNileVirusCaseReportWnvPhcrRelevantDxTestsSection" constrainedElement="_Iu-S4UkhEeG_D8F8rok7RQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GkjsoQdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(wnv::WnvPhcrRelevantDxTestsSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Iu-S40khEeG_D8F8rok7RQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_GkjsmwdJEeK9gYpImj-Uyw" name="getWnvPhcrClinicalInformationSection" isQuery="true" bodyCondition="_GkjsngdJEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_GkjsngdJEeK9gYpImj-Uyw" name="body" constrainedElement="_GkjsmwdJEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_GkjsnwdJEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(wnv::WnvPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(wnv::WnvPhcrClinicalInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_GkjsnAdJEeK9gYpImj-Uyw" type="_XL5uoJYREeGloY5sHBJ_mQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GkjsnQdJEeK9gYpImj-Uyw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Gks2gAdJEeK9gYpImj-Uyw" name="getWnvPhcrRelevantDxTestsSection" isQuery="true" bodyCondition="_Gks2gwdJEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_Gks2gwdJEeK9gYpImj-Uyw" name="body" constrainedElement="_Gks2gAdJEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Gks2hAdJEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(wnv::WnvPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(wnv::WnvPhcrRelevantDxTestsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_Gks2gQdJEeK9gYpImj-Uyw" type="_ORrwMJYSEeGloY5sHBJ_mQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gks2ggdJEeK9gYpImj-Uyw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XL5uoJYREeGloY5sHBJ_mQ" name="WnvPhcrClinicalInformationSection">
+      <ownedRule xmi:id="_GkjskQdJEeK9gYpImj-Uyw" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_XL5uoJYREeGloY5sHBJ_mQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GkjskgdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.45')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_GmC6UAdJEeK9gYpImj-Uyw" name="WnvPhcrClinicalInformationSectionWnvCaseObservation" constrainedElement="_XL5uoJYREeGloY5sHBJ_mQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GmC6UQdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(wnv::WnvCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_XL5uoZYREeGloY5sHBJ_mQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_GmC6UgdJEeK9gYpImj-Uyw" name="getWnvCaseObservation" isQuery="true" bodyCondition="_GmC6VQdJEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_GmC6VQdJEeK9gYpImj-Uyw" name="body" constrainedElement="_GmC6UgdJEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_GmC6VgdJEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvCaseObservation))->asSequence()->any(true).oclAsType(wnv::WnvCaseObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_GmC6UwdJEeK9gYpImj-Uyw" type="_q5WOEJfcEeGIls8OsXqV-w" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GmC6VAdJEeK9gYpImj-Uyw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ORrwMJYSEeGloY5sHBJ_mQ" name="WnvPhcrRelevantDxTestsSection">
+      <ownedRule xmi:id="_GkjslgdJEeK9gYpImj-Uyw" name="ResultsSectionTemplateId" constrainedElement="_ORrwMJYSEeGloY5sHBJ_mQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GkjslwdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.46')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_GmC6VwdJEeK9gYpImj-Uyw" name="WnvPhcrRelevantDxTestsSectionWnvResultObservation" constrainedElement="_ORrwMJYSEeGloY5sHBJ_mQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GmC6WAdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(wnv::WnvResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_GmC6ZQdJEeK9gYpImj-Uyw" name="WnvPhcrRelevantDxTestsSectionWnvResultOrganizer" constrainedElement="_ORrwMJYSEeGloY5sHBJ_mQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GmC6ZgdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(wnv::WnvResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_ORrwMZYSEeGloY5sHBJ_mQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedOperation xmi:id="_GmC6WQdJEeK9gYpImj-Uyw" name="getWnvResultObservations" isQuery="true" bodyCondition="_GmC6XAdJEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_GmC6XAdJEeK9gYpImj-Uyw" name="body" constrainedElement="_GmC6WQdJEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_GmC6XQdJEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvResultObservation)).oclAsType(wnv::WnvResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_GmC6WgdJEeK9gYpImj-Uyw" type="_kAixoKCMEeGzToMRDovxkA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GmC6WwdJEeK9gYpImj-Uyw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_GmC6ZwdJEeK9gYpImj-Uyw" name="getWnvResultOrganizers" isQuery="true" bodyCondition="_GmC6agdJEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_GmC6agdJEeK9gYpImj-Uyw" name="body" constrainedElement="_GmC6ZwdJEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_GmC6awdJEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(wnv::WnvResultOrganizer)).oclAsType(wnv::WnvResultOrganizer)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_GmC6aAdJEeK9gYpImj-Uyw" type="_qnpogKCMEeGzToMRDovxkA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GmC6aQdJEeK9gYpImj-Uyw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_q5WOEJfcEeGIls8OsXqV-w" name="WnvCaseObservation">
+      <ownedRule xmi:id="_Gks2hwdJEeK9gYpImj-Uyw" name="ProblemObservationTemplateId" constrainedElement="_q5WOEJfcEeGIls8OsXqV-w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Gks2iAdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.103')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_Gl5JUwdJEeK9gYpImj-Uyw" name="WnvCaseObservationWnvSignsAndSymptomsObservation" constrainedElement="_q5WOEJfcEeGIls8OsXqV-w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Gl5JVAdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(wnv::WnvSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_q5WOEZfcEeGIls8OsXqV-w">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_Gl5JVQdJEeK9gYpImj-Uyw" name="getWnvSignsAndSymptomsObservations" isQuery="true" bodyCondition="_Gl5JWAdJEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_Gl5JWAdJEeK9gYpImj-Uyw" name="body" constrainedElement="_Gl5JVQdJEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Gl5JWQdJEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvSignsAndSymptomsObservation)).oclAsType(wnv::WnvSignsAndSymptomsObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_Gl5JVgdJEeK9gYpImj-Uyw" type="_0WQ0cJfcEeGIls8OsXqV-w" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gl5JVwdJEeK9gYpImj-Uyw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0WQ0cJfcEeGIls8OsXqV-w" name="WnvSignsAndSymptomsObservation">
+      <ownedRule xmi:id="_Gk2ngQdJEeK9gYpImj-Uyw" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_0WQ0cJfcEeGIls8OsXqV-w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Gk2nggdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.104')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_0WQ0cZfcEeGIls8OsXqV-w">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kAixoKCMEeGzToMRDovxkA" name="WnvResultObservation">
+      <ownedRule xmi:id="_Gk2nhgdJEeK9gYpImj-Uyw" name="ResultObservationTemplateId" constrainedElement="_kAixoKCMEeGzToMRDovxkA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Gk2nhwdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.106')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_GlAYgQdJEeK9gYpImj-Uyw" name="WnvResultObservationCode" constrainedElement="_kAixoKCMEeGzToMRDovxkA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GlAYggdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;not value.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_kAixoaCMEeGzToMRDovxkA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qnpogKCMEeGzToMRDovxkA" name="WnvResultOrganizer">
+      <ownedRule xmi:id="_GlJicgdJEeK9gYpImj-Uyw" name="ResultOrganizerTemplateId" constrainedElement="_qnpogKCMEeGzToMRDovxkA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GlJicwdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.105')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_Gl5JUQdJEeK9gYpImj-Uyw" name="WnvResultOrganizerCode" constrainedElement="_qnpogKCMEeGzToMRDovxkA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Gl5JUgdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;not value.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_GmC6XgdJEeK9gYpImj-Uyw" name="WnvResultOrganizerWnvResultObservation" constrainedElement="_qnpogKCMEeGzToMRDovxkA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_GmC6XwdJEeK9gYpImj-Uyw">
+          <language>OCL</language>
+          <body>self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(wnv::WnvResultObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_qnpogaCMEeGzToMRDovxkA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedOperation xmi:id="_GmC6YAdJEeK9gYpImj-Uyw" name="getWnvResultObservations" isQuery="true" bodyCondition="_GmC6YwdJEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_GmC6YwdJEeK9gYpImj-Uyw" name="body" constrainedElement="_GmC6YAdJEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_GmC6ZAdJEeK9gYpImj-Uyw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvResultObservation)).oclAsType(wnv::WnvResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_GmC6YQdJEeK9gYpImj-Uyw" type="_kAixoKCMEeGzToMRDovxkA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GmC6YgdJEeK9gYpImj-Uyw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_ItV7OUkhEeG_D8F8rok7RQ">
+      <eAnnotations xmi:id="_ItV7OkkhEeG_D8F8rok7RQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_ItV7O0khEeG_D8F8rok7RQ">
+      <eAnnotations xmi:id="_ItV7PEkhEeG_D8F8rok7RQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_GkZ7kAdJEeK9gYpImj-Uyw">
+      <eAnnotations xmi:id="_GkZ7kQdJEeK9gYpImj-Uyw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_Iu-S4EkhEeG_D8F8rok7RQ" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="wnv" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/wnv" packageName="wnv" prefix="wnv" base_Namespace="_ItV7MEkhEeG_D8F8rok7RQ"/>
+  <CDA:CDATemplate xmi:id="_Iu-S4kkhEeG_D8F8rok7RQ" base_Class="_Iu-S4UkhEeG_D8F8rok7RQ" templateId="2.16.840.1.113883.10.20.15.1.7" assigningAuthorityName=""/>
+  <CDA:AssociationValidation xmi:id="_oKwWUJfbEeGIls8OsXqV-w" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_qQf60JfbEeGIls8OsXqV-w" severity="WARNING"/>
+  <CDA:CDATemplate xmi:id="_z0M3oKCMEeGzToMRDovxkA" base_Class="_q5WOEJfcEeGIls8OsXqV-w" templateId="2.16.840.1.113883.10.20.15.3.103"/>
+  <CDA:CDATemplate xmi:id="_4thXAKCMEeGzToMRDovxkA" base_Class="_XL5uoJYREeGloY5sHBJ_mQ" templateId="2.16.840.1.113883.10.20.15.2.45"/>
+  <CDA:CDATemplate xmi:id="_7rNQIKCMEeGzToMRDovxkA" base_Class="_ORrwMJYSEeGloY5sHBJ_mQ" templateId="2.16.840.1.113883.10.20.15.2.46"/>
+  <CDA:CDATemplate xmi:id="__yvtQKCMEeGzToMRDovxkA" base_Class="_kAixoKCMEeGzToMRDovxkA" templateId="2.16.840.1.113883.10.20.15.3.106"/>
+  <CDA:CDATemplate xmi:id="_CFS-sKCNEeGzToMRDovxkA" base_Class="_qnpogKCMEeGzToMRDovxkA" templateId="2.16.840.1.113883.10.20.15.3.105"/>
+  <CDA:CDATemplate xmi:id="_GXCgsKCNEeGzToMRDovxkA" base_Class="_0WQ0cJfcEeGIls8OsXqV-w" templateId="2.16.840.1.113883.10.20.15.3.104"/>
+  <CDA:Entry xmi:id="_pcBtcKCNEeGzToMRDovxkA" severity="INFO" typeCode="DRIV"/>
+  <Ecore:EPackage xmi:id="_GkZ7kgdJEeK9gYpImj-Uyw" base_Package="_ItV7MEkhEeG_D8F8rok7RQ" packageName="wnv" nsPrefix="wnv" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/wnv" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="wnv">
+    <annotation>http://www.openhealthtools.org/mdht/uml initializers='org.openhealthtools.mdht.uml.cda.phcr.wnv'</annotation>
+  </Ecore:EPackage>
+  <CDA:ConformsTo xmi:id="_GkZ7kwdJEeK9gYpImj-Uyw" base_Generalization="_Iu-S40khEeG_D8F8rok7RQ"/>
+  <Ecore:EClass xmi:id="_GkZ7lgdJEeK9gYpImj-Uyw" base_Class="_Iu-S4UkhEeG_D8F8rok7RQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='WestNileVirusCaseReportTemplateId WestNileVirusCaseReportTitle WestNileVirusCaseReportWnvPhcrClinicalInformationSection' templateId.root='2.16.840.1.113883.10.20.15.1.7' title.mixed='Public Health Case Report - West Nile Virus' constraints.validation.warning='WestNileVirusCaseReportWnvPhcrRelevantDxTestsSection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_GkjskAdJEeK9gYpImj-Uyw" base_Generalization="_XL5uoZYREeGloY5sHBJ_mQ"/>
+  <Ecore:EClass xmi:id="_GkjskwdJEeK9gYpImj-Uyw" base_Class="_XL5uoJYREeGloY5sHBJ_mQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='WnvPhcrClinicalInformationSectionTemplateId WnvPhcrClinicalInformationSectionWnvCaseObservation' templateId.root='2.16.840.1.113883.10.20.15.2.45'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_GkjslAdJEeK9gYpImj-Uyw" base_Generalization="_ORrwMZYSEeGloY5sHBJ_mQ"/>
+  <Ecore:EClass xmi:id="_GkjsmAdJEeK9gYpImj-Uyw" base_Class="_ORrwMJYSEeGloY5sHBJ_mQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='WnvPhcrRelevantDxTestsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.46' constraints.validation.warning='WnvPhcrRelevantDxTestsSectionWnvResultObservation' constraints.validation.info='WnvPhcrRelevantDxTestsSectionWnvResultOrganizer'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_Gks2hQdJEeK9gYpImj-Uyw" base_Generalization="_q5WOEZfcEeGIls8OsXqV-w"/>
+  <Ecore:EClass xmi:id="_Gks2iQdJEeK9gYpImj-Uyw" base_Class="_q5WOEJfcEeGIls8OsXqV-w">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='WnvCaseObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.103' constraints.validation.warning='WnvCaseObservationWnvSignsAndSymptomsObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_Gk2ngAdJEeK9gYpImj-Uyw" base_Generalization="_0WQ0cZfcEeGIls8OsXqV-w"/>
+  <Ecore:EClass xmi:id="_Gk2ngwdJEeK9gYpImj-Uyw" base_Class="_0WQ0cJfcEeGIls8OsXqV-w">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='WnvSignsAndSymptomsObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.104'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_Gk2nhAdJEeK9gYpImj-Uyw" base_Generalization="_kAixoaCMEeGzToMRDovxkA"/>
+  <Ecore:EClass xmi:id="_GlAYgAdJEeK9gYpImj-Uyw" base_Class="_kAixoKCMEeGzToMRDovxkA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='WnvResultObservationTemplateId WnvResultObservationCode' templateId.root='2.16.840.1.113883.10.20.15.3.106' code.codeSystemName=''</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_GlJicAdJEeK9gYpImj-Uyw" base_Generalization="_qnpogaCMEeGzToMRDovxkA"/>
+  <Ecore:EClass xmi:id="_Gl5JUAdJEeK9gYpImj-Uyw" base_Class="_qnpogKCMEeGzToMRDovxkA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='WnvResultOrganizerTemplateId WnvResultOrganizerCode WnvResultOrganizerWnvResultObservation' templateId.root='2.16.840.1.113883.10.20.15.3.105' code.codeSystemName=''</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

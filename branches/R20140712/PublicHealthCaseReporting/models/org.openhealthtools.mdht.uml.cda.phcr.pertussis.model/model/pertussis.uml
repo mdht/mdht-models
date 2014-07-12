@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_27mpEEOoEeGGsOswcKrH-Q" name="pertussis">
+    <packageImport xmi:id="_2_VSgEOoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_2_VSgUOoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_2_VSgkOoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_2_VSg0OoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_2_VShEOoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_2_VShUOoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2-b6oUOoEeGGsOswcKrH-Q" name="PertussisCaseReport">
+      <generalization xmi:id="_2-b6o0OoEeGGsOswcKrH-Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_DimY4HHXEeG8655npWXf9Q" name="pertussisSocialHistorySection" type="_364u4HHWEeG8655npWXf9Q" association="_DimY4nHXEeG8655npWXf9Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DimY4XHXEeG8655npWXf9Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_WyGBsHHZEeG8655npWXf9Q" name="pertussisClinicalInformationSection" type="_U93D8HHZEeG8655npWXf9Q" association="_WyGBsnHZEeG8655npWXf9Q">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X1AQMHHZEeG8655npWXf9Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X1AQMXHZEeG8655npWXf9Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_7eHqcHHpEeG8655npWXf9Q" name="pertussisTreatmentInformationSection" type="_24RgsHHpEeG8655npWXf9Q" association="_7eHqcnHpEeG8655npWXf9Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7eHqcXHpEeG8655npWXf9Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yI-YoHHsEeG8655npWXf9Q" name="title" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yI-YoXHsEeG8655npWXf9Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yI-YonHsEeG8655npWXf9Q"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Bn1soEAJEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-u4WcJLsEeGUUI2-ChIV2A" name="pertussisRelevantDxTestsSection" type="_is9gIHH4EeG8655npWXf9Q" association="_-u4WcpLsEeGUUI2-ChIV2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-u4WcZLsEeGUUI2-ChIV2A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_A5w5oJLtEeGUUI2-ChIV2A" name="pertussisImmunizationsSection" type="_LMImAHHrEeG8655npWXf9Q" association="_A5w5opLtEeGUUI2-ChIV2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A5w5oZLtEeGUUI2-ChIV2A"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_364u4HHWEeG8655npWXf9Q" name="PertussisSocialHistorySection">
+      <generalization xmi:id="_37Lp0HHWEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_47VooI8JEeGdS-mjnUt7Hg" name="pertussisPossibleExposureLocationAct" type="_eTCVgHHXEeG8655npWXf9Q" association="_47Vooo8JEeGdS-mjnUt7Hg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5_In8I8JEeGdS-mjnUt7Hg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5_In8Y8JEeGdS-mjnUt7Hg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_mwYo0JOjEeGHE73moKNrdA" name="pertussisPossibleCaseContactLocationAct" type="_M9fSgJOjEeGHE73moKNrdA" association="_mwYo0pOjEeGHE73moKNrdA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oIwJ8JOjEeGHE73moKNrdA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oIwJ8ZOjEeGHE73moKNrdA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DimY4nHXEeG8655npWXf9Q" memberEnd="_DimY4HHXEeG8655npWXf9Q _DimY43HXEeG8655npWXf9Q">
+      <ownedEnd xmi:id="_DimY43HXEeG8655npWXf9Q" type="_2-b6oUOoEeGGsOswcKrH-Q" association="_DimY4nHXEeG8655npWXf9Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eTCVgHHXEeG8655npWXf9Q" name="PertussisPossibleExposureLocationAct">
+      <ownedRule xmi:id="_t0CUgHHzEeG8655npWXf9Q" name="ParticipantLocation" constrainedElement="_eTCVgHHXEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_1LqCUHHzEeG8655npWXf9Q">
+          <language>Analysis</language>
+          <body>SHALL contain [1..*] participant, which SHALL contain [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_eTCVgXHXEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_hoRzAHHXEeG8655npWXf9Q" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_m8UfgHHXEeG8655npWXf9Q" value="ACT"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_hoRzAXHXEeG8655npWXf9Q" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_hoRzAnHXEeG8655npWXf9Q" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_q9EYIHHXEeG8655npWXf9Q" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_hoRzA3HXEeG8655npWXf9Q" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g4BlUHHYEeG8655npWXf9Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g4BlUXHYEeG8655npWXf9Q" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_U93D8HHZEeG8655npWXf9Q" name="PertussisClinicalInformationSection">
+      <generalization xmi:id="_U93D8XHZEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_FhfQ0I8KEeGdS-mjnUt7Hg" name="pertussisCaseObservation" type="_f-PoMHHZEeG8655npWXf9Q" association="_FhfQ0o8KEeGdS-mjnUt7Hg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GjzCYI8KEeGdS-mjnUt7Hg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GjzCYY8KEeGdS-mjnUt7Hg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WyGBsnHZEeG8655npWXf9Q" memberEnd="_WyGBsHHZEeG8655npWXf9Q _WyGBs3HZEeG8655npWXf9Q">
+      <ownedEnd xmi:id="_WyGBs3HZEeG8655npWXf9Q" type="_2-b6oUOoEeGGsOswcKrH-Q" association="_WyGBsnHZEeG8655npWXf9Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_f-PoMHHZEeG8655npWXf9Q" name="PertussisCaseObservation">
+      <generalization xmi:id="_f-PoMXHZEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_0FIogHHaEeG8655npWXf9Q" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0FIogXHaEeG8655npWXf9Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0FIognHaEeG8655npWXf9Q" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_0_CcKdTCEeC18pmrrt-Mbg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XkhSQHHbEeG8655npWXf9Q" name="pertussisSignsAndSymptomsObservation" type="_TTY0QHHbEeG8655npWXf9Q" association="_XkhSQnHbEeG8655npWXf9Q">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ym1D0HHbEeG8655npWXf9Q" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ym1D0XHbEeG8655npWXf9Q"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TTY0QHHbEeG8655npWXf9Q" name="PertussisSignsAndSymptomsObservation">
+      <generalization xmi:id="_TTY0QXHbEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_Ne3sYHHlEeG8655npWXf9Q" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ne3sYXHlEeG8655npWXf9Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ne3sYnHlEeG8655npWXf9Q" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_BZzEBdQQEeC4C5jYVS2kfQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XkhSQnHbEeG8655npWXf9Q" memberEnd="_XkhSQHHbEeG8655npWXf9Q _XkhSQ3HbEeG8655npWXf9Q">
+      <ownedEnd xmi:id="_XkhSQ3HbEeG8655npWXf9Q" type="_f-PoMHHZEeG8655npWXf9Q" association="_XkhSQnHbEeG8655npWXf9Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_24RgsHHpEeG8655npWXf9Q" name="PertussisTreatmentInformationSection">
+      <generalization xmi:id="_24RgsXHpEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_JIhk8HHqEeG8655npWXf9Q" name="pertussisTherapeuticRegimen" type="_D069UHHqEeG8655npWXf9Q" association="_JIhk8nHqEeG8655npWXf9Q">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kz9MAHHqEeG8655npWXf9Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kz9MAXHqEeG8655npWXf9Q" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7eHqcnHpEeG8655npWXf9Q" memberEnd="_7eHqcHHpEeG8655npWXf9Q _7eHqc3HpEeG8655npWXf9Q">
+      <ownedEnd xmi:id="_7eHqc3HpEeG8655npWXf9Q" type="_2-b6oUOoEeGGsOswcKrH-Q" association="_7eHqcnHpEeG8655npWXf9Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_D069UHHqEeG8655npWXf9Q" name="PertussisTherapeuticRegimenAct">
+      <generalization xmi:id="_D069UXHqEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2p558NSrEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_tGmV0HHqEeG8655npWXf9Q" name="pertussisTreatmentGivenSubstanceAdministration" type="_nHfTEHHqEeG8655npWXf9Q" association="_tGmV0nHqEeG8655npWXf9Q">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uVubYHHqEeG8655npWXf9Q" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uVubYXHqEeG8655npWXf9Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_2pZhwHHqEeG8655npWXf9Q" name="pertussisTreatmentNotGivenSubstanceAdministration" type="_y5fhgHHqEeG8655npWXf9Q" association="_2pZhwnHqEeG8655npWXf9Q">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4fReQHHqEeG8655npWXf9Q" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4fReQXHqEeG8655npWXf9Q"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIhk8nHqEeG8655npWXf9Q" memberEnd="_JIhk8HHqEeG8655npWXf9Q _JIhk83HqEeG8655npWXf9Q">
+      <ownedEnd xmi:id="_JIhk83HqEeG8655npWXf9Q" type="_24RgsHHpEeG8655npWXf9Q" association="_JIhk8nHqEeG8655npWXf9Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nHfTEHHqEeG8655npWXf9Q" name="PertussisTreatmentGivenSubstanceAdministration">
+      <ownedRule xmi:id="_1DtdIJOmEeGHE73moKNrdA" name="GivenMaterialCodeConstraint" constrainedElement="_nHfTEHHqEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_m6568J_REeGpRtS_7CxGlA">
+          <language>Analysis</language>
+          <body>SHALL be selected from ValueSet 2.16.840.1.114222.4.11.3120 Antibiotic Received (Pertussis)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_nHfTEXHqEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XOKZ4NStEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_tGmV0nHqEeG8655npWXf9Q" memberEnd="_tGmV0HHqEeG8655npWXf9Q _tGmV03HqEeG8655npWXf9Q">
+      <ownedEnd xmi:id="_tGmV03HqEeG8655npWXf9Q" type="_D069UHHqEeG8655npWXf9Q" association="_tGmV0nHqEeG8655npWXf9Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_y5fhgHHqEeG8655npWXf9Q" name="PertussisTreatmentNotGivenSubstanceAdministration">
+      <ownedRule xmi:id="_5OliIJOmEeGHE73moKNrdA" name="NotGivenMaterialCodeConstraint" constrainedElement="_y5fhgHHqEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2k3SYJ_REeGpRtS_7CxGlA">
+          <language>Analysis</language>
+          <body>SHALL be selected from ValueSet 2.16.840.1.114222.4.11.3120 Antibiotic Received (Pertussis)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_y5fhgXHqEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_NbgssNSwEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2pZhwnHqEeG8655npWXf9Q" memberEnd="_2pZhwHHqEeG8655npWXf9Q _2pZhw3HqEeG8655npWXf9Q">
+      <ownedEnd xmi:id="_2pZhw3HqEeG8655npWXf9Q" type="_D069UHHqEeG8655npWXf9Q" association="_2pZhwnHqEeG8655npWXf9Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LMImAHHrEeG8655npWXf9Q" name="PertussisImmunizationsSection">
+      <generalization xmi:id="_LMImAXHrEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-immunizations.uml#_CinbMHDPEd6eItyqb1FoWg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_-4fc8H6JEeGdF60gQ6b8Pg" name="pertussisImmunizationActivity" type="_451GIH6JEeGdF60gQ6b8Pg" association="_-4fc8n6JEeGdF60gQ6b8Pg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__iYccJ_QEeGpRtS_7CxGlA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__iYccZ_QEeGpRtS_7CxGlA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UOGp4HH4EeG8655npWXf9Q" name="PertussisResultObservation">
+      <generalization xmi:id="_UOGp4XH4EeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_HbA8cHH5EeG8655npWXf9Q" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_H1HqAK6xEd6_ioDelDcPPg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_is9gIHH4EeG8655npWXf9Q" name="PertussisRelevantDxTestsSection">
+      <generalization xmi:id="_is9gIXH4EeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedAttribute xmi:id="_ujkhwHH4EeG8655npWXf9Q" name="pertussisResultObservation" type="_UOGp4HH4EeG8655npWXf9Q" association="_ujkhwnH4EeG8655npWXf9Q">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vdi2sHH4EeG8655npWXf9Q" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vdi2sXH4EeG8655npWXf9Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_8KjU0HH4EeG8655npWXf9Q" name="pertussisResultOrganizer" type="_52bWEHH4EeG8655npWXf9Q" association="_8KjU0nH4EeG8655npWXf9Q">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_89z9wHH4EeG8655npWXf9Q" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_89z9wXH4EeG8655npWXf9Q"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ujkhwnH4EeG8655npWXf9Q" memberEnd="_ujkhwHH4EeG8655npWXf9Q _ujkhw3H4EeG8655npWXf9Q">
+      <ownedEnd xmi:id="_ujkhw3H4EeG8655npWXf9Q" type="_is9gIHH4EeG8655npWXf9Q" association="_ujkhwnH4EeG8655npWXf9Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_52bWEHH4EeG8655npWXf9Q" name="PertussisResultOrganizer">
+      <generalization xmi:id="_52bWEXH4EeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_U-kBAHH5EeG8655npWXf9Q" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_UbVD8K6uEd6_ioDelDcPPg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_wE70IDL9EeGXS8s8x7j2Fg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FCXcsKWDEeG5_K9BCQxvMA" name="pertussisResultObservation" type="_UOGp4HH4EeG8655npWXf9Q" association="_FCXcsqWDEeG5_K9BCQxvMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GV9ykKWDEeG5_K9BCQxvMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GV9ykaWDEeG5_K9BCQxvMA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8KjU0nH4EeG8655npWXf9Q" memberEnd="_8KjU0HH4EeG8655npWXf9Q _8KsewHH4EeG8655npWXf9Q">
+      <ownedEnd xmi:id="_8KsewHH4EeG8655npWXf9Q" type="_is9gIHH4EeG8655npWXf9Q" association="_8KjU0nH4EeG8655npWXf9Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_451GIH6JEeGdF60gQ6b8Pg" name="PertussisImmunizationActivity">
+      <generalization xmi:id="_451GIX6JEeGdF60gQ6b8Pg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
+      </generalization>
+      <ownedAttribute xmi:id="_ASeqEqOqEeG3gKoyOiGNFA" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-4fc8n6JEeGdF60gQ6b8Pg" memberEnd="_-4fc8H6JEeGdF60gQ6b8Pg _-4fc836JEeGdF60gQ6b8Pg">
+      <ownedEnd xmi:id="_-4fc836JEeGdF60gQ6b8Pg" type="_LMImAHHrEeG8655npWXf9Q" association="_-4fc8n6JEeGdF60gQ6b8Pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LMUmEH6KEeGdF60gQ6b8Pg" name="PertussisImmunizationProduct">
+      <ownedRule xmi:id="_W0MBEH6KEeGdF60gQ6b8Pg" name="PertussisVaccineAdminsteredValueSetConstraint" constrainedElement="_LMUmEH6KEeGdF60gQ6b8Pg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YaG2AH6KEeGdF60gQ6b8Pg">
+          <language>Analysis</language>
+          <body>SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet x.x.x Vaccine Administered (Pertussis)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_LMUmEX6KEeGdF60gQ6b8Pg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_8Xj7UIiBEd66cKocspyVOg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_47Vooo8JEeGdS-mjnUt7Hg" memberEnd="_47VooI8JEeGdS-mjnUt7Hg _47Voo48JEeGdS-mjnUt7Hg">
+      <ownedEnd xmi:id="_47Voo48JEeGdS-mjnUt7Hg" type="_364u4HHWEeG8655npWXf9Q" association="_47Vooo8JEeGdS-mjnUt7Hg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FhfQ0o8KEeGdS-mjnUt7Hg" memberEnd="_FhfQ0I8KEeGdS-mjnUt7Hg _FhfQ048KEeGdS-mjnUt7Hg">
+      <ownedEnd xmi:id="_FhfQ048KEeGdS-mjnUt7Hg" type="_U93D8HHZEeG8655npWXf9Q" association="_FhfQ0o8KEeGdS-mjnUt7Hg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-u4WcpLsEeGUUI2-ChIV2A" memberEnd="_-u4WcJLsEeGUUI2-ChIV2A _-u4Wc5LsEeGUUI2-ChIV2A">
+      <ownedEnd xmi:id="_-u4Wc5LsEeGUUI2-ChIV2A" type="_2-b6oUOoEeGGsOswcKrH-Q" association="_-u4WcpLsEeGUUI2-ChIV2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_A5w5opLtEeGUUI2-ChIV2A" memberEnd="_A5w5oJLtEeGUUI2-ChIV2A _A5w5o5LtEeGUUI2-ChIV2A">
+      <ownedEnd xmi:id="_A5w5o5LtEeGUUI2-ChIV2A" type="_2-b6oUOoEeGGsOswcKrH-Q" association="_A5w5opLtEeGUUI2-ChIV2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_M9fSgJOjEeGHE73moKNrdA" name="PertussisPossibleCaseContactLocationAct">
+      <ownedRule xmi:id="_wEIsIJOjEeGHE73moKNrdA" name="ParticipantLocation" constrainedElement="_M9fSgJOjEeGHE73moKNrdA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_CBUDYJOkEeGHE73moKNrdA">
+          <language>Analysis</language>
+          <body>SHALL contain [1..*] participant, which SHALL contain [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_M9fSgZOjEeGHE73moKNrdA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_vNTKwJOjEeGHE73moKNrdA" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_4ObNAJOjEeGHE73moKNrdA" value="ACT"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vNTKwZOjEeGHE73moKNrdA" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vNTKwpOjEeGHE73moKNrdA" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_6fQnMJOjEeGHE73moKNrdA" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vNTKw5OjEeGHE73moKNrdA" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q05GsJV9EeGzRKUyYuSXFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q05GsZV9EeGzRKUyYuSXFA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mwYo0pOjEeGHE73moKNrdA" memberEnd="_mwYo0JOjEeGHE73moKNrdA _mwYo05OjEeGHE73moKNrdA">
+      <ownedEnd xmi:id="_mwYo05OjEeGHE73moKNrdA" type="_364u4HHWEeG8655npWXf9Q" association="_mwYo0pOjEeGHE73moKNrdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FCXcsqWDEeG5_K9BCQxvMA" memberEnd="_FCXcsKWDEeG5_K9BCQxvMA _FCXcs6WDEeG5_K9BCQxvMA">
+      <ownedEnd xmi:id="_FCXcs6WDEeG5_K9BCQxvMA" type="_52bWEHH4EeG8655npWXf9Q" association="_FCXcsqWDEeG5_K9BCQxvMA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_27mpGUOoEeGGsOswcKrH-Q">
+      <eAnnotations xmi:id="_27mpGkOoEeGGsOswcKrH-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_27mpG0OoEeGGsOswcKrH-Q">
+      <eAnnotations xmi:id="_27mpHEOoEeGGsOswcKrH-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_2-b6oEOoEeGGsOswcKrH-Q" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="pertussis" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/pertussis" packageName="pertussis" prefix="pertussis" base_Namespace="_27mpEEOoEeGGsOswcKrH-Q"/>
+  <CDA:CDATemplate xmi:id="_2-b6okOoEeGGsOswcKrH-Q" base_Class="_2-b6oUOoEeGGsOswcKrH-Q" templateId="2.16.840.1.113883.10.20.15.1.5" assigningAuthorityName=""/>
+  <CDA:CDATemplate xmi:id="_Aqaq0HHXEeG8655npWXf9Q" base_Class="_364u4HHWEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.2.24"/>
+  <CDA:CDATemplate xmi:id="_kEcTcHHXEeG8655npWXf9Q" base_Class="_eTCVgHHXEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.63"/>
+  <CDA:PropertyValidation xmi:id="_oKQSQHHXEeG8655npWXf9Q" base_Property="_hoRzAHHXEeG8655npWXf9Q"/>
+  <CDA:PropertyValidation xmi:id="_pur5cHHXEeG8655npWXf9Q" base_Property="_hoRzAnHXEeG8655npWXf9Q"/>
+  <CDA:CodeSystemConstraint xmi:id="_r1P9UHHXEeG8655npWXf9Q" code="completed" base_Property="_hoRzA3HXEeG8655npWXf9Q">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_UQF0cHHYEeG8655npWXf9Q" code="413350009" displayName="Finding with explicit context" base_Property="_hoRzAXHXEeG8655npWXf9Q">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_KSpecHHZEeG8655npWXf9Q" severity="WARNING" base_Association="_DimY4nHXEeG8655npWXf9Q"/>
+  <CDA:AssociationValidation xmi:id="_YJtU4HHZEeG8655npWXf9Q" base_Association="_WyGBsnHZEeG8655npWXf9Q"/>
+  <CDA:CDATemplate xmi:id="_j3ZEAHHZEeG8655npWXf9Q" base_Class="_f-PoMHHZEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.65"/>
+  <CDA:PropertyValidation xmi:id="_0FIog3HaEeG8655npWXf9Q" base_Property="_0FIogHHaEeG8655npWXf9Q"/>
+  <CDA:CodeSystemConstraint xmi:id="_C71XAHHbEeG8655npWXf9Q" code="27836007" displayName="Pertussis" base_Property="_0FIogHHaEeG8655npWXf9Q">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_ZCjWgHHbEeG8655npWXf9Q" severity="WARNING" base_Association="_XkhSQnHbEeG8655npWXf9Q"/>
+  <CDA:CDATemplate xmi:id="_HBqYYHHlEeG8655npWXf9Q" base_Class="_TTY0QHHbEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.66"/>
+  <CDA:CDATemplate xmi:id="_Ikmx0HHlEeG8655npWXf9Q" base_Class="_U93D8HHZEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.2.25"/>
+  <CDA:PropertyValidation xmi:id="_Ne3sY3HlEeG8655npWXf9Q" base_Property="_Ne3sYHHlEeG8655npWXf9Q"/>
+  <CDA:ValueSetConstraint xmi:id="_PeRYUHHlEeG8655npWXf9Q" base_Property="_Ne3sYHHlEeG8655npWXf9Q">
+    <reference href="pertussis-vocab.uml#_EciggEYEEeGCFIO3VfsPaQ"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_41SnAHHpEeG8655npWXf9Q" base_Class="_24RgsHHpEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.2.26"/>
+  <CDA:AssociationValidation xmi:id="_8JCPsHHpEeG8655npWXf9Q" severity="WARNING" base_Association="_7eHqcnHpEeG8655npWXf9Q"/>
+  <CDA:CDATemplate xmi:id="_GEt1sHHqEeG8655npWXf9Q" base_Class="_D069UHHqEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.67"/>
+  <CDA:CDATemplate xmi:id="_q0ko0HHqEeG8655npWXf9Q" base_Class="_nHfTEHHqEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.68"/>
+  <CDA:CDATemplate xmi:id="_0hW3MHHqEeG8655npWXf9Q" base_Class="_y5fhgHHqEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.69"/>
+  <CDA:CDATemplate xmi:id="_hMI5gHHrEeG8655npWXf9Q" base_Class="_LMImAHHrEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.2.28"/>
+  <CDA:TextValue xmi:id="_3dBFIHHsEeG8655npWXf9Q" base_Property="_yI-YoHHsEeG8655npWXf9Q" value="Public Health Case Report - Pertussis"/>
+  <CDA:ConstraintValidation xmi:id="__RnlsHHzEeG8655npWXf9Q" base_Constraint="_t0CUgHHzEeG8655npWXf9Q"/>
+  <CDA:CDATemplate xmi:id="_nWrdQHH4EeG8655npWXf9Q" base_Class="_is9gIHH4EeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.2.27"/>
+  <CDA:CDATemplate xmi:id="__zTkMHH4EeG8655npWXf9Q" base_Class="_UOGp4HH4EeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.71"/>
+  <CDA:CDATemplate xmi:id="_AcbZsHH5EeG8655npWXf9Q" base_Class="_52bWEHH4EeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.70"/>
+  <CDA:PropertyValidation xmi:id="_HbA8cXH5EeG8655npWXf9Q" base_Property="_HbA8cHH5EeG8655npWXf9Q"/>
+  <CDA:ValueSetConstraint xmi:id="_IXhA8HH5EeG8655npWXf9Q" base_Property="_HbA8cHH5EeG8655npWXf9Q">
+    <reference href="pertussis-vocab.uml#_mPXUgJOlEeGHE73moKNrdA"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_U-kBAXH5EeG8655npWXf9Q" base_Property="_U-kBAHH5EeG8655npWXf9Q"/>
+  <CDA:CDATemplate xmi:id="_72VTgH6JEeGdF60gQ6b8Pg" base_Class="_451GIH6JEeGdF60gQ6b8Pg" templateId="2.16.840.1.113883.10.20.15.3.72"/>
+  <CDA:CDATemplate xmi:id="_YmPioH6MEeGdF60gQ6b8Pg" base_Class="_LMUmEH6KEeGdF60gQ6b8Pg" templateId="2.16.840.1.113883.10.20.15.3.73"/>
+  <CDA:EntryRelationship xmi:id="_xdB4YI_XEeGmVIltoEl7dQ" severity="WARNING" base_Association="_tGmV0nHqEeG8655npWXf9Q" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_yEEqQI_XEeGmVIltoEl7dQ" severity="INFO" base_Association="_2pZhwnHqEeG8655npWXf9Q" typeCode="COMP"/>
+  <CDA:AssociationValidation xmi:id="__hPngJLsEeGUUI2-ChIV2A" severity="WARNING" base_Association="_-u4WcpLsEeGUUI2-ChIV2A"/>
+  <CDA:AssociationValidation xmi:id="_B6IxgJLtEeGUUI2-ChIV2A" severity="WARNING" base_Association="_A5w5opLtEeGUUI2-ChIV2A"/>
+  <CDA:CDATemplate xmi:id="_UN9PcJOjEeGHE73moKNrdA" severity="WARNING" base_Class="_M9fSgJOjEeGHE73moKNrdA" templateId="2.16.840.1.113883.10.20.15.3.64"/>
+  <CDA:Entry xmi:id="_pDKjwJOjEeGHE73moKNrdA" severity="INFO" base_Association="_mwYo0pOjEeGHE73moKNrdA" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_pokW4JOjEeGHE73moKNrdA" severity="INFO" base_Association="_47Vooo8JEeGdS-mjnUt7Hg" typeCode="DRIV"/>
+  <CDA:ConstraintValidation xmi:id="_zg01cJOjEeGHE73moKNrdA" base_Constraint="_wEIsIJOjEeGHE73moKNrdA"/>
+  <CDA:PropertyValidation xmi:id="_5Gv8IJOjEeGHE73moKNrdA" base_Property="_vNTKwJOjEeGHE73moKNrdA"/>
+  <CDA:PropertyValidation xmi:id="_7GmUAJOjEeGHE73moKNrdA" base_Property="_vNTKwpOjEeGHE73moKNrdA"/>
+  <CDA:PropertyValidation xmi:id="_8uT4sJOjEeGHE73moKNrdA" base_Property="_vNTKw5OjEeGHE73moKNrdA"/>
+  <CDA:CodeSystemConstraint xmi:id="_9VDvoJOjEeGHE73moKNrdA" code="completed" base_Property="_vNTKw5OjEeGHE73moKNrdA">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_Hs5tMJOkEeGHE73moKNrdA" code="413350009" displayName="Finding with explicit context" base_Property="_vNTKwZOjEeGHE73moKNrdA">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_oLMTkJ_QEeGpRtS_7CxGlA" base_Property="_yI-YoHHsEeG8655npWXf9Q"/>
+  <CDA:Entry xmi:id="_yK5d8J_QEeGpRtS_7CxGlA" base_Association="_FhfQ0o8KEeGdS-mjnUt7Hg" typeCode="DRIV"/>
+  <CDA:AssociationValidation xmi:id="__0HFoJ_QEeGpRtS_7CxGlA" severity="WARNING" base_Association="_-4fc8n6JEeGdF60gQ6b8Pg"/>
+  <CDA:PropertyValidation xmi:id="_FnmHMJ_REeGpRtS_7CxGlA" base_Property="_vNTKwZOjEeGHE73moKNrdA"/>
+  <CDA:PropertyValidation xmi:id="_QcplMJ_REeGpRtS_7CxGlA" base_Property="_hoRzAXHXEeG8655npWXf9Q"/>
+  <CDA:PropertyValidation xmi:id="_ROkKUJ_REeGpRtS_7CxGlA" base_Property="_hoRzA3HXEeG8655npWXf9Q"/>
+  <CDA:Entry xmi:id="_XP6owJ_REeGpRtS_7CxGlA" severity="WARNING" base_Association="_ujkhwnH4EeG8655npWXf9Q" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_X2ECwJ_REeGpRtS_7CxGlA" severity="INFO" base_Association="_8KjU0nH4EeG8655npWXf9Q" typeCode="DRIV"/>
+  <CDA:ConstraintValidation xmi:id="_l5MmUJ_REeGpRtS_7CxGlA" base_Constraint="_1DtdIJOmEeGHE73moKNrdA"/>
+  <CDA:Entry xmi:id="_y1_z8J_REeGpRtS_7CxGlA" base_Association="_JIhk8nHqEeG8655npWXf9Q" typeCode="DRIV"/>
+  <CDA:ConstraintValidation xmi:id="_1Ui6AJ_REeGpRtS_7CxGlA" base_Constraint="_5OliIJOmEeGHE73moKNrdA"/>
+  <CDA:PropertyValidation xmi:id="_F6yWYKOqEeG3gKoyOiGNFA" base_Property="_ASeqEqOqEeG3gKoyOiGNFA"/>
+  <CDA:AssociationValidation xmi:id="_GrkPIKWDEeG5_K9BCQxvMA" base_Association="_FCXcsqWDEeG5_K9BCQxvMA"/>
+</xmi:XMI>

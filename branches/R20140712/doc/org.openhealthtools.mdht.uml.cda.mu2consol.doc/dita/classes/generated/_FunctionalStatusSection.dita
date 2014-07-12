@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Functional Status Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.14</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.14"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.14"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusSection.html">Consol Functional Status Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.14</tt>)</li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CognitiveStatusResultObservation.dita">Cognitive Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.74</tt>)</li></ol></li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CognitiveStatusResultOrganizer.dita">Cognitive Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.75</tt>)</li></ol></li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusResultObservation.dita">Functional Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.67</tt>)</li></ol></li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusResultOrganizer.dita">Functional Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.66</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusSection.html">Consol Functional Status Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.14</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="47420-5" </tt><i>Functional status assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7921)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7922)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7923)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14422, CONF:14423)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusProblemObservation.dita">Functional Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.68</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14424, CONF:14425)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CognitiveStatusProblemObservation.dita">Cognitive Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.73</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14426, CONF:14427)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CaregiverCharacteristics.dita">Caregiver Characteristics</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.72</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14580, CONF:14581)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AssessmentScaleObservation.dita">Assessment Scale Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.69</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14582, CONF:14583)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NonMedicinalSupplyActivity.dita">Non Medicinal Supply Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.50</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:16777, CONF:16778)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PressureUlcerObservation.dita">Pressure Ulcer Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.70</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:16779, CONF:16780)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfPressureUlcersObservation.dita">Number Of Pressure Ulcers Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.76</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:16781, CONF:16782)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HighestPressureUlcerStage.dita">Highest Pressure Ulcer Stage</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.77</tt>)</li></ol></li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CognitiveStatusResultObservation.dita">Cognitive Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.74</tt>)</li></ol></li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CognitiveStatusResultOrganizer.dita">Cognitive Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.75</tt>)</li></ol></li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusResultObservation.dita">Functional Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.67</tt>)</li></ol></li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusResultOrganizer.dita">Functional Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.66</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::FunctionalStatusSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>cognitiveStatusResultObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CognitiveStatusResultObservation</entry><entry>CONF:14420CONF:14421</entry><entry> </entry></row> 
+<row><entry>cognitiveStatusResultOrganizer</entry><entry>cda:entry/cda:organizer</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CognitiveStatusResultOrganizer</entry><entry>CONF:14416CONF:14417</entry><entry> </entry></row> 
+<row><entry>functionalStatusResultObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>FunctionalStatusResultObservation</entry><entry>CONF:14418CONF:14419</entry><entry> </entry></row> 
+<row><entry>functionalStatusResultOrganizer</entry><entry>cda:entry/cda:organizer</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>FunctionalStatusResultOrganizer</entry><entry>CONF:14414CONF:14415</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="513727959"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="1530966456"/>
+      <code code="1007983203"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <organizer>
+      <id root="MDHT" extension="342213059"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <component>
+        <observation>
+          <id root="MDHT" extension="1056939735"/>
+          <code code="1956840495"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="1709560881"/>
+      <code code="811529419"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <organizer>
+      <id root="MDHT" extension="1618219981"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <component>
+        <observation>
+          <id root="MDHT" extension="1180762126"/>
+          <code code="1167871767"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Functional Status Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.14</tt>]</p>
+</body>
+</topic>

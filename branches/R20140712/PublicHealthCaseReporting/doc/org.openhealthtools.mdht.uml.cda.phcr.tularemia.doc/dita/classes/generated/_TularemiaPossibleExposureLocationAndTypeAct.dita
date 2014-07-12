@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Tularemia Possible Exposure Location And Type Act - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.15.3.43</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.43"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:1617)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:1618)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="413350009" </tt><i>Finding with explicit context</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:1619)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1626)
+</li>
+<li><b>SHALL</b> contain [1..1] qualifier, <b>SHALL</b> contain [1..1] name/@code="246090004" Associated finding (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC, <b>SHALL</b> contain [1..1] value/@code="PHC818" Tularemia exposure (CodeSystem: 2.16.840.1.114222.4.5.274 PHIN VADS code system) STATIC (CONF:1620)</li>
+<li><b>SHALL</b> contain [1..1] qualifier, which <b>SHALL</b> contain [1..1] name/@code="408729009" Finding context (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC, <b>SHALL</b> contain [1..1] value/@code="410590009" Known possible (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1623)</li>
+<li><b>SHALL</b> contain [1..*] participant, which <b>SHALL</b> contain [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC (CONF:1627)</li>
+<li><b>MAY</b> contain [0..*] participant, which if present <b>SHALL</b> contain [1..1] @typeCode="DIR" Direct target (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC (CONF:1637)</li>
+<li><b>MAY</b> contain [0..*] participant, which if present <b>SHALL</b> contain [1..1] @typeCode="DIR" Direct target (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC (CONF:1645)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:1617)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:1618)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="413350009" </tt><i>Finding with explicit context</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:1619)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1626)
+</li>
+<li><b>SHALL</b> contain [1..1] qualifier, <b>SHALL</b> contain [1..1] name/@code="246090004" Associated finding (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC, <b>SHALL</b> contain [1..1] value/@code="PHC818" Tularemia exposure (CodeSystem: 2.16.840.1.114222.4.5.274 PHIN VADS code system) STATIC (CONF:1620)</li>
+<li><b>SHALL</b> contain [1..1] qualifier, which <b>SHALL</b> contain [1..1] name/@code="408729009" Finding context (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC, <b>SHALL</b> contain [1..1] value/@code="410590009" Known possible (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1623)</li>
+<li><b>SHALL</b> contain [1..*] participant, which <b>SHALL</b> contain [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC (CONF:1627)</li>
+<li><b>MAY</b> contain [0..*] participant, which if present <b>SHALL</b> contain [1..1] @typeCode="DIR" Direct target (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC (CONF:1637)</li>
+<li><b>MAY</b> contain [0..*] participant, which if present <b>SHALL</b> contain [1..1] @typeCode="DIR" Direct target (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC (CONF:1645)</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Tularemia Possible Exposure Location And Type Act</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.15.3.43</tt>]</p>
+</body>
+</topic>

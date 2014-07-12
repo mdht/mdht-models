@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Labor and Delivery Procedure Section</title>
+<shortdesc conref="generated/_LaborAndDeliveryProcedureSection.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_LaborAndDeliveryProcedureSection.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_LaborAndDeliveryProcedureSection.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_LaborAndDeliveryProcedureSection.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_LaborAndDeliveryProcedureSection.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_LaborAndDeliveryProcedureSection.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Labor and Delivery Procedure Section example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[	<component>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.7"/>
+							<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="xxxxxx" displayName="Labor and Delivery Procedure Section"/>
+							<text>
+								...
+								</list>
+							</text>
+							<entry>
+								<procedure classCode="PROC" moodCode="EVN" negationInd="false">
+									<templateId root="2.16.840.1.113883.10.20.26.39"/>
+									...
+								</procedure>
+							</entry>
+							<entry>
+								<procedure classCode="PROC" moodCode="EVN" negationInd="false">
+									<templateId root="2.16.840.1.113883.10.20.26.45"/>
+									,,,
+								</procedure>
+							</entry>
+						</section>
+					</component>]]>
+</codeblock>
+</body>
+</topic>

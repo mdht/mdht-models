@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Component Death Cause Interval</title>
+<shortdesc conref="generated/_ComponentDeathCauseInterval.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_ComponentDeathCauseInterval.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_ComponentDeathCauseInterval.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_ComponentDeathCauseInterval.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_ComponentDeathCauseInterval.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_ComponentDeathCauseInterval.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p audience="Examples"><b>Component Death Cause Interval example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock audience="Examples" conref="generated/_ComponentDeathCauseInterval.dita#classId/example">
+</codeblock>
+</body>
+</topic>

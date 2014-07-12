@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Ethnicity Group</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.837"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Ethnicity Group - 2.16.840.1.114222.4.11.837</entry></row>
+<row><entry>Code System</entry><entry>Race and Ethnicity - CDC - 2.16.840.1.113883.6.238</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>2135-2</entry><entry>Race and Ethnicity - CDC</entry><entry>Hispanic or Latino</entry></row>
+<row><entry>2186-5</entry><entry>Race and Ethnicity - CDC</entry><entry>Not Hispanic or Latino</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

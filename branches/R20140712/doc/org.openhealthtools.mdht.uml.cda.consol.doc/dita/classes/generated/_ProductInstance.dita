@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Product Instance - conformance rules</title>
+<shortdesc id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.22.4.37</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ParticipantRole</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.37"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This clinical statement represents a particular device that was placed in or used as part of a procedure or other act. This provides a record of the identifier and other details about the given product that was used. For example, it is important to have a record that indicates not just that a hip prostheses was placed in a patient but that it was a particular hip prostheses number with a unique identifier.
+The FDA Amendments Act specifies the creation of a Unique Device Identification (UDI) System that requires the label of devices to bear a unique identifier that will standardize device identification and identify the device through distribution and use.  
+The UDI should be sent in the participantRole/id.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7901, CONF:10522 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.37"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:7900)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7902)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> (CONF:7905) <ol><li> This scopingEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7908)</li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:7903) <ol><li> This playingDevice <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:7904)</li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:7900)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7902)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> (CONF:7905) <ol><li> This scopingEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7908)</li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:7903) <ol><li> This playingDevice <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:7904)</li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProductInstance</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::participantrole[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>RoleClassRoot</entry><entry>CONF:7900</entry><entry> ROL</entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:7902</entry><entry> </entry></row> 
+<row><entry>playingDevice</entry><entry>playingDevice</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PlayingDevice</entry><entry>CONF:7903</entry><entry> </entry></row> 
+<row><entry>productInstance</entry><entry>productInstance</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProductInstance</entry><entry>CONF:8752CONF:15900</entry><entry> </entry></row> 
+<row><entry>scopingEntity</entry><entry>scopingEntity</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ScopingEntity</entry><entry>CONF:7905</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<participantrole xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1213715302"/>
+  <playingDevice>
+    <code code="1760228951"/>
+  </playingDevice>
+  <scopingEntity>
+    <id root="MDHT" extension="691877013"/>
+  </scopingEntity>
+</participantrole>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Product Instance</ph></p>
+<p id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.22.4.37</tt>]</p>
+</body>
+</topic>

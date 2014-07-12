@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Reporting Fetal Death Information from a clinical setting to vital records - conformance rules</title>
+<shortdesc id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.26.2</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalDocument</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.26.2"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The document definition captures the information represented on the US Facility Worksheet for the Report of Fetal Death, which is used to record and register the birth of a child.  In the United States, registration of vital events is the responsibility of 57 vital records jurisdictions representing 50 states, 5 territories, Washington, DC and New York City.  Vital statistics are reported to the National Center for Health Statistics, a Center within the Centers for Disease Control and Prevention (CDC).  The experience of state and federal vital records officials has been drawn on for the contents of the document.
+
+The 1992 Revision of the Model State Vital Statistics Act and Regulations (1) recommends the following
+definition of fetal death. This definition is based on the definition promulgated by the World Health
+Organization in 1950 and revised in 1988 by a working group formed by the American Academy of Pediatrics
+and the American College of Obstetricians and Gynecologists (2). The revision added clarifiers to help
+determine what is to be considered a fetal death:
+''Fetal death'' means death prior to the complete expulsion or extraction from its mother of a product of
+human conception, irrespective of the duration of pregnancy and which is not an induced termination of
+pregnancy. The death is indicated by the fact that after such expulsion or extraction, the fetus does not
+breathe or show any other evidence of life, such as beating of the heart, pulsation of the umbilical cord,
+or definite movement of voluntary muscles. Heartbeats are to be distinguished from transient cardiac
+contractions; respirations are to be distinguished from fleeting respiratory efforts or gasps.
+Forty-one areas use a definition very similar to this definition, thirteen areas use a shortened definition of
+fetal death, and three areas have no formal definition of fetal death. (State Definitions and Reporting Requirements for 
+Live Births, Fetal Deaths, and INduced Terminations of Pregnancy 1997 Revision, US Department of Health and Human
+Services, Centers for Disease Control and Prevention, National Center for Health Statistics)
+
+A custom header has been used - as compared to the Consolidated US Realm header - because of the substantial differences in the underlying use case.  For vital records purposes, basic identification only of the record target is provided.  However, the more detailed demographics information required for Consolidated CDA is not included within the facilities work sheet which provides the data content of this stream of reporting.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.2"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCCLIN" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:142)
+<ul><li><p><lines><i>The code value indicates this is a clincial document.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:143)
+<ul><li><p><lines><i>The value indicates the included information refers to an existing document - as opposed to an intended one.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt> (CONF:139)<tt><b>/@code</b>="US" </tt> (CodeSystem:<tt> 1.0.3166.1 Country (ISO 3166-1)</tt>) (CONF:140)
+<ul><li><p><lines><i>The realm that the document is relevant for.  This specification is a US realm product.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>typeId</b></tt> (CONF:141)
+<ul><li><p><lines><i>Type ID root = 2.16.840.1.113003.1.3.
+Type ID extension = "POCD_HD000040.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:144)
+<ul><li><p><lines><i>Provide the identifier assigned to the document by the healthcare provider acting as a custodian of the
+information.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:145)<tt><b>/@code</b>="69045-3" </tt><i>U.S. stanard report of fetal death - 2003 revision</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:146)
+<ul><li><p><lines><i>The value provided indicates that the document is a report of fetal death.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:147)
+<ul><li><p><lines><i>A text title for the document.  The title may be either a locally defined name or the display name corresponding to clinicalDocument/code.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:148)
+<ul><li><p><lines><i>The point in time the document was created at.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt> (CONF:149), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.25 Confidentiality</tt>) (CONF:150)
+<ul><li><p><lines><i>An indication of the level of confidentiality with which the document needs to be managed.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt> (CONF:151)
+<ul><li><p><lines><i>The language used for recording information within the document.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>recordTarget</b></tt> (CONF:152) <ol><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt> (CONF:164)</li><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> (CONF:165) <ol><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PAT" </tt> (CONF:169)</li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:167)<p><lines><i>The medical record number assigned to the mother by the health care facility.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li><li> This patientRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:166)<p><lines><i>The current postal address for the mother.</i></lines></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> with data type <xref href="../Patient.dita">Patient</xref> (CONF:168)</li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> (CONF:153) <p><lines><i>The author participation contains information about the person who authored the document.  This is the person who verifies/approves the accuracy of the data to be sent to the vital records system.</i></lines></p><ol><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="AUT" </tt> (CONF:160)</li><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:161) <ol><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:162)</li><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:163)<p><lines><i>An identifier for the author of the fetal death report.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>custodian</b></tt> (CONF:154) <ol><li> This custodian <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="CST" </tt> (CONF:173)</li><li> This custodian <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedCustodian</b></tt> (CONF:174) <ol><li> This assignedCustodian <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:175)</li><li> This assignedCustodian <b>SHALL</b> contain exactly one [1..1] <tt><b>representedCustodianOrganization</b></tt> (CONF:176) <ol><li> This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ORG" </tt> (CONF:177)</li><li> This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:178)</li><li> This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:179)<p><lines><i>An identifier for the custodian organization.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li></ol> </li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:157)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PrenatalTestingAndSurveillanceSection.dita">Prenatal Testing and Surveillance Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.3</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:158)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PriorPregnancyHistorySection.dita">Prior Pregnancy History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.12</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:459)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection: Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.48</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:155)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliverySection.dita">Labor and Delivery Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.8</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:156)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FetalDeliverySection.dita">Fetal Delivery Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.4</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCCLIN" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:142)
+<ul><li><p><lines><i>The code value indicates this is a clincial document.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:143)
+<ul><li><p><lines><i>The value indicates the included information refers to an existing document - as opposed to an intended one.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt> (CONF:139)<tt><b>/@code</b>="US" </tt> (CodeSystem:<tt> 1.0.3166.1 Country (ISO 3166-1)</tt>) (CONF:140)
+<ul><li><p><lines><i>The realm that the document is relevant for.  This specification is a US realm product.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>typeId</b></tt> (CONF:141)
+<ul><li><p><lines><i>Type ID root = 2.16.840.1.113003.1.3.
+Type ID extension = "POCD_HD000040.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:144)
+<ul><li><p><lines><i>Provide the identifier assigned to the document by the healthcare provider acting as a custodian of the
+information.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:145)<tt><b>/@code</b>="69045-3" </tt><i>U.S. stanard report of fetal death - 2003 revision</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:146)
+<ul><li><p><lines><i>The value provided indicates that the document is a report of fetal death.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:147)
+<ul><li><p><lines><i>A text title for the document.  The title may be either a locally defined name or the display name corresponding to clinicalDocument/code.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:148)
+<ul><li><p><lines><i>The point in time the document was created at.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt> (CONF:149), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.25 Confidentiality</tt>) (CONF:150)
+<ul><li><p><lines><i>An indication of the level of confidentiality with which the document needs to be managed.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt> (CONF:151)
+<ul><li><p><lines><i>The language used for recording information within the document.</i></lines></p></li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Component2.dita">Component2</xref></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>recordTarget</b></tt> (CONF:152) <ol><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt> (CONF:164)</li><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> (CONF:165) <ol><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PAT" </tt> (CONF:169)</li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:167)<p><lines><i>The medical record number assigned to the mother by the health care facility.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li><li> This patientRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:166)<p><lines><i>The current postal address for the mother.</i></lines></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> with data type <xref href="../Patient.dita">Patient</xref> (CONF:168)</li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> (CONF:153) <p><lines><i>The author participation contains information about the person who authored the document.  This is the person who verifies/approves the accuracy of the data to be sent to the vital records system.</i></lines></p><ol><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="AUT" </tt> (CONF:160)</li><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:161) <ol><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:162)</li><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:163)<p><lines><i>An identifier for the author of the fetal death report.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>custodian</b></tt> (CONF:154) <ol><li> This custodian <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="CST" </tt> (CONF:173)</li><li> This custodian <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedCustodian</b></tt> (CONF:174) <ol><li> This assignedCustodian <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:175)</li><li> This assignedCustodian <b>SHALL</b> contain exactly one [1..1] <tt><b>representedCustodianOrganization</b></tt> (CONF:176) <ol><li> This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ORG" </tt> (CONF:177)</li><li> This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:178)</li><li> This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:179)<p><lines><i>An identifier for the custodian organization.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li></ol> </li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:157)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PrenatalTestingAndSurveillanceSection.dita">Prenatal Testing and Surveillance Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.3</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:158)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PriorPregnancyHistorySection.dita">Prior Pregnancy History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.12</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:459)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection: Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.48</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:155)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliverySection.dita">Labor and Delivery Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.8</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:156)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FetalDeliverySection.dita">Fetal Delivery Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.4</tt>)</li></ol></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Reporting Fetal Death Information from a clinical setting to vital records</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.26.2</tt>]</p>
+</body>
+</topic>

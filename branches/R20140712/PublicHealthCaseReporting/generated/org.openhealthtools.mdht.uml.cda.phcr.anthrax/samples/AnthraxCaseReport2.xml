@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.15"/>
+  <templateId root="2.16.840.1.113883.10.20.15.1.3"/>
+  <id root="e93ea066-5643-474b-a1b5-202e7e267aad"/>
+  <code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Public Health Case Report"/>
+  <title>Public Health Case Report - Anthrax</title>
+  <effectiveTime value="20070830100000-0400"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <versionNumber value="2"/>
+  <recordTarget>
+    <patientRole>
+      <id root="1.3.6.1.4.1.19376.1.3.4" extension="214365"/>
+      <addr><streetAddressLine>123 Rythm Road</streetAddressLine><city>Wilton</city><state>CT</state><postalCode>06811</postalCode></addr>
+      <telecom value="tel:+1-203-234-0965"/>
+      <patient>
+        <name><family>JAMIBE</family><given>KENSUKI</given></name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7" displayName="Male"/>
+        <birthTime value="19720101000000+0200"/>
+        <raceCode code="2060-2" codeSystem="2.16.840.1.113883.1.11.14914" codeSystemName="Race Value Set" displayName="African"/>
+        <ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Ethnicity Group" displayName="Not Hispanic or Latino"/>
+        <birthplace>
+          <place>
+            <addr><country>CPV</country></addr>
+          </place>
+        </birthplace>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20070830100000-0400"/>
+    <assignedAuthor>
+      <id nullFlavor="UNK"/>
+      <addr><streetAddressLine>24 Hospital Avenue</streetAddressLine><city>Danbury</city><state>CT</state></addr>
+      <telecom value="tel:+1-203-536-8789"/>
+      <assignedPerson>
+        <name><family>STRATIDIS</family><given>JAY</given><prefix>DR</prefix></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="UNK"/>
+        <name>HITE-CT</name>
+        <telecom value="tel:+1-860-509-8000"/>
+        <addr><city>Hartford</city><state>CT</state></addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator>
+    <time value="20070830100000-0400"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <id nullFlavor="UNK"/>
+      <addr><streetAddressLine>24 Hospital Avenue</streetAddressLine><city>Danbury</city><state>CT</state></addr>
+      <telecom value="tel:+1-203-536-8789"/>
+      <assignedPerson>
+        <name><family>STRATIDIS</family><given>JAY</given><prefix>DR</prefix></name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <relatedDocument typeCode="RPLC">
+    <parentDocument>
+      <id root="998613c8-6d4f-4722-b3ab-d8652daaf726"/>
+    </parentDocument>
+  </relatedDocument>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.15"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.22"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.17"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
+          <title>Social History</title>
+          <text><list>
+            <caption>Anthrax Social History Section</caption></list>
+            <list>
+                        <item>Race - African</item>
+                        <item>Race - White</item>
+                        <item>Occupation Musical Instrument Repairs and Tuners:  Musical Instrument Manufacturing Industry</item>
+                        <item>Occupation Location - Home Studio, 123 Rythm RoadWilton CT</item>
+                        <item>Occupation Start Date: 1992/01/01</item>
+                        <item>Occupation Chefs and Head Cooks:  Full Service Restaurants Industry</item>
+                        <item>Occupation Location - Dave's Fine Dining, Wilton CT</item>
+                        <item>Occupation Start Date: 2002/01/01</item>
+                        <item>Possible Exposure Location - Home environment, 123 Rythm RoadWilton CT</item>
+                        <item>Exposure to Animal - Domestic Goat</item>
+                        <item>Exposure to Material - Animal Hide</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.9"/>
+              <code code="32624-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Race"/>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" code="2060-2" codeSystem="2.16.840.1.113883.1.11.14914" codeSystemName="Race Value Set" displayName="African"/>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.9"/>
+              <code code="32624-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Race"/>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" code="2106-3" codeSystem="2.16.840.1.113883.1.11.14914" codeSystemName="Race Value Set" displayName="White"/>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.7"/>
+              <code code="11341-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Occupation"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="19920101000000-0500"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="49-9063" codeSystem="2.16.840.1.113883.6.243" codeSystemName="Occupation (SOC 2000)" displayName="Musical Instrument Repairers and Tuners"/>
+              <participant typeCode="LOC">
+                <participantRole classCode="LOCE">
+                  <addr><streetAddressLine>123 Rythm Road</streetAddressLine><city>Wilton</city><state>CT</state><postalCode>06811</postalCode></addr>
+                  <telecom value="tel:+1-203-234-0965"/>
+                  <playingEntity classCode="PLC">
+                    <name>Home Studio</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="21844-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Industry Hx"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="19920101000000-0500"/>
+                  <value xsi:type="CD" code="339992" codeSystem="2.16.840.1.113883.6.85" codeSystemName="Industry (NAICS)" displayName="Musical Instrument Manufacturing"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.7"/>
+              <code code="11341-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Occupation"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20020101000000-0500"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="35-1011" codeSystem="2.16.840.1.113883.6.243" codeSystemName="Occupation (SOC 2000)" displayName="Chefs and Head Cooks"/>
+              <participant typeCode="LOC">
+                <participantRole classCode="LOCE">
+                  <addr><city>Smithfield</city><state>CT</state><postalCode>02681</postalCode></addr>
+                  <telecom nullFlavor="UNK"/>
+                  <playingEntity classCode="PLC">
+                    <name>Dave's Fine Dining</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="21844-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Industry Hx"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20020101000000-0500"/>
+                  <value xsi:type="CD" code="7221" codeSystem="2.16.840.1.113883.6.85" codeSystemName="Industry (NAICS)" displayName="Full Service Restaurants"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.41"/>
+              <code code="413350009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding with explicit context">
+                <qualifier>
+                  <name code="246090004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Associated finding"/>
+                  <value code="170475009" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VADS" displayName="Anthrax exposure"/>
+                </qualifier>
+                <qualifier>
+                  <name code="408729009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding context"/>
+                  <value code="410590009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Known possible"/>
+                </qualifier>
+              </code>
+              <statusCode code="completed"/>
+              <participant typeCode="LOC">
+                <time value="20070722150000-0400"/>
+                <participantRole classCode="LOCE">
+                  <addr><streetAddressLine>123 Rythm Road</streetAddressLine><city>Wilton</city><state>CT</state><postalCode>06811</postalCode></addr>
+                  <telecom value="tel:+1-203-234-0965"/>
+                  <playingEntity classCode="PLC">
+                    <code code="264362003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Home environment"/>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <participant typeCode="DIR">
+                <time value="20070722150000-0400"/>
+                <participantRole classCode="EXPR">
+                  <scopingEntity classCode="ANM">
+                    <code code="125097000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Domestic Goat"/>
+                  </scopingEntity>
+                </participantRole>
+              </participant>
+              <participant typeCode="DIR">
+                <time value="20070722150000-0400"/>
+                <participantRole classCode="EXPR">
+                  <scopingEntity classCode="MAT">
+                    <code code="421332005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Animal hide"/>
+                  </scopingEntity>
+                </participantRole>
+              </participant>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.15.2.1"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.15"/>
+          <code code="55752-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical Information"/>
+          <title>Clinical Information</title>
+          <text><list>
+            <caption>Anthrax Clinical Information Section</caption></list>
+            <list>
+                        <item>Condition - Cutaneous Anthrax</item>
+                        <item>Condition diagnosed 2007/08/30</item>
+                        <item>Reported by Dr Jay Stratidis</item>
+                        <item>Problem remains active at time of report</item>
+                        <item>Signs and Symptoms - Cutaneous ulcer with edema and black eschar</item>
+                        <item>Signs and Symptoms - Lymphadenopathy (disorder)</item>
+                        <item>Patient alive 2007/08/30</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.28"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.54"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.36"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20070830100000-0400"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="84980006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Cutaneous Anthrax"/>
+              <author>
+                <time value="20070830100000-0400"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>24 Hospital Avenue</streetAddressLine><city>Danbury</city><state>CT</state></addr>
+                  <telecom value="tel:+1-203-536-8789"/>
+                  <assignedPerson>
+                    <name><family>STRATIDIS</family><given>JAY</given><prefix>DR</prefix></name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name><family>STRATIDIS</family><given>JAY</given><prefix>DR</prefix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.35"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20070828090000-0400"/>
+                  <value xsi:type="CD" code="PHC819" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Cutaneous ulcer with edema and black eschar"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.35"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20070828090000-0400"/>
+                  <value xsi:type="CD" code="30746006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Lymphadenopathy (disorder)"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.42"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20070830100000-0400"/>
+              <value xsi:type="CD" code="438949009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Alive"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.15.2.4"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.14"/>
+          <code code="55753-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment Information"/>
+          <title>Treatment Information</title>
+          <text><list>
+            <caption>Anthrax Treatment Information Section</caption></list>
+            <list>
+                        <item>Condition ID - 214365</item>
+                        <item>Ciprofloxacin 500 MG Oral Tablet [Cipro] ONE TABLET EVERY 12 HOURS FOR 60 DAYS.</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.15.3.57"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.37"/>
+              <code code="133877004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Therapeutic regimen"/>
+              <statusCode code="completed"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="214365"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <value xsi:type="CD" code="84980006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Cutaneous Anthrax"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.55"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.38"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="20070830100000-0400"/>
+                    <high value="20071026000000-0400"/>
+                  </effectiveTime>
+                  <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+                  <doseQuantity value="1"/>
+                  <rateQuantity value="12.0" unit="H"/>
+                  <consumable>
+                    <manufacturedProduct>
+                      <manufacturedMaterial>
+                        <code code="205770" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Ciprofloxacin 500 MG Oral Tablet [Cipro]"/>
+                        <name>Ciprofloxacin 500 MG Oral Tablet</name>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </consumable>
+                </substanceAdministration>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.2"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text><list>
+            <caption>Encounters Section</caption></list>
+            <list>
+                        <item>Encounter Date 2007/08/28</item>
+                        <item>Encounter Type Ambulatory</item>
+                        <item>Encounter source location - Danbury Hospital 24 Hospital AvenueDanbury, CT</item>
+                        <item>Encounter source performer - Dr Jay Stratidis</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <id nullFlavor="UNK"/>
+              <code code="AMB" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActEncounterCode" displayName="Ambulatory"/>
+              <effectiveTime value="20070828090000-0400"/>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>24 Hospital Avenue</streetAddressLine><city>Danbury</city><state>CT</state><streetAddressLine>24 Hospital Avenue</streetAddressLine></addr>
+                  <telecom value="tel:+1-203-536-8789"/>
+                  <assignedPerson>
+                    <name><family>STRATIDIS</family><given>JAY</given><prefix>DR</prefix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id nullFlavor="UNK"/>
+                  <addr><city>Danbury</city><state>CT</state></addr>
+                  <telecom value="tel:+1-203-536-8789"/>
+                  <playingEntity classCode="PLC">
+                    <name>Danbury Hospital</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.14"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.16"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+          <title>Relevant diagnostic tests and/or laboratory data</title>
+          <text><list>
+            <caption>Anthrax Relevant Diagnostic Tests and/or Laboratory Data Section</caption></list>
+            <list>
+                        <item>B anthracis DNA XXX PCR for Skin ulcer swab (specimen) result: Bacillus anthracis</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.31"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.39"/>
+              <id nullFlavor="NI"/>
+              <code code="41622-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="B anthracis DNA XXX PCR"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20070828090000-0400"/>
+              <value xsi:type="CD" code="21927003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Bacillus anthracis"/>
+              <specimen>
+                <specimenRole>
+                  <specimenPlayingEntity>
+                    <code code="258505006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Skin ulcer swab (specimen)"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <representedOrganization>
+                    <name>Danbury Hospital Laboratory</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

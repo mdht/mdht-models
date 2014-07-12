@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Reporting Birth Information from a clinical setting to vital records</title>
+<shortdesc conref="generated/_ReportingBirthInformationFromAClinicalSettingToVitalRecords.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_ReportingBirthInformationFromAClinicalSettingToVitalRecords.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_ReportingBirthInformationFromAClinicalSettingToVitalRecords.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_ReportingBirthInformationFromAClinicalSettingToVitalRecords.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_ReportingBirthInformationFromAClinicalSettingToVitalRecords.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p audience="Examples"><b>Reporting Birth Information from a clinical setting to vital records example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA_SDTC.xsd" classCode="DOCCLIN" moodCode="EVN">
+	<!-- 
+********************************************************
+  CDA Header
+********************************************************
+-->
+	<realmCode code="US"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<templateId root="2.16.840.1.113883.10.20.26.1"/>
+	<!-- conforms to the guidance of the IG -->
+	<id root="1.22.33" extension="0810USA04591"/>
+	<!-- Vital Records document identifier.  Root = OID chosen by the sender. -->
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="68998-4" displayName="US standard certificate of live birth"/>
+	<title>Birth Report</title>
+	<!-- Title of the report-->
+	<effectiveTime value="20121010"/>
+	<!-- Date the report was prepared -->
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<!--Confidentiality is a contextual component of CDA, where the value expressed in the header holds true for the entire document, unless overridden by a nested value and 2.16.840.1.113883.5.25 is the OID for HL7-->
+	<languageCode code="en-US"/>
+	<!--LanguageCode example with language and country-->
+	<!--	
+	********************************************************
+    CDA Header: Participants
+    ********************************************************
+-->
+	<recordTarget typeCode="RCT">
+		<!--The record target includes information regarding the mother.-->
+		<patientRole classCode="PAT">
+			<id root="2.33.44" extension="V000-013-0001-0002"/>
+			<!-- Mother's Medical Record Number.  The root OID for the identifier indicates the name space the identifier value is drawn from. -->
+			<addr>
+				<streetAddressLine>23 Anywhere Lane</streetAddressLine>
+				<city>Metropolis</city>
+				<state>Empire State</state>
+				<postalCode>893442</postalCode>
+			</addr>
+			<patient classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<family>Mother's family name</family>
+					<given>Mother's given Name</given>
+				</name>
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<!--
+	*********************************************************************
+    CDA Header: The Author of the Patient Narrative Document
+    *********************************************************************
+  -->
+	<author typeCode="AUT">
+		<time nullFlavor="NI"/>
+		<assignedAuthor classCode="ASSIGNED">
+			<id extension="300-23"/>
+			<!-- Document Author identifier.  The root OID for the document author identifier indicates the name space the identifier value is drawn from. -->
+		</assignedAuthor>
+	</author>
+	<custodian typeCode="CST">
+		<assignedCustodian classCode="ASSIGNED">
+			<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.77.38.4" extension="ABX_44445USA"/>
+				<!-- Document Custodian identifier.  The root OID for the custodian identifier indicates the name space the identifier value is drawn from. -->
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<!-- 
+********************************************************
+Birth Report Content (CDA BODY)
+********************************************************
+-->
+	<component>
+		<structuredBody>
+			<!-- 
+		********************************************************
+Prenatal Testing and Surveillance Section
+********************************************************
+-->
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.26.3"/>
+					...
+				</section>
+			</component>
+			<!-- 
+		********************************************************
+Prior Pregnancy History Section
+********************************************************
+-->
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.26.12"/>
+					...
+				</section>
+			</component>
+			<!-- 
+		********************************************************
+History of Infection Section
+********************************************************
+-->
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.26.5"/>
+					...
+				</section>
+			</component>
+			<!-- 
+		********************************************************
+Labor and Delivery Section
+********************************************************
+-->
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.26.8"/>
+					...
+					<!--
+********************************************************
+Labor and Delivery Procedure Section
+********************************************************
+-->
+					<component>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.7"/>
+							...
+						</section>
+					</component>
+					<!--
+********************************************************
+Mother's Vital Signs Section
+********************************************************
+-->
+					<component>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.14"/>
+							...
+						</section>
+					</component>
+				</section>
+			</component>
+			<!-- 
+		********************************************************
+Newborn Delivery Section
+********************************************************
+-->
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.26.10"/>
+					...
+					<!--
+********************************************************
+Newborn's Vital Signs Section
+********************************************************
+-->
+					<component>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.11"/>
+							...
+						</section>
+					</component>
+					<!--
+********************************************************
+Assessment Section
+********************************************************
+-->
+					<component>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.2.8"/>
+							<templateId root="2.16.840.1.113883.10.20.26.9"/>
+							...
+						</section>
+					</component>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>
+]]>
+</codeblock>
+</body>
+</topic>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+
+	
+		<title>Null Value Mapping</title>
+		<body>
+			<p>NEMSIS contains null values not listed in HL7. "Not applicable" maps directly to "Not applicable", but
+			"Not recorded" and "Not reported" must be represented as the general concept "No information".
+			These NEMSIS values may also be copied into Observation.text.</p>
+			
+			<p>NEMSIS also contains "pertinent negatives", most of which are addressed with negation and special
+			cases in this document. Some of the negative action values, however, are actually null values, and are
+			recorded as "NI", no information. A mapping of negative action values is provided in Appendix B.</p>
+
+
+		</body>
+	</topic>
+	
+		

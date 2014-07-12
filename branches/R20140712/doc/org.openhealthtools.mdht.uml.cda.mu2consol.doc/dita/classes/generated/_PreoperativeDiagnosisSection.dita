@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Preoperative Diagnosis Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.34</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.34"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>INLINE</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PreoperativeDiagnosisSection.html">Consol Preoperative Diagnosis Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.34</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10096, CONF:10097)
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PreoperativeDiagnosis.html">Consol Preoperative Diagnosis</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.65</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PreoperativeDiagnosisSection.html">Consol Preoperative Diagnosis Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.34</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15405)<tt><b>/@code</b>="10219-4" </tt><i>Preoperative Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15406)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8099)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8100)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:10096, CONF:10097)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PreoperativeDiagnosis.dita">Preoperative Diagnosis</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.65</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10096, CONF:10097)
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PreoperativeDiagnosis.html">Consol Preoperative Diagnosis</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.65</tt>)</li></ol></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Preoperative Diagnosis Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.34</tt>]</p>
+</body>
+</topic>

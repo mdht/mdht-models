@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_KnCD4CFjEd-3s7f6mWX-3A" name="tss-vocab">
+    <packageImport xmi:id="_2Ce8sCTOEd-ZbpoADxtvhg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_9zbNQKQjEeGjTMjq9OgX9g" name="Lab Test Name (Staphylococcal TSS)">
+      <ownedLiteral xmi:id="_92WlcKQjEeGjTMjq9OgX9g" name="23934-3"/>
+      <ownedLiteral xmi:id="_92aP0KQjEeGjTMjq9OgX9g" name="44880-3"/>
+      <ownedLiteral xmi:id="_92fIUKQjEeGjTMjq9OgX9g" name="25822-8"/>
+      <ownedLiteral xmi:id="_92iLoKQjEeGjTMjq9OgX9g" name="25823-6"/>
+      <ownedLiteral xmi:id="_92lO8KQjEeGjTMjq9OgX9g" name="23933-5"/>
+      <ownedLiteral xmi:id="_92o5UKQjEeGjTMjq9OgX9g" name="41855-8"/>
+      <ownedLiteral xmi:id="_92r8oKQjEeGjTMjq9OgX9g" name="25824-4"/>
+      <ownedLiteral xmi:id="_92u_8KQjEeGjTMjq9OgX9g" name="25825-1"/>
+      <ownedLiteral xmi:id="_92yDQKQjEeGjTMjq9OgX9g" name="51856-3"/>
+      <ownedLiteral xmi:id="_921toKQjEeGjTMjq9OgX9g" name="51863-9"/>
+      <ownedLiteral xmi:id="_925_EKQjEeGjTMjq9OgX9g" name="23936-8"/>
+      <ownedLiteral xmi:id="_92-QgKQjEeGjTMjq9OgX9g" name="23935-0"/>
+      <ownedLiteral xmi:id="_93DJAKQjEeGjTMjq9OgX9g" name="50683-2"/>
+      <ownedLiteral xmi:id="_93IBgKQjEeGjTMjq9OgX9g" name="44881-1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3sfnEKQqEeGjTMjq9OgX9g" name="Signs And Symptoms (Staphylococcal TSS)">
+      <ownedLiteral xmi:id="_AL94UKQsEeGjTMjq9OgX9g" name="426000000"/>
+      <ownedLiteral xmi:id="_zD_gAKQsEeGjTMjq9OgX9g" name="402603005"/>
+      <ownedLiteral xmi:id="_Ab4uMKQtEeGjTMjq9OgX9g" name="45007003"/>
+      <ownedLiteral xmi:id="_I1ZW0KQtEeGjTMjq9OgX9g" name="62315008"/>
+      <ownedLiteral xmi:id="_O-A64KQtEeGjTMjq9OgX9g" name="6896200"/>
+    </packagedElement>
+    <profileApplication xmi:id="_H1PoACF_Ed-M3adQxwHq4g">
+      <eAnnotations xmi:id="_H1Q2ICF_Ed-M3adQxwHq4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <term:ValueSetVersion xmi:id="_ZjSOgGg1Ed-ilOLYnIx0jA" identifier="51968-6" fullName="Genetic disease analysis overall interpretation" source="LOINC" definition="Defines concept codes for LOINC answer list.">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_MJvLwGg7Ed-ilOLYnIx0jA" source="Health Level Seven (HL7)">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_XKjcgWj5Ed-tUpkWYQgJlQ" identifier="2.16.840.1.113883.1.11.20.22" source="Health Level Seven (HL7)" definition="Valid codes are those whose scale is DOC and whose type of service is some variation of History and Physical." type="Intensional" binding="Dynamic">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_zzWFgKMbEd-Dh_ByAMpa4Q" conceptName="Positive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_1C9TQaMbEd-Dh_ByAMpa4Q" conceptName="Negative">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_1nXn4aMbEd-Dh_ByAMpa4Q" conceptName="Inconclusive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="__zAZwKP9Ed-Voq1mbCWOXg" conceptName="Failure">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_EvdQMKP_Ed-KyIUEioSKfA" identifier="53037-8" fullName="Genetic disease sequence variation interpretation">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_R9G9QaP_Ed-KyIUEioSKfA" conceptName="Pathogenic">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_c3vJEaRSEd-KyIUEioSKfA" conceptName="Presumed pathogenic"/>
+  <term:ValueSetCode xmi:id="_f8vLIaRSEd-KyIUEioSKfA" conceptName="Unknown significance"/>
+  <term:ValueSetCode xmi:id="_jXVCsaRSEd-KyIUEioSKfA" conceptName="Benign"/>
+  <term:ValueSetCode xmi:id="_l9OG4aRSEd-KyIUEioSKfA" conceptName="Presumed benign"/>
+  <term:ValueSetVersion xmi:id="_DbG1gaSFEd-KyIUEioSKfA" identifier="53039-4" fullName="Overall Interpretive Phenotype Observation Genetic Disease Carrier">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_KiAmwaSFEd-KyIUEioSKfA" conceptName="Carrier">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_NlDhAKSFEd-KyIUEioSKfA" conceptName="Negative">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_QRJT0aSFEd-KyIUEioSKfA" conceptName="Inconclusive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_S1WV8aSFEd-KyIUEioSKfA" conceptName="Failure">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_kLh-oaSFEd-KyIUEioSKfA" identifier="51964-5" fullName="Overall Interpretive Phenotype Observation Pharmacogenomic Drug Efficacy"/>
+  <term:ValueSetCode xmi:id="_pXo3IaSFEd-KyIUEioSKfA" conceptName="Responsive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_r4QZwaSFEd-KyIUEioSKfA" conceptName="Resistant">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_tyvJcaSFEd-KyIUEioSKfA" conceptName="Negative">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_weYQUaSFEd-KyIUEioSKfA" conceptName="Inconclusive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_zjgOMaSFEd-KyIUEioSKfA" conceptName="Failure">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_AXgFIaSGEd-KyIUEioSKfA" identifier="51971-0" fullName="Overall Interpretive Phenotype Observation Pharmacogenomic Drug Metabolism"/>
+  <term:ValueSetCode xmi:id="_EqEtkaSGEd-KyIUEioSKfA" conceptName="Ultrarapid metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_IAt5QaSGEd-KyIUEioSKfA" conceptName="Extensive metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_KM1LgaSGEd-KyIUEioSKfA" conceptName="Intermediate metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_OUNQkaSGEd-KyIUEioSKfA" conceptName="Poor metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:CodeSystemVersion xmi:id="_boejAaSGEd-KyIUEioSKfA" identifier="51961-1" fullName="Interpretive Phenotype Observation Pharmacogenomic Drug Efficacy"/>
+  <term:ValueSetVersion xmi:id="_UMI30KSHEd-5DI1h1u7pqA" identifier="51961-1" fullName="Interpretive Phenotype Observation Pharmacogenomic Drug Efficacy"/>
+  <term:ValueSetCode xmi:id="_ZgoQQaSHEd-5DI1h1u7pqA" conceptName="Resistant">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_cew1UaSHEd-5DI1h1u7pqA" conceptName="Responsive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_ehcewaSHEd-5DI1h1u7pqA" conceptName="Presumed resistant">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_gpo6UaSHEd-5DI1h1u7pqA" conceptName="Presumed responsive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_jJExMaSHEd-5DI1h1u7pqA" conceptName="Unknown Significance">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_lYICsaSHEd-5DI1h1u7pqA" conceptName="Benign">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_nYbGgKSHEd-5DI1h1u7pqA" conceptName="Presumed Benign">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_pNGJIaSHEd-5DI1h1u7pqA" conceptName="Presumed non-responsive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_qbB74aSHEd-5DI1h1u7pqA"/>
+  <term:ValueSetVersion xmi:id="_4t9ZgKSIEd-ej7xk_jityQ" identifier="53040-2" fullName="Interpretive Phenotype Observation Pharmacogenomic Drug Metabolism"/>
+  <term:ValueSetCode xmi:id="_8bKEAaSIEd-ej7xk_jityQ" conceptName="Ultrarapid metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_Afwh4aSJEd-ej7xk_jityQ" conceptName="Extensive metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_CjBaIaSJEd-ej7xk_jityQ" conceptName="Intermediate metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_EpbF8aSJEd-ej7xk_jityQ" conceptName="Poor metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_NwYwgKX0Ed-zPt4IL3ladg" identifier="48019-4" fullName="Clinical Genomic Statement Genetic Variation DNA Change">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_ZLI8kaX0Ed-zPt4IL3ladg" conceptName="Wild type">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_e0fxwaX0Ed-zPt4IL3ladg" conceptName="Deletion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_ghuIkaX0Ed-zPt4IL3ladg" conceptName="Duplication">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_kB-jQaX0Ed-zPt4IL3ladg" conceptName="Insertion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_rJDToaX0Ed-zPt4IL3ladg" conceptName="Insertion/Deletion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_uwAzQaX0Ed-zPt4IL3ladg" conceptName="Inversion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_yRUW0aX0Ed-zPt4IL3ladg" conceptName="Substitution">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_GAB9IaX1Ed-zPt4IL3ladg" identifier="48006-1" fullName="Clinical Genomic Statement Genetic Variation Amino Acid Change">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_L2yVIaX1Ed-zPt4IL3ladg" conceptName="Wild type">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_RHidEKX1Ed-zPt4IL3ladg" conceptName="Deletion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_TiXgwaX1Ed-zPt4IL3ladg" conceptName="Duplication">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_XTAg0aX1Ed-zPt4IL3ladg" conceptName="Frameshift">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_aUulYaX1Ed-zPt4IL3ladg" conceptName="Initiating Methionine">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_dFv7gaX1Ed-zPt4IL3ladg" conceptName="Insertion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_gDuvkaX1Ed-zPt4IL3ladg" conceptName="Insertion and Deletion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_iyrCEaX1Ed-zPt4IL3ladg" conceptName="Missense">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_k-4a8aX1Ed-zPt4IL3ladg" conceptName="Nonsense">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_oj6n8aX1Ed-zPt4IL3ladg" conceptName="Silent">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_rFJOkaX1Ed-zPt4IL3ladg" conceptName="Stop Codon Mutation">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_G32U8KriEd-sBpGQmfQVSQ" identifier="53034-5" fullName="Allelic State"/>
+  <term:ValueSetCode xmi:id="_KPeYEariEd-sBpGQmfQVSQ" conceptName="Homozygous">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_pOa8gariEd-sBpGQmfQVSQ" conceptName="Heterozygous">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_xsriQariEd-sBpGQmfQVSQ" conceptName="Heteroplasmic">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_2yF84ariEd-sBpGQmfQVSQ" conceptName="Homoplasmic">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_72nmsariEd-sBpGQmfQVSQ" conceptName="Hemizygous">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_R9te0AoIEeCEl6wJQrTI9w"/>
+  <term:ValueSetVersion xmi:id="_BnCKUAoTEeCYR7evJOaYUg" identifier="1.2.3.4.100.1" fullName="My Problem Types" definition="The SNOMED CT has been limited to a value set that indicates the level of medical judgment used to determine the existence of a problem." effectiveDate="20081218" releaseDate="20081218">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_DEV10AoTEeCYR7evJOaYUg" identifier="1.2.3.4.100.2" fullName="My Problem Values" source="Veterans Administration/Kaiser Permanente (VA/KP)" url="http://evs.nci.nih.gov/ftp1/FDA/ProblemList/" definition="This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient s medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient s healthcare (e.g., signs, symptoms, and defined conditions).">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_o6zrsAoTEeCYR7evJOaYUg" conceptName="Finding"/>
+  <term:ValueSetCode xmi:id="_p6QWgAoTEeCYR7evJOaYUg" conceptName="Complaint"/>
+  <term:ValueSetCode xmi:id="_qtGvwAoTEeCYR7evJOaYUg" conceptName="Diagnosis"/>
+  <term:ValueSetCode xmi:id="_reyrYAoTEeCYR7evJOaYUg" conceptName="Condition"/>
+  <term:ValueSetCode xmi:id="_sUIX8AoTEeCYR7evJOaYUg" conceptName="Functional limitation"/>
+  <term:ValueSetCode xmi:id="_tKL2MAoTEeCYR7evJOaYUg" conceptName="Symptom"/>
+  <term:ValueSetCode xmi:id="_t7xrMAoTEeCYR7evJOaYUg" conceptName="Problem"/>
+  <term:ValueSetVersion xmi:id="_9ys50SM8EeCxCon8a79rfA"/>
+  <term:ValueSetCode xmi:id="_Fh4MACM9EeCxCon8a79rfA" usageNote="A concern that is still being tracked."/>
+  <term:ValueSetCode xmi:id="_LNm_wSM9EeCxCon8a79rfA" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved."/>
+  <term:ValueSetCode xmi:id="_MZdu4CM9EeCxCon8a79rfA" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice."/>
+  <term:ValueSetCode xmi:id="_NURKQSM9EeCxCon8a79rfA" usageNote="The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for historical purposes."/>
+  <term:ValueSetVersion xmi:id="_qhpCUCQMEeCxCon8a79rfA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_hSRvwSQMEeCxCon8a79rfA"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_vRyXkCQMEeCxCon8a79rfA" conceptName="High"/>
+  <term:ValueSetCode xmi:id="_zqF0kCQMEeCxCon8a79rfA" conceptName="Moderate"/>
+  <term:ValueSetCode xmi:id="_0OLZECQMEeCxCon8a79rfA" conceptName="Low"/>
+  <term:ValueSetVersion xmi:id="_-YF9cSQOEeCxCon8a79rfA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_JzPLECQPEeCxCon8a79rfA" conceptName="Active"/>
+  <term:ValueSetCode xmi:id="_M01T0SQPEeCxCon8a79rfA" conceptName="Inactive"/>
+  <term:ValueSetCode xmi:id="_PiM5ASQPEeCxCon8a79rfA" conceptName="Chronic"/>
+  <term:ValueSetCode xmi:id="_SLhrsSQPEeCxCon8a79rfA" conceptName="Intermittent"/>
+  <term:ValueSetCode xmi:id="_VG2NUSQPEeCxCon8a79rfA" conceptName="Recurrent"/>
+  <term:ValueSetCode xmi:id="_XDxNACQPEeCxCon8a79rfA" conceptName="Rule out"/>
+  <term:ValueSetCode xmi:id="_ZOtakSQPEeCxCon8a79rfA" conceptName="Ruled out"/>
+  <term:ValueSetCode xmi:id="_bCnBICQPEeCxCon8a79rfA" conceptName="Resolved"/>
+  <term:ValueSetVersion xmi:id="_LSa-gSQSEeCxCon8a79rfA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_PxTkoSQSEeCxCon8a79rfA" conceptName="Alive and well"/>
+  <term:ValueSetCode xmi:id="_R72XUCQXEeCxCon8a79rfA" conceptName="In remission"/>
+  <term:ValueSetCode xmi:id="_UDagwSQXEeCxCon8a79rfA" conceptName="Symptom free"/>
+  <term:ValueSetCode xmi:id="_Wz8HoSQXEeCxCon8a79rfA" conceptName="Chronically ill"/>
+  <term:ValueSetCode xmi:id="_ZR5-4SQXEeCxCon8a79rfA" conceptName="Severely ill"/>
+  <term:ValueSetCode xmi:id="_bPtvYSQXEeCxCon8a79rfA" conceptName="Disabled"/>
+  <term:ValueSetCode xmi:id="_dX_qgCQXEeCxCon8a79rfA" conceptName="Severely disabled"/>
+  <term:ValueSetCode xmi:id="_fjcOYSQXEeCxCon8a79rfA" conceptName="Deceased"/>
+  <term:ValueSetVersion xmi:id="_C5MWgGfGEeGcR5CQkyNBsg" binding="Dynamic"/>
+  <term:ValueSetVersion xmi:id="_MOfmQmf4EeGcR5CQkyNBsg" fullName="Lab Test Result Name (Tss)" source="PHIN VADS" revisionDate="07/07/2009" binding="Dynamic">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_MOowMWf4EeGcR5CQkyNBsg" conceptName="Bacillus anthracis Ab:ACnc:Pt:XXX:Qn:IF" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowM2f4EeGcR5CQkyNBsg" conceptName="Bacillus anthracis Ag:ACnc:Pt:Isolate:Ord:IF" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowNWf4EeGcR5CQkyNBsg" conceptName="Bacillus anthracis Ag:ACnc:Pt:Tiss:Ord:IF" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowN2f4EeGcR5CQkyNBsg" conceptName="Bacillus anthracis Ag:ACnc:Pt:XXX:Ord:IF" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowOWf4EeGcR5CQkyNBsg" conceptName="Bacillus anthracis capsule Ag:Prid:Pt:XXX:Nom:IF" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowO2f4EeGcR5CQkyNBsg" conceptName="Bacillus anthracis cell wall Ag:Prid:Pt:XXX:Nom:IF" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowPWf4EeGcR5CQkyNBsg" conceptName="Bacillus anthracis:ACnc:Pt:Isolate:Ord:Phage lysis" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowP2f4EeGcR5CQkyNBsg" conceptName="Bacillus anthracis spore Ag:Prid:Pt:XXX:Nom:IF" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowQWf4EeGcR5CQkyNBsg" conceptName="Bacillus anthracis:ACnc:Pt:XXX:Ord:Organism specific culture" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowQ2f4EeGcR5CQkyNBsg" conceptName="Bacteria identified:Prid:Pt:Bld:Nom:Aerobic culture" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowRWf4EeGcR5CQkyNBsg" conceptName="Bacteria identified:Prid:Pt:Wound.shlw:Nom:Aerobic culture" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowR2f4EeGcR5CQkyNBsg" conceptName="Bacteria identified:Prid:Pt:Sputum:Nom:Aerobic culture" usageNote="LOINC"/>
+  <term:ValueSetCode xmi:id="_MOowSWf4EeGcR5CQkyNBsg" conceptName="Bacteria identified:Prid:Pt:XXX:Nom:Anaerobic+Aerobic culture" usageNote="LOINC"/>
+  <term:ValueSetVersion xmi:id="_aQfhbWf4EeGcR5CQkyNBsg" identifier="2.16.840.1.114222.4.11.3220" version="1" fullName="Disease Type (Anthrax)" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/SearchAllVocab_search.action?searchOptions.searchText=Disease+Type+%28Anthrax%29" definition="Anthrax disease type value set has problems or disease related to Anthrax. This value set is based upon SNOMED CT" revisionDate="07/07/2009">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_aQorUWf4EeGcR5CQkyNBsg" conceptName="Anthrax" usageNote="SNOMED-CT"/>
+  <term:ValueSetCode xmi:id="_aQorU2f4EeGcR5CQkyNBsg" conceptName="Anthrax pneumonia" usageNote="SNOMED-CT"/>
+  <term:ValueSetCode xmi:id="_aQorVWf4EeGcR5CQkyNBsg" conceptName="Anthrax septicemia" usageNote="SNOMED-CT"/>
+  <term:ValueSetCode xmi:id="_aQorV2f4EeGcR5CQkyNBsg" conceptName="Cutaneous anthrax" usageNote="SNOMED-CT"/>
+  <term:ValueSetCode xmi:id="_aQorWWf4EeGcR5CQkyNBsg" conceptName="Gastrointestinal anthrax" usageNote="SNOMED-CT"/>
+  <term:ValueSetCode xmi:id="_aQorW2f4EeGcR5CQkyNBsg" conceptName="Inhalational anthrax" usageNote="SNOMED-CT"/>
+  <term:ValueSetVersion xmi:id="_dEghIGf4EeGcR5CQkyNBsg" identifier="2.16.840.1.114222.4.11.3216" version="1" fullName="Medication Treatment (Anthrax)" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/SearchAllVocab_search.action?searchOptions.searchText=Medication+Treatment+%28Anthrax%29" definition="Anthrax treatment value set has medication concepts used to treat anthrax.  This is based upon the FDA Unique Ingredient Identifier (UNII)." revisionDate="07/07/2009">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_c6o0UaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_dEprEWf4EeGcR5CQkyNBsg" conceptName="Amoxicillin" usageNote="Unique Ingredient Identifier (UNII)"/>
+  <term:ValueSetCode xmi:id="_dEprE2f4EeGcR5CQkyNBsg" conceptName="Ciprofloxacin" usageNote="Unique Ingredient Identifier (UNII)"/>
+  <term:ValueSetCode xmi:id="_dEprFWf4EeGcR5CQkyNBsg" conceptName="Doxycycline" usageNote="Unique Ingredient Identifier (UNII)"/>
+  <term:ValueSetVersion xmi:id="_fZIPIGf4EeGcR5CQkyNBsg" fullName="Signs and Symptoms (Tss)" source="PHIN VADS" revisionDate="07/07/2009" binding="Dynamic"/>
+  <term:ValueSetCode xmi:id="_fZIPImf4EeGcR5CQkyNBsg" conceptName="Abdominal pain" usageNote="SNOMED-CT">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_fZIPJGf4EeGcR5CQkyNBsg" conceptName="Asymptomatic" usageNote="SNOMED-CT">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_fZIPJmf4EeGcR5CQkyNBsg" conceptName="Chest pain" usageNote="SNOMED-CT">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_fZIPKGf4EeGcR5CQkyNBsg" conceptName="Chill" usageNote="SNOMED-CT">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_fZIPKmf4EeGcR5CQkyNBsg" conceptName="Cutaneous ulcer with edema and black eschar" usageNote="PHIN VS (CDC Local Coding System)">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_fZIPLGf4EeGcR5CQkyNBsg" conceptName="Diarrhea" usageNote="SNOMED-CT">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_fZIPLmf4EeGcR5CQkyNBsg" conceptName="Difficulty breathing" usageNote="SNOMED-CT">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_fZIPMGf4EeGcR5CQkyNBsg" conceptName="Edema" usageNote="SNOMED-CT">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_fZIPMmf4EeGcR5CQkyNBsg" conceptName="Fever" usageNote="SNOMED-CT">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_fZIPNGf4EeGcR5CQkyNBsg" conceptName="Headache" usageNote="SNOMED-CT">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_fZIPNmf4EeGcR5CQkyNBsg" conceptName="Lymphadenopathy" usageNote="SNOMED-CT">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_fZIPOGf4EeGcR5CQkyNBsg" conceptName="Non-productive cough" usageNote="SNOMED-CT">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_103toIPqEeGRypoUd5okyA" conceptName="B anthracis DNA XXX PCR"/>
+  <term:ValueSetVersion xmi:id="_92PQsKQjEeGjTMjq9OgX9g" identifier="2.16.840.1.114222.4.11.4206" version="2" fullName="Lab Test Name (Staphylococcal TSS)" definition="lab tests associated with Staphylococcal TSS" revisionDate="" base_Enumeration="_9zbNQKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_92V-YaQjEeGjTMjq9OgX9g"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_92V-Y6QjEeGjTMjq9OgX9g" conceptName="Preferred Concept Name" usageNote="Code System Name"/>
+  <term:ValueSetCode xmi:id="_92WlcaQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus enterotoxin B Ab [Presence] in Serum" usageNote="LOINC" base_EnumerationLiteral="_92WlcKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_92a24KQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus enterotoxin B (seb) gene [Presence] in Unspecified specimen by Probe and target amplification method" usageNote="LOINC" base_EnumerationLiteral="_92aP0KQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_92fIUaQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus enterotoxin B IgE Ab [Units/volume] in Serum" usageNote="LOINC" base_EnumerationLiteral="_92fIUKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_92iLoaQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus enterotoxin B IgE Ab RAST class in Serum" usageNote="LOINC" base_EnumerationLiteral="_92iLoKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_92lO8aQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus enterotoxin B [Presence] in Unspecified specimen" usageNote="LOINC" base_EnumerationLiteral="_92lO8KQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_92o5UaQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus enterotoxin B [Presence] in Unspecified specimen by Immunofluorescence" usageNote="LOINC" base_EnumerationLiteral="_92o5UKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_92r8oaQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus enterotoxin C IgE Ab [Units/volume] in Serum" usageNote="LOINC" base_EnumerationLiteral="_92r8oKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_92u_8aQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus enterotoxin C IgE Ab RAST class in Serum" usageNote="LOINC" base_EnumerationLiteral="_92u_8KQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_92yqUKQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus enterotoxin TSST IgE Ab [Units/volume] in Serum" usageNote="LOINC" base_EnumerationLiteral="_92yDQKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_921toaQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus enterotoxin TSST IgE Ab RAST class in Serum" usageNote="LOINC" base_EnumerationLiteral="_921toKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_925_EaQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus toxin 1 Ab [Presence] in Serum" usageNote="LOINC" base_EnumerationLiteral="_925_EKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_92-QgaQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus toxin 1 [Presence] in Unspecified specimen" usageNote="LOINC" base_EnumerationLiteral="_92-QgKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_93DJAaQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus toxin 1+Staphylococcus aureus enterotoxin B Ab [Presence] in Serum" usageNote="LOINC" base_EnumerationLiteral="_93DJAKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_93IBgaQjEeGjTMjq9OgX9g" conceptName="Staphylococcus aureus toxic shock syndrome toxin gene [Presence] in Unspecified specimen by Probe &amp; target amplification method" usageNote="LOINC" base_EnumerationLiteral="_93IBgKQjEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_3sfnEaQqEeGjTMjq9OgX9g" identifier="2.16.840.1.114222.4.11.3212" base_Enumeration="_3sfnEKQqEeGjTMjq9OgX9g"/>
+  <term:ValueSetCode xmi:id="_AL94UaQsEeGjTMjq9OgX9g" conceptName="Fever" base_EnumerationLiteral="_AL94UKQsEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_zD_gAaQsEeGjTMjq9OgX9g" conceptName="Diffuse inflammatory erythema" base_EnumerationLiteral="_zD_gAKQsEeGjTMjq9OgX9g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_Ab4uMaQtEeGjTMjq9OgX9g" conceptName="Arterial hypotension" base_EnumerationLiteral="_Ab4uMKQtEeGjTMjq9OgX9g"/>
+  <term:ValueSetCode xmi:id="_I1ZW0aQtEeGjTMjq9OgX9g" conceptName="Diarrhea" base_EnumerationLiteral="_I1ZW0KQtEeGjTMjq9OgX9g"/>
+  <term:ValueSetCode xmi:id="_O-A64aQtEeGjTMjq9OgX9g" conceptName="Myalgia" base_EnumerationLiteral="_O-A64KQtEeGjTMjq9OgX9g"/>
+</xmi:XMI>

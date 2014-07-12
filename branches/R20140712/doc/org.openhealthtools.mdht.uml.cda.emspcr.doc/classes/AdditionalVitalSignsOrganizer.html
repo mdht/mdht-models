@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Additional Vital Signs Organizer"/>
+<meta name="abstract" content="[Organizer: templateId 2.16.840.1.1133883.17.3.10.1.30]"/>
+<meta name="description" content="[Organizer: templateId 2.16.840.1.1133883.17.3.10.1.30]"/>
+<meta name="DC.Coverage" content="Organizer"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Additional Vital Signs Organizer</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Additional Vital Signs Organizer</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Organizer: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.30</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">Common observations regarding the state of the patient that are not typically included in strict definitions of vital signs.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.1133883.17.3.10.1.30"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11133)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:11134)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11091)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="StrokeScore.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.163]">Stroke Score</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.163</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11092)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PainScore.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.164]">Pain Score</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.164</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11093)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="LevelOfResponsiveness.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.165]">Level Of Responsiveness</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.165</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11094)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="BloodGlucose.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.166]">Blood Glucose</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.166</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11095)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CarbonMonoxide.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.167]">Carbon Monoxide</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.167</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11096)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CarbonDioxide.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.168]">Carbon Dioxide</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.168</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11097)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CardiacRhythm.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.169]">Cardiac Rhythm</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.169</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11135)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="GlasgowComaScoreOrganizer.html" title="[Organizer: templateId 2.16.840.1.1133883.17.3.10.1.170]">Glasgow Coma Score Organizer</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.170</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+
+
+
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

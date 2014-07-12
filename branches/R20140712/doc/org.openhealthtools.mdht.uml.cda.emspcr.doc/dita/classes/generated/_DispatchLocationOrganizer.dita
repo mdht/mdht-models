@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Dispatch Location Organizer - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.96</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.96"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>Information about the location of the unit when dispatched</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.96"</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10613) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationName.dita">Dispatch Location Name</xref> (CONF:10616)<ol>
+<li>Contains exactly one [1..1] <xref href="../DispatchLocationName.dita">Dispatch Location Name</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.150</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10614) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationLatitude.dita">Dispatch Location Latitude</xref> (CONF:10619)<ol>
+<li>Contains exactly one [1..1] <xref href="../DispatchLocationLatitude.dita">Dispatch Location Latitude</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.151</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10615) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationLongitude.dita">Dispatch Location Longitude</xref> (CONF:10622)<ol>
+<li>Contains exactly one [1..1] <xref href="../DispatchLocationLongitude.dita">Dispatch Location Longitude</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.152</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type x_ActClassDocumentEntryOrganizer
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type ActMood
+</li>
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10613) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationName.dita">Dispatch Location Name</xref> (CONF:10616)<ol>
+<li>Contains exactly one [1..1] <xref href="../DispatchLocationName.dita">Dispatch Location Name</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.150</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10614) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationLatitude.dita">Dispatch Location Latitude</xref> (CONF:10619)<ol>
+<li>Contains exactly one [1..1] <xref href="../DispatchLocationLatitude.dita">Dispatch Location Latitude</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.151</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10615) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DispatchLocationLongitude.dita">Dispatch Location Longitude</xref> (CONF:10622)<ol>
+<li>Contains exactly one [1..1] <xref href="../DispatchLocationLongitude.dita">Dispatch Location Longitude</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.152</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::DispatchLocationOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.96]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>DispatchLocationLatitudeRelationship</entry><entry>DispatchLocationLatitudeRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>DispatchLocationLatitudeRelationship</entry><entry>CONF:10614</entry><entry> </entry></row> 
+<row><entry>DispatchLocationLongtudeRelationship</entry><entry>DispatchLocationLongtudeRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>DispatchLocationLongitudeRelationship</entry><entry>CONF:10615</entry><entry> </entry></row> 
+<row><entry>DispatchLocationNameRelationship</entry><entry>DispatchLocationNameRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>DispatchLocationNameRelationship</entry><entry>CONF:10613</entry><entry> </entry></row> 
+<row><entry>dispatchLocationOrganizer</entry><entry>dispatchLocationOrganizer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DispatchLocationOrganizer</entry><entry>CONF:10997</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.96"/>
+  <id root="MDHT" extension="2099880107"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2014"/>
+    <high value="2014"/>
+  </effectiveTime>
+  <component>
+    <templateId root="null"/>
+    <observation>
+      <code code="1728619046"/>
+      <value xsi:type="ST">TEXT FOR VALUE</value>
+    </observation>
+  </component>
+  <component>
+    <templateId root="null"/>
+    <observation>
+      <code code="834543770"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <templateId root="null"/>
+    <observation>
+      <code code="761251478"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Dispatch Location Organizer</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.96</tt>]</p>
+</body>
+</topic>

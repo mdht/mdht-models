@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_NTUecOCYEeGLd5Icz0Pibg" name="hib-vocab">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_KnqLUAHHEeKhqM1LVJhYIg" name="Lab Test Name (Haemophilus influenzae)"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2-SikAHHEeKhqM1LVJhYIg" name="PHVS_DiseaseType_HIB"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_KQ4NkAHIEeKhqM1LVJhYIg" name="PHVS_SignsSymptoms_HIB"/>
+    <profileApplication xmi:id="_NTUeceCYEeGLd5Icz0Pibg">
+      <eAnnotations xmi:id="_NTUecuCYEeGLd5Icz0Pibg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <term:ValueSetVersion xmi:id="_Ksnj0AHHEeKhqM1LVJhYIg" identifier="2.16.840.1.114222.4.11.4153" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.4153" binding="Dynamic" base_Enumeration="_KnqLUAHHEeKhqM1LVJhYIg"/>
+  <term:ValueSetVersion xmi:id="_2-SikQHHEeKhqM1LVJhYIg" identifier="2.16.840.1.114222.4.11.6058" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6058" binding="Dynamic" base_Enumeration="_2-SikAHHEeKhqM1LVJhYIg"/>
+  <term:ValueSetVersion xmi:id="_KQ4NkQHIEeKhqM1LVJhYIg" identifier="2.16.840.1.114222.4.11.6059" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6059" binding="Dynamic" base_Enumeration="_KQ4NkAHIEeKhqM1LVJhYIg"/>
+</xmi:XMI>

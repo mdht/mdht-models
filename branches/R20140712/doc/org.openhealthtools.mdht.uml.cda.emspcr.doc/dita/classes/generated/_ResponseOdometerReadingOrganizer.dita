@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Response Odometer Reading Organizer - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.97</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.97"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>Collection of odometer readings at various points in an EMS crew's trip</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.97"</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10626) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseBeginningOdometerReading.dita">Response Beginning Odometer Reading</xref> (CONF:10630)<ol>
+<li>Contains exactly one [1..1] <xref href="../ResponseBeginningOdometerReading.dita">Response Beginning Odometer Reading</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.171</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10627) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseOnSceneOdometerReading.dita">Response On Scene Odometer Reading</xref> (CONF:10634)<ol>
+<li>Contains exactly one [1..1] <xref href="../ResponseOnSceneOdometerReading.dita">Response On Scene Odometer Reading</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.172</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10628) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseDestinationOdometerReading.dita">Response Destination Odometer Reading</xref> (CONF:10638)<ol>
+<li>Contains exactly one [1..1] <xref href="../ResponseDestinationOdometerReading.dita">Response Destination Odometer Reading</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.173</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10629) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseEndingOdometerReading.dita">Response Ending Odometer Reading</xref> (CONF:10642)<ol>
+<li>Contains exactly one [1..1] <xref href="../ResponseEndingOdometerReading.dita">Response Ending Odometer Reading</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.174</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type x_ActClassDocumentEntryOrganizer
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type ActMood
+</li>
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10626) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseBeginningOdometerReading.dita">Response Beginning Odometer Reading</xref> (CONF:10630)<ol>
+<li>Contains exactly one [1..1] <xref href="../ResponseBeginningOdometerReading.dita">Response Beginning Odometer Reading</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.171</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10627) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseOnSceneOdometerReading.dita">Response On Scene Odometer Reading</xref> (CONF:10634)<ol>
+<li>Contains exactly one [1..1] <xref href="../ResponseOnSceneOdometerReading.dita">Response On Scene Odometer Reading</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.172</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10628) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseDestinationOdometerReading.dita">Response Destination Odometer Reading</xref> (CONF:10638)<ol>
+<li>Contains exactly one [1..1] <xref href="../ResponseDestinationOdometerReading.dita">Response Destination Odometer Reading</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.173</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10629) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseEndingOdometerReading.dita">Response Ending Odometer Reading</xref> (CONF:10642)<ol>
+<li>Contains exactly one [1..1] <xref href="../ResponseEndingOdometerReading.dita">Response Ending Odometer Reading</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.174</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::ResponseOdometerReadingOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.97]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>ResponseBeginningOdometerReadingRelationship</entry><entry>ResponseBeginningOdometerReadingRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ResponseBeginningOdometerReadingRelationship</entry><entry>CONF:10626</entry><entry> </entry></row> 
+<row><entry>ResponseDestinationOdometerReadingRelationship</entry><entry>ResponseDestinationOdometerReadingRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ResponseDestinationOdometerReadingRelationship</entry><entry>CONF:10628</entry><entry> </entry></row> 
+<row><entry>ResponseEndingOdometerReadingRelationship</entry><entry>ResponseEndingOdometerReadingRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ResponseEndingOdometerReadingRelationship</entry><entry>CONF:10629</entry><entry> </entry></row> 
+<row><entry>responseOdometerReadingOrganizer</entry><entry>responseOdometerReadingOrganizer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ResponseOdometerReadingOrganizer</entry><entry>CONF:10999</entry><entry> </entry></row> 
+<row><entry>ResponseOnSceneOdometerReadingRelationship</entry><entry>ResponseOnSceneOdometerReadingRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ResponseOnSceneOdometerReadingRelationship</entry><entry>CONF:10627</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.97"/>
+  <id root="MDHT" extension="1940947733"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2014"/>
+    <high value="2014"/>
+  </effectiveTime>
+  <component>
+    <observation>
+      <code code="1187658808"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1864423007"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1994124987"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="635902919"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Response Odometer Reading Organizer</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.97</tt>]</p>
+</body>
+</topic>
