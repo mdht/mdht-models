@@ -539,8 +539,7 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

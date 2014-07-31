@@ -173,8 +173,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptional2Test extends CDA
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**
