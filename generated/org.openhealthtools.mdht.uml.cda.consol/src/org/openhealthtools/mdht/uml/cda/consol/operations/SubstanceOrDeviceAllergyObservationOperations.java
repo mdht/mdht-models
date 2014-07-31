@@ -58,7 +58,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationAllergyStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Allergy Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationReactionObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Reaction Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationSeverityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Severity Observation</em>}</li>
@@ -867,9 +866,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or value.code = '418038007' or value.code = '419511003' or value.code = '418471000' or value.code = '419199007' or value.code = '416098002' or value.code = '414285001' or value.code = '59037007' or value.code = '235719002')))";
+	protected static final String VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSubstanceOrDeviceAllergyObservationValue(SubstanceOrDeviceAllergyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Value</em>}' invariant operation.
@@ -915,68 +912,6 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE,
 					ConsolPlugin.INSTANCE.getString("SubstanceOrDeviceAllergyObservationValue"),
-					new Object[] { substanceOrDeviceAllergyObservation }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSubstanceOrDeviceAllergyObservationValueP(SubstanceOrDeviceAllergyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Value P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSubstanceOrDeviceAllergyObservationValueP(SubstanceOrDeviceAllergyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSubstanceOrDeviceAllergyObservationValueP(SubstanceOrDeviceAllergyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Value P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSubstanceOrDeviceAllergyObservationValueP(SubstanceOrDeviceAllergyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param substanceOrDeviceAllergyObservation The receiving '<em><b>Substance Or Device Allergy Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateSubstanceOrDeviceAllergyObservationValueP(
-			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION);
-			try {
-				VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			substanceOrDeviceAllergyObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("SubstanceOrDeviceAllergyObservationValueP"),
 					new Object[] { substanceOrDeviceAllergyObservation }));
 			}
 
@@ -1991,7 +1926,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION,
-				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION.getEAllOperations().get(80));
+				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION.getEAllOperations().get(79));
 			try {
 				GET_ALLERGY_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_ALLERGY_STATUS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2034,7 +1969,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION,
-				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION.getEAllOperations().get(81));
+				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION.getEAllOperations().get(80));
 			try {
 				GET_REACTION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_REACTION_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2079,7 +2014,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION,
-				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION.getEAllOperations().get(82));
+				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION.getEAllOperations().get(81));
 			try {
 				GET_SEVERITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SEVERITY_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
