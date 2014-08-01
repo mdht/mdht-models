@@ -18600,6 +18600,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -22779,6 +22782,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(allergyProblemAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(allergyProblemAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(allergyProblemAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -23001,6 +23007,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(allergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(allergyObservation, diagnostics, context);
@@ -23522,6 +23531,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(reactionObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(reactionObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reactionObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -23855,6 +23867,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(severityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(severityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(severityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -24035,6 +24050,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedureActivityProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureActivityProcedure, diagnostics, context);
@@ -24825,6 +24843,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(indication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(indication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(indication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -25011,6 +25032,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(serviceDeliveryLocation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(serviceDeliveryLocation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(serviceDeliveryLocation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -25165,6 +25189,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationActivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationActivity, diagnostics, context);
@@ -25817,6 +25844,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicationSupplyOrder, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationSupplyOrder, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationSupplyOrder, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -26047,6 +26077,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(instructions, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(instructions, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(instructions, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -26217,6 +26250,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationDispense, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationDispense, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationDispense, diagnostics, context);
@@ -26577,6 +26613,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(drugVehicle, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(drugVehicle, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(drugVehicle, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -26695,6 +26734,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(productInstance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(productInstance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(productInstance, diagnostics, context);
@@ -26835,6 +26877,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(allergyStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(allergyStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(allergyStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -26955,6 +27000,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(ageObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(ageObservation, diagnostics, context);
@@ -27113,6 +27161,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(healthStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(healthStatusObservation, diagnostics, context);
@@ -27310,6 +27361,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(commentActivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(commentActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(commentActivity, diagnostics, context);
@@ -27690,6 +27744,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(nonMedicinalSupplyActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(nonMedicinalSupplyActivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(nonMedicinalSupplyActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -27886,6 +27943,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(problemConcernAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(problemConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(problemConcernAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -28078,6 +28138,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(problemObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(problemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(problemObservation, diagnostics, context);
@@ -28471,6 +28534,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(problemStatus, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(problemStatus, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(problemStatus, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -28641,6 +28707,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(continuityOfCareDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(continuityOfCareDocument, diagnostics, context);
@@ -30267,6 +30336,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(allergiesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(allergiesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(allergiesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -30412,6 +30484,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(allergiesSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				allergiesSectionEntriesOptional, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(allergiesSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -30549,6 +30625,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -30679,6 +30758,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicationsSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				medicationsSectionEntriesOptional, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationsSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -30799,6 +30882,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(problemSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(problemSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(problemSection, diagnostics, context);
@@ -30927,6 +31013,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(problemSectionEntriesOptional, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(problemSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(problemSectionEntriesOptional, diagnostics, context);
@@ -31062,6 +31151,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(proceduresSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(proceduresSection, diagnostics, context);
@@ -31253,6 +31345,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(proceduresSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				proceduresSectionEntriesOptional, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(proceduresSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -31422,6 +31518,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedureActivityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureActivityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureActivityObservation, diagnostics, context);
@@ -32148,6 +32247,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(procedureActivityAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureActivityAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureActivityAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -32763,6 +32865,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(resultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -32895,6 +33000,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(resultsSectionEntriesOptional, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(resultsSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(resultsSectionEntriesOptional, diagnostics, context);
@@ -33030,6 +33138,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(resultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(resultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(resultOrganizer, diagnostics, context);
@@ -33204,6 +33315,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(resultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(resultObservation, diagnostics, context);
@@ -33519,6 +33633,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(advanceDirectivesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(advanceDirectivesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -33670,6 +33787,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(advanceDirectivesSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				advanceDirectivesSectionEntriesOptional, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(advanceDirectivesSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -33810,6 +33931,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(advanceDirectiveObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(advanceDirectiveObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(advanceDirectiveObservation, diagnostics, context);
@@ -34319,6 +34443,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -34450,6 +34577,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(encountersSectionEntriesOptional, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				encountersSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(encountersSectionEntriesOptional, diagnostics, context);
@@ -34587,6 +34718,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(encounterActivities, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(encounterActivities, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(encounterActivities, diagnostics, context);
@@ -34908,6 +35042,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(encounterDiagnosis, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(encounterDiagnosis, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(encounterDiagnosis, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -35028,6 +35165,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(familyHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(familyHistorySection, diagnostics, context);
@@ -35156,6 +35296,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(familyHistoryOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(familyHistoryOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(familyHistoryOrganizer, diagnostics, context);
@@ -35436,6 +35579,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(familyHistoryObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(familyHistoryObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(familyHistoryObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -35649,6 +35795,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(familyHistoryDeathObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(familyHistoryDeathObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(familyHistoryDeathObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -35791,6 +35940,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(functionalStatusSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(functionalStatusSection, diagnostics, context);
@@ -36079,6 +36231,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				functionalStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -36268,6 +36424,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(functionalStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(functionalStatusResultObservation, diagnostics, context);
@@ -36719,6 +36879,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(caregiverCharacteristics, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(caregiverCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(caregiverCharacteristics, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -36990,6 +37153,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(assessmentScaleObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(assessmentScaleObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(assessmentScaleObservation, diagnostics, context);
@@ -37368,6 +37534,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(assessmentScaleSupportingObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				assessmentScaleSupportingObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(assessmentScaleSupportingObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -37570,6 +37740,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(cognitiveStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -37758,6 +37931,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(cognitiveStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(cognitiveStatusResultObservation, diagnostics, context);
@@ -38210,6 +38387,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				functionalStatusProblemObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -38653,6 +38834,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				cognitiveStatusProblemObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -39059,6 +39244,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(pressureUlcerObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(pressureUlcerObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(pressureUlcerObservation, diagnostics, context);
@@ -39789,6 +39977,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(numberOfPressureUlcersObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				numberOfPressureUlcersObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(numberOfPressureUlcersObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -40121,6 +40313,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(highestPressureUlcerStage, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(highestPressureUlcerStage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(highestPressureUlcerStage, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -40266,6 +40461,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(immunizationsSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				immunizationsSectionEntriesOptional, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(immunizationsSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -40404,6 +40603,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(immunizationActivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(immunizationActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(immunizationActivity, diagnostics, context);
@@ -40968,6 +41170,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(immunizationRefusalReason, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(immunizationRefusalReason, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(immunizationRefusalReason, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -41094,6 +41299,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicalEquipmentSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicalEquipmentSection, diagnostics, context);
@@ -41224,6 +41432,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(payersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(payersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -41344,6 +41555,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(coverageActivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(coverageActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(coverageActivity, diagnostics, context);
@@ -41492,6 +41706,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(policyActivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(policyActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(policyActivity, diagnostics, context);
@@ -42801,6 +43018,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(planOfCareSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(planOfCareSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -43016,6 +43236,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(planOfCareActivityAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(planOfCareActivityAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(planOfCareActivityAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -43106,6 +43329,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(planOfCareActivityEncounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(planOfCareActivityEncounter, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(planOfCareActivityEncounter, diagnostics, context);
@@ -43204,6 +43430,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(planOfCareActivityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(planOfCareActivityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(planOfCareActivityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -43298,6 +43527,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(planOfCareActivityProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(planOfCareActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(planOfCareActivityProcedure, diagnostics, context);
@@ -43396,6 +43628,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(
+				planOfCareActivitySubstanceAdministration, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
 				planOfCareActivitySubstanceAdministration, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -43503,6 +43739,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(planOfCareActivitySupply, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(planOfCareActivitySupply, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(planOfCareActivitySupply, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -43596,6 +43835,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(socialHistorySection, diagnostics, context);
@@ -43769,6 +44011,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(socialHistoryObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(socialHistoryObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(socialHistoryObservation, diagnostics, context);
@@ -43968,6 +44213,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(pregnancyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(pregnancyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(pregnancyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -44150,6 +44398,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(estimatedDateOfDelivery, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(estimatedDateOfDelivery, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(estimatedDateOfDelivery, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -44270,6 +44521,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(smokingStatusObservation, diagnostics, context);
@@ -44499,6 +44753,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(tobaccoUse, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(tobaccoUse, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(tobaccoUse, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -44686,6 +44943,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(vitalSignsSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				vitalSignsSectionEntriesOptional, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(vitalSignsSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -44821,6 +45082,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(vitalSignsOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(vitalSignsOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(vitalSignsOrganizer, diagnostics, context);
@@ -44973,6 +45237,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(vitalSignObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(vitalSignObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(vitalSignObservation, diagnostics, context);
@@ -45262,6 +45529,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -45410,6 +45680,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(vitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(vitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -45551,6 +45824,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(historyOfPastIllnessSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(historyOfPastIllnessSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -45685,6 +45961,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(chiefComplaintSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(chiefComplaintSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -45796,6 +46075,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(reasonForReferralSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reasonForReferralSection, diagnostics, context);
@@ -45910,6 +46192,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(historyOfPresentIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(historyOfPresentIllnessSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(historyOfPresentIllnessSection, diagnostics, context);
@@ -46031,6 +46316,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				hospitalAdmissionDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalAdmissionDiagnosisSection, diagnostics, context);
@@ -46171,6 +46460,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(hospitalAdmissionDiagnosis, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(hospitalAdmissionDiagnosis, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalAdmissionDiagnosis, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -46284,6 +46576,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(
+				hospitalAdmissionMedicationsSectionEntriesOptional, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
 				hospitalAdmissionMedicationsSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -46431,6 +46727,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(admissionMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(admissionMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(admissionMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -46552,6 +46851,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationsAdministeredSection, diagnostics, context);
@@ -46689,6 +46991,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(physicalExamSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(physicalExamSection, diagnostics, context);
@@ -46849,6 +47154,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(generalStatusSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(generalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(generalStatusSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -46960,6 +47268,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(reviewOfSystemsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reviewOfSystemsSection, diagnostics, context);
@@ -47075,6 +47386,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(assessmentAndPlanSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(assessmentAndPlanSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -47188,6 +47502,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(surgicalDrainsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(surgicalDrainsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(surgicalDrainsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -47299,6 +47616,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(unstructuredDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(unstructuredDocument, diagnostics, context);
@@ -48633,6 +48953,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicationInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -48826,6 +49149,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(dischargeSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dischargeSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dischargeSummary, diagnostics, context);
@@ -50569,6 +50895,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(hospitalDischargeDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				hospitalDischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalDischargeDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -50707,6 +51037,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(hospitalDischargeDiagnosis, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(hospitalDischargeDiagnosis, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalDischargeDiagnosis, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -50817,6 +51150,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(dischargeDietSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dischargeDietSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dischargeDietSection, diagnostics, context);
@@ -50933,6 +51269,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(
+				hospitalDischargeMedicationsSectionEntriesOptional, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
 				hospitalDischargeMedicationsSectionEntriesOptional, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -51080,6 +51420,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(dischargeMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dischargeMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dischargeMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -51185,6 +51528,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(hospitalCourseSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalCourseSection, diagnostics, context);
@@ -51300,6 +51646,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(chiefComplaintAndReasonForVisitSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				chiefComplaintAndReasonForVisitSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(chiefComplaintAndReasonForVisitSection, diagnostics, context);
@@ -51427,6 +51777,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(hospitalConsultationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(hospitalConsultationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalConsultationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -51544,6 +51897,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(hospitalDischargeInstructionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				hospitalDischargeInstructionsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalDischargeInstructionsSection, diagnostics, context);
@@ -51672,6 +52029,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(hospitalDischargePhysicalSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				hospitalDischargePhysicalSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalDischargePhysicalSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -51792,6 +52153,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				hospitalDischargeStudiesSummarySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalDischargeStudiesSummarySection, diagnostics, context);
@@ -51919,6 +52284,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(reasonForVisitSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(reasonForVisitSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reasonForVisitSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -52032,6 +52400,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(preconditionForSubstanceAdministration, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				preconditionForSubstanceAdministration, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(preconditionForSubstanceAdministration, diagnostics, context);
@@ -52154,6 +52526,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(immunizationMedicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				immunizationMedicationInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(immunizationMedicationInformation, diagnostics, context);
@@ -52382,6 +52758,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(authorizationActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(authorizationActivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(authorizationActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -52537,6 +52916,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(hospitalDischargeMedicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalDischargeMedicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -52679,6 +53062,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(anesthesiaSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(anesthesiaSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(anesthesiaSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -52818,6 +53204,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(complicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(complicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(complicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -52946,6 +53335,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(dicomObjectCatalogSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dicomObjectCatalogSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dicomObjectCatalogSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -53045,6 +53437,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(studyAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(studyAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(studyAct, diagnostics, context);
@@ -53258,6 +53653,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(seriesAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(seriesAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(seriesAct, diagnostics, context);
@@ -53486,6 +53884,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(sopInstanceObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(sopInstanceObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(sopInstanceObservation, diagnostics, context);
@@ -53775,6 +54176,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(purposeofReferenceObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(purposeofReferenceObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(purposeofReferenceObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -53903,6 +54307,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(referencedFramesObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(referencedFramesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(referencedFramesObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -54015,6 +54422,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(boundaryObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(boundaryObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(boundaryObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -54122,6 +54532,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(findingsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(findingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(findingsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -54172,6 +54585,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(interventionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(interventionsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(interventionsSection, diagnostics, context);
@@ -54287,6 +54703,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicalHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicalHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicalHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -54400,6 +54819,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(objectiveSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(objectiveSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(objectiveSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -54507,6 +54929,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(operativeNoteFluidSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(operativeNoteFluidSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(operativeNoteFluidSection, diagnostics, context);
@@ -54626,6 +55051,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(operativeNoteSurgicalProcedureSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				operativeNoteSurgicalProcedureSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(operativeNoteSurgicalProcedureSection, diagnostics, context);
@@ -54751,6 +55180,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(plannedProcedureSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(plannedProcedureSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(plannedProcedureSection, diagnostics, context);
@@ -54881,6 +55313,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(postoperativeDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(postoperativeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(postoperativeDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -54998,6 +55433,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(postprocedureDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(postprocedureDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(postprocedureDiagnosisSection, diagnostics, context);
@@ -55136,6 +55574,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(postprocedureDiagnosis, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(postprocedureDiagnosis, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(postprocedureDiagnosis, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -55241,6 +55682,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(preoperativeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(preoperativeDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(preoperativeDiagnosisSection, diagnostics, context);
@@ -55378,6 +55822,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(preoperativeDiagnosis, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(preoperativeDiagnosis, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(preoperativeDiagnosis, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -55483,6 +55930,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedureDescriptionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureDescriptionSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureDescriptionSection, diagnostics, context);
@@ -55601,6 +56051,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedureDispositionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureDispositionSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureDispositionSection, diagnostics, context);
@@ -55722,6 +56175,10 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(procedureEstimatedBloodLossSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				procedureEstimatedBloodLossSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureEstimatedBloodLossSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -55841,6 +56298,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedureFindingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureFindingsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureFindingsSection, diagnostics, context);
@@ -55971,6 +56431,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(procedureImplantsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureImplantsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureImplantsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -56082,6 +56545,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedureIndicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureIndicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureIndicationsSection, diagnostics, context);
@@ -56219,6 +56685,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(procedureSpecimensTakenSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureSpecimensTakenSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureSpecimensTakenSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -56339,6 +56808,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(subjectiveSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(subjectiveSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(subjectiveSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -56446,6 +56918,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(consultationNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(consultationNote, diagnostics, context);
@@ -58219,6 +58694,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(assessmentSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(assessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(assessmentSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -58326,6 +58804,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(historyAndPhysicalNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(historyAndPhysicalNote, diagnostics, context);
@@ -60096,6 +60577,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(instructionsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(instructionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(instructionsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -60222,6 +60706,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(operativeNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(operativeNote, diagnostics, context);
@@ -61844,6 +62331,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedureNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureNote, diagnostics, context);
@@ -63847,6 +64337,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(progressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -65554,6 +66047,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(diagnosticImagingReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(diagnosticImagingReport, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(diagnosticImagingReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -67177,6 +67673,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(physicianReadingStudyPerformer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(physicianReadingStudyPerformer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(physicianReadingStudyPerformer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -67358,6 +67857,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(physicianofRecordParticipant, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(physicianofRecordParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(physicianofRecordParticipant, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -67536,6 +68038,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(textObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(textObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(textObservation, diagnostics, context);
@@ -67745,6 +68250,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(quantityMeasurementObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(quantityMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(quantityMeasurementObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -67924,6 +68432,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(codeObservations, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(codeObservations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(codeObservations, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -68072,6 +68583,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(procedureContext, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureContext, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureContext, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -68189,6 +68703,9 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationUseNoneKnown, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationUseNoneKnown, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationUseNoneKnown, diagnostics, context);
@@ -68448,6 +68965,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(deceasedObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(deceasedObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(deceasedObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -68675,6 +69195,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(fetusSubjectContext, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(fetusSubjectContext, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(fetusSubjectContext, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -68752,6 +69275,9 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(observerContext, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(observerContext, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(observerContext, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -68818,6 +69344,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(substanceOrDeviceAllergyObservation, diagnostics, context);
