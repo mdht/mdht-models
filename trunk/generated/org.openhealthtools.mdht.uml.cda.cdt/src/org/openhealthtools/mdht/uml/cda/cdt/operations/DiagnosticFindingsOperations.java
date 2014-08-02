@@ -32,7 +32,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.DiagnosticFindings#validateDiagnosticFindingsTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Findings Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.DiagnosticFindings#validateResultsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Title</em>}</li>
  * </ul>
  * </p>
  *
@@ -49,24 +49,25 @@ public class DiagnosticFindingsOperations extends ResultsSectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDiagnosticFindingsTitle(DiagnosticFindings, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Findings Title</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateResultsSectionTitle(DiagnosticFindings, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Title</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticFindingsTitle(DiagnosticFindings, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* <!-- end-user-doc -->
+	 * @see #validateResultsSectionTitle(DiagnosticFindings, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_FINDINGS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
+	protected static final String VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDiagnosticFindingsTitle(DiagnosticFindings, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Findings Title</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateResultsSectionTitle(DiagnosticFindings, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Title</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticFindingsTitle(DiagnosticFindings, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateResultsSectionTitle(DiagnosticFindings, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_DIAGNOSTIC_FINDINGS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	protected static Constraint VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,25 +79,26 @@ public class DiagnosticFindingsOperations extends ResultsSectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateDiagnosticFindingsTitle(DiagnosticFindings diagnosticFindings,
+
+	public static boolean validateResultsSectionTitle(DiagnosticFindings diagnosticFindings,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_DIAGNOSTIC_FINDINGS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.DIAGNOSTIC_FINDINGS);
 			try {
-				VALIDATE_DIAGNOSTIC_FINDINGS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_FINDINGS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_FINDINGS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			diagnosticFindings)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.DIAGNOSTIC_FINDINGS__DIAGNOSTIC_FINDINGS_TITLE,
-					CDTPlugin.INSTANCE.getString("DiagnosticFindingsTitle"), new Object[] { diagnosticFindings }));
+					CDTValidator.DIAGNOSTIC_FINDINGS__RESULTS_SECTION_TITLE,
+					CDTPlugin.INSTANCE.getString("ResultsSectionTitle"), new Object[] { diagnosticFindings }));
 			}
 
 			return false;

@@ -65,7 +65,7 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 	 */
 	public static CDTFactory init() {
 		try {
-			CDTFactory theCDTFactory = (CDTFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/cdt");
+			CDTFactory theCDTFactory = (CDTFactory) EPackage.Registry.INSTANCE.getEFactory(CDTPackage.eNS_URI);
 			if (theCDTFactory != null) {
 				return theCDTFactory;
 			}

@@ -1737,17 +1737,6 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			diagnosticFindingsEClass, DiagnosticFindings.class, "DiagnosticFindings", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(
-			diagnosticFindingsEClass, ecorePackage.getEBoolean(), "validateDiagnosticFindingsTitle", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(
 			consultationNoteEClass, ConsultationNote.class, "ConsultationNote", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
@@ -2875,18 +2864,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			unstructuredDocumentEClass, ecorePackage.getEBoolean(), "validateUnstructuredDocumentEffectiveTime", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			unstructuredDocumentEClass, ecorePackage.getEBoolean(), "validateUnstructuredDocumentCustodian", 0, 1,
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsCustodian", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -2989,7 +2967,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			source,
 			new String[] {
 					"constraints.validation.error",
-					"HistoryAndPhysicalTemplateId HistoryAndPhysicalAssessmentAndPlan HistoryAndPhysicalBothAssessmentAndPlan HistoryAndPhysicalReasonForVisitAndChiefComplaint HistoryAndPhysicalBothReasonForVisitAndChiefComplaint HistoryAndPhysicalCode HistoryAndPhysicalHistoryOfPresentIllness HistoryAndPhysicalPastMedicalHistorySection HistoryAndPhysicalMedicationsSection HistoryAndPhysicalAlertsSection HistoryAndPhysicalSocialHistorySection HistoryAndPhysicalFamilyHistorySection HistoryAndPhysicalReviewOfSystemsSection HistoryAndPhysicalPhysicalExaminationSection HistoryAndPhysicalVitalSignsSection HistoryAndPhysicalGeneralStatusSection HistoryAndPhysicalDiagnosticFindings",
+					"GeneralHeaderConstraintsTemplateId HistoryAndPhysicalAssessmentAndPlan HistoryAndPhysicalBothAssessmentAndPlan HistoryAndPhysicalReasonForVisitAndChiefComplaint HistoryAndPhysicalBothReasonForVisitAndChiefComplaint HistoryAndPhysicalCode HistoryAndPhysicalHistoryOfPresentIllness HistoryAndPhysicalPastMedicalHistorySection HistoryAndPhysicalMedicationsSection HistoryAndPhysicalAlertsSection HistoryAndPhysicalSocialHistorySection HistoryAndPhysicalFamilyHistorySection HistoryAndPhysicalReviewOfSystemsSection HistoryAndPhysicalPhysicalExaminationSection HistoryAndPhysicalVitalSignsSection HistoryAndPhysicalGeneralStatusSection HistoryAndPhysicalDiagnosticFindings",
 					"templateId.root", "2.16.840.1.113883.10.20.2", "code.codeSystem", "2.16.840.1.113883.6.1",
 					"code.codeSystemName", "LOINC", "constraints.validation.info",
 					"HistoryAndPhysicalProblemSection HistoryAndPhysicalProceduresSection HistoryAndPhysicalImmunizationsSection" });
@@ -3027,13 +3005,13 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
 				"GENERAL STATUS, PHYSICAL FINDINGS" });
 		addAnnotation(diagnosticFindingsEClass, source, new String[] {
-				"constraints.validation.error", "DiagnosticFindingsTitle" });
+				"constraints.validation.error", "ResultsSectionTitle" });
 		addAnnotation(
 			consultationNoteEClass,
 			source,
 			new String[] {
 					"constraints.validation.error",
-					"ConsultationNoteTemplateId ConsultationNoteReferralOrVisit ConsultationNoteCode ConsultationNoteHistoryOfPresentIllness ConsultationNotePhysicalExamination",
+					"GeneralHeaderConstraintsTemplateId ConsultationNoteReferralOrVisit ConsultationNoteCode ConsultationNoteHistoryOfPresentIllness ConsultationNotePhysicalExamination",
 					"templateId.root",
 					"2.16.840.1.113883.10.20.4",
 					"code.codeSystem",
@@ -3069,10 +3047,10 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 				"constraints.validation.error", "LevelOneConformanceTemplateId", "templateId.root",
 				"2.16.840.1.113883.10.20.10" });
 		addAnnotation(levelTwoConformanceEClass, source, new String[] {
-				"constraints.validation.error", "LevelTwoConformanceTemplateId", "templateId.root",
+				"constraints.validation.error", "LevelOneConformanceTemplateId", "templateId.root",
 				"2.16.840.1.113883.10.20.20" });
 		addAnnotation(levelThreeConformanceEClass, source, new String[] {
-				"constraints.validation.error", "LevelThreeConformanceTemplateId", "templateId.root",
+				"constraints.validation.error", "LevelOneConformanceTemplateId", "templateId.root",
 				"2.16.840.1.113883.10.20.30" });
 		addAnnotation(assessmentSectionEClass, source, new String[] {
 				"constraints.validation.error", "AssessmentSectionTemplateId AssessmentSectionCode", "templateId.root",
@@ -3108,7 +3086,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			source,
 			new String[] {
 					"constraints.validation.error",
-					"ProgressNoteTemplateId ProgressNoteAssessmentAndPlan ProgressNoteBothAssessmentAndPlan ProgressNoteHasServiceEventCode ProgressNoteHasComponentOfElement ProgressNoteHasEncompassingEncounterId ProgressNoteHasEncompassingEncounterEffectiveTime ProgressNoteHasEncompassingEncounterEffectiveTimeLow ProgressNoteCode",
+					"GeneralHeaderConstraintsTemplateId ProgressNoteAssessmentAndPlan ProgressNoteBothAssessmentAndPlan ProgressNoteHasServiceEventCode ProgressNoteHasComponentOfElement ProgressNoteHasEncompassingEncounterId ProgressNoteHasEncompassingEncounterEffectiveTime ProgressNoteHasEncompassingEncounterEffectiveTimeLow ProgressNoteCode",
 					"templateId.root",
 					"2.16.840.1.113883.10.20.21.1",
 					"constraints.validation.warning",
@@ -3150,7 +3128,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			source,
 			new String[] {
 					"constraints.validation.error",
-					"UnstructuredDocumentTemplateId UnstructuredDocumentPatientRoleHasId UnstructuredDocumentAssignedAuthorHasAddr UnstructuredDocumentAssignedAuthorHasTelecom UnstructuredDocumentHasRepresentedCustodianOrganization UnstructuredDocumentHasRepresentedCustodianOrganizationId UnstructuredDocumentHasRepresentedCustodianOrganizationName UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom UnstructuredDocumentHasRepresentedCustodianOrganizationAddr UnstructuredDocumentHasNonXMLBodyText UnstructuredDocumentHasTextReferenceOrRepresentation UnstructuredDocumentHasTextMediaTypeValueSet UnstructuredDocumentEffectiveTime UnstructuredDocumentCustodian",
+					"GeneralHeaderConstraintsTemplateId UnstructuredDocumentPatientRoleHasId UnstructuredDocumentAssignedAuthorHasAddr UnstructuredDocumentAssignedAuthorHasTelecom UnstructuredDocumentHasRepresentedCustodianOrganization UnstructuredDocumentHasRepresentedCustodianOrganizationId UnstructuredDocumentHasRepresentedCustodianOrganizationName UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom UnstructuredDocumentHasRepresentedCustodianOrganizationAddr UnstructuredDocumentHasNonXMLBodyText UnstructuredDocumentHasTextReferenceOrRepresentation UnstructuredDocumentHasTextMediaTypeValueSet GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsCustodian",
 					"templateId.root", "2.16.840.1.113883.10.20.19.1" });
 		addAnnotation(
 			hospitalDischargeStudiesSummarySectionEClass,
@@ -3172,6 +3150,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 	protected void createDuplicatesAnnotations() {
 		String source = "duplicates";
 		addAnnotation(historyAndPhysicalEClass, source, new String[] {});
+		addAnnotation(diagnosticFindingsEClass, source, new String[] {});
 		addAnnotation(consultationNoteEClass, source, new String[] {});
 		addAnnotation(levelTwoConformanceEClass, source, new String[] {});
 		addAnnotation(levelThreeConformanceEClass, source, new String[] {});

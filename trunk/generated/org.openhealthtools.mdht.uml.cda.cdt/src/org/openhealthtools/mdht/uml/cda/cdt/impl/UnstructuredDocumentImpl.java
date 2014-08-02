@@ -170,20 +170,11 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateUnstructuredDocumentCustodian(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodian(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsCustodian(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateGeneralHeaderConstraintsCustodian(this, diagnostics, context);
 	}
 
 	/**
@@ -194,6 +185,17 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	@Override
 	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateGeneralHeaderConstraintsEffectiveTime(this, diagnostics, context);
 	}
 
 	/**

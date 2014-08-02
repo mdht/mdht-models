@@ -1815,14 +1815,9 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 			historyAndPhysical)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
 					CDTValidator.HISTORY_AND_PHYSICAL__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"GeneralHeaderConstraintsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(historyAndPhysical, context) }),
+					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
 					new Object[] { historyAndPhysical }));
 			}
 

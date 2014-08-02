@@ -53,11 +53,12 @@ public class DiagnosticFindingsImpl extends ResultsSectionImpl implements Diagno
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticFindingsTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticFindingsOperations.validateDiagnosticFindingsTitle(this, diagnostics, context);
+	@Override
+	public boolean validateResultsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticFindingsOperations.validateResultsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
