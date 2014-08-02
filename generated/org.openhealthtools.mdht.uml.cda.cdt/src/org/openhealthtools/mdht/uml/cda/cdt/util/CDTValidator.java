@@ -1208,20 +1208,12 @@ public class CDTValidator extends EObjectValidator {
 	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET = 167;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Effective Time' of 'Unstructured Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Custodian' of 'Unstructured Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME = 168;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Custodian' of 'Unstructured Document'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN = 169;
+	public static final int UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_CUSTODIAN = 168;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Template Id' of 'Unstructured Document'.
@@ -1229,7 +1221,15 @@ public class CDTValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 170;
+	public static final int UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 169;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Effective Time' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME = 170;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Studies Summary Section Template Id' of 'Hospital Discharge Studies Summary Section'.
@@ -1368,12 +1368,12 @@ public class CDTValidator extends EObjectValidator {
 	public static final int GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_CODE = 76;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Findings Title' of 'Diagnostic Findings'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Title' of 'Diagnostic Findings'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_FINDINGS__DIAGNOSTIC_FINDINGS_TITLE = 77;
+	public static final int DIAGNOSTIC_FINDINGS__RESULTS_SECTION_TITLE = 77;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Signs Section Clinical Statements' of 'Vital Signs Section'.
@@ -1617,6 +1617,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(generalHeaderConstraints, diagnostics, context);
@@ -2254,6 +2257,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(historyAndPhysical, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(historyAndPhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(historyAndPhysical, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -2744,6 +2750,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(consultationNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(consultationNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3188,6 +3197,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(levelThreeConformance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(levelThreeConformance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(levelThreeConformance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3241,6 +3253,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(reasonForReferralSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reasonForReferralSection, diagnostics, context);
@@ -3309,6 +3324,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(reasonForVisitSectionConsult, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(reasonForVisitSectionConsult, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reasonForVisitSectionConsult, diagnostics, context);
@@ -3381,6 +3399,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(reasonForVisitSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(reasonForVisitSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reasonForVisitSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3447,6 +3468,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(chiefComplaintSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(chiefComplaintSection, diagnostics, context);
@@ -3517,6 +3541,10 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(reasonForVisitAndChiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				reasonForVisitAndChiefComplaintSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reasonForVisitAndChiefComplaintSection, diagnostics, context);
@@ -3591,6 +3619,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(progressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(progressNote, diagnostics, context);
@@ -4100,6 +4131,10 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(assessmentAndPlanSectionProcNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				assessmentAndPlanSectionProcNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(assessmentAndPlanSectionProcNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -4172,6 +4207,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(assessmentSectionProcNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(assessmentSectionProcNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(assessmentSectionProcNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -4240,6 +4278,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(chiefComplaintSectionProcNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(chiefComplaintSectionProcNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(chiefComplaintSectionProcNote, diagnostics, context);
@@ -4311,6 +4352,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(objectiveSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(objectiveSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(objectiveSection, diagnostics, context);
@@ -4423,6 +4467,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(subjectiveSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(subjectiveSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(subjectiveSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -4531,6 +4578,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(unstructuredDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(unstructuredDocument, diagnostics, context);
@@ -4684,7 +4734,7 @@ public class CDTValidator extends EObjectValidator {
 				unstructuredDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+			result &= validateUnstructuredDocument_validateGeneralHeaderConstraintsEffectiveTime(
 				unstructuredDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -4752,11 +4802,7 @@ public class CDTValidator extends EObjectValidator {
 				unstructuredDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateUnstructuredDocument_validateUnstructuredDocumentEffectiveTime(
-				unstructuredDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnstructuredDocument_validateUnstructuredDocumentCustodian(
+			result &= validateUnstructuredDocument_validateGeneralHeaderConstraintsCustodian(
 				unstructuredDocument, diagnostics, context);
 		}
 		return result;
@@ -4889,25 +4935,14 @@ public class CDTValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateUnstructuredDocumentEffectiveTime constraint of '<em>Unstructured Document</em>'.
+	 * Validates the validateGeneralHeaderConstraintsCustodian constraint of '<em>Unstructured Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocument_validateUnstructuredDocumentEffectiveTime(
+	public boolean validateUnstructuredDocument_validateGeneralHeaderConstraintsCustodian(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return unstructuredDocument.validateUnstructuredDocumentEffectiveTime(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateUnstructuredDocumentCustodian constraint of '<em>Unstructured Document</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateUnstructuredDocument_validateUnstructuredDocumentCustodian(
-			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return unstructuredDocument.validateUnstructuredDocumentCustodian(diagnostics, context);
+		return unstructuredDocument.validateGeneralHeaderConstraintsCustodian(diagnostics, context);
 	}
 
 	/**
@@ -4919,6 +4954,17 @@ public class CDTValidator extends EObjectValidator {
 	public boolean validateUnstructuredDocument_validateGeneralHeaderConstraintsTemplateId(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return unstructuredDocument.validateGeneralHeaderConstraintsTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGeneralHeaderConstraintsEffectiveTime constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateGeneralHeaderConstraintsEffectiveTime(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateGeneralHeaderConstraintsEffectiveTime(diagnostics, context);
 	}
 
 	/**
@@ -4939,6 +4985,10 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				hospitalDischargeStudiesSummarySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalDischargeStudiesSummarySection, diagnostics, context);
@@ -5032,6 +5082,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(historyOfPresentIllness, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(historyOfPresentIllness, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5099,6 +5152,10 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(pastMedicalHistorySectionConsult, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				pastMedicalHistorySectionConsult, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(pastMedicalHistorySectionConsult, diagnostics, context);
@@ -5189,6 +5246,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(levelOneConformance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(levelOneConformance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(levelOneConformance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5242,6 +5302,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(levelTwoConformance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(levelTwoConformance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(levelTwoConformance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5293,6 +5356,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(physicalExaminationSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(physicalExaminationSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(physicalExaminationSection, diagnostics, context);
@@ -5363,6 +5429,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(pastMedicalHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(pastMedicalHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(pastMedicalHistorySection, diagnostics, context);
@@ -5467,6 +5536,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(reviewOfSystemsSectionIHE, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(reviewOfSystemsSectionIHE, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reviewOfSystemsSectionIHE, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5537,6 +5609,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(reviewOfSystemsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reviewOfSystemsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5603,6 +5678,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(generalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(generalStatusSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(generalStatusSection, diagnostics, context);
@@ -5673,6 +5751,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(diagnosticFindings, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(diagnosticFindings, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(diagnosticFindings, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5699,8 +5780,7 @@ public class CDTValidator extends EObjectValidator {
 				diagnosticFindings, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateResultsSection_validateResultsSectionTitle(
-				diagnosticFindings, diagnostics, context);
+			result &= validateDiagnosticFindings_validateResultsSectionTitle(diagnosticFindings, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateResultsSection_validateResultsSectionText(
@@ -5710,22 +5790,18 @@ public class CDTValidator extends EObjectValidator {
 			result &= ccdValidator.validateResultsSection_validateResultsSectionResultOrganizer(
 				diagnosticFindings, diagnostics, context);
 		}
-		if (result || diagnostics != null) {
-			result &= validateDiagnosticFindings_validateDiagnosticFindingsTitle(
-				diagnosticFindings, diagnostics, context);
-		}
 		return result;
 	}
 
 	/**
-	 * Validates the validateDiagnosticFindingsTitle constraint of '<em>Diagnostic Findings</em>'.
+	 * Validates the validateResultsSectionTitle constraint of '<em>Diagnostic Findings</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticFindings_validateDiagnosticFindingsTitle(DiagnosticFindings diagnosticFindings,
+	public boolean validateDiagnosticFindings_validateResultsSectionTitle(DiagnosticFindings diagnosticFindings,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return diagnosticFindings.validateDiagnosticFindingsTitle(diagnostics, context);
+		return diagnosticFindings.validateResultsSectionTitle(diagnostics, context);
 	}
 
 	/**
@@ -5744,6 +5820,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(vitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(vitalSignsSection, diagnostics, context);
@@ -5857,6 +5936,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(assessmentSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(assessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(assessmentSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5923,6 +6005,9 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(planSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(planSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(planSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5987,6 +6072,9 @@ public class CDTValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(assessmentAndPlanSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(assessmentAndPlanSection, diagnostics, context);

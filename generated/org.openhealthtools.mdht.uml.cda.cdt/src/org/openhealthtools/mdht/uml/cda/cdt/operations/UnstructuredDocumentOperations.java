@@ -42,9 +42,9 @@ import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument#validateUnstructuredDocumentHasNonXMLBodyText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Has Non XML Body Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument#validateUnstructuredDocumentHasTextReferenceOrRepresentation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Has Text Reference Or Representation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument#validateUnstructuredDocumentHasTextMediaTypeValueSet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Has Text Media Type Value Set</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument#validateUnstructuredDocumentEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument#validateUnstructuredDocumentCustodian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Custodian</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument#validateGeneralHeaderConstraintsCustodian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Custodian</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument#validateGeneralHeaderConstraintsEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Effective Time</em>}</li>
  * </ul>
  * </p>
  *
@@ -701,82 +701,25 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateUnstructuredDocumentEffectiveTime(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Effective Time</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsCustodian(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Custodian</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUnstructuredDocumentEffectiveTime(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsCustodian(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(rim::Participation))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateUnstructuredDocumentEffectiveTime(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Effective Time</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsCustodian(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Custodian</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUnstructuredDocumentEffectiveTime(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param unstructuredDocument The receiving '<em><b>Unstructured Document</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateUnstructuredDocumentEffectiveTime(UnstructuredDocument unstructuredDocument,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
-			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentEffectiveTime"),
-					new Object[] { unstructuredDocument }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateUnstructuredDocumentCustodian(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Custodian</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUnstructuredDocumentCustodian(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(rim::Participation))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateUnstructuredDocumentCustodian(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Custodian</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUnstructuredDocumentCustodian(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateGeneralHeaderConstraintsCustodian(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -789,25 +732,25 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 */
 
-	public static boolean validateUnstructuredDocumentCustodian(UnstructuredDocument unstructuredDocument,
+	public static boolean validateGeneralHeaderConstraintsCustodian(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			unstructuredDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentCustodian"),
+					CDTValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_CUSTODIAN,
+					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsCustodian"),
 					new Object[] { unstructuredDocument }));
 			}
 
@@ -864,12 +807,67 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
 					CDTValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"GeneralHeaderConstraintsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									unstructuredDocument, context) }), new Object[] { unstructuredDocument }));
+					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					new Object[] { unstructuredDocument }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsEffectiveTime(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsEffectiveTime(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsEffectiveTime(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsEffectiveTime(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param unstructuredDocument The receiving '<em><b>Unstructured Document</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateGeneralHeaderConstraintsEffectiveTime(UnstructuredDocument unstructuredDocument,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
+			try {
+				VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			unstructuredDocument)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME,
+					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsEffectiveTime"),
+					new Object[] { unstructuredDocument }));
 			}
 
 			return false;

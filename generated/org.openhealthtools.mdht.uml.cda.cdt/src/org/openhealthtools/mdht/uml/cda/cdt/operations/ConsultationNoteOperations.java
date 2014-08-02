@@ -1627,14 +1627,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
 					CDTValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"GeneralHeaderConstraintsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
 					new Object[] { consultationNote }));
 			}
 

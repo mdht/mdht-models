@@ -19,6 +19,7 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
+import org.openhealthtools.mdht.uml.cda.cdt.CDTPlugin;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelTwoConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
 
@@ -92,15 +93,9 @@ public class LevelTwoConformanceOperations extends LevelOneConformanceOperations
 			levelTwoConformance)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
 					CDTValidator.LEVEL_TWO_CONFORMANCE__LEVEL_ONE_CONFORMANCE_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LevelOneConformanceTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(levelTwoConformance, context) }),
-					new Object[] { levelTwoConformance }));
+					CDTPlugin.INSTANCE.getString("LevelOneConformanceTemplateId"), new Object[] { levelTwoConformance }));
 			}
 
 			return false;

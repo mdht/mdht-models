@@ -1858,12 +1858,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
 					CDTValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"GeneralHeaderConstraintsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(progressNote, context) }),
-					new Object[] { progressNote }));
+					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"), new Object[] { progressNote }));
 			}
 
 			return false;
