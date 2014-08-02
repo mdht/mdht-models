@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ProblemStatusObservationO
 public class ProblemStatusObservationImpl extends
 		org.openhealthtools.mdht.uml.cda.ccd.impl.ProblemStatusObservationImpl implements ProblemStatusObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProblemStatusObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.PROBLEM_STATUS_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIHEProblemStatusObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationHasTextReference(
@@ -63,10 +63,10 @@ public class ProblemStatusObservationImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIHEProblemStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationTemplateId(
@@ -74,21 +74,21 @@ public class ProblemStatusObservationImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIHEProblemStatusObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateIHEProblemStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationValue(this, diagnostics, context);
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateProblemStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusObservationOperations.validateProblemStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**

@@ -123,7 +123,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::Condition))";
+	protected static final String VALIDATE_HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::Condition))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPHospitalAdmissionDiagnosisSectionCondition(HospitalAdmissionDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Hospital Admission Diagnosis Section Condition</em>}' invariant operation.

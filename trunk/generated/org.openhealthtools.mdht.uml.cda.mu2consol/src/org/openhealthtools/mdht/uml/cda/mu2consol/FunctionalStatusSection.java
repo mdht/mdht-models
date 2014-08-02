@@ -78,12 +78,14 @@ public interface FunctionalStatusSection extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusSection init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public FunctionalStatusSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusSection

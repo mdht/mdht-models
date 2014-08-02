@@ -50,7 +50,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 */
 	public static Mu2consolFactory init() {
 		try {
-			Mu2consolFactory theMu2consolFactory = (Mu2consolFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/mu2consol"); 
+			Mu2consolFactory theMu2consolFactory = (Mu2consolFactory)EPackage.Registry.INSTANCE.getEFactory(Mu2consolPackage.eNS_URI);
 			if (theMu2consolFactory != null) {
 				return theMu2consolFactory;
 			}
@@ -108,6 +108,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GeneralHeaderConstraints createGeneralHeaderConstraints() {
 		GeneralHeaderConstraintsImpl generalHeaderConstraints = new GeneralHeaderConstraintsImpl();
 		return generalHeaderConstraints;
@@ -117,6 +118,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SummaryOfCareRecord createSummaryOfCareRecord() {
 		SummaryOfCareRecordImpl summaryOfCareRecord = new SummaryOfCareRecordImpl();
 		return summaryOfCareRecord;
@@ -126,6 +128,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary() {
 		ClinicalOfficeVisitSummaryImpl clinicalOfficeVisitSummary = new ClinicalOfficeVisitSummaryImpl();
 		return clinicalOfficeVisitSummary;
@@ -136,6 +139,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsAdministeredSection createMedicationsAdministeredSection() {
 		MedicationsAdministeredSectionImpl medicationsAdministeredSection = new MedicationsAdministeredSectionImpl();
 		return medicationsAdministeredSection;
@@ -145,6 +149,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TransitionOfCareAmbulatorySummary createTransitionOfCareAmbulatorySummary() {
 		TransitionOfCareAmbulatorySummaryImpl transitionOfCareAmbulatorySummary = new TransitionOfCareAmbulatorySummaryImpl();
 		return transitionOfCareAmbulatorySummary;
@@ -154,6 +159,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TransitionOfCareInpatientSummary createTransitionOfCareInpatientSummary() {
 		TransitionOfCareInpatientSummaryImpl transitionOfCareInpatientSummary = new TransitionOfCareInpatientSummaryImpl();
 		return transitionOfCareInpatientSummary;
@@ -163,6 +169,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ViewDownloadTransmitSummary createViewDownloadTransmitSummary() {
 		ViewDownloadTransmitSummaryImpl viewDownloadTransmitSummary = new ViewDownloadTransmitSummaryImpl();
 		return viewDownloadTransmitSummary;
@@ -172,6 +179,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VDTInpatientSummary createVDTInpatientSummary() {
 		VDTInpatientSummaryImpl vdtInpatientSummary = new VDTInpatientSummaryImpl();
 		return vdtInpatientSummary;
@@ -181,6 +189,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VDTAmbulatorySummary createVDTAmbulatorySummary() {
 		VDTAmbulatorySummaryImpl vdtAmbulatorySummary = new VDTAmbulatorySummaryImpl();
 		return vdtAmbulatorySummary;
@@ -191,6 +200,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusSection createFunctionalStatusSection() {
 		FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
 		return functionalStatusSection;
@@ -201,6 +211,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusResultObservation createCognitiveStatusResultObservation() {
 		CognitiveStatusResultObservationImpl cognitiveStatusResultObservation = new CognitiveStatusResultObservationImpl();
 		return cognitiveStatusResultObservation;
@@ -211,6 +222,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusResultOrganizer createCognitiveStatusResultOrganizer() {
 		CognitiveStatusResultOrganizerImpl cognitiveStatusResultOrganizer = new CognitiveStatusResultOrganizerImpl();
 		return cognitiveStatusResultOrganizer;
@@ -221,6 +233,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusResultObservation createFunctionalStatusResultObservation() {
 		FunctionalStatusResultObservationImpl functionalStatusResultObservation = new FunctionalStatusResultObservationImpl();
 		return functionalStatusResultObservation;
@@ -231,6 +244,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusResultOrganizer createFunctionalStatusResultOrganizer() {
 		FunctionalStatusResultOrganizerImpl functionalStatusResultOrganizer = new FunctionalStatusResultOrganizerImpl();
 		return functionalStatusResultOrganizer;
@@ -240,6 +254,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultObservation createResultObservation() {
 		ResultObservationImpl resultObservation = new ResultObservationImpl();
 		return resultObservation;
@@ -249,6 +264,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection createProceduresSection() {
 		ProceduresSectionImpl proceduresSection = new ProceduresSectionImpl();
 		return proceduresSection;
@@ -258,6 +274,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityProcedure createProcedureActivityProcedure() {
 		ProcedureActivityProcedureImpl procedureActivityProcedure = new ProcedureActivityProcedureImpl();
 		return procedureActivityProcedure;
@@ -267,6 +284,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultOrganizer createResultOrganizer() {
 		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
 		return resultOrganizer;
@@ -276,6 +294,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSection createResultsSection() {
 		ResultsSectionImpl resultsSection = new ResultsSectionImpl();
 		return resultsSection;
@@ -285,6 +304,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistorySection createSocialHistorySection() {
 		SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
 		return socialHistorySection;
@@ -294,6 +314,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SmokingStatusObservation createSmokingStatusObservation() {
 		SmokingStatusObservationImpl smokingStatusObservation = new SmokingStatusObservationImpl();
 		return smokingStatusObservation;
@@ -303,6 +324,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Mu2consolPackage getMu2consolPackage() {
 		return (Mu2consolPackage)getEPackage();
 	}

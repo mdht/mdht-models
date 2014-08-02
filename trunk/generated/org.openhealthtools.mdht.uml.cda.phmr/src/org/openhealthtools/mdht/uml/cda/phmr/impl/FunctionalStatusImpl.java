@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.FunctionalStatusOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status</b></em>'.
@@ -84,6 +82,7 @@ public class FunctionalStatusImpl extends FunctionalStatusSectionImpl implements
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public FunctionalStatus init() {
       return Initializer.Util.init(this);
   }
@@ -93,7 +92,8 @@ public class FunctionalStatusImpl extends FunctionalStatusSectionImpl implements
      * <!-- end-user-doc -->
      * @generated
      */
-    public FunctionalStatus init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public FunctionalStatus init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

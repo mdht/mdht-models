@@ -67,7 +67,7 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::Condition))";
+	protected static final String VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::Condition))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPReasonForReferralSectionCondition(ReasonForReferralSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Reason For Referral Section Condition</em>}' invariant operation.
@@ -126,7 +126,7 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hitsp::Result))";
+	protected static final String VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hitsp::Result))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPReasonForReferralSectionResult(ReasonForReferralSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Reason For Referral Section Result</em>}' invariant operation.
@@ -312,12 +312,8 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
 					HITSPValidator.REASON_FOR_REFERRAL_SECTION__CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CodedReasonForReferralSectionTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reasonForReferralSection, context) }), new Object[] { reasonForReferralSection }));
+					HITSPPlugin.INSTANCE.getString("CodedReasonForReferralSectionTemplateId"),
+					new Object[] { reasonForReferralSection }));
 			}
 
 			return false;

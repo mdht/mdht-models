@@ -62,6 +62,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSummaryOfCareRecordCarePlanning(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCarePlanning(this, diagnostics, context);
@@ -72,6 +73,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSummaryOfCareRecordVitalSigns(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordVitalSigns(this, diagnostics, context);
 	}
@@ -80,6 +82,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSummaryOfCareRecordProblemSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProblemSection(this, diagnostics, context);
@@ -89,6 +92,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSummaryOfCareRecordAllergiesSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordAllergiesSection(this, diagnostics, context);
@@ -98,6 +102,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSummaryOfCareRecordImmunizationsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordImmunizationsSection(this, diagnostics, context);
@@ -107,6 +112,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSummaryOfCareRecordSocialHistorySection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordSocialHistorySection(this, diagnostics, context);
@@ -116,6 +122,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSummaryOfCareRecordResultsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordResultsSection(this, diagnostics, context);
@@ -125,6 +132,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSummaryOfCareRecordProceduresSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProceduresSection(this, diagnostics, context);
@@ -134,6 +142,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSummaryOfCareRecordFunctionalStatusSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordFunctionalStatusSection(this, diagnostics, context);
@@ -143,6 +152,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusSection retrieveFunctionalStatusSection() {
 		return SummaryOfCareRecordOperations.retrieveFunctionalStatusSection(this);
 	}
@@ -151,6 +161,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeDiagnosisSection retrieveHospitalDischargeDiagnosisSection() {
 		return SummaryOfCareRecordOperations.retrieveHospitalDischargeDiagnosisSection(this);
 	}
@@ -159,6 +170,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostoperativeDiagnosisSection retrievePostoperativeDiagnosisSection() {
 		return SummaryOfCareRecordOperations.retrievePostoperativeDiagnosisSection(this);
 	}
@@ -167,6 +179,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostprocedureDiagnosisSection retrievePostprocedureDiagnosisSection() {
 		return SummaryOfCareRecordOperations.retrievePostprocedureDiagnosisSection(this);
 	}
@@ -175,6 +188,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSection getProblemSection() {
 		return SummaryOfCareRecordOperations.getProblemSection(this);
 	}
@@ -183,6 +197,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSection getAllergiesSection() {
 		return SummaryOfCareRecordOperations.getAllergiesSection(this);
 	}
@@ -191,6 +206,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationsSection getImmunizationsSection() {
 		return SummaryOfCareRecordOperations.getImmunizationsSection(this);
 	}
@@ -199,6 +215,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistorySection getSocialHistorySection() {
 		return SummaryOfCareRecordOperations.getSocialHistorySection(this);
 	}
@@ -207,6 +224,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSection getResultsSection() {
 		return SummaryOfCareRecordOperations.getResultsSection(this);
 	}
@@ -215,6 +233,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection getProceduresSection() {
 		return SummaryOfCareRecordOperations.getProceduresSection(this);
 	}
@@ -223,6 +242,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusSection getFunctionalStatusSection() {
 		return SummaryOfCareRecordOperations.getFunctionalStatusSection(this);
 	}

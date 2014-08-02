@@ -146,7 +146,7 @@ public class MedicalEquipmentOperations extends MedicalEquipmentSectionOperation
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_MEDICAL_EQUIPMENT_DEVICE_DEFINITION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(phmr::DeviceDefinitionOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+	protected static final String VALIDATE_MEDICAL_EQUIPMENT_DEVICE_DEFINITION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(phmr::DeviceDefinitionOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
    * The cached OCL invariant for the '{@link #validateMedicalEquipmentDeviceDefinitionOrganizer(MedicalEquipment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Device Definition Organizer</em>}' invariant operation.
@@ -298,7 +298,7 @@ public class MedicalEquipmentOperations extends MedicalEquipmentSectionOperation
             (Diagnostic.ERROR,
              PhmrValidator.DIAGNOSTIC_SOURCE,
              PhmrValidator.MEDICAL_EQUIPMENT__MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalEquipmentSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalEquipment, context) }),
+             PhmrPlugin.INSTANCE.getString("MedicalEquipmentSectionTemplateId"),
              new Object [] { medicalEquipment }));
       }
        

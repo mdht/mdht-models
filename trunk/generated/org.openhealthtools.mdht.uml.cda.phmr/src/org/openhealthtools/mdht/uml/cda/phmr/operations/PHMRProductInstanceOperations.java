@@ -376,7 +376,7 @@ public class PHMRProductInstanceOperations extends ProductInstanceOperations {
             (Diagnostic.ERROR,
              PhmrValidator.DIAGNOSTIC_SOURCE,
              PhmrValidator.PHMR_PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProductInstanceTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phmrProductInstance, context) }),
+             PhmrPlugin.INSTANCE.getString("ProductInstanceTemplateId"),
              new Object [] { phmrProductInstance }));
       }
        

@@ -25,106 +25,114 @@ import org.openhealthtools.mdht.uml.cda.ihe.qrph.*;
 public class QrphFactoryImpl extends EFactoryImpl implements QrphFactory
 {
   /**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static QrphFactory init()
   {
-		try {
-			QrphFactory theQrphFactory = (QrphFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe/qrph"); 
-			if (theQrphFactory != null) {
-				return theQrphFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new QrphFactoryImpl();
-	}
+    try
+    {
+      QrphFactory theQrphFactory = (QrphFactory)EPackage.Registry.INSTANCE.getEFactory(QrphPackage.eNS_URI);
+      if (theQrphFactory != null)
+      {
+        return theQrphFactory;
+      }
+    }
+    catch (Exception exception)
+    {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new QrphFactoryImpl();
+  }
 
   /**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public QrphFactoryImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public EObject create(EClass eClass)
   {
-		switch (eClass.getClassifierID()) {
-			case QrphPackage.EARLY_HEARING_CARE_PLAN_DOCUMENT: return createEarlyHearingCarePlanDocument();
-			case QrphPackage.RISK_INDICATORS_FOR_HEARING_LOSS_SECTION: return createRiskIndicatorsForHearingLossSection();
-			case QrphPackage.HEARING_SCREENING_CODED_RESULTS_SECTION: return createHearingScreeningCodedResultsSection();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eClass.getClassifierID())
+    {
+      case QrphPackage.EARLY_HEARING_CARE_PLAN_DOCUMENT: return createEarlyHearingCarePlanDocument();
+      case QrphPackage.RISK_INDICATORS_FOR_HEARING_LOSS_SECTION: return createRiskIndicatorsForHearingLossSection();
+      case QrphPackage.HEARING_SCREENING_CODED_RESULTS_SECTION: return createHearingScreeningCodedResultsSection();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+    }
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public EarlyHearingCarePlanDocument createEarlyHearingCarePlanDocument()
+   * @generated
+   */
+  @Override
+public EarlyHearingCarePlanDocument createEarlyHearingCarePlanDocument()
   {
-		EarlyHearingCarePlanDocumentImpl earlyHearingCarePlanDocument = new EarlyHearingCarePlanDocumentImpl();
-		return earlyHearingCarePlanDocument;
-	}
+    EarlyHearingCarePlanDocumentImpl earlyHearingCarePlanDocument = new EarlyHearingCarePlanDocumentImpl();
+    return earlyHearingCarePlanDocument;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public RiskIndicatorsForHearingLossSection createRiskIndicatorsForHearingLossSection()
+   * @generated
+   */
+  @Override
+public RiskIndicatorsForHearingLossSection createRiskIndicatorsForHearingLossSection()
   {
-		RiskIndicatorsForHearingLossSectionImpl riskIndicatorsForHearingLossSection = new RiskIndicatorsForHearingLossSectionImpl();
-		return riskIndicatorsForHearingLossSection;
-	}
+    RiskIndicatorsForHearingLossSectionImpl riskIndicatorsForHearingLossSection = new RiskIndicatorsForHearingLossSectionImpl();
+    return riskIndicatorsForHearingLossSection;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public HearingScreeningCodedResultsSection createHearingScreeningCodedResultsSection()
+   * @generated
+   */
+  @Override
+public HearingScreeningCodedResultsSection createHearingScreeningCodedResultsSection()
   {
-		HearingScreeningCodedResultsSectionImpl hearingScreeningCodedResultsSection = new HearingScreeningCodedResultsSectionImpl();
-		return hearingScreeningCodedResultsSection;
-	}
+    HearingScreeningCodedResultsSectionImpl hearingScreeningCodedResultsSection = new HearingScreeningCodedResultsSectionImpl();
+    return hearingScreeningCodedResultsSection;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public QrphPackage getQrphPackage()
+   * @generated
+   */
+  @Override
+public QrphPackage getQrphPackage()
   {
-		return (QrphPackage)getEPackage();
-	}
+    return (QrphPackage)getEPackage();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * @deprecated
+   * @generated
+   */
   @Deprecated
   public static QrphPackage getPackage()
   {
-		return QrphPackage.eINSTANCE;
-	}
+    return QrphPackage.eINSTANCE;
+  }
 
 } //QrphFactoryImpl

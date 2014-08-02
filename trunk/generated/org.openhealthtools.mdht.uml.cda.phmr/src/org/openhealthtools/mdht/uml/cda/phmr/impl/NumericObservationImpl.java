@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.NumericObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Numeric Observation</b></em>'.
@@ -74,35 +72,9 @@ public class NumericObservationImpl extends ResultObservationImpl implements Num
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateNumericObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return NumericObservationOperations.validateNumericObservationClassCode(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateNumericObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return NumericObservationOperations.validateNumericObservationCode(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateNumericObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return NumericObservationOperations.validateNumericObservationMoodCode(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateNumericObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return NumericObservationOperations.validateNumericObservationValue(this, diagnostics, context);
   }
 
 	/**
@@ -110,7 +82,8 @@ public class NumericObservationImpl extends ResultObservationImpl implements Num
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateNumericObservationPHMRProductInstanceReference(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validateNumericObservationPHMRProductInstanceReference(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return NumericObservationOperations.validateNumericObservationPHMRProductInstanceReference(this, diagnostics, context);
   }
@@ -127,9 +100,43 @@ public class NumericObservationImpl extends ResultObservationImpl implements Num
 
 	/**
    * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public boolean validateResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return NumericObservationOperations.validateResultObservationCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public boolean validateResultObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return NumericObservationOperations.validateResultObservationMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public boolean validateResultObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return NumericObservationOperations.validateResultObservationValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public NumericObservation init() {
       return Initializer.Util.init(this);
   }
@@ -139,7 +146,8 @@ public class NumericObservationImpl extends ResultObservationImpl implements Num
      * <!-- end-user-doc -->
      * @generated
      */
-    public NumericObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public NumericObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

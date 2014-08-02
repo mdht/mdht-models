@@ -59,6 +59,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateViewDownloadTransmitSummaryCarePlanning(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryCarePlanning(this, diagnostics, context);
 	}
@@ -68,6 +69,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateViewDownloadTransmitSummaryVitalSigns(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryVitalSigns(this, diagnostics, context);
 	}
@@ -76,6 +78,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateViewDownloadTransmitSummaryAllergiesSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryAllergiesSection(this, diagnostics, context);
@@ -85,6 +88,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateViewDownloadTransmitSummaryProblemSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryProblemSection(this, diagnostics, context);
@@ -94,6 +98,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateViewDownloadTransmitSummaryProceduresSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryProceduresSection(this, diagnostics, context);
@@ -103,6 +108,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateViewDownloadTransmitSummaryResultsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryResultsSection(this, diagnostics, context);
@@ -112,6 +118,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateViewDownloadTransmitSummarySocialHistorySection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummarySocialHistorySection(this, diagnostics, context);
@@ -121,6 +128,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosisSection retrievePreoperativeDiagnosisSection() {
 		return ViewDownloadTransmitSummaryOperations.retrievePreoperativeDiagnosisSection(this);
 	}
@@ -129,6 +137,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSection getAllergiesSection() {
 		return ViewDownloadTransmitSummaryOperations.getAllergiesSection(this);
 	}
@@ -137,6 +146,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSection getProblemSection() {
 		return ViewDownloadTransmitSummaryOperations.getProblemSection(this);
 	}
@@ -145,6 +155,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection getProceduresSection() {
 		return ViewDownloadTransmitSummaryOperations.getProceduresSection(this);
 	}
@@ -153,6 +164,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSection getResultsSection() {
 		return ViewDownloadTransmitSummaryOperations.getResultsSection(this);
 	}
@@ -161,6 +173,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistorySection getSocialHistorySection() {
 		return ViewDownloadTransmitSummaryOperations.getSocialHistorySection(this);
 	}

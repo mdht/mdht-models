@@ -44,12 +44,14 @@ public interface ProceduresSection extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public ProceduresSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProceduresSection

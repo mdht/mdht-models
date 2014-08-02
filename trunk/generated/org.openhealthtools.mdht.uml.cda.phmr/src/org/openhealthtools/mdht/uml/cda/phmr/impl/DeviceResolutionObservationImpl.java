@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.DeviceResolutionObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Device Resolution Observation</b></em>'.
@@ -74,6 +72,7 @@ public class DeviceResolutionObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceResolutionObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceResolutionObservationOperations.validateDeviceResolutionObservationTemplateId(this, diagnostics, context);
   }
@@ -83,6 +82,7 @@ public class DeviceResolutionObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceResolutionObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceResolutionObservationOperations.validateDeviceResolutionObservationClassCode(this, diagnostics, context);
   }
@@ -92,6 +92,7 @@ public class DeviceResolutionObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceResolutionObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceResolutionObservationOperations.validateDeviceResolutionObservationCode(this, diagnostics, context);
   }
@@ -101,6 +102,7 @@ public class DeviceResolutionObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceResolutionObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceResolutionObservationOperations.validateDeviceResolutionObservationMoodCode(this, diagnostics, context);
   }
@@ -110,6 +112,7 @@ public class DeviceResolutionObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceResolutionObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceResolutionObservationOperations.validateDeviceResolutionObservationValue(this, diagnostics, context);
   }
@@ -119,6 +122,7 @@ public class DeviceResolutionObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public DeviceResolutionObservation init() {
       return Initializer.Util.init(this);
   }
@@ -128,7 +132,8 @@ public class DeviceResolutionObservationImpl extends ObservationImpl implements 
      * <!-- end-user-doc -->
      * @generated
      */
-    public DeviceResolutionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public DeviceResolutionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

@@ -58,12 +58,14 @@ public interface SocialHistorySection extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistorySection init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public SocialHistorySection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SocialHistorySection

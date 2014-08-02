@@ -45,45 +45,44 @@ import org.openhealthtools.mdht.uml.cda.example.util.ExampleValidator;
  */
 public class MyObservationOperations extends ProblemObservationOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MyObservationOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMyObservationClassCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Class Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMyObservationClassCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Class Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMyObservationClassCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMyObservationClassCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMyObservationClassCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Class Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMyObservationClassCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Class Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMyObservationClassCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMyObservationClassCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_MY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::ActClassObservation::OBS
-	 * @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateMyObservationClassCode(MyObservation myObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -102,8 +101,7 @@ public class MyObservationOperations extends ProblemObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__MY_OBSERVATION_CLASS_CODE,
-					ExamplePlugin.INSTANCE.getString("MyObservationMyObservationClassCode"),
-					new Object[] { myObservation }));
+					ExamplePlugin.INSTANCE.getString("MyObservationClassCode"), new Object[] { myObservation }));
 			}
 
 			return false;
@@ -112,41 +110,38 @@ public class MyObservationOperations extends ProblemObservationOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))
-	 * @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMyObservationCode(MyObservation myObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -165,7 +160,7 @@ public class MyObservationOperations extends ProblemObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__MY_OBSERVATION_CODE,
-					ExamplePlugin.INSTANCE.getString("MyObservationMyObservationCode"), new Object[] { myObservation }));
+					ExamplePlugin.INSTANCE.getString("MyObservationCode"), new Object[] { myObservation }));
 			}
 
 			return false;
@@ -174,36 +169,35 @@ public class MyObservationOperations extends ProblemObservationOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMyObservationEffectiveTime(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Effective Time</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMyObservationEffectiveTime(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Effective Time</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMyObservationEffectiveTime(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMyObservationEffectiveTime(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMyObservationEffectiveTime(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Effective Time</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMyObservationEffectiveTime(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Effective Time</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMyObservationEffectiveTime(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMyObservationEffectiveTime(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_MY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
-	 * @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateMyObservationEffectiveTime(MyObservation myObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -222,8 +216,7 @@ public class MyObservationOperations extends ProblemObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__MY_OBSERVATION_EFFECTIVE_TIME,
-					ExamplePlugin.INSTANCE.getString("MyObservationMyObservationEffectiveTime"),
-					new Object[] { myObservation }));
+					ExamplePlugin.INSTANCE.getString("MyObservationEffectiveTime"), new Object[] { myObservation }));
 			}
 
 			return false;
@@ -232,18 +225,15 @@ public class MyObservationOperations extends ProblemObservationOperations {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))
-	 * @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateMyObservationValue(MyObservation myObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -261,7 +251,7 @@ public class MyObservationOperations extends ProblemObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__MY_OBSERVATION_VALUE,
-					ExamplePlugin.INSTANCE.getString("MyObservationMyObservationValue"), new Object[] { myObservation }));
+					ExamplePlugin.INSTANCE.getString("MyObservationValue"), new Object[] { myObservation }));
 			}
 
 			return false;
@@ -270,58 +260,57 @@ public class MyObservationOperations extends ProblemObservationOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMyObservationTargetSiteCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Target Site Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMyObservationTargetSiteCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Target Site Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMyObservationTargetSiteCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMyObservationTargetSiteCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MY_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMyObservationTargetSiteCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Target Site Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMyObservationTargetSiteCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Target Site Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMyObservationTargetSiteCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMyObservationTargetSiteCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_MY_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMyObservationValue(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMyObservationValue(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMyObservationValue(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMyObservationValue(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMyObservationValue(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMyObservationValue(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMyObservationValue(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMyObservationValue(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_MY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())
-	 * @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateMyObservationTargetSiteCode(MyObservation myObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -340,8 +329,7 @@ public class MyObservationOperations extends ProblemObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__MY_OBSERVATION_TARGET_SITE_CODE,
-					ExamplePlugin.INSTANCE.getString("MyObservationMyObservationTargetSiteCode"),
-					new Object[] { myObservation }));
+					ExamplePlugin.INSTANCE.getString("MyObservationTargetSiteCode"), new Object[] { myObservation }));
 			}
 
 			return false;
@@ -350,36 +338,35 @@ public class MyObservationOperations extends ProblemObservationOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProblemObservationTemplateId(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateProblemObservationTemplateId(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemObservationTemplateId(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProblemObservationTemplateId(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.2.3.4.2')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProblemObservationTemplateId(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateProblemObservationTemplateId(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemObservationTemplateId(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProblemObservationTemplateId(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.2.3.4.2')
-	 * @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateProblemObservationTemplateId(MyObservation myObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -398,11 +385,7 @@ public class MyObservationOperations extends ProblemObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"MyObservationProblemObservationTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(myObservation, context) }),
-					new Object[] { myObservation }));
+					ExamplePlugin.INSTANCE.getString("ProblemObservationTemplateId"), new Object[] { myObservation }));
 			}
 
 			return false;

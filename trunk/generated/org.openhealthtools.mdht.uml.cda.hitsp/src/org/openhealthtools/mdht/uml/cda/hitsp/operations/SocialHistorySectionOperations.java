@@ -123,7 +123,7 @@ public class SocialHistorySectionOperations extends
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hitsp::SocialHistory))";
+	protected static final String VALIDATE_HITSP_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hitsp::SocialHistory))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPSocialHistorySectionSocialHistory(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Social History Section Social History</em>}' invariant operation.

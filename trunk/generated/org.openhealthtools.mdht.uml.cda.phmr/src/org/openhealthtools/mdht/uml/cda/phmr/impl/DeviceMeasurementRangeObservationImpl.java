@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.DeviceMeasurementRangeObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Device Measurement Range Observation</b></em>'.
@@ -74,6 +72,7 @@ public class DeviceMeasurementRangeObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceMeasurementRangeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationTemplateId(this, diagnostics, context);
   }
@@ -83,6 +82,7 @@ public class DeviceMeasurementRangeObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceMeasurementRangeObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationClassCode(this, diagnostics, context);
   }
@@ -92,7 +92,8 @@ public class DeviceMeasurementRangeObservationImpl extends ObservationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeviceMeasurementRangeObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validateDeviceMeasurementRangeObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationCodeP(this, diagnostics, context);
   }
@@ -102,6 +103,7 @@ public class DeviceMeasurementRangeObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceMeasurementRangeObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationCode(this, diagnostics, context);
   }
@@ -111,6 +113,7 @@ public class DeviceMeasurementRangeObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceMeasurementRangeObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationMoodCode(this, diagnostics, context);
   }
@@ -120,6 +123,7 @@ public class DeviceMeasurementRangeObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public DeviceMeasurementRangeObservation init() {
       return Initializer.Util.init(this);
   }
@@ -129,7 +133,8 @@ public class DeviceMeasurementRangeObservationImpl extends ObservationImpl imple
      * <!-- end-user-doc -->
      * @generated
      */
-    public DeviceMeasurementRangeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public DeviceMeasurementRangeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

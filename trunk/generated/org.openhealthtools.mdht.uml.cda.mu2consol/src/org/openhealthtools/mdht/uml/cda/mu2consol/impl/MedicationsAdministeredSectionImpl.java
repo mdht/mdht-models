@@ -53,6 +53,7 @@ public class MedicationsAdministeredSectionImpl extends org.openhealthtools.mdht
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<MedicationActivity> getMu2consolMedicationActivities() {
 		return MedicationsAdministeredSectionOperations.getMu2consolMedicationActivities(this);
 	}

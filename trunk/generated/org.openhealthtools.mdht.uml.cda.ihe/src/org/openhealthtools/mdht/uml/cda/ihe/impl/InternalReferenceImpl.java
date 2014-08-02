@@ -33,56 +33,56 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class InternalReferenceImpl extends ActImpl implements InternalReference {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected InternalReferenceImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.INTERNAL_REFERENCE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInternalReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InternalReferenceOperations.validateInternalReferenceTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInternalReferenceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InternalReferenceOperations.validateInternalReferenceCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInternalReferenceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InternalReferenceOperations.validateInternalReferenceId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public InternalReference init() {
 		return Initializer.Util.init(this);
 	}

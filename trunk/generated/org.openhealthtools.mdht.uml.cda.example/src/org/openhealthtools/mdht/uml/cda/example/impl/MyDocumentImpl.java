@@ -34,56 +34,56 @@ import org.openhealthtools.mdht.uml.cda.example.operations.MyDocumentOperations;
  */
 public class MyDocumentImpl extends GeneralHeaderConstraintsImpl implements MyDocument {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MyDocumentImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ExamplePackage.Literals.MY_DOCUMENT;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyDocumentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MyDocumentOperations.validateMyDocumentTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyDocumentMySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MyDocumentOperations.validateMyDocumentMySection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MySection getMySection() {
 		return MyDocumentOperations.getMySection(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public MyDocument init() {
 		return Initializer.Util.init(this);

@@ -442,20 +442,12 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int MEDICATION__HITSP_MEDICATION_ROUTE_CODE_P = 41;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Dose Quantity' of 'Medication'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int MEDICATION__HITSP_MEDICATION_DOSE_QUANTITY = 42;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Administration Unit Code' of 'Medication'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE = 43;
+	public static final int MEDICATION__HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE = 42;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Max Dose Quantity' of 'Medication'.
@@ -463,31 +455,39 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_MAX_DOSE_QUANTITY = 44;
+	public static final int MEDICATION__HITSP_MEDICATION_MAX_DOSE_QUANTITY = 43;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Approach Site Code P' of 'Medication'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Approach Site Code P' of 'Medication'.
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION__MEDICATION_APPROACH_SITE_CODE_P = 44;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dose Quantity' of 'Medication'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_APPROACH_SITE_CODE_P = 45;
+	public static final int MEDICATION__MEDICATION_DOSE_QUANTITY = 45;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Approach Site Code' of 'Medication'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Approach Site Code' of 'Medication'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_APPROACH_SITE_CODE = 46;
+	public static final int MEDICATION__MEDICATION_APPROACH_SITE_CODE = 46;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Code' of 'Medication'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Code' of 'Medication'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_CODE = 47;
+	public static final int MEDICATION__MEDICATION_CODE = 47;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Type Template Id' of 'Medication Type'.
@@ -594,20 +594,12 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_TEMPLATE_ID = 60;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Repeat Number' of 'Medication Order Information'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_REPEAT_NUMBER = 61;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Status Code P' of 'Medication Order Information'.
 	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_STATUS_CODE_P = 62;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_STATUS_CODE_P = 61;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Status Code' of 'Medication Order Information'.
@@ -615,7 +607,15 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_STATUS_CODE = 63;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_STATUS_CODE = 62;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Supply Activity Repeat Number' of 'Medication Order Information'.
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION_ORDER_INFORMATION__SUPPLY_ACTIVITY_REPEAT_NUMBER = 63;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Has Treating Provider' of 'Condition'.
@@ -698,36 +698,36 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int CONDITION_ENTRY__CONDITION_ENTRY_CODE = 73;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Text' of 'Condition Entry'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_TEXT = 74;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Value' of 'Condition Entry'.
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_VALUE = 75;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Age Observation' of 'Condition Entry'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_AGE_OBSERVATION = 76;
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_AGE_OBSERVATION = 74;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Problem Status Observation' of 'Condition Entry'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Entry Text' of 'Condition Entry'.
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONDITION_ENTRY__PROBLEM_ENTRY_TEXT = 75;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Entry Value' of 'Condition Entry'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_PROBLEM_STATUS_OBSERVATION = 77;
+	public static final int CONDITION_ENTRY__PROBLEM_ENTRY_VALUE = 76;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Entry Problem Status Observation' of 'Condition Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONDITION_ENTRY__PROBLEM_ENTRY_PROBLEM_STATUS_OBSERVATION = 77;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Healthcare Provider' of 'Patient Summary'.
@@ -962,20 +962,20 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_TEMPLATE_ID = 106;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Code' of 'Advance Directive'.
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_CODE = 107;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Effective Time' of 'Advance Directive'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_EFFECTIVE_TIME = 108;
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_EFFECTIVE_TIME = 107;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Code' of 'Advance Directive'.
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_OBSERVATION_CODE = 108;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Allergies Reactions Section Template Id' of 'Allergies Reactions Section'.
@@ -1002,12 +1002,12 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID = 111;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounters Section Encounter Entry' of 'Encounters Section'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter History Section Encounter Entry' of 'Encounters Section'.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY = 112;
+	public static final int ENCOUNTERS_SECTION__ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY = 112;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounter Admission Source Value Set' of 'Encounter'.
@@ -1458,28 +1458,28 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int RESULT__RESULT_TEMPLATE_ID = 168;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Code' of 'Result'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Result'.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_CODE = 169;
+	public static final int RESULT__RESULT_OBSERVATION_CODE = 169;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Effective Time' of 'Result'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Effective Time' of 'Result'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_EFFECTIVE_TIME = 170;
+	public static final int RESULT__RESULT_OBSERVATION_EFFECTIVE_TIME = 170;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Value' of 'Result'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Value' of 'Result'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_VALUE = 171;
+	public static final int RESULT__RESULT_OBSERVATION_VALUE = 171;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Result Organizer Result' of 'Result Organizer'.
@@ -2416,6 +2416,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(allergyDrugSensitivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(allergyDrugSensitivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -2843,6 +2846,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -2898,11 +2904,11 @@ public class HITSPValidator extends EObjectValidator {
 				medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+			result &= iheValidator.validateMedication_validateMedicationActivityStatusCode(
 				medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+			result &= iheValidator.validateMedication_validateMedicationActivityEffectiveTime(
 				medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -2982,23 +2988,16 @@ public class HITSPValidator extends EObjectValidator {
 			result &= iheValidator.validateMedication_validateMedicationTemplateId(medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(
-				medication, diagnostics, context);
+			result &= validateMedication_validateMedicationApproachSiteCode(medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medication, diagnostics, context);
+			result &= validateMedication_validateMedicationDoseQuantity(medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationRateQuantity(medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationCode(medication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationStatusCode(medication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(medication, diagnostics, context);
+			result &= validateMedication_validateMedicationCode(medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationFirstEffectiveTimeDatatype(
@@ -3067,22 +3066,13 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validateMedication_validateHITSPMedicationRouteCodeP(medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationDoseQuantity(medication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCodeP(medication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCode(medication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationCode(medication, diagnostics, context);
+			result &= validateMedication_validateMedicationApproachSiteCodeP(medication, diagnostics, context);
 		}
 		return result;
 	}
@@ -3308,17 +3298,6 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateHITSPMedicationDoseQuantity constraint of '<em>Medication</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedication_validateHITSPMedicationDoseQuantity(Medication medication,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medication.validateHITSPMedicationDoseQuantity(diagnostics, context);
-	}
-
-	/**
 	 * Validates the validateHITSPMedicationAdministrationUnitCode constraint of '<em>Medication</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3341,36 +3320,47 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateHITSPMedicationApproachSiteCodeP constraint of '<em>Medication</em>'.
+	 * Validates the validateMedicationApproachSiteCodeP constraint of '<em>Medication</em>'.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedication_validateHITSPMedicationApproachSiteCodeP(Medication medication,
+	public boolean validateMedication_validateMedicationApproachSiteCodeP(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medication.validateHITSPMedicationApproachSiteCodeP(diagnostics, context);
+		return medication.validateMedicationApproachSiteCodeP(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateHITSPMedicationApproachSiteCode constraint of '<em>Medication</em>'.
+	 * Validates the validateMedicationDoseQuantity constraint of '<em>Medication</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedication_validateHITSPMedicationApproachSiteCode(Medication medication,
+	public boolean validateMedication_validateMedicationDoseQuantity(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medication.validateHITSPMedicationApproachSiteCode(diagnostics, context);
+		return medication.validateMedicationDoseQuantity(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateHITSPMedicationCode constraint of '<em>Medication</em>'.
+	 * Validates the validateMedicationApproachSiteCode constraint of '<em>Medication</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedication_validateHITSPMedicationCode(Medication medication, DiagnosticChain diagnostics,
+	public boolean validateMedication_validateMedicationApproachSiteCode(Medication medication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return medication.validateMedicationApproachSiteCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicationCode constraint of '<em>Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedication_validateMedicationCode(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return medication.validateHITSPMedicationCode(diagnostics, context);
+		return medication.validateMedicationCode(diagnostics, context);
 	}
 
 	/**
@@ -3389,6 +3379,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationType, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationType, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationType, diagnostics, context);
@@ -3451,6 +3444,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicationOrderInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationOrderInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3506,11 +3502,11 @@ public class HITSPValidator extends EObjectValidator {
 				medicationOrderInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityQuantity(
+			result &= iheValidator.validateSupplyEntry_validateSupplyActivityQuantity(
 				medicationOrderInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityRepeatNumber(
+			result &= validateMedicationOrderInformation_validateSupplyActivityRepeatNumber(
 				medicationOrderInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3574,14 +3570,6 @@ public class HITSPValidator extends EObjectValidator {
 				medicationOrderInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateSupplyEntry_validateSupplyEntryQuantity(
-				medicationOrderInformation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateSupplyEntry_validateSupplyEntryRepeatNumber(
-				medicationOrderInformation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= iheValidator.validateSupplyEntry_validateSupplyEntryMedicationFullfillmentInstructions(
 				medicationOrderInformation, diagnostics, context);
 		}
@@ -3627,10 +3615,6 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateMedicationOrderInformation_validateMedicationOrderInformationTemplateId(
-				medicationOrderInformation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationOrderInformation_validateMedicationOrderInformationRepeatNumber(
 				medicationOrderInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3778,18 +3762,6 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateMedicationOrderInformationRepeatNumber constraint of '<em>Medication Order Information</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationOrderInformation_validateMedicationOrderInformationRepeatNumber(
-			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return medicationOrderInformation.validateMedicationOrderInformationRepeatNumber(diagnostics, context);
-	}
-
-	/**
 	 * Validates the validateMedicationOrderInformationStatusCodeP constraint of '<em>Medication Order Information</em>'.
 	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
@@ -3814,6 +3786,18 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the validateSupplyActivityRepeatNumber constraint of '<em>Medication Order Information</em>'.
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationOrderInformation_validateSupplyActivityRepeatNumber(
+			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicationOrderInformation.validateSupplyActivityRepeatNumber(diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3828,6 +3812,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(condition, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(condition, diagnostics, context);
@@ -4004,6 +3991,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -4036,7 +4026,7 @@ public class HITSPValidator extends EObjectValidator {
 				conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(
+			result &= iheValidator.validateProblemEntry_validateProblemObservationEffectiveTime(
 				conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -4064,30 +4054,28 @@ public class HITSPValidator extends EObjectValidator {
 				conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateProblemEntry_validateProblemEntryCodeP(conditionEntry, diagnostics, context);
+			result &= iheValidator.validateProblemEntry_validateProblemObservationCodeP(
+				conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateProblemEntry_validateProblemEntryCode(conditionEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateProblemEntry_validateProblemEntryEffectiveTime(
+			result &= iheValidator.validateProblemEntry_validateProblemObservationCode(
 				conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateProblemEntry_validateProblemEntryId(conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateProblemEntry_validateProblemEntryText(conditionEntry, diagnostics, context);
+			result &= validateConditionEntry_validateProblemEntryText(conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateProblemEntry_validateProblemEntryValue(conditionEntry, diagnostics, context);
+			result &= validateConditionEntry_validateProblemEntryValue(conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateProblemEntry_validateProblemEntrySeverity(
 				conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateProblemEntry_validateProblemEntryProblemStatusObservation(
+			result &= validateConditionEntry_validateProblemEntryProblemStatusObservation(
 				conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -4116,17 +4104,7 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validateConditionEntry_validateConditionEntryCode(conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateConditionEntry_validateConditionEntryText(conditionEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConditionEntry_validateConditionEntryValue(conditionEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateConditionEntry_validateConditionEntryAgeObservation(conditionEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConditionEntry_validateConditionEntryProblemStatusObservation(
-				conditionEntry, diagnostics, context);
 		}
 		return result;
 	}
@@ -4187,28 +4165,6 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateConditionEntryText constraint of '<em>Condition Entry</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionEntry_validateConditionEntryText(ConditionEntry conditionEntry,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return conditionEntry.validateConditionEntryText(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateConditionEntryValue constraint of '<em>Condition Entry</em>'.
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionEntry_validateConditionEntryValue(ConditionEntry conditionEntry,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return conditionEntry.validateConditionEntryValue(diagnostics, context);
-	}
-
-	/**
 	 * Validates the validateConditionEntryAgeObservation constraint of '<em>Condition Entry</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4220,14 +4176,36 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateConditionEntryProblemStatusObservation constraint of '<em>Condition Entry</em>'.
+	 * Validates the validateProblemEntryText constraint of '<em>Condition Entry</em>'.
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEntry_validateProblemEntryText(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return conditionEntry.validateProblemEntryText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemEntryValue constraint of '<em>Condition Entry</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryProblemStatusObservation(ConditionEntry conditionEntry,
+	public boolean validateConditionEntry_validateProblemEntryValue(ConditionEntry conditionEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return conditionEntry.validateConditionEntryProblemStatusObservation(diagnostics, context);
+		return conditionEntry.validateProblemEntryValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemEntryProblemStatusObservation constraint of '<em>Condition Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEntry_validateProblemEntryProblemStatusObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return conditionEntry.validateProblemEntryProblemStatusObservation(diagnostics, context);
 	}
 
 	/**
@@ -4246,6 +4224,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(patientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(patientSummary, diagnostics, context);
@@ -4774,6 +4755,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(problemListSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(problemListSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -4868,6 +4852,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationsSection, diagnostics, context);
@@ -4974,6 +4961,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(advanceDirectivesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(advanceDirectivesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5074,6 +5064,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(advanceDirective, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(advanceDirective, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5118,7 +5111,7 @@ public class HITSPValidator extends EObjectValidator {
 				advanceDirective, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationCode(
+			result &= validateAdvanceDirective_validateAdvanceDirectiveObservationCode(
 				advanceDirective, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5151,10 +5144,6 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateAdvanceDirectiveObservation_validateIHEAdvanceDirectiveObservationTemplateId(
-				advanceDirective, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateAdvanceDirectiveObservation_validateIHEAdvanceDirectiveObservationCode(
 				advanceDirective, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5204,9 +5193,6 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= validateAdvanceDirective_validateAdvanceDirectiveTemplateId(
 				advanceDirective, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdvanceDirective_validateAdvanceDirectiveCode(advanceDirective, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateAdvanceDirective_validateAdvanceDirectiveEffectiveTime(
@@ -5315,17 +5301,6 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateAdvanceDirectiveCode constraint of '<em>Advance Directive</em>'.
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAdvanceDirective_validateAdvanceDirectiveCode(AdvanceDirective advanceDirective,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return advanceDirective.validateAdvanceDirectiveCode(diagnostics, context);
-	}
-
-	/**
 	 * Validates the validateAdvanceDirectiveEffectiveTime constraint of '<em>Advance Directive</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5334,6 +5309,17 @@ public class HITSPValidator extends EObjectValidator {
 	public boolean validateAdvanceDirective_validateAdvanceDirectiveEffectiveTime(AdvanceDirective advanceDirective,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return advanceDirective.validateAdvanceDirectiveEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveObservationCode constraint of '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirective_validateAdvanceDirectiveObservationCode(AdvanceDirective advanceDirective,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return advanceDirective.validateAdvanceDirectiveObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -5352,6 +5338,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(allergiesReactionsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(allergiesReactionsSection, diagnostics, context);
@@ -5453,6 +5442,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5495,15 +5487,11 @@ public class HITSPValidator extends EObjectValidator {
 				encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateEncounterHistorySection_validateEncounterHistorySectionEncounterEntry(
+			result &= validateEncountersSection_validateEncounterHistorySectionEncounterEntry(
 				encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateEncountersSection_validateHITSPEncountersSectionTemplateId(
-				encountersSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEncountersSection_validateHITSPEncountersSectionEncounterEntry(
 				encountersSection, diagnostics, context);
 		}
 		return result;
@@ -5521,14 +5509,14 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateHITSPEncountersSectionEncounterEntry constraint of '<em>Encounters Section</em>'.
+	 * Validates the validateEncounterHistorySectionEncounterEntry constraint of '<em>Encounters Section</em>'.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersSection_validateHITSPEncountersSectionEncounterEntry(
+	public boolean validateEncountersSection_validateEncounterHistorySectionEncounterEntry(
 			EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return encountersSection.validateHITSPEncountersSectionEncounterEntry(diagnostics, context);
+		return encountersSection.validateEncounterHistorySectionEncounterEntry(diagnostics, context);
 	}
 
 	/**
@@ -5546,6 +5534,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(encounter, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(encounter, diagnostics, context);
@@ -5640,6 +5631,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(immunizationsSection, diagnostics, context);
@@ -5746,6 +5740,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5805,7 +5802,7 @@ public class HITSPValidator extends EObjectValidator {
 				immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+			result &= iheValidator.validateImmunization_validateMedicationActivityEffectiveTime(
 				immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5864,10 +5861,6 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateImmunization_validateImmunizationMoodCode(immunization, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateImmunization_validateImmunizationEffectiveTime(
-				immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateImmunization_validateHITSPImmunizationRefusalReason(immunization, diagnostics, context);
@@ -5930,6 +5923,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(payersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(payersSection, diagnostics, context);
@@ -6022,6 +6018,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(insuranceProvider, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(insuranceProvider, diagnostics, context);
@@ -6444,6 +6443,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(surgeriesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(surgeriesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -6545,6 +6547,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedure, diagnostics, context);
@@ -6686,6 +6691,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(planOfCareSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(planOfCareSection, diagnostics, context);
@@ -6853,6 +6861,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(vitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(vitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -6951,6 +6962,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(diagnosticResultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(diagnosticResultsSection, diagnostics, context);
@@ -7112,75 +7126,7 @@ public class HITSPValidator extends EObjectValidator {
 			theResult &= ccdValidator.validateResultObservation_validateResultObservationInformationSource(
 				result, diagnostics, context);
 		}
-		if (theResult || diagnostics != null) {
-			theResult &= ccdValidator.validateResultObservation_validateResultObservationTemplateId(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= ccdValidator.validateResultObservation_validateResultObservationId(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= ccdValidator.validateResultObservation_validateResultObservationStatusCode(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= ccdValidator.validateResultObservation_validateResultObservationCode(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= ccdValidator.validateResultObservation_validateResultObservationValue(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= iheValidator.validateSimpleObservation_validateSimpleObservationTemplateId(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= iheValidator.validateSimpleObservation_validateSimpleObservationId(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= iheValidator.validateSimpleObservation_validateSimpleObservationStatusCode(
-				result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= validateResult_validateResultTypeCodeSystem(result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= validateResult_validateResultLaboratoryResultsValueSet(result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= validateResult_validateResultValuePresence(result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= validateResult_validateResultTemplateId(result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= validateResult_validateResultCode(result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= validateResult_validateResultEffectiveTime(result, diagnostics, context);
-		}
-		if (theResult || diagnostics != null) {
-			theResult &= validateResult_validateResultValue(result, diagnostics, context);
-		}
+
 		return theResult;
 	}
 
@@ -7229,36 +7175,36 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateResultCode constraint of '<em>Result</em>'.
+	 * Validates the validateResultObservationCode constraint of '<em>Result</em>'.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResult_validateResultCode(Result result, DiagnosticChain diagnostics,
+	public boolean validateResult_validateResultObservationCode(Result result, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return result.validateResultCode(diagnostics, context);
+		return result.validateResultObservationCode(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateResultEffectiveTime constraint of '<em>Result</em>'.
+	 * Validates the validateResultObservationEffectiveTime constraint of '<em>Result</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResult_validateResultEffectiveTime(Result result, DiagnosticChain diagnostics,
+	public boolean validateResult_validateResultObservationEffectiveTime(Result result, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return result.validateResultEffectiveTime(diagnostics, context);
+		return result.validateResultObservationEffectiveTime(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateResultValue constraint of '<em>Result</em>'.
+	 * Validates the validateResultObservationValue constraint of '<em>Result</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResult_validateResultValue(Result result, DiagnosticChain diagnostics,
+	public boolean validateResult_validateResultObservationValue(Result result, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return result.validateResultValue(diagnostics, context);
+		return result.validateResultObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -7277,6 +7223,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(resultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(resultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(resultOrganizer, diagnostics, context);
@@ -7362,6 +7311,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(vitalSign, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(vitalSign, diagnostics, context);
@@ -7512,6 +7464,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(historyOfPastIllnessSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(historyOfPastIllnessSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -7606,6 +7561,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(chiefComplaintSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(chiefComplaintSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -7680,6 +7638,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(reasonForReferralSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reasonForReferralSection, diagnostics, context);
@@ -7781,6 +7742,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(historyOfPresentIllness, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(historyOfPresentIllness, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -7840,6 +7804,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(functionalStatusSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(functionalStatusSection, diagnostics, context);
@@ -7940,6 +7907,10 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(hospitalAdmissionDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalAdmissionDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -8026,6 +7997,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(dischargeDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dischargeDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -8109,6 +8083,10 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(admissionMedicationHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				admissionMedicationHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(admissionMedicationHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -8173,6 +8151,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				hospitalDischargeMedicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalDischargeMedicationsSection, diagnostics, context);
@@ -8262,6 +8244,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -8325,6 +8310,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(physicalExamSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(physicalExamSection, diagnostics, context);
@@ -8515,6 +8503,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(reviewOfSystemsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reviewOfSystemsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -8576,6 +8567,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(hospitalCourseSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(hospitalCourseSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -8635,6 +8629,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(assessmentAndPlanSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(assessmentAndPlanSection, diagnostics, context);
@@ -8758,6 +8755,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(familyHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(familyHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -8856,6 +8856,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(familyHistory, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(familyHistory, diagnostics, context);
@@ -9079,6 +9082,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -9193,6 +9199,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(socialHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(socialHistory, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(socialHistory, diagnostics, context);
@@ -9365,6 +9374,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicalEquipmentSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicalEquipmentSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -9446,6 +9458,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(languageSpoken, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(languageSpoken, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(languageSpoken, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -9525,6 +9540,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(healthcareProvider, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(healthcareProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(healthcareProvider, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -9573,6 +9591,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(comment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(comment, diagnostics, context);
@@ -9670,6 +9691,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -9726,11 +9750,11 @@ public class HITSPValidator extends EObjectValidator {
 				medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+			result &= iheValidator.validateMedication_validateMedicationActivityStatusCode(
 				medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+			result &= iheValidator.validateMedication_validateMedicationActivityEffectiveTime(
 				medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -9814,27 +9838,17 @@ public class HITSPValidator extends EObjectValidator {
 				medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(
-				medicationNormalDose, diagnostics, context);
+			result &= validateMedication_validateMedicationApproachSiteCode(medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationDoseQuantity(
-				medicationNormalDose, diagnostics, context);
+			result &= validateMedication_validateMedicationDoseQuantity(medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationRateQuantity(
 				medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationCode(medicationNormalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationStatusCode(
-				medicationNormalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(
-				medicationNormalDose, diagnostics, context);
+			result &= validateMedication_validateMedicationCode(medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationFirstEffectiveTimeDatatype(
@@ -9913,9 +9927,6 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validateMedication_validateHITSPMedicationRouteCodeP(medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationNormalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(
 				medicationNormalDose, diagnostics, context);
 		}
@@ -9924,15 +9935,7 @@ public class HITSPValidator extends EObjectValidator {
 				medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCodeP(
-				medicationNormalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCode(
-				medicationNormalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationCode(medicationNormalDose, diagnostics, context);
+			result &= validateMedication_validateMedicationApproachSiteCodeP(medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateNormalDose_validateNormalDoseNoSubordinateSubstanceAdministration(
@@ -9961,6 +9964,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationSplitDose, diagnostics, context);
@@ -10019,11 +10025,11 @@ public class HITSPValidator extends EObjectValidator {
 				medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+			result &= iheValidator.validateMedication_validateMedicationActivityStatusCode(
 				medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+			result &= iheValidator.validateMedication_validateMedicationActivityEffectiveTime(
 				medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -10107,27 +10113,17 @@ public class HITSPValidator extends EObjectValidator {
 				medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(
-				medicationSplitDose, diagnostics, context);
+			result &= validateMedication_validateMedicationApproachSiteCode(medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationDoseQuantity(
-				medicationSplitDose, diagnostics, context);
+			result &= validateMedication_validateMedicationDoseQuantity(medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationRateQuantity(
 				medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationCode(medicationSplitDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationStatusCode(
-				medicationSplitDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(
-				medicationSplitDose, diagnostics, context);
+			result &= validateMedication_validateMedicationCode(medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationFirstEffectiveTimeDatatype(
@@ -10204,9 +10200,6 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validateMedication_validateHITSPMedicationRouteCodeP(medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationSplitDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(
 				medicationSplitDose, diagnostics, context);
 		}
@@ -10215,15 +10208,7 @@ public class HITSPValidator extends EObjectValidator {
 				medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCodeP(
-				medicationSplitDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCode(
-				medicationSplitDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationCode(medicationSplitDose, diagnostics, context);
+			result &= validateMedication_validateMedicationApproachSiteCodeP(medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateSplitDose_validateSplitDoseSplitDosingSubstanceAdministration(
@@ -10252,6 +10237,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationTaperedDose, diagnostics, context);
@@ -10310,11 +10298,11 @@ public class HITSPValidator extends EObjectValidator {
 				medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+			result &= iheValidator.validateMedication_validateMedicationActivityStatusCode(
 				medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+			result &= iheValidator.validateMedication_validateMedicationActivityEffectiveTime(
 				medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -10398,28 +10386,17 @@ public class HITSPValidator extends EObjectValidator {
 				medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(
-				medicationTaperedDose, diagnostics, context);
+			result &= validateMedication_validateMedicationApproachSiteCode(medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationDoseQuantity(
-				medicationTaperedDose, diagnostics, context);
+			result &= validateMedication_validateMedicationDoseQuantity(medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationRateQuantity(
 				medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationCode(
-				medicationTaperedDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationStatusCode(
-				medicationTaperedDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(
-				medicationTaperedDose, diagnostics, context);
+			result &= validateMedication_validateMedicationCode(medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationFirstEffectiveTimeDatatype(
@@ -10499,10 +10476,6 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validateMedication_validateHITSPMedicationRouteCodeP(medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationDoseQuantity(
-				medicationTaperedDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(
 				medicationTaperedDose, diagnostics, context);
 		}
@@ -10511,15 +10484,8 @@ public class HITSPValidator extends EObjectValidator {
 				medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCodeP(
+			result &= validateMedication_validateMedicationApproachSiteCodeP(
 				medicationTaperedDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCode(
-				medicationTaperedDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationCode(medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateTaperedDose_validateTaperedDoseTaperedDosingSubstanceAdministration(
@@ -10559,6 +10525,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationConditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationConditionalDose, diagnostics, context);
@@ -10617,11 +10586,11 @@ public class HITSPValidator extends EObjectValidator {
 				medicationConditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+			result &= iheValidator.validateMedication_validateMedicationActivityStatusCode(
 				medicationConditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+			result &= iheValidator.validateMedication_validateMedicationActivityEffectiveTime(
 				medicationConditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -10718,14 +10687,6 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationCode(
-				medicationConditionalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationStatusCode(
-				medicationConditionalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(
 				medicationConditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -10817,10 +10778,6 @@ public class HITSPValidator extends EObjectValidator {
 				medicationConditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationDoseQuantity(
-				medicationConditionalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(
 				medicationConditionalDose, diagnostics, context);
 		}
@@ -10829,15 +10786,8 @@ public class HITSPValidator extends EObjectValidator {
 				medicationConditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCodeP(
+			result &= validateMedication_validateMedicationApproachSiteCodeP(
 				medicationConditionalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCode(
-				medicationConditionalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationCode(medicationConditionalDose, diagnostics, context);
 		}
 		return result;
 	}
@@ -10859,6 +10809,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				medicationCombinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationCombinationMedication, diagnostics, context);
@@ -10917,11 +10871,11 @@ public class HITSPValidator extends EObjectValidator {
 				medicationCombinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+			result &= iheValidator.validateMedication_validateMedicationActivityStatusCode(
 				medicationCombinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+			result &= iheValidator.validateMedication_validateMedicationActivityEffectiveTime(
 				medicationCombinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -11021,14 +10975,6 @@ public class HITSPValidator extends EObjectValidator {
 				medicationCombinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationStatusCode(
-				medicationCombinationMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(
-				medicationCombinationMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= iheValidator.validateCombinationMedication_validateCombinationMedicationSubstanceAdministration(
 				medicationCombinationMedication, diagnostics, context);
 		}
@@ -11117,10 +11063,6 @@ public class HITSPValidator extends EObjectValidator {
 				medicationCombinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationDoseQuantity(
-				medicationCombinationMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(
 				medicationCombinationMedication, diagnostics, context);
 		}
@@ -11129,15 +11071,7 @@ public class HITSPValidator extends EObjectValidator {
 				medicationCombinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCodeP(
-				medicationCombinationMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationApproachSiteCode(
-				medicationCombinationMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationCode(
+			result &= validateMedication_validateMedicationApproachSiteCodeP(
 				medicationCombinationMedication, diagnostics, context);
 		}
 		return result;
@@ -11168,6 +11102,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(supportGuardian, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(supportGuardian, diagnostics, context);
@@ -11243,6 +11180,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(supportParticipant, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(supportParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(supportParticipant, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -11304,6 +11244,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(unstructuredDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(unstructuredDocument, diagnostics, context);
@@ -11670,6 +11613,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicationInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -11869,6 +11815,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(unstructuredOrScannedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(unstructuredOrScannedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(unstructuredOrScannedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -12021,7 +11970,7 @@ public class HITSPValidator extends EObjectValidator {
 				unstructuredOrScannedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+			result &= cdtValidator.validateUnstructuredDocument_validateGeneralHeaderConstraintsEffectiveTime(
 				unstructuredOrScannedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -12089,11 +12038,7 @@ public class HITSPValidator extends EObjectValidator {
 				unstructuredOrScannedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdtValidator.validateUnstructuredDocument_validateUnstructuredDocumentEffectiveTime(
-				unstructuredOrScannedDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateUnstructuredDocument_validateUnstructuredDocumentCustodian(
+			result &= cdtValidator.validateUnstructuredDocument_validateGeneralHeaderConstraintsCustodian(
 				unstructuredOrScannedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -12251,6 +12196,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(referralSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(referralSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(referralSummary, diagnostics, context);
@@ -12479,6 +12427,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(dischargeSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dischargeSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dischargeSummary, diagnostics, context);
@@ -12994,6 +12945,9 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(plannedProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(plannedProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -13075,11 +13029,7 @@ public class HITSPValidator extends EObjectValidator {
 				plannedProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePlanOfCareActivityProcedure_validatePlanOfCareActivityProcedureMoodCode(
-				plannedProcedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateProcedureEntryPlanOfCareActivityProcedure_validateProcedureEntryPlanOfCareActivityProcedureMoodCode(
+			result &= iheValidator.validateProcedureEntryPlanOfCareActivityProcedure_validatePlanOfCareActivityProcedureMoodCode(
 				plannedProcedure, diagnostics, context);
 		}
 		return result;
@@ -13101,6 +13051,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(pastProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(pastProcedure, diagnostics, context);

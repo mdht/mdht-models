@@ -19,6 +19,7 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPlugin;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationTaperedDose;
 import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
 
@@ -96,12 +97,7 @@ public class MedicationTaperedDoseOperations extends MedicationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
 					HITSPValidator.MEDICATION_TAPERED_DOSE__HITSP_MEDICATION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HITSPMedicationTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									medicationTaperedDose, context) }), new Object[] { medicationTaperedDose }));
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationTemplateId"), new Object[] { medicationTaperedDose }));
 			}
 
 			return false;

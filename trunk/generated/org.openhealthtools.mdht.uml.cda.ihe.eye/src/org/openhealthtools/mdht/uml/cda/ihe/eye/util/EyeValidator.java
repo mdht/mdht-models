@@ -154,12 +154,12 @@ public class EyeValidator extends EObjectValidator
 	public static final int OPHTHALMIC_MEDICATIONS_SECTION__OPHTHALMIC_MEDICATIONS_SECTION_MEDICATION = 13;
 
 		/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Template Id' of 'Ophthalmic Medications Section'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate IHE Medications Section Template Id' of 'Ophthalmic Medications Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPHTHALMIC_MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEMPLATE_ID = 14;
+	public static final int OPHTHALMIC_MEDICATIONS_SECTION__IHE_MEDICATIONS_SECTION_TEMPLATE_ID = 14;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Eyes Section Template Id' of 'Routine Eye Exam Section'.
@@ -458,6 +458,7 @@ public class EyeValidator extends EObjectValidator
 		boolean result = validate_EveryMultiplicityConforms(ocularListOfSurgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(ocularListOfSurgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(ocularListOfSurgeriesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(ocularListOfSurgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(ocularListOfSurgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(ocularListOfSurgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(ocularListOfSurgeriesSection, diagnostics, context);
@@ -526,6 +527,7 @@ public class EyeValidator extends EObjectValidator
 		boolean result = validate_EveryMultiplicityConforms(ocularCodedListOfSurgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(ocularCodedListOfSurgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(ocularCodedListOfSurgeriesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(ocularCodedListOfSurgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(ocularCodedListOfSurgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(ocularCodedListOfSurgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(ocularCodedListOfSurgeriesSection, diagnostics, context);
@@ -586,6 +588,7 @@ public class EyeValidator extends EObjectValidator
 		boolean result = validate_EveryMultiplicityConforms(ocularHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(ocularHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(ocularHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(ocularHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(ocularHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(ocularHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(ocularHistorySection, diagnostics, context);
@@ -650,6 +653,7 @@ public class EyeValidator extends EObjectValidator
 		boolean result = validate_EveryMultiplicityConforms(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(ophthalmicMedicationsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(ophthalmicMedicationsSection, diagnostics, context);
@@ -657,13 +661,13 @@ public class EyeValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionHasMedicationOrSupplyActivity(ophthalmicMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateOphthalmicMedicationsSection_validateMedicationsSectionTemplateId(ophthalmicMedicationsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTemplateId(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionCode(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTitle(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionText(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionMedicationActivity(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionSupplyActivity(ophthalmicMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedicationsSection_validateIHEMedicationsSectionTemplateId(ophthalmicMedicationsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOphthalmicMedicationsSection_validateIHEMedicationsSectionTemplateId(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedicationsSection_validateIHEMedicationsSectionMedication(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateOphthalmicMedicationsSection_validateOphthalmicMedicationsSectionCode(ophthalmicMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateOphthalmicMedicationsSection_validateOphthalmicMedicationsSectionMedication(ophthalmicMedicationsSection, diagnostics, context);
@@ -691,13 +695,13 @@ public class EyeValidator extends EObjectValidator
 	}
 
 		/**
-	 * Validates the validateMedicationsSectionTemplateId constraint of '<em>Ophthalmic Medications Section</em>'.
+	 * Validates the validateIHEMedicationsSectionTemplateId constraint of '<em>Ophthalmic Medications Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOphthalmicMedicationsSection_validateMedicationsSectionTemplateId(OphthalmicMedicationsSection ophthalmicMedicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ophthalmicMedicationsSection.validateMedicationsSectionTemplateId(diagnostics, context);
+	public boolean validateOphthalmicMedicationsSection_validateIHEMedicationsSectionTemplateId(OphthalmicMedicationsSection ophthalmicMedicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ophthalmicMedicationsSection.validateIHEMedicationsSectionTemplateId(diagnostics, context);
 	}
 
 		/**
@@ -710,6 +714,7 @@ public class EyeValidator extends EObjectValidator
 		boolean result = validate_EveryMultiplicityConforms(routineEyeExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(routineEyeExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(routineEyeExamSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(routineEyeExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(routineEyeExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(routineEyeExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(routineEyeExamSection, diagnostics, context);
@@ -742,6 +747,7 @@ public class EyeValidator extends EObjectValidator
 		boolean result = validate_EveryMultiplicityConforms(ocularPhysicalExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(ocularPhysicalExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(ocularPhysicalExamSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(ocularPhysicalExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(ocularPhysicalExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(ocularPhysicalExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(ocularPhysicalExamSection, diagnostics, context);
@@ -821,6 +827,7 @@ public class EyeValidator extends EObjectValidator
 		boolean result = validate_EveryMultiplicityConforms(generalEyeEvaluation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(generalEyeEvaluation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(generalEyeEvaluation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(generalEyeEvaluation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(generalEyeEvaluation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(generalEyeEvaluation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(generalEyeEvaluation, diagnostics, context);

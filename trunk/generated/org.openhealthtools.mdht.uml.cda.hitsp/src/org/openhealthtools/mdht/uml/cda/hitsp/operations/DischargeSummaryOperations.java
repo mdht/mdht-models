@@ -2024,15 +2024,9 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					HITSPValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
 					HITSPValidator.DISCHARGE_SUMMARY__MEDICAL_SUMMARY_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MedicalSummaryTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dischargeSummary, context) }),
-					new Object[] { dischargeSummary }));
+					HITSPPlugin.INSTANCE.getString("MedicalSummaryTemplateId"), new Object[] { dischargeSummary }));
 			}
 
 			return false;

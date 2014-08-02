@@ -34,65 +34,65 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class NoseSectionImpl extends SectionImpl implements NoseSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected NoseSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.NOSE_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateNoseSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NoseSectionOperations.validateNoseSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateNoseSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NoseSectionOperations.validateNoseSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateNoseSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NoseSectionOperations.validateNoseSectionProblemEntry(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProblemEntry getProblemEntry() {
 		return NoseSectionOperations.getProblemEntry(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public NoseSection init() {
 		return Initializer.Util.init(this);
 	}

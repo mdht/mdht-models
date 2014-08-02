@@ -54,6 +54,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVDTInpatientSummaryAdmissionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryAdmissionDate(this, diagnostics, context);
 	}
@@ -63,6 +64,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVDTInpatientSummaryDischargeDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryDischargeDate(this, diagnostics, context);
 	}
@@ -72,6 +74,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVDTInpatientSummaryAdmissionDischargeLocation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryAdmissionDischargeLocation(this, diagnostics, context);
 	}
@@ -81,6 +84,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVDTInpatientSummaryMedications(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryMedications(this, diagnostics, context);
 	}
@@ -90,6 +94,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVDTInpatientSummaryReasonforHospitalization(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryReasonforHospitalization(this, diagnostics, context);
 	}
@@ -98,6 +103,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(this, diagnostics, context);
@@ -107,6 +113,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
 		return VDTInpatientSummaryOperations.getHospitalDischargeInstructionsSection(this);
 	}

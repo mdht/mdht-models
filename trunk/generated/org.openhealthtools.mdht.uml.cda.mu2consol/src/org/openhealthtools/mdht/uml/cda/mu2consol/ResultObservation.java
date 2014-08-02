@@ -29,12 +29,14 @@ public interface ResultObservation extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultObservation init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public ResultObservation init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultObservation

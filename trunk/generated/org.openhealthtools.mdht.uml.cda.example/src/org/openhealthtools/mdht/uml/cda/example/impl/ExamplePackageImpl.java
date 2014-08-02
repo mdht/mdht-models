@@ -449,7 +449,7 @@ public class ExamplePackageImpl extends EPackageImpl implements ExamplePackage {
 			source,
 			new String[] {
 					"constraints.validation.error",
-					"MyObservationTemplateId MyObservationClassCode MyObservationCode MyObservationEffectiveTime MyObservationValue",
+					"ProblemObservationTemplateId MyObservationClassCode MyObservationCode MyObservationEffectiveTime MyObservationValue",
 					"templateId.root", "1.2.3.4.2", "classCode", "OBS", "code.codeSystem", "2.16.840.1.113883.6.96",
 					"code.codeSystemName", "SNOMEDCT", "constraints.validation.info", "MyObservationTargetSiteCode",
 					"value.codeSystem", "2.16.840.1.113883.6.96", "value.codeSystemName", "SNOMEDCT" });

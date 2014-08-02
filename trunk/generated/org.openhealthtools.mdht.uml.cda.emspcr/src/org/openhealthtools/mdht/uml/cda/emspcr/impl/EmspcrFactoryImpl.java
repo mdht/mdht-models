@@ -31,7 +31,7 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 	 */
 	public static EmspcrFactory init() {
 		try {
-			EmspcrFactory theEmspcrFactory = (EmspcrFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/emspcr");
+			EmspcrFactory theEmspcrFactory = (EmspcrFactory) EPackage.Registry.INSTANCE.getEFactory(EmspcrPackage.eNS_URI);
 			if (theEmspcrFactory != null) {
 				return theEmspcrFactory;
 			}

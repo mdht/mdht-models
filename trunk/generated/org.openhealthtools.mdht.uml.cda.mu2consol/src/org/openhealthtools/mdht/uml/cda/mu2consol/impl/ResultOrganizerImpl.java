@@ -55,6 +55,7 @@ public class ResultOrganizerImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ResultObservation> getMu2consolResultObservations() {
 		return ResultOrganizerOperations.getMu2consolResultObservations(this);
 	}

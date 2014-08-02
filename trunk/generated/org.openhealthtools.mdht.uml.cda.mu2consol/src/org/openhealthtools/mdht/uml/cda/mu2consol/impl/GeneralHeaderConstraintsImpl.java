@@ -56,6 +56,7 @@ public class GeneralHeaderConstraintsImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class GeneralHeaderConstraintsImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(this, diagnostics, context);
 	}
@@ -74,6 +76,7 @@ public class GeneralHeaderConstraintsImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(this, diagnostics, context);
 	}
@@ -83,6 +86,7 @@ public class GeneralHeaderConstraintsImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(this, diagnostics, context);
 	}
@@ -91,6 +95,7 @@ public class GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalAdmissionDiagnosisSection retrieveHospitalAdmissionDiagnosisSection() {
 		return GeneralHeaderConstraintsOperations.retrieveHospitalAdmissionDiagnosisSection(this);
 	}

@@ -38,23 +38,23 @@ import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getVitalSigns()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsTemplateId' templateId.root='2.16.840.1.113883.10.20.9.2' constraints.validation.warning='VitalSignsVitalSignsOrganizer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.9.2' constraints.validation.warning='VitalSignsOrganizer'"
  * @generated
  */
 public interface VitalSigns extends VitalSignsSection {
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(phmr::ResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(phmr::ResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
    * @generated
    */
-	boolean validateVitalSignsVitalSignsOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateVitalSignsOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
@@ -68,6 +68,7 @@ public interface VitalSigns extends VitalSignsSection {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public VitalSigns init();
 
   /**
@@ -75,5 +76,6 @@ public interface VitalSigns extends VitalSignsSection {
      * <!-- end-user-doc -->
      * @generated
      */
-    public VitalSigns init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public VitalSigns init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSigns

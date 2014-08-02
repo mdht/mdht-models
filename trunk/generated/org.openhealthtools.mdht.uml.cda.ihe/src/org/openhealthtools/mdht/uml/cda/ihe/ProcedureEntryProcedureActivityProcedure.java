@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
  */
 public interface ProcedureEntryProcedureActivityProcedure extends ProcedureActivityProcedure, ProcedureEntry {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedureEntryProcedureActivityProcedure init();
 
 	/**

@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.Purpose;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PurposeOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Purpose</b></em>'.
@@ -84,6 +82,7 @@ public class PurposeImpl extends PurposeSectionImpl implements Purpose {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Purpose init() {
       return Initializer.Util.init(this);
   }
@@ -93,7 +92,8 @@ public class PurposeImpl extends PurposeSectionImpl implements Purpose {
      * <!-- end-user-doc -->
      * @generated
      */
-    public Purpose init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public Purpose init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

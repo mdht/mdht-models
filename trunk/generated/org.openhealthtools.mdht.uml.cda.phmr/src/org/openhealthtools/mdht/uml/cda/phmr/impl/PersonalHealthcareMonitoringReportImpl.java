@@ -43,8 +43,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.VitalSigns;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PersonalHealthcareMonitoringReportOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Personal Healthcare Monitoring Report</b></em>'.
@@ -79,6 +77,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePersonalHealthcareMonitoringReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportTemplateId(this, diagnostics, context);
   }
@@ -88,6 +87,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePersonalHealthcareMonitoringReportVitalSigns(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportVitalSigns(this, diagnostics, context);
   }
@@ -97,6 +97,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePersonalHealthcareMonitoringReportResults(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportResults(this, diagnostics, context);
   }
@@ -106,6 +107,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePersonalHealthcareMonitoringReportMedicalEquipment(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportMedicalEquipment(this, diagnostics, context);
   }
@@ -115,6 +117,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePersonalHealthcareMonitoringReportFunctionalStatus(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportFunctionalStatus(this, diagnostics, context);
   }
@@ -124,6 +127,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePersonalHealthcareMonitoringReportMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportMedication(this, diagnostics, context);
   }
@@ -133,6 +137,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePersonalHealthcareMonitoringReportPurpose(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportPurpose(this, diagnostics, context);
   }
@@ -142,6 +147,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public VitalSigns getVitalSigns() {
     return PersonalHealthcareMonitoringReportOperations.getVitalSigns(this);
   }
@@ -151,6 +157,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Results getResults() {
     return PersonalHealthcareMonitoringReportOperations.getResults(this);
   }
@@ -160,6 +167,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public MedicalEquipment getMedicalEquipment() {
     return PersonalHealthcareMonitoringReportOperations.getMedicalEquipment(this);
   }
@@ -169,6 +177,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public FunctionalStatusSection getFunctionalStatus() {
     return PersonalHealthcareMonitoringReportOperations.getFunctionalStatus(this);
   }
@@ -178,6 +187,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public MedicationsSection getMedication() {
     return PersonalHealthcareMonitoringReportOperations.getMedication(this);
   }
@@ -187,6 +197,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public PurposeSection getPurpose() {
     return PersonalHealthcareMonitoringReportOperations.getPurpose(this);
   }
@@ -196,6 +207,7 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public PersonalHealthcareMonitoringReport init() {
       return Initializer.Util.init(this);
   }
@@ -205,7 +217,8 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
      * <!-- end-user-doc -->
      * @generated
      */
-    public PersonalHealthcareMonitoringReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PersonalHealthcareMonitoringReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

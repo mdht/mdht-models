@@ -123,7 +123,7 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hitsp::AdvanceDirective))";
+	protected static final String VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hitsp::AdvanceDirective))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPAdvanceDirectivesSectionAdvanceDirective(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Advance Directives Section Advance Directive</em>}' invariant operation.

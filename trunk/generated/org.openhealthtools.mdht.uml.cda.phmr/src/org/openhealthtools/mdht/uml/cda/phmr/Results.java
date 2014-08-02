@@ -39,7 +39,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getResults()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsTemplateId' templateId.root='2.16.840.1.113883.10.20.9.14' constraints.validation.warning='ResultsResultOrganizer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.9.14' constraints.validation.warning='ResultsResultOrganizer'"
  * @generated
  */
 public interface Results extends ResultsSection {
@@ -50,7 +50,7 @@ public interface Results extends ResultsSection {
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
    * @generated
    */
 	boolean validateResultsResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -69,6 +69,7 @@ public interface Results extends ResultsSection {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Results init();
 
   /**
@@ -76,5 +77,6 @@ public interface Results extends ResultsSection {
      * <!-- end-user-doc -->
      * @generated
      */
-    public Results init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public Results init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Results

@@ -104,36 +104,8 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionEntryOperations.validateConditionEntryText(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionEntryValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionEntryOperations.validateConditionEntryValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateConditionEntryAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryAgeObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionEntryProblemStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConditionEntryOperations.validateConditionEntryProblemStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -152,6 +124,36 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 */
 	public ProblemStatusObservation getHITSPProblemStatusObservation() {
 		return ConditionEntryOperations.getHITSPProblemStatusObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemEntryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionEntryOperations.validateProblemEntryText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemEntryValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionEntryOperations.validateProblemEntryValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemEntryProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionEntryOperations.validateProblemEntryProblemStatusObservation(this, diagnostics, context);
 	}
 
 	/**

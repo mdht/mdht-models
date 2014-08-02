@@ -129,7 +129,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(hitsp::Medication))";
+	protected static final String VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(hitsp::Medication))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPPlanOfCareSectionMedication(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Plan Of Care Section Medication</em>}' invariant operation.
@@ -188,7 +188,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(hitsp::Immunization))";
+	protected static final String VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(hitsp::Immunization))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPPlanOfCareSectionImmunization(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Plan Of Care Section Immunization</em>}' invariant operation.
@@ -247,7 +247,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(hitsp::Encounter))";
+	protected static final String VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(hitsp::Encounter))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPPlanOfCareSectionEncounter(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Plan Of Care Section Encounter</em>}' invariant operation.
@@ -306,7 +306,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hitsp::Procedure))";
+	protected static final String VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hitsp::Procedure))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPPlanOfCareSectionProcedure(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Plan Of Care Section Procedure</em>}' invariant operation.

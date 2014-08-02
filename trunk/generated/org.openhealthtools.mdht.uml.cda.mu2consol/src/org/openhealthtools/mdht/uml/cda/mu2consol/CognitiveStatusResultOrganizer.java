@@ -39,11 +39,13 @@ public interface CognitiveStatusResultOrganizer extends org.openhealthtools.mdht
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusResultOrganizer init();
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public CognitiveStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public CognitiveStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveStatusResultOrganizer

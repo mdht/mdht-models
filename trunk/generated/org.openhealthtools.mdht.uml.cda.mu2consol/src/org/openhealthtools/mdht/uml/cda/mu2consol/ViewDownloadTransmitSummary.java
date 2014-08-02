@@ -19,8 +19,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
-import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
-import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
@@ -200,7 +198,7 @@ public interface ViewDownloadTransmitSummary extends GeneralHeaderConstraints {
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::ProceduresSection))->asSequence()->any(true).oclAsType(mu2consol::ProceduresSection)'"
 	 * @generated
 	 */
-	ProceduresSection getProceduresSection();
+	org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection getProceduresSection();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -214,7 +212,7 @@ public interface ViewDownloadTransmitSummary extends GeneralHeaderConstraints {
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::ResultsSection))->asSequence()->any(true).oclAsType(mu2consol::ResultsSection)'"
 	 * @generated
 	 */
-	ResultsSection getResultsSection();
+	org.openhealthtools.mdht.uml.cda.mu2consol.ResultsSection getResultsSection();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -234,12 +232,14 @@ public interface ViewDownloadTransmitSummary extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ViewDownloadTransmitSummary init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public ViewDownloadTransmitSummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ViewDownloadTransmitSummary

@@ -34,7 +34,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getMedication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationTemplateId' templateId.root='null'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionTemplateId' templateId.root='null'"
  * @generated
  */
 public interface Medication extends MedicationsSection {
@@ -43,6 +43,7 @@ public interface Medication extends MedicationsSection {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Medication init();
 
   /**
@@ -50,5 +51,6 @@ public interface Medication extends MedicationsSection {
      * <!-- end-user-doc -->
      * @generated
      */
-    public Medication init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public Medication init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Medication

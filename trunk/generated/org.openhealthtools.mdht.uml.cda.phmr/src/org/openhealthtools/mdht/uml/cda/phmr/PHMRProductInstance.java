@@ -38,7 +38,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getPHMRProductInstance()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PHMRProductInstanceTemplateId PHMRProductInstanceId PHMRProductInstancePlayingDevice' templateId.root='2.16.840.1.113883.10.20.9.9' constraints.validation.info='PHMRProductInstanceCode' constraints.validation.warning='PHMRProductInstanceScopingEntity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProductInstanceTemplateId PHMRProductInstanceId PHMRProductInstancePlayingDevice' templateId.root='2.16.840.1.113883.10.20.9.9' constraints.validation.info='PHMRProductInstanceCode' constraints.validation.warning='PHMRProductInstanceScopingEntity'"
  * @generated
  */
 public interface PHMRProductInstance extends ProductInstance {
@@ -95,6 +95,7 @@ public interface PHMRProductInstance extends ProductInstance {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public PHMRProductInstance init();
 
   /**
@@ -102,5 +103,6 @@ public interface PHMRProductInstance extends ProductInstance {
      * <!-- end-user-doc -->
      * @generated
      */
-    public PHMRProductInstance init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public PHMRProductInstance init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PHMRProductInstance

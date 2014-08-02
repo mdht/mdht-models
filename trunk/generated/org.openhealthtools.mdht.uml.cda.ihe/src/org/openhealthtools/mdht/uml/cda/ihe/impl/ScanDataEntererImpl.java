@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.impl.DataEntererImpl;
  */
 public class ScanDataEntererImpl extends DataEntererImpl implements ScanDataEnterer {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ScanDataEntererImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.SCAN_DATA_ENTERER;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateScanDataEntererTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ScanDataEntererOperations.validateScanDataEntererTimeEqualsDocumentEffectiveTime(
@@ -63,37 +63,37 @@ public class ScanDataEntererImpl extends DataEntererImpl implements ScanDataEnte
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateScanDataEntererHasAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScanDataEntererOperations.validateScanDataEntererHasAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateScanDataEntererTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScanDataEntererOperations.validateScanDataEntererTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateScanDataEntererTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScanDataEntererOperations.validateScanDataEntererTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ScanDataEnterer init() {
 		return Initializer.Util.init(this);
 	}

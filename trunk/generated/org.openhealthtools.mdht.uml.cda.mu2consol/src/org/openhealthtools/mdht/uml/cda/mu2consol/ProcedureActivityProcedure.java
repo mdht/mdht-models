@@ -44,12 +44,14 @@ public interface ProcedureActivityProcedure extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityProcedure init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public ProcedureActivityProcedure init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivityProcedure

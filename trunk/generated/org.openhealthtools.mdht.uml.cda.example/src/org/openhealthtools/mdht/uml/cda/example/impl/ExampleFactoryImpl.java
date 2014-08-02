@@ -29,14 +29,14 @@ import org.openhealthtools.mdht.uml.cda.example.MySection;
  */
 public class ExampleFactoryImpl extends EFactoryImpl implements ExampleFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+	* Creates the default factory implementation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static ExampleFactory init() {
 		try {
-			ExampleFactory theExampleFactory = (ExampleFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/example");
+			ExampleFactory theExampleFactory = (ExampleFactory) EPackage.Registry.INSTANCE.getEFactory(ExamplePackage.eNS_URI);
 			if (theExampleFactory != null) {
 				return theExampleFactory;
 			}
@@ -47,20 +47,20 @@ public class ExampleFactoryImpl extends EFactoryImpl implements ExampleFactory {
 	}
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+	* Creates an instance of the factory.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExampleFactoryImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
@@ -76,50 +76,50 @@ public class ExampleFactoryImpl extends EFactoryImpl implements ExampleFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MyDocument createMyDocument() {
 		MyDocumentImpl myDocument = new MyDocumentImpl();
 		return myDocument;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MySection createMySection() {
 		MySectionImpl mySection = new MySectionImpl();
 		return mySection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MyObservation createMyObservation() {
 		MyObservationImpl myObservation = new MyObservationImpl();
 		return myObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExamplePackage getExamplePackage() {
 		return (ExamplePackage) getEPackage();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+	* @deprecated
+	* @generated
+	*/
 	@Deprecated
 	public static ExamplePackage getPackage() {
 		return ExamplePackage.eINSTANCE;

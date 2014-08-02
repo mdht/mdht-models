@@ -37,11 +37,13 @@ public interface MedicationsAdministeredSection extends org.openhealthtools.mdht
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsAdministeredSection init();
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationsAdministeredSection

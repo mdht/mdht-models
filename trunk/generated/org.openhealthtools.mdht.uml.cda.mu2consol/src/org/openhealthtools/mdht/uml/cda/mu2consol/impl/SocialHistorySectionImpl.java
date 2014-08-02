@@ -56,6 +56,7 @@ public class SocialHistorySectionImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMU2CONSOLSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistorySectionOperations.validateMU2CONSOLSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
 	}
@@ -64,6 +65,7 @@ public class SocialHistorySectionImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations() {
 		return SocialHistorySectionOperations.getMu2consolSmokingStatusObservations(this);
 	}

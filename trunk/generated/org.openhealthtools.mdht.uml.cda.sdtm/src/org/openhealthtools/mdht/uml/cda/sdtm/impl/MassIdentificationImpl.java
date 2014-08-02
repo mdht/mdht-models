@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
@@ -33,73 +29,72 @@ import org.openhealthtools.mdht.uml.cda.sdtm.operations.MassIdentificationOperat
  *
  * @generated
  */
-public class MassIdentificationImpl extends Participant2Impl implements MassIdentification
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected MassIdentificationImpl()
-  {
-    super();
-  }
+public class MassIdentificationImpl extends Participant2Impl implements MassIdentification {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MassIdentificationImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return SdtmPackage.Literals.MASS_IDENTIFICATION;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return SdtmPackage.Literals.MASS_IDENTIFICATION;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMassIdentificationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MassIdentificationOperations.validateMassIdentificationTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMassIdentificationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MassIdentificationOperations.validateMassIdentificationTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMassIdentificationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MassIdentificationOperations.validateMassIdentificationTypeCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMassIdentificationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MassIdentificationOperations.validateMassIdentificationTypeCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMassIdentificationParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MassIdentificationOperations.validateMassIdentificationParticipantRole(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMassIdentificationParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MassIdentificationOperations.validateMassIdentificationParticipantRole(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public MassIdentification init() {
-      return Initializer.Util.init(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MassIdentification init() {
+	    return Initializer.Util.init(this);
+	}
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public MassIdentification init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public MassIdentification init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

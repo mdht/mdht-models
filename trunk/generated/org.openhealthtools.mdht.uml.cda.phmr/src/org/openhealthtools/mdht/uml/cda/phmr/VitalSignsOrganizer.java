@@ -57,6 +57,7 @@ public interface VitalSignsOrganizer extends ResultOrganizer {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public VitalSignsOrganizer init();
 
   /**
@@ -64,5 +65,6 @@ public interface VitalSignsOrganizer extends ResultOrganizer {
      * <!-- end-user-doc -->
      * @generated
      */
-    public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignsOrganizer

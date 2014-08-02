@@ -38,6 +38,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.operations.MedicationsSectionOperati
 import org.openhealthtools.mdht.uml.cda.phmr.Medication;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
+import org.openhealthtools.mdht.uml.cda.phmr.PhmrPlugin;
 import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
 
 /**
@@ -117,7 +118,7 @@ public class MedicationOperations extends MedicationsSectionOperations {
             (Diagnostic.ERROR,
              PhmrValidator.DIAGNOSTIC_SOURCE,
              PhmrValidator.MEDICATION__MEDICATIONS_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicationsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medication, context) }),
+             PhmrPlugin.INSTANCE.getString("MedicationsSectionTemplateId"),
              new Object [] { medication }));
       }
        

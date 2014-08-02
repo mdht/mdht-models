@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.WaveformObservation;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.WaveformObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Waveform Observation</b></em>'.
@@ -74,6 +72,7 @@ public class WaveformObservationImpl extends ObservationImpl implements Waveform
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformObservationOperations.validateWaveformObservationTemplateId(this, diagnostics, context);
   }
@@ -83,6 +82,7 @@ public class WaveformObservationImpl extends ObservationImpl implements Waveform
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformObservationOperations.validateWaveformObservationClassCode(this, diagnostics, context);
   }
@@ -92,6 +92,7 @@ public class WaveformObservationImpl extends ObservationImpl implements Waveform
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformObservationOperations.validateWaveformObservationCode(this, diagnostics, context);
   }
@@ -101,6 +102,7 @@ public class WaveformObservationImpl extends ObservationImpl implements Waveform
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformObservationOperations.validateWaveformObservationMoodCode(this, diagnostics, context);
   }
@@ -110,6 +112,7 @@ public class WaveformObservationImpl extends ObservationImpl implements Waveform
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformObservationOperations.validateWaveformObservationValue(this, diagnostics, context);
   }
@@ -119,6 +122,7 @@ public class WaveformObservationImpl extends ObservationImpl implements Waveform
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public WaveformObservation init() {
       return Initializer.Util.init(this);
   }
@@ -128,7 +132,8 @@ public class WaveformObservationImpl extends ObservationImpl implements Waveform
      * <!-- end-user-doc -->
      * @generated
      */
-    public WaveformObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public WaveformObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

@@ -12,7 +12,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
-import org.openhealthtools.mdht.uml.cda.qrda.*;
 import org.openhealthtools.mdht.uml.cda.qrda.MeasureSection;
 import org.openhealthtools.mdht.uml.cda.qrda.QRDAPackage;
 import org.openhealthtools.mdht.uml.cda.qrda.QrdaPlugin;
@@ -216,6 +215,7 @@ public class QRDAValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(qualityReportingDocumentArchitectureDocument, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(qualityReportingDocumentArchitectureDocument, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(qualityReportingDocumentArchitectureDocument, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(qualityReportingDocumentArchitectureDocument, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(qualityReportingDocumentArchitectureDocument, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(qualityReportingDocumentArchitectureDocument, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(qualityReportingDocumentArchitectureDocument, diagnostics, context);
@@ -323,6 +323,7 @@ public class QRDAValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(measureSection, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(measureSection, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(measureSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(measureSection, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(measureSection, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(measureSection, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(measureSection, diagnostics, context);

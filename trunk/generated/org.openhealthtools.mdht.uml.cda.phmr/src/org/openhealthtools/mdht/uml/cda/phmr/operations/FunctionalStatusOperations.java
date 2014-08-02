@@ -38,6 +38,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.operations.FunctionalStatusSectionOp
 import org.openhealthtools.mdht.uml.cda.phmr.FunctionalStatus;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
+import org.openhealthtools.mdht.uml.cda.phmr.PhmrPlugin;
 import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
 
 /**
@@ -117,7 +118,7 @@ public class FunctionalStatusOperations extends FunctionalStatusSectionOperation
             (Diagnostic.ERROR,
              PhmrValidator.DIAGNOSTIC_SOURCE,
              PhmrValidator.FUNCTIONAL_STATUS__FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FunctionalStatusSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(functionalStatus, context) }),
+             PhmrPlugin.INSTANCE.getString("FunctionalStatusSectionTemplateId"),
              new Object [] { functionalStatus }));
       }
        

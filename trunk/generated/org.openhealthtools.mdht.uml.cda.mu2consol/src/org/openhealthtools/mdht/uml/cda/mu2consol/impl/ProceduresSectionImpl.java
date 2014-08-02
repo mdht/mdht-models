@@ -55,6 +55,7 @@ public class ProceduresSectionImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProcedureActivityProcedure> getMu2consolProcedureActivityProcedures() {
 		return ProceduresSectionOperations.getMu2consolProcedureActivityProcedures(this);
 	}

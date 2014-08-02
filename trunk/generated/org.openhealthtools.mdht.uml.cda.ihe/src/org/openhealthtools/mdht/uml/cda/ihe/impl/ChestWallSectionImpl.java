@@ -34,65 +34,65 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ChestWallSectionImpl extends SectionImpl implements ChestWallSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ChestWallSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.CHEST_WALL_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateChestWallSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ChestWallSectionOperations.validateChestWallSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateChestWallSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ChestWallSectionOperations.validateChestWallSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateChestWallSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ChestWallSectionOperations.validateChestWallSectionProblemEntry(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProblemEntry getProblemEntry() {
 		return ChestWallSectionOperations.getProblemEntry(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ChestWallSection init() {
 		return Initializer.Util.init(this);
 	}

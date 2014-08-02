@@ -17,15 +17,15 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getFunctionalStatusSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IHEFunctionalStatusSectionTemplateId' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.17'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusSectionTemplateId' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.17'"
  * @generated
  */
 public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cda.ccd.FunctionalStatusSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public FunctionalStatusSection init();
 
 	/**

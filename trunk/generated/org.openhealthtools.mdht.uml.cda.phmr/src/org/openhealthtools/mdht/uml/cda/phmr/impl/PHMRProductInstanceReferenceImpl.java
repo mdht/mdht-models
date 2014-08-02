@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PHMRProductInstanceReferenceOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>PHMR Product Instance Reference</b></em>'.
@@ -74,6 +72,7 @@ public class PHMRProductInstanceReferenceImpl extends Participant2Impl implement
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePHMRProductInstanceReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceTemplateId(this, diagnostics, context);
   }
@@ -83,6 +82,7 @@ public class PHMRProductInstanceReferenceImpl extends Participant2Impl implement
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePHMRProductInstanceReferenceTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceTypeCode(this, diagnostics, context);
   }
@@ -92,7 +92,8 @@ public class PHMRProductInstanceReferenceImpl extends Participant2Impl implement
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePHMRProductInstanceReferenceParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validatePHMRProductInstanceReferenceParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceParticipantRole(this, diagnostics, context);
   }
@@ -102,6 +103,7 @@ public class PHMRProductInstanceReferenceImpl extends Participant2Impl implement
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public PHMRProductInstanceReference init() {
       return Initializer.Util.init(this);
   }
@@ -111,7 +113,8 @@ public class PHMRProductInstanceReferenceImpl extends Participant2Impl implement
      * <!-- end-user-doc -->
      * @generated
      */
-    public PHMRProductInstanceReference init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PHMRProductInstanceReference init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

@@ -36,6 +36,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.PurposeSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
+import org.openhealthtools.mdht.uml.cda.phmr.PhmrPlugin;
 import org.openhealthtools.mdht.uml.cda.phmr.Purpose;
 
 import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
@@ -117,7 +118,7 @@ public class PurposeOperations extends PurposeSectionOperations {
             (Diagnostic.ERROR,
              PhmrValidator.DIAGNOSTIC_SOURCE,
              PhmrValidator.PURPOSE__PURPOSE_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PurposeSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(purpose, context) }),
+             PhmrPlugin.INSTANCE.getString("PurposeSectionTemplateId"),
              new Object [] { purpose }));
       }
        

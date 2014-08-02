@@ -32,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ConditionalDoseOperations
  */
 public class ConditionalDoseImpl extends MedicationImpl implements ConditionalDose {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ConditionalDoseImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.CONDITIONAL_DOSE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateConditionalDoseConditionalDosingSubstanceAdministration(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ConditionalDoseOperations.validateConditionalDoseConditionalDosingSubstanceAdministration(
@@ -62,19 +62,19 @@ public class ConditionalDoseImpl extends MedicationImpl implements ConditionalDo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateConditionalDoseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionalDoseOperations.validateConditionalDoseTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public ConditionalDose init() {
 		return Initializer.Util.init(this);

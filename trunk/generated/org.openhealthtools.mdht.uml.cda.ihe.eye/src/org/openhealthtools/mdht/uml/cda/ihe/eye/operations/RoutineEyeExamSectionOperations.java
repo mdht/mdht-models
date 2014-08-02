@@ -18,6 +18,7 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
 import org.openhealthtools.mdht.uml.cda.ihe.eye.EyePackage;
+import org.openhealthtools.mdht.uml.cda.ihe.eye.EyePlugin;
 import org.openhealthtools.mdht.uml.cda.ihe.eye.RoutineEyeExamSection;
 
 import org.openhealthtools.mdht.uml.cda.ihe.eye.util.EyeValidator;
@@ -74,7 +75,6 @@ public class RoutineEyeExamSectionOperations extends EyesSectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.12.1.2.6')
 	 * @param routineEyeExamSection The receiving '<em><b>Routine Eye Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -101,7 +101,7 @@ public class RoutineEyeExamSectionOperations extends EyesSectionOperations {
 						(Diagnostic.ERROR,
 						 EyeValidator.DIAGNOSTIC_SOURCE,
 						 EyeValidator.ROUTINE_EYE_EXAM_SECTION__EYES_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EyesSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(routineEyeExamSection, context) }),
+						 EyePlugin.INSTANCE.getString("EyesSectionTemplateId"),
 						 new Object [] { routineEyeExamSection }));
 			}
 			 

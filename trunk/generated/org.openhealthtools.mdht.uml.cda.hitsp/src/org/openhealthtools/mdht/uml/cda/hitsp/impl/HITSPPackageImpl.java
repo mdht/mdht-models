@@ -1943,17 +1943,6 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			medicationEClass, ecorePackage.getEBoolean(), "validateHITSPMedicationDoseQuantity", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
 			medicationEClass, ecorePackage.getEBoolean(), "validateHITSPMedicationAdministrationUnitCode", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1976,29 +1965,8 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			medicationEClass, ecorePackage.getEBoolean(), "validateHITSPMedicationApproachSiteCodeP", 0, 1, IS_UNIQUE,
+			medicationEClass, ecorePackage.getEBoolean(), "validateMedicationApproachSiteCodeP", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			medicationEClass, ecorePackage.getEBoolean(), "validateHITSPMedicationApproachSiteCode", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			medicationEClass, ecorePackage.getEBoolean(), "validateHITSPMedicationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2169,17 +2137,6 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 
 		op = addEOperation(
 			medicationOrderInformationEClass, ecorePackage.getEBoolean(),
-			"validateMedicationOrderInformationRepeatNumber", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			medicationOrderInformationEClass, ecorePackage.getEBoolean(),
 			"validateMedicationOrderInformationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -2319,40 +2276,8 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			conditionEntryEClass, ecorePackage.getEBoolean(), "validateConditionEntryText", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			conditionEntryEClass, ecorePackage.getEBoolean(), "validateConditionEntryValue", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
 			conditionEntryEClass, ecorePackage.getEBoolean(), "validateConditionEntryAgeObservation", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			conditionEntryEClass, ecorePackage.getEBoolean(), "validateConditionEntryProblemStatusObservation", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2771,17 +2696,6 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			advanceDirectiveEClass, ecorePackage.getEBoolean(), "validateAdvanceDirectiveCode", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
 			advanceDirectiveEClass, ecorePackage.getEBoolean(), "validateAdvanceDirectiveEffectiveTime", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -2828,17 +2742,6 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 
 		op = addEOperation(
 			encountersSectionEClass, ecorePackage.getEBoolean(), "validateHITSPEncountersSectionTemplateId", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			encountersSectionEClass, ecorePackage.getEBoolean(), "validateHITSPEncountersSectionEncounterEntry", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -3521,34 +3424,6 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 
 		op = addEOperation(
 			resultEClass, ecorePackage.getEBoolean(), "validateResultTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(resultEClass, ecorePackage.getEBoolean(), "validateResultCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			resultEClass, ecorePackage.getEBoolean(), "validateResultEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(resultEClass, ecorePackage.getEBoolean(), "validateResultValue", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4774,17 +4649,17 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			source,
 			new String[] {
 					"constraints.validation.error",
-					"HITSPMedicationTemplateId HITSPMedicationFirstEffectiveTimeDatatype HITSPMedicationHasMedicationInformation HITSPMedicationHasIndicationNarrativeText HITSPMedicationHasIndicationVocab HITSPMedicationMedicationVehicleType HITSPMedicationMedicationVehicleClass HITSPMedicationMedicationVehicleCode HITSPMedicationMedicationVehicleName HITSPMedicationMedicationVehicleCodedNameVocab HITSPMedicationRouteCode HITSPMedicationApproachSiteCode",
+					"HITSPMedicationTemplateId HITSPMedicationFirstEffectiveTimeDatatype HITSPMedicationHasMedicationInformation HITSPMedicationHasIndicationNarrativeText HITSPMedicationHasIndicationVocab HITSPMedicationMedicationVehicleType HITSPMedicationMedicationVehicleClass HITSPMedicationMedicationVehicleCode HITSPMedicationMedicationVehicleName HITSPMedicationMedicationVehicleCodedNameVocab HITSPMedicationRouteCode MedicationApproachSiteCode",
 					"templateId.root",
 					"2.16.840.1.113883.3.88.11.83.8",
 					"contextDependent",
 					"true",
 					"constraints.validation.info",
-					"HITSPMedicationDoseUnits HITSPMedicationDeliveryMethodDescription HITSPMedicationHasStatusOfMedication HITSPMedicationHasIndication HITSPMedicationHasPatientInstructions HITSPMedicationHasMedicationVehicle HITSPMedicationMedicationVehicleCodedName HITSPMedicationEffectiveTime HITSPMedicationRouteCodeP HITSPMedicationDoseQuantity HITSPMedicationAdministrationUnitCode HITSPMedicationMaxDoseQuantity HITSPMedicationApproachSiteCodeP HITSPMedicationCode",
+					"HITSPMedicationDoseUnits HITSPMedicationDeliveryMethodDescription HITSPMedicationHasStatusOfMedication HITSPMedicationHasIndication HITSPMedicationHasPatientInstructions HITSPMedicationHasMedicationVehicle HITSPMedicationMedicationVehicleCodedName HITSPMedicationEffectiveTime HITSPMedicationRouteCodeP MedicationDoseQuantity HITSPMedicationAdministrationUnitCode HITSPMedicationMaxDoseQuantity MedicationApproachSiteCodeP MedicationCode",
 					"routeCode.codeSystem", "2.16.840.1.113883.3.26.1.1", "routeCode.codeSystemName", "NCI Thesaurus",
 					"approachSiteCode.codeSystem", "2.16.840.1.113883.6.96", "approachSiteCode.codeSystemName",
-					"SNOMEDCT", "constraints.validation.dependOn.HITSPMedicationApproachSiteCode",
-					"HITSPMedicationApproachSiteCodeP" });
+					"SNOMEDCT", "constraints.validation.dependOn.MedicationApproachSiteCode",
+					"MedicationApproachSiteCodeP" });
 		addAnnotation(medicationTypeEClass, source, new String[] {
 				"constraints.validation.error", "MedicationTypeTemplateId MedicationTypeCode", "templateId.root",
 				"2.16.840.1.113883.3.88.11.83.8.1", "code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName",
@@ -4800,7 +4675,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"constraints.validation.warning",
 					"MedicationOrderInformationOrderNumber MedicationOrderInformationOrderExpiration MedicationOrderInformationAssigningAuthority MedicationOrderInformationHasFillNumber",
 					"constraints.validation.info",
-					"MedicationOrderInformationDispensingPharmacyLocation MedicationOrderInformationRepeatNumber MedicationOrderInformationStatusCodeP",
+					"MedicationOrderInformationDispensingPharmacyLocation SupplyActivityRepeatNumber MedicationOrderInformationStatusCodeP",
 					"constraints.validation.dependOn.MedicationOrderInformationStatusCode",
 					"MedicationOrderInformationStatusCodeP" });
 		addAnnotation(conditionEClass, source, new String[] {
@@ -4815,10 +4690,10 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"constraints.validation.warning",
 					"ConditionEntryHasOnsetDate ConditionEntryHasResolutionDate ConditionEntryHasUnknownResolutionDate ConditionEntryCodeP",
 					"code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName", "SNOMEDCT",
-					"constraints.validation.error", "ConditionEntryCode ConditionEntryText ConditionEntryValue",
+					"constraints.validation.error", "ConditionEntryCode ProblemEntryText ProblemEntryValue",
 					"constraints.validation.dependOn.ConditionEntryCode", "ConditionEntryCodeP", "value.codeSystem",
 					"2.16.840.1.113883.6.96", "value.codeSystemName", "SNOMEDCT", "constraints.validation.info",
-					"ConditionEntryAgeObservation ConditionEntryProblemStatusObservation" });
+					"ConditionEntryAgeObservation ProblemEntryProblemStatusObservation" });
 		addAnnotation(
 			patientSummaryEClass,
 			source,
@@ -4844,7 +4719,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			source,
 			new String[] {
 					"constraints.validation.error",
-					"AdvanceDirectiveTemplateId AdvanceDirectiveHasStartingTime AdvanceDirectiveHasEndingTime AdvanceDirectiveHasCustodian AdvanceDirectiveParticipantTypeCode AdvanceDirectiveParticipantRoleClassCode AdvanceDirectiveHasAddress AdvanceDirectiveHasTelecom AdvanceDirectiveHasNameOfAgent AdvanceDirectiveCode AdvanceDirectiveEffectiveTime",
+					"AdvanceDirectiveTemplateId AdvanceDirectiveHasStartingTime AdvanceDirectiveHasEndingTime AdvanceDirectiveHasCustodian AdvanceDirectiveParticipantTypeCode AdvanceDirectiveParticipantRoleClassCode AdvanceDirectiveHasAddress AdvanceDirectiveHasTelecom AdvanceDirectiveHasNameOfAgent AdvanceDirectiveObservationCode AdvanceDirectiveEffectiveTime",
 					"templateId.root", "2.16.840.1.113883.3.88.11.83.12", "code.codeSystem", "2.16.840.1.113883.6.96",
 					"code.codeSystemName", "SNOMEDCT" });
 		addAnnotation(allergiesReactionsSectionEClass, source, new String[] {
@@ -4853,7 +4728,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.102" });
 		addAnnotation(encountersSectionEClass, source, new String[] {
 				"constraints.validation.error",
-				"HITSPEncountersSectionTemplateId HITSPEncountersSectionEncounterEntry", "templateId.root",
+				"HITSPEncountersSectionTemplateId EncounterHistorySectionEncounterEntry", "templateId.root",
 				"2.16.840.1.113883.3.88.11.83.127" });
 		addAnnotation(encounterEClass, source, new String[] {
 				"constraints.validation.error", "HITSPEncounterTemplateId HITSPEncounterAdmissionSourceValueSet",
@@ -4916,11 +4791,14 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"DiagnosticResultsSectionTemplateId DiagnosticResultsSectionHasResult DiagnosticResultsSectionDiagnosticProcedure",
 					"templateId.root", "2.16.840.1.113883.3.88.11.83.122", "constraints.validation.info",
 					"DiagnosticResultsSectionResult DiagnosticResultsSectionResultOrganizer" });
-		addAnnotation(resultEClass, source, new String[] {
-				"constraints.validation.error",
-				"ResultTemplateId ResultValuePresence ResultCode ResultEffectiveTime ResultValue", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.15.1", "constraints.validation.warning",
-				"ResultTypeCodeSystem ResultLaboratoryResultsValueSet" });
+		addAnnotation(
+			resultEClass,
+			source,
+			new String[] {
+					"constraints.validation.error",
+					"ResultTemplateId ResultValuePresence ResultObservationCode ResultObservationEffectiveTime ResultObservationValue",
+					"templateId.root", "2.16.840.1.113883.3.88.11.83.15.1", "constraints.validation.warning",
+					"ResultTypeCodeSystem ResultLaboratoryResultsValueSet" });
 		addAnnotation(resultOrganizerEClass, source, new String[] {
 				"constraints.validation.error", "HITSPResultOrganizerResult" });
 		addAnnotation(vitalSignEClass, source, new String[] {
@@ -4936,7 +4814,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 				"2.16.840.1.113883.3.88.11.83.105", "constraints.validation.info",
 				"HITSPChiefComplaintSectionCondition" });
 		addAnnotation(reasonForReferralSectionEClass, source, new String[] {
-				"constraints.validation.error", "HITSPReasonForReferralSectionTemplateId", "templateId.root",
+				"constraints.validation.error", "CodedReasonForReferralSectionTemplateId", "templateId.root",
 				"2.16.840.1.113883.3.88.11.83.106", "constraints.validation.info",
 				"HITSPReasonForReferralSectionCondition HITSPReasonForReferralSectionResult" });
 		addAnnotation(historyOfPresentIllnessEClass, source, new String[] {
@@ -5022,7 +4900,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 				"constraints.validation.error", "HITSPCommentTemplateId HITSPCommentAuthor", "templateId.root",
 				"2.16.840.1.113883.3.88.11.83.11" });
 		addAnnotation(medicationTaperedDoseEClass, source, new String[] {
-				"constraints.validation.error", "MedicationTaperedDoseTemplateId", "templateId.root", "null" });
+				"constraints.validation.error", "HITSPMedicationTemplateId", "templateId.root", "null" });
 		addAnnotation(supportGuardianEClass, source, new String[] {
 				"constraints.validation.error", "HITSPSupportGuardianTemplateId", "templateId.root",
 				"2.16.840.1.113883.3.88.11.83.3" });
@@ -5030,9 +4908,8 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 				"constraints.validation.error", "HITSPSupportParticipantTemplateId", "templateId.root",
 				"2.16.840.1.113883.3.88.11.83.3" });
 		addAnnotation(unstructuredDocumentEClass, source, new String[] {
-				"constraints.validation.error",
-				"UnstructuredDocumentTemplateId UnstructuredDocumentOnePatientPerDocument", "templateId.root",
-				"2.16.840.1.113883.3.88.11.62.1", "constraints.validation.warning",
+				"constraints.validation.error", "ScannedDocumentTemplateId UnstructuredDocumentOnePatientPerDocument",
+				"templateId.root", "2.16.840.1.113883.3.88.11.62.1", "constraints.validation.warning",
 				"UnstructuredDocumentNoStructuredData" });
 		addAnnotation(
 			medicationInformationEClass,
@@ -5043,14 +4920,14 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"templateId.root", "2.16.840.1.113883.3.88.11.83.8.2", "constraints.validation.info",
 					"MedicationInformationCodedIngredientVocab" });
 		addAnnotation(referralSummaryEClass, source, new String[] {
-				"constraints.validation.error", "ReferralSummaryTemplateId", "templateId.root",
+				"constraints.validation.error", "MedicalSummaryTemplateId", "templateId.root",
 				"2.16.840.1.113883.3.88.11.48.1" });
 		addAnnotation(
 			dischargeSummaryEClass,
 			source,
 			new String[] {
 					"constraints.validation.error",
-					"DischargeSummaryTemplateId DischargeSummaryProblemListSection DischargeSummaryHospitalAdmissionDiagnosisSection DischargeSummaryAllergiesReactionsSection DischargeSummaryDischargeDiagnosisSection DischargeSummaryHospitalDischargeMedicationsSection DischargeSummaryHospitalCourseSection DischargeSummaryPlanOfCareSection DischargeSummaryHistoryOfPastIllnessSection",
+					"MedicalSummaryTemplateId DischargeSummaryProblemListSection DischargeSummaryHospitalAdmissionDiagnosisSection DischargeSummaryAllergiesReactionsSection DischargeSummaryDischargeDiagnosisSection DischargeSummaryHospitalDischargeMedicationsSection DischargeSummaryHospitalCourseSection DischargeSummaryPlanOfCareSection DischargeSummaryHistoryOfPastIllnessSection",
 					"templateId.root",
 					"2.16.840.1.113883.3.88.11.48.2",
 					"constraints.validation.warning",
@@ -5079,6 +4956,12 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 	 */
 	protected void createDuplicatesAnnotations() {
 		String source = "duplicates";
+		addAnnotation(medicationEClass, source, new String[] {});
+		addAnnotation(medicationOrderInformationEClass, source, new String[] {});
+		addAnnotation(conditionEntryEClass, source, new String[] {});
+		addAnnotation(advanceDirectiveEClass, source, new String[] {});
+		addAnnotation(encountersSectionEClass, source, new String[] {});
+		addAnnotation(resultEClass, source, new String[] {});
 		addAnnotation(reasonForReferralSectionEClass, source, new String[] {});
 		addAnnotation(medicationTaperedDoseEClass, source, new String[] {});
 		addAnnotation(unstructuredDocumentEClass, source, new String[] {});

@@ -33,181 +33,181 @@ import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
  */
 public class ExampleValidator extends EObjectValidator {
 	/**
-	 * The cached model package
-	 * <!-- begin-user-doc -->
+	* The cached model package
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final ExampleValidator INSTANCE = new ExampleValidator();
 
 	/**
-	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes} from this package.
-	 * <!-- begin-user-doc -->
+	* A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes} from this package.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.emf.common.util.Diagnostic#getSource()
-	 * @see org.eclipse.emf.common.util.Diagnostic#getCode()
-	 * @generated
-	 */
+	* @see org.eclipse.emf.common.util.Diagnostic#getSource()
+	* @see org.eclipse.emf.common.util.Diagnostic#getCode()
+	* @generated
+	*/
 	public static final String DIAGNOSTIC_SOURCE = "org.openhealthtools.mdht.uml.cda.example";
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Document Template Id' of 'My Document'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Document Template Id' of 'My Document'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_DOCUMENT__MY_DOCUMENT_TEMPLATE_ID = 1;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Document My Section' of 'My Document'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Document My Section' of 'My Document'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_DOCUMENT__MY_DOCUMENT_MY_SECTION = 2;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Template Id' of 'My Section'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Template Id' of 'My Section'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_SECTION__MY_SECTION_TEMPLATE_ID = 3;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Code' of 'My Section'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Code' of 'My Section'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_SECTION__MY_SECTION_CODE = 4;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Confidentiality Code' of 'My Section'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Confidentiality Code' of 'My Section'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_SECTION__MY_SECTION_CONFIDENTIALITY_CODE = 5;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Title' of 'My Section'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Title' of 'My Section'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_SECTION__MY_SECTION_TITLE = 6;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section My Observation' of 'My Section'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section My Observation' of 'My Section'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_SECTION__MY_SECTION_MY_OBSERVATION = 7;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Medication' of 'My Section'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Medication' of 'My Section'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_SECTION__MY_SECTION_MEDICATION = 8;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Encounter' of 'My Section'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Encounter' of 'My Section'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_SECTION__MY_SECTION_ENCOUNTER = 9;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Class Code' of 'My Observation'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Class Code' of 'My Observation'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_OBSERVATION__MY_OBSERVATION_CLASS_CODE = 10;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Code' of 'My Observation'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Code' of 'My Observation'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_OBSERVATION__MY_OBSERVATION_CODE = 11;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Effective Time' of 'My Observation'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Effective Time' of 'My Observation'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_OBSERVATION__MY_OBSERVATION_EFFECTIVE_TIME = 12;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Value' of 'My Observation'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Value' of 'My Observation'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_OBSERVATION__MY_OBSERVATION_VALUE = 14;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Target Site Code' of 'My Observation'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Target Site Code' of 'My Observation'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_OBSERVATION__MY_OBSERVATION_TARGET_SITE_CODE = 13;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'My Observation'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'My Observation'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int MY_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 15;
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
-	 * <!-- begin-user-doc -->
+	* A constant with a fixed name that can be used as the base value for additional hand written constants.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 15;
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
-	 * <!-- begin-user-doc -->
+	* A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
 
 	/**
-	 * The cached base package validator.
-	 * <!-- begin-user-doc -->
+	* The cached base package validator.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CDAValidator cdaValidator;
 
 	/**
-	 * The cached base package validator.
-	 * <!-- begin-user-doc -->
+	* The cached base package validator.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ConsolValidator consolValidator;
 
 	/**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc -->
+	* Creates an instance of the switch.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExampleValidator() {
 		super();
 		cdaValidator = CDAValidator.INSTANCE;
@@ -215,22 +215,22 @@ public class ExampleValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the package of this validator switch.
-	 * <!-- begin-user-doc -->
+	* Returns the package of this validator switch.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EPackage getEPackage() {
 		return ExamplePackage.eINSTANCE;
 	}
 
 	/**
-	 * Calls <code>validateXXX</code> for the corresponding classifier of the model.
-	 * <!-- begin-user-doc -->
+	* Calls <code>validateXXX</code> for the corresponding classifier of the model.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		switch (classifierID) {
@@ -246,10 +246,10 @@ public class ExampleValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyDocument(MyDocument myDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(myDocument, diagnostics, context)) {
 			return false;
@@ -260,6 +260,9 @@ public class ExampleValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(myDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(myDocument, diagnostics, context);
@@ -784,10 +787,6 @@ public class ExampleValidator extends EObjectValidator {
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorIfHasAssignedPersonEnforceId(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(
 				myDocument, diagnostics, context);
 		}
@@ -964,7 +963,7 @@ public class ExampleValidator extends EObjectValidator {
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganization(
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -1341,32 +1340,32 @@ public class ExampleValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateMyDocumentTemplateId constraint of '<em>My Document</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMyDocumentTemplateId constraint of '<em>My Document</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyDocument_validateMyDocumentTemplateId(MyDocument myDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return myDocument.validateMyDocumentTemplateId(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateMyDocumentMySection constraint of '<em>My Document</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMyDocumentMySection constraint of '<em>My Document</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyDocument_validateMyDocumentMySection(MyDocument myDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return myDocument.validateMyDocumentMySection(diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMySection(MySection mySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(mySection, diagnostics, context)) {
 			return false;
@@ -1377,6 +1376,9 @@ public class ExampleValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(mySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(mySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(mySection, diagnostics, context);
@@ -1421,87 +1423,87 @@ public class ExampleValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateMySectionTemplateId constraint of '<em>My Section</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMySectionTemplateId constraint of '<em>My Section</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMySection_validateMySectionTemplateId(MySection mySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return mySection.validateMySectionTemplateId(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateMySectionCode constraint of '<em>My Section</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMySectionCode constraint of '<em>My Section</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMySection_validateMySectionCode(MySection mySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return mySection.validateMySectionCode(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateMySectionConfidentialityCode constraint of '<em>My Section</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMySectionConfidentialityCode constraint of '<em>My Section</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMySection_validateMySectionConfidentialityCode(MySection mySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return mySection.validateMySectionConfidentialityCode(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateMySectionTitle constraint of '<em>My Section</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMySectionTitle constraint of '<em>My Section</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMySection_validateMySectionTitle(MySection mySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return mySection.validateMySectionTitle(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateMySectionMyObservation constraint of '<em>My Section</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMySectionMyObservation constraint of '<em>My Section</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMySection_validateMySectionMyObservation(MySection mySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return mySection.validateMySectionMyObservation(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateMySectionMedication constraint of '<em>My Section</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMySectionMedication constraint of '<em>My Section</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMySection_validateMySectionMedication(MySection mySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return mySection.validateMySectionMedication(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateMySectionEncounter constraint of '<em>My Section</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMySectionEncounter constraint of '<em>My Section</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMySection_validateMySectionEncounter(MySection mySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return mySection.validateMySectionEncounter(diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyObservation(MyObservation myObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(myObservation, diagnostics, context)) {
@@ -1513,6 +1515,9 @@ public class ExampleValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(myObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(myObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(myObservation, diagnostics, context);
@@ -1640,77 +1645,77 @@ public class ExampleValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateMyObservationClassCode constraint of '<em>My Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMyObservationClassCode constraint of '<em>My Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyObservation_validateMyObservationClassCode(MyObservation myObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return myObservation.validateMyObservationClassCode(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateMyObservationCode constraint of '<em>My Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMyObservationCode constraint of '<em>My Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyObservation_validateMyObservationCode(MyObservation myObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return myObservation.validateMyObservationCode(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateMyObservationEffectiveTime constraint of '<em>My Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMyObservationEffectiveTime constraint of '<em>My Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyObservation_validateMyObservationEffectiveTime(MyObservation myObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return myObservation.validateMyObservationEffectiveTime(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateMyObservationValue constraint of '<em>My Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMyObservationValue constraint of '<em>My Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyObservation_validateMyObservationValue(MyObservation myObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return myObservation.validateMyObservationValue(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateMyObservationTargetSiteCode constraint of '<em>My Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateMyObservationTargetSiteCode constraint of '<em>My Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyObservation_validateMyObservationTargetSiteCode(MyObservation myObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return myObservation.validateMyObservationTargetSiteCode(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateProblemObservationTemplateId constraint of '<em>My Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateProblemObservationTemplateId constraint of '<em>My Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMyObservation_validateProblemObservationTemplateId(MyObservation myObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return myObservation.validateProblemObservationTemplateId(diagnostics, context);
 	}
 
 	/**
-	 * Returns the resource locator that will be used to fetch messages for this validator's diagnostics.
-	 * <!-- begin-user-doc -->
+	* Returns the resource locator that will be used to fetch messages for this validator's diagnostics.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public ResourceLocator getResourceLocator() {
 		return ExamplePlugin.INSTANCE;

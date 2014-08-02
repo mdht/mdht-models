@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.ScopingEntity;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ScopingEntityOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Scoping Entity</b></em>'.
@@ -74,6 +72,7 @@ public class ScopingEntityImpl extends EntityImpl implements ScopingEntity {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateScopingEntityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ScopingEntityOperations.validateScopingEntityTemplateId(this, diagnostics, context);
   }
@@ -83,6 +82,7 @@ public class ScopingEntityImpl extends EntityImpl implements ScopingEntity {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateScopingEntityDesc(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ScopingEntityOperations.validateScopingEntityDesc(this, diagnostics, context);
   }
@@ -92,6 +92,7 @@ public class ScopingEntityImpl extends EntityImpl implements ScopingEntity {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ScopingEntity init() {
       return Initializer.Util.init(this);
   }
@@ -101,7 +102,8 @@ public class ScopingEntityImpl extends EntityImpl implements ScopingEntity {
      * <!-- end-user-doc -->
      * @generated
      */
-    public ScopingEntity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public ScopingEntity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

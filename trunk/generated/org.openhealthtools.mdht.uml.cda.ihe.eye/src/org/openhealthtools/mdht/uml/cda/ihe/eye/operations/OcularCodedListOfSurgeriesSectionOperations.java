@@ -68,7 +68,7 @@ public class OcularCodedListOfSurgeriesSectionOperations extends CodedSurgeriesS
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OCULAR_CODED_LIST_OF_SURGERIES_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(ihe::ProcedureEntry))";
+	protected static final String VALIDATE_OCULAR_CODED_LIST_OF_SURGERIES_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(ihe::ProcedureEntry))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOcularCodedListOfSurgeriesSectionProcedureEntry(OcularCodedListOfSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Ocular Coded List Of Surgeries Section Procedure Entry</em>}' invariant operation.
@@ -86,7 +86,6 @@ public class OcularCodedListOfSurgeriesSectionOperations extends CodedSurgeriesS
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(ihe::ProcedureEntry))
 	 * @param ocularCodedListOfSurgeriesSection The receiving '<em><b>Ocular Coded List Of Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -130,7 +129,7 @@ public class OcularCodedListOfSurgeriesSectionOperations extends CodedSurgeriesS
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OCULAR_CODED_LIST_OF_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(ihe::ExternalReference))";
+	protected static final String VALIDATE_OCULAR_CODED_LIST_OF_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(ihe::ExternalReference))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOcularCodedListOfSurgeriesSectionExternalReference(OcularCodedListOfSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Ocular Coded List Of Surgeries Section External Reference</em>}' invariant operation.
@@ -148,7 +147,6 @@ public class OcularCodedListOfSurgeriesSectionOperations extends CodedSurgeriesS
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(ihe::ExternalReference))
 	 * @param ocularCodedListOfSurgeriesSection The receiving '<em><b>Ocular Coded List Of Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -207,10 +205,6 @@ public class OcularCodedListOfSurgeriesSectionOperations extends CodedSurgeriesS
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntry))->asSequence()->any(true).oclAsType(ihe::ProcedureEntry)
-	 * @param ocularCodedListOfSurgeriesSection The receiving '<em><b>Ocular Coded List Of Surgeries Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -252,10 +246,6 @@ public class OcularCodedListOfSurgeriesSectionOperations extends CodedSurgeriesS
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::ExternalReference))->asSequence()->any(true).oclAsType(ihe::ExternalReference)
-	 * @param ocularCodedListOfSurgeriesSection The receiving '<em><b>Ocular Coded List Of Surgeries Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -300,7 +290,6 @@ public class OcularCodedListOfSurgeriesSectionOperations extends CodedSurgeriesS
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.12.1.2.2')
 	 * @param ocularCodedListOfSurgeriesSection The receiving '<em><b>Ocular Coded List Of Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -327,7 +316,7 @@ public class OcularCodedListOfSurgeriesSectionOperations extends CodedSurgeriesS
 						(Diagnostic.ERROR,
 						 EyeValidator.DIAGNOSTIC_SOURCE,
 						 EyeValidator.OCULAR_CODED_LIST_OF_SURGERIES_SECTION__CODED_SURGERIES_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CodedSurgeriesSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ocularCodedListOfSurgeriesSection, context) }),
+						 EyePlugin.INSTANCE.getString("CodedSurgeriesSectionTemplateId"),
 						 new Object [] { ocularCodedListOfSurgeriesSection }));
 			}
 			 

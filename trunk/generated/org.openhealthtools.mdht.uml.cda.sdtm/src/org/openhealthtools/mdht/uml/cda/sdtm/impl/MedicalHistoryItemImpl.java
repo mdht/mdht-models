@@ -1,35 +1,39 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
+
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
-import org.openhealthtools.mdht.uml.cda.sdtm.ActivityEndTimingReference;
 import org.openhealthtools.mdht.uml.cda.sdtm.BodySystemorOrganClass;
+import org.openhealthtools.mdht.uml.cda.sdtm.Category;
+import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
-import org.openhealthtools.mdht.uml.cda.sdtm.EventStudyDay;
+import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
+import org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout;
 import org.openhealthtools.mdht.uml.cda.sdtm.GroupIdentifier;
 import org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem;
 import org.openhealthtools.mdht.uml.cda.sdtm.NonPerformanceReason;
 import org.openhealthtools.mdht.uml.cda.sdtm.PreSpecifiedEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
+import org.openhealthtools.mdht.uml.cda.sdtm.StartRelativetoReferencePeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.StopRelativetoReferencePeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
+import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.MedicalHistoryItemOperations;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,384 +44,422 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicalHistoryItemImpl extends ObservationImpl implements MedicalHistoryItem
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected MedicalHistoryItemImpl()
-  {
-    super();
-  }
+public class MedicalHistoryItemImpl extends ObservationImpl implements MedicalHistoryItem {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MedicalHistoryItemImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return SdtmPackage.Literals.MEDICAL_HISTORY_ITEM;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return SdtmPackage.Literals.MEDICAL_HISTORY_ITEM;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemClassCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemEffectiveTime(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemStatusCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemStatusCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemEffectiveTime(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemGroupIdentifier(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemGroupIdentifier(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemMedicalHistoryCategoryAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemMedicalHistoryCategoryAssociation(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemValueP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemMedicalHistorySubCategoryAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemMedicalHistorySubCategoryAssociation(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemGroupIdentifier(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemGroupIdentifier(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemPreSpecifiedEvent(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemPreSpecifiedEvent(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemPreSpecifiedEvent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemPreSpecifiedEvent(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemNonPerformanceReason(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemNonPerformanceReason(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemNonPerformanceReason(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemNonPerformanceReason(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemBodySystemorOrganClass(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemBodySystemorOrganClass(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemBodySystemorOrganClass(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemBodySystemorOrganClass(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemActivityEndTimingReference(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemActivityEndTimingReference(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemDataCollection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemDataCollection(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemDataCollection(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemDataCollection(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemComment(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemComment(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemDomainAssignment(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemDomainAssignment(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemRelatedRecord(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemRelatedRecord(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemSupplementalValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemSupplementalValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemStartRelativetoReferencePeriod(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemStartRelativetoReferencePeriod(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationTypeCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemStopRelativetoReferencePeriod(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemStopRelativetoReferencePeriod(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationMedicalHistoryCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationMedicalHistoryCategory(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemCategory(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemCategory(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemSubCategory(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalHistoryItemFindingAbout(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistoryItemOperations.validateMedicalHistoryItemFindingAbout(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GroupIdentifier getGroupIdentifier() {
+		return MedicalHistoryItemOperations.getGroupIdentifier(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PreSpecifiedEvent getPreSpecifiedEvent() {
+		return MedicalHistoryItemOperations.getPreSpecifiedEvent(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationTypeCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NonPerformanceReason getNonPerformanceReason() {
+		return MedicalHistoryItemOperations.getNonPerformanceReason(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationMedicalHistorySubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationMedicalHistorySubCategory(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BodySystemorOrganClass getBodySystemorOrganClass() {
+		return MedicalHistoryItemOperations.getBodySystemorOrganClass(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public GroupIdentifier getGroupIdentifier()
-  {
-    return MedicalHistoryItemOperations.getGroupIdentifier(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DataCollection getDataCollection() {
+		return MedicalHistoryItemOperations.getDataCollection(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public PreSpecifiedEvent getPreSpecifiedEvent()
-  {
-    return MedicalHistoryItemOperations.getPreSpecifiedEvent(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<Comment> getComments() {
+		return MedicalHistoryItemOperations.getComments(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public NonPerformanceReason getNonPerformanceReason()
-  {
-    return MedicalHistoryItemOperations.getNonPerformanceReason(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DomainAssignment getDomainAssignment() {
+		return MedicalHistoryItemOperations.getDomainAssignment(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public BodySystemorOrganClass getBodySystemorOrganClass()
-  {
-    return MedicalHistoryItemOperations.getBodySystemorOrganClass(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<RelatedRecord> getRelatedRecords() {
+		return MedicalHistoryItemOperations.getRelatedRecords(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public ActivityEndTimingReference getActivityEndTimingReference()
-  {
-    return MedicalHistoryItemOperations.getActivityEndTimingReference(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<SupplementalValue> getSupplementalValues() {
+		return MedicalHistoryItemOperations.getSupplementalValues(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public DataCollection getDataCollection()
-  {
-    return MedicalHistoryItemOperations.getDataCollection(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StartRelativetoReferencePeriod getStartRelativetoReferencePeriod() {
+		return MedicalHistoryItemOperations.getStartRelativetoReferencePeriod(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public MedicalHistoryItem init() {
-      return Initializer.Util.init(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StopRelativetoReferencePeriod getStopRelativetoReferencePeriod() {
+		return MedicalHistoryItemOperations.getStopRelativetoReferencePeriod(this);
+	}
 
-  /**
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Category getCategory() {
+		return MedicalHistoryItemOperations.getCategory(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SubCategory getSubCategory() {
+		return MedicalHistoryItemOperations.getSubCategory(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<FindingAbout> getFindingAbouts() {
+		return MedicalHistoryItemOperations.getFindingAbouts(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MedicalHistoryItem init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public MedicalHistoryItem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public MedicalHistoryItem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

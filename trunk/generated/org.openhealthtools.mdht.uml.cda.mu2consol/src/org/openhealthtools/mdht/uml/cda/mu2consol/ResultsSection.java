@@ -43,12 +43,14 @@ public interface ResultsSection extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSection init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public ResultsSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultsSection

@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ScannedDocument;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getUnstructuredDocument()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='UnstructuredDocumentTemplateId UnstructuredDocumentOnePatientPerDocument' templateId.root='2.16.840.1.113883.3.88.11.62.1' constraints.validation.warning='UnstructuredDocumentNoStructuredData'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ScannedDocumentTemplateId UnstructuredDocumentOnePatientPerDocument' templateId.root='2.16.840.1.113883.3.88.11.62.1' constraints.validation.warning='UnstructuredDocumentNoStructuredData'"
  * @generated
  */
 public interface UnstructuredDocument extends MedicalDocument, ScannedDocument {

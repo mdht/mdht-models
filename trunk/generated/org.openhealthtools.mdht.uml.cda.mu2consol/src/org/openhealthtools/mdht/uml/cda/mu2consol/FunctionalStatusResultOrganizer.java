@@ -39,11 +39,13 @@ public interface FunctionalStatusResultOrganizer extends org.openhealthtools.mdh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusResultOrganizer init();
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public FunctionalStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public FunctionalStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusResultOrganizer

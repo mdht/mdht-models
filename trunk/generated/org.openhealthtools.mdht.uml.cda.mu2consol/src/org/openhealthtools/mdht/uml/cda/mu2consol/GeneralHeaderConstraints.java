@@ -100,12 +100,14 @@ public interface GeneralHeaderConstraints extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GeneralHeaderConstraints init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public GeneralHeaderConstraints init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GeneralHeaderConstraints

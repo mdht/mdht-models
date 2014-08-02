@@ -1,35 +1,39 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
+
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
-import org.openhealthtools.mdht.uml.cda.sdtm.ActivityEndTimingReference;
-import org.openhealthtools.mdht.uml.cda.sdtm.ActivityStartTimingReference;
 import org.openhealthtools.mdht.uml.cda.sdtm.BodySystemorOrganClass;
+import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.ClinicalEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
-import org.openhealthtools.mdht.uml.cda.sdtm.EventSeverity;
+import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
+import org.openhealthtools.mdht.uml.cda.sdtm.EventorFindingSeverity;
+import org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout;
 import org.openhealthtools.mdht.uml.cda.sdtm.NonPerformanceReason;
 import org.openhealthtools.mdht.uml.cda.sdtm.PreSpecifiedEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
+import org.openhealthtools.mdht.uml.cda.sdtm.StartRelativetoReferencePeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.StopRelativetoReferencePeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
+import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.ClinicalEventOperations;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,404 +44,422 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ClinicalEventImpl extends ObservationImpl implements ClinicalEvent
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected ClinicalEventImpl()
-  {
-    super();
-  }
+public class ClinicalEventImpl extends ObservationImpl implements ClinicalEvent {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClinicalEventImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return SdtmPackage.Literals.CLINICAL_EVENT;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return SdtmPackage.Literals.CLINICAL_EVENT;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventClassCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventEffectiveTime(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventCodeVS(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventStatusCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventEffectiveTime(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventClinicalEventCategoryAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventClinicalEventCategoryAssociation(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventStatusCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventClinicalEventSubCategoryAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventClinicalEventSubCategoryAssociation(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventPreSpecifiedEvent(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventPreSpecifiedEvent(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventValueP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventNonPerformanceReason(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventNonPerformanceReason(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventPreSpecifiedEvent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventPreSpecifiedEvent(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventBodySystemorOrganClass(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventBodySystemorOrganClass(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventNonPerformanceReason(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventNonPerformanceReason(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventDataCollection(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventDataCollection(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventBodySystemorOrganClass(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventBodySystemorOrganClass(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventEventSeverity(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventEventSeverity(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventDataCollection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventDataCollection(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventActivityStartTimingReference(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventActivityStartTimingReference(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventEventSeverity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventEventSeverity(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventActivityEndTimingReference(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventActivityEndTimingReference(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventComment(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventComment(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventDomainAssignment(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventDomainAssignment(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventRelatedRecord(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventRelatedRecord(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventSupplementalValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventSupplementalValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventStartRelativetoReferencePeriod(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventStartRelativetoReferencePeriod(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationTypeCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventStopRelativetoReferencePeriod(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventStopRelativetoReferencePeriod(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventCategoryAssociationClinicalEventCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationClinicalEventCategory(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventCategory(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventCategory(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalEventFindingAbout(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalEventOperations.validateClinicalEventFindingAbout(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PreSpecifiedEvent getPreSpecifiedEvent() {
+		return ClinicalEventOperations.getPreSpecifiedEvent(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NonPerformanceReason getNonPerformanceReason() {
+		return ClinicalEventOperations.getNonPerformanceReason(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BodySystemorOrganClass getBodySystemorOrganClass() {
+		return ClinicalEventOperations.getBodySystemorOrganClass(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationTypeCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DataCollection getDataCollection() {
+		return ClinicalEventOperations.getDataCollection(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateClinicalEventclinicalEventSubCategoryAssociationClinicalEventSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationClinicalEventSubCategory(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EventorFindingSeverity getEventSeverity() {
+		return ClinicalEventOperations.getEventSeverity(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public PreSpecifiedEvent getPreSpecifiedEvent()
-  {
-    return ClinicalEventOperations.getPreSpecifiedEvent(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<Comment> getComments() {
+		return ClinicalEventOperations.getComments(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public NonPerformanceReason getNonPerformanceReason()
-  {
-    return ClinicalEventOperations.getNonPerformanceReason(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DomainAssignment getDomainAssignment() {
+		return ClinicalEventOperations.getDomainAssignment(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public BodySystemorOrganClass getBodySystemorOrganClass()
-  {
-    return ClinicalEventOperations.getBodySystemorOrganClass(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<RelatedRecord> getRelatedRecords() {
+		return ClinicalEventOperations.getRelatedRecords(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public DataCollection getDataCollection()
-  {
-    return ClinicalEventOperations.getDataCollection(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<SupplementalValue> getSupplementalValues() {
+		return ClinicalEventOperations.getSupplementalValues(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EventSeverity getEventSeverity()
-  {
-    return ClinicalEventOperations.getEventSeverity(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StartRelativetoReferencePeriod getStartRelativetoReferencePeriod() {
+		return ClinicalEventOperations.getStartRelativetoReferencePeriod(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public ActivityStartTimingReference getActivityStartTimingReference()
-  {
-    return ClinicalEventOperations.getActivityStartTimingReference(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StopRelativetoReferencePeriod getStopRelativetoReferencePeriod() {
+		return ClinicalEventOperations.getStopRelativetoReferencePeriod(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public ActivityEndTimingReference getActivityEndTimingReference()
-  {
-    return ClinicalEventOperations.getActivityEndTimingReference(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Category getCategory() {
+		return ClinicalEventOperations.getCategory(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public ClinicalEvent init() {
-      return Initializer.Util.init(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SubCategory getSubCategory() {
+		return ClinicalEventOperations.getSubCategory(this);
+	}
 
-  /**
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<FindingAbout> getFindingAbouts() {
+		return ClinicalEventOperations.getFindingAbouts(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ClinicalEvent init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public ClinicalEvent init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public ClinicalEvent init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

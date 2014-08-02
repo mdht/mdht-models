@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class PhysicalExamNarrativeSectionImpl extends SectionImpl implements PhysicalExamNarrativeSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PhysicalExamNarrativeSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.PHYSICAL_EXAM_NARRATIVE_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalExamNarrativeSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalExamNarrativeSectionOperations.validatePhysicalExamNarrativeSectionTemplateId(
@@ -63,20 +63,20 @@ public class PhysicalExamNarrativeSectionImpl extends SectionImpl implements Phy
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalExamNarrativeSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamNarrativeSectionOperations.validatePhysicalExamNarrativeSectionCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PhysicalExamNarrativeSection init() {
 		return Initializer.Util.init(this);
 	}

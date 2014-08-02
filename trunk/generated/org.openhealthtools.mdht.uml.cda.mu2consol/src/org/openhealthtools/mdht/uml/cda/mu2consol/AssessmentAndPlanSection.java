@@ -92,12 +92,14 @@ public interface AssessmentAndPlanSection extends
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public AssessmentAndPlanSection init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public AssessmentAndPlanSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentAndPlanSection

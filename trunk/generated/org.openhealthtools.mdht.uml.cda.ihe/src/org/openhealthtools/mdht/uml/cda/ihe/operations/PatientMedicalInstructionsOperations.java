@@ -46,44 +46,44 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  */
 public class PatientMedicalInstructionsOperations extends PatientInstructionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PatientMedicalInstructionsOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsTemplateId(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsTemplateId(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsTemplateId(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsTemplateId(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsTemplateId(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsTemplateId(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsTemplateId(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsTemplateId(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validatePatientMedicalInstructionsTemplateId(
 			PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -113,35 +113,35 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsClassCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Class Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsClassCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Class Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsClassCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsClassCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('classCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsClassCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Class Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsClassCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Class Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsClassCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsClassCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validatePatientMedicalInstructionsClassCode(
 			PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -171,36 +171,36 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsCodeP(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsCodeP(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsCodeP(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsCodeP(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsCodeP(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsCodeP(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsCodeP(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsCodeP(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validatePatientMedicalInstructionsCodeP(
 			PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics,
@@ -243,37 +243,37 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = 'PINSTRUCT' and value.codeSystem = '1.3.6.1.4.1.19376.1.5.3.2')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validatePatientMedicalInstructionsCode(PatientMedicalInstructions patientMedicalInstructions,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -310,35 +310,35 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsStatusCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Status Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsStatusCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Status Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsStatusCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsStatusCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsStatusCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Status Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsStatusCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Status Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsStatusCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsStatusCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validatePatientMedicalInstructionsStatusCode(
 			PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -368,35 +368,35 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsText(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Text</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePatientMedicalInstructionsText(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Text</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsText(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsText(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsText(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsText(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Text</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientMedicalInstructionsText(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientMedicalInstructionsText(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validatePatientMedicalInstructionsText(PatientMedicalInstructions patientMedicalInstructions,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

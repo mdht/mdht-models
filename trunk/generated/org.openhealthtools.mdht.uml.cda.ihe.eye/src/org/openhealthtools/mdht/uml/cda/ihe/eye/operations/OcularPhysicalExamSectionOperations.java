@@ -85,9 +85,6 @@ public class OcularPhysicalExamSectionOperations extends PhysicalExamSectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '70948-5' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param ocularPhysicalExamSection The receiving '<em><b>Ocular Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -149,7 +146,6 @@ public class OcularPhysicalExamSectionOperations extends PhysicalExamSectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::RoutineEyeExamSection))
 	 * @param ocularPhysicalExamSection The receiving '<em><b>Ocular Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -208,10 +204,6 @@ public class OcularPhysicalExamSectionOperations extends PhysicalExamSectionOper
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::RoutineEyeExamSection))->asSequence()->any(true).oclAsType(eye::RoutineEyeExamSection)
-	 * @param ocularPhysicalExamSection The receiving '<em><b>Ocular Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -256,7 +248,6 @@ public class OcularPhysicalExamSectionOperations extends PhysicalExamSectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.12.1.2.5')
 	 * @param ocularPhysicalExamSection The receiving '<em><b>Ocular Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -283,7 +274,7 @@ public class OcularPhysicalExamSectionOperations extends PhysicalExamSectionOper
 						(Diagnostic.ERROR,
 						 EyeValidator.DIAGNOSTIC_SOURCE,
 						 EyeValidator.OCULAR_PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhysicalExamSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ocularPhysicalExamSection, context) }),
+						 EyePlugin.INSTANCE.getString("PhysicalExamSectionTemplateId"),
 						 new Object [] { ocularPhysicalExamSection }));
 			}
 			 

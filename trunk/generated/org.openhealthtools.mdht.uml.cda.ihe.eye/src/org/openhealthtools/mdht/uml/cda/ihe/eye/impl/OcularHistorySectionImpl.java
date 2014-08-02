@@ -59,6 +59,7 @@ public class OcularHistorySectionImpl extends HistoryOfPastIllnessSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOcularHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OcularHistorySectionOperations.validateOcularHistorySectionCode(this, diagnostics, context);
 	}
@@ -68,6 +69,7 @@ public class OcularHistorySectionImpl extends HistoryOfPastIllnessSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOcularHistorySectionOcularListOfSurgeriesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OcularHistorySectionOperations.validateOcularHistorySectionOcularListOfSurgeriesSection(this, diagnostics, context);
 	}
@@ -77,6 +79,7 @@ public class OcularHistorySectionImpl extends HistoryOfPastIllnessSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOcularHistorySectionOcularCodedListOfSurgeriesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OcularHistorySectionOperations.validateOcularHistorySectionOcularCodedListOfSurgeriesSection(this, diagnostics, context);
 	}
@@ -86,6 +89,7 @@ public class OcularHistorySectionImpl extends HistoryOfPastIllnessSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OcularListOfSurgeriesSection getOcularListOfSurgeriesSection() {
 		return OcularHistorySectionOperations.getOcularListOfSurgeriesSection(this);
 	}
@@ -95,6 +99,7 @@ public class OcularHistorySectionImpl extends HistoryOfPastIllnessSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OcularCodedListOfSurgeriesSection getOcularCodedListOfSurgeriesSection() {
 		return OcularHistorySectionOperations.getOcularCodedListOfSurgeriesSection(this);
 	}

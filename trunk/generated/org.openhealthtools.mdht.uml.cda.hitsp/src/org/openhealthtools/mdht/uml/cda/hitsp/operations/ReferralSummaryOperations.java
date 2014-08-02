@@ -19,6 +19,7 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPlugin;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReferralSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicalSummaryOperations;
@@ -93,15 +94,9 @@ public class ReferralSummaryOperations extends MedicalSummaryOperations {
 			referralSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					HITSPValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
 					HITSPValidator.REFERRAL_SUMMARY__MEDICAL_SUMMARY_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MedicalSummaryTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referralSummary, context) }),
-					new Object[] { referralSummary }));
+					HITSPPlugin.INSTANCE.getString("MedicalSummaryTemplateId"), new Object[] { referralSummary }));
 			}
 
 			return false;

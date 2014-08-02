@@ -121,7 +121,7 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ih
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::InsuranceProvider))";
+	protected static final String VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::InsuranceProvider))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPPayersSectionInsuranceProvider(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Payers Section Insurance Provider</em>}' invariant operation.

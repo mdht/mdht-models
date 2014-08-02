@@ -79,7 +79,6 @@ public class OcularListOfSurgeriesSectionOperations extends SurgeriesSectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param ocularListOfSurgeriesSection The receiving '<em><b>Ocular List Of Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -155,9 +154,6 @@ public class OcularListOfSurgeriesSectionOperations extends SurgeriesSectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '47519-4' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param ocularListOfSurgeriesSection The receiving '<em><b>Ocular List Of Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -225,7 +221,6 @@ public class OcularListOfSurgeriesSectionOperations extends SurgeriesSectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined()
 	 * @param ocularListOfSurgeriesSection The receiving '<em><b>Ocular List Of Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -287,7 +282,6 @@ public class OcularListOfSurgeriesSectionOperations extends SurgeriesSectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.12.1.2.1')
 	 * @param ocularListOfSurgeriesSection The receiving '<em><b>Ocular List Of Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -314,7 +308,7 @@ public class OcularListOfSurgeriesSectionOperations extends SurgeriesSectionOper
 						(Diagnostic.ERROR,
 						 EyeValidator.DIAGNOSTIC_SOURCE,
 						 EyeValidator.OCULAR_LIST_OF_SURGERIES_SECTION__SURGERIES_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SurgeriesSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ocularListOfSurgeriesSection, context) }),
+						 EyePlugin.INSTANCE.getString("SurgeriesSectionTemplateId"),
 						 new Object [] { ocularListOfSurgeriesSection }));
 			}
 			 

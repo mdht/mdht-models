@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PlayingDevice;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PlayingDeviceOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Playing Device</b></em>'.
@@ -74,6 +72,7 @@ public class PlayingDeviceImpl extends DeviceImpl implements PlayingDevice {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePlayingDeviceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PlayingDeviceOperations.validatePlayingDeviceTemplateId(this, diagnostics, context);
   }
@@ -83,6 +82,7 @@ public class PlayingDeviceImpl extends DeviceImpl implements PlayingDevice {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePlayingDeviceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PlayingDeviceOperations.validatePlayingDeviceCode(this, diagnostics, context);
   }
@@ -92,6 +92,7 @@ public class PlayingDeviceImpl extends DeviceImpl implements PlayingDevice {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePlayingDeviceManufacturerModelName(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PlayingDeviceOperations.validatePlayingDeviceManufacturerModelName(this, diagnostics, context);
   }
@@ -101,6 +102,7 @@ public class PlayingDeviceImpl extends DeviceImpl implements PlayingDevice {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public PlayingDevice init() {
       return Initializer.Util.init(this);
   }
@@ -110,7 +112,8 @@ public class PlayingDeviceImpl extends DeviceImpl implements PlayingDevice {
      * <!-- end-user-doc -->
      * @generated
      */
-    public PlayingDevice init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PlayingDevice init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
