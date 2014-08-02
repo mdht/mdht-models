@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -35,85 +31,85 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.DateofLastLiveBirthOpera
  */
 public class DateofLastLiveBirthImpl extends ObservationImpl implements DateofLastLiveBirth {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected DateofLastLiveBirthImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.DATEOF_LAST_LIVE_BIRTH;
-  }
+		return VsbrPackage.Literals.DATEOF_LAST_LIVE_BIRTH;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateDateofLastLiveBirthTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DateofLastLiveBirthOperations.validateDateofLastLiveBirthTemplateId(this, diagnostics, context);
-  }
+		return DateofLastLiveBirthOperations.validateDateofLastLiveBirthTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateDateofLastLiveBirthMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DateofLastLiveBirthOperations.validateDateofLastLiveBirthMoodCode(this, diagnostics, context);
-  }
+		return DateofLastLiveBirthOperations.validateDateofLastLiveBirthMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateDateofLastLiveBirthCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DateofLastLiveBirthOperations.validateDateofLastLiveBirthCodeP(this, diagnostics, context);
-  }
+		return DateofLastLiveBirthOperations.validateDateofLastLiveBirthCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateDateofLastLiveBirthCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DateofLastLiveBirthOperations.validateDateofLastLiveBirthCode(this, diagnostics, context);
-  }
+		return DateofLastLiveBirthOperations.validateDateofLastLiveBirthCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateDateofLastLiveBirthValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DateofLastLiveBirthOperations.validateDateofLastLiveBirthValue(this, diagnostics, context);
-  }
+		return DateofLastLiveBirthOperations.validateDateofLastLiveBirthValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public DateofLastLiveBirth init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public DateofLastLiveBirth init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // DateofLastLiveBirthImpl

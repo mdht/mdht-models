@@ -87,921 +87,908 @@ import org.openhealthtools.mdht.uml.cda.toc.util.ToCValidator;
  */
 public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ConsultationSummaryOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryAllergiesReactionsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Allergies Reactions Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryAllergiesReactionsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Allergies Reactions Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryAllergiesReactionsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryAllergiesReactionsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryAllergiesReactionsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Allergies Reactions Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryAllergiesReactionsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Allergies Reactions Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryAllergiesReactionsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryAllergiesReactionsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryAllergiesReactionsSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CONSULTATION_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_ALLERGIES_REACTIONS_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryAllergiesReactionsSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_ALLERGIES_REACTIONS_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryAllergiesReactionsSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryMedicationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Medications Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryMedicationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Medications Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryMedicationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryMedicationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryMedicationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Medications Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryMedicationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Medications Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryMedicationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryMedicationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryMedicationsSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_MEDICATIONS_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryMedicationsSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_MEDICATIONS_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryMedicationsSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryProblemListSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Problem List Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryProblemListSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Problem List Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryProblemListSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryProblemListSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryProblemListSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Problem List Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryProblemListSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Problem List Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryProblemListSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryProblemListSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryProblemListSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_PROBLEM_LIST_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryProblemListSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_PROBLEM_LIST_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryProblemListSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummarySurgeriesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Surgeries Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummarySurgeriesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Surgeries Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummarySurgeriesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummarySurgeriesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummarySurgeriesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Surgeries Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummarySurgeriesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Surgeries Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummarySurgeriesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummarySurgeriesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummarySurgeriesSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_SURGERIES_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummarySurgeriesSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_SURGERIES_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummarySurgeriesSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryDiagnosticResultsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Diagnostic Results Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryDiagnosticResultsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Diagnostic Results Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryDiagnosticResultsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryDiagnosticResultsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryDiagnosticResultsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Diagnostic Results Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryDiagnosticResultsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Diagnostic Results Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryDiagnosticResultsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryDiagnosticResultsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryDiagnosticResultsSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CONSULTATION_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_DIAGNOSTIC_RESULTS_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryDiagnosticResultsSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_DIAGNOSTIC_RESULTS_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryDiagnosticResultsSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryAdvanceDirectivesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Advance Directives Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryAdvanceDirectivesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Advance Directives Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryAdvanceDirectivesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryAdvanceDirectivesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryAdvanceDirectivesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Advance Directives Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryAdvanceDirectivesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Advance Directives Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryAdvanceDirectivesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryAdvanceDirectivesSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryAdvanceDirectivesSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CONSULTATION_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_ADVANCE_DIRECTIVES_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryAdvanceDirectivesSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_ADVANCE_DIRECTIVES_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryAdvanceDirectivesSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryEncountersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Encounters Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryEncountersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Encounters Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryEncountersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryEncountersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryEncountersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Encounters Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryEncountersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Encounters Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryEncountersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryEncountersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryEncountersSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_ENCOUNTERS_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryEncountersSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_ENCOUNTERS_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryEncountersSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryFamilyHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Family History Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryFamilyHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Family History Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryFamilyHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryFamilyHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryFamilyHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Family History Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryFamilyHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Family History Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryFamilyHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryFamilyHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryFamilyHistorySection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_FAMILY_HISTORY_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryFamilyHistorySection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_FAMILY_HISTORY_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryFamilyHistorySection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryFunctionalStatusSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Functional Status Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryFunctionalStatusSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Functional Status Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryFunctionalStatusSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryFunctionalStatusSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryFunctionalStatusSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Functional Status Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryFunctionalStatusSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Functional Status Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryFunctionalStatusSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryFunctionalStatusSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryFunctionalStatusSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CONSULTATION_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_FUNCTIONAL_STATUS_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryFunctionalStatusSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_FUNCTIONAL_STATUS_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryFunctionalStatusSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryImmunizationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Immunizations Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryImmunizationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Immunizations Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryImmunizationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryImmunizationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryImmunizationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Immunizations Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryImmunizationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Immunizations Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryImmunizationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryImmunizationsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryImmunizationsSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_IMMUNIZATIONS_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryImmunizationsSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_IMMUNIZATIONS_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryImmunizationsSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryMedicalEquipmentSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Medical Equipment Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryMedicalEquipmentSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Medical Equipment Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryMedicalEquipmentSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryMedicalEquipmentSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryMedicalEquipmentSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Medical Equipment Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryMedicalEquipmentSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Medical Equipment Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryMedicalEquipmentSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryMedicalEquipmentSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryMedicalEquipmentSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CONSULTATION_SUMMARY_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_MEDICAL_EQUIPMENT_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryMedicalEquipmentSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_MEDICAL_EQUIPMENT_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryMedicalEquipmentSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryPayersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Payers Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryPayersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Payers Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryPayersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryPayersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryPayersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Payers Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryPayersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Payers Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryPayersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryPayersSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryPayersSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_PAYERS_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryPayersSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_PAYERS_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryPayersSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryPlanOfCareSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Plan Of Care Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryPlanOfCareSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Plan Of Care Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryPlanOfCareSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryPlanOfCareSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryPlanOfCareSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Plan Of Care Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryPlanOfCareSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Plan Of Care Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryPlanOfCareSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryPlanOfCareSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryPlanOfCareSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_PLAN_OF_CARE_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryPlanOfCareSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_PLAN_OF_CARE_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryPlanOfCareSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummarySocialHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Social History Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummarySocialHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Social History Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummarySocialHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummarySocialHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummarySocialHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Social History Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummarySocialHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Social History Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummarySocialHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummarySocialHistorySection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummarySocialHistorySection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_SOCIAL_HISTORY_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummarySocialHistorySection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_SOCIAL_HISTORY_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummarySocialHistorySection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConsultationSummaryVitalSignsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Vital Signs Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateConsultationSummaryVitalSignsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Vital Signs Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryVitalSignsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryVitalSignsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CONSULTATION_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConsultationSummaryVitalSignsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Vital Signs Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateConsultationSummaryVitalSignsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Summary Vital Signs Section</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConsultationSummaryVitalSignsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateConsultationSummaryVitalSignsSection(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CONSULTATION_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateConsultationSummaryVitalSignsSection(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONSULTATION_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_CONSULTATION_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_VITAL_SIGNS_SECTION,
-						 ToCPlugin.INSTANCE.getString("ConsultationSummaryVitalSignsSection"),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__CONSULTATION_SUMMARY_VITAL_SIGNS_SECTION,
+					ToCPlugin.INSTANCE.getString("ConsultationSummaryVitalSignsSection"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAllergiesReactionsSection(ConsultationSummary) <em>Get Allergies Reactions Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getAllergiesReactionsSection(ConsultationSummary) <em>Get Allergies Reactions Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAllergiesReactionsSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)";
+	* @see #getAllergiesReactionsSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->any(true).oclAsType(hitsp::AllergiesReactionsSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAllergiesReactionsSection(ConsultationSummary) <em>Get Allergies Reactions Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getAllergiesReactionsSection(ConsultationSummary) <em>Get Allergies Reactions Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAllergiesReactionsSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getAllergiesReactionsSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static AllergiesReactionsSection getAllergiesReactionsSection(ConsultationSummary consultationSummary) {
 		if (GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(83));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(83));
 			try {
 				GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1010,42 +997,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMedicationsSection(ConsultationSummary) <em>Get Medications Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getMedicationsSection(ConsultationSummary) <em>Get Medications Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicationsSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MEDICATIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->first().oclAsType(hitsp::MedicationsSection)";
+	* @see #getMedicationsSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_MEDICATIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->any(true).oclAsType(hitsp::MedicationsSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMedicationsSection(ConsultationSummary) <em>Get Medications Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getMedicationsSection(ConsultationSummary) <em>Get Medications Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicationsSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getMedicationsSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_MEDICATIONS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->first().oclAsType(hitsp::MedicationsSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static MedicationsSection getMedicationsSection(ConsultationSummary consultationSummary) {
 		if (GET_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(84));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(84));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1054,42 +1038,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getProblemListSection(ConsultationSummary) <em>Get Problem List Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getProblemListSection(ConsultationSummary) <em>Get Problem List Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProblemListSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PROBLEM_LIST_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)";
+	* @see #getProblemListSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_PROBLEM_LIST_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->any(true).oclAsType(hitsp::ProblemListSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getProblemListSection(ConsultationSummary) <em>Get Problem List Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getProblemListSection(ConsultationSummary) <em>Get Problem List Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProblemListSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getProblemListSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PROBLEM_LIST_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static ProblemListSection getProblemListSection(ConsultationSummary consultationSummary) {
 		if (GET_PROBLEM_LIST_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(85));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(85));
 			try {
 				GET_PROBLEM_LIST_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_LIST_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1098,42 +1079,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getSurgeriesSection(ConsultationSummary) <em>Get Surgeries Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getSurgeriesSection(ConsultationSummary) <em>Get Surgeries Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSurgeriesSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_SURGERIES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)";
+	* @see #getSurgeriesSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_SURGERIES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->any(true).oclAsType(hitsp::SurgeriesSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getSurgeriesSection(ConsultationSummary) <em>Get Surgeries Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getSurgeriesSection(ConsultationSummary) <em>Get Surgeries Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSurgeriesSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getSurgeriesSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_SURGERIES_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static SurgeriesSection getSurgeriesSection(ConsultationSummary consultationSummary) {
 		if (GET_SURGERIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(86));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(86));
 			try {
 				GET_SURGERIES_SECTION__EOCL_QRY = helper.createQuery(GET_SURGERIES_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1142,42 +1120,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getDiagnosticResultsSection(ConsultationSummary) <em>Get Diagnostic Results Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getDiagnosticResultsSection(ConsultationSummary) <em>Get Diagnostic Results Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDiagnosticResultsSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->first().oclAsType(hitsp::DiagnosticResultsSection)";
+	* @see #getDiagnosticResultsSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->any(true).oclAsType(hitsp::DiagnosticResultsSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getDiagnosticResultsSection(ConsultationSummary) <em>Get Diagnostic Results Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getDiagnosticResultsSection(ConsultationSummary) <em>Get Diagnostic Results Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDiagnosticResultsSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getDiagnosticResultsSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->first().oclAsType(hitsp::DiagnosticResultsSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static DiagnosticResultsSection getDiagnosticResultsSection(ConsultationSummary consultationSummary) {
 		if (GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(87));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(87));
 			try {
 				GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1186,42 +1161,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAdvanceDirectivesSection(ConsultationSummary) <em>Get Advance Directives Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getAdvanceDirectivesSection(ConsultationSummary) <em>Get Advance Directives Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectivesSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)";
+	* @see #getAdvanceDirectivesSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->any(true).oclAsType(hitsp::AdvanceDirectivesSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAdvanceDirectivesSection(ConsultationSummary) <em>Get Advance Directives Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getAdvanceDirectivesSection(ConsultationSummary) <em>Get Advance Directives Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectivesSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getAdvanceDirectivesSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static AdvanceDirectivesSection getAdvanceDirectivesSection(ConsultationSummary consultationSummary) {
 		if (GET_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(88));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(88));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1230,42 +1202,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getEncountersSection(ConsultationSummary) <em>Get Encounters Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getEncountersSection(ConsultationSummary) <em>Get Encounters Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEncountersSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_ENCOUNTERS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->first().oclAsType(hitsp::EncountersSection)";
+	* @see #getEncountersSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_ENCOUNTERS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->any(true).oclAsType(hitsp::EncountersSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getEncountersSection(ConsultationSummary) <em>Get Encounters Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getEncountersSection(ConsultationSummary) <em>Get Encounters Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEncountersSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getEncountersSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_ENCOUNTERS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->first().oclAsType(hitsp::EncountersSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static EncountersSection getEncountersSection(ConsultationSummary consultationSummary) {
 		if (GET_ENCOUNTERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(89));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(89));
 			try {
 				GET_ENCOUNTERS_SECTION__EOCL_QRY = helper.createQuery(GET_ENCOUNTERS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1274,42 +1243,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getFamilyHistorySection(ConsultationSummary) <em>Get Family History Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getFamilyHistorySection(ConsultationSummary) <em>Get Family History Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFamilyHistorySection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_FAMILY_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->first().oclAsType(hitsp::FamilyHistorySection)";
+	* @see #getFamilyHistorySection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_FAMILY_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->any(true).oclAsType(hitsp::FamilyHistorySection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getFamilyHistorySection(ConsultationSummary) <em>Get Family History Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getFamilyHistorySection(ConsultationSummary) <em>Get Family History Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFamilyHistorySection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getFamilyHistorySection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_FAMILY_HISTORY_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->first().oclAsType(hitsp::FamilyHistorySection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static FamilyHistorySection getFamilyHistorySection(ConsultationSummary consultationSummary) {
 		if (GET_FAMILY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(90));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(90));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1318,42 +1284,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getFunctionalStatusSection(ConsultationSummary) <em>Get Functional Status Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getFunctionalStatusSection(ConsultationSummary) <em>Get Functional Status Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFunctionalStatusSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->first().oclAsType(hitsp::FunctionalStatusSection)";
+	* @see #getFunctionalStatusSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->any(true).oclAsType(hitsp::FunctionalStatusSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getFunctionalStatusSection(ConsultationSummary) <em>Get Functional Status Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getFunctionalStatusSection(ConsultationSummary) <em>Get Functional Status Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFunctionalStatusSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getFunctionalStatusSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->first().oclAsType(hitsp::FunctionalStatusSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static FunctionalStatusSection getFunctionalStatusSection(ConsultationSummary consultationSummary) {
 		if (GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(91));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(91));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1362,42 +1325,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getImmunizationsSection(ConsultationSummary) <em>Get Immunizations Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getImmunizationsSection(ConsultationSummary) <em>Get Immunizations Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getImmunizationsSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_IMMUNIZATIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)";
+	* @see #getImmunizationsSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_IMMUNIZATIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->any(true).oclAsType(hitsp::ImmunizationsSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getImmunizationsSection(ConsultationSummary) <em>Get Immunizations Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getImmunizationsSection(ConsultationSummary) <em>Get Immunizations Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getImmunizationsSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getImmunizationsSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_IMMUNIZATIONS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static ImmunizationsSection getImmunizationsSection(ConsultationSummary consultationSummary) {
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(92));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(92));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1406,42 +1366,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMedicalEquipmentSection(ConsultationSummary) <em>Get Medical Equipment Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getMedicalEquipmentSection(ConsultationSummary) <em>Get Medical Equipment Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicalEquipmentSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->first().oclAsType(hitsp::MedicalEquipmentSection)";
+	* @see #getMedicalEquipmentSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->any(true).oclAsType(hitsp::MedicalEquipmentSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMedicalEquipmentSection(ConsultationSummary) <em>Get Medical Equipment Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getMedicalEquipmentSection(ConsultationSummary) <em>Get Medical Equipment Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicalEquipmentSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getMedicalEquipmentSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->first().oclAsType(hitsp::MedicalEquipmentSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static MedicalEquipmentSection getMedicalEquipmentSection(ConsultationSummary consultationSummary) {
 		if (GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(93));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(93));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1450,42 +1407,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPayersSection(ConsultationSummary) <em>Get Payers Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getPayersSection(ConsultationSummary) <em>Get Payers Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPayersSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PAYERS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->first().oclAsType(hitsp::PayersSection)";
+	* @see #getPayersSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_PAYERS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->any(true).oclAsType(hitsp::PayersSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPayersSection(ConsultationSummary) <em>Get Payers Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getPayersSection(ConsultationSummary) <em>Get Payers Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPayersSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPayersSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PAYERS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->first().oclAsType(hitsp::PayersSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static PayersSection getPayersSection(ConsultationSummary consultationSummary) {
 		if (GET_PAYERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(94));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(94));
 			try {
 				GET_PAYERS_SECTION__EOCL_QRY = helper.createQuery(GET_PAYERS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1494,42 +1448,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlanOfCareSection(ConsultationSummary) <em>Get Plan Of Care Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getPlanOfCareSection(ConsultationSummary) <em>Get Plan Of Care Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PLAN_OF_CARE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)";
+	* @see #getPlanOfCareSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_PLAN_OF_CARE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->any(true).oclAsType(hitsp::PlanOfCareSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlanOfCareSection(ConsultationSummary) <em>Get Plan Of Care Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getPlanOfCareSection(ConsultationSummary) <em>Get Plan Of Care Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PLAN_OF_CARE_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static PlanOfCareSection getPlanOfCareSection(ConsultationSummary consultationSummary) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(95));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(95));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1538,42 +1489,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getSocialHistorySection(ConsultationSummary) <em>Get Social History Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getSocialHistorySection(ConsultationSummary) <em>Get Social History Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSocialHistorySection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_SOCIAL_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->first().oclAsType(hitsp::SocialHistorySection)";
+	* @see #getSocialHistorySection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_SOCIAL_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->any(true).oclAsType(hitsp::SocialHistorySection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getSocialHistorySection(ConsultationSummary) <em>Get Social History Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getSocialHistorySection(ConsultationSummary) <em>Get Social History Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSocialHistorySection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getSocialHistorySection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_SOCIAL_HISTORY_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->first().oclAsType(hitsp::SocialHistorySection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static SocialHistorySection getSocialHistorySection(ConsultationSummary consultationSummary) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(96));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(96));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1582,42 +1530,39 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getVitalSignsSection(ConsultationSummary) <em>Get Vital Signs Section</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getVitalSignsSection(ConsultationSummary) <em>Get Vital Signs Section</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVitalSignsSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_VITAL_SIGNS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)";
+	* @see #getVitalSignsSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
+	protected static final String GET_VITAL_SIGNS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->any(true).oclAsType(hitsp::VitalSignsSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getVitalSignsSection(ConsultationSummary) <em>Get Vital Signs Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getVitalSignsSection(ConsultationSummary) <em>Get Vital Signs Section</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVitalSignsSection(ConsultationSummary)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getVitalSignsSection(ConsultationSummary)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_VITAL_SIGNS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static VitalSignsSection getVitalSignsSection(ConsultationSummary consultationSummary) {
 		if (GET_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_SUMMARY, ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(97));
+			helper.setOperationContext(
+				ToCPackage.Literals.CONSULTATION_SUMMARY,
+				ToCPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(97));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1626,58 +1571,57 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsTemplateId(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsTemplateId(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsTemplateId(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGeneralHeaderConstraintsTemplateId(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.1275.1.1.3')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsTemplateId(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsTemplateId(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsTemplateId(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGeneralHeaderConstraintsTemplateId(ConsultationSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.1275.1.1.3')
-	 * @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param consultationSummary The receiving '<em><b>Consultation Summary</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateGeneralHeaderConstraintsTemplateId(ConsultationSummary consultationSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ToCPackage.Literals.CONSULTATION_SUMMARY);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ToCValidator.DIAGNOSTIC_SOURCE,
-						 ToCValidator.CONSULTATION_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GeneralHeaderConstraintsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationSummary, context) }),
-						 new Object [] { consultationSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
+					ToCValidator.CONSULTATION_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+					ToCPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					new Object[] { consultationSummary }));
 			}
+
 			return false;
 		}
 		return true;

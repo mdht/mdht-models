@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
  * <!-- end-user-doc -->
  * @see org.openhealthtools.mdht.uml.cda.toc.ToCFactory
  * @model kind="package"
+ *        annotation="http://www.openhealthtools.org/mdht/uml initializers='org.openhealthtools.mdht.uml.cda.toc'"
  * @generated
  */
 public interface ToCPackage extends EPackage {

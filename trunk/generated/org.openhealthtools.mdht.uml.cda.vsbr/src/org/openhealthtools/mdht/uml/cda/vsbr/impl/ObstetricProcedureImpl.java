@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -35,94 +31,94 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.ObstetricProcedureOperat
  */
 public class ObstetricProcedureImpl extends ProcedureImpl implements ObstetricProcedure {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ObstetricProcedureImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.OBSTETRIC_PROCEDURE;
-  }
+		return VsbrPackage.Literals.OBSTETRIC_PROCEDURE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateObstetricProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObstetricProcedureOperations.validateObstetricProcedureTemplateId(this, diagnostics, context);
-  }
+		return ObstetricProcedureOperations.validateObstetricProcedureTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateObstetricProcedureClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObstetricProcedureOperations.validateObstetricProcedureClassCode(this, diagnostics, context);
-  }
+		return ObstetricProcedureOperations.validateObstetricProcedureClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateObstetricProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObstetricProcedureOperations.validateObstetricProcedureMoodCode(this, diagnostics, context);
-  }
+		return ObstetricProcedureOperations.validateObstetricProcedureMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateObstetricProcedureNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObstetricProcedureOperations.validateObstetricProcedureNegationInd(this, diagnostics, context);
-  }
+		return ObstetricProcedureOperations.validateObstetricProcedureNegationInd(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateObstetricProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObstetricProcedureOperations.validateObstetricProcedureCode(this, diagnostics, context);
-  }
+		return ObstetricProcedureOperations.validateObstetricProcedureCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateObstetricProcedureCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObstetricProcedureOperations.validateObstetricProcedureCodeP(this, diagnostics, context);
-  }
+		return ObstetricProcedureOperations.validateObstetricProcedureCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ObstetricProcedure init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ObstetricProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ObstetricProcedureImpl

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -33,104 +29,104 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.MothersVitalSignsObserva
  *
  * @generated
  */
-public class MothersVitalSignsObservationImpl extends ObservationImpl implements MothersVitalSignsObservation
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected MothersVitalSignsObservationImpl()
-  {
-    super();
-  }
+public class MothersVitalSignsObservationImpl extends ObservationImpl implements MothersVitalSignsObservation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MothersVitalSignsObservationImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.MOTHERS_VITAL_SIGNS_OBSERVATION;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.MOTHERS_VITAL_SIGNS_OBSERVATION;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMothersVitalSignsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMothersVitalSignsObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationTemplateId(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMothersVitalSignsObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMothersVitalSignsObservationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationClassCode(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMothersVitalSignsObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMothersVitalSignsObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationMoodCode(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMothersVitalSignsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMothersVitalSignsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationCodeP(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMothersVitalSignsObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMothersVitalSignsObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationCode(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMothersVitalSignsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMothersVitalSignsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationValue(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public MothersVitalSignsObservation init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MothersVitalSignsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //MothersVitalSignsObservationImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MothersVitalSignsObservation init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MothersVitalSignsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // MothersVitalSignsObservationImpl

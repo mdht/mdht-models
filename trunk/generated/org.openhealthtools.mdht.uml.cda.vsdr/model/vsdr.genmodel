@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.vsdr/src"
-    modelPluginID="org.openhealthtools.mdht.uml.cda.vsdr" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
-    dynamicTemplates="true" modelName="vsdr_Ecore" modelPluginClass="VsdrPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
-    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.vsdr/src" modelPluginID="org.openhealthtools.mdht.uml.cda.vsdr"
+    templateDirectory="/org.openhealthtools.mdht.uml.cda/templates" dynamicTemplates="true"
+    modelName="vsdr_Ecore" modelPluginClass="VsdrPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="7.0" copyrightFields="false" runtimeVersion="2.9" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.eclipse.uml2.types/model/Types.genmodel#//types"
     pluralizedGetters="true" invariantPrefix="validate">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
@@ -23,6 +22,8 @@
     <details key="OPERATION_BODIES" value="PROCESS"/>
     <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
     <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
   </genAnnotations>
   <foreignModel>vsdr_Ecore.uml</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="Vsdr" basePackage="org.openhealthtools.mdht.uml.cda"
@@ -131,17 +132,17 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyTimeofDeath/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyTimeofDeath/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyLocationofDeath">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyLocationofDeath/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyLocationofDeath/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyLocationOfDeath">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyLocationOfDeath/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyLocationOfDeath/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCertifyingDeath">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCertifyingDeath/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCertifyingDeath/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyMannerofDeath">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyMannerofDeath/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyMannerofDeath/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyMannerOfDeath">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyMannerOfDeath/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyMannerOfDeath/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyPregnancyStatus">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyPregnancyStatus/diagnostics"/>
@@ -155,9 +156,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyInjury/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyInjury/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCauseofDeath">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCauseofDeath/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCauseofDeath/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCauseOfDeath">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCauseOfDeath/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyCauseOfDeath/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyAutopsyPerformance">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyAutopsyPerformance/diagnostics"/>
@@ -184,13 +185,13 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathReportDocumentBody/DeathReportDocumentBodyPronouncingDeath/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getTimeofDeath"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getLocationofDeath"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getLocationOfDeath"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getCertifyingDeath"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getMannerofDeath"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getMannerOfDeath"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getPregnancyStatus"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getTobaccoUse"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getInjury"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getCauseofDeath"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getCauseOfDeath"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getAutopsyPerformance"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getAutopsyResults"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathReportDocumentBody/getCoronerReferral"/>
@@ -309,6 +310,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathValue/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//MannerofDeath/MannerofDeathValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//MannerofDeath/MannerofDeathValueP/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//PregnancyStatus">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PregnancyStatus/PregnancyStatusTemplateId">
@@ -334,6 +339,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PregnancyStatus/PregnancyStatusValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PregnancyStatus/PregnancyStatusValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PregnancyStatus/PregnancyStatusValueP/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//TobaccoUse">
@@ -451,13 +460,13 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationText/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationEffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationEffectiveTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationValue/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//Injury/InjuryComponentInjuryInformationInjuryInformationLocationParticipation/diagnostics"/>
@@ -612,10 +621,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//DeathCausalInformation/DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode/diagnostics"/>
@@ -773,9 +778,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsValue/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyResults/AutopsyResultsAutopsyReport">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsAutopsyReport/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsAutopsyReport/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//AutopsyResults/AutopsyResultsAutopsyReportRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsAutopsyReportRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//AutopsyResults/AutopsyResultsAutopsyReportRelationship/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsdr.ecore#//CoronerReferral">
@@ -900,10 +905,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyName">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyName/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRolePronouncingPartyName/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleAddr">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleAddr/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleAddr/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleClassCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsdr.ecore#//PronouncingDeath/PronouncingDeathPronouncerPronouncerRoleClassCode/diagnostics"/>

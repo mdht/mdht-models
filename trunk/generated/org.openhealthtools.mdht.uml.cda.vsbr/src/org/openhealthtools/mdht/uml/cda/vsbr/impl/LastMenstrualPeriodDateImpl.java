@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -35,94 +31,94 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.LastMenstrualPeriodDateO
  */
 public class LastMenstrualPeriodDateImpl extends ObservationImpl implements LastMenstrualPeriodDate {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected LastMenstrualPeriodDateImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.LAST_MENSTRUAL_PERIOD_DATE;
-  }
+		return VsbrPackage.Literals.LAST_MENSTRUAL_PERIOD_DATE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLastMenstrualPeriodDateTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateTemplateId(this, diagnostics, context);
-  }
+		return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLastMenstrualPeriodDateClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateClassCode(this, diagnostics, context);
-  }
+		return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLastMenstrualPeriodDateMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateMoodCode(this, diagnostics, context);
-  }
+		return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLastMenstrualPeriodDateCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateCodeP(this, diagnostics, context);
-  }
+		return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLastMenstrualPeriodDateCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateCode(this, diagnostics, context);
-  }
+		return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLastMenstrualPeriodDateValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateValue(this, diagnostics, context);
-  }
+		return LastMenstrualPeriodDateOperations.validateLastMenstrualPeriodDateValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public LastMenstrualPeriodDate init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public LastMenstrualPeriodDate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // LastMenstrualPeriodDateImpl
