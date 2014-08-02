@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -35,115 +31,123 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.AbnormalConditionoftheNe
  */
 public class AbnormalConditionoftheNewbornImpl extends ObservationImpl implements AbnormalConditionoftheNewborn {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected AbnormalConditionoftheNewbornImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.ABNORMAL_CONDITIONOFTHE_NEWBORN;
-  }
+		return VsbrPackage.Literals.ABNORMAL_CONDITIONOFTHE_NEWBORN;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAbnormalConditionoftheNewbornTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornTemplateId(this, diagnostics, context);
-  }
+		return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAbnormalConditionoftheNewbornClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornClassCode(this, diagnostics, context);
-  }
+		return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornClassCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAbnormalConditionoftheNewbornMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornMoodCode(this, diagnostics, context);
-  }
+		return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornMoodCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAbnormalConditionoftheNewbornCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornCodeP(this, diagnostics, context);
-  }
+		return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornCodeP(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAbnormalConditionoftheNewbornCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornCode(this, diagnostics, context);
-  }
+		return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAbnormalConditionoftheNewbornCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornCodeVS(this, diagnostics, context);
-  }
+		return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornCodeVS(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAbnormalConditionoftheNewbornValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornValue(this, diagnostics, context);
-  }
+		return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornValue(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAbnormalConditionoftheNewbornValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornValueP(this, diagnostics, context);
-  }
+		return AbnormalConditionoftheNewbornOperations.validateAbnormalConditionoftheNewbornValueP(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AbnormalConditionoftheNewborn init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AbnormalConditionoftheNewborn init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AbnormalConditionoftheNewbornImpl

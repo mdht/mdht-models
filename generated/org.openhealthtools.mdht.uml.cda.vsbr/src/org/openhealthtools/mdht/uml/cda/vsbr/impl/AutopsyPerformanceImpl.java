@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -35,123 +31,123 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.AutopsyPerformanceOperat
  */
 public class AutopsyPerformanceImpl extends ObservationImpl implements AutopsyPerformance {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected AutopsyPerformanceImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.AUTOPSY_PERFORMANCE;
-  }
+		return VsbrPackage.Literals.AUTOPSY_PERFORMANCE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAutopsyPerformanceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AutopsyPerformanceOperations.validateAutopsyPerformanceTemplateId(this, diagnostics, context);
-  }
+		return AutopsyPerformanceOperations.validateAutopsyPerformanceTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAutopsyPerformanceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AutopsyPerformanceOperations.validateAutopsyPerformanceClassCode(this, diagnostics, context);
-  }
+		return AutopsyPerformanceOperations.validateAutopsyPerformanceClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAutopsyPerformanceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AutopsyPerformanceOperations.validateAutopsyPerformanceMoodCode(this, diagnostics, context);
-  }
+		return AutopsyPerformanceOperations.validateAutopsyPerformanceMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAutopsyPerformanceCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AutopsyPerformanceOperations.validateAutopsyPerformanceCodeP(this, diagnostics, context);
-  }
+		return AutopsyPerformanceOperations.validateAutopsyPerformanceCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAutopsyPerformanceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AutopsyPerformanceOperations.validateAutopsyPerformanceCode(this, diagnostics, context);
-  }
+		return AutopsyPerformanceOperations.validateAutopsyPerformanceCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAutopsyPerformanceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AutopsyPerformanceOperations.validateAutopsyPerformanceValue(this, diagnostics, context);
-  }
+		return AutopsyPerformanceOperations.validateAutopsyPerformanceValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAutopsyPerformanceValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AutopsyPerformanceOperations.validateAutopsyPerformanceValueP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	public boolean validateAutopsyPerformanceValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AutopsyPerformanceOperations.validateAutopsyPerformanceValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAutopsyPerformanceUseAssociation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AutopsyPerformanceOperations.validateAutopsyPerformanceUseAssociation(this, diagnostics, context);
-  }
+		return AutopsyPerformanceOperations.validateAutopsyPerformanceUseAssociation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAutopsyPerformanceHistologicalExamAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AutopsyPerformanceOperations.validateAutopsyPerformanceHistologicalExamAssociation(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	public boolean validateAutopsyPerformanceHistologicalExamAssociation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AutopsyPerformanceOperations.validateAutopsyPerformanceHistologicalExamAssociation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AutopsyPerformance init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AutopsyPerformance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AutopsyPerformanceImpl

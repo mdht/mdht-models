@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -38,138 +34,144 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.LaborandDeliveryProcedur
  */
 public class LaborandDeliveryProcedureSectionImpl extends SectionImpl implements LaborandDeliveryProcedureSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected LaborandDeliveryProcedureSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION;
-  }
+		return VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLaborandDeliveryProcedureSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionTemplateId(this, diagnostics, context);
-  }
+		return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLaborandDeliveryProcedureSectionClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionClassCode(this, diagnostics, context);
-  }
+		return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionClassCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLaborandDeliveryProcedureSectionMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionMoodCode(this, diagnostics, context);
-  }
+		return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionMoodCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLaborandDeliveryProcedureSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionCode(this, diagnostics, context);
-  }
+		return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateLaborandDeliveryProcedureSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionCodeP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	public boolean validateLaborandDeliveryProcedureSectionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateLaborandDeliveryProcedureSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionText(this, diagnostics, context);
-  }
+		return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionText(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateLaborandDeliveryProcedureSectionObstetricProcedure(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionObstetricProcedure(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateLaborandDeliveryProcedureSectionMethodOfDelivery(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionMethodOfDelivery(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EList<ObstetricProcedure> getObstetricProcedures()
-  {
-    return LaborandDeliveryProcedureSectionOperations.getObstetricProcedures(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public MethodofDelivery getMethodOfDelivery()
-  {
-    return LaborandDeliveryProcedureSectionOperations.getMethodOfDelivery(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	public boolean validateLaborandDeliveryProcedureSectionObstetricProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionObstetricProcedure(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLaborandDeliveryProcedureSectionMethodOfDelivery(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionMethodOfDelivery(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ObstetricProcedure> getObstetricProcedures() {
+		return LaborandDeliveryProcedureSectionOperations.getObstetricProcedures(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MethodofDelivery getMethodOfDelivery() {
+		return LaborandDeliveryProcedureSectionOperations.getMethodOfDelivery(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public LaborandDeliveryProcedureSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public LaborandDeliveryProcedureSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // LaborandDeliveryProcedureSectionImpl

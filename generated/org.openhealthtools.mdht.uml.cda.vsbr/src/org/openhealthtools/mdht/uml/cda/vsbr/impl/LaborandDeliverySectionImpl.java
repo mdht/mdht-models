@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -20,8 +16,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
-import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection;
-import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryInformation;
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcess;
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliverySection;
@@ -42,162 +36,163 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.LaborandDeliverySectionO
  */
 public class LaborandDeliverySectionImpl extends SectionImpl implements LaborandDeliverySection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected LaborandDeliverySectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.LABORAND_DELIVERY_SECTION;
-  }
+		return VsbrPackage.Literals.LABORAND_DELIVERY_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLaborandDeliverySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LaborandDeliverySectionOperations.validateLaborandDeliverySectionTemplateId(this, diagnostics, context);
-  }
+		return LaborandDeliverySectionOperations.validateLaborandDeliverySectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLaborandDeliverySectionClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LaborandDeliverySectionOperations.validateLaborandDeliverySectionClassCode(this, diagnostics, context);
-  }
+		return LaborandDeliverySectionOperations.validateLaborandDeliverySectionClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLaborandDeliverySectionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LaborandDeliverySectionOperations.validateLaborandDeliverySectionMoodCode(this, diagnostics, context);
-  }
+		return LaborandDeliverySectionOperations.validateLaborandDeliverySectionMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLaborandDeliverySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LaborandDeliverySectionOperations.validateLaborandDeliverySectionCode(this, diagnostics, context);
-  }
+		return LaborandDeliverySectionOperations.validateLaborandDeliverySectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLaborandDeliverySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LaborandDeliverySectionOperations.validateLaborandDeliverySectionText(this, diagnostics, context);
-  }
+		return LaborandDeliverySectionOperations.validateLaborandDeliverySectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateLaborandDeliverySectionLaborAndDeliveryProcess(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return LaborandDeliverySectionOperations.validateLaborandDeliverySectionLaborAndDeliveryProcess(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateLaborandDeliverySectionLaborAndDeliveryProceduresSection(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return LaborandDeliverySectionOperations.validateLaborandDeliverySectionLaborAndDeliveryProceduresSection(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	public boolean validateLaborandDeliverySectionLaborAndDeliveryProcess(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LaborandDeliverySectionOperations.validateLaborandDeliverySectionLaborAndDeliveryProcess(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLaborandDeliverySectionLaborAndDeliveryProceduresSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LaborandDeliverySectionOperations.validateLaborandDeliverySectionLaborAndDeliveryProceduresSection(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLaborandDeliverySectionLaborOnsets(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LaborandDeliverySectionOperations.validateLaborandDeliverySectionLaborOnsets(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateLaborandDeliverySectionMothersVitalSignsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return LaborandDeliverySectionOperations.validateLaborandDeliverySectionMothersVitalSignsSection(this, diagnostics, context);
-  }
+		return LaborandDeliverySectionOperations.validateLaborandDeliverySectionMothersVitalSignsSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public LaborandDeliveryProcess getLaborAndDeliveryProcess()
-  {
-    return LaborandDeliverySectionOperations.getLaborAndDeliveryProcess(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public LaborandDeliveryProcedureSection getLaborAndDeliveryProceduresSection()
-  {
-    return LaborandDeliverySectionOperations.getLaborAndDeliveryProceduresSection(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateLaborandDeliverySectionLaborOnsets(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LaborandDeliverySectionOperations.validateLaborandDeliverySectionLaborOnsets(this, diagnostics, context);
-  }
+	 * @generated
+	 */
+	public LaborandDeliveryProcess getLaborAndDeliveryProcess() {
+		return LaborandDeliverySectionOperations.getLaborAndDeliveryProcess(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public MothersVitalSignsSection getMothersVitalSignsSection() {
-    return LaborandDeliverySectionOperations.getMothersVitalSignsSection(this);
-  }
+	 * @generated
+	 */
+	public LaborandDeliveryProcedureSection getLaborAndDeliveryProceduresSection() {
+		return LaborandDeliverySectionOperations.getLaborAndDeliveryProceduresSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<OnsetofLabor> getLaborOnsetss() {
-    return LaborandDeliverySectionOperations.getLaborOnsetss(this);
-  }
+		return LaborandDeliverySectionOperations.getLaborOnsetss(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	public MothersVitalSignsSection getMothersVitalSignsSection() {
+		return LaborandDeliverySectionOperations.getMothersVitalSignsSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public LaborandDeliverySection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public LaborandDeliverySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // LaborandDeliverySectionImpl

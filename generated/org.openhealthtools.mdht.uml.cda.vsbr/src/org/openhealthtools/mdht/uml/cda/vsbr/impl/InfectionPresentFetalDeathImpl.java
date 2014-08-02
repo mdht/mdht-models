@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -33,124 +29,117 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfectionPresentFetalDea
  *
  * @generated
  */
-public class InfectionPresentFetalDeathImpl extends ObservationImpl implements InfectionPresentFetalDeath
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected InfectionPresentFetalDeathImpl()
-  {
-    super();
-  }
+public class InfectionPresentFetalDeathImpl extends ObservationImpl implements InfectionPresentFetalDeath {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InfectionPresentFetalDeathImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.INFECTION_PRESENT_FETAL_DEATH;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.INFECTION_PRESENT_FETAL_DEATH;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfectionPresentFetalDeathTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfectionPresentFetalDeathTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathTemplateId(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfectionPresentFetalDeathClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfectionPresentFetalDeathClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathClassCode(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfectionPresentFetalDeathMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfectionPresentFetalDeathMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathMoodCode(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfectionPresentFetalDeathCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfectionPresentFetalDeathCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfectionPresentFetalDeathCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfectionPresentFetalDeathCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfectionPresentFetalDeathCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathCodeVS(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfectionPresentFetalDeathCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathCodeVS(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfectionPresentFetalDeathValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfectionPresentFetalDeathValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfectionPresentFetalDeathValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathValueP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfectionPresentFetalDeathValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathValueP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public InfectionPresentFetalDeath init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public InfectionPresentFetalDeath init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //InfectionPresentFetalDeathImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InfectionPresentFetalDeath init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InfectionPresentFetalDeath init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // InfectionPresentFetalDeathImpl

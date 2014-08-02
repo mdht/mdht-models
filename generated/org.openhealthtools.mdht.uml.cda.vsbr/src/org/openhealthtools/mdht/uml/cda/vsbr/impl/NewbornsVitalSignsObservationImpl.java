@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -33,104 +29,105 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NewbornsVitalSignsObserv
  *
  * @generated
  */
-public class NewbornsVitalSignsObservationImpl extends ObservationImpl implements NewbornsVitalSignsObservation
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected NewbornsVitalSignsObservationImpl()
-  {
-    super();
-  }
+public class NewbornsVitalSignsObservationImpl extends ObservationImpl implements NewbornsVitalSignsObservation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected NewbornsVitalSignsObservationImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_OBSERVATION;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_OBSERVATION;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationTemplateId(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsObservationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationClassCode(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationMoodCode(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationCodeP(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationCode(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationValue(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public NewbornsVitalSignsObservation init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public NewbornsVitalSignsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //NewbornsVitalSignsObservationImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NewbornsVitalSignsObservation init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NewbornsVitalSignsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // NewbornsVitalSignsObservationImpl

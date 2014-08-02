@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -35,119 +31,127 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.CharacteristicofLaborand
  */
 public class CharacteristicofLaborandDeliveryImpl extends ObservationImpl implements CharacteristicofLaborandDelivery {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected CharacteristicofLaborandDeliveryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.CHARACTERISTICOF_LABORAND_DELIVERY;
-  }
+		return VsbrPackage.Literals.CHARACTERISTICOF_LABORAND_DELIVERY;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCharacteristicofLaborandDeliveryTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryTemplateId(this, diagnostics, context);
-  }
+		return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCharacteristicofLaborandDeliveryClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryClassCode(this, diagnostics, context);
-  }
+		return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryClassCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCharacteristicofLaborandDeliveryMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryMoodCode(this, diagnostics, context);
-  }
+		return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryMoodCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCharacteristicofLaborandDeliveryCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryCodeP(this, diagnostics, context);
-  }
+		return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryCodeP(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCharacteristicofLaborandDeliveryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryCode(this, diagnostics, context);
-  }
+		return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCharacteristicofLaborandDeliveryCodeVS(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryCodeVS(this, diagnostics, context);
-  }
+		return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryCodeVS(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCharacteristicofLaborandDeliveryValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryValue(this, diagnostics, context);
-  }
+		return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryValue(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCharacteristicofLaborandDeliveryValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryValueP(this, diagnostics, context);
-  }
+		return CharacteristicofLaborandDeliveryOperations.validateCharacteristicofLaborandDeliveryValueP(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public CharacteristicofLaborandDelivery init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CharacteristicofLaborandDelivery init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CharacteristicofLaborandDeliveryImpl

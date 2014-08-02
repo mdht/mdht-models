@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="toc"
-    nsURI="http://www.openhealthtools.org/mdht/uml/cda/toc" nsPrefix="toc">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="toc" nsURI="http://www.openhealthtools.org/mdht/uml/cda/toc"
+    nsPrefix="toc">
+  <eAnnotations source="http://www.openhealthtools.org/mdht/uml">
+    <details key="initializers" value="org.openhealthtools.mdht.uml.cda.toc"/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="DischargeSummary" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId DischargeSummaryAllergiesReactionsSection DischargeSummaryProblemListSection DischargeSummaryHospitalCourseSection DischargeSummaryHospitalDischargeMedicationsSection DischargeSummaryDischargeDiagnosisSection DischargeSummaryPlanOfCareSection"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.1275.1.1.1"/>
-      <details key="constraints.validation.error" value="DischargeSummaryTemplateId DischargeSummaryAllergiesReactionsSection DischargeSummaryProblemListSection DischargeSummaryHospitalCourseSection DischargeSummaryHospitalDischargeMedicationsSection DischargeSummaryDischargeDiagnosisSection DischargeSummaryPlanOfCareSection"/>
       <details key="constraints.validation.warning" value="DischargeSummaryChiefComplaintSection DischargeSummaryDischargeDiet DischargeSummaryFamilyHistorySection DischargeSummaryFunctionalStatusSection DischargeSummaryHistoryOfPresentIllness DischargeSummaryHospitalDischargePhysical DischargeSummaryHospitalDischargeStudiesSummarySection DischargeSummaryImmunizationsSection DischargeSummarySurgeriesSection DischargeSummaryReviewOfSystemsSection DischargeSummarySocialHistorySection DischargeSummaryVitalSignsSection"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -14,9 +16,6 @@
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.1275.1.1.1')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.1275.1.1.1')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -39,9 +38,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -60,9 +56,6 @@
     <eOperations name="DischargeSummaryProblemListSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -83,9 +76,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalCourseSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalCourseSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -104,9 +94,6 @@
     <eOperations name="DischargeSummaryHospitalDischargeMedicationsSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalDischargeMedicationsSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalDischargeMedicationsSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -127,9 +114,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -148,9 +132,6 @@
     <eOperations name="DischargeSummaryPlanOfCareSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -171,9 +152,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -192,9 +170,6 @@
     <eOperations name="DischargeSummaryDischargeDiet" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -215,9 +190,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -236,9 +208,6 @@
     <eOperations name="DischargeSummaryFunctionalStatusSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -259,9 +228,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -280,9 +246,6 @@
     <eOperations name="DischargeSummaryHospitalDischargePhysical" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HospitalDischargePhysical))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HospitalDischargePhysical))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -303,9 +266,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::HospitalDischargeStudiesSummarySection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::HospitalDischargeStudiesSummarySection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -324,9 +284,6 @@
     <eOperations name="DischargeSummaryImmunizationsSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -347,9 +304,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -368,9 +322,6 @@
     <eOperations name="DischargeSummaryReviewOfSystemsSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReviewOfSystemsSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReviewOfSystemsSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -391,9 +342,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -413,9 +361,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -433,169 +378,112 @@
     </eOperations>
     <eOperations name="getAllergiesReactionsSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//AllergiesReactionsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->any(true).oclAsType(hitsp::AllergiesReactionsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getProblemListSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ProblemListSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->any(true).oclAsType(hitsp::ProblemListSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getHospitalCourseSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//HospitalCourseSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalCourseSection))->asSequence()->first().oclAsType(hitsp::HospitalCourseSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalCourseSection))->asSequence()->first().oclAsType(hitsp::HospitalCourseSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalCourseSection))->asSequence()->any(true).oclAsType(hitsp::HospitalCourseSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getHospitalDischargeMedicationsSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//HospitalDischargeMedicationsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalDischargeMedicationsSection))->asSequence()->first().oclAsType(hitsp::HospitalDischargeMedicationsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalDischargeMedicationsSection))->asSequence()->first().oclAsType(hitsp::HospitalDischargeMedicationsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalDischargeMedicationsSection))->asSequence()->any(true).oclAsType(hitsp::HospitalDischargeMedicationsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getDischargeDiagnosisSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//DischargeDiagnosisSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))->asSequence()->first().oclAsType(hitsp::DischargeDiagnosisSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))->asSequence()->first().oclAsType(hitsp::DischargeDiagnosisSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))->asSequence()->any(true).oclAsType(hitsp::DischargeDiagnosisSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getPlanOfCareSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//PlanOfCareSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->any(true).oclAsType(hitsp::PlanOfCareSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getChiefComplaintSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ChiefComplaintSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))->asSequence()->first().oclAsType(hitsp::ChiefComplaintSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))->asSequence()->first().oclAsType(hitsp::ChiefComplaintSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))->asSequence()->any(true).oclAsType(hitsp::ChiefComplaintSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getDischargeDiet" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//DischargeDiet">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))->asSequence()->first().oclAsType(ihe::DischargeDiet)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))->asSequence()->first().oclAsType(ihe::DischargeDiet)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))->asSequence()->any(true).oclAsType(ihe::DischargeDiet)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getFamilyHistorySection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//FamilyHistorySection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->first().oclAsType(hitsp::FamilyHistorySection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->first().oclAsType(hitsp::FamilyHistorySection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->any(true).oclAsType(hitsp::FamilyHistorySection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getFunctionalStatusSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//FunctionalStatusSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->first().oclAsType(hitsp::FunctionalStatusSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->first().oclAsType(hitsp::FunctionalStatusSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->any(true).oclAsType(hitsp::FunctionalStatusSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getHistoryOfPresentIllness" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//HistoryOfPresentIllness">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))->asSequence()->first().oclAsType(hitsp::HistoryOfPresentIllness)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))->asSequence()->first().oclAsType(hitsp::HistoryOfPresentIllness)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))->asSequence()->any(true).oclAsType(hitsp::HistoryOfPresentIllness)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getHospitalDischargePhysical" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//HospitalDischargePhysical">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HospitalDischargePhysical))->asSequence()->first().oclAsType(ihe::HospitalDischargePhysical)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HospitalDischargePhysical))->asSequence()->first().oclAsType(ihe::HospitalDischargePhysical)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HospitalDischargePhysical))->asSequence()->any(true).oclAsType(ihe::HospitalDischargePhysical)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getHospitalDischargeStudiesSummarySection" ordered="false"
         lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//HospitalDischargeStudiesSummarySection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::HospitalDischargeStudiesSummarySection))->asSequence()->first().oclAsType(cdt::HospitalDischargeStudiesSummarySection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::HospitalDischargeStudiesSummarySection))->asSequence()->first().oclAsType(cdt::HospitalDischargeStudiesSummarySection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::HospitalDischargeStudiesSummarySection))->asSequence()->any(true).oclAsType(cdt::HospitalDischargeStudiesSummarySection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getImmunizationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ImmunizationsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->any(true).oclAsType(hitsp::ImmunizationsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getSurgeriesSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//SurgeriesSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->any(true).oclAsType(hitsp::SurgeriesSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getReviewOfSystemsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ReviewOfSystemsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReviewOfSystemsSection))->asSequence()->first().oclAsType(hitsp::ReviewOfSystemsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReviewOfSystemsSection))->asSequence()->first().oclAsType(hitsp::ReviewOfSystemsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(hitsp::ReviewOfSystemsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getSocialHistorySection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//SocialHistorySection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->first().oclAsType(hitsp::SocialHistorySection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->first().oclAsType(hitsp::SocialHistorySection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->any(true).oclAsType(hitsp::SocialHistorySection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getVitalSignsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//VitalSignsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->any(true).oclAsType(hitsp::VitalSignsSection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DischargeInstructions" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesReactionsSection DischargeInstructionsProblemListSection DischargeInstructionsDischargeDiagnosisSection DischargeInstructionsAdvanceDirectivesSection DischargeInstructionsImmunizationsSection DischargeInstructionsMedicalEquipmentSection"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.1275.1.1.2"/>
-      <details key="constraints.validation.error" value="DischargeInstructionsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesReactionsSection DischargeInstructionsProblemListSection DischargeInstructionsDischargeDiagnosisSection DischargeInstructionsAdvanceDirectivesSection DischargeInstructionsImmunizationsSection DischargeInstructionsMedicalEquipmentSection"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="GeneralHeaderConstraintsTemplateId"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.1275.1.1.2')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.1275.1.1.2')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -618,9 +506,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -639,9 +524,6 @@
     <eOperations name="DischargeInstructionsAllergiesReactionsSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -662,9 +544,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -683,9 +562,6 @@
     <eOperations name="DischargeInstructionsDischargeDiagnosisSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -706,9 +582,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -727,9 +600,6 @@
     <eOperations name="DischargeInstructionsImmunizationsSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -750,9 +620,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -769,70 +636,49 @@
       </eParameters>
     </eOperations>
     <eOperations name="getPlanOfCareSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//PlanOfCareSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->any(true).oclAsType(hitsp::PlanOfCareSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAllergiesReactionsSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//AllergiesReactionsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->any(true).oclAsType(hitsp::AllergiesReactionsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getProblemListSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ProblemListSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->any(true).oclAsType(hitsp::ProblemListSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getDischargeDiagnosisSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//DischargeDiagnosisSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))->asSequence()->first().oclAsType(hitsp::DischargeDiagnosisSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))->asSequence()->first().oclAsType(hitsp::DischargeDiagnosisSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))->asSequence()->any(true).oclAsType(hitsp::DischargeDiagnosisSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAdvanceDirectivesSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//AdvanceDirectivesSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->any(true).oclAsType(hitsp::AdvanceDirectivesSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getImmunizationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ImmunizationsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->any(true).oclAsType(hitsp::ImmunizationsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getMedicalEquipmentSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//MedicalEquipmentSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->first().oclAsType(hitsp::MedicalEquipmentSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->first().oclAsType(hitsp::MedicalEquipmentSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->any(true).oclAsType(hitsp::MedicalEquipmentSection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ConsultationSummary" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ConsultationSummaryAllergiesReactionsSection ConsultationSummaryMedicationsSection ConsultationSummaryProblemListSection ConsultationSummarySurgeriesSection ConsultationSummaryDiagnosticResultsSection"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.1275.1.1.3"/>
-      <details key="constraints.validation.error" value="ConsultationSummaryTemplateId ConsultationSummaryAllergiesReactionsSection ConsultationSummaryMedicationsSection ConsultationSummaryProblemListSection ConsultationSummarySurgeriesSection ConsultationSummaryDiagnosticResultsSection"/>
       <details key="constraints.validation.warning" value="ConsultationSummaryAdvanceDirectivesSection ConsultationSummaryEncountersSection ConsultationSummaryFamilyHistorySection ConsultationSummaryFunctionalStatusSection ConsultationSummaryImmunizationsSection ConsultationSummaryMedicalEquipmentSection ConsultationSummaryPayersSection ConsultationSummaryPlanOfCareSection ConsultationSummarySocialHistorySection ConsultationSummaryVitalSignsSection"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -840,9 +686,6 @@
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.1275.1.1.3')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.1275.1.1.3')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -865,9 +708,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -886,9 +726,6 @@
     <eOperations name="ConsultationSummaryMedicationsSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -909,9 +746,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -930,9 +764,6 @@
     <eOperations name="ConsultationSummarySurgeriesSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -953,9 +784,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -974,9 +802,6 @@
     <eOperations name="ConsultationSummaryAdvanceDirectivesSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -997,9 +822,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1018,9 +840,6 @@
     <eOperations name="ConsultationSummaryFamilyHistorySection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1041,9 +860,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1062,9 +878,6 @@
     <eOperations name="ConsultationSummaryImmunizationsSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1085,9 +898,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1106,9 +916,6 @@
     <eOperations name="ConsultationSummaryPayersSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1129,9 +936,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1150,9 +954,6 @@
     <eOperations name="ConsultationSummarySocialHistorySection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1173,9 +974,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1193,134 +991,89 @@
     </eOperations>
     <eOperations name="getAllergiesReactionsSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//AllergiesReactionsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->any(true).oclAsType(hitsp::AllergiesReactionsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getMedicationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//MedicationsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->first().oclAsType(hitsp::MedicationsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->first().oclAsType(hitsp::MedicationsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->any(true).oclAsType(hitsp::MedicationsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getProblemListSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ProblemListSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->any(true).oclAsType(hitsp::ProblemListSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getSurgeriesSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//SurgeriesSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->any(true).oclAsType(hitsp::SurgeriesSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getDiagnosticResultsSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//DiagnosticResultsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->first().oclAsType(hitsp::DiagnosticResultsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->first().oclAsType(hitsp::DiagnosticResultsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->any(true).oclAsType(hitsp::DiagnosticResultsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAdvanceDirectivesSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//AdvanceDirectivesSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->any(true).oclAsType(hitsp::AdvanceDirectivesSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getEncountersSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//EncountersSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->first().oclAsType(hitsp::EncountersSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->first().oclAsType(hitsp::EncountersSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->any(true).oclAsType(hitsp::EncountersSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getFamilyHistorySection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//FamilyHistorySection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->first().oclAsType(hitsp::FamilyHistorySection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->first().oclAsType(hitsp::FamilyHistorySection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->any(true).oclAsType(hitsp::FamilyHistorySection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getFunctionalStatusSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//FunctionalStatusSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->first().oclAsType(hitsp::FunctionalStatusSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->first().oclAsType(hitsp::FunctionalStatusSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->any(true).oclAsType(hitsp::FunctionalStatusSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getImmunizationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ImmunizationsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->any(true).oclAsType(hitsp::ImmunizationsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getMedicalEquipmentSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//MedicalEquipmentSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->first().oclAsType(hitsp::MedicalEquipmentSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->first().oclAsType(hitsp::MedicalEquipmentSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->any(true).oclAsType(hitsp::MedicalEquipmentSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getPayersSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//PayersSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->first().oclAsType(hitsp::PayersSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->first().oclAsType(hitsp::PayersSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->any(true).oclAsType(hitsp::PayersSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getPlanOfCareSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//PlanOfCareSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->any(true).oclAsType(hitsp::PlanOfCareSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getSocialHistorySection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//SocialHistorySection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->first().oclAsType(hitsp::SocialHistorySection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->first().oclAsType(hitsp::SocialHistorySection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->any(true).oclAsType(hitsp::SocialHistorySection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getVitalSignsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//VitalSignsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->any(true).oclAsType(hitsp::VitalSignsSection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ConsultationRequest" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ConsultationRequestAllergiesReactionsSection ConsultationRequestMedicationsSection ConsultationRequestProblemListSection ConsultationRequestSurgeriesSection ConsultationRequestDiagnosticResultsSection ConsultationRequestAdvanceDirectivesSection"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.1275.1.1.4"/>
-      <details key="constraints.validation.error" value="ConsultationRequestTemplateId ConsultationRequestAllergiesReactionsSection ConsultationRequestMedicationsSection ConsultationRequestProblemListSection ConsultationRequestSurgeriesSection ConsultationRequestDiagnosticResultsSection ConsultationRequestAdvanceDirectivesSection"/>
       <details key="constraints.validation.warning" value="ConsultationRequestAssessmentAndPlanSection ConsultationRequestHistoryOfPresentIllness ConsultationRequestPhysicalExamSection ConsultationRequestReasonForReferralSection ConsultationRequestEncountersSection ConsultationRequestFamilyHistorySection ConsultationRequestFunctionalStatusSection ConsultationRequestImmunizationsSection ConsultationRequestMedicalEquipmentSection ConsultationRequestPlanOfCareSection ConsultationRequestSocialHistorySection ConsultationRequestVitalSignsSection ConsultationRequestChiefComplaintSection ConsultationRequestGeneralStatusSection ConsultationRequestHistoryOfPastIllnessSection ConsultationRequestPayersSection"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -1328,9 +1081,6 @@
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.1275.1.1.4')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.1275.1.1.4')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1353,9 +1103,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1374,9 +1121,6 @@
     <eOperations name="ConsultationRequestMedicationsSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1397,9 +1141,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1418,9 +1159,6 @@
     <eOperations name="ConsultationRequestSurgeriesSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1441,9 +1179,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1462,9 +1197,6 @@
     <eOperations name="ConsultationRequestAdvanceDirectivesSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1485,9 +1217,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AssessmentAndPlanSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AssessmentAndPlanSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1506,9 +1235,6 @@
     <eOperations name="ConsultationRequestHistoryOfPresentIllness" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1529,9 +1255,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PhysicalExamSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PhysicalExamSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1550,9 +1273,6 @@
     <eOperations name="ConsultationRequestReasonForReferralSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReasonForReferralSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReasonForReferralSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1573,9 +1293,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1594,9 +1311,6 @@
     <eOperations name="ConsultationRequestFamilyHistorySection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1617,9 +1331,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1638,9 +1349,6 @@
     <eOperations name="ConsultationRequestImmunizationsSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1661,9 +1369,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1682,9 +1387,6 @@
     <eOperations name="ConsultationRequestPlanOfCareSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1705,9 +1407,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1726,9 +1425,6 @@
     <eOperations name="ConsultationRequestVitalSignsSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1749,9 +1445,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1770,9 +1463,6 @@
     <eOperations name="ConsultationRequestGeneralStatusSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::GeneralStatusSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::GeneralStatusSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1793,9 +1483,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPastIllnessSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPastIllnessSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1815,9 +1502,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1835,187 +1519,121 @@
     </eOperations>
     <eOperations name="getAllergiesReactionsSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//AllergiesReactionsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->any(true).oclAsType(hitsp::AllergiesReactionsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getMedicationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//MedicationsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->first().oclAsType(hitsp::MedicationsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->first().oclAsType(hitsp::MedicationsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->any(true).oclAsType(hitsp::MedicationsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getProblemListSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ProblemListSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->any(true).oclAsType(hitsp::ProblemListSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getSurgeriesSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//SurgeriesSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->any(true).oclAsType(hitsp::SurgeriesSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getDiagnosticResultsSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//DiagnosticResultsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->first().oclAsType(hitsp::DiagnosticResultsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->first().oclAsType(hitsp::DiagnosticResultsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->any(true).oclAsType(hitsp::DiagnosticResultsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAdvanceDirectivesSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//AdvanceDirectivesSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->any(true).oclAsType(hitsp::AdvanceDirectivesSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAssessmentAndPlanSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//AssessmentAndPlanSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AssessmentAndPlanSection))->asSequence()->first().oclAsType(hitsp::AssessmentAndPlanSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AssessmentAndPlanSection))->asSequence()->first().oclAsType(hitsp::AssessmentAndPlanSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AssessmentAndPlanSection))->asSequence()->any(true).oclAsType(hitsp::AssessmentAndPlanSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getHistoryOfPresentIllness" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//HistoryOfPresentIllness">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))->asSequence()->first().oclAsType(hitsp::HistoryOfPresentIllness)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))->asSequence()->first().oclAsType(hitsp::HistoryOfPresentIllness)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))->asSequence()->any(true).oclAsType(hitsp::HistoryOfPresentIllness)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getPhysicalExamSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//PhysicalExamSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PhysicalExamSection))->asSequence()->first().oclAsType(hitsp::PhysicalExamSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PhysicalExamSection))->asSequence()->first().oclAsType(hitsp::PhysicalExamSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PhysicalExamSection))->asSequence()->any(true).oclAsType(hitsp::PhysicalExamSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getReasonForReferralSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ReasonForReferralSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReasonForReferralSection))->asSequence()->first().oclAsType(hitsp::ReasonForReferralSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReasonForReferralSection))->asSequence()->first().oclAsType(hitsp::ReasonForReferralSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReasonForReferralSection))->asSequence()->any(true).oclAsType(hitsp::ReasonForReferralSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getEncountersSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//EncountersSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->first().oclAsType(hitsp::EncountersSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->first().oclAsType(hitsp::EncountersSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->any(true).oclAsType(hitsp::EncountersSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getFamilyHistorySection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//FamilyHistorySection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->first().oclAsType(hitsp::FamilyHistorySection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->first().oclAsType(hitsp::FamilyHistorySection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->any(true).oclAsType(hitsp::FamilyHistorySection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getFunctionalStatusSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//FunctionalStatusSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->first().oclAsType(hitsp::FunctionalStatusSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->first().oclAsType(hitsp::FunctionalStatusSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->any(true).oclAsType(hitsp::FunctionalStatusSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getImmunizationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ImmunizationsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->any(true).oclAsType(hitsp::ImmunizationsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getMedicalEquipmentSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//MedicalEquipmentSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->first().oclAsType(hitsp::MedicalEquipmentSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->first().oclAsType(hitsp::MedicalEquipmentSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->any(true).oclAsType(hitsp::MedicalEquipmentSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getPlanOfCareSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//PlanOfCareSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->any(true).oclAsType(hitsp::PlanOfCareSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getSocialHistorySection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//SocialHistorySection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->first().oclAsType(hitsp::SocialHistorySection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->first().oclAsType(hitsp::SocialHistorySection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->any(true).oclAsType(hitsp::SocialHistorySection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getVitalSignsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//VitalSignsSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->any(true).oclAsType(hitsp::VitalSignsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getChiefComplaintSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//ChiefComplaintSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))->asSequence()->first().oclAsType(hitsp::ChiefComplaintSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))->asSequence()->first().oclAsType(hitsp::ChiefComplaintSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))->asSequence()->any(true).oclAsType(hitsp::ChiefComplaintSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getGeneralStatusSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//GeneralStatusSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::GeneralStatusSection))->asSequence()->first().oclAsType(cdt::GeneralStatusSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::GeneralStatusSection))->asSequence()->first().oclAsType(cdt::GeneralStatusSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::GeneralStatusSection))->asSequence()->any(true).oclAsType(cdt::GeneralStatusSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getHistoryOfPastIllnessSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//HistoryOfPastIllnessSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPastIllnessSection))->asSequence()->first().oclAsType(hitsp::HistoryOfPastIllnessSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPastIllnessSection))->asSequence()->first().oclAsType(hitsp::HistoryOfPastIllnessSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPastIllnessSection))->asSequence()->any(true).oclAsType(hitsp::HistoryOfPastIllnessSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getPayersSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.ecore#//PayersSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->first().oclAsType(hitsp::PayersSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->first().oclAsType(hitsp::PayersSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->any(true).oclAsType(hitsp::PayersSection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>

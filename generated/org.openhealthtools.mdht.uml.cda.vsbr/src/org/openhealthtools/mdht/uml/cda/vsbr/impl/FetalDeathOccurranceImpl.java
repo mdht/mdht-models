@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -35,103 +31,103 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.FetalDeathOccurranceOper
  */
 public class FetalDeathOccurranceImpl extends ObservationImpl implements FetalDeathOccurrance {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected FetalDeathOccurranceImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.FETAL_DEATH_OCCURRANCE;
-  }
+		return VsbrPackage.Literals.FETAL_DEATH_OCCURRANCE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateFetalDeathOccurranceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FetalDeathOccurranceOperations.validateFetalDeathOccurranceTemplateId(this, diagnostics, context);
-  }
+		return FetalDeathOccurranceOperations.validateFetalDeathOccurranceTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateFetalDeathOccurranceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FetalDeathOccurranceOperations.validateFetalDeathOccurranceClassCode(this, diagnostics, context);
-  }
+		return FetalDeathOccurranceOperations.validateFetalDeathOccurranceClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateFetalDeathOccurranceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FetalDeathOccurranceOperations.validateFetalDeathOccurranceMoodCode(this, diagnostics, context);
-  }
+		return FetalDeathOccurranceOperations.validateFetalDeathOccurranceMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateFetalDeathOccurranceCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FetalDeathOccurranceOperations.validateFetalDeathOccurranceCodeP(this, diagnostics, context);
-  }
+		return FetalDeathOccurranceOperations.validateFetalDeathOccurranceCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateFetalDeathOccurranceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FetalDeathOccurranceOperations.validateFetalDeathOccurranceCode(this, diagnostics, context);
-  }
+		return FetalDeathOccurranceOperations.validateFetalDeathOccurranceCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateFetalDeathOccurranceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FetalDeathOccurranceOperations.validateFetalDeathOccurranceValue(this, diagnostics, context);
-  }
+		return FetalDeathOccurranceOperations.validateFetalDeathOccurranceValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateFetalDeathOccurranceValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FetalDeathOccurranceOperations.validateFetalDeathOccurranceValueP(this, diagnostics, context);
-  }
+		return FetalDeathOccurranceOperations.validateFetalDeathOccurranceValueP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public FetalDeathOccurrance init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public FetalDeathOccurrance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // FetalDeathOccurranceImpl

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -35,121 +31,121 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.PregnancyRiskFactorOpera
  */
 public class PregnancyRiskFactorImpl extends ObservationImpl implements PregnancyRiskFactor {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PregnancyRiskFactorImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.PREGNANCY_RISK_FACTOR;
-  }
+		return VsbrPackage.Literals.PREGNANCY_RISK_FACTOR;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyRiskFactorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyRiskFactorOperations.validatePregnancyRiskFactorTemplateId(this, diagnostics, context);
-  }
+		return PregnancyRiskFactorOperations.validatePregnancyRiskFactorTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyRiskFactorClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyRiskFactorOperations.validatePregnancyRiskFactorClassCode(this, diagnostics, context);
-  }
+		return PregnancyRiskFactorOperations.validatePregnancyRiskFactorClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyRiskFactorMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyRiskFactorOperations.validatePregnancyRiskFactorMoodCode(this, diagnostics, context);
-  }
+		return PregnancyRiskFactorOperations.validatePregnancyRiskFactorMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyRiskFactorCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyRiskFactorOperations.validatePregnancyRiskFactorCodeP(this, diagnostics, context);
-  }
+		return PregnancyRiskFactorOperations.validatePregnancyRiskFactorCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyRiskFactorCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyRiskFactorOperations.validatePregnancyRiskFactorCode(this, diagnostics, context);
-  }
+		return PregnancyRiskFactorOperations.validatePregnancyRiskFactorCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyRiskFactorCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyRiskFactorOperations.validatePregnancyRiskFactorCodeVS(this, diagnostics, context);
-  }
+		return PregnancyRiskFactorOperations.validatePregnancyRiskFactorCodeVS(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyRiskFactorValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyRiskFactorOperations.validatePregnancyRiskFactorValue(this, diagnostics, context);
-  }
+		return PregnancyRiskFactorOperations.validatePregnancyRiskFactorValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyRiskFactorValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyRiskFactorOperations.validatePregnancyRiskFactorValueP(this, diagnostics, context);
-  }
+		return PregnancyRiskFactorOperations.validatePregnancyRiskFactorValueP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyRiskFactorEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyRiskFactorOperations.validatePregnancyRiskFactorEntryRelationship(this, diagnostics, context);
-  }
+		return PregnancyRiskFactorOperations.validatePregnancyRiskFactorEntryRelationship(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PregnancyRiskFactor init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PregnancyRiskFactor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PregnancyRiskFactorImpl

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -35,132 +31,134 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.CongenitalAnomalyOperati
  */
 public class CongenitalAnomalyImpl extends ObservationImpl implements CongenitalAnomaly {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected CongenitalAnomalyImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.CONGENITAL_ANOMALY;
-  }
+		return VsbrPackage.Literals.CONGENITAL_ANOMALY;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCongenitalAnomalyTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CongenitalAnomalyOperations.validateCongenitalAnomalyTemplateId(this, diagnostics, context);
-  }
+		return CongenitalAnomalyOperations.validateCongenitalAnomalyTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCongenitalAnomalyClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CongenitalAnomalyOperations.validateCongenitalAnomalyClassCode(this, diagnostics, context);
-  }
+		return CongenitalAnomalyOperations.validateCongenitalAnomalyClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCongenitalAnomalyMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CongenitalAnomalyOperations.validateCongenitalAnomalyMoodCode(this, diagnostics, context);
-  }
+		return CongenitalAnomalyOperations.validateCongenitalAnomalyMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCongenitalAnomalyCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CongenitalAnomalyOperations.validateCongenitalAnomalyCodeP(this, diagnostics, context);
-  }
+		return CongenitalAnomalyOperations.validateCongenitalAnomalyCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCongenitalAnomalyCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CongenitalAnomalyOperations.validateCongenitalAnomalyCode(this, diagnostics, context);
-  }
+		return CongenitalAnomalyOperations.validateCongenitalAnomalyCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCongenitalAnomalyCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CongenitalAnomalyOperations.validateCongenitalAnomalyCodeVS(this, diagnostics, context);
-  }
+		return CongenitalAnomalyOperations.validateCongenitalAnomalyCodeVS(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCongenitalAnomalyValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CongenitalAnomalyOperations.validateCongenitalAnomalyValue(this, diagnostics, context);
-  }
+		return CongenitalAnomalyOperations.validateCongenitalAnomalyValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCongenitalAnomalyValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CongenitalAnomalyOperations.validateCongenitalAnomalyValueP(this, diagnostics, context);
-  }
+		return CongenitalAnomalyOperations.validateCongenitalAnomalyValueP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCongenitalAnomalyDownConfirmationAssociation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CongenitalAnomalyOperations.validateCongenitalAnomalyDownConfirmationAssociation(this, diagnostics, context);
-  }
+		return CongenitalAnomalyOperations.validateCongenitalAnomalyDownConfirmationAssociation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateCongenitalAnomalyChromosomalDisorderConfirmationAssociation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CongenitalAnomalyOperations.validateCongenitalAnomalyChromosomalDisorderConfirmationAssociation(this, diagnostics, context);
-  }
+		return CongenitalAnomalyOperations.validateCongenitalAnomalyChromosomalDisorderConfirmationAssociation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public CongenitalAnomaly init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CongenitalAnomaly init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CongenitalAnomalyImpl

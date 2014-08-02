@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.impl;
 
@@ -24,7 +20,6 @@ import org.openhealthtools.mdht.uml.cda.vsbr.EstimateofGestation;
 import org.openhealthtools.mdht.uml.cda.vsbr.LastMenstrualPeriodDate;
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofBirthsNowLiving;
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead;
-import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead;
 import org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome;
 import org.openhealthtools.mdht.uml.cda.vsbr.PriorPregnancyHistorySection;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
@@ -42,210 +37,222 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.PriorPregnancyHistorySec
  */
 public class PriorPregnancyHistorySectionImpl extends SectionImpl implements PriorPregnancyHistorySection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PriorPregnancyHistorySectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return VsbrPackage.Literals.PRIOR_PREGNANCY_HISTORY_SECTION;
-  }
+		return VsbrPackage.Literals.PRIOR_PREGNANCY_HISTORY_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionTemplateId(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionClassCode(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionClassCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionMoodCode(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionMoodCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionCode(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionCodeP(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionCodeP(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionText(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionText(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionDateofLastLiveBirth(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionDateofLastLiveBirth(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionDateofLastLiveBirth(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionLastMenstrualPeriodDate(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionLastMenstrualPeriodDate(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionLastMenstrualPeriodDate(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionNumberofBirthsStillLiving(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionNumberofBirthsStillLiving(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionNumberofBirthsStillLiving(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionNumberofLiveBirthsnowDead(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionNumberofLiveBirthsnowDead(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionNumberofLiveBirthsnowDead(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionOtherPregnancyOutcomes(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionOtherPregnancyOutcomes(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionOtherPregnancyOutcomes(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePriorPregnancyHistorySectionEstimateofGestation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionEstimateofGestation(this, diagnostics, context);
-  }
+		return PriorPregnancyHistorySectionOperations.validatePriorPregnancyHistorySectionEstimateofGestation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public DateofLastLiveBirth getDateofLastLiveBirth() {
-    return PriorPregnancyHistorySectionOperations.getDateofLastLiveBirth(this);
-  }
+		return PriorPregnancyHistorySectionOperations.getDateofLastLiveBirth(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public LastMenstrualPeriodDate getLastMenstrualPeriodDate() {
-    return PriorPregnancyHistorySectionOperations.getLastMenstrualPeriodDate(this);
-  }
+		return PriorPregnancyHistorySectionOperations.getLastMenstrualPeriodDate(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NumberofBirthsNowLiving getNumberofBirthsStillLiving() {
-    return PriorPregnancyHistorySectionOperations.getNumberofBirthsStillLiving(this);
-  }
+		return PriorPregnancyHistorySectionOperations.getNumberofBirthsStillLiving(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NumberofLiveBirthsNowDead getNumberofLiveBirthsnowDead() {
-    return PriorPregnancyHistorySectionOperations.getNumberofLiveBirthsnowDead(this);
-  }
+		return PriorPregnancyHistorySectionOperations.getNumberofLiveBirthsnowDead(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public OtherPregnancyOutcome getOtherPregnancyOutcomes() {
-    return PriorPregnancyHistorySectionOperations.getOtherPregnancyOutcomes(this);
-  }
+		return PriorPregnancyHistorySectionOperations.getOtherPregnancyOutcomes(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EstimateofGestation getEstimateofGestation() {
-    return PriorPregnancyHistorySectionOperations.getEstimateofGestation(this);
-  }
+		return PriorPregnancyHistorySectionOperations.getEstimateofGestation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PriorPregnancyHistorySection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PriorPregnancyHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PriorPregnancyHistorySectionImpl

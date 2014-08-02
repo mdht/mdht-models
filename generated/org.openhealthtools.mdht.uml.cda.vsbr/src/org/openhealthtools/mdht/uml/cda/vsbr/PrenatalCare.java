@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr;
 
@@ -32,112 +28,112 @@ import org.openhealthtools.mdht.uml.cda.Act;
  */
 public interface PrenatalCare extends Act {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.42\')'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.42\')'"
+	 * @generated
+	 */
 	boolean validatePrenatalCareTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.classCode=vocab::x_ActClassDocumentEntryAct::ACT'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.classCode=vocab::x_ActClassDocumentEntryAct::ACT'"
+	 * @generated
+	 */
 	boolean validatePrenatalCareClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode=vocab::x_DocumentActMood::EVN'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode=vocab::x_DocumentActMood::EVN'"
+	 * @generated
+	 */
 	boolean validatePrenatalCareMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.negationInd.oclIsUndefined()'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.negationInd.oclIsUndefined()'"
+	 * @generated
+	 */
 	boolean validatePrenatalCareNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+	 * @generated
+	 */
 	boolean validatePrenatalCareCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'73776-7\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'73776-7\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @generated
+	 */
 	boolean validatePrenatalCareCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
+	 * @generated
+	 */
 	boolean validatePrenatalCareEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+	 * @generated
+	 */
 	boolean validatePrenatalCareEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PrenatalCare init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PrenatalCare init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrenatalCare
