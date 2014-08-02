@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getVitalSignsOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizerTemplateId VitalSignsOrganizerInformationSource' templateId.root='2.16.840.1.113883.10.20.1.35'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId VitalSignsOrganizerInformationSource' templateId.root='2.16.840.1.113883.10.20.1.35'"
  * @generated
  */
 public interface VitalSignsOrganizer extends ResultOrganizer {

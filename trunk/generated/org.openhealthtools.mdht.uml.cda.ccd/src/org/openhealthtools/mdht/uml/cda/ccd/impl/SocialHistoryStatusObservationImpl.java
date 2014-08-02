@@ -52,12 +52,12 @@ public class SocialHistoryStatusObservationImpl extends StatusObservationImpl im
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationValue(
-			this, diagnostics, context);
+	@Override
+	public boolean validateStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistoryStatusObservationOperations.validateStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -66,8 +66,8 @@ public class SocialHistoryStatusObservationImpl extends StatusObservationImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateStatusObservationTemplateId(this, diagnostics, context);
+	public boolean validateStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistoryStatusObservationOperations.validateStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**

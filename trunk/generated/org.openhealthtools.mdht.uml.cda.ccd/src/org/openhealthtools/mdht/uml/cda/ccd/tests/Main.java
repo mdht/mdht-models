@@ -86,8 +86,7 @@ public class Main {
 
 		System.out.println("\n***** Validate sample CCD *****");
 		ValidationResult result = new ValidationResult();
-		@SuppressWarnings("unused")
-		ClinicalDocument sampleCCD = CDAUtil.load(new FileInputStream("samples/SampleCCDDocument.xml"), result);
+		CDAUtil.load(new FileInputStream("samples/SampleCCDDocument.xml"), result);
 		for (Diagnostic diagnostic : result.getErrorDiagnostics()) {
 			System.out.println("ERROR: " + diagnostic.getMessage());
 		}

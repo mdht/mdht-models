@@ -106,7 +106,7 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 	 */
 	public static CCDFactory init() {
 		try {
-			CCDFactory theCCDFactory = (CCDFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
+			CCDFactory theCCDFactory = (CCDFactory) EPackage.Registry.INSTANCE.getEFactory(CCDPackage.eNS_URI);
 			if (theCCDFactory != null) {
 				return theCCDFactory;
 			}
