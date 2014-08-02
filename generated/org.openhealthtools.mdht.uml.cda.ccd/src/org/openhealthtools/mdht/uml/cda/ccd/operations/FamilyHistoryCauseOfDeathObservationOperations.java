@@ -159,12 +159,7 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
 					CCDValidator.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FamilyHistoryObservationTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									familyHistoryCauseOfDeathObservation, context) }),
+					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationTemplateId"),
 					new Object[] { familyHistoryCauseOfDeathObservation }));
 			}
 

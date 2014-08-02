@@ -159,12 +159,7 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
 					CCDValidator.PROBLEM_HEALTH_STATUS_OBSERVATION__STATUS_OBSERVATION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"StatusObservationTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									problemHealthStatusObservation, context) }),
+					CCDPlugin.INSTANCE.getString("StatusObservationTemplateId"),
 					new Object[] { problemHealthStatusObservation }));
 			}
 

@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getAlertStatusObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AlertStatusObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.1.39'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='StatusObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.1.39'"
  * @generated
  */
 public interface AlertStatusObservation extends StatusObservation {
