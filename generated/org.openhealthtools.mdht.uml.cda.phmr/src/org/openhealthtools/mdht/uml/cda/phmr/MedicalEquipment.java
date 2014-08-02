@@ -39,7 +39,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicalEquipmentSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getMedicalEquipment()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentTemplateId MedicalEquipmentText' templateId.root='2.16.840.1.113883.10.20.9.1' constraints.validation.warning='MedicalEquipmentDeviceDefinitionOrganizer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentText' templateId.root='2.16.840.1.113883.10.20.9.1' constraints.validation.warning='MedicalEquipmentDeviceDefinitionOrganizer'"
  * @generated
  */
 public interface MedicalEquipment extends MedicalEquipmentSection {
@@ -62,7 +62,7 @@ public interface MedicalEquipment extends MedicalEquipmentSection {
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(phmr::DeviceDefinitionOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(phmr::DeviceDefinitionOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
    * @generated
    */
 	boolean validateMedicalEquipmentDeviceDefinitionOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -81,6 +81,7 @@ public interface MedicalEquipment extends MedicalEquipmentSection {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public MedicalEquipment init();
 
   /**
@@ -88,5 +89,6 @@ public interface MedicalEquipment extends MedicalEquipmentSection {
      * <!-- end-user-doc -->
      * @generated
      */
-    public MedicalEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public MedicalEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicalEquipment

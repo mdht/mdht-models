@@ -39,8 +39,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.WaveformSeriesObservation;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ResultOrganizerOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Organizer</b></em>'.
@@ -72,27 +70,32 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.im
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validatePhmrResultOrganizerNumericObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultOrganizerOperations.validatePhmrResultOrganizerNumericObservation(this, diagnostics, context);
+  @Override
+public boolean validatePHMRResultOrganizerNumericObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ResultOrganizerOperations.validatePHMRResultOrganizerNumericObservation(this, diagnostics, context);
   }
 
-	/**
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+public boolean validatePHMRResultOrganizerWaveformSeriesObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ResultOrganizerOperations.validatePHMRResultOrganizerWaveformSeriesObservation(this, diagnostics, context);
+  }
+
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validatePhmrResultOrganizerWaveformSeriesObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultOrganizerOperations.validatePhmrResultOrganizerWaveformSeriesObservation(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
+	@Override
 	public EList<NumericObservation> getNumericObservations() {
     return ResultOrganizerOperations.getNumericObservations(this);
   }
@@ -102,6 +105,7 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.im
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public EList<WaveformSeriesObservation> getWaveformSeriesObservations() {
     return ResultOrganizerOperations.getWaveformSeriesObservations(this);
   }
@@ -121,6 +125,7 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.im
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ResultOrganizer init() {
       return Initializer.Util.init(this);
   }
@@ -130,7 +135,8 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.im
      * <!-- end-user-doc -->
      * @generated
      */
-    public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

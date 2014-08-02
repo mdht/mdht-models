@@ -60,6 +60,7 @@ public class CognitiveStatusResultOrganizerImpl extends org.openhealthtools.mdht
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ResultObservation> getMu2consolResultObservations() {
 		return ResultOrganizerOperations.getMu2consolResultObservations(this);
 	}
@@ -89,6 +90,7 @@ public class CognitiveStatusResultOrganizerImpl extends org.openhealthtools.mdht
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CognitiveStatusResultObservation> getMu2consolCognitiveStatusResultObservations() {
 		return CognitiveStatusResultOrganizerOperations.getMu2consolCognitiveStatusResultObservations(this);
 	}

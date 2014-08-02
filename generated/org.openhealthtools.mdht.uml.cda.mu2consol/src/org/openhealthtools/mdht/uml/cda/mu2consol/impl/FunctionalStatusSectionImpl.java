@@ -61,6 +61,7 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CognitiveStatusResultObservation> getMu2consolCognitiveStatusResultObservations() {
 		return FunctionalStatusSectionOperations.getMu2consolCognitiveStatusResultObservations(this);
 	}
@@ -70,6 +71,7 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CognitiveStatusResultOrganizer> getMu2consolCognitiveStatusResultOrganizers() {
 		return FunctionalStatusSectionOperations.getMu2consolCognitiveStatusResultOrganizers(this);
 	}
@@ -79,6 +81,7 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FunctionalStatusResultObservation> getMu2consolFunctionalStatusResultObservations() {
 		return FunctionalStatusSectionOperations.getMu2consolFunctionalStatusResultObservations(this);
 	}
@@ -88,6 +91,7 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FunctionalStatusResultOrganizer> getMu2consolFunctionalStatusResultOrganizers() {
 		return FunctionalStatusSectionOperations.getMu2consolFunctionalStatusResultOrganizers(this);
 	}

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="emspcr"
-    nsURI="http://www.openhealthtools.org/mdht/uml/cda/emspcr" nsPrefix="emspcr">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="emspcr" nsURI="http://www.openhealthtools.org/mdht/uml/cda/emspcr"
+    nsPrefix="emspcr">
   <eAnnotations source="http://www.openhealthtools.org/mdht/uml">
     <details key="initializers" value="org.openhealthtools.mdht.uml.cda.emspcr"/>
   </eAnnotations>
@@ -13034,7 +13033,7 @@
       <details key="code.code" value="2339-0"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
-      <details key="code.displayName" value="Glucose [Mass/​volume] in Blood"/>
+      <details key="code.displayName" value="Glucose [Mass/???volume] in Blood"/>
       <details key="constraints.validation.dependOn.BloodGlucoseCode" value="BloodGlucoseCodeP"/>
       <details key="constraints.validation.info" value="BloodGlucoseEffectiveTime"/>
     </eAnnotations>
@@ -13161,7 +13160,7 @@
       <details key="code.code" value="20563-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
-      <details key="code.displayName" value="Carboxyhemoglobin/​Hemoglobin.total in Blood"/>
+      <details key="code.displayName" value="Carboxyhemoglobin/???Hemoglobin.total in Blood"/>
       <details key="constraints.validation.dependOn.CarbonMonoxideCode" value="CarbonMonoxideCodeP"/>
       <details key="constraints.validation.info" value="CarbonMonoxideEffectiveTime"/>
     </eAnnotations>

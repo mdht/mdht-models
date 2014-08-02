@@ -54,6 +54,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(this, diagnostics, context);
 	}
@@ -63,6 +64,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateTransitionOfCareAmbulatorySummaryReasonForReferral(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryReasonForReferral(this, diagnostics, context);
 	}
@@ -72,6 +74,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(this, diagnostics, context);
 	}
@@ -81,6 +84,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateTransitionOfCareAmbulatorySummaryMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryMedicationsSection(this, diagnostics, context);
 	}
@@ -90,6 +94,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsSection getMedicationsSection() {
 		return TransitionOfCareAmbulatorySummaryOperations.getMedicationsSection(this);
 	}

@@ -59,6 +59,7 @@ public class OphthalmicMedicationsSectionImpl extends MedicationsSectionImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOphthalmicMedicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OphthalmicMedicationsSectionOperations.validateOphthalmicMedicationsSectionCode(this, diagnostics, context);
 	}
@@ -68,6 +69,7 @@ public class OphthalmicMedicationsSectionImpl extends MedicationsSectionImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOphthalmicMedicationsSectionMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OphthalmicMedicationsSectionOperations.validateOphthalmicMedicationsSectionMedication(this, diagnostics, context);
 	}
@@ -77,21 +79,23 @@ public class OphthalmicMedicationsSectionImpl extends MedicationsSectionImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Medication getEyeMedication() {
 		return OphthalmicMedicationsSectionOperations.getEyeMedication(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OphthalmicMedicationsSectionOperations.validateMedicationsSectionTemplateId(this, diagnostics, context);
+  @Override
+  public boolean validateIHEMedicationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+		return OphthalmicMedicationsSectionOperations.validateIHEMedicationsSectionTemplateId(this, diagnostics, context);
 	}
 
-	/**
+  /**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

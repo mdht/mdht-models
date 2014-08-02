@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.DeviceAccuracyObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Device Accuracy Observation</b></em>'.
@@ -74,6 +72,7 @@ public class DeviceAccuracyObservationImpl extends ObservationImpl implements De
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceAccuracyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationTemplateId(this, diagnostics, context);
   }
@@ -83,6 +82,7 @@ public class DeviceAccuracyObservationImpl extends ObservationImpl implements De
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceAccuracyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationClassCode(this, diagnostics, context);
   }
@@ -92,7 +92,8 @@ public class DeviceAccuracyObservationImpl extends ObservationImpl implements De
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeviceAccuracyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validateDeviceAccuracyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCodeP(this, diagnostics, context);
   }
@@ -102,6 +103,7 @@ public class DeviceAccuracyObservationImpl extends ObservationImpl implements De
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceAccuracyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCode(this, diagnostics, context);
   }
@@ -111,6 +113,7 @@ public class DeviceAccuracyObservationImpl extends ObservationImpl implements De
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceAccuracyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationMoodCode(this, diagnostics, context);
   }
@@ -120,6 +123,7 @@ public class DeviceAccuracyObservationImpl extends ObservationImpl implements De
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceAccuracyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationValue(this, diagnostics, context);
   }
@@ -129,6 +133,7 @@ public class DeviceAccuracyObservationImpl extends ObservationImpl implements De
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public DeviceAccuracyObservation init() {
       return Initializer.Util.init(this);
   }
@@ -138,7 +143,8 @@ public class DeviceAccuracyObservationImpl extends ObservationImpl implements De
      * <!-- end-user-doc -->
      * @generated
      */
-    public DeviceAccuracyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public DeviceAccuracyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

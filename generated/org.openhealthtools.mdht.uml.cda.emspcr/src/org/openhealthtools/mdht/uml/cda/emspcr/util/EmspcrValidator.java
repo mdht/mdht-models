@@ -8724,6 +8724,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(patientCareReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(patientCareReport, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(patientCareReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -10339,6 +10342,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(emsCurrentMedicationSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsCurrentMedicationSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsCurrentMedicationSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -10491,6 +10497,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(currentlyOnMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(currentlyOnMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(currentlyOnMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -10583,6 +10592,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(patientOnAnticoagulants, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(patientOnAnticoagulants, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(patientOnAnticoagulants, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -10673,6 +10685,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(currentMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(currentMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(currentMedication, diagnostics, context);
@@ -10816,6 +10831,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(emsCardiacArrestEventSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsCardiacArrestEventSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsCardiacArrestEventSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -10933,6 +10951,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(cardiacArrest, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(cardiacArrest, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(cardiacArrest, diagnostics, context);
@@ -11155,6 +11176,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(emsAdvanceDirectivesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsAdvanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsAdvanceDirectivesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -11274,6 +11298,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(advanceDirectiveObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(advanceDirectiveObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(advanceDirectiveObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -11386,6 +11413,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				emsAllergiesAndAdverseReactionsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
@@ -11530,6 +11561,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(nonDrugAllergyOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(nonDrugAllergyOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(nonDrugAllergyOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -11605,6 +11639,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(existenceOfNonDrugAllergy, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(existenceOfNonDrugAllergy, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(existenceOfNonDrugAllergy, diagnostics, context);
@@ -11703,6 +11740,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(nonDrugAllergy, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(nonDrugAllergy, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(nonDrugAllergy, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -11789,6 +11829,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsPastMedicalHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsPastMedicalHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsPastMedicalHistorySection, diagnostics, context);
@@ -11942,6 +11985,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(existenceOfHistoryOfCondition, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(existenceOfHistoryOfCondition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(existenceOfHistoryOfCondition, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -12036,6 +12082,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(historyOfCondition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(historyOfCondition, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(historyOfCondition, diagnostics, context);
@@ -12158,6 +12207,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsSocialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsSocialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsSocialHistorySection, diagnostics, context);
@@ -12303,6 +12355,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(existenceOfDrugUseIndication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(existenceOfDrugUseIndication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(existenceOfDrugUseIndication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -12415,6 +12470,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(drugUseIndication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(drugUseIndication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(drugUseIndication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -12503,6 +12561,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsPhysicalAssessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsPhysicalAssessmentSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsPhysicalAssessmentSection, diagnostics, context);
@@ -12720,6 +12781,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(physicalAssessmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(physicalAssessmentOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(physicalAssessmentOrganizer, diagnostics, context);
@@ -12994,6 +13058,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(skinAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(skinAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(skinAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -13108,6 +13175,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(patientPregnancy, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(patientPregnancy, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(patientPregnancy, diagnostics, context);
@@ -13227,6 +13297,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(lastOralIntake, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(lastOralIntake, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(lastOralIntake, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -13326,6 +13399,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(patientAge, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(patientAge, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(patientAge, diagnostics, context);
@@ -13428,6 +13504,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(thrombolyticContraindications, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(thrombolyticContraindications, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(thrombolyticContraindications, diagnostics, context);
@@ -13540,6 +13619,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(barriersToPatientCare, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(barriersToPatientCare, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(barriersToPatientCare, diagnostics, context);
@@ -13663,6 +13745,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsMedicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				emsMedicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsMedicationsAdministeredSection, diagnostics, context);
@@ -13801,6 +13887,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationAdministered, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationAdministered, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationAdministered, diagnostics, context);
@@ -14115,6 +14204,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(emsProceduresPerformedSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsProceduresPerformedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsProceduresPerformedSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -14248,6 +14340,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedure, diagnostics, context);
@@ -14529,6 +14624,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(emsPatientCareNarrativeSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsPatientCareNarrativeSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsPatientCareNarrativeSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -14647,6 +14745,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsSceneSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsSceneSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsSceneSection, diagnostics, context);
@@ -14818,6 +14919,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(firstUnitIndicator, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(firstUnitIndicator, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(firstUnitIndicator, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -14925,6 +15029,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(firstUnitOnScene, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(firstUnitOnScene, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(firstUnitOnScene, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -15026,6 +15133,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(scenePatientCount, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(scenePatientCount, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(scenePatientCount, diagnostics, context);
@@ -15130,6 +15240,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(massCasualtyIndicator, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(massCasualtyIndicator, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(massCasualtyIndicator, diagnostics, context);
@@ -15239,6 +15352,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(locationTypeObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(locationTypeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(locationTypeObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -15314,6 +15430,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsDispatchSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsDispatchSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsDispatchSection, diagnostics, context);
@@ -15443,6 +15562,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emergencyMedicalDispatchObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				emergencyMedicalDispatchObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emergencyMedicalDispatchObservation, diagnostics, context);
@@ -15578,6 +15701,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(complaintReportedByDispatch, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(complaintReportedByDispatch, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(complaintReportedByDispatch, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -15704,6 +15830,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsDispositionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsDispositionSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsDispositionSection, diagnostics, context);
@@ -15928,6 +16057,10 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(numberOfPatientsTransportedObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				numberOfPatientsTransportedObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(numberOfPatientsTransportedObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -16044,6 +16177,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(incidentDispositionObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(incidentDispositionObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(incidentDispositionObservation, diagnostics, context);
@@ -16174,6 +16310,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(transportModeObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(transportModeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(transportModeObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -16294,6 +16433,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(transportMethodObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(transportMethodObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(transportMethodObservation, diagnostics, context);
@@ -16424,6 +16566,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(reasonForChoosingDestinationObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				reasonForChoosingDestinationObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reasonForChoosingDestinationObservation, diagnostics, context);
@@ -16561,6 +16707,10 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(prearrivalActivationObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				prearrivalActivationObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(prearrivalActivationObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -16691,6 +16841,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(
+				patientConditionChangeAtDestinationObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
 				patientConditionChangeAtDestinationObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -16827,6 +16981,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsPersonnelAdverseEventSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				emsPersonnelAdverseEventSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsPersonnelAdverseEventSection, diagnostics, context);
@@ -16983,6 +17141,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(adverseEventIndicator, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(adverseEventIndicator, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(adverseEventIndicator, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -17088,6 +17249,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(adverseEventTypeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(adverseEventTypeObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(adverseEventTypeObservation, diagnostics, context);
@@ -17218,6 +17382,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(emsProtocolSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsProtocolSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsProtocolSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -17346,6 +17513,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(protocolObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(protocolObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(protocolObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -17466,6 +17636,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(candidatePatientRegistryType, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(candidatePatientRegistryType, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(candidatePatientRegistryType, diagnostics, context);
@@ -17594,6 +17767,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsResponseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsResponseSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsResponseSection, diagnostics, context);
@@ -17769,6 +17945,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(delayOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(delayOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(delayOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -17890,6 +18069,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(dispatchLocationOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dispatchLocationOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -17988,6 +18170,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(responseOdometerReadingOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				responseOdometerReadingOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(responseOdometerReadingOrganizer, diagnostics, context);
@@ -18104,6 +18290,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(responseModeToScene, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(responseModeToScene, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(responseModeToScene, diagnostics, context);
@@ -18226,6 +18415,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsSituationSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsSituationSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsSituationSection, diagnostics, context);
@@ -18445,6 +18637,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(complaint, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(complaint, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(complaint, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -18631,6 +18826,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(possibleInjury, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(possibleInjury, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(possibleInjury, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -18731,6 +18929,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(providerPrimaryImpression, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(providerPrimaryImpression, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(providerPrimaryImpression, diagnostics, context);
@@ -18861,6 +19062,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(primarySymptom, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(primarySymptom, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(primarySymptom, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -18977,6 +19181,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(otherSymptoms, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(otherSymptoms, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(otherSymptoms, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -19091,6 +19298,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(providerSecondaryImpressions, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(providerSecondaryImpressions, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(providerSecondaryImpressions, diagnostics, context);
@@ -19221,6 +19431,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(initialPatientAcuity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(initialPatientAcuity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(initialPatientAcuity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -19341,6 +19554,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(timesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(timesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(timesSection, diagnostics, context);
@@ -19563,6 +19779,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(callTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(callTime, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(callTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -19663,6 +19882,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(unitNotifiedTime, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(unitNotifiedTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(unitNotifiedTime, diagnostics, context);
@@ -19768,6 +19990,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(unitEnRouteTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(unitEnRouteTime, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(unitEnRouteTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -19870,6 +20095,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(unitOnSceneTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(unitOnSceneTime, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(unitOnSceneTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -19970,6 +20198,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(unitAtPatientTime, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(unitAtPatientTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(unitAtPatientTime, diagnostics, context);
@@ -20076,6 +20307,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(unitLeftSceneTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(unitLeftSceneTime, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(unitLeftSceneTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -20179,6 +20413,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(patientArrivedAtDestinationTime, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				patientArrivedAtDestinationTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(patientArrivedAtDestinationTime, diagnostics, context);
@@ -20293,6 +20531,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(unitBackInServiceTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(unitBackInServiceTime, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(unitBackInServiceTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -20400,6 +20641,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(dispatchNotifiedTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchNotifiedTime, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dispatchNotifiedTime, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -20505,6 +20749,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsVitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsVitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsVitalSignsSection, diagnostics, context);
@@ -20633,6 +20880,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(vitalSignsOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(vitalSignsOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(vitalSignsOrganizer, diagnostics, context);
@@ -20816,6 +21066,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(priorAidVitals, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(priorAidVitals, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(priorAidVitals, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -20902,6 +21155,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(additionalVitalSignsOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(additionalVitalSignsOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(additionalVitalSignsOrganizer, diagnostics, context);
@@ -21119,6 +21375,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(strokeScore, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(strokeScore, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(strokeScore, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -21276,6 +21535,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(painScore, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(painScore, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(painScore, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -21362,6 +21624,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(levelOfResponsiveness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(levelOfResponsiveness, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(levelOfResponsiveness, diagnostics, context);
@@ -21501,6 +21766,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(bloodGlucose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(bloodGlucose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(bloodGlucose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -21615,6 +21883,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(carbonMonoxide, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(carbonMonoxide, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(carbonMonoxide, diagnostics, context);
@@ -21733,6 +22004,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(carbonDioxide, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(carbonDioxide, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(carbonDioxide, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -21847,6 +22121,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(cardiacRhythm, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(cardiacRhythm, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(cardiacRhythm, diagnostics, context);
@@ -22021,6 +22298,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(glasgowComaScoreOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowComaScoreOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(glasgowComaScoreOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -22164,6 +22444,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(glasgowEye, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowEye, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(glasgowEye, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -22266,6 +22549,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(glasgowMotor, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowMotor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(glasgowMotor, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -22366,6 +22652,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(glasgowQualifier, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowQualifier, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(glasgowQualifier, diagnostics, context);
@@ -22485,6 +22774,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(glasgowTotal, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowTotal, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(glasgowTotal, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -22585,6 +22877,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(glasgowVerbal, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowVerbal, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(glasgowVerbal, diagnostics, context);
@@ -22688,6 +22983,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				emsInjuryIncidentDescriptionSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsInjuryIncidentDescriptionSection, diagnostics, context);
@@ -22966,6 +23265,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(injuryCauseCategory, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(injuryCauseCategory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(injuryCauseCategory, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -23058,6 +23360,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(injuryMechanism, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(injuryMechanism, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(injuryMechanism, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -23144,6 +23449,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(traumaCenterCriteria, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(traumaCenterCriteria, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(traumaCenterCriteria, diagnostics, context);
@@ -23238,6 +23546,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(injuryRiskFactor, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(injuryRiskFactor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(injuryRiskFactor, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -23325,6 +23636,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(vehicleImpactArea, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(vehicleImpactArea, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(vehicleImpactArea, diagnostics, context);
@@ -23415,6 +23729,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(patientLocationInVehicle, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(patientLocationInVehicle, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(patientLocationInVehicle, diagnostics, context);
@@ -23508,6 +23825,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(vehicleOccupantSafetyEquipment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(vehicleOccupantSafetyEquipment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(vehicleOccupantSafetyEquipment, diagnostics, context);
@@ -23604,6 +23924,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(airbagDeploymentStatus, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(airbagDeploymentStatus, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(airbagDeploymentStatus, diagnostics, context);
@@ -23713,6 +24036,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(heightOfFall, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(heightOfFall, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(heightOfFall, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -23801,6 +24127,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(disasterType, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(disasterType, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(disasterType, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -23887,6 +24216,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsBillingSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsBillingSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsBillingSection, diagnostics, context);
@@ -24014,6 +24346,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(billingCondition, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(billingCondition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(billingCondition, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -24129,6 +24464,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(levelOfServiceObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(levelOfServiceObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(levelOfServiceObservation, diagnostics, context);
@@ -24259,6 +24597,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(emsDrugAllergy, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsDrugAllergy, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsDrugAllergy, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -24318,6 +24659,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(existenceOfDrugAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				existenceOfDrugAllergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(existenceOfDrugAllergyObservation, diagnostics, context);
@@ -24417,6 +24762,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(
+				medicationNotAdministeredReasonObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
 				medicationNotAdministeredReasonObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -24537,6 +24886,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicationResponseObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationResponseObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationResponseObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -24648,6 +25000,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(medicationComplicationObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				medicationComplicationObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationComplicationObservation, diagnostics, context);
@@ -24781,6 +25137,10 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(medicationPriorAdministrationObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				medicationPriorAdministrationObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(medicationPriorAdministrationObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -24898,6 +25258,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(patientBodyWeight, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(patientBodyWeight, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(patientBodyWeight, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -24987,6 +25350,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				lengthBasedPatientBodyWeightClass, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(lengthBasedPatientBodyWeightClass, diagnostics, context);
@@ -25119,6 +25486,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(faceAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(faceAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(faceAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -25249,6 +25619,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(headAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(headAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(headAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -25365,6 +25738,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(neckAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(neckAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(neckAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -25465,6 +25841,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(chestAndLungsAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(chestAndLungsAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(chestAndLungsAssessment, diagnostics, context);
@@ -25572,6 +25951,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(heartAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(heartAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(heartAssessment, diagnostics, context);
@@ -25705,6 +26087,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(abdomenAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(abdomenAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(abdomenAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -25824,6 +26209,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				pelvicAndGenitourinaryAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(pelvicAndGenitourinaryAssessment, diagnostics, context);
@@ -25953,6 +26342,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(backAndSpineAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(backAndSpineAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(backAndSpineAssessment, diagnostics, context);
@@ -26122,6 +26514,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(extremitiesAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(extremitiesAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(extremitiesAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -26272,6 +26667,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(eyeAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(eyeAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(eyeAssessment, diagnostics, context);
@@ -26432,6 +26830,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(mentalStatusAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(mentalStatusAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(mentalStatusAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -26539,6 +26940,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(cardiacArrestWithTiming, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(cardiacArrestWithTiming, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(cardiacArrestWithTiming, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -26631,6 +27035,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(cardiacArrestCause, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(cardiacArrestCause, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(cardiacArrestCause, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -26720,6 +27127,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(priorCPR, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(priorCPR, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(priorCPR, diagnostics, context);
@@ -26821,6 +27231,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(priorAEDUse, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(priorAEDUse, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(priorAEDUse, diagnostics, context);
@@ -26926,6 +27339,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(arrestRhythm, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(arrestRhythm, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(arrestRhythm, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -27013,6 +27429,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(returnOfSpontaneousCirculation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(returnOfSpontaneousCirculation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(returnOfSpontaneousCirculation, diagnostics, context);
@@ -27127,6 +27546,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(destinationRhythm, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(destinationRhythm, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(destinationRhythm, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -27216,6 +27638,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(abandonedProcedureReasonObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				abandonedProcedureReasonObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(abandonedProcedureReasonObservation, diagnostics, context);
@@ -27351,6 +27777,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(procedurePriorIndicator, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedurePriorIndicator, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedurePriorIndicator, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -27457,6 +27886,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedureNumberOfAttemptsObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				procedureNumberOfAttemptsObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureNumberOfAttemptsObservation, diagnostics, context);
@@ -27577,6 +28010,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(procedureSuccessfulObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureSuccessfulObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureSuccessfulObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -27688,6 +28124,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedureComplicationsObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				procedureComplicationsObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedureComplicationsObservation, diagnostics, context);
@@ -27802,6 +28242,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(procedurePatientResponseObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				procedurePatientResponseObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(procedurePatientResponseObservation, diagnostics, context);
@@ -27935,6 +28379,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(airwayConfirmationObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(airwayConfirmationObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(airwayConfirmationObservation, diagnostics, context);
@@ -28099,6 +28546,10 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(reasonProcedureNotAttemptedObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				reasonProcedureNotAttemptedObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(reasonProcedureNotAttemptedObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -28214,6 +28665,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(complaintType, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(complaintType, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(complaintType, diagnostics, context);
@@ -28332,6 +28786,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(complaintDuration, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(complaintDuration, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(complaintDuration, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -28434,6 +28891,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(complaintOrganSystem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(complaintOrganSystem, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(complaintOrganSystem, diagnostics, context);
@@ -28558,6 +29018,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(neurologicalAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(neurologicalAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(neurologicalAssessment, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -28678,6 +29141,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(systolicBloodPressure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(systolicBloodPressure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(systolicBloodPressure, diagnostics, context);
@@ -28845,6 +29311,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(diastolicBloodPressure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(diastolicBloodPressure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(diastolicBloodPressure, diagnostics, context);
@@ -29015,6 +29484,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(heartRate, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(heartRate, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(heartRate, diagnostics, context);
@@ -29197,6 +29669,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(respiratoryRate, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(respiratoryRate, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(respiratoryRate, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -29363,6 +29838,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(bodyTemperature, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(bodyTemperature, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(bodyTemperature, diagnostics, context);
@@ -29533,6 +30011,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(oxygenSaturation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(oxygenSaturation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(oxygenSaturation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -29620,6 +30101,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(protocolAgeCategory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(protocolAgeCategory, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(protocolAgeCategory, diagnostics, context);
@@ -29744,6 +30228,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(dispatchLocationName, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationName, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dispatchLocationName, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -29836,6 +30323,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(dispatchLocationLatitude, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationLatitude, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dispatchLocationLatitude, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -29926,6 +30416,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(dispatchLocationLongitude, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationLongitude, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dispatchLocationLongitude, diagnostics, context);
@@ -30022,6 +30515,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(dispatchDelay, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchDelay, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(dispatchDelay, diagnostics, context);
@@ -30140,6 +30636,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(responseDelay, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(responseDelay, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(responseDelay, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -30253,6 +30752,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(sceneDelay, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(sceneDelay, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(sceneDelay, diagnostics, context);
@@ -30371,6 +30873,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(transportDelay, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(transportDelay, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(transportDelay, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -30485,6 +30990,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(turnaroundDelay, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(turnaroundDelay, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(turnaroundDelay, diagnostics, context);
@@ -30604,6 +31112,10 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(responseBeginningOdometerReading, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				responseBeginningOdometerReading, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(responseBeginningOdometerReading, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -30717,6 +31229,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(responseOnSceneOdometerReading, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(responseOnSceneOdometerReading, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(responseOnSceneOdometerReading, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -30828,6 +31343,10 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(responseDestinationOdometerReading, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				responseDestinationOdometerReading, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(responseDestinationOdometerReading, diagnostics, context);
@@ -30944,6 +31463,9 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(responseEndingOdometerReading, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(responseEndingOdometerReading, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(responseEndingOdometerReading, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -31057,6 +31579,10 @@ public class EmspcrValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -31121,6 +31647,9 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(emsDrugAllergyOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(emsDrugAllergyOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(emsDrugAllergyOrganizer, diagnostics, context);

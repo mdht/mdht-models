@@ -34,7 +34,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.PurposeSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getPurpose()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PurposeTemplateId' templateId.root='null'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PurposeSectionTemplateId' templateId.root='null'"
  * @generated
  */
 public interface Purpose extends PurposeSection {
@@ -43,6 +43,7 @@ public interface Purpose extends PurposeSection {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Purpose init();
 
   /**
@@ -50,5 +51,6 @@ public interface Purpose extends PurposeSection {
      * <!-- end-user-doc -->
      * @generated
      */
-    public Purpose init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public Purpose init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Purpose

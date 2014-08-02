@@ -36,50 +36,53 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 public class RiskIndicatorsForHearingLossSectionImpl extends SectionImpl implements RiskIndicatorsForHearingLossSection
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected RiskIndicatorsForHearingLossSectionImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return QrphPackage.Literals.RISK_INDICATORS_FOR_HEARING_LOSS_SECTION;
-	}
+    return QrphPackage.Literals.RISK_INDICATORS_FOR_HEARING_LOSS_SECTION;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public boolean validateRiskIndicatorsForHearingLossSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
+   * @generated
+   */
+  @Override
+public boolean validateRiskIndicatorsForHearingLossSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return RiskIndicatorsForHearingLossSectionOperations.validateRiskIndicatorsForHearingLossSectionTemplateId(this, diagnostics, context);
-	}
+    return RiskIndicatorsForHearingLossSectionOperations.validateRiskIndicatorsForHearingLossSectionTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public RiskIndicatorsForHearingLossSection init() {
-	    return Initializer.Util.init(this);
-	}
+   * @generated
+   */
+  @Override
+public RiskIndicatorsForHearingLossSection init() {
+      return Initializer.Util.init(this);
+  }
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public RiskIndicatorsForHearingLossSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public RiskIndicatorsForHearingLossSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

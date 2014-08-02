@@ -798,6 +798,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(generalHeaderConstraints, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(generalHeaderConstraints, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(generalHeaderConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(generalHeaderConstraints, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(generalHeaderConstraints, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(generalHeaderConstraints, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(generalHeaderConstraints, diagnostics, context);
@@ -1220,6 +1221,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(summaryOfCareRecord, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(summaryOfCareRecord, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(summaryOfCareRecord, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(summaryOfCareRecord, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(summaryOfCareRecord, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(summaryOfCareRecord, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(summaryOfCareRecord, diagnostics, context);
@@ -1621,6 +1623,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(socialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(socialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(socialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(socialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(socialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(socialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(socialHistorySection, diagnostics, context);
@@ -1673,6 +1676,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(smokingStatusObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(smokingStatusObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(smokingStatusObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(smokingStatusObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(smokingStatusObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(smokingStatusObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(smokingStatusObservation, diagnostics, context);
@@ -1743,6 +1747,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(resultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(resultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(resultsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(resultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(resultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(resultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(resultsSection, diagnostics, context);
@@ -1793,6 +1798,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(resultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(resultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(resultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(resultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(resultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(resultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(resultOrganizer, diagnostics, context);
@@ -1842,6 +1848,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(resultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(resultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(resultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(resultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(resultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(resultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(resultObservation, diagnostics, context);
@@ -1892,6 +1899,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(proceduresSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(proceduresSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(proceduresSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(proceduresSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(proceduresSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(proceduresSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(proceduresSection, diagnostics, context);
@@ -1947,6 +1955,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(procedureActivityProcedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(procedureActivityProcedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(procedureActivityProcedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(procedureActivityProcedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(procedureActivityProcedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(procedureActivityProcedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(procedureActivityProcedure, diagnostics, context);
@@ -2044,6 +2053,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(clinicalOfficeVisitSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(clinicalOfficeVisitSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(clinicalOfficeVisitSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(clinicalOfficeVisitSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(clinicalOfficeVisitSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(clinicalOfficeVisitSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(clinicalOfficeVisitSummary, diagnostics, context);
@@ -2478,6 +2488,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(medicationsAdministeredSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationsAdministeredSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(medicationsAdministeredSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationsAdministeredSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(medicationsAdministeredSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationsAdministeredSection, diagnostics, context);
@@ -2550,6 +2561,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(transitionOfCareAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(transitionOfCareAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(transitionOfCareAmbulatorySummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(transitionOfCareAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(transitionOfCareAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(transitionOfCareAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(transitionOfCareAmbulatorySummary, diagnostics, context);
@@ -2889,6 +2901,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(transitionOfCareInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(transitionOfCareInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(transitionOfCareInpatientSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(transitionOfCareInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(transitionOfCareInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(transitionOfCareInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(transitionOfCareInpatientSummary, diagnostics, context);
@@ -3221,6 +3234,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(viewDownloadTransmitSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(viewDownloadTransmitSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(viewDownloadTransmitSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(viewDownloadTransmitSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(viewDownloadTransmitSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(viewDownloadTransmitSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(viewDownloadTransmitSummary, diagnostics, context);
@@ -3599,6 +3613,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(vdtInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(vdtInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(vdtInpatientSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(vdtInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(vdtInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(vdtInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(vdtInpatientSummary, diagnostics, context);
@@ -3960,6 +3975,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(vdtAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(vdtAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(vdtAmbulatorySummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(vdtAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(vdtAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(vdtAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(vdtAmbulatorySummary, diagnostics, context);
@@ -4274,6 +4290,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(functionalStatusSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(functionalStatusSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(functionalStatusSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(functionalStatusSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(functionalStatusSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(functionalStatusSection, diagnostics, context);
@@ -4319,6 +4336,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(cognitiveStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(cognitiveStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(cognitiveStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(cognitiveStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(cognitiveStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(cognitiveStatusResultObservation, diagnostics, context);
@@ -4376,6 +4394,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(cognitiveStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(cognitiveStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(cognitiveStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(cognitiveStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(cognitiveStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(cognitiveStatusResultOrganizer, diagnostics, context);
@@ -4415,6 +4434,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(functionalStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(functionalStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(functionalStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(functionalStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(functionalStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(functionalStatusResultObservation, diagnostics, context);
@@ -4472,6 +4492,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		boolean result = validate_EveryMultiplicityConforms(functionalStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(functionalStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(functionalStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryProxyResolves(functionalStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_UniqueID(functionalStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(functionalStatusResultOrganizer, diagnostics, context);

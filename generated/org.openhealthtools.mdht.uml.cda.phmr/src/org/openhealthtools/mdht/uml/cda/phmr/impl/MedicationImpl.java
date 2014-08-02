@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.MedicationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication</b></em>'.
@@ -84,6 +82,7 @@ public class MedicationImpl extends MedicationsSectionImpl implements Medication
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Medication init() {
       return Initializer.Util.init(this);
   }
@@ -93,7 +92,8 @@ public class MedicationImpl extends MedicationsSectionImpl implements Medication
      * <!-- end-user-doc -->
      * @generated
      */
-    public Medication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public Medication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

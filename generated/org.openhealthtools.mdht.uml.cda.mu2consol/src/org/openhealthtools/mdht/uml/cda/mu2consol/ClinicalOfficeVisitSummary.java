@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.consol.InstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
-import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
-import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
@@ -349,7 +347,7 @@ public interface ClinicalOfficeVisitSummary extends GeneralHeaderConstraints {
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))->asSequence()->any(true).oclAsType(consol::ResultsSection)'"
 	 * @generated
 	 */
-	ResultsSection getResultsSection();
+	org.openhealthtools.mdht.uml.cda.mu2consol.ResultsSection getResultsSection();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -363,7 +361,7 @@ public interface ClinicalOfficeVisitSummary extends GeneralHeaderConstraints {
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection))->asSequence()->any(true).oclAsType(consol::ProceduresSection)'"
 	 * @generated
 	 */
-	ProceduresSection getProceduresSection();
+	org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection getProceduresSection();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -412,12 +410,14 @@ public interface ClinicalOfficeVisitSummary extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ClinicalOfficeVisitSummary init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public ClinicalOfficeVisitSummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ClinicalOfficeVisitSummary

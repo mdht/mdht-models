@@ -47,8 +47,8 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ParticipantRole#validatePhmrParticipantRoleTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ParticipantRole#validatePhmrParticipantRoleId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ParticipantRole#validatePHMRParticipantRoleTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Participant Role Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ParticipantRole#validatePHMRParticipantRoleId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Participant Role Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -65,20 +65,20 @@ public class ParticipantRoleOperations extends org.openhealthtools.mdht.uml.cda.
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Template Id</em>}' operation.
+   * The cached OCL expression body for the '{@link #validatePHMRParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Participant Role Template Id</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePHMRParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
 	protected static final String VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = 'null')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Template Id</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validatePHMRParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Participant Role Template Id</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePHMRParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
@@ -86,7 +86,7 @@ public class ParticipantRoleOperations extends org.openhealthtools.mdht.uml.cda.
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param participantRole The receiving '<em><b>Participant Role</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -94,7 +94,9 @@ public class ParticipantRoleOperations extends org.openhealthtools.mdht.uml.cda.
    * <!-- end-model-doc -->
    * @generated
    */
-	public static  boolean validatePhmrParticipantRoleTemplateId(ParticipantRole participantRole, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validatePHMRParticipantRoleTemplateId(ParticipantRole participantRole, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
     if (VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -117,7 +119,7 @@ public class ParticipantRoleOperations extends org.openhealthtools.mdht.uml.cda.
             (Diagnostic.ERROR,
              PhmrValidator.DIAGNOSTIC_SOURCE,
              PhmrValidator.PARTICIPANT_ROLE__PHMR_PARTICIPANT_ROLE_TEMPLATE_ID,
-             PhmrPlugin.INSTANCE.getString("PhmrParticipantRoleTemplateId"),
+             PhmrPlugin.INSTANCE.getString("PHMRParticipantRoleTemplateId"),
              new Object [] { participantRole }));
       }
        
@@ -126,21 +128,21 @@ public class ParticipantRoleOperations extends org.openhealthtools.mdht.uml.cda.
     return true;
   }
 
-	/**
-   * The cached OCL expression body for the '{@link #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Id</em>}' operation.
+  /**
+   * The cached OCL expression body for the '{@link #validatePHMRParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Participant Role Id</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePHMRParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
 	protected static final String VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)";
 
 	/**
-   * The cached OCL invariant for the '{@link #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Id</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validatePHMRParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Participant Role Id</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePHMRParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
@@ -148,7 +150,7 @@ public class ParticipantRoleOperations extends org.openhealthtools.mdht.uml.cda.
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param participantRole The receiving '<em><b>Participant Role</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -156,7 +158,9 @@ public class ParticipantRoleOperations extends org.openhealthtools.mdht.uml.cda.
    * <!-- end-model-doc -->
    * @generated
    */
-	public static  boolean validatePhmrParticipantRoleId(ParticipantRole participantRole, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validatePHMRParticipantRoleId(ParticipantRole participantRole, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
     if (VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -179,7 +183,7 @@ public class ParticipantRoleOperations extends org.openhealthtools.mdht.uml.cda.
             (Diagnostic.ERROR,
              PhmrValidator.DIAGNOSTIC_SOURCE,
              PhmrValidator.PARTICIPANT_ROLE__PHMR_PARTICIPANT_ROLE_ID,
-             PhmrPlugin.INSTANCE.getString("PhmrParticipantRoleId"),
+             PhmrPlugin.INSTANCE.getString("PHMRParticipantRoleId"),
              new Object [] { participantRole }));
       }
        

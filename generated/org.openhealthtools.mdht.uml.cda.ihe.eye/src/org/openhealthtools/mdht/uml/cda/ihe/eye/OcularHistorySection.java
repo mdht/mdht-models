@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPastIllnessSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.eye.EyePackage#getOcularHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='OcularHistorySectionTemplateId OcularHistorySectionCode' templateId.root='1.3.6.1.4.1.19376.1.12.1.2.3' code.code='70934-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Ocular history' constraints.validation.warning='OcularHistorySectionOcularListOfSurgeriesSection' constraints.validation.info='OcularHistorySectionOcularCodedListOfSurgeriesSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HistoryOfPastIllnessSectionTemplateId OcularHistorySectionCode' templateId.root='1.3.6.1.4.1.19376.1.12.1.2.3' code.code='70934-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Ocular history' constraints.validation.warning='OcularHistorySectionOcularListOfSurgeriesSection' constraints.validation.info='OcularHistorySectionOcularCodedListOfSurgeriesSection'"
  * @generated
  */
 public interface OcularHistorySection extends HistoryOfPastIllnessSection {
@@ -33,13 +33,10 @@ public interface OcularHistorySection extends HistoryOfPastIllnessSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '70934-5' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'70934-5\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'70934-5\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateOcularHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -48,7 +45,6 @@ public interface OcularHistorySection extends HistoryOfPastIllnessSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularListOfSurgeriesSection))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
@@ -61,7 +57,6 @@ public interface OcularHistorySection extends HistoryOfPastIllnessSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularCodedListOfSurgeriesSection))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
@@ -73,9 +68,6 @@ public interface OcularHistorySection extends HistoryOfPastIllnessSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularListOfSurgeriesSection))->asSequence()->any(true).oclAsType(eye::OcularListOfSurgeriesSection)
-	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularListOfSurgeriesSection))->asSequence()->any(true).oclAsType(eye::OcularListOfSurgeriesSection)'"
 	 * @generated
@@ -85,9 +77,6 @@ public interface OcularHistorySection extends HistoryOfPastIllnessSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularCodedListOfSurgeriesSection))->asSequence()->any(true).oclAsType(eye::OcularCodedListOfSurgeriesSection)
-	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularCodedListOfSurgeriesSection))->asSequence()->any(true).oclAsType(eye::OcularCodedListOfSurgeriesSection)'"
 	 * @generated
@@ -99,11 +88,13 @@ public interface OcularHistorySection extends HistoryOfPastIllnessSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OcularHistorySection init();
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public OcularHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public OcularHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // OcularHistorySection

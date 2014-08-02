@@ -54,6 +54,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVDTAmbulatorySummaryProviderNameAndContactInfo(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryProviderNameAndContactInfo(this, diagnostics, context);
 	}
@@ -63,6 +64,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVDTAmbulatorySummaryMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryMedicationsSection(this, diagnostics, context);
 	}
@@ -72,6 +74,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsSection getMedicationsSection() {
 		return VDTAmbulatorySummaryOperations.getMedicationsSection(this);
 	}

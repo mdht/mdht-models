@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.EventObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Event Observation</b></em>'.
@@ -74,6 +72,7 @@ public class EventObservationImpl extends ObservationImpl implements EventObserv
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateEventObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return EventObservationOperations.validateEventObservationTemplateId(this, diagnostics, context);
   }
@@ -83,6 +82,7 @@ public class EventObservationImpl extends ObservationImpl implements EventObserv
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateEventObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return EventObservationOperations.validateEventObservationClassCode(this, diagnostics, context);
   }
@@ -92,6 +92,7 @@ public class EventObservationImpl extends ObservationImpl implements EventObserv
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateEventObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return EventObservationOperations.validateEventObservationCode(this, diagnostics, context);
   }
@@ -101,6 +102,7 @@ public class EventObservationImpl extends ObservationImpl implements EventObserv
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateEventObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return EventObservationOperations.validateEventObservationMoodCode(this, diagnostics, context);
   }
@@ -110,6 +112,7 @@ public class EventObservationImpl extends ObservationImpl implements EventObserv
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateEventObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return EventObservationOperations.validateEventObservationValue(this, diagnostics, context);
   }
@@ -119,7 +122,8 @@ public class EventObservationImpl extends ObservationImpl implements EventObserv
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEventObservationPHMRProductInstanceReference(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validateEventObservationPHMRProductInstanceReference(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EventObservationOperations.validateEventObservationPHMRProductInstanceReference(this, diagnostics, context);
   }
@@ -129,6 +133,7 @@ public class EventObservationImpl extends ObservationImpl implements EventObserv
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public EventObservation init() {
       return Initializer.Util.init(this);
   }
@@ -138,7 +143,8 @@ public class EventObservationImpl extends ObservationImpl implements EventObserv
      * <!-- end-user-doc -->
      * @generated
      */
-    public EventObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public EventObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

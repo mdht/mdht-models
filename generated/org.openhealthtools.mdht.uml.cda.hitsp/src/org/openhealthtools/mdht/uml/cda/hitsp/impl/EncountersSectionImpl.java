@@ -67,17 +67,19 @@ public class EncountersSectionImpl extends EncounterHistorySectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPEncountersSectionEncounterEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateHITSPEncountersSectionEncounterEntry(this, diagnostics, context);
+	public EList<Encounter> getHITSPEncounterEntries() {
+		return EncountersSectionOperations.getHITSPEncounterEntries(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Encounter> getHITSPEncounterEntries() {
-		return EncountersSectionOperations.getHITSPEncounterEntries(this);
+	@Override
+	public boolean validateEncounterHistorySectionEncounterEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncountersSectionOperations.validateEncounterHistorySectionEncounterEntry(this, diagnostics, context);
 	}
 
 	/**

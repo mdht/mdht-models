@@ -88,18 +88,7 @@ public class PlannedProcedureImpl extends ProcedureImpl implements PlannedProced
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureEntryPlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureEntryPlanOfCareActivityProcedureOperations.validateProcedureEntryPlanOfCareActivityProcedureMoodCode(
+		return ProcedureEntryPlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureMoodCode(
 			this, diagnostics, context);
 	}
 

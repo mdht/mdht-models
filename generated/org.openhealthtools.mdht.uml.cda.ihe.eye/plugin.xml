@@ -17,4 +17,11 @@
             genModel="model/eye.genmodel"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated eye -->
+      <parser
+            type="eye"
+            class="org.openhealthtools.mdht.uml.cda.ihe.eye.util.EyeResourceFactoryImpl"/>
+   </extension>
+
 </plugin>

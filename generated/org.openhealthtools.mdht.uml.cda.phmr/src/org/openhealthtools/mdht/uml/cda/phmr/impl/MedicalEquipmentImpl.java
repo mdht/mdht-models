@@ -40,8 +40,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.MedicalEquipmentOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medical Equipment</b></em>'.
@@ -76,6 +74,7 @@ public class MedicalEquipmentImpl extends MedicalEquipmentSectionImpl implements
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateMedicalEquipmentText(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return MedicalEquipmentOperations.validateMedicalEquipmentText(this, diagnostics, context);
   }
@@ -85,6 +84,7 @@ public class MedicalEquipmentImpl extends MedicalEquipmentSectionImpl implements
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateMedicalEquipmentDeviceDefinitionOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return MedicalEquipmentOperations.validateMedicalEquipmentDeviceDefinitionOrganizer(this, diagnostics, context);
   }
@@ -94,6 +94,7 @@ public class MedicalEquipmentImpl extends MedicalEquipmentSectionImpl implements
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public EList<DeviceDefinitionOrganizer> getDeviceDefinitionOrganizers() {
     return MedicalEquipmentOperations.getDeviceDefinitionOrganizers(this);
   }
@@ -113,6 +114,7 @@ public class MedicalEquipmentImpl extends MedicalEquipmentSectionImpl implements
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public MedicalEquipment init() {
       return Initializer.Util.init(this);
   }
@@ -122,7 +124,8 @@ public class MedicalEquipmentImpl extends MedicalEquipmentSectionImpl implements
      * <!-- end-user-doc -->
      * @generated
      */
-    public MedicalEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public MedicalEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

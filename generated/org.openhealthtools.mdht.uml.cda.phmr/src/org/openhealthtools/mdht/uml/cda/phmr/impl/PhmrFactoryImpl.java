@@ -48,7 +48,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	public static PhmrFactory init() {
     try
     {
-      PhmrFactory thePhmrFactory = (PhmrFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phmr"); 
+      PhmrFactory thePhmrFactory = (PhmrFactory)EPackage.Registry.INSTANCE.getEFactory(PhmrPackage.eNS_URI);
       if (thePhmrFactory != null)
       {
         return thePhmrFactory;
@@ -118,6 +118,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public DeviceAccuracyObservation createDeviceAccuracyObservation() {
     DeviceAccuracyObservationImpl deviceAccuracyObservation = new DeviceAccuracyObservationImpl();
     return deviceAccuracyObservation;
@@ -128,6 +129,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public DeviceDefinitionOrganizer createDeviceDefinitionOrganizer() {
     DeviceDefinitionOrganizerImpl deviceDefinitionOrganizer = new DeviceDefinitionOrganizerImpl();
     return deviceDefinitionOrganizer;
@@ -138,6 +140,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public SamplingFrequencyObservation createSamplingFrequencyObservation() {
     SamplingFrequencyObservationImpl samplingFrequencyObservation = new SamplingFrequencyObservationImpl();
     return samplingFrequencyObservation;
@@ -148,6 +151,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public DeviceMeasurementRangeObservation createDeviceMeasurementRangeObservation() {
     DeviceMeasurementRangeObservationImpl deviceMeasurementRangeObservation = new DeviceMeasurementRangeObservationImpl();
     return deviceMeasurementRangeObservation;
@@ -158,6 +162,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public DeviceResolutionObservation createDeviceResolutionObservation() {
     DeviceResolutionObservationImpl deviceResolutionObservation = new DeviceResolutionObservationImpl();
     return deviceResolutionObservation;
@@ -168,6 +173,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public EventObservation createEventObservation() {
     EventObservationImpl eventObservation = new EventObservationImpl();
     return eventObservation;
@@ -178,6 +184,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public MedicalEquipment createMedicalEquipment() {
     MedicalEquipmentImpl medicalEquipment = new MedicalEquipmentImpl();
     return medicalEquipment;
@@ -188,6 +195,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public NumericObservation createNumericObservation() {
     NumericObservationImpl numericObservation = new NumericObservationImpl();
     return numericObservation;
@@ -198,6 +206,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ObservationMediaJPG createObservationMediaJPG() {
     ObservationMediaJPGImpl observationMediaJPG = new ObservationMediaJPGImpl();
     return observationMediaJPG;
@@ -208,6 +217,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ObservationNullFlavor createObservationNullFlavor() {
     ObservationNullFlavorImpl observationNullFlavor = new ObservationNullFlavorImpl();
     return observationNullFlavor;
@@ -218,6 +228,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public WaveformObservation createWaveformObservation() {
     WaveformObservationImpl waveformObservation = new WaveformObservationImpl();
     return waveformObservation;
@@ -228,6 +239,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public WaveformSamplePeriodObservation createWaveformSamplePeriodObservation() {
     WaveformSamplePeriodObservationImpl waveformSamplePeriodObservation = new WaveformSamplePeriodObservationImpl();
     return waveformSamplePeriodObservation;
@@ -238,6 +250,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Participant createParticipant() {
     ParticipantImpl participant = new ParticipantImpl();
     return participant;
@@ -248,6 +261,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public PersonalHealthcareMonitoringReport createPersonalHealthcareMonitoringReport() {
     PersonalHealthcareMonitoringReportImpl personalHealthcareMonitoringReport = new PersonalHealthcareMonitoringReportImpl();
     return personalHealthcareMonitoringReport;
@@ -258,6 +272,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public GeneralHeaderConstraints createGeneralHeaderConstraints() {
     GeneralHeaderConstraintsImpl generalHeaderConstraints = new GeneralHeaderConstraintsImpl();
     return generalHeaderConstraints;
@@ -268,6 +283,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public VitalSigns createVitalSigns() {
     VitalSignsImpl vitalSigns = new VitalSignsImpl();
     return vitalSigns;
@@ -278,6 +294,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ResultOrganizer createResultOrganizer() {
     ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
     return resultOrganizer;
@@ -288,6 +305,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public WaveformSeriesObservation createWaveformSeriesObservation() {
     WaveformSeriesObservationImpl waveformSeriesObservation = new WaveformSeriesObservationImpl();
     return waveformSeriesObservation;
@@ -298,6 +316,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Results createResults() {
     ResultsImpl results = new ResultsImpl();
     return results;
@@ -308,6 +327,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ParticipantRole createParticipantRole() {
     ParticipantRoleImpl participantRole = new ParticipantRoleImpl();
     return participantRole;
@@ -318,6 +338,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public PHMRProductInstance createPHMRProductInstance() {
     PHMRProductInstanceImpl phmrProductInstance = new PHMRProductInstanceImpl();
     return phmrProductInstance;
@@ -328,6 +349,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public PHMRProductInstanceReference createPHMRProductInstanceReference() {
     PHMRProductInstanceReferenceImpl phmrProductInstanceReference = new PHMRProductInstanceReferenceImpl();
     return phmrProductInstanceReference;
@@ -338,6 +360,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public PlayingDevice createPlayingDevice() {
     PlayingDeviceImpl playingDevice = new PlayingDeviceImpl();
     return playingDevice;
@@ -348,6 +371,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ScopingEntity createScopingEntity() {
     ScopingEntityImpl scopingEntity = new ScopingEntityImpl();
     return scopingEntity;
@@ -358,6 +382,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public VitalSignsOrganizer createVitalSignsOrganizer() {
     VitalSignsOrganizerImpl vitalSignsOrganizer = new VitalSignsOrganizerImpl();
     return vitalSignsOrganizer;
@@ -368,6 +393,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Purpose createPurpose() {
     PurposeImpl purpose = new PurposeImpl();
     return purpose;
@@ -378,6 +404,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Medication createMedication() {
     MedicationImpl medication = new MedicationImpl();
     return medication;
@@ -388,6 +415,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public FunctionalStatus createFunctionalStatus() {
     FunctionalStatusImpl functionalStatus = new FunctionalStatusImpl();
     return functionalStatus;
@@ -398,6 +426,7 @@ public class PhmrFactoryImpl extends EFactoryImpl implements PhmrFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public PhmrPackage getPhmrPackage() {
     return (PhmrPackage)getEPackage();
   }

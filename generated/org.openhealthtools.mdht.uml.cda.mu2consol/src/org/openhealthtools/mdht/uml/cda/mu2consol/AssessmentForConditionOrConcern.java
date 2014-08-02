@@ -42,5 +42,6 @@ public interface AssessmentForConditionOrConcern extends AssessmentSection {
 	 * 
 	 * @generated
 	 */
+	@Override
 	public AssessmentForConditionOrConcern init();
 } // AssessmentForConditionOrConcern

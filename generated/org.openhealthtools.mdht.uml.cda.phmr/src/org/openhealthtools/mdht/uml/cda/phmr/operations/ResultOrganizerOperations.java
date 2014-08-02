@@ -56,8 +56,8 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#validatePhmrResultOrganizerNumericObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Numeric Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#validatePhmrResultOrganizerWaveformSeriesObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Waveform Series Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#validatePHMRResultOrganizerNumericObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Result Organizer Numeric Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#validatePHMRResultOrganizerWaveformSeriesObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Result Organizer Waveform Series Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#getNumericObservations() <em>Get Numeric Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#getWaveformSeriesObservations() <em>Get Waveform Series Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
@@ -77,20 +77,20 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Numeric Observation</em>}' operation.
+   * The cached OCL expression body for the '{@link #validatePHMRResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Result Organizer Numeric Observation</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePHMRResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
 	protected static final String VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(phmr::NumericObservation))";
 
 	/**
-   * The cached OCL invariant for the '{@link #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Numeric Observation</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validatePHMRResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Result Organizer Numeric Observation</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePHMRResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
@@ -98,7 +98,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -106,7 +106,9 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
    * <!-- end-model-doc -->
    * @generated
    */
-	public static  boolean validatePhmrResultOrganizerNumericObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validatePHMRResultOrganizerNumericObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
     if (VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -129,7 +131,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
             (Diagnostic.WARNING,
              PhmrValidator.DIAGNOSTIC_SOURCE,
              PhmrValidator.RESULT_ORGANIZER__PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION,
-             PhmrPlugin.INSTANCE.getString("PhmrResultOrganizerNumericObservation"),
+             PhmrPlugin.INSTANCE.getString("PHMRResultOrganizerNumericObservation"),
              new Object [] { resultOrganizer }));
       }
        
@@ -138,21 +140,21 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
     return true;
   }
 
-	/**
-   * The cached OCL expression body for the '{@link #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Waveform Series Observation</em>}' operation.
+  /**
+   * The cached OCL expression body for the '{@link #validatePHMRResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Result Organizer Waveform Series Observation</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePHMRResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
 	protected static final String VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(phmr::WaveformSeriesObservation))";
 
 	/**
-   * The cached OCL invariant for the '{@link #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Waveform Series Observation</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validatePHMRResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Result Organizer Waveform Series Observation</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePHMRResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
@@ -160,7 +162,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -168,7 +170,9 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
    * <!-- end-model-doc -->
    * @generated
    */
-	public static  boolean validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validatePHMRResultOrganizerWaveformSeriesObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
     if (VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -191,7 +195,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
             (Diagnostic.INFO,
              PhmrValidator.DIAGNOSTIC_SOURCE,
              PhmrValidator.RESULT_ORGANIZER__PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION,
-             PhmrPlugin.INSTANCE.getString("PhmrResultOrganizerWaveformSeriesObservation"),
+             PhmrPlugin.INSTANCE.getString("PHMRResultOrganizerWaveformSeriesObservation"),
              new Object [] { resultOrganizer }));
       }
        
@@ -200,7 +204,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getNumericObservations(ResultOrganizer) <em>Get Numeric Observations</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -343,7 +347,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
             (Diagnostic.ERROR,
              PhmrValidator.DIAGNOSTIC_SOURCE,
              PhmrValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultOrganizer, context) }),
+             PhmrPlugin.INSTANCE.getString("ResultOrganizerTemplateId"),
              new Object [] { resultOrganizer }));
       }
        

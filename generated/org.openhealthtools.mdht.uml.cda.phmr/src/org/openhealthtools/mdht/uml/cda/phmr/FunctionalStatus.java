@@ -34,7 +34,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.FunctionalStatusSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getFunctionalStatus()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusTemplateId' templateId.root='null'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusSectionTemplateId' templateId.root='null'"
  * @generated
  */
 public interface FunctionalStatus extends FunctionalStatusSection {
@@ -43,6 +43,7 @@ public interface FunctionalStatus extends FunctionalStatusSection {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public FunctionalStatus init();
 
   /**
@@ -50,5 +51,6 @@ public interface FunctionalStatus extends FunctionalStatusSection {
      * <!-- end-user-doc -->
      * @generated
      */
-    public FunctionalStatus init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public FunctionalStatus init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatus

@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.SamplingFrequencyObservation;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.SamplingFrequencyObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Sampling Frequency Observation</b></em>'.
@@ -74,6 +72,7 @@ public class SamplingFrequencyObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateSamplingFrequencyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationTemplateId(this, diagnostics, context);
   }
@@ -83,7 +82,8 @@ public class SamplingFrequencyObservationImpl extends ObservationImpl implements
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateSamplingFrequencyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validateSamplingFrequencyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationCodeP(this, diagnostics, context);
   }
@@ -93,6 +93,7 @@ public class SamplingFrequencyObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateSamplingFrequencyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationCode(this, diagnostics, context);
   }
@@ -102,6 +103,7 @@ public class SamplingFrequencyObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateSamplingFrequencyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationMoodCode(this, diagnostics, context);
   }
@@ -111,6 +113,7 @@ public class SamplingFrequencyObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateSamplingFrequencyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationValue(this, diagnostics, context);
   }
@@ -120,6 +123,7 @@ public class SamplingFrequencyObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public SamplingFrequencyObservation init() {
       return Initializer.Util.init(this);
   }
@@ -129,7 +133,8 @@ public class SamplingFrequencyObservationImpl extends ObservationImpl implements
      * <!-- end-user-doc -->
      * @generated
      */
-    public SamplingFrequencyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public SamplingFrequencyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

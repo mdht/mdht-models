@@ -55,6 +55,7 @@ public class ResultsSectionImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ResultOrganizer> getMu2consolResultOrganizers() {
 		return ResultsSectionOperations.getMu2consolResultOrganizers(this);
 	}

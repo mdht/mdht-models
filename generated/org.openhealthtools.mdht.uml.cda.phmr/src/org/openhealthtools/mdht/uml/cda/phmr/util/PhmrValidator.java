@@ -384,36 +384,12 @@ public class PhmrValidator extends EObjectValidator {
 	public static final int NUMERIC_OBSERVATION__NUMERIC_OBSERVATION_CLASS_CODE = 40;
 
 	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Numeric Observation Code' of 'Numeric Observation'.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int NUMERIC_OBSERVATION__NUMERIC_OBSERVATION_CODE = 41;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Numeric Observation Mood Code' of 'Numeric Observation'.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int NUMERIC_OBSERVATION__NUMERIC_OBSERVATION_MOOD_CODE = 42;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Numeric Observation Value' of 'Numeric Observation'.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int NUMERIC_OBSERVATION__NUMERIC_OBSERVATION_VALUE = 43;
-
-	/**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Numeric Observation PHMR Product Instance Reference' of 'Numeric Observation'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int NUMERIC_OBSERVATION__NUMERIC_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE = 44;
+  public static final int NUMERIC_OBSERVATION__NUMERIC_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE = 41;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Template Id' of 'Numeric Observation'.
@@ -421,9 +397,33 @@ public class PhmrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public static final int NUMERIC_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 45;
+	public static final int NUMERIC_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 42;
 
 	/**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Numeric Observation'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int NUMERIC_OBSERVATION__RESULT_OBSERVATION_CODE = 43;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Mood Code' of 'Numeric Observation'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int NUMERIC_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE = 44;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Value' of 'Numeric Observation'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int NUMERIC_OBSERVATION__RESULT_OBSERVATION_VALUE = 45;
+
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Observation Media JPG Template Id' of 'Observation Media JPG'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -856,14 +856,14 @@ public class PhmrValidator extends EObjectValidator {
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TYPE_ID = 99;
 
 	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Signs Vital Signs Organizer' of 'Vital Signs'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Signs Organizer' of 'Vital Signs'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VITAL_SIGNS__VITAL_SIGNS_VITAL_SIGNS_ORGANIZER = 100;
+  public static final int VITAL_SIGNS__VITAL_SIGNS_ORGANIZER = 100;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Signs Section Template Id' of 'Vital Signs'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -872,7 +872,7 @@ public class PhmrValidator extends EObjectValidator {
 	public static final int VITAL_SIGNS__VITAL_SIGNS_SECTION_TEMPLATE_ID = 101;
 
 	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phmr Result Organizer Numeric Observation' of 'Result Organizer'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHMR Result Organizer Numeric Observation' of 'Result Organizer'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -880,7 +880,7 @@ public class PhmrValidator extends EObjectValidator {
 	public static final int RESULT_ORGANIZER__PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION = 102;
 
 	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phmr Result Organizer Waveform Series Observation' of 'Result Organizer'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHMR Result Organizer Waveform Series Observation' of 'Result Organizer'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -984,7 +984,7 @@ public class PhmrValidator extends EObjectValidator {
 	public static final int RESULTS__RESULTS_SECTION_TEMPLATE_ID = 115;
 
 	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phmr Participant Role Template Id' of 'Participant Role'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHMR Participant Role Template Id' of 'Participant Role'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -992,7 +992,7 @@ public class PhmrValidator extends EObjectValidator {
 	public static final int PARTICIPANT_ROLE__PHMR_PARTICIPANT_ROLE_TEMPLATE_ID = 116;
 
 	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phmr Participant Role Id' of 'Participant Role'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHMR Participant Role Id' of 'Participant Role'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -1271,6 +1271,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(deviceAccuracyObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(deviceAccuracyObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(deviceAccuracyObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(deviceAccuracyObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(deviceAccuracyObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(deviceAccuracyObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(deviceAccuracyObservation, diagnostics, context);
@@ -1355,6 +1356,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(deviceDefinitionOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(deviceDefinitionOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(deviceDefinitionOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(deviceDefinitionOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(deviceDefinitionOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(deviceDefinitionOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(deviceDefinitionOrganizer, diagnostics, context);
@@ -1472,6 +1474,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(samplingFrequencyObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(samplingFrequencyObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(samplingFrequencyObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(samplingFrequencyObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(samplingFrequencyObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(samplingFrequencyObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(samplingFrequencyObservation, diagnostics, context);
@@ -1545,6 +1548,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(deviceMeasurementRangeObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(deviceMeasurementRangeObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(deviceMeasurementRangeObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(deviceMeasurementRangeObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(deviceMeasurementRangeObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(deviceMeasurementRangeObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(deviceMeasurementRangeObservation, diagnostics, context);
@@ -1618,6 +1622,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(deviceResolutionObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(deviceResolutionObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(deviceResolutionObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(deviceResolutionObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(deviceResolutionObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(deviceResolutionObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(deviceResolutionObservation, diagnostics, context);
@@ -1690,6 +1695,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(eventObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(eventObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(eventObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(eventObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(eventObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(eventObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(eventObservation, diagnostics, context);
@@ -1774,6 +1780,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(medicalEquipment, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicalEquipment, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicalEquipment, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(medicalEquipment, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicalEquipment, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(medicalEquipment, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicalEquipment, diagnostics, context);
@@ -1831,6 +1838,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(numericObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(numericObservation, diagnostics, context);
@@ -1840,18 +1848,15 @@ public class PhmrValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInformationSource(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validateNumericObservation_validateResultObservationTemplateId(numericObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(numericObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateNumericObservation_validateResultObservationMoodCode(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationId(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationStatusCode(numericObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationCode(numericObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateNumericObservation_validateResultObservationCode(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(numericObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationValue(numericObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateNumericObservation_validateResultObservationValue(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validateNumericObservation_validateNumericObservationClassCode(numericObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateNumericObservation_validateNumericObservationCode(numericObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateNumericObservation_validateNumericObservationMoodCode(numericObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateNumericObservation_validateNumericObservationValue(numericObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validateNumericObservation_validateNumericObservationPHMRProductInstanceReference(numericObservation, diagnostics, context);
     return result;
   }
@@ -1864,36 +1869,6 @@ public class PhmrValidator extends EObjectValidator {
    */
 	public boolean validateNumericObservation_validateNumericObservationClassCode(NumericObservation numericObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
     return numericObservation.validateNumericObservationClassCode(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateNumericObservationCode constraint of '<em>Numeric Observation</em>'.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateNumericObservation_validateNumericObservationCode(NumericObservation numericObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return numericObservation.validateNumericObservationCode(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateNumericObservationMoodCode constraint of '<em>Numeric Observation</em>'.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateNumericObservation_validateNumericObservationMoodCode(NumericObservation numericObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return numericObservation.validateNumericObservationMoodCode(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateNumericObservationValue constraint of '<em>Numeric Observation</em>'.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateNumericObservation_validateNumericObservationValue(NumericObservation numericObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return numericObservation.validateNumericObservationValue(diagnostics, context);
   }
 
 	/**
@@ -1918,6 +1893,39 @@ public class PhmrValidator extends EObjectValidator {
   }
 
 	/**
+   * Validates the validateResultObservationCode constraint of '<em>Numeric Observation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateNumericObservation_validateResultObservationCode(NumericObservation numericObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return numericObservation.validateResultObservationCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateResultObservationMoodCode constraint of '<em>Numeric Observation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateNumericObservation_validateResultObservationMoodCode(NumericObservation numericObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return numericObservation.validateResultObservationMoodCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateResultObservationValue constraint of '<em>Numeric Observation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateNumericObservation_validateResultObservationValue(NumericObservation numericObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return numericObservation.validateResultObservationValue(diagnostics, context);
+  }
+
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -1927,6 +1935,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(observationMediaJPG, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(observationMediaJPG, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(observationMediaJPG, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(observationMediaJPG, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(observationMediaJPG, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(observationMediaJPG, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(observationMediaJPG, diagnostics, context);
@@ -1988,6 +1997,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(observationNullFlavor, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(observationNullFlavor, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(observationNullFlavor, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(observationNullFlavor, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(observationNullFlavor, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(observationNullFlavor, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(observationNullFlavor, diagnostics, context);
@@ -2060,6 +2070,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(waveformObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(waveformObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(waveformObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(waveformObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(waveformObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(waveformObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(waveformObservation, diagnostics, context);
@@ -2132,6 +2143,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(waveformSamplePeriodObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(waveformSamplePeriodObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(waveformSamplePeriodObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(waveformSamplePeriodObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(waveformSamplePeriodObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(waveformSamplePeriodObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(waveformSamplePeriodObservation, diagnostics, context);
@@ -2204,6 +2216,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(participant, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(participant, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(participant, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(participant, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(participant, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(participant, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(participant, diagnostics, context);
@@ -2245,6 +2258,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(personalHealthcareMonitoringReport, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(personalHealthcareMonitoringReport, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(personalHealthcareMonitoringReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(personalHealthcareMonitoringReport, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(personalHealthcareMonitoringReport, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(personalHealthcareMonitoringReport, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(personalHealthcareMonitoringReport, diagnostics, context);
@@ -2367,6 +2381,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(generalHeaderConstraints, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(generalHeaderConstraints, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(generalHeaderConstraints, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(generalHeaderConstraints, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(generalHeaderConstraints, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(generalHeaderConstraints, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(generalHeaderConstraints, diagnostics, context);
@@ -2673,6 +2688,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(vitalSigns, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(vitalSigns, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(vitalSigns, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(vitalSigns, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(vitalSigns, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(vitalSigns, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(vitalSigns, diagnostics, context);
@@ -2684,21 +2700,22 @@ public class PhmrValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTitle(vitalSigns, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionText(vitalSigns, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionVitalSignsOrganizer(vitalSigns, diagnostics, context);
-    if (result || diagnostics != null) result &= validateVitalSigns_validateVitalSignsVitalSignsOrganizer(vitalSigns, diagnostics, context);
+    if (result || diagnostics != null) result &= validateVitalSigns_validateVitalSignsOrganizer(vitalSigns, diagnostics, context);
     return result;
   }
 
 	/**
-   * Validates the validateVitalSignsVitalSignsOrganizer constraint of '<em>Vital Signs</em>'.
+   * Validates the validateVitalSignsOrganizer constraint of '<em>Vital Signs</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVitalSigns_validateVitalSignsVitalSignsOrganizer(VitalSigns vitalSigns, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return vitalSigns.validateVitalSignsVitalSignsOrganizer(diagnostics, context);
+  public boolean validateVitalSigns_validateVitalSignsOrganizer(VitalSigns vitalSigns, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return vitalSigns.validateVitalSignsOrganizer(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateVitalSignsSectionTemplateId constraint of '<em>Vital Signs</em>'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2718,6 +2735,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(resultOrganizer, diagnostics, context);
@@ -2732,32 +2750,34 @@ public class PhmrValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerSpecimen(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validateResultOrganizer_validatePhmrResultOrganizerNumericObservation(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validateResultOrganizer_validatePhmrResultOrganizerWaveformSeriesObservation(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validateResultOrganizer_validatePHMRResultOrganizerNumericObservation(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validateResultOrganizer_validatePHMRResultOrganizerWaveformSeriesObservation(resultOrganizer, diagnostics, context);
     return result;
   }
 
 	/**
-   * Validates the validatePhmrResultOrganizerNumericObservation constraint of '<em>Result Organizer</em>'.
+   * Validates the validatePHMRResultOrganizerNumericObservation constraint of '<em>Result Organizer</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateResultOrganizer_validatePhmrResultOrganizerNumericObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return resultOrganizer.validatePhmrResultOrganizerNumericObservation(diagnostics, context);
+  public boolean validateResultOrganizer_validatePHMRResultOrganizerNumericObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return resultOrganizer.validatePHMRResultOrganizerNumericObservation(diagnostics, context);
   }
 
-	/**
-   * Validates the validatePhmrResultOrganizerWaveformSeriesObservation constraint of '<em>Result Organizer</em>'.
+  /**
+   * Validates the validatePHMRResultOrganizerWaveformSeriesObservation constraint of '<em>Result Organizer</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateResultOrganizer_validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return resultOrganizer.validatePhmrResultOrganizerWaveformSeriesObservation(diagnostics, context);
+  public boolean validateResultOrganizer_validatePHMRResultOrganizerWaveformSeriesObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return resultOrganizer.validatePHMRResultOrganizerWaveformSeriesObservation(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateResultOrganizerTemplateId constraint of '<em>Result Organizer</em>'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2777,6 +2797,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(waveformSeriesObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(waveformSeriesObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(waveformSeriesObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(waveformSeriesObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(waveformSeriesObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(waveformSeriesObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(waveformSeriesObservation, diagnostics, context);
@@ -2895,6 +2916,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(results, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(results, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(results, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(results, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(results, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(results, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(results, diagnostics, context);
@@ -2940,37 +2962,40 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(participantRole, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(participantRole, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(participantRole, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(participantRole, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(participantRole, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(participantRole, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(participantRole, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(participantRole, diagnostics, context);
     if (result || diagnostics != null) result &= cdaValidator.validateParticipantRole_validatePlayingEntityChoice(participantRole, diagnostics, context);
-    if (result || diagnostics != null) result &= validateParticipantRole_validatePhmrParticipantRoleTemplateId(participantRole, diagnostics, context);
-    if (result || diagnostics != null) result &= validateParticipantRole_validatePhmrParticipantRoleId(participantRole, diagnostics, context);
+    if (result || diagnostics != null) result &= validateParticipantRole_validatePHMRParticipantRoleTemplateId(participantRole, diagnostics, context);
+    if (result || diagnostics != null) result &= validateParticipantRole_validatePHMRParticipantRoleId(participantRole, diagnostics, context);
     return result;
   }
 
 	/**
-   * Validates the validatePhmrParticipantRoleTemplateId constraint of '<em>Participant Role</em>'.
+   * Validates the validatePHMRParticipantRoleTemplateId constraint of '<em>Participant Role</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateParticipantRole_validatePhmrParticipantRoleTemplateId(ParticipantRole participantRole, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return participantRole.validatePhmrParticipantRoleTemplateId(diagnostics, context);
+  public boolean validateParticipantRole_validatePHMRParticipantRoleTemplateId(ParticipantRole participantRole, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return participantRole.validatePHMRParticipantRoleTemplateId(diagnostics, context);
   }
 
-	/**
-   * Validates the validatePhmrParticipantRoleId constraint of '<em>Participant Role</em>'.
+  /**
+   * Validates the validatePHMRParticipantRoleId constraint of '<em>Participant Role</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateParticipantRole_validatePhmrParticipantRoleId(ParticipantRole participantRole, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return participantRole.validatePhmrParticipantRoleId(diagnostics, context);
+  public boolean validateParticipantRole_validatePHMRParticipantRoleId(ParticipantRole participantRole, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return participantRole.validatePHMRParticipantRoleId(diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -2980,6 +3005,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(phmrProductInstance, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(phmrProductInstance, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(phmrProductInstance, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(phmrProductInstance, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(phmrProductInstance, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(phmrProductInstance, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(phmrProductInstance, diagnostics, context);
@@ -3057,6 +3083,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(phmrProductInstanceReference, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(phmrProductInstanceReference, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(phmrProductInstanceReference, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(phmrProductInstanceReference, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(phmrProductInstanceReference, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(phmrProductInstanceReference, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(phmrProductInstanceReference, diagnostics, context);
@@ -3109,6 +3136,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(playingDevice, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(playingDevice, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(playingDevice, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(playingDevice, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(playingDevice, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(playingDevice, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(playingDevice, diagnostics, context);
@@ -3160,6 +3188,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(scopingEntity, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(scopingEntity, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(scopingEntity, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(scopingEntity, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(scopingEntity, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(scopingEntity, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(scopingEntity, diagnostics, context);
@@ -3200,6 +3229,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(vitalSignsOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(vitalSignsOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(vitalSignsOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(vitalSignsOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(vitalSignsOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(vitalSignsOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(vitalSignsOrganizer, diagnostics, context);
@@ -3214,8 +3244,8 @@ public class PhmrValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(vitalSignsOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(vitalSignsOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerSpecimen(vitalSignsOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validateResultOrganizer_validatePhmrResultOrganizerNumericObservation(vitalSignsOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validateResultOrganizer_validatePhmrResultOrganizerWaveformSeriesObservation(vitalSignsOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validateResultOrganizer_validatePHMRResultOrganizerNumericObservation(vitalSignsOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validateResultOrganizer_validatePHMRResultOrganizerWaveformSeriesObservation(vitalSignsOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validateVitalSignsOrganizer_validateVitalSignsOrganizerTemplateId(vitalSignsOrganizer, diagnostics, context);
     return result;
   }
@@ -3240,6 +3270,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(purpose, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(purpose, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(purpose, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(purpose, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(purpose, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(purpose, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(purpose, diagnostics, context);
@@ -3274,6 +3305,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(medication, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medication, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medication, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(medication, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(medication, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(medication, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(medication, diagnostics, context);
@@ -3310,6 +3342,7 @@ public class PhmrValidator extends EObjectValidator {
     boolean result = validate_EveryMultiplicityConforms(functionalStatus, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(functionalStatus, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(functionalStatus, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(functionalStatus, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryProxyResolves(functionalStatus, diagnostics, context);
     if (result || diagnostics != null) result &= validate_UniqueID(functionalStatus, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(functionalStatus, diagnostics, context);

@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ParticipantOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Participant</b></em>'.
@@ -74,6 +72,7 @@ public class ParticipantImpl extends Participant2Impl implements Participant {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateParticipantTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ParticipantOperations.validateParticipantTemplateId(this, diagnostics, context);
   }
@@ -83,7 +82,8 @@ public class ParticipantImpl extends Participant2Impl implements Participant {
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateParticipantPHMRProductInstance(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validateParticipantPHMRProductInstance(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return ParticipantOperations.validateParticipantPHMRProductInstance(this, diagnostics, context);
   }
@@ -93,6 +93,7 @@ public class ParticipantImpl extends Participant2Impl implements Participant {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Participant init() {
       return Initializer.Util.init(this);
   }
@@ -102,7 +103,8 @@ public class ParticipantImpl extends Participant2Impl implements Participant {
      * <!-- end-user-doc -->
      * @generated
      */
-    public Participant init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public Participant init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

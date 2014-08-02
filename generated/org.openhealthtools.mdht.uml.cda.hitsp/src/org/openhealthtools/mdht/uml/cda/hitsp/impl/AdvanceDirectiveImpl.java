@@ -135,20 +135,21 @@ public class AdvanceDirectiveImpl extends AdvanceDirectiveObservationImpl implem
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAdvanceDirectiveCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOperations.validateAdvanceDirectiveEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateAdvanceDirectiveObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectiveOperations.validateAdvanceDirectiveObservationCode(this, diagnostics, context);
 	}
 
 	/**

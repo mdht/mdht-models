@@ -37,13 +37,13 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhmrResultOrganizerTemplateId' templateId.root='null' constraints.validation.warning='PhmrResultOrganizerNumericObservation' constraints.validation.info='PhmrResultOrganizerWaveformSeriesObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId' templateId.root='null' constraints.validation.warning='PHMRResultOrganizerNumericObservation' constraints.validation.info='PHMRResultOrganizerWaveformSeriesObservation'"
  * @generated
  */
 public interface ResultOrganizer extends org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer {
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -51,11 +51,11 @@ public interface ResultOrganizer extends org.openhealthtools.mdht.uml.cda.ccd.Re
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(phmr::NumericObservation))'"
    * @generated
    */
-	boolean validatePhmrResultOrganizerNumericObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validatePHMRResultOrganizerNumericObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -63,9 +63,9 @@ public interface ResultOrganizer extends org.openhealthtools.mdht.uml.cda.ccd.Re
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(phmr::WaveformSeriesObservation))'"
    * @generated
    */
-	boolean validatePhmrResultOrganizerWaveformSeriesObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validatePHMRResultOrganizerWaveformSeriesObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
@@ -88,6 +88,7 @@ public interface ResultOrganizer extends org.openhealthtools.mdht.uml.cda.ccd.Re
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ResultOrganizer init();
 
   /**
@@ -95,5 +96,6 @@ public interface ResultOrganizer extends org.openhealthtools.mdht.uml.cda.ccd.Re
      * <!-- end-user-doc -->
      * @generated
      */
-    public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultOrganizer

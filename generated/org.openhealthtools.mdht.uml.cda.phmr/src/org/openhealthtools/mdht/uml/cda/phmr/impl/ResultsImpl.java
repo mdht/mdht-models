@@ -40,8 +40,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.Results;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ResultsOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Results</b></em>'.
@@ -76,6 +74,7 @@ public class ResultsImpl extends ResultsSectionImpl implements Results {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateResultsResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ResultsOperations.validateResultsResultOrganizer(this, diagnostics, context);
   }
@@ -85,6 +84,7 @@ public class ResultsImpl extends ResultsSectionImpl implements Results {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ResultOrganizer getPhmrResultOrganizer() {
     return ResultsOperations.getPhmrResultOrganizer(this);
   }
@@ -104,6 +104,7 @@ public class ResultsImpl extends ResultsSectionImpl implements Results {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Results init() {
       return Initializer.Util.init(this);
   }
@@ -113,7 +114,8 @@ public class ResultsImpl extends ResultsSectionImpl implements Results {
      * <!-- end-user-doc -->
      * @generated
      */
-    public Results init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public Results init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

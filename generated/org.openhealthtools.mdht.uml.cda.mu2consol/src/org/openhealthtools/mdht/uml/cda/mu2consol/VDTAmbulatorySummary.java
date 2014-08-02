@@ -65,12 +65,14 @@ public interface VDTAmbulatorySummary extends ViewDownloadTransmitSummary {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VDTAmbulatorySummary init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public VDTAmbulatorySummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VDTAmbulatorySummary

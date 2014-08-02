@@ -36,8 +36,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.VitalSignsOrganizer;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.VitalSignsOrganizerOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Signs Organizer</b></em>'.
@@ -72,6 +70,7 @@ public class VitalSignsOrganizerImpl extends ResultOrganizerImpl implements Vita
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateVitalSignsOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return VitalSignsOrganizerOperations.validateVitalSignsOrganizerTemplateId(this, diagnostics, context);
   }
@@ -81,6 +80,7 @@ public class VitalSignsOrganizerImpl extends ResultOrganizerImpl implements Vita
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public VitalSignsOrganizer init() {
       return Initializer.Util.init(this);
   }
@@ -90,7 +90,8 @@ public class VitalSignsOrganizerImpl extends ResultOrganizerImpl implements Vita
      * <!-- end-user-doc -->
      * @generated
      */
-    public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

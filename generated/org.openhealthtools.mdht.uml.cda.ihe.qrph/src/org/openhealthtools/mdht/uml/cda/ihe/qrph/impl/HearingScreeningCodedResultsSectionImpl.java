@@ -40,76 +40,79 @@ import org.openhealthtools.mdht.uml.cda.ihe.qrph.operations.HearingScreeningCode
 public class HearingScreeningCodedResultsSectionImpl extends CodedResultsSectionImpl implements HearingScreeningCodedResultsSection
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected HearingScreeningCodedResultsSectionImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return QrphPackage.Literals.HEARING_SCREENING_CODED_RESULTS_SECTION;
-	}
+    return QrphPackage.Literals.HEARING_SCREENING_CODED_RESULTS_SECTION;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public ProcedureEntry getQrphProcedureEntry()
+   * @generated
+   */
+  @Override
+public ProcedureEntry getQrphProcedureEntry()
   {
-		return HearingScreeningCodedResultsSectionOperations.getQrphProcedureEntry(this);
-	}
+    return HearingScreeningCodedResultsSectionOperations.getQrphProcedureEntry(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public ExternalReference getQrphExternalReference()
+   * @generated
+   */
+  @Override
+public ExternalReference getQrphExternalReference()
   {
-		return HearingScreeningCodedResultsSectionOperations.getQrphExternalReference(this);
-	}
+    return HearingScreeningCodedResultsSectionOperations.getQrphExternalReference(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public SimpleObservation getQrphSimpleObservation()
+   * @generated
+   */
+  @Override
+public SimpleObservation getQrphSimpleObservation()
   {
-		return HearingScreeningCodedResultsSectionOperations.getQrphSimpleObservation(this);
-	}
+    return HearingScreeningCodedResultsSectionOperations.getQrphSimpleObservation(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validateCodedResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return HearingScreeningCodedResultsSectionOperations.validateCodedResultsSectionTemplateId(this, diagnostics, context);
-	}
+    return HearingScreeningCodedResultsSectionOperations.validateCodedResultsSectionTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 public HearingScreeningCodedResultsSection init() {
-	    return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->

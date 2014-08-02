@@ -146,7 +146,8 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
         EValidator.Registry.INSTANCE.put
             (theEyePackage, 
              new EValidator.Descriptor() {
-                 public EValidator getEValidator() {
+                 @Override
+				public EValidator getEValidator() {
                      return EyeValidator.INSTANCE;
                  }
              });
@@ -169,7 +170,8 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getOcularListOfSurgeriesSection() {
+    @Override
+	public EClass getOcularListOfSurgeriesSection() {
         return ocularListOfSurgeriesSectionEClass;
     }
 
@@ -178,7 +180,8 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getOcularCodedListOfSurgeriesSection() {
+    @Override
+	public EClass getOcularCodedListOfSurgeriesSection() {
         return ocularCodedListOfSurgeriesSectionEClass;
     }
 
@@ -187,7 +190,8 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getOcularHistorySection() {
+    @Override
+	public EClass getOcularHistorySection() {
         return ocularHistorySectionEClass;
     }
 
@@ -196,7 +200,8 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getOphthalmicMedicationsSection() {
+    @Override
+	public EClass getOphthalmicMedicationsSection() {
         return ophthalmicMedicationsSectionEClass;
     }
 
@@ -205,7 +210,8 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getRoutineEyeExamSection() {
+    @Override
+	public EClass getRoutineEyeExamSection() {
         return routineEyeExamSectionEClass;
     }
 
@@ -214,7 +220,8 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getOcularPhysicalExamSection() {
+    @Override
+	public EClass getOcularPhysicalExamSection() {
         return ocularPhysicalExamSectionEClass;
     }
 
@@ -223,7 +230,8 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getGeneralEyeEvaluation() {
+    @Override
+	public EClass getGeneralEyeEvaluation() {
         return generalEyeEvaluationEClass;
     }
 
@@ -232,7 +240,8 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public EyeFactory getEyeFactory()
+    @Override
+	public EyeFactory getEyeFactory()
     {
         return (EyeFactory)getEFactoryInstance();
     }
@@ -692,7 +701,7 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
            source, 
            new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.ihe.eye"
-           });                                                                                                                                                                                             
+           });                                                                                                                                     
     }
 
     /**
@@ -708,27 +717,27 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
           (ocularListOfSurgeriesSectionEClass, 
            source, 
            new String[] {
-             "constraints.validation.error", "OcularListOfSurgeriesSectionTemplateId OcularListOfSurgeriesSectionCode OcularListOfSurgeriesSectionCodeP OcularListOfSurgeriesSectionText",
+             "constraints.validation.error", "SurgeriesSectionTemplateId OcularListOfSurgeriesSectionCode OcularListOfSurgeriesSectionCodeP OcularListOfSurgeriesSectionText",
              "templateId.root", "1.3.6.1.4.1.19376.1.12.1.2.1",
              "code.code", "47519-4",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "History of procedures",
              "constraints.validation.dependOn.OcularListOfSurgeriesSectionCode", "OcularListOfSurgeriesSectionCodeP"
-           });                  
+           });               
         addAnnotation
           (ocularCodedListOfSurgeriesSectionEClass, 
            source, 
            new String[] {
-             "constraints.validation.error", "OcularCodedListOfSurgeriesSectionTemplateId OcularCodedListOfSurgeriesSectionProcedureEntry",
+             "constraints.validation.error", "CodedSurgeriesSectionTemplateId OcularCodedListOfSurgeriesSectionProcedureEntry",
              "templateId.root", "1.3.6.1.4.1.19376.1.12.1.2.2",
              "constraints.validation.warning", "OcularCodedListOfSurgeriesSectionExternalReference"
-           });                  
+           });              
         addAnnotation
           (ocularHistorySectionEClass, 
            source, 
            new String[] {
-             "constraints.validation.error", "OcularHistorySectionTemplateId OcularHistorySectionCode",
+             "constraints.validation.error", "HistoryOfPastIllnessSectionTemplateId OcularHistorySectionCode",
              "templateId.root", "1.3.6.1.4.1.19376.1.12.1.2.3",
              "code.code", "70934-5",
              "code.codeSystem", "2.16.840.1.113883.6.1",
@@ -736,38 +745,38 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
              "code.displayName", "Ocular history",
              "constraints.validation.warning", "OcularHistorySectionOcularListOfSurgeriesSection",
              "constraints.validation.info", "OcularHistorySectionOcularCodedListOfSurgeriesSection"
-           });                      
+           });                 
         addAnnotation
           (ophthalmicMedicationsSectionEClass, 
            source, 
            new String[] {
-             "constraints.validation.error", "OphthalmicMedicationsSectionTemplateId OphthalmicMedicationsSectionCode",
+             "constraints.validation.error", "IHEMedicationsSectionTemplateId OphthalmicMedicationsSectionCode",
              "templateId.root", "1.3.6.1.4.1.19376.1.12.1.2.4",
              "code.code", "70935-2",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Ophthalmic medications",
              "constraints.validation.warning", "OphthalmicMedicationsSectionMedication"
-           });                
+           });             
         addAnnotation
           (routineEyeExamSectionEClass, 
            source, 
            new String[] {
-             "constraints.validation.error", "RoutineEyeExamSectionTemplateId",
+             "constraints.validation.error", "EyesSectionTemplateId",
              "templateId.root", "1.3.6.1.4.1.19376.1.12.1.2.6"
            });      
         addAnnotation
           (ocularPhysicalExamSectionEClass, 
            source, 
            new String[] {
-             "constraints.validation.error", "OcularPhysicalExamSectionTemplateId OcularPhysicalExamSectionCode",
+             "constraints.validation.error", "PhysicalExamSectionTemplateId OcularPhysicalExamSectionCode",
              "templateId.root", "1.3.6.1.4.1.19376.1.12.1.2.5",
              "code.code", "70948-5",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Ocular physical exam",
              "constraints.validation.warning", "OcularPhysicalExamSectionRoutineEyeExamSection"
-           });                
+           });             
         addAnnotation
           (generalEyeEvaluationEClass, 
            source, 
@@ -780,7 +789,7 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
              "code.displayName", "General eye evaluation",
              "constraints.validation.warning", "GeneralEyeEvaluationOcularHistorySection GeneralEyeEvaluationHistoryOfPastIllnessSection GeneralEyeEvaluationSurgeriesSection GeneralEyeEvaluationMedicationsSection GeneralEyeEvaluationOphthalmicMedicationsSection GeneralEyeEvaluationAllergiesReactionsSection GeneralEyeEvaluationActiveProblemsSection GeneralEyeEvaluationFamilyMedicalHistorySection GeneralEyeEvaluationSocialHistorySection GeneralEyeEvaluationAssessmentAndPlanSection GeneralEyeEvaluationHistoryOfPresentIllness GeneralEyeEvaluationReviewOfSystemsSection GeneralEyeEvaluationFunctionalStatusSection GeneralEyeEvaluationCodedFamilyMedicalHistorySection",
              "constraints.validation.info", "GeneralEyeEvaluationCodedSurgeriesSection GeneralEyeEvaluationCodedSocialHistorySection"
-           });                                                                                                                    
+           });                                                                              
     }
 
     /**
@@ -796,22 +805,22 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
           (ocularListOfSurgeriesSectionEClass, 
            source, 
            new String[] {
-           });                  
+           });               
         addAnnotation
           (ocularCodedListOfSurgeriesSectionEClass, 
            source, 
            new String[] {
-           });                  
+           });              
         addAnnotation
           (ocularHistorySectionEClass, 
            source, 
            new String[] {
-           });                      
+           });                 
         addAnnotation
           (ophthalmicMedicationsSectionEClass, 
            source, 
            new String[] {
-           });                
+           });             
         addAnnotation
           (routineEyeExamSectionEClass, 
            source, 
@@ -821,7 +830,7 @@ public class EyePackageImpl extends EPackageImpl implements EyePackage
           (ocularPhysicalExamSectionEClass, 
            source, 
            new String[] {
-           });                                                                                                                               
+           });                                                                                      
     }
 
 } //EyePackageImpl

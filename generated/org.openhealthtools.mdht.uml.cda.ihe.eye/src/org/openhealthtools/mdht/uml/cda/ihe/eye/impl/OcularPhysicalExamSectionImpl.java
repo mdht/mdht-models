@@ -58,6 +58,7 @@ public class OcularPhysicalExamSectionImpl extends PhysicalExamSectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOcularPhysicalExamSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OcularPhysicalExamSectionOperations.validateOcularPhysicalExamSectionCode(this, diagnostics, context);
 	}
@@ -67,6 +68,7 @@ public class OcularPhysicalExamSectionImpl extends PhysicalExamSectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOcularPhysicalExamSectionRoutineEyeExamSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OcularPhysicalExamSectionOperations.validateOcularPhysicalExamSectionRoutineEyeExamSection(this, diagnostics, context);
 	}
@@ -76,6 +78,7 @@ public class OcularPhysicalExamSectionImpl extends PhysicalExamSectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RoutineEyeExamSection getRoutineEyeExamSection() {
 		return OcularPhysicalExamSectionOperations.getRoutineEyeExamSection(this);
 	}

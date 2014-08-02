@@ -12,7 +12,6 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.qrda.*;
 import org.openhealthtools.mdht.uml.cda.qrda.MeasureSection;
 import org.openhealthtools.mdht.uml.cda.qrda.QRDAPackage;
 import org.openhealthtools.mdht.uml.cda.qrda.QualityReportingDocumentArchitectureDocument;

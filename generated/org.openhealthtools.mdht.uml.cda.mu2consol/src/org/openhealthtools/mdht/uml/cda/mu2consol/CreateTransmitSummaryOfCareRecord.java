@@ -129,6 +129,7 @@ public interface CreateTransmitSummaryOfCareRecord extends
 	 * 
 	 * @generated
 	 */
+	@Override
 	public CreateTransmitSummaryOfCareRecord init();
 
 	/**
@@ -136,6 +137,7 @@ public interface CreateTransmitSummaryOfCareRecord extends
 	 * 
 	 * @generated
 	 */
+	@Override
 	public CreateTransmitSummaryOfCareRecord init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CreateTransmitSummaryOfCareRecord

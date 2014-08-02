@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.WaveformSamplePeriodObservation;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.WaveformSamplePeriodObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Waveform Sample Period Observation</b></em>'.
@@ -74,6 +72,7 @@ public class WaveformSamplePeriodObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSamplePeriodObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationTemplateId(this, diagnostics, context);
   }
@@ -83,6 +82,7 @@ public class WaveformSamplePeriodObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSamplePeriodObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationClassCode(this, diagnostics, context);
   }
@@ -92,6 +92,7 @@ public class WaveformSamplePeriodObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSamplePeriodObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationCode(this, diagnostics, context);
   }
@@ -101,6 +102,7 @@ public class WaveformSamplePeriodObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSamplePeriodObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationMoodCode(this, diagnostics, context);
   }
@@ -110,6 +112,7 @@ public class WaveformSamplePeriodObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSamplePeriodObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationValue(this, diagnostics, context);
   }
@@ -119,6 +122,7 @@ public class WaveformSamplePeriodObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public WaveformSamplePeriodObservation init() {
       return Initializer.Util.init(this);
   }
@@ -128,7 +132,8 @@ public class WaveformSamplePeriodObservationImpl extends ObservationImpl impleme
      * <!-- end-user-doc -->
      * @generated
      */
-    public WaveformSamplePeriodObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public WaveformSamplePeriodObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

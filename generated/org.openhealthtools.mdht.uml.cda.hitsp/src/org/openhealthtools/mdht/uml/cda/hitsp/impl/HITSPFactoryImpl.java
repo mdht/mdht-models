@@ -96,7 +96,7 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	 */
 	public static HITSPFactory init() {
 		try {
-			HITSPFactory theHITSPFactory = (HITSPFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/hitsp");
+			HITSPFactory theHITSPFactory = (HITSPFactory) EPackage.Registry.INSTANCE.getEFactory(HITSPPackage.eNS_URI);
 			if (theHITSPFactory != null) {
 				return theHITSPFactory;
 			}

@@ -28,11 +28,13 @@ public interface FunctionalStatusResultObservation extends org.openhealthtools.m
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusResultObservation init();
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public FunctionalStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public FunctionalStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusResultObservation

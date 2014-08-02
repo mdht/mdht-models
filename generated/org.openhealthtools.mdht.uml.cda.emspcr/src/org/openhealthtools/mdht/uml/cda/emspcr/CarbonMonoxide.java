@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getCarbonMonoxide()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CarbonMonoxideTemplateId CarbonMonoxideMoodCode CarbonMonoxideCode CarbonMonoxideCodeP CarbonMonoxideValue' templateId.root='2.16.840.1.1133883.17.3.10.1.167' moodCode='EVN' code.code='20563-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Carboxyhemoglobin/\u200bHemoglobin.total in Blood' constraints.validation.dependOn.CarbonMonoxideCode='CarbonMonoxideCodeP' constraints.validation.info='CarbonMonoxideEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CarbonMonoxideTemplateId CarbonMonoxideMoodCode CarbonMonoxideCode CarbonMonoxideCodeP CarbonMonoxideValue' templateId.root='2.16.840.1.1133883.17.3.10.1.167' moodCode='EVN' code.code='20563-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Carboxyhemoglobin/???Hemoglobin.total in Blood' constraints.validation.dependOn.CarbonMonoxideCode='CarbonMonoxideCodeP' constraints.validation.info='CarbonMonoxideEffectiveTime'"
  * @generated
  */
 public interface CarbonMonoxide extends Observation {

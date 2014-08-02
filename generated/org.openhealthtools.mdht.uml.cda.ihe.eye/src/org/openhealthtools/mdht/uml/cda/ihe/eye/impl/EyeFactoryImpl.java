@@ -33,7 +33,7 @@ public class EyeFactoryImpl extends EFactoryImpl implements EyeFactory
   public static EyeFactory init()
   {
 		try {
-			EyeFactory theEyeFactory = (EyeFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe/eye"); 
+			EyeFactory theEyeFactory = (EyeFactory)EPackage.Registry.INSTANCE.getEFactory(EyePackage.eNS_URI);
 			if (theEyeFactory != null) {
 				return theEyeFactory;
 			}
@@ -81,6 +81,7 @@ public class EyeFactoryImpl extends EFactoryImpl implements EyeFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OcularListOfSurgeriesSection createOcularListOfSurgeriesSection() {
 		OcularListOfSurgeriesSectionImpl ocularListOfSurgeriesSection = new OcularListOfSurgeriesSectionImpl();
 		return ocularListOfSurgeriesSection;
@@ -91,6 +92,7 @@ public class EyeFactoryImpl extends EFactoryImpl implements EyeFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OcularCodedListOfSurgeriesSection createOcularCodedListOfSurgeriesSection() {
 		OcularCodedListOfSurgeriesSectionImpl ocularCodedListOfSurgeriesSection = new OcularCodedListOfSurgeriesSectionImpl();
 		return ocularCodedListOfSurgeriesSection;
@@ -101,6 +103,7 @@ public class EyeFactoryImpl extends EFactoryImpl implements EyeFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OcularHistorySection createOcularHistorySection() {
 		OcularHistorySectionImpl ocularHistorySection = new OcularHistorySectionImpl();
 		return ocularHistorySection;
@@ -111,6 +114,7 @@ public class EyeFactoryImpl extends EFactoryImpl implements EyeFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OphthalmicMedicationsSection createOphthalmicMedicationsSection() {
 		OphthalmicMedicationsSectionImpl ophthalmicMedicationsSection = new OphthalmicMedicationsSectionImpl();
 		return ophthalmicMedicationsSection;
@@ -121,6 +125,7 @@ public class EyeFactoryImpl extends EFactoryImpl implements EyeFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RoutineEyeExamSection createRoutineEyeExamSection() {
 		RoutineEyeExamSectionImpl routineEyeExamSection = new RoutineEyeExamSectionImpl();
 		return routineEyeExamSection;
@@ -131,6 +136,7 @@ public class EyeFactoryImpl extends EFactoryImpl implements EyeFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OcularPhysicalExamSection createOcularPhysicalExamSection() {
 		OcularPhysicalExamSectionImpl ocularPhysicalExamSection = new OcularPhysicalExamSectionImpl();
 		return ocularPhysicalExamSection;
@@ -141,6 +147,7 @@ public class EyeFactoryImpl extends EFactoryImpl implements EyeFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GeneralEyeEvaluation createGeneralEyeEvaluation() {
 		GeneralEyeEvaluationImpl generalEyeEvaluation = new GeneralEyeEvaluationImpl();
 		return generalEyeEvaluation;
@@ -151,7 +158,8 @@ public class EyeFactoryImpl extends EFactoryImpl implements EyeFactory
    * <!-- end-user-doc -->
 	 * @generated
 	 */
-  public EyePackage getEyePackage()
+  @Override
+public EyePackage getEyePackage()
   {
 		return (EyePackage)getEPackage();
 	}

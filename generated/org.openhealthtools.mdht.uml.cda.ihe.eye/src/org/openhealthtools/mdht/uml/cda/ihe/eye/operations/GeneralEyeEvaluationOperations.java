@@ -137,7 +137,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.12.1.1.1')
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -201,9 +200,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '70947-7' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -265,7 +261,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ChiefComplaintSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -327,7 +322,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularHistorySection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -389,7 +383,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HistoryOfPastIllnessSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -451,7 +444,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::SurgeriesSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -513,7 +505,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::CodedSurgeriesSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -575,7 +566,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MedicationsSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -637,7 +627,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OphthalmicMedicationsSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -699,7 +688,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AllergiesReactionsSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -761,7 +749,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ActiveProblemsSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -823,7 +810,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::FamilyMedicalHistorySection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -885,7 +871,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::SocialHistorySection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -947,7 +932,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularPhysicalExamSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1009,7 +993,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AssessmentAndPlanSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1071,7 +1054,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::HistoryOfPresentIllness))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1133,7 +1115,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ReviewOfSystemsSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1195,7 +1176,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::CodedSocialHistorySection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1257,7 +1237,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::FunctionalStatusSection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1319,7 +1298,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::CodedFamilyMedicalHistorySection))
 	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1378,10 +1356,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ChiefComplaintSection))->asSequence()->any(true).oclAsType(ihe::ChiefComplaintSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1423,10 +1397,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularHistorySection))->asSequence()->any(true).oclAsType(eye::OcularHistorySection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1468,10 +1438,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HistoryOfPastIllnessSection))->asSequence()->any(true).oclAsType(ihe::HistoryOfPastIllnessSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1513,10 +1479,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::SurgeriesSection))->asSequence()->any(true).oclAsType(ihe::SurgeriesSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1558,10 +1520,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::CodedSurgeriesSection))->asSequence()->any(true).oclAsType(ihe::CodedSurgeriesSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1603,10 +1561,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MedicationsSection))->asSequence()->any(true).oclAsType(ihe::MedicationsSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1648,10 +1602,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OphthalmicMedicationsSection))->asSequence()->any(true).oclAsType(eye::OphthalmicMedicationsSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1693,10 +1643,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AllergiesReactionsSection))->asSequence()->any(true).oclAsType(ihe::AllergiesReactionsSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1738,10 +1684,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ActiveProblemsSection))->asSequence()->any(true).oclAsType(ihe::ActiveProblemsSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1783,10 +1725,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::FamilyMedicalHistorySection))->asSequence()->any(true).oclAsType(ihe::FamilyMedicalHistorySection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1828,10 +1766,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::SocialHistorySection))->asSequence()->any(true).oclAsType(ihe::SocialHistorySection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1873,10 +1807,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularPhysicalExamSection))->asSequence()->any(true).oclAsType(eye::OcularPhysicalExamSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1918,10 +1848,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AssessmentAndPlanSection))->asSequence()->any(true).oclAsType(ihe::AssessmentAndPlanSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -1963,10 +1889,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::HistoryOfPresentIllness))->asSequence()->any(true).oclAsType(cdt::HistoryOfPresentIllness)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -2008,10 +1930,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(ihe::ReviewOfSystemsSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -2053,10 +1971,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::CodedSocialHistorySection))->asSequence()->any(true).oclAsType(ihe::CodedSocialHistorySection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -2098,10 +2012,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::FunctionalStatusSection))->asSequence()->any(true).oclAsType(ccd::FunctionalStatusSection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -2143,10 +2053,6 @@ public class GeneralEyeEvaluationOperations extends ClinicalDocumentOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::CodedFamilyMedicalHistorySection))->asSequence()->any(true).oclAsType(ihe::CodedFamilyMedicalHistorySection)
-	 * @param generalEyeEvaluation The receiving '<em><b>General Eye Evaluation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	

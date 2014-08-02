@@ -23,8 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.PostoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
-import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
-import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
@@ -320,7 +318,7 @@ public interface SummaryOfCareRecord extends GeneralHeaderConstraints {
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))->asSequence()->any(true).oclAsType(consol::ResultsSection)'"
 	 * @generated
 	 */
-	ResultsSection getResultsSection();
+	org.openhealthtools.mdht.uml.cda.mu2consol.ResultsSection getResultsSection();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -334,7 +332,7 @@ public interface SummaryOfCareRecord extends GeneralHeaderConstraints {
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection))->asSequence()->any(true).oclAsType(consol::ProceduresSection)'"
 	 * @generated
 	 */
-	ProceduresSection getProceduresSection();
+	org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection getProceduresSection();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -354,12 +352,14 @@ public interface SummaryOfCareRecord extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SummaryOfCareRecord init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public SummaryOfCareRecord init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SummaryOfCareRecord

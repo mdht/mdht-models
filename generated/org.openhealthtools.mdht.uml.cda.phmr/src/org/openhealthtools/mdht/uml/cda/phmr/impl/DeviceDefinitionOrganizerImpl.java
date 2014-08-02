@@ -42,8 +42,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.SamplingFrequencyObservation;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.DeviceDefinitionOrganizerOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Device Definition Organizer</b></em>'.
@@ -78,6 +76,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceDefinitionOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerTemplateId(this, diagnostics, context);
   }
@@ -87,6 +86,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceDefinitionOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerClassCode(this, diagnostics, context);
   }
@@ -96,6 +96,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceDefinitionOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerEffectiveTime(this, diagnostics, context);
   }
@@ -105,6 +106,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceDefinitionOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerMoodCode(this, diagnostics, context);
   }
@@ -114,6 +116,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceDefinitionOrganizerSamplingFrequencyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerSamplingFrequencyObservation(this, diagnostics, context);
   }
@@ -123,6 +126,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation(this, diagnostics, context);
   }
@@ -132,6 +136,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceDefinitionOrganizerDeviceResolutionObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceResolutionObservation(this, diagnostics, context);
   }
@@ -141,6 +146,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateDeviceDefinitionOrganizerDeviceAccuracyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceAccuracyObservation(this, diagnostics, context);
   }
@@ -150,7 +156,8 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeviceDefinitionOrganizerParticipant(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validateDeviceDefinitionOrganizerParticipant(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerParticipant(this, diagnostics, context);
   }
@@ -160,6 +167,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public SamplingFrequencyObservation getSamplingFrequencyObservation() {
     return DeviceDefinitionOrganizerOperations.getSamplingFrequencyObservation(this);
   }
@@ -169,6 +177,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public DeviceMeasurementRangeObservation getDeviceMeasurementRangeObservation() {
     return DeviceDefinitionOrganizerOperations.getDeviceMeasurementRangeObservation(this);
   }
@@ -178,6 +187,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public DeviceResolutionObservation getDeviceResolutionObservation() {
     return DeviceDefinitionOrganizerOperations.getDeviceResolutionObservation(this);
   }
@@ -187,6 +197,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public DeviceAccuracyObservation getDeviceAccuracyObservation() {
     return DeviceDefinitionOrganizerOperations.getDeviceAccuracyObservation(this);
   }
@@ -196,6 +207,7 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public DeviceDefinitionOrganizer init() {
       return Initializer.Util.init(this);
   }
@@ -205,7 +217,8 @@ public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements Devi
      * <!-- end-user-doc -->
      * @generated
      */
-    public DeviceDefinitionOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public DeviceDefinitionOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

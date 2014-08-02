@@ -332,7 +332,8 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
             (thePhmrPackage, 
              new EValidator.Descriptor()
              {
-                 public EValidator getEValidator()
+                 @Override
+				public EValidator getEValidator()
                  {
                      return PhmrValidator.INSTANCE;
                  }
@@ -356,6 +357,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getDeviceAccuracyObservation() {
         return deviceAccuracyObservationEClass;
     }
@@ -365,6 +367,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getDeviceDefinitionOrganizer() {
         return deviceDefinitionOrganizerEClass;
     }
@@ -374,6 +377,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getSamplingFrequencyObservation() {
         return samplingFrequencyObservationEClass;
     }
@@ -383,6 +387,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getDeviceMeasurementRangeObservation() {
         return deviceMeasurementRangeObservationEClass;
     }
@@ -392,6 +397,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getDeviceResolutionObservation() {
         return deviceResolutionObservationEClass;
     }
@@ -401,6 +407,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getEventObservation() {
         return eventObservationEClass;
     }
@@ -410,6 +417,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getMedicalEquipment() {
         return medicalEquipmentEClass;
     }
@@ -419,6 +427,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getNumericObservation() {
         return numericObservationEClass;
     }
@@ -428,6 +437,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getObservationMediaJPG() {
         return observationMediaJPGEClass;
     }
@@ -437,6 +447,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getObservationNullFlavor() {
         return observationNullFlavorEClass;
     }
@@ -446,6 +457,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getWaveformObservation() {
         return waveformObservationEClass;
     }
@@ -455,6 +467,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getWaveformSamplePeriodObservation() {
         return waveformSamplePeriodObservationEClass;
     }
@@ -464,6 +477,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getParticipant() {
         return participantEClass;
     }
@@ -473,6 +487,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getPersonalHealthcareMonitoringReport() {
         return personalHealthcareMonitoringReportEClass;
     }
@@ -482,6 +497,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getGeneralHeaderConstraints() {
         return generalHeaderConstraintsEClass;
     }
@@ -491,6 +507,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getVitalSigns() {
         return vitalSignsEClass;
     }
@@ -500,6 +517,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getResultOrganizer() {
         return resultOrganizerEClass;
     }
@@ -509,6 +527,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getWaveformSeriesObservation() {
         return waveformSeriesObservationEClass;
     }
@@ -518,6 +537,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getResults() {
         return resultsEClass;
     }
@@ -527,6 +547,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getParticipantRole() {
         return participantRoleEClass;
     }
@@ -536,6 +557,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getPHMRProductInstance() {
         return phmrProductInstanceEClass;
     }
@@ -545,6 +567,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getPHMRProductInstanceReference() {
         return phmrProductInstanceReferenceEClass;
     }
@@ -554,6 +577,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getPlayingDevice() {
         return playingDeviceEClass;
     }
@@ -563,6 +587,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getScopingEntity() {
         return scopingEntityEClass;
     }
@@ -572,6 +597,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getVitalSignsOrganizer() {
         return vitalSignsOrganizerEClass;
     }
@@ -581,6 +607,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getPurpose() {
         return purposeEClass;
     }
@@ -590,6 +617,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getMedication() {
         return medicationEClass;
     }
@@ -599,6 +627,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getFunctionalStatus() {
         return functionalStatusEClass;
     }
@@ -608,6 +637,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 	 * <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public PhmrFactory getPhmrFactory() {
         return (PhmrFactory)getEFactoryInstance();
     }
@@ -1119,33 +1149,6 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         initEClass(numericObservationEClass, NumericObservation.class, "NumericObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
         op = addEOperation(numericObservationEClass, ecorePackage.getEBoolean(), "validateNumericObservationClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(numericObservationEClass, ecorePackage.getEBoolean(), "validateNumericObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(numericObservationEClass, ecorePackage.getEBoolean(), "validateNumericObservationMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(numericObservationEClass, ecorePackage.getEBoolean(), "validateNumericObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1681,7 +1684,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 
         initEClass(vitalSignsEClass, VitalSigns.class, "VitalSigns", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(vitalSignsEClass, ecorePackage.getEBoolean(), "validateVitalSignsVitalSignsOrganizer", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(vitalSignsEClass, ecorePackage.getEBoolean(), "validateVitalSignsOrganizer", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1694,7 +1697,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 
         initEClass(resultOrganizerEClass, ResultOrganizer.class, "ResultOrganizer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(resultOrganizerEClass, ecorePackage.getEBoolean(), "validatePhmrResultOrganizerNumericObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(resultOrganizerEClass, ecorePackage.getEBoolean(), "validatePHMRResultOrganizerNumericObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1703,7 +1706,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(resultOrganizerEClass, ecorePackage.getEBoolean(), "validatePhmrResultOrganizerWaveformSeriesObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(resultOrganizerEClass, ecorePackage.getEBoolean(), "validatePHMRResultOrganizerWaveformSeriesObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1818,7 +1821,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 
         initEClass(participantRoleEClass, ParticipantRole.class, "ParticipantRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(participantRoleEClass, ecorePackage.getEBoolean(), "validatePhmrParticipantRoleTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(participantRoleEClass, ecorePackage.getEBoolean(), "validatePHMRParticipantRoleTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1827,7 +1830,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(participantRoleEClass, ecorePackage.getEBoolean(), "validatePhmrParticipantRoleId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(participantRoleEClass, ecorePackage.getEBoolean(), "validatePHMRParticipantRoleId", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1996,7 +1999,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
            new String[] 
            {
              "initializers", "org.openhealthtools.mdht.uml.cda.phmr"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                      
     }
 
   /**
@@ -2092,7 +2095,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "MedicalEquipmentTemplateId MedicalEquipmentText",
+             "constraints.validation.error", "MedicalEquipmentSectionTemplateId MedicalEquipmentText",
              "templateId.root", "2.16.840.1.113883.10.20.9.1",
              "constraints.validation.warning", "MedicalEquipmentDeviceDefinitionOrganizer"
            });             
@@ -2101,12 +2104,12 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "NumericObservationTemplateId NumericObservationClassCode NumericObservationCode NumericObservationMoodCode NumericObservationValue",
+             "constraints.validation.error", "ResultObservationTemplateId NumericObservationClassCode ResultObservationCode ResultObservationMoodCode ResultObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.9.8",
              "classCode", "OBS",
              "moodCode", "EVN",
              "constraints.validation.warning", "NumericObservationPHMRProductInstanceReference"
-           });                     
+           });            
         addAnnotation
           (observationMediaJPGEClass, 
            source, 
@@ -2189,19 +2192,19 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "VitalSignsTemplateId",
+             "constraints.validation.error", "VitalSignsSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.9.2",
-             "constraints.validation.warning", "VitalSignsVitalSignsOrganizer"
+             "constraints.validation.warning", "VitalSignsOrganizer"
            });          
         addAnnotation
           (resultOrganizerEClass, 
            source, 
            new String[] 
            {
-             "constraints.validation.error", "PhmrResultOrganizerTemplateId",
+             "constraints.validation.error", "ResultOrganizerTemplateId",
              "templateId.root", "null",
-             "constraints.validation.warning", "PhmrResultOrganizerNumericObservation",
-             "constraints.validation.info", "PhmrResultOrganizerWaveformSeriesObservation"
+             "constraints.validation.warning", "PHMRResultOrganizerNumericObservation",
+             "constraints.validation.info", "PHMRResultOrganizerWaveformSeriesObservation"
            });              
         addAnnotation
           (waveformSeriesObservationEClass, 
@@ -2222,7 +2225,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "ResultsTemplateId",
+             "constraints.validation.error", "ResultsSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.9.14",
              "constraints.validation.warning", "ResultsResultOrganizer"
            });          
@@ -2231,7 +2234,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "PhmrParticipantRoleTemplateId PhmrParticipantRoleId",
+             "constraints.validation.error", "PHMRParticipantRoleTemplateId PHMRParticipantRoleId",
              "templateId.root", "null"
            });           
         addAnnotation
@@ -2239,7 +2242,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "PHMRProductInstanceTemplateId PHMRProductInstanceId PHMRProductInstancePlayingDevice",
+             "constraints.validation.error", "ProductInstanceTemplateId PHMRProductInstanceId PHMRProductInstancePlayingDevice",
              "templateId.root", "2.16.840.1.113883.10.20.9.9",
              "constraints.validation.info", "PHMRProductInstanceCode",
              "constraints.validation.warning", "PHMRProductInstanceScopingEntity"
@@ -2284,7 +2287,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "PurposeTemplateId",
+             "constraints.validation.error", "PurposeSectionTemplateId",
              "templateId.root", "null"
            });      
         addAnnotation
@@ -2292,7 +2295,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "MedicationTemplateId",
+             "constraints.validation.error", "MedicationsSectionTemplateId",
              "templateId.root", "null"
            });      
         addAnnotation
@@ -2300,7 +2303,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "FunctionalStatusTemplateId",
+             "constraints.validation.error", "FunctionalStatusSectionTemplateId",
              "templateId.root", "null"
            }); 
     }
@@ -2324,7 +2327,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
            source, 
            new String[] 
            {
-           });                                                                                                                                                                                                      
+           });                                                                                                                                                                                             
         addAnnotation
           (vitalSignsEClass, 
            source, 

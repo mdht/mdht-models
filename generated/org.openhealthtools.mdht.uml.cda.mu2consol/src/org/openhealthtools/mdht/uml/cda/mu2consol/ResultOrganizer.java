@@ -43,12 +43,14 @@ public interface ResultOrganizer extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultOrganizer init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public ResultOrganizer init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultOrganizer

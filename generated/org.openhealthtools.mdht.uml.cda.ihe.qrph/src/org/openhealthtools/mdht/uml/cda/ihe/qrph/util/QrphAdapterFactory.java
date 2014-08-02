@@ -37,276 +37,291 @@ import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 public class QrphAdapterFactory extends AdapterFactoryImpl
 {
   /**
-	 * The cached model package.
-	 * <!-- begin-user-doc -->
+   * The cached model package.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected static QrphPackage modelPackage;
 
   /**
-	 * Creates an instance of the adapter factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the adapter factory.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public QrphAdapterFactory()
   {
-		if (modelPackage == null) {
-			modelPackage = QrphPackage.eINSTANCE;
-		}
-	}
+    if (modelPackage == null)
+    {
+      modelPackage = QrphPackage.eINSTANCE;
+    }
+  }
 
   /**
-	 * Returns whether this factory is applicable for the type of the object.
-	 * <!-- begin-user-doc -->
+   * Returns whether this factory is applicable for the type of the object.
+   * <!-- begin-user-doc -->
    * This implementation returns <code>true</code> if the object is either the model's package or is an instance object of the model.
    * <!-- end-user-doc -->
-	 * @return whether this factory is applicable for the type of the object.
-	 * @generated
-	 */
+   * @return whether this factory is applicable for the type of the object.
+   * @generated
+   */
   @Override
   public boolean isFactoryForType(Object object)
   {
-		if (object == modelPackage) {
-			return true;
-		}
-		if (object instanceof EObject) {
-			return ((EObject)object).eClass().getEPackage() == modelPackage;
-		}
-		return false;
-	}
+    if (object == modelPackage)
+    {
+      return true;
+    }
+    if (object instanceof EObject)
+    {
+      return ((EObject)object).eClass().getEPackage() == modelPackage;
+    }
+    return false;
+  }
 
   /**
-	 * The switch that delegates to the <code>createXXX</code> methods.
-	 * <!-- begin-user-doc -->
+   * The switch that delegates to the <code>createXXX</code> methods.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected QrphSwitch<Adapter> modelSwitch =
-    new QrphSwitch<Adapter>() {
-			@Override
-			public Adapter caseEarlyHearingCarePlanDocument(EarlyHearingCarePlanDocument object) {
-				return createEarlyHearingCarePlanDocumentAdapter();
-			}
-			@Override
-			public Adapter caseRiskIndicatorsForHearingLossSection(RiskIndicatorsForHearingLossSection object) {
-				return createRiskIndicatorsForHearingLossSectionAdapter();
-			}
-			@Override
-			public Adapter caseHearingScreeningCodedResultsSection(HearingScreeningCodedResultsSection object) {
-				return createHearingScreeningCodedResultsSectionAdapter();
-			}
-			@Override
-			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
-				return createInfrastructureRootAdapter();
-			}
-			@Override
-			public Adapter caseAct(Act object) {
-				return createActAdapter();
-			}
-			@Override
-			public Adapter caseClinicalDocument(ClinicalDocument object) {
-				return createClinicalDocumentAdapter();
-			}
-			@Override
-			public Adapter caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
-				return createGeneralHeaderConstraintsAdapter();
-			}
-			@Override
-			public Adapter caseMedicalDocument(MedicalDocument object) {
-				return createMedicalDocumentAdapter();
-			}
-			@Override
-			public Adapter caseSection(Section object) {
-				return createSectionAdapter();
-			}
-			@Override
-			public Adapter caseCodedResultsSection(CodedResultsSection object) {
-				return createCodedResultsSectionAdapter();
-			}
-			@Override
-			public Adapter defaultCase(EObject object) {
-				return createEObjectAdapter();
-			}
-		};
+    new QrphSwitch<Adapter>()
+    {
+      @Override
+      public Adapter caseEarlyHearingCarePlanDocument(EarlyHearingCarePlanDocument object)
+      {
+        return createEarlyHearingCarePlanDocumentAdapter();
+      }
+      @Override
+      public Adapter caseRiskIndicatorsForHearingLossSection(RiskIndicatorsForHearingLossSection object)
+      {
+        return createRiskIndicatorsForHearingLossSectionAdapter();
+      }
+      @Override
+      public Adapter caseHearingScreeningCodedResultsSection(HearingScreeningCodedResultsSection object)
+      {
+        return createHearingScreeningCodedResultsSectionAdapter();
+      }
+      @Override
+      public Adapter caseInfrastructureRoot(InfrastructureRoot object)
+      {
+        return createInfrastructureRootAdapter();
+      }
+      @Override
+      public Adapter caseAct(Act object)
+      {
+        return createActAdapter();
+      }
+      @Override
+      public Adapter caseClinicalDocument(ClinicalDocument object)
+      {
+        return createClinicalDocumentAdapter();
+      }
+      @Override
+      public Adapter caseGeneralHeaderConstraints(GeneralHeaderConstraints object)
+      {
+        return createGeneralHeaderConstraintsAdapter();
+      }
+      @Override
+      public Adapter caseMedicalDocument(MedicalDocument object)
+      {
+        return createMedicalDocumentAdapter();
+      }
+      @Override
+      public Adapter caseSection(Section object)
+      {
+        return createSectionAdapter();
+      }
+      @Override
+      public Adapter caseCodedResultsSection(CodedResultsSection object)
+      {
+        return createCodedResultsSectionAdapter();
+      }
+      @Override
+      public Adapter defaultCase(EObject object)
+      {
+        return createEObjectAdapter();
+      }
+    };
 
   /**
-	 * Creates an adapter for the <code>target</code>.
-	 * <!-- begin-user-doc -->
+   * Creates an adapter for the <code>target</code>.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param target the object to adapt.
-	 * @return the adapter for the <code>target</code>.
-	 * @generated
-	 */
+   * @param target the object to adapt.
+   * @return the adapter for the <code>target</code>.
+   * @generated
+   */
   @Override
   public Adapter createAdapter(Notifier target)
   {
-		return modelSwitch.doSwitch((EObject)target);
-	}
+    return modelSwitch.doSwitch((EObject)target);
+  }
 
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.qrph.EarlyHearingCarePlanDocument <em>Early Hearing Care Plan Document</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.qrph.EarlyHearingCarePlanDocument <em>Early Hearing Care Plan Document</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.qrph.EarlyHearingCarePlanDocument
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ihe.qrph.EarlyHearingCarePlanDocument
+   * @generated
+   */
   public Adapter createEarlyHearingCarePlanDocumentAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.qrph.RiskIndicatorsForHearingLossSection <em>Risk Indicators For Hearing Loss Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.qrph.RiskIndicatorsForHearingLossSection <em>Risk Indicators For Hearing Loss Section</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.qrph.RiskIndicatorsForHearingLossSection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ihe.qrph.RiskIndicatorsForHearingLossSection
+   * @generated
+   */
   public Adapter createRiskIndicatorsForHearingLossSectionAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.qrph.HearingScreeningCodedResultsSection <em>Hearing Screening Coded Results Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.qrph.HearingScreeningCodedResultsSection <em>Hearing Screening Coded Results Section</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.qrph.HearingScreeningCodedResultsSection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ihe.qrph.HearingScreeningCodedResultsSection
+   * @generated
+   */
   public Adapter createHearingScreeningCodedResultsSectionAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot <em>Infrastructure Root</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot <em>Infrastructure Root</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
+   * @generated
+   */
   public Adapter createInfrastructureRootAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.Act <em>Act</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.Act <em>Act</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.Act
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.hl7.rim.Act
+   * @generated
+   */
   public Adapter createActAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalDocument <em>Clinical Document</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalDocument <em>Clinical Document</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalDocument
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ClinicalDocument
+   * @generated
+   */
   public Adapter createClinicalDocumentAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints
+   * @generated
+   */
   public Adapter createGeneralHeaderConstraintsAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.MedicalDocument <em>Medical Document</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.MedicalDocument <em>Medical Document</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.MedicalDocument
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ihe.MedicalDocument
+   * @generated
+   */
   public Adapter createMedicalDocumentAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Section <em>Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Section <em>Section</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Section
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.Section
+   * @generated
+   */
   public Adapter createSectionAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection <em>Coded Results Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection <em>Coded Results Section</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection
+   * @generated
+   */
   public Adapter createCodedResultsSectionAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for the default case.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for the default case.
+   * <!-- begin-user-doc -->
    * This default implementation returns null.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @generated
+   */
   public Adapter createEObjectAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
 } //QrphAdapterFactory

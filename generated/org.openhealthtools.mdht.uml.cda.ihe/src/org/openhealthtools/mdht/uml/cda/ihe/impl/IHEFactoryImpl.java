@@ -25,14 +25,14 @@ import org.openhealthtools.mdht.uml.cda.ihe.*;
  */
 public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+	* Creates the default factory implementation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static IHEFactory init() {
 		try {
-			IHEFactory theIHEFactory = (IHEFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
+			IHEFactory theIHEFactory = (IHEFactory) EPackage.Registry.INSTANCE.getEFactory(IHEPackage.eNS_URI);
 			if (theIHEFactory != null) {
 				return theIHEFactory;
 			}
@@ -43,20 +43,20 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	}
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+	* Creates an instance of the factory.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public IHEFactoryImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
@@ -294,1160 +294,1160 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ImmunizationsSection createImmunizationsSection() {
 		ImmunizationsSectionImpl immunizationsSection = new ImmunizationsSectionImpl();
 		return immunizationsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationsAdministeredSection createMedicationsAdministeredSection() {
 		MedicationsAdministeredSectionImpl medicationsAdministeredSection = new MedicationsAdministeredSectionImpl();
 		return medicationsAdministeredSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ConcernEntry createConcernEntry() {
 		ConcernEntryImpl concernEntry = new ConcernEntryImpl();
 		return concernEntry;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicalDocument createMedicalDocument() {
 		MedicalDocumentImpl medicalDocument = new MedicalDocumentImpl();
 		return medicalDocument;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ActiveProblemsSection createActiveProblemsSection() {
 		ActiveProblemsSectionImpl activeProblemsSection = new ActiveProblemsSectionImpl();
 		return activeProblemsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProblemConcernEntry createProblemConcernEntry() {
 		ProblemConcernEntryImpl problemConcernEntry = new ProblemConcernEntryImpl();
 		return problemConcernEntry;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProblemEntry createProblemEntry() {
 		ProblemEntryImpl problemEntry = new ProblemEntryImpl();
 		return problemEntry;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public Severity createSeverity() {
 		SeverityImpl severity = new SeverityImpl();
 		return severity;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProblemStatusObservation createProblemStatusObservation() {
 		ProblemStatusObservationImpl problemStatusObservation = new ProblemStatusObservationImpl();
 		return problemStatusObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HealthStatusObservation createHealthStatusObservation() {
 		HealthStatusObservationImpl healthStatusObservation = new HealthStatusObservationImpl();
 		return healthStatusObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationsSection createMedicationsSection() {
 		MedicationsSectionImpl medicationsSection = new MedicationsSectionImpl();
 		return medicationsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AllergyIntoleranceConcern createAllergyIntoleranceConcern() {
 		AllergyIntoleranceConcernImpl allergyIntoleranceConcern = new AllergyIntoleranceConcernImpl();
 		return allergyIntoleranceConcern;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AllergyIntolerance createAllergyIntolerance() {
 		AllergyIntoleranceImpl allergyIntolerance = new AllergyIntoleranceImpl();
 		return allergyIntolerance;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProblemEntryReactionObservationContainer createProblemEntryReactionObservationContainer() {
 		ProblemEntryReactionObservationContainerImpl problemEntryReactionObservationContainer = new ProblemEntryReactionObservationContainerImpl();
 		return problemEntryReactionObservationContainer;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AllergiesReactionsSection createAllergiesReactionsSection() {
 		AllergiesReactionsSectionImpl allergiesReactionsSection = new AllergiesReactionsSectionImpl();
 		return allergiesReactionsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public NormalDose createNormalDose() {
 		NormalDoseImpl normalDose = new NormalDoseImpl();
 		return normalDose;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public TaperedDose createTaperedDose() {
 		TaperedDoseImpl taperedDose = new TaperedDoseImpl();
 		return taperedDose;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SplitDose createSplitDose() {
 		SplitDoseImpl splitDose = new SplitDoseImpl();
 		return splitDose;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ConditionalDose createConditionalDose() {
 		ConditionalDoseImpl conditionalDose = new ConditionalDoseImpl();
 		return conditionalDose;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CombinationMedication createCombinationMedication() {
 		CombinationMedicationImpl combinationMedication = new CombinationMedicationImpl();
 		return combinationMedication;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public VitalSignsSection createVitalSignsSection() {
 		VitalSignsSectionImpl vitalSignsSection = new VitalSignsSectionImpl();
 		return vitalSignsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CodedVitalSignsSection createCodedVitalSignsSection() {
 		CodedVitalSignsSectionImpl codedVitalSignsSection = new CodedVitalSignsSectionImpl();
 		return codedVitalSignsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public VitalSignObservation createVitalSignObservation() {
 		VitalSignObservationImpl vitalSignObservation = new VitalSignObservationImpl();
 		return vitalSignObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public VitalSignsOrganizer createVitalSignsOrganizer() {
 		VitalSignsOrganizerImpl vitalSignsOrganizer = new VitalSignsOrganizerImpl();
 		return vitalSignsOrganizer;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PayersSection createPayersSection() {
 		PayersSectionImpl payersSection = new PayersSectionImpl();
 		return payersSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HistoryOfPastIllnessSection createHistoryOfPastIllnessSection() {
 		HistoryOfPastIllnessSectionImpl historyOfPastIllnessSection = new HistoryOfPastIllnessSectionImpl();
 		return historyOfPastIllnessSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ChiefComplaintSection createChiefComplaintSection() {
 		ChiefComplaintSectionImpl chiefComplaintSection = new ChiefComplaintSectionImpl();
 		return chiefComplaintSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ReasonForReferralSection createReasonForReferralSection() {
 		ReasonForReferralSectionImpl reasonForReferralSection = new ReasonForReferralSectionImpl();
 		return reasonForReferralSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HistoryOfPresentIllness createHistoryOfPresentIllness() {
 		HistoryOfPresentIllnessImpl historyOfPresentIllness = new HistoryOfPresentIllnessImpl();
 		return historyOfPresentIllness;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SurgeriesSection createSurgeriesSection() {
 		SurgeriesSectionImpl surgeriesSection = new SurgeriesSectionImpl();
 		return surgeriesSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CodedSurgeriesSection createCodedSurgeriesSection() {
 		CodedSurgeriesSectionImpl codedSurgeriesSection = new CodedSurgeriesSectionImpl();
 		return codedSurgeriesSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HospitalAdmissionDiagnosisSection createHospitalAdmissionDiagnosisSection() {
 		HospitalAdmissionDiagnosisSectionImpl hospitalAdmissionDiagnosisSection = new HospitalAdmissionDiagnosisSectionImpl();
 		return hospitalAdmissionDiagnosisSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DischargeDiagnosisSection createDischargeDiagnosisSection() {
 		DischargeDiagnosisSectionImpl dischargeDiagnosisSection = new DischargeDiagnosisSectionImpl();
 		return dischargeDiagnosisSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AdmissionMedicationHistorySection createAdmissionMedicationHistorySection() {
 		AdmissionMedicationHistorySectionImpl admissionMedicationHistorySection = new AdmissionMedicationHistorySectionImpl();
 		return admissionMedicationHistorySection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HospitalDischargeMedicationsSection createHospitalDischargeMedicationsSection() {
 		HospitalDischargeMedicationsSectionImpl hospitalDischargeMedicationsSection = new HospitalDischargeMedicationsSectionImpl();
 		return hospitalDischargeMedicationsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CodedAdvanceDirectivesSection createCodedAdvanceDirectivesSection() {
 		CodedAdvanceDirectivesSectionImpl codedAdvanceDirectivesSection = new CodedAdvanceDirectivesSectionImpl();
 		return codedAdvanceDirectivesSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AdvanceDirectivesSection createAdvanceDirectivesSection() {
 		AdvanceDirectivesSectionImpl advanceDirectivesSection = new AdvanceDirectivesSectionImpl();
 		return advanceDirectivesSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AdvanceDirectiveObservation createAdvanceDirectiveObservation() {
 		AdvanceDirectiveObservationImpl advanceDirectiveObservation = new AdvanceDirectiveObservationImpl();
 		return advanceDirectiveObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PhysicalExamNarrativeSection createPhysicalExamNarrativeSection() {
 		PhysicalExamNarrativeSectionImpl physicalExamNarrativeSection = new PhysicalExamNarrativeSectionImpl();
 		return physicalExamNarrativeSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PhysicalExamSection createPhysicalExamSection() {
 		PhysicalExamSectionImpl physicalExamSection = new PhysicalExamSectionImpl();
 		return physicalExamSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public GeneralAppearanceSection createGeneralAppearanceSection() {
 		GeneralAppearanceSectionImpl generalAppearanceSection = new GeneralAppearanceSectionImpl();
 		return generalAppearanceSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public VisibleImplantedMedicalDevicesSection createVisibleImplantedMedicalDevicesSection() {
 		VisibleImplantedMedicalDevicesSectionImpl visibleImplantedMedicalDevicesSection = new VisibleImplantedMedicalDevicesSectionImpl();
 		return visibleImplantedMedicalDevicesSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public IntegumentarySystemSection createIntegumentarySystemSection() {
 		IntegumentarySystemSectionImpl integumentarySystemSection = new IntegumentarySystemSectionImpl();
 		return integumentarySystemSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HeadSection createHeadSection() {
 		HeadSectionImpl headSection = new HeadSectionImpl();
 		return headSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EyesSection createEyesSection() {
 		EyesSectionImpl eyesSection = new EyesSectionImpl();
 		return eyesSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EarsNoseMouthThroatSection createEarsNoseMouthThroatSection() {
 		EarsNoseMouthThroatSectionImpl earsNoseMouthThroatSection = new EarsNoseMouthThroatSectionImpl();
 		return earsNoseMouthThroatSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EarsSection createEarsSection() {
 		EarsSectionImpl earsSection = new EarsSectionImpl();
 		return earsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public NoseSection createNoseSection() {
 		NoseSectionImpl noseSection = new NoseSectionImpl();
 		return noseSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MouthThroatTeethSection createMouthThroatTeethSection() {
 		MouthThroatTeethSectionImpl mouthThroatTeethSection = new MouthThroatTeethSectionImpl();
 		return mouthThroatTeethSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public NeckSection createNeckSection() {
 		NeckSectionImpl neckSection = new NeckSectionImpl();
 		return neckSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EndocrineSystemSection createEndocrineSystemSection() {
 		EndocrineSystemSectionImpl endocrineSystemSection = new EndocrineSystemSectionImpl();
 		return endocrineSystemSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ThoraxLungsSection createThoraxLungsSection() {
 		ThoraxLungsSectionImpl thoraxLungsSection = new ThoraxLungsSectionImpl();
 		return thoraxLungsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ChestWallSection createChestWallSection() {
 		ChestWallSectionImpl chestWallSection = new ChestWallSectionImpl();
 		return chestWallSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public BreastSection createBreastSection() {
 		BreastSectionImpl breastSection = new BreastSectionImpl();
 		return breastSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HeartSection createHeartSection() {
 		HeartSectionImpl heartSection = new HeartSectionImpl();
 		return heartSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public RespiratorySystemSection createRespiratorySystemSection() {
 		RespiratorySystemSectionImpl respiratorySystemSection = new RespiratorySystemSectionImpl();
 		return respiratorySystemSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AbdomenSection createAbdomenSection() {
 		AbdomenSectionImpl abdomenSection = new AbdomenSectionImpl();
 		return abdomenSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public LymphaticSection createLymphaticSection() {
 		LymphaticSectionImpl lymphaticSection = new LymphaticSectionImpl();
 		return lymphaticSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public VesselsSection createVesselsSection() {
 		VesselsSectionImpl vesselsSection = new VesselsSectionImpl();
 		return vesselsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MusculoskeletalSystemSection createMusculoskeletalSystemSection() {
 		MusculoskeletalSystemSectionImpl musculoskeletalSystemSection = new MusculoskeletalSystemSectionImpl();
 		return musculoskeletalSystemSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public NeurologicSystemSection createNeurologicSystemSection() {
 		NeurologicSystemSectionImpl neurologicSystemSection = new NeurologicSystemSectionImpl();
 		return neurologicSystemSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public GenitaliaSection createGenitaliaSection() {
 		GenitaliaSectionImpl genitaliaSection = new GenitaliaSectionImpl();
 		return genitaliaSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public RectumSection createRectumSection() {
 		RectumSectionImpl rectumSection = new RectumSectionImpl();
 		return rectumSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExtremitiesSection createExtremitiesSection() {
 		ExtremitiesSectionImpl extremitiesSection = new ExtremitiesSectionImpl();
 		return extremitiesSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ReviewOfSystemsSection createReviewOfSystemsSection() {
 		ReviewOfSystemsSectionImpl reviewOfSystemsSection = new ReviewOfSystemsSectionImpl();
 		return reviewOfSystemsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HospitalCourseSection createHospitalCourseSection() {
 		HospitalCourseSectionImpl hospitalCourseSection = new HospitalCourseSectionImpl();
 		return hospitalCourseSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CodedResultsSection createCodedResultsSection() {
 		CodedResultsSectionImpl codedResultsSection = new CodedResultsSectionImpl();
 		return codedResultsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExternalReference createExternalReference() {
 		ExternalReferenceImpl externalReference = new ExternalReferenceImpl();
 		return externalReference;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AssessmentAndPlanSection createAssessmentAndPlanSection() {
 		AssessmentAndPlanSectionImpl assessmentAndPlanSection = new AssessmentAndPlanSectionImpl();
 		return assessmentAndPlanSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CarePlanSection createCarePlanSection() {
 		CarePlanSectionImpl carePlanSection = new CarePlanSectionImpl();
 		return carePlanSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public FamilyMedicalHistorySection createFamilyMedicalHistorySection() {
 		FamilyMedicalHistorySectionImpl familyMedicalHistorySection = new FamilyMedicalHistorySectionImpl();
 		return familyMedicalHistorySection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SocialHistorySection createSocialHistorySection() {
 		SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
 		return socialHistorySection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EncounterHistorySection createEncounterHistorySection() {
 		EncounterHistorySectionImpl encounterHistorySection = new EncounterHistorySectionImpl();
 		return encounterHistorySection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicalDevicesSection createMedicalDevicesSection() {
 		MedicalDevicesSectionImpl medicalDevicesSection = new MedicalDevicesSectionImpl();
 		return medicalDevicesSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public LanguageCommunication createLanguageCommunication() {
 		LanguageCommunicationImpl languageCommunication = new LanguageCommunicationImpl();
 		return languageCommunication;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicalSummary createMedicalSummary() {
 		MedicalSummaryImpl medicalSummary = new MedicalSummaryImpl();
 		return medicalSummary;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DischargeSummary createDischargeSummary() {
 		DischargeSummaryImpl dischargeSummary = new DischargeSummaryImpl();
 		return dischargeSummary;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CoverageEntry createCoverageEntry() {
 		CoverageEntryImpl coverageEntry = new CoverageEntryImpl();
 		return coverageEntry;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HealthcareProvidersPharmacies createHealthcareProvidersPharmacies() {
 		HealthcareProvidersPharmaciesImpl healthcareProvidersPharmacies = new HealthcareProvidersPharmaciesImpl();
 		return healthcareProvidersPharmacies;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public Immunization createImmunization() {
 		ImmunizationImpl immunization = new ImmunizationImpl();
 		return immunization;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ObservationRequestEntry createObservationRequestEntry() {
 		ObservationRequestEntryImpl observationRequestEntry = new ObservationRequestEntryImpl();
 		return observationRequestEntry;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProductEntry createProductEntry() {
 		ProductEntryImpl productEntry = new ProductEntryImpl();
 		return productEntry;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedureEntryProcedureActivityProcedure createProcedureEntryProcedureActivityProcedure() {
 		ProcedureEntryProcedureActivityProcedureImpl procedureEntryProcedureActivityProcedure = new ProcedureEntryProcedureActivityProcedureImpl();
 		return procedureEntryProcedureActivityProcedure;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedureEntryPlanOfCareActivityProcedure createProcedureEntryPlanOfCareActivityProcedure() {
 		ProcedureEntryPlanOfCareActivityProcedureImpl procedureEntryPlanOfCareActivityProcedure = new ProcedureEntryPlanOfCareActivityProcedureImpl();
 		return procedureEntryPlanOfCareActivityProcedure;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public Comment createComment() {
 		CommentImpl comment = new CommentImpl();
 		return comment;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public InternalReference createInternalReference() {
 		InternalReferenceImpl internalReference = new InternalReferenceImpl();
 		return internalReference;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientMedicalInstructions createPatientMedicalInstructions() {
 		PatientMedicalInstructionsImpl patientMedicalInstructions = new PatientMedicalInstructionsImpl();
 		return patientMedicalInstructions;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PayerEntry createPayerEntry() {
 		PayerEntryImpl payerEntry = new PayerEntryImpl();
 		return payerEntry;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PHRExtract createPHRExtract() {
 		PHRExtractImpl phrExtract = new PHRExtractImpl();
 		return phrExtract;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PHRUpdate createPHRUpdate() {
 		PHRUpdateImpl phrUpdate = new PHRUpdateImpl();
 		return phrUpdate;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EncounterActivity createEncounterActivity() {
 		EncounterActivityImpl encounterActivity = new EncounterActivityImpl();
 		return encounterActivity;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EncounterPlanOfCare createEncounterPlanOfCare() {
 		EncounterPlanOfCareImpl encounterPlanOfCare = new EncounterPlanOfCareImpl();
 		return encounterPlanOfCare;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public IntakeOutputSection createIntakeOutputSection() {
 		IntakeOutputSectionImpl intakeOutputSection = new IntakeOutputSectionImpl();
 		return intakeOutputSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SupplyEntry createSupplyEntry() {
 		SupplyEntryImpl supplyEntry = new SupplyEntryImpl();
 		return supplyEntry;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationFullfillmentInstructions createMedicationFullfillmentInstructions() {
 		MedicationFullfillmentInstructionsImpl medicationFullfillmentInstructions = new MedicationFullfillmentInstructionsImpl();
 		return medicationFullfillmentInstructions;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PregnancyHistorySection createPregnancyHistorySection() {
 		PregnancyHistorySectionImpl pregnancyHistorySection = new PregnancyHistorySectionImpl();
 		return pregnancyHistorySection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PregnancyObservation createPregnancyObservation() {
 		PregnancyObservationImpl pregnancyObservation = new PregnancyObservationImpl();
 		return pregnancyObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientContactGuardian createPatientContactGuardian() {
 		PatientContactGuardianImpl patientContactGuardian = new PatientContactGuardianImpl();
 		return patientContactGuardian;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientContactParticipant createPatientContactParticipant() {
 		PatientContactParticipantImpl patientContactParticipant = new PatientContactParticipantImpl();
 		return patientContactParticipant;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ScannedDocument createScannedDocument() {
 		ScannedDocumentImpl scannedDocument = new ScannedDocumentImpl();
 		return scannedDocument;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ScanOriginalAuthor createScanOriginalAuthor() {
 		ScanOriginalAuthorImpl scanOriginalAuthor = new ScanOriginalAuthorImpl();
 		return scanOriginalAuthor;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ScanningDevice createScanningDevice() {
 		ScanningDeviceImpl scanningDevice = new ScanningDeviceImpl();
 		return scanningDevice;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ScanDataEnterer createScanDataEnterer() {
 		ScanDataEntererImpl scanDataEnterer = new ScanDataEntererImpl();
 		return scanDataEnterer;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DischargeDiet createDischargeDiet() {
 		DischargeDietImpl dischargeDiet = new DischargeDietImpl();
 		return dischargeDiet;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HospitalDischargePhysical createHospitalDischargePhysical() {
 		HospitalDischargePhysicalImpl hospitalDischargePhysical = new HospitalDischargePhysicalImpl();
 		return hospitalDischargePhysical;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CodedFamilyMedicalHistorySection createCodedFamilyMedicalHistorySection() {
 		CodedFamilyMedicalHistorySectionImpl codedFamilyMedicalHistorySection = new CodedFamilyMedicalHistorySectionImpl();
 		return codedFamilyMedicalHistorySection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public FamilyHistoryOrganizer createFamilyHistoryOrganizer() {
 		FamilyHistoryOrganizerImpl familyHistoryOrganizer = new FamilyHistoryOrganizerImpl();
 		return familyHistoryOrganizer;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public FamilyHistoryObservation createFamilyHistoryObservation() {
 		FamilyHistoryObservationImpl familyHistoryObservation = new FamilyHistoryObservationImpl();
 		return familyHistoryObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SocialHistoryObservation createSocialHistoryObservation() {
 		SocialHistoryObservationImpl socialHistoryObservation = new SocialHistoryObservationImpl();
 		return socialHistoryObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CodedReasonForReferralSection createCodedReasonForReferralSection() {
 		CodedReasonForReferralSectionImpl codedReasonForReferralSection = new CodedReasonForReferralSectionImpl();
 		return codedReasonForReferralSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CodedSocialHistorySection createCodedSocialHistorySection() {
 		CodedSocialHistorySectionImpl codedSocialHistorySection = new CodedSocialHistorySectionImpl();
 		return codedSocialHistorySection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public FunctionalStatusSection createFunctionalStatusSection() {
 		FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
 		return functionalStatusSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProceduresAndInterventionsSection createProceduresAndInterventionsSection() {
 		ProceduresAndInterventionsSectionImpl proceduresAndInterventionsSection = new ProceduresAndInterventionsSectionImpl();
 		return proceduresAndInterventionsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public IHERegistryDelegate createIHERegistryDelegate() {
 		IHERegistryDelegateImpl iheRegistryDelegate = new IHERegistryDelegateImpl();
 		return iheRegistryDelegate;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public IHEPackage getIHEPackage() {
 		return (IHEPackage) getEPackage();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+	* @deprecated
+	* @generated
+	*/
 	@Deprecated
 	public static IHEPackage getPackage() {
 		return IHEPackage.eINSTANCE;

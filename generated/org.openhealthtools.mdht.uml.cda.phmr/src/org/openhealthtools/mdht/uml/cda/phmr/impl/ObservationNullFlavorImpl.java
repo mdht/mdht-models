@@ -40,8 +40,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.WaveformSamplePeriodObservation;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ObservationNullFlavorOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Observation Null Flavor</b></em>'.
@@ -76,6 +74,7 @@ public class ObservationNullFlavorImpl extends ObservationImpl implements Observ
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateObservationNullFlavorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ObservationNullFlavorOperations.validateObservationNullFlavorTemplateId(this, diagnostics, context);
   }
@@ -85,6 +84,7 @@ public class ObservationNullFlavorImpl extends ObservationImpl implements Observ
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateObservationNullFlavorClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ObservationNullFlavorOperations.validateObservationNullFlavorClassCode(this, diagnostics, context);
   }
@@ -94,6 +94,7 @@ public class ObservationNullFlavorImpl extends ObservationImpl implements Observ
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateObservationNullFlavorMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ObservationNullFlavorOperations.validateObservationNullFlavorMoodCode(this, diagnostics, context);
   }
@@ -103,6 +104,7 @@ public class ObservationNullFlavorImpl extends ObservationImpl implements Observ
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateObservationNullFlavorWaveformObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ObservationNullFlavorOperations.validateObservationNullFlavorWaveformObservation(this, diagnostics, context);
   }
@@ -112,6 +114,7 @@ public class ObservationNullFlavorImpl extends ObservationImpl implements Observ
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateObservationNullFlavorWaveformSamplePeriodObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ObservationNullFlavorOperations.validateObservationNullFlavorWaveformSamplePeriodObservation(this, diagnostics, context);
   }
@@ -121,6 +124,7 @@ public class ObservationNullFlavorImpl extends ObservationImpl implements Observ
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public WaveformObservation getWaveformObservation() {
     return ObservationNullFlavorOperations.getWaveformObservation(this);
   }
@@ -130,6 +134,7 @@ public class ObservationNullFlavorImpl extends ObservationImpl implements Observ
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public WaveformSamplePeriodObservation getWaveformSamplePeriodObservation() {
     return ObservationNullFlavorOperations.getWaveformSamplePeriodObservation(this);
   }
@@ -139,6 +144,7 @@ public class ObservationNullFlavorImpl extends ObservationImpl implements Observ
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ObservationNullFlavor init() {
       return Initializer.Util.init(this);
   }
@@ -148,7 +154,8 @@ public class ObservationNullFlavorImpl extends ObservationImpl implements Observ
      * <!-- end-user-doc -->
      * @generated
      */
-    public ObservationNullFlavor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public ObservationNullFlavor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

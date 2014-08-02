@@ -247,15 +247,6 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationDoseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOperations.validateHITSPMedicationDoseQuantity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateHITSPMedicationAdministrationUnitCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationAdministrationUnitCode(this, diagnostics, context);
@@ -272,29 +263,11 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationApproachSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOperations.validateHITSPMedicationApproachSiteCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHITSPMedicationApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOperations.validateHITSPMedicationApproachSiteCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHITSPMedicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOperations.validateHITSPMedicationCode(this, diagnostics, context);
+	public boolean validateMedicationApproachSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateMedicationApproachSiteCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -322,6 +295,36 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 */
 	public ReactionObservation getHITSPReactionObservation() {
 		return MedicationOperations.getHITSPReactionObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationDoseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateMedicationDoseQuantity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateMedicationApproachSiteCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateMedicationCode(this, diagnostics, context);
 	}
 
 	/**

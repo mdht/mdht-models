@@ -60,6 +60,7 @@ public class OcularCodedListOfSurgeriesSectionImpl extends CodedSurgeriesSection
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOcularCodedListOfSurgeriesSectionProcedureEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OcularCodedListOfSurgeriesSectionOperations.validateOcularCodedListOfSurgeriesSectionProcedureEntry(this, diagnostics, context);
 	}
@@ -69,6 +70,7 @@ public class OcularCodedListOfSurgeriesSectionImpl extends CodedSurgeriesSection
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOcularCodedListOfSurgeriesSectionExternalReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OcularCodedListOfSurgeriesSectionOperations.validateOcularCodedListOfSurgeriesSectionExternalReference(this, diagnostics, context);
 	}
@@ -78,6 +80,7 @@ public class OcularCodedListOfSurgeriesSectionImpl extends CodedSurgeriesSection
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureEntry getProcedureEntry() {
 		return OcularCodedListOfSurgeriesSectionOperations.getProcedureEntry(this);
 	}
@@ -87,6 +90,7 @@ public class OcularCodedListOfSurgeriesSectionImpl extends CodedSurgeriesSection
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ExternalReference getEyeExternalReference() {
 		return OcularCodedListOfSurgeriesSectionOperations.getEyeExternalReference(this);
 	}

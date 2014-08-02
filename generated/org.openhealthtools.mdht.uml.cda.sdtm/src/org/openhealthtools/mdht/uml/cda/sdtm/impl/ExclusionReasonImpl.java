@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
@@ -33,93 +29,102 @@ import org.openhealthtools.mdht.uml.cda.sdtm.operations.ExclusionReasonOperation
  *
  * @generated
  */
-public class ExclusionReasonImpl extends ObservationImpl implements ExclusionReason
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected ExclusionReasonImpl()
-  {
-    super();
-  }
+public class ExclusionReasonImpl extends ObservationImpl implements ExclusionReason {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ExclusionReasonImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return SdtmPackage.Literals.EXCLUSION_REASON;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return SdtmPackage.Literals.EXCLUSION_REASON;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateExclusionReasonTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ExclusionReasonOperations.validateExclusionReasonTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateExclusionReasonTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExclusionReasonOperations.validateExclusionReasonTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateExclusionReasonCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ExclusionReasonOperations.validateExclusionReasonCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateExclusionReasonMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExclusionReasonOperations.validateExclusionReasonMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateExclusionReasonCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ExclusionReasonOperations.validateExclusionReasonCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateExclusionReasonCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExclusionReasonOperations.validateExclusionReasonCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateExclusionReasonMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ExclusionReasonOperations.validateExclusionReasonMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateExclusionReasonCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExclusionReasonOperations.validateExclusionReasonCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateExclusionReasonValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ExclusionReasonOperations.validateExclusionReasonValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateExclusionReasonValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExclusionReasonOperations.validateExclusionReasonValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public ExclusionReason init() {
-      return Initializer.Util.init(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateExclusionReasonValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExclusionReasonOperations.validateExclusionReasonValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ExclusionReason init() {
+	    return Initializer.Util.init(this);
+	}
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public ExclusionReason init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public ExclusionReason init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

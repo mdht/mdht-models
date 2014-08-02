@@ -36,8 +36,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ParticipantRoleOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Participant Role</b></em>'.
@@ -69,27 +67,32 @@ public class ParticipantRoleImpl extends org.openhealthtools.mdht.uml.cda.impl.P
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validatePhmrParticipantRoleTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ParticipantRoleOperations.validatePhmrParticipantRoleTemplateId(this, diagnostics, context);
+  @Override
+public boolean validatePHMRParticipantRoleTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ParticipantRoleOperations.validatePHMRParticipantRoleTemplateId(this, diagnostics, context);
   }
 
-	/**
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+public boolean validatePHMRParticipantRoleId(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ParticipantRoleOperations.validatePHMRParticipantRoleId(this, diagnostics, context);
+  }
+
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validatePhmrParticipantRoleId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ParticipantRoleOperations.validatePhmrParticipantRoleId(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
+	@Override
 	public ParticipantRole init() {
       return Initializer.Util.init(this);
   }
@@ -99,7 +102,8 @@ public class ParticipantRoleImpl extends org.openhealthtools.mdht.uml.cda.impl.P
      * <!-- end-user-doc -->
      * @generated
      */
-    public ParticipantRole init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public ParticipantRole init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

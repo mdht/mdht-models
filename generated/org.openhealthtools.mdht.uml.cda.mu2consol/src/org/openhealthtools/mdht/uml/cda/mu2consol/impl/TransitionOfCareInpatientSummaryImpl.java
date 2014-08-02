@@ -54,6 +54,7 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateTransitionOfCareInpatientSummaryMedications(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryMedications(this, diagnostics, context);
 	}
@@ -63,6 +64,7 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateTransitionOfCareInpatientSummaryEncounterDiagnoses(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryEncounterDiagnoses(this, diagnostics, context);
 	}
@@ -71,6 +73,7 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(this, diagnostics, context);
@@ -80,6 +83,7 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
 		return TransitionOfCareInpatientSummaryOperations.getHospitalDischargeInstructionsSection(this);
 	}

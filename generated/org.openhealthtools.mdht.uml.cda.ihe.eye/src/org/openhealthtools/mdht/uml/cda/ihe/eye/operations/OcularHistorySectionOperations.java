@@ -88,9 +88,6 @@ public class OcularHistorySectionOperations extends HistoryOfPastIllnessSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '70934-5' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param ocularHistorySection The receiving '<em><b>Ocular History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -152,7 +149,6 @@ public class OcularHistorySectionOperations extends HistoryOfPastIllnessSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularListOfSurgeriesSection))
 	 * @param ocularHistorySection The receiving '<em><b>Ocular History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -214,7 +210,6 @@ public class OcularHistorySectionOperations extends HistoryOfPastIllnessSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularCodedListOfSurgeriesSection))
 	 * @param ocularHistorySection The receiving '<em><b>Ocular History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -273,10 +268,6 @@ public class OcularHistorySectionOperations extends HistoryOfPastIllnessSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularListOfSurgeriesSection))->asSequence()->any(true).oclAsType(eye::OcularListOfSurgeriesSection)
-	 * @param ocularHistorySection The receiving '<em><b>Ocular History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -318,10 +309,6 @@ public class OcularHistorySectionOperations extends HistoryOfPastIllnessSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(eye::OcularCodedListOfSurgeriesSection))->asSequence()->any(true).oclAsType(eye::OcularCodedListOfSurgeriesSection)
-	 * @param ocularHistorySection The receiving '<em><b>Ocular History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -366,7 +353,6 @@ public class OcularHistorySectionOperations extends HistoryOfPastIllnessSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.12.1.2.3')
 	 * @param ocularHistorySection The receiving '<em><b>Ocular History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -393,7 +379,7 @@ public class OcularHistorySectionOperations extends HistoryOfPastIllnessSectionO
 						(Diagnostic.ERROR,
 						 EyeValidator.DIAGNOSTIC_SOURCE,
 						 EyeValidator.OCULAR_HISTORY_SECTION__HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HistoryOfPastIllnessSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ocularHistorySection, context) }),
+						 EyePlugin.INSTANCE.getString("HistoryOfPastIllnessSectionTemplateId"),
 						 new Object [] { ocularHistorySection }));
 			}
 			 

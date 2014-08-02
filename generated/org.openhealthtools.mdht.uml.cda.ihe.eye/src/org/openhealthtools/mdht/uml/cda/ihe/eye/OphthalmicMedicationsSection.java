@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.MedicationsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.eye.EyePackage#getOphthalmicMedicationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='OphthalmicMedicationsSectionTemplateId OphthalmicMedicationsSectionCode' templateId.root='1.3.6.1.4.1.19376.1.12.1.2.4' code.code='70935-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Ophthalmic medications' constraints.validation.warning='OphthalmicMedicationsSectionMedication'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IHEMedicationsSectionTemplateId OphthalmicMedicationsSectionCode' templateId.root='1.3.6.1.4.1.19376.1.12.1.2.4' code.code='70935-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Ophthalmic medications' constraints.validation.warning='OphthalmicMedicationsSectionMedication'"
  * @generated
  */
 public interface OphthalmicMedicationsSection extends MedicationsSection {
@@ -34,13 +34,10 @@ public interface OphthalmicMedicationsSection extends MedicationsSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '70935-2' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'70935-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'70935-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateOphthalmicMedicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -49,11 +46,10 @@ public interface OphthalmicMedicationsSection extends MedicationsSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(ihe::Medication))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(ihe::Medication))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(ihe::Medication))'"
 	 * @generated
 	 */
 	boolean validateOphthalmicMedicationsSectionMedication(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -61,9 +57,6 @@ public interface OphthalmicMedicationsSection extends MedicationsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(ihe::Medication))->asSequence()->any(true).oclAsType(ihe::Medication)
-	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(ihe::Medication))->asSequence()->any(true).oclAsType(ihe::Medication)'"
 	 * @generated
@@ -75,11 +68,13 @@ public interface OphthalmicMedicationsSection extends MedicationsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OphthalmicMedicationsSection init();
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public OphthalmicMedicationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public OphthalmicMedicationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // OphthalmicMedicationsSection

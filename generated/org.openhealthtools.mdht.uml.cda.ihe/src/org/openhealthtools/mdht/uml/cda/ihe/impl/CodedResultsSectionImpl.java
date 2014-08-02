@@ -37,101 +37,101 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class CodedResultsSectionImpl extends SectionImpl implements CodedResultsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CodedResultsSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.CODED_RESULTS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodedResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodedResultsSectionOperations.validateCodedResultsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodedResultsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodedResultsSectionOperations.validateCodedResultsSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodedResultsSectionProcedureEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodedResultsSectionOperations.validateCodedResultsSectionProcedureEntry(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodedResultsSectionExternalReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodedResultsSectionOperations.validateCodedResultsSectionExternalReference(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodedResultsSectionSimpleObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodedResultsSectionOperations.validateCodedResultsSectionSimpleObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ProcedureEntry> getProcedureEntries() {
 		return CodedResultsSectionOperations.getProcedureEntries(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ExternalReference> getExternalReferences() {
 		return CodedResultsSectionOperations.getExternalReferences(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<SimpleObservation> getSimpleObservations() {
 		return CodedResultsSectionOperations.getSimpleObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CodedResultsSection init() {
 		return Initializer.Util.init(this);
 	}

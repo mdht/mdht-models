@@ -60,6 +60,7 @@ public class FunctionalStatusResultOrganizerImpl extends org.openhealthtools.mdh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ResultObservation> getMu2consolResultObservations() {
 		return ResultOrganizerOperations.getMu2consolResultObservations(this);
 	}
@@ -89,6 +90,7 @@ public class FunctionalStatusResultOrganizerImpl extends org.openhealthtools.mdh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FunctionalStatusResultObservation> getMu2consolFunctionalStatusResultObservations() {
 		return FunctionalStatusResultOrganizerOperations.getMu2consolFunctionalStatusResultObservations(this);
 	}

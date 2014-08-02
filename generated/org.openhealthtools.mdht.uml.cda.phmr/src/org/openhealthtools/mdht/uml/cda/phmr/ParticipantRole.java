@@ -36,13 +36,13 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getParticipantRole()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhmrParticipantRoleTemplateId PhmrParticipantRoleId' templateId.root='null'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PHMRParticipantRoleTemplateId PHMRParticipantRoleId' templateId.root='null'"
  * @generated
  */
 public interface ParticipantRole extends org.openhealthtools.mdht.uml.cda.ParticipantRole {
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -50,11 +50,11 @@ public interface ParticipantRole extends org.openhealthtools.mdht.uml.cda.Partic
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'null\')'"
    * @generated
    */
-	boolean validatePhmrParticipantRoleTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validatePHMRParticipantRoleTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -62,9 +62,9 @@ public interface ParticipantRole extends org.openhealthtools.mdht.uml.cda.Partic
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)'"
    * @generated
    */
-	boolean validatePhmrParticipantRoleId(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validatePHMRParticipantRoleId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated

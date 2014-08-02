@@ -64,12 +64,14 @@ public interface EncountersSection extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncountersSection init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EncountersSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncountersSection

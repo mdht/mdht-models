@@ -57,6 +57,7 @@ public class OcularListOfSurgeriesSectionImpl extends SurgeriesSectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOcularListOfSurgeriesSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OcularListOfSurgeriesSectionOperations.validateOcularListOfSurgeriesSectionCodeP(this, diagnostics, context);
 	}
@@ -66,6 +67,7 @@ public class OcularListOfSurgeriesSectionImpl extends SurgeriesSectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOcularListOfSurgeriesSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OcularListOfSurgeriesSectionOperations.validateOcularListOfSurgeriesSectionCode(this, diagnostics, context);
 	}
@@ -75,6 +77,7 @@ public class OcularListOfSurgeriesSectionImpl extends SurgeriesSectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOcularListOfSurgeriesSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OcularListOfSurgeriesSectionOperations.validateOcularListOfSurgeriesSectionText(this, diagnostics, context);
 	}

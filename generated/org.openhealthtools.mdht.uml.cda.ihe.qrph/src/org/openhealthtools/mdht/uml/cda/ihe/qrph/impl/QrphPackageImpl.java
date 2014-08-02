@@ -117,8 +117,11 @@ public class QrphPackageImpl extends EPackageImpl implements QrphPackage
         // Register package validator
         EValidator.Registry.INSTANCE.put
             (theQrphPackage, 
-             new EValidator.Descriptor() {
-                 public EValidator getEValidator() {
+             new EValidator.Descriptor()
+             {
+                 @Override
+				public EValidator getEValidator()
+                 {
                      return QrphValidator.INSTANCE;
                  }
              });
@@ -141,7 +144,8 @@ public class QrphPackageImpl extends EPackageImpl implements QrphPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getEarlyHearingCarePlanDocument()
+    @Override
+	public EClass getEarlyHearingCarePlanDocument()
     {
         return earlyHearingCarePlanDocumentEClass;
     }
@@ -151,7 +155,8 @@ public class QrphPackageImpl extends EPackageImpl implements QrphPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getRiskIndicatorsForHearingLossSection()
+    @Override
+	public EClass getRiskIndicatorsForHearingLossSection()
     {
         return riskIndicatorsForHearingLossSectionEClass;
     }
@@ -161,7 +166,8 @@ public class QrphPackageImpl extends EPackageImpl implements QrphPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getHearingScreeningCodedResultsSection()
+    @Override
+	public EClass getHearingScreeningCodedResultsSection()
     {
         return hearingScreeningCodedResultsSectionEClass;
     }
@@ -171,7 +177,8 @@ public class QrphPackageImpl extends EPackageImpl implements QrphPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    public QrphFactory getQrphFactory()
+    @Override
+	public QrphFactory getQrphFactory()
     {
         return (QrphFactory)getEFactoryInstance();
     }
@@ -316,9 +323,10 @@ public class QrphPackageImpl extends EPackageImpl implements QrphPackage
         addAnnotation
           (this, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "initializers", "org.openhealthtools.mdht.uml.cda.ihe.qrph"
-           });                                   
+           });                       
     }
 
     /**
@@ -333,29 +341,32 @@ public class QrphPackageImpl extends EPackageImpl implements QrphPackage
         addAnnotation
           (earlyHearingCarePlanDocumentEClass, 
            source, 
-           new String[] {
-             "constraints.validation.error", "EarlyHearingCarePlanDocumentTemplateId EarlyHearingCarePlanDocumentCode EarlyHearingCarePlanDocumentCodeP",
+           new String[] 
+           {
+             "constraints.validation.error", "MedicalDocumentTemplateId EarlyHearingCarePlanDocumentCode EarlyHearingCarePlanDocumentCodeP",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.15.4.1",
              "code.code", "34817-7",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Otorhinolaryngology Evaluation and management",
              "constraints.validation.dependOn.EarlyHearingCarePlanDocumentCode", "EarlyHearingCarePlanDocumentCodeP"
-           });                          
+           });                  
         addAnnotation
           (riskIndicatorsForHearingLossSectionEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "RiskIndicatorsForHearingLossSectionTemplateId",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.15.3.1"
-           });         
+           });        
         addAnnotation
           (hearingScreeningCodedResultsSectionEClass, 
            source, 
-           new String[] {
-             "constraints.validation.error", "HearingScreeningCodedResultsSectionTemplateId",
+           new String[] 
+           {
+             "constraints.validation.error", "CodedResultsSectionTemplateId",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.15.3.2"
-           });       
+           });    
     }
 
     /**
@@ -370,13 +381,15 @@ public class QrphPackageImpl extends EPackageImpl implements QrphPackage
         addAnnotation
           (earlyHearingCarePlanDocumentEClass, 
            source, 
-           new String[] {
-           });                               
+           new String[] 
+           {
+           });                      
         addAnnotation
           (hearingScreeningCodedResultsSectionEClass, 
            source, 
-           new String[] {
-           });      
+           new String[] 
+           {
+           });   
     }
 
 } //QrphPackageImpl

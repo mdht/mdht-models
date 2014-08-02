@@ -33,57 +33,57 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.PatientContactParticipant
  */
 public class PatientContactParticipantImpl extends SupportParticipantImpl implements PatientContactParticipant {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PatientContactParticipantImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.PATIENT_CONTACT_PARTICIPANT;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientContactParticipantTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientContactParticipantOperations.validatePatientContactParticipantTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientContactParticipantTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientContactParticipantOperations.validatePatientContactParticipantTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientContactParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientContactParticipantOperations.validatePatientContactParticipantTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public PatientContactParticipant init() {
 		return Initializer.Util.init(this);

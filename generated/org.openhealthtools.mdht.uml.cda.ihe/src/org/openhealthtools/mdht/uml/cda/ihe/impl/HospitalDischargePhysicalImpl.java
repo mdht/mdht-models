@@ -33,48 +33,48 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class HospitalDischargePhysicalImpl extends SectionImpl implements HospitalDischargePhysical {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HospitalDischargePhysicalImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.HOSPITAL_DISCHARGE_PHYSICAL;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargePhysicalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalDischargePhysicalOperations.validateHospitalDischargePhysicalTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargePhysicalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalDischargePhysicalOperations.validateHospitalDischargePhysicalCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HospitalDischargePhysical init() {
 		return Initializer.Util.init(this);
 	}

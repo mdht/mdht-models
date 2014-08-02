@@ -81,7 +81,7 @@ public class ResultsOperations extends ResultsSectionOperations {
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+	protected static final String VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
    * The cached OCL invariant for the '{@link #validateResultsResultOrganizer(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Result Organizer</em>}' invariant operation.
@@ -231,7 +231,7 @@ public class ResultsOperations extends ResultsSectionOperations {
             (Diagnostic.ERROR,
              PhmrValidator.DIAGNOSTIC_SOURCE,
              PhmrValidator.RESULTS__RESULTS_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(results, context) }),
+             PhmrPlugin.INSTANCE.getString("ResultsSectionTemplateId"),
              new Object [] { results }));
       }
        

@@ -41,8 +41,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.WaveformSeriesObservation;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.WaveformSeriesObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Waveform Series Observation</b></em>'.
@@ -77,6 +75,7 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSeriesObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSeriesObservationOperations.validateWaveformSeriesObservationTemplateId(this, diagnostics, context);
   }
@@ -86,6 +85,7 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSeriesObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSeriesObservationOperations.validateWaveformSeriesObservationClassCode(this, diagnostics, context);
   }
@@ -95,7 +95,8 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateWaveformSeriesObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validateWaveformSeriesObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return WaveformSeriesObservationOperations.validateWaveformSeriesObservationCodeP(this, diagnostics, context);
   }
@@ -105,6 +106,7 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSeriesObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSeriesObservationOperations.validateWaveformSeriesObservationCode(this, diagnostics, context);
   }
@@ -114,6 +116,7 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSeriesObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSeriesObservationOperations.validateWaveformSeriesObservationEffectiveTime(this, diagnostics, context);
   }
@@ -123,6 +126,7 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSeriesObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSeriesObservationOperations.validateWaveformSeriesObservationMoodCode(this, diagnostics, context);
   }
@@ -132,7 +136,8 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateWaveformSeriesObservationPHMRProductInstanceReference(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validateWaveformSeriesObservationPHMRProductInstanceReference(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return WaveformSeriesObservationOperations.validateWaveformSeriesObservationPHMRProductInstanceReference(this, diagnostics, context);
   }
@@ -142,6 +147,7 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSeriesObservationObservationMediaJPG(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSeriesObservationOperations.validateWaveformSeriesObservationObservationMediaJPG(this, diagnostics, context);
   }
@@ -151,6 +157,7 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateWaveformSeriesObservationObservationNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WaveformSeriesObservationOperations.validateWaveformSeriesObservationObservationNullFlavor(this, diagnostics, context);
   }
@@ -160,6 +167,7 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ObservationMedia getObservationMediaJPG() {
     return WaveformSeriesObservationOperations.getObservationMediaJPG(this);
   }
@@ -169,6 +177,7 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public Observation getObservationNullFlavor() {
     return WaveformSeriesObservationOperations.getObservationNullFlavor(this);
   }
@@ -178,6 +187,7 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public WaveformSeriesObservation init() {
       return Initializer.Util.init(this);
   }
@@ -187,7 +197,8 @@ public class WaveformSeriesObservationImpl extends ObservationImpl implements Wa
      * <!-- end-user-doc -->
      * @generated
      */
-    public WaveformSeriesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public WaveformSeriesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

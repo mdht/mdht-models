@@ -102,6 +102,7 @@ public interface HospitalDischargeMedicationsSection
 	 * 
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeMedicationsSection init();
 
 	/**
@@ -109,6 +110,7 @@ public interface HospitalDischargeMedicationsSection
 	 * 
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeMedicationsSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalDischargeMedicationsSection

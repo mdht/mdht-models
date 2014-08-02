@@ -62,6 +62,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryReasonforVisit(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryReasonforVisit(this, diagnostics, context);
 	}
@@ -70,6 +71,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryCarePlanning(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryCarePlanning(this, diagnostics, context);
@@ -80,6 +82,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryDateOfvisit(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryDateOfvisit(this, diagnostics, context);
 	}
@@ -89,6 +92,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryVisitLocation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryVisitLocation(this, diagnostics, context);
 	}
@@ -98,6 +102,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryProviderNameAndContactInfo(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryProviderNameAndContactInfo(this, diagnostics, context);
 	}
@@ -107,6 +112,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryVitalSigns(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryVitalSigns(this, diagnostics, context);
 	}
@@ -116,6 +122,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER(this, diagnostics, context);
 	}
@@ -124,6 +131,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummarySocialHistorySection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummarySocialHistorySection(this, diagnostics, context);
@@ -133,6 +141,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryProblemSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryProblemSection(this, diagnostics, context);
@@ -142,6 +151,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryAllergiesSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryAllergiesSection(this, diagnostics, context);
@@ -151,6 +161,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryResultsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryResultsSection(this, diagnostics, context);
@@ -160,6 +171,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryProceduresSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryProceduresSection(this, diagnostics, context);
@@ -169,6 +181,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryImmunizationsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryImmunizationsSection(this, diagnostics, context);
@@ -178,6 +191,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateClinicalOfficeVisitSummaryInstructionsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryInstructionsSection(this, diagnostics, context);
@@ -187,6 +201,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InstructionsSection retrieveInstructionsSection() {
 		return ClinicalOfficeVisitSummaryOperations.retrieveInstructionsSection(this);
 	}
@@ -195,6 +210,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsAdministeredSection retrieveMedicationsAdministeredSection() {
 		return ClinicalOfficeVisitSummaryOperations.retrieveMedicationsAdministeredSection(this);
 	}
@@ -203,6 +219,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistorySection getSocialHistorySection() {
 		return ClinicalOfficeVisitSummaryOperations.getSocialHistorySection(this);
 	}
@@ -211,6 +228,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSection getProblemSection() {
 		return ClinicalOfficeVisitSummaryOperations.getProblemSection(this);
 	}
@@ -219,6 +237,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsSection getMedicationsSection() {
 		return ClinicalOfficeVisitSummaryOperations.getMedicationsSection(this);
 	}
@@ -227,6 +246,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSection getAllergiesSection() {
 		return ClinicalOfficeVisitSummaryOperations.getAllergiesSection(this);
 	}
@@ -235,6 +255,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSection getResultsSection() {
 		return ClinicalOfficeVisitSummaryOperations.getResultsSection(this);
 	}
@@ -243,6 +264,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection getProceduresSection() {
 		return ClinicalOfficeVisitSummaryOperations.getProceduresSection(this);
 	}
@@ -251,6 +273,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationsSection getImmunizationsSection() {
 		return ClinicalOfficeVisitSummaryOperations.getImmunizationsSection(this);
 	}
@@ -259,6 +282,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection getMedicationsAdministeredSection() {
 		return ClinicalOfficeVisitSummaryOperations.getMedicationsAdministeredSection(this);
 	}
@@ -267,6 +291,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InstructionsSection getInstructionsSection() {
 		return ClinicalOfficeVisitSummaryOperations.getInstructionsSection(this);
 	}

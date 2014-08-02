@@ -55,6 +55,7 @@ public class ProcedureActivityProcedureImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMU2CONSOLProcedureActivityProcedureCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateMU2CONSOLProcedureActivityProcedureCodeValue(this, diagnostics, context);
 	}

@@ -98,12 +98,7 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
 					HITSPValidator.UNSTRUCTURED_DOCUMENT__SCANNED_DOCUMENT_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ScannedDocumentTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									unstructuredDocument, context) }), new Object[] { unstructuredDocument }));
+					HITSPPlugin.INSTANCE.getString("ScannedDocumentTemplateId"), new Object[] { unstructuredDocument }));
 			}
 
 			return false;

@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ObservationMediaJPGOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Observation Media JPG</b></em>'.
@@ -74,6 +72,7 @@ public class ObservationMediaJPGImpl extends ObservationMediaImpl implements Obs
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateObservationMediaJPGTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ObservationMediaJPGOperations.validateObservationMediaJPGTemplateId(this, diagnostics, context);
   }
@@ -83,6 +82,7 @@ public class ObservationMediaJPGImpl extends ObservationMediaImpl implements Obs
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateObservationMediaJPGClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ObservationMediaJPGOperations.validateObservationMediaJPGClassCode(this, diagnostics, context);
   }
@@ -92,6 +92,7 @@ public class ObservationMediaJPGImpl extends ObservationMediaImpl implements Obs
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateObservationMediaJPGMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ObservationMediaJPGOperations.validateObservationMediaJPGMoodCode(this, diagnostics, context);
   }
@@ -101,6 +102,7 @@ public class ObservationMediaJPGImpl extends ObservationMediaImpl implements Obs
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validateObservationMediaJPGValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ObservationMediaJPGOperations.validateObservationMediaJPGValue(this, diagnostics, context);
   }
@@ -110,6 +112,7 @@ public class ObservationMediaJPGImpl extends ObservationMediaImpl implements Obs
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public ObservationMediaJPG init() {
       return Initializer.Util.init(this);
   }
@@ -119,7 +122,8 @@ public class ObservationMediaJPGImpl extends ObservationMediaImpl implements Obs
      * <!-- end-user-doc -->
      * @generated
      */
-    public ObservationMediaJPG init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public ObservationMediaJPG init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

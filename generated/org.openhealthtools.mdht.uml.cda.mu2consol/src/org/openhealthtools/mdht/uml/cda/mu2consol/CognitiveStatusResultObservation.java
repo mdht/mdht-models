@@ -28,11 +28,13 @@ public interface CognitiveStatusResultObservation extends org.openhealthtools.md
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusResultObservation init();
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public CognitiveStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public CognitiveStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveStatusResultObservation

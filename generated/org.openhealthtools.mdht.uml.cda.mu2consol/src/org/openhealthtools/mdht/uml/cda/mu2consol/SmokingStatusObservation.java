@@ -28,12 +28,14 @@ public interface SmokingStatusObservation extends org.openhealthtools.mdht.uml.c
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SmokingStatusObservation init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public SmokingStatusObservation init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SmokingStatusObservation

@@ -244,7 +244,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         EValidator.Registry.INSTANCE.put
             (theMu2consolPackage, 
              new EValidator.Descriptor() {
-                 public EValidator getEValidator() {
+                 @Override
+				public EValidator getEValidator() {
                      return Mu2consolValidator.INSTANCE;
                  }
              });
@@ -266,6 +267,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getGeneralHeaderConstraints() {
         return generalHeaderConstraintsEClass;
     }
@@ -274,6 +276,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getSummaryOfCareRecord() {
         return summaryOfCareRecordEClass;
     }
@@ -282,6 +285,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getSocialHistorySection() {
         return socialHistorySectionEClass;
     }
@@ -290,6 +294,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getSmokingStatusObservation() {
         return smokingStatusObservationEClass;
     }
@@ -298,6 +303,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getResultsSection() {
         return resultsSectionEClass;
     }
@@ -306,6 +312,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getResultOrganizer() {
         return resultOrganizerEClass;
     }
@@ -314,6 +321,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getResultObservation() {
         return resultObservationEClass;
     }
@@ -322,6 +330,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getProceduresSection() {
         return proceduresSectionEClass;
     }
@@ -330,6 +339,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getProcedureActivityProcedure() {
         return procedureActivityProcedureEClass;
     }
@@ -338,6 +348,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getClinicalOfficeVisitSummary() {
         return clinicalOfficeVisitSummaryEClass;
     }
@@ -347,7 +358,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getMedicationsAdministeredSection() {
+    @Override
+	public EClass getMedicationsAdministeredSection() {
         return medicationsAdministeredSectionEClass;
     }
 
@@ -355,6 +367,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getTransitionOfCareAmbulatorySummary() {
         return transitionOfCareAmbulatorySummaryEClass;
     }
@@ -363,6 +376,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getTransitionOfCareInpatientSummary() {
         return transitionOfCareInpatientSummaryEClass;
     }
@@ -371,6 +385,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getViewDownloadTransmitSummary() {
         return viewDownloadTransmitSummaryEClass;
     }
@@ -379,6 +394,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getVDTInpatientSummary() {
         return vdtInpatientSummaryEClass;
     }
@@ -387,6 +403,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EClass getVDTAmbulatorySummary() {
         return vdtAmbulatorySummaryEClass;
     }
@@ -396,7 +413,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getFunctionalStatusSection() {
+    @Override
+	public EClass getFunctionalStatusSection() {
         return functionalStatusSectionEClass;
     }
 
@@ -405,7 +423,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getCognitiveStatusResultObservation() {
+    @Override
+	public EClass getCognitiveStatusResultObservation() {
         return cognitiveStatusResultObservationEClass;
     }
 
@@ -414,7 +433,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getCognitiveStatusResultOrganizer() {
+    @Override
+	public EClass getCognitiveStatusResultOrganizer() {
         return cognitiveStatusResultOrganizerEClass;
     }
 
@@ -423,7 +443,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getFunctionalStatusResultObservation() {
+    @Override
+	public EClass getFunctionalStatusResultObservation() {
         return functionalStatusResultObservationEClass;
     }
 
@@ -432,7 +453,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getFunctionalStatusResultOrganizer() {
+    @Override
+	public EClass getFunctionalStatusResultOrganizer() {
         return functionalStatusResultOrganizerEClass;
     }
 
@@ -440,6 +462,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public Mu2consolFactory getMu2consolFactory() {
         return (Mu2consolFactory)getEFactoryInstance();
     }

@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.EyesSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.eye.EyePackage#getRoutineEyeExamSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='RoutineEyeExamSectionTemplateId' templateId.root='1.3.6.1.4.1.19376.1.12.1.2.6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EyesSectionTemplateId' templateId.root='1.3.6.1.4.1.19376.1.12.1.2.6'"
  * @generated
  */
 public interface RoutineEyeExamSection extends EyesSection {
@@ -30,11 +30,13 @@ public interface RoutineEyeExamSection extends EyesSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RoutineEyeExamSection init();
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public RoutineEyeExamSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public RoutineEyeExamSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // RoutineEyeExamSection

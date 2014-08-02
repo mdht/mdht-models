@@ -18,7 +18,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalDocument;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.PregnancyHistorySection;
 
 /**
@@ -214,7 +213,7 @@ public interface PatientSummary extends ContinuityOfCareDocument, MedicalDocumen
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
-	MedicationsSection createMedicationsSection();
+	org.openhealthtools.mdht.uml.cda.hitsp.MedicationsSection createMedicationsSection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -277,7 +276,7 @@ public interface PatientSummary extends ContinuityOfCareDocument, MedicalDocumen
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->any(true).oclAsType(hitsp::MedicationsSection)'"
 	 * @generated
 	 */
-	MedicationsSection getHITSPMedicationsSection();
+	org.openhealthtools.mdht.uml.cda.hitsp.MedicationsSection getHITSPMedicationsSection();
 
 	/**
 	 * <!-- begin-user-doc -->

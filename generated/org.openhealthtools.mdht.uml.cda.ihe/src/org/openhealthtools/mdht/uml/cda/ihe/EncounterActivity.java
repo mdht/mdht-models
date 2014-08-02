@@ -22,15 +22,15 @@ import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getEncounterActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterActivityTemplateId' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.14' contextDependent='true'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncountersActivityTemplateId' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.14' contextDependent='true'"
  * @generated
  */
 public interface EncounterActivity extends EncounterEntry, EncountersActivity {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EncounterActivity init();
 
 	/**

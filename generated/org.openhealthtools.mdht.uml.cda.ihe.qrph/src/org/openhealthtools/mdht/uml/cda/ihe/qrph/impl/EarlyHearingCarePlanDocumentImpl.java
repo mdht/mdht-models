@@ -42,126 +42,134 @@ import org.openhealthtools.mdht.uml.cda.ihe.qrph.operations.EarlyHearingCarePlan
 public class EarlyHearingCarePlanDocumentImpl extends MedicalDocumentImpl implements EarlyHearingCarePlanDocument
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected EarlyHearingCarePlanDocumentImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return QrphPackage.Literals.EARLY_HEARING_CARE_PLAN_DOCUMENT;
-	}
+    return QrphPackage.Literals.EARLY_HEARING_CARE_PLAN_DOCUMENT;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public boolean validateEarlyHearingCarePlanDocumentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+   * @generated
+   */
+  @Override
+public boolean validateEarlyHearingCarePlanDocumentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return EarlyHearingCarePlanDocumentOperations.validateEarlyHearingCarePlanDocumentCodeP(this, diagnostics, context);
-	}
+    return EarlyHearingCarePlanDocumentOperations.validateEarlyHearingCarePlanDocumentCodeP(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public boolean validateEarlyHearingCarePlanDocumentCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+   * @generated
+   */
+  @Override
+public boolean validateEarlyHearingCarePlanDocumentCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return EarlyHearingCarePlanDocumentOperations.validateEarlyHearingCarePlanDocumentCode(this, diagnostics, context);
-	}
+    return EarlyHearingCarePlanDocumentOperations.validateEarlyHearingCarePlanDocumentCode(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public RiskIndicatorsForHearingLossSection getRiskIndicatorsForHearingLossSection()
+   * @generated
+   */
+  @Override
+public RiskIndicatorsForHearingLossSection getRiskIndicatorsForHearingLossSection()
   {
-		return EarlyHearingCarePlanDocumentOperations.getRiskIndicatorsForHearingLossSection(this);
-	}
+    return EarlyHearingCarePlanDocumentOperations.getRiskIndicatorsForHearingLossSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public ActiveProblemsSection getActiveProblemsSection()
+   * @generated
+   */
+  @Override
+public ActiveProblemsSection getActiveProblemsSection()
   {
-		return EarlyHearingCarePlanDocumentOperations.getActiveProblemsSection(this);
-	}
+    return EarlyHearingCarePlanDocumentOperations.getActiveProblemsSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public PhysicalExamSection getPhysicalExamSection()
+   * @generated
+   */
+  @Override
+public PhysicalExamSection getPhysicalExamSection()
   {
-		return EarlyHearingCarePlanDocumentOperations.getPhysicalExamSection(this);
-	}
+    return EarlyHearingCarePlanDocumentOperations.getPhysicalExamSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public ReviewOfSystemsSection getReviewOfSystemsSection()
+   * @generated
+   */
+  @Override
+public ReviewOfSystemsSection getReviewOfSystemsSection()
   {
-		return EarlyHearingCarePlanDocumentOperations.getReviewOfSystemsSection(this);
-	}
+    return EarlyHearingCarePlanDocumentOperations.getReviewOfSystemsSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public ProceduresAndInterventionsSection getProceduresAndInterventionsSection()
+   * @generated
+   */
+  @Override
+public ProceduresAndInterventionsSection getProceduresAndInterventionsSection()
   {
-		return EarlyHearingCarePlanDocumentOperations.getProceduresAndInterventionsSection(this);
-	}
+    return EarlyHearingCarePlanDocumentOperations.getProceduresAndInterventionsSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public HearingScreeningCodedResultsSection getHearingScreeningCodedResultsSection()
+   * @generated
+   */
+  @Override
+public HearingScreeningCodedResultsSection getHearingScreeningCodedResultsSection()
   {
-		return EarlyHearingCarePlanDocumentOperations.getHearingScreeningCodedResultsSection(this);
-	}
+    return EarlyHearingCarePlanDocumentOperations.getHearingScreeningCodedResultsSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validateMedicalDocumentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return EarlyHearingCarePlanDocumentOperations.validateMedicalDocumentTemplateId(this, diagnostics, context);
-	}
+    return EarlyHearingCarePlanDocumentOperations.validateMedicalDocumentTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
 public EarlyHearingCarePlanDocument init() {
-	    return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->

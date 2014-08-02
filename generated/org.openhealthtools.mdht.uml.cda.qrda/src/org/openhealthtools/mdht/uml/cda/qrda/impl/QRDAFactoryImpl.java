@@ -11,7 +11,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-import org.openhealthtools.mdht.uml.cda.qrda.*;
 import org.openhealthtools.mdht.uml.cda.qrda.MeasureSection;
 import org.openhealthtools.mdht.uml.cda.qrda.QRDAFactory;
 import org.openhealthtools.mdht.uml.cda.qrda.QRDAPackage;
@@ -33,7 +32,7 @@ public class QRDAFactoryImpl extends EFactoryImpl implements QRDAFactory {
 	public static QRDAFactory init() {
     try
     {
-      QRDAFactory theQRDAFactory = (QRDAFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/qrda"); 
+      QRDAFactory theQRDAFactory = (QRDAFactory)EPackage.Registry.INSTANCE.getEFactory(QRDAPackage.eNS_URI);
       if (theQRDAFactory != null)
       {
         return theQRDAFactory;
@@ -77,6 +76,7 @@ public class QRDAFactoryImpl extends EFactoryImpl implements QRDAFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public QualityReportingDocumentArchitectureDocument createQualityReportingDocumentArchitectureDocument() {
     QualityReportingDocumentArchitectureDocumentImpl qualityReportingDocumentArchitectureDocument = new QualityReportingDocumentArchitectureDocumentImpl();
     return qualityReportingDocumentArchitectureDocument;
@@ -87,6 +87,7 @@ public class QRDAFactoryImpl extends EFactoryImpl implements QRDAFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public MeasureSection createMeasureSection() {
     MeasureSectionImpl measureSection = new MeasureSectionImpl();
     return measureSection;
@@ -97,6 +98,7 @@ public class QRDAFactoryImpl extends EFactoryImpl implements QRDAFactory {
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public QRDAPackage getQRDAPackage() {
     return (QRDAPackage)getEPackage();
   }

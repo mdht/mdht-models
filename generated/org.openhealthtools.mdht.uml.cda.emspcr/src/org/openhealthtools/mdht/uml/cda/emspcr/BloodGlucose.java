@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getBloodGlucose()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='BloodGlucoseTemplateId BloodGlucoseMoodCode BloodGlucoseCode BloodGlucoseCodeP BloodGlucoseValue' templateId.root='2.16.840.1.1133883.17.3.10.1.166' moodCode='EVN' code.code='2339-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Glucose [Mass/\u200bvolume] in Blood' constraints.validation.dependOn.BloodGlucoseCode='BloodGlucoseCodeP' constraints.validation.info='BloodGlucoseEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='BloodGlucoseTemplateId BloodGlucoseMoodCode BloodGlucoseCode BloodGlucoseCodeP BloodGlucoseValue' templateId.root='2.16.840.1.1133883.17.3.10.1.166' moodCode='EVN' code.code='2339-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Glucose [Mass/???volume] in Blood' constraints.validation.dependOn.BloodGlucoseCode='BloodGlucoseCodeP' constraints.validation.info='BloodGlucoseEffectiveTime'"
  * @generated
  */
 public interface BloodGlucose extends Observation {

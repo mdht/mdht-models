@@ -38,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PHMRProductInstanceOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>PHMR Product Instance</b></em>'.
@@ -74,6 +72,7 @@ public class PHMRProductInstanceImpl extends ProductInstanceImpl implements PHMR
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePHMRProductInstanceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PHMRProductInstanceOperations.validatePHMRProductInstanceCode(this, diagnostics, context);
   }
@@ -83,6 +82,7 @@ public class PHMRProductInstanceImpl extends ProductInstanceImpl implements PHMR
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public boolean validatePHMRProductInstanceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PHMRProductInstanceOperations.validatePHMRProductInstanceId(this, diagnostics, context);
   }
@@ -92,7 +92,8 @@ public class PHMRProductInstanceImpl extends ProductInstanceImpl implements PHMR
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePHMRProductInstanceScopingEntity(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validatePHMRProductInstanceScopingEntity(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return PHMRProductInstanceOperations.validatePHMRProductInstanceScopingEntity(this, diagnostics, context);
   }
@@ -102,7 +103,8 @@ public class PHMRProductInstanceImpl extends ProductInstanceImpl implements PHMR
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePHMRProductInstancePlayingDevice(DiagnosticChain diagnostics, Map<Object, Object> context)
+  @Override
+public boolean validatePHMRProductInstancePlayingDevice(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return PHMRProductInstanceOperations.validatePHMRProductInstancePlayingDevice(this, diagnostics, context);
   }
@@ -122,6 +124,7 @@ public class PHMRProductInstanceImpl extends ProductInstanceImpl implements PHMR
 	 * <!-- end-user-doc -->
    * @generated
    */
+	@Override
 	public PHMRProductInstance init() {
       return Initializer.Util.init(this);
   }
@@ -131,7 +134,8 @@ public class PHMRProductInstanceImpl extends ProductInstanceImpl implements PHMR
      * <!-- end-user-doc -->
      * @generated
      */
-    public PHMRProductInstance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PHMRProductInstance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

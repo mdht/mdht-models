@@ -29,12 +29,14 @@ public interface EncounterActivities extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterActivities init();
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
+	@Override
 	public EncounterActivities init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncounterActivities
