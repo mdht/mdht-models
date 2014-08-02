@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
   <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="hitsp">
     <packageImport xmi:id="_-xRsgDxVEd6JwqSGecoePg">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
@@ -63,17 +63,17 @@
       </generalization>
       <ownedAttribute xmi:id="_r6G7UEvaEd-GNbUQBie2ig" name="advanceDirectivesSection" association="_r6JXkEvaEd-GNbUQBie2ig">
         <type xmi:type="uml:Class" href=".controlled/hitsp-advanceDirectives.uml#_uIr7cMfzEd6VjLXh4DcWSg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tHXYoEvaEd-GNbUQBie2ig" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tHX_sEvaEd-GNbUQBie2ig"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tHXYoEvaEd-GNbUQBie2ig" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_gv8TgEvbEd-GNbUQBie2ig" name="allergiesReactionsSection" association="_gv9hoEvbEd-GNbUQBie2ig">
         <type xmi:type="uml:Class" href=".controlled/hitsp-allergiesReactions.uml#_VGnj8MfZEd6VjLXh4DcWSg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hc9KgEvbEd-GNbUQBie2ig" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hc9KgUvbEd-GNbUQBie2ig"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hc9KgEvbEd-GNbUQBie2ig" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_RWQsYEveEd-GNbUQBie2ig" name="comment" type="_B973gEveEd-GNbUQBie2ig" association="_RWRTcEveEd-GNbUQBie2ig">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SXRdcEveEd-GNbUQBie2ig" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SXRdcUveEd-GNbUQBie2ig"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SXRdcEveEd-GNbUQBie2ig" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_RnrXEEvfEd-GNbUQBie2ig" name="problemListSection" association="_RnrXEkvfEd-GNbUQBie2ig">
         <type xmi:type="uml:Class" href=".controlled/hitsp-problemList.uml#_cPtREMfaEd6VjLXh4DcWSg"/>
@@ -108,8 +108,8 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XRawwaDkEd-dVeaMP0XXQw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ot_HQO3xEd-dJvThfIiQuA" name="supportHeaders" type="_IUTDIO3xEd-dJvThfIiQuA" association="_ouA8cO3xEd-dJvThfIiQuA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RpNuoO3yEd-dJvThfIiQuA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RpOVsO3yEd-dJvThfIiQuA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RpNuoO3yEd-dJvThfIiQuA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ymrqsO3xEd-dJvThfIiQuA" name="vitalSignsSection" association="_ymsRwO3xEd-dJvThfIiQuA">
         <type xmi:type="uml:Class" href=".controlled/hitsp-vitalSigns.uml#_L9yGgK7HEd6_ioDelDcPPg"/>
@@ -117,8 +117,8 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_b8ZOoO3yEd-dJvThfIiQuA" name="diagnosticResultsSection" association="_b8Z1se3yEd-dJvThfIiQuA">
         <type xmi:type="uml:Class" href=".controlled/hitsp-diagnosticResults.uml#_P3GVkMieEd6mWrHPmrIIfQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dF83sO3yEd-dJvThfIiQuA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dF83se3yEd-dJvThfIiQuA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dF83sO3yEd-dJvThfIiQuA" value="1"/>
       </ownedAttribute>
       <ownedOperation xmi:id="_C1Qp0GG6Ed6bFO5yxRh3Nw" name="createProblemListSection">
         <ownedParameter xmi:id="_vMia4GdYEd6Hk_bPOfEjYA" name="Parameter1" direction="return">
@@ -198,7 +198,10 @@
           <language>Analysis</language>
           <language>OCL</language>
           <body>Result Value SHALL be present when the observation/@moodCode is EVN or GOL, and SHALL NOT be present when observation/@moodCode is INT or PRP.</body>
-          <body>(self.moodCode = vocab::x_ActMoodDocumentObservation::EVN or self.moodCode = vocab::x_ActMoodDocumentObservation::EVN)&#xD;&#xA;    implies (not self.value->isEmpty()) and&#xD;&#xA;  (self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP)&#xD;&#xA;   implies (self.value->isEmpty())</body>
+          <body>(self.moodCode = vocab::x_ActMoodDocumentObservation::EVN or self.moodCode = vocab::x_ActMoodDocumentObservation::EVN)&#xD;
+    implies (not self.value->isEmpty()) and&#xD;
+  (self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP)&#xD;
+   implies (self.value->isEmpty())</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_oT1CYDIWEd-SYNRf-pkwtw">
@@ -216,8 +219,8 @@
           <body>Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CuLaQTIXEd-SYNRf-pkwtw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CuLaQjIXEd-SYNRf-pkwtw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CuLaQTIXEd-SYNRf-pkwtw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_5TTmYK6wEd6_ioDelDcPPg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_p0cOoBeWEeCf9aMNaCAtDQ" name="value" visibility="private">
@@ -257,8 +260,8 @@
       </generalization>
       <ownedAttribute xmi:id="_UrAh0KrtEd-yFfcbpgNFIA" name="languageCode" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_egVywKruEd-yFfcbpgNFIA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_egWZ0KruEd-yFfcbpgNFIA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_egVywKruEd-yFfcbpgNFIA" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_baR34Eo5Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_jYv-EKrsEd-yFfcbpgNFIA" name="modeCode" visibility="private" aggregation="composite">
@@ -266,8 +269,8 @@
           <body>Mode codes SHALL be appropriate to the type of language. Thus English, as spoken in the U.S. SHOULD use the code en-US and SHOULD only use mode codes for written and verbal communications. On the other hand, American Sign Language would be represented using the code sign-US, and would only use mode codes for signed communication.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jYv-EarsEd-yFfcbpgNFIA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jYv-EqrsEd-yFfcbpgNFIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jYv-EarsEd-yFfcbpgNFIA" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_g17BMEo5Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
@@ -314,7 +317,8 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_YwYkUM_8EeCBBsup3soRig">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>performer/@typeCode='PRF'/assignedEntity/id elements MAY be present. The ID element corresponds to the RxBIN and RxPCN fields found on pharmacy benefit cards. When a national payer identifier is standardized, it would also go in this field.&#xD;&#xA;The OID for RxBIN is 2.16.840.1.113883.3.88.3.1. The OID for an RxPCN is 2.16.840.1.113883.3.88.3.1 plus the numeric identifier used in the RxBIN.</body>
+          <body>performer/@typeCode='PRF'/assignedEntity/id elements MAY be present. The ID element corresponds to the RxBIN and RxPCN fields found on pharmacy benefit cards. When a national payer identifier is standardized, it would also go in this field.&#xD;
+The OID for RxBIN is 2.16.840.1.113883.3.88.3.1. The OID for an RxPCN is 2.16.840.1.113883.3.88.3.1 plus the numeric identifier used in the RxBIN.</body>
           <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.id->size() > 0))</body>
         </specification>
       </ownedRule>
@@ -604,8 +608,8 @@
       </generalization>
       <ownedAttribute xmi:id="_fboEkEveEd-GNbUQBie2ig" name="author" association="_fboroEveEd-GNbUQBie2ig">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g5AokEveEd-GNbUQBie2ig" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g5AokUveEd-GNbUQBie2ig" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g5AokEveEd-GNbUQBie2ig" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_RWRTcEveEd-GNbUQBie2ig" memberEnd="_RWQsYEveEd-GNbUQBie2ig _RWRTcUveEd-GNbUQBie2ig">
@@ -675,14 +679,14 @@ organization performed or hosted the Procedure</body>
           <body>The anatomical site where a procedure is performed</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQRh4KDnEd-dVeaMP0XXQw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQSI8KDnEd-dVeaMP0XXQw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQRh4KDnEd-dVeaMP0XXQw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Ia2NoEriEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_y4yrgJxSEeCtZqh8o0ACbw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OJdwJxSEeCtZqh8o0ACbw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OKE0JxSEeCtZqh8o0ACbw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OJdwJxSEeCtZqh8o0ACbw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_okNzQErhEd6FXKclYGEDCw"/>
       </ownedAttribute>
     </packagedElement>
@@ -762,19 +766,19 @@ organization performed or hosted the Procedure</body>
     <packagedElement xmi:type="uml:Association" href=".controlled/hitsp-diagnosticResults.uml#_FNxfcBdkEeCf9aMNaCAtDQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/hitsp-medications.uml#_NC6JAE51EeC-IOl-lQ-2xA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_mQhA8k51EeC-IOl-lQ-2xA">
+      <memberEnd href=".controlled/hitsp-medications.uml#_mQhA8E51EeC-IOl-lQ-2xA"/>
+      <memberEnd href="#_mQhA8051EeC-IOl-lQ-2xA"/>
       <ownedEnd xmi:id="_mQhA8051EeC-IOl-lQ-2xA" association="_mQhA8k51EeC-IOl-lQ-2xA">
         <type xmi:type="uml:Class" href=".controlled/hitsp-medications.uml#_IjIO0DxbEd6JwqSGecoePg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-medications.uml#_mQhA8E51EeC-IOl-lQ-2xA"/>
-      <memberEnd href="#_mQhA8051EeC-IOl-lQ-2xA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" href=".controlled/hitsp-medications.uml#_vMJZwE8mEeCYjrG3z1gQrQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_Ryt4QU8_EeCYjrG3z1gQrQ">
+      <memberEnd href=".controlled/hitsp-medications.uml#_RytRME8_EeCYjrG3z1gQrQ"/>
+      <memberEnd href="#_Ryt4Qk8_EeCYjrG3z1gQrQ"/>
       <ownedEnd xmi:id="_Ryt4Qk8_EeCYjrG3z1gQrQ" association="_Ryt4QU8_EeCYjrG3z1gQrQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-medications.uml#_IjIO0DxbEd6JwqSGecoePg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-medications.uml#_RytRME8_EeCYjrG3z1gQrQ"/>
-      <memberEnd href="#_Ryt4Qk8_EeCYjrG3z1gQrQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_8T_OY09VEeCYjrG3z1gQrQ">
       <ownedComment xmi:id="_BrYJ0E9WEeCYjrG3z1gQrQ">
@@ -782,39 +786,39 @@ organization performed or hosted the Procedure</body>
 product. For example: full body rash, nausea, rash&#xD;
 resolved</body>
       </ownedComment>
+      <memberEnd href=".controlled/hitsp-medications.uml#_8T_OYE9VEeCYjrG3z1gQrQ"/>
+      <memberEnd href="#_8T_1cE9VEeCYjrG3z1gQrQ"/>
       <ownedEnd xmi:id="_8T_1cE9VEeCYjrG3z1gQrQ" association="_8T_OY09VEeCYjrG3z1gQrQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-medications.uml#_IjIO0DxbEd6JwqSGecoePg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-medications.uml#_8T_OYE9VEeCYjrG3z1gQrQ"/>
-      <memberEnd href="#_8T_1cE9VEeCYjrG3z1gQrQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_cuKPoVV1EeCw2ulF0_tZWA">
+      <memberEnd href=".controlled/hitsp-surgeries.uml#_cuJokFV1EeCw2ulF0_tZWA"/>
+      <memberEnd href="#_cuK2sFV1EeCw2ulF0_tZWA"/>
       <ownedEnd xmi:id="_cuK2sFV1EeCw2ulF0_tZWA" association="_cuKPoVV1EeCw2ulF0_tZWA">
         <type xmi:type="uml:Class" href=".controlled/hitsp-surgeries.uml#_OCM5cMfuEd6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-surgeries.uml#_cuJokFV1EeCw2ulF0_tZWA"/>
-      <memberEnd href="#_cuK2sFV1EeCw2ulF0_tZWA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_tXufUVsaEeCBQI4cjwqCWQ">
+      <memberEnd href=".controlled/hitsp-allergiesReactions.uml#_tXt4QFsaEeCBQI4cjwqCWQ"/>
+      <memberEnd href="#_tXvGYFsaEeCBQI4cjwqCWQ"/>
       <ownedEnd xmi:id="_tXvGYFsaEeCBQI4cjwqCWQ" association="_tXufUVsaEeCBQI4cjwqCWQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-allergiesReactions.uml#_VGnj8MfZEd6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-allergiesReactions.uml#_tXt4QFsaEeCBQI4cjwqCWQ"/>
-      <memberEnd href="#_tXvGYFsaEeCBQI4cjwqCWQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ZPh685bDEeCcyetSDtbszQ">
+      <memberEnd href=".controlled/hitsp-problemList.uml#_ZPh68JbDEeCcyetSDtbszQ"/>
+      <memberEnd href="#_ZPh69JbDEeCcyetSDtbszQ"/>
       <ownedEnd xmi:id="_ZPh69JbDEeCcyetSDtbszQ" association="_ZPh685bDEeCcyetSDtbszQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-problemList.uml#_c6bN4BvgEd-yI6xBTkJSNw"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-problemList.uml#_ZPh68JbDEeCcyetSDtbszQ"/>
-      <memberEnd href="#_ZPh69JbDEeCcyetSDtbszQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ZPh6-JbDEeCcyetSDtbszQ">
+      <memberEnd href=".controlled/hitsp-problemList.uml#_ZPh69pbDEeCcyetSDtbszQ"/>
+      <memberEnd href="#_ZPh6-ZbDEeCcyetSDtbszQ"/>
       <ownedEnd xmi:id="_ZPh6-ZbDEeCcyetSDtbszQ" association="_ZPh6-JbDEeCcyetSDtbszQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-problemList.uml#_c6bN4BvgEd-yI6xBTkJSNw"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-problemList.uml#_ZPh69pbDEeCcyetSDtbszQ"/>
-      <memberEnd href="#_ZPh6-ZbDEeCcyetSDtbszQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_kTOYELGBEeCNQMtkrvuLWg" name="UnstructuredOrScannedDocument">
       <ownedComment xmi:id="_1VZfoLGBEeCNQMtkrvuLWg">
@@ -836,18 +840,18 @@ resolved</body>
       </generalization>
       <ownedAttribute xmi:id="_DEqjsMHjEeC8rcpLzgYlNw" name="problemListSection" association="_DEqjssHjEeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-problemList.uml#_cPtREMfaEd6VjLXh4DcWSg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5EpcMHjEeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5EpccHjEeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5EpcMHjEeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_J69GEMHjEeC8rcpLzgYlNw" name="admissionMedicationHistorySection" association="_J69tIMHjEeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-admissionMedicationHistory.uml#_CoUvwMfxEd6VjLXh4DcWSg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lj29kMHjEeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lj29kcHjEeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lj29kMHjEeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_h_grQMHjEeC8rcpLzgYlNw" name="hospitalAdmissionDiagnosisSection" association="_h_grQsHjEeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-hospitalAdmissionDiagnosis.uml#_eg314MfvEd6VjLXh4DcWSg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i4xOgMHjEeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i4xOgcHjEeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i4xOgMHjEeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_p2q0wMHjEeC8rcpLzgYlNw" name="advanceDirectivesSection" association="_p2rb0cHjEeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-advanceDirectives.uml#_uIr7cMfzEd6VjLXh4DcWSg"/>
@@ -855,13 +859,13 @@ resolved</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_vqRLEMHjEeC8rcpLzgYlNw" name="allergiesReactionsSection" association="_vqRyIcHjEeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-allergiesReactions.uml#_VGnj8MfZEd6VjLXh4DcWSg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w8rOIMHjEeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w8r1MMHjEeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w8rOIMHjEeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_jPgkcMHsEeC8rcpLzgYlNw" name="dischargeDiagnosisSection" association="_jPhLgMHsEeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-dischargeDiagnosis.uml#_CEsTsMfwEd6VjLXh4DcWSg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kqtXIMHsEeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kqt-MMHsEeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kqtXIMHsEeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rFFZkMHsEeC8rcpLzgYlNw" name="dischargeDiet" association="_rFFZksHsEeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_nwrzcL4kEeCPGaGuS9U6tg"/>
@@ -869,8 +873,8 @@ resolved</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_2J6Y8MHsEeC8rcpLzgYlNw" name="hospitalDischargeMedicationsSection" association="_2J7AAcHsEeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-hospitalDischargeMedications.uml#_OORpwMfyEd6VjLXh4DcWSg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__3OKwMH3EeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__3OKwcH3EeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__3OKwMH3EeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_iqULsMH3EeC8rcpLzgYlNw" name="diagnosticResultsSection" association="_iqUywcH3EeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-diagnosticResults.uml#_P3GVkMieEd6mWrHPmrIIfQ"/>
@@ -881,18 +885,18 @@ resolved</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tG8iocH3EeC8rcpLzgYlNw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_zbJEkMH3EeC8rcpLzgYlNw" name="historyOfPresentIllness" type="_w51SkMfhEd6VjLXh4DcWSg" association="_zbJroMH3EeC8rcpLzgYlNw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-QoncMH3EeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-QonccH3EeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-QoncMH3EeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_6q-IUMH3EeC8rcpLzgYlNw" name="hospitalCourseSection" association="_6q-IUsH3EeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-hospitalCourse.uml#_J1pl8MidEd6mWrHPmrIIfQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9sDTsMH3EeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9sDTscH3EeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9sDTsMH3EeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_GkZNYMH4EeC8rcpLzgYlNw" name="medicalEquipmentSection" association="_GkZ0ccH4EeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-medicalEquipment.uml#_d9cy8MijEd6mWrHPmrIIfQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HbcKIMH4EeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HbcKIcH4EeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HbcKIMH4EeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_RHbHQMH4EeC8rcpLzgYlNw" name="physicalExamSection" association="_RHbuUcH4EeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-physicalExam.uml#_XaZ6wMf1Ed6VjLXh4DcWSg"/>
@@ -900,13 +904,13 @@ resolved</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_WrX4AMH4EeC8rcpLzgYlNw" name="planOfCareSection" association="_WrYfEMH4EeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-planOfCare.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XyWHIMH4EeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XyWuMMH4EeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XyWHIMH4EeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_dX0h4MH4EeC8rcpLzgYlNw" name="historyOfPastIllnessSection" association="_dX1I8cH4EeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-historyOfPastIllness.uml#_lSC-0MfbEd6VjLXh4DcWSg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f4Cb4MH4EeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f4Cb4cH4EeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f4Cb4MH4EeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kpk4QMH4EeC8rcpLzgYlNw" name="reviewOfSystemsSection" association="_kplfUcH4EeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-reviewOfSystems.uml#_GuZI0MiXEd6mWrHPmrIIfQ"/>
@@ -914,13 +918,13 @@ resolved</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_qWDS4MH4EeC8rcpLzgYlNw" name="medicationsAdministeredSection" association="_qWD58cH4EeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-medicationsAdministered.uml#_u9U54MfyEd6VjLXh4DcWSg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rGOyoMH4EeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rGOyocH4EeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rGOyoMH4EeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wS8IEMH4EeC8rcpLzgYlNw" name="vitalSignsSection" association="_wS8vIMH4EeC8rcpLzgYlNw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-vitalSigns.uml#_L9yGgK7HEd6_ioDelDcPPg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xoTYgMH4EeC8rcpLzgYlNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xoTYgcH4EeC8rcpLzgYlNw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xoTYgMH4EeC8rcpLzgYlNw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_DEqjssHjEeC8rcpLzgYlNw" memberEnd="_DEqjsMHjEeC8rcpLzgYlNw _DEqjs8HjEeC8rcpLzgYlNw">
@@ -981,67 +985,67 @@ resolved</body>
       <ownedEnd xmi:id="_wS8vIcH4EeC8rcpLzgYlNw" type="_iSKW8MHiEeC8rcpLzgYlNw" association="_wS8vIMH4EeC8rcpLzgYlNw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_lRIaoMNwEeCZQPUDKP01pg">
+      <memberEnd href=".controlled/hitsp-dischargeDiagnosis.uml#_lRBs8MNwEeCZQPUDKP01pg"/>
+      <memberEnd href="#_lRJBsMNwEeCZQPUDKP01pg"/>
       <ownedEnd xmi:id="_lRJBsMNwEeCZQPUDKP01pg" association="_lRIaoMNwEeCZQPUDKP01pg">
         <type xmi:type="uml:Class" href=".controlled/hitsp-dischargeDiagnosis.uml#_CEsTsMfwEd6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-dischargeDiagnosis.uml#_lRBs8MNwEeCZQPUDKP01pg"/>
-      <memberEnd href="#_lRJBsMNwEeCZQPUDKP01pg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_-rCpMMNwEeCZQPUDKP01pg">
+      <memberEnd href=".controlled/hitsp-hospitalDischargeMedications.uml#_-rBbEMNwEeCZQPUDKP01pg"/>
+      <memberEnd href="#_-rCpMcNwEeCZQPUDKP01pg"/>
       <ownedEnd xmi:id="_-rCpMcNwEeCZQPUDKP01pg" association="_-rCpMMNwEeCZQPUDKP01pg">
         <type xmi:type="uml:Class" href=".controlled/hitsp-hospitalDischargeMedications.uml#_OORpwMfyEd6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-hospitalDischargeMedications.uml#_-rBbEMNwEeCZQPUDKP01pg"/>
-      <memberEnd href="#_-rCpMcNwEeCZQPUDKP01pg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_MqXDwMNxEeCZQPUDKP01pg">
+      <memberEnd href=".controlled/hitsp-planOfCare.uml#_MqWcsMNxEeCZQPUDKP01pg"/>
+      <memberEnd href="#_MqXq0MNxEeCZQPUDKP01pg"/>
       <ownedEnd xmi:id="_MqXq0MNxEeCZQPUDKP01pg" association="_MqXDwMNxEeCZQPUDKP01pg">
         <type xmi:type="uml:Class" href=".controlled/hitsp-planOfCare.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-planOfCare.uml#_MqWcsMNxEeCZQPUDKP01pg"/>
-      <memberEnd href="#_MqXq0MNxEeCZQPUDKP01pg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_N3LcMMNxEeCZQPUDKP01pg">
+      <memberEnd href=".controlled/hitsp-planOfCare.uml#_N3K1IMNxEeCZQPUDKP01pg"/>
+      <memberEnd href="#_N3LcMcNxEeCZQPUDKP01pg"/>
       <ownedEnd xmi:id="_N3LcMcNxEeCZQPUDKP01pg" association="_N3LcMMNxEeCZQPUDKP01pg">
         <type xmi:type="uml:Class" href=".controlled/hitsp-planOfCare.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-planOfCare.uml#_N3K1IMNxEeCZQPUDKP01pg"/>
-      <memberEnd href="#_N3LcMcNxEeCZQPUDKP01pg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_QcTEUMNxEeCZQPUDKP01pg">
+      <memberEnd href=".controlled/hitsp-planOfCare.uml#_QcR2MMNxEeCZQPUDKP01pg"/>
+      <memberEnd href="#_QcTrYMNxEeCZQPUDKP01pg"/>
       <ownedEnd xmi:id="_QcTrYMNxEeCZQPUDKP01pg" association="_QcTEUMNxEeCZQPUDKP01pg">
         <type xmi:type="uml:Class" href=".controlled/hitsp-planOfCare.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-planOfCare.uml#_QcR2MMNxEeCZQPUDKP01pg"/>
-      <memberEnd href="#_QcTrYMNxEeCZQPUDKP01pg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_UB_YocNxEeCZQPUDKP01pg">
+      <memberEnd href=".controlled/hitsp-planOfCare.uml#_UB-xkMNxEeCZQPUDKP01pg"/>
+      <memberEnd href="#_UB__sMNxEeCZQPUDKP01pg"/>
       <ownedEnd xmi:id="_UB__sMNxEeCZQPUDKP01pg" association="_UB_YocNxEeCZQPUDKP01pg">
         <type xmi:type="uml:Class" href=".controlled/hitsp-planOfCare.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-planOfCare.uml#_UB-xkMNxEeCZQPUDKP01pg"/>
-      <memberEnd href="#_UB__sMNxEeCZQPUDKP01pg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_gFrfsMghEeCHk-lvWGDTdA">
+      <memberEnd href=".controlled/hitsp-chiefComplaint.uml#_gFiVwMghEeCHk-lvWGDTdA"/>
+      <memberEnd href="#_gFrfscghEeCHk-lvWGDTdA"/>
       <ownedEnd xmi:id="_gFrfscghEeCHk-lvWGDTdA" association="_gFrfsMghEeCHk-lvWGDTdA">
         <type xmi:type="uml:Class" href=".controlled/hitsp-chiefComplaint.uml#_9ugRMMfcEd6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-chiefComplaint.uml#_gFiVwMghEeCHk-lvWGDTdA"/>
-      <memberEnd href="#_gFrfscghEeCHk-lvWGDTdA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_JLF4ocg0EeCHk-lvWGDTdA">
+      <memberEnd href=".controlled/hitsp-historyOfPastIllness.uml#_JLFRkMg0EeCHk-lvWGDTdA"/>
+      <memberEnd href="#_JLF4osg0EeCHk-lvWGDTdA"/>
       <ownedEnd xmi:id="_JLF4osg0EeCHk-lvWGDTdA" association="_JLF4ocg0EeCHk-lvWGDTdA">
         <type xmi:type="uml:Class" href=".controlled/hitsp-historyOfPastIllness.uml#_lSC-0MfbEd6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-historyOfPastIllness.uml#_JLFRkMg0EeCHk-lvWGDTdA"/>
-      <memberEnd href="#_JLF4osg0EeCHk-lvWGDTdA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_5oC6IMg2EeCHk-lvWGDTdA">
+      <memberEnd href=".controlled/hitsp-hospitalAdmissionDiagnosis.uml#_5oBE8Mg2EeCHk-lvWGDTdA"/>
+      <memberEnd href="#_5oDhMMg2EeCHk-lvWGDTdA"/>
       <ownedEnd xmi:id="_5oDhMMg2EeCHk-lvWGDTdA" association="_5oC6IMg2EeCHk-lvWGDTdA">
         <type xmi:type="uml:Class" href=".controlled/hitsp-hospitalAdmissionDiagnosis.uml#_eg314MfvEd6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-hospitalAdmissionDiagnosis.uml#_5oBE8Mg2EeCHk-lvWGDTdA"/>
-      <memberEnd href="#_5oDhMMg2EeCHk-lvWGDTdA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_I06IEMhGEeCHk-lvWGDTdA" name="SocialHistory">
       <generalization xmi:id="_I06vIMhGEeCHk-lvWGDTdA">
@@ -1049,29 +1053,29 @@ resolved</body>
       </generalization>
       <ownedAttribute xmi:id="_UNRugMhGEeCHk-lvWGDTdA" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hydKwMhGEeCHk-lvWGDTdA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hydKwchGEeCHk-lvWGDTdA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hydKwMhGEeCHk-lvWGDTdA" value="*"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_UNSVkMhGEeCHk-lvWGDTdA" name="effectiveTime" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UNSVkchGEeCHk-lvWGDTdA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UNSVkshGEeCHk-lvWGDTdA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UNSVkchGEeCHk-lvWGDTdA" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_UNSVk8hGEeCHk-lvWGDTdA" name="text" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iPMxIMhGEeCHk-lvWGDTdA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iPNYMMhGEeCHk-lvWGDTdA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iPMxIMhGEeCHk-lvWGDTdA" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_pJXt8chGEeCHk-lvWGDTdA">
+      <memberEnd href=".controlled/hitsp-socialHistory.uml#_pJXG4MhGEeCHk-lvWGDTdA"/>
+      <memberEnd href="#_pJYVAMhGEeCHk-lvWGDTdA"/>
       <ownedEnd xmi:id="_pJYVAMhGEeCHk-lvWGDTdA" association="_pJXt8chGEeCHk-lvWGDTdA">
         <type xmi:type="uml:Class" href=".controlled/hitsp-socialHistory.uml#_-ujjcMihEd6mWrHPmrIIfQ"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-socialHistory.uml#_pJXG4MhGEeCHk-lvWGDTdA"/>
-      <memberEnd href="#_pJYVAMhGEeCHk-lvWGDTdA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_kce00Mm2EeCDOYZyQPaRHg" name="FamilyHistory">
       <ownedRule xmi:id="_RSeBkMm3EeCDOYZyQPaRHg" name="hasPedigreeImage" constrainedElement="_kce00Mm2EeCDOYZyQPaRHg">
@@ -1216,8 +1220,8 @@ resolved</body>
       </generalization>
       <ownedAttribute xmi:id="_U_oRAMnREeCDOYZyQPaRHg" name="problemStatusObservation" association="_U_oRAsnREeCDOYZyQPaRHg">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-activeProblems.uml#_s7LQECQNEeCxCon8a79rfA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ar-6YMnSEeCDOYZyQPaRHg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ar-6YcnSEeCDOYZyQPaRHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ar-6YMnSEeCDOYZyQPaRHg" value="*"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_U_oRAsnREeCDOYZyQPaRHg" memberEnd="_U_oRAMnREeCDOYZyQPaRHg _U_oRA8nREeCDOYZyQPaRHg">
@@ -1334,31 +1338,31 @@ resolved</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ycUCIMzqEeCvbrjDQpuvkw" name="effectiveTime" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FYA3IMzrEeCvbrjDQpuvkw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FYA3IczrEeCvbrjDQpuvkw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FYA3IMzrEeCvbrjDQpuvkw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-advanceDirectives.uml#_Jg7hMMJdEd6-XpBv2uxYrQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_LFCZccztEeCvbrjDQpuvkw">
+      <memberEnd href=".controlled/hitsp-advanceDirectives.uml#_LFByYMztEeCvbrjDQpuvkw"/>
+      <memberEnd href="#_LFDAgMztEeCvbrjDQpuvkw"/>
       <ownedEnd xmi:id="_LFDAgMztEeCvbrjDQpuvkw" association="_LFCZccztEeCvbrjDQpuvkw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-advanceDirectives.uml#_uIr7cMfzEd6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-advanceDirectives.uml#_LFByYMztEeCvbrjDQpuvkw"/>
-      <memberEnd href="#_LFDAgMztEeCvbrjDQpuvkw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Fp1MMdJXEeCZxdqWGSM1Gw">
+      <memberEnd href=".controlled/hitsp-diagnosticResults.uml#_FpvFkNJXEeCZxdqWGSM1Gw"/>
+      <memberEnd href="#_Fp1MMtJXEeCZxdqWGSM1Gw"/>
       <ownedEnd xmi:id="_Fp1MMtJXEeCZxdqWGSM1Gw" association="_Fp1MMdJXEeCZxdqWGSM1Gw">
         <type xmi:type="uml:Class" href=".controlled/hitsp-diagnosticResults.uml#_P3GVkMieEd6mWrHPmrIIfQ"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-diagnosticResults.uml#_FpvFkNJXEeCZxdqWGSM1Gw"/>
-      <memberEnd href="#_Fp1MMtJXEeCZxdqWGSM1Gw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_5pxr8NJcEeCJq4tpS2QhbQ">
+      <memberEnd href=".controlled/hitsp-familyHistory.uml#_5puooNJcEeCJq4tpS2QhbQ"/>
+      <memberEnd href="#_5pxr8dJcEeCJq4tpS2QhbQ"/>
       <ownedEnd xmi:id="_5pxr8dJcEeCJq4tpS2QhbQ" association="_5pxr8NJcEeCJq4tpS2QhbQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-familyHistory.uml#_4Mh2UMigEd6mWrHPmrIIfQ"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-familyHistory.uml#_5puooNJcEeCJq4tpS2QhbQ"/>
-      <memberEnd href="#_5pxr8dJcEeCJq4tpS2QhbQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_WwjwsNJkEeCJq4tpS2QhbQ" name="ResultOrganizer">
       <ownedComment xmi:id="_jvqEYNJkEeCJq4tpS2QhbQ">
@@ -1368,68 +1372,68 @@ resolved</body>
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_Ht_RsHDAEd6eItyqb1FoWg"/>
       </generalization>
       <ownedAttribute xmi:id="_YvgwsNJkEeCJq4tpS2QhbQ" name="result" type="_oTzNMDIWEd-SYNRf-pkwtw" association="_YvgwstJkEeCJq4tpS2QhbQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bzNLMNJkEeCJq4tpS2QhbQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bzNLMdJkEeCJq4tpS2QhbQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bzNLMNJkEeCJq4tpS2QhbQ" value="*"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_YvgwstJkEeCJq4tpS2QhbQ" memberEnd="_YvgwsNJkEeCJq4tpS2QhbQ _YvhXwNJkEeCJq4tpS2QhbQ">
       <ownedEnd xmi:id="_YvhXwNJkEeCJq4tpS2QhbQ" type="_WwjwsNJkEeCJq4tpS2QhbQ" association="_YvgwstJkEeCJq4tpS2QhbQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Cf2R0s9JEeCBIMy4xFlonQ">
+      <memberEnd href=".controlled/hitsp-payers.uml#_Cf2R0M9JEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_Cf2R089JEeCBIMy4xFlonQ"/>
       <ownedEnd xmi:id="_Cf2R089JEeCBIMy4xFlonQ" association="_Cf2R0s9JEeCBIMy4xFlonQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-payers.uml#_DH404MfWEd6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-payers.uml#_Cf2R0M9JEeCBIMy4xFlonQ"/>
-      <memberEnd href="#_Cf2R089JEeCBIMy4xFlonQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_aWmZos9LEeCBIMy4xFlonQ">
+      <memberEnd href=".controlled/hitsp-reasonForReferral.uml#_aWmZoM9LEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_aWmZo89LEeCBIMy4xFlonQ"/>
       <ownedEnd xmi:id="_aWmZo89LEeCBIMy4xFlonQ" association="_aWmZos9LEeCBIMy4xFlonQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-reasonForReferral.uml#_bX2UoMfdEd6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-reasonForReferral.uml#_aWmZoM9LEeCBIMy4xFlonQ"/>
-      <memberEnd href="#_aWmZo89LEeCBIMy4xFlonQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_fcac4s9LEeCBIMy4xFlonQ">
+      <memberEnd href=".controlled/hitsp-reasonForReferral.uml#_fcac4M9LEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_fcac489LEeCBIMy4xFlonQ"/>
       <ownedEnd xmi:id="_fcac489LEeCBIMy4xFlonQ" association="_fcac4s9LEeCBIMy4xFlonQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-reasonForReferral.uml#_bX2UoMfdEd6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-reasonForReferral.uml#_fcac4M9LEeCBIMy4xFlonQ"/>
-      <memberEnd href="#_fcac489LEeCBIMy4xFlonQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Jtxwws9MEeCBIMy4xFlonQ">
+      <memberEnd href=".controlled/hitsp-physicalExam.uml#_JtxwwM9MEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_Jtxww89MEeCBIMy4xFlonQ"/>
       <ownedEnd xmi:id="_Jtxww89MEeCBIMy4xFlonQ" association="_Jtxwws9MEeCBIMy4xFlonQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-physicalExam.uml#_XaZ6wMf1Ed6VjLXh4DcWSg"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-physicalExam.uml#_JtxwwM9MEeCBIMy4xFlonQ"/>
-      <memberEnd href="#_Jtxww89MEeCBIMy4xFlonQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_eW32gs9eEeCBIMy4xFlonQ">
+      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_eW32gM9eEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_eW32g89eEeCBIMy4xFlonQ"/>
       <ownedEnd xmi:id="_eW32g89eEeCBIMy4xFlonQ" association="_eW32gs9eEeCBIMy4xFlonQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-assessmentAndPlan.uml#_ml82oMifEd6mWrHPmrIIfQ"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_eW32gM9eEeCBIMy4xFlonQ"/>
-      <memberEnd href="#_eW32g89eEeCBIMy4xFlonQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_hMq-8s9eEeCBIMy4xFlonQ">
+      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_hMq-8M9eEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_hMq-889eEeCBIMy4xFlonQ"/>
       <ownedEnd xmi:id="_hMq-889eEeCBIMy4xFlonQ" association="_hMq-8s9eEeCBIMy4xFlonQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-assessmentAndPlan.uml#_ml82oMifEd6mWrHPmrIIfQ"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_hMq-8M9eEeCBIMy4xFlonQ"/>
-      <memberEnd href="#_hMq-889eEeCBIMy4xFlonQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ilo9As9eEeCBIMy4xFlonQ">
+      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_ilo9AM9eEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_ilo9A89eEeCBIMy4xFlonQ"/>
       <ownedEnd xmi:id="_ilo9A89eEeCBIMy4xFlonQ" association="_ilo9As9eEeCBIMy4xFlonQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-assessmentAndPlan.uml#_ml82oMifEd6mWrHPmrIIfQ"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_ilo9AM9eEeCBIMy4xFlonQ"/>
-      <memberEnd href="#_ilo9A89eEeCBIMy4xFlonQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_lAEYEs9eEeCBIMy4xFlonQ">
+      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_lAEYEM9eEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_lAEYE89eEeCBIMy4xFlonQ"/>
       <ownedEnd xmi:id="_lAEYE89eEeCBIMy4xFlonQ" association="_lAEYEs9eEeCBIMy4xFlonQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-assessmentAndPlan.uml#_ml82oMifEd6mWrHPmrIIfQ"/>
       </ownedEnd>
-      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_lAEYEM9eEeCBIMy4xFlonQ"/>
-      <memberEnd href="#_lAEYE89eEeCBIMy4xFlonQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ysYZ0BuLEeG6kfZwwf5nmQ" name="PlannedProcedure">
       <generalization xmi:id="_2VvGIBuLEeG6kfZwwf5nmQ">
@@ -1443,12 +1447,6 @@ resolved</body>
       </generalization>
       <generalization xmi:id="_F0hIUBuMEeG6kfZwwf5nmQ" general="_KYNNMKDlEd-dVeaMP0XXQw"/>
     </packagedElement>
-    <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
-      <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
-      </eAnnotations>
-      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
-    </profileApplication>
     <profileApplication xmi:id="_aMu68IwJEd6B6JSUB00H7g">
       <eAnnotations xmi:id="_aMviAIwJEd6B6JSUB00H7g" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
