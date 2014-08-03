@@ -538,7 +538,7 @@ Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or o
     <ownedAttribute xmi:id="__AULkPGfEeOmsLWmq5fnqQ" name="resultObservation2" type="_H85E0PF7EeOmsLWmq5fnqQ" association="__AWn0PGfEeOmsLWmq5fnqQ">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMcTEPGgEeOmsLWmq5fnqQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMc6IPGgEeOmsLWmq5fnqQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2JxzgxSVEeGGzu7fmW9pXw"/>
+      <redefinedProperty href="consol-results.uml#_2JxzgxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_TLSSAPJOEeOA6ZIOnFjrYQ" name="effectiveTime" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_AK_bcPJPEeOA6ZIOnFjrYQ">

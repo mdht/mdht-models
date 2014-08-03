@@ -23,25 +23,13 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPhysicianofRecordParticipant2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicianofRecordParticipantTemplateId PhysicianofRecordParticipant2AssignedEntity PhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName' templateId.root='2.16.840.1.113883.10.20.6.2.2.2' constraints.validation.query='PhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName PhysicianofRecordParticipant2AssignedEntityHasNationalProviderId PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization' constraints.validation.warning='PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName PhysicianofRecordParticipant2AssignedEntityHasNationalProviderId PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson' constraints.validation.info='PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicianofRecordParticipantTemplateId PhysicianofRecordParticipantAssignedEntity PhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName' templateId.root='2.16.840.1.113883.10.20.6.2.2.2' constraints.validation.query='PhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName PhysicianofRecordParticipant2AssignedEntityHasNationalProviderId PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization' constraints.validation.warning='PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName PhysicianofRecordParticipant2AssignedEntityHasNationalProviderId PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson' constraints.validation.info='PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianofRecordParticipant2AssignedEntity constraints.validation.warning='PhysicianofRecordParticipant2AssignedEntityHasNationalProviderId PhysicianofRecordParticipantAssignedEntityAssignedPerson' constraints.validation.info='PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianofRecordParticipant2AssignedEntityAssignedPerson constraints.validation.error='PhysicianofRecordParticipantAssignedEntityAssignedPersonName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianofRecordParticipant2AssignedEntityRepresentedOrganization constraints.validation.warning='PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName'"
  * @generated
  */
 public interface PhysicianofRecordParticipant2 extends PhysicianofRecordParticipant {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))'"
-	 * @generated
-	 */
-	boolean validatePhysicianofRecordParticipant2AssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

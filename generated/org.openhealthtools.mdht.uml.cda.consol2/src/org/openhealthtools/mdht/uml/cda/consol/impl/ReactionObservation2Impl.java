@@ -102,8 +102,8 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReactionObservation2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservation2CodeP(this, diagnostics, context);
+	public boolean validateReactionObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -111,18 +111,9 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReactionObservation2Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservation2Code(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReactionObservation2ProcedureActivityProcedure2(DiagnosticChain diagnostics,
+	public boolean validateReactionObservationProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservation2ProcedureActivityProcedure2(
+		return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedure2(
 			this, diagnostics, context);
 	}
 
@@ -131,10 +122,9 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReactionObservation2MedicationActivity2(DiagnosticChain diagnostics,
+	public boolean validateReactionObservationMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservation2MedicationActivity2(
-			this, diagnostics, context);
+		return ReactionObservation2Operations.validateReactionObservationMedicationActivity2(this, diagnostics, context);
 	}
 
 	/**
@@ -153,8 +143,8 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProcedureActivityProcedure2> getProcedureActivityProcedure2s() {
-		return ReactionObservation2Operations.getProcedureActivityProcedure2s(this);
+	public EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s() {
+		return ReactionObservation2Operations.getConsolProcedureActivityProcedure2s(this);
 	}
 
 	/**
@@ -162,8 +152,8 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MedicationActivity2> getMedicationActivity2s() {
-		return ReactionObservation2Operations.getMedicationActivity2s(this);
+	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
+		return ReactionObservation2Operations.getConsolMedicationActivity2s(this);
 	}
 
 	/**
@@ -183,6 +173,16 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	@Override
 	public boolean validateReactionObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateReactionObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservationCode(this, diagnostics, context);
 	}
 
 	/**

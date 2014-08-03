@@ -40,9 +40,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2Payer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Payer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2Guarantor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Guarantor</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2Coverage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Coverage</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PayerPolicyActivityPayerPayerAssignedEntityTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Payer Policy Activity Payer Payer Assigned Entity Telecom</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PolicyActivityPayerPayerAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Policy Activity Payer Payer Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Guarantor Policy Activity Guarantor Guarantor Assigned Entity Telecom</em>}</li>
@@ -54,6 +51,9 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2CoveragePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Coverage Policy Activity Coverage Coverage Role Coverage Playing Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PolicyActivityCoverageCoverageRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Policy Activity Coverage Coverage Role</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivityPayer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Payer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivityGuarantor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Guarantor</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivityCoverage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Coverage</em>}</li>
  * </ul>
  * </p>
  *
@@ -70,315 +70,315 @@ public class PolicyActivity2Test extends CDAValidationTest {
 	*
 	* @generated NOT
 	*/
-	@Test
-	public void testValidatePolicyActivity2Payer() {
-		OperationsTestCase<PolicyActivity2> validatePolicyActivity2PayerTestCase = new OperationsTestCase<PolicyActivity2>(
-			"validatePolicyActivity2Payer",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_PAYER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// does not contain any payer or any guarantor performer elements
-						target.init();
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 2 payers and Contains 1 guarantor
-						target.init();
-						target.getPerformers().clear();
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-						Performer2 payer2 = createPerformer();
-						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer2);
-
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 2 payers and Contains 0 guarantor
-						target.init();
-						target.getPerformers().clear();
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-						Performer2 payer2 = createPerformer();
-						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 0 payers and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 2 payers and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-						Performer2 payer2 = createPerformer();
-						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer2);
-					}
-				});
-
-			}
-
-			@Override
-			protected void updateToPass(PolicyActivity2 target) {
-				target.init();
-
-				Performer2 payer = createPerformer();
-				AssignedEntity aePay = CDAFactory.eINSTANCE.createAssignedEntity();
-				aePay.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
-
-				payer.setAssignedEntity(aePay);
-				target.getPerformers().add(payer);
-
-				II iiPay = DatatypesFactory.eINSTANCE.createII();
-				iiPay.setRoot(PAYER_PERFORMER_ROOT);
-				payer.getTemplateIds().add(0, iiPay);
-
-				Performer2 guarantor = createPerformer();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
-
-				guarantor.setAssignedEntity(ae);
-				target.getPerformers().add(guarantor);
-
-				II iiGuar = DatatypesFactory.eINSTANCE.createII();
-				iiGuar.setRoot(GUARANTOR_PERFORMER_ROOT);
-				guarantor.getTemplateIds().add(0, iiGuar);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PolicyActivity2Operations.validatePolicyActivity2Payer(
-					(PolicyActivity2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePolicyActivity2PayerTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePolicyActivity2Guarantor() {
-		OperationsTestCase<PolicyActivity2> validatePolicyActivity2GuarantorTestCase = new OperationsTestCase<PolicyActivity2>(
-			"validatePolicyActivity2Guarantor",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_GUARANTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// does not contain any payer or any guarantor performer elements
-						target.init();
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 1 payer and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 2 payers and Contains 0 guarantor
-						target.init();
-						target.getPerformers().clear();
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-						Performer2 payer2 = createPerformer();
-						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 0 payers and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 2 payers and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-						Performer2 payer2 = createPerformer();
-						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer2);
-					}
-				});
-
-			}
-
-			@Override
-			protected void updateToPass(PolicyActivity2 target) {
-				// Contains 1 payer and 1 guarantor
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				AssignedEntity aePay = CDAFactory.eINSTANCE.createAssignedEntity();
-				aePay.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
-
-				payer.setAssignedEntity(aePay);
-				target.getPerformers().add(payer);
-
-				II iiPay = DatatypesFactory.eINSTANCE.createII();
-				iiPay.setRoot(PAYER_PERFORMER_ROOT);
-				payer.getTemplateIds().add(0, iiPay);
-
-				Performer2 guarantor = createPerformer();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
-
-				guarantor.setAssignedEntity(ae);
-				target.getPerformers().add(guarantor);
-
-				II iiGuar = DatatypesFactory.eINSTANCE.createII();
-				iiGuar.setRoot(GUARANTOR_PERFORMER_ROOT);
-				guarantor.getTemplateIds().add(0, iiGuar);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PolicyActivity2Operations.validatePolicyActivity2Guarantor(
-					(PolicyActivity2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePolicyActivity2GuarantorTestCase.doValidationTest();
-	}
+	// @Test
+	// public void testValidatePolicyActivity2Payer() {
+	// OperationsTestCase<PolicyActivity2> validatePolicyActivity2PayerTestCase = new OperationsTestCase<PolicyActivity2>(
+	// "validatePolicyActivity2Payer",
+	// operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_PAYER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// public void addFailTests() {
+	//
+	// addFailTest(new FailTest() {
+	//
+	// @Override
+	// public void updateToFail(PolicyActivity2 target) {
+	// // does not contain any payer or any guarantor performer elements
+	// target.init();
+	// }
+	// });
+	//
+	// addFailTest(new FailTest() {
+	//
+	// @Override
+	// public void updateToFail(PolicyActivity2 target) {
+	// // Contains 2 payers and Contains 1 guarantor
+	// target.init();
+	// target.getPerformers().clear();
+	// Performer2 payer = createPerformer();
+	// payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+	// target.getPerformers().add(payer);
+	// Performer2 payer2 = createPerformer();
+	// payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+	// target.getPerformers().add(payer2);
+	//
+	// Performer2 guarantor = createPerformer();
+	// guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+	// target.getPerformers().add(guarantor);
+	// }
+	// });
+	//
+	// addFailTest(new FailTest() {
+	//
+	// @Override
+	// public void updateToFail(PolicyActivity2 target) {
+	// // Contains 2 payers and Contains 0 guarantor
+	// target.init();
+	// target.getPerformers().clear();
+	// Performer2 payer = createPerformer();
+	// payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+	// target.getPerformers().add(payer);
+	// Performer2 payer2 = createPerformer();
+	// payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+	// target.getPerformers().add(payer2);
+	// }
+	// });
+	//
+	// addFailTest(new FailTest() {
+	//
+	// @Override
+	// public void updateToFail(PolicyActivity2 target) {
+	// // Contains 0 payers and Contains 2 guarantors
+	// target.init();
+	// target.getPerformers().clear();
+	// Performer2 guarantor = createPerformer();
+	// guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+	// target.getPerformers().add(guarantor);
+	// Performer2 guarantor2 = createPerformer();
+	// guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+	// target.getPerformers().add(guarantor2);
+	// }
+	// });
+	//
+	// addFailTest(new FailTest() {
+	//
+	// @Override
+	// public void updateToFail(PolicyActivity2 target) {
+	// // Contains 2 payers and Contains 2 guarantors
+	// target.init();
+	// target.getPerformers().clear();
+	// Performer2 guarantor = createPerformer();
+	// guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+	// target.getPerformers().add(guarantor);
+	// Performer2 guarantor2 = createPerformer();
+	// guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+	// target.getPerformers().add(guarantor2);
+	//
+	// Performer2 payer = createPerformer();
+	// payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+	// target.getPerformers().add(payer);
+	// Performer2 payer2 = createPerformer();
+	// payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+	// target.getPerformers().add(payer2);
+	// }
+	// });
+	//
+	// }
+	//
+	// @Override
+	// protected void updateToPass(PolicyActivity2 target) {
+	// target.init();
+	//
+	// Performer2 payer = createPerformer();
+	// AssignedEntity aePay = CDAFactory.eINSTANCE.createAssignedEntity();
+	// aePay.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
+	//
+	// payer.setAssignedEntity(aePay);
+	// target.getPerformers().add(payer);
+	//
+	// II iiPay = DatatypesFactory.eINSTANCE.createII();
+	// iiPay.setRoot(PAYER_PERFORMER_ROOT);
+	// payer.getTemplateIds().add(0, iiPay);
+	//
+	// Performer2 guarantor = createPerformer();
+	// AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+	// ae.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
+	//
+	// guarantor.setAssignedEntity(ae);
+	// target.getPerformers().add(guarantor);
+	//
+	// II iiGuar = DatatypesFactory.eINSTANCE.createII();
+	// iiGuar.setRoot(GUARANTOR_PERFORMER_ROOT);
+	// guarantor.getTemplateIds().add(0, iiGuar);
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return PolicyActivity2Operations.validatePolicyActivity2Payer(
+	// (PolicyActivity2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validatePolicyActivity2PayerTestCase.doValidationTest();
+	// }
 
 	/**
 	*
 	* @generated NOT
 	*/
-	@Test
-	public void testValidatePolicyActivity2Coverage() {
-		OperationsTestCase<PolicyActivity2> validatePolicyActivity2CoverageTestCase = new OperationsTestCase<PolicyActivity2>(
-			"validatePolicyActivity2Coverage",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
+	// @Test
+	// public void testValidatePolicyActivity2Guarantor() {
+	// OperationsTestCase<PolicyActivity2> validatePolicyActivity2GuarantorTestCase = new OperationsTestCase<PolicyActivity2>(
+	// "validatePolicyActivity2Guarantor",
+	// operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_GUARANTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// public void addFailTests() {
+	//
+	// addFailTest(new FailTest() {
+	//
+	// @Override
+	// public void updateToFail(PolicyActivity2 target) {
+	// // does not contain any payer or any guarantor performer elements
+	// target.init();
+	// }
+	// });
+	//
+	// addFailTest(new FailTest() {
+	//
+	// @Override
+	// public void updateToFail(PolicyActivity2 target) {
+	// // Contains 1 payer and Contains 2 guarantors
+	// target.init();
+	// target.getPerformers().clear();
+	// Performer2 payer = createPerformer();
+	// payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+	// target.getPerformers().add(payer);
+	//
+	// Performer2 guarantor = createPerformer();
+	// guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+	// target.getPerformers().add(guarantor);
+	// Performer2 guarantor2 = createPerformer();
+	// guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+	// target.getPerformers().add(guarantor2);
+	// }
+	// });
+	//
+	// addFailTest(new FailTest() {
+	//
+	// @Override
+	// public void updateToFail(PolicyActivity2 target) {
+	// // Contains 2 payers and Contains 0 guarantor
+	// target.init();
+	// target.getPerformers().clear();
+	// Performer2 payer = createPerformer();
+	// payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+	// target.getPerformers().add(payer);
+	// Performer2 payer2 = createPerformer();
+	// payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+	// target.getPerformers().add(payer2);
+	// }
+	// });
+	//
+	// addFailTest(new FailTest() {
+	//
+	// @Override
+	// public void updateToFail(PolicyActivity2 target) {
+	// // Contains 0 payers and Contains 2 guarantors
+	// target.init();
+	// target.getPerformers().clear();
+	// Performer2 guarantor = createPerformer();
+	// guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+	// target.getPerformers().add(guarantor);
+	// Performer2 guarantor2 = createPerformer();
+	// guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+	// target.getPerformers().add(guarantor2);
+	// }
+	// });
+	//
+	// addFailTest(new FailTest() {
+	//
+	// @Override
+	// public void updateToFail(PolicyActivity2 target) {
+	// // Contains 2 payers and Contains 2 guarantors
+	// target.init();
+	// target.getPerformers().clear();
+	// Performer2 guarantor = createPerformer();
+	// guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+	// target.getPerformers().add(guarantor);
+	// Performer2 guarantor2 = createPerformer();
+	// guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+	// target.getPerformers().add(guarantor2);
+	//
+	// Performer2 payer = createPerformer();
+	// payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+	// target.getPerformers().add(payer);
+	// Performer2 payer2 = createPerformer();
+	// payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+	// target.getPerformers().add(payer2);
+	// }
+	// });
+	//
+	// }
+	//
+	// @Override
+	// protected void updateToPass(PolicyActivity2 target) {
+	// // Contains 1 payer and 1 guarantor
+	// target.init();
+	// target.getPerformers().clear();
+	// Performer2 payer = createPerformer();
+	// AssignedEntity aePay = CDAFactory.eINSTANCE.createAssignedEntity();
+	// aePay.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
+	//
+	// payer.setAssignedEntity(aePay);
+	// target.getPerformers().add(payer);
+	//
+	// II iiPay = DatatypesFactory.eINSTANCE.createII();
+	// iiPay.setRoot(PAYER_PERFORMER_ROOT);
+	// payer.getTemplateIds().add(0, iiPay);
+	//
+	// Performer2 guarantor = createPerformer();
+	// AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+	// ae.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
+	//
+	// guarantor.setAssignedEntity(ae);
+	// target.getPerformers().add(guarantor);
+	//
+	// II iiGuar = DatatypesFactory.eINSTANCE.createII();
+	// iiGuar.setRoot(GUARANTOR_PERFORMER_ROOT);
+	// guarantor.getTemplateIds().add(0, iiGuar);
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return PolicyActivity2Operations.validatePolicyActivity2Guarantor(
+	// (PolicyActivity2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validatePolicyActivity2GuarantorTestCase.doValidationTest();
+	// }
 
-			@Override
-			protected void updateToFail(PolicyActivity2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PolicyActivity2 target) {
-				target.init();
-				target.getParticipants().add(createCoverage());
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PolicyActivity2Operations.validatePolicyActivity2Coverage(
-					(PolicyActivity2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePolicyActivity2CoverageTestCase.doValidationTest();
-	}
+	/**
+	*
+	* @generated NOT
+	*/
+	// @Test
+	// public void testValidatePolicyActivity2Coverage() {
+	// OperationsTestCase<PolicyActivity2> validatePolicyActivity2CoverageTestCase = new OperationsTestCase<PolicyActivity2>(
+	// "validatePolicyActivity2Coverage",
+	// operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(PolicyActivity2 target) {
+	//
+	// }
+	//
+	// @Override
+	// protected void updateToPass(PolicyActivity2 target) {
+	// target.init();
+	// target.getParticipants().add(createCoverage());
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return PolicyActivity2Operations.validatePolicyActivity2Coverage(
+	// (PolicyActivity2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validatePolicyActivity2CoverageTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -921,6 +921,316 @@ public class PolicyActivity2Test extends CDAValidationTest {
 		};
 
 		validatePolicyActivityTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePolicyActivityPayer() {
+		OperationsTestCase<PolicyActivity2> validatePolicyActivityPayerTestCase = new OperationsTestCase<PolicyActivity2>(
+			"validatePolicyActivityPayer",
+			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_PAYER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(PolicyActivity2 target) {
+						// does not contain any payer or any guarantor performer elements
+						target.init();
+					}
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(PolicyActivity2 target) {
+						// Contains 2 payers and Contains 1 guarantor
+						target.init();
+						target.getPerformers().clear();
+						Performer2 payer = createPerformer();
+						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+						target.getPerformers().add(payer);
+						Performer2 payer2 = createPerformer();
+						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+						target.getPerformers().add(payer2);
+
+						Performer2 guarantor = createPerformer();
+						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+						target.getPerformers().add(guarantor);
+					}
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(PolicyActivity2 target) {
+						// Contains 2 payers and Contains 0 guarantor
+						target.init();
+						target.getPerformers().clear();
+						Performer2 payer = createPerformer();
+						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+						target.getPerformers().add(payer);
+						Performer2 payer2 = createPerformer();
+						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+						target.getPerformers().add(payer2);
+					}
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(PolicyActivity2 target) {
+						// Contains 0 payers and Contains 2 guarantors
+						target.init();
+						target.getPerformers().clear();
+						Performer2 guarantor = createPerformer();
+						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+						target.getPerformers().add(guarantor);
+						Performer2 guarantor2 = createPerformer();
+						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+						target.getPerformers().add(guarantor2);
+					}
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(PolicyActivity2 target) {
+						// Contains 2 payers and Contains 2 guarantors
+						target.init();
+						target.getPerformers().clear();
+						Performer2 guarantor = createPerformer();
+						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+						target.getPerformers().add(guarantor);
+						Performer2 guarantor2 = createPerformer();
+						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+						target.getPerformers().add(guarantor2);
+
+						Performer2 payer = createPerformer();
+						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+						target.getPerformers().add(payer);
+						Performer2 payer2 = createPerformer();
+						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+						target.getPerformers().add(payer2);
+					}
+				});
+
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity2 target) {
+				target.init();
+
+				Performer2 payer = createPerformer();
+				AssignedEntity aePay = CDAFactory.eINSTANCE.createAssignedEntity();
+				aePay.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
+
+				payer.setAssignedEntity(aePay);
+				target.getPerformers().add(payer);
+
+				II iiPay = DatatypesFactory.eINSTANCE.createII();
+				iiPay.setRoot(PAYER_PERFORMER_ROOT);
+				payer.getTemplateIds().add(0, iiPay);
+
+				Performer2 guarantor = createPerformer();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				ae.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
+
+				guarantor.setAssignedEntity(ae);
+				target.getPerformers().add(guarantor);
+
+				II iiGuar = DatatypesFactory.eINSTANCE.createII();
+				iiGuar.setRoot(GUARANTOR_PERFORMER_ROOT);
+				guarantor.getTemplateIds().add(0, iiGuar);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivity2Operations.validatePolicyActivityPayer(
+					(PolicyActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityPayerTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePolicyActivityGuarantor() {
+		OperationsTestCase<PolicyActivity2> validatePolicyActivityGuarantorTestCase = new OperationsTestCase<PolicyActivity2>(
+			"validatePolicyActivityGuarantor",
+			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_GUARANTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(PolicyActivity2 target) {
+						// does not contain any payer or any guarantor performer elements
+						target.init();
+					}
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(PolicyActivity2 target) {
+						// Contains 1 payer and Contains 2 guarantors
+						target.init();
+						target.getPerformers().clear();
+						Performer2 payer = createPerformer();
+						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+						target.getPerformers().add(payer);
+
+						Performer2 guarantor = createPerformer();
+						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+						target.getPerformers().add(guarantor);
+						Performer2 guarantor2 = createPerformer();
+						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+						target.getPerformers().add(guarantor2);
+					}
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(PolicyActivity2 target) {
+						// Contains 2 payers and Contains 0 guarantor
+						target.init();
+						target.getPerformers().clear();
+						Performer2 payer = createPerformer();
+						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+						target.getPerformers().add(payer);
+						Performer2 payer2 = createPerformer();
+						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+						target.getPerformers().add(payer2);
+					}
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(PolicyActivity2 target) {
+						// Contains 0 payers and Contains 2 guarantors
+						target.init();
+						target.getPerformers().clear();
+						Performer2 guarantor = createPerformer();
+						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+						target.getPerformers().add(guarantor);
+						Performer2 guarantor2 = createPerformer();
+						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+						target.getPerformers().add(guarantor2);
+					}
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(PolicyActivity2 target) {
+						// Contains 2 payers and Contains 2 guarantors
+						target.init();
+						target.getPerformers().clear();
+						Performer2 guarantor = createPerformer();
+						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+						target.getPerformers().add(guarantor);
+						Performer2 guarantor2 = createPerformer();
+						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+						target.getPerformers().add(guarantor2);
+
+						Performer2 payer = createPerformer();
+						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+						target.getPerformers().add(payer);
+						Performer2 payer2 = createPerformer();
+						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+						target.getPerformers().add(payer2);
+					}
+				});
+
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity2 target) {
+				// Contains 1 payer and 1 guarantor
+				target.init();
+				target.getPerformers().clear();
+				Performer2 payer = createPerformer();
+				AssignedEntity aePay = CDAFactory.eINSTANCE.createAssignedEntity();
+				aePay.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
+
+				payer.setAssignedEntity(aePay);
+				target.getPerformers().add(payer);
+
+				II iiPay = DatatypesFactory.eINSTANCE.createII();
+				iiPay.setRoot(PAYER_PERFORMER_ROOT);
+				payer.getTemplateIds().add(0, iiPay);
+
+				Performer2 guarantor = createPerformer();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				ae.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
+
+				guarantor.setAssignedEntity(ae);
+				target.getPerformers().add(guarantor);
+
+				II iiGuar = DatatypesFactory.eINSTANCE.createII();
+				iiGuar.setRoot(GUARANTOR_PERFORMER_ROOT);
+				guarantor.getTemplateIds().add(0, iiGuar);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivity2Operations.validatePolicyActivityGuarantor(
+					(PolicyActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityGuarantorTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated 
+	*/
+	@Test
+	public void testValidatePolicyActivityCoverage() {
+		OperationsTestCase<PolicyActivity2> validatePolicyActivityCoverageTestCase = new OperationsTestCase<PolicyActivity2>(
+			"validatePolicyActivityCoverage",
+			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity2 target) {
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivity2Operations.validatePolicyActivityCoverage(
+					(PolicyActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityCoverageTestCase.doValidationTest();
 	}
 
 	/**

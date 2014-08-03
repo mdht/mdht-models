@@ -49,7 +49,6 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2MethodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Method Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2TargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Target Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2TargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Performer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Author Participation</em>}</li>
@@ -433,77 +432,6 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePlannedObservation2TargetSiteCodeP(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Target Site Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePlannedObservation2TargetSiteCodeP(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePlannedObservation2TargetSiteCodeP(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Target Site Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePlannedObservation2TargetSiteCodeP(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param plannedObservation2 The receiving '<em><b>Planned Observation2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePlannedObservation2TargetSiteCodeP(PlannedObservation2 plannedObservation2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
-			try {
-				VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedObservation2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_TARGET_SITE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2TargetSiteCodeP"),
-					new Object[] { plannedObservation2 }));
-			}
-
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2TargetSiteCodeP");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2TargetSiteCodeP", passToken);
-				}
-				passToken.add(plannedObservation2);
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validatePlannedObservation2TargetSiteCode(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Target Site Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -511,9 +439,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedObservation2TargetSiteCode(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Target Site Code</em>}' invariant operation.
@@ -540,14 +466,6 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	public static boolean validatePlannedObservation2TargetSiteCode(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2TargetSiteCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(plannedObservation2)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
-
 		if (VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
@@ -561,7 +479,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 			plannedObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_TARGET_SITE_CODE,
 					ConsolPlugin.INSTANCE.getString("PlannedObservation2TargetSiteCode"),
 					new Object[] { plannedObservation2 }));
@@ -1018,7 +936,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_OBSERVATION2,
-				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(70));
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(69));
 			try {
 				GET_PATIENT_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PATIENT_PRIORITY_PREFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1063,7 +981,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_OBSERVATION2,
-				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(71));
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(70));
 			try {
 				GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1107,7 +1025,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_OBSERVATION2,
-				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(72));
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(71));
 			try {
 				GET_INDICATION2S__EOCL_QRY = helper.createQuery(GET_INDICATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1151,7 +1069,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_OBSERVATION2,
-				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(73));
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(72));
 			try {
 				GET_INSTRUCTION2S__EOCL_QRY = helper.createQuery(GET_INSTRUCTION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1195,7 +1113,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_OBSERVATION2,
-				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(74));
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(73));
 			try {
 				GET_PLANNED_COVERAGES__EOCL_QRY = helper.createQuery(GET_PLANNED_COVERAGES__EOCL_EXP);
 			} catch (ParserException pe) {

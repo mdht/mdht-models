@@ -958,13 +958,13 @@ If the patient's current smoking status is unknown, the value element must be po
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f0hlQfJgEeO2NaSiicarcg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f0hlQvJgEeO2NaSiicarcg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_2JUggBSVEeGGzu7fmW9pXw"/>
+      <redefinedProperty href="consol-socialhistory.uml#_2JUggBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_YzlcoPJhEeO2NaSiicarcg" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dHC14PJhEeO2NaSiicarcg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dHC14fJhEeO2NaSiicarcg" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_2JOZ4hSVEeGGzu7fmW9pXw"/>
+      <redefinedProperty href="consol-socialhistory.uml#_2JOZ4hSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_VH7i4PJkEeO2NaSiicarcg" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>

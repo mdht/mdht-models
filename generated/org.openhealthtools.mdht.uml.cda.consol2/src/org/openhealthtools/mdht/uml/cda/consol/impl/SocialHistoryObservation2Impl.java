@@ -56,33 +56,6 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryObservation2Value(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2Value(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSocialHistoryObservation2Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2Code(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSocialHistoryObservation2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2CodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateSocialHistoryObservation2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2EffectiveTime(
@@ -109,6 +82,36 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservationTemplateId(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSocialHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSocialHistoryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSocialHistoryObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservationCodeP(this, diagnostics, context);
 	}
 
 	/**

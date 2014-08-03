@@ -42,9 +42,9 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2CodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2ClassCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Class Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2ResultObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Result Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizerResultObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Result Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#getResultObservation2s() <em>Get Result Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#getConsolResultObservation2s() <em>Get Consol Result Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  * </ul>
  * </p>
@@ -242,25 +242,25 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResultOrganizer2ResultObservation2(ResultOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Result Observation2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateResultOrganizerResultObservation2(ResultOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Result Observation2</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizer2ResultObservation2(ResultOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateResultOrganizerResultObservation2(ResultOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESULT_ORGANIZER2_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::ResultObservation2))";
+	protected static final String VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::ResultObservation2))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResultOrganizer2ResultObservation2(ResultOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Result Observation2</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateResultOrganizerResultObservation2(ResultOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Result Observation2</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizer2ResultObservation2(ResultOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateResultOrganizerResultObservation2(ResultOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RESULT_ORGANIZER2_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,25 +273,25 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 	 * @generated
 	 */
 
-	public static boolean validateResultOrganizer2ResultObservation2(ResultOrganizer2 resultOrganizer2,
+	public static boolean validateResultOrganizerResultObservation2(ResultOrganizer2 resultOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_RESULT_ORGANIZER2_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULT_ORGANIZER2);
 			try {
-				VALIDATE_RESULT_ORGANIZER2_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER2_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER2_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			resultOrganizer2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_RESULT_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultObservation2"),
+					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_RESULT_OBSERVATION2,
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultObservation2"),
 					new Object[] { resultOrganizer2 }));
 			}
 
@@ -360,24 +360,24 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getResultObservation2s(ResultOrganizer2) <em>Get Result Observation2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolResultObservation2s(ResultOrganizer2) <em>Get Consol Result Observation2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResultObservation2s(ResultOrganizer2)
+	 * @see #getConsolResultObservation2s(ResultOrganizer2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_RESULT_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ResultObservation2)).oclAsType(consol::ResultObservation2)";
+	protected static final String GET_CONSOL_RESULT_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ResultObservation2)).oclAsType(consol::ResultObservation2)";
 
 	/**
-	 * The cached OCL query for the '{@link #getResultObservation2s(ResultOrganizer2) <em>Get Result Observation2s</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolResultObservation2s(ResultOrganizer2) <em>Get Consol Result Observation2s</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResultObservation2s(ResultOrganizer2)
+	 * @see #getConsolResultObservation2s(ResultOrganizer2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_RESULT_OBSERVATION2S__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_RESULT_OBSERVATION2S__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -385,19 +385,19 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 	 * @generated
 	 */
 
-	public static EList<ResultObservation2> getResultObservation2s(ResultOrganizer2 resultOrganizer2) {
-		if (GET_RESULT_OBSERVATION2S__EOCL_QRY == null) {
+	public static EList<ResultObservation2> getConsolResultObservation2s(ResultOrganizer2 resultOrganizer2) {
+		if (GET_CONSOL_RESULT_OBSERVATION2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RESULT_ORGANIZER2,
 				ConsolPackage.Literals.RESULT_ORGANIZER2.getEAllOperations().get(68));
 			try {
-				GET_RESULT_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_RESULT_OBSERVATION2S__EOCL_EXP);
+				GET_CONSOL_RESULT_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_RESULT_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RESULT_OBSERVATION2S__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_RESULT_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ResultObservation2> result = (Collection<ResultObservation2>) query.evaluate(resultOrganizer2);
 		return new BasicEList.UnmodifiableEList<ResultObservation2>(result.size(), result.toArray());

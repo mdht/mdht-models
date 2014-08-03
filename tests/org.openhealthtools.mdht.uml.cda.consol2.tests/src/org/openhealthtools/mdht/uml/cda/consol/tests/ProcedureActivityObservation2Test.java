@@ -11,7 +11,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -35,15 +34,14 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#validateProcedureActivityObservation2InstructionsInversion(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Observation2 Instructions Inversion</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#validateProcedureActivityObservation2TargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Observation2 Target Site Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#validateProcedureActivityObservation2TargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Observation2 Target Site Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#validateProcedureActivityObservation2Indication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Observation2 Indication2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#validateProcedureActivityObservation2MedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Observation2 Medication Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#validateProcedureActivityObservation2Instruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Observation2 Instruction2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#getIndication2s() <em>Get Indication2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#getMedicationActivity2s() <em>Get Medication Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#getInstruction2() <em>Get Instruction2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#validateProcedureActivityObservationIndication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Observation Indication2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#validateProcedureActivityObservationMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Observation Medication Activity2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#validateProcedureActivityObservationInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Observation Instruction2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#getConsolIndication2s() <em>Get Consol Indication2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#getConsolMedicationActivity2s() <em>Get Consol Medication Activity2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#getConsolInstruction2() <em>Get Consol Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#validateProcedureActivityObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Observation Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2#validateProcedureActivityObservationTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Observation Target Site Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -113,94 +111,13 @@ public class ProcedureActivityObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated not
 	*/
 	@Test
-	public void testValidateProcedureActivityObservation2TargetSiteCodeP() {
-		OperationsTestCase<ProcedureActivityObservation2> validateProcedureActivityObservation2TargetSiteCodePTestCase = new OperationsTestCase<ProcedureActivityObservation2>(
-			"validateProcedureActivityObservation2TargetSiteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProcedureActivityObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProcedureActivityObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2TargetSiteCodeP(
-					(ProcedureActivityObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProcedureActivityObservation2TargetSiteCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProcedureActivityObservation2TargetSiteCode() {
-		OperationsTestCase<ProcedureActivityObservation2> validateProcedureActivityObservation2TargetSiteCodeTestCase = new OperationsTestCase<ProcedureActivityObservation2>(
-			"validateProcedureActivityObservation2TargetSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProcedureActivityObservation2 target) {
-				target.init();
-				for (CD tsc : target.getTargetSiteCodes()) {
-					tsc.setCodeSystem(BAD_CODESYSTEM_ID);
-				}
-			}
-
-			@Override
-			protected void updateToPass(ProcedureActivityObservation2 target) {
-				for (CD tsc : target.getTargetSiteCodes()) {
-					tsc.setCodeSystem(SNOMEDCT_ID);
-					tsc.setCode("mustExistOnly");
-				}
-			}
-
-			@Override
-			protected void setDependency(ProcedureActivityObservation2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put(
-					"org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2TargetSiteCodeP", passToken);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2TargetSiteCode(
-					(ProcedureActivityObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProcedureActivityObservation2TargetSiteCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProcedureActivityObservation2Indication2() {
-		OperationsTestCase<ProcedureActivityObservation2> validateProcedureActivityObservation2Indication2TestCase = new OperationsTestCase<ProcedureActivityObservation2>(
-			"validateProcedureActivityObservation2Indication2",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateProcedureActivityObservationIndication2() {
+		OperationsTestCase<ProcedureActivityObservation2> validateProcedureActivityObservationIndication2TestCase = new OperationsTestCase<ProcedureActivityObservation2>(
+			"validateProcedureActivityObservationIndication2",
+			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -220,24 +137,24 @@ public class ProcedureActivityObservation2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2Indication2(
+				return ProcedureActivityObservation2Operations.validateProcedureActivityObservationIndication2(
 					(ProcedureActivityObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProcedureActivityObservation2Indication2TestCase.doValidationTest();
+		validateProcedureActivityObservationIndication2TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
-	public void testValidateProcedureActivityObservation2MedicationActivity2() {
-		OperationsTestCase<ProcedureActivityObservation2> validateProcedureActivityObservation2MedicationActivity2TestCase = new OperationsTestCase<ProcedureActivityObservation2>(
-			"validateProcedureActivityObservation2MedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION2_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateProcedureActivityObservationMedicationActivity2() {
+		OperationsTestCase<ProcedureActivityObservation2> validateProcedureActivityObservationMedicationActivity2TestCase = new OperationsTestCase<ProcedureActivityObservation2>(
+			"validateProcedureActivityObservationMedicationActivity2",
+			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -257,24 +174,24 @@ public class ProcedureActivityObservation2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2MedicationActivity2(
+				return ProcedureActivityObservation2Operations.validateProcedureActivityObservationMedicationActivity2(
 					(ProcedureActivityObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProcedureActivityObservation2MedicationActivity2TestCase.doValidationTest();
+		validateProcedureActivityObservationMedicationActivity2TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
-	public void testValidateProcedureActivityObservation2Instruction2() {
-		OperationsTestCase<ProcedureActivityObservation2> validateProcedureActivityObservation2Instruction2TestCase = new OperationsTestCase<ProcedureActivityObservation2>(
-			"validateProcedureActivityObservation2Instruction2",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateProcedureActivityObservationInstruction2() {
+		OperationsTestCase<ProcedureActivityObservation2> validateProcedureActivityObservationInstruction2TestCase = new OperationsTestCase<ProcedureActivityObservation2>(
+			"validateProcedureActivityObservationInstruction2",
+			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -294,13 +211,13 @@ public class ProcedureActivityObservation2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2Instruction2(
+				return ProcedureActivityObservation2Operations.validateProcedureActivityObservationInstruction2(
 					(ProcedureActivityObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProcedureActivityObservation2Instruction2TestCase.doValidationTest();
+		validateProcedureActivityObservationInstruction2TestCase.doValidationTest();
 	}
 
 	/**
@@ -308,22 +225,10 @@ public class ProcedureActivityObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetIndication2s() {
+	public void testGetConsolIndication2s() {
 
 		ProcedureActivityObservation2 target = objectFactory.create();
-		target.getIndication2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetMedicationActivity2s() {
-
-		ProcedureActivityObservation2 target = objectFactory.create();
-		target.getMedicationActivity2s();
+		target.getConsolIndication2s();
 
 	}
 
@@ -332,10 +237,22 @@ public class ProcedureActivityObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetInstruction2() {
+	public void testGetConsolMedicationActivity2s() {
 
 		ProcedureActivityObservation2 target = objectFactory.create();
-		target.getInstruction2();
+		target.getConsolMedicationActivity2s();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolInstruction2() {
+
+		ProcedureActivityObservation2 target = objectFactory.create();
+		target.getConsolInstruction2();
 
 	}
 
@@ -371,6 +288,45 @@ public class ProcedureActivityObservation2Test extends CDAValidationTest {
 		};
 
 		validateProcedureActivityObservationTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+	public void testValidateProcedureActivityObservationTargetSiteCode() {
+		OperationsTestCase<ProcedureActivityObservation2> validateProcedureActivityObservationTargetSiteCodeTestCase = new OperationsTestCase<ProcedureActivityObservation2>(
+			"validateProcedureActivityObservationTargetSiteCode",
+			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProcedureActivityObservation2 target) {
+				target.init();
+				for (CD tsc : target.getTargetSiteCodes()) {
+					tsc.setCodeSystem(BAD_CODESYSTEM_ID);
+				}
+			}
+
+			@Override
+			protected void updateToPass(ProcedureActivityObservation2 target) {
+				for (CD tsc : target.getTargetSiteCodes()) {
+					tsc.setCodeSystem(SNOMEDCT_ID);
+					tsc.setCode("mustExistOnly");
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProcedureActivityObservation2Operations.validateProcedureActivityObservationTargetSiteCode(
+					(ProcedureActivityObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProcedureActivityObservationTargetSiteCodeTestCase.doValidationTest();
 	}
 
 	/**

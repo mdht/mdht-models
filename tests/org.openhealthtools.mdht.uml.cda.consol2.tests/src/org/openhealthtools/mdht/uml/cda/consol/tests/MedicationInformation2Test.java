@@ -33,7 +33,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformation2ManufacturedMaterial(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information2 Manufactured Material</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformation2MedicationInformationManufacturedMaterialCETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information2 Medication Information Manufactured Material CE Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformation2MedicationInformationManufacturedMaterialCodeOriginalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information2 Medication Information Manufactured Material Code Original Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformation2MedicationInformationManufacturedMaterialCodeTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information2 Medication Information Manufactured Material Code Translation</em>}</li>
@@ -43,6 +42,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information2 Medication Information Medication Information Manufactured Material Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information2 Medication Information Medication Information Manufactured Material Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformationManufacturedMaterial(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Manufactured Material</em>}</li>
  * </ul>
  * </p>
  *
@@ -51,39 +51,40 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 public class MedicationInformation2Test extends CDAValidationTest {
 
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateMedicationInformation2ManufacturedMaterial() {
-		OperationsTestCase<MedicationInformation2> validateMedicationInformation2ManufacturedMaterialTestCase = new OperationsTestCase<MedicationInformation2>(
-			"validateMedicationInformation2ManufacturedMaterial",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION2_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MedicationInformation2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(MedicationInformation2 target) {
-				Material m = CDAFactory.eINSTANCE.createMaterial();
-				target.setManufacturedMaterial(m);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MedicationInformation2Operations.validateMedicationInformation2ManufacturedMaterial(
-					(MedicationInformation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMedicationInformation2ManufacturedMaterialTestCase.doValidationTest();
-	}
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateMedicationInformation2ManufacturedMaterial() {
+	// OperationsTestCase<MedicationInformation2> validateMedicationInformation2ManufacturedMaterialTestCase = new
+	// OperationsTestCase<MedicationInformation2>(
+	// "validateMedicationInformation2ManufacturedMaterial",
+	// operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION2_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(MedicationInformation2 target) {
+	// target.init();
+	// }
+	//
+	// @Override
+	// protected void updateToPass(MedicationInformation2 target) {
+	// Material m = CDAFactory.eINSTANCE.createMaterial();
+	// target.setManufacturedMaterial(m);
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return MedicationInformation2Operations.validateMedicationInformation2ManufacturedMaterial(
+	// (MedicationInformation2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateMedicationInformation2ManufacturedMaterialTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -404,6 +405,40 @@ public class MedicationInformation2Test extends CDAValidationTest {
 		};
 
 		validateMedicationInformationTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+	public void testValidateMedicationInformationManufacturedMaterial() {
+		OperationsTestCase<MedicationInformation2> validateMedicationInformationManufacturedMaterialTestCase = new OperationsTestCase<MedicationInformation2>(
+			"validateMedicationInformationManufacturedMaterial",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationInformation2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(MedicationInformation2 target) {
+				Material m = CDAFactory.eINSTANCE.createMaterial();
+				target.setManufacturedMaterial(m);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationInformation2Operations.validateMedicationInformationManufacturedMaterial(
+					(MedicationInformation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationInformationManufacturedMaterialTestCase.doValidationTest();
 	}
 
 	/**

@@ -105,29 +105,8 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedMedicationActivity2RouteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RouteCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePlannedMedicationActivity2RouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RouteCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedMedicationActivity2ApproachSiteCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ApproachSiteCodeP(
 			this, diagnostics, context);
 	}
 

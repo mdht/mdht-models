@@ -53,10 +53,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityRepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Repeat Number</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityRouteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Route Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityRouteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Route Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityApproachSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Approach Site Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityApproachSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Approach Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Dose Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Patient Priority Preference</em>}</li>
@@ -392,40 +390,6 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePlannedImmunizationActivityRouteCodeP() {
-		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityRouteCodePTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityRouteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedImmunizationActivity target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PlannedImmunizationActivity target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRouteCodeP(
-					(PlannedImmunizationActivity) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedImmunizationActivityRouteCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated NOT
 	*/
 	@Test
@@ -469,40 +433,6 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePlannedImmunizationActivityApproachSiteCodeP() {
-		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityApproachSiteCodePTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityApproachSiteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedImmunizationActivity target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PlannedImmunizationActivity target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityApproachSiteCodeP(
-					(PlannedImmunizationActivity) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedImmunizationActivityApproachSiteCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated NOT
 	*/
 	@Test
@@ -520,7 +450,7 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedImmunizationActivity target) {
 				CD asc = DatatypesFactory.eINSTANCE.createCD("not checked", "2.16.840.1.113883.6.96");
-				target.getApproachSiteCodes().set(0, asc);
+				target.getApproachSiteCodes().add(asc);
 			}
 
 			@Override

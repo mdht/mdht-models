@@ -1587,7 +1587,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_3jqVgNIeEeO-TcA3qYv-cw" name="PlayingEntity">
           <ownedRule xmi:id="_FJf5ENIfEeO-TcA3qYv-cw" name="originalTextReferenceValue">
-            <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_HnN60NCBEeOoYJpPV2Fz0g"/>
+            
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_FJf5EdIfEeO-TcA3qYv-cw">
               <language>Analysis</language>
               <language>OCL</language>
@@ -1599,7 +1599,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
             <ownedComment xmi:id="_GWBWkdIfEeO-TcA3qYv-cw">
               <body>UNIMPLEMENTABLE</body>
             </ownedComment>
-            <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_HnN60NCBEeOoYJpPV2Fz0g"/>
+            
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_GWBWktIfEeO-TcA3qYv-cw">
               <language>Analysis</language>
               <body>In an allergy to a specific medication the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC</body>
@@ -1609,7 +1609,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
             <ownedComment xmi:id="_HCCvEdIfEeO-TcA3qYv-cw">
               <body>UNIMPLEMENTABLE</body>
             </ownedComment>
-            <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_HnN60NCBEeOoYJpPV2Fz0g"/>
+            
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_HCCvEtIfEeO-TcA3qYv-cw">
               <language>Analysis</language>
               <body>In an allergy to a class of medications the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC</body>
@@ -1619,14 +1619,14 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
             <ownedComment xmi:id="_HqtRkdIfEeO-TcA3qYv-cw">
               <body>UNIMPLEMENTABLE</body>
             </ownedComment>
-            <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_HnN60NCBEeOoYJpPV2Fz0g"/>
+            
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_HqtRktIfEeO-TcA3qYv-cw">
               <language>Analysis</language>
               <body>In an allergy to a food or other substance the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_IX4goNIfEeO-TcA3qYv-cw" name="referenceValue">
-            <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_HnN60NCBEeOoYJpPV2Fz0g"/>
+            
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_IX4godIfEeO-TcA3qYv-cw">
               <language>Analysis</language>
               <language>OCL</language>
@@ -1635,7 +1635,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_JFlUINIfEeO-TcA3qYv-cw" name="originalTextReference">
-            <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_HnN60NCBEeOoYJpPV2Fz0g"/>
+            
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_JFlUIdIfEeO-TcA3qYv-cw">
               <language>Analysis</language>
               <language>OCL</language>
@@ -1849,19 +1849,19 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     <substitution xmi:id="_u_JzIPDxEeOKPKE9au0oug" name="ReactionObservation" supplier="_2E_aIRSVEeGGzu7fmW9pXw" client="_U3yosPDxEeOKPKE9au0oug" contract="_2E_aIRSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_QhJjIPDyEeOKPKE9au0oug" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2FBPVRSVEeGGzu7fmW9pXw"/>
+      <redefinedProperty href="consol-allergies.uml#_2FBPVRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_gUHLgPF0EeOmsLWmq5fnqQ" name="procedureActivityProcedure2" association="_gULc8PF0EeOmsLWmq5fnqQ">
       <type xmi:type="uml:Class" href="consol-procedures.uml#_fCVOQPDqEeOKPKE9au0oug"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gUJnwfF0EeOmsLWmq5fnqQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gUJnwPF0EeOmsLWmq5fnqQ"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_feOy4BrbEeGo461UQq-B1g"/>
+      <redefinedProperty href="consol-allergies.uml#_feOy4BrbEeGo461UQq-B1g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_uxoIgPF1EeOmsLWmq5fnqQ" name="medicationActivity2" association="_uxp9sPF1EeOmsLWmq5fnqQ">
       <type xmi:type="uml:Class" href="consol-medications.uml#_WnSCMOLAEeOc7-TVP7Wi6w"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uxoIgvF1EeOmsLWmq5fnqQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uxoIgfF1EeOmsLWmq5fnqQ"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_nTmMoBrbEeGo461UQq-B1g"/>
+      <redefinedProperty href="consol-allergies.uml#_nTmMoBrbEeGo461UQq-B1g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hOU7YPijEeOXlK95I8tUew" name="severityObservation2" type="_B0oKYPJdEeO2NaSiicarcg" redefinedProperty="_2FGu4BSVEeGGzu7fmW9pXw" association="_hOWwkPijEeOXlK95I8tUew">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_loXdwPijEeOXlK95I8tUew" value="1"/>

@@ -38,9 +38,9 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2CodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2ClassCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Class Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2ResultObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Result Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizerResultObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Result Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#getResultObservation2s() <em>Get Result Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#getConsolResultObservation2s() <em>Get Consol Result Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  * </ul>
  * </p>
@@ -195,15 +195,14 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateResultOrganizer2ResultObservation2() {
-		OperationsTestCase<ResultOrganizer2> validateResultOrganizer2ResultObservation2TestCase = new OperationsTestCase<ResultOrganizer2>(
-			"validateResultOrganizer2ResultObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER2_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateResultOrganizerResultObservation2() {
+		OperationsTestCase<ResultOrganizer2> validateResultOrganizerResultObservation2TestCase = new OperationsTestCase<ResultOrganizer2>(
+			"validateResultOrganizerResultObservation2",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
 			@Override
 			protected void updateToFail(ResultOrganizer2 target) {
 
@@ -220,13 +219,13 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ResultOrganizer2Operations.validateResultOrganizer2ResultObservation2(
+				return ResultOrganizer2Operations.validateResultOrganizerResultObservation2(
 					(ResultOrganizer2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateResultOrganizer2ResultObservation2TestCase.doValidationTest();
+		validateResultOrganizerResultObservation2TestCase.doValidationTest();
 	}
 
 	/**
@@ -268,10 +267,10 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetResultObservation2s() {
+	public void testGetConsolResultObservation2s() {
 
 		ResultOrganizer2 target = objectFactory.create();
-		target.getResultObservation2s();
+		target.getConsolResultObservation2s();
 
 	}
 

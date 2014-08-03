@@ -43,7 +43,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2MethodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Method Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2TargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Target Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2TargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2Performer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Author Participation</em>}</li>
@@ -274,40 +273,6 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 		};
 
 		validatePlannedProcedure2MethodCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePlannedProcedure2TargetSiteCodeP() {
-		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2TargetSiteCodePTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2TargetSiteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedProcedure2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PlannedProcedure2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedProcedure2Operations.validatePlannedProcedure2TargetSiteCodeP(
-					(PlannedProcedure2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedProcedure2TargetSiteCodePTestCase.doValidationTest();
 	}
 
 	/**

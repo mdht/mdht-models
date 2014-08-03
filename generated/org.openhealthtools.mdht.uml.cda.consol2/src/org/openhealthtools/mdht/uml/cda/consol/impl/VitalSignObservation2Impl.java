@@ -56,15 +56,6 @@ public class VitalSignObservation2Impl extends VitalSignObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignObservation2Value(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignObservation2Operations.validateVitalSignObservation2Value(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateVitalSignObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignObservation2Operations.validateVitalSignObservation2AuthorParticipation(
@@ -88,6 +79,16 @@ public class VitalSignObservation2Impl extends VitalSignObservationImpl implemen
 	@Override
 	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignObservation2Operations.validateVitalSignObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateVitalSignObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignObservation2Operations.validateVitalSignObservationValue(this, diagnostics, context);
 	}
 
 	/**

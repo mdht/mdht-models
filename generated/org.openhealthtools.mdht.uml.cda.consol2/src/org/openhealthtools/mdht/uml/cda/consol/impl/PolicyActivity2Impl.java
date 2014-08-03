@@ -56,33 +56,6 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePolicyActivity2Payer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2Payer(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePolicyActivity2Guarantor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2Guarantor(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePolicyActivity2Coverage(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2Coverage(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePolicyActivity2PayerPolicyActivityPayerPayerAssignedEntityTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivity2Operations.validatePolicyActivity2PayerPolicyActivityPayerPayerAssignedEntityTelecom(
@@ -196,6 +169,36 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	@Override
 	public boolean validatePolicyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivity2Operations.validatePolicyActivityTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePolicyActivityPayer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PolicyActivity2Operations.validatePolicyActivityPayer(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePolicyActivityGuarantor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PolicyActivity2Operations.validatePolicyActivityGuarantor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePolicyActivityCoverage(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PolicyActivity2Operations.validatePolicyActivityCoverage(this, diagnostics, context);
 	}
 
 	/**

@@ -85,8 +85,8 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResultOrganizer2ResultObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizer2Operations.validateResultOrganizer2ResultObservation2(this, diagnostics, context);
+	public boolean validateResultOrganizerResultObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizer2Operations.validateResultOrganizerResultObservation2(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +103,8 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ResultObservation2> getResultObservation2s() {
-		return ResultOrganizer2Operations.getResultObservation2s(this);
+	public EList<ResultObservation2> getConsolResultObservation2s() {
+		return ResultOrganizer2Operations.getConsolResultObservation2s(this);
 	}
 
 	/**
