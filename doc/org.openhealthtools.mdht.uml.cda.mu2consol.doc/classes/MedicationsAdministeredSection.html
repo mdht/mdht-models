@@ -45,7 +45,7 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsAdministeredSection.html">Consol Medications Administered Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.38</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:8156)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:8156)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationActivity.html">Consol Medication Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.16</tt>)</li>
 </ol>
@@ -61,8 +61,9 @@
 
 
 <pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="491480185"/&gt;
-  &lt;code code="1751949283"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.2.38"/&gt;
+  &lt;id root="MDHT" extension="1383679631"/&gt;
+  &lt;code code="1183129429"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;

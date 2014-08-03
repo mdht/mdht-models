@@ -74,32 +74,20 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
 or Plan or Care Section (TemplateID = 2.16.840.1.113883.10.20.22.2.10)
 or Assessment and Plan Section (Template ID = 2.16.840.1.113883.10.20.22.2.9)</li>
 
-<li class="li">document provided does not satisfy part or all of the Encounter Diagnosis MU2 Data Requirement:
-The Assessment Section (TemplateID = 2.16.840.1.113883.10.20.22.2.8), if present, <strong class="ph b">SHALL</strong> have at least one Problem Observation Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.4)
+<li class="li">document provided does not satisfy part or all of the Encounter Diagnoses MU2 Data Requirement:
+If section/@nullFlavor is not present, the Assessment Section (TemplateID = 2.16.840.1.113883.10.20.22.2.8), if present, <strong class="ph b">SHALL</strong> have at least one Problem Observation Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.4)
 or
-The Assessment And Plan Section (TemplateID = 2.16.840.1.113883.10.20.22.2.9), if present, <strong class="ph b">SHALL</strong> have at least one Problem Observation Entry (TemplateID = 
-
-2.16.840.1.113883.10.20.22.4.4)
+If section/@nullFlavor is not present, the Assessment And Plan Section (TemplateID = 2.16.840.1.113883.10.20.22.2.9), if present, <strong class="ph b">SHALL</strong> have at least one Problem Observation Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.4)
 or
-The Postoperative Diagnosis section (TemplateID = 2.16.840.1.113883.10.20.22.2.35), if present, <strong class="ph b">SHALL</strong> have at least one Problem Observation Entry (TemplateID = 
-
-2.16.840.1.113883.10.20.22.4.4)
+If section/@nullFlavor is not present, the Postoperative Diagnosis section (TemplateID = 2.16.840.1.113883.10.20.22.2.35), if present, <strong class="ph b">SHALL</strong> have at least one Problem Observation Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.4)
 or
-The Problem Section (entries required: TemplateID = 2.16.840.1.113883.10.20.22.2.5.1), if present, <strong class="ph b">SHALL</strong> have a Problem Concern Act Entry (TemplateID = 
-
-2.16.840.1.113883.10.20.22.4.3) or a Problem Observation Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.4)
+If section/@nullFlavor is not present, the Problem Section (entries required: TemplateID = 2.16.840.1.113883.10.20.22.2.5.1), if present, <strong class="ph b">SHALL</strong> have a Problem Concern Act Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.3) or a Problem Observation Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.4)
 or 
-The Hospital Admission Diagnosis Section (TemplateID = 2.16.840.1.113883.10.20.22.2.43), if present, <strong class="ph b">SHALL</strong> have a Hospital Admission Diagnosis Entry (TemplateID = 
-
-2.16.840.1.113883.10.20.22.4.34)
+If section/@nullFlavor is not present, the Hospital Admission Diagnosis Section (TemplateID = 2.16.840.1.113883.10.20.22.2.43), if present, <strong class="ph b">SHALL</strong> have a Hospital Admission Diagnosis Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.34)
 or
-The Hospital Discharge Diagnosis Section (TemplateID = 2.16.840.1.113883.10.20.22.2.24), if present, <strong class="ph b">SHALL</strong> have a Hospital Discharge Diagnosis Entry (TemplateID = 
-
-2.16.840.1.113883.10.20.22.4.33)
+If section/@nullFlavor is not present, the Hospital Discharge Diagnosis Section (TemplateID = 2.16.840.1.113883.10.20.22.2.24), if present, <strong class="ph b">SHALL</strong> have a Hospital Discharge Diagnosis Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.33)
 or
-The Encounters Section (entries required: TemplateID = 2.16.840.1.113883.10.20.22.2.22.1), if present, <strong class="ph b">SHALL</strong> have a Encounter Activities Entry (TemplateID = 
-
-2.16.840.1.113883.10.20.22.4.49) or a Encounter Diagnosis Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.80)</li>
+If section/@nullFlavor is not present, the Encounters Section (entries required: TemplateID = 2.16.840.1.113883.10.20.22.2.22.1), if present, <strong class="ph b">SHALL</strong> have a Encounter Activities Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.49) or a Encounter Diagnosis Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.80)</li>
 
 </ol>
 
@@ -113,12 +101,13 @@ The Encounters Section (entries required: TemplateID = 2.16.840.1.113883.10.20.2
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-  &lt;id root="MDHT" extension="1912668293"/&gt;
-  &lt;code code="95483297"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
+  &lt;id root="MDHT" extension="699690778"/&gt;
+  &lt;code code="596959332"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;effectiveTime/&gt;
-  &lt;confidentialityCode code="2035453438"/&gt;
-  &lt;setId root="MDHT" extension="8ba92a01-5430-4ac1-a189-11754af8586c"/&gt;
+  &lt;confidentialityCode code="701048001"/&gt;
+  &lt;setId root="MDHT" extension="2cc1544a-da0a-4e43-9667-a5594929c8de"/&gt;
   &lt;versionNumber value="1"/&gt;
   &lt;recordTarget&gt;
     &lt;typeId root="2.16.840.1.113883.1.3"/&gt;

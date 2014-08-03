@@ -15,7 +15,7 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.17"</li></ol></li>
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/SocialHistorySection.html">Consol Social History Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SmokingStatusObservation.dita">Smoking Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.78</tt>)</li></ol></li>
 </ol>
@@ -27,35 +27,34 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7939)
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7953, CONF:7954)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7953, CONF:7954)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SocialHistoryObservation.dita">Social History Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.38</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:9132, CONF:9133)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:9132, CONF:9133)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PregnancyObservation.dita">Pregnancy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.8</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14823, CONF:14824)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../SmokingStatusObservation.dita">Smoking Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.78</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SmokingStatusObservation.dita">Smoking Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.78</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::SocialHistorySection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>smokingStatusObservation</entry><entry>cda:entry/cda:observation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>SmokingStatusObservation</entry><entry></entry><entry> </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::SocialHistorySection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.17]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>smokingStatusObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.78]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>SmokingStatusObservation</entry><entry></entry><entry> </entry></row> 
 <row><entry>socialHistorySection</entry><entry>socialHistorySection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SocialHistorySection</entry><entry></entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1442059378"/>
-  <code code="1094956830"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+  <id root="MDHT" extension="106639057"/>
+  <code code="2005106438"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
     <observation>
-      <id root="MDHT" extension="2029384929"/>
-      <code code="108178963"/>
+      <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+      <id root="MDHT" extension="989803485"/>
+      <code code="1151399486"/>
       <text>Text Value</text>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
     </observation>
   </entry>

@@ -31,7 +31,7 @@
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7138)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7134), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ResultStatus.dita">Result Status</xref> 2.16.840.1.113883.11.20.9.39</tt><b> STATIC</b> 2012-04-27 (CONF:14849)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7134), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ResultStatus.dita">Result Status</xref> 2.16.840.1.113883.11.20.9.39</tt><b> STATIC</b> 2012-04-27 (CONF:14849)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7140, CONF:7141)
 <ul><li><p><lines><i>Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards) CONF:16838</i></lines></p></li></ul></li>
@@ -41,7 +41,7 @@
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:7148)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> with data type CE (CONF:7153)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> with @xsi:type="CE" (CONF:7153)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt> (CONF:13936)
 <ol>
@@ -70,22 +70,23 @@
 Laboratory results <b>SHOULD</b> be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency. Local and/or regional codes for laboratory results are allowed. The Local and/or regional codes <b>SHOULD</b> be sent in the translation element. (CONF:7166)</li>
 <li><b>SHOULD</b> contain zero or more [0..*] referenceRange. Such referenceRanges, if present, <b>SHALL</b> contain exactly one [1..1] observationRange. This observationRange <b>SHALL NOT</b> contain [0..0] code (CONF:7152)</li>
 <li><b>MAY</b> contain zero or one [0..1] author (CONF:7149)</li>
-<li>The value for 'code' in a result observation <b>SHALL</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::FunctionalStatusResultObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>functionalStatusResultObservation</entry><entry>functionalStatusResultObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>FunctionalStatusResultObservation</entry><entry>CONF:14418CONF:14419</entry><entry> </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::FunctionalStatusResultObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.2]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>functionalStatusResultObservation</entry><entry>functionalStatusResultObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>FunctionalStatusResultObservation</entry><entry>CONF:14418CONF:14419</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="155436801"/>
-  <code code="1680478228"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.67"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+  <id root="MDHT" extension="384563008"/>
+  <code code="715020623"/>
   <text>Text Value</text>
   <statusCode code="completed"/>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
-  <interpretationCode code="53598230"/>
-  <methodCode code="1881665637"/>
-  <targetSiteCode code="1812485799"/>
+  <interpretationCode code="1824175912"/>
+  <methodCode code="1864832176"/>
+  <targetSiteCode code="1782665101"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>
