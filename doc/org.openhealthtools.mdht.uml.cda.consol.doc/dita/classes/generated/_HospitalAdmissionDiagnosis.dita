@@ -38,54 +38,63 @@
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::HospitalAdmissionDiagnosis</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry></entry><entry> ACCM</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::HospitalAdmissionDiagnosis</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.34]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry></entry><entry> ACCM</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry></entry><entry> APT</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7673</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7673</entry><entry>LOINC 2.16.840.1.113883.6.1 46241-6</entry></row> 
 <row><entry>hospitalAdmissionDiagnosis</entry><entry>hospitalAdmissionDiagnosis</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>HospitalAdmissionDiagnosis</entry><entry>CONF:9934CONF:9935</entry><entry> </entry></row> 
 <row><entry>problemObservation</entry><entry>problemObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ProblemObservation</entry><entry>CONF:7674CONF:7675CONF:15535</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<act xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1641237876"/>
-  <code code="507053245"/>
+<codeblock id="example"><![CDATA[<act xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.34"/>
+  <id root="MDHT" extension="1792147482"/>
+  <code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Admission diagnosis"/>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
   <entryRelationship>
-    <observation>
-      <id root="MDHT" extension="204588133"/>
-      <code code="1653138579"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+      <id root="MDHT" extension="652017275"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="1591351858"/>
-          <code code="1960715287"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+          <id root="MDHT" extension="907836212"/>
+          <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
         </observation>
       </entryRelationship>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="1048867421"/>
-          <code code="1091260435"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+          <id root="MDHT" extension="1853225713"/>
+          <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
         </observation>
       </entryRelationship>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="536131765"/>
-          <code code="412142872"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+          <id root="MDHT" extension="289331"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
         </observation>
       </entryRelationship>

@@ -55,7 +55,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:9027)<tt class="ph tt"><strong class="ph b">/@code</strong>="CONC" </tt><em class="ph i">Concern</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9440)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProblemActStatusCode.html">ProblemActStatusCode</a> 2.16.840.1.113883.11.20.9.19</tt><strong class="ph b"> STATIC</strong> 2011-09-09 (CONF:9029)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProblemActStatusCode.html">ProblemActStatusCode</a> 2.16.840.1.113883.11.20.9.19</tt><strong class="ph b"> STATIC</strong> 2011-09-09 (CONF:9029)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i"><p class="p"><br/>
 The statusCode associated with any concern must be one of the following values:<br/>
 </p>
@@ -105,48 +105,57 @@ historical purposes.<br/>
 			<strong class="ph b"><span class="ph">Problem Concern Act</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1651397096"/&gt;
-  &lt;code code="346872066"/&gt;
+		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.3"/&gt;
+  &lt;id root="MDHT" extension="548662203"/&gt;
+  &lt;code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1413743626"/&gt;
-      &lt;code code="1503919933"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
+      &lt;id root="MDHT" extension="1368399241"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="208977757"/&gt;
-          &lt;code code="216380380"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.31"/&gt;
+          &lt;id root="MDHT" extension="423352915"/&gt;
+          &lt;code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/&gt;
+          &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="2080502556"/&gt;
-          &lt;code code="2071409445"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.5"/&gt;
+          &lt;id root="MDHT" extension="1574675731"/&gt;
+          &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+          &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="1951903357"/&gt;
-          &lt;code code="1471958264"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.6"/&gt;
+          &lt;id root="MDHT" extension="687038030"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;

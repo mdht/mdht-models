@@ -43,7 +43,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PlanOfCareMoodCodeActEncounterProcedure.html">Plan of Care moodCode (Act/Encounter/Procedure)</a> 2.16.840.1.113883.11.20.9.23</tt><strong class="ph b"> STATIC</strong> (CONF:8539)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PlanOfCareMoodCodeActEncounterProcedure.html">Plan of Care moodCode (Act/Encounter/Procedure)</a> 2.16.840.1.113883.11.20.9.23</tt><strong class="ph b"> STATIC</strong> (CONF:8539)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:8539)
@@ -59,12 +59,13 @@
 			<strong class="ph b"><span class="ph">Plan Of Care Activity Act</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1659058995"/&gt;
-  &lt;code code="1098536651"/&gt;
+		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3" classCode="ACT"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.39"/&gt;
+  &lt;id root="MDHT" extension="2095059687"/&gt;
+  &lt;code code="875392061"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
 &lt;/act&gt;</pre>
 

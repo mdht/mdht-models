@@ -52,10 +52,10 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7472)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="48765-2" </tt><em class="ph i">Allergies, adverse reactions, alerts</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7477)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> with @xsi:type="<a class="xref" href="generated/../CD.html">CD</a>" (CONF:NEW)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProblemActStatusCode.html">ProblemActStatusCode</a> 2.16.840.1.113883.11.20.9.19</tt><strong class="ph b"> STATIC</strong> 2011-09-09 (CONF:7485)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProblemActStatusCode.html">ProblemActStatusCode</a> 2.16.840.1.113883.11.20.9.19</tt><strong class="ph b"> STATIC</strong> 2011-09-09 (CONF:7485)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i"><p class="p"><br/>
 The statusCode associated with any concern must be one of the following values:<br/>
 </p>
@@ -105,60 +105,80 @@ historical purposes.<br/>
 			<strong class="ph b"><span class="ph">Allergy Problem Act</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="998361317"/&gt;
-  &lt;code code="1831912191"/&gt;
+		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.30"/&gt;
+  &lt;id root="MDHT" extension="1288299153"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1037874438"/&gt;
-      &lt;code code="2016130599"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.7"/&gt;
+      &lt;id root="MDHT" extension="645374588"/&gt;
+      &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/&gt;
+      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
       &lt;participant typeCode="CSM"&gt;
         &lt;participantRole classCode="MANU"/&gt;
       &lt;/participant&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="1739782535"/&gt;
-          &lt;code code="538904509"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.9"/&gt;
+          &lt;id root="MDHT" extension="1976845581"/&gt;
+          &lt;code code="1642817279"/&gt;
+          &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
           &lt;entryRelationship&gt;
-            &lt;observation/&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.8"/&gt;
+              &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;procedure/&gt;
+            &lt;procedure classCode="PROC"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.14"/&gt;
+              &lt;priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/&gt;
+              &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+            &lt;/procedure&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;substanceAdministration/&gt;
+            &lt;substanceAdministration classCode="SBADM"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
+              &lt;routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+              &lt;approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+            &lt;/substanceAdministration&gt;
           &lt;/entryRelationship&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="311588566"/&gt;
-          &lt;code code="251348003"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.8"/&gt;
+          &lt;id root="MDHT" extension="108153689"/&gt;
+          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
+          &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="298863746"/&gt;
-          &lt;code code="2060836331"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.28"/&gt;
+          &lt;id root="MDHT" extension="1606590424"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;

@@ -39,7 +39,7 @@
 		
 
 		<ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:10494 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.49"</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:8712, CONF:26353 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.49"</li>
 </ol>
 </li>
 
@@ -52,7 +52,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:8713)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/EncounterTypeCode.html">EncounterTypeCode</a> 2.16.840.1.113883.3.88.12.80.32</tt><strong class="ph b"> DYNAMIC</strong> (CONF:8714)
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/EncounterTypeCode.html">EncounterTypeCode</a> 2.16.840.1.113883.3.88.12.80.32</tt><strong class="ph b"> DYNAMIC</strong> (CONF:8714)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:8715)
@@ -85,7 +85,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">sDTCDischargeDispositionCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/NUBCUB04FL17PatientStatus.html">NUBC UB-04 FL17-Patient Status</a> 2.16.840.1.113883.6.301.5</tt><strong class="ph b"> STATIC</strong> (CONF:9929)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">sDTCDischargeDispositionCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/NUBCUB04FL17PatientStatus.html">NUBC UB-04 FL17-Patient Status</a> 2.16.840.1.113883.6.301.5</tt><strong class="ph b"> STATIC</strong> (CONF:9929)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element.</em></p>
 </div>
 </li>
@@ -112,58 +112,77 @@
 			<strong class="ph b"><span class="ph">Encounter Activities</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;encounter xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc"&gt;
-  &lt;id root="MDHT" extension="1232993208"/&gt;
+		<pre class="pre codeblock">&lt;encounter xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" classCode="ENC" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.49"/&gt;
+  &lt;id root="MDHT" extension="2007479996"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;performer&gt;
     &lt;assignedEntity&gt;
-      &lt;id root="MDHT" extension="734236637"/&gt;
-      &lt;code code="1147816843"/&gt;
+      &lt;id root="MDHT" extension="1198025384"/&gt;
+      &lt;code code="1994538620"/&gt;
     &lt;/assignedEntity&gt;
   &lt;/performer&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="421689742"/&gt;
-      &lt;code code="167424136"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
+      &lt;id root="MDHT" extension="1611879836"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;act&gt;
-      &lt;id root="MDHT" extension="617385202"/&gt;
-      &lt;code code="381589961"/&gt;
+    &lt;act classCode="ACT" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.80"/&gt;
+      &lt;id root="MDHT" extension="2143183703"/&gt;
+      &lt;code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="2079859474"/&gt;
-          &lt;code code="840523137"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
+          &lt;id root="MDHT" extension="39576844"/&gt;
+          &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+          &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
           &lt;entryRelationship&gt;
-            &lt;observation/&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.31"/&gt;
+              &lt;code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;observation/&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.5"/&gt;
+              &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;observation/&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.6"/&gt;
+              &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/observation&gt;
           &lt;/entryRelationship&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
     &lt;/act&gt;
   &lt;/entryRelationship&gt;
-  &lt;sdtc:dischargeDispositionCode code="1723199720"/&gt;
+  &lt;sdtc:dischargeDispositionCode codeSystem="2.16.840.1.113883.12.112" codeSystemName="HL7DischargeDisposition"/&gt;
 &lt;/encounter&gt;</pre>
 
 	</div>

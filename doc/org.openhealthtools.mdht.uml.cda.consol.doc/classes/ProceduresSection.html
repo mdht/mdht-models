@@ -77,19 +77,19 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:6273)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:6274, CONF:15509)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:6274, CONF:15509)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityProcedure.html" title="[Procedure: templateId 2.16.840.1.113883.10.20.22.4.14]">Procedure Activity Procedure</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.14</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:6278, CONF:15510)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:6278, CONF:15510)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.13]">Procedure Activity Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.13</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:8533, CONF:15511)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:8533, CONF:15511)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityAct.html" title="[Act: templateId 2.16.840.1.113883.10.20.22.4.12]">Procedure Activity Act</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.12</tt>)</li>
 </ol>
@@ -124,25 +124,25 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:7894)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:7895, CONF:7896)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:7895, CONF:7896)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityProcedure.html" title="[Procedure: templateId 2.16.840.1.113883.10.20.22.4.14]">Procedure Activity Procedure</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.14</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:8017, CONF:8018)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:8017, CONF:8018)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.13]">Procedure Activity Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.13</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:8019, CONF:8020)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:8019, CONF:8020)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityAct.html" title="[Act: templateId 2.16.840.1.113883.10.20.22.4.12]">Procedure Activity Act</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.12</tt>)</li>
 </ol>
 </li>
 
-<li class="li">There <strong class="ph b">SHALL</strong> be at least one procedure, observation or act entry conformant to Procedure Activity Procedure template, Procedure Activity Observation template or Procedure Activity Act template in the Procedure Section. (CONF:8021)</li>
+<li class="li">If section/@nullFlavor is not present in the Procedure Section, there <strong class="ph b">SHALL</strong> be at least one procedure, observation or act entry conformant to Procedure Activity Procedure template, Procedure Activity Observation template or Procedure Activity Act template in the Procedure Section. (CONF:8021)</li>
 
 </ol>
 

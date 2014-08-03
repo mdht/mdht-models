@@ -54,9 +54,9 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="GeneralHeaderConstraints.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]">General Header Constraints</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>) (CONF:9405, CONF:10041)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="GeneralHeaderConstraints.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]">General Header Constraints</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:14833), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/DIRDocumentTypeCodes.html">DIRDocumentTypeCodes</a> 2.16.840.1.113883.11.20.9.32</tt><strong class="ph b"> DYNAMIC</strong> (CONF:14834)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:14833), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/DIRDocumentTypeCodes.html">DIRDocumentTypeCodes</a> 2.16.840.1.113883.11.20.9.32</tt><strong class="ph b"> DYNAMIC</strong> (CONF:14834)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Given that DIR documents may be transformed from established collections of imaging reports already stored with their own type codes, there is no static set of Document Type codes. The set of LOINC codes listed in the DIR LOINC Document Type Codes table may be extended by additions to LOINC and supplemented by local codes as translations.<br/>
 The DIR document recommends use of a single document type code, 18748-4 "Diagnostic Imaging Report", with further specification provided by author or performer, setting, or specialty. Some of these codes in the DIR LOINC Document Type Codes table are pre-coordinated with either the imaging modality, body part examined, or specific imaging method such as the view.  Use of these codes is not recommended, as this duplicates information potentially present with the header. When pre-coordinated codes are used, any coded values describing the author or performer of the service act or the practice setting must be consistent with the LOINC document type. This table is drawn from LOINC Version 2.36, June 30, 2011, and consists of codes whose scale is DOC and that refer to reports for diagnostic imaging procedures.</em></p>
 </div>
@@ -109,7 +109,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
 <li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:8419)<div class="p"><p class="lines"><em class="ph i">The value of serviceEvent/code SHALL NOT conflict with the ClininicalDocument/code. When transforming from DICOM SR documents that do not contain a procedure code, an appropriate nullFlavor SHALL be used on serviceEvent/code.</em></p>
 </div>
 </li>
-<li class="li"> This serviceEvent <strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:8418)</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:8418)</li>
 <li class="li"> This serviceEvent <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt>, where its type is <a class="xref" href="generated/../PhysicianReadingStudyPerformer.html">Physician Reading Study Performer</a> (CONF:8422)<ol class="ol">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../PhysicianReadingStudyPerformer.html">Physician Reading Study Performer</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.6.2.1</tt>)</li>
 </ol>
@@ -140,13 +140,17 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
  </li>
 </ol>
  </li>
+<li class="li"> This encompassingEncounter The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). <strong class="ph b">SHALL</strong> be precise to the day (CONF:10133, CONF:10127)</li>
+<li class="li"> This encompassingEncounter The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). <strong class="ph b">SHOULD</strong> be precise to the minute (CONF:10133, CONF:10128)</li>
+<li class="li"> This encompassingEncounter The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). <strong class="ph b">MAY</strong> be precise to the second (CONF:10133, CONF:10129)</li>
+<li class="li"> This encompassingEncounter The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, <strong class="ph b">SHOULD</strong> include time-zone offset (CONF:10133, CONF:10130)</li>
 </ol>
  </li>
 </ol>
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:8776)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9484)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="FindingsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.6.1.2]">Findings Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.6.1.2</tt>)</li>
 </ol>
@@ -192,13 +196,16 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
 			<div class="p">
 			<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;realmCode code="US"/&gt;
   &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-  &lt;id root="MDHT" extension="1951539998"/&gt;
-  &lt;code code="340809725"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.1.5"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
+  &lt;id root="MDHT" extension="1043626978"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;effectiveTime/&gt;
-  &lt;confidentialityCode code="1885595934"/&gt;
-  &lt;setId root="MDHT" extension="61418085-7097-461b-a727-1a61e8a58a3a"/&gt;
+  &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+  &lt;setId root="MDHT" extension="5b8412ae-33e3-4efc-ba81-d249dfdda4a7"/&gt;
   &lt;versionNumber value="1"/&gt;
   &lt;recordTarget&gt;
     &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
@@ -222,8 +229,8 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   &lt;/inFulfillmentOf&gt;
   &lt;documentationOf&gt;
     &lt;serviceEvent classCode="ACT"&gt;
-      &lt;id root="MDHT" extension="850940471"/&gt;
-      &lt;code code="2031897318"/&gt;
+      &lt;id root="MDHT" extension="205819016"/&gt;
+      &lt;code code="739349761"/&gt;
       &lt;performer/&gt;
     &lt;/serviceEvent&gt;
   &lt;/documentationOf&gt;
@@ -232,10 +239,10 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   &lt;/relatedDocument&gt;
   &lt;componentOf&gt;
     &lt;encompassingEncounter&gt;
-      &lt;id root="MDHT" extension="42006015"/&gt;
+      &lt;id root="MDHT" extension="52419059"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
       &lt;responsibleParty/&gt;
       &lt;encounterParticipant/&gt;
@@ -246,30 +253,36 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
       &lt;component&gt;
         &lt;section&gt;
           &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-          &lt;id root="MDHT" extension="2128783882"/&gt;
-          &lt;code code="1017426974"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.6.1.2"/&gt;
+          &lt;id root="MDHT" extension="1193414586"/&gt;
+          &lt;code code="2040100127"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-          &lt;confidentialityCode code="2045993579"/&gt;
+          &lt;confidentialityCode code="183499768"/&gt;
         &lt;/section&gt;
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
           &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-          &lt;id root="MDHT" extension="655688733"/&gt;
-          &lt;code code="1072277132"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.6.1.1"/&gt;
+          &lt;id root="MDHT" extension="495649256"/&gt;
+          &lt;code code="121181" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Dicom Object Catalog"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-          &lt;confidentialityCode code="1140992329"/&gt;
+          &lt;confidentialityCode code="16328311"/&gt;
           &lt;entry&gt;
-            &lt;act&gt;
+            &lt;act classCode="ACT" moodCode="EVN"&gt;
               &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;id root="MDHT" extension="23113925"/&gt;
-              &lt;code code="1519717286"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.6.2.6"/&gt;
+              &lt;id root="MDHT" extension="487513392"/&gt;
+              &lt;code code="113014" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/&gt;
               &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
+                &lt;low value="2014"/&gt;
+                &lt;high value="2014"/&gt;
               &lt;/effectiveTime&gt;
               &lt;entryRelationship&gt;
-                &lt;act/&gt;
+                &lt;act classCode="ACT" moodCode="EVN"&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.63"/&gt;
+                  &lt;code code="113015" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/&gt;
+                &lt;/act&gt;
               &lt;/entryRelationship&gt;
             &lt;/act&gt;
           &lt;/entry&gt;

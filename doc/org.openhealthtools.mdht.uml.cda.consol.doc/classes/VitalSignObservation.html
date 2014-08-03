@@ -52,7 +52,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7300)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:7301), where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HITSPVitalSignResultType.html">HITSP Vital Sign Result Type</a> 2.16.840.1.113883.3.88.12.80.62</tt><strong class="ph b"> STATIC</strong> 1 (CONF:7301)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:7301), which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HITSPVitalSignResultType.html">HITSP Vital Sign Result Type</a> 2.16.840.1.113883.3.88.12.80.62</tt><strong class="ph b"> DYNAMIC</strong> (CONF:7301)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7303)
@@ -65,7 +65,7 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ (CONF:7305)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="PQ" (CONF:7305)
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">interpretationCode</strong></tt> (CONF:7307)
@@ -114,18 +114,20 @@
 			<strong class="ph b"><span class="ph">Vital Sign Observation</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="244310014"/&gt;
-  &lt;code code="913944047"/&gt;
+		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.27"/&gt;
+  &lt;id root="MDHT" extension="844164722"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
+  &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;value xsi:type="PQ"/&gt;
-  &lt;interpretationCode code="1247860939"/&gt;
-  &lt;methodCode code="1069131086"/&gt;
-  &lt;targetSiteCode code="488138582"/&gt;
+  &lt;interpretationCode code="1313031538"/&gt;
+  &lt;methodCode code="1683652934"/&gt;
+  &lt;targetSiteCode code="373072148"/&gt;
   &lt;author/&gt;
 &lt;/observation&gt;</pre>
 

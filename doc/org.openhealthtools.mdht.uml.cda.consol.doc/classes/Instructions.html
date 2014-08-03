@@ -49,7 +49,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="INT" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7392)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PatientEducation.html">PatientEducation</a> 2.16.840.1.113883.11.20.9.34</tt><strong class="ph b"> DYNAMIC</strong> (CONF:7394)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PatientEducation.html">PatientEducation</a> 2.16.840.1.113883.11.20.9.34</tt><strong class="ph b"> DYNAMIC</strong> (CONF:7394)
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:7395)
@@ -74,13 +74,15 @@
 			<strong class="ph b"><span class="ph">Instructions</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="845003860"/&gt;
-  &lt;code code="68118840"/&gt;
+		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="INT"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
+  &lt;id root="MDHT" extension="943141433"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
+  &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
 &lt;/act&gt;</pre>
 

@@ -30,7 +30,7 @@
 <li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15995)<ol>
 <li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15996)<ol>
 <li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15997)</li></ol></li></ol></li></ol></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:9219, CONF:9220, CONF:15937)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:9219, CONF:9220, CONF:15937)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../SeriesAct.dita">Series Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.63</tt>)</li></ol></li>
@@ -53,7 +53,7 @@
 <li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15997)</li></ol></li></ol></li></ol><ul><li><p><lines><i>If present, the text element contains the description of the study</i></lines></p></li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:9216)
 <ul><li><p><lines><i>If present, the effectiveTime contains the time the study was started</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:9219, CONF:9220, CONF:15937)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:9219, CONF:9220, CONF:15937)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../SeriesAct.dita">Series Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.63</tt>)</li></ol></li>
@@ -63,46 +63,54 @@
 <li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15996)</li>
 <li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15997)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::StudyAct</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:9207</entry><entry> ACCM</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::StudyAct</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.6]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:9207</entry><entry> ACCM</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF:9208</entry><entry> APT</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9214</entry><entry>DCM 1.2.840.10008.2.16.4 </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9214</entry><entry>DCM 1.2.840.10008.2.16.4 113014</entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:9216</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:9210</entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ED</entry><entry>CONF:9215</entry><entry> </entry></row> 
-<row><entry>seriesAct</entry><entry>seriesAct</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SeriesAct</entry><entry>CONF:9219CONF:9220CONF:15937</entry><entry> </entry></row> 
+<row><entry>seriesAct</entry><entry>seriesAct</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SeriesAct</entry><entry>CONF:9219CONF:9220CONF:15937</entry><entry> </entry></row> 
 <row><entry>studyAct</entry><entry>studyAct</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>StudyAct</entry><entry>CONF:8530CONF:15458</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<act xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1632328463"/>
-  <code code="1523507995"/>
+<codeblock id="example"><![CDATA[<act xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.6.2.6"/>
+  <id root="MDHT" extension="1641703157"/>
+  <code code="113014" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
   <text>Text Value</text>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
   <entryRelationship>
-    <act>
-      <id root="MDHT" extension="554201181"/>
-      <code code="1288672961"/>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.63"/>
+      <id root="MDHT" extension="1536144753"/>
+      <code code="113015" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
       <text>Text Value</text>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="2099115891"/>
-          <code code="1872846517"/>
+        <observation classCode="DGIMG" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
+          <id root="MDHT" extension="1543690865"/>
+          <code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/>
           <text>Text Value</text>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
           <entryRelationship>
-            <observation/>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
+            </observation>
           </entryRelationship>
           <entryRelationship>
-            <observation/>
+            <observation classCode="ROIBND" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
+              <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
+            </observation>
           </entryRelationship>
         </observation>
       </entryRelationship>

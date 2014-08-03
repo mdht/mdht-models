@@ -83,7 +83,7 @@
 
 <li class="li">effectiveTime <strong class="ph b">SHALL</strong> contain exactly one [1..1] high (CONF:15144)</li>
 
-<li class="li">supply act <strong class="ph b">SHALL</strong> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:16093, CONF:16094, CONF:16870)</li>
+<li class="li">supply act <strong class="ph b">SHALL</strong> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:16870)</li>
 
 </ol>
 
@@ -95,21 +95,23 @@
 			<strong class="ph b"><span class="ph">Medication Supply Order</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;supply xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1291720267"/&gt;
+		<pre class="pre codeblock">&lt;supply xmlns="urn:hl7-org:v3" classCode="SPLY" moodCode="INT"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
+  &lt;id root="MDHT" extension="1350404254"/&gt;
   &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime value="20130627"/&gt;
+  &lt;effectiveTime value="20140803"/&gt;
   &lt;repeatNumber value="1"/&gt;
   &lt;quantity/&gt;
   &lt;author/&gt;
   &lt;entryRelationship&gt;
-    &lt;act&gt;
-      &lt;id root="MDHT" extension="1359769938"/&gt;
-      &lt;code code="732552470"/&gt;
+    &lt;act classCode="ACT" moodCode="INT"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
+      &lt;id root="MDHT" extension="1131744539"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/act&gt;
   &lt;/entryRelationship&gt;

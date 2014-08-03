@@ -32,7 +32,7 @@ If any Results Observation within the organizer has a statusCode of 'active', th
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7127)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7123), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ResultStatus.dita">Result Status</xref> 2.16.840.1.113883.11.20.9.39</tt><b> STATIC</b> 2012-04-27 (CONF:14848)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7123), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ResultStatus.dita">Result Status</xref> 2.16.840.1.113883.11.20.9.39</tt><b> STATIC</b> 2012-04-27 (CONF:14848)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:7124, CONF:14850)
 <ol>
@@ -51,7 +51,7 @@ If any Results Observation within the organizer has a statusCode of 'active', th
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:7128)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7123), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ResultStatus.dita">Result Status</xref> 2.16.840.1.113883.11.20.9.39</tt><b> STATIC</b> 2012-04-27 (CONF:14848)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7123), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ResultStatus.dita">Result Status</xref> 2.16.840.1.113883.11.20.9.39</tt><b> STATIC</b> 2012-04-27 (CONF:14848)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:7124, CONF:14850)
 <ol>
@@ -59,7 +59,7 @@ If any Results Observation within the organizer has a statusCode of 'active', th
 <li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12).  Laboratory results <b>SHOULD</b> be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency. Local and/or regional codes for laboratory results <b>SHOULD</b> also be allowed. (CONF:7164)</li>
 <li><b>SHOULD</b> contain zero or one [0..1] @classCode="CLUSTER" Cluster (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) OR <b>SHOULD</b> contain zero or one [0..1] @classCode="BATTERY" Battery (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) (CONF:7165)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ResultOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryOrganizer</entry><entry>CONF:7121</entry><entry> BATTERY</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ResultOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryOrganizer</entry><entry>CONF:7121</entry><entry> BATTERY</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:7122</entry><entry> APT</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7128</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:7127</entry><entry> </entry></row> 
@@ -67,22 +67,24 @@ If any Results Observation within the organizer has a statusCode of 'active', th
 <row><entry>result ( resultObservation )</entry><entry>resultObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ResultObservation</entry><entry>CONF:7124CONF:14850</entry><entry> </entry></row> 
 <row><entry>resultOrganizer</entry><entry>resultOrganizer</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ResultOrganizer</entry><entry>CONF:7112CONF:7113</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<organizer xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1442102250"/>
-  <code code="1414240227"/>
+<codeblock id="example"><![CDATA[<organizer xmlns="urn:hl7-org:v3" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+  <id root="MDHT" extension="138223748"/>
+  <code code="45774418"/>
   <statusCode code="completed"/>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
   <component>
-    <observation>
-      <id root="MDHT" extension="1789835346"/>
-      <code code="1299939095"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+      <id root="MDHT" extension="608663293"/>
+      <code code="1056367464"/>
       <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
     </observation>
   </component>

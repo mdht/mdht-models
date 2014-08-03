@@ -85,7 +85,7 @@
 
 <li class="li">This qualifier <strong class="ph b">SHALL</strong> contain exactly one [1..1] name="121139" Modality (CodeSystem: DCM 1.2.840.10008.2.16.4) (CONF:9230)</li>
 
-<li class="li">This qualifier <strong class="ph b">SHALL</strong> contain exactly one [1..1] value with @xsi:type="ANY" (CONF:9231)</li>
+<li class="li">This qualifier <strong class="ph b">SHALL</strong> contain exactly one [1..1] value (CONF:9231)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: The value element code contains a modality code and codeSystem is 1.2.840.10008.2.16.4 (CONF:9232)</li>
 
@@ -99,45 +99,52 @@
 			<strong class="ph b"><span class="ph">Series Act</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1701768414"/&gt;
-  &lt;code code="43974027"/&gt;
+		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.63"/&gt;
+  &lt;id root="MDHT" extension="2053369481"/&gt;
+  &lt;code code="113015" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1973743726"/&gt;
-      &lt;code code="1877724612"/&gt;
+    &lt;observation classCode="DGIMG" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.6.2.8"/&gt;
+      &lt;id root="MDHT" extension="282755285"/&gt;
+      &lt;code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="533220142"/&gt;
-          &lt;code code="2062143746"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.6.2.9"/&gt;
+          &lt;id root="MDHT" extension="869858421"/&gt;
+          &lt;code code="1012884057"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="813942656"/&gt;
-          &lt;code code="968867374"/&gt;
+        &lt;observation classCode="ROIBND" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.6.2.10"/&gt;
+          &lt;id root="MDHT" extension="1908202502"/&gt;
+          &lt;code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
           &lt;entryRelationship&gt;
-            &lt;observation/&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.6.2.11"/&gt;
+              &lt;code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/&gt;
+            &lt;/observation&gt;
           &lt;/entryRelationship&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;

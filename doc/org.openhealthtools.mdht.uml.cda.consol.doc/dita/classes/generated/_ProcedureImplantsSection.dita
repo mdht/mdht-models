@@ -32,14 +32,15 @@
 </li>
 <li>The Implants section <b>SHALL</b> include a statement providing details of the implants placed, or assert no implants were placed (CONF:8769)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProcedureImplantsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15374</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProcedureImplantsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.40]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15374</entry><entry>LOINC 2.16.840.1.113883.6.1 59771-6</entry></row> 
 <row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:8180</entry><entry> </entry></row> 
 <row><entry>procedureImplantsSection</entry><entry>procedureImplantsSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureImplantsSection</entry><entry>CONF:9898</entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:8181</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="289741140"/>
-  <code code="207069940"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.40"/>
+  <id root="MDHT" extension="1531483918"/>
+  <code code="59771-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Implants"/>
   <title>TEXT FOR TITLE</title>
   <text/>
 </section>]]></codeblock>

@@ -53,7 +53,7 @@
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">derivationExpr</strong></tt> (CONF:14637)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Such derivation expression can contain a text calculation of how the components total up to the summed score</em></p>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The optional derivation expression records text showing how the score was calculated from its component data</em></p>
 </div>
 </li>
 </ul>
@@ -116,28 +116,30 @@
 			<strong class="ph b"><span class="ph">Assessment Scale Observation</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1520339288"/&gt;
-  &lt;code code="1085536490"/&gt;
+		<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.69"/&gt;
+  &lt;id root="MDHT" extension="1824678299"/&gt;
+  &lt;code code="1663907598"/&gt;
   &lt;derivationExpr&gt;TEXT FOR DERIVATION EXPR&lt;/derivationExpr&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;interpretationCode code="1967168351"/&gt;
+  &lt;interpretationCode code="607886317"/&gt;
   &lt;author/&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1707970869"/&gt;
-      &lt;code code="1388705360"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.86"/&gt;
+      &lt;id root="MDHT" extension="1750651656"/&gt;
+      &lt;code code="1473277237"/&gt;
       &lt;derivationExpr&gt;TEXT FOR DERIVATION EXPR&lt;/derivationExpr&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
-      &lt;interpretationCode code="1165901381"/&gt;
+      &lt;interpretationCode code="1678631109"/&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;referenceRange&gt;

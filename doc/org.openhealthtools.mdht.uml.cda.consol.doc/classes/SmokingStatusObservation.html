@@ -62,7 +62,7 @@ The smoking status value set includes a special code to communicate if the smoki
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF:14809)<tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt><em class="ph i">Completed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:14810), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/SmokingStatus.html">Smoking Status</a> 2.16.840.1.113883.11.20.9.38</tt><strong class="ph b"> STATIC</strong> 2012-07-01 (CONF:14817)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:14810), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/SmokingStatus.html">Smoking Status</a> 2.16.840.1.113883.11.20.9.38</tt><strong class="ph b"> STATIC</strong> 2012-07-01 (CONF:14817)
 </li>
 
 <li class="li">effectiveTime <strong class="ph b">SHALL</strong> contain exactly one [1..1] low (CONF:14818)</li>
@@ -77,15 +77,17 @@ The smoking status value set includes a special code to communicate if the smoki
 			<strong class="ph b"><span class="ph">Smoking Status Observation</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="557694856"/&gt;
-  &lt;code code="832565659"/&gt;
+		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.78"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.85"/&gt;
+  &lt;id root="MDHT" extension="1061063230"/&gt;
+  &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CD" code="1133386341"/&gt;
+  &lt;value xsi:type="CD" code="1092085871"/&gt;
 &lt;/observation&gt;</pre>
 
 	</div>

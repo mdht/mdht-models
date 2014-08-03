@@ -35,7 +35,7 @@
 <li>ids <b>SHALL NOT</b> contain [0..0] @extension (CONF:9226)</li>
 <li>code <b>SHALL</b> contain exactly one [1..1] qualifier (CONF:9229)</li>
 <li>This qualifier <b>SHALL</b> contain exactly one [1..1] name="121139" Modality (CodeSystem: DCM 1.2.840.10008.2.16.4) (CONF:9230)</li>
-<li>This qualifier <b>SHALL</b> contain exactly one [1..1] value with @xsi:type="ANY" (CONF:9231)</li>
+<li>This qualifier <b>SHALL</b> contain exactly one [1..1] value (CONF:9231)</li>
 <li><b>SHALL</b> satisfy: The value element code contains a modality code and codeSystem is 1.2.840.10008.2.16.4 (CONF:9232)</li>
 </ol>
 <ol id="aggregate">
@@ -59,57 +59,64 @@
 <li>ids <b>SHALL NOT</b> contain [0..0] @extension (CONF:9226)</li>
 <li>code <b>SHALL</b> contain exactly one [1..1] qualifier (CONF:9229)</li>
 <li>This qualifier <b>SHALL</b> contain exactly one [1..1] name="121139" Modality (CodeSystem: DCM 1.2.840.10008.2.16.4) (CONF:9230)</li>
-<li>This qualifier <b>SHALL</b> contain exactly one [1..1] value with @xsi:type="ANY" (CONF:9231)</li>
+<li>This qualifier <b>SHALL</b> contain exactly one [1..1] value (CONF:9231)</li>
 <li><b>SHALL</b> satisfy: The value element code contains a modality code and codeSystem is 1.2.840.10008.2.16.4 (CONF:9232)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SeriesAct</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:9222</entry><entry> ACCM</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SeriesAct</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.63]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:9222</entry><entry> ACCM</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF:9223</entry><entry> APT</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9228</entry><entry>DCM 1.2.840.10008.2.16.4 </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9228</entry><entry>DCM 1.2.840.10008.2.16.4 113015</entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:9235</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:9224</entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ED</entry><entry>CONF:9233</entry><entry> </entry></row> 
-<row><entry>seriesAct</entry><entry>seriesAct</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SeriesAct</entry><entry>CONF:9219CONF:9220CONF:15937</entry><entry> </entry></row> 
+<row><entry>seriesAct</entry><entry>seriesAct</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SeriesAct</entry><entry>CONF:9219CONF:9220CONF:15937</entry><entry> </entry></row> 
 <row><entry>sOPInstanceObservation</entry><entry>sOPInstanceObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>SOPInstanceObservation</entry><entry>CONF:9237CONF:9238CONF:15927</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<act xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1701768414"/>
-  <code code="43974027"/>
+<codeblock id="example"><![CDATA[<act xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.63"/>
+  <id root="MDHT" extension="2053369481"/>
+  <code code="113015" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
   <text>Text Value</text>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
   <entryRelationship>
-    <observation>
-      <id root="MDHT" extension="1973743726"/>
-      <code code="1877724612"/>
+    <observation classCode="DGIMG" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
+      <id root="MDHT" extension="282755285"/>
+      <code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/>
       <text>Text Value</text>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="533220142"/>
-          <code code="2062143746"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
+          <id root="MDHT" extension="869858421"/>
+          <code code="1012884057"/>
           <text>Text Value</text>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
         </observation>
       </entryRelationship>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="813942656"/>
-          <code code="968867374"/>
+        <observation classCode="ROIBND" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
+          <id root="MDHT" extension="1908202502"/>
+          <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
           <text>Text Value</text>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
           <entryRelationship>
-            <observation/>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
+              <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
+            </observation>
           </entryRelationship>
         </observation>
       </entryRelationship>

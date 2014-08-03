@@ -56,7 +56,7 @@
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">author</strong></tt> (CONF:9433) <ol class="ol" type="a"><li class="li"> This author <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">time</strong></tt> (CONF:9434)</li>
-<li class="li"> This author <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> (CONF:9435) <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a> (CONF:9437)</li>
+<li class="li"> This author <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> (CONF:9435) <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with @xsi:type="<a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a>" (CONF:9437)</li>
 <li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:9436)</li>
 <li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> satisfy: include assignedPerson/name or representedOrganization/name (CONF:9438)</li>
 <li class="li"> This assignedAuthor An  assignedPerson/name <strong class="ph b">SHALL</strong> be a conformant US Realm Person Name (PN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:9439)</li>
@@ -82,18 +82,19 @@
 			<strong class="ph b"><span class="ph">Comment Activity</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1524402256"/&gt;
-  &lt;code code="639694055"/&gt;
+		<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.64"/&gt;
+  &lt;id root="MDHT" extension="590943928"/&gt;
+  &lt;code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;author&gt;
     &lt;time/&gt;
     &lt;assignedAuthor&gt;
-      &lt;id root="MDHT" extension="1539754953"/&gt;
+      &lt;id root="MDHT" extension="6191840"/&gt;
     &lt;/assignedAuthor&gt;
   &lt;/author&gt;
 &lt;/act&gt;</pre>

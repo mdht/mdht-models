@@ -59,7 +59,7 @@ A cognitive problem observation is a finding or medical condition. This is diffe
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:14321)
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:14321)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:14804)<tt class="ph tt"><strong class="ph b">/@code</strong>="373930000" </tt><em class="ph i">Cognitive function finding</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:14805)
@@ -77,7 +77,7 @@ A cognitive problem observation is a finding or medical condition. This is diffe
 <li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:14693)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Problem.html">Problem</a> 2.16.840.1.113883.3.88.12.3221.7.4</tt><strong class="ph b"> DYNAMIC</strong> (CONF:14349)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD", which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Problem.html">Problem</a> 2.16.840.1.113883.3.88.12.3221.7.4</tt><strong class="ph b"> DYNAMIC</strong> (CONF:14349)
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:14331, CONF:14588, CONF:14351)
@@ -124,65 +124,75 @@ A cognitive problem observation is a finding or medical condition. This is diffe
 			<strong class="ph b"><span class="ph">Cognitive Status Problem Observation</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1250108616"/&gt;
-  &lt;code code="514089918"/&gt;
+		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.73"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
+  &lt;id root="MDHT" extension="946467502"/&gt;
+  &lt;code code="373930000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Cognitive function finding"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
+  &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CD" code="940489248"/&gt;
-  &lt;methodCode code="748599870"/&gt;
+  &lt;value xsi:type="CD" code="668822481"/&gt;
+  &lt;methodCode code="699489596"/&gt;
   &lt;entryRelationship&gt;
-    &lt;supply&gt;
-      &lt;id root="MDHT" extension="1066015930"/&gt;
-      &lt;code code="220890529"/&gt;
+    &lt;supply classCode="SPLY"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.50"/&gt;
+      &lt;id root="MDHT" extension="1988214742"/&gt;
+      &lt;code code="945470133"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime value="20130627"/&gt;
+      &lt;effectiveTime value="20140803"/&gt;
     &lt;/supply&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="186464096"/&gt;
-      &lt;code code="1161880503"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.72"/&gt;
+      &lt;id root="MDHT" extension="1112871538"/&gt;
+      &lt;code code="848462490"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
-      &lt;value xsi:type="CD" code="1532944237"/&gt;
-      &lt;methodCode code="570453636"/&gt;
-      &lt;participant&gt;
+      &lt;value xsi:type="CD" code="334795333"/&gt;
+      &lt;methodCode code="1886775679"/&gt;
+      &lt;participant typeCode="IND"&gt;
         &lt;time&gt;
-          &lt;low value="2013"/&gt;
-          &lt;high value="2013"/&gt;
+          &lt;low value="2014"/&gt;
+          &lt;high value="2014"/&gt;
         &lt;/time&gt;
-        &lt;participantRole/&gt;
+        &lt;participantRole classCode="CAREGIVER"/&gt;
       &lt;/participant&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1577302137"/&gt;
-      &lt;code code="40531394"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.69"/&gt;
+      &lt;id root="MDHT" extension="994751927"/&gt;
+      &lt;code code="231971652"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
-      &lt;methodCode code="869829855"/&gt;
+      &lt;methodCode code="1081263552"/&gt;
       &lt;author/&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="1452304292"/&gt;
-          &lt;code code="1951965747"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.86"/&gt;
+          &lt;id root="MDHT" extension="2147035786"/&gt;
+          &lt;code code="41742022"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
-          &lt;methodCode code="955462647"/&gt;
+          &lt;methodCode code="1424337893"/&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;referenceRange&gt;

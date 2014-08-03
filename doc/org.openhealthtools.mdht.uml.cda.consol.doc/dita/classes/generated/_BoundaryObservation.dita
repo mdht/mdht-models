@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="113036" </tt><i>Frames for Display</i> (CodeSystem:<tt> 1.2.840.10008.2.16.4 DCM</tt>) (CONF:9284)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type INT (CONF:9285)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with @xsi:type="INT" (CONF:9285)
 <ul><li><p><lines><i>Each numbers represents a frame for display</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -31,21 +31,22 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="113036" </tt><i>Frames for Display</i> (CodeSystem:<tt> 1.2.840.10008.2.16.4 DCM</tt>) (CONF:9284)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type INT (CONF:9285)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with @xsi:type="INT" (CONF:9285)
 <ul><li><p><lines><i>Each numbers represents a frame for display</i></lines></p></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::BoundaryObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9282</entry><entry> ALRT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::BoundaryObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.11]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9282</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:9283</entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9284</entry><entry>DCM 1.2.840.10008.2.16.4 </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9284</entry><entry>DCM 1.2.840.10008.2.16.4 113036</entry></row> 
 <row><entry>value</entry><entry>value</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>INT</entry><entry>CONF:9285</entry><entry> </entry></row> 
 <row><entry>boundaryObservation</entry><entry>boundaryObservation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>BoundaryObservation</entry><entry>CONF:9279CONF:9280CONF:9281</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1446987956"/>
-  <code code="1583055671"/>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
+  <id root="MDHT" extension="898774595"/>
+  <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
   <value xsi:type="INT" value="1"/>
 </observation>]]></codeblock>

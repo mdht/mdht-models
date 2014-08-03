@@ -14,14 +14,14 @@
 <p><lines><i>This clinical statement describes the interactions between the patient and clinicians. Interactions include in-person encounters, telephone conversations, and email exchanges.</i></lines></p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:10494 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.49"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8712, CONF:26353 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.49"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8710)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:8711)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8713)
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/EncounterTypeCode.dita">EncounterTypeCode</xref> 2.16.840.1.113883.3.88.12.80.32</tt><b> DYNAMIC</b> (CONF:8714)
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/EncounterTypeCode.dita">EncounterTypeCode</xref> 2.16.840.1.113883.3.88.12.80.32</tt><b> DYNAMIC</b> (CONF:8714)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:8715)
 </li>
@@ -37,7 +37,7 @@
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:15492, CONF:15973)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EncounterDiagnosis.dita">Encounter Diagnosis</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.80</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDischargeDispositionCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/NUBCUB04FL17PatientStatus.dita">NUBC UB-04 FL17-Patient Status</xref> 2.16.840.1.113883.6.301.5</tt><b> STATIC</b> (CONF:9929)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDischargeDispositionCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/NUBCUB04FL17PatientStatus.dita">NUBC UB-04 FL17-Patient Status</xref> 2.16.840.1.113883.6.301.5</tt><b> STATIC</b> (CONF:9929)
 <ul><li><p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element.</i></lines></p></li></ul></li>
 <li>code, if present, <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:8719)</li>
 <li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15970)</li>
@@ -52,11 +52,11 @@
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8713)
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/EncounterTypeCode.dita">EncounterTypeCode</xref> 2.16.840.1.113883.3.88.12.80.32</tt><b> DYNAMIC</b> (CONF:8714)
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/EncounterTypeCode.dita">EncounterTypeCode</xref> 2.16.840.1.113883.3.88.12.80.32</tt><b> DYNAMIC</b> (CONF:8714)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:8715)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDischargeDispositionCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/NUBCUB04FL17PatientStatus.dita">NUBC UB-04 FL17-Patient Status</xref> 2.16.840.1.113883.6.301.5</tt><b> STATIC</b> (CONF:9929)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDischargeDispositionCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/NUBCUB04FL17PatientStatus.dita">NUBC UB-04 FL17-Patient Status</xref> 2.16.840.1.113883.6.301.5</tt><b> STATIC</b> (CONF:9929)
 <ul><li><p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element.</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:8738, CONF:14903)
 <ol>
@@ -76,70 +76,89 @@
 <li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15972)</li>
 <li>EncounterActivities with target entry Service Delivery Location <b>SHALL</b> contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:8740)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::EncounterActivities</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::encounter[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:8710</entry><entry> ACCM</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::EncounterActivities</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::encounter[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.49]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:8710</entry><entry> ACCM</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:8711</entry><entry> APT</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF:8714</entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF:8714</entry><entry> null</entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:8715</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:8713</entry><entry> </entry></row> 
-<row><entry>sDTCDischargeDispositionCode</entry><entry>sDTCDischargeDispositionCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>sDTCDischargeDispositionCode</entry><entry>sDTCDischargeDispositionCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> null</entry></row> 
 <row><entry>encounterActivities</entry><entry>encounterActivities</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>EncounterActivities</entry><entry>CONF:8709CONF:8803</entry><entry> </entry></row> 
 <row><entry>encounterDiagnosis</entry><entry>encounterDiagnosis</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EncounterDiagnosis</entry><entry>CONF:15492CONF:15973</entry><entry> </entry></row> 
 <row><entry>encounterPerformer</entry><entry>encounterPerformer</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EncounterPerformer</entry><entry>CONF:8725</entry><entry> </entry></row> 
 <row><entry>indication</entry><entry>indication</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Indication</entry><entry>CONF:8722CONF:8723CONF:14899</entry><entry> </entry></row> 
 <row><entry>serviceDeliveryLocation</entry><entry>serviceDeliveryLocation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ServiceDeliveryLocation</entry><entry>CONF:8738CONF:14903</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<encounter xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
-  <id root="MDHT" extension="1232993208"/>
+<codeblock id="example"><![CDATA[<encounter xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" classCode="ENC" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+  <id root="MDHT" extension="2007479996"/>
+  <code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
   <performer>
     <assignedEntity>
-      <id root="MDHT" extension="734236637"/>
-      <code code="1147816843"/>
+      <id root="MDHT" extension="1198025384"/>
+      <code code="1994538620"/>
     </assignedEntity>
   </performer>
   <entryRelationship>
-    <observation>
-      <id root="MDHT" extension="421689742"/>
-      <code code="167424136"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+      <id root="MDHT" extension="1611879836"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <act>
-      <id root="MDHT" extension="617385202"/>
-      <code code="381589961"/>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.80"/>
+      <id root="MDHT" extension="2143183703"/>
+      <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="2079859474"/>
-          <code code="840523137"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+          <id root="MDHT" extension="39576844"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
           <entryRelationship>
-            <observation/>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+              <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+              <statusCode code="completed"/>
+            </observation>
           </entryRelationship>
           <entryRelationship>
-            <observation/>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <statusCode code="completed"/>
+            </observation>
           </entryRelationship>
           <entryRelationship>
-            <observation/>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+            </observation>
           </entryRelationship>
         </observation>
       </entryRelationship>
     </act>
   </entryRelationship>
-  <sdtc:dischargeDispositionCode code="1723199720"/>
+  <sdtc:dischargeDispositionCode codeSystem="2.16.840.1.113883.12.112" codeSystemName="HL7DischargeDisposition"/>
 </encounter>]]></codeblock>
 <section id="changes">
 </section>

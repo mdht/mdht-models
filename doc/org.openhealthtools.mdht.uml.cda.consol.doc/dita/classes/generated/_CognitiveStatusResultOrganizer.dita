@@ -51,64 +51,74 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
 <li><b>SHOULD</b> contain zero or one [0..1] @classCode="CLUSTER" Cluster (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) OR <b>SHOULD</b> contain zero or one [0..1] @classCode="BATTERY" Battery (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) (CONF:7165)</li>
 <li>code <b>SHOULD</b> contain zero or one [0..1] @code should be selected from ICF (codeSystem 2.16.840.1.113883.6.254) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) (CONF:14697, CONF:14698)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::CognitiveStatusResultOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryOrganizer</entry><entry>CONF:14369</entry><entry> BATTERY</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::CognitiveStatusResultOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryOrganizer</entry><entry>CONF:14369</entry><entry> BATTERY</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:14371</entry><entry> APT</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:14378</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:14377</entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:14372</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:14372</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
 <row><entry>cognitiveStatusResultObservation</entry><entry>cognitiveStatusResultObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>CognitiveStatusResultObservation</entry><entry>CONF:14373CONF:14381</entry><entry> </entry></row> 
 <row><entry>cognitiveStatusResultOrganizer</entry><entry>cognitiveStatusResultOrganizer</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CognitiveStatusResultOrganizer</entry><entry>CONF:14416CONF:14417</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<organizer xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1207995359"/>
-  <code code="1465445140"/>
+<codeblock id="example"><![CDATA[<organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.75"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+  <id root="MDHT" extension="256968422"/>
+  <code code="358999365"/>
   <statusCode code="completed"/>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
   <component>
-    <observation>
-      <id root="MDHT" extension="1676838214"/>
-      <code code="2129629632"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.74"/>
+      <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+      <id root="MDHT" extension="836747258"/>
+      <code code="373930000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Cognitive function finding"/>
       <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
       <author/>
       <entryRelationship>
-        <supply>
-          <id root="MDHT" extension="275374236"/>
-          <code code="1912907344"/>
+        <supply classCode="SPLY">
+          <templateId root="2.16.840.1.113883.10.20.22.4.50"/>
+          <id root="MDHT" extension="849198183"/>
+          <code code="507314699"/>
           <statusCode code="completed"/>
-          <effectiveTime value="20130627"/>
+          <effectiveTime value="20140803"/>
         </supply>
       </entryRelationship>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="704975649"/>
-          <code code="1760684867"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.72"/>
+          <id root="MDHT" extension="470008224"/>
+          <code code="1922613490"/>
           <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
-          <participant/>
+          <participant typeCode="IND"/>
         </observation>
       </entryRelationship>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="1282594830"/>
-          <code code="2026694619"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+          <id root="MDHT" extension="1162315593"/>
+          <code code="1285852770"/>
           <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
           <author/>
           <entryRelationship>
-            <observation/>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+              <statusCode code="completed"/>
+            </observation>
           </entryRelationship>
           <referenceRange/>
         </observation>

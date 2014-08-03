@@ -90,7 +90,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:9244), where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 1.2.840.10008.2.6.1 DCMUID</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:9244), which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 1.2.840.10008.2.6.1 DCMUID</tt>)
 </li>
 
 <li class="li">The effectiveTime, if present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] @value (CONF:9251)</li>
@@ -117,42 +117,46 @@
 			<strong class="ph b"><span class="ph">SOP Instance Observation</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="628518804"/&gt;
-  &lt;code code="653988573"/&gt;
+		<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3" classCode="DGIMG" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.6.2.8"/&gt;
+  &lt;id root="MDHT" extension="242435028"/&gt;
+  &lt;code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="486190181"/&gt;
-      &lt;code code="503175506"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.6.2.9"/&gt;
+      &lt;id root="MDHT" extension="1538205551"/&gt;
+      &lt;code code="1331499116"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="2005535108"/&gt;
-      &lt;code code="1077437072"/&gt;
+    &lt;observation classCode="ROIBND" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.6.2.10"/&gt;
+      &lt;id root="MDHT" extension="1345445786"/&gt;
+      &lt;code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="1768652912"/&gt;
-          &lt;code code="2067525933"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.6.2.11"/&gt;
+          &lt;id root="MDHT" extension="541286533"/&gt;
+          &lt;code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;

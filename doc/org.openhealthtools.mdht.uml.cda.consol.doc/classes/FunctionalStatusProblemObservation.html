@@ -69,7 +69,7 @@
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:14287)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Problem.html">Problem</a> 2.16.840.1.113883.3.88.12.3221.7.4</tt><strong class="ph b"> DYNAMIC</strong> (CONF:14291)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD", which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Problem.html">Problem</a> 2.16.840.1.113883.3.88.12.3221.7.4</tt><strong class="ph b"> DYNAMIC</strong> (CONF:14291)
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:14316)
@@ -126,65 +126,75 @@ UNK.  If the code is something other than SNOMED, @nullFlavor <strong class="ph 
 			<strong class="ph b"><span class="ph">Functional Status Problem Observation</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1764963084"/&gt;
-  &lt;code code="534079443"/&gt;
+		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.68"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
+  &lt;id root="MDHT" extension="1326551534"/&gt;
+  &lt;code code="248536006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="finding of functional performance and activity"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
+  &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CD" code="788992427"/&gt;
-  &lt;methodCode code="2035774660"/&gt;
+  &lt;value xsi:type="CD" code="1844993217"/&gt;
+  &lt;methodCode code="1290677164"/&gt;
   &lt;entryRelationship&gt;
-    &lt;supply&gt;
-      &lt;id root="MDHT" extension="2072232133"/&gt;
-      &lt;code code="1676902630"/&gt;
+    &lt;supply classCode="SPLY"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.50"/&gt;
+      &lt;id root="MDHT" extension="67074013"/&gt;
+      &lt;code code="791456155"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime value="20130627"/&gt;
+      &lt;effectiveTime value="20140803"/&gt;
     &lt;/supply&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="952141871"/&gt;
-      &lt;code code="883041613"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.72"/&gt;
+      &lt;id root="MDHT" extension="1130648330"/&gt;
+      &lt;code code="1678967883"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
-      &lt;value xsi:type="CD" code="1571553109"/&gt;
-      &lt;methodCode code="690456491"/&gt;
-      &lt;participant&gt;
+      &lt;value xsi:type="CD" code="1192922146"/&gt;
+      &lt;methodCode code="1312295770"/&gt;
+      &lt;participant typeCode="IND"&gt;
         &lt;time&gt;
-          &lt;low value="2013"/&gt;
-          &lt;high value="2013"/&gt;
+          &lt;low value="2014"/&gt;
+          &lt;high value="2014"/&gt;
         &lt;/time&gt;
-        &lt;participantRole/&gt;
+        &lt;participantRole classCode="CAREGIVER"/&gt;
       &lt;/participant&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1501463133"/&gt;
-      &lt;code code="1923047254"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.69"/&gt;
+      &lt;id root="MDHT" extension="1191778606"/&gt;
+      &lt;code code="1455572800"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
-      &lt;methodCode code="1547046702"/&gt;
+      &lt;methodCode code="2116997648"/&gt;
       &lt;author/&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="544953821"/&gt;
-          &lt;code code="1440672452"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.86"/&gt;
+          &lt;id root="MDHT" extension="143747791"/&gt;
+          &lt;code code="1842885777"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
-          &lt;methodCode code="1558004616"/&gt;
+          &lt;methodCode code="1122749975"/&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;referenceRange&gt;

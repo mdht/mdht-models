@@ -19,7 +19,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="INT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7392)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/PatientEducation.dita">PatientEducation</xref> 2.16.840.1.113883.11.20.9.34</tt><b> DYNAMIC</b> (CONF:7394)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/PatientEducation.dita">PatientEducation</xref> 2.16.840.1.113883.11.20.9.34</tt><b> DYNAMIC</b> (CONF:7394)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7395)
 </li>
@@ -34,7 +34,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="INT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7392)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/PatientEducation.dita">PatientEducation</xref> 2.16.840.1.113883.11.20.9.34</tt><b> DYNAMIC</b> (CONF:7394)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/PatientEducation.dita">PatientEducation</xref> 2.16.840.1.113883.11.20.9.34</tt><b> DYNAMIC</b> (CONF:7394)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7395)
 </li>
@@ -44,21 +44,23 @@
 <li>reference <b>SHOULD</b> contain exactly one [1..1] @value (CONF:15578)</li>
 <li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15579)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::Instructions</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:7391</entry><entry> ACCM</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::Instructions</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.20]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:7391</entry><entry> ACCM</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:7392</entry><entry> APT</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7394</entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7396</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7394</entry><entry> null</entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7396</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ED</entry><entry>CONF:7395</entry><entry> </entry></row> 
 <row><entry>instructions</entry><entry>instructions</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>Instructions</entry><entry>CONF:10116CONF:10117</entry><entry> </entry></row> 
 <row><entry>patientInstruction</entry><entry>patientInstruction</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Instructions</entry><entry>CONF:7775CONF:7776CONF:15913</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<act xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="845003860"/>
-  <code code="68118840"/>
+<codeblock id="example"><![CDATA[<act xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="INT">
+  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+  <id root="MDHT" extension="943141433"/>
+  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
   <text>Text Value</text>
+  <statusCode code="completed"/>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
 </act>]]></codeblock>
 <section id="changes">
