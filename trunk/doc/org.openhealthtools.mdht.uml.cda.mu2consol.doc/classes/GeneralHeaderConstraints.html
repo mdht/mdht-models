@@ -47,15 +47,51 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/GeneralHeaderConstraints.html">Consol General Header Constraints</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt> <ol class="ol" type="a"><li class="li"> Such recordTargets <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/RecordTarget.html">Consol Record Target</a></li>
-<li class="li"> Such recordTargets <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PatientRole.html">Consol Patient Role</a></li>
-<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> <ol class="ol"><li class="li"> This patient <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Patient.html">Consol Patient</a></li>
-<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">ethnicGroupCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/EthnicityCategoryValueSet.html">Ethnicity Category ValueSet</a></tt><strong class="ph b"> STATIC</strong></li>
-<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">raceCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/RaceCategoryValueSet.html">Race Category ValueSet</a></tt><strong class="ph b"> STATIC</strong></li>
-<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">languageCommunication</strong></tt> <ol class="ol" type="a"><li class="li"> Such languageCommunications <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/LanguageCommunication.html">Consol Language Communication</a></li>
-<li class="li"> Such languageCommunications <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/LanguageCode.html">LanguageCode</a></tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt> <ol class="ol" type="a"><li class="li"> Such recordTargets <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with @xsi:type="<a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a>" (CONF:5271)</li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:5268)</li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with @xsi:type="<a class="xref" href="generated/../TEL.html">TEL</a>" (CONF:5280)</li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> <ol class="ol"><li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/AdministrativeGenderHL7V3.html">Administrative Gender (HL7 V3)</a> 2.16.840.1.113883.1.11.1</tt><strong class="ph b"> DYNAMIC</strong> (CONF:6394)</li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">birthTime</strong></tt> with @xsi:type="<a class="xref" href="generated/../TS.html">TS</a>" (CONF:5298)</li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">ethnicGroupCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/EthnicityCategoryValueSet.html">Ethnicity Category ValueSet</a></tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">maritalStatusCode</strong></tt> (CONF:5303), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/HL7MaritalStatus.html">HL7 Marital Status</a> 2.16.840.1.113883.1.11.12212</tt><strong class="ph b"> STATIC</strong> 1</li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> with @xsi:type="<a class="xref" href="generated/../USRealmPatientName.html">US Realm Patient Name</a>" (CONF:5284, CONF:10411)</li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">raceCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/RaceCategoryValueSet.html">Race Category ValueSet</a></tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">religiousAffiliationCode</strong></tt> (CONF:5317), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/HL7ReligiousAffiliation.html">HL7 Religious Affiliation</a> 2.16.840.1.113883.1.11.19185</tt><strong class="ph b"> STATIC</strong> 1</li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">sDTCRaceCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/RaceValueSet.html">Race Value Set</a> 2.16.840.1.113883.1.11.14914</tt><strong class="ph b"> DYNAMIC</strong> (CONF:7263)<div class="p"><p class="lines"><em class="ph i">Note: The sdtc:raceCode is only used to record additional values when the patient has indicated multiple races or additional race detail beyond the five categories required for Meaningful Use Stage 2. The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the additional raceCode elements.</em></p>
+</div>
+</li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">birthplace</strong></tt> (CONF:5395) <ol class="ol" type="a"><li class="li"> This birthplace <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">place</strong></tt> (CONF:5396) <ol class="ol" type="i"><li class="li"> This place <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:5397)</li>
+<li class="li"> This place If country is US, this addr <strong class="ph b">SHALL</strong> contain exactly one [1..1] state, which <strong class="ph b">SHALL</strong> be selected from ValueSet StateValueSet 2.16.840.1.113883.3.88.12.80.1 DYNAMIC</li>
+<li class="li"> This place This addr <strong class="ph b">MAY</strong> contain zero or one [0..1] postalCode, which <strong class="ph b">SHALL</strong> be selected from ValueSet PostalCodeValueSet 2.16.840.1.113883.3.88.12.80.2 DYNAMIC</li>
+<li class="li"> This place This addr <strong class="ph b">SHOULD</strong> contain zero or one [0..1] country, which <strong class="ph b">SHALL</strong> be selected from ValueSet CountryValueSet 2.16.840.1.113883.3.88.12.80.63 DYNAMIC</li>
 </ol>
  </li>
+</ol>
+ </li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">guardian</strong></tt> (CONF:5325) <ol class="ol" type="a"><li class="li"> Such guardians <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with @xsi:type="<a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a>"</li>
+<li class="li"> Such guardians <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:5326)</li>
+<li class="li"> Such guardians <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with @xsi:type="<a class="xref" href="generated/../TEL.html">TEL</a>"</li>
+<li class="li"> Such guardians <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">guardianPerson</strong></tt> <ol class="ol" type="i"><li class="li"> This guardianPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt></li>
+<li class="li"> This guardianPerson The content of name <strong class="ph b">SHALL</strong> be a conformant US Realm Person Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:10414)</li>
+</ol>
+ </li>
+<li class="li"> Such guardians The guardian code, if present, <strong class="ph b">SHALL</strong> be selected from ValueSet PersonalRelationshipRoleType 2.16.840.1.113883.1.11.19563 DYNAMIC or ValueSet Responsible Party 2.16.840.1.113883.1.11.19830 DYNAMIC (CONF:5326)</li>
+</ol>
+ </li>
+<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">languageCommunication</strong></tt> <ol class="ol" type="a"><li class="li"> Such languageCommunications <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt></li>
+<li class="li"> Such languageCommunications <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">modeCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/HL7LanguageAbilityMode.html">HL7 LanguageAbilityMode</a> 2.16.840.1.113883.1.11.12249</tt><strong class="ph b"> STATIC</strong> 1 (CONF:5409)</li>
+<li class="li"> Such languageCommunications <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">preferenceInd</strong></tt> (CONF:5414)</li>
+<li class="li"> Such languageCommunications <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">proficiencyLevelCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/LanguageAbilityProficiency.html">LanguageAbilityProficiency</a> 2.16.840.1.113883.1.11.12199</tt><strong class="ph b"> STATIC</strong> (CONF:9965)</li>
+<li class="li"> Such languageCommunications languageCode <strong class="ph b">SHALL</strong> be selected from ValueSet LanguageCode STATIC where the @code <strong class="ph b">SHALL</strong> be selected from the set of alpha-3 codes of ISO 639-2 that are in ISO 639-1</li>
+</ol>
+ </li>
+</ol>
+ </li>
+<li class="li"> This patientRole <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">providerOrganization</strong></tt> (CONF:5416) <ol class="ol"><li class="li"> This providerOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with @xsi:type="<a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a>" (CONF:5422)</li>
+<li class="li"> This providerOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:5417)</li>
+<li class="li"> This providerOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5419)</li>
+<li class="li"> This providerOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with @xsi:type="<a class="xref" href="generated/../TEL.html">TEL</a>" (CONF:5420)</li>
+<li class="li"> This providerOrganization The id <strong class="ph b">SHOULD</strong> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:9996)</li>
 </ol>
  </li>
 </ol>
@@ -80,16 +116,17 @@ OR have at least one componentOf/encompassingEncounter/encounterParticipant</li>
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-  &lt;id root="MDHT" extension="1487997710"/&gt;
-  &lt;code code="1558099511"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
+  &lt;id root="MDHT" extension="1267059504"/&gt;
+  &lt;code code="751275156"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;effectiveTime/&gt;
-  &lt;confidentialityCode code="1035745823"/&gt;
-  &lt;setId root="MDHT" extension="8911d7c0-2530-4302-9f7a-0b62eefa0266"/&gt;
+  &lt;confidentialityCode code="828364318"/&gt;
+  &lt;setId root="MDHT" extension="822fc693-9a19-4cd9-a107-9f5afeb05418"/&gt;
   &lt;versionNumber value="1"/&gt;
   &lt;recordTarget&gt;
     &lt;patientRole&gt;
-      &lt;id root="MDHT" extension="2110695298"/&gt;
+      &lt;id root="MDHT" extension="1374466129"/&gt;
       &lt;addr/&gt;
       &lt;telecom/&gt;
       &lt;patient&gt;

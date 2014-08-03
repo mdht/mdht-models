@@ -45,7 +45,7 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProceduresSection.html">Consol Procedures Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.7.1</tt>)</li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:7895, CONF:7896)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:7895, CONF:7896)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityProcedure.html" title="[Procedure: templateId 2.16.840.1.113883.10.20.22.4.14]">Procedure Activity Procedure</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.14</tt>)</li>
 </ol>
@@ -61,18 +61,20 @@
 
 
 <pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1941288828"/&gt;
-  &lt;code code="335160522"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.2.7.1"/&gt;
+  &lt;id root="MDHT" extension="1844822737"/&gt;
+  &lt;code code="21607475"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
     &lt;procedure&gt;
-      &lt;id root="MDHT" extension="1155970056"/&gt;
-      &lt;code code="992497915"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.14"/&gt;
+      &lt;id root="MDHT" extension="2078807700"/&gt;
+      &lt;code code="435313805"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/procedure&gt;
   &lt;/entry&gt;

@@ -45,7 +45,7 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultsSection.html">Consol Results Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.3.1</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:7112, CONF:7113)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:7112, CONF:7113)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ResultOrganizer.html" title="[Organizer: templateId 2.16.840.1.113883.10.20.22.4.1]">Result Organizer</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.1</tt>)</li>
 </ol>
@@ -61,27 +61,30 @@
 
 
 <pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="675851414"/&gt;
-  &lt;code code="1349311575"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.2.3.1"/&gt;
+  &lt;id root="MDHT" extension="1113539263"/&gt;
+  &lt;code code="1016050967"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
     &lt;organizer&gt;
-      &lt;id root="MDHT" extension="801173931"/&gt;
-      &lt;code code="428115733"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.1"/&gt;
+      &lt;id root="MDHT" extension="332275843"/&gt;
+      &lt;code code="1383036004"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
       &lt;component&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="268353559"/&gt;
-          &lt;code code="1523233584"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
+          &lt;id root="MDHT" extension="29352409"/&gt;
+          &lt;code code="261639178"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
       &lt;/component&gt;

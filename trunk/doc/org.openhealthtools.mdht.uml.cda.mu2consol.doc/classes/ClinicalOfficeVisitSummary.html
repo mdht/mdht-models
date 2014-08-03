@@ -54,7 +54,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
 </ol>
@@ -96,7 +96,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationsAdministeredSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.38]">Medications Administered Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.38</tt>)</li>
 </ol>
@@ -137,6 +137,8 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
 <li class="li"><strong class="ph b">SHALL</strong> have one Vital Signs Section with entries optional (TemplateID = 2.16.840.1.113883.10.20.22.2.4)
 or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.4.1)</li>
 
+<li class="li"><strong class="ph b">SHALL</strong> contain one Medications Administered Section (Template ID = 2.16.840.1.113883.10.20.22.2.38) or Medications Section with entries required (Template ID = 2.16.840.1.113883.10.20.22.2.1.1)</li>
+
 </ol>
 
 
@@ -149,12 +151,13 @@ or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-  &lt;id root="MDHT" extension="1077244209"/&gt;
-  &lt;code code="390841696"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
+  &lt;id root="MDHT" extension="1711018725"/&gt;
+  &lt;code code="1261193819"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;effectiveTime/&gt;
-  &lt;confidentialityCode code="1622445143"/&gt;
-  &lt;setId root="MDHT" extension="68e42d22-0e44-4a33-b18b-208a64df00cf"/&gt;
+  &lt;confidentialityCode code="799408742"/&gt;
+  &lt;setId root="MDHT" extension="8535f284-bbdb-48cd-aa9c-0e0175597514"/&gt;
   &lt;versionNumber value="1"/&gt;
   &lt;recordTarget&gt;
     &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
@@ -180,22 +183,26 @@ or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883
       &lt;component&gt;
         &lt;section&gt;
           &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-          &lt;id root="MDHT" extension="1636506093"/&gt;
-          &lt;code code="1707460128"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.3.1"/&gt;
+          &lt;id root="MDHT" extension="275312484"/&gt;
+          &lt;code code="1786213961"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-          &lt;confidentialityCode code="170942048"/&gt;
+          &lt;confidentialityCode code="135804773"/&gt;
           &lt;entry&gt;
             &lt;organizer&gt;
               &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;id root="MDHT" extension="1234532359"/&gt;
-              &lt;code code="1058325139"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.1"/&gt;
+              &lt;id root="MDHT" extension="764020758"/&gt;
+              &lt;code code="623147910"/&gt;
               &lt;statusCode code="completed"/&gt;
               &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
+                &lt;low value="2014"/&gt;
+                &lt;high value="2014"/&gt;
               &lt;/effectiveTime&gt;
               &lt;component&gt;
-                &lt;observation/&gt;
+                &lt;observation&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
+                &lt;/observation&gt;
               &lt;/component&gt;
             &lt;/organizer&gt;
           &lt;/entry&gt;
@@ -204,18 +211,20 @@ or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883
       &lt;component&gt;
         &lt;section&gt;
           &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-          &lt;id root="MDHT" extension="1489742142"/&gt;
-          &lt;code code="1313507807"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.7.1"/&gt;
+          &lt;id root="MDHT" extension="1593393134"/&gt;
+          &lt;code code="685571774"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-          &lt;confidentialityCode code="1506759290"/&gt;
+          &lt;confidentialityCode code="1558514783"/&gt;
           &lt;entry&gt;
             &lt;procedure&gt;
               &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;id root="MDHT" extension="566155645"/&gt;
-              &lt;code code="2015959858"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.14"/&gt;
+              &lt;id root="MDHT" extension="1544811783"/&gt;
+              &lt;code code="618771256"/&gt;
               &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
+                &lt;low value="2014"/&gt;
+                &lt;high value="2014"/&gt;
               &lt;/effectiveTime&gt;
             &lt;/procedure&gt;
           &lt;/entry&gt;
@@ -230,18 +239,20 @@ or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883
       &lt;component&gt;
         &lt;section&gt;
           &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-          &lt;id root="MDHT" extension="401503842"/&gt;
-          &lt;code code="1663119613"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.17"/&gt;
+          &lt;id root="MDHT" extension="1173442336"/&gt;
+          &lt;code code="1443111462"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-          &lt;confidentialityCode code="166460063"/&gt;
+          &lt;confidentialityCode code="1897437313"/&gt;
           &lt;entry&gt;
             &lt;observation&gt;
               &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;id root="MDHT" extension="1309122455"/&gt;
-              &lt;code code="637995732"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.78"/&gt;
+              &lt;id root="MDHT" extension="1292612391"/&gt;
+              &lt;code code="359181351"/&gt;
               &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
+                &lt;low value="2014"/&gt;
+                &lt;high value="2014"/&gt;
               &lt;/effectiveTime&gt;
             &lt;/observation&gt;
           &lt;/entry&gt;
@@ -250,10 +261,11 @@ or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883
       &lt;component&gt;
         &lt;section&gt;
           &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-          &lt;id root="MDHT" extension="1592157542"/&gt;
-          &lt;code code="1506070402"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.38"/&gt;
+          &lt;id root="MDHT" extension="1286893049"/&gt;
+          &lt;code code="524833184"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-          &lt;confidentialityCode code="274830342"/&gt;
+          &lt;confidentialityCode code="949915804"/&gt;
           &lt;entry&gt;
             &lt;substanceAdministration classCode="SBADM"/&gt;
           &lt;/entry&gt;
