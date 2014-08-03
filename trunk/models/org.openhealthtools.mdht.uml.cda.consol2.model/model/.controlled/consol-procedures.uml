@@ -2570,25 +2570,25 @@ This template represents procedures that result in new information about the pat
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hLqEgfDlEeOKPKE9au0oug" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hLqEgvDlEeOKPKE9au0oug"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_NMUNiBg4EeGs5a462vYX5Q"/>
+      <redefinedProperty href="consol-procedures.uml#_NMUNiBg4EeGs5a462vYX5Q"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rfczEPDmEeOKPKE9au0oug" name="indication2" association="_rfeBMPDmEeOKPKE9au0oug">
       <type xmi:type="uml:Class" href="consol-other.uml#_PrEOIOHoEeO04sHNODkHmQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rfczEvDmEeOKPKE9au0oug" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rfczEfDmEeOKPKE9au0oug"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_cZZAYBxxEeGXP8PxDYviDg"/>
+      <redefinedProperty href="consol-procedures.uml#_cZZAYBxxEeGXP8PxDYviDg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_-qC_sPDmEeOKPKE9au0oug" name="medicationActivity2" association="_-qEN0PDmEeOKPKE9au0oug">
       <type xmi:type="uml:Class" href="consol-medications.uml#_WnSCMOLAEeOc7-TVP7Wi6w"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-qDmwfDmEeOKPKE9au0oug" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-qDmwPDmEeOKPKE9au0oug"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_odtt4BxxEeGXP8PxDYviDg"/>
+      <redefinedProperty href="consol-procedures.uml#_odtt4BxxEeGXP8PxDYviDg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_uHf98PDnEeOKPKE9au0oug" name="instruction2" association="_uHhMEPDnEeOKPKE9au0oug">
       <type xmi:type="uml:Class" href="consol-other.uml#_D62NwOH7EeO04sHNODkHmQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_72HDAPDnEeOKPKE9au0oug" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_72HqEPDnEeOKPKE9au0oug"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_VUG_wBxxEeGXP8PxDYviDg"/>
+      <redefinedProperty href="consol-procedures.uml#_VUG_wBxxEeGXP8PxDYviDg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_UKVOIPDjEeOKPKE9au0oug" base_Class="_QoLWAPDjEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.13.2">

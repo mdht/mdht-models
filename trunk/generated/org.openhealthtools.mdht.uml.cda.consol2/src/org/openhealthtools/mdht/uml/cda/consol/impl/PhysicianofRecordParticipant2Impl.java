@@ -57,17 +57,6 @@ public class PhysicianofRecordParticipant2Impl extends PhysicianofRecordParticip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicianofRecordParticipant2AssignedEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntity(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName(
@@ -127,6 +116,18 @@ public class PhysicianofRecordParticipant2Impl extends PhysicianofRecordParticip
 	public boolean validatePhysicianofRecordParticipantTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipantTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePhysicianofRecordParticipantAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipantAssignedEntity(
 			this, diagnostics, context);
 	}
 

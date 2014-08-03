@@ -442,7 +442,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     <generalization xmi:id="__ze6gPM3EeOUvapeh9bVvQ" general="_2OrhsRSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_agM0wPM4EeOUvapeh9bVvQ" name="VitalSignObservation" supplier="_2OrhsRSVEeGGzu7fmW9pXw" client="__zeTcPM3EeOUvapeh9bVvQ" contract="_2OrhsRSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_qsjuoPM4EeOUvapeh9bVvQ" name="value" visibility="private" type="_vvXhMPM4EeOUvapeh9bVvQ">
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OxoUhSVEeGGzu7fmW9pXw"/>
+      <redefinedProperty href="consol-vitalsigns.uml#_2OxoUhSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_tt9NoPM5EeOUvapeh9bVvQ" name="authorParticipation" association="_tt_C0PM5EeOUvapeh9bVvQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
@@ -453,7 +453,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0--kMfM5EeOUvapeh9bVvQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0--kMvM5EeOUvapeh9bVvQ"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_JNJhQOJvEeG3cO7ebC3QuA"/>
+      <redefinedProperty href="consol-vitalsigns.uml#_JNJhQOJvEeG3cO7ebC3QuA"/>
       <association href="../consol.uml#_0-_yUPM5EeOUvapeh9bVvQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_vvXhMPM4EeOUvapeh9bVvQ" name="PQ">

@@ -56,17 +56,6 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationInformation2ManufacturedMaterial(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformation2ManufacturedMaterial(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialCETranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialCETranslation(
@@ -158,6 +147,18 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	@Override
 	public boolean validateMedicationInformationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationInformationManufacturedMaterial(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationInformation2Operations.validateMedicationInformationManufacturedMaterial(
+			this, diagnostics, context);
 	}
 
 	/**

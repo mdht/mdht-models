@@ -1916,7 +1916,7 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
     <ownedAttribute xmi:id="_h3ogkOXrEeOkFcFJ9uzEEw" name="manufacturedMaterial" type="_Fn10kOXsEeOkFcFJ9uzEEw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h3ogkeXrEeOkFcFJ9uzEEw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h3ogkuXrEeOkFcFJ9uzEEw" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_6Ti0YEIrEeG4bZAl2IGXmQ"/>
+      <redefinedProperty href="consol-medications.uml#_6Ti0YEIrEeG4bZAl2IGXmQ"/>
       <association href="../consol.uml#_h3pusOXrEeOkFcFJ9uzEEw"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_Fn10kOXsEeOkFcFJ9uzEEw" name="MedicationInformationManufacturedMaterial">
@@ -1966,12 +1966,12 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
         </specification>
       </ownedRule>
       <generalization xmi:id="_Fn2boOXsEeOkFcFJ9uzEEw">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#__WUM4CAMEeGKirKJsFylGA"/>
+        <general xmi:type="uml:Class" href="consol-medications.uml#__WUM4CAMEeGKirKJsFylGA"/>
       </generalization>
       <ownedAttribute xmi:id="_MeXngOXsEeOkFcFJ9uzEEw" name="code" visibility="private" type="_co0gEOXwEeOkFcFJ9uzEEw" aggregation="composite">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MeXngeXsEeOkFcFJ9uzEEw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MeXnguXsEeOkFcFJ9uzEEw" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_Dh74wCANEeGKirKJsFylGA"/>
+        <redefinedProperty href="consol-medications.uml#_Dh74wCANEeGKirKJsFylGA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_co0gEOXwEeOkFcFJ9uzEEw" name="CE">
         <ownedRule xmi:id="_4LnGsOXwEeOkFcFJ9uzEEw" name="codeTranslationTerminology" constrainedElement="_co0gEOXwEeOkFcFJ9uzEEw">

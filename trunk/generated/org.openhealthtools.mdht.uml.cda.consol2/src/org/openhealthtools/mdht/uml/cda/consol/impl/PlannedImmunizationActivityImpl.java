@@ -155,30 +155,8 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedImmunizationActivityRouteCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRouteCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePlannedImmunizationActivityRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRouteCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedImmunizationActivityApproachSiteCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityApproachSiteCodeP(
 			this, diagnostics, context);
 	}
 

@@ -1361,7 +1361,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
     <ownedAttribute xmi:id="_vp7uYOaREeOmzetP5oaH3A" name="assignedEntity" type="_yuz0oOaREeOmzetP5oaH3A">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vp7uYeaREeOmzetP5oaH3A" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vp7uYuaREeOmzetP5oaH3A" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_QLNPcErYEeGJpZWiuxRVIw"/>
+      <redefinedProperty href="consol-dicom.uml#_QLNPcErYEeGJpZWiuxRVIw"/>
       <association href="../consol.uml#_vp88gOaREeOmzetP5oaH3A"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_yuz0oOaREeOmzetP5oaH3A" name="AssignedEntity">
@@ -1377,11 +1377,11 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
         </specification>
       </ownedRule>
       <generalization xmi:id="_yuz0oeaREeOmzetP5oaH3A">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_lCnhUEb1EeGp67IkyTw1fg"/>
+        <general xmi:type="uml:Class" href="consol-dicom.uml#_lCnhUEb1EeGp67IkyTw1fg"/>
       </generalization>
       <ownedAttribute xmi:id="_1DqMIOaREeOmzetP5oaH3A" name="assignedPerson" type="_yGtn8OaTEeOmzetP5oaH3A">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1DqMIeaREeOmzetP5oaH3A"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_g5aSIErYEeGJpZWiuxRVIw"/>
+        <redefinedProperty href="consol-dicom.uml#_g5aSIErYEeGJpZWiuxRVIw"/>
         <association href="../consol.uml#_1DqzMOaREeOmzetP5oaH3A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_GNihYOaWEeOmzetP5oaH3A" name="representedOrganization" visibility="private" type="_TglEwOaWEeOmzetP5oaH3A" aggregation="composite">
@@ -1392,13 +1392,13 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_yGtn8OaTEeOmzetP5oaH3A" name="AssignedPerson">
         <generalization xmi:id="_yGtn8eaTEeOmzetP5oaH3A">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_eq8_MEb2EeGp67IkyTw1fg"/>
+          <general xmi:type="uml:Class" href="consol-dicom.uml#_eq8_MEb2EeGp67IkyTw1fg"/>
         </generalization>
         <ownedAttribute xmi:id="_y1dkUOaTEeOmzetP5oaH3A" name="name" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oq_gwOaUEeOmzetP5oaH3A" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oq_gweaUEeOmzetP5oaH3A" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_ir_ywEb2EeGp67IkyTw1fg"/>
+          <redefinedProperty href="consol-dicom.uml#_ir_ywEb2EeGp67IkyTw1fg"/>
         </ownedAttribute>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_TglEwOaWEeOmzetP5oaH3A" name="RepresentedOrganization">

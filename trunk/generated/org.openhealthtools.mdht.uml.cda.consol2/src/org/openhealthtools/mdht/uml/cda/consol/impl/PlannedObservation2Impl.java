@@ -116,15 +116,6 @@ public class PlannedObservation2Impl extends PlanOfCareActivityObservationImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedObservation2TargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedObservation2Operations.validatePlannedObservation2TargetSiteCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePlannedObservation2TargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedObservation2Operations.validatePlannedObservation2TargetSiteCode(this, diagnostics, context);
 	}

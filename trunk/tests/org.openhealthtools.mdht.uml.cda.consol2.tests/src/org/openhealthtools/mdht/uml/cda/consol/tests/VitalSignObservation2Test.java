@@ -32,10 +32,10 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservation2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation2 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservation2PQUnit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation2 PQ Unit</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -43,43 +43,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
  */
 
 public class VitalSignObservation2Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateVitalSignObservation2Value() {
-		OperationsTestCase<VitalSignObservation2> validateVitalSignObservation2ValueTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservation2Value",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(VitalSignObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(VitalSignObservation2 target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return VitalSignObservation2Operations.validateVitalSignObservation2Value(
-					(VitalSignObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateVitalSignObservation2ValueTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -188,6 +151,43 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 		};
 
 		validateVitalSignObservationTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateVitalSignObservationValue() {
+		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationValueTestCase = new OperationsTestCase<VitalSignObservation2>(
+			"validateVitalSignObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(VitalSignObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(VitalSignObservation2 target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignObservation2Operations.validateVitalSignObservationValue(
+					(VitalSignObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignObservationValueTestCase.doValidationTest();
 	}
 
 	/**

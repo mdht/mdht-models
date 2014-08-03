@@ -117,15 +117,6 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedProcedure2TargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedProcedure2Operations.validatePlannedProcedure2TargetSiteCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePlannedProcedure2TargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedure2Operations.validatePlannedProcedure2TargetSiteCode(this, diagnostics, context);
 	}

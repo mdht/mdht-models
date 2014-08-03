@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPolicyActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityTemplateId PolicyActivity2Payer PolicyActivity2Coverage PolicyActivity2PolicyActivityPayerPayerAssignedEntity PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCodeP PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivity2PolicyActivityGuarantorGuarantorAssignedEntity PolicyActivity2CoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime PolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime PolicyActivity2PolicyActivityCoverageCoverageRole' templateId.root='2.16.840.1.113883.10.20.22.4.61.2' constraints.validation.warning='PolicyActivity2Guarantor PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityTelecom PolicyActivity2CoveragePolicyActivityCoverageCoverageRoleCoveragePlayingEntity' constraints.validation.info='PolicyActivity2PayerPolicyActivityPayerPayerAssignedEntityTelecom' constraints.validation.query='PolicyActivity2PayerPolicyActivityPayerPayerAssignedEntityTelecom PolicyActivity2PolicyActivityPayerPayerAssignedEntity PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityTelecom PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCodeP PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivity2PolicyActivityGuarantorGuarantorAssignedEntity PolicyActivity2CoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime PolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime PolicyActivity2CoveragePolicyActivityCoverageCoverageRoleCoveragePlayingEntity PolicyActivity2PolicyActivityCoverageCoverageRole' constraints.validation.dependOn.PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCode='PolicyActivityGuarantorGuarantorAssignedEntityCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityTemplateId PolicyActivityPayer PolicyActivityCoverage PolicyActivity2PolicyActivityPayerPayerAssignedEntity PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCodeP PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivity2PolicyActivityGuarantorGuarantorAssignedEntity PolicyActivity2CoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime PolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime PolicyActivity2PolicyActivityCoverageCoverageRole' templateId.root='2.16.840.1.113883.10.20.22.4.61.2' constraints.validation.warning='PolicyActivityGuarantor PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityTelecom PolicyActivity2CoveragePolicyActivityCoverageCoverageRoleCoveragePlayingEntity' constraints.validation.info='PolicyActivity2PayerPolicyActivityPayerPayerAssignedEntityTelecom' constraints.validation.query='PolicyActivity2PayerPolicyActivityPayerPayerAssignedEntityTelecom PolicyActivity2PolicyActivityPayerPayerAssignedEntity PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityTelecom PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCodeP PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivity2PolicyActivityGuarantorGuarantorAssignedEntity PolicyActivity2CoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime PolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime PolicyActivity2CoveragePolicyActivityCoverageCoverageRoleCoveragePlayingEntity PolicyActivity2PolicyActivityCoverageCoverageRole' constraints.validation.dependOn.PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCode='PolicyActivityGuarantorGuarantorAssignedEntityCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivity2Payer constraints.validation.error='PolicyActivityPayerPayerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivity2PayerPayerAssignedEntity constraints.validation.info='PolicyActivityPayerPayerAssignedEntityTelecom'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivity2Guarantor constraints.validation.error='PolicyActivityGuarantorGuarantorAssignedEntity'"
@@ -34,42 +34,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * @generated
  */
 public interface PolicyActivity2 extends PolicyActivity {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->select(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))->select(templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.87\'))->size() = 1'"
-	 * @generated
-	 */
-	boolean validatePolicyActivity2Payer(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->select(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))->select(templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.88\'))->size() = 1'"
-	 * @generated
-	 */
-	boolean validatePolicyActivity2Guarantor(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->select(typeCode=vocab::ParticipationType::COV)->size() = 1'"
-	 * @generated
-	 */
-	boolean validatePolicyActivity2Coverage(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -129,7 +93,7 @@ public interface PolicyActivity2 extends PolicyActivity {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->select(templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.88\')).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.code = \'GUAR\' and value.codeSystem = \'2.16.840.1.113883.5.110\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->select(templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.88\')).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nvalue.code = \'GUAR\' and value.codeSystem = \'2.16.840.1.113883.5.110\'))'"
 	 * @generated
 	 */
 	boolean validatePolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCode(

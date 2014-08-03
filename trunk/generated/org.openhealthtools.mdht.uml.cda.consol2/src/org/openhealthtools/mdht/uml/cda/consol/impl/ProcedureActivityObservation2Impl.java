@@ -72,9 +72,9 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityObservation2TargetSiteCodeP(DiagnosticChain diagnostics,
+	public boolean validateProcedureActivityObservationIndication2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2TargetSiteCodeP(
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationIndication2(
 			this, diagnostics, context);
 	}
 
@@ -83,9 +83,9 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityObservation2TargetSiteCode(DiagnosticChain diagnostics,
+	public boolean validateProcedureActivityObservationMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2TargetSiteCode(
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationMedicationActivity2(
 			this, diagnostics, context);
 	}
 
@@ -94,9 +94,9 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityObservation2Indication2(DiagnosticChain diagnostics,
+	public boolean validateProcedureActivityObservationInstruction2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2Indication2(
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationInstruction2(
 			this, diagnostics, context);
 	}
 
@@ -105,10 +105,8 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityObservation2MedicationActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2MedicationActivity2(
-			this, diagnostics, context);
+	public EList<Indication2> getConsolIndication2s() {
+		return ProcedureActivityObservation2Operations.getConsolIndication2s(this);
 	}
 
 	/**
@@ -116,10 +114,8 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityObservation2Instruction2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2Instruction2(
-			this, diagnostics, context);
+	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
+		return ProcedureActivityObservation2Operations.getConsolMedicationActivity2s(this);
 	}
 
 	/**
@@ -127,26 +123,8 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Indication2> getIndication2s() {
-		return ProcedureActivityObservation2Operations.getIndication2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<MedicationActivity2> getMedicationActivity2s() {
-		return ProcedureActivityObservation2Operations.getMedicationActivity2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Instruction2 getInstruction2() {
-		return ProcedureActivityObservation2Operations.getInstruction2(this);
+	public Instruction2 getConsolInstruction2() {
+		return ProcedureActivityObservation2Operations.getConsolInstruction2(this);
 	}
 
 	/**
@@ -158,6 +136,18 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	public boolean validateProcedureActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationTargetSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationTargetSiteCode(
 			this, diagnostics, context);
 	}
 
