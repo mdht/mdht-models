@@ -25,9 +25,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7352)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProblemSeverity.dita">Problem Severity</xref> 2.16.840.1.113883.3.88.12.3221.6.8</tt><b> DYNAMIC</b> (CONF:7356)
-</li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt>, where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/ObservationInterpretationHL7.dita">Observation Interpretation (HL7)</xref> 2.16.840.1.113883.1.11.78</tt><b> STATIC</b> 1 (CONF:9117, CONF:16038)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProblemSeverity.dita">Problem Severity</xref> 2.16.840.1.113883.3.88.12.3221.6.8</tt><b> DYNAMIC</b> (CONF:7356)
 </li>
 <li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15928)</li>
 <li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15929)</li>
@@ -44,31 +42,29 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7352)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProblemSeverity.dita">Problem Severity</xref> 2.16.840.1.113883.3.88.12.3221.6.8</tt><b> DYNAMIC</b> (CONF:7356)
-</li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt>, where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/ObservationInterpretationHL7.dita">Observation Interpretation (HL7)</xref> 2.16.840.1.113883.1.11.78</tt><b> STATIC</b> 1 (CONF:9117, CONF:16038)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProblemSeverity.dita">Problem Severity</xref> 2.16.840.1.113883.3.88.12.3221.6.8</tt><b> DYNAMIC</b> (CONF:7356)
 </li>
 <li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15928)</li>
 <li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15929)</li>
 <li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15930)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SeverityObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:7345</entry><entry> ALRT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SeverityObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.8]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:7345</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:7346</entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7349</entry><entry>HL7ActCode 2.16.840.1.113883.5.4 </entry></row> 
-<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>CE</entry><entry>CONF:9117CONF:16038</entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7349</entry><entry>HL7ActCode 2.16.840.1.113883.5.4 SEV</entry></row> 
 <row><entry>Severity Coded ( value )</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7356</entry><entry> </entry></row> 
 <row><entry>Severity Free Text ( text )</entry><entry>text</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ED</entry><entry>CONF:7350</entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7352</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
-<row><entry>Severity ( severityObservation )</entry><entry>severityObservation</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>SeverityObservation</entry><entry>CONF:7580CONF:7581CONF:15922</entry><entry> </entry></row> 
-<row><entry>severity</entry><entry>severity</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>SeverityObservation</entry><entry>CONF:9961CONF:9962CONF:15956</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7352</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>severityObservation</entry><entry>severityObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>SeverityObservation</entry><entry>CONF:9961CONF:9962CONF:15956</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<observation xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="933053767"/>
-  <code code="1574740253"/>
+<codeblock id="example"><![CDATA[<observation xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+  <id root="MDHT" extension="561884564"/>
+  <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
   <text>Text Value</text>
+  <statusCode code="completed"/>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
 </observation>]]></codeblock>
 <section id="changes">

@@ -47,7 +47,7 @@ Medication timing is complex. This template requires that there be a substanceAd
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="SBADM" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7496)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MoodCodeEvnInt.html">MoodCodeEvnInt</a> 2.16.840.1.113883.11.20.9.18</tt><strong class="ph b"> STATIC</strong> 2011-04-03 (CONF:7497)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MoodCodeEvnInt.html">MoodCodeEvnInt</a> 2.16.840.1.113883.11.20.9.18</tt><strong class="ph b"> STATIC</strong> 2011-04-03 (CONF:7497)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7500)
@@ -59,10 +59,10 @@ Medication timing is complex. This template requires that there be a substanceAd
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF:7507)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">routeCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationRouteFDAValueSet.html">Medication Route FDA Value Set</a> 2.16.840.1.113883.3.88.12.3221.8.7</tt><strong class="ph b"> STATIC</strong> 1 (CONF:7514)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">routeCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationRouteFDAValueSet.html">Medication Route FDA Value Set</a> 2.16.840.1.113883.3.88.12.3221.8.7</tt><strong class="ph b"> STATIC</strong> 1 (CONF:7514)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">approachSiteCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BodySiteValueSet.html">Body Site Value Set</a> 2.16.840.1.113883.3.88.12.3221.8.9</tt><strong class="ph b"> STATIC</strong> 2 (CONF:7515)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">approachSiteCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BodySiteValueSet.html">Body Site Value Set</a> 2.16.840.1.113883.3.88.12.3221.8.9</tt><strong class="ph b"> STATIC</strong> 2 (CONF:7515)
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">doseQuantity</strong></tt> (CONF:7516)
@@ -83,7 +83,7 @@ Medication timing is complex. This template requires that there be a substanceAd
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">maxDoseQuantity</strong></tt> (CONF:7518)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">administrationUnitCode</strong></tt>, where the @code <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/MedicationProductFormValueSet.html">Medication Product Form Value Set</a> 2.16.840.1.113883.3.88.12.3221.8.11</tt><strong class="ph b"> STATIC</strong> 1 (CONF:7519)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">administrationUnitCode</strong></tt>, which <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/MedicationProductFormValueSet.html">Medication Product Form Value Set</a> 2.16.840.1.113883.3.88.12.3221.8.11</tt><strong class="ph b"> STATIC</strong> 1 (CONF:7519)
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:7522)
@@ -163,7 +163,7 @@ Medication timing is complex. This template requires that there be a substanceAd
 
 </li>
 
-<li class="li">Medication Activity <strong class="ph b">SHOULD</strong> include doseQuantity OR rateQuantity</li>
+<li class="li">Medication Activity <strong class="ph b">SHOULD</strong> include doseQuantity OR rateQuantity (CONF:7529)</li>
 
 <li class="li">text, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference (CONF:15977)</li>
 
@@ -171,15 +171,17 @@ Medication timing is complex. This template requires that there be a substanceAd
 
 <li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15979)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] effectiveTime such that it <strong class="ph b">SHALL</strong> contain exactly one [1..1] @xsi:type = "IVL_TS" (CONF:7508, CONF:9104)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] effectiveTime such that it <strong class="ph b">SHALL</strong> contain exactly one [1..1] @xsi:type="IVL_TS" or contain exactly one [1..1] @xsi:type="TS" (CONF:7508)</li>
 
-<li class="li">effectiveTime with @xsi:type="IVL_TS" <strong class="ph b">SHALL</strong> contain exactly one [1..1] low</li>
+<li class="li">If effectiveTime @xsi:type="IVL_TS", <strong class="ph b">SHALL</strong> contain exactly one [1..1] low (CONF:7511)</li>
 
-<li class="li">effectiveTime with @xsi:type="IVL_TS" <strong class="ph b">SHALL</strong> contain exactly one [1..1] high</li>
+<li class="li">If effectiveTime @xsi:type="IVL_TS", <strong class="ph b">SHALL</strong> contain exactly one [1..1] high (CONF:7512)</li>
+
+<li class="li">If effectiveTime @xsi:type="TS", <strong class="ph b">SHALL</strong> contain exactly one [1..1] @value (CONF:NEW)</li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] effectiveTime such that it <strong class="ph b">SHALL</strong> contain exactly one [1..1] @xsi:type = "PIVL_TS" or "EIVL_TS" (CONF:7513, CONF:9105)</li>
 
-<li class="li">effectiveTime with @xsi:type = "PIVL_TS" or "EIVL_TS" <strong class="ph b">SHALL</strong> contain exactly one [1..1] @operator="A" (CONF:9106)</li>
+<li class="li">effectiveTime with @xsi:type = "PIVL_TS" or "EIVL_TS" <strong class="ph b">SHALL</strong> contain exactly one [1..1] @operator="A" (CONF:7513, CONF:9106)</li>
 
 <li class="li">doseQuantity, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @unit, which <strong class="ph b">SHALL</strong> be selected from ValueSet UCUM Units of Measure (case sensitive) 2.16.840.1.113883.1.11.12839 DYNAMIC (CONF:7526)</li>
 
@@ -188,6 +190,8 @@ Medication timing is complex. This template requires that there be a substanceAd
 <li class="li">entryRelationship with target entry Instructions <strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" True (CONF:7542)</li>
 
 <li class="li">Precondition for Substance Administration <strong class="ph b">SHALL</strong> contain exactly one [1..1] @typeCode="PRCN" (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002) (CONF:7550)</li>
+
+<li class="li">rateQuantity, if present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] @unit, which <strong class="ph b">SHALL</strong> be selected from ValueSet UnitsOfMeasureCaseSensitive 2.16.840.1.113883.1.11.12839 DYNAMIC (CONF:7525)</li>
 
 </ol>
 
@@ -199,21 +203,22 @@ Medication timing is complex. This template requires that there be a substanceAd
 			<strong class="ph b"><span class="ph">Medication Activity</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;substanceadministration xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1197734584"/&gt;
-  &lt;code code="767741391"/&gt;
+		<pre class="pre codeblock">&lt;substanceadministration xmlns="urn:hl7-org:v3" classCode="SBADM"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
+  &lt;id root="MDHT" extension="888180969"/&gt;
+  &lt;code code="1051275254"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime value="20130627"/&gt;
+  &lt;effectiveTime value="20140803"/&gt;
   &lt;repeatNumber value="1"/&gt;
-  &lt;routeCode code="870642998"/&gt;
-  &lt;approachSiteCode code="2141252607"/&gt;
+  &lt;routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+  &lt;approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
   &lt;doseQuantity/&gt;
   &lt;rateQuantity/&gt;
   &lt;maxDoseQuantity/&gt;
   &lt;consumable&gt;
     &lt;manufacturedProduct&gt;
-      &lt;id root="MDHT" extension="1075021350"/&gt;
+      &lt;id root="MDHT" extension="743730199"/&gt;
       &lt;manufacturedMaterial&gt;
         &lt;code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/&gt;
       &lt;/manufacturedMaterial&gt;
@@ -222,106 +227,141 @@ Medication timing is complex. This template requires that there be a substanceAd
   &lt;/consumable&gt;
   &lt;performer/&gt;
   &lt;entryRelationship&gt;
-    &lt;supply&gt;
-      &lt;id root="MDHT" extension="986791119"/&gt;
-      &lt;code code="1330027243"/&gt;
+    &lt;supply classCode="SPLY" moodCode="INT"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
+      &lt;id root="MDHT" extension="2093423686"/&gt;
+      &lt;code code="1276240497"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime value="20130627"/&gt;
+      &lt;effectiveTime value="20140803"/&gt;
       &lt;repeatNumber value="1"/&gt;
       &lt;author/&gt;
       &lt;entryRelationship&gt;
-        &lt;act&gt;
-          &lt;id root="MDHT" extension="836891308"/&gt;
-          &lt;code code="801529695"/&gt;
+        &lt;act classCode="ACT" moodCode="INT"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
+          &lt;id root="MDHT" extension="2044742628"/&gt;
+          &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/act&gt;
       &lt;/entryRelationship&gt;
     &lt;/supply&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1153896159"/&gt;
-      &lt;code code="1888065095"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.9"/&gt;
+      &lt;id root="MDHT" extension="44494639"/&gt;
+      &lt;code code="813928198"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
       &lt;repeatNumber value="1"/&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="764342790"/&gt;
-          &lt;code code="1389155745"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.8"/&gt;
+          &lt;id root="MDHT" extension="1226033785"/&gt;
+          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
           &lt;repeatNumber value="1"/&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;procedure&gt;
-          &lt;id root="MDHT" extension="2021477495"/&gt;
-          &lt;code code="1774611513"/&gt;
+        &lt;procedure classCode="PROC"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.14"/&gt;
+          &lt;id root="MDHT" extension="1748209558"/&gt;
+          &lt;code code="1725064155"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
-          &lt;approachSiteCode code="758227294"/&gt;
+          &lt;priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/&gt;
+          &lt;approachSiteCode code="1864647178"/&gt;
+          &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
           &lt;specimen/&gt;
           &lt;performer/&gt;
           &lt;entryRelationship typeCode="COMP" inversionInd="true"/&gt;
           &lt;entryRelationship&gt;
-            &lt;observation/&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
+              &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;substanceAdministration/&gt;
+            &lt;substanceAdministration classCode="SBADM"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
+              &lt;routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+              &lt;approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+            &lt;/substanceAdministration&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;act/&gt;
+            &lt;act classCode="ACT" moodCode="INT"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
+              &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/act&gt;
           &lt;/entryRelationship&gt;
         &lt;/procedure&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;substanceAdministration&gt;
-          &lt;id root="MDHT" extension="1621034455"/&gt;
-          &lt;code code="1776010886"/&gt;
+        &lt;substanceAdministration classCode="SBADM"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
+          &lt;id root="MDHT" extension="660527990"/&gt;
+          &lt;code code="1560250402"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;statusCode code="completed"/&gt;
-          &lt;effectiveTime value="20130627"/&gt;
+          &lt;effectiveTime value="20140803"/&gt;
           &lt;repeatNumber value="1"/&gt;
-          &lt;routeCode code="1249043323"/&gt;
-          &lt;approachSiteCode code="634232641"/&gt;
+          &lt;routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+          &lt;approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
           &lt;doseQuantity/&gt;
           &lt;rateQuantity/&gt;
           &lt;maxDoseQuantity/&gt;
           &lt;consumable/&gt;
           &lt;performer/&gt;
           &lt;entryRelationship&gt;
-            &lt;supply/&gt;
+            &lt;supply classCode="SPLY" moodCode="INT"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
+            &lt;/supply&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;observation/&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.9"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;act/&gt;
+            &lt;act classCode="ACT" moodCode="INT"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
+              &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/act&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;observation/&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
+              &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;supply/&gt;
+            &lt;supply classCode="SPLY" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.18"/&gt;
+            &lt;/supply&gt;
           &lt;/entryRelationship&gt;
           &lt;precondition/&gt;
         &lt;/substanceAdministration&gt;
@@ -329,52 +369,60 @@ Medication timing is complex. This template requires that there be a substanceAd
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;act&gt;
-      &lt;id root="MDHT" extension="743140864"/&gt;
-      &lt;code code="356322747"/&gt;
+    &lt;act classCode="ACT" moodCode="INT"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
+      &lt;id root="MDHT" extension="1536529245"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/act&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="2132327396"/&gt;
-      &lt;code code="308941225"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
+      &lt;id root="MDHT" extension="2013757757"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
       &lt;repeatNumber value="1"/&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;supply&gt;
-      &lt;id root="MDHT" extension="1041418140"/&gt;
-      &lt;code code="2072647019"/&gt;
+    &lt;supply classCode="SPLY" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.18"/&gt;
+      &lt;id root="MDHT" extension="948730533"/&gt;
+      &lt;code code="1875496340"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime value="20130627"/&gt;
+      &lt;effectiveTime value="20140803"/&gt;
       &lt;repeatNumber value="1"/&gt;
       &lt;performer&gt;
         &lt;assignedEntity/&gt;
       &lt;/performer&gt;
       &lt;entryRelationship&gt;
-        &lt;supply&gt;
-          &lt;id root="MDHT" extension="1193700439"/&gt;
-          &lt;code code="1643207886"/&gt;
+        &lt;supply classCode="SPLY" moodCode="INT"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
+          &lt;id root="MDHT" extension="629948301"/&gt;
+          &lt;code code="1369399753"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;statusCode code="completed"/&gt;
-          &lt;effectiveTime value="20130627"/&gt;
+          &lt;effectiveTime value="20140803"/&gt;
           &lt;repeatNumber value="1"/&gt;
           &lt;author/&gt;
           &lt;entryRelationship&gt;
-            &lt;act/&gt;
+            &lt;act classCode="ACT" moodCode="INT"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
+              &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/act&gt;
           &lt;/entryRelationship&gt;
         &lt;/supply&gt;
       &lt;/entryRelationship&gt;

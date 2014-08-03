@@ -46,7 +46,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="SPLY" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8745)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MoodCodeEvnInt.html">MoodCodeEvnInt</a> 2.16.840.1.113883.11.20.9.18</tt><strong class="ph b"> STATIC</strong> 2011-04-03 (CONF:8746)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MoodCodeEvnInt.html">MoodCodeEvnInt</a> 2.16.840.1.113883.11.20.9.18</tt><strong class="ph b"> STATIC</strong> 2011-04-03 (CONF:8746)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:8748)
@@ -58,10 +58,10 @@
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:15498)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">quantity</strong></tt> (CONF:8751)
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">quantity</strong></tt> (CONF:8751)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8752, CONF:15900)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8752, CONF:15900)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ProductInstance.html">Product Instance</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.37</tt>)</li>
 </ol>
@@ -81,10 +81,11 @@
 			<strong class="ph b"><span class="ph">Non Medicinal Supply Activity</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;supply xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="34542304"/&gt;
+		<pre class="pre codeblock">&lt;supply xmlns="urn:hl7-org:v3" classCode="SPLY"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.50"/&gt;
+  &lt;id root="MDHT" extension="820573838"/&gt;
   &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime value="20130627"/&gt;
+  &lt;effectiveTime value="20140803"/&gt;
   &lt;quantity/&gt;
 &lt;/supply&gt;</pre>
 

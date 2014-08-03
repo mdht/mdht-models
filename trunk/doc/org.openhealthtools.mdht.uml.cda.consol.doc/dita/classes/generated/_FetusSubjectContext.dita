@@ -15,21 +15,23 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:9189, CONF:10535 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.6.2.3"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="121026" </tt> (CodeSystem:<tt> 1.2.840.10008.2.16.4 DCM</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="121026" </tt> (CodeSystem:<tt> 1.2.840.10008.2.16.4 DCM</tt>) (CONF:9190)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:9191) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:9192)</li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="121026" </tt> (CodeSystem:<tt> 1.2.840.10008.2.16.4 DCM</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="121026" </tt> (CodeSystem:<tt> 1.2.840.10008.2.16.4 DCM</tt>) (CONF:9190)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:9191) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:9192)</li></ol>
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::FetusSubjectContext</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::relatedsubject[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>DCM 1.2.840.10008.2.16.4 </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::FetusSubjectContext</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::relatedsubject[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.3]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:9190</entry><entry>DCM 1.2.840.10008.2.16.4 121026</entry></row> 
 <row><entry>subject</entry><entry>subject</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SubjectPerson</entry><entry>CONF:9191</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<relatedsubject xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.6.2.3"/>
+  <code code="121026" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
   <subject>
     <name/>
   </subject>

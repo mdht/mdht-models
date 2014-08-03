@@ -52,7 +52,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:8654)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AdvanceDirectiveTypeCode.html">Advance Directive Type Code</a> 2.16.840.1.113883.1.11.20.2</tt><strong class="ph b"> STATIC</strong> 1 (CONF:8651)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AdvanceDirectiveTypeCode.html">Advance Directive Type Code</a> 2.16.840.1.113883.1.11.20.2</tt><strong class="ph b"> STATIC</strong> 1 (CONF:8651)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:8652)
@@ -61,8 +61,8 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:8656)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8662) <ol class="ol" type="a"><li class="li"> Such participants <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="VRF" </tt> (CONF:8663)</li>
-<li class="li"> Such participants <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">time</strong></tt> (CONF:8665)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8662) <ol class="ol" type="a"><li class="li"> Such participants <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">time</strong></tt> (CONF:8665)</li>
+<li class="li"> Such participants <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="VRF" </tt> (CONF:8663)</li>
 <li class="li"> Such participants <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt>, where its type is CDA Participant Role (CONF:8666)<ol class="ol" type="i">
 <li class="li">Contains exactly one [1..1] CDA Participant Role</li>
 </ol>
@@ -71,10 +71,10 @@
 
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8667) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="CST" </tt> (CONF:8668)</li>
-<li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:8669) <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="AGNT" </tt> (CONF:8670)</li>
-<li class="li"> This participantRole <strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:8671)</li>
-<li class="li"> This participantRole <strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:8672)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8667) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="CST" </tt> (CONF:8668)</li>
+<li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:8669) <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:8671)</li>
+<li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="AGNT" </tt> (CONF:8670)</li>
+<li class="li"> This participantRole <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:8672)</li>
 <li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">playingEntity</strong></tt> (ii., CONF:8824) <ol class="ol"><li class="li"> This playingEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:8673)</li>
 <li class="li"> This playingEntity The name of the agent who can provide a copy of the Advance Directive <strong class="ph b">SHALL</strong> be recorded in the &lt;name&gt; element inside the &lt;playingEntity&gt; element (CONF:8674)</li>
 </ol>
@@ -85,7 +85,7 @@
 
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">reference</strong></tt> (CONF:8692) <ol class="ol" type="a"><li class="li"> Such references <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="REFR" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1002 HL7ActRelationshipType</tt>) (CONF:8694)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">reference</strong></tt> (CONF:8692) <ol class="ol" type="a"><li class="li"> Such references <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="REFR" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1002 HL7ActRelationshipType</tt>) (CONF:8694)</li>
 <li class="li"> Such references <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">externalDocument</strong></tt> (CONF:8693) <ol class="ol" type="i"><li class="li"> This externalDocument <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:8695)</li>
 <li class="li"> This externalDocument <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:8696)</li>
 <li class="li"> This externalDocument The text, if present, <strong class="ph b">MAY</strong> contain zero or one [0..1] @mediaType (CONF:8703)</li>
@@ -115,17 +115,19 @@ ii. If the Advance Directive does not have a specified ending time, the &lt;high
 			<strong class="ph b"><span class="ph">Advance Directive Observation</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="524870265"/&gt;
-  &lt;code code="1084520164"/&gt;
+		<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.48"/&gt;
+  &lt;id root="MDHT" extension="174826836"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+  &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;participant typeCode="VRF"&gt;
     &lt;time&gt;
-      &lt;low value="2013"/&gt;
-      &lt;high value="2013"/&gt;
+      &lt;low value="2014"/&gt;
+      &lt;high value="2014"/&gt;
     &lt;/time&gt;
     &lt;participantRole/&gt;
   &lt;/participant&gt;
@@ -138,7 +140,7 @@ ii. If the Advance Directive does not have a specified ending time, the &lt;high
   &lt;/participant&gt;
   &lt;reference typeCode="REFR"&gt;
     &lt;externalDocument&gt;
-      &lt;id root="MDHT" extension="107508009"/&gt;
+      &lt;id root="MDHT" extension="49951880"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
     &lt;/externalDocument&gt;
   &lt;/reference&gt;

@@ -58,9 +58,9 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">subject</strong></tt> (CONF:8609) <ol class="ol" type="a"><li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">relatedSubject</strong></tt> (CONF:15244) <ol class="ol" type="i"><li class="li"> This relatedSubject <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PRS" </tt> (CONF:15245)</li>
-<li class="li"> This relatedSubject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:15246), where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/FamilyHistoryRelatedSubjectCode.html">FamilyHistoryRelatedSubjectCode</a> 2.16.840.1.113883.1.11.19579</tt><strong class="ph b"> STATIC</strong> 1 (CONF:15247)</li>
-<li class="li"> This relatedSubject <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">subject</strong></tt> (CONF:15248) <ol class="ol"><li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt> (CONF:15974), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AdministrativeGenderHL7V3.html">Administrative Gender (HL7 V3)</a> 2.16.840.1.113883.1.11.1</tt><strong class="ph b"> DYNAMIC</strong> (CONF:15975)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">subject</strong></tt> (CONF:8609) <ol class="ol" type="a"><li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">relatedSubject</strong></tt> (CONF:15244) <ol class="ol" type="i"><li class="li"> This relatedSubject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PRS" </tt> (CONF:15245)</li>
+<li class="li"> This relatedSubject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:15246), which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/FamilyHistoryRelatedSubjectCode.html">FamilyHistoryRelatedSubjectCode</a> 2.16.840.1.113883.1.11.19579</tt><strong class="ph b"> DYNAMIC</strong> (CONF:15247)</li>
+<li class="li"> This relatedSubject <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">subject</strong></tt> (CONF:15248) <ol class="ol"><li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt> (CONF:15974), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AdministrativeGenderHL7V3.html">Administrative Gender (HL7 V3)</a> 2.16.840.1.113883.1.11.1</tt><strong class="ph b"> DYNAMIC</strong> (CONF:15975)</li>
 <li class="li"> This subject <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">birthTime</strong></tt> (CONF:15976)</li>
 <li class="li"> This subject <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">sDTCDeceasedInd</strong></tt> (CONF:15981)<div class="p"><p class="lines"><em class="ph i">The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element.</em></p>
 </div>
@@ -92,12 +92,13 @@ extension to CDA R2 for the use of the id element.</em></p>
 			<strong class="ph b"><span class="ph">Family History Organizer</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;organizer xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1049900427"/&gt;
+		<pre class="pre codeblock">&lt;organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.45"/&gt;
+  &lt;id root="MDHT" extension="1581537261"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;subject&gt;
     &lt;relatedSubject classCode="PRS"&gt;
@@ -108,30 +109,36 @@ extension to CDA R2 for the use of the id element.</em></p>
     &lt;/relatedSubject&gt;
   &lt;/subject&gt;
   &lt;component&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1773218960"/&gt;
-      &lt;code code="903327131"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.46"/&gt;
+      &lt;id root="MDHT" extension="641791722"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="1601786227"/&gt;
-          &lt;code code="337463159"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.31"/&gt;
+          &lt;id root="MDHT" extension="592940954"/&gt;
+          &lt;code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/&gt;
+          &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="2098572163"/&gt;
-          &lt;code code="1419698961"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.47"/&gt;
+          &lt;id root="MDHT" extension="407050694"/&gt;
+          &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/&gt;
+          &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;

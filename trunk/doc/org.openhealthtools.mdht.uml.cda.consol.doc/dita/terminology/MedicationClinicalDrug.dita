@@ -15,7 +15,7 @@
 <row><entry>Value Set</entry><entry>Medication Clinical Drug - 2.16.840.1.113883.3.88.12.80.17</entry></row>
 <row><entry>Code System</entry><entry>RxNorm - 2.16.840.1.113883.6.88</entry></row>
 <row><entry>Description</entry><entry>Clinical drug names
-http://phinvads.cdc.gov/vads/ViewValueSet.action?id=239BEF3E-971C-DF11-B334-0015173D1785
+https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.113883.3.88.12.80.17
 </entry></row>
 </tbody></tgroup></table>
 </section>

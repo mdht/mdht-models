@@ -52,7 +52,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7483)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProblemType.html">Problem Type</a> 2.16.840.1.113883.3.88.12.3221.7.2</tt><strong class="ph b"> STATIC</strong> 2008-12-18 (CONF:16886)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProblemType.html">Problem Type</a> 2.16.840.1.113883.3.88.12.3221.7.2</tt><strong class="ph b"> STATIC</strong> 2008-12-18 (CONF:16886)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7487)
@@ -61,7 +61,7 @@
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:7488)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:7489), where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Problem.html">Problem</a> 2.16.840.1.113883.3.88.12.3221.7.4</tt><strong class="ph b"> DYNAMIC</strong> (CONF:CONF:15985)
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:7489), which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Problem.html">Problem</a> 2.16.840.1.113883.3.88.12.3221.7.4</tt><strong class="ph b"> DYNAMIC</strong> (CONF:15985)
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> satisfy: Set the observation/id equal to an ID on the problem list to signify that problem as an indication (CONF:16885)</li>
@@ -80,14 +80,16 @@
 			<strong class="ph b"><span class="ph">Indication</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1010247872"/&gt;
-  &lt;code code="1756382149"/&gt;
+		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
+  &lt;id root="MDHT" extension="351879319"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+  &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CD" code="953859576"/&gt;
+  &lt;value xsi:type="CD" code="432900011"/&gt;
 &lt;/observation&gt;</pre>
 
 	</div>

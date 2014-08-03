@@ -15,6 +15,7 @@
 <row><entry>Value Set</entry><entry>ProviderType - 2.16.840.1.113883.3.88.12.3221.4</entry></row>
 <row><entry>Code System</entry><entry>NUCC Health Care Provider Taxonomy - 2.16.840.1.113883.6.101</entry></row>
 <row><entry>Description</entry><entry>The Provider type vocabulary classifies providers according to the type of license or accreditation they hold or the service they provide.
+http://www.nucc.org/index.php?option=com_content&view=article&id=14&Itemid=125
 </entry></row>
 </tbody></tgroup></table>
 </section>

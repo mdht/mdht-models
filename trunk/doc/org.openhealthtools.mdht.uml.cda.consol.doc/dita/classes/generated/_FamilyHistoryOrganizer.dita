@@ -24,7 +24,7 @@
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:8607, CONF:16888)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FamilyHistoryObservation.dita">Family History Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.46</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>subject</b></tt> (CONF:8609) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:15244) <ol><li> This relatedSubject <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:15245)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15246), where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/FamilyHistoryRelatedSubjectCode.dita">FamilyHistoryRelatedSubjectCode</xref> 2.16.840.1.113883.1.11.19579</tt><b> STATIC</b> 1 (CONF:15247)</li><li> This relatedSubject <b>SHOULD</b> contain zero or one [0..1] <tt><b>subject</b></tt> (CONF:15248) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:15974), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdministrativeGenderHL7V3.dita">Administrative Gender (HL7 V3)</xref> 2.16.840.1.113883.1.11.1</tt><b> DYNAMIC</b> (CONF:15975)</li><li> This subject <b>SHOULD</b> contain zero or one [0..1] <tt><b>birthTime</b></tt> (CONF:15976)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDeceasedInd</b></tt> (CONF:15981)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element.</i></lines></p></li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDeceasedTime</b></tt> (CONF:15982)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedTime element.</i></lines></p></li><li> This subject <b>SHOULD</b> contain zero or more [0..*] <tt><b>sDTCId</b></tt> (CONF:15249)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:8609) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:15244) <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:15245)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15246), which <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/FamilyHistoryRelatedSubjectCode.dita">FamilyHistoryRelatedSubjectCode</xref> 2.16.840.1.113883.1.11.19579</tt><b> DYNAMIC</b> (CONF:15247)</li><li> This relatedSubject <b>SHOULD</b> contain zero or one [0..1] <tt><b>subject</b></tt> (CONF:15248) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:15974), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdministrativeGenderHL7V3.dita">Administrative Gender (HL7 V3)</xref> 2.16.840.1.113883.1.11.1</tt><b> DYNAMIC</b> (CONF:15975)</li><li> This subject <b>SHOULD</b> contain zero or one [0..1] <tt><b>birthTime</b></tt> (CONF:15976)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDeceasedInd</b></tt> (CONF:15981)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element.</i></lines></p></li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDeceasedTime</b></tt> (CONF:15982)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedTime element.</i></lines></p></li><li> This subject <b>SHOULD</b> contain zero or more [0..*] <tt><b>sDTCId</b></tt> (CONF:15249)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary
 extension to CDA R2 for the use of the id element.</i></lines></p></li><li> This subject age of a relative at the time of a family history observation <b>SHOULD</b> be inferred by comparing RelatedSubject/subject/birthTime with Observation/effectiveTime (CONF:15983)</li><li> This subject age of a relative at the time of death <b>MAY</b> be inferred by comparing RelatedSubject/subject/birthTime with RelatedSubject/subject/sdwg:deceasedTime (CONF:8632)</li></ol> </li></ol> </li></ol>
 </li>
 </ol>
@@ -38,22 +38,23 @@ extension to CDA R2 for the use of the id element.</i></lines></p></li><li> This
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:8607, CONF:16888)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FamilyHistoryObservation.dita">Family History Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.46</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>subject</b></tt> (CONF:8609) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:15244) <ol><li> This relatedSubject <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:15245)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15246), where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/FamilyHistoryRelatedSubjectCode.dita">FamilyHistoryRelatedSubjectCode</xref> 2.16.840.1.113883.1.11.19579</tt><b> STATIC</b> 1 (CONF:15247)</li><li> This relatedSubject <b>SHOULD</b> contain zero or one [0..1] <tt><b>subject</b></tt> (CONF:15248) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:15974), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdministrativeGenderHL7V3.dita">Administrative Gender (HL7 V3)</xref> 2.16.840.1.113883.1.11.1</tt><b> DYNAMIC</b> (CONF:15975)</li><li> This subject <b>SHOULD</b> contain zero or one [0..1] <tt><b>birthTime</b></tt> (CONF:15976)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDeceasedInd</b></tt> (CONF:15981)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element.</i></lines></p></li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDeceasedTime</b></tt> (CONF:15982)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedTime element.</i></lines></p></li><li> This subject <b>SHOULD</b> contain zero or more [0..*] <tt><b>sDTCId</b></tt> (CONF:15249)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:8609) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:15244) <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:15245)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15246), which <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/FamilyHistoryRelatedSubjectCode.dita">FamilyHistoryRelatedSubjectCode</xref> 2.16.840.1.113883.1.11.19579</tt><b> DYNAMIC</b> (CONF:15247)</li><li> This relatedSubject <b>SHOULD</b> contain zero or one [0..1] <tt><b>subject</b></tt> (CONF:15248) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:15974), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdministrativeGenderHL7V3.dita">Administrative Gender (HL7 V3)</xref> 2.16.840.1.113883.1.11.1</tt><b> DYNAMIC</b> (CONF:15975)</li><li> This subject <b>SHOULD</b> contain zero or one [0..1] <tt><b>birthTime</b></tt> (CONF:15976)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDeceasedInd</b></tt> (CONF:15981)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element.</i></lines></p></li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>sDTCDeceasedTime</b></tt> (CONF:15982)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedTime element.</i></lines></p></li><li> This subject <b>SHOULD</b> contain zero or more [0..*] <tt><b>sDTCId</b></tt> (CONF:15249)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary
 extension to CDA R2 for the use of the id element.</i></lines></p></li><li> This subject age of a relative at the time of a family history observation <b>SHOULD</b> be inferred by comparing RelatedSubject/subject/birthTime with Observation/effectiveTime (CONF:15983)</li><li> This subject age of a relative at the time of death <b>MAY</b> be inferred by comparing RelatedSubject/subject/birthTime with RelatedSubject/subject/sdwg:deceasedTime (CONF:8632)</li></ol> </li></ol> </li></ol>
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::FamilyHistoryOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryOrganizer</entry><entry>CONF:8600</entry><entry> BATTERY</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::FamilyHistoryOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.45]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryOrganizer</entry><entry>CONF:8600</entry><entry> BATTERY</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:8601</entry><entry> APT</entry></row> 
 <row><entry>familyHistory</entry><entry>familyHistory</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>FamilyHistoryOrganizer</entry><entry>CONF:7955</entry><entry> </entry></row> 
 <row><entry>familyHistoryObservation</entry><entry>familyHistoryObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>FamilyHistoryObservation</entry><entry>CONF:8607CONF:16888</entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Subject</entry><entry>CONF:8609</entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Subject</entry><entry>CONF:8609</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<organizer xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1049900427"/>
+<codeblock id="example"><![CDATA[<organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.45"/>
+  <id root="MDHT" extension="1581537261"/>
   <statusCode code="completed"/>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
   <subject>
     <relatedSubject classCode="PRS">
@@ -64,30 +65,36 @@ extension to CDA R2 for the use of the id element.</i></lines></p></li><li> This
     </relatedSubject>
   </subject>
   <component>
-    <observation>
-      <id root="MDHT" extension="1773218960"/>
-      <code code="903327131"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.46"/>
+      <id root="MDHT" extension="641791722"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="1601786227"/>
-          <code code="337463159"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+          <id root="MDHT" extension="592940954"/>
+          <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
         </observation>
       </entryRelationship>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="2098572163"/>
-          <code code="1419698961"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.47"/>
+          <id root="MDHT" extension="407050694"/>
+          <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
+          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
         </observation>
       </entryRelationship>

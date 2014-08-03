@@ -98,20 +98,24 @@ The vital signs organizer is a cluster of vital signs observations.<br/>
 			<strong class="ph b"><span class="ph">Vital Signs Organizer</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;organizer xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="218126602"/&gt;
+		<pre class="pre codeblock">&lt;organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.26"/&gt;
+  &lt;id root="MDHT" extension="666480230"/&gt;
+  &lt;code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;component&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1552702374"/&gt;
-      &lt;code code="1975706383"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.27"/&gt;
+      &lt;id root="MDHT" extension="452383660"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
       &lt;author/&gt;
     &lt;/observation&gt;

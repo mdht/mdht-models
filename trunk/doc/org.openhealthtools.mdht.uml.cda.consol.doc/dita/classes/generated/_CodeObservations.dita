@@ -56,7 +56,7 @@
 <li>Contains exactly one [1..1] <xref href="../QuantityMeasurementObservation.dita">Quantity Measurement Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.14</tt>)</li></ol></li>
 <li>Code Observations <b>SHALL</b> be rendered into section/text in separate paragraphs (CONF:9310)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::CodeObservations</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9304</entry><entry> ALRT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::CodeObservations</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.13]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9304</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:9305</entry><entry> DEF</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9307</entry><entry> </entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:9309</entry><entry> </entry></row> 
@@ -64,69 +64,83 @@
 <row><entry>quantityMeasurementObservation</entry><entry>quantityMeasurementObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>QuantityMeasurementObservation</entry><entry>CONF:9314CONF:9315CONF:9316</entry><entry> </entry></row> 
 <row><entry>sOPInstanceObservation</entry><entry>sOPInstanceObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>SOPInstanceObservation</entry><entry>CONF:9311CONF:9312CONF:9313</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="2068692296"/>
-  <code code="149562038"/>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.6.2.13"/>
+  <id root="MDHT" extension="783719090"/>
+  <code code="1317607922"/>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
   <entryRelationship>
-    <observation>
-      <id root="MDHT" extension="989471034"/>
-      <code code="1508612050"/>
+    <observation classCode="DGIMG" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
+      <id root="MDHT" extension="546530182"/>
+      <code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="1193451416"/>
-          <code code="1196425350"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
+          <id root="MDHT" extension="321580642"/>
+          <code code="1277030943"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
-          <value xsi:type="CD" code="1508045446"/>
+          <value xsi:type="CD" code="748568716"/>
         </observation>
       </entryRelationship>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="1671499976"/>
-          <code code="887856362"/>
+        <observation classCode="ROIBND" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
+          <id root="MDHT" extension="415489473"/>
+          <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
           <entryRelationship>
-            <observation/>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
+              <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
+            </observation>
           </entryRelationship>
         </observation>
       </entryRelationship>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation>
-      <id root="MDHT" extension="1694722231"/>
-      <code code="1693736507"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.6.2.14"/>
+      <id root="MDHT" extension="561163745"/>
+      <code code="487960250"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
       <value xsi:type="PQ"/>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="239024097"/>
-          <code code="1401988621"/>
+        <observation classCode="DGIMG" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
+          <id root="MDHT" extension="54042013"/>
+          <code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
           <entryRelationship>
-            <observation/>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
+            </observation>
           </entryRelationship>
           <entryRelationship>
-            <observation/>
+            <observation classCode="ROIBND" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
+              <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
+            </observation>
           </entryRelationship>
         </observation>
       </entryRelationship>

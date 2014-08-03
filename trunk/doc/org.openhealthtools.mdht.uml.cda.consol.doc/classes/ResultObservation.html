@@ -71,7 +71,7 @@ The result observation includes a statusCode to allow recording the status of an
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF:7134), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/ResultStatus.html">Result Status</a> 2.16.840.1.113883.11.20.9.39</tt><strong class="ph b"> STATIC</strong> 2012-04-27 (CONF:14849)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF:7134), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/ResultStatus.html">Result Status</a> 2.16.840.1.113883.11.20.9.39</tt><strong class="ph b"> STATIC</strong> 2012-04-27 (CONF:14849)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:7140, CONF:7141)
@@ -90,7 +90,7 @@ The result observation includes a statusCode to allow recording the status of an
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:7148)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">targetSiteCode</strong></tt> with data type CE (CONF:7153)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">targetSiteCode</strong></tt> with @xsi:type="CE" (CONF:7153)
 </li>
 
 <li class="li">The value for 'code' in a result observation <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)
@@ -110,18 +110,19 @@ Laboratory results <strong class="ph b">SHOULD</strong> be from LOINC (CodeSyste
 			<strong class="ph b"><span class="ph">Result Observation</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1651600191"/&gt;
-  &lt;code code="2032256340"/&gt;
+		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
+  &lt;id root="MDHT" extension="783880020"/&gt;
+  &lt;code code="296025256"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;interpretationCode code="590713028"/&gt;
-  &lt;methodCode code="485303255"/&gt;
-  &lt;targetSiteCode xsi:type="CE" code="587140140"/&gt;
+  &lt;interpretationCode code="1022609502"/&gt;
+  &lt;methodCode code="1311600075"/&gt;
+  &lt;targetSiteCode xsi:type="CE" code="966572378"/&gt;
 &lt;/observation&gt;</pre>
 
 	</div>

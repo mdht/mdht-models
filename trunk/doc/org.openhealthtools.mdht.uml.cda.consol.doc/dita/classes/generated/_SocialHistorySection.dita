@@ -21,16 +21,16 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7939)
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7953, CONF:7954)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7953, CONF:7954)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SocialHistoryObservation.dita">Social History Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.38</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:9132, CONF:9133)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:9132, CONF:9133)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PregnancyObservation.dita">Pregnancy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.8</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14823, CONF:14824)
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14823, CONF:14824)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SmokingStatusObservation.dita">Smoking Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.78</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:16816, CONF:16817)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:16816, CONF:16817)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../TobaccoUse.dita">Tobacco Use</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.85</tt>)</li></ol></li>
 </ol>
@@ -41,82 +41,94 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7939)
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7953, CONF:7954)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7953, CONF:7954)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SocialHistoryObservation.dita">Social History Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.38</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:9132, CONF:9133)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:9132, CONF:9133)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PregnancyObservation.dita">Pregnancy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.8</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14823, CONF:14824)
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14823, CONF:14824)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SmokingStatusObservation.dita">Smoking Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.78</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SocialHistorySection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:14820</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SocialHistorySection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.17]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:14820</entry><entry>LOINC 2.16.840.1.113883.6.1 29762-2</entry></row> 
 <row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7938</entry><entry> </entry></row> 
-<row><entry>pregnancyObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PregnancyObservation</entry><entry>CONF:9132CONF:9133</entry><entry> </entry></row> 
-<row><entry>smokingStatusObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>SmokingStatusObservation</entry><entry>CONF:14823CONF:14824</entry><entry> </entry></row> 
-<row><entry>socialHistoryObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>SocialHistoryObservation</entry><entry>CONF:7953CONF:7954</entry><entry> </entry></row> 
+<row><entry>pregnancyObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.15.3.8]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PregnancyObservation</entry><entry>CONF:9132CONF:9133</entry><entry> </entry></row> 
+<row><entry>smokingStatusObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.85]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>SmokingStatusObservation</entry><entry>CONF:14823CONF:14824</entry><entry> </entry></row> 
+<row><entry>socialHistoryObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.38]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>SocialHistoryObservation</entry><entry>CONF:7953CONF:7954</entry><entry> </entry></row> 
 <row><entry>socialHistorySection</entry><entry>socialHistorySection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>SocialHistorySection</entry><entry>CONF:9582</entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7939</entry><entry> </entry></row> 
-<row><entry>tobaccoUse</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>TobaccoUse</entry><entry>CONF:16816CONF:16817</entry><entry> </entry></row> 
+<row><entry>tobaccoUse</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.85]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>TobaccoUse</entry><entry>CONF:16816CONF:16817</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="2015686708"/>
-  <code code="1881662062"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+  <id root="MDHT" extension="1990064775"/>
+  <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
-    <observation>
-      <id root="MDHT" extension="619668638"/>
-      <code code="1209679513"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+      <id root="MDHT" extension="60759699"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <text>Text Value</text>
+      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
     </observation>
   </entry>
   <entry>
-    <observation>
-      <id root="MDHT" extension="1817658529"/>
-      <code code="1863050211"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.15.3.8"/>
+      <id root="MDHT" extension="860803350"/>
+      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
       <text>Text Value</text>
+      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
       <entryRelationship>
-        <observation>
-          <id root="MDHT" extension="486745485"/>
-          <code code="486888104"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.15.3.1"/>
+          <id root="MDHT" extension="1774057954"/>
+          <code code="11778-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <text>Text Value</text>
+          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
         </observation>
       </entryRelationship>
     </observation>
   </entry>
   <entry>
-    <observation>
-      <id root="MDHT" extension="1357877016"/>
-      <code code="1426538431"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+      <templateId root="2.16.840.1.113883.10.20.22.4.85"/>
+      <id root="MDHT" extension="1642223552"/>
+      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
       <text>Text Value</text>
+      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
     </observation>
   </entry>
   <entry>
-    <observation>
-      <id root="MDHT" extension="1960964231"/>
-      <code code="1488287786"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.85"/>
+      <id root="MDHT" extension="687468479"/>
+      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
       <text>Text Value</text>
+      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
     </observation>
   </entry>

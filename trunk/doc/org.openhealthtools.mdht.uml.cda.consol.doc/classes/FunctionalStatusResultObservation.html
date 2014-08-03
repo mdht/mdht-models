@@ -54,7 +54,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:13907)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:13908), where the @code <strong class="ph b">SHOULD</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:13908), which <strong class="ph b">SHOULD</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:13926)
@@ -133,78 +133,84 @@
 			<strong class="ph b"><span class="ph">Functional Status Result Observation</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="209561481"/&gt;
-  &lt;code code="455239781"/&gt;
+		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.67"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
+  &lt;id root="MDHT" extension="899997120"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;interpretationCode code="1024473455"/&gt;
-  &lt;methodCode code="9988762"/&gt;
-  &lt;targetSiteCode xsi:type="CE" code="1760974137"/&gt;
+  &lt;interpretationCode code="2048368345"/&gt;
+  &lt;methodCode code="1525620604"/&gt;
+  &lt;targetSiteCode xsi:type="CE" code="1943682185"/&gt;
   &lt;author/&gt;
   &lt;entryRelationship&gt;
-    &lt;supply&gt;
-      &lt;id root="MDHT" extension="1838515884"/&gt;
-      &lt;code code="957580877"/&gt;
+    &lt;supply classCode="SPLY"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.50"/&gt;
+      &lt;id root="MDHT" extension="1130296083"/&gt;
+      &lt;code code="1877359677"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime value="20130627"/&gt;
+      &lt;effectiveTime value="20140803"/&gt;
     &lt;/supply&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1173080155"/&gt;
-      &lt;code code="1515442758"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.72"/&gt;
+      &lt;id root="MDHT" extension="1259219544"/&gt;
+      &lt;code code="387622208"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
-      &lt;value xsi:type="CD" code="769524852"/&gt;
-      &lt;interpretationCode code="2013259994"/&gt;
-      &lt;methodCode code="1785276183"/&gt;
-      &lt;targetSiteCode code="228080161"/&gt;
-      &lt;participant&gt;
+      &lt;value xsi:type="CD" code="822866452"/&gt;
+      &lt;interpretationCode code="533605116"/&gt;
+      &lt;methodCode code="1492665871"/&gt;
+      &lt;targetSiteCode code="2017380150"/&gt;
+      &lt;participant typeCode="IND"&gt;
         &lt;time&gt;
-          &lt;low value="2013"/&gt;
-          &lt;high value="2013"/&gt;
+          &lt;low value="2014"/&gt;
+          &lt;high value="2014"/&gt;
         &lt;/time&gt;
-        &lt;participantRole/&gt;
+        &lt;participantRole classCode="CAREGIVER"/&gt;
       &lt;/participant&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="867929790"/&gt;
-      &lt;code code="787275912"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.69"/&gt;
+      &lt;id root="MDHT" extension="1402886234"/&gt;
+      &lt;code code="1972167245"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
-      &lt;interpretationCode code="547548872"/&gt;
-      &lt;methodCode code="2004145192"/&gt;
-      &lt;targetSiteCode code="980917265"/&gt;
+      &lt;interpretationCode code="69083032"/&gt;
+      &lt;methodCode code="1891323974"/&gt;
+      &lt;targetSiteCode code="1154152190"/&gt;
       &lt;author/&gt;
       &lt;entryRelationship&gt;
-        &lt;observation&gt;
-          &lt;id root="MDHT" extension="992161001"/&gt;
-          &lt;code code="877588208"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.86"/&gt;
+          &lt;id root="MDHT" extension="2126841561"/&gt;
+          &lt;code code="1789500061"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
+            &lt;low value="2014"/&gt;
+            &lt;high value="2014"/&gt;
           &lt;/effectiveTime&gt;
-          &lt;interpretationCode code="1316339303"/&gt;
-          &lt;methodCode code="1634908763"/&gt;
-          &lt;targetSiteCode code="1350429191"/&gt;
+          &lt;interpretationCode code="1836447265"/&gt;
+          &lt;methodCode code="1278305382"/&gt;
+          &lt;targetSiteCode code="577344728"/&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;referenceRange&gt;

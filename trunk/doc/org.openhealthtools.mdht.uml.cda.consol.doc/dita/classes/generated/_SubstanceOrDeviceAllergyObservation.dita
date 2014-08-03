@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Substance Or Device Allergy Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.24.3.90</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.24.3.90"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This clinical statement represents that an allergy or adverse reaction to a substance or device exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a participant in the observation.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:16305, CONF:16306 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.24.3.90"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:16303)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:16304)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:16307)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:16345)<tt><b>/@code</b>="ASSERTION" </tt><i>Assertion</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:16346)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:16308)<tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:26354)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:16309)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:16312), which <b>SHALL</b> be selected from ValueSet<tt> Allergy/Adverse Event Type 2.16.840.1.113883.3.88.12.3221.6.2</tt><b> DYNAMIC</b> (CONF:16317)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:16333, CONF:16335, CONF:16336)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../AllergyStatusObservation.dita">Allergy Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.28</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:16337, CONF:16339, CONF:16340)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:16341, CONF:16342, CONF:16344)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../SeverityObservation.dita">Severity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.8</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:16318) <ol><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="CSM" </tt> (CONF:16319)</li><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:16320) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:16321)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:16322) <ol><li> This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MMAT" </tt> (CONF:16323)</li><li> This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> with @xsi:type="<xref href="../CE.dita">CE</xref>" (CONF:16324)</li><li> This playingEntity code/originalText/reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 (CONF:16329)</li><li> This playingEntity In an allergy to a specific medication the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC (CONF:16325)</li><li> This playingEntity In an allergy to a class of medications the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC (CONF:16331)</li><li> This playingEntity In an allergy to a food or other substance the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC (CONF:16332)</li><li> This playingEntity reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:16328)</li><li> This playingEntity originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:16327)</li></ol> </li></ol> </li></ol>
+</li>
+<li>entryRelationship with target entry Allergy Status Observation <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:16334)</li>
+<li>entryRelationship with target entry Reaction Observation <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:16338)</li>
+<li>entryRelationship with target entry Severity Observation <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:16343)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:16303)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:16304)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:16307)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:16345)<tt><b>/@code</b>="ASSERTION" </tt><i>Assertion</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:16346)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:16308)<tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:26354)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:16309)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:16312), which <b>SHALL</b> be selected from ValueSet<tt> Allergy/Adverse Event Type 2.16.840.1.113883.3.88.12.3221.6.2</tt><b> DYNAMIC</b> (CONF:16317)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:16333, CONF:16335, CONF:16336)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../AllergyStatusObservation.dita">Allergy Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.28</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:16337, CONF:16339, CONF:16340)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:16341, CONF:16342, CONF:16344)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../SeverityObservation.dita">Severity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.8</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:16318) <ol><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="CSM" </tt> (CONF:16319)</li><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:16320) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:16321)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:16322) <ol><li> This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MMAT" </tt> (CONF:16323)</li><li> This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> with @xsi:type="<xref href="../CE.dita">CE</xref>" (CONF:16324)</li><li> This playingEntity code/originalText/reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 (CONF:16329)</li><li> This playingEntity In an allergy to a specific medication the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC (CONF:16325)</li><li> This playingEntity In an allergy to a class of medications the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC (CONF:16331)</li><li> This playingEntity In an allergy to a food or other substance the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC (CONF:16332)</li><li> This playingEntity reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:16328)</li><li> This playingEntity originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:16327)</li></ol> </li></ol> </li></ol>
+</li>
+<li>entryRelationship with target entry Allergy Status Observation <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:16334)</li>
+<li>entryRelationship with target entry Reaction Observation <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:16338)</li>
+<li>entryRelationship with target entry Severity Observation <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:16343)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SubstanceOrDeviceAllergyObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.24.3.90]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:16303</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:16304</entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:16345</entry><entry>HL7ActCode 2.16.840.1.113883.5.4 ASSERTION</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:16309</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:16307</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:16308</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:16312</entry><entry> </entry></row> 
+<row><entry>allergyStatusObservation</entry><entry>allergyStatusObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AllergyStatusObservation</entry><entry>CONF:16333CONF:16335CONF:16336</entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>Participant</entry><entry>CONF:16318</entry><entry> </entry></row> 
+<row><entry>reactionObservation</entry><entry>reactionObservation</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ReactionObservation</entry><entry>CONF:16337CONF:16339CONF:16340</entry><entry> </entry></row> 
+<row><entry>severityObservation</entry><entry>severityObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>SeverityObservation</entry><entry>CONF:16341CONF:16342CONF:16344</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.24.3.90"/>
+  <id root="MDHT" extension="211411719"/>
+  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2014"/>
+    <high value="2014"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="1327778267"/>
+  <participant typeCode="CSM">
+    <participantRole classCode="MANU">
+      <playingEntity classCode="MMAT"/>
+    </participantRole>
+  </participant>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+      <id root="MDHT" extension="659659426"/>
+      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <value xsi:type="CE" code="1022355746"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+      <id root="MDHT" extension="994533638"/>
+      <code code="1361434179"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="417585940"/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+          <id root="MDHT" extension="1663584269"/>
+          <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+          <value xsi:type="CD" code="61336070"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <procedure classCode="PROC">
+          <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+          <id root="MDHT" extension="1954485091"/>
+          <code code="752488088"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+          <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
+          <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <specimen/>
+          <performer/>
+          <entryRelationship typeCode="COMP" inversionInd="true"/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+            </substanceAdministration>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </act>
+          </entryRelationship>
+        </procedure>
+      </entryRelationship>
+      <entryRelationship>
+        <substanceAdministration classCode="SBADM">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+          <id root="MDHT" extension="1188585047"/>
+          <code code="1995029280"/>
+          <statusCode code="completed"/>
+          <effectiveTime value="20140803"/>
+          <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <consumable/>
+          <performer/>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+            </supply>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+            </supply>
+          </entryRelationship>
+          <precondition/>
+        </substanceAdministration>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+      <id root="MDHT" extension="1339010732"/>
+      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="2120544393"/>
+    </observation>
+  </entryRelationship>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Substance Or Device Allergy Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.24.3.90</tt>]</p>
+</body>
+</topic>

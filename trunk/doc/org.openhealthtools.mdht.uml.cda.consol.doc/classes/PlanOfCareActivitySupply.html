@@ -43,7 +43,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="SPLY" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8577)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PlanOfCareMoodCodeSubstanceAdministrationSupply.html">Plan of Care moodCode (SubstanceAdministration/Supply)</a> 2.16.840.1.113883.11.20.9.24</tt><strong class="ph b"> STATIC</strong> (CONF:8578)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PlanOfCareMoodCodeSubstanceAdministrationSupply.html">Plan of Care moodCode (SubstanceAdministration/Supply)</a> 2.16.840.1.113883.11.20.9.24</tt><strong class="ph b"> STATIC</strong> (CONF:8578)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:8580)
@@ -59,9 +59,10 @@
 			<strong class="ph b"><span class="ph">Plan Of Care Activity Supply</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;supply xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="797337539"/&gt;
-  &lt;effectiveTime value="20130627"/&gt;
+		<pre class="pre codeblock">&lt;supply xmlns="urn:hl7-org:v3" classCode="SPLY"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.43"/&gt;
+  &lt;id root="MDHT" extension="1218804186"/&gt;
+  &lt;effectiveTime value="20140803"/&gt;
 &lt;/supply&gt;</pre>
 
 	</div>

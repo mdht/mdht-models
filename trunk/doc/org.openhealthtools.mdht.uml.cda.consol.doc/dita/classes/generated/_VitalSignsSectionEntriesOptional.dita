@@ -22,7 +22,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7270)
 </li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7271, CONF:7272)
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7271, CONF:7272)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.26</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:9966)
@@ -35,38 +35,42 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7270)
 </li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7271, CONF:7272)
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7271, CONF:7272)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.26</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::VitalSignsSectionEntriesOptional</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15243</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::VitalSignsSectionEntriesOptional</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.4]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15243</entry><entry>LOINC 2.16.840.1.113883.6.1 8716-3</entry></row> 
 <row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:9966</entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7270</entry><entry> </entry></row> 
-<row><entry>vitalSignsOrganizer</entry><entry>cda:entry/cda:organizer</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>VitalSignsOrganizer</entry><entry>CONF:7271CONF:7272</entry><entry> </entry></row> 
+<row><entry>vitalSignsOrganizer</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.26]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>VitalSignsOrganizer</entry><entry>CONF:7271CONF:7272</entry><entry> </entry></row> 
 <row><entry>vitalSignsSectionEntriesOptional</entry><entry>vitalSignsSectionEntriesOptional</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>VitalSignsSectionEntriesOptional</entry><entry>CONF:9584</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="415899869"/>
-  <code code="672417673"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.4"/>
+  <id root="MDHT" extension="575177960"/>
+  <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
-    <organizer>
-      <id root="MDHT" extension="2137397264"/>
-      <code code="1414217500"/>
+    <organizer classCode="CLUSTER" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+      <id root="MDHT" extension="448781462"/>
+      <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
       <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
+        <low value="2014"/>
+        <high value="2014"/>
       </effectiveTime>
       <component>
-        <observation>
-          <id root="MDHT" extension="1521013081"/>
-          <code code="50666902"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+          <id root="MDHT" extension="208034663"/>
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <text>Text Value</text>
+          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2013"/>
-            <high value="2013"/>
+            <low value="2014"/>
+            <high value="2014"/>
           </effectiveTime>
           <author/>
         </observation>

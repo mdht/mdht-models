@@ -63,7 +63,7 @@ If any Results Observation within the organizer has a statusCode of 'active', th
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7127)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF:7123), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/ResultStatus.html">Result Status</a> 2.16.840.1.113883.11.20.9.39</tt><strong class="ph b"> STATIC</strong> 2012-04-27 (CONF:14848)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF:7123), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/ResultStatus.html">Result Status</a> 2.16.840.1.113883.11.20.9.39</tt><strong class="ph b"> STATIC</strong> 2012-04-27 (CONF:14848)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:7124, CONF:14850)
@@ -89,22 +89,24 @@ If any Results Observation within the organizer has a statusCode of 'active', th
 			<strong class="ph b"><span class="ph">Result Organizer</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;organizer xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1442102250"/&gt;
-  &lt;code code="1414240227"/&gt;
+		<pre class="pre codeblock">&lt;organizer xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.1"/&gt;
+  &lt;id root="MDHT" extension="138223748"/&gt;
+  &lt;code code="45774418"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;component&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1789835346"/&gt;
-      &lt;code code="1299939095"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
+      &lt;id root="MDHT" extension="608663293"/&gt;
+      &lt;code code="1056367464"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/component&gt;

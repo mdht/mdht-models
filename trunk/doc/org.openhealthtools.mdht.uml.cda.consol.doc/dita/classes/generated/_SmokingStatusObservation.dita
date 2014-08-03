@@ -28,7 +28,7 @@ The smoking status value set includes a special code to communicate if the smoki
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:14809)<tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:14810), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/SmokingStatus.dita">Smoking Status</xref> 2.16.840.1.113883.11.20.9.38</tt><b> STATIC</b> 2012-07-01 (CONF:14817)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:14810), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/SmokingStatus.dita">Smoking Status</xref> 2.16.840.1.113883.11.20.9.38</tt><b> STATIC</b> 2012-07-01 (CONF:14817)
 </li>
 <li>effectiveTime <b>SHALL</b> contain exactly one [1..1] low (CONF:14818)</li>
 </ol>
@@ -44,28 +44,30 @@ The smoking status value set includes a special code to communicate if the smoki
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:14814)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:14810), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/SmokingStatus.dita">Smoking Status</xref> 2.16.840.1.113883.11.20.9.38</tt><b> STATIC</b> 2012-07-01 (CONF:14817)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:14810), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/SmokingStatus.dita">Smoking Status</xref> 2.16.840.1.113883.11.20.9.38</tt><b> STATIC</b> 2012-07-01 (CONF:14817)
 </li>
 <li>effectiveTime <b>SHALL</b> contain exactly one [1..1] low (CONF:16565)</li>
 <li>effectiveTime <b>SHALL</b> contain exactly one [1..1] low (CONF:14818)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SmokingStatusObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:14806</entry><entry> ALRT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SmokingStatusObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.85]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:14806</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:14807</entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:14808</entry><entry>HL7ActCode 2.16.840.1.113883.5.4HL7ActCode 2.16.840.1.113883.5.4 </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:14808</entry><entry>HL7ActCode 2.16.840.1.113883.5.4HL7ActCode 2.16.840.1.113883.5.4 ASSERTION</entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:14814</entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:14809</entry><entry>ActStatus 2.16.840.1.113883.5.14ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:14809</entry><entry>ActStatus 2.16.840.1.113883.5.14ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
 <row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:14810</entry><entry> </entry></row> 
 <row><entry>smokingStatusObservation</entry><entry>smokingStatusObservation</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>SmokingStatusObservation</entry><entry>CONF:14823CONF:14824</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="557694856"/>
-  <code code="832565659"/>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.85"/>
+  <id root="MDHT" extension="1061063230"/>
+  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
   <statusCode code="completed"/>
   <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
+    <low value="2014"/>
+    <high value="2014"/>
   </effectiveTime>
-  <value xsi:type="CD" code="1133386341"/>
+  <value xsi:type="CD" code="1092085871"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

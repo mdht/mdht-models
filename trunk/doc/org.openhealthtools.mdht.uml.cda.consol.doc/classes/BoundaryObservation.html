@@ -52,7 +52,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="113036" </tt><em class="ph i">Frames for Display</em> (CodeSystem:<tt class="ph tt"> 1.2.840.10008.2.16.4 DCM</tt>) (CONF:9284)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT (CONF:9285)
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="INT" (CONF:9285)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Each numbers represents a frame for display</em></p>
 </div>
 </li>
@@ -69,12 +69,13 @@
 			<strong class="ph b"><span class="ph">Boundary Observation</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
-  &lt;id root="MDHT" extension="1446987956"/&gt;
-  &lt;code code="1583055671"/&gt;
+		<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.6.2.11"/&gt;
+  &lt;id root="MDHT" extension="898774595"/&gt;
+  &lt;code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
   &lt;/effectiveTime&gt;
   &lt;value xsi:type="INT" value="1"/&gt;
 &lt;/observation&gt;</pre>
