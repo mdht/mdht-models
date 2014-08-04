@@ -20,27 +20,20 @@
 	</repositories>
 	
 	<modules>
-		<module>org.openhealthtools.mdht.uml.cda.emspcr</module>
-		<module>org.openhealthtools.mdht.uml.cda.ihe.qrph</module>
-		<module>org.openhealthtools.mdht.uml.cda.toc</module>
+	 
 		<module>org.openhealthtools.mdht.uml.cda.ccd</module>
-		<!--  <module>org.openhealthtools.mdht.uml.cda.example</module> -->
+	 
 		<module>org.openhealthtools.mdht.uml.cda.mu2consol</module>
-		<!-- <module>org.openhealthtools.mdht.uml.cda.toc.domain</module> -->
+	 
 		<module>org.openhealthtools.mdht.uml.cda.cdt</module>
 		<module>org.openhealthtools.mdht.uml.cda.hitsp</module>
-		<module>org.openhealthtools.mdht.uml.cda.phmr</module>
-		<!-- <module>org.openhealthtools.mdht.uml.cda.vsbr</module> -->
+		 
 		<module>org.openhealthtools.mdht.uml.cda.consol</module>
-		<module>org.openhealthtools.mdht.uml.cda.hitsp.facade</module>
-		<module>org.openhealthtools.mdht.uml.cda.pilot</module>
-		<!-- <module>org.openhealthtools.mdht.uml.cda.vsdr</module>-->
-		<module>org.openhealthtools.mdht.uml.cda.consol.green</module>
+	 
+	 
+	 
 		<module>org.openhealthtools.mdht.uml.cda.ihe</module>
-		<module>org.openhealthtools.mdht.uml.cda.qrda</module>
-		<module>org.openhealthtools.mdht.uml.cda.consol2</module>
-		<module>org.openhealthtools.mdht.uml.cda.ihe.eye</module>
-		<!-- <module>org.openhealthtools.mdht.uml.cda.sdtm</module> -->
+	 
 	</modules>
 	<build>
 		<plugins>
