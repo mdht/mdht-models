@@ -29,10 +29,18 @@
 		<module>org.openhealthtools.mdht.uml.cda.hitsp</module>
 		 
 		<module>org.openhealthtools.mdht.uml.cda.consol</module>
+
+
+
+	<module>org.openhealthtools.mdht.uml.cda.ihe</module>
+	<module>org.openhealthtools.mdht.cda.doc.user</module>
+	<module>org.openhealthtools.mdht.uml.cda.cdt.doc</module>
+	<module>org.openhealthtools.mdht.uml.cda.ccd.doc</module>
+	<module>org.openhealthtools.mdht.uml.cda.hitsp.doc</module>
+	<module>org.openhealthtools.mdht.uml.cda.ihe.doc</module>
+	<module>org.openhealthtools.mdht.uml.cda.consol.doc</module>
+	<module>org.openhealthtools.mdht.uml.cda.mu2consol.doc</module>
 	 
-	 
-	 
-		<module>org.openhealthtools.mdht.uml.cda.ihe</module>
 	 
 	</modules>
 	<build>
