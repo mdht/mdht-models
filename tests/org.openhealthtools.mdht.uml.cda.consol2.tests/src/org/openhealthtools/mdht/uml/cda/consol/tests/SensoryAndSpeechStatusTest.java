@@ -556,6 +556,7 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<SensoryAndSpeechStatus> {
+		@Override
 		public SensoryAndSpeechStatus create() {
 			return ConsolFactory.eINSTANCE.createSensoryAndSpeechStatus();
 		}

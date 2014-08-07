@@ -1930,6 +1930,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<OperativeNote> {
+		@Override
 		public OperativeNote create() {
 			return ConsolFactory.eINSTANCE.createOperativeNote();
 		}

@@ -635,6 +635,7 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<FamilyHistoryObservation> {
+		@Override
 		public FamilyHistoryObservation create() {
 			return ConsolFactory.eINSTANCE.createFamilyHistoryObservation();
 		}

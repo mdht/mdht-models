@@ -1549,6 +1549,7 @@ public class ImmunizationActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ImmunizationActivity> {
+		@Override
 		public ImmunizationActivity create() {
 			return ConsolFactory.eINSTANCE.createImmunizationActivity();
 		}

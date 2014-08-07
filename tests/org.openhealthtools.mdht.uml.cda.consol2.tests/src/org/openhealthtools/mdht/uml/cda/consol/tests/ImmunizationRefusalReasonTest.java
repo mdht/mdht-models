@@ -279,6 +279,7 @@ public class ImmunizationRefusalReasonTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ImmunizationRefusalReason> {
+		@Override
 		public ImmunizationRefusalReason create() {
 			return ConsolFactory.eINSTANCE.createImmunizationRefusalReason();
 		}

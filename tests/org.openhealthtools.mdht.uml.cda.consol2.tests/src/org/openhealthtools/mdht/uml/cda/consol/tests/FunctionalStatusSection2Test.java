@@ -500,6 +500,7 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<FunctionalStatusSection2> {
+		@Override
 		public FunctionalStatusSection2 create() {
 			return ConsolFactory.eINSTANCE.createFunctionalStatusSection2();
 		}

@@ -292,6 +292,7 @@ public class HealthStatusEvaluationsOutcomesSectionTest extends CDAValidationTes
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<HealthStatusEvaluationsOutcomesSection> {
+		@Override
 		public HealthStatusEvaluationsOutcomesSection create() {
 			return ConsolFactory.eINSTANCE.createHealthStatusEvaluationsOutcomesSection();
 		}

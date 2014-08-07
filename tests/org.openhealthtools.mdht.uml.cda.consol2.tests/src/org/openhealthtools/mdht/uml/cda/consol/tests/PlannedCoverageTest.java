@@ -730,6 +730,7 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PlannedCoverage> {
+		@Override
 		public PlannedCoverage create() {
 			return ConsolFactory.eINSTANCE.createPlannedCoverage();
 		}

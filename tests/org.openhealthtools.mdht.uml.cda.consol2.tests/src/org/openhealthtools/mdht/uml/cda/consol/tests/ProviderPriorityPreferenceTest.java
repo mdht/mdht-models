@@ -470,6 +470,7 @@ public class ProviderPriorityPreferenceTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProviderPriorityPreference> {
+		@Override
 		public ProviderPriorityPreference create() {
 			return ConsolFactory.eINSTANCE.createProviderPriorityPreference();
 		}

@@ -473,6 +473,7 @@ public class PatientPriorityPreferenceTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PatientPriorityPreference> {
+		@Override
 		public PatientPriorityPreference create() {
 			return ConsolFactory.eINSTANCE.createPatientPriorityPreference();
 		}

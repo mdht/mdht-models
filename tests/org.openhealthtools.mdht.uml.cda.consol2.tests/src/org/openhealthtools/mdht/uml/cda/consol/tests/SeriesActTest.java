@@ -607,6 +607,7 @@ public class SeriesActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<SeriesAct> {
+		@Override
 		public SeriesAct create() {
 			return ConsolFactory.eINSTANCE.createSeriesAct();
 		}

@@ -363,6 +363,7 @@ public class CurrentSmokingStatus2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CurrentSmokingStatus2> {
+		@Override
 		public CurrentSmokingStatus2 create() {
 			return ConsolFactory.eINSTANCE.createCurrentSmokingStatus2();
 		}

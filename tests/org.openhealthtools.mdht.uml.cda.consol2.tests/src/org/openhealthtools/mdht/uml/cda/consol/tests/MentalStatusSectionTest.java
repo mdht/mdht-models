@@ -433,6 +433,7 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<MentalStatusSection> {
+		@Override
 		public MentalStatusSection create() {
 			return ConsolFactory.eINSTANCE.createMentalStatusSection();
 		}

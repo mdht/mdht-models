@@ -603,6 +603,7 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CognitiveAbilitiesObservation> {
+		@Override
 		public CognitiveAbilitiesObservation create() {
 			return ConsolFactory.eINSTANCE.createCognitiveAbilitiesObservation();
 		}

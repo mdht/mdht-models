@@ -1294,6 +1294,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ReferralNote> {
+		@Override
 		public ReferralNote create() {
 			return ConsolFactory.eINSTANCE.createReferralNote();
 		}

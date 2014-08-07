@@ -300,6 +300,7 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<VitalSignsOrganizer2> {
+		@Override
 		public VitalSignsOrganizer2 create() {
 			return ConsolFactory.eINSTANCE.createVitalSignsOrganizer2();
 		}

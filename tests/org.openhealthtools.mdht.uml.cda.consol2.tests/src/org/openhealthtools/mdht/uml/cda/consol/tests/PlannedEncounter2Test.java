@@ -591,6 +591,7 @@ public class PlannedEncounter2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PlannedEncounter2> {
+		@Override
 		public PlannedEncounter2 create() {
 			return ConsolFactory.eINSTANCE.createPlannedEncounter2();
 		}

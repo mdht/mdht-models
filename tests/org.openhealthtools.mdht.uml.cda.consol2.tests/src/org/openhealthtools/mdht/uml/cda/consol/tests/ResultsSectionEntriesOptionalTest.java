@@ -299,6 +299,7 @@ public class ResultsSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ResultsSectionEntriesOptional> {
+		@Override
 		public ResultsSectionEntriesOptional create() {
 			return ConsolFactory.eINSTANCE.createResultsSectionEntriesOptional();
 		}

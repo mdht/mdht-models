@@ -2402,6 +2402,7 @@ public class DischargeSummaryTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<DischargeSummary> {
+		@Override
 		public DischargeSummary create() {
 			return ConsolFactory.eINSTANCE.createDischargeSummary();
 		}

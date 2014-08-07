@@ -709,6 +709,7 @@ public class VitalSignObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<VitalSignObservation> {
+		@Override
 		public VitalSignObservation create() {
 			return ConsolFactory.eINSTANCE.createVitalSignObservation();
 		}

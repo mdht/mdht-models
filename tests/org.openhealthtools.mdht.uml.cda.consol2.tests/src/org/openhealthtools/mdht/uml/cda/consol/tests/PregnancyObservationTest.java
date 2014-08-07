@@ -455,6 +455,7 @@ public class PregnancyObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PregnancyObservation> {
+		@Override
 		public PregnancyObservation create() {
 			return ConsolFactory.eINSTANCE.createPregnancyObservation();
 		}

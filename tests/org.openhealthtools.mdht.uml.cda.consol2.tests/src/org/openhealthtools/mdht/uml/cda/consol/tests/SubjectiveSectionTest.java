@@ -244,6 +244,7 @@ public class SubjectiveSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<SubjectiveSection> {
+		@Override
 		public SubjectiveSection create() {
 			return ConsolFactory.eINSTANCE.createSubjectiveSection();
 		}

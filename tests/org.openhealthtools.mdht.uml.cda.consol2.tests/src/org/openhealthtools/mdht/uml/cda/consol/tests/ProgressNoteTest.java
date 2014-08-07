@@ -2131,6 +2131,7 @@ public class ProgressNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProgressNote> {
+		@Override
 		public ProgressNote create() {
 			return ConsolFactory.eINSTANCE.createProgressNote();
 		}

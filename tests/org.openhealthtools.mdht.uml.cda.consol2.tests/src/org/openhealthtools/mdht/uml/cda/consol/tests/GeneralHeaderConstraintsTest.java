@@ -13675,6 +13675,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 	* @generated 
 	*/
 	private static class ObjectFactory implements TestObjectFactory<GeneralHeaderConstraints> {
+		@Override
 		public GeneralHeaderConstraints create() {
 			return ConsolFactory.eINSTANCE.createGeneralHeaderConstraints();
 		}

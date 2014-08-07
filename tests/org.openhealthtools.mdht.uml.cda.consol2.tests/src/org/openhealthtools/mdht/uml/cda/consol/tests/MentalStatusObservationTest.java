@@ -561,6 +561,7 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<MentalStatusObservation> {
+		@Override
 		public MentalStatusObservation create() {
 			return ConsolFactory.eINSTANCE.createMentalStatusObservation();
 		}

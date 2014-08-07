@@ -220,6 +220,7 @@ public class PreoperativeDiagnosisSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PreoperativeDiagnosisSection2> {
+		@Override
 		public PreoperativeDiagnosisSection2 create() {
 			return ConsolFactory.eINSTANCE.createPreoperativeDiagnosisSection2();
 		}

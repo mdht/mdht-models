@@ -563,6 +563,7 @@ public class StudyActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<StudyAct> {
+		@Override
 		public StudyAct create() {
 			return ConsolFactory.eINSTANCE.createStudyAct();
 		}

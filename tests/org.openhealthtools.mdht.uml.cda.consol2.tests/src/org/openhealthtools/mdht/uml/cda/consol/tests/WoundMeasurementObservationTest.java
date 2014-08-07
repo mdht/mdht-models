@@ -438,6 +438,7 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<WoundMeasurementObservation> {
+		@Override
 		public WoundMeasurementObservation create() {
 			return ConsolFactory.eINSTANCE.createWoundMeasurementObservation();
 		}

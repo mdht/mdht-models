@@ -585,6 +585,7 @@ public class AuthorParticipationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AuthorParticipation> {
+		@Override
 		public AuthorParticipation create() {
 			return ConsolFactory.eINSTANCE.createAuthorParticipation();
 		}

@@ -716,6 +716,7 @@ public class FamilyHistoryOrganizerTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<FamilyHistoryOrganizer> {
+		@Override
 		public FamilyHistoryOrganizer create() {
 			return ConsolFactory.eINSTANCE.createFamilyHistoryOrganizer();
 		}

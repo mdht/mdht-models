@@ -231,6 +231,7 @@ public class DeceasedObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<DeceasedObservation2> {
+		@Override
 		public DeceasedObservation2 create() {
 			return ConsolFactory.eINSTANCE.createDeceasedObservation2();
 		}

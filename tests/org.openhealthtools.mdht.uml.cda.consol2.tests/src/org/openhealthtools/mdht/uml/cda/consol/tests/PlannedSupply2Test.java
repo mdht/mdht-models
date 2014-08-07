@@ -686,6 +686,7 @@ public class PlannedSupply2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PlannedSupply2> {
+		@Override
 		public PlannedSupply2 create() {
 			return ConsolFactory.eINSTANCE.createPlannedSupply2();
 		}

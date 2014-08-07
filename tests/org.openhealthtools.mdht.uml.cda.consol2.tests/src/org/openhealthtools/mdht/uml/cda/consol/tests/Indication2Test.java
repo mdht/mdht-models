@@ -423,6 +423,7 @@ public class Indication2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<Indication2> {
+		@Override
 		public Indication2 create() {
 			return ConsolFactory.eINSTANCE.createIndication2();
 		}

@@ -504,6 +504,7 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ImmunizationMedicationInformation> {
+		@Override
 		public ImmunizationMedicationInformation create() {
 			return ConsolFactory.eINSTANCE.createImmunizationMedicationInformation();
 		}

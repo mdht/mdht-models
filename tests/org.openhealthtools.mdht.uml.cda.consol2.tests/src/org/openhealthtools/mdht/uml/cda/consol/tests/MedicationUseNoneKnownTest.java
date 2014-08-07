@@ -631,6 +631,7 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<MedicationUseNoneKnown> {
+		@Override
 		public MedicationUseNoneKnown create() {
 			return ConsolFactory.eINSTANCE.createMedicationUseNoneKnown();
 		}

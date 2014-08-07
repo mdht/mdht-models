@@ -2411,6 +2411,7 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<HistoryAndPhysicalNote> {
+		@Override
 		public HistoryAndPhysicalNote create() {
 			return ConsolFactory.eINSTANCE.createHistoryAndPhysicalNote();
 		}

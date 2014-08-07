@@ -394,6 +394,7 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CharacteristicsOfHomeEnvironment> {
+		@Override
 		public CharacteristicsOfHomeEnvironment create() {
 			return ConsolFactory.eINSTANCE.createCharacteristicsOfHomeEnvironment();
 		}

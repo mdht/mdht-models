@@ -502,6 +502,7 @@ public class WoundCharacteristicsTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<WoundCharacteristics> {
+		@Override
 		public WoundCharacteristics create() {
 			return ConsolFactory.eINSTANCE.createWoundCharacteristics();
 		}

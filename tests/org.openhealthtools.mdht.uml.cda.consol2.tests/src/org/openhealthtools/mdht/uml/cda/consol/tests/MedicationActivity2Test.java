@@ -1089,6 +1089,7 @@ public class MedicationActivity2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<MedicationActivity2> {
+		@Override
 		public MedicationActivity2 create() {
 			return ConsolFactory.eINSTANCE.createMedicationActivity2();
 		}

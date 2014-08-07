@@ -217,6 +217,7 @@ public class PlanOfCareActivityProcedureTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PlanOfCareActivityProcedure> {
+		@Override
 		public PlanOfCareActivityProcedure create() {
 			return ConsolFactory.eINSTANCE.createPlanOfCareActivityProcedure();
 		}

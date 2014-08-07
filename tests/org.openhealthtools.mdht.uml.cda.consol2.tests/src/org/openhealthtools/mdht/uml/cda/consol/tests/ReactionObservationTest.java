@@ -964,6 +964,7 @@ public class ReactionObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ReactionObservation> {
+		@Override
 		public ReactionObservation create() {
 			return ConsolFactory.eINSTANCE.createReactionObservation();
 		}

@@ -244,6 +244,7 @@ public class OperativeNoteSurgicalProcedureSectionTest extends CDAValidationTest
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<OperativeNoteSurgicalProcedureSection> {
+		@Override
 		public OperativeNoteSurgicalProcedureSection create() {
 			return ConsolFactory.eINSTANCE.createOperativeNoteSurgicalProcedureSection();
 		}

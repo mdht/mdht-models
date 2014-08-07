@@ -244,6 +244,7 @@ public class HospitalDischargePhysicalSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<HospitalDischargePhysicalSection> {
+		@Override
 		public HospitalDischargePhysicalSection create() {
 			return ConsolFactory.eINSTANCE.createHospitalDischargePhysicalSection();
 		}

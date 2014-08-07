@@ -394,6 +394,7 @@ public class SubstanceAdministeredActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<SubstanceAdministeredAct> {
+		@Override
 		public SubstanceAdministeredAct create() {
 			return ConsolFactory.eINSTANCE.createSubstanceAdministeredAct();
 		}

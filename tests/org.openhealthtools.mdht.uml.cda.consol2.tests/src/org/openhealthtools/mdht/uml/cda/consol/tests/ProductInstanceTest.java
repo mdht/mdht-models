@@ -315,6 +315,7 @@ public class ProductInstanceTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProductInstance> {
+		@Override
 		public ProductInstance create() {
 			return ConsolFactory.eINSTANCE.createProductInstance();
 		}

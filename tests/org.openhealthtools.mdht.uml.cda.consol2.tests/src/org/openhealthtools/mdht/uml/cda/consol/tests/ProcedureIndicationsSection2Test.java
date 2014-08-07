@@ -220,6 +220,7 @@ public class ProcedureIndicationsSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProcedureIndicationsSection2> {
+		@Override
 		public ProcedureIndicationsSection2 create() {
 			return ConsolFactory.eINSTANCE.createProcedureIndicationsSection2();
 		}

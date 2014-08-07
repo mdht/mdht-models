@@ -292,6 +292,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalTest extends CDAV
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<HospitalDischargeMedicationsSectionEntriesOptional> {
+		@Override
 		public HospitalDischargeMedicationsSectionEntriesOptional create() {
 			return ConsolFactory.eINSTANCE.createHospitalDischargeMedicationsSectionEntriesOptional();
 		}

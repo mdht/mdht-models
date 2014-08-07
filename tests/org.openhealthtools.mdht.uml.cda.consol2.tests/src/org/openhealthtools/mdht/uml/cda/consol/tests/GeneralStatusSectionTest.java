@@ -244,6 +244,7 @@ public class GeneralStatusSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<GeneralStatusSection> {
+		@Override
 		public GeneralStatusSection create() {
 			return ConsolFactory.eINSTANCE.createGeneralStatusSection();
 		}

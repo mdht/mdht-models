@@ -722,6 +722,7 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<DrugMonitoringAct> {
+		@Override
 		public DrugMonitoringAct create() {
 			return ConsolFactory.eINSTANCE.createDrugMonitoringAct();
 		}

@@ -509,6 +509,7 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProblemConcernAct2> {
+		@Override
 		public ProblemConcernAct2 create() {
 			return ConsolFactory.eINSTANCE.createProblemConcernAct2();
 		}

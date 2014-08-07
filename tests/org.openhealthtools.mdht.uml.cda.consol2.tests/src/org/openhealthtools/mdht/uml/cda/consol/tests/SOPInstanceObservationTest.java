@@ -787,6 +787,7 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<SOPInstanceObservation> {
+		@Override
 		public SOPInstanceObservation create() {
 			return ConsolFactory.eINSTANCE.createSOPInstanceObservation();
 		}

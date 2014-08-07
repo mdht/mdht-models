@@ -593,6 +593,7 @@ public class PlanOfCareSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PlanOfCareSection> {
+		@Override
 		public PlanOfCareSection create() {
 			return ConsolFactory.eINSTANCE.createPlanOfCareSection();
 		}

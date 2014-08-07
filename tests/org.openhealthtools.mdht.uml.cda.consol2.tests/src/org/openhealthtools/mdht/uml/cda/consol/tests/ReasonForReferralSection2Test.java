@@ -220,6 +220,7 @@ public class ReasonForReferralSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ReasonForReferralSection2> {
+		@Override
 		public ReasonForReferralSection2 create() {
 			return ConsolFactory.eINSTANCE.createReasonForReferralSection2();
 		}

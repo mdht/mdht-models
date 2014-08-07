@@ -385,6 +385,7 @@ public class CodeObservationsTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CodeObservations> {
+		@Override
 		public CodeObservations create() {
 			return ConsolFactory.eINSTANCE.createCodeObservations();
 		}

@@ -285,6 +285,7 @@ public class EncounterDiagnosisTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<EncounterDiagnosis> {
+		@Override
 		public EncounterDiagnosis create() {
 			return ConsolFactory.eINSTANCE.createEncounterDiagnosis();
 		}

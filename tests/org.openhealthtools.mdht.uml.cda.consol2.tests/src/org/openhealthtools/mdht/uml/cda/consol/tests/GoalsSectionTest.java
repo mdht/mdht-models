@@ -285,6 +285,7 @@ public class GoalsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<GoalsSection> {
+		@Override
 		public GoalsSection create() {
 			return ConsolFactory.eINSTANCE.createGoalsSection();
 		}

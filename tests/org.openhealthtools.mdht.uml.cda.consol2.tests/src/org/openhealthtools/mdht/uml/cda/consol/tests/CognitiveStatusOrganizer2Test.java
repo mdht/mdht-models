@@ -178,6 +178,7 @@ public class CognitiveStatusOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CognitiveStatusOrganizer2> {
+		@Override
 		public CognitiveStatusOrganizer2 create() {
 			return ConsolFactory.eINSTANCE.createCognitiveStatusOrganizer2();
 		}

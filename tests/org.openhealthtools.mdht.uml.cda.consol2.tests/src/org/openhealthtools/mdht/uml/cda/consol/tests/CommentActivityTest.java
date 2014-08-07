@@ -1168,6 +1168,7 @@ public class CommentActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CommentActivity> {
+		@Override
 		public CommentActivity create() {
 			return ConsolFactory.eINSTANCE.createCommentActivity();
 		}

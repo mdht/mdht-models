@@ -126,6 +126,7 @@ public class ObserverContextTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ObserverContext> {
+		@Override
 		public ObserverContext create() {
 			return ConsolFactory.eINSTANCE.createObserverContext();
 		}

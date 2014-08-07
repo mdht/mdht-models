@@ -24,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReactionObservation2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
@@ -466,7 +464,7 @@ public class ReactionObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateReactionObservationCode() {
@@ -483,9 +481,6 @@ public class ReactionObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ReactionObservation2 target) {
 				target.init();
-
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
 
 			}
 
@@ -531,6 +526,7 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ReactionObservation2> {
+		@Override
 		public ReactionObservation2 create() {
 			return ConsolFactory.eINSTANCE.createReactionObservation2();
 		}

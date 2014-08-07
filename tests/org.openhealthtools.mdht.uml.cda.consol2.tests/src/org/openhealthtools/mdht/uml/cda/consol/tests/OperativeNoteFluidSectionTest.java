@@ -244,6 +244,7 @@ public class OperativeNoteFluidSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<OperativeNoteFluidSection> {
+		@Override
 		public OperativeNoteFluidSection create() {
 			return ConsolFactory.eINSTANCE.createOperativeNoteFluidSection();
 		}

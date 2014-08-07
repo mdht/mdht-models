@@ -410,6 +410,7 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AdvanceDirectiveOrganizer> {
+		@Override
 		public AdvanceDirectiveOrganizer create() {
 			return ConsolFactory.eINSTANCE.createAdvanceDirectiveOrganizer();
 		}

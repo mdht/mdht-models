@@ -292,6 +292,7 @@ public class NutritionSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<NutritionSection> {
+		@Override
 		public NutritionSection create() {
 			return ConsolFactory.eINSTANCE.createNutritionSection();
 		}

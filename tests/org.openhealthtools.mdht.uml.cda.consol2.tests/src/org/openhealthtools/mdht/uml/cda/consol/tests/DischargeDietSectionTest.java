@@ -244,6 +244,7 @@ public class DischargeDietSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<DischargeDietSection> {
+		@Override
 		public DischargeDietSection create() {
 			return ConsolFactory.eINSTANCE.createDischargeDietSection();
 		}

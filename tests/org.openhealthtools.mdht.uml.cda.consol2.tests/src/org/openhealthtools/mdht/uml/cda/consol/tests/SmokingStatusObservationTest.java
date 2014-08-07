@@ -510,6 +510,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<SmokingStatusObservation> {
+		@Override
 		public SmokingStatusObservation create() {
 			return ConsolFactory.eINSTANCE.createSmokingStatusObservation();
 		}

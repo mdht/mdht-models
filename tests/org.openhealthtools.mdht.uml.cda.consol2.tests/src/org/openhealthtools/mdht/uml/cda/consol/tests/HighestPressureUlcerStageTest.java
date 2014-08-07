@@ -313,6 +313,7 @@ public class HighestPressureUlcerStageTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<HighestPressureUlcerStage> {
+		@Override
 		public HighestPressureUlcerStage create() {
 			return ConsolFactory.eINSTANCE.createHighestPressureUlcerStage();
 		}

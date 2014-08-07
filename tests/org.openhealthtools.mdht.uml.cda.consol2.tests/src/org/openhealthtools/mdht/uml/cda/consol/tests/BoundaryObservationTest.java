@@ -240,6 +240,7 @@ public class BoundaryObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<BoundaryObservation> {
+		@Override
 		public BoundaryObservation create() {
 			return ConsolFactory.eINSTANCE.createBoundaryObservation();
 		}

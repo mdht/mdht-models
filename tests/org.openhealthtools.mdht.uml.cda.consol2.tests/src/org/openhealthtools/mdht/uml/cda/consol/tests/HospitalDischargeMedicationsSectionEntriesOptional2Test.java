@@ -143,6 +143,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptional2Test extends CDA
 	*/
 	private static class ObjectFactory implements
 			TestObjectFactory<HospitalDischargeMedicationsSectionEntriesOptional2> {
+		@Override
 		public HospitalDischargeMedicationsSectionEntriesOptional2 create() {
 			return ConsolFactory.eINSTANCE.createHospitalDischargeMedicationsSectionEntriesOptional2();
 		}

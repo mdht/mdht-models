@@ -433,6 +433,7 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProgressTowardGoalObservation> {
+		@Override
 		public ProgressTowardGoalObservation create() {
 			return ConsolFactory.eINSTANCE.createProgressTowardGoalObservation();
 		}

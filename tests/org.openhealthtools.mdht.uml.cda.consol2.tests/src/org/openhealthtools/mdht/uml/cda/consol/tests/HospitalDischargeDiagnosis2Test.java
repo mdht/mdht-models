@@ -227,6 +227,7 @@ public class HospitalDischargeDiagnosis2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<HospitalDischargeDiagnosis2> {
+		@Override
 		public HospitalDischargeDiagnosis2 create() {
 			return ConsolFactory.eINSTANCE.createHospitalDischargeDiagnosis2();
 		}

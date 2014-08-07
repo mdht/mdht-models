@@ -41,7 +41,9 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2RepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Repeat Number</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2RouteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Route Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2RouteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Route Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2ApproachSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Approach Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2ApproachSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Approach Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2DoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Dose Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2RateQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Rate Quantity</em>}</li>
@@ -210,6 +212,40 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePlannedMedicationActivity2RouteCodeP() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2RouteCodePTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlannedMedicationActivity2RouteCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_MEDICATION_ACTIVITY2_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedMedicationActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedMedicationActivity2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RouteCodeP(
+					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedMedicationActivity2RouteCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated NOT
 	*/
 	@Test
@@ -253,6 +289,41 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidatePlannedMedicationActivity2ApproachSiteCodeP() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2ApproachSiteCodePTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlannedMedicationActivity2ApproachSiteCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_MEDICATION_ACTIVITY2_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedMedicationActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedMedicationActivity2 target) {
+				target.init();
+				target.getApproachSiteCodes().clear();
+				target.getApproachSiteCodes().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ApproachSiteCodeP(
+					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedMedicationActivity2ApproachSiteCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidatePlannedMedicationActivity2ApproachSiteCode() {
 		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2ApproachSiteCodeTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
 			"validatePlannedMedicationActivity2ApproachSiteCode",
@@ -262,6 +333,7 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 			@Override
 			protected void updateToFail(PlannedMedicationActivity2 target) {
 				target.init();
+				target.getApproachSiteCodes().clear();
 				target.getApproachSiteCodes().add(DatatypesFactory.eINSTANCE.createCD());
 			}
 
@@ -929,6 +1001,7 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PlannedMedicationActivity2> {
+		@Override
 		public PlannedMedicationActivity2 create() {
 			return ConsolFactory.eINSTANCE.createPlannedMedicationActivity2();
 		}
