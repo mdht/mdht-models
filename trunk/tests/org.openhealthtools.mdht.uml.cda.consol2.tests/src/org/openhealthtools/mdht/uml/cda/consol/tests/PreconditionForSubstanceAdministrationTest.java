@@ -250,6 +250,7 @@ public class PreconditionForSubstanceAdministrationTest extends CDAValidationTes
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PreconditionForSubstanceAdministration> {
+		@Override
 		public PreconditionForSubstanceAdministration create() {
 			return ConsolFactory.eINSTANCE.createPreconditionForSubstanceAdministration();
 		}

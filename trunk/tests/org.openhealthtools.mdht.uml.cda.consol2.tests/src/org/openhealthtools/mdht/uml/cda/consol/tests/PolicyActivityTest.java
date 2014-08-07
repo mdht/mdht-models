@@ -4380,6 +4380,7 @@ public class PolicyActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PolicyActivity> {
+		@Override
 		public PolicyActivity create() {
 			return ConsolFactory.eINSTANCE.createPolicyActivity();
 		}

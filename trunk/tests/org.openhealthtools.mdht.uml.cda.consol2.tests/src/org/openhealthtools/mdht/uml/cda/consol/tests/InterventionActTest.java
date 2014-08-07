@@ -740,6 +740,7 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<InterventionAct> {
+		@Override
 		public InterventionAct create() {
 			return ConsolFactory.eINSTANCE.createInterventionAct();
 		}

@@ -214,6 +214,7 @@ public class DICOMObjectCatalogSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<DICOMObjectCatalogSection> {
+		@Override
 		public DICOMObjectCatalogSection create() {
 			return ConsolFactory.eINSTANCE.createDICOMObjectCatalogSection();
 		}

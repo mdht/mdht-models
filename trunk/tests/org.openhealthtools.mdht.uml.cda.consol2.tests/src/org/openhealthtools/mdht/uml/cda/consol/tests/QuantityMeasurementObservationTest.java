@@ -408,6 +408,7 @@ public class QuantityMeasurementObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<QuantityMeasurementObservation> {
+		@Override
 		public QuantityMeasurementObservation create() {
 			return ConsolFactory.eINSTANCE.createQuantityMeasurementObservation();
 		}

@@ -220,6 +220,7 @@ public class PlannedProcedureSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PlannedProcedureSection2> {
+		@Override
 		public PlannedProcedureSection2 create() {
 			return ConsolFactory.eINSTANCE.createPlannedProcedureSection2();
 		}

@@ -400,6 +400,7 @@ public class NutritionRecommendationsTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<NutritionRecommendations> {
+		@Override
 		public NutritionRecommendations create() {
 			return ConsolFactory.eINSTANCE.createNutritionRecommendations();
 		}

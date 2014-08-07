@@ -293,6 +293,7 @@ public class AdvanceDirectivesSectionEntriesOptionalTest extends CDAValidationTe
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AdvanceDirectivesSectionEntriesOptional> {
+		@Override
 		public AdvanceDirectivesSectionEntriesOptional create() {
 			return ConsolFactory.eINSTANCE.createAdvanceDirectivesSectionEntriesOptional();
 		}

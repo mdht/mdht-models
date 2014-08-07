@@ -495,6 +495,7 @@ public class HealthStatusObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<HealthStatusObservation> {
+		@Override
 		public HealthStatusObservation create() {
 			return ConsolFactory.eINSTANCE.createHealthStatusObservation();
 		}

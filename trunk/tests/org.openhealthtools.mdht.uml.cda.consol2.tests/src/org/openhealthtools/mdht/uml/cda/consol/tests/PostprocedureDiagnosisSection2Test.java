@@ -220,6 +220,7 @@ public class PostprocedureDiagnosisSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PostprocedureDiagnosisSection2> {
+		@Override
 		public PostprocedureDiagnosisSection2 create() {
 			return ConsolFactory.eINSTANCE.createPostprocedureDiagnosisSection2();
 		}

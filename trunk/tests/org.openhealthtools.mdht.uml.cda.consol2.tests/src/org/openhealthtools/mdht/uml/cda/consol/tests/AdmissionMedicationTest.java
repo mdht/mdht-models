@@ -294,6 +294,7 @@ public class AdmissionMedicationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AdmissionMedication> {
+		@Override
 		public AdmissionMedication create() {
 			return ConsolFactory.eINSTANCE.createAdmissionMedication();
 		}

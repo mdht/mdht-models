@@ -584,6 +584,7 @@ public class HandoffCommunicationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<HandoffCommunication> {
+		@Override
 		public HandoffCommunication create() {
 			return ConsolFactory.eINSTANCE.createHandoffCommunication();
 		}

@@ -476,6 +476,7 @@ public class MedicationInformationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<MedicationInformation> {
+		@Override
 		public MedicationInformation create() {
 			return ConsolFactory.eINSTANCE.createMedicationInformation();
 		}

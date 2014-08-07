@@ -280,6 +280,7 @@ public class EncounterActivity2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<EncounterActivity2> {
+		@Override
 		public EncounterActivity2 create() {
 			return ConsolFactory.eINSTANCE.createEncounterActivity2();
 		}

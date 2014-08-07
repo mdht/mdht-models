@@ -275,6 +275,7 @@ public class ProcedureContextTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProcedureContext> {
+		@Override
 		public ProcedureContext create() {
 			return ConsolFactory.eINSTANCE.createProcedureContext();
 		}

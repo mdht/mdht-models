@@ -244,6 +244,7 @@ public class ReviewOfSystemsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ReviewOfSystemsSection> {
+		@Override
 		public ReviewOfSystemsSection create() {
 			return ConsolFactory.eINSTANCE.createReviewOfSystemsSection();
 		}

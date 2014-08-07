@@ -265,6 +265,7 @@ public class CoverageActivity2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CoverageActivity2> {
+		@Override
 		public CoverageActivity2 create() {
 			return ConsolFactory.eINSTANCE.createCoverageActivity2();
 		}

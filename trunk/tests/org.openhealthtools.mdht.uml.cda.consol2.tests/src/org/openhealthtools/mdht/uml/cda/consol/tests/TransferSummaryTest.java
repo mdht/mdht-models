@@ -1244,6 +1244,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<TransferSummary> {
+		@Override
 		public TransferSummary create() {
 			return ConsolFactory.eINSTANCE.createTransferSummary();
 		}

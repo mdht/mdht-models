@@ -544,6 +544,7 @@ public class OutcomeObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<OutcomeObservation> {
+		@Override
 		public OutcomeObservation create() {
 			return ConsolFactory.eINSTANCE.createOutcomeObservation();
 		}

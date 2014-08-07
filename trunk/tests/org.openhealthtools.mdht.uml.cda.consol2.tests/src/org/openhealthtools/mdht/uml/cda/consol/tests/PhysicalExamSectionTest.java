@@ -388,6 +388,7 @@ public class PhysicalExamSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PhysicalExamSection> {
+		@Override
 		public PhysicalExamSection create() {
 			return ConsolFactory.eINSTANCE.createPhysicalExamSection();
 		}

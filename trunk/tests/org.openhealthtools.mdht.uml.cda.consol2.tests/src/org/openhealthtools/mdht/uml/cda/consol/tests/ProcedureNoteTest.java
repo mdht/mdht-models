@@ -3266,6 +3266,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProcedureNote> {
+		@Override
 		public ProcedureNote create() {
 			return ConsolFactory.eINSTANCE.createProcedureNote();
 		}

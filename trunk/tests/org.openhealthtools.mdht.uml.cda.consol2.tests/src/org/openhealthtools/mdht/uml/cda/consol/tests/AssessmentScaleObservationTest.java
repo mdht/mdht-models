@@ -901,6 +901,7 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AssessmentScaleObservation> {
+		@Override
 		public AssessmentScaleObservation create() {
 			return ConsolFactory.eINSTANCE.createAssessmentScaleObservation();
 		}

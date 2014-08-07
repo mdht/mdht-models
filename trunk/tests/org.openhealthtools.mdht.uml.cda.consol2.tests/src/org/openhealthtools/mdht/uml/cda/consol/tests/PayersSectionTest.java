@@ -290,6 +290,7 @@ public class PayersSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PayersSection> {
+		@Override
 		public PayersSection create() {
 			return ConsolFactory.eINSTANCE.createPayersSection();
 		}

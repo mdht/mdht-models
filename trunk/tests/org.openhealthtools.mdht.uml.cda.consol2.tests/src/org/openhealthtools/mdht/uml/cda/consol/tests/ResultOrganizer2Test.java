@@ -195,7 +195,7 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateResultOrganizerResultObservation2() {
@@ -203,6 +203,7 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 			"validateResultOrganizerResultObservation2",
 			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
 			@Override
 			protected void updateToFail(ResultOrganizer2 target) {
 
@@ -331,6 +332,7 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ResultOrganizer2> {
+		@Override
 		public ResultOrganizer2 create() {
 			return ConsolFactory.eINSTANCE.createResultOrganizer2();
 		}

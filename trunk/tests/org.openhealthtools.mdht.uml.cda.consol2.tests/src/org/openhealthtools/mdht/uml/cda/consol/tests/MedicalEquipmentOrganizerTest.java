@@ -464,6 +464,7 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<MedicalEquipmentOrganizer> {
+		@Override
 		public MedicalEquipmentOrganizer create() {
 			return ConsolFactory.eINSTANCE.createMedicalEquipmentOrganizer();
 		}

@@ -160,6 +160,7 @@ public class FetusSubjectContextTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<FetusSubjectContext> {
+		@Override
 		public FetusSubjectContext create() {
 			return ConsolFactory.eINSTANCE.createFetusSubjectContext();
 		}

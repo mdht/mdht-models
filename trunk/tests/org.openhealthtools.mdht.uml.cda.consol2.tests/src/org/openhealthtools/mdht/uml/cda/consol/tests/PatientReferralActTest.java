@@ -895,6 +895,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PatientReferralAct> {
+		@Override
 		public PatientReferralAct create() {
 			return ConsolFactory.eINSTANCE.createPatientReferralAct();
 		}

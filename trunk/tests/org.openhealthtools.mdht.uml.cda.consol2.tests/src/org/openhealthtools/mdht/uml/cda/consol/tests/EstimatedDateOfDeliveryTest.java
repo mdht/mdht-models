@@ -278,6 +278,7 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<EstimatedDateOfDelivery> {
+		@Override
 		public EstimatedDateOfDelivery create() {
 			return ConsolFactory.eINSTANCE.createEstimatedDateOfDelivery();
 		}

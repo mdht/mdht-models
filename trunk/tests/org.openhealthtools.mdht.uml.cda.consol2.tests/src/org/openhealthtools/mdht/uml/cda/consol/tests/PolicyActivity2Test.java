@@ -925,7 +925,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidatePolicyActivityPayer() {
@@ -933,6 +933,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 			"validatePolicyActivityPayer",
 			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_PAYER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
 			@Override
 			public void addFailTests() {
 
@@ -1063,7 +1064,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidatePolicyActivityGuarantor() {
@@ -1071,6 +1072,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 			"validatePolicyActivityGuarantor",
 			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_GUARANTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
 			@Override
 			public void addFailTests() {
 
@@ -1202,7 +1204,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated 
+	* @generated NOT
 	*/
 	@Test
 	public void testValidatePolicyActivityCoverage() {
@@ -1218,6 +1220,8 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
+				target.init();
+				target.getParticipants().add(createCoverage());
 
 			}
 
@@ -1256,6 +1260,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PolicyActivity2> {
+		@Override
 		public PolicyActivity2 create() {
 			return ConsolFactory.eINSTANCE.createPolicyActivity2();
 		}

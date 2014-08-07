@@ -599,6 +599,7 @@ public class MedicationSupplyOrderTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<MedicationSupplyOrder> {
+		@Override
 		public MedicationSupplyOrder create() {
 			return ConsolFactory.eINSTANCE.createMedicationSupplyOrder();
 		}

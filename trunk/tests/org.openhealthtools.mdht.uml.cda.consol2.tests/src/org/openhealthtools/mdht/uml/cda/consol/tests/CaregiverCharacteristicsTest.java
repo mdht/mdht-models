@@ -707,6 +707,7 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CaregiverCharacteristics> {
+		@Override
 		public CaregiverCharacteristics create() {
 			return ConsolFactory.eINSTANCE.createCaregiverCharacteristics();
 		}

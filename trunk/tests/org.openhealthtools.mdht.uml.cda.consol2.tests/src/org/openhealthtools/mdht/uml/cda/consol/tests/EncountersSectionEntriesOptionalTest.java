@@ -293,6 +293,7 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<EncountersSectionEntriesOptional> {
+		@Override
 		public EncountersSectionEntriesOptional create() {
 			return ConsolFactory.eINSTANCE.createEncountersSectionEntriesOptional();
 		}

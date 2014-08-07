@@ -267,6 +267,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ResultObservation2> {
+		@Override
 		public ResultObservation2 create() {
 			return ConsolFactory.eINSTANCE.createResultObservation2();
 		}

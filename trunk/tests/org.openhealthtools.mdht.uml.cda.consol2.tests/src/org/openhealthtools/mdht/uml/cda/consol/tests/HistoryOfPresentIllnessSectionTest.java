@@ -244,6 +244,7 @@ public class HistoryOfPresentIllnessSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<HistoryOfPresentIllnessSection> {
+		@Override
 		public HistoryOfPresentIllnessSection create() {
 			return ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection();
 		}

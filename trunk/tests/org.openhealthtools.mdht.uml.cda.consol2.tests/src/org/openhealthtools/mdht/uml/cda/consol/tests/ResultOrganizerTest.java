@@ -437,6 +437,7 @@ public class ResultOrganizerTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ResultOrganizer> {
+		@Override
 		public ResultOrganizer create() {
 			return ConsolFactory.eINSTANCE.createResultOrganizer();
 		}

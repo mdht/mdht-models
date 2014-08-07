@@ -551,6 +551,7 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<GoalObservation> {
+		@Override
 		public GoalObservation create() {
 			return ConsolFactory.eINSTANCE.createGoalObservation();
 		}

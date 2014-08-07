@@ -292,6 +292,7 @@ public class PhysicalFindingsOfSkinSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PhysicalFindingsOfSkinSection> {
+		@Override
 		public PhysicalFindingsOfSkinSection create() {
 			return ConsolFactory.eINSTANCE.createPhysicalFindingsOfSkinSection();
 		}

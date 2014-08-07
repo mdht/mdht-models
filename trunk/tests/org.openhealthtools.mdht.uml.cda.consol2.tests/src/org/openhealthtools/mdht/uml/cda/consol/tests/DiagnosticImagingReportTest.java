@@ -1541,6 +1541,7 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<DiagnosticImagingReport> {
+		@Override
 		public DiagnosticImagingReport create() {
 			return ConsolFactory.eINSTANCE.createDiagnosticImagingReport();
 		}

@@ -596,6 +596,7 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PlanOfTreatmentSection2> {
+		@Override
 		public PlanOfTreatmentSection2 create() {
 			return ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2();
 		}

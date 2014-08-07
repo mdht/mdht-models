@@ -187,6 +187,7 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<NonMedicinalSupplyActivity2> {
+		@Override
 		public NonMedicinalSupplyActivity2 create() {
 			return ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity2();
 		}

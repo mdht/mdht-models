@@ -924,6 +924,7 @@ public class AuthorizationActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AuthorizationActivity> {
+		@Override
 		public AuthorizationActivity create() {
 			return ConsolFactory.eINSTANCE.createAuthorizationActivity();
 		}

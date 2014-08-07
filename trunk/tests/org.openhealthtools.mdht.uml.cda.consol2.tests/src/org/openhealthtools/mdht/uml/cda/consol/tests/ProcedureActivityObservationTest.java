@@ -1981,6 +1981,7 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProcedureActivityObservation> {
+		@Override
 		public ProcedureActivityObservation create() {
 			return ConsolFactory.eINSTANCE.createProcedureActivityObservation();
 		}

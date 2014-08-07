@@ -244,6 +244,7 @@ public class ReasonForReferralSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ReasonForReferralSection> {
+		@Override
 		public ReasonForReferralSection create() {
 			return ConsolFactory.eINSTANCE.createReasonForReferralSection();
 		}

@@ -452,6 +452,7 @@ public class ProblemStatusTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProblemStatus> {
+		@Override
 		public ProblemStatus create() {
 			return ConsolFactory.eINSTANCE.createProblemStatus();
 		}

@@ -588,6 +588,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ExternalDocumentReference> {
+		@Override
 		public ExternalDocumentReference create() {
 			return ConsolFactory.eINSTANCE.createExternalDocumentReference();
 		}

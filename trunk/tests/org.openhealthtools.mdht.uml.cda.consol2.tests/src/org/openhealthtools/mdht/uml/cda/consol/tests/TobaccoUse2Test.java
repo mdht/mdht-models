@@ -282,6 +282,7 @@ public class TobaccoUse2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<TobaccoUse2> {
+		@Override
 		public TobaccoUse2 create() {
 			return ConsolFactory.eINSTANCE.createTobaccoUse2();
 		}

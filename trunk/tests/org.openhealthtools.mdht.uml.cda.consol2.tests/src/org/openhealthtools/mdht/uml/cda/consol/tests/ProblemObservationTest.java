@@ -1060,6 +1060,7 @@ public class ProblemObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProblemObservation> {
+		@Override
 		public ProblemObservation create() {
 			return ConsolFactory.eINSTANCE.createProblemObservation();
 		}

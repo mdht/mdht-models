@@ -407,6 +407,7 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PhysicianReadingStudyPerformer> {
+		@Override
 		public PhysicianReadingStudyPerformer create() {
 			return ConsolFactory.eINSTANCE.createPhysicianReadingStudyPerformer();
 		}

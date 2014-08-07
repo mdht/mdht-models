@@ -1731,6 +1731,7 @@ public class AllergyObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AllergyObservation> {
+		@Override
 		public AllergyObservation create() {
 			return ConsolFactory.eINSTANCE.createAllergyObservation();
 		}

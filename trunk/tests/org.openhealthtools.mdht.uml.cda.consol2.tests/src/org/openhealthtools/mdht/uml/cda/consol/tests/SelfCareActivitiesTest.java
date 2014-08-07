@@ -320,6 +320,7 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<SelfCareActivities> {
+		@Override
 		public SelfCareActivities create() {
 			return ConsolFactory.eINSTANCE.createSelfCareActivities();
 		}

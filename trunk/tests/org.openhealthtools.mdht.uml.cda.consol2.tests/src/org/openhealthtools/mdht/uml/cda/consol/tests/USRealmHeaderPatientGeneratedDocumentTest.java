@@ -2563,6 +2563,7 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<USRealmHeaderPatientGeneratedDocument> {
+		@Override
 		public USRealmHeaderPatientGeneratedDocument create() {
 			return ConsolFactory.eINSTANCE.createUSRealmHeaderPatientGeneratedDocument();
 		}

@@ -282,6 +282,7 @@ public class PurposeofReferenceObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PurposeofReferenceObservation> {
+		@Override
 		public PurposeofReferenceObservation create() {
 			return ConsolFactory.eINSTANCE.createPurposeofReferenceObservation();
 		}

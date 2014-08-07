@@ -424,6 +424,7 @@ public class AssessmentScaleSupportingObservationTest extends CDAValidationTest 
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AssessmentScaleSupportingObservation> {
+		@Override
 		public AssessmentScaleSupportingObservation create() {
 			return ConsolFactory.eINSTANCE.createAssessmentScaleSupportingObservation();
 		}

@@ -244,6 +244,7 @@ public class ChiefComplaintAndReasonForVisitSectionTest extends CDAValidationTes
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ChiefComplaintAndReasonForVisitSection> {
+		@Override
 		public ChiefComplaintAndReasonForVisitSection create() {
 			return ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection();
 		}

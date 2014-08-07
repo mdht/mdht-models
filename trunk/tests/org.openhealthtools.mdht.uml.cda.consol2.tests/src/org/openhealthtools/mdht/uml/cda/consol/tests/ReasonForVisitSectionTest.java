@@ -244,6 +244,7 @@ public class ReasonForVisitSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ReasonForVisitSection> {
+		@Override
 		public ReasonForVisitSection create() {
 			return ConsolFactory.eINSTANCE.createReasonForVisitSection();
 		}

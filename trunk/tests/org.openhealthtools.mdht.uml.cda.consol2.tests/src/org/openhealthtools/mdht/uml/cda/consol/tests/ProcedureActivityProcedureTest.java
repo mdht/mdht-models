@@ -2163,6 +2163,7 @@ public class ProcedureActivityProcedureTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProcedureActivityProcedure> {
+		@Override
 		public ProcedureActivityProcedure create() {
 			return ConsolFactory.eINSTANCE.createProcedureActivityProcedure();
 		}

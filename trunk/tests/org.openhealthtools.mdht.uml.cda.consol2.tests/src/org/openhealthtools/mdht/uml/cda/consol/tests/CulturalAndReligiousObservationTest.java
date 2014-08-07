@@ -399,6 +399,7 @@ public class CulturalAndReligiousObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CulturalAndReligiousObservation> {
+		@Override
 		public CulturalAndReligiousObservation create() {
 			return ConsolFactory.eINSTANCE.createCulturalAndReligiousObservation();
 		}

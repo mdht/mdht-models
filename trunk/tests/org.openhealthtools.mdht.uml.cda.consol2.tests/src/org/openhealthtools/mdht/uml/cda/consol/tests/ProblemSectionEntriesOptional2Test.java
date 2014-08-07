@@ -267,6 +267,7 @@ public class ProblemSectionEntriesOptional2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProblemSectionEntriesOptional2> {
+		@Override
 		public ProblemSectionEntriesOptional2 create() {
 			return ConsolFactory.eINSTANCE.createProblemSectionEntriesOptional2();
 		}

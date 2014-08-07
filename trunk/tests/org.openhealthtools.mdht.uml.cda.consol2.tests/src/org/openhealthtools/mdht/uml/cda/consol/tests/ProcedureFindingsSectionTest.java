@@ -293,6 +293,7 @@ public class ProcedureFindingsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProcedureFindingsSection> {
+		@Override
 		public ProcedureFindingsSection create() {
 			return ConsolFactory.eINSTANCE.createProcedureFindingsSection();
 		}

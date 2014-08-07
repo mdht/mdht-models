@@ -43,6 +43,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2MethodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Method Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2TargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Target Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2TargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Performer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Author Participation</em>}</li>
@@ -275,6 +276,40 @@ public class PlannedObservation2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePlannedObservation2TargetSiteCodeP() {
+		OperationsTestCase<PlannedObservation2> validatePlannedObservation2TargetSiteCodePTestCase = new OperationsTestCase<PlannedObservation2>(
+			"validatePlannedObservation2TargetSiteCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedObservation2Operations.validatePlannedObservation2TargetSiteCodeP(
+					(PlannedObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedObservation2TargetSiteCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated NOT
 	*/
 	@Test
@@ -292,7 +327,7 @@ public class PlannedObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedObservation2 target) {
 				CD tsc = DatatypesFactory.eINSTANCE.createCD("notChecked", SNOMEDCT_ID);
-				target.getTargetSiteCodes().add(tsc);
+				target.getTargetSiteCodes().set(0, tsc);
 			}
 
 			@Override
@@ -677,6 +712,7 @@ public class PlannedObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PlannedObservation2> {
+		@Override
 		public PlannedObservation2 create() {
 			return ConsolFactory.eINSTANCE.createPlannedObservation2();
 		}

@@ -389,6 +389,7 @@ public class ActReferenceTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ActReference> {
+		@Override
 		public ActReference create() {
 			return ConsolFactory.eINSTANCE.createActReference();
 		}

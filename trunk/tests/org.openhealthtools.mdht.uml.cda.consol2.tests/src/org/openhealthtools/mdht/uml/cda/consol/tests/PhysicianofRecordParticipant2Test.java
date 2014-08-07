@@ -360,6 +360,7 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PhysicianofRecordParticipant2> {
+		@Override
 		public PhysicianofRecordParticipant2 create() {
 			return ConsolFactory.eINSTANCE.createPhysicianofRecordParticipant2();
 		}

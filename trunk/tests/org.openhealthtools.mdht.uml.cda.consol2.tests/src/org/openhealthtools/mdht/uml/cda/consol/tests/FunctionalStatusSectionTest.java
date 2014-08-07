@@ -785,6 +785,7 @@ public class FunctionalStatusSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<FunctionalStatusSection> {
+		@Override
 		public FunctionalStatusSection create() {
 			return ConsolFactory.eINSTANCE.createFunctionalStatusSection();
 		}

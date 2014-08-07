@@ -557,6 +557,7 @@ public class TextObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<TextObservation> {
+		@Override
 		public TextObservation create() {
 			return ConsolFactory.eINSTANCE.createTextObservation();
 		}

@@ -1862,6 +1862,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ContinuityOfCareDocument> {
+		@Override
 		public ContinuityOfCareDocument create() {
 			return ConsolFactory.eINSTANCE.createContinuityOfCareDocument();
 		}

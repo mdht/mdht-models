@@ -244,6 +244,7 @@ public class InterventionsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<InterventionsSection> {
+		@Override
 		public InterventionsSection create() {
 			return ConsolFactory.eINSTANCE.createInterventionsSection();
 		}

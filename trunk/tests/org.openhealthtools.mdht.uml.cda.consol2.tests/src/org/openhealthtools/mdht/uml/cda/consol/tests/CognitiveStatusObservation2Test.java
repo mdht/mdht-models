@@ -732,6 +732,7 @@ public class CognitiveStatusObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CognitiveStatusObservation2> {
+		@Override
 		public CognitiveStatusObservation2 create() {
 			return ConsolFactory.eINSTANCE.createCognitiveStatusObservation2();
 		}

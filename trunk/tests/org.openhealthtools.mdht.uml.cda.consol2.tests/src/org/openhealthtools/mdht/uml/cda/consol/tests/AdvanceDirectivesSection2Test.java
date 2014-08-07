@@ -143,6 +143,7 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AdvanceDirectivesSection2> {
+		@Override
 		public AdvanceDirectivesSection2 create() {
 			return ConsolFactory.eINSTANCE.createAdvanceDirectivesSection2();
 		}

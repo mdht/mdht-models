@@ -398,6 +398,7 @@ public class PrognosisObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PrognosisObservation> {
+		@Override
 		public PrognosisObservation create() {
 			return ConsolFactory.eINSTANCE.createPrognosisObservation();
 		}

@@ -267,6 +267,7 @@ public class AnesthesiaSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AnesthesiaSection2> {
+		@Override
 		public AnesthesiaSection2 create() {
 			return ConsolFactory.eINSTANCE.createAnesthesiaSection2();
 		}

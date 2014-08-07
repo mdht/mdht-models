@@ -301,6 +301,7 @@ public class AllergiesSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AllergiesSection> {
+		@Override
 		public AllergiesSection create() {
 			return ConsolFactory.eINSTANCE.createAllergiesSection();
 		}

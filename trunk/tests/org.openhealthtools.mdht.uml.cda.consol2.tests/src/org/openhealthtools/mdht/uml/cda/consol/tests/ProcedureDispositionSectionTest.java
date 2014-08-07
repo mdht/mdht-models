@@ -244,6 +244,7 @@ public class ProcedureDispositionSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProcedureDispositionSection> {
+		@Override
 		public ProcedureDispositionSection create() {
 			return ConsolFactory.eINSTANCE.createProcedureDispositionSection();
 		}

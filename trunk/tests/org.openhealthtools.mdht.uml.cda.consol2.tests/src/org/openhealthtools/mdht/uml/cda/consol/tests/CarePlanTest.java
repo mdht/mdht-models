@@ -2083,6 +2083,7 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CarePlan> {
+		@Override
 		public CarePlan create() {
 			return ConsolFactory.eINSTANCE.createCarePlan();
 		}

@@ -871,6 +871,7 @@ public class EncounterActivitiesTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<EncounterActivities> {
+		@Override
 		public EncounterActivities create() {
 			return ConsolFactory.eINSTANCE.createEncounterActivities();
 		}

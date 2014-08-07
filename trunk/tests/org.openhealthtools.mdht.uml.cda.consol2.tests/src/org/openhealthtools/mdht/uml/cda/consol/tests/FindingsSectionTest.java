@@ -94,6 +94,7 @@ public class FindingsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<FindingsSection> {
+		@Override
 		public FindingsSection create() {
 			return ConsolFactory.eINSTANCE.createFindingsSection();
 		}

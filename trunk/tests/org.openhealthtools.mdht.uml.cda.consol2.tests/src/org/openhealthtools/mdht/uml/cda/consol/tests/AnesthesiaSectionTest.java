@@ -340,6 +340,7 @@ public class AnesthesiaSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AnesthesiaSection> {
+		@Override
 		public AnesthesiaSection create() {
 			return ConsolFactory.eINSTANCE.createAnesthesiaSection();
 		}

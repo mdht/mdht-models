@@ -2376,6 +2376,7 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ConsultationNote> {
+		@Override
 		public ConsultationNote create() {
 			return ConsolFactory.eINSTANCE.createConsultationNote();
 		}

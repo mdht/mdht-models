@@ -275,6 +275,7 @@ public class DrugVehicleTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<DrugVehicle> {
+		@Override
 		public DrugVehicle create() {
 			return ConsolFactory.eINSTANCE.createDrugVehicle();
 		}

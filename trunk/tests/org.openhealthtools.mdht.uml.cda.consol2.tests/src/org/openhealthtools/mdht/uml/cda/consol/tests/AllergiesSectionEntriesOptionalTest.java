@@ -285,6 +285,7 @@ public class AllergiesSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AllergiesSectionEntriesOptional> {
+		@Override
 		public AllergiesSectionEntriesOptional create() {
 			return ConsolFactory.eINSTANCE.createAllergiesSectionEntriesOptional();
 		}

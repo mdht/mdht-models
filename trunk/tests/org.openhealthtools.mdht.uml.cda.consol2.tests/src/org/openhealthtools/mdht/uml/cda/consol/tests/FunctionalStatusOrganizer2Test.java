@@ -397,6 +397,7 @@ public class FunctionalStatusOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<FunctionalStatusOrganizer2> {
+		@Override
 		public FunctionalStatusOrganizer2 create() {
 			return ConsolFactory.eINSTANCE.createFunctionalStatusOrganizer2();
 		}

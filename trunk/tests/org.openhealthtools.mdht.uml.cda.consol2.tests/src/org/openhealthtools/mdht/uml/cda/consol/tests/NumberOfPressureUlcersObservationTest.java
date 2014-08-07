@@ -778,6 +778,7 @@ public class NumberOfPressureUlcersObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<NumberOfPressureUlcersObservation> {
+		@Override
 		public NumberOfPressureUlcersObservation create() {
 			return ConsolFactory.eINSTANCE.createNumberOfPressureUlcersObservation();
 		}

@@ -1040,6 +1040,7 @@ public class SubstanceOrDeviceAllergyObservation2Test extends CDAValidationTest 
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<SubstanceOrDeviceAllergyObservation2> {
+		@Override
 		public SubstanceOrDeviceAllergyObservation2 create() {
 			return ConsolFactory.eINSTANCE.createSubstanceOrDeviceAllergyObservation2();
 		}

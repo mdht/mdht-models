@@ -220,6 +220,7 @@ public class VitalSignsSectionEntriesOptional2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<VitalSignsSectionEntriesOptional2> {
+		@Override
 		public VitalSignsSectionEntriesOptional2 create() {
 			return ConsolFactory.eINSTANCE.createVitalSignsSectionEntriesOptional2();
 		}

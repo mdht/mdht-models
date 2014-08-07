@@ -94,6 +94,7 @@ public class Instruction2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<Instruction2> {
+		@Override
 		public Instruction2 create() {
 			return ConsolFactory.eINSTANCE.createInstruction2();
 		}

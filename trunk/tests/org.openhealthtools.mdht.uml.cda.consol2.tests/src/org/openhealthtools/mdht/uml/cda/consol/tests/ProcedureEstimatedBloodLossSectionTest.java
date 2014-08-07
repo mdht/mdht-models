@@ -244,6 +244,7 @@ public class ProcedureEstimatedBloodLossSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProcedureEstimatedBloodLossSection> {
+		@Override
 		public ProcedureEstimatedBloodLossSection create() {
 			return ConsolFactory.eINSTANCE.createProcedureEstimatedBloodLossSection();
 		}

@@ -1409,6 +1409,7 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<AdvanceDirectiveObservation2> {
+		@Override
 		public AdvanceDirectiveObservation2 create() {
 			return ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2();
 		}

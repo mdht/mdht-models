@@ -244,6 +244,7 @@ public class ProcedureDescriptionSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ProcedureDescriptionSection> {
+		@Override
 		public ProcedureDescriptionSection create() {
 			return ConsolFactory.eINSTANCE.createProcedureDescriptionSection();
 		}

@@ -259,6 +259,7 @@ public class ReferencedFramesObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<ReferencedFramesObservation> {
+		@Override
 		public ReferencedFramesObservation create() {
 			return ConsolFactory.eINSTANCE.createReferencedFramesObservation();
 		}

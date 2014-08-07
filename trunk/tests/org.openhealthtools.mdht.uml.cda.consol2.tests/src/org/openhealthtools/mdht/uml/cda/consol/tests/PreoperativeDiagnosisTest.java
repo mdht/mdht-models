@@ -254,6 +254,7 @@ public class PreoperativeDiagnosisTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PreoperativeDiagnosis> {
+		@Override
 		public PreoperativeDiagnosis create() {
 			return ConsolFactory.eINSTANCE.createPreoperativeDiagnosis();
 		}
