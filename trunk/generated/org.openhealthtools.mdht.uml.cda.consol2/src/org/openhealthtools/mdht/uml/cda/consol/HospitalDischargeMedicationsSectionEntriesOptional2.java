@@ -56,6 +56,7 @@ public interface HospitalDischargeMedicationsSectionEntriesOptional2 extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeMedicationsSectionEntriesOptional2 init();
 
 	/**
@@ -63,6 +64,7 @@ public interface HospitalDischargeMedicationsSectionEntriesOptional2 extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeMedicationsSectionEntriesOptional2 init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalDischargeMedicationsSectionEntriesOptional2

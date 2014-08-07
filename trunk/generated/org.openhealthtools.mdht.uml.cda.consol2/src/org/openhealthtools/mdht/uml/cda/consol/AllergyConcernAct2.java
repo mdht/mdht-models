@@ -115,6 +115,7 @@ public interface AllergyConcernAct2 extends AllergyProblemAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyConcernAct2 init();
 
 	/**
@@ -122,5 +123,6 @@ public interface AllergyConcernAct2 extends AllergyProblemAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyConcernAct2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AllergyConcernAct2

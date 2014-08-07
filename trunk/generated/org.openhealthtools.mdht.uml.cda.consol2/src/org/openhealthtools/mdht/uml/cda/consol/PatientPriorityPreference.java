@@ -97,7 +97,7 @@ public interface PatientPriorityPreference extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'PAT\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'PAT\')'"
 	 * @generated
 	 */
 	boolean validatePatientPriorityPreferenceCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -121,7 +121,7 @@ public interface PatientPriorityPreference extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'255216001\' or value.code = \'81170007\' or value.code = \'70905002\' or value.code = \'29970001\' or value.code = \'32088001\' or value.code = \'53046009\' or value.code = \'86777004\' or value.code = \'51601003\' or value.code = \'58584009\' or value.code = \'28226006\' or value.code = \'40397004\' or value.code = \'46213005\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'255216001\' or value.code = \'81170007\' or value.code = \'70905002\' or value.code = \'29970001\' or value.code = \'32088001\' or value.code = \'53046009\' or value.code = \'86777004\' or value.code = \'51601003\' or value.code = \'58584009\' or value.code = \'28226006\' or value.code = \'40397004\' or value.code = \'46213005\'))'"
 	 * @generated
 	 */
 	boolean validatePatientPriorityPreferencePriorityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -133,7 +133,7 @@ public interface PatientPriorityPreference extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'394849002\' or value.code = \'394848005\' or value.code = \'441808003\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'394849002\' or value.code = \'394848005\' or value.code = \'441808003\')))'"
 	 * @generated
 	 */
 	boolean validatePatientPriorityPreferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);

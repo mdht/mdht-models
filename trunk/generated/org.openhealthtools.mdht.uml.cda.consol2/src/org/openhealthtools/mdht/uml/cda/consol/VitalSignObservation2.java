@@ -57,6 +57,7 @@ public interface VitalSignObservation2 extends VitalSignObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignObservation2 init();
 
 	/**
@@ -64,5 +65,6 @@ public interface VitalSignObservation2 extends VitalSignObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignObservation2

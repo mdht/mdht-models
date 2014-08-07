@@ -68,6 +68,7 @@ public interface ResultObservation2 extends ResultObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultObservation2 init();
 
 	/**
@@ -75,5 +76,6 @@ public interface ResultObservation2 extends ResultObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultObservation2

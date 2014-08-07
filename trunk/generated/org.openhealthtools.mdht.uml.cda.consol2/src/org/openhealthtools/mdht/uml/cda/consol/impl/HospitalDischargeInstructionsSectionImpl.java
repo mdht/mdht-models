@@ -57,6 +57,7 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalDischargeInstructionsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTemplateId(
@@ -68,6 +69,7 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalDischargeInstructionsSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionCode(
@@ -79,6 +81,7 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalDischargeInstructionsSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionCodeP(
@@ -90,6 +93,7 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalDischargeInstructionsSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionText(
@@ -101,6 +105,7 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalDischargeInstructionsSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTitle(
@@ -112,6 +117,7 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeInstructionsSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -121,6 +127,7 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeInstructionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

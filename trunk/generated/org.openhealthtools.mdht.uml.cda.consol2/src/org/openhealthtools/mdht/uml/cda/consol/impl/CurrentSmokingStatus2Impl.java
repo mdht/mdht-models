@@ -56,6 +56,7 @@ public class CurrentSmokingStatus2Impl extends SmokingStatusObservationImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCurrentSmokingStatus2EffectiveTimeLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CurrentSmokingStatus2Operations.validateCurrentSmokingStatus2EffectiveTimeLow(this, diagnostics, context);
@@ -66,6 +67,7 @@ public class CurrentSmokingStatus2Impl extends SmokingStatusObservationImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCurrentSmokingStatus2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CurrentSmokingStatus2Operations.validateCurrentSmokingStatus2AuthorParticipation(

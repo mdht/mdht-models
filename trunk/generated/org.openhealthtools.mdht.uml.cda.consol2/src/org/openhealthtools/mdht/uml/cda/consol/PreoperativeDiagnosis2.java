@@ -66,6 +66,7 @@ public interface PreoperativeDiagnosis2 extends PreoperativeDiagnosis {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosis2 init();
 
 	/**
@@ -73,5 +74,6 @@ public interface PreoperativeDiagnosis2 extends PreoperativeDiagnosis {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PreoperativeDiagnosis2

@@ -65,6 +65,7 @@ public interface FunctionalStatusResultOrganizer extends ResultOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusResultOrganizer init();
 
 	/**
@@ -72,5 +73,6 @@ public interface FunctionalStatusResultOrganizer extends ResultOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusResultOrganizer

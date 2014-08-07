@@ -57,6 +57,7 @@ public class DeceasedObservation2Impl extends DeceasedObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationProblemObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DeceasedObservation2Operations.validateDeceasedObservationProblemObservation2(this, diagnostics, context);
@@ -67,6 +68,7 @@ public class DeceasedObservation2Impl extends DeceasedObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemObservation2 getConsolProblemObservation2() {
 		return DeceasedObservation2Operations.getConsolProblemObservation2(this);
 	}

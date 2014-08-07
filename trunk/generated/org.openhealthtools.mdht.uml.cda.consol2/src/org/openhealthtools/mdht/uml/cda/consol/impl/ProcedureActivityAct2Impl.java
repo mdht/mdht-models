@@ -60,6 +60,7 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureActivityAct2InstructionsInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityAct2Operations.validateProcedureActivityAct2InstructionsInversion(
@@ -71,6 +72,7 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureActivityActInstruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityAct2Operations.validateProcedureActivityActInstruction2(this, diagnostics, context);
 	}
@@ -80,6 +82,7 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureActivityActIndication2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityAct2Operations.validateProcedureActivityActIndication2(this, diagnostics, context);
 	}
@@ -89,6 +92,7 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureActivityActMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityAct2Operations.validateProcedureActivityActMedicationActivity2(
@@ -100,6 +104,7 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Instruction2 getConsolInstruction2() {
 		return ProcedureActivityAct2Operations.getConsolInstruction2(this);
 	}
@@ -109,6 +114,7 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Indication2> getConsolIndication2s() {
 		return ProcedureActivityAct2Operations.getConsolIndication2s(this);
 	}
@@ -118,6 +124,7 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return ProcedureActivityAct2Operations.getConsolMedicationActivity2s(this);
 	}

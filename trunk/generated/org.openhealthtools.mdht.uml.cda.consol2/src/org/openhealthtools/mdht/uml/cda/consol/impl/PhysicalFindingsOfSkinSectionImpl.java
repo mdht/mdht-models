@@ -60,6 +60,7 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalFindingsOfSkinSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionTemplateId(
@@ -71,6 +72,7 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalFindingsOfSkinSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionCode(
 			this, diagnostics, context);
@@ -81,6 +83,7 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalFindingsOfSkinSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionCodeP(
 			this, diagnostics, context);
@@ -91,6 +94,7 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalFindingsOfSkinSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionTitle(
 			this, diagnostics, context);
@@ -101,6 +105,7 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalFindingsOfSkinSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionText(
 			this, diagnostics, context);
@@ -111,6 +116,7 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalFindingsOfSkinSectionWoundObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionWoundObservation(
@@ -122,6 +128,7 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<WoundObservation> getWoundObservations() {
 		return PhysicalFindingsOfSkinSectionOperations.getWoundObservations(this);
 	}
@@ -131,6 +138,7 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicalFindingsOfSkinSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -140,6 +148,7 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicalFindingsOfSkinSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

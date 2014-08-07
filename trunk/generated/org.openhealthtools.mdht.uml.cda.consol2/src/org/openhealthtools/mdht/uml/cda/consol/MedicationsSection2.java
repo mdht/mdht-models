@@ -68,6 +68,7 @@ public interface MedicationsSection2 extends MedicationsSectionEntriesOptional2 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsSection2 init();
 
 	/**
@@ -75,5 +76,6 @@ public interface MedicationsSection2 extends MedicationsSectionEntriesOptional2 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationsSection2

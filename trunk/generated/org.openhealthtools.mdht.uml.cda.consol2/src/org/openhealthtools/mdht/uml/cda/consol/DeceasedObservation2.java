@@ -51,6 +51,7 @@ public interface DeceasedObservation2 extends DeceasedObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DeceasedObservation2 init();
 
 	/**
@@ -58,5 +59,6 @@ public interface DeceasedObservation2 extends DeceasedObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DeceasedObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DeceasedObservation2

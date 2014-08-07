@@ -58,6 +58,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsTemplateId(this, diagnostics, context);
 	}
@@ -67,6 +68,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsClassCode(this, diagnostics, context);
 	}
@@ -76,6 +78,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsMoodCode(this, diagnostics, context);
 	}
@@ -85,6 +88,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsId(this, diagnostics, context);
 	}
@@ -94,6 +98,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsCodeP(this, diagnostics, context);
 	}
@@ -103,6 +108,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsCode(this, diagnostics, context);
 	}
@@ -112,6 +118,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsStatusCode(this, diagnostics, context);
 	}
@@ -121,6 +128,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsStatusCodeP(this, diagnostics, context);
 	}
@@ -130,6 +138,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsEffectiveTime(this, diagnostics, context);
 	}
@@ -139,6 +148,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsValue(this, diagnostics, context);
 	}
@@ -148,6 +158,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsValueP(this, diagnostics, context);
 	}
@@ -157,6 +168,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundCharacteristicsCDCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundCharacteristicsOperations.validateWoundCharacteristicsCDCodeSystem(this, diagnostics, context);
 	}
@@ -166,6 +178,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public WoundCharacteristics init() {
 		return Initializer.Util.init(this);
 	}
@@ -175,6 +188,7 @@ public class WoundCharacteristicsImpl extends ObservationImpl implements WoundCh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public WoundCharacteristics init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

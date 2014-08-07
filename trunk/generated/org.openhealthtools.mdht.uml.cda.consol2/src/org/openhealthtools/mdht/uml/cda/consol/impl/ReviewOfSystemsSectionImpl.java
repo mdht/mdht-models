@@ -56,6 +56,7 @@ public class ReviewOfSystemsSectionImpl extends SectionImpl implements ReviewOfS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReviewOfSystemsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTemplateId(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class ReviewOfSystemsSectionImpl extends SectionImpl implements ReviewOfS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReviewOfSystemsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionCode(this, diagnostics, context);
 	}
@@ -74,6 +76,7 @@ public class ReviewOfSystemsSectionImpl extends SectionImpl implements ReviewOfS
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReviewOfSystemsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionCodeP(this, diagnostics, context);
 	}
@@ -83,6 +86,7 @@ public class ReviewOfSystemsSectionImpl extends SectionImpl implements ReviewOfS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReviewOfSystemsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTitle(this, diagnostics, context);
 	}
@@ -92,6 +96,7 @@ public class ReviewOfSystemsSectionImpl extends SectionImpl implements ReviewOfS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReviewOfSystemsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionText(this, diagnostics, context);
 	}
@@ -101,6 +106,7 @@ public class ReviewOfSystemsSectionImpl extends SectionImpl implements ReviewOfS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReviewOfSystemsSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -110,6 +116,7 @@ public class ReviewOfSystemsSectionImpl extends SectionImpl implements ReviewOfS
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReviewOfSystemsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

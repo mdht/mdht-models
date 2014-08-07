@@ -610,5 +610,6 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public UnstructuredOrScannedDocument init();
 } // UnstructuredOrScannedDocument

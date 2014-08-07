@@ -34,5 +34,6 @@ public interface SupportParticipant extends Support {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SupportParticipant init();
 } // SupportParticipant

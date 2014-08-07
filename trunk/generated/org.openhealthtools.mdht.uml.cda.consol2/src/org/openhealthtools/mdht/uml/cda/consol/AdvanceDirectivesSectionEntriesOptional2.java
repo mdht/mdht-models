@@ -55,6 +55,7 @@ public interface AdvanceDirectivesSectionEntriesOptional2 extends AdvanceDirecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectivesSectionEntriesOptional2 init();
 
 	/**
@@ -62,5 +63,6 @@ public interface AdvanceDirectivesSectionEntriesOptional2 extends AdvanceDirecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectivesSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectivesSectionEntriesOptional2

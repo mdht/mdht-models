@@ -99,6 +99,7 @@ public interface MedicalEquipmentSection2 extends MedicalEquipmentSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicalEquipmentSection2 init();
 
 	/**
@@ -106,5 +107,6 @@ public interface MedicalEquipmentSection2 extends MedicalEquipmentSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicalEquipmentSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicalEquipmentSection2

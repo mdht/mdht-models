@@ -160,6 +160,7 @@ public interface CognitiveStatusProblemObservation extends ProblemObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusProblemObservation init();
 
 	/**
@@ -167,5 +168,6 @@ public interface CognitiveStatusProblemObservation extends ProblemObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveStatusProblemObservation

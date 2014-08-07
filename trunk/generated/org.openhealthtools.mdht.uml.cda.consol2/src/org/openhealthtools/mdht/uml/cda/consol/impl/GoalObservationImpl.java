@@ -63,6 +63,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGoalObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationTemplateId(this, diagnostics, context);
 	}
@@ -72,6 +73,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGoalObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationClassCode(this, diagnostics, context);
 	}
@@ -81,6 +83,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGoalObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationMoodCode(this, diagnostics, context);
 	}
@@ -90,6 +93,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGoalObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationCode(this, diagnostics, context);
 	}
@@ -99,6 +103,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGoalObservationPatientPriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationPatientPriorityPreference(this, diagnostics, context);
@@ -109,6 +114,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGoalObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservation(this, diagnostics, context);
 	}
@@ -118,6 +124,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGoalObservationActReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationActReference(this, diagnostics, context);
 	}
@@ -127,6 +134,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGoalObservationAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationAuthorParticipation(this, diagnostics, context);
 	}
@@ -136,6 +144,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGoalObservationHealthConcernAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationHealthConcernAct(this, diagnostics, context);
 	}
@@ -145,6 +154,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGoalObservationProviderPriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationProviderPriorityPreference(this, diagnostics, context);
@@ -155,6 +165,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateGoalObservationExternalDocumentReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationExternalDocumentReference(this, diagnostics, context);
@@ -165,6 +176,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PatientPriorityPreference getPatientPriorityPreference() {
 		return GoalObservationOperations.getPatientPriorityPreference(this);
 	}
@@ -174,6 +186,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<GoalObservation> getGoalObservations() {
 		return GoalObservationOperations.getGoalObservations(this);
 	}
@@ -183,6 +196,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ActReference> getActReferences() {
 		return GoalObservationOperations.getActReferences(this);
 	}
@@ -192,6 +206,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<HealthConcernAct> getHealthConcernActs() {
 		return GoalObservationOperations.getHealthConcernActs(this);
 	}
@@ -201,6 +216,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
 		return GoalObservationOperations.getProviderPriorityPreferences(this);
 	}
@@ -210,6 +226,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ExternalDocumentReference> getExternalDocumentReferences() {
 		return GoalObservationOperations.getExternalDocumentReferences(this);
 	}
@@ -219,6 +236,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GoalObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -228,6 +246,7 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GoalObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

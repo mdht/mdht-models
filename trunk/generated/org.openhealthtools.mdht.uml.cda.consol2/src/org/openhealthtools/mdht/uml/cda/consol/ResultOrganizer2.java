@@ -102,6 +102,7 @@ public interface ResultOrganizer2 extends ResultOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultOrganizer2 init();
 
 	/**
@@ -109,5 +110,6 @@ public interface ResultOrganizer2 extends ResultOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultOrganizer2

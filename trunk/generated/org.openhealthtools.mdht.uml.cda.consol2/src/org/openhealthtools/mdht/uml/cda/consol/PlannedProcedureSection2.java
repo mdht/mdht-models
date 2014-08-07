@@ -54,6 +54,7 @@ public interface PlannedProcedureSection2 extends PlannedProcedureSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedProcedureSection2 init();
 
 	/**
@@ -61,5 +62,6 @@ public interface PlannedProcedureSection2 extends PlannedProcedureSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedProcedureSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedProcedureSection2

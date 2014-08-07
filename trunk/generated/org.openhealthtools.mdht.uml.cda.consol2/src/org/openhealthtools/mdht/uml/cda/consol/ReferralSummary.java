@@ -26,5 +26,6 @@ public interface ReferralSummary extends GeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReferralSummary init();
 } // ReferralSummary

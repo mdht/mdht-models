@@ -56,6 +56,7 @@ public interface CurrentSmokingStatus2 extends SmokingStatusObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CurrentSmokingStatus2 init();
 
 	/**
@@ -63,5 +64,6 @@ public interface CurrentSmokingStatus2 extends SmokingStatusObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CurrentSmokingStatus2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CurrentSmokingStatus2

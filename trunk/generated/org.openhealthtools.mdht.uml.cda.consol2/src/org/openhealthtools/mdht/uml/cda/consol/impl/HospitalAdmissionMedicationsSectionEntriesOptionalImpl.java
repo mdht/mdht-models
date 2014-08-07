@@ -59,6 +59,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
@@ -70,6 +71,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(
@@ -81,6 +83,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(
@@ -92,6 +95,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalText(
@@ -103,6 +107,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle(
@@ -114,6 +119,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
@@ -125,6 +131,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AdmissionMedication> getAdmissionMedications() {
 		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.getAdmissionMedications(this);
 	}
@@ -134,6 +141,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalAdmissionMedicationsSectionEntriesOptional init() {
 		return Initializer.Util.init(this);
 	}
@@ -143,6 +151,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalAdmissionMedicationsSectionEntriesOptional init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

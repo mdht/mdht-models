@@ -56,6 +56,7 @@ public interface ImmunizationsSection2 extends ImmunizationsSectionEntriesOption
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationsSection2 init();
 
 	/**
@@ -63,5 +64,6 @@ public interface ImmunizationsSection2 extends ImmunizationsSectionEntriesOption
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ImmunizationsSection2

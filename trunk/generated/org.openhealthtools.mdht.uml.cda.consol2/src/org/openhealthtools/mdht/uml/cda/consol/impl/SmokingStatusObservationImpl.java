@@ -51,6 +51,7 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSmokingStatusObservationEffectiveTimeLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTimeLow(
@@ -62,6 +63,7 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSmokingStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationClassCode(this, diagnostics, context);
 	}
@@ -71,6 +73,7 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSmokingStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationMoodCode(this, diagnostics, context);
 	}
@@ -80,6 +83,7 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSmokingStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationCodeP(this, diagnostics, context);
 	}
@@ -89,6 +93,7 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSmokingStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationCode(this, diagnostics, context);
 	}
@@ -98,6 +103,7 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSmokingStatusObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTime(
@@ -109,6 +115,7 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSmokingStatusObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCodeP(
 			this, diagnostics, context);
@@ -119,6 +126,7 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSmokingStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCode(this, diagnostics, context);
 	}
@@ -128,6 +136,7 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSmokingStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationValueP(this, diagnostics, context);
 	}
@@ -137,6 +146,7 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationValue(this, diagnostics, context);
 	}

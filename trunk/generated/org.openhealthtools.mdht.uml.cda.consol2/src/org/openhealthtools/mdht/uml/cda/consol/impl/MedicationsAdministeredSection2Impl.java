@@ -59,6 +59,7 @@ public class MedicationsAdministeredSection2Impl extends MedicationsAdministered
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationsAdministeredSectionMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsAdministeredSection2Operations.validateMedicationsAdministeredSectionMedicationActivity2(
@@ -70,6 +71,7 @@ public class MedicationsAdministeredSection2Impl extends MedicationsAdministered
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return MedicationsAdministeredSection2Operations.getConsolMedicationActivity2s(this);
 	}

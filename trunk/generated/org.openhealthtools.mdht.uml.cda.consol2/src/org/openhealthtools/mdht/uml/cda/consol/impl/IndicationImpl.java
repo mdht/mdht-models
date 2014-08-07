@@ -56,6 +56,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateIndicationCodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationCodeNullFlavor(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateIndicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationTemplateId(this, diagnostics, context);
 	}
@@ -74,6 +76,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateIndicationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationClassCode(this, diagnostics, context);
 	}
@@ -83,6 +86,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateIndicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationCode(this, diagnostics, context);
 	}
@@ -92,6 +96,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateIndicationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationEffectiveTime(this, diagnostics, context);
 	}
@@ -101,6 +106,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateIndicationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationId(this, diagnostics, context);
 	}
@@ -110,6 +116,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateIndicationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationCodeP(this, diagnostics, context);
 	}
@@ -119,6 +126,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateIndicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationMoodCode(this, diagnostics, context);
 	}
@@ -128,6 +136,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateIndicationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationStatusCode(this, diagnostics, context);
 	}
@@ -137,6 +146,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateIndicationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationValue(this, diagnostics, context);
 	}
@@ -146,6 +156,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateIndicationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationValueP(this, diagnostics, context);
 	}
@@ -155,6 +166,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Indication init() {
 		return Initializer.Util.init(this);
 	}
@@ -164,6 +176,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Indication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

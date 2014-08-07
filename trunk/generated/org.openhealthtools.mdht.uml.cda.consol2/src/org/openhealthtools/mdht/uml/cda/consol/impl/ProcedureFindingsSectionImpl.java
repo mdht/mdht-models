@@ -58,6 +58,7 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureFindingsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionTemplateId(this, diagnostics, context);
 	}
@@ -67,6 +68,7 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureFindingsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionCode(this, diagnostics, context);
 	}
@@ -76,6 +78,7 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureFindingsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionCodeP(this, diagnostics, context);
 	}
@@ -85,6 +88,7 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureFindingsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionText(this, diagnostics, context);
 	}
@@ -94,6 +98,7 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureFindingsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionTitle(this, diagnostics, context);
 	}
@@ -103,6 +108,7 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureFindingsSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionProblemObservation(
@@ -114,6 +120,7 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProblemObservation> getProblemObservations() {
 		return ProcedureFindingsSectionOperations.getProblemObservations(this);
 	}
@@ -123,6 +130,7 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureFindingsSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -132,6 +140,7 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureFindingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

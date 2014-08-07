@@ -57,6 +57,7 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateResultsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionText(this, diagnostics, context);
 	}
@@ -66,6 +67,7 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateResultsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionResultOrganizer(this, diagnostics, context);
 	}
@@ -75,6 +77,7 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ResultOrganizer> getConsolResultOrganizers() {
 		return ResultsSectionOperations.getConsolResultOrganizers(this);
 	}

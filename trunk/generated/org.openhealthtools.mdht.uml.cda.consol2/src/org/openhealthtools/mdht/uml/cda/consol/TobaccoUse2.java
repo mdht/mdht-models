@@ -57,6 +57,7 @@ public interface TobaccoUse2 extends TobaccoUse {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TobaccoUse2 init();
 
 	/**
@@ -64,5 +65,6 @@ public interface TobaccoUse2 extends TobaccoUse {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TobaccoUse2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TobaccoUse2

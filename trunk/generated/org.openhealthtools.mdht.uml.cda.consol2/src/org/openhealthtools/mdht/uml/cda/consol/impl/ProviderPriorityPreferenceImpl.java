@@ -58,6 +58,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProviderPriorityPreferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferenceTemplateId(
 			this, diagnostics, context);
@@ -68,6 +69,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProviderPriorityPreferenceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferenceClassCode(
 			this, diagnostics, context);
@@ -78,6 +80,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProviderPriorityPreferenceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferenceMoodCode(
 			this, diagnostics, context);
@@ -88,6 +91,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProviderPriorityPreferenceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferenceId(this, diagnostics, context);
 	}
@@ -97,6 +101,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProviderPriorityPreferenceCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferenceCodeP(this, diagnostics, context);
 	}
@@ -106,6 +111,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProviderPriorityPreferenceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferenceCode(this, diagnostics, context);
 	}
@@ -115,6 +121,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProviderPriorityPreferencePriorityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferencePriorityCodeP(
@@ -126,6 +133,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProviderPriorityPreferencePriorityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferencePriorityCode(
@@ -137,6 +145,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProviderPriorityPreferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferenceValue(this, diagnostics, context);
 	}
@@ -146,6 +155,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProviderPriorityPreferenceValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferenceValueP(this, diagnostics, context);
 	}
@@ -155,6 +165,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProviderPriorityPreferenceAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferenceAuthorParticipation(
@@ -166,6 +177,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProviderPriorityPreference init() {
 		return Initializer.Util.init(this);
 	}
@@ -175,6 +187,7 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProviderPriorityPreference init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

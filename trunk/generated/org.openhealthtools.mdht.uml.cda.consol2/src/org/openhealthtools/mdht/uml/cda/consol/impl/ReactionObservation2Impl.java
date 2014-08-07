@@ -60,6 +60,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReactionObservation2CodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservation2CodeValueSet(this, diagnostics, context);
 	}
@@ -69,6 +70,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReactionObservation2ProcedureActivityProcedureInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservation2ProcedureActivityProcedureInversionInd(
@@ -80,6 +82,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReactionObservation2MedicationActivityInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservation2MedicationActivityInversionInd(
@@ -91,6 +94,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReactionObservation2SeverityObservationInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservation2SeverityObservationInversionInd(
@@ -102,6 +106,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReactionObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservationCodeP(this, diagnostics, context);
 	}
@@ -111,6 +116,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReactionObservationProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedure2(
@@ -122,6 +128,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReactionObservationMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservationMedicationActivity2(this, diagnostics, context);
@@ -132,6 +139,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReactionObservationSeverityObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservationSeverityObservation2(
@@ -143,6 +151,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s() {
 		return ReactionObservation2Operations.getConsolProcedureActivityProcedure2s(this);
 	}
@@ -152,6 +161,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return ReactionObservation2Operations.getConsolMedicationActivity2s(this);
 	}
@@ -161,6 +171,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SeverityObservation2 getConsolSeverityObservation2() {
 		return ReactionObservation2Operations.getConsolSeverityObservation2(this);
 	}

@@ -100,6 +100,7 @@ public interface PhysicianofRecordParticipant2 extends PhysicianofRecordParticip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicianofRecordParticipant2 init();
 
 	/**
@@ -107,5 +108,6 @@ public interface PhysicianofRecordParticipant2 extends PhysicianofRecordParticip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicianofRecordParticipant2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicianofRecordParticipant2

@@ -57,6 +57,7 @@ public interface SocialHistoryObservation2 extends SocialHistoryObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistoryObservation2 init();
 
 	/**
@@ -64,5 +65,6 @@ public interface SocialHistoryObservation2 extends SocialHistoryObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistoryObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SocialHistoryObservation2

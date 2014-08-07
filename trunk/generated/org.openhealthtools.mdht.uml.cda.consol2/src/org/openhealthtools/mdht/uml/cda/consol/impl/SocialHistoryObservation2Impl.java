@@ -56,6 +56,7 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSocialHistoryObservation2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2EffectiveTime(
@@ -67,6 +68,7 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSocialHistoryObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2AuthorParticipation(

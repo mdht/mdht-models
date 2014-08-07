@@ -58,6 +58,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CoverageActivityOperations.validateCoverageActivityRelationshipSequenceNumber(this, diagnostics, context);
@@ -68,6 +69,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCoverageActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivityOperations.validateCoverageActivityTemplateId(this, diagnostics, context);
 	}
@@ -77,6 +79,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCoverageActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivityOperations.validateCoverageActivityClassCode(this, diagnostics, context);
 	}
@@ -86,6 +89,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCoverageActivityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivityOperations.validateCoverageActivityCode(this, diagnostics, context);
 	}
@@ -95,6 +99,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCoverageActivityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivityOperations.validateCoverageActivityId(this, diagnostics, context);
 	}
@@ -104,6 +109,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCoverageActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivityOperations.validateCoverageActivityMoodCode(this, diagnostics, context);
 	}
@@ -113,6 +119,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCoverageActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivityOperations.validateCoverageActivityStatusCode(this, diagnostics, context);
 	}
@@ -122,6 +129,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCoverageActivityPolicyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivityOperations.validateCoverageActivityPolicyActivity(this, diagnostics, context);
 	}
@@ -131,6 +139,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PolicyActivity> getPolicyActivities() {
 		return CoverageActivityOperations.getPolicyActivities(this);
 	}
@@ -140,6 +149,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CoverageActivity init() {
 		return Initializer.Util.init(this);
 	}
@@ -149,6 +159,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CoverageActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

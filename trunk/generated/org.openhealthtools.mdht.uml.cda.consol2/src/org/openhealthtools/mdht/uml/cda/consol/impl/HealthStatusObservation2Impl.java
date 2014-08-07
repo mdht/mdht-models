@@ -56,6 +56,7 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHealthStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservation2Operations.validateHealthStatusObservationCodeP(this, diagnostics, context);
 	}

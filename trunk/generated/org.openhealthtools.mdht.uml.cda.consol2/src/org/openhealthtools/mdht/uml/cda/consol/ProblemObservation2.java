@@ -201,6 +201,7 @@ public interface ProblemObservation2 extends ProblemObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemObservation2 init();
 
 	/**
@@ -208,5 +209,6 @@ public interface ProblemObservation2 extends ProblemObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemObservation2

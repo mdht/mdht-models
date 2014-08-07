@@ -62,6 +62,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationTemplateId(this, diagnostics, context);
 	}
@@ -71,6 +72,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationClassCode(this, diagnostics, context);
 	}
@@ -80,6 +82,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationMoodCode(this, diagnostics, context);
 	}
@@ -89,6 +92,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationCodeP(this, diagnostics, context);
 	}
@@ -98,6 +102,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationCode(this, diagnostics, context);
 	}
@@ -107,6 +112,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationValue(this, diagnostics, context);
 	}
@@ -116,6 +122,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationValueP(this, diagnostics, context);
 	}
@@ -125,6 +132,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationTargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationTargetSiteCodeP(this, diagnostics, context);
 	}
@@ -134,6 +142,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationTargetSiteCode(this, diagnostics, context);
 	}
@@ -143,6 +152,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationWoundMeasurementObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationWoundMeasurementObservation(
@@ -154,6 +164,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationWoundCharacteristics(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationWoundCharacteristics(this, diagnostics, context);
 	}
@@ -163,6 +174,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationHighestPressureUlcerStage(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationHighestPressureUlcerStage(this, diagnostics, context);
@@ -173,6 +185,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationAuthorParticipation(this, diagnostics, context);
 	}
@@ -182,6 +195,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationCDCRCDCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationCDCRCDCode(this, diagnostics, context);
 	}
@@ -191,6 +205,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationCDCRName(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationCDCRName(this, diagnostics, context);
 	}
@@ -200,6 +215,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationCDCRNameP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationCDCRNameP(this, diagnostics, context);
 	}
@@ -209,6 +225,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationCDCRValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationCDCRValue(this, diagnostics, context);
 	}
@@ -218,6 +235,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateWoundObservationCDQualifier(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationCDQualifier(this, diagnostics, context);
 	}
@@ -227,6 +245,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<WoundMeasurementObservation> getWoundMeasurementObservations() {
 		return WoundObservationOperations.getWoundMeasurementObservations(this);
 	}
@@ -236,6 +255,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<WoundCharacteristics> getWoundCharacteristicss() {
 		return WoundObservationOperations.getWoundCharacteristicss(this);
 	}
@@ -245,6 +265,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HighestPressureUlcerStage getHighestPressureUlcerStage() {
 		return WoundObservationOperations.getHighestPressureUlcerStage(this);
 	}
@@ -254,6 +275,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public WoundObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -263,6 +285,7 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public WoundObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

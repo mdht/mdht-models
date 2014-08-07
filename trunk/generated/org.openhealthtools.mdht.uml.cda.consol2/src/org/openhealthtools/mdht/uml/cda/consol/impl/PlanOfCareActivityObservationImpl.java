@@ -56,6 +56,7 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationTemplateId(
@@ -67,6 +68,7 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivityObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationClassCode(
@@ -78,6 +80,7 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCode(
@@ -89,6 +92,7 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivityObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationId(
 			this, diagnostics, context);
@@ -99,6 +103,7 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivityObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -108,6 +113,7 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

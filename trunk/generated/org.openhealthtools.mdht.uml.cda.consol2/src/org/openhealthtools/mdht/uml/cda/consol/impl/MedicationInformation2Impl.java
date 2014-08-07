@@ -56,6 +56,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialCETranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialCETranslation(
@@ -67,6 +68,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialCodeOriginalText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialCodeOriginalText(
@@ -78,6 +80,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialCodeTranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialCodeTranslation(
@@ -89,6 +92,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialReference(
@@ -100,6 +104,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialOriginalTextReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialOriginalTextReferenceValue(
@@ -111,6 +116,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialReferenceValue(
@@ -122,6 +128,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeP(
@@ -133,6 +140,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode(

@@ -240,6 +240,7 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public UnstructuredDocument init();
 
 	/**
@@ -247,5 +248,6 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public UnstructuredDocument init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // UnstructuredDocument

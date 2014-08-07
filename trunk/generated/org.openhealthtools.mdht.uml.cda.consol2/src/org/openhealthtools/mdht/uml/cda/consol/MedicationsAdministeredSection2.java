@@ -55,6 +55,7 @@ public interface MedicationsAdministeredSection2 extends MedicationsAdministered
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsAdministeredSection2 init();
 
 	/**
@@ -62,5 +63,6 @@ public interface MedicationsAdministeredSection2 extends MedicationsAdministered
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsAdministeredSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationsAdministeredSection2

@@ -56,6 +56,7 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOperativeNoteFluidSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTemplateId(
 			this, diagnostics, context);
@@ -66,6 +67,7 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOperativeNoteFluidSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionCode(this, diagnostics, context);
 	}
@@ -75,6 +77,7 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOperativeNoteFluidSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionCodeP(this, diagnostics, context);
 	}
@@ -84,6 +87,7 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOperativeNoteFluidSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionText(this, diagnostics, context);
 	}
@@ -93,6 +97,7 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateOperativeNoteFluidSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTitle(this, diagnostics, context);
 	}
@@ -102,6 +107,7 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OperativeNoteFluidSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -111,6 +117,7 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OperativeNoteFluidSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

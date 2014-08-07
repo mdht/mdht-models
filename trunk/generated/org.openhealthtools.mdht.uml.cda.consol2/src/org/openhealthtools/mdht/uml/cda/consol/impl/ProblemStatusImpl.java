@@ -56,6 +56,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemStatusTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusTextReference(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemStatusReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusReferenceValue(this, diagnostics, context);
 	}
@@ -74,6 +76,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemStatusTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusTextReferenceValue(this, diagnostics, context);
 	}
@@ -83,6 +86,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemStatusTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusTemplateId(this, diagnostics, context);
 	}
@@ -92,6 +96,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemStatusClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusClassCode(this, diagnostics, context);
 	}
@@ -101,6 +106,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemStatusMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusMoodCode(this, diagnostics, context);
 	}
@@ -110,6 +116,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusCode(this, diagnostics, context);
 	}
@@ -119,6 +126,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemStatusStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusStatusCode(this, diagnostics, context);
 	}
@@ -128,6 +136,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemStatusText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusText(this, diagnostics, context);
 	}
@@ -137,6 +146,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemStatusValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusValue(this, diagnostics, context);
 	}
@@ -146,6 +156,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemStatus init() {
 		return Initializer.Util.init(this);
 	}
@@ -155,6 +166,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemStatus init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

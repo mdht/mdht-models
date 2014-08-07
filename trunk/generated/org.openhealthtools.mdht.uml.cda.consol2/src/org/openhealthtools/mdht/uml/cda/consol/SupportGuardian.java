@@ -34,5 +34,6 @@ public interface SupportGuardian extends Support {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SupportGuardian init();
 } // SupportGuardian

@@ -59,6 +59,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProceduresSectionHasProcedureActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionHasProcedureActivity(this, diagnostics, context);
@@ -69,6 +70,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProceduresSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionTitle(this, diagnostics, context);
 	}
@@ -78,6 +80,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityProcedure(
@@ -89,6 +92,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProceduresSectionProcedureActivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityObservation(
@@ -100,6 +104,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProceduresSectionProcedureActivityAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityAct(this, diagnostics, context);
@@ -110,6 +115,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProcedureActivityProcedure> getConsolProcedureActivityProcedures() {
 		return ProceduresSectionOperations.getConsolProcedureActivityProcedures(this);
 	}
@@ -119,6 +125,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProcedureActivityObservation> getConsolProcedureActivityObservations() {
 		return ProceduresSectionOperations.getConsolProcedureActivityObservations(this);
 	}
@@ -128,6 +135,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProcedureActivityAct> getConsolProcedureActivityActs() {
 		return ProceduresSectionOperations.getConsolProcedureActivityActs(this);
 	}

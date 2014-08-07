@@ -58,6 +58,7 @@ public class HospitalDischargeDiagnosisSection2Impl extends HospitalDischargeDia
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2(
@@ -69,6 +70,7 @@ public class HospitalDischargeDiagnosisSection2Impl extends HospitalDischargeDia
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeDiagnosis2 getConsolHospitalDischargeDiagnosis2() {
 		return HospitalDischargeDiagnosisSection2Operations.getConsolHospitalDischargeDiagnosis2(this);
 	}

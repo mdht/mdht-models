@@ -58,6 +58,7 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostprocedureDiagnosisSectionPostprocedureDiagnosis2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionPostprocedureDiagnosis2(
@@ -69,6 +70,7 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostprocedureDiagnosis2 getConsolPostprocedureDiagnosis2() {
 		return PostprocedureDiagnosisSection2Operations.getConsolPostprocedureDiagnosis2(this);
 	}

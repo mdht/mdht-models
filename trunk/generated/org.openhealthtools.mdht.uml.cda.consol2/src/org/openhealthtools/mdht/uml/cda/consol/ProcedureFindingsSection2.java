@@ -54,6 +54,7 @@ public interface ProcedureFindingsSection2 extends ProcedureFindingsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureFindingsSection2 init();
 
 	/**
@@ -61,5 +62,6 @@ public interface ProcedureFindingsSection2 extends ProcedureFindingsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureFindingsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureFindingsSection2

@@ -66,6 +66,7 @@ public interface PostprocedureDiagnosis2 extends PostprocedureDiagnosis {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostprocedureDiagnosis2 init();
 
 	/**
@@ -73,5 +74,6 @@ public interface PostprocedureDiagnosis2 extends PostprocedureDiagnosis {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostprocedureDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PostprocedureDiagnosis2

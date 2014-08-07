@@ -60,6 +60,7 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionSectionOperations.validateNutritionSectionTemplateId(this, diagnostics, context);
 	}
@@ -69,6 +70,7 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionSectionOperations.validateNutritionSectionCode(this, diagnostics, context);
 	}
@@ -78,6 +80,7 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionSectionOperations.validateNutritionSectionCodeP(this, diagnostics, context);
 	}
@@ -87,6 +90,7 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionSectionOperations.validateNutritionSectionTitle(this, diagnostics, context);
 	}
@@ -96,6 +100,7 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionSectionOperations.validateNutritionSectionText(this, diagnostics, context);
 	}
@@ -105,6 +110,7 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionSectionNutritionalStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionSectionOperations.validateNutritionSectionNutritionalStatusObservation(
@@ -116,6 +122,7 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<NutritionalStatusObservation> getNutritionalStatusObservations() {
 		return NutritionSectionOperations.getNutritionalStatusObservations(this);
 	}
@@ -125,6 +132,7 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NutritionSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -134,6 +142,7 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NutritionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

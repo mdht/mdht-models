@@ -52,6 +52,7 @@ public interface EncounterDiagnosis2 extends EncounterDiagnosis {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterDiagnosis2 init();
 
 	/**
@@ -59,5 +60,6 @@ public interface EncounterDiagnosis2 extends EncounterDiagnosis {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncounterDiagnosis2

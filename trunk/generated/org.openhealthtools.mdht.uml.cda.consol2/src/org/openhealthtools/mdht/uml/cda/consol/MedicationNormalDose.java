@@ -49,5 +49,6 @@ public interface MedicationNormalDose extends MedicationActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationNormalDose init();
 } // MedicationNormalDose

@@ -58,6 +58,7 @@ public class ResultsSection2Impl extends ResultsSectionEntriesOptional2Impl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateResultsSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSection2Operations.validateResultsSection2Title(this, diagnostics, context);
 	}
@@ -67,6 +68,7 @@ public class ResultsSection2Impl extends ResultsSectionEntriesOptional2Impl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateResultsSection2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSection2Operations.validateResultsSection2Text(this, diagnostics, context);
 	}

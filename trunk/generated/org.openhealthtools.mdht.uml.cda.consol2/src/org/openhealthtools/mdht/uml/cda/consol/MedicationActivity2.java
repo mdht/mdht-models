@@ -304,6 +304,7 @@ public interface MedicationActivity2 extends MedicationActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationActivity2 init();
 
 	/**
@@ -311,5 +312,6 @@ public interface MedicationActivity2 extends MedicationActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationActivity2

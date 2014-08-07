@@ -58,6 +58,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
@@ -69,6 +70,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCode(
@@ -80,6 +82,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCodeP(
@@ -91,6 +94,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTitle(
@@ -102,6 +106,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalText(
@@ -113,6 +118,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(
@@ -124,6 +130,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ImmunizationActivity> getImmunizationActivities() {
 		return ImmunizationsSectionEntriesOptionalOperations.getImmunizationActivities(this);
 	}
@@ -133,6 +140,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationsSectionEntriesOptional init() {
 		return Initializer.Util.init(this);
 	}
@@ -142,6 +150,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

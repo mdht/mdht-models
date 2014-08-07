@@ -57,6 +57,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePregnancyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationTemplateId(this, diagnostics, context);
 	}
@@ -66,6 +67,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePregnancyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationClassCode(this, diagnostics, context);
 	}
@@ -75,6 +77,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePregnancyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationMoodCode(this, diagnostics, context);
 	}
@@ -84,6 +87,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePregnancyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationCode(this, diagnostics, context);
 	}
@@ -93,6 +97,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePregnancyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationCodeP(this, diagnostics, context);
 	}
@@ -102,6 +107,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePregnancyObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationStatusCode(this, diagnostics, context);
 	}
@@ -111,6 +117,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePregnancyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationValue(this, diagnostics, context);
 	}
@@ -120,6 +127,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePregnancyObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationValueP(this, diagnostics, context);
 	}
@@ -129,6 +137,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePregnancyObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationEffectiveTime(this, diagnostics, context);
 	}
@@ -138,6 +147,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePregnancyObservationEstimatedDateOfDelivery(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDelivery(
@@ -149,6 +159,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EstimatedDateOfDelivery getEstimatedDateOfDelivery() {
 		return PregnancyObservationOperations.getEstimatedDateOfDelivery(this);
 	}
@@ -158,6 +169,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PregnancyObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -167,6 +179,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PregnancyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -56,6 +56,7 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureContextEffectiveTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureContextOperations.validateProcedureContextEffectiveTimeValue(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureContextTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureContextOperations.validateProcedureContextTemplateId(this, diagnostics, context);
 	}
@@ -74,6 +76,7 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureContextClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureContextOperations.validateProcedureContextClassCode(this, diagnostics, context);
 	}
@@ -83,6 +86,7 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureContextMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureContextOperations.validateProcedureContextMoodCode(this, diagnostics, context);
 	}
@@ -92,6 +96,7 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureContextCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureContextOperations.validateProcedureContextCode(this, diagnostics, context);
 	}
@@ -101,6 +106,7 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureContextEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureContextOperations.validateProcedureContextEffectiveTime(this, diagnostics, context);
 	}
@@ -110,6 +116,7 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureContext init() {
 		return Initializer.Util.init(this);
 	}
@@ -119,6 +126,7 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureContext init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -80,6 +80,7 @@ public interface Indication2 extends Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Indication2 init();
 
 	/**
@@ -87,5 +88,6 @@ public interface Indication2 extends Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Indication2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Indication2

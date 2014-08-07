@@ -44,6 +44,7 @@ public interface HealthStatusObservation2 extends HealthStatusObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthStatusObservation2 init();
 
 	/**
@@ -51,5 +52,6 @@ public interface HealthStatusObservation2 extends HealthStatusObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthStatusObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HealthStatusObservation2

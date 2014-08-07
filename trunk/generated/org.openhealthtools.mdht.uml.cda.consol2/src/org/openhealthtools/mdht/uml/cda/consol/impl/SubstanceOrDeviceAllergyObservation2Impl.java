@@ -60,6 +60,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2ReactionInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2ReactionInversionIndicator(
@@ -71,6 +72,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2SeverityInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2SeverityInversionIndicator(
@@ -82,6 +84,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationReactionObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationReactionObservation2(
@@ -93,6 +96,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationSeverityObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationSeverityObservation2(
@@ -104,6 +108,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2AuthorParticipation(
@@ -115,6 +120,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2IVLTSLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2IVLTSLow(
@@ -126,6 +132,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2IVLTSHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2IVLTSHigh(
@@ -137,6 +144,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication(
@@ -148,6 +156,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference(
@@ -159,6 +168,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityReferenceValue(
@@ -170,6 +180,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
@@ -181,6 +192,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyClassMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyClassMedication(
@@ -192,6 +204,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(
@@ -203,6 +216,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRoleSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRoleSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeP(
@@ -214,6 +228,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRoleSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2ParticipantParticipantRoleSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode(
@@ -225,6 +240,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2ParticipantSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2ParticipantSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity(
@@ -236,6 +252,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2SubstanceOrDeviceAllergyObservationParticipantParticipantRole(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2SubstanceOrDeviceAllergyObservationParticipantParticipantRole(
@@ -247,6 +264,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ReactionObservation2> getConsolReactionObservation2s() {
 		return SubstanceOrDeviceAllergyObservation2Operations.getConsolReactionObservation2s(this);
 	}
@@ -256,6 +274,7 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SeverityObservation2 getConsolSeverityObservation2() {
 		return SubstanceOrDeviceAllergyObservation2Operations.getConsolSeverityObservation2(this);
 	}

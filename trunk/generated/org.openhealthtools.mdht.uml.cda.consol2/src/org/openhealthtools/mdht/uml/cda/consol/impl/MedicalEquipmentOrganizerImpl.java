@@ -60,6 +60,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerTemplateId(
 			this, diagnostics, context);
@@ -70,6 +71,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerClassCode(
 			this, diagnostics, context);
@@ -80,6 +82,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerMoodCode(this, diagnostics, context);
 	}
@@ -89,6 +92,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerId(this, diagnostics, context);
 	}
@@ -98,6 +102,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerCode(this, diagnostics, context);
 	}
@@ -107,6 +112,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentOrganizerStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerStatusCodeP(
 			this, diagnostics, context);
@@ -117,6 +123,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerStatusCode(
 			this, diagnostics, context);
@@ -127,6 +134,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentOrganizerEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerEffectiveTime(
@@ -138,6 +146,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(
@@ -149,6 +158,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentOrganizerProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerProcedureActivityProcedure(
@@ -160,6 +170,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities() {
 		return MedicalEquipmentOrganizerOperations.getNonMedicinalSupplyActivities(this);
 	}
@@ -169,6 +180,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProcedureActivityProcedure> getProcedureActivityProcedures() {
 		return MedicalEquipmentOrganizerOperations.getProcedureActivityProcedures(this);
 	}
@@ -178,6 +190,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicalEquipmentOrganizer init() {
 		return Initializer.Util.init(this);
 	}
@@ -187,6 +200,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicalEquipmentOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

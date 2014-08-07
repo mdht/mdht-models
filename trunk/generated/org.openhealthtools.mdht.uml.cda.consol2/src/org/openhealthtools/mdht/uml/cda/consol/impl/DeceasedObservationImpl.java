@@ -53,6 +53,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationEffectiveTimeLow(this, diagnostics, context);
 	}
@@ -62,6 +63,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationTemplateId(this, diagnostics, context);
 	}
@@ -71,6 +73,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationClassCode(this, diagnostics, context);
 	}
@@ -80,6 +83,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationMoodCode(this, diagnostics, context);
 	}
@@ -89,6 +93,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationId(this, diagnostics, context);
 	}
@@ -98,6 +103,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationCodeP(this, diagnostics, context);
 	}
@@ -107,6 +113,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationCode(this, diagnostics, context);
 	}
@@ -116,6 +123,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationStatusCode(this, diagnostics, context);
 	}
@@ -125,6 +133,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationStatusCodeP(this, diagnostics, context);
 	}
@@ -134,6 +143,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationEffectiveTime(this, diagnostics, context);
 	}
@@ -143,6 +153,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationValue(this, diagnostics, context);
 	}
@@ -152,6 +163,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationValueP(this, diagnostics, context);
 	}
@@ -161,6 +173,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDeceasedObservationProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationProblemObservation(this, diagnostics, context);
@@ -171,6 +184,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemObservation getProblemObservation() {
 		return DeceasedObservationOperations.getProblemObservation(this);
 	}
@@ -180,6 +194,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DeceasedObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -189,6 +204,7 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DeceasedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -79,6 +79,7 @@ public interface CoverageActivity2 extends CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CoverageActivity2 init();
 
 	/**
@@ -86,5 +87,6 @@ public interface CoverageActivity2 extends CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CoverageActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CoverageActivity2

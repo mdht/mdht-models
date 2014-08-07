@@ -61,6 +61,7 @@ public class HealthStatusEvaluationsOutcomesSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHealthStatusEvaluationsOutcomesSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusEvaluationsOutcomesSectionOperations.validateHealthStatusEvaluationsOutcomesSectionTemplateId(
@@ -72,6 +73,7 @@ public class HealthStatusEvaluationsOutcomesSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHealthStatusEvaluationsOutcomesSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusEvaluationsOutcomesSectionOperations.validateHealthStatusEvaluationsOutcomesSectionCode(
@@ -83,6 +85,7 @@ public class HealthStatusEvaluationsOutcomesSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHealthStatusEvaluationsOutcomesSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusEvaluationsOutcomesSectionOperations.validateHealthStatusEvaluationsOutcomesSectionCodeP(
@@ -94,6 +97,7 @@ public class HealthStatusEvaluationsOutcomesSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHealthStatusEvaluationsOutcomesSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusEvaluationsOutcomesSectionOperations.validateHealthStatusEvaluationsOutcomesSectionTitle(
@@ -105,6 +109,7 @@ public class HealthStatusEvaluationsOutcomesSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHealthStatusEvaluationsOutcomesSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusEvaluationsOutcomesSectionOperations.validateHealthStatusEvaluationsOutcomesSectionText(
@@ -116,6 +121,7 @@ public class HealthStatusEvaluationsOutcomesSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHealthStatusEvaluationsOutcomesSectionOutcomeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusEvaluationsOutcomesSectionOperations.validateHealthStatusEvaluationsOutcomesSectionOutcomeObservation(
@@ -127,6 +133,7 @@ public class HealthStatusEvaluationsOutcomesSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<OutcomeObservation> getOutcomeObservations() {
 		return HealthStatusEvaluationsOutcomesSectionOperations.getOutcomeObservations(this);
 	}
@@ -136,6 +143,7 @@ public class HealthStatusEvaluationsOutcomesSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthStatusEvaluationsOutcomesSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -145,6 +153,7 @@ public class HealthStatusEvaluationsOutcomesSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthStatusEvaluationsOutcomesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

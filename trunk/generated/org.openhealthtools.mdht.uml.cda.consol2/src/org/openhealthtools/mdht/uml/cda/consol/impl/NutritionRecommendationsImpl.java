@@ -57,6 +57,7 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionRecommendationsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsTemplateId(this, diagnostics, context);
 	}
@@ -66,6 +67,7 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionRecommendationsClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsClassCode(this, diagnostics, context);
 	}
@@ -75,6 +77,7 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionRecommendationsMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsMoodCodeP(this, diagnostics, context);
 	}
@@ -84,6 +87,7 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionRecommendationsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsMoodCode(this, diagnostics, context);
 	}
@@ -93,6 +97,7 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionRecommendationsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsCodeP(this, diagnostics, context);
 	}
@@ -102,6 +107,7 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionRecommendationsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsCode(this, diagnostics, context);
 	}
@@ -111,6 +117,7 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionRecommendationsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsStatusCode(this, diagnostics, context);
 	}
@@ -120,6 +127,7 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionRecommendationsStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsStatusCodeP(
 			this, diagnostics, context);
@@ -130,6 +138,7 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateNutritionRecommendationsEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsEffectiveTime(
@@ -141,6 +150,7 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NutritionRecommendations init() {
 		return Initializer.Util.init(this);
 	}
@@ -150,6 +160,7 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NutritionRecommendations init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

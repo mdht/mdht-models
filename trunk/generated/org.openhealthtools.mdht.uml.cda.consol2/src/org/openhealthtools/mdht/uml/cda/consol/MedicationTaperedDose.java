@@ -60,5 +60,6 @@ public interface MedicationTaperedDose extends MedicationActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationTaperedDose init();
 } // MedicationTaperedDose

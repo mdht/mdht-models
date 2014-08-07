@@ -66,6 +66,7 @@ public interface ComplicationsSection2 extends ComplicationsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ComplicationsSection2 init();
 
 	/**
@@ -73,5 +74,6 @@ public interface ComplicationsSection2 extends ComplicationsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ComplicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ComplicationsSection2

@@ -105,6 +105,7 @@ public interface MedicationSupplyOrder2 extends MedicationSupplyOrder {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationSupplyOrder2 init();
 
 	/**
@@ -112,5 +113,6 @@ public interface MedicationSupplyOrder2 extends MedicationSupplyOrder {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationSupplyOrder2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationSupplyOrder2

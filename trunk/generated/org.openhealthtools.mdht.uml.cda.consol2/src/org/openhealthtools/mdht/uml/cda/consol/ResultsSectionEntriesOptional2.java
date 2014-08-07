@@ -55,6 +55,7 @@ public interface ResultsSectionEntriesOptional2 extends ResultsSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSectionEntriesOptional2 init();
 
 	/**
@@ -62,5 +63,6 @@ public interface ResultsSectionEntriesOptional2 extends ResultsSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultsSectionEntriesOptional2

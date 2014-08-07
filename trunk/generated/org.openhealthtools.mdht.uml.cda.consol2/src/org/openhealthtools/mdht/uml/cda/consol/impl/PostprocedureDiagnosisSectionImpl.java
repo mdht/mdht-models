@@ -57,6 +57,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostprocedureDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTemplateId(
@@ -68,6 +69,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostprocedureDiagnosisSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCodeP(
 			this, diagnostics, context);
@@ -78,6 +80,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostprocedureDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCode(
 			this, diagnostics, context);
@@ -88,6 +91,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostprocedureDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionText(
 			this, diagnostics, context);
@@ -98,6 +102,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostprocedureDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTitle(
 			this, diagnostics, context);
@@ -108,6 +113,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(
@@ -119,6 +125,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostprocedureDiagnosis getPostprocedureDiagnosis() {
 		return PostprocedureDiagnosisSectionOperations.getPostprocedureDiagnosis(this);
 	}
@@ -128,6 +135,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostprocedureDiagnosisSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -137,6 +145,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostprocedureDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

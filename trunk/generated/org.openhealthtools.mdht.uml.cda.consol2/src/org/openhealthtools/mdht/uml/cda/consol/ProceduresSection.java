@@ -127,6 +127,7 @@ public interface ProceduresSection extends ProceduresSectionEntriesOptional {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection init();
 
 	/**
@@ -134,5 +135,6 @@ public interface ProceduresSection extends ProceduresSectionEntriesOptional {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProceduresSection

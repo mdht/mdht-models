@@ -217,6 +217,7 @@ public interface FunctionalStatusSection2 extends FunctionalStatusSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusSection2 init();
 
 	/**
@@ -224,5 +225,6 @@ public interface FunctionalStatusSection2 extends FunctionalStatusSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusSection2

@@ -102,6 +102,7 @@ public interface FunctionalStatusOrganizer2 extends FunctionalStatusResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusOrganizer2 init();
 
 	/**
@@ -109,5 +110,6 @@ public interface FunctionalStatusOrganizer2 extends FunctionalStatusResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusOrganizer2

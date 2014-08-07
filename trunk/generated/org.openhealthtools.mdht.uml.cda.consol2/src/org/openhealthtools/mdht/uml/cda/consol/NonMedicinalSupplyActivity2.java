@@ -66,6 +66,7 @@ public interface NonMedicinalSupplyActivity2 extends NonMedicinalSupplyActivity 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NonMedicinalSupplyActivity2 init();
 
 	/**
@@ -73,5 +74,6 @@ public interface NonMedicinalSupplyActivity2 extends NonMedicinalSupplyActivity 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NonMedicinalSupplyActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NonMedicinalSupplyActivity2

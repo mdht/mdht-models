@@ -52,6 +52,7 @@ public interface AdmissionMedication2 extends AdmissionMedication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdmissionMedication2 init();
 
 	/**
@@ -59,5 +60,6 @@ public interface AdmissionMedication2 extends AdmissionMedication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdmissionMedication2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdmissionMedication2

@@ -56,6 +56,7 @@ public class BoundaryObservationImpl extends ObservationImpl implements Boundary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateBoundaryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BoundaryObservationOperations.validateBoundaryObservationTemplateId(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class BoundaryObservationImpl extends ObservationImpl implements Boundary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateBoundaryObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BoundaryObservationOperations.validateBoundaryObservationClassCode(this, diagnostics, context);
 	}
@@ -74,6 +76,7 @@ public class BoundaryObservationImpl extends ObservationImpl implements Boundary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateBoundaryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BoundaryObservationOperations.validateBoundaryObservationCode(this, diagnostics, context);
 	}
@@ -83,6 +86,7 @@ public class BoundaryObservationImpl extends ObservationImpl implements Boundary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateBoundaryObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BoundaryObservationOperations.validateBoundaryObservationMoodCode(this, diagnostics, context);
 	}
@@ -92,6 +96,7 @@ public class BoundaryObservationImpl extends ObservationImpl implements Boundary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateBoundaryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BoundaryObservationOperations.validateBoundaryObservationValue(this, diagnostics, context);
 	}
@@ -101,6 +106,7 @@ public class BoundaryObservationImpl extends ObservationImpl implements Boundary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BoundaryObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -110,6 +116,7 @@ public class BoundaryObservationImpl extends ObservationImpl implements Boundary
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BoundaryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -163,6 +163,7 @@ public interface SocialHistorySection2 extends SocialHistorySection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistorySection2 init();
 
 	/**
@@ -170,5 +171,6 @@ public interface SocialHistorySection2 extends SocialHistorySection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistorySection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SocialHistorySection2

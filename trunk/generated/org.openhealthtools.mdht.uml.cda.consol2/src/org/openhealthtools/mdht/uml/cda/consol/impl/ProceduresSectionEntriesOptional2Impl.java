@@ -61,6 +61,7 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionEntriesOptional2Operations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure2(
@@ -72,6 +73,7 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionEntriesOptional2Operations.validateProceduresSectionEntriesOptionalProcedureActivityObservation2(
@@ -83,6 +85,7 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityAct2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionEntriesOptional2Operations.validateProceduresSectionEntriesOptionalProcedureActivityAct2(
@@ -94,6 +97,7 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s() {
 		return ProceduresSectionEntriesOptional2Operations.getConsolProcedureActivityProcedure2s(this);
 	}
@@ -103,6 +107,7 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityObservation2 getConsolProcedureActivityObservation2() {
 		return ProceduresSectionEntriesOptional2Operations.getConsolProcedureActivityObservation2(this);
 	}
@@ -112,6 +117,7 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityAct2 getConsolProcedureActivityAct2() {
 		return ProceduresSectionEntriesOptional2Operations.getConsolProcedureActivityAct2(this);
 	}

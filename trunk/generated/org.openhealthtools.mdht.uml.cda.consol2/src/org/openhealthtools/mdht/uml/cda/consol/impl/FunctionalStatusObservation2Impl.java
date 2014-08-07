@@ -58,6 +58,7 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFunctionalStatusObservation2TextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2TextReference(
@@ -69,6 +70,7 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFunctionalStatusObservation2TextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2TextReferenceValue(
@@ -80,6 +82,7 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFunctionalStatusObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2AuthorParticipation(
@@ -91,6 +94,7 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2(
@@ -102,6 +106,7 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCode(
@@ -113,6 +118,7 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NonMedicinalSupplyActivity2 getConsolNonMedicinalSupplyActivity2() {
 		return FunctionalStatusObservation2Operations.getConsolNonMedicinalSupplyActivity2(this);
 	}

@@ -59,6 +59,7 @@ public class CognitiveStatusOrganizer2Impl extends CognitiveStatusResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusResultOrganizerCognitiveStatusObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCognitiveStatusObservation2(
@@ -70,6 +71,7 @@ public class CognitiveStatusOrganizer2Impl extends CognitiveStatusResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CognitiveStatusObservation2> getConsolCognitiveStatusObservation2s() {
 		return CognitiveStatusOrganizer2Operations.getConsolCognitiveStatusObservation2s(this);
 	}

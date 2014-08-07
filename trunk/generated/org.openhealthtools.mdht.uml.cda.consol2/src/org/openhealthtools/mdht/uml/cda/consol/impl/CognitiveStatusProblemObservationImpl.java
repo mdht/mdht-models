@@ -56,6 +56,7 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusProblemObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationHasTextReference(
@@ -67,6 +68,7 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusProblemObservationHasTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationHasTextReferenceValue(
@@ -78,6 +80,7 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusProblemObservationHasOnsetDate(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationHasOnsetDate(
@@ -89,6 +92,7 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusProblemObservationHasResolutionDate(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationHasResolutionDate(
@@ -100,6 +104,7 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusProblemObservationMethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationMethodCode(
@@ -111,6 +116,7 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusProblemObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationNonMedicinalSupplyActivity(
@@ -122,6 +128,7 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusProblemObservationCaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationCaregiverCharacteristics(
@@ -133,6 +140,7 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusProblemObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationAssessmentScaleObservation(
@@ -144,6 +152,7 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities() {
 		return CognitiveStatusProblemObservationOperations.getNonMedicinalSupplyActivities(this);
 	}
@@ -153,6 +162,7 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CaregiverCharacteristics> getCaregiverCharacteristicss() {
 		return CognitiveStatusProblemObservationOperations.getCaregiverCharacteristicss(this);
 	}
@@ -162,6 +172,7 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return CognitiveStatusProblemObservationOperations.getAssessmentScaleObservations(this);
 	}
