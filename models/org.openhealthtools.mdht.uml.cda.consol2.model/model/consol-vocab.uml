@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
   <uml:Package xmi:id="_2B97VRSVEeGGzu7fmW9pXw" name="consol-vocab">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FcGEBSVEeGGzu7fmW9pXw" name="HITSP Problem Status">
       <ownedLiteral xmi:id="_2FcGERSVEeGGzu7fmW9pXw" name="55561003"/>
@@ -1635,6 +1635,12 @@ Value Set: Medication Drug Class (2.16.840.1.113883.3.88.12.80.18) (NDFRT drug c
 Valueset Source: https://vsac.nlm.nih.gov/</body>
       </ownedComment>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_bb460BwSEeSMr-NWzQuDBw" name="PatientLanguage">
+      <ownedComment xmi:id="_q3FdgBwSEeSMr-NWzQuDBw">
+        <body>This value set contains codes for the representation of language names as defined by the Library of Congress, the ISO 639-2 registration authority. This value set contains a subset of the ISO 639-2 alpha-3 code set, limited to those that have a corresponding ISO 639-1 alpha-2 code as required for representing a patient's language under Meaningful Use Stage 2. &#xD;
+Valueset Source: http://www.loc.gov/standards/iso639-2/php/code_list.php</body>
+      </ownedComment>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -1689,7 +1695,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetVersion xmi:id="_2H150RSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.7" version="1" fullName="Medication Route FDA Value Set" definition="Route of Administration value set is based upon FDA Drug Registration and Listing Database (FDA Orange Book) which are used in FDA structured product and labelling (SPL)." revisionDate="07/07/2009" binding="Dynamic" base_Enumeration="_2H150BSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2H3vABSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.9" version="2" fullName="Body Site Value Set" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." revisionDate="07/07/2009" binding="Dynamic" base_Enumeration="_2H3H8RSVEeGGzu7fmW9pXw">
+  <term:ValueSetVersion xmi:id="_2H3vABSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.9" fullName="Body Site Value Set" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." revisionDate="07/07/2009" base_Enumeration="_2H3H8RSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2H49IRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.11" version="1" fullName="Medication Product Form Value Set" definition="This is the physical form of the product as presented to the individual. For example: tablet, capsule, liquid or ointment. NCI concept code for pharmaceutical dosage form: C42636" revisionDate="07/23/2009" base_Enumeration="_2H49IBSVEeGGzu7fmW9pXw">
@@ -3129,4 +3135,5 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetVersion xmi:id="_hO26YPMSEeOrR8IF-aqVyQ" identifier="2.16.840.1.113762.1.4.1010.1" binding="Dynamic" base_Enumeration="_hO2TUPMSEeOrR8IF-aqVyQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_bb5h4BwSEeSMr-NWzQuDBw" identifier="TempPatientLanguageOID" binding="Dynamic" base_Enumeration="_bb460BwSEeSMr-NWzQuDBw"/>
 </xmi:XMI>
