@@ -200,6 +200,7 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusResultObservation init();
 
 	/**
@@ -207,5 +208,6 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveStatusResultObservation

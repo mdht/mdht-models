@@ -53,6 +53,7 @@ public interface CognitiveStatusOrganizer2 extends CognitiveStatusResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusOrganizer2 init();
 
 	/**
@@ -60,5 +61,6 @@ public interface CognitiveStatusOrganizer2 extends CognitiveStatusResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveStatusOrganizer2

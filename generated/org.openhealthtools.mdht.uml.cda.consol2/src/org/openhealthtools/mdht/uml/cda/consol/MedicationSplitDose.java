@@ -55,5 +55,6 @@ public interface MedicationSplitDose extends MedicationActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationSplitDose init();
 } // MedicationSplitDose

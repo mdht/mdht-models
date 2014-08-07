@@ -62,6 +62,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2ValueDatatype(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2ValueDatatype(
@@ -73,6 +74,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2TemplateId(
@@ -84,6 +86,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2ClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2ClassCode(
 			this, diagnostics, context);
@@ -94,6 +97,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2MoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2MoodCode(
 			this, diagnostics, context);
@@ -104,6 +108,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2Id(this, diagnostics, context);
 	}
@@ -113,6 +118,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2CodeP(
 			this, diagnostics, context);
@@ -123,6 +129,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2Code(this, diagnostics, context);
 	}
@@ -132,6 +139,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2Text(this, diagnostics, context);
 	}
@@ -141,6 +149,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2StatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2StatusCode(
@@ -152,6 +161,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2StatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2StatusCodeP(
@@ -163,6 +173,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2EffectiveTime(
@@ -174,6 +185,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2Value(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2Value(
 			this, diagnostics, context);
@@ -184,6 +196,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2AuthorParticipation(
@@ -195,6 +208,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2NonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2NonMedicinalSupplyActivity2(
@@ -206,6 +220,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2CaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2CaregiverCharacteristics(
@@ -217,6 +232,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2AssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2AssessmentScaleObservation(
@@ -228,6 +244,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusObservation2ReferenceRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusObservation2Operations.validateCognitiveStatusObservation2ReferenceRange(
@@ -239,6 +256,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<NonMedicinalSupplyActivity2> getNonMedicinalSupplyActivity2s() {
 		return CognitiveStatusObservation2Operations.getNonMedicinalSupplyActivity2s(this);
 	}
@@ -248,6 +266,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CaregiverCharacteristics> getCaregiverCharacteristicss() {
 		return CognitiveStatusObservation2Operations.getCaregiverCharacteristicss(this);
 	}
@@ -257,6 +276,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return CognitiveStatusObservation2Operations.getAssessmentScaleObservations(this);
 	}
@@ -266,6 +286,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusObservation2 init() {
 		return Initializer.Util.init(this);
 	}
@@ -275,6 +296,7 @@ public class CognitiveStatusObservation2Impl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

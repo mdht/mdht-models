@@ -57,6 +57,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationTemplateId(this, diagnostics, context);
 	}
@@ -66,6 +67,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationClassCode(this, diagnostics, context);
 	}
@@ -75,6 +77,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationMoodCode(this, diagnostics, context);
 	}
@@ -84,6 +87,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationCodeP(this, diagnostics, context);
 	}
@@ -93,6 +97,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationCode(this, diagnostics, context);
 	}
@@ -102,6 +107,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationStatusCode(this, diagnostics, context);
 	}
@@ -111,6 +117,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationStatusCodeP(this, diagnostics, context);
 	}
@@ -120,6 +127,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationEffectiveTime(this, diagnostics, context);
 	}
@@ -129,6 +137,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationParticipant(this, diagnostics, context);
 	}
@@ -138,6 +147,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationAuthorParticipation(
@@ -149,6 +159,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationParticipantParticipantRoleCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationParticipantParticipantRoleCodeP(
@@ -160,6 +171,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationParticipantParticipantRoleCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationParticipantParticipantRoleCode(
@@ -171,6 +183,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationParticipantTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationParticipantTypeCode(
@@ -182,6 +195,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHandoffCommunicationParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationParticipantParticipantRole(
@@ -193,6 +207,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HandoffCommunication init() {
 		return Initializer.Util.init(this);
 	}
@@ -202,6 +217,7 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HandoffCommunication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

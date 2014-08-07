@@ -105,6 +105,7 @@ public interface FunctionalStatusObservation2 extends FunctionalStatusResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusObservation2 init();
 
 	/**
@@ -112,5 +113,6 @@ public interface FunctionalStatusObservation2 extends FunctionalStatusResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusObservation2

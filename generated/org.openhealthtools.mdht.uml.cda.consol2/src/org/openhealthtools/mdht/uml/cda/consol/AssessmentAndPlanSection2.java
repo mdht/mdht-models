@@ -54,6 +54,7 @@ public interface AssessmentAndPlanSection2 extends AssessmentAndPlanSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AssessmentAndPlanSection2 init();
 
 	/**
@@ -61,5 +62,6 @@ public interface AssessmentAndPlanSection2 extends AssessmentAndPlanSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AssessmentAndPlanSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentAndPlanSection2

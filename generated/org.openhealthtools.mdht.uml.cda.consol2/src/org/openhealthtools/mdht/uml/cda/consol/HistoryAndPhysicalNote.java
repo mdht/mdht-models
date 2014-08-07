@@ -760,6 +760,7 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HistoryAndPhysicalNote init();
 
 	/**
@@ -767,5 +768,6 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HistoryAndPhysicalNote init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HistoryAndPhysicalNote

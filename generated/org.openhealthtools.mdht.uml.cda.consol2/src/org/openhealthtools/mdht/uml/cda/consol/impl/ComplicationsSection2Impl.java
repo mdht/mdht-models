@@ -58,6 +58,7 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateComplicationsSection2ExplicitComplications(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ComplicationsSection2Operations.validateComplicationsSection2ExplicitComplications(
@@ -69,6 +70,7 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateComplicationsSectionProblemObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ComplicationsSection2Operations.validateComplicationsSectionProblemObservation2(
@@ -80,6 +82,7 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return ComplicationsSection2Operations.getConsolProblemObservation2s(this);
 	}

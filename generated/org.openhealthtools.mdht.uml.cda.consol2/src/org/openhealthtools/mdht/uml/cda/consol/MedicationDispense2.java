@@ -92,6 +92,7 @@ public interface MedicationDispense2 extends MedicationDispense {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationDispense2 init();
 
 	/**
@@ -99,5 +100,6 @@ public interface MedicationDispense2 extends MedicationDispense {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationDispense2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationDispense2

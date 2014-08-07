@@ -59,6 +59,7 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureIndicationsSectionIndication2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionIndication2(
@@ -70,6 +71,7 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Indication2> getConsolIndication2s() {
 		return ProcedureIndicationsSection2Operations.getConsolIndication2s(this);
 	}

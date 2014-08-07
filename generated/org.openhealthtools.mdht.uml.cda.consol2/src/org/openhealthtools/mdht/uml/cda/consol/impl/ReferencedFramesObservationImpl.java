@@ -57,6 +57,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReferencedFramesObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReferencedFramesObservationOperations.validateReferencedFramesObservationTemplateId(
@@ -68,6 +69,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReferencedFramesObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReferencedFramesObservationOperations.validateReferencedFramesObservationClassCode(
 			this, diagnostics, context);
@@ -78,6 +80,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReferencedFramesObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReferencedFramesObservationOperations.validateReferencedFramesObservationCode(this, diagnostics, context);
 	}
@@ -87,6 +90,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReferencedFramesObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReferencedFramesObservationOperations.validateReferencedFramesObservationMoodCode(
 			this, diagnostics, context);
@@ -97,6 +101,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReferencedFramesObservationBoundaryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReferencedFramesObservationOperations.validateReferencedFramesObservationBoundaryObservation(
@@ -108,6 +113,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BoundaryObservation getBoundaryObservation() {
 		return ReferencedFramesObservationOperations.getBoundaryObservation(this);
 	}
@@ -117,6 +123,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReferencedFramesObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -126,6 +133,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReferencedFramesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

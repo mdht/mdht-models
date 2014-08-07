@@ -58,6 +58,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceTemplateId(
 			this, diagnostics, context);
@@ -68,6 +69,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceClassCode(
 			this, diagnostics, context);
@@ -78,6 +80,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceMoodCode(this, diagnostics, context);
 	}
@@ -87,6 +90,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceCodeP(this, diagnostics, context);
 	}
@@ -96,6 +100,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceCode(this, diagnostics, context);
 	}
@@ -105,6 +110,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReference(
 			this, diagnostics, context);
@@ -115,6 +121,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceReferenceExternalDocumentClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentClassCode(
@@ -126,6 +133,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceReferenceExternalDocumentMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentMoodCode(
@@ -137,6 +145,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceReferenceExternalDocumentId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentId(
@@ -148,6 +157,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceReferenceExternalDocumentCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentCode(
@@ -159,6 +169,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceReferenceExternalDocumentSetId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentSetId(
@@ -170,6 +181,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceReferenceExternalDocumentVersionNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentVersionNumber(
@@ -181,6 +193,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceReferenceTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceTypeCode(
@@ -192,6 +205,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateExternalDocumentReferenceReferenceExternalDocument(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocument(
@@ -203,6 +217,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ExternalDocumentReference init() {
 		return Initializer.Util.init(this);
 	}
@@ -212,6 +227,7 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ExternalDocumentReference init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

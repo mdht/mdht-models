@@ -59,6 +59,7 @@ public class HistoryOfPastIllnessSection2Impl extends HistoryOfPastIllnessSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHistoryOfPastIllnessSectionProblemObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSectionProblemObservation2(
@@ -70,6 +71,7 @@ public class HistoryOfPastIllnessSection2Impl extends HistoryOfPastIllnessSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return HistoryOfPastIllnessSection2Operations.getConsolProblemObservation2s(this);
 	}

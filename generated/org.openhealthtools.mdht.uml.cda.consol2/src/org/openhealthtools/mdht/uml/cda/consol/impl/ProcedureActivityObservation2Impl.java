@@ -61,6 +61,7 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureActivityObservation2InstructionsInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2InstructionsInversion(
@@ -72,6 +73,7 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureActivityObservationIndication2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationIndication2(
@@ -83,6 +85,7 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureActivityObservationMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationMedicationActivity2(
@@ -94,6 +97,7 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureActivityObservationInstruction2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationInstruction2(
@@ -105,6 +109,7 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Indication2> getConsolIndication2s() {
 		return ProcedureActivityObservation2Operations.getConsolIndication2s(this);
 	}
@@ -114,6 +119,7 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return ProcedureActivityObservation2Operations.getConsolMedicationActivity2s(this);
 	}
@@ -123,6 +129,7 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Instruction2 getConsolInstruction2() {
 		return ProcedureActivityObservation2Operations.getConsolInstruction2(this);
 	}
@@ -136,6 +143,18 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	public boolean validateProcedureActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationTargetSiteCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationTargetSiteCodeP(
 			this, diagnostics, context);
 	}
 

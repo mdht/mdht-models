@@ -64,6 +64,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationActivityStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityStatusCodeP(this, diagnostics, context);
 	}
@@ -73,6 +74,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationActivity2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivity2AuthorParticipation(
@@ -84,6 +86,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationActivity2SubstanceAdministeredAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivity2SubstanceAdministeredAct(
@@ -95,6 +98,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationActivityIndication2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityIndication2(this, diagnostics, context);
 	}
@@ -104,6 +108,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationActivityMedicationSupplyOrder2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityMedicationSupplyOrder2(
@@ -115,6 +120,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationActivityMedicationDispense2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityMedicationDispense2(
@@ -126,6 +132,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationActivityReactionObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityReactionObservation2(
@@ -137,6 +144,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationActivityInstruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityInstruction2(this, diagnostics, context);
 	}
@@ -146,6 +154,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationActivity2ImmunizationActivityConsumableImmunizationMedicationInformation2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivity2ImmunizationActivityConsumableImmunizationMedicationInformation2(
@@ -157,6 +166,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<SubstanceAdministeredAct> getSubstanceAdministeredActs() {
 		return ImmunizationActivity2Operations.getSubstanceAdministeredActs(this);
 	}
@@ -166,6 +176,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<DrugVehicle> getConsolDrugVehicles() {
 		return ImmunizationActivity2Operations.getConsolDrugVehicles(this);
 	}
@@ -175,6 +186,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Indication2> getConsolIndication2s() {
 		return ImmunizationActivity2Operations.getConsolIndication2s(this);
 	}
@@ -184,6 +196,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationSupplyOrder2 getConsolMedicationSupplyOrder2() {
 		return ImmunizationActivity2Operations.getConsolMedicationSupplyOrder2(this);
 	}
@@ -193,6 +206,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationDispense2 getConsolMedicationDispense2() {
 		return ImmunizationActivity2Operations.getConsolMedicationDispense2(this);
 	}
@@ -202,6 +216,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReactionObservation2 getConsolReactionObservation2() {
 		return ImmunizationActivity2Operations.getConsolReactionObservation2(this);
 	}
@@ -211,6 +226,7 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Instruction2 getConsolInstruction2() {
 		return ImmunizationActivity2Operations.getConsolInstruction2(this);
 	}

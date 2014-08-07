@@ -57,6 +57,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreconditionForSubstanceAdministrationCriterionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionCode(
@@ -68,6 +69,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreconditionForSubstanceAdministrationCriterionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionText(
@@ -79,6 +81,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreconditionForSubstanceAdministrationCriterionValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionValue(
@@ -90,6 +93,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreconditionForSubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationTemplateId(
@@ -101,6 +105,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreconditionForSubstanceAdministrationCriterion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterion(
@@ -112,6 +117,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreconditionForSubstanceAdministration init() {
 		return Initializer.Util.init(this);
 	}
@@ -121,6 +127,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreconditionForSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

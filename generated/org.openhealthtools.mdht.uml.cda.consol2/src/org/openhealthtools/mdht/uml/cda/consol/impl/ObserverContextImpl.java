@@ -52,6 +52,7 @@ public class ObserverContextImpl extends AuthorImpl implements ObserverContext {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateObserverContextTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObserverContextOperations.validateObserverContextTemplateId(this, diagnostics, context);
 	}
@@ -61,6 +62,7 @@ public class ObserverContextImpl extends AuthorImpl implements ObserverContext {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateObserverContextAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObserverContextOperations.validateObserverContextAssignedAuthor(this, diagnostics, context);
 	}
@@ -70,6 +72,7 @@ public class ObserverContextImpl extends AuthorImpl implements ObserverContext {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ObserverContext init() {
 		return Initializer.Util.init(this);
 	}
@@ -79,6 +82,7 @@ public class ObserverContextImpl extends AuthorImpl implements ObserverContext {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ObserverContext init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

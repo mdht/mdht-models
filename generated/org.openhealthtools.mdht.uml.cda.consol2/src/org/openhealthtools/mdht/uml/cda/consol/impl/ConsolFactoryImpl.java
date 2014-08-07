@@ -672,6 +672,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GeneralHeaderConstraints createGeneralHeaderConstraints() {
 		GeneralHeaderConstraintsImpl generalHeaderConstraints = new GeneralHeaderConstraintsImpl();
 		return generalHeaderConstraints;
@@ -682,6 +683,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyProblemAct createAllergyProblemAct() {
 		AllergyProblemActImpl allergyProblemAct = new AllergyProblemActImpl();
 		return allergyProblemAct;
@@ -692,6 +694,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyObservation createAllergyObservation() {
 		AllergyObservationImpl allergyObservation = new AllergyObservationImpl();
 		return allergyObservation;
@@ -702,6 +705,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SubstanceOrDeviceAllergyObservation createSubstanceOrDeviceAllergyObservation() {
 		SubstanceOrDeviceAllergyObservationImpl substanceOrDeviceAllergyObservation = new SubstanceOrDeviceAllergyObservationImpl();
 		return substanceOrDeviceAllergyObservation;
@@ -712,6 +716,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReactionObservation createReactionObservation() {
 		ReactionObservationImpl reactionObservation = new ReactionObservationImpl();
 		return reactionObservation;
@@ -722,6 +727,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SeverityObservation createSeverityObservation() {
 		SeverityObservationImpl severityObservation = new SeverityObservationImpl();
 		return severityObservation;
@@ -732,6 +738,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyStatusObservation createAllergyStatusObservation() {
 		AllergyStatusObservationImpl allergyStatusObservation = new AllergyStatusObservationImpl();
 		return allergyStatusObservation;
@@ -742,6 +749,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AgeObservation createAgeObservation() {
 		AgeObservationImpl ageObservation = new AgeObservationImpl();
 		return ageObservation;
@@ -752,6 +760,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthStatusObservation createHealthStatusObservation() {
 		HealthStatusObservationImpl healthStatusObservation = new HealthStatusObservationImpl();
 		return healthStatusObservation;
@@ -762,6 +771,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CommentActivity createCommentActivity() {
 		CommentActivityImpl commentActivity = new CommentActivityImpl();
 		return commentActivity;
@@ -772,6 +782,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationActivity createMedicationActivity() {
 		MedicationActivityImpl medicationActivity = new MedicationActivityImpl();
 		return medicationActivity;
@@ -782,6 +793,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NonMedicinalSupplyActivity createNonMedicinalSupplyActivity() {
 		NonMedicinalSupplyActivityImpl nonMedicinalSupplyActivity = new NonMedicinalSupplyActivityImpl();
 		return nonMedicinalSupplyActivity;
@@ -792,6 +804,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProductInstance createProductInstance() {
 		ProductInstanceImpl productInstance = new ProductInstanceImpl();
 		return productInstance;
@@ -802,6 +815,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Instructions createInstructions() {
 		InstructionsImpl instructions = new InstructionsImpl();
 		return instructions;
@@ -812,6 +826,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Indication createIndication() {
 		IndicationImpl indication = new IndicationImpl();
 		return indication;
@@ -822,6 +837,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationDispense createMedicationDispense() {
 		MedicationDispenseImpl medicationDispense = new MedicationDispenseImpl();
 		return medicationDispense;
@@ -832,6 +848,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationSupplyOrder createMedicationSupplyOrder() {
 		MedicationSupplyOrderImpl medicationSupplyOrder = new MedicationSupplyOrderImpl();
 		return medicationSupplyOrder;
@@ -842,6 +859,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DrugVehicle createDrugVehicle() {
 		DrugVehicleImpl drugVehicle = new DrugVehicleImpl();
 		return drugVehicle;
@@ -852,6 +870,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemConcernAct createProblemConcernAct() {
 		ProblemConcernActImpl problemConcernAct = new ProblemConcernActImpl();
 		return problemConcernAct;
@@ -862,6 +881,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemObservation createProblemObservation() {
 		ProblemObservationImpl problemObservation = new ProblemObservationImpl();
 		return problemObservation;
@@ -872,6 +892,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemStatus createProblemStatus() {
 		ProblemStatusImpl problemStatus = new ProblemStatusImpl();
 		return problemStatus;
@@ -882,6 +903,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ContinuityOfCareDocument createContinuityOfCareDocument() {
 		ContinuityOfCareDocumentImpl continuityOfCareDocument = new ContinuityOfCareDocumentImpl();
 		return continuityOfCareDocument;
@@ -892,6 +914,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectivesSectionEntriesOptional createAdvanceDirectivesSectionEntriesOptional() {
 		AdvanceDirectivesSectionEntriesOptionalImpl advanceDirectivesSectionEntriesOptional = new AdvanceDirectivesSectionEntriesOptionalImpl();
 		return advanceDirectivesSectionEntriesOptional;
@@ -902,6 +925,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSection createAllergiesSection() {
 		AllergiesSectionImpl allergiesSection = new AllergiesSectionImpl();
 		return allergiesSection;
@@ -912,6 +936,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSectionEntriesOptional createAllergiesSectionEntriesOptional() {
 		AllergiesSectionEntriesOptionalImpl allergiesSectionEntriesOptional = new AllergiesSectionEntriesOptionalImpl();
 		return allergiesSectionEntriesOptional;
@@ -922,6 +947,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncountersSectionEntriesOptional createEncountersSectionEntriesOptional() {
 		EncountersSectionEntriesOptionalImpl encountersSectionEntriesOptional = new EncountersSectionEntriesOptionalImpl();
 		return encountersSectionEntriesOptional;
@@ -932,6 +958,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationsSectionEntriesOptional createImmunizationsSectionEntriesOptional() {
 		ImmunizationsSectionEntriesOptionalImpl immunizationsSectionEntriesOptional = new ImmunizationsSectionEntriesOptionalImpl();
 		return immunizationsSectionEntriesOptional;
@@ -942,6 +969,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PayersSection createPayersSection() {
 		PayersSectionImpl payersSection = new PayersSectionImpl();
 		return payersSection;
@@ -952,6 +980,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CoverageActivity createCoverageActivity() {
 		CoverageActivityImpl coverageActivity = new CoverageActivityImpl();
 		return coverageActivity;
@@ -962,6 +991,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PolicyActivity createPolicyActivity() {
 		PolicyActivityImpl policyActivity = new PolicyActivityImpl();
 		return policyActivity;
@@ -972,6 +1002,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AuthorizationActivity createAuthorizationActivity() {
 		AuthorizationActivityImpl authorizationActivity = new AuthorizationActivityImpl();
 		return authorizationActivity;
@@ -982,6 +1013,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsSection createMedicationsSection() {
 		MedicationsSectionImpl medicationsSection = new MedicationsSectionImpl();
 		return medicationsSection;
@@ -992,6 +1024,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsSectionEntriesOptional createMedicationsSectionEntriesOptional() {
 		MedicationsSectionEntriesOptionalImpl medicationsSectionEntriesOptional = new MedicationsSectionEntriesOptionalImpl();
 		return medicationsSectionEntriesOptional;
@@ -1002,6 +1035,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareSection createPlanOfCareSection() {
 		PlanOfCareSectionImpl planOfCareSection = new PlanOfCareSectionImpl();
 		return planOfCareSection;
@@ -1012,6 +1046,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivityAct createPlanOfCareActivityAct() {
 		PlanOfCareActivityActImpl planOfCareActivityAct = new PlanOfCareActivityActImpl();
 		return planOfCareActivityAct;
@@ -1022,6 +1057,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivityEncounter createPlanOfCareActivityEncounter() {
 		PlanOfCareActivityEncounterImpl planOfCareActivityEncounter = new PlanOfCareActivityEncounterImpl();
 		return planOfCareActivityEncounter;
@@ -1032,6 +1068,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivityObservation createPlanOfCareActivityObservation() {
 		PlanOfCareActivityObservationImpl planOfCareActivityObservation = new PlanOfCareActivityObservationImpl();
 		return planOfCareActivityObservation;
@@ -1042,6 +1079,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivityProcedure createPlanOfCareActivityProcedure() {
 		PlanOfCareActivityProcedureImpl planOfCareActivityProcedure = new PlanOfCareActivityProcedureImpl();
 		return planOfCareActivityProcedure;
@@ -1052,6 +1090,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivitySubstanceAdministration createPlanOfCareActivitySubstanceAdministration() {
 		PlanOfCareActivitySubstanceAdministrationImpl planOfCareActivitySubstanceAdministration = new PlanOfCareActivitySubstanceAdministrationImpl();
 		return planOfCareActivitySubstanceAdministration;
@@ -1062,6 +1101,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivitySupply createPlanOfCareActivitySupply() {
 		PlanOfCareActivitySupplyImpl planOfCareActivitySupply = new PlanOfCareActivitySupplyImpl();
 		return planOfCareActivitySupply;
@@ -1072,6 +1112,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection createProceduresSection() {
 		ProceduresSectionImpl proceduresSection = new ProceduresSectionImpl();
 		return proceduresSection;
@@ -1082,6 +1123,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSectionEntriesOptional createProceduresSectionEntriesOptional() {
 		ProceduresSectionEntriesOptionalImpl proceduresSectionEntriesOptional = new ProceduresSectionEntriesOptionalImpl();
 		return proceduresSectionEntriesOptional;
@@ -1092,6 +1134,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityObservation createProcedureActivityObservation() {
 		ProcedureActivityObservationImpl procedureActivityObservation = new ProcedureActivityObservationImpl();
 		return procedureActivityObservation;
@@ -1102,6 +1145,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityAct createProcedureActivityAct() {
 		ProcedureActivityActImpl procedureActivityAct = new ProcedureActivityActImpl();
 		return procedureActivityAct;
@@ -1112,6 +1156,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityProcedure createProcedureActivityProcedure() {
 		ProcedureActivityProcedureImpl procedureActivityProcedure = new ProcedureActivityProcedureImpl();
 		return procedureActivityProcedure;
@@ -1122,6 +1167,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsSectionEntriesOptional createVitalSignsSectionEntriesOptional() {
 		VitalSignsSectionEntriesOptionalImpl vitalSignsSectionEntriesOptional = new VitalSignsSectionEntriesOptionalImpl();
 		return vitalSignsSectionEntriesOptional;
@@ -1132,6 +1178,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FamilyHistorySection createFamilyHistorySection() {
 		FamilyHistorySectionImpl familyHistorySection = new FamilyHistorySectionImpl();
 		return familyHistorySection;
@@ -1142,6 +1189,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FamilyHistoryOrganizer createFamilyHistoryOrganizer() {
 		FamilyHistoryOrganizerImpl familyHistoryOrganizer = new FamilyHistoryOrganizerImpl();
 		return familyHistoryOrganizer;
@@ -1152,6 +1200,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FamilyHistoryObservation createFamilyHistoryObservation() {
 		FamilyHistoryObservationImpl familyHistoryObservation = new FamilyHistoryObservationImpl();
 		return familyHistoryObservation;
@@ -1162,6 +1211,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FamilyHistoryDeathObservation createFamilyHistoryDeathObservation() {
 		FamilyHistoryDeathObservationImpl familyHistoryDeathObservation = new FamilyHistoryDeathObservationImpl();
 		return familyHistoryDeathObservation;
@@ -1172,6 +1222,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistorySection createSocialHistorySection() {
 		SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
 		return socialHistorySection;
@@ -1182,6 +1233,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistoryObservation createSocialHistoryObservation() {
 		SocialHistoryObservationImpl socialHistoryObservation = new SocialHistoryObservationImpl();
 		return socialHistoryObservation;
@@ -1192,6 +1244,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PregnancyObservation createPregnancyObservation() {
 		PregnancyObservationImpl pregnancyObservation = new PregnancyObservationImpl();
 		return pregnancyObservation;
@@ -1202,6 +1255,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EstimatedDateOfDelivery createEstimatedDateOfDelivery() {
 		EstimatedDateOfDeliveryImpl estimatedDateOfDelivery = new EstimatedDateOfDeliveryImpl();
 		return estimatedDateOfDelivery;
@@ -1212,6 +1266,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SmokingStatusObservation createSmokingStatusObservation() {
 		SmokingStatusObservationImpl smokingStatusObservation = new SmokingStatusObservationImpl();
 		return smokingStatusObservation;
@@ -1222,6 +1277,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TobaccoUse createTobaccoUse() {
 		TobaccoUseImpl tobaccoUse = new TobaccoUseImpl();
 		return tobaccoUse;
@@ -1232,6 +1288,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSection createResultsSection() {
 		ResultsSectionImpl resultsSection = new ResultsSectionImpl();
 		return resultsSection;
@@ -1242,6 +1299,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSectionEntriesOptional createResultsSectionEntriesOptional() {
 		ResultsSectionEntriesOptionalImpl resultsSectionEntriesOptional = new ResultsSectionEntriesOptionalImpl();
 		return resultsSectionEntriesOptional;
@@ -1252,6 +1310,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultOrganizer createResultOrganizer() {
 		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
 		return resultOrganizer;
@@ -1262,6 +1321,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultObservation createResultObservation() {
 		ResultObservationImpl resultObservation = new ResultObservationImpl();
 		return resultObservation;
@@ -1272,6 +1332,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicalEquipmentSection createMedicalEquipmentSection() {
 		MedicalEquipmentSectionImpl medicalEquipmentSection = new MedicalEquipmentSectionImpl();
 		return medicalEquipmentSection;
@@ -1282,6 +1343,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusSection createFunctionalStatusSection() {
 		FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
 		return functionalStatusSection;
@@ -1292,6 +1354,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusResultOrganizer createFunctionalStatusResultOrganizer() {
 		FunctionalStatusResultOrganizerImpl functionalStatusResultOrganizer = new FunctionalStatusResultOrganizerImpl();
 		return functionalStatusResultOrganizer;
@@ -1302,6 +1365,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusResultObservation createFunctionalStatusResultObservation() {
 		FunctionalStatusResultObservationImpl functionalStatusResultObservation = new FunctionalStatusResultObservationImpl();
 		return functionalStatusResultObservation;
@@ -1312,6 +1376,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CaregiverCharacteristics createCaregiverCharacteristics() {
 		CaregiverCharacteristicsImpl caregiverCharacteristics = new CaregiverCharacteristicsImpl();
 		return caregiverCharacteristics;
@@ -1322,6 +1387,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AssessmentScaleObservation createAssessmentScaleObservation() {
 		AssessmentScaleObservationImpl assessmentScaleObservation = new AssessmentScaleObservationImpl();
 		return assessmentScaleObservation;
@@ -1332,6 +1398,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AssessmentScaleSupportingObservation createAssessmentScaleSupportingObservation() {
 		AssessmentScaleSupportingObservationImpl assessmentScaleSupportingObservation = new AssessmentScaleSupportingObservationImpl();
 		return assessmentScaleSupportingObservation;
@@ -1342,6 +1409,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusResultOrganizer createCognitiveStatusResultOrganizer() {
 		CognitiveStatusResultOrganizerImpl cognitiveStatusResultOrganizer = new CognitiveStatusResultOrganizerImpl();
 		return cognitiveStatusResultOrganizer;
@@ -1352,6 +1420,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusResultObservation createCognitiveStatusResultObservation() {
 		CognitiveStatusResultObservationImpl cognitiveStatusResultObservation = new CognitiveStatusResultObservationImpl();
 		return cognitiveStatusResultObservation;
@@ -1362,6 +1431,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusProblemObservation createFunctionalStatusProblemObservation() {
 		FunctionalStatusProblemObservationImpl functionalStatusProblemObservation = new FunctionalStatusProblemObservationImpl();
 		return functionalStatusProblemObservation;
@@ -1372,6 +1442,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusProblemObservation createCognitiveStatusProblemObservation() {
 		CognitiveStatusProblemObservationImpl cognitiveStatusProblemObservation = new CognitiveStatusProblemObservationImpl();
 		return cognitiveStatusProblemObservation;
@@ -1382,6 +1453,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PressureUlcerObservation createPressureUlcerObservation() {
 		PressureUlcerObservationImpl pressureUlcerObservation = new PressureUlcerObservationImpl();
 		return pressureUlcerObservation;
@@ -1392,6 +1464,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NumberOfPressureUlcersObservation createNumberOfPressureUlcersObservation() {
 		NumberOfPressureUlcersObservationImpl numberOfPressureUlcersObservation = new NumberOfPressureUlcersObservationImpl();
 		return numberOfPressureUlcersObservation;
@@ -1402,6 +1475,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HighestPressureUlcerStage createHighestPressureUlcerStage() {
 		HighestPressureUlcerStageImpl highestPressureUlcerStage = new HighestPressureUlcerStageImpl();
 		return highestPressureUlcerStage;
@@ -1412,6 +1486,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSection createProblemSection() {
 		ProblemSectionImpl problemSection = new ProblemSectionImpl();
 		return problemSection;
@@ -1422,6 +1497,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSectionEntriesOptional createProblemSectionEntriesOptional() {
 		ProblemSectionEntriesOptionalImpl problemSectionEntriesOptional = new ProblemSectionEntriesOptionalImpl();
 		return problemSectionEntriesOptional;
@@ -1432,6 +1508,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectivesSection createAdvanceDirectivesSection() {
 		AdvanceDirectivesSectionImpl advanceDirectivesSection = new AdvanceDirectivesSectionImpl();
 		return advanceDirectivesSection;
@@ -1442,6 +1519,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectiveObservation createAdvanceDirectiveObservation() {
 		AdvanceDirectiveObservationImpl advanceDirectiveObservation = new AdvanceDirectiveObservationImpl();
 		return advanceDirectiveObservation;
@@ -1452,6 +1530,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncountersSection createEncountersSection() {
 		EncountersSectionImpl encountersSection = new EncountersSectionImpl();
 		return encountersSection;
@@ -1462,6 +1541,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterActivities createEncounterActivities() {
 		EncounterActivitiesImpl encounterActivities = new EncounterActivitiesImpl();
 		return encounterActivities;
@@ -1472,6 +1552,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterDiagnosis createEncounterDiagnosis() {
 		EncounterDiagnosisImpl encounterDiagnosis = new EncounterDiagnosisImpl();
 		return encounterDiagnosis;
@@ -1482,6 +1563,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceDeliveryLocation createServiceDeliveryLocation() {
 		ServiceDeliveryLocationImpl serviceDeliveryLocation = new ServiceDeliveryLocationImpl();
 		return serviceDeliveryLocation;
@@ -1492,6 +1574,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationsSection createImmunizationsSection() {
 		ImmunizationsSectionImpl immunizationsSection = new ImmunizationsSectionImpl();
 		return immunizationsSection;
@@ -1502,6 +1585,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationActivity createImmunizationActivity() {
 		ImmunizationActivityImpl immunizationActivity = new ImmunizationActivityImpl();
 		return immunizationActivity;
@@ -1512,6 +1596,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationRefusalReason createImmunizationRefusalReason() {
 		ImmunizationRefusalReasonImpl immunizationRefusalReason = new ImmunizationRefusalReasonImpl();
 		return immunizationRefusalReason;
@@ -1522,6 +1607,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsSection createVitalSignsSection() {
 		VitalSignsSectionImpl vitalSignsSection = new VitalSignsSectionImpl();
 		return vitalSignsSection;
@@ -1532,6 +1618,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsOrganizer createVitalSignsOrganizer() {
 		VitalSignsOrganizerImpl vitalSignsOrganizer = new VitalSignsOrganizerImpl();
 		return vitalSignsOrganizer;
@@ -1542,6 +1629,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignObservation createVitalSignObservation() {
 		VitalSignObservationImpl vitalSignObservation = new VitalSignObservationImpl();
 		return vitalSignObservation;
@@ -1552,6 +1640,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HistoryOfPastIllnessSection createHistoryOfPastIllnessSection() {
 		HistoryOfPastIllnessSectionImpl historyOfPastIllnessSection = new HistoryOfPastIllnessSectionImpl();
 		return historyOfPastIllnessSection;
@@ -1562,6 +1651,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ChiefComplaintSection createChiefComplaintSection() {
 		ChiefComplaintSectionImpl chiefComplaintSection = new ChiefComplaintSectionImpl();
 		return chiefComplaintSection;
@@ -1572,6 +1662,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReasonForReferralSection createReasonForReferralSection() {
 		ReasonForReferralSectionImpl reasonForReferralSection = new ReasonForReferralSectionImpl();
 		return reasonForReferralSection;
@@ -1582,6 +1673,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HistoryOfPresentIllnessSection createHistoryOfPresentIllnessSection() {
 		HistoryOfPresentIllnessSectionImpl historyOfPresentIllnessSection = new HistoryOfPresentIllnessSectionImpl();
 		return historyOfPresentIllnessSection;
@@ -1592,6 +1684,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalAdmissionDiagnosisSection createHospitalAdmissionDiagnosisSection() {
 		HospitalAdmissionDiagnosisSectionImpl hospitalAdmissionDiagnosisSection = new HospitalAdmissionDiagnosisSectionImpl();
 		return hospitalAdmissionDiagnosisSection;
@@ -1602,6 +1695,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeDiagnosisSection createHospitalDischargeDiagnosisSection() {
 		HospitalDischargeDiagnosisSectionImpl hospitalDischargeDiagnosisSection = new HospitalDischargeDiagnosisSectionImpl();
 		return hospitalDischargeDiagnosisSection;
@@ -1612,6 +1706,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalAdmissionMedicationsSectionEntriesOptional createHospitalAdmissionMedicationsSectionEntriesOptional() {
 		HospitalAdmissionMedicationsSectionEntriesOptionalImpl hospitalAdmissionMedicationsSectionEntriesOptional = new HospitalAdmissionMedicationsSectionEntriesOptionalImpl();
 		return hospitalAdmissionMedicationsSectionEntriesOptional;
@@ -1622,6 +1717,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdmissionMedication createAdmissionMedication() {
 		AdmissionMedicationImpl admissionMedication = new AdmissionMedicationImpl();
 		return admissionMedication;
@@ -1632,6 +1728,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeMedicationsSection createHospitalDischargeMedicationsSection() {
 		HospitalDischargeMedicationsSectionImpl hospitalDischargeMedicationsSection = new HospitalDischargeMedicationsSectionImpl();
 		return hospitalDischargeMedicationsSection;
@@ -1642,6 +1739,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargePhysicalSection createHospitalDischargePhysicalSection() {
 		HospitalDischargePhysicalSectionImpl hospitalDischargePhysicalSection = new HospitalDischargePhysicalSectionImpl();
 		return hospitalDischargePhysicalSection;
@@ -1652,6 +1750,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ChiefComplaintAndReasonForVisitSection createChiefComplaintAndReasonForVisitSection() {
 		ChiefComplaintAndReasonForVisitSectionImpl chiefComplaintAndReasonForVisitSection = new ChiefComplaintAndReasonForVisitSectionImpl();
 		return chiefComplaintAndReasonForVisitSection;
@@ -1662,6 +1761,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReasonForVisitSection createReasonForVisitSection() {
 		ReasonForVisitSectionImpl reasonForVisitSection = new ReasonForVisitSectionImpl();
 		return reasonForVisitSection;
@@ -1672,6 +1772,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnesthesiaSection createAnesthesiaSection() {
 		AnesthesiaSectionImpl anesthesiaSection = new AnesthesiaSectionImpl();
 		return anesthesiaSection;
@@ -1682,6 +1783,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ComplicationsSection createComplicationsSection() {
 		ComplicationsSectionImpl complicationsSection = new ComplicationsSectionImpl();
 		return complicationsSection;
@@ -1692,6 +1794,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DICOMObjectCatalogSection createDICOMObjectCatalogSection() {
 		DICOMObjectCatalogSectionImpl dicomObjectCatalogSection = new DICOMObjectCatalogSectionImpl();
 		return dicomObjectCatalogSection;
@@ -1702,6 +1805,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public StudyAct createStudyAct() {
 		StudyActImpl studyAct = new StudyActImpl();
 		return studyAct;
@@ -1712,6 +1816,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SeriesAct createSeriesAct() {
 		SeriesActImpl seriesAct = new SeriesActImpl();
 		return seriesAct;
@@ -1722,6 +1827,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SOPInstanceObservation createSOPInstanceObservation() {
 		SOPInstanceObservationImpl sopInstanceObservation = new SOPInstanceObservationImpl();
 		return sopInstanceObservation;
@@ -1732,6 +1838,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PurposeofReferenceObservation createPurposeofReferenceObservation() {
 		PurposeofReferenceObservationImpl purposeofReferenceObservation = new PurposeofReferenceObservationImpl();
 		return purposeofReferenceObservation;
@@ -1742,6 +1849,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReferencedFramesObservation createReferencedFramesObservation() {
 		ReferencedFramesObservationImpl referencedFramesObservation = new ReferencedFramesObservationImpl();
 		return referencedFramesObservation;
@@ -1752,6 +1860,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BoundaryObservation createBoundaryObservation() {
 		BoundaryObservationImpl boundaryObservation = new BoundaryObservationImpl();
 		return boundaryObservation;
@@ -1762,6 +1871,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FindingsSection createFindingsSection() {
 		FindingsSectionImpl findingsSection = new FindingsSectionImpl();
 		return findingsSection;
@@ -1772,6 +1882,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalConsultationsSection createHospitalConsultationsSection() {
 		HospitalConsultationsSectionImpl hospitalConsultationsSection = new HospitalConsultationsSectionImpl();
 		return hospitalConsultationsSection;
@@ -1782,6 +1893,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InterventionsSection createInterventionsSection() {
 		InterventionsSectionImpl interventionsSection = new InterventionsSectionImpl();
 		return interventionsSection;
@@ -1792,6 +1904,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicalHistorySection createMedicalHistorySection() {
 		MedicalHistorySectionImpl medicalHistorySection = new MedicalHistorySectionImpl();
 		return medicalHistorySection;
@@ -1802,6 +1915,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ObjectiveSection createObjectiveSection() {
 		ObjectiveSectionImpl objectiveSection = new ObjectiveSectionImpl();
 		return objectiveSection;
@@ -1812,6 +1926,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OperativeNoteFluidSection createOperativeNoteFluidSection() {
 		OperativeNoteFluidSectionImpl operativeNoteFluidSection = new OperativeNoteFluidSectionImpl();
 		return operativeNoteFluidSection;
@@ -1822,6 +1937,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OperativeNoteSurgicalProcedureSection createOperativeNoteSurgicalProcedureSection() {
 		OperativeNoteSurgicalProcedureSectionImpl operativeNoteSurgicalProcedureSection = new OperativeNoteSurgicalProcedureSectionImpl();
 		return operativeNoteSurgicalProcedureSection;
@@ -1832,6 +1948,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedProcedureSection createPlannedProcedureSection() {
 		PlannedProcedureSectionImpl plannedProcedureSection = new PlannedProcedureSectionImpl();
 		return plannedProcedureSection;
@@ -1842,6 +1959,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostoperativeDiagnosisSection createPostoperativeDiagnosisSection() {
 		PostoperativeDiagnosisSectionImpl postoperativeDiagnosisSection = new PostoperativeDiagnosisSectionImpl();
 		return postoperativeDiagnosisSection;
@@ -1852,6 +1970,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostprocedureDiagnosisSection createPostprocedureDiagnosisSection() {
 		PostprocedureDiagnosisSectionImpl postprocedureDiagnosisSection = new PostprocedureDiagnosisSectionImpl();
 		return postprocedureDiagnosisSection;
@@ -1862,6 +1981,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostprocedureDiagnosis createPostprocedureDiagnosis() {
 		PostprocedureDiagnosisImpl postprocedureDiagnosis = new PostprocedureDiagnosisImpl();
 		return postprocedureDiagnosis;
@@ -1872,6 +1992,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosisSection createPreoperativeDiagnosisSection() {
 		PreoperativeDiagnosisSectionImpl preoperativeDiagnosisSection = new PreoperativeDiagnosisSectionImpl();
 		return preoperativeDiagnosisSection;
@@ -1882,6 +2003,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureDescriptionSection createProcedureDescriptionSection() {
 		ProcedureDescriptionSectionImpl procedureDescriptionSection = new ProcedureDescriptionSectionImpl();
 		return procedureDescriptionSection;
@@ -1892,6 +2014,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureDispositionSection createProcedureDispositionSection() {
 		ProcedureDispositionSectionImpl procedureDispositionSection = new ProcedureDispositionSectionImpl();
 		return procedureDispositionSection;
@@ -1902,6 +2025,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureEstimatedBloodLossSection createProcedureEstimatedBloodLossSection() {
 		ProcedureEstimatedBloodLossSectionImpl procedureEstimatedBloodLossSection = new ProcedureEstimatedBloodLossSectionImpl();
 		return procedureEstimatedBloodLossSection;
@@ -1912,6 +2036,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureFindingsSection createProcedureFindingsSection() {
 		ProcedureFindingsSectionImpl procedureFindingsSection = new ProcedureFindingsSectionImpl();
 		return procedureFindingsSection;
@@ -1922,6 +2047,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureImplantsSection createProcedureImplantsSection() {
 		ProcedureImplantsSectionImpl procedureImplantsSection = new ProcedureImplantsSectionImpl();
 		return procedureImplantsSection;
@@ -1932,6 +2058,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureIndicationsSection createProcedureIndicationsSection() {
 		ProcedureIndicationsSectionImpl procedureIndicationsSection = new ProcedureIndicationsSectionImpl();
 		return procedureIndicationsSection;
@@ -1942,6 +2069,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureSpecimensTakenSection createProcedureSpecimensTakenSection() {
 		ProcedureSpecimensTakenSectionImpl procedureSpecimensTakenSection = new ProcedureSpecimensTakenSectionImpl();
 		return procedureSpecimensTakenSection;
@@ -1952,6 +2080,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SubjectiveSection createSubjectiveSection() {
 		SubjectiveSectionImpl subjectiveSection = new SubjectiveSectionImpl();
 		return subjectiveSection;
@@ -1962,6 +2091,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConsultationNote createConsultationNote() {
 		ConsultationNoteImpl consultationNote = new ConsultationNoteImpl();
 		return consultationNote;
@@ -1972,6 +2102,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AssessmentSection createAssessmentSection() {
 		AssessmentSectionImpl assessmentSection = new AssessmentSectionImpl();
 		return assessmentSection;
@@ -1982,6 +2113,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HistoryAndPhysicalNote createHistoryAndPhysicalNote() {
 		HistoryAndPhysicalNoteImpl historyAndPhysicalNote = new HistoryAndPhysicalNoteImpl();
 		return historyAndPhysicalNote;
@@ -1992,6 +2124,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OperativeNote createOperativeNote() {
 		OperativeNoteImpl operativeNote = new OperativeNoteImpl();
 		return operativeNote;
@@ -2002,6 +2135,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureNote createProcedureNote() {
 		ProcedureNoteImpl procedureNote = new ProcedureNoteImpl();
 		return procedureNote;
@@ -2012,6 +2146,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProgressNote createProgressNote() {
 		ProgressNoteImpl progressNote = new ProgressNoteImpl();
 		return progressNote;
@@ -2022,6 +2157,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosis createPreoperativeDiagnosis() {
 		PreoperativeDiagnosisImpl preoperativeDiagnosis = new PreoperativeDiagnosisImpl();
 		return preoperativeDiagnosis;
@@ -2032,6 +2168,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InstructionsSection createInstructionsSection() {
 		InstructionsSectionImpl instructionsSection = new InstructionsSectionImpl();
 		return instructionsSection;
@@ -2042,6 +2179,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalAdmissionDiagnosis createHospitalAdmissionDiagnosis() {
 		HospitalAdmissionDiagnosisImpl hospitalAdmissionDiagnosis = new HospitalAdmissionDiagnosisImpl();
 		return hospitalAdmissionDiagnosis;
@@ -2052,6 +2190,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DiagnosticImagingReport createDiagnosticImagingReport() {
 		DiagnosticImagingReportImpl diagnosticImagingReport = new DiagnosticImagingReportImpl();
 		return diagnosticImagingReport;
@@ -2062,6 +2201,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicianReadingStudyPerformer createPhysicianReadingStudyPerformer() {
 		PhysicianReadingStudyPerformerImpl physicianReadingStudyPerformer = new PhysicianReadingStudyPerformerImpl();
 		return physicianReadingStudyPerformer;
@@ -2072,6 +2212,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicianofRecordParticipant createPhysicianofRecordParticipant() {
 		PhysicianofRecordParticipantImpl physicianofRecordParticipant = new PhysicianofRecordParticipantImpl();
 		return physicianofRecordParticipant;
@@ -2082,6 +2223,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TextObservation createTextObservation() {
 		TextObservationImpl textObservation = new TextObservationImpl();
 		return textObservation;
@@ -2092,6 +2234,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public QuantityMeasurementObservation createQuantityMeasurementObservation() {
 		QuantityMeasurementObservationImpl quantityMeasurementObservation = new QuantityMeasurementObservationImpl();
 		return quantityMeasurementObservation;
@@ -2102,6 +2245,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CodeObservations createCodeObservations() {
 		CodeObservationsImpl codeObservations = new CodeObservationsImpl();
 		return codeObservations;
@@ -2112,6 +2256,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureContext createProcedureContext() {
 		ProcedureContextImpl procedureContext = new ProcedureContextImpl();
 		return procedureContext;
@@ -2122,6 +2267,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationUseNoneKnown createMedicationUseNoneKnown() {
 		MedicationUseNoneKnownImpl medicationUseNoneKnown = new MedicationUseNoneKnownImpl();
 		return medicationUseNoneKnown;
@@ -2132,6 +2278,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DeceasedObservation createDeceasedObservation() {
 		DeceasedObservationImpl deceasedObservation = new DeceasedObservationImpl();
 		return deceasedObservation;
@@ -2142,6 +2289,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FetusSubjectContext createFetusSubjectContext() {
 		FetusSubjectContextImpl fetusSubjectContext = new FetusSubjectContextImpl();
 		return fetusSubjectContext;
@@ -2152,6 +2300,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ObserverContext createObserverContext() {
 		ObserverContextImpl observerContext = new ObserverContextImpl();
 		return observerContext;
@@ -2162,6 +2311,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ActReference createActReference() {
 		ActReferenceImpl actReference = new ActReferenceImpl();
 		return actReference;
@@ -2172,6 +2322,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectiveOrganizer createAdvanceDirectiveOrganizer() {
 		AdvanceDirectiveOrganizerImpl advanceDirectiveOrganizer = new AdvanceDirectiveOrganizerImpl();
 		return advanceDirectiveOrganizer;
@@ -2182,6 +2333,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CharacteristicsOfHomeEnvironment createCharacteristicsOfHomeEnvironment() {
 		CharacteristicsOfHomeEnvironmentImpl characteristicsOfHomeEnvironment = new CharacteristicsOfHomeEnvironmentImpl();
 		return characteristicsOfHomeEnvironment;
@@ -2192,6 +2344,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveAbilitiesObservation createCognitiveAbilitiesObservation() {
 		CognitiveAbilitiesObservationImpl cognitiveAbilitiesObservation = new CognitiveAbilitiesObservationImpl();
 		return cognitiveAbilitiesObservation;
@@ -2202,6 +2355,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CulturalAndReligiousObservation createCulturalAndReligiousObservation() {
 		CulturalAndReligiousObservationImpl culturalAndReligiousObservation = new CulturalAndReligiousObservationImpl();
 		return culturalAndReligiousObservation;
@@ -2212,6 +2366,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DrugMonitoringAct createDrugMonitoringAct() {
 		DrugMonitoringActImpl drugMonitoringAct = new DrugMonitoringActImpl();
 		return drugMonitoringAct;
@@ -2222,6 +2377,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HandoffCommunication createHandoffCommunication() {
 		HandoffCommunicationImpl handoffCommunication = new HandoffCommunicationImpl();
 		return handoffCommunication;
@@ -2232,6 +2388,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicalEquipmentOrganizer createMedicalEquipmentOrganizer() {
 		MedicalEquipmentOrganizerImpl medicalEquipmentOrganizer = new MedicalEquipmentOrganizerImpl();
 		return medicalEquipmentOrganizer;
@@ -2242,6 +2399,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MentalStatusObservation createMentalStatusObservation() {
 		MentalStatusObservationImpl mentalStatusObservation = new MentalStatusObservationImpl();
 		return mentalStatusObservation;
@@ -2252,6 +2410,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NutritionAssessment createNutritionAssessment() {
 		NutritionAssessmentImpl nutritionAssessment = new NutritionAssessmentImpl();
 		return nutritionAssessment;
@@ -2262,6 +2421,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NutritionRecommendations createNutritionRecommendations() {
 		NutritionRecommendationsImpl nutritionRecommendations = new NutritionRecommendationsImpl();
 		return nutritionRecommendations;
@@ -2272,6 +2432,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NutritionalStatusObservation createNutritionalStatusObservation() {
 		NutritionalStatusObservationImpl nutritionalStatusObservation = new NutritionalStatusObservationImpl();
 		return nutritionalStatusObservation;
@@ -2282,6 +2443,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OutcomeObservation createOutcomeObservation() {
 		OutcomeObservationImpl outcomeObservation = new OutcomeObservationImpl();
 		return outcomeObservation;
@@ -2292,6 +2454,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PatientPriorityPreference createPatientPriorityPreference() {
 		PatientPriorityPreferenceImpl patientPriorityPreference = new PatientPriorityPreferenceImpl();
 		return patientPriorityPreference;
@@ -2302,6 +2465,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PatientReferralAct createPatientReferralAct() {
 		PatientReferralActImpl patientReferralAct = new PatientReferralActImpl();
 		return patientReferralAct;
@@ -2312,6 +2476,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedCoverage createPlannedCoverage() {
 		PlannedCoverageImpl plannedCoverage = new PlannedCoverageImpl();
 		return plannedCoverage;
@@ -2322,6 +2487,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GoalObservation createGoalObservation() {
 		GoalObservationImpl goalObservation = new GoalObservationImpl();
 		return goalObservation;
@@ -2332,6 +2498,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthConcernAct createHealthConcernAct() {
 		HealthConcernActImpl healthConcernAct = new HealthConcernActImpl();
 		return healthConcernAct;
@@ -2342,6 +2509,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InterventionAct createInterventionAct() {
 		InterventionActImpl interventionAct = new InterventionActImpl();
 		return interventionAct;
@@ -2352,6 +2520,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ExternalDocumentReference createExternalDocumentReference() {
 		ExternalDocumentReferenceImpl externalDocumentReference = new ExternalDocumentReferenceImpl();
 		return externalDocumentReference;
@@ -2362,6 +2531,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedImmunizationActivity createPlannedImmunizationActivity() {
 		PlannedImmunizationActivityImpl plannedImmunizationActivity = new PlannedImmunizationActivityImpl();
 		return plannedImmunizationActivity;
@@ -2372,6 +2542,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrognosisObservation createPrognosisObservation() {
 		PrognosisObservationImpl prognosisObservation = new PrognosisObservationImpl();
 		return prognosisObservation;
@@ -2382,6 +2553,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProgressTowardGoalObservation createProgressTowardGoalObservation() {
 		ProgressTowardGoalObservationImpl progressTowardGoalObservation = new ProgressTowardGoalObservationImpl();
 		return progressTowardGoalObservation;
@@ -2392,6 +2564,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProviderPriorityPreference createProviderPriorityPreference() {
 		ProviderPriorityPreferenceImpl providerPriorityPreference = new ProviderPriorityPreferenceImpl();
 		return providerPriorityPreference;
@@ -2402,6 +2575,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SelfCareActivities createSelfCareActivities() {
 		SelfCareActivitiesImpl selfCareActivities = new SelfCareActivitiesImpl();
 		return selfCareActivities;
@@ -2412,6 +2586,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SensoryAndSpeechStatus createSensoryAndSpeechStatus() {
 		SensoryAndSpeechStatusImpl sensoryAndSpeechStatus = new SensoryAndSpeechStatusImpl();
 		return sensoryAndSpeechStatus;
@@ -2422,6 +2597,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SubstanceAdministeredAct createSubstanceAdministeredAct() {
 		SubstanceAdministeredActImpl substanceAdministeredAct = new SubstanceAdministeredActImpl();
 		return substanceAdministeredAct;
@@ -2432,6 +2608,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public WoundCharacteristics createWoundCharacteristics() {
 		WoundCharacteristicsImpl woundCharacteristics = new WoundCharacteristicsImpl();
 		return woundCharacteristics;
@@ -2442,6 +2619,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public WoundMeasurementObservation createWoundMeasurementObservation() {
 		WoundMeasurementObservationImpl woundMeasurementObservation = new WoundMeasurementObservationImpl();
 		return woundMeasurementObservation;
@@ -2452,6 +2630,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public WoundObservation createWoundObservation() {
 		WoundObservationImpl woundObservation = new WoundObservationImpl();
 		return woundObservation;
@@ -2462,6 +2641,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GoalsSection createGoalsSection() {
 		GoalsSectionImpl goalsSection = new GoalsSectionImpl();
 		return goalsSection;
@@ -2472,6 +2652,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthConcernsSection createHealthConcernsSection() {
 		HealthConcernsSectionImpl healthConcernsSection = new HealthConcernsSectionImpl();
 		return healthConcernsSection;
@@ -2482,6 +2663,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthStatusEvaluationsOutcomesSection createHealthStatusEvaluationsOutcomesSection() {
 		HealthStatusEvaluationsOutcomesSectionImpl healthStatusEvaluationsOutcomesSection = new HealthStatusEvaluationsOutcomesSectionImpl();
 		return healthStatusEvaluationsOutcomesSection;
@@ -2492,6 +2674,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MentalStatusSection createMentalStatusSection() {
 		MentalStatusSectionImpl mentalStatusSection = new MentalStatusSectionImpl();
 		return mentalStatusSection;
@@ -2502,6 +2685,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NutritionSection createNutritionSection() {
 		NutritionSectionImpl nutritionSection = new NutritionSectionImpl();
 		return nutritionSection;
@@ -2512,6 +2696,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicalFindingsOfSkinSection createPhysicalFindingsOfSkinSection() {
 		PhysicalFindingsOfSkinSectionImpl physicalFindingsOfSkinSection = new PhysicalFindingsOfSkinSectionImpl();
 		return physicalFindingsOfSkinSection;
@@ -2522,6 +2707,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public USRealmHeader2 createUSRealmHeader2() {
 		USRealmHeader2Impl usRealmHeader2 = new USRealmHeader2Impl();
 		return usRealmHeader2;
@@ -2532,6 +2718,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CarePlan createCarePlan() {
 		CarePlanImpl carePlan = new CarePlanImpl();
 		return carePlan;
@@ -2542,6 +2729,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReferralNote createReferralNote() {
 		ReferralNoteImpl referralNote = new ReferralNoteImpl();
 		return referralNote;
@@ -2552,6 +2740,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TransferSummary createTransferSummary() {
 		TransferSummaryImpl transferSummary = new TransferSummaryImpl();
 		return transferSummary;
@@ -2562,6 +2751,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public USRealmHeaderPatientGeneratedDocument createUSRealmHeaderPatientGeneratedDocument() {
 		USRealmHeaderPatientGeneratedDocumentImpl usRealmHeaderPatientGeneratedDocument = new USRealmHeaderPatientGeneratedDocumentImpl();
 		return usRealmHeaderPatientGeneratedDocument;
@@ -2572,6 +2762,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AuthorParticipation createAuthorParticipation() {
 		AuthorParticipationImpl authorParticipation = new AuthorParticipationImpl();
 		return authorParticipation;
@@ -2582,6 +2773,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdmissionMedication2 createAdmissionMedication2() {
 		AdmissionMedication2Impl admissionMedication2 = new AdmissionMedication2Impl();
 		return admissionMedication2;
@@ -2592,6 +2784,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectiveObservation2 createAdvanceDirectiveObservation2() {
 		AdvanceDirectiveObservation2Impl advanceDirectiveObservation2 = new AdvanceDirectiveObservation2Impl();
 		return advanceDirectiveObservation2;
@@ -2602,6 +2795,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyConcernAct2 createAllergyConcernAct2() {
 		AllergyConcernAct2Impl allergyConcernAct2 = new AllergyConcernAct2Impl();
 		return allergyConcernAct2;
@@ -2612,6 +2806,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyObservation2 createAllergyObservation2() {
 		AllergyObservation2Impl allergyObservation2 = new AllergyObservation2Impl();
 		return allergyObservation2;
@@ -2622,6 +2817,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusOrganizer2 createCognitiveStatusOrganizer2() {
 		CognitiveStatusOrganizer2Impl cognitiveStatusOrganizer2 = new CognitiveStatusOrganizer2Impl();
 		return cognitiveStatusOrganizer2;
@@ -2632,6 +2828,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CognitiveStatusObservation2 createCognitiveStatusObservation2() {
 		CognitiveStatusObservation2Impl cognitiveStatusObservation2 = new CognitiveStatusObservation2Impl();
 		return cognitiveStatusObservation2;
@@ -2642,6 +2839,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CoverageActivity2 createCoverageActivity2() {
 		CoverageActivity2Impl coverageActivity2 = new CoverageActivity2Impl();
 		return coverageActivity2;
@@ -2652,6 +2850,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CurrentSmokingStatus2 createCurrentSmokingStatus2() {
 		CurrentSmokingStatus2Impl currentSmokingStatus2 = new CurrentSmokingStatus2Impl();
 		return currentSmokingStatus2;
@@ -2662,6 +2861,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DeceasedObservation2 createDeceasedObservation2() {
 		DeceasedObservation2Impl deceasedObservation2 = new DeceasedObservation2Impl();
 		return deceasedObservation2;
@@ -2672,6 +2872,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DischargeMedication2 createDischargeMedication2() {
 		DischargeMedication2Impl dischargeMedication2 = new DischargeMedication2Impl();
 		return dischargeMedication2;
@@ -2682,6 +2883,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterActivity2 createEncounterActivity2() {
 		EncounterActivity2Impl encounterActivity2 = new EncounterActivity2Impl();
 		return encounterActivity2;
@@ -2692,6 +2894,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterDiagnosis2 createEncounterDiagnosis2() {
 		EncounterDiagnosis2Impl encounterDiagnosis2 = new EncounterDiagnosis2Impl();
 		return encounterDiagnosis2;
@@ -2702,6 +2905,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusObservation2 createFunctionalStatusObservation2() {
 		FunctionalStatusObservation2Impl functionalStatusObservation2 = new FunctionalStatusObservation2Impl();
 		return functionalStatusObservation2;
@@ -2712,6 +2916,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusOrganizer2 createFunctionalStatusOrganizer2() {
 		FunctionalStatusOrganizer2Impl functionalStatusOrganizer2 = new FunctionalStatusOrganizer2Impl();
 		return functionalStatusOrganizer2;
@@ -2722,6 +2927,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthStatusObservation2 createHealthStatusObservation2() {
 		HealthStatusObservation2Impl healthStatusObservation2 = new HealthStatusObservation2Impl();
 		return healthStatusObservation2;
@@ -2732,6 +2938,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalAdmissionDiagnosis2 createHospitalAdmissionDiagnosis2() {
 		HospitalAdmissionDiagnosis2Impl hospitalAdmissionDiagnosis2 = new HospitalAdmissionDiagnosis2Impl();
 		return hospitalAdmissionDiagnosis2;
@@ -2742,6 +2949,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeDiagnosis2 createHospitalDischargeDiagnosis2() {
 		HospitalDischargeDiagnosis2Impl hospitalDischargeDiagnosis2 = new HospitalDischargeDiagnosis2Impl();
 		return hospitalDischargeDiagnosis2;
@@ -2752,6 +2960,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationActivity2 createImmunizationActivity2() {
 		ImmunizationActivity2Impl immunizationActivity2 = new ImmunizationActivity2Impl();
 		return immunizationActivity2;
@@ -2762,6 +2971,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationMedicationInformation2 createImmunizationMedicationInformation2() {
 		ImmunizationMedicationInformation2Impl immunizationMedicationInformation2 = new ImmunizationMedicationInformation2Impl();
 		return immunizationMedicationInformation2;
@@ -2772,6 +2982,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Indication2 createIndication2() {
 		Indication2Impl indication2 = new Indication2Impl();
 		return indication2;
@@ -2782,6 +2993,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Instruction2 createInstruction2() {
 		Instruction2Impl instruction2 = new Instruction2Impl();
 		return instruction2;
@@ -2792,6 +3004,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationActivity2 createMedicationActivity2() {
 		MedicationActivity2Impl medicationActivity2 = new MedicationActivity2Impl();
 		return medicationActivity2;
@@ -2802,6 +3015,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationDispense2 createMedicationDispense2() {
 		MedicationDispense2Impl medicationDispense2 = new MedicationDispense2Impl();
 		return medicationDispense2;
@@ -2812,6 +3026,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationInformation2 createMedicationInformation2() {
 		MedicationInformation2Impl medicationInformation2 = new MedicationInformation2Impl();
 		return medicationInformation2;
@@ -2822,6 +3037,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationSupplyOrder2 createMedicationSupplyOrder2() {
 		MedicationSupplyOrder2Impl medicationSupplyOrder2 = new MedicationSupplyOrder2Impl();
 		return medicationSupplyOrder2;
@@ -2832,6 +3048,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NonMedicinalSupplyActivity2 createNonMedicinalSupplyActivity2() {
 		NonMedicinalSupplyActivity2Impl nonMedicinalSupplyActivity2 = new NonMedicinalSupplyActivity2Impl();
 		return nonMedicinalSupplyActivity2;
@@ -2842,6 +3059,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicianofRecordParticipant2 createPhysicianofRecordParticipant2() {
 		PhysicianofRecordParticipant2Impl physicianofRecordParticipant2 = new PhysicianofRecordParticipant2Impl();
 		return physicianofRecordParticipant2;
@@ -2852,6 +3070,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedAct2 createPlannedAct2() {
 		PlannedAct2Impl plannedAct2 = new PlannedAct2Impl();
 		return plannedAct2;
@@ -2862,6 +3081,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedEncounter2 createPlannedEncounter2() {
 		PlannedEncounter2Impl plannedEncounter2 = new PlannedEncounter2Impl();
 		return plannedEncounter2;
@@ -2872,6 +3092,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedObservation2 createPlannedObservation2() {
 		PlannedObservation2Impl plannedObservation2 = new PlannedObservation2Impl();
 		return plannedObservation2;
@@ -2882,6 +3103,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedProcedure2 createPlannedProcedure2() {
 		PlannedProcedure2Impl plannedProcedure2 = new PlannedProcedure2Impl();
 		return plannedProcedure2;
@@ -2892,6 +3114,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedMedicationActivity2 createPlannedMedicationActivity2() {
 		PlannedMedicationActivity2Impl plannedMedicationActivity2 = new PlannedMedicationActivity2Impl();
 		return plannedMedicationActivity2;
@@ -2902,6 +3125,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedSupply2 createPlannedSupply2() {
 		PlannedSupply2Impl plannedSupply2 = new PlannedSupply2Impl();
 		return plannedSupply2;
@@ -2912,6 +3136,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PolicyActivity2 createPolicyActivity2() {
 		PolicyActivity2Impl policyActivity2 = new PolicyActivity2Impl();
 		return policyActivity2;
@@ -2922,6 +3147,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostprocedureDiagnosis2 createPostprocedureDiagnosis2() {
 		PostprocedureDiagnosis2Impl postprocedureDiagnosis2 = new PostprocedureDiagnosis2Impl();
 		return postprocedureDiagnosis2;
@@ -2932,6 +3158,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosis2 createPreoperativeDiagnosis2() {
 		PreoperativeDiagnosis2Impl preoperativeDiagnosis2 = new PreoperativeDiagnosis2Impl();
 		return preoperativeDiagnosis2;
@@ -2942,6 +3169,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemConcernAct2 createProblemConcernAct2() {
 		ProblemConcernAct2Impl problemConcernAct2 = new ProblemConcernAct2Impl();
 		return problemConcernAct2;
@@ -2952,6 +3180,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemObservation2 createProblemObservation2() {
 		ProblemObservation2Impl problemObservation2 = new ProblemObservation2Impl();
 		return problemObservation2;
@@ -2962,6 +3191,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityAct2 createProcedureActivityAct2() {
 		ProcedureActivityAct2Impl procedureActivityAct2 = new ProcedureActivityAct2Impl();
 		return procedureActivityAct2;
@@ -2972,6 +3202,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityObservation2 createProcedureActivityObservation2() {
 		ProcedureActivityObservation2Impl procedureActivityObservation2 = new ProcedureActivityObservation2Impl();
 		return procedureActivityObservation2;
@@ -2982,6 +3213,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityProcedure2 createProcedureActivityProcedure2() {
 		ProcedureActivityProcedure2Impl procedureActivityProcedure2 = new ProcedureActivityProcedure2Impl();
 		return procedureActivityProcedure2;
@@ -2992,6 +3224,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReactionObservation2 createReactionObservation2() {
 		ReactionObservation2Impl reactionObservation2 = new ReactionObservation2Impl();
 		return reactionObservation2;
@@ -3002,6 +3235,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultObservation2 createResultObservation2() {
 		ResultObservation2Impl resultObservation2 = new ResultObservation2Impl();
 		return resultObservation2;
@@ -3012,6 +3246,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultOrganizer2 createResultOrganizer2() {
 		ResultOrganizer2Impl resultOrganizer2 = new ResultOrganizer2Impl();
 		return resultOrganizer2;
@@ -3022,6 +3257,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SeverityObservation2 createSeverityObservation2() {
 		SeverityObservation2Impl severityObservation2 = new SeverityObservation2Impl();
 		return severityObservation2;
@@ -3032,6 +3268,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistoryObservation2 createSocialHistoryObservation2() {
 		SocialHistoryObservation2Impl socialHistoryObservation2 = new SocialHistoryObservation2Impl();
 		return socialHistoryObservation2;
@@ -3042,6 +3279,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SubstanceOrDeviceAllergyObservation2 createSubstanceOrDeviceAllergyObservation2() {
 		SubstanceOrDeviceAllergyObservation2Impl substanceOrDeviceAllergyObservation2 = new SubstanceOrDeviceAllergyObservation2Impl();
 		return substanceOrDeviceAllergyObservation2;
@@ -3052,6 +3290,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TobaccoUse2 createTobaccoUse2() {
 		TobaccoUse2Impl tobaccoUse2 = new TobaccoUse2Impl();
 		return tobaccoUse2;
@@ -3062,6 +3301,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignObservation2 createVitalSignObservation2() {
 		VitalSignObservation2Impl vitalSignObservation2 = new VitalSignObservation2Impl();
 		return vitalSignObservation2;
@@ -3072,6 +3312,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsOrganizer2 createVitalSignsOrganizer2() {
 		VitalSignsOrganizer2Impl vitalSignsOrganizer2 = new VitalSignsOrganizer2Impl();
 		return vitalSignsOrganizer2;
@@ -3082,6 +3323,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnesthesiaSection2 createAnesthesiaSection2() {
 		AnesthesiaSection2Impl anesthesiaSection2 = new AnesthesiaSection2Impl();
 		return anesthesiaSection2;
@@ -3092,6 +3334,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AssessmentAndPlanSection2 createAssessmentAndPlanSection2() {
 		AssessmentAndPlanSection2Impl assessmentAndPlanSection2 = new AssessmentAndPlanSection2Impl();
 		return assessmentAndPlanSection2;
@@ -3102,6 +3345,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ComplicationsSection2 createComplicationsSection2() {
 		ComplicationsSection2Impl complicationsSection2 = new ComplicationsSection2Impl();
 		return complicationsSection2;
@@ -3112,6 +3356,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncountersSectionEntriesOptional2 createEncountersSectionEntriesOptional2() {
 		EncountersSectionEntriesOptional2Impl encountersSectionEntriesOptional2 = new EncountersSectionEntriesOptional2Impl();
 		return encountersSectionEntriesOptional2;
@@ -3122,6 +3367,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusSection2 createFunctionalStatusSection2() {
 		FunctionalStatusSection2Impl functionalStatusSection2 = new FunctionalStatusSection2Impl();
 		return functionalStatusSection2;
@@ -3132,6 +3378,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HistoryOfPastIllnessSection2 createHistoryOfPastIllnessSection2() {
 		HistoryOfPastIllnessSection2Impl historyOfPastIllnessSection2 = new HistoryOfPastIllnessSection2Impl();
 		return historyOfPastIllnessSection2;
@@ -3142,6 +3389,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalAdmissionDiagnosisSection2 createHospitalAdmissionDiagnosisSection2() {
 		HospitalAdmissionDiagnosisSection2Impl hospitalAdmissionDiagnosisSection2 = new HospitalAdmissionDiagnosisSection2Impl();
 		return hospitalAdmissionDiagnosisSection2;
@@ -3152,6 +3400,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalAdmissionMedicationsSectionEntriesOptional2 createHospitalAdmissionMedicationsSectionEntriesOptional2() {
 		HospitalAdmissionMedicationsSectionEntriesOptional2Impl hospitalAdmissionMedicationsSectionEntriesOptional2 = new HospitalAdmissionMedicationsSectionEntriesOptional2Impl();
 		return hospitalAdmissionMedicationsSectionEntriesOptional2;
@@ -3162,6 +3411,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeDiagnosisSection2 createHospitalDischargeDiagnosisSection2() {
 		HospitalDischargeDiagnosisSection2Impl hospitalDischargeDiagnosisSection2 = new HospitalDischargeDiagnosisSection2Impl();
 		return hospitalDischargeDiagnosisSection2;
@@ -3172,6 +3422,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeMedicationsSectionEntriesOptional2 createHospitalDischargeMedicationsSectionEntriesOptional2() {
 		HospitalDischargeMedicationsSectionEntriesOptional2Impl hospitalDischargeMedicationsSectionEntriesOptional2 = new HospitalDischargeMedicationsSectionEntriesOptional2Impl();
 		return hospitalDischargeMedicationsSectionEntriesOptional2;
@@ -3182,6 +3433,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationsSectionEntriesOptional2 createImmunizationsSectionEntriesOptional2() {
 		ImmunizationsSectionEntriesOptional2Impl immunizationsSectionEntriesOptional2 = new ImmunizationsSectionEntriesOptional2Impl();
 		return immunizationsSectionEntriesOptional2;
@@ -3192,6 +3444,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InstructionsSection2 createInstructionsSection2() {
 		InstructionsSection2Impl instructionsSection2 = new InstructionsSection2Impl();
 		return instructionsSection2;
@@ -3202,6 +3455,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InterventionsSection2 createInterventionsSection2() {
 		InterventionsSection2Impl interventionsSection2 = new InterventionsSection2Impl();
 		return interventionsSection2;
@@ -3212,6 +3466,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicalEquipmentSection2 createMedicalEquipmentSection2() {
 		MedicalEquipmentSection2Impl medicalEquipmentSection2 = new MedicalEquipmentSection2Impl();
 		return medicalEquipmentSection2;
@@ -3222,6 +3477,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsAdministeredSection2 createMedicationsAdministeredSection2() {
 		MedicationsAdministeredSection2Impl medicationsAdministeredSection2 = new MedicationsAdministeredSection2Impl();
 		return medicationsAdministeredSection2;
@@ -3232,6 +3488,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PayersSection2 createPayersSection2() {
 		PayersSection2Impl payersSection2 = new PayersSection2Impl();
 		return payersSection2;
@@ -3242,6 +3499,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicalExamSection2 createPhysicalExamSection2() {
 		PhysicalExamSection2Impl physicalExamSection2 = new PhysicalExamSection2Impl();
 		return physicalExamSection2;
@@ -3252,6 +3510,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfTreatmentSection2 createPlanOfTreatmentSection2() {
 		PlanOfTreatmentSection2Impl planOfTreatmentSection2 = new PlanOfTreatmentSection2Impl();
 		return planOfTreatmentSection2;
@@ -3262,6 +3521,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedProcedureSection2 createPlannedProcedureSection2() {
 		PlannedProcedureSection2Impl plannedProcedureSection2 = new PlannedProcedureSection2Impl();
 		return plannedProcedureSection2;
@@ -3272,6 +3532,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostprocedureDiagnosisSection2 createPostprocedureDiagnosisSection2() {
 		PostprocedureDiagnosisSection2Impl postprocedureDiagnosisSection2 = new PostprocedureDiagnosisSection2Impl();
 		return postprocedureDiagnosisSection2;
@@ -3282,6 +3543,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosisSection2 createPreoperativeDiagnosisSection2() {
 		PreoperativeDiagnosisSection2Impl preoperativeDiagnosisSection2 = new PreoperativeDiagnosisSection2Impl();
 		return preoperativeDiagnosisSection2;
@@ -3292,6 +3554,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureFindingsSection2 createProcedureFindingsSection2() {
 		ProcedureFindingsSection2Impl procedureFindingsSection2 = new ProcedureFindingsSection2Impl();
 		return procedureFindingsSection2;
@@ -3302,6 +3565,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureIndicationsSection2 createProcedureIndicationsSection2() {
 		ProcedureIndicationsSection2Impl procedureIndicationsSection2 = new ProcedureIndicationsSection2Impl();
 		return procedureIndicationsSection2;
@@ -3312,6 +3576,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSectionEntriesOptional2 createProceduresSectionEntriesOptional2() {
 		ProceduresSectionEntriesOptional2Impl proceduresSectionEntriesOptional2 = new ProceduresSectionEntriesOptional2Impl();
 		return proceduresSectionEntriesOptional2;
@@ -3322,6 +3587,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReasonForReferralSection2 createReasonForReferralSection2() {
 		ReasonForReferralSection2Impl reasonForReferralSection2 = new ReasonForReferralSection2Impl();
 		return reasonForReferralSection2;
@@ -3332,6 +3598,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSectionEntriesOptional2 createResultsSectionEntriesOptional2() {
 		ResultsSectionEntriesOptional2Impl resultsSectionEntriesOptional2 = new ResultsSectionEntriesOptional2Impl();
 		return resultsSectionEntriesOptional2;
@@ -3342,6 +3609,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistorySection2 createSocialHistorySection2() {
 		SocialHistorySection2Impl socialHistorySection2 = new SocialHistorySection2Impl();
 		return socialHistorySection2;
@@ -3352,6 +3620,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsSectionEntriesOptional2 createVitalSignsSectionEntriesOptional2() {
 		VitalSignsSectionEntriesOptional2Impl vitalSignsSectionEntriesOptional2 = new VitalSignsSectionEntriesOptional2Impl();
 		return vitalSignsSectionEntriesOptional2;
@@ -3362,6 +3631,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectivesSectionEntriesOptional2 createAdvanceDirectivesSectionEntriesOptional2() {
 		AdvanceDirectivesSectionEntriesOptional2Impl advanceDirectivesSectionEntriesOptional2 = new AdvanceDirectivesSectionEntriesOptional2Impl();
 		return advanceDirectivesSectionEntriesOptional2;
@@ -3372,6 +3642,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsSectionEntriesOptional2 createMedicationsSectionEntriesOptional2() {
 		MedicationsSectionEntriesOptional2Impl medicationsSectionEntriesOptional2 = new MedicationsSectionEntriesOptional2Impl();
 		return medicationsSectionEntriesOptional2;
@@ -3382,6 +3653,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSectionEntriesOptional2 createProblemSectionEntriesOptional2() {
 		ProblemSectionEntriesOptional2Impl problemSectionEntriesOptional2 = new ProblemSectionEntriesOptional2Impl();
 		return problemSectionEntriesOptional2;
@@ -3392,6 +3664,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectivesSection2 createAdvanceDirectivesSection2() {
 		AdvanceDirectivesSection2Impl advanceDirectivesSection2 = new AdvanceDirectivesSection2Impl();
 		return advanceDirectivesSection2;
@@ -3402,6 +3675,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSectionEntriesOptional2 createAllergiesSectionEntriesOptional2() {
 		AllergiesSectionEntriesOptional2Impl allergiesSectionEntriesOptional2 = new AllergiesSectionEntriesOptional2Impl();
 		return allergiesSectionEntriesOptional2;
@@ -3412,6 +3686,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSection2 createAllergiesSection2() {
 		AllergiesSection2Impl allergiesSection2 = new AllergiesSection2Impl();
 		return allergiesSection2;
@@ -3422,6 +3697,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncountersSection2 createEncountersSection2() {
 		EncountersSection2Impl encountersSection2 = new EncountersSection2Impl();
 		return encountersSection2;
@@ -3432,6 +3708,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeMedicationsSection2 createHospitalDischargeMedicationsSection2() {
 		HospitalDischargeMedicationsSection2Impl hospitalDischargeMedicationsSection2 = new HospitalDischargeMedicationsSection2Impl();
 		return hospitalDischargeMedicationsSection2;
@@ -3442,6 +3719,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationsSection2 createImmunizationsSection2() {
 		ImmunizationsSection2Impl immunizationsSection2 = new ImmunizationsSection2Impl();
 		return immunizationsSection2;
@@ -3452,6 +3730,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsSection2 createMedicationsSection2() {
 		MedicationsSection2Impl medicationsSection2 = new MedicationsSection2Impl();
 		return medicationsSection2;
@@ -3462,6 +3741,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSection2 createProblemSection2() {
 		ProblemSection2Impl problemSection2 = new ProblemSection2Impl();
 		return problemSection2;
@@ -3472,6 +3752,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection2 createProceduresSection2() {
 		ProceduresSection2Impl proceduresSection2 = new ProceduresSection2Impl();
 		return proceduresSection2;
@@ -3482,6 +3763,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSection2 createResultsSection2() {
 		ResultsSection2Impl resultsSection2 = new ResultsSection2Impl();
 		return resultsSection2;
@@ -3492,6 +3774,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsSection2 createVitalSignsSection2() {
 		VitalSignsSection2Impl vitalSignsSection2 = new VitalSignsSection2Impl();
 		return vitalSignsSection2;
@@ -3502,6 +3785,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsAdministeredSection createMedicationsAdministeredSection() {
 		MedicationsAdministeredSectionImpl medicationsAdministeredSection = new MedicationsAdministeredSectionImpl();
 		return medicationsAdministeredSection;
@@ -3512,6 +3796,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicalExamSection createPhysicalExamSection() {
 		PhysicalExamSectionImpl physicalExamSection = new PhysicalExamSectionImpl();
 		return physicalExamSection;
@@ -3522,6 +3807,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GeneralStatusSection createGeneralStatusSection() {
 		GeneralStatusSectionImpl generalStatusSection = new GeneralStatusSectionImpl();
 		return generalStatusSection;
@@ -3532,6 +3818,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReviewOfSystemsSection createReviewOfSystemsSection() {
 		ReviewOfSystemsSectionImpl reviewOfSystemsSection = new ReviewOfSystemsSectionImpl();
 		return reviewOfSystemsSection;
@@ -3542,6 +3829,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalCourseSection createHospitalCourseSection() {
 		HospitalCourseSectionImpl hospitalCourseSection = new HospitalCourseSectionImpl();
 		return hospitalCourseSection;
@@ -3552,6 +3840,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AssessmentAndPlanSection createAssessmentAndPlanSection() {
 		AssessmentAndPlanSectionImpl assessmentAndPlanSection = new AssessmentAndPlanSectionImpl();
 		return assessmentAndPlanSection;
@@ -3562,6 +3851,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SurgicalDrainsSection createSurgicalDrainsSection() {
 		SurgicalDrainsSectionImpl surgicalDrainsSection = new SurgicalDrainsSectionImpl();
 		return surgicalDrainsSection;
@@ -3572,6 +3862,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public UnstructuredDocument createUnstructuredDocument() {
 		UnstructuredDocumentImpl unstructuredDocument = new UnstructuredDocumentImpl();
 		return unstructuredDocument;
@@ -3582,6 +3873,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationInformation createMedicationInformation() {
 		MedicationInformationImpl medicationInformation = new MedicationInformationImpl();
 		return medicationInformation;
@@ -3592,6 +3884,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DischargeSummary createDischargeSummary() {
 		DischargeSummaryImpl dischargeSummary = new DischargeSummaryImpl();
 		return dischargeSummary;
@@ -3602,6 +3895,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DischargeDietSection createDischargeDietSection() {
 		DischargeDietSectionImpl dischargeDietSection = new DischargeDietSectionImpl();
 		return dischargeDietSection;
@@ -3612,6 +3906,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeMedicationsSectionEntriesOptional createHospitalDischargeMedicationsSectionEntriesOptional() {
 		HospitalDischargeMedicationsSectionEntriesOptionalImpl hospitalDischargeMedicationsSectionEntriesOptional = new HospitalDischargeMedicationsSectionEntriesOptionalImpl();
 		return hospitalDischargeMedicationsSectionEntriesOptional;
@@ -3622,6 +3917,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreconditionForSubstanceAdministration createPreconditionForSubstanceAdministration() {
 		PreconditionForSubstanceAdministrationImpl preconditionForSubstanceAdministration = new PreconditionForSubstanceAdministrationImpl();
 		return preconditionForSubstanceAdministration;
@@ -3632,6 +3928,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationMedicationInformation createImmunizationMedicationInformation() {
 		ImmunizationMedicationInformationImpl immunizationMedicationInformation = new ImmunizationMedicationInformationImpl();
 		return immunizationMedicationInformation;
@@ -3642,6 +3939,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeStudiesSummarySection createHospitalDischargeStudiesSummarySection() {
 		HospitalDischargeStudiesSummarySectionImpl hospitalDischargeStudiesSummarySection = new HospitalDischargeStudiesSummarySectionImpl();
 		return hospitalDischargeStudiesSummarySection;
@@ -3652,6 +3950,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DischargeMedication createDischargeMedication() {
 		DischargeMedicationImpl dischargeMedication = new DischargeMedicationImpl();
 		return dischargeMedication;
@@ -3662,6 +3961,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeDiagnosis createHospitalDischargeDiagnosis() {
 		HospitalDischargeDiagnosisImpl hospitalDischargeDiagnosis = new HospitalDischargeDiagnosisImpl();
 		return hospitalDischargeDiagnosis;
@@ -3672,6 +3972,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeInstructionsSection createHospitalDischargeInstructionsSection() {
 		HospitalDischargeInstructionsSectionImpl hospitalDischargeInstructionsSection = new HospitalDischargeInstructionsSectionImpl();
 		return hospitalDischargeInstructionsSection;
@@ -3682,6 +3983,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConsolPackage getConsolPackage() {
 		return (ConsolPackage) getEPackage();
 	}

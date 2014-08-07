@@ -59,6 +59,7 @@ public class HospitalDischargeMedicationsSection2Impl extends HospitalDischargeM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalDischargeMedicationsSection2CodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeMedicationsSection2Operations.validateHospitalDischargeMedicationsSection2CodeP(
@@ -70,6 +71,7 @@ public class HospitalDischargeMedicationsSection2Impl extends HospitalDischargeM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalDischargeMedicationsSection2Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeMedicationsSection2Operations.validateHospitalDischargeMedicationsSection2Code(
@@ -81,6 +83,7 @@ public class HospitalDischargeMedicationsSection2Impl extends HospitalDischargeM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalDischargeMedicationsSection2Title(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeMedicationsSection2Operations.validateHospitalDischargeMedicationsSection2Title(
@@ -92,6 +95,7 @@ public class HospitalDischargeMedicationsSection2Impl extends HospitalDischargeM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalDischargeMedicationsSection2Text(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeMedicationsSection2Operations.validateHospitalDischargeMedicationsSection2Text(

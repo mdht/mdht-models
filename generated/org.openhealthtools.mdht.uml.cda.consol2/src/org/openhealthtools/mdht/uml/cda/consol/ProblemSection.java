@@ -40,6 +40,7 @@ public interface ProblemSection extends ProblemSectionEntriesOptional {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSection init();
 
 	/**
@@ -47,5 +48,6 @@ public interface ProblemSection extends ProblemSectionEntriesOptional {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemSection

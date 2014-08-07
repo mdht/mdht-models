@@ -59,6 +59,7 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateEncountersSectionEntriesOptionalEncounterActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalEncounterActivity2(
@@ -70,6 +71,7 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<EncounterActivity2> getConsolEncounterActivity2s() {
 		return EncountersSectionEntriesOptional2Operations.getConsolEncounterActivity2s(this);
 	}

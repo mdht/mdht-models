@@ -66,6 +66,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareSectionPlannedObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedObservation2(
 			this, diagnostics, context);
@@ -76,6 +77,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareSectionPlannedEncounter2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedEncounter2(this, diagnostics, context);
 	}
@@ -85,6 +87,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareSectionPlannedAct2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedAct2(this, diagnostics, context);
 	}
@@ -94,6 +97,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareSectionPlannedProcedure2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedProcedure2(this, diagnostics, context);
 	}
@@ -103,6 +107,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareSectionPlannedMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedMedicationActivity2(
@@ -114,6 +119,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareSectionPlannedSupply2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedSupply2(this, diagnostics, context);
 	}
@@ -123,6 +129,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareSectionInstruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionInstruction2(this, diagnostics, context);
 	}
@@ -132,6 +139,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfTreatmentSection2HandoffCommunication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2HandoffCommunication(
@@ -143,6 +151,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfTreatmentSection2NutritionRecommendations(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2NutritionRecommendations(
@@ -154,6 +163,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PlannedObservation2> getConsolPlannedObservation2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedObservation2s(this);
 	}
@@ -163,6 +173,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PlannedEncounter2> getConsolPlannedEncounter2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedEncounter2s(this);
 	}
@@ -172,6 +183,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PlannedAct2> getConsolPlannedAct2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedAct2s(this);
 	}
@@ -181,6 +193,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PlannedProcedure2> getConsolPlannedProcedure2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedProcedure2s(this);
 	}
@@ -190,6 +203,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PlannedMedicationActivity2> getConsolPlannedMedicationActivity2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedMedicationActivity2s(this);
 	}
@@ -199,6 +213,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PlannedSupply2> getConsolPlannedSupply2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedSupply2s(this);
 	}
@@ -208,6 +223,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Instruction2> getConsolInstruction2s() {
 		return PlanOfTreatmentSection2Operations.getConsolInstruction2s(this);
 	}
@@ -217,6 +233,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<HandoffCommunication> getHandoffCommunications() {
 		return PlanOfTreatmentSection2Operations.getHandoffCommunications(this);
 	}
@@ -226,6 +243,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<NutritionRecommendations> getNutritionRecommendationss() {
 		return PlanOfTreatmentSection2Operations.getNutritionRecommendationss(this);
 	}

@@ -55,6 +55,7 @@ public interface VitalSignsSectionEntriesOptional2 extends VitalSignsSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsSectionEntriesOptional2 init();
 
 	/**
@@ -62,5 +63,6 @@ public interface VitalSignsSectionEntriesOptional2 extends VitalSignsSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignsSectionEntriesOptional2

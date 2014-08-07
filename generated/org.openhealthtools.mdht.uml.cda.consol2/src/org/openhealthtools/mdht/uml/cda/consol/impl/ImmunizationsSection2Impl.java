@@ -59,6 +59,7 @@ public class ImmunizationsSection2Impl extends ImmunizationsSectionEntriesOption
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationsSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationsSection2Operations.validateImmunizationsSection2Title(this, diagnostics, context);
 	}
@@ -68,6 +69,7 @@ public class ImmunizationsSection2Impl extends ImmunizationsSectionEntriesOption
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationsSection2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationsSection2Operations.validateImmunizationsSection2Text(this, diagnostics, context);
 	}

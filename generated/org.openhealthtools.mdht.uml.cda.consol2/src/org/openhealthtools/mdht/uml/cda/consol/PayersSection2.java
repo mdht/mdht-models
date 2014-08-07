@@ -54,6 +54,7 @@ public interface PayersSection2 extends PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PayersSection2 init();
 
 	/**
@@ -61,5 +62,6 @@ public interface PayersSection2 extends PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PayersSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PayersSection2

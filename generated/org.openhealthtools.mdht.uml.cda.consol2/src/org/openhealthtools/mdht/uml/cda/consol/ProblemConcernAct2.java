@@ -124,6 +124,7 @@ public interface ProblemConcernAct2 extends ProblemConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemConcernAct2 init();
 
 	/**
@@ -131,5 +132,6 @@ public interface ProblemConcernAct2 extends ProblemConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemConcernAct2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemConcernAct2

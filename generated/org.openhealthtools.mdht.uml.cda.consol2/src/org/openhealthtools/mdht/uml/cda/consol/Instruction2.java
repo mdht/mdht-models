@@ -28,6 +28,7 @@ public interface Instruction2 extends Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Instruction2 init();
 
 	/**
@@ -35,5 +36,6 @@ public interface Instruction2 extends Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Instruction2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Instruction2

@@ -57,6 +57,7 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationsSectionOperations.validateMedicationsSectionCode(this, diagnostics, context);
 	}
@@ -66,6 +67,7 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationsSectionOperations.validateMedicationsSectionTitle(this, diagnostics, context);
 	}
@@ -75,6 +77,7 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationsSectionOperations.validateMedicationsSectionText(this, diagnostics, context);
 	}
@@ -84,6 +87,7 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationsSectionMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationsSectionOperations.validateMedicationsSectionMedication(this, diagnostics, context);
 	}
@@ -93,6 +97,7 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<MedicationActivity> getMedications() {
 		return MedicationsSectionOperations.getMedications(this);
 	}

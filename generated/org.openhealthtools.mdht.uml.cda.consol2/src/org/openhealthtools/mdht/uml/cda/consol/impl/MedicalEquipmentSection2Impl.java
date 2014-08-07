@@ -60,6 +60,7 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity2(
@@ -71,6 +72,7 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentSection2MedicalEquipmentOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2MedicalEquipmentOrganizer(
@@ -82,6 +84,7 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicalEquipmentSection2ProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2ProcedureActivityProcedure2(
@@ -93,6 +96,7 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<NonMedicinalSupplyActivity2> getConsolNonMedicinalSupplyActivity2s() {
 		return MedicalEquipmentSection2Operations.getConsolNonMedicinalSupplyActivity2s(this);
 	}
@@ -102,6 +106,7 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<MedicalEquipmentOrganizer> getMedicalEquipmentOrganizers() {
 		return MedicalEquipmentSection2Operations.getMedicalEquipmentOrganizers(this);
 	}
@@ -111,6 +116,7 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProcedureActivityProcedure2> getProcedureActivityProcedure2s() {
 		return MedicalEquipmentSection2Operations.getProcedureActivityProcedure2s(this);
 	}

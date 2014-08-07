@@ -54,6 +54,7 @@ public interface ProcedureIndicationsSection2 extends ProcedureIndicationsSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureIndicationsSection2 init();
 
 	/**
@@ -61,5 +62,6 @@ public interface ProcedureIndicationsSection2 extends ProcedureIndicationsSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureIndicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureIndicationsSection2

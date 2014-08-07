@@ -66,6 +66,7 @@ public interface DischargeMedication2 extends DischargeMedication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DischargeMedication2 init();
 
 	/**
@@ -73,5 +74,6 @@ public interface DischargeMedication2 extends DischargeMedication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DischargeMedication2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DischargeMedication2

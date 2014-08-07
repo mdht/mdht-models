@@ -56,6 +56,7 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateResultObservation2AuthorMultiplicity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservation2AuthorMultiplicity(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateResultObservation2CodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservation2CodeValue(this, diagnostics, context);
 	}
@@ -74,6 +76,7 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateResultObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservation2AuthorParticipation(this, diagnostics, context);

@@ -81,6 +81,7 @@ public interface PhysicalExamSection2 extends PhysicalExamSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicalExamSection2 init();
 
 	/**
@@ -88,5 +89,6 @@ public interface PhysicalExamSection2 extends PhysicalExamSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicalExamSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicalExamSection2

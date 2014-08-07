@@ -59,6 +59,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveOrganizer(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveOrganizer(
@@ -70,6 +71,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AdvanceDirectiveOrganizer> getConsolAdvanceDirectiveOrganizers() {
 		return AdvanceDirectivesSectionEntriesOptional2Operations.getConsolAdvanceDirectiveOrganizers(this);
 	}

@@ -58,6 +58,7 @@ public class PreoperativeDiagnosisSection2Impl extends PreoperativeDiagnosisSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreoperativeDiagnosisSectionPreoperativeDiagnosis2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreoperativeDiagnosisSection2Operations.validatePreoperativeDiagnosisSectionPreoperativeDiagnosis2(
@@ -69,6 +70,7 @@ public class PreoperativeDiagnosisSection2Impl extends PreoperativeDiagnosisSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosis2 getConsolPreoperativeDiagnosis2() {
 		return PreoperativeDiagnosisSection2Operations.getConsolPreoperativeDiagnosis2(this);
 	}

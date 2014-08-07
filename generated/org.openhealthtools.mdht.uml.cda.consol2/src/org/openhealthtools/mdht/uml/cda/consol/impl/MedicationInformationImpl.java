@@ -56,6 +56,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationTemplateId(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationId(this, diagnostics, context);
 	}
@@ -74,6 +76,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationClassCode(this, diagnostics, context);
 	}
@@ -83,6 +86,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformationManufacturedMaterial(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationManufacturedMaterial(
@@ -94,6 +98,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
@@ -105,6 +110,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialReference(
@@ -116,6 +122,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
@@ -127,6 +134,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
@@ -138,6 +146,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCode(
@@ -149,6 +158,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformationManufacturerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationManufacturerOrganization(
@@ -160,6 +170,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationInformation init() {
 		return Initializer.Util.init(this);
 	}
@@ -169,6 +180,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationInformation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

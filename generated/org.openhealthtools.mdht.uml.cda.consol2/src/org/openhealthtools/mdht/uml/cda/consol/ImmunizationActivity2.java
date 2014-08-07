@@ -207,6 +207,7 @@ public interface ImmunizationActivity2 extends ImmunizationActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationActivity2 init();
 
 	/**
@@ -214,5 +215,6 @@ public interface ImmunizationActivity2 extends ImmunizationActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ImmunizationActivity2

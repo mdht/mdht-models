@@ -59,6 +59,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
@@ -70,6 +71,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalCode(
@@ -81,6 +83,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalCodeP(
@@ -92,6 +95,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTitle(
@@ -103,6 +107,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalText(
@@ -114,6 +119,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
@@ -125,6 +131,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AdvanceDirectiveObservation> getAdvanceDirectiveObservations() {
 		return AdvanceDirectivesSectionEntriesOptionalOperations.getAdvanceDirectiveObservations(this);
 	}
@@ -134,6 +141,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectivesSectionEntriesOptional init() {
 		return Initializer.Util.init(this);
 	}
@@ -143,6 +151,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectivesSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

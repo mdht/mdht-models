@@ -160,6 +160,7 @@ public interface ReactionObservation2 extends ReactionObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReactionObservation2 init();
 
 	/**
@@ -167,5 +168,6 @@ public interface ReactionObservation2 extends ReactionObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReactionObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReactionObservation2

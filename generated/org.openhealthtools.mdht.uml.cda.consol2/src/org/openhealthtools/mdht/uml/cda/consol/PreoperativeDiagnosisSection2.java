@@ -54,6 +54,7 @@ public interface PreoperativeDiagnosisSection2 extends PreoperativeDiagnosisSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosisSection2 init();
 
 	/**
@@ -61,5 +62,6 @@ public interface PreoperativeDiagnosisSection2 extends PreoperativeDiagnosisSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosisSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PreoperativeDiagnosisSection2

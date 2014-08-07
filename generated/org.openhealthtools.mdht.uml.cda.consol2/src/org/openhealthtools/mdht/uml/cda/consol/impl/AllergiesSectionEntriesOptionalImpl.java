@@ -58,6 +58,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTemplateId(
@@ -69,6 +70,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergiesSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalCode(
 			this, diagnostics, context);
@@ -79,6 +81,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergiesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalCodeP(
 			this, diagnostics, context);
@@ -89,6 +92,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergiesSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTitle(
 			this, diagnostics, context);
@@ -99,6 +103,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergiesSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalText(
 			this, diagnostics, context);
@@ -109,6 +114,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergiesSectionEntriesOptionalAllergyProblemAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalAllergyProblemAct(
@@ -120,6 +126,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AllergyProblemAct> getAllergyProblemActs() {
 		return AllergiesSectionEntriesOptionalOperations.getAllergyProblemActs(this);
 	}
@@ -129,6 +136,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSectionEntriesOptional init() {
 		return Initializer.Util.init(this);
 	}
@@ -138,6 +146,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

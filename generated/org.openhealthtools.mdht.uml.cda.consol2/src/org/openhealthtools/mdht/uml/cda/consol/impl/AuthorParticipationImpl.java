@@ -58,6 +58,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationTemplateId(this, diagnostics, context);
 	}
@@ -67,6 +68,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationTime(this, diagnostics, context);
 	}
@@ -76,6 +78,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthor(this, diagnostics, context);
 	}
@@ -85,6 +88,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthorAssignedPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorAssignedPersonName(
@@ -96,6 +100,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(
@@ -107,6 +112,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(
@@ -118,6 +124,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationName(
@@ -129,6 +136,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom(
@@ -140,6 +148,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationAddr(
@@ -151,6 +160,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthorId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorId(this, diagnostics, context);
 	}
@@ -160,6 +170,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthorCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorCodeP(this, diagnostics, context);
@@ -170,6 +181,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthorCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorCode(this, diagnostics, context);
@@ -180,6 +192,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthorAssignedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorAssignedPerson(
@@ -191,6 +204,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganization(
@@ -202,6 +216,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AuthorParticipation init() {
 		return Initializer.Util.init(this);
 	}
@@ -211,6 +226,7 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AuthorParticipation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

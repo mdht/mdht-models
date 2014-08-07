@@ -465,6 +465,7 @@ public interface DiagnosticImagingReport extends GeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DiagnosticImagingReport init();
 
 	/**
@@ -472,5 +473,6 @@ public interface DiagnosticImagingReport extends GeneralHeaderConstraints {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DiagnosticImagingReport init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DiagnosticImagingReport

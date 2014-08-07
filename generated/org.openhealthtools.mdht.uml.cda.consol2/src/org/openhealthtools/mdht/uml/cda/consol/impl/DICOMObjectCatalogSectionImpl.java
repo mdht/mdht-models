@@ -58,6 +58,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDICOMObjectCatalogSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionTemplateId(
 			this, diagnostics, context);
@@ -68,6 +69,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDICOMObjectCatalogSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionCode(this, diagnostics, context);
 	}
@@ -77,6 +79,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDICOMObjectCatalogSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionCodeP(this, diagnostics, context);
 	}
@@ -86,6 +89,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDICOMObjectCatalogSectionStudyAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionStudyAct(this, diagnostics, context);
 	}
@@ -95,6 +99,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<StudyAct> getStudyActs() {
 		return DICOMObjectCatalogSectionOperations.getStudyActs(this);
 	}
@@ -104,6 +109,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DICOMObjectCatalogSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -113,6 +119,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DICOMObjectCatalogSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

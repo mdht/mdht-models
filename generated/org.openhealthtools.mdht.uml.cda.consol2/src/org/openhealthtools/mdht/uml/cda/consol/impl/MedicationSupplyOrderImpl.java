@@ -57,6 +57,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructionInversionInd(
@@ -68,6 +69,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderEffectiveTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderEffectiveTimeHigh(
@@ -79,6 +81,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderContainsMedicationOrImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderContainsMedicationOrImmunization(
@@ -90,6 +93,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderTemplateId(this, diagnostics, context);
 	}
@@ -99,6 +103,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderClassCode(this, diagnostics, context);
 	}
@@ -108,6 +113,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderEffectiveTime(this, diagnostics, context);
 	}
@@ -117,6 +123,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderMoodCode(this, diagnostics, context);
 	}
@@ -126,6 +133,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderQuantity(this, diagnostics, context);
 	}
@@ -135,6 +143,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderRepeatNumber(this, diagnostics, context);
 	}
@@ -144,6 +153,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderStatusCode(this, diagnostics, context);
 	}
@@ -153,6 +163,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderId(this, diagnostics, context);
 	}
@@ -162,6 +173,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderAuthor(this, diagnostics, context);
 	}
@@ -171,6 +183,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationSupplyOrderInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructions(this, diagnostics, context);
 	}
@@ -180,6 +193,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Instructions getInstructions() {
 		return MedicationSupplyOrderOperations.getInstructions(this);
 	}
@@ -189,6 +203,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationSupplyOrder init() {
 		return Initializer.Util.init(this);
 	}
@@ -198,6 +213,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationSupplyOrder init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

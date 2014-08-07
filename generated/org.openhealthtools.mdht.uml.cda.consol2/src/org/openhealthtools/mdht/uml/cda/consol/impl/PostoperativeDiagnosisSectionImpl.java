@@ -56,6 +56,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostoperativeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTemplateId(
@@ -67,6 +68,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostoperativeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCode(
 			this, diagnostics, context);
@@ -77,6 +79,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostoperativeDiagnosisSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCodeP(
 			this, diagnostics, context);
@@ -87,6 +90,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostoperativeDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionText(
 			this, diagnostics, context);
@@ -97,6 +101,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePostoperativeDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTitle(
 			this, diagnostics, context);
@@ -107,6 +112,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostoperativeDiagnosisSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -116,6 +122,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PostoperativeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

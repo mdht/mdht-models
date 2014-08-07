@@ -58,6 +58,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActEffectiveTimeLow(this, diagnostics, context);
 	}
@@ -67,6 +68,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActEffectiveTimeHigh(this, diagnostics, context);
 	}
@@ -76,6 +78,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActTemplateId(this, diagnostics, context);
 	}
@@ -85,6 +88,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActClassCode(this, diagnostics, context);
 	}
@@ -94,6 +98,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActMoodCode(this, diagnostics, context);
 	}
@@ -103,6 +108,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActId(this, diagnostics, context);
 	}
@@ -112,6 +118,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActCode(this, diagnostics, context);
 	}
@@ -121,6 +128,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActStatusCode(this, diagnostics, context);
 	}
@@ -130,6 +138,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActEffectiveTime(this, diagnostics, context);
 	}
@@ -139,6 +148,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActAllergyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActAllergyObservation(this, diagnostics, context);
 	}
@@ -148,6 +158,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActCDCodeAndCodeSystemValues(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActCDCodeAndCodeSystemValues(
@@ -159,6 +170,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActCDCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActCDCode(this, diagnostics, context);
 	}
@@ -168,6 +180,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergyProblemActCDCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActCDCodeSystem(this, diagnostics, context);
 	}
@@ -177,6 +190,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AllergyObservation> getAllergyObservations() {
 		return AllergyProblemActOperations.getAllergyObservations(this);
 	}
@@ -186,6 +200,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyProblemAct init() {
 		return Initializer.Util.init(this);
 	}
@@ -195,6 +210,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyProblemAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

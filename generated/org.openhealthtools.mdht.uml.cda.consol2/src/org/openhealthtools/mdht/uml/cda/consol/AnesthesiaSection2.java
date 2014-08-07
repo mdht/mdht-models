@@ -76,6 +76,7 @@ public interface AnesthesiaSection2 extends AnesthesiaSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnesthesiaSection2 init();
 
 	/**
@@ -83,5 +84,6 @@ public interface AnesthesiaSection2 extends AnesthesiaSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnesthesiaSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AnesthesiaSection2

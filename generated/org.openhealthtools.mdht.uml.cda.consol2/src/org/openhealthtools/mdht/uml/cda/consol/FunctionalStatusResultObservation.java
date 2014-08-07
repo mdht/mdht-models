@@ -199,6 +199,7 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusResultObservation init();
 
 	/**
@@ -206,5 +207,6 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusResultObservation

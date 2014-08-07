@@ -60,6 +60,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptional2Impl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalAdmissionMedicationsSectionEntriesOptional2Operations.validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication2(
@@ -71,6 +72,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptional2Impl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AdmissionMedication2> getConsolAdmissionMedication2s() {
 		return HospitalAdmissionMedicationsSectionEntriesOptional2Operations.getConsolAdmissionMedication2s(this);
 	}

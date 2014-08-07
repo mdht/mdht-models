@@ -110,6 +110,7 @@ public interface ProcedureActivityProcedure2 extends ProcedureActivityProcedure 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityProcedure2 init();
 
 	/**
@@ -117,5 +118,6 @@ public interface ProcedureActivityProcedure2 extends ProcedureActivityProcedure 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureActivityProcedure2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivityProcedure2

@@ -58,6 +58,7 @@ public class AssessmentAndPlanSection2Impl extends AssessmentAndPlanSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAssessmentAndPlanSectionPlannedAct2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSectionPlannedAct2(
 			this, diagnostics, context);
@@ -68,6 +69,7 @@ public class AssessmentAndPlanSection2Impl extends AssessmentAndPlanSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PlannedAct2> getConsolPlannedAct2s() {
 		return AssessmentAndPlanSection2Operations.getConsolPlannedAct2s(this);
 	}

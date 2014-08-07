@@ -613,5 +613,6 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationCombinationMedication init();
 } // MedicationCombinationMedication

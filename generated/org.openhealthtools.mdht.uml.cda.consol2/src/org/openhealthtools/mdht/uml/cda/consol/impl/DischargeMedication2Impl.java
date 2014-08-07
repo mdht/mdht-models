@@ -58,6 +58,7 @@ public class DischargeMedication2Impl extends DischargeMedicationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDischargeMedicationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeMedication2Operations.validateDischargeMedicationCodeP(this, diagnostics, context);
 	}
@@ -67,6 +68,7 @@ public class DischargeMedication2Impl extends DischargeMedicationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateDischargeMedicationMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeMedication2Operations.validateDischargeMedicationMedicationActivity2(this, diagnostics, context);
@@ -77,6 +79,7 @@ public class DischargeMedication2Impl extends DischargeMedicationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return DischargeMedication2Operations.getConsolMedicationActivity2s(this);
 	}

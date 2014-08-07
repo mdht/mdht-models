@@ -58,6 +58,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTemplateId(
@@ -69,6 +70,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCode(
 			this, diagnostics, context);
@@ -79,6 +81,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateEncountersSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCodeP(
@@ -90,6 +93,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateEncountersSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTitle(
@@ -101,6 +105,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateEncountersSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalText(
 			this, diagnostics, context);
@@ -111,6 +116,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateEncountersSectionEntriesOptionalEncounterActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalEncounterActivities(
@@ -122,6 +128,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<EncounterActivities> getEncounterActivitiess() {
 		return EncountersSectionEntriesOptionalOperations.getEncounterActivitiess(this);
 	}
@@ -131,6 +138,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncountersSectionEntriesOptional init() {
 		return Initializer.Util.init(this);
 	}
@@ -140,6 +148,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncountersSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

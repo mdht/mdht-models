@@ -56,6 +56,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureSpecimensTakenSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTemplateId(
@@ -67,6 +68,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureSpecimensTakenSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionCode(
 			this, diagnostics, context);
@@ -77,6 +79,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureSpecimensTakenSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionCodeP(
 			this, diagnostics, context);
@@ -87,6 +90,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureSpecimensTakenSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionText(
 			this, diagnostics, context);
@@ -97,6 +101,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureSpecimensTakenSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTitle(
 			this, diagnostics, context);
@@ -107,6 +112,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureSpecimensTakenSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -116,6 +122,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureSpecimensTakenSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

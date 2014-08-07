@@ -57,6 +57,7 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispense2ContainsMedicationInformation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispense2ContainsMedicationInformation2(
@@ -68,6 +69,7 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispense2ContainsImmunizationMedicationInformation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispense2ContainsImmunizationMedicationInformation2(
@@ -79,6 +81,7 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispense2ContainsMedicationOrImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispense2ContainsMedicationOrImmunization(
@@ -90,6 +93,7 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseMedicationSupplyOrder2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispenseMedicationSupplyOrder2(
@@ -101,6 +105,7 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationSupplyOrder2 getConsolMedicationSupplyOrder2() {
 		return MedicationDispense2Operations.getConsolMedicationSupplyOrder2(this);
 	}

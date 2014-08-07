@@ -58,6 +58,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalTemplateId(
@@ -69,6 +70,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalCode(
 			this, diagnostics, context);
@@ -79,6 +81,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalCodeP(
@@ -90,6 +93,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalTitle(
@@ -101,6 +105,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(
@@ -112,6 +117,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<VitalSignsOrganizer> getVitalSignsOrganizers() {
 		return VitalSignsSectionEntriesOptionalOperations.getVitalSignsOrganizers(this);
 	}
@@ -121,6 +127,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalText(
 			this, diagnostics, context);
@@ -131,6 +138,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsSectionEntriesOptional init() {
 		return Initializer.Util.init(this);
 	}
@@ -140,6 +148,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

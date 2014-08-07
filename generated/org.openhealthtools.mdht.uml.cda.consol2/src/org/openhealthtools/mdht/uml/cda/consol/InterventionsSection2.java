@@ -54,6 +54,7 @@ public interface InterventionsSection2 extends InterventionsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InterventionsSection2 init();
 
 	/**
@@ -61,5 +62,6 @@ public interface InterventionsSection2 extends InterventionsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InterventionsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InterventionsSection2

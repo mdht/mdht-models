@@ -61,6 +61,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2Code(this, diagnostics, context);
 	}
@@ -70,6 +71,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2CodeP(this, diagnostics, context);
 	}
@@ -79,6 +81,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2StatusCode(this, diagnostics, context);
 	}
@@ -88,6 +91,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2StatusCodeP(this, diagnostics, context);
 	}
@@ -97,6 +101,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2EffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2EffectiveTime(this, diagnostics, context);
 	}
@@ -106,6 +111,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2Performer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2Performer(this, diagnostics, context);
 	}
@@ -115,6 +121,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2Author(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2Author(this, diagnostics, context);
 	}
@@ -124,6 +131,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2ServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2ServiceDeliveryLocation(this, diagnostics, context);
@@ -134,6 +142,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2PatientPriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2PatientPriorityPreference(
@@ -145,6 +154,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2ProviderPriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2ProviderPriorityPreference(
@@ -156,6 +166,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2Indication2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2Indication2(this, diagnostics, context);
 	}
@@ -165,6 +176,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedEncounter2PerformerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2PerformerAssignedEntity(this, diagnostics, context);
@@ -175,6 +187,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceDeliveryLocation> getServiceDeliveryLocations() {
 		return PlannedEncounter2Operations.getServiceDeliveryLocations(this);
 	}
@@ -184,6 +197,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PatientPriorityPreference getPatientPriorityPreference() {
 		return PlannedEncounter2Operations.getPatientPriorityPreference(this);
 	}
@@ -193,6 +207,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
 		return PlannedEncounter2Operations.getProviderPriorityPreferences(this);
 	}
@@ -202,6 +217,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Indication2> getIndication2s() {
 		return PlannedEncounter2Operations.getIndication2s(this);
 	}

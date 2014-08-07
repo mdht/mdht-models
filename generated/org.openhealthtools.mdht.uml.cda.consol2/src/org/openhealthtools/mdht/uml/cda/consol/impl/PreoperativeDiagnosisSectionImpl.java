@@ -57,6 +57,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreoperativeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionTemplateId(
@@ -68,6 +69,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreoperativeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionCode(
 			this, diagnostics, context);
@@ -78,6 +80,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreoperativeDiagnosisSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionCodeP(
 			this, diagnostics, context);
@@ -88,6 +91,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreoperativeDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionText(
 			this, diagnostics, context);
@@ -98,6 +102,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreoperativeDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionTitle(
 			this, diagnostics, context);
@@ -108,6 +113,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(
@@ -119,6 +125,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosis getPreoperativeDiagnosis() {
 		return PreoperativeDiagnosisSectionOperations.getPreoperativeDiagnosis(this);
 	}
@@ -128,6 +135,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosisSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -137,6 +145,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreoperativeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

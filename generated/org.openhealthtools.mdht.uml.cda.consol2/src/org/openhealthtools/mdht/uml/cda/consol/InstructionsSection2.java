@@ -54,6 +54,7 @@ public interface InstructionsSection2 extends InstructionsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InstructionsSection2 init();
 
 	/**
@@ -61,5 +62,6 @@ public interface InstructionsSection2 extends InstructionsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InstructionsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InstructionsSection2

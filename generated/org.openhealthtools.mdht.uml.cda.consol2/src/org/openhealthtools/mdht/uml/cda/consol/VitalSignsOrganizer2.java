@@ -78,6 +78,7 @@ public interface VitalSignsOrganizer2 extends VitalSignsOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsOrganizer2 init();
 
 	/**
@@ -85,5 +86,6 @@ public interface VitalSignsOrganizer2 extends VitalSignsOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignsOrganizer2

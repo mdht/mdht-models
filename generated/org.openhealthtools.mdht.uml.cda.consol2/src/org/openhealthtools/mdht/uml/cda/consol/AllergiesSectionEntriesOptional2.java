@@ -55,6 +55,7 @@ public interface AllergiesSectionEntriesOptional2 extends AllergiesSectionEntrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSectionEntriesOptional2 init();
 
 	/**
@@ -62,5 +63,6 @@ public interface AllergiesSectionEntriesOptional2 extends AllergiesSectionEntrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AllergiesSectionEntriesOptional2

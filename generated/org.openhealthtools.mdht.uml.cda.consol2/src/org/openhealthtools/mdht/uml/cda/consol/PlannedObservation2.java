@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityObservationTemplateId PlannedObservation2Code PlannedObservation2StatusCode PlannedObservation2StatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.44.2' statusCode.code='active' constraints.validation.warning='PlannedObservation2EffectiveTime PlannedObservation2TargetSiteCode PlannedObservation2AuthorParticipation' constraints.validation.info='PlannedObservation2Value PlannedObservation2MethodCode PlannedObservation2Performer PlannedObservation2PatientPriorityPreference PlannedObservation2ProviderPriorityPreference PlannedObservation2Indication2 PlannedObservation2Instruction2 PlannedObservation2PlannedCoverage'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityObservationTemplateId PlannedObservation2Code PlannedObservation2StatusCode PlannedObservation2StatusCodeP PlannedObservation2TargetSiteCode' templateId.root='2.16.840.1.113883.10.20.22.4.44.2' statusCode.code='active' constraints.validation.warning='PlannedObservation2EffectiveTime PlannedObservation2TargetSiteCodeP PlannedObservation2AuthorParticipation' constraints.validation.info='PlannedObservation2Value PlannedObservation2MethodCode PlannedObservation2Performer PlannedObservation2PatientPriorityPreference PlannedObservation2ProviderPriorityPreference PlannedObservation2Indication2 PlannedObservation2Instruction2 PlannedObservation2PlannedCoverage' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedObservation2TargetSiteCode='PlannedObservation2TargetSiteCodeP'"
  * @generated
  */
 public interface PlannedObservation2 extends PlanOfCareActivityObservation {
@@ -47,7 +47,7 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'active\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\')'"
 	 * @generated
 	 */
 	boolean validatePlannedObservation2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -108,6 +108,18 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())'"
+	 * @generated
+	 */
+	boolean validatePlannedObservation2TargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validatePlannedObservation2TargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -248,6 +260,7 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedObservation2 init();
 
 	/**
@@ -255,5 +268,6 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedObservation2

@@ -187,6 +187,7 @@ public interface FunctionalStatusProblemObservation extends ProblemObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusProblemObservation init();
 
 	/**
@@ -194,5 +195,6 @@ public interface FunctionalStatusProblemObservation extends ProblemObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusProblemObservation

@@ -57,6 +57,7 @@ public class ActReferenceImpl extends ActImpl implements ActReference {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateActReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceTemplateId(this, diagnostics, context);
 	}
@@ -66,6 +67,7 @@ public class ActReferenceImpl extends ActImpl implements ActReference {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateActReferenceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceClassCode(this, diagnostics, context);
 	}
@@ -75,6 +77,7 @@ public class ActReferenceImpl extends ActImpl implements ActReference {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateActReferenceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceMoodCode(this, diagnostics, context);
 	}
@@ -84,6 +87,7 @@ public class ActReferenceImpl extends ActImpl implements ActReference {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateActReferenceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceId(this, diagnostics, context);
 	}
@@ -93,6 +97,7 @@ public class ActReferenceImpl extends ActImpl implements ActReference {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateActReferenceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceCode(this, diagnostics, context);
 	}
@@ -102,6 +107,7 @@ public class ActReferenceImpl extends ActImpl implements ActReference {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateActReferenceStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceStatusCode(this, diagnostics, context);
 	}
@@ -111,6 +117,7 @@ public class ActReferenceImpl extends ActImpl implements ActReference {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateActReferenceStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceStatusCodeP(this, diagnostics, context);
 	}
@@ -120,6 +127,7 @@ public class ActReferenceImpl extends ActImpl implements ActReference {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateActReferenceCDNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceCDNullFlavor(this, diagnostics, context);
 	}
@@ -129,6 +137,7 @@ public class ActReferenceImpl extends ActImpl implements ActReference {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateActReferenceCDNullFlavorP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceCDNullFlavorP(this, diagnostics, context);
 	}
@@ -138,6 +147,7 @@ public class ActReferenceImpl extends ActImpl implements ActReference {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ActReference init() {
 		return Initializer.Util.init(this);
 	}
@@ -147,6 +157,7 @@ public class ActReferenceImpl extends ActImpl implements ActReference {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ActReference init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

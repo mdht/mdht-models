@@ -63,6 +63,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActTemplateId(this, diagnostics, context);
 	}
@@ -72,6 +73,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActClassCode(this, diagnostics, context);
 	}
@@ -81,6 +83,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActMoodCodeP(this, diagnostics, context);
 	}
@@ -90,6 +93,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActMoodCode(this, diagnostics, context);
 	}
@@ -99,6 +103,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActId(this, diagnostics, context);
 	}
@@ -108,6 +113,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActCodeP(this, diagnostics, context);
 	}
@@ -117,6 +123,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActCode(this, diagnostics, context);
 	}
@@ -126,6 +133,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActStatusCode(this, diagnostics, context);
 	}
@@ -135,6 +143,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActEffectiveTime(this, diagnostics, context);
 	}
@@ -144,6 +153,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActGoalObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActGoalObservation(this, diagnostics, context);
 	}
@@ -153,6 +163,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionAct(this, diagnostics, context);
 	}
@@ -162,6 +173,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActNutritionRecommendations(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActNutritionRecommendations(this, diagnostics, context);
@@ -172,6 +184,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActActReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActActReference(this, diagnostics, context);
 	}
@@ -181,6 +194,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActActReference2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActActReference2(this, diagnostics, context);
 	}
@@ -190,6 +204,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActAuthorParticipation(this, diagnostics, context);
 	}
@@ -199,6 +214,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateInterventionActExternalDocumentReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActExternalDocumentReference(this, diagnostics, context);
@@ -209,6 +225,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<GoalObservation> getGoalObservations() {
 		return InterventionActOperations.getGoalObservations(this);
 	}
@@ -218,6 +235,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<InterventionAct> getInterventionActs() {
 		return InterventionActOperations.getInterventionActs(this);
 	}
@@ -227,6 +245,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<NutritionRecommendations> getNutritionRecommendationss() {
 		return InterventionActOperations.getNutritionRecommendationss(this);
 	}
@@ -236,6 +255,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ActReference> getActReferences() {
 		return InterventionActOperations.getActReferences(this);
 	}
@@ -245,6 +265,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ActReference> getActReference2s() {
 		return InterventionActOperations.getActReference2s(this);
 	}
@@ -254,6 +275,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ExternalDocumentReference> getExternalDocumentReferences() {
 		return InterventionActOperations.getExternalDocumentReferences(this);
 	}
@@ -263,6 +285,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InterventionAct init() {
 		return Initializer.Util.init(this);
 	}
@@ -272,6 +295,7 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InterventionAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

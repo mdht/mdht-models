@@ -60,6 +60,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalExamSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionTemplateId(this, diagnostics, context);
 	}
@@ -69,6 +70,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalExamSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionCode(this, diagnostics, context);
 	}
@@ -78,6 +80,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalExamSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionCodeP(this, diagnostics, context);
 	}
@@ -87,6 +90,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalExamSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionTitle(this, diagnostics, context);
 	}
@@ -96,6 +100,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalExamSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionText(this, diagnostics, context);
 	}
@@ -105,6 +110,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalExamSectionPressureUlcerObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionPressureUlcerObservation(
@@ -116,6 +122,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(
@@ -127,6 +134,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalExamSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionHighestPressureUlcerStage(
@@ -138,6 +146,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PressureUlcerObservation> getPressureUlcerObservations() {
 		return PhysicalExamSectionOperations.getPressureUlcerObservations(this);
 	}
@@ -147,6 +156,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<NumberOfPressureUlcersObservation> getNumberOfPressureUlcersObservations() {
 		return PhysicalExamSectionOperations.getNumberOfPressureUlcersObservations(this);
 	}
@@ -156,6 +166,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<HighestPressureUlcerStage> getHighestPressureUlcerStages() {
 		return PhysicalExamSectionOperations.getHighestPressureUlcerStages(this);
 	}
@@ -165,6 +176,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicalExamSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -174,6 +186,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicalExamSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

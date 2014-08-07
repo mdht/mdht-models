@@ -59,6 +59,7 @@ public class ImmunizationsSectionEntriesOptional2Impl extends ImmunizationsSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptional2Operations.validateImmunizationsSectionEntriesOptionalImmunizationActivity2(
@@ -70,6 +71,7 @@ public class ImmunizationsSectionEntriesOptional2Impl extends ImmunizationsSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ImmunizationActivity2> getConsolImmunizationActivity2s() {
 		return ImmunizationsSectionEntriesOptional2Operations.getConsolImmunizationActivity2s(this);
 	}

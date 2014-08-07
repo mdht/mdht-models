@@ -44,6 +44,7 @@ public interface SeverityObservation2 extends SeverityObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SeverityObservation2 init();
 
 	/**
@@ -51,5 +52,6 @@ public interface SeverityObservation2 extends SeverityObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SeverityObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SeverityObservation2

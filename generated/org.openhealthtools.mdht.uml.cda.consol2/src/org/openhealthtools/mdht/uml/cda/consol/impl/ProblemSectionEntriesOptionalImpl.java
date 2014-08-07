@@ -58,6 +58,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTemplateId(
@@ -69,6 +70,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCode(
 			this, diagnostics, context);
@@ -79,6 +81,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCodeP(
 			this, diagnostics, context);
@@ -89,6 +92,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTitle(
 			this, diagnostics, context);
@@ -99,6 +103,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalText(
 			this, diagnostics, context);
@@ -109,6 +114,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemSectionEntriesOptionalProblemConcern(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalProblemConcern(
@@ -120,6 +126,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProblemConcernAct> getProblemConcerns() {
 		return ProblemSectionEntriesOptionalOperations.getProblemConcerns(this);
 	}
@@ -129,6 +136,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSectionEntriesOptional init() {
 		return Initializer.Util.init(this);
 	}
@@ -138,6 +146,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

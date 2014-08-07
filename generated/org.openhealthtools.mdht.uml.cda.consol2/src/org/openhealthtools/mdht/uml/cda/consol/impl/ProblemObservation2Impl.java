@@ -62,6 +62,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemObservation2HasOnsetDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservation2HasOnsetDate(this, diagnostics, context);
 	}
@@ -71,6 +72,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemObservation2HasResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservation2HasResolutionDate(this, diagnostics, context);
 	}
@@ -80,6 +82,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemObservation2ValueNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservation2ValueNullFlavor(this, diagnostics, context);
 	}
@@ -89,6 +92,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemObservation2ValueNullFlavorUnknown(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservation2ValueNullFlavorUnknown(
@@ -100,6 +104,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemObservation2PatientPriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservation2PatientPriorityPreference(
@@ -111,6 +116,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemObservation2PrognosisObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservation2PrognosisObservation(this, diagnostics, context);
@@ -121,6 +127,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemObservation2ProviderPriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservation2ProviderPriorityPreference(
@@ -132,6 +139,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservation2AuthorParticipation(this, diagnostics, context);
@@ -142,6 +150,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemObservation2CDQualifier(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservation2CDQualifier(this, diagnostics, context);
 	}
@@ -151,6 +160,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemObservation2CDCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservation2CDCode(this, diagnostics, context);
 	}
@@ -160,6 +170,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
 		return ProblemObservation2Operations.getPatientPriorityPreferences(this);
 	}
@@ -169,6 +180,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrognosisObservation getPrognosisObservation() {
 		return ProblemObservation2Operations.getPrognosisObservation(this);
 	}
@@ -178,6 +190,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
 		return ProblemObservation2Operations.getProviderPriorityPreferences(this);
 	}
@@ -187,6 +200,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemStatus getConsolProblemStatus() {
 		return ProblemObservation2Operations.getConsolProblemStatus(this);
 	}
@@ -196,6 +210,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthStatusObservation getConsolHealthStatusObservation() {
 		return ProblemObservation2Operations.getConsolHealthStatusObservation(this);
 	}

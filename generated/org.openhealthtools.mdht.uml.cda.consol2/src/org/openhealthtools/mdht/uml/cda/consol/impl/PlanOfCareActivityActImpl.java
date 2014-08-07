@@ -56,6 +56,7 @@ public class PlanOfCareActivityActImpl extends ActImpl implements PlanOfCareActi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivityActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActTemplateId(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class PlanOfCareActivityActImpl extends ActImpl implements PlanOfCareActi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivityActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActClassCode(this, diagnostics, context);
 	}
@@ -74,6 +76,7 @@ public class PlanOfCareActivityActImpl extends ActImpl implements PlanOfCareActi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivityActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActMoodCode(this, diagnostics, context);
 	}
@@ -83,6 +86,7 @@ public class PlanOfCareActivityActImpl extends ActImpl implements PlanOfCareActi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivityActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActId(this, diagnostics, context);
 	}
@@ -92,6 +96,7 @@ public class PlanOfCareActivityActImpl extends ActImpl implements PlanOfCareActi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivityAct init() {
 		return Initializer.Util.init(this);
 	}
@@ -101,6 +106,7 @@ public class PlanOfCareActivityActImpl extends ActImpl implements PlanOfCareActi
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivityAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -57,6 +57,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseContainsMedicationOrImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseContainsMedicationOrImmunization(
@@ -68,6 +69,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseTemplateId(this, diagnostics, context);
 	}
@@ -77,6 +79,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseClassCode(this, diagnostics, context);
 	}
@@ -86,6 +89,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseEffectiveTime(this, diagnostics, context);
 	}
@@ -95,6 +99,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseId(this, diagnostics, context);
 	}
@@ -104,6 +109,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseMoodCode(this, diagnostics, context);
 	}
@@ -113,6 +119,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseRepeatNumber(this, diagnostics, context);
 	}
@@ -122,6 +129,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseStatusCode(this, diagnostics, context);
 	}
@@ -131,6 +139,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseQuantity(this, diagnostics, context);
 	}
@@ -140,6 +149,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispensePerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformer(this, diagnostics, context);
 	}
@@ -149,6 +159,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
@@ -160,6 +171,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
@@ -171,6 +183,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
@@ -182,6 +195,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
@@ -193,6 +207,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
@@ -204,6 +219,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
@@ -215,6 +231,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
@@ -226,6 +243,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
@@ -237,6 +255,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr(
@@ -248,6 +267,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntity(
@@ -259,6 +279,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseMedicationSupplyOrder(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseMedicationSupplyOrder(this, diagnostics, context);
@@ -269,6 +290,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationSupplyOrder getMedicationSupplyOrder() {
 		return MedicationDispenseOperations.getMedicationSupplyOrder(this);
 	}
@@ -278,6 +300,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationDispense init() {
 		return Initializer.Util.init(this);
 	}
@@ -287,6 +310,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationDispense init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

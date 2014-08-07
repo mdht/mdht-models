@@ -73,6 +73,7 @@ public interface EncounterActivity2 extends EncounterActivities {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterActivity2 init();
 
 	/**
@@ -80,5 +81,6 @@ public interface EncounterActivity2 extends EncounterActivities {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncounterActivity2

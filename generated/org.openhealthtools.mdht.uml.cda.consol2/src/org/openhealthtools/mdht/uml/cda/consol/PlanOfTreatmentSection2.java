@@ -223,6 +223,7 @@ public interface PlanOfTreatmentSection2 extends PlanOfCareSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfTreatmentSection2 init();
 
 	/**
@@ -230,5 +231,6 @@ public interface PlanOfTreatmentSection2 extends PlanOfCareSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfTreatmentSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlanOfTreatmentSection2

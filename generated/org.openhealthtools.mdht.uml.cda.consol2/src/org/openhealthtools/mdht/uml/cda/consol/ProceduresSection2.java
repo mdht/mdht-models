@@ -87,6 +87,7 @@ public interface ProceduresSection2 extends ProceduresSectionEntriesOptional2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection2 init();
 
 	/**
@@ -94,5 +95,6 @@ public interface ProceduresSection2 extends ProceduresSectionEntriesOptional2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProceduresSection2

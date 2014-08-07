@@ -767,6 +767,7 @@ public interface ConsultationNote extends GeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConsultationNote init();
 
 	/**
@@ -774,5 +775,6 @@ public interface ConsultationNote extends GeneralHeaderConstraints {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConsultationNote init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ConsultationNote

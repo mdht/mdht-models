@@ -53,6 +53,7 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFunctionalStatusResultOrganizerCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerCodeCodeSystem(
@@ -64,6 +65,7 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
@@ -75,6 +77,7 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FunctionalStatusResultObservation> getFunctionalStatusResultObservations() {
 		return FunctionalStatusResultOrganizerOperations.getFunctionalStatusResultObservations(this);
 	}

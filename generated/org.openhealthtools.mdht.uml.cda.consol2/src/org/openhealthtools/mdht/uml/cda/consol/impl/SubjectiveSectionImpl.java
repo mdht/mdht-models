@@ -56,6 +56,7 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubjectiveSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionTemplateId(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubjectiveSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionCode(this, diagnostics, context);
 	}
@@ -74,6 +76,7 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubjectiveSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionCodeP(this, diagnostics, context);
 	}
@@ -83,6 +86,7 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubjectiveSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionText(this, diagnostics, context);
 	}
@@ -92,6 +96,7 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSubjectiveSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionTitle(this, diagnostics, context);
 	}
@@ -101,6 +106,7 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SubjectiveSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -110,6 +116,7 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SubjectiveSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

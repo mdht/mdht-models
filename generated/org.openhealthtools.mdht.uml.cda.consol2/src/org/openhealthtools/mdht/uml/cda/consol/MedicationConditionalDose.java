@@ -592,5 +592,6 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationConditionalDose init();
 } // MedicationConditionalDose

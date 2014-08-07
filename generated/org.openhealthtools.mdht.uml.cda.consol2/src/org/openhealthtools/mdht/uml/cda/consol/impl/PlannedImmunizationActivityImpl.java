@@ -61,6 +61,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityTemplateId(
@@ -72,6 +73,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityClassCode(
 			this, diagnostics, context);
@@ -82,6 +84,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityMoodCodeP(
 			this, diagnostics, context);
@@ -92,6 +95,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityMoodCode(
 			this, diagnostics, context);
@@ -102,6 +106,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityId(this, diagnostics, context);
 	}
@@ -111,6 +116,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityStatusCode(
@@ -122,6 +128,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityStatusCodeP(
@@ -133,6 +140,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityEffectiveTime(
@@ -144,6 +152,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityRepeatNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRepeatNumber(
@@ -155,6 +164,18 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedImmunizationActivityRouteCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRouteCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRouteCode(
 			this, diagnostics, context);
@@ -165,6 +186,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityApproachSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityApproachSiteCode(
@@ -176,6 +198,18 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedImmunizationActivityApproachSiteCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityApproachSiteCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityDoseQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityDoseQuantity(
@@ -187,6 +221,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityPerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPerformer(
 			this, diagnostics, context);
@@ -197,6 +232,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityPatientPriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPatientPriorityPreference(
@@ -208,6 +244,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityAuthorParticipation(
@@ -219,6 +256,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityProviderPriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityProviderPriorityPreference(
@@ -230,6 +268,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlannedImmunizationActivityIVLPQUnit(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityIVLPQUnit(
 			this, diagnostics, context);
@@ -240,6 +279,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
 		return PlannedImmunizationActivityOperations.getPatientPriorityPreferences(this);
 	}
@@ -249,6 +289,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
 		return PlannedImmunizationActivityOperations.getProviderPriorityPreferences(this);
 	}
@@ -258,6 +299,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedImmunizationActivity init() {
 		return Initializer.Util.init(this);
 	}
@@ -267,6 +309,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedImmunizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

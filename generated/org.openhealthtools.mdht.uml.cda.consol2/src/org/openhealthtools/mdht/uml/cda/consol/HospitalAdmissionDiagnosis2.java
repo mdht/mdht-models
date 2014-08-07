@@ -67,6 +67,7 @@ public interface HospitalAdmissionDiagnosis2 extends HospitalAdmissionDiagnosis 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalAdmissionDiagnosis2 init();
 
 	/**
@@ -74,5 +75,6 @@ public interface HospitalAdmissionDiagnosis2 extends HospitalAdmissionDiagnosis 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalAdmissionDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalAdmissionDiagnosis2

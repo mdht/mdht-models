@@ -58,6 +58,7 @@ public class AdmissionMedication2Impl extends AdmissionMedicationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAdmissionMedicationMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdmissionMedication2Operations.validateAdmissionMedicationMedicationActivity2(this, diagnostics, context);
@@ -68,6 +69,7 @@ public class AdmissionMedication2Impl extends AdmissionMedicationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return AdmissionMedication2Operations.getConsolMedicationActivity2s(this);
 	}

@@ -56,6 +56,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFamilyHistoryDeathObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationTemplateId(
@@ -67,6 +68,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFamilyHistoryDeathObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationClassCode(
@@ -78,6 +80,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFamilyHistoryDeathObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationMoodCode(
@@ -89,6 +92,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFamilyHistoryDeathObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(
 			this, diagnostics, context);
@@ -99,6 +103,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFamilyHistoryDeathObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationStatusCode(
@@ -110,6 +115,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFamilyHistoryDeathObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(
 			this, diagnostics, context);
@@ -120,6 +126,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateFamilyHistoryDeathObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValueP(
 			this, diagnostics, context);
@@ -130,6 +137,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FamilyHistoryDeathObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -139,6 +147,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FamilyHistoryDeathObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

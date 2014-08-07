@@ -56,6 +56,7 @@ public class TobaccoUse2Impl extends TobaccoUseImpl implements TobaccoUse2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateTobaccoUse2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUse2Operations.validateTobaccoUse2AuthorParticipation(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class TobaccoUse2Impl extends TobaccoUseImpl implements TobaccoUse2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateTobaccoUse2IVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUse2Operations.validateTobaccoUse2IVLTSHigh(this, diagnostics, context);
 	}

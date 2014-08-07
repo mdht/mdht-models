@@ -56,6 +56,7 @@ public class ReasonForVisitSectionImpl extends SectionImpl implements ReasonForV
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReasonForVisitSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionOperations.validateReasonForVisitSectionTemplateId(this, diagnostics, context);
 	}
@@ -65,6 +66,7 @@ public class ReasonForVisitSectionImpl extends SectionImpl implements ReasonForV
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReasonForVisitSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionOperations.validateReasonForVisitSectionCode(this, diagnostics, context);
 	}
@@ -74,6 +76,7 @@ public class ReasonForVisitSectionImpl extends SectionImpl implements ReasonForV
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReasonForVisitSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionOperations.validateReasonForVisitSectionCodeP(this, diagnostics, context);
 	}
@@ -83,6 +86,7 @@ public class ReasonForVisitSectionImpl extends SectionImpl implements ReasonForV
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReasonForVisitSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionOperations.validateReasonForVisitSectionText(this, diagnostics, context);
 	}
@@ -92,6 +96,7 @@ public class ReasonForVisitSectionImpl extends SectionImpl implements ReasonForV
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReasonForVisitSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionOperations.validateReasonForVisitSectionTitle(this, diagnostics, context);
 	}
@@ -101,6 +106,7 @@ public class ReasonForVisitSectionImpl extends SectionImpl implements ReasonForV
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReasonForVisitSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -110,6 +116,7 @@ public class ReasonForVisitSectionImpl extends SectionImpl implements ReasonForV
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReasonForVisitSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

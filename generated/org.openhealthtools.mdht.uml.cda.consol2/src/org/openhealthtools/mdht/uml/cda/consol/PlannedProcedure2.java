@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedProcedure2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityProcedureTemplateId PlannedProcedure2Instruction2InversionInd PlannedProcedure2Code PlannedProcedure2StatusCode PlannedProcedure2StatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.41.2' statusCode.code='active' constraints.validation.warning='PlannedProcedure2EffectiveTime PlannedProcedure2AuthorParticipation' constraints.validation.info='PlannedProcedure2MethodCode PlannedProcedure2TargetSiteCode PlannedProcedure2Performer PlannedProcedure2PatientPriorityPreference PlannedProcedure2ProviderPriorityPreference PlannedProcedure2Indication2 PlannedProcedure2Instruction2 PlannedProcedure2PlannedCoverage'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityProcedureTemplateId PlannedProcedure2Instruction2InversionInd PlannedProcedure2Code PlannedProcedure2StatusCode PlannedProcedure2StatusCodeP PlannedProcedure2TargetSiteCode' templateId.root='2.16.840.1.113883.10.20.22.4.41.2' statusCode.code='active' constraints.validation.warning='PlannedProcedure2EffectiveTime PlannedProcedure2AuthorParticipation' constraints.validation.info='PlannedProcedure2MethodCode PlannedProcedure2TargetSiteCodeP PlannedProcedure2Performer PlannedProcedure2PatientPriorityPreference PlannedProcedure2ProviderPriorityPreference PlannedProcedure2Indication2 PlannedProcedure2Instruction2 PlannedProcedure2PlannedCoverage' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedProcedure2TargetSiteCode='PlannedProcedure2TargetSiteCodeP'"
  * @generated
  */
 public interface PlannedProcedure2 extends PlanOfCareActivityProcedure {
@@ -59,7 +59,7 @@ public interface PlannedProcedure2 extends PlanOfCareActivityProcedure {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'active\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\')'"
 	 * @generated
 	 */
 	boolean validatePlannedProcedure2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -108,6 +108,18 @@ public interface PlannedProcedure2 extends PlanOfCareActivityProcedure {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())'"
+	 * @generated
+	 */
+	boolean validatePlannedProcedure2TargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validatePlannedProcedure2TargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -246,6 +258,7 @@ public interface PlannedProcedure2 extends PlanOfCareActivityProcedure {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedProcedure2 init();
 
 	/**
@@ -253,5 +266,6 @@ public interface PlannedProcedure2 extends PlanOfCareActivityProcedure {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedProcedure2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedProcedure2

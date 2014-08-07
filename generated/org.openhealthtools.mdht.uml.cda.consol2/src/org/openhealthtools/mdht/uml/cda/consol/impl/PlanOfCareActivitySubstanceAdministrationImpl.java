@@ -57,6 +57,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivitySubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationTemplateId(
@@ -68,6 +69,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivitySubstanceAdministrationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationClassCode(
@@ -79,6 +81,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivitySubstanceAdministrationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationMoodCode(
@@ -90,6 +93,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePlanOfCareActivitySubstanceAdministrationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationId(
@@ -101,6 +105,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivitySubstanceAdministration init() {
 		return Initializer.Util.init(this);
 	}
@@ -110,6 +115,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlanOfCareActivitySubstanceAdministration init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

@@ -59,6 +59,7 @@ public class AllergiesSectionEntriesOptional2Impl extends AllergiesSectionEntrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergiesSectionEntriesOptionalAllergyConcernAct2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesSectionEntriesOptional2Operations.validateAllergiesSectionEntriesOptionalAllergyConcernAct2(
@@ -70,6 +71,7 @@ public class AllergiesSectionEntriesOptional2Impl extends AllergiesSectionEntrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AllergyConcernAct2> getConsolAllergyConcernAct2s() {
 		return AllergiesSectionEntriesOptional2Operations.getConsolAllergyConcernAct2s(this);
 	}

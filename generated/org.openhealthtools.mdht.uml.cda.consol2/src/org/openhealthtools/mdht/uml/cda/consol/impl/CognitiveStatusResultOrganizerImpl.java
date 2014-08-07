@@ -53,6 +53,7 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusResultOrganizerCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCodeCodeSystem(
@@ -64,6 +65,7 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(
@@ -75,6 +77,7 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CognitiveStatusResultObservation> getCognitiveStatusResultObservations() {
 		return CognitiveStatusResultOrganizerOperations.getCognitiveStatusResultObservations(this);
 	}

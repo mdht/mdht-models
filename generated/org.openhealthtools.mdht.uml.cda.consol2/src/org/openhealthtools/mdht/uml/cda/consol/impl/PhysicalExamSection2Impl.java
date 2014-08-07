@@ -61,6 +61,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePhysicalExamSection2WoundObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSection2Operations.validatePhysicalExamSection2WoundObservation(this, diagnostics, context);
 	}
@@ -70,6 +71,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<WoundObservation> getWoundObservations() {
 		return PhysicalExamSection2Operations.getWoundObservations(this);
 	}
@@ -79,6 +81,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PressureUlcerObservation> getConsolPressureUlcerObservations() {
 		return PhysicalExamSection2Operations.getConsolPressureUlcerObservations(this);
 	}
@@ -88,6 +91,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<HighestPressureUlcerStage> getConsolHighestPressureUlcerStages() {
 		return PhysicalExamSection2Operations.getConsolHighestPressureUlcerStages(this);
 	}
@@ -97,6 +101,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<NumberOfPressureUlcersObservation> getConsolNumberOfPressureUlcersObservations() {
 		return PhysicalExamSection2Operations.getConsolNumberOfPressureUlcersObservations(this);
 	}

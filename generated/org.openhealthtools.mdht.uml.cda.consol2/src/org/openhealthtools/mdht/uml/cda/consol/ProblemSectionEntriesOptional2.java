@@ -77,6 +77,7 @@ public interface ProblemSectionEntriesOptional2 extends ProblemSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSectionEntriesOptional2 init();
 
 	/**
@@ -84,5 +85,6 @@ public interface ProblemSectionEntriesOptional2 extends ProblemSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemSectionEntriesOptional2
