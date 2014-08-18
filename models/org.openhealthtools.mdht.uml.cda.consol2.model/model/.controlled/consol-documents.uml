@@ -10348,6 +10348,11 @@ Note: The section/code SHOULD be selected from LOINC or DICOM for sections not l
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_btcHwCO7EeS4d9o7u1_H3A"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_btcHwSO7EeS4d9o7u1_H3A" value="*"/>
             </ownedAttribute>
+            <ownedAttribute xmi:id="_GJ388CcOEeS1IqSA2eXqEg" name="sOPInstanceObservation" association="_GJ5LECcOEeS1IqSA2eXqEg">
+              <type xmi:type="uml:Class" href="consol-dicom.uml#_9o7WcEb6EeGp67IkyTw1fg"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GJ4kACcOEeS1IqSA2eXqEg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GJ4kAScOEeS1IqSA2eXqEg" value="*"/>
+            </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_dnDZYCM6EeS4d9o7u1_H3A" name="Subject">
               <generalization xmi:id="_dnFOkCM6EeS4d9o7u1_H3A">
                 <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_rNlWoEcaEd6besF9iFIJkQ"/>
@@ -10652,13 +10657,6 @@ Note: The section/code SHOULD be selected from LOINC or DICOM for sections not l
   <CDA:AssociationValidation xmi:id="_cMxvICO7EeS4d9o7u1_H3A" severity="INFO" base_Association="_btcu0CO7EeS4d9o7u1_H3A">
     <ruleId>CONF:1098-31361</ruleId>
     <ruleId>CONF:1098-31362</ruleId>
-  </CDA:AssociationValidation>
-  <uml:Association xmi:id="_k70i4CO7EeS4d9o7u1_H3A" memberEnd="_k70i4SO7EeS4d9o7u1_H3A">
-    <ownedEnd xmi:id="_k70i4SO7EeS4d9o7u1_H3A" type="_EwK6ACMnEeS4d9o7u1_H3A" association="_k70i4CO7EeS4d9o7u1_H3A"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_liObkCO7EeS4d9o7u1_H3A" severity="INFO" base_Association="_k70i4CO7EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31363</ruleId>
-    <ruleId>CONF:1098-31364</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_I-qpkCO9EeS4d9o7u1_H3A" base_Constraint="_I-qCgCO9EeS4d9o7u1_H3A">
     <ruleId>CONF:1098-31211</ruleId>
@@ -11168,4 +11166,11 @@ The dischargeDispositionCode, @displayName, or NUBC UB-04 Print Name, must be di
   <CDA:ConstraintValidation xmi:id="_Spxs0CSVEeS4d9o7u1_H3A" base_Constraint="_SpwesCSVEeS4d9o7u1_H3A">
     <ruleId>CONF:1098-30569</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_GJ5LECcOEeS1IqSA2eXqEg" memberEnd="_GJ388CcOEeS1IqSA2eXqEg _GJ5yICcOEeS1IqSA2eXqEg">
+    <ownedEnd xmi:id="_GJ5yICcOEeS1IqSA2eXqEg" type="_EwK6ACMnEeS4d9o7u1_H3A" association="_GJ5LECcOEeS1IqSA2eXqEg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_Huz6cCcOEeS1IqSA2eXqEg" severity="INFO" base_Association="_GJ5LECcOEeS1IqSA2eXqEg">
+    <ruleId>CONF:1098-31363</ruleId>
+    <ruleId>CONF:1098-31364</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
