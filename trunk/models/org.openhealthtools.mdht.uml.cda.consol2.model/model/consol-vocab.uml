@@ -3146,5 +3146,7 @@ Value Set Source: http://www.loinc.org/</body>
   <term:ValueSetVersion xmi:id="_tcT18CL6EeS4d9o7u1_H3A" identifier="1.3.6.1.4.1.12009.10.2.5" fullName="LOINC Imaging Document Codes" binding="Dynamic" base_Enumeration="_tcSn0CL6EeS4d9o7u1_H3A">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_bh5u8CMzEeS4d9o7u1_H3A" identifier="2.16.840.1.113883.11.20.9.59" fullName="DIRSectionTypeCodes" base_Enumeration="_bh5H4CMzEeS4d9o7u1_H3A"/>
+  <term:ValueSetVersion xmi:id="_bh5u8CMzEeS4d9o7u1_H3A" identifier="2.16.840.1.113883.11.20.9.59" fullName="DIRSectionTypeCodes" base_Enumeration="_bh5H4CMzEeS4d9o7u1_H3A">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+  </term:ValueSetVersion>
 </xmi:XMI>
