@@ -67154,6 +67154,1162 @@ public interface ConsolPackage extends EPackage {
 	int VITAL_SIGNS_SECTION2_FEATURE_COUNT = VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ConsultationNote2Impl <em>Consultation Note2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsultationNote2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getConsultationNote2()
+	 * @generated
+	 */
+	int CONSULTATION_NOTE2 = 301;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__REALM_CODE = US_REALM_HEADER2__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__TYPE_ID = US_REALM_HEADER2__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__TEMPLATE_ID = US_REALM_HEADER2__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__ID = US_REALM_HEADER2__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__CODE = US_REALM_HEADER2__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__EFFECTIVE_TIME = US_REALM_HEADER2__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__CONFIDENTIALITY_CODE = US_REALM_HEADER2__CONFIDENTIALITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__LANGUAGE_CODE = US_REALM_HEADER2__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Set Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__SET_ID = US_REALM_HEADER2__SET_ID;
+
+	/**
+	 * The feature id for the '<em><b>Version Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__VERSION_NUMBER = US_REALM_HEADER2__VERSION_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__COPY_TIME = US_REALM_HEADER2__COPY_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__RECORD_TARGET = US_REALM_HEADER2__RECORD_TARGET;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__AUTHOR = US_REALM_HEADER2__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__DATA_ENTERER = US_REALM_HEADER2__DATA_ENTERER;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__INFORMANT = US_REALM_HEADER2__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Custodian</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__CUSTODIAN = US_REALM_HEADER2__CUSTODIAN;
+
+	/**
+	 * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__INFORMATION_RECIPIENT = US_REALM_HEADER2__INFORMATION_RECIPIENT;
+
+	/**
+	 * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__LEGAL_AUTHENTICATOR = US_REALM_HEADER2__LEGAL_AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__AUTHENTICATOR = US_REALM_HEADER2__AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__PARTICIPANT = US_REALM_HEADER2__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__IN_FULFILLMENT_OF = US_REALM_HEADER2__IN_FULFILLMENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__DOCUMENTATION_OF = US_REALM_HEADER2__DOCUMENTATION_OF;
+
+	/**
+	 * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__RELATED_DOCUMENT = US_REALM_HEADER2__RELATED_DOCUMENT;
+
+	/**
+	 * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__AUTHORIZATION = US_REALM_HEADER2__AUTHORIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Component Of</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__COMPONENT_OF = US_REALM_HEADER2__COMPONENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__COMPONENT = US_REALM_HEADER2__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__NULL_FLAVOR = US_REALM_HEADER2__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__CLASS_CODE = US_REALM_HEADER2__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__MOOD_CODE = US_REALM_HEADER2__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Consultation Note2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2_FEATURE_COUNT = US_REALM_HEADER2_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ContinuityOfCareDocument2Impl <em>Continuity Of Care Document2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ContinuityOfCareDocument2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getContinuityOfCareDocument2()
+	 * @generated
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2 = 302;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__REALM_CODE = US_REALM_HEADER2__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__TYPE_ID = US_REALM_HEADER2__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__TEMPLATE_ID = US_REALM_HEADER2__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__ID = US_REALM_HEADER2__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__CODE = US_REALM_HEADER2__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__EFFECTIVE_TIME = US_REALM_HEADER2__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__CONFIDENTIALITY_CODE = US_REALM_HEADER2__CONFIDENTIALITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__LANGUAGE_CODE = US_REALM_HEADER2__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Set Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__SET_ID = US_REALM_HEADER2__SET_ID;
+
+	/**
+	 * The feature id for the '<em><b>Version Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__VERSION_NUMBER = US_REALM_HEADER2__VERSION_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__COPY_TIME = US_REALM_HEADER2__COPY_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__RECORD_TARGET = US_REALM_HEADER2__RECORD_TARGET;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__AUTHOR = US_REALM_HEADER2__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__DATA_ENTERER = US_REALM_HEADER2__DATA_ENTERER;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__INFORMANT = US_REALM_HEADER2__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Custodian</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__CUSTODIAN = US_REALM_HEADER2__CUSTODIAN;
+
+	/**
+	 * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__INFORMATION_RECIPIENT = US_REALM_HEADER2__INFORMATION_RECIPIENT;
+
+	/**
+	 * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__LEGAL_AUTHENTICATOR = US_REALM_HEADER2__LEGAL_AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__AUTHENTICATOR = US_REALM_HEADER2__AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__PARTICIPANT = US_REALM_HEADER2__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__IN_FULFILLMENT_OF = US_REALM_HEADER2__IN_FULFILLMENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__DOCUMENTATION_OF = US_REALM_HEADER2__DOCUMENTATION_OF;
+
+	/**
+	 * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__RELATED_DOCUMENT = US_REALM_HEADER2__RELATED_DOCUMENT;
+
+	/**
+	 * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__AUTHORIZATION = US_REALM_HEADER2__AUTHORIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Component Of</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__COMPONENT_OF = US_REALM_HEADER2__COMPONENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__COMPONENT = US_REALM_HEADER2__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__NULL_FLAVOR = US_REALM_HEADER2__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__CLASS_CODE = US_REALM_HEADER2__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__MOOD_CODE = US_REALM_HEADER2__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Continuity Of Care Document2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2_FEATURE_COUNT = US_REALM_HEADER2_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DiagnosticImagingReport2Impl <em>Diagnostic Imaging Report2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.DiagnosticImagingReport2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDiagnosticImagingReport2()
+	 * @generated
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2 = 303;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__REALM_CODE = US_REALM_HEADER2__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__TYPE_ID = US_REALM_HEADER2__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__TEMPLATE_ID = US_REALM_HEADER2__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__ID = US_REALM_HEADER2__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__CODE = US_REALM_HEADER2__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__EFFECTIVE_TIME = US_REALM_HEADER2__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__CONFIDENTIALITY_CODE = US_REALM_HEADER2__CONFIDENTIALITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__LANGUAGE_CODE = US_REALM_HEADER2__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Set Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__SET_ID = US_REALM_HEADER2__SET_ID;
+
+	/**
+	 * The feature id for the '<em><b>Version Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__VERSION_NUMBER = US_REALM_HEADER2__VERSION_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__COPY_TIME = US_REALM_HEADER2__COPY_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__RECORD_TARGET = US_REALM_HEADER2__RECORD_TARGET;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__AUTHOR = US_REALM_HEADER2__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__DATA_ENTERER = US_REALM_HEADER2__DATA_ENTERER;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__INFORMANT = US_REALM_HEADER2__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Custodian</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__CUSTODIAN = US_REALM_HEADER2__CUSTODIAN;
+
+	/**
+	 * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__INFORMATION_RECIPIENT = US_REALM_HEADER2__INFORMATION_RECIPIENT;
+
+	/**
+	 * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__LEGAL_AUTHENTICATOR = US_REALM_HEADER2__LEGAL_AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__AUTHENTICATOR = US_REALM_HEADER2__AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__PARTICIPANT = US_REALM_HEADER2__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__IN_FULFILLMENT_OF = US_REALM_HEADER2__IN_FULFILLMENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__DOCUMENTATION_OF = US_REALM_HEADER2__DOCUMENTATION_OF;
+
+	/**
+	 * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__RELATED_DOCUMENT = US_REALM_HEADER2__RELATED_DOCUMENT;
+
+	/**
+	 * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__AUTHORIZATION = US_REALM_HEADER2__AUTHORIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Component Of</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__COMPONENT_OF = US_REALM_HEADER2__COMPONENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__COMPONENT = US_REALM_HEADER2__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__NULL_FLAVOR = US_REALM_HEADER2__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__CLASS_CODE = US_REALM_HEADER2__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__MOOD_CODE = US_REALM_HEADER2__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Diagnostic Imaging Report2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2_FEATURE_COUNT = US_REALM_HEADER2_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeSummary2Impl <em>Discharge Summary2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.DischargeSummary2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeSummary2()
+	 * @generated
+	 */
+	int DISCHARGE_SUMMARY2 = 304;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__REALM_CODE = US_REALM_HEADER2__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__TYPE_ID = US_REALM_HEADER2__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__TEMPLATE_ID = US_REALM_HEADER2__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__ID = US_REALM_HEADER2__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__CODE = US_REALM_HEADER2__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__EFFECTIVE_TIME = US_REALM_HEADER2__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__CONFIDENTIALITY_CODE = US_REALM_HEADER2__CONFIDENTIALITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__LANGUAGE_CODE = US_REALM_HEADER2__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Set Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__SET_ID = US_REALM_HEADER2__SET_ID;
+
+	/**
+	 * The feature id for the '<em><b>Version Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__VERSION_NUMBER = US_REALM_HEADER2__VERSION_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__COPY_TIME = US_REALM_HEADER2__COPY_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__RECORD_TARGET = US_REALM_HEADER2__RECORD_TARGET;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__AUTHOR = US_REALM_HEADER2__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__DATA_ENTERER = US_REALM_HEADER2__DATA_ENTERER;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__INFORMANT = US_REALM_HEADER2__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Custodian</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__CUSTODIAN = US_REALM_HEADER2__CUSTODIAN;
+
+	/**
+	 * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__INFORMATION_RECIPIENT = US_REALM_HEADER2__INFORMATION_RECIPIENT;
+
+	/**
+	 * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__LEGAL_AUTHENTICATOR = US_REALM_HEADER2__LEGAL_AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__AUTHENTICATOR = US_REALM_HEADER2__AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__PARTICIPANT = US_REALM_HEADER2__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__IN_FULFILLMENT_OF = US_REALM_HEADER2__IN_FULFILLMENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__DOCUMENTATION_OF = US_REALM_HEADER2__DOCUMENTATION_OF;
+
+	/**
+	 * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__RELATED_DOCUMENT = US_REALM_HEADER2__RELATED_DOCUMENT;
+
+	/**
+	 * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__AUTHORIZATION = US_REALM_HEADER2__AUTHORIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Component Of</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__COMPONENT_OF = US_REALM_HEADER2__COMPONENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__COMPONENT = US_REALM_HEADER2__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__NULL_FLAVOR = US_REALM_HEADER2__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__CLASS_CODE = US_REALM_HEADER2__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__MOOD_CODE = US_REALM_HEADER2__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Discharge Summary2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2_FEATURE_COUNT = US_REALM_HEADER2_FEATURE_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69982,6 +71138,46 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getVitalSignsSection2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2 <em>Consultation Note2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Consultation Note2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2
+	 * @generated
+	 */
+	EClass getConsultationNote2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2 <em>Continuity Of Care Document2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Continuity Of Care Document2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2
+	 * @generated
+	 */
+	EClass getContinuityOfCareDocument2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2 <em>Diagnostic Imaging Report2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Diagnostic Imaging Report2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2
+	 * @generated
+	 */
+	EClass getDiagnosticImagingReport2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2 <em>Discharge Summary2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Discharge Summary2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2
+	 * @generated
+	 */
+	EClass getDischargeSummary2();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
@@ -73014,6 +74210,46 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass VITAL_SIGNS_SECTION2 = eINSTANCE.getVitalSignsSection2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ConsultationNote2Impl <em>Consultation Note2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsultationNote2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getConsultationNote2()
+		 * @generated
+		 */
+		EClass CONSULTATION_NOTE2 = eINSTANCE.getConsultationNote2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ContinuityOfCareDocument2Impl <em>Continuity Of Care Document2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ContinuityOfCareDocument2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getContinuityOfCareDocument2()
+		 * @generated
+		 */
+		EClass CONTINUITY_OF_CARE_DOCUMENT2 = eINSTANCE.getContinuityOfCareDocument2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DiagnosticImagingReport2Impl <em>Diagnostic Imaging Report2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.DiagnosticImagingReport2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDiagnosticImagingReport2()
+		 * @generated
+		 */
+		EClass DIAGNOSTIC_IMAGING_REPORT2 = eINSTANCE.getDiagnosticImagingReport2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeSummary2Impl <em>Discharge Summary2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.DischargeSummary2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeSummary2()
+		 * @generated
+		 */
+		EClass DISCHARGE_SUMMARY2 = eINSTANCE.getDischargeSummary2();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.

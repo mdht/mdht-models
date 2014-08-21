@@ -2577,6 +2577,42 @@ public interface ConsolFactory extends EFactory {
 	VitalSignsSection2 createVitalSignsSection2();
 
 	/**
+	 * Returns a new object of class '<em>Consultation Note2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Consultation Note2</em>'.
+	 * @generated
+	 */
+	ConsultationNote2 createConsultationNote2();
+
+	/**
+	 * Returns a new object of class '<em>Continuity Of Care Document2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Continuity Of Care Document2</em>'.
+	 * @generated
+	 */
+	ContinuityOfCareDocument2 createContinuityOfCareDocument2();
+
+	/**
+	 * Returns a new object of class '<em>Diagnostic Imaging Report2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Diagnostic Imaging Report2</em>'.
+	 * @generated
+	 */
+	DiagnosticImagingReport2 createDiagnosticImagingReport2();
+
+	/**
+	 * Returns a new object of class '<em>Discharge Summary2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Discharge Summary2</em>'.
+	 * @generated
+	 */
+	DischargeSummary2 createDischargeSummary2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

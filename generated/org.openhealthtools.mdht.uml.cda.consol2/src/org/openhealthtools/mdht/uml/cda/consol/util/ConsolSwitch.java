@@ -6114,6 +6114,98 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.CONSULTATION_NOTE2: {
+				ConsultationNote2 consultationNote2 = (ConsultationNote2) theEObject;
+				T result = caseConsultationNote2(consultationNote2);
+				if (result == null) {
+					result = caseUSRealmHeader2(consultationNote2);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(consultationNote2);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(consultationNote2);
+				}
+				if (result == null) {
+					result = caseAct(consultationNote2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(consultationNote2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT2: {
+				ContinuityOfCareDocument2 continuityOfCareDocument2 = (ContinuityOfCareDocument2) theEObject;
+				T result = caseContinuityOfCareDocument2(continuityOfCareDocument2);
+				if (result == null) {
+					result = caseUSRealmHeader2(continuityOfCareDocument2);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(continuityOfCareDocument2);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(continuityOfCareDocument2);
+				}
+				if (result == null) {
+					result = caseAct(continuityOfCareDocument2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(continuityOfCareDocument2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT2: {
+				DiagnosticImagingReport2 diagnosticImagingReport2 = (DiagnosticImagingReport2) theEObject;
+				T result = caseDiagnosticImagingReport2(diagnosticImagingReport2);
+				if (result == null) {
+					result = caseUSRealmHeader2(diagnosticImagingReport2);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(diagnosticImagingReport2);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(diagnosticImagingReport2);
+				}
+				if (result == null) {
+					result = caseAct(diagnosticImagingReport2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(diagnosticImagingReport2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DISCHARGE_SUMMARY2: {
+				DischargeSummary2 dischargeSummary2 = (DischargeSummary2) theEObject;
+				T result = caseDischargeSummary2(dischargeSummary2);
+				if (result == null) {
+					result = caseUSRealmHeader2(dischargeSummary2);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(dischargeSummary2);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(dischargeSummary2);
+				}
+				if (result == null) {
+					result = caseAct(dischargeSummary2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dischargeSummary2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -10875,6 +10967,66 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseVitalSignsSection2(VitalSignsSection2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Consultation Note2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Consultation Note2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsultationNote2(ConsultationNote2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Continuity Of Care Document2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Continuity Of Care Document2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseContinuityOfCareDocument2(ContinuityOfCareDocument2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDiagnosticImagingReport2(DiagnosticImagingReport2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Discharge Summary2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Discharge Summary2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDischargeSummary2(DischargeSummary2 object) {
 		return null;
 	}
 

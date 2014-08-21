@@ -662,6 +662,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createResultsSection2();
 			case ConsolPackage.VITAL_SIGNS_SECTION2:
 				return createVitalSignsSection2();
+			case ConsolPackage.CONSULTATION_NOTE2:
+				return createConsultationNote2();
+			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT2:
+				return createContinuityOfCareDocument2();
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT2:
+				return createDiagnosticImagingReport2();
+			case ConsolPackage.DISCHARGE_SUMMARY2:
+				return createDischargeSummary2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -3778,6 +3786,46 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public VitalSignsSection2 createVitalSignsSection2() {
 		VitalSignsSection2Impl vitalSignsSection2 = new VitalSignsSection2Impl();
 		return vitalSignsSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsultationNote2 createConsultationNote2() {
+		ConsultationNote2Impl consultationNote2 = new ConsultationNote2Impl();
+		return consultationNote2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ContinuityOfCareDocument2 createContinuityOfCareDocument2() {
+		ContinuityOfCareDocument2Impl continuityOfCareDocument2 = new ContinuityOfCareDocument2Impl();
+		return continuityOfCareDocument2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DiagnosticImagingReport2 createDiagnosticImagingReport2() {
+		DiagnosticImagingReport2Impl diagnosticImagingReport2 = new DiagnosticImagingReport2Impl();
+		return diagnosticImagingReport2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DischargeSummary2 createDischargeSummary2() {
+		DischargeSummary2Impl dischargeSummary2 = new DischargeSummary2Impl();
+		return dischargeSummary2;
 	}
 
 	/**

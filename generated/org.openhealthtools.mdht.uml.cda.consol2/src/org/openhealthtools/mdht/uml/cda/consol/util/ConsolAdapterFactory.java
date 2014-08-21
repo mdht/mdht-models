@@ -1602,6 +1602,26 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseConsultationNote2(ConsultationNote2 object) {
+			return createConsultationNote2Adapter();
+		}
+
+		@Override
+		public Adapter caseContinuityOfCareDocument2(ContinuityOfCareDocument2 object) {
+			return createContinuityOfCareDocument2Adapter();
+		}
+
+		@Override
+		public Adapter caseDiagnosticImagingReport2(DiagnosticImagingReport2 object) {
+			return createDiagnosticImagingReport2Adapter();
+		}
+
+		@Override
+		public Adapter caseDischargeSummary2(DischargeSummary2 object) {
+			return createDischargeSummary2Adapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -6165,6 +6185,62 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createVitalSignsSection2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2 <em>Consultation Note2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2
+	 * @generated
+	 */
+	public Adapter createConsultationNote2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2 <em>Continuity Of Care Document2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2
+	 * @generated
+	 */
+	public Adapter createContinuityOfCareDocument2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2 <em>Diagnostic Imaging Report2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2
+	 * @generated
+	 */
+	public Adapter createDiagnosticImagingReport2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2 <em>Discharge Summary2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2
+	 * @generated
+	 */
+	public Adapter createDischargeSummary2Adapter() {
 		return null;
 	}
 
