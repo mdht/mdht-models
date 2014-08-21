@@ -1990,9 +1990,6 @@ The CCD is a core data set of the most relevant administrative, demographic, and
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_iAmMsEIREeGfG6GbxF_VQQ" name="hasRepresentOrganization" constrainedElement="_Q-uAEEIREeGfG6GbxF_VQQ">
-          <ownedComment xmi:id="_6Q1VMMbeEeGp28IjMvW3Ag">
-            <body>UNIMPLEMENTABLE</body>
-          </ownedComment>
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_jklH8EIREeGfG6GbxF_VQQ">
             <language>Analysis</language>
             <language>OCL</language>
@@ -9557,9 +9554,6 @@ The primary use case for the CCD is to provide a snapshot in time containing the
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_B4NzUCJUEeSBLYc2hU6GfA" name="hasRepresentOrganization">
-          <ownedComment xmi:id="_B4NzUSJUEeSBLYc2hU6GfA">
-            <body>UNIMPLEMENTABLE</body>
-          </ownedComment>
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_B4NzUiJUEeSBLYc2hU6GfA">
             <language>Analysis</language>
             <language>OCL</language>
