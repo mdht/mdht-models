@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Pregnancy Risk Factors (NCHS)</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.7126"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Pregnancy Risk Factors (NCHS) - 2.16.840.1.114222.4.11.7126</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7126</entry></row>
+<row><entry>Definition</entry><entry>The value set contains the list of values used to indicate selected medical risk factors of the mother during this pregnancy.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>58533008</entry><entry>SNOMEDCT</entry><entry>Fertility enhancing drugs, artificial insemination or intrauterine insemination</entry></row>
+<row><entry>63487001</entry><entry>SNOMEDCT</entry><entry>Assisted reproductive technology (e.g. in vitro fertilization (IVF), gamete intrafallopian transfer (GIFT)</entry></row>
+<row><entry>200144004</entry><entry>SNOMEDCT</entry><entry>Mother had a previous cesarean delivery</entry></row>
+<row><entry>73211009</entry><entry>SNOMEDCT</entry><entry>Diabetes / Prepregnancy (Diagnosis prior to pregnancy)</entry></row>
+<row><entry>15938005</entry><entry>SNOMEDCT</entry><entry>Hypertension / Eclampsia</entry></row>
+<row><entry>11687002</entry><entry>SNOMEDCT</entry><entry>Diabetes / Gestational (Diagnosis in pregnancy)</entry></row>
+<row><entry>271903000</entry><entry>SNOMEDCT</entry><entry>Other previous poor pregnancy outcome (includes perinatal death, small-for-gestational age/intrauterine growth restricted birth)</entry></row>
+<row><entry>161765003</entry><entry>SNOMEDCT</entry><entry>Previous preterm birth</entry></row>
+<row><entry>38341003</entry><entry>SNOMEDCT</entry><entry>Hypertension / Prepregnancy (chronic)</entry></row>
+<row><entry>65046005</entry><entry>SNOMEDCT</entry><entry>Pregnancy resulted from infertility treatment</entry></row>
+<row><entry>260413007</entry><entry>SNOMEDCT</entry><entry>None of the specified items in this value set (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy.</entry></row>
+<row><entry>48194001</entry><entry>SNOMEDCT</entry><entry>Hypertension / Gestational (PIH, preeclampsia)</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

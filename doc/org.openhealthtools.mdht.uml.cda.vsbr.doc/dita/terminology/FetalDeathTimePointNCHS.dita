@@ -14,7 +14,8 @@
 <tbody>
 <row><entry>Value Set</entry><entry>Fetal Death Time Point (NCHS) - 2.16.840.1.114222.4.11.7112</entry></row>
 <row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
-<row><entry>Version</entry><entry>December 1, 2013</entry></row>
+<row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7112</entry></row>
 <row><entry>Description</entry><entry>A list of time points during the delivery process at which the fetal death is thought to have occured.  Note, SNOMED is being used as the primary source for codes within the value set.
 </entry></row>
 </tbody></tgroup></table>

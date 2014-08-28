@@ -12,6 +12,8 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>PHIN VS (CDC Local Coding System)</entry></row>
+<row><entry>Description</entry><entry>CDC Public Health Information Network local coding system used for creating the concepts that are not available in the Standard Development Organization(SDO) Vocabulary like SNOMED CT, LOINC, ICD-9, etc.
+</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

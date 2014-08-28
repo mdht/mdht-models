@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Birth Report Sample"/>
+<meta name="DC.Relation" scheme="URI" content="../introduction/Example.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="topicId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Birth Report Sample</title>
+</head>
+<body id="topicId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1">Birth Report Sample</h1>
+
+	<div class="body">
+		<p class="p">The sample message has been constructed to illustrate the use of this implementation guide to constrain
+		CDA in the representation of a fetal death report.</p>
+
+		
+		<pre class="pre codeblock" id="topicId__BirthReportExample">
+		&lt;?xml version="1.0"?&gt;
+&lt;?xml-stylesheet type="text/xsl" href="CDA.xsl"?&gt;
+&lt;ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA_SDTC.xsd" classCode="DOCCLIN" moodCode="EVN"&gt;
+	&lt;!-- 
+********************************************************
+  CDA Header
+********************************************************
+--&gt;
+	&lt;realmCode code="US"/&gt;
+	&lt;typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/&gt;
+	&lt;templateId root="2.16.840.1.113883.10.20.26.1"/&gt;
+	&lt;!-- conforms to the guidance of the IG --&gt;
+	&lt;id root="1.22.33" extension="0810USA04591"/&gt;
+	&lt;!-- Vital Records document identifier.  Root = OID chosen by the sender. --&gt;
+	&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="68998-4" displayName="US standard certificate of live birth"/&gt;
+	&lt;title&gt;Birth Report&lt;/title&gt;
+	&lt;!-- Title of the report--&gt;
+	&lt;effectiveTime value="20121010"/&gt;
+	&lt;!-- Date the report was prepared --&gt;
+	&lt;confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/&gt;
+	&lt;!--Confidentiality is a contextual component of CDA, where the value expressed in the header holds true for the entire document, unless overridden by a nested value and 2.16.840.1.113883.5.25 is the OID for HL7--&gt;
+	&lt;languageCode code="en-US"/&gt;
+	&lt;!--LanguageCode example with language and country--&gt;
+	&lt;!--	
+	********************************************************
+    CDA Header: Participants
+    ********************************************************
+--&gt;
+	&lt;recordTarget typeCode="RCT"&gt;
+		&lt;!--The record target includes information regarding the mother.--&gt;
+		&lt;patientRole classCode="PAT"&gt;
+			&lt;id root="2.33.44" extension="V000-013-0001-0002"/&gt;
+			&lt;!-- Mother's Medical Record Number.  The root OID for the identifier indicates the name space the identifier value is drawn from. --&gt;
+			&lt;addr&gt;
+				&lt;streetAddressLine&gt;23 Anywhere Lane&lt;/streetAddressLine&gt;
+				&lt;city&gt;Metropolis&lt;/city&gt;
+				&lt;state&gt;Empire State&lt;/state&gt;
+				&lt;postalCode&gt;893442&lt;/postalCode&gt;
+			&lt;/addr&gt;
+			&lt;patient classCode="PSN" determinerCode="INSTANCE"&gt;
+				&lt;name&gt;
+					&lt;family&gt;Mother's family name&lt;/family&gt;
+					&lt;given&gt;Mother's given Name&lt;/given&gt;
+				&lt;/name&gt;
+			&lt;/patient&gt;
+		&lt;/patientRole&gt;
+	&lt;/recordTarget&gt;
+	&lt;!--
+	*********************************************************************
+    CDA Header: The Author of the Patient Narrative Document
+    *********************************************************************
+  --&gt;
+	&lt;author typeCode="AUT"&gt;
+		&lt;time nullFlavor="NI"/&gt;
+		&lt;assignedAuthor classCode="ASSIGNED"&gt;
+			&lt;id extension="300-23"/&gt;
+			&lt;!-- Document Author identifier.  The root OID for the document author identifier indicates the name space the identifier value is drawn from. --&gt;
+		&lt;/assignedAuthor&gt;
+	&lt;/author&gt;
+	&lt;custodian typeCode="CST"&gt;
+		&lt;assignedCustodian classCode="ASSIGNED"&gt;
+			&lt;representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE"&gt;
+				&lt;id root="2.77.38.4" extension="ABX_44445USA"/&gt;
+				&lt;!-- Document Custodian identifier.  The root OID for the custodian identifier indicates the name space the identifier value is drawn from. --&gt;
+			&lt;/representedCustodianOrganization&gt;
+		&lt;/assignedCustodian&gt;
+	&lt;/custodian&gt;
+	&lt;!-- 
+********************************************************
+Birth Report Content (CDA BODY)
+********************************************************
+--&gt;
+	&lt;component&gt;
+		&lt;structuredBody&gt;
+			&lt;!-- 
+		********************************************************
+Prenatal Testing and Surveillance Section
+********************************************************
+--&gt;
+			&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.3"/&gt;
+					&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="57078-8" displayName="Antenatal Testing and Surveillance Section"/&gt;
+					&lt;text&gt;
+						&lt;list&gt;
+							&lt;item ID="AntenatalTesting.1"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Prenatal Care Received&lt;/caption&gt;
+								&lt;content&gt;Yes&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="AntenatalTesting.2"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;First Visit Date&lt;/caption&gt;
+								&lt;content&gt;20120521&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="AntenatalTesting.3"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Last Visit Date&lt;/caption&gt;
+								&lt;content&gt;20121218&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="AntenatalTesting.4"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Number of Visits&lt;/caption&gt;
+								&lt;content&gt;8&lt;/content&gt;
+							&lt;/item&gt;
+						&lt;/list&gt;
+					&lt;/text&gt;
+					&lt;entry&gt;
+						&lt;act classCode="ACT" moodCode="EVN" negationInd="true"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.42"/&gt;
+							&lt;code code="73776-7" displayName="No Prenatal Care" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;effectiveTime&gt;
+								&lt;low value="20120521"/&gt;
+								&lt;high value="20121218"/&gt;
+							&lt;/effectiveTime&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;code code="68493-6" displayName="Prenatal visits for this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="INT" value="8"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+						&lt;/act&gt;
+					&lt;/entry&gt;
+				&lt;/section&gt;
+			&lt;/component&gt;
+			&lt;!-- 
+		********************************************************
+Prior Pregnancy History Section
+********************************************************
+--&gt;
+			&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.12"/&gt;
+					&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="57073-9" displayName="Prenatal events"/&gt;
+					&lt;text&gt;
+						&lt;list&gt;
+							&lt;item ID="PriorPregnancyHistorySection.1"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Date of Last Live Birth&lt;/caption&gt;
+								&lt;content&gt;20101125&lt;/content&gt;
+							&lt;/item&gt;
+						&lt;/list&gt;
+						&lt;list&gt;
+							&lt;item ID="PriorPregnancyHistorySection.2"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Last Menstrual Period Date&lt;/caption&gt;
+								&lt;content&gt;20120401&lt;/content&gt;
+							&lt;/item&gt;
+						&lt;/list&gt;
+						&lt;list&gt;
+							&lt;item ID="PriorPregnancyHistorySection.3"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Number of Births Now Living&lt;/caption&gt;
+								&lt;content&gt;3&lt;/content&gt;
+							&lt;/item&gt;
+						&lt;/list&gt;
+						&lt;list&gt;
+							&lt;item ID="PriorPregnancyHistorySection.4"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Number of Births Now Dead&lt;/caption&gt;
+								&lt;content&gt;0&lt;/content&gt;
+							&lt;/item&gt;
+						&lt;/list&gt;
+						&lt;list&gt;
+							&lt;item ID="PriorPregnancyHistorySection.5"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Other Pregnancy Outcomes&lt;/caption&gt;
+								&lt;content&gt;0&lt;/content&gt;
+							&lt;/item&gt;
+						&lt;/list&gt;
+						&lt;list&gt;
+							&lt;item ID="PriorPregnancyHistorySection.6"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Date of Last Other Pregnancy Outcome&lt;/caption&gt;
+								&lt;content&gt;Not Applicable&lt;/content&gt;
+							&lt;/item&gt;
+						&lt;/list&gt;
+						&lt;list&gt;
+							&lt;item ID="PriorPregnancyHistorySection.7"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Estimate of Gestation&lt;/caption&gt;
+								&lt;content&gt;39 weeks&lt;/content&gt;
+							&lt;/item&gt;
+						&lt;/list&gt;
+					&lt;/text&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.20"/&gt;
+							&lt;code code="68499-3" displayName="Date last live birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="TS" value="20101125"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.33"/&gt;
+							&lt;code code="8665-2" displayName="Last menstrual period date" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="TS" value="20120401"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.36"/&gt;
+							&lt;code code="11638-4" displayName="Number of births now living" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="INT" value="2"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.38"/&gt;
+							&lt;code code="68496-9" displayName="Number of live births now dead" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="INT" value="0"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.40"/&gt;
+							&lt;code code="69043-8" displayName="Other pregnancy outcomes" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;effectiveTime nullFlavor="NA"/&gt;
+							&lt;value xsi:type="INT" value="0"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.21"/&gt;
+							&lt;code code="11884-4" displayName="Gestational age" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="PQ" value="39" unit="wk"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+				&lt;/section&gt;
+			&lt;/component&gt;
+			&lt;!-- 
+		********************************************************
+History of Infection Section
+********************************************************
+--&gt;
+			&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.5"/&gt;
+					&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="71459-2" displayName="Infection Panel"/&gt;
+					&lt;text&gt;
+						&lt;list&gt;
+							&lt;item ID="HistoryOfInfectionSection.1"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Infection Present&lt;/caption&gt;
+								&lt;content&gt;None&lt;/content&gt;
+							&lt;/item&gt;
+						&lt;/list&gt;
+					&lt;/text&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.30"/&gt;
+							&lt;code code="72519-2" displayName="Infections present and or treated during this pregnancy for live birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="CD" code="260413007" displayName="None" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+				&lt;/section&gt;
+			&lt;/component&gt;
+			&lt;!-- 
+		********************************************************
+Labor and Delivery Section
+********************************************************
+--&gt;
+			&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.8"/&gt;
+					&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34079-4" displayName="Labor and delivery section"/&gt;
+					&lt;text&gt;
+						&lt;list&gt;
+							&lt;item ID="LaborAndDeliverySection.1"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Attender Name&lt;/caption&gt;
+								&lt;content&gt;Jane Smith&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.2"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Attender NPI&lt;/caption&gt;
+								&lt;content&gt;8044590773&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.3"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Attender Title&lt;/caption&gt;
+								&lt;content&gt;Physician&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.7"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Facility ID&lt;/caption&gt;
+								&lt;content&gt;X&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.8"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Place of Birth&lt;/caption&gt;
+								&lt;content&gt;Hospital&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.9"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;City, Town, or Location of Birth&lt;/caption&gt;
+								&lt;content&gt;X&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.10"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Country of Birth&lt;/caption&gt;
+								&lt;content&gt;X&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.11"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Facility Name&lt;/caption&gt;
+								&lt;content&gt;Include the name of Facility where birth occurred&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.12"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Other Birth Place Specified&lt;/caption&gt;
+								&lt;content&gt;No Information&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.13"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Maternal Transfer&lt;/caption&gt;
+								&lt;content&gt;No&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.14"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Characteristics of Labor and Delivery&lt;/caption&gt;
+								&lt;content&gt;Epidural or Spinal Anesthesia during Labor&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.15"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Maternal Morbidity&lt;/caption&gt;
+								&lt;content&gt;Unplanned Hysterectomy&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.16"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Pregnancy Risk Factor&lt;/caption&gt;
+								&lt;content&gt;Prepregnancy Diabetes&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.17"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Pregnancy Risk Factor&lt;/caption&gt;
+								&lt;content&gt;Prepregnancy Hypertension&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.18"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Pregnancy Risk Factor&lt;/caption&gt;
+								&lt;content&gt;Pregnancy Resulted from Infertility Treatment&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.19"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Pregnancy Risk Factor&lt;/caption&gt;
+								&lt;content&gt;Assisted Reproductive Technology&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.20"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Source of Payment&lt;/caption&gt;
+								&lt;content&gt;Private Insurance&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="LaborAndDeliverySection.21"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Onset of Labor&lt;/caption&gt;
+								&lt;content&gt;None of the Cited Options&lt;/content&gt;
+							&lt;/item&gt;
+						&lt;/list&gt;
+					&lt;/text&gt;
+					&lt;entry&gt;
+						&lt;act classCode="SPCTRT" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.31"/&gt;
+							&lt;code code="57074-7" displayName="Labor and delivery process" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;performer typeCode="PRF"&gt;
+								&lt;assignedEntity&gt;
+									&lt;id root="2.16.840.1.113883.4.6" extension="8044590773"/&gt;
+									&lt;!-- Attender's NPI  It is possible to provide a local state ID as well. --&gt;
+									&lt;code code="309343006" displayName="Physician" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+									&lt;assignedPerson classCode="PSN" determinerCode="INSTANCE"&gt;
+										&lt;name&gt;
+											&lt;prefix&gt;Dr.&lt;/prefix&gt;
+											&lt;family&gt;Smith&lt;/family&gt;
+											&lt;given&gt;Jane&lt;/given&gt;
+										&lt;/name&gt;
+									&lt;/assignedPerson&gt;
+								&lt;/assignedEntity&gt;
+							&lt;/performer&gt;
+							&lt;participant typeCode="LOC"&gt;
+								&lt;participantRole classCode="BIRTHPL"&gt;
+									&lt;id root="2.16.840.1.113883.4.6" extension="1244497890"/&gt;
+									&lt;!-- Birth Facility NPI.  --&gt;
+									&lt;code code="22232009" displayName="Hospital" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+									&lt;addr nullFlavor="NP"/&gt;
+									&lt;!-- Address is not provided if birth takes place within a known facility.  --&gt;
+									&lt;playingEntity classCode="PLC" determinerCode="INSTANCE"&gt;
+										&lt;name&gt;Metropolitan Memorial Hospital&lt;/name&gt;
+										&lt;desc nullFlavor="NP"/&gt;
+									&lt;/playingEntity&gt;
+								&lt;/participantRole&gt;
+							&lt;/participant&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.35"/&gt;
+									&lt;code code="73763-5" displayName="Mother was transferred for maternal medical or fetal indications for delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="BL" value="false"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.18"/&gt;
+									&lt;code code="73813-8" displayName="Characteristics of labor and delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="231064003" displayName="Intrathecal injection of local anesthetic agent" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.34"/&gt;
+									&lt;code code="73781-7" displayName="Maternal morbidity" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="625654015" displayName="Emergency cesarean hysterectomy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.44"/&gt;
+									&lt;code code="73775-9" displayName="Risk factors in this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="73211009" displayName="Diabetes mellitus" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.44"/&gt;
+									&lt;code code="73775-9" displayName="Risk factors in this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="38341003" displayName="Hypertensive disorder" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.44"/&gt;
+									&lt;code code="73775-9" displayName="Risk factors in this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="65046005" displayName="Infertility therapy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.44"/&gt;
+									&lt;code code="73775-9" displayName="Risk factors in this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="63487001" displayName="Assisted fertilization" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;code code="68461-3" displayName="Source of Payment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="5" displayName="Private Insurance" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+						&lt;/act&gt;
+					&lt;/entry&gt;
+					&lt;entry typeCode="COMP"&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.32"/&gt;
+							&lt;code code="73774-2" displayName="Onset of Labor" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="CD" code="260413007" displayName="None" codeSystem="2.16.840.1.113883.221.5" codeSystemName="HL70064"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;!--
+********************************************************
+Labor and Delivery Procedure Section
+********************************************************
+--&gt;
+					&lt;component&gt;
+						&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.7"/&gt;
+							&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="xxxxxx" displayName="Labor and Delivery Procedure Section"/&gt;
+							&lt;text&gt;
+								&lt;list&gt;
+									&lt;item ID="LaborDeliveryProcedureSection.1"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Obstetric Procedure&lt;/caption&gt;
+										&lt;content&gt;External Cephalic Version - Successful&lt;/content&gt;
+									&lt;/item&gt;
+									&lt;item ID="LaborDeliveryProcedureSection.2"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Unsucessful Forceps Delivery Attempt&lt;/caption&gt;
+										&lt;content&gt;No Information&lt;/content&gt;
+									&lt;/item&gt;
+									&lt;item ID="LaborDeliveryProcedureSection.3"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Unsucessful Vacuum Extraction Attempt&lt;/caption&gt;
+										&lt;content&gt;No Information&lt;/content&gt;
+									&lt;/item&gt;
+									&lt;item ID="LaborDeliveryProcedureSection.4"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Fetal Presentation at birth&lt;/caption&gt;
+										&lt;content&gt;Breech&lt;/content&gt;
+									&lt;/item&gt;
+									&lt;item ID="LaborDeliveryProcedureSection.5"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Final Route and Method of Delivery&lt;/caption&gt;
+										&lt;content&gt;Cesarean&lt;/content&gt;
+									&lt;/item&gt;
+									&lt;item ID="LaborDeliveryProcedureSection.6"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Trial of Labor Attempted&lt;/caption&gt;
+										&lt;content&gt;Yes&lt;/content&gt;
+									&lt;/item&gt;
+								&lt;/list&gt;
+							&lt;/text&gt;
+							&lt;entry&gt;
+								&lt;procedure classCode="PROC" moodCode="EVN" negationInd="false"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.39"/&gt;
+									&lt;code code="240278000" displayName="External cephalic version" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+								&lt;/procedure&gt;
+							&lt;/entry&gt;
+							&lt;entry&gt;
+								&lt;procedure classCode="PROC" moodCode="EVN" negationInd="false"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.45"/&gt;
+									&lt;code code="72149-8" displayName="Delivery method" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;entryRelationship typeCode="COMP"&gt;
+										&lt;observation classCode="OBS" moodCode="EVN"&gt;
+											&lt;templateId root="2.16.840.1.113883.10.20.26.44"/&gt;
+											&lt;code code="73761-9" displayName="Fetal presentation at birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+											&lt;value xsi:type="CD" code="70028003" displayName="Vertex presentation" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+										&lt;/observation&gt;
+									&lt;/entryRelationship&gt;
+									&lt;entryRelationship typeCode="COMP"&gt;
+										&lt;observation classCode="OBS" moodCode="EVN"&gt;
+											&lt;templateId root="2.16.840.1.113883.10.20.26.44"/&gt;
+											&lt;code code="73762-7" displayName="Final route and method of delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+											&lt;value xsi:type="CD" code="200144004" displayName="Deliveries by cesarean" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+											&lt;entryRelationship typeCode="COMP"&gt;
+												&lt;observation classCode="OBS" moodCode="EVN"&gt;
+													&lt;templateId root="2.16.840.1.113883.10.20.26.44"/&gt;
+													&lt;code code="73760-1" displayName="If cesarean, a trial of labor was attempted" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+													&lt;value xsi:type="BL" value="true"/&gt;
+												&lt;/observation&gt;
+											&lt;/entryRelationship&gt;
+										&lt;/observation&gt;
+									&lt;/entryRelationship&gt;
+								&lt;/procedure&gt;
+							&lt;/entry&gt;
+						&lt;/section&gt;
+					&lt;/component&gt;
+					&lt;!--
+********************************************************
+Mother's Vital Signs Section
+********************************************************
+--&gt;
+					&lt;component&gt;
+						&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.9"/&gt;
+							&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="8716-3" displayName="Vital Signs"/&gt;
+							&lt;text&gt;
+								&lt;list&gt;
+									&lt;item ID="MotherVitalSignsSection.1"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Body Weight at Delivery&lt;/caption&gt;
+										&lt;content&gt;175 lbs.&lt;/content&gt;
+									&lt;/item&gt;
+									&lt;item ID="MotherVitalSignsSection.2"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Height&lt;/caption&gt;
+										&lt;content&gt;66 inches&lt;/content&gt;
+									&lt;/item&gt;
+									&lt;item ID="MotherVitalSignsSection.3"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Prepregnancy Body Weight&lt;/caption&gt;
+										&lt;content&gt;145 lbs.&lt;/content&gt;
+									&lt;/item&gt;
+								&lt;/list&gt;
+							&lt;/text&gt;
+							&lt;entry&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.46"/&gt;
+									&lt;code code="69461-2" displayName="Body weight -- pre current pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="PQ" value="145" unit="lb"/&gt;
+								&lt;/observation&gt;
+							&lt;/entry&gt;
+							&lt;entry&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.46"/&gt;
+									&lt;code code="3137-7" displayName="Body height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="PQ" value="66" unit="in"/&gt;
+								&lt;/observation&gt;
+							&lt;/entry&gt;
+							&lt;entry&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.46"/&gt;
+									&lt;code code="69461-2" displayName="Body weight mother -- at delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="PQ" value="175" unit="lb"/&gt;
+								&lt;/observation&gt;
+							&lt;/entry&gt;
+						&lt;/section&gt;
+					&lt;/component&gt;
+				&lt;/section&gt;
+			&lt;/component&gt;
+			&lt;!-- 
+		********************************************************
+Newborn Delivery Section
+********************************************************
+--&gt;
+			&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.10"/&gt;
+					&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="57075-4" displayName="Newborn delivery information from newborn Narrative"/&gt;
+					&lt;text&gt;
+						&lt;list&gt;
+							&lt;item ID="NewbornDeliverySection.1"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Newborn Name&lt;/caption&gt;
+								&lt;content&gt;No Information&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="NewbornDeliverySection.2"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Newborn Sex&lt;/caption&gt;
+								&lt;content&gt;Female&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="NewbornDeliverySection.3"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Birth Time&lt;/caption&gt;
+								&lt;content&gt;201301211300&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="NewbornDeliverySection.4"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Plurality&lt;/caption&gt;
+								&lt;content&gt;1&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="NewbornDeliverySection.5"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Number of Infants Born Alive&lt;/caption&gt;
+								&lt;content&gt;1&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="NewbornDeliverySection.6"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Abnormal Conditions of the Newborn&lt;/caption&gt;
+								&lt;content&gt;NICU Admission&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="NewbornDeliverySection.7"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Abnormal Conditions of the Newborn&lt;/caption&gt;
+								&lt;content&gt;Antibiotics Received by the Newborn for Suspected Neonatal Sepsis&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="NewbornDeliverySection.8"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Congenital Anomaly&lt;/caption&gt;
+								&lt;content&gt;Congenital Diaphragmatic Hernia&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="NewbornDeliverySection.9"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Infant Transferred&lt;/caption&gt;
+								&lt;content&gt;No&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="NewbornDeliverySection.10"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Infant Living&lt;/caption&gt;
+								&lt;content&gt;Yes&lt;/content&gt;
+							&lt;/item&gt;
+							&lt;item ID="NewbornDeliverySection.11"&gt;
+								&lt;!-- (Narrative Block: Unstructured)--&gt;
+								&lt;caption xsi:type="StrucDoc.Caption"&gt;Infant Breastfed at Discharge&lt;/caption&gt;
+								&lt;content&gt;Yes&lt;/content&gt;
+							&lt;/item&gt;
+						&lt;/list&gt;
+					&lt;/text&gt;
+					&lt;subject typeCode="SBJ"&gt;
+						&lt;relatedSubject classCode="PRS"&gt;
+							&lt;subject classCode="PSN" determinerCode="INSTANCE"&gt;
+								&lt;sdtc:id root="2.1.33" extension="123-MR-8233"/&gt;
+								&lt;!-- The root OID for the newborn identifier indicates the name space the identifier value is drawn from.  --&gt;
+								&lt;name&gt;
+									&lt;family&gt;Johnson&lt;/family&gt;
+									&lt;given&gt;Baby Girl&lt;/given&gt;
+								&lt;/name&gt;
+								&lt;administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/&gt;
+								&lt;birthTime value="201301211300"/&gt;
+							&lt;/subject&gt;
+						&lt;/relatedSubject&gt;
+					&lt;/subject&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.41"/&gt;
+							&lt;code code="57722-1" displayName="Birth plurality" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="INT" value="1"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.13"/&gt;
+							&lt;code code="73812-0" displayName="Abnormal conditions of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="CD" code="405269005" displayName="Neonatal intensive care unit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.13"/&gt;
+							&lt;code code="73812-0" displayName="Abnormal conditions of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="CD" code="634641000124112" displayName="Antibiotics for suspected neonatal sepsis" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.19"/&gt;
+							&lt;code code="73780-9" displayName="Congenital anomalies of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="CD" code="17190001" displayName="Congenital diaphragmatic hernia" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.29"/&gt;
+							&lt;code code="73758-5" displayName="Infant was transferred within 24 hours of delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="BL" value="false"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.28"/&gt;
+							&lt;code code="73757-7" displayName="Infant living at time of report" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="BL" value="true"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.27"/&gt;
+							&lt;code code="73756-9" displayName="Infant is being breastfed at discharge" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="BL" value="true"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;!--
+********************************************************
+Newborn's Vital Signs Section
+********************************************************
+--&gt;
+					&lt;component&gt;
+						&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.11"/&gt;
+							&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="8716-3" displayName="Vital Signs"/&gt;
+							&lt;text&gt;
+								&lt;list&gt;
+									&lt;item ID="InfantVitalSignsSection.1"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Body Weight at Birth&lt;/caption&gt;
+										&lt;content&gt;2980 Grams&lt;/content&gt;
+									&lt;/item&gt;
+								&lt;/list&gt;
+							&lt;/text&gt;
+							&lt;entry&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.46"/&gt;
+									&lt;code code="8339-4" displayName="Body weight at birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="PQ" value="2980" unit="g"/&gt;
+								&lt;/observation&gt;
+							&lt;/entry&gt;
+						&lt;/section&gt;
+					&lt;/component&gt;
+					&lt;!--
+********************************************************
+Assessment Section
+********************************************************
+--&gt;
+					&lt;component&gt;
+						&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.47"/&gt;
+							&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51848-0" displayName="Assessment Note"/&gt;
+							&lt;text&gt;
+								&lt;list&gt;
+									&lt;item ID="AssessmentSection.1"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Apgar Score - 5 minutes&lt;/caption&gt;
+										&lt;content&gt;5&lt;/content&gt;
+									&lt;/item&gt;
+									&lt;item ID="AssessmentSection.2"&gt;
+										&lt;!-- (Narrative Block: Unstructured)--&gt;
+										&lt;caption xsi:type="StrucDoc.Caption"&gt;Apgar Score - 10 minutes&lt;/caption&gt;
+										&lt;content&gt;8&lt;/content&gt;
+									&lt;/item&gt;
+								&lt;/list&gt;
+							&lt;/text&gt;
+							&lt;entry&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.46"/&gt;
+									&lt;code code="9274-2" displayName="Score^5M post birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="INT" value="5"/&gt;
+								&lt;/observation&gt;
+							&lt;/entry&gt;
+							&lt;entry&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.14"/&gt;
+									&lt;code code="9271-8" displayName="Score^10M post birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;effectiveTime&gt;
+										&lt;width value="10" unit="min"/&gt;
+									&lt;/effectiveTime&gt;
+									&lt;value xsi:type="INT" value="8"/&gt;
+								&lt;/observation&gt;
+							&lt;/entry&gt;
+						&lt;/section&gt;
+					&lt;/component&gt;
+				&lt;/section&gt;
+			&lt;/component&gt;
+		&lt;/structuredBody&gt;
+	&lt;/component&gt;
+&lt;/ClinicalDocument&gt;
+		
+		</pre>
+
+		
+	</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../introduction/Example.html">Example Messages</a></div>
+</div>
+</div>
+
+</body>
+</html>

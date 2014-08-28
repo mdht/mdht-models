@@ -14,9 +14,9 @@
 <tbody>
 <row><entry>Value Set</entry><entry>Certifier Titles (NCHS) - 2.16.840.1.114222.4.11.7212</entry></row>
 <row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
-<row><entry>Version</entry><entry>December 1, 2013</entry></row>
-<row><entry>Description</entry><entry>A list of different titles used by birth attendants to denote professional role.  Note, SNOMED is being used as the primary source for codes within the value set.
-</entry></row>
+<row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7212</entry></row>
+<row><entry>Definition</entry><entry>To reflect the title used by death certifier to denote professional role.</entry></row>
 </tbody></tgroup></table>
 <table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
@@ -26,11 +26,10 @@
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
 <row><entry>309343006</entry><entry>SNOMEDCT</entry><entry>Physician</entry></row>
-<row><entry>76231001</entry><entry>SNOMEDCT</entry><entry>Osteopath</entry></row>
-<row><entry>6868009</entry><entry>SNOMEDCT</entry><entry>Hospital administator</entry></row>
-<row><entry>309453006</entry><entry>SNOMEDCT</entry><entry>Registered midwife</entry></row>
-<row><entry>75271001</entry><entry>SNOMEDCT</entry><entry>Professional midwife</entry></row>
-<row><entry>394841004</entry><entry>SNOMEDCT</entry><entry>Other category</entry></row>
+<row><entry>449161006</entry><entry>SNOMEDCT</entry><entry>Physician assistant</entry></row>
+<row><entry>224571005</entry><entry>SNOMEDCT</entry><entry>Nurse Practitioner</entry></row>
+<row><entry>6868009</entry><entry>SNOMEDCT</entry><entry>Hospital administrator</entry></row>
+<row><entry>OTH</entry><entry>NullFlavor</entry><entry>Other (Specify)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -13,10 +13,9 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Birth and Fetal Death Financial Class (NCHS) - 2.16.840.1.114222.4.11.7163</entry></row>
-<row><entry>Code System</entry><entry>Source of Payment Typology (PHDSC) - 2.16.840.1.113883.3.221.5</entry></row>
-<row><entry>Version</entry><entry>December 1, 2013</entry></row>
-<row><entry>Description</entry><entry>A list of different types of payment that may be used to support the expense of labor and delivery.  The value set is drawn from the Source of payment typology created by the Public Health Data Consortium
-</entry></row>
+<row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7163</entry></row>
+<row><entry>Definition</entry><entry>The value set contains the list of values used to indicate  the principle source of payment for the labor and delivery. Note, the Public Health Data Consortium Source of Payment Typology is being used as the primary source for codes within the value set.</entry></row>
 </tbody></tgroup></table>
 <table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
@@ -25,14 +24,14 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>5</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Private Health Insurance</entry></row>
-<row><entry>2</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Medicaid</entry></row>
-<row><entry>81</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Self Pay</entry></row>
-<row><entry>33</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Indian Health Service or Tribe</entry></row>
-<row><entry>38</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Other Government (Federal, State, Local not specified)</entry></row>
-<row><entry>311</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>TRICARE (CHAMPUS)</entry></row>
-<row><entry>99</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Other</entry></row>
-<row><entry>ZZZ</entry><entry>Source of Payment Typology (PHDSC)</entry><entry>Unknown</entry></row>
+<row><entry>33</entry><entry></entry><entry>Indian Health Service or Tribe</entry></row>
+<row><entry>2</entry><entry></entry><entry>MEDICAID</entry></row>
+<row><entry>99</entry><entry></entry><entry>No Typology Code available for payment source</entry></row>
+<row><entry>38</entry><entry></entry><entry>Other Government (Federal, State, Local not specified)</entry></row>
+<row><entry>5</entry><entry></entry><entry>PRIVATE HEALTH INSURANCE</entry></row>
+<row><entry>81</entry><entry></entry><entry>Self-pay</entry></row>
+<row><entry>311</entry><entry></entry><entry>TRICARE (CHAMPUS)</entry></row>
+<row><entry>9999</entry><entry></entry><entry>Unavailable / Unknown</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

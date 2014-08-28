@@ -14,8 +14,9 @@
 <tbody>
 <row><entry>Value Set</entry><entry>Apgar Assessment (NCHS) - 2.16.840.1.114222.4.11.7210</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
-<row><entry>Description</entry><entry>A value set of systematic measures for evaluating the physical condition of the infant at specific intervals following birth.
-</entry></row>
+<row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7210</entry></row>
+<row><entry>Definition</entry><entry>The value set contains systematic measures as to the question for evaluating the physical condition of the infant at specific intervals following birth.</entry></row>
 </tbody></tgroup></table>
 <table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>

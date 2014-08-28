@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Birth or Delivery Occurred (NCHS)</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.7124"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Birth or Delivery Occurred (NCHS) - 2.16.840.1.114222.4.11.7124</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7124</entry></row>
+<row><entry>Definition</entry><entry>The value set contains the list of values used to indicate the type of place where birth or delivery occurred.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>22232009</entry><entry>SNOMEDCT</entry><entry>Hospital</entry></row>
+<row><entry>91154008</entry><entry>SNOMEDCT</entry><entry>Freestanding birthing center</entry></row>
+<row><entry>169813005</entry><entry>SNOMEDCT</entry><entry>Home birth</entry></row>
+<row><entry>67190003</entry><entry>SNOMEDCT</entry><entry>Clinic/Doctor office</entry></row>
+<row><entry>394841004</entry><entry>SNOMEDCT</entry><entry>Other (Specify)</entry></row>
+<row><entry>261665006</entry><entry>SNOMEDCT</entry><entry>Unknown</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

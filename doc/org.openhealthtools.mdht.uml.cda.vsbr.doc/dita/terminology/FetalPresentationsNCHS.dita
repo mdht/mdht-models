@@ -14,9 +14,9 @@
 <tbody>
 <row><entry>Value Set</entry><entry>Fetal Presentations (NCHS) - 2.16.840.1.114222.4.11.7113</entry></row>
 <row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
-<row><entry>Version</entry><entry>December 1, 2013</entry></row>
-<row><entry>Description</entry><entry>A list of the different ways a fetus may present at the point of delivery.  Note, SNOMED is being used as the primary source for codes within the value set.
-</entry></row>
+<row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7113</entry></row>
+<row><entry>Definition</entry><entry>The value set contains the list of the different presentations (orientations within the mother's womb) that a fetus may be in prior to delivery</entry></row>
 </tbody></tgroup></table>
 <table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
@@ -27,8 +27,8 @@
 </row></thead><tbody>
 <row><entry>6096002</entry><entry>SNOMEDCT</entry><entry>Breech presentation</entry></row>
 <row><entry>394841004</entry><entry>SNOMEDCT</entry><entry>Other category</entry></row>
-<row><entry>70028003</entry><entry>SNOMEDCT</entry><entry>Vertex Presentation</entry></row>
 <row><entry>261665006</entry><entry>SNOMEDCT</entry><entry>Unknown</entry></row>
+<row><entry>70028003</entry><entry>SNOMEDCT</entry><entry>Vertex presentation</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

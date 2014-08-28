@@ -14,9 +14,9 @@
 <tbody>
 <row><entry>Value Set</entry><entry>Labor and Delivery Characteristics (NCHS) - 2.16.840.1.114222.4.11.7117</entry></row>
 <row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
-<row><entry>Version</entry><entry>December 1, 2013</entry></row>
-<row><entry>Description</entry><entry>A list of relevant characteristics that can affect the labor and delivery process.  Note, SNOMED is being used as the primary source for codes within the value set.
-</entry></row>
+<row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7117</entry></row>
+<row><entry>Definition</entry><entry>The value set contains the list of options to indicate information about the course of labor and delivery.</entry></row>
 </tbody></tgroup></table>
 <table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
@@ -25,16 +25,14 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>236958009</entry><entry>SNOMEDCT</entry><entry>Induction of labor</entry></row>
+<row><entry>15028002</entry><entry>SNOMEDCT</entry><entry>Non-vertex presentation</entry></row>
 <row><entry>237001001</entry><entry>SNOMEDCT</entry><entry>Augmentation of labor</entry></row>
-<row><entry>434611000124106</entry><entry>SNOMEDCT</entry><entry>Steroids (glucocorticoids) for fetal lung maturation (procedure)</entry></row>
-<row><entry>434691000124101</entry><entry>SNOMEDCT</entry><entry>Antibiotics received during labor</entry></row>
-<row><entry>11612004</entry><entry>SNOMEDCT</entry><entry>Chorioamnionitis</entry></row>
-<row><entry>249135009</entry><entry>SNOMEDCT</entry><entry>Meconium stained liquor</entry></row>
-<row><entry>130955003</entry><entry>SNOMEDCT</entry><entry>Fetal distress</entry></row>
-<row><entry>231064003</entry><entry>SNOMEDCT</entry><entry>Intrathecal injection of local anesthetic agent</entry></row>
-<row><entry>260413007</entry><entry>SNOMEDCT</entry><entry>None</entry></row>
-<row><entry>15028002</entry><entry>SNOMEDCT</entry><entry>Abnormal Fetal Presentation</entry></row>
+<row><entry>11612004</entry><entry>SNOMEDCT</entry><entry>Clinical chorioamnionitis</entry></row>
+<row><entry>130955003</entry><entry>SNOMEDCT</entry><entry>Fetal intolerance</entry></row>
+<row><entry>236958009</entry><entry>SNOMEDCT</entry><entry>Induction of labor</entry></row>
+<row><entry>231064003</entry><entry>SNOMEDCT</entry><entry>Epidural or spinal anesthesia</entry></row>
+<row><entry>249135009</entry><entry>SNOMEDCT</entry><entry>Moderate/heavy meconium staining</entry></row>
+<row><entry>260413007</entry><entry>SNOMEDCT</entry><entry>None of the specified items</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
