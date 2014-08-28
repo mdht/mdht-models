@@ -18,7 +18,7 @@
 <row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7119</entry></row>
 <row><entry>Definition</entry><entry>The value set contains the list of possible maternal morbidity values when serious complications were experienced by the mother associated with labor and delivery.</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table audience="valuesetvalues" ><tgroup cols="3"> 
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
