@@ -3,6 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>Source of Payment Typology (PHDSC)</title>
 <prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.3591"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -11,11 +12,164 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>Source of Payment Typology (PHDSC)</entry></row>
-<row><entry>Description</entry><entry>The Source of Payment Typology was developed to create a standard for reporting payer type data that will enhance the payer data classification; it is also intended for use by those collecting data, or analyzing healthcare claims information. Modeled loosely after the ICD typology for classifying medical conditions, the proposed typology identifies broad Payer categories with related subcategories that are more specific. This format provides analysts with flexibility to either use payer codes at a highly detailed level or to roll up codes to broader hierarchical categories for comparative analyses across payers and locations.
-
-The Source of Payment Typology code system is used as a source for categorizing the payment sources for birth and fetal death related hospitalization.
-</entry></row>
+<row><entry>Value Set</entry><entry>Source of Payment Typology (PHDSC) - 2.16.840.1.114222.4.11.3591</entry></row>
+<row><entry>Code System</entry><entry>Source of Payment Typology (PHDSC) Code System - 2.16.840.1.113883.221.5</entry></row>
+<row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3591</entry></row>
+<row><entry>Definition</entry><entry>The development of a standard source of payment classification system is a high priority for public health and can be used for a wide variety of public health activities such as monitoring healthcare access and documenting disparities.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>96</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Auto Insurance (no fault)</entry></row>
+<row><entry>69</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>BC (Indemnity or Managed Care) - Other</entry></row>
+<row><entry>63</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>BC (Indemnity or Managed Care) - Out of State</entry></row>
+<row><entry>64</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>BC (Indemnity or Managed Care) - Unspecified</entry></row>
+<row><entry>62</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>BC Indemnity</entry></row>
+<row><entry>61</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>BC Managed Care</entry></row>
+<row><entry>611</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>BC Managed Care - HMO</entry></row>
+<row><entry>619</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>BC Managed Care - Other</entry></row>
+<row><entry>613</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>BC Managed Care - POS</entry></row>
+<row><entry>612</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>BC Managed Care - PPO</entry></row>
+<row><entry>35</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Black Lung</entry></row>
+<row><entry>6</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>BLUE CROSS/BLUE SHIELD</entry></row>
+<row><entry>821</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Charity</entry></row>
+<row><entry>3223</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Children of Women Vietnam Veterans (CWVV)</entry></row>
+<row><entry>3221</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Civilian Health and Medical Program for the VA (CHAMPVA)</entry></row>
+<row><entry>521</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Commercial Indemnity</entry></row>
+<row><entry>511</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Commercial Managed Care - HMO</entry></row>
+<row><entry>513</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Commercial Managed Care - POS</entry></row>
+<row><entry>512</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Commercial Managed Care - PPO</entry></row>
+<row><entry>32123</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Contract Nursing Home/Community Nursing Home</entry></row>
+<row><entry>41</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Corrections Federal</entry></row>
+<row><entry>43</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Corrections Local</entry></row>
+<row><entry>42</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Corrections State</entry></row>
+<row><entry>44</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Corrections Unknown Level</entry></row>
+<row><entry>313</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Dental --Stand Alone</entry></row>
+<row><entry>31</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Department of Defense</entry></row>
+<row><entry>3119</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Department of Defense - (other)</entry></row>
+<row><entry>32</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Department of Veterans Affairs</entry></row>
+<row><entry>4</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>DEPARTMENTS OF CORRECTIONS</entry></row>
+<row><entry>3211</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Direct Care--Care provided in VA facilities</entry></row>
+<row><entry>93</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Disability Insurance</entry></row>
+<row><entry>3121</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Enrolled Prime--HMO</entry></row>
+<row><entry>514</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Exclusive Provider Organization</entry></row>
+<row><entry>382</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Federal, State, Local not specified - FFS</entry></row>
+<row><entry>3811</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Federal, State, Local not specified - HMO</entry></row>
+<row><entry>3819</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Federal, State, Local not specified - not specified managed care</entry></row>
+<row><entry>389</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Federal, State, Local not specified - Other</entry></row>
+<row><entry>3813</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Federal, State, Local not specified - POS</entry></row>
+<row><entry>3812</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Federal, State, Local not specified - PPO</entry></row>
+<row><entry>381</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Federal, State, Local not specified managed care</entry></row>
+<row><entry>32121</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Fee Basis</entry></row>
+<row><entry>372</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>FFS/Indemnity</entry></row>
+<row><entry>32122</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Foreign Fee/Foreign Medical Program(FMP)</entry></row>
+<row><entry>91</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Foreign National</entry></row>
+<row><entry>515</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Gatekeeper PPO (GPPO)</entry></row>
+<row><entry>84</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Hill Burton Free Care</entry></row>
+<row><entry>3711</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>HMO</entry></row>
+<row><entry>71</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>HMO</entry></row>
+<row><entry>34</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>HRSA Program</entry></row>
+<row><entry>332</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Indian Health Service - Contract</entry></row>
+<row><entry>333</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Indian Health Service - Managed Care</entry></row>
+<row><entry>331</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Indian Health Service - Regular</entry></row>
+<row><entry>33</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Indian Health Service or Tribe</entry></row>
+<row><entry>334</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Indian Tribe - Sponsored Coverage</entry></row>
+<row><entry>3212</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Indirect Care--Care provided outside VA facilities</entry></row>
+<row><entry>371</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Local - Managed care</entry></row>
+<row><entry>37</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Local Government</entry></row>
+<row><entry>379</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Local, not otherwise specified (other local, county)</entry></row>
+<row><entry>94</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Long-term Care Insurance</entry></row>
+<row><entry>51</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Managed Care (Private)</entry></row>
+<row><entry>53</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Managed Care (private) or private health insurance (indemnity), not otherwise specified</entry></row>
+<row><entry>519</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Managed Care, Other (non HMO)</entry></row>
+<row><entry>7</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>MANAGED CARE, UNSPECIFIED (to be used only if one can't distinguish public from private)</entry></row>
+<row><entry>2</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>MEDICAID</entry></row>
+<row><entry>25</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicaid - Out of State</entry></row>
+<row><entry>21</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicaid (Managed Care)</entry></row>
+<row><entry>22</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicaid (Non-managed Care Plan)</entry></row>
+<row><entry>24</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicaid Applicant</entry></row>
+<row><entry>211</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicaid HMO</entry></row>
+<row><entry>219</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicaid Managed Care Other</entry></row>
+<row><entry>29</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicaid Other</entry></row>
+<row><entry>213</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicaid PCCM (Primary Care Case Management)</entry></row>
+<row><entry>212</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicaid PPO</entry></row>
+<row><entry>23</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicaid/SCHIP</entry></row>
+<row><entry>1</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>MEDICARE</entry></row>
+<row><entry>11</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare (Managed Care)</entry></row>
+<row><entry>12</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare (Non-managed Care)</entry></row>
+<row><entry>122</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare Drug Benefit</entry></row>
+<row><entry>121</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare FFS</entry></row>
+<row><entry>111</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare HMO</entry></row>
+<row><entry>119</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare Managed Care Other</entry></row>
+<row><entry>123</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare Medical Savings Account (MSA)</entry></row>
+<row><entry>129</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare Non-managed Care Other</entry></row>
+<row><entry>19</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare Other</entry></row>
+<row><entry>113</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare POS</entry></row>
+<row><entry>112</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare PPO</entry></row>
+<row><entry>523</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Medicare supplemental policy (as second payer)</entry></row>
+<row><entry>342</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Migrant Health Program</entry></row>
+<row><entry>312</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Military Treatment Facility</entry></row>
+<row><entry>9</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>MISCELLANEOUS/OTHER</entry></row>
+<row><entry>82</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>No Charge</entry></row>
+<row><entry>8</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>NO PAYMENT from an Organization/Agency/Program/Private Payer Listed</entry></row>
+<row><entry>89</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>No Payment, Other</entry></row>
+<row><entry>99</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>No Typology Code available for payment source</entry></row>
+<row><entry>3122</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Non-enrolled Space Available</entry></row>
+<row><entry>322</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Non-veteran care</entry></row>
+<row><entry>54</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Organized Delivery System</entry></row>
+<row><entry>349</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Other</entry></row>
+<row><entry>92</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Other (Non-government)</entry></row>
+<row><entry>39</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Other Federal</entry></row>
+<row><entry>32126</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Other Federal Agency</entry></row>
+<row><entry>38</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Other Government (Federal, State, Local not specified)</entry></row>
+<row><entry>3</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>OTHER GOVERNMENT (Federal/State/Local) (excluding Department of Corrections)</entry></row>
+<row><entry>79</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Other Managed Care, Unknown if public or private</entry></row>
+<row><entry>3229</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Other non-veteran care</entry></row>
+<row><entry>59</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Other Private Insurance</entry></row>
+<row><entry>98</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Other specified (includes Hospice - Unspecified plan)</entry></row>
+<row><entry>3713</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>POS</entry></row>
+<row><entry>73</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>POS</entry></row>
+<row><entry>3712</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>PPO</entry></row>
+<row><entry>72</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>PPO</entry></row>
+<row><entry>5</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>PRIVATE HEALTH INSURANCE</entry></row>
+<row><entry>52</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Private Health Insurance - Indemnity</entry></row>
+<row><entry>529</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Private health insurance-other commercial Indemnity</entry></row>
+<row><entry>822</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Professional Courtesy</entry></row>
+<row><entry>83</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Refusal to Pay/Bad Debt</entry></row>
+<row><entry>823</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Research/Clinical Trial</entry></row>
+<row><entry>85</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Research/Donor</entry></row>
+<row><entry>343</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Ryan White Act</entry></row>
+<row><entry>522</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Self-insured (ERISA) Administrative Services Only (ASO) plan</entry></row>
+<row><entry>81</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Self-pay</entry></row>
+<row><entry>32125</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Sharing Agreements</entry></row>
+<row><entry>55</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Small Employer Purchasing Group</entry></row>
+<row><entry>362</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Specific state programs (list/ local code)</entry></row>
+<row><entry>3222</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Spina Bifida Health Care Program (SB)</entry></row>
+<row><entry>36</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>State Government</entry></row>
+<row><entry>361</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>State SCHIP program (codes for individual states)</entry></row>
+<row><entry>32124</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>State Veterans Home</entry></row>
+<row><entry>369</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>State, not otherwise specified (other state)</entry></row>
+<row><entry>341</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Title V (MCH Block Grant)</entry></row>
+<row><entry>311</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>TRICARE (CHAMPUS)</entry></row>
+<row><entry>3112</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>TRICARE Extra--PPO</entry></row>
+<row><entry>3123</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>TRICARE For Life (TFL)</entry></row>
+<row><entry>3114</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>TRICARE For Life--Medicare Supplement</entry></row>
+<row><entry>3111</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>TRICARE Prime--HMO</entry></row>
+<row><entry>3115</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>TRICARE Reserve Select</entry></row>
+<row><entry>3113</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>TRICARE Standard - Fee For Service</entry></row>
+<row><entry>9999</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Unavailable / Unknown</entry></row>
+<row><entry>3116</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Uniformed Services Family Health Plan (USFHP) -- HMO</entry></row>
+<row><entry>321</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Veteran care--Care provided to Veterans</entry></row>
+<row><entry>953</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Worker's Comp Fee-for-Service</entry></row>
+<row><entry>951</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Worker's Comp HMO</entry></row>
+<row><entry>954</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Worker's Comp Other Managed Care</entry></row>
+<row><entry>959</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Worker's Comp, Other unspecified</entry></row>
+<row><entry>95</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Worker's Compensation</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

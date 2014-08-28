@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Source of Payment Typology (PHDSC) Code System</title>
+<prolog id="prolog">
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Source of Payment Typology (PHDSC) Code System</entry></row>
+<row><entry>Description</entry><entry>The Source of Payment Typology was developed to create a standard for reporting payer
+type data that will enhance the payer data classification; it is also intended for use by those
+collecting data, or analyzing healthcare claims information.  The typology identifies broad Payer
+categories with related subcategories that are more specific. This format provides analysts
+with flexibility to either use payer codes at a highly detailed level or to roll up codes to
+broader hierarchical categories for comparative analyses across payers and locations. The
+Source of Payment Typology code system is used as a source for categorizing the payment
+sources for birth and fetal death related hospitalization
+</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

@@ -14,9 +14,9 @@
 <tbody>
 <row><entry>Value Set</entry><entry>Delivery Routes (NCHS) - 2.16.840.1.114222.4.11.7118</entry></row>
 <row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
-<row><entry>Version</entry><entry>December 1, 2013</entry></row>
-<row><entry>Description</entry><entry>A list of delivery routes that are relevant.  Note, SNOMED is being used as the primary source for codes within the value set.
-</entry></row>
+<row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7118</entry></row>
+<row><entry>Definition</entry><entry>The value set contains the list of the possible routes by which the infant or fetus may be delivered.</entry></row>
 </tbody></tgroup></table>
 <table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
@@ -25,10 +25,10 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>48782003</entry><entry>SNOMEDCT</entry><entry>Delivery normal</entry></row>
-<row><entry>302383004</entry><entry>SNOMEDCT</entry><entry>Forceps delivery</entry></row>
-<row><entry>200144004</entry><entry>SNOMEDCT</entry><entry>Deliveries by cesarean</entry></row>
-<row><entry>61586001</entry><entry>SNOMEDCT</entry><entry>Delivery by vacuum extraction</entry></row>
+<row><entry>48782003</entry><entry>SNOMEDCT</entry><entry>Vaginal/Spontaneous</entry></row>
+<row><entry>302383004</entry><entry>SNOMEDCT</entry><entry>Vaginal/Forceps</entry></row>
+<row><entry>61586001</entry><entry>SNOMEDCT</entry><entry>Vaginal/Vacuum</entry></row>
+<row><entry>11466000</entry><entry>SNOMEDCT</entry><entry>Cesarean</entry></row>
 <row><entry>261665006</entry><entry>SNOMEDCT</entry><entry>Unknown</entry></row>
 </tbody></tgroup></table>
 </section>
