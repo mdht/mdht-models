@@ -18,7 +18,7 @@
 <row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7123</entry></row>
 <row><entry>Definition</entry><entry>The value set contains the list of values used to indicate serious complications experienced by the mother associated with labor and delivery.</entry></row>
 </tbody></tgroup></table>
-<table audience="valuesetvalues" ><tgroup cols="3"> 
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -26,8 +26,8 @@
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
 <row><entry>44223004</entry><entry>SNOMEDCT</entry><entry>Premature Rupture of the Membranes (prolonged, >12 hrs.)</entry></row>
-<row><entry>51920004</entry><entry>SNOMEDCT</entry><entry>Precipitous Labor (&lt;3 hrs.)</entry></row>
-<row><entry>53443007</entry><entry>SNOMEDCT</entry><entry>Prolonged Labor (&gt;20 hrs.)</entry></row>
+<row><entry>51920004</entry><entry>SNOMEDCT</entry><entry>Precipitous Labor (<3 hrs.)</entry></row>
+<row><entry>53443007</entry><entry>SNOMEDCT</entry><entry>Prolonged Labor (>20 hrs.)</entry></row>
 <row><entry>260413007</entry><entry>SNOMEDCT</entry><entry>None of the specified items in this value set (including concept codes: 44223004, 51920004, 53443007) for Onset Labor </entry></row>
 </tbody></tgroup></table>
 </section>
