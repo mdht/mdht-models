@@ -18,7 +18,7 @@
 <row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3591</entry></row>
 <row><entry>Definition</entry><entry>The development of a standard source of payment classification system is a high priority for public health and can be used for a wide variety of public health activities such as monitoring healthcare access and documenting disparities.</entry></row>
 </tbody></tgroup></table>
-<table audience="valuesetvalues" ><tgroup cols="3"> 
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>

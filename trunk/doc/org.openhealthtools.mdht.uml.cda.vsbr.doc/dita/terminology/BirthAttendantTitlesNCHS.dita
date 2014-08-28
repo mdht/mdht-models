@@ -18,7 +18,7 @@
 <row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7111</entry></row>
 <row><entry>Definition</entry><entry>The value set contains the list of titles used by persons (attendant) responsible for delivering a child/fetus. The attendant at birth/delivery is defined as the individual physically present at the delivery who is responsible for the delivery.</entry></row>
 </tbody></tgroup></table>
-<table audience="valuesetvalues" ><tgroup cols="3"> 
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
