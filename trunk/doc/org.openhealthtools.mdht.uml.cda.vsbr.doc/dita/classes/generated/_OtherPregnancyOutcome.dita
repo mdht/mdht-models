@@ -23,7 +23,7 @@
 <ul><li><p><lines><i>A code to indicate the observation contains information on the total number of other pregnancy outcomes that did not result in a live birth.</i></lines></p></li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:223)
 <ul><li><p><lines><i>The date that the last pregnancy that did not result in a live birth ended.    The effective time for the other pregnancy outcomes is the interval between the first such outcome and the latest.  Value the high property of the interval data type.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:222)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="INT" (CONF:222)
 <ul><li><p><lines><i>Total number of other pregnancy outcomes that did not result in a live birth.  The entry is a non-negative integer within the range from zero to 30.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -35,7 +35,7 @@
 <ul><li><p><lines><i>A code to indicate the observation contains information on the total number of other pregnancy outcomes that did not result in a live birth.</i></lines></p></li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:223)
 <ul><li><p><lines><i>The date that the last pregnancy that did not result in a live birth ended.    The effective time for the other pregnancy outcomes is the interval between the first such outcome and the latest.  Value the high property of the interval data type.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:222)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="INT" (CONF:222)
 <ul><li><p><lines><i>Total number of other pregnancy outcomes that did not result in a live birth.  The entry is a non-negative integer within the range from zero to 30.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

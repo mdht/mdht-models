@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:345)<tt><b>/@code</b>="73773-4" </tt><i>Number of infants in this delivery born alive</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:513)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it captures the number of infants born alive within a delivery.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:347)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="INT" (CONF:347)
 <ul><li><p><lines><i>The number of infants born alive.  The entry is a non-negative integer within the range from zero to 12.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:345)<tt><b>/@code</b>="73773-4" </tt><i>Number of infants in this delivery born alive</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:513)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it captures the number of infants born alive within a delivery.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:347)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="INT" (CONF:347)
 <ul><li><p><lines><i>The number of infants born alive.  The entry is a non-negative integer within the range from zero to 12.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

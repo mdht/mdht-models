@@ -23,7 +23,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:379)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:517)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:517)
 <ul><li><p><lines><i>There may be multiple infections recorded.  At least one observation will be present in the case that none are present.</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../InfectionPresentLiveBirth.dita">Infection Present: Live Birth</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.30</tt>)</li></ol></li>
 </ol>
@@ -36,7 +36,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:379)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:517)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:517)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../InfectionPresentLiveBirth.dita">Infection Present: Live Birth</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.30</tt>)</li></ol><ul><li><p><lines><i>There may be multiple infections recorded.  At least one observation will be present in the case that none are present.</i></lines></p></li></ul></li>
 </ol>

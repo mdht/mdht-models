@@ -23,7 +23,7 @@
 <ul><li><p><lines><i>A code value that indicates the nature of the section - it captures prenatal care information in the case of a live birth or of a fetal death.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:41)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:42)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:42)
 <ul><li><p><lines><i>The included entry records information regarding prenatal care received by the mother.</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../PrenatalCare.dita">Prenatal Care</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.42</tt>)</li></ol></li>
 </ol>
@@ -36,7 +36,7 @@
 <ul><li><p><lines><i>A code value that indicates the nature of the section - it captures prenatal care information in the case of a live birth or of a fetal death.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:41)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:42)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:42)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PrenatalCare.dita">Prenatal Care</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.42</tt>)</li></ol><ul><li><p><lines><i>The included entry records information regarding prenatal care received by the mother.</i></lines></p></li></ul></li>
 </ol>

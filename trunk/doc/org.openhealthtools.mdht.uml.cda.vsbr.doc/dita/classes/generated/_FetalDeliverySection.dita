@@ -21,31 +21,31 @@ The reader should note that the subject of this section - the delivered fetus - 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:78)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:77)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:77)
 <ul><li><p><lines><i>A code value that indicates the nature of the section - it contains information regarding the delivered fetus.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:79)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:452) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:453) <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:454) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>A name provided for the fetus.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li></ol> </li></ol> </li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:452) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:453) <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:454) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>A name provided for the fetus.</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:81)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:81)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Plurality.dita">Plurality</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.41</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:82)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:82)
 <ul><li><p><lines><i>Record birth order if not a single delivery.</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../BirthOrder.dita">Birth Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.16</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:83)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:83)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../NumberOfInfantsBornAlive.dita">Number of Infants Born Alive</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.37</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:85)
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:85)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AutopsyPerformance.dita">Autopsy Performance</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.15</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:86)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:86)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FetalDeathOccurrance.dita">Fetal Death Occurrance</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.22</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:87)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:87)
 <ul><li><p><lines><i>There may be multiple congenital anomalies recorded.  At least one observation will be present in the case that none are present.</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../CongenitalAnomaly.dita">Congenital Anomaly</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.19</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:88)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:88)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FetalDeliveryTime.dita">Fetal Delivery Time</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.23</tt>)</li></ol></li>
 </ol>
@@ -54,31 +54,31 @@ The reader should note that the subject of this section - the delivered fetus - 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:78)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:77)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:77)
 <ul><li><p><lines><i>A code value that indicates the nature of the section - it contains information regarding the delivered fetus.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:79)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:452) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:453) <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:454) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>A name provided for the fetus.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li></ol> </li></ol> </li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:452) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:453) <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:454) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>A name provided for the fetus.</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:81)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:81)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Plurality.dita">Plurality</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.41</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:82)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:82)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../BirthOrder.dita">Birth Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.16</tt>)</li></ol><ul><li><p><lines><i>Record birth order if not a single delivery.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:83)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:83)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../NumberOfInfantsBornAlive.dita">Number of Infants Born Alive</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.37</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:85)
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:85)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AutopsyPerformance.dita">Autopsy Performance</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.15</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:86)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:86)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FetalDeathOccurrance.dita">Fetal Death Occurrance</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.22</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:87)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:87)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CongenitalAnomaly.dita">Congenital Anomaly</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.19</tt>)</li></ol><ul><li><p><lines><i>There may be multiple congenital anomalies recorded.  At least one observation will be present in the case that none are present.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:88)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:88)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FetalDeliveryTime.dita">Fetal Delivery Time</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.23</tt>)</li></ol></li>
 </ol>

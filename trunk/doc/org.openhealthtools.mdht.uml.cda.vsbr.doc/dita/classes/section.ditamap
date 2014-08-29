@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Section Templates">
+<topicref href="AssessmentsSection.dita" type="topic" />
+<topicref href="FetalDeliverySection.dita" type="topic" />
+<topicref href="HistoryOfInfectionFetalDeathSection.dita" type="topic" />
+<topicref href="HistoryOfInfectionLiveBirthSection.dita" type="topic" />
+<topicref href="LaborAndDeliveryProcedureSection.dita" type="topic" />
+<topicref href="LaborAndDeliverySection.dita" type="topic" />
+<topicref href="MothersVitalSignsSection.dita" type="topic" />
+<topicref href="NewbornDeliverySection.dita" type="topic" />
+<topicref href="NewbornsVitalSignsSection.dita" type="topic" />
+<topicref href="PrenatalTestingAndSurveillanceSection.dita" type="topic" />
+<topicref href="PriorPregnancyHistorySection.dita" type="topic" />
 </map>

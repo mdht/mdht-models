@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:235)<tt><b>/@code</b>="72519-2" </tt><i>InfeInfections present and or treated during this pregnancy for live birth</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:536)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records nature of the infection about which information is provided.  Note, for live birth reporting refer to the value set: Birth Reporting - Infections Present.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:238), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InfectionsPresentTreatedLiveBirthNCHS.dita">Infections Present Treated: Live Birth (NCHS)</xref> 2.16.840.1.114222.4.11.6070</tt><b> STATIC</b> December 1, 2013 (CONF:538)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:238), which <b>SHALL</b> be selected from ValueSet<tt> </tt><b> STATIC</b> (CONF:538)
 <ul><li><p><lines><i>The content of the observation will be drawn from the appropriate value set: Birth Reporting - Infections Present, or Fetal Death Reporting - Infections persent.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:235)<tt><b>/@code</b>="72519-2" </tt><i>InfeInfections present and or treated during this pregnancy for live birth</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:536)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records nature of the infection about which information is provided.  Note, for live birth reporting refer to the value set: Birth Reporting - Infections Present.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:238), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InfectionsPresentTreatedLiveBirthNCHS.dita">Infections Present Treated: Live Birth (NCHS)</xref> 2.16.840.1.114222.4.11.6070</tt><b> STATIC</b> December 1, 2013 (CONF:538)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:238), which <b>SHALL</b> be selected from ValueSet<tt> </tt><b> STATIC</b> (CONF:538)
 <ul><li><p><lines><i>The content of the observation will be drawn from the appropriate value set: Birth Reporting - Infections Present, or Fetal Death Reporting - Infections persent.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
