@@ -23,10 +23,10 @@
 <ul><li><p><lines><i>A code value that indicates the nature of the section - it is the labor and delivery section.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:46)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:47)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:47)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcess.dita">Labor and Delivery Process</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.31</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:48)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:48)
 <ul><li><p><lines><i>Onset of labor information is collected for a live birth certificate, but not for a fetal death report.</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../OnsetOfLabor.dita">Onset of Labor</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.32</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:50)
@@ -45,10 +45,10 @@
 <ul><li><p><lines><i>A code value that indicates the nature of the section - it is the labor and delivery section.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:46)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:47)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:47)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcess.dita">Labor and Delivery Process</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.31</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:48)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:48)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../OnsetOfLabor.dita">Onset of Labor</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.32</tt>)</li></ol><ul><li><p><lines><i>Onset of labor information is collected for a live birth certificate, but not for a fetal death report.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:50)

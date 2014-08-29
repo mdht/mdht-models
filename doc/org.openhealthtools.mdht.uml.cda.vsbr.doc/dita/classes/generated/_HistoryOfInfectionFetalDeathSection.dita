@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="71459-2" </tt><i>Infection Panel</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:533)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:534)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:534)
 <ul><li><p><lines><i>There may be multiple infections recorded.  At least one observation will be present in the case that none are present.</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../InfectionPresentFetalDeath.dita">Infection Present: Fetal Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.49</tt>)</li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>text</b></tt>
@@ -36,7 +36,7 @@
 </li>
 <li>Contains zero or one [0..1] <tt><b>text</b></tt>
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:534)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:534)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../InfectionPresentFetalDeath.dita">Infection Present: Fetal Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.49</tt>)</li></ol><ul><li><p><lines><i>There may be multiple infections recorded.  At least one observation will be present in the case that none are present.</i></lines></p></li></ul></li>
 </ol>

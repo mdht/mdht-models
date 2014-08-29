@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:391)<tt><b>/@code</b>="73756-9" </tt><i>Infant is being breastfed at discharge</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:535)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - that it indicates whether the infant is being breastfed.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:393)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="BL" (CONF:393)
 <ul><li><p><lines><i>Information to identify whether the infant was being breastfed at discharge.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:391)<tt><b>/@code</b>="73756-9" </tt><i>Infant is being breastfed at discharge</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:535)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - that it indicates whether the infant is being breastfed.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:393)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="BL" (CONF:393)
 <ul><li><p><lines><i>Information to identify whether the infant was being breastfed at discharge.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

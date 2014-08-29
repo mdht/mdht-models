@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:416)<tt><b>/@code</b>="73811-2" </tt><i>Estimated time of fetal death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:526)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - that it indicates the death of a fetus.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:418), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathTimePointNCHS.dita">Fetal Death Time Point (NCHS)</xref> 2.16.840.1.114222.4.11.7112</tt><b> STATIC</b> December 1, 2013 (CONF:419)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:418), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathTimePointNCHS.dita">Fetal Death Time Point (NCHS)</xref> 2.16.840.1.114222.4.11.7112</tt><b> DYNAMIC</b> (CONF:419)
 <ul><li><p><lines><i>Information regarding the point within the delivery process at which fetal death occurred.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:416)<tt><b>/@code</b>="73811-2" </tt><i>Estimated time of fetal death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:526)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - that it indicates the death of a fetus.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:418), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathTimePointNCHS.dita">Fetal Death Time Point (NCHS)</xref> 2.16.840.1.114222.4.11.7112</tt><b> STATIC</b> December 1, 2013 (CONF:419)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:418), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathTimePointNCHS.dita">Fetal Death Time Point (NCHS)</xref> 2.16.840.1.114222.4.11.7112</tt><b> DYNAMIC</b> (CONF:419)
 <ul><li><p><lines><i>Information regarding the point within the delivery process at which fetal death occurred.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

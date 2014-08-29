@@ -22,10 +22,10 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:383)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:384)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:384)
 <ul><li><p><lines><i>Obstetric procedure information is collected for a live birth certificate, but not for a fetal death report.  One or more entries recording the presence of an obstetric procedure may be recorded.  Each entry contains information for a single procedure.  In addition, an observation is provided (for live births only) if none of the indicated procedures were performed.</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../ObstetricProcedure.dita">Obstetric Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.39</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:385)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:385)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MethodOfDelivery.dita">Method of Delivery</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.45</tt>)</li></ol></li>
 </ol>
@@ -38,10 +38,10 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:383)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:384)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:384)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ObstetricProcedure.dita">Obstetric Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.39</tt>)</li></ol><ul><li><p><lines><i>Obstetric procedure information is collected for a live birth certificate, but not for a fetal death report.  One or more entries recording the presence of an obstetric procedure may be recorded.  Each entry contains information for a single procedure.  In addition, an observation is provided (for live births only) if none of the indicated procedures were performed.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:385)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:385)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MethodOfDelivery.dita">Method of Delivery</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.45</tt>)</li></ol></li>
 </ol>

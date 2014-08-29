@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:257)<tt><b>/@code</b>="73813-8" </tt><i>Characteristics of labor and delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:475)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it indicates the nature of the labor and delivery characteristic about which information is provided.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:260), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/LaborAndDeliveryCharacteristicsNCHS.dita">Labor and Delivery Characteristics (NCHS)</xref> 2.16.840.1.114222.4.11.7117</tt><b> STATIC</b> December 1, 2013 (CONF:476)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:260), which <b>SHALL</b> be selected from ValueSet<tt> </tt><b> STATIC</b> (CONF:476)
 </li>
 </ol>
 <ol id="aggregate">
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:257)<tt><b>/@code</b>="73813-8" </tt><i>Characteristics of labor and delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:475)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it indicates the nature of the labor and delivery characteristic about which information is provided.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:260), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/LaborAndDeliveryCharacteristicsNCHS.dita">Labor and Delivery Characteristics (NCHS)</xref> 2.16.840.1.114222.4.11.7117</tt><b> STATIC</b> December 1, 2013 (CONF:476)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:260), which <b>SHALL</b> be selected from ValueSet<tt> </tt><b> STATIC</b> (CONF:476)
 </li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

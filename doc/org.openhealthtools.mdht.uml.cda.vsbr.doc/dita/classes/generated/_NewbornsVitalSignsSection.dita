@@ -23,7 +23,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:357)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:460)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:460)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../NewbornsVitalSignsObservation.dita">Newborns Vital Signs Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.50</tt>)</li></ol></li>
 </ol>
@@ -36,7 +36,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:357)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:460)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:460)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../NewbornsVitalSignsObservation.dita">Newborns Vital Signs Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.50</tt>)</li></ol></li>
 </ol>

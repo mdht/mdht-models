@@ -18,7 +18,7 @@
 <row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7212</entry></row>
 <row><entry>Definition</entry><entry>To reflect the title used by death certifier to denote professional role.</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table audience="valuesetvalues" ><tgroup cols="3"> 
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>

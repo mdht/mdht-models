@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:212)<tt><b>/@code</b>="68499-3" </tt><i>Date last live birth</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:463)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records the date of the last live birth for the mother.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:214)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="TS" (CONF:214)
 <ul><li><p><lines><i>The date of birth of the last live born infant.  Month and year should be provided.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:212)<tt><b>/@code</b>="68499-3" </tt><i>Date last live birth</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:463)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records the date of the last live birth for the mother.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:214)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="TS" (CONF:214)
 <ul><li><p><lines><i>The date of birth of the last live born infant.  Month and year should be provided.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
