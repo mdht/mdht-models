@@ -134,7 +134,8 @@ import org.junit.runners.Suite;
 		ProceduresSectionEntriesOptional2Test.class, ReasonForReferralSection2Test.class, ResultsSection2Test.class,
 		ResultsSectionEntriesOptional2Test.class, SocialHistorySection2Test.class, VitalSignsSection2Test.class,
 		VitalSignsSectionEntriesOptional2Test.class, ConsultationNote2Test.class, ContinuityOfCareDocument2Test.class,
-		DiagnosticImagingReport2Test.class, DischargeSummary2Test.class })
+		DiagnosticImagingReport2Test.class, DischargeSummary2Test.class, HistoryAndPhysicalNote2Test.class,
+		OperativeNote2Test.class, ProcedureNote2Test.class, ProgressNote2Test.class, UnstructuredDocument2Test.class })
 public class ConsolTests {
 
 	/**
