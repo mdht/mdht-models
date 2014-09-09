@@ -6206,6 +6206,121 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE2: {
+				HistoryAndPhysicalNote2 historyAndPhysicalNote2 = (HistoryAndPhysicalNote2) theEObject;
+				T result = caseHistoryAndPhysicalNote2(historyAndPhysicalNote2);
+				if (result == null) {
+					result = caseUSRealmHeader2(historyAndPhysicalNote2);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(historyAndPhysicalNote2);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(historyAndPhysicalNote2);
+				}
+				if (result == null) {
+					result = caseAct(historyAndPhysicalNote2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(historyAndPhysicalNote2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.OPERATIVE_NOTE2: {
+				OperativeNote2 operativeNote2 = (OperativeNote2) theEObject;
+				T result = caseOperativeNote2(operativeNote2);
+				if (result == null) {
+					result = caseUSRealmHeader2(operativeNote2);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(operativeNote2);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(operativeNote2);
+				}
+				if (result == null) {
+					result = caseAct(operativeNote2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(operativeNote2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_NOTE2: {
+				ProcedureNote2 procedureNote2 = (ProcedureNote2) theEObject;
+				T result = caseProcedureNote2(procedureNote2);
+				if (result == null) {
+					result = caseUSRealmHeader2(procedureNote2);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(procedureNote2);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(procedureNote2);
+				}
+				if (result == null) {
+					result = caseAct(procedureNote2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureNote2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROGRESS_NOTE2: {
+				ProgressNote2 progressNote2 = (ProgressNote2) theEObject;
+				T result = caseProgressNote2(progressNote2);
+				if (result == null) {
+					result = caseUSRealmHeader2(progressNote2);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(progressNote2);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(progressNote2);
+				}
+				if (result == null) {
+					result = caseAct(progressNote2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(progressNote2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.UNSTRUCTURED_DOCUMENT2: {
+				UnstructuredDocument2 unstructuredDocument2 = (UnstructuredDocument2) theEObject;
+				T result = caseUnstructuredDocument2(unstructuredDocument2);
+				if (result == null) {
+					result = caseUSRealmHeader2(unstructuredDocument2);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(unstructuredDocument2);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(unstructuredDocument2);
+				}
+				if (result == null) {
+					result = caseAct(unstructuredDocument2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(unstructuredDocument2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -11027,6 +11142,81 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseDischargeSummary2(DischargeSummary2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>History And Physical Note2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>History And Physical Note2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHistoryAndPhysicalNote2(HistoryAndPhysicalNote2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Operative Note2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Operative Note2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOperativeNote2(OperativeNote2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Note2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Note2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureNote2(ProcedureNote2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Progress Note2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Progress Note2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProgressNote2(ProgressNote2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Unstructured Document2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Unstructured Document2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUnstructuredDocument2(UnstructuredDocument2 object) {
 		return null;
 	}
 

@@ -670,6 +670,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDiagnosticImagingReport2();
 			case ConsolPackage.DISCHARGE_SUMMARY2:
 				return createDischargeSummary2();
+			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE2:
+				return createHistoryAndPhysicalNote2();
+			case ConsolPackage.OPERATIVE_NOTE2:
+				return createOperativeNote2();
+			case ConsolPackage.PROCEDURE_NOTE2:
+				return createProcedureNote2();
+			case ConsolPackage.PROGRESS_NOTE2:
+				return createProgressNote2();
+			case ConsolPackage.UNSTRUCTURED_DOCUMENT2:
+				return createUnstructuredDocument2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -3826,6 +3836,56 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public DischargeSummary2 createDischargeSummary2() {
 		DischargeSummary2Impl dischargeSummary2 = new DischargeSummary2Impl();
 		return dischargeSummary2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HistoryAndPhysicalNote2 createHistoryAndPhysicalNote2() {
+		HistoryAndPhysicalNote2Impl historyAndPhysicalNote2 = new HistoryAndPhysicalNote2Impl();
+		return historyAndPhysicalNote2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OperativeNote2 createOperativeNote2() {
+		OperativeNote2Impl operativeNote2 = new OperativeNote2Impl();
+		return operativeNote2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureNote2 createProcedureNote2() {
+		ProcedureNote2Impl procedureNote2 = new ProcedureNote2Impl();
+		return procedureNote2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProgressNote2 createProgressNote2() {
+		ProgressNote2Impl progressNote2 = new ProgressNote2Impl();
+		return progressNote2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UnstructuredDocument2 createUnstructuredDocument2() {
+		UnstructuredDocument2Impl unstructuredDocument2 = new UnstructuredDocument2Impl();
+		return unstructuredDocument2;
 	}
 
 	/**
