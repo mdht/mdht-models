@@ -566,6 +566,50 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterId(

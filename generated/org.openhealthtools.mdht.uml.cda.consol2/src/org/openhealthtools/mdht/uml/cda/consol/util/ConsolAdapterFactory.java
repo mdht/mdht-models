@@ -1622,6 +1622,31 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseHistoryAndPhysicalNote2(HistoryAndPhysicalNote2 object) {
+			return createHistoryAndPhysicalNote2Adapter();
+		}
+
+		@Override
+		public Adapter caseOperativeNote2(OperativeNote2 object) {
+			return createOperativeNote2Adapter();
+		}
+
+		@Override
+		public Adapter caseProcedureNote2(ProcedureNote2 object) {
+			return createProcedureNote2Adapter();
+		}
+
+		@Override
+		public Adapter caseProgressNote2(ProgressNote2 object) {
+			return createProgressNote2Adapter();
+		}
+
+		@Override
+		public Adapter caseUnstructuredDocument2(UnstructuredDocument2 object) {
+			return createUnstructuredDocument2Adapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -6241,6 +6266,76 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDischargeSummary2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2 <em>History And Physical Note2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2
+	 * @generated
+	 */
+	public Adapter createHistoryAndPhysicalNote2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2 <em>Operative Note2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.OperativeNote2
+	 * @generated
+	 */
+	public Adapter createOperativeNote2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote2 <em>Procedure Note2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureNote2
+	 * @generated
+	 */
+	public Adapter createProcedureNote2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2 <em>Progress Note2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProgressNote2
+	 * @generated
+	 */
+	public Adapter createProgressNote2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2 <em>Unstructured Document2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2
+	 * @generated
+	 */
+	public Adapter createUnstructuredDocument2Adapter() {
 		return null;
 	}
 

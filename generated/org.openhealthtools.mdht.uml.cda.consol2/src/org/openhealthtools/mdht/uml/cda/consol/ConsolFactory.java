@@ -2613,6 +2613,51 @@ public interface ConsolFactory extends EFactory {
 	DischargeSummary2 createDischargeSummary2();
 
 	/**
+	 * Returns a new object of class '<em>History And Physical Note2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>History And Physical Note2</em>'.
+	 * @generated
+	 */
+	HistoryAndPhysicalNote2 createHistoryAndPhysicalNote2();
+
+	/**
+	 * Returns a new object of class '<em>Operative Note2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Operative Note2</em>'.
+	 * @generated
+	 */
+	OperativeNote2 createOperativeNote2();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Note2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Note2</em>'.
+	 * @generated
+	 */
+	ProcedureNote2 createProcedureNote2();
+
+	/**
+	 * Returns a new object of class '<em>Progress Note2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Progress Note2</em>'.
+	 * @generated
+	 */
+	ProgressNote2 createProgressNote2();
+
+	/**
+	 * Returns a new object of class '<em>Unstructured Document2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Unstructured Document2</em>'.
+	 * @generated
+	 */
+	UnstructuredDocument2 createUnstructuredDocument2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
