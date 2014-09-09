@@ -11982,7 +11982,7 @@ If the date and the duration of the procedure is known, serviceEvent/effectiveTi
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_idgsMS1lEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 8</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 8) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 8)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
           </specification>
         </ownedRule>
@@ -11990,7 +11990,7 @@ If the date and the duration of the procedure is known, serviceEvent/effectiveTi
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_kvdgsS1lEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 12</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 12) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 12)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
           </specification>
         </ownedRule>
@@ -11998,7 +11998,7 @@ If the date and the duration of the procedure is known, serviceEvent/effectiveTi
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_nR0IsS1lEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 14</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 14) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 14)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
           </specification>
         </ownedRule>
@@ -12006,7 +12006,7 @@ If the date and the duration of the procedure is known, serviceEvent/effectiveTi
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_pJv6sS1lEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() and self.effectiveTime.value.size() > 8 implies self.effectiveTime.value.size() >= 15</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() and self.effectiveTime.low.value.size() > 8 implies self.effectiveTime.low.value.size() >= 15) and (not self.effectiveTime.high.value.oclIsUndefined() and self.effectiveTime.high.value.size() > 8 implies self.effectiveTime.high.value.size() >= 15)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
           </specification>
         </ownedRule>
@@ -12638,7 +12638,7 @@ serviceEvent/effectiveTime may be represented two different ways in the Procedur
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_MBlYAS4xEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 8</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 8) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 8)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
           </specification>
         </ownedRule>
@@ -12646,7 +12646,7 @@ serviceEvent/effectiveTime may be represented two different ways in the Procedur
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_OiQlAS4xEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 12</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 12) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 12)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
           </specification>
         </ownedRule>
@@ -12654,7 +12654,7 @@ serviceEvent/effectiveTime may be represented two different ways in the Procedur
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_RCBMAS4xEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 14</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 14) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 14)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
           </specification>
         </ownedRule>
@@ -12662,7 +12662,7 @@ serviceEvent/effectiveTime may be represented two different ways in the Procedur
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_TM36AS4xEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() and self.effectiveTime.value.size() > 8 implies self.effectiveTime.value.size() >= 15</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() and self.effectiveTime.low.value.size() > 8 implies self.effectiveTime.low.value.size() >= 15) and (not self.effectiveTime.high.value.oclIsUndefined() and self.effectiveTime.high.value.size() > 8 implies self.effectiveTime.high.value.size() >= 15)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
           </specification>
         </ownedRule>
@@ -13394,7 +13394,7 @@ In a Progress Note, a serviceEvent can represent the event of writing the Progre
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_8jrBwS-fEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 8</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 8) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 8)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
           </specification>
         </ownedRule>
@@ -13402,7 +13402,7 @@ In a Progress Note, a serviceEvent can represent the event of writing the Progre
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_96GpMS-fEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 12</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 12) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 12)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
           </specification>
         </ownedRule>
@@ -13410,7 +13410,7 @@ In a Progress Note, a serviceEvent can represent the event of writing the Progre
           <specification xmi:type="uml:OpaqueExpression" xmi:id="__ncUwS-fEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 14</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 14) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 14)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
           </specification>
         </ownedRule>
@@ -13418,7 +13418,7 @@ In a Progress Note, a serviceEvent can represent the event of writing the Progre
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_BvK2QS-gEeSoCqqrpX8LzQ">
             <language>OCL</language>
             <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() and self.effectiveTime.value.size() > 8 implies self.effectiveTime.value.size() >= 15</body>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() and self.effectiveTime.low.value.size() > 8 implies self.effectiveTime.low.value.size() >= 15) and (not self.effectiveTime.high.value.oclIsUndefined() and self.effectiveTime.high.value.size() > 8 implies self.effectiveTime.high.value.size() >= 15)</body>
             <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
           </specification>
         </ownedRule>
@@ -13869,9 +13869,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
         <ownedRule xmi:id="_ajMgkDLBEeSoCqqrpX8LzQ" name="hasReferenceOrRepresentation">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_ajMgkTLBEeSoCqqrpX8LzQ">
             <language>Analysis</language>
-            <language>OCL</language>
             <body>If the text element does not contain a reference element with a value attribute, then it SHALL contain exactly one [1..1] @representation=&quot;B64&quot; and exactly one [1..1] @mediaType</body>
-            <body>not self.text.reference.value.oclIsUndefined() xor ( self.text.representation = 'B64'  and (not self.text.mediaType.oclIsUndefined()) and (not self.text.oclIsUndefined()))</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_5ztoEDK_EeSoCqqrpX8LzQ">
