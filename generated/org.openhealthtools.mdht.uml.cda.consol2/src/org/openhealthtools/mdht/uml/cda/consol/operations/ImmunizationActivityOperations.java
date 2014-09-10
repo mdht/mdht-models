@@ -50,7 +50,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SubstanceAdministrationOperat
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityDoseQuantityUnit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Dose Quantity Unit</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityInstructionInversion(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Instruction Inversion</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityDrugVehicleTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Drug Vehicle Type Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityPreconditionTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Mood Code</em>}</li>
@@ -73,12 +72,14 @@ import org.openhealthtools.mdht.uml.cda.operations.SubstanceAdministrationOperat
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityInstructions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Instructions</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityMedicationDispense(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Medication Dispense</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityReactionObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Reaction Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityPrecondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityImmunizationRefusalReason(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Immunization Refusal Reason</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityConsumable(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Consumable</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityMedicationSupplyOrder(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Medication Supply Order</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityPrecondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityConsumableImmunizationMedicationInformation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Consumable Immunization Medication Information</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityPreconditionTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition Precondition For Substance Administration</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#getDrugVehicle() <em>Get Drug Vehicle</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#getIndication() <em>Get Indication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#getInstructions() <em>Get Instructions</em>}</li>
@@ -456,25 +457,48 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition Type Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- begin-model-doc -->
+	 * @param immunizationActivity The receiving '<em><b>Immunization Activity</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.precondition->select(par : cda::Precondition | par.oclIsKindOf(consol::PreconditionForSubstanceAdministration))->forAll(p : cda::Precondition | p.typeCode=vocab::ActRelationshipType::PRCN)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition Type Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	@SuppressWarnings("unchecked")
+	public static boolean validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity immunizationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_ACTIVITY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(immunizationActivity);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE,
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivityPreconditionTypeCode"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -486,30 +510,36 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(
+			ImmunizationActivity immunizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-	public static boolean validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity immunizationActivity,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunizationActivity)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityPreconditionTypeCode"),
-					new Object[] { immunizationActivity }));
-			}
+		Object oclResult = VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(immunizationActivity);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
-			return false;
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION,
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivityPreconditionPreconditionForSubstanceAdministration"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1883,27 +1913,6 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateImmunizationActivityPrecondition(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateImmunizationActivityPrecondition(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.precondition->one(precondition : cda::Precondition | not precondition.oclIsUndefined() and precondition.oclIsKindOf(consol::PreconditionForSubstanceAdministration))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateImmunizationActivityPrecondition(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateImmunizationActivityPrecondition(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -2141,6 +2150,27 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateImmunizationActivityPrecondition(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationActivityPrecondition(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.precondition->exists(precondition : cda::Precondition | not precondition.oclIsUndefined() and precondition.oclIsKindOf(cda::Precondition))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateImmunizationActivityPrecondition(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationActivityPrecondition(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -2199,6 +2229,48 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 */
 
 	protected static Query<?, ?, ?> VALIDATE_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition Type Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.precondition->excluding(null)->reject(isDefined('typeCode') and typeCode=vocab::ActRelationshipType::PRCN)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition Type Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition Precondition For Substance Administration</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.precondition->excluding(null)->reject(criterion->one(criterion : cda::Criterion | not criterion.oclIsUndefined() and criterion.oclIsKindOf(consol::PreconditionForSubstanceAdministration)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition Precondition For Substance Administration</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2275,7 +2347,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(87));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(88));
 			try {
 				GET_DRUG_VEHICLE__EOCL_QRY = helper.createQuery(GET_DRUG_VEHICLE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2317,7 +2389,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(88));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(89));
 			try {
 				GET_INDICATION__EOCL_QRY = helper.createQuery(GET_INDICATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2359,7 +2431,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(89));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(90));
 			try {
 				GET_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_INSTRUCTIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2401,7 +2473,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(90));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(91));
 			try {
 				GET_MEDICATION_DISPENSE__EOCL_QRY = helper.createQuery(GET_MEDICATION_DISPENSE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2443,7 +2515,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(91));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(92));
 			try {
 				GET_REACTION_OBSERVATION__EOCL_QRY = helper.createQuery(GET_REACTION_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2485,7 +2557,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(92));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(93));
 			try {
 				GET_IMMUNIZATION_REFUSAL_REASON__EOCL_QRY = helper.createQuery(GET_IMMUNIZATION_REFUSAL_REASON__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2527,7 +2599,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(93));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(94));
 			try {
 				GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY = helper.createQuery(GET_MEDICATION_SUPPLY_ORDER__EOCL_EXP);
 			} catch (ParserException pe) {

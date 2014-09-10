@@ -680,6 +680,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProgressNote2();
 			case ConsolPackage.UNSTRUCTURED_DOCUMENT2:
 				return createUnstructuredDocument2();
+			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2:
+				return createPreconditionForSubstanceAdministration2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -3886,6 +3888,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public UnstructuredDocument2 createUnstructuredDocument2() {
 		UnstructuredDocument2Impl unstructuredDocument2 = new UnstructuredDocument2Impl();
 		return unstructuredDocument2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PreconditionForSubstanceAdministration2 createPreconditionForSubstanceAdministration2() {
+		PreconditionForSubstanceAdministration2Impl preconditionForSubstanceAdministration2 = new PreconditionForSubstanceAdministration2Impl();
+		return preconditionForSubstanceAdministration2;
 	}
 
 	/**

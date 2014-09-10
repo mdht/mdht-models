@@ -44,8 +44,9 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationActivityTemplateId ImmunizationActivityTextReferenceValue ImmunizationActivityInstructionInversion ImmunizationActivityDrugVehicleTypeCode ImmunizationActivityPreconditionTypeCode ImmunizationActivityClassCode ImmunizationActivityMoodCode ImmunizationActivityId ImmunizationActivityStatusCode ImmunizationActivityEffectiveTime ImmunizationActivityRouteCode ImmunizationActivityApproachSiteCode ImmunizationActivityNegationInd ImmunizationActivityAdministrationUnitCode ImmunizationActivityConsumable ImmunizationActivityConsumableImmunizationMedicationInformation' templateId.root='2.16.840.1.113883.10.20.22.4.52' constraints.validation.warning='ImmunizationActivityTextReference ImmunizationActivityReferenceValue ImmunizationActivityDoseQuantityUnit ImmunizationActivityDoseQuantity ImmunizationActivityText ImmunizationActivityPerformer' classCode='SBADM' constraints.validation.info='ImmunizationActivityCode ImmunizationActivityRouteCodeP ImmunizationActivityApproachSiteCodeP ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCodeP ImmunizationActivityDrugVehicle ImmunizationActivityIndication ImmunizationActivityInstructions ImmunizationActivityMedicationDispense ImmunizationActivityReactionObservation ImmunizationActivityPrecondition ImmunizationActivityImmunizationRefusalReason ImmunizationActivityMedicationSupplyOrder' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1' routeCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.ImmunizationActivityRouteCode='ImmunizationActivityRouteCodeP' approachSiteCode.codeSystem='2.16.840.1.113883.6.96' approachSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.ImmunizationActivityApproachSiteCode='ImmunizationActivityApproachSiteCodeP' administrationUnitCode.codeSystem='2.16.840.1.113883.3.26.1.1' administrationUnitCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.ImmunizationActivityAdministrationUnitCode='ImmunizationActivityAdministrationUnitCodeP' constraints.validation.query='ImmunizationActivityConsumableImmunizationMedicationInformation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationActivityTemplateId ImmunizationActivityTextReferenceValue ImmunizationActivityInstructionInversion ImmunizationActivityDrugVehicleTypeCode ImmunizationActivityClassCode ImmunizationActivityMoodCode ImmunizationActivityId ImmunizationActivityStatusCode ImmunizationActivityEffectiveTime ImmunizationActivityRouteCode ImmunizationActivityApproachSiteCode ImmunizationActivityNegationInd ImmunizationActivityAdministrationUnitCode ImmunizationActivityConsumable ImmunizationActivityConsumableImmunizationMedicationInformation ImmunizationActivityPreconditionTypeCode ImmunizationActivityPreconditionPreconditionForSubstanceAdministration' templateId.root='2.16.840.1.113883.10.20.22.4.52' constraints.validation.warning='ImmunizationActivityTextReference ImmunizationActivityReferenceValue ImmunizationActivityDoseQuantityUnit ImmunizationActivityDoseQuantity ImmunizationActivityText ImmunizationActivityPerformer' classCode='SBADM' constraints.validation.info='ImmunizationActivityCode ImmunizationActivityRouteCodeP ImmunizationActivityApproachSiteCodeP ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCodeP ImmunizationActivityDrugVehicle ImmunizationActivityIndication ImmunizationActivityInstructions ImmunizationActivityMedicationDispense ImmunizationActivityReactionObservation ImmunizationActivityImmunizationRefusalReason ImmunizationActivityMedicationSupplyOrder ImmunizationActivityPrecondition' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1' routeCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.ImmunizationActivityRouteCode='ImmunizationActivityRouteCodeP' approachSiteCode.codeSystem='2.16.840.1.113883.6.96' approachSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.ImmunizationActivityApproachSiteCode='ImmunizationActivityApproachSiteCodeP' administrationUnitCode.codeSystem='2.16.840.1.113883.3.26.1.1' administrationUnitCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.ImmunizationActivityAdministrationUnitCode='ImmunizationActivityAdministrationUnitCodeP' constraints.validation.query='ImmunizationActivityConsumableImmunizationMedicationInformation ImmunizationActivityPreconditionTypeCode ImmunizationActivityPreconditionPreconditionForSubstanceAdministration'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationActivityConsumable constraints.validation.error='ImmunizationActivityConsumableImmunizationMedicationInformation'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationActivityPrecondition typeCode='PRCN' constraints.validation.error='ImmunizationActivityPreconditionTypeCode ImmunizationActivityPreconditionPreconditionForSubstanceAdministration'"
  * @generated
  */
 public interface ImmunizationActivity extends SubstanceAdministration {
@@ -128,10 +129,23 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->select(par : cda::Precondition | par.oclIsKindOf(consol::PreconditionForSubstanceAdministration))->forAll(p : cda::Precondition | p.typeCode=vocab::ActRelationshipType::PRCN)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->excluding(null)->reject(isDefined(\'typeCode\') and typeCode=vocab::ActRelationshipType::PRCN)'"
 	 * @generated
 	 */
 	boolean validateImmunizationActivityPreconditionTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->excluding(null)->reject(criterion->one(criterion : cda::Criterion | not criterion.oclIsUndefined() and criterion.oclIsKindOf(consol::PreconditionForSubstanceAdministration)))'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -404,7 +418,7 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->one(precondition : cda::Precondition | not precondition.oclIsUndefined() and precondition.oclIsKindOf(consol::PreconditionForSubstanceAdministration))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->exists(precondition : cda::Precondition | not precondition.oclIsUndefined() and precondition.oclIsKindOf(cda::Precondition))'"
 	 * @generated
 	 */
 	boolean validateImmunizationActivityPrecondition(DiagnosticChain diagnostics, Map<Object, Object> context);

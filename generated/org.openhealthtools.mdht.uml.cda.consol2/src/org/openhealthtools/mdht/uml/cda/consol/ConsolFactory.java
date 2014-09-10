@@ -2658,6 +2658,15 @@ public interface ConsolFactory extends EFactory {
 	UnstructuredDocument2 createUnstructuredDocument2();
 
 	/**
+	 * Returns a new object of class '<em>Precondition For Substance Administration2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Precondition For Substance Administration2</em>'.
+	 * @generated
+	 */
+	PreconditionForSubstanceAdministration2 createPreconditionForSubstanceAdministration2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

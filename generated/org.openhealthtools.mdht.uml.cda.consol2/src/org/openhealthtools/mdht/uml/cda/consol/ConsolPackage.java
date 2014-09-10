@@ -26677,7 +26677,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__REALM_CODE = CDAPackage.PRECONDITION__REALM_CODE;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__REALM_CODE = CDAPackage.CRITERION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -26686,7 +26686,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TYPE_ID = CDAPackage.PRECONDITION__TYPE_ID;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TYPE_ID = CDAPackage.CRITERION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -26695,16 +26695,34 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TEMPLATE_ID = CDAPackage.PRECONDITION__TEMPLATE_ID;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TEMPLATE_ID = CDAPackage.CRITERION__TEMPLATE_ID;
 
 	/**
-	 * The feature id for the '<em><b>Criterion</b></em>' containment reference.
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__CRITERION = CDAPackage.PRECONDITION__CRITERION;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__CODE = CDAPackage.CRITERION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TEXT = CDAPackage.CRITERION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__VALUE = CDAPackage.CRITERION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -26713,16 +26731,25 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__NULL_FLAVOR = CDAPackage.PRECONDITION__NULL_FLAVOR;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__NULL_FLAVOR = CDAPackage.CRITERION__NULL_FLAVOR;
 
 	/**
-	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TYPE_CODE = CDAPackage.PRECONDITION__TYPE_CODE;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__CLASS_CODE = CDAPackage.CRITERION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__MOOD_CODE = CDAPackage.CRITERION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Precondition For Substance Administration</em>' class.
@@ -26731,7 +26758,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_FEATURE_COUNT = CDAPackage.PRECONDITION_FEATURE_COUNT + 0;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_FEATURE_COUNT = CDAPackage.CRITERION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -69755,6 +69782,106 @@ public interface ConsolPackage extends EPackage {
 	int UNSTRUCTURED_DOCUMENT2_FEATURE_COUNT = US_REALM_HEADER2_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PreconditionForSubstanceAdministration2Impl <em>Precondition For Substance Administration2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PreconditionForSubstanceAdministration2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreconditionForSubstanceAdministration2()
+	 * @generated
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2 = 310;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__REALM_CODE = PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__TYPE_ID = PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__TEMPLATE_ID = PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__CODE = PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__TEXT = PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__VALUE = PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__NULL_FLAVOR = PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__CLASS_CODE = PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__MOOD_CODE = PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Precondition For Substance Administration2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_FEATURE_COUNT = PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_FEATURE_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72673,6 +72800,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getUnstructuredDocument2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration2 <em>Precondition For Substance Administration2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Precondition For Substance Administration2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration2
+	 * @generated
+	 */
+	EClass getPreconditionForSubstanceAdministration2();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
@@ -75795,6 +75932,16 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass UNSTRUCTURED_DOCUMENT2 = eINSTANCE.getUnstructuredDocument2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PreconditionForSubstanceAdministration2Impl <em>Precondition For Substance Administration2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PreconditionForSubstanceAdministration2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreconditionForSubstanceAdministration2()
+		 * @generated
+		 */
+		EClass PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2 = eINSTANCE.getPreconditionForSubstanceAdministration2();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.
