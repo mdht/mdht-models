@@ -2055,7 +2055,7 @@ public class ConsultationNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay() {
@@ -2178,7 +2178,7 @@ public class ConsultationNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset() {
@@ -2203,6 +2203,7 @@ public class ConsultationNote2Test extends CDAValidationTest {
 			protected void updateToPass(ConsultationNote2 target) {
 				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(
 					PRECISE_TO_MS_WITH_TIMEZONE);
+
 			}
 
 			@Override
