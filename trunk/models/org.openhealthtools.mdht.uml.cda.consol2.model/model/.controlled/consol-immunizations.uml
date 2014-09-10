@@ -73,14 +73,6 @@
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::DrugVehicle))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::CSM)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_vjGGEEX7EeG6e5lG0YsSyQ" name="preconditionTypeCode" constrainedElement="_bnbB0EX7EeG6e5lG0YsSyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_1H5LYEX7EeG6e5lG0YsSyQ">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Precondition for Substance Adminstration SHALL contain exactly one [1..1] @typeCode=&quot;PRCN&quot; (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)</body>
-        <body>self.precondition->select(par : cda::Precondition | par.oclIsKindOf(consol::PreconditionForSubstanceAdministration))->forAll(p : cda::Precondition | p.typeCode=vocab::ActRelationshipType::PRCN)</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_2MQfwxSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_nazskEbuEd6besF9iFIJkQ"/>
     </generalization>
@@ -150,10 +142,6 @@
       <type xmi:type="uml:Class" href="consol-allergies.uml#_2E_aIRSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pdgl4BU9EeGbmN_W114JUw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_rQGk4BU9EeGbmN_W114JUw" name="precondition" association="_rQGk4hU9EeGbmN_W114JUw">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_chEhQBUUEeG6PvUxSTZnaw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rQGk4RU9EeGbmN_W114JUw"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_JEY5wBVOEeGbmN_W114JUw" name="immunizationRefusalReason" type="__qYdcBVNEeGbmN_W114JUw" association="_JEY5whVOEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JEY5wRVOEeGbmN_W114JUw"/>
     </ownedAttribute>
@@ -199,6 +187,10 @@
       <type xmi:type="uml:Class" href="consol-medications.uml#_j3aTQBrTEeGo461UQq-B1g"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nYX0IBt5EeGnMahsPjlwOw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_u5znkDhXEeS1WeMhbm6GZw" name="precondition" type="_VT5u8DhYEeS1WeMhbm6GZw" association="_u501sDhXEeS1WeMhbm6GZw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__6jLwDhXEeS1WeMhbm6GZw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__6iksDhXEeS1WeMhbm6GZw" value="*"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_VboYkG65EeGeVrQbtyMiPg" name="Consumable">
       <ownedComment xmi:id="_RofYEPEkEeGPm_ynmLKd6Q">
         <body>INLINE</body>
@@ -210,6 +202,29 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f-FDoW65EeGeVrQbtyMiPg" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f-FDoG65EeGeVrQbtyMiPg" value="1"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_MvGqcEoZEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_VT5u8DhYEeS1WeMhbm6GZw" name="Precondition">
+      <ownedComment xmi:id="_tMOZgDhZEeS1WeMhbm6GZw">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_VT6WADhYEeS1WeMhbm6GZw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OJn4MEcaEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_ZbJ4MDhYEeS1WeMhbm6GZw" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ktSTwDhYEeS1WeMhbm6GZw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ktRFoDhYEeS1WeMhbm6GZw" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_ZbJ4MzhYEeS1WeMhbm6GZw" name="PRCN">
+          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
+          <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeapUDcEd6xYZuu1VKCVw"/>
+        </defaultValue>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cdWvIErhEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_xPfQEDhYEeS1WeMhbm6GZw" name="preconditionForSubstanceAdministration" association="_xPhFQDhYEeS1WeMhbm6GZw">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_chEhQBUUEeG6PvUxSTZnaw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7j0moThYEeS1WeMhbm6GZw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7j0moDhYEeS1WeMhbm6GZw" value="1"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -227,9 +242,6 @@
   </uml:Association>
   <uml:Association xmi:id="_pdgl4RU9EeGbmN_W114JUw" memberEnd="_pdW04BU9EeGbmN_W114JUw _pdgl4hU9EeGbmN_W114JUw">
     <ownedEnd xmi:id="_pdgl4hU9EeGbmN_W114JUw" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_pdgl4RU9EeGbmN_W114JUw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_rQGk4hU9EeGbmN_W114JUw" memberEnd="_rQGk4BU9EeGbmN_W114JUw _rQGk4xU9EeGbmN_W114JUw">
-    <ownedEnd xmi:id="_rQGk4xU9EeGbmN_W114JUw" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_rQGk4hU9EeGbmN_W114JUw"/>
   </uml:Association>
   <uml:Association xmi:id="_JEY5whVOEeGbmN_W114JUw" memberEnd="_JEY5wBVOEeGbmN_W114JUw _JEY5wxVOEeGbmN_W114JUw">
     <ownedEnd xmi:id="_JEY5wxVOEeGbmN_W114JUw" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_JEY5whVOEeGbmN_W114JUw"/>
@@ -282,11 +294,6 @@
     <ruleId>CONF:8850</ruleId>
     <ruleId>CONF:8851</ruleId>
     <ruleId>CONF:15547</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_tfvsQBU9EeGbmN_W114JUw" severity="INFO" base_Association="_rQGk4hU9EeGbmN_W114JUw">
-    <ruleId>CONF:8869</ruleId>
-    <ruleId>CONF:8870</ruleId>
-    <ruleId>CONF:15548</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_daTqABVOEeGbmN_W114JUw" name="ImmunizationMedicationInformation">
     <ownedComment xmi:id="_JOE1QBq0EeGo461UQq-B1g">
@@ -659,9 +666,6 @@
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_h5HCUEX7EeG6e5lG0YsSyQ" base_Constraint="_bnbB0EX7EeG6e5lG0YsSyQ">
     <ruleId>CONF:8851</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_5vDjwEX7EeG6e5lG0YsSyQ" base_Constraint="_vjGGEEX7EeG6e5lG0YsSyQ">
-    <ruleId>CONF:8870</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_efdwkG65EeGeVrQbtyMiPg" memberEnd="_efdJgG65EeGeVrQbtyMiPg _efeXoG65EeGeVrQbtyMiPg">
     <ownedEnd xmi:id="_efeXoG65EeGeVrQbtyMiPg" type="_VboYkG65EeGeVrQbtyMiPg" association="_efdwkG65EeGeVrQbtyMiPg"/>
@@ -1288,4 +1292,19 @@ This information should be included in an Immunization Activity when available. 
   <CDA:PropertyValidation xmi:id="_8VP_kALOEeSIPYXg7AgJzw" base_Property="_4abv0QLOEeSIPYXg7AgJzw">
     <ruleId>CONF:9017</ruleId>
   </CDA:PropertyValidation>
+  <uml:Association xmi:id="_u501sDhXEeS1WeMhbm6GZw" memberEnd="_u5znkDhXEeS1WeMhbm6GZw _u501sThXEeS1WeMhbm6GZw">
+    <ownedEnd xmi:id="_u501sThXEeS1WeMhbm6GZw" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_u501sDhXEeS1WeMhbm6GZw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_1kldgDhXEeS1WeMhbm6GZw" severity="INFO" base_Association="_u501sDhXEeS1WeMhbm6GZw">
+    <ruleId>CONF:8869</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_i3XT8DhYEeS1WeMhbm6GZw" base_Property="_ZbJ4MDhYEeS1WeMhbm6GZw">
+    <ruleId>CONF:8870</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_xPhFQDhYEeS1WeMhbm6GZw" memberEnd="_xPfQEDhYEeS1WeMhbm6GZw _xPhFQThYEeS1WeMhbm6GZw">
+    <ownedEnd xmi:id="_xPhFQThYEeS1WeMhbm6GZw" type="_VT5u8DhYEeS1WeMhbm6GZw" association="_xPhFQDhYEeS1WeMhbm6GZw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_zVprUDhYEeS1WeMhbm6GZw" base_Association="_xPhFQDhYEeS1WeMhbm6GZw">
+    <ruleId>CONF:15548</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

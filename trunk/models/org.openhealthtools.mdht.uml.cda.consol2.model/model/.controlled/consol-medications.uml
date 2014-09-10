@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
   <uml:Class xmi:id="_2NIpgBSVEeGGzu7fmW9pXw" name="MedicationsSection">
     <ownedRule xmi:id="_2NJ3tRSVEeGGzu7fmW9pXw" name="absenceOfMedications">
       <ownedComment xmi:id="_2NJ3thSVEeGGzu7fmW9pXw">
@@ -23,12 +23,12 @@
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NJ3qBSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ca-EUCUpEeG_gJw2x8CkdQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ca-EUSUpEeG_gJw2x8CkdQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ca-EUCUpEeG_gJw2x8CkdQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NIpgxSVEeGGzu7fmW9pXw" name="medication" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_2NJ3oRSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NIphBSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NIphRSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NIphBSVEeGGzu7fmW9pXw" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2NJ3oRSVEeGGzu7fmW9pXw" memberEnd="_2NIpgxSVEeGGzu7fmW9pXw _2NJ3ohSVEeGGzu7fmW9pXw">
@@ -159,14 +159,6 @@ Medication timing is complex. This template requires that there be a substanceAd
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Mu_RcEIrEeG4bZAl2IGXmQ" name="preconditionSubstanceAdmTypeCode" constrainedElement="_L0emcEIqEeG4bZAl2IGXmQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TUKOoEIrEeG4bZAl2IGXmQ">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Precondition for Substance Administration SHALL contain exactly one [1..1] @typeCode=&quot;PRCN&quot; (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)</body>
-        <body>self.precondition->select(par : cda::Precondition | par.oclIsKindOf(consol::PreconditionForSubstanceAdministration))->forAll(p : cda::Precondition | p.typeCode=vocab::ActRelationshipType::PRCN)</body>
-      </specification>
-    </ownedRule>
     <ownedRule xmi:id="_0EuxoAXoEeOc4J5a9hlM-Q" name="rateQuantityUnit" constrainedElement="_Ldxa0EIjEeG4bZAl2IGXmQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_6TqZEAXoEeOc4J5a9hlM-Q">
         <language>Analysis</language>
@@ -180,39 +172,39 @@ Medication timing is complex. This template requires that there be a substanceAd
     </generalization>
     <ownedAttribute xmi:id="_2GkHcBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_dTy38Eb8Ed6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2GkHcRSVEeGGzu7fmW9pXw" name="SBADM">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
         <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdc0DcEd6xYZuu1VKCVw"/>
       </defaultValue>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_dTy38Eb8Ed6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GkugRSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GkugxSVEeGGzu7fmW9pXw" name="id" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GkuhBSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2GkuhRSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GkuhBSVEeGGzu7fmW9pXw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHb0hSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yO9foCANEeGKirKJsFylGA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yO9foSANEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yO9foCANEeGKirKJsFylGA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GlVkBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GlVkhSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2GlVkxSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GlVkhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHbvhSVEeGGzu7fmW9pXw" name="routeCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C09Q4B-zEeGKirKJsFylGA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C09Q4R-zEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C09Q4B-zEeGKirKJsFylGA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHbzhSVEeGGzu7fmW9pXw" name="approachSiteCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dHFy0B-xEeGKirKJsFylGA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dHFy0R-xEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dHFy0B-xEeGKirKJsFylGA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHbwhSVEeGGzu7fmW9pXw" name="doseQuantity" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_aSOw0EInEeG4bZAl2IGXmQ">
@@ -222,64 +214,60 @@ Medication timing is complex. This template requires that there be a substanceAd
 &lt;/p></body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fyAg8B-xEeGKirKJsFylGA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fyAg8R-xEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fyAg8B-xEeGKirKJsFylGA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GmjsBSVEeGGzu7fmW9pXw" name="rateQuantity" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GmjshSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2GmjsxSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GmjshSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHbyhSVEeGGzu7fmW9pXw" name="maxDoseQuantity" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_IZ0HUErsEd6FXKclYGEDCw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_plf0QB-xEeGKirKJsFylGA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_plf0QR-xEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_plf0QB-xEeGKirKJsFylGA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHbxhSVEeGGzu7fmW9pXw" name="administrationUnitCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPSckB-xEeGKirKJsFylGA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPSckR-xEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPSckB-xEeGKirKJsFylGA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2G10QBSVEeGGzu7fmW9pXw" name="performer" association="_2G10QxSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JnvyMBUREeG6PvUxSTZnaw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JnvyMRUREeG6PvUxSTZnaw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JnvyMBUREeG6PvUxSTZnaw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2G8h8hSVEeGGzu7fmW9pXw" name="instructions" association="_2HCokBSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S8fa4CAQEeGKirKJsFylGA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S8fa4SAQEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S8fa4CAQEeGKirKJsFylGA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHb2BSVEeGGzu7fmW9pXw" name="medicationSupplyOrder" type="_j3aTQBrTEeGo461UQq-B1g" association="_2GjgYxSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dOQhUPEkEeGPm_ynmLKd6Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dOQhUfEkEeGPm_ynmLKd6Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dOQhUPEkEeGPm_ynmLKd6Q" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHb2xSVEeGGzu7fmW9pXw" name="reactionObservation" association="_2GjgZRSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-allergies.uml#_2E_aIRSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GHb3BSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2GHb3RSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GHb3BSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_7USBsBUSEeG6PvUxSTZnaw" name="indication" association="_7USBshUSEeG6PvUxSTZnaw">
       <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FuGuACAQEeGKirKJsFylGA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FuGuASAQEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FuGuACAQEeGKirKJsFylGA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_H7DfgBUUEeG6PvUxSTZnaw" name="medicationDispense" type="_DpoGkBUUEeG6PvUxSTZnaw" association="_H7DfghUUEeG6PvUxSTZnaw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d3RpIPEkEeGPm_ynmLKd6Q" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d3RpIfEkEeGPm_ynmLKd6Q"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_tZP_UBUUEeG6PvUxSTZnaw" name="precondition" type="_chEhQBUUEeG6PvUxSTZnaw" association="_tZZwUBUUEeG6PvUxSTZnaw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_30xEcB-zEeGKirKJsFylGA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_30xEcR-zEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d3RpIPEkEeGPm_ynmLKd6Q" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_U6R5kBUVEeG6PvUxSTZnaw" name="drugVehicle" type="_VBXq8BUTEeG6PvUxSTZnaw" association="_U6R5khUVEeG6PvUxSTZnaw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r5hacB-zEeGKirKJsFylGA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r5hacR-zEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r5hacB-zEeGKirKJsFylGA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_yhVYwB-vEeGKirKJsFylGA" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yhVYwR-vEeGKirKJsFylGA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yhVYwh-vEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yhVYwR-vEeGKirKJsFylGA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_p-taUErsEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_0gGEIB-yEeGKirKJsFylGA" name="repeatNumber" visibility="private" aggregation="composite">
@@ -288,13 +276,17 @@ Medication timing is complex. This template requires that there be a substanceAd
  In &quot;EVN&quot; (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of &quot;3&quot; in a substance administration event means that the current administration is the 3rd in a series</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_wDsPEEo9Ed6c3qsAxlFHaQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0gGEIR-yEeGKirKJsFylGA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0gGEIh-yEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0gGEIR-yEeGKirKJsFylGA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6z6c4ErsEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_abT0MEOvEeG2teg5w9C5Rg" name="consumable" type="_ou3j0G65EeGeVrQbtyMiPg" association="_abVpYEOvEeG2teg5w9C5Rg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bb9_8EOvEeG2teg5w9C5Rg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bb-nAEOvEeG2teg5w9C5Rg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bb9_8EOvEeG2teg5w9C5Rg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_U-QuwDhbEeS1WeMhbm6GZw" name="precondition" type="_niSDkDhbEeS1WeMhbm6GZw" association="_U-R84DhbEeS1WeMhbm6GZw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U-RV0DhbEeS1WeMhbm6GZw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U-RV0ThbEeS1WeMhbm6GZw" value="*"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ou3j0G65EeGeVrQbtyMiPg" name="Consumable">
       <ownedComment xmi:id="_Wzk84PEkEeGPm_ynmLKd6Q">
@@ -304,9 +296,31 @@ Medication timing is complex. This template requires that there be a substanceAd
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_gRI5MEcEEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_Feu6EHK2EeGig5KF4CgPyw" name="medicationInformation" type="_2T9DQBSVEeGGzu7fmW9pXw" aggregation="composite" association="_FewvQHK2EeGig5KF4CgPyw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GvSjAHK2EeGig5KF4CgPyw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GvSjAXK2EeGig5KF4CgPyw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GvSjAHK2EeGig5KF4CgPyw" value="1"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_MvGqcEoZEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_niSDkDhbEeS1WeMhbm6GZw" name="Precondition">
+      <ownedComment xmi:id="_pptDEDhbEeS1WeMhbm6GZw">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_niSqoDhbEeS1WeMhbm6GZw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OJn4MEcaEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_oX0kcDhbEeS1WeMhbm6GZw" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_92tH4DhbEeS1WeMhbm6GZw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_92sg0DhbEeS1WeMhbm6GZw" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_oX0kczhbEeS1WeMhbm6GZw" name="PRCN">
+          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
+          <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeapUDcEd6xYZuu1VKCVw"/>
+        </defaultValue>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cdWvIErhEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_DEI2EDhcEeS1WeMhbm6GZw" name="preconditionForSubstanceAdministration" type="_chEhQBUUEeG6PvUxSTZnaw" association="_DEKEMDhcEeS1WeMhbm6GZw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fb6lwDhcEeS1WeMhbm6GZw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fb5-sDhcEeS1WeMhbm6GZw" value="1"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -327,9 +341,6 @@ Medication timing is complex. This template requires that there be a substanceAd
   </uml:Association>
   <uml:Association xmi:id="_H7DfghUUEeG6PvUxSTZnaw" memberEnd="_H7DfgBUUEeG6PvUxSTZnaw _H7DfgxUUEeG6PvUxSTZnaw">
     <ownedEnd xmi:id="_H7DfgxUUEeG6PvUxSTZnaw" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_H7DfghUUEeG6PvUxSTZnaw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_tZZwUBUUEeG6PvUxSTZnaw" memberEnd="_tZP_UBUUEeG6PvUxSTZnaw _tZZwURUUEeG6PvUxSTZnaw">
-    <ownedEnd xmi:id="_tZZwURUUEeG6PvUxSTZnaw" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_tZZwUBUUEeG6PvUxSTZnaw"/>
   </uml:Association>
   <uml:Association xmi:id="_U6R5khUVEeG6PvUxSTZnaw" memberEnd="_U6R5kBUVEeG6PvUxSTZnaw _U6R5kxUVEeG6PvUxSTZnaw">
     <ownedEnd xmi:id="_U6R5kxUVEeG6PvUxSTZnaw" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_U6R5khUVEeG6PvUxSTZnaw"/>
@@ -389,10 +400,6 @@ Medication timing is complex. This template requires that there be a substanceAd
     <ruleId>CONF:7553</ruleId>
     <ruleId>CONF:16090</ruleId>
   </CDA:EntryRelationship>
-  <CDA:AssociationValidation xmi:id="_t5u2MBUUEeG6PvUxSTZnaw" severity="INFO" base_Association="_tZZwUBUUEeG6PvUxSTZnaw">
-    <ruleId>CONF:7546</ruleId>
-    <ruleId>CONF:16092</ruleId>
-  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ZRrXoBUVEeG6PvUxSTZnaw" severity="INFO" base_Association="_U6R5khUVEeG6PvUxSTZnaw">
     <ruleId>CONF:7523</ruleId>
     <ruleId>CONF:7524</ruleId>
@@ -412,42 +419,42 @@ Medication timing is complex. This template requires that there be a substanceAd
     </generalization>
     <ownedAttribute xmi:id="_EYtaIBUUEeG6PvUxSTZnaw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVfcUDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_p_5-MEb8Ed6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_EYtaIRUUEeG6PvUxSTZnaw">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVfcUDcEd6xYZuu1VKCVw"/>
         <body>SPLY</body>
       </defaultValue>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_p_5-MEb8Ed6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ThGZ4BrYEeGo461UQq-B1g" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cs_10EIwEeG4bZAl2IGXmQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cs_10UIwEeG4bZAl2IGXmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cs_10EIwEeG4bZAl2IGXmQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_8voGMErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ThHA8BrYEeGo461UQq-B1g" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_71pOYEItEeG4bZAl2IGXmQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_71pOYUItEeG4bZAl2IGXmQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_71pOYEItEeG4bZAl2IGXmQ" value="*"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_x1NnEErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ThHoABrYEeGo461UQq-B1g" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_U-F1UEruEd6FXKclYGEDCw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_wH3KcBuSEeGnMahsPjlwOw" value="EVN"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_U-F1UEruEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ThIPEBrYEeGo461UQq-B1g" name="repeatNumber" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_JYsjsEIuEeG4bZAl2IGXmQ">
         <body>In &quot;EVN&quot; (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of &quot;3&quot; in a dispense act means that the current dispensation is the 3rd (CONF: 16876)</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_wDsPEEo9Ed6c3qsAxlFHaQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ThIPERrYEeGo461UQq-B1g" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ThIPEhrYEeGo461UQq-B1g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ThIPERrYEeGo461UQq-B1g" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_D-T6cEruEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ThIPFBrYEeGo461UQq-B1g" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9lEkoEItEeG4bZAl2IGXmQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9lEkoUItEeG4bZAl2IGXmQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9lEkoEItEeG4bZAl2IGXmQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_42xlUErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_3-zGABrYEeGo461UQq-B1g" name="medicationSupplyOrder" type="_j3aTQBrTEeGo461UQq-B1g" association="_3-ztEBrYEeGo461UQq-B1g">
@@ -455,8 +462,8 @@ Medication timing is complex. This template requires that there be a substanceAd
     </ownedAttribute>
     <ownedAttribute xmi:id="_IQt9EEIwEeG4bZAl2IGXmQ" name="quantity" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IQt9EUIwEeG4bZAl2IGXmQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IQt9EkIwEeG4bZAl2IGXmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IQt9EUIwEeG4bZAl2IGXmQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_KwFJMEruEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_vTfZoOATEeGlGcipF_0y2A" name="performer" type="_VvuEcOATEeGlGcipF_0y2A" association="_vTgnwOATEeGlGcipF_0y2A">
@@ -470,8 +477,8 @@ Medication timing is complex. This template requires that there be a substanceAd
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_eix1gOATEeGlGcipF_0y2A" name="medicationDispenseAssignedEntity" type="_M7xhgEIxEeG4bZAl2IGXmQ" aggregation="composite" association="_ei0RwOATEeGlGcipF_0y2A">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fqu8EOATEeGlGcipF_0y2A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fqu8EeATEeGlGcipF_0y2A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fqu8EOATEeGlGcipF_0y2A" value="1"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_toc7gUoYEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_M7xhgEIxEeG4bZAl2IGXmQ" name="MedicationDispenseAssignedEntity">
@@ -480,8 +487,8 @@ Medication timing is complex. This template requires that there be a substanceAd
         </generalization>
         <ownedAttribute xmi:id="_pLd_QELSEeGo1o5_NrjDhQ" name="addr" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vU2_YELSEeGo1o5_NrjDhQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vU2_YULSEeGo1o5_NrjDhQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vU2_YELSEeGo1o5_NrjDhQ" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
       </nestedClassifier>
@@ -503,27 +510,27 @@ Medication timing is complex. This template requires that there be a substanceAd
         <body>uniquely represents a particular kind of product</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hwCpYEIrEeG4bZAl2IGXmQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hwCpYUIrEeG4bZAl2IGXmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hwCpYEIrEeG4bZAl2IGXmQ" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_f6p3QCAMEeGKirKJsFylGA" name="manufacturerOrganization" association="_f6p3QiAMEeGKirKJsFylGA">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zjKW8EcZEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kB9q4CAMEeGKirKJsFylGA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kB9q4SAMEeGKirKJsFylGA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kB9q4CAMEeGKirKJsFylGA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_pUNnoCAMEeGKirKJsFylGA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE35UDcEd6xYZuu1VKCVw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eE9psCUqEeG_gJw2x8CkdQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eE9psSUqEeG_gJw2x8CkdQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lP4OkEo6Ed6c3qsAxlFHaQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eE9psCUqEeG_gJw2x8CkdQ" value="1"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_pUNnoyAMEeGKirKJsFylGA" name="MANU">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE35UDcEd6xYZuu1VKCVw"/>
         <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE35kDcEd6xYZuu1VKCVw"/>
       </defaultValue>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lP4OkEo6Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6Ti0YEIrEeG4bZAl2IGXmQ" name="manufacturedMaterial" type="__WUM4CAMEeGKirKJsFylGA" association="_6Tr-UEIrEeG4bZAl2IGXmQ">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-iKJ4EIrEeG4bZAl2IGXmQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-iKJ4UIrEeG4bZAl2IGXmQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-iKJ4EIrEeG4bZAl2IGXmQ" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="__WUM4CAMEeGKirKJsFylGA" name="MedicationInformationManufacturedMaterial">
       <ownedComment xmi:id="_piYCENueEeGaiuMcT06VUQ">
@@ -575,8 +582,8 @@ Medication timing is complex. This template requires that there be a substanceAd
       </generalization>
       <ownedAttribute xmi:id="_Dh74wCANEeGKirKJsFylGA" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H6VkwEItEeG4bZAl2IGXmQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H6VkwUItEeG4bZAl2IGXmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H6VkwEItEeG4bZAl2IGXmQ" value="1"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qgWpsEo6Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </nestedClassifier>
@@ -600,19 +607,19 @@ Medication timing is complex. This template requires that there be a substanceAd
     </ownedAttribute>
     <ownedAttribute xmi:id="_CrfMEFmsEeGRqYkwoeymcA" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EAG1oFmsEeGRqYkwoeymcA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EAG1oVmsEeGRqYkwoeymcA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EAG1oFmsEeGRqYkwoeymcA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_CrfzIFmsEeGRqYkwoeymcA" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ehr4sFmsEeGRqYkwoeymcA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ehr4sVmsEeGRqYkwoeymcA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ehr4sFmsEeGRqYkwoeymcA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_KTZYoFmsEeGRqYkwoeymcA" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_KTbN0FmsEeGRqYkwoeymcA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LUqoYFmsEeGRqYkwoeymcA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LUqoYVmsEeGRqYkwoeymcA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LUqoYFmsEeGRqYkwoeymcA" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2Poj_xSVEeGGzu7fmW9pXw" base_Class="_2Poj_BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.38">
@@ -648,12 +655,12 @@ This section requires that there be either an entry indicating the subject is no
     </ownedAttribute>
     <ownedAttribute xmi:id="_iAoXJRVdEeGQCvUGzi1kDQ" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DB3sQCUpEeG_gJw2x8CkdQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DB3sQSUpEeG_gJw2x8CkdQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DB3sQCUpEeG_gJw2x8CkdQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FsPZUB-uEeGKirKJsFylGA" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_FsPZUh-uEeGKirKJsFylGA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_805zsCUoEeG_gJw2x8CkdQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_805zsSUoEeG_gJw2x8CkdQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_805zsCUoEeG_gJw2x8CkdQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_nvOcIBVeEeGQCvUGzi1kDQ" base_Class="_iAoXEBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.1">
@@ -674,12 +681,12 @@ This section requires that there be either an entry indicating the subject is no
     </ownedAttribute>
     <ownedAttribute xmi:id="_2KHKshSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2KHKsxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2KHKtBSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2KHKsxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2KHxwBSVEeGGzu7fmW9pXw" name="nonMedicinalSupplyActivity" type="_2HIvMBSVEeGGzu7fmW9pXw" association="_2KHxwxSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2KHxwRSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2KHxwhSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2KHxwRSVEeGGzu7fmW9pXw" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2KHxwxSVEeGGzu7fmW9pXw" memberEnd="_2KHxwBSVEeGGzu7fmW9pXw _2KHxxBSVEeGGzu7fmW9pXw">
@@ -736,26 +743,26 @@ This section requires that there be either an entry indicating the subject is no
     </ownedAttribute>
     <ownedAttribute xmi:id="_2HTHQhSVEeGGzu7fmW9pXw" name="id" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2HTHQxSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2HTHRBSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2HTHQxSVEeGGzu7fmW9pXw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2HIvXxSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_5f05oDiBEeGSytqLITd2FA" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KxiQIOu6EeGU4e2Grhba1w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KxiQIeu6EeGU4e2Grhba1w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KxiQIOu6EeGU4e2Grhba1w" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_8voGMErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2HUVYBSVEeGGzu7fmW9pXw" name="quantity" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mf9usM_TEeOGjf7FaidRGw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mf9usc_TEeOGjf7FaidRGw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mf9usM_TEeOGjf7FaidRGw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2HVjgBSVEeGGzu7fmW9pXw" name="productInstance" type="_2G2bUxSVEeGGzu7fmW9pXw" association="_2HVjgxSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RhUxkM_TEeOGjf7FaidRGw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RhUxkc_TEeOGjf7FaidRGw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RhUxkM_TEeOGjf7FaidRGw" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2HVjgxSVEeGGzu7fmW9pXw" memberEnd="_2HVjgBSVEeGGzu7fmW9pXw _2HVjhBSVEeGGzu7fmW9pXw">
@@ -789,24 +796,24 @@ The UDI should be sent in the participantRole/id.</body>
     </generalization>
     <ownedAttribute xmi:id="_tsW2IDiCEeGSytqLITd2FA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zK6JgDiCEeGSytqLITd2FA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zK6JgTiCEeGSytqLITd2FA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zK6JgDiCEeGSytqLITd2FA" value="1"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_xx5IIDiCEeGSytqLITd2FA" value="MANU"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_tsW2JDiCEeGSytqLITd2FA" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_51hAUDiCEeGSytqLITd2FA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_51hAUTiCEeGSytqLITd2FA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_51hAUDiCEeGSytqLITd2FA" value="*"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_KfydsEreEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4IPrwD2cEeG0sO4MiUmR4Q" name="scopingEntity" type="_hLqdIDosEeGSytqLITd2FA" association="_4IQS0D2cEeG0sO4MiUmR4Q">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YwfQ4Ea_EeG75M7WNoZ4Xg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YwfQ4Ua_EeG75M7WNoZ4Xg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YwfQ4Ea_EeG75M7WNoZ4Xg" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_51HdQD2cEeG0sO4MiUmR4Q" name="playingDevice" type="_Jv3hEDosEeGSytqLITd2FA" association="_51IEUD2cEeG0sO4MiUmR4Q">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZJEI8Ea_EeG75M7WNoZ4Xg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZJEwAEa_EeG75M7WNoZ4Xg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZJEI8Ea_EeG75M7WNoZ4Xg" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_hLqdIDosEeGSytqLITd2FA" name="ScopingEntity">
       <ownedComment xmi:id="_47CAQDv_EeGtp7JtQeULVw">
@@ -817,8 +824,8 @@ The UDI should be sent in the participantRole/id.</body>
       </generalization>
       <ownedAttribute xmi:id="_iJglcDosEeGSytqLITd2FA" name="id" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_piLcIDosEeGSytqLITd2FA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_piLcITosEeGSytqLITd2FA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_piLcIDosEeGSytqLITd2FA" value="*"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_nsmXYEo0Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </nestedClassifier>
@@ -831,8 +838,8 @@ The UDI should be sent in the participantRole/id.</body>
       </generalization>
       <ownedAttribute xmi:id="_SXxyEDosEeGSytqLITd2FA" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SXxyETosEeGSytqLITd2FA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SXxyEjosEeGSytqLITd2FA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SXxyETosEeGSytqLITd2FA" value="1"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Zi_qUEoyEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </nestedClassifier>
@@ -842,49 +849,32 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:10522</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_chEhQBUUEeG6PvUxSTZnaw" name="PreconditionForSubstanceAdministration">
-    <ownedRule xmi:id="_pHR7UBrcEeGo461UQq-B1g" name="criterionCode" constrainedElement="_chEhQBUUEeG6PvUxSTZnaw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_rVPAoBrcEeGo461UQq-B1g">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>This criterion SHOULD contain zero or one [0..1] code (CONF:7367)</body>
-        <body>not self.criterion.oclIsUndefined() implies (not self.criterion.code.oclIsUndefined() or self.criterion.code.isNullFlavorDefined())</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_tZn6QBrcEeGo461UQq-B1g" name="criterionText" constrainedElement="_chEhQBUUEeG6PvUxSTZnaw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_08wUgBrcEeGo461UQq-B1g">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>This criterion MAY contain zero or one [0..1] text (CONF:7373).</body>
-        <body>not self.criterion.oclIsUndefined() implies not self.criterion.text.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_vY4cQBrcEeGo461UQq-B1g" name="criterionValue" constrainedElement="_chEhQBUUEeG6PvUxSTZnaw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2wfjABrcEeGo461UQq-B1g">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>This criterion SHOULD contain zero or one [0..1] value with @xsi:type=&quot;CD&quot;</body>
-        <body>(self.criterion.value.oclIsUndefined() or self.criterion.value.isNullFlavorUndefined()) implies (self.criterion.value.oclIsTypeOf(datatypes::CD))</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_chEhQRUUEeG6PvUxSTZnaw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OJn4MEcaEd6besF9iFIJkQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hKgxMEcEEd6besF9iFIJkQ"/>
     </generalization>
-    <ownedAttribute xmi:id="_lie3YBUUEeG6PvUxSTZnaw" name="criterion" association="_lie3YhUUEeG6PvUxSTZnaw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hKgxMEcEEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mh0NcBUUEeG6PvUxSTZnaw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mh0NcRUUEeG6PvUxSTZnaw" value="1"/>
+    <ownedAttribute xmi:id="_thJNgDhBEeS1WeMhbm6GZw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_thJNgThBEeS1WeMhbm6GZw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_thJNgjhBEeS1WeMhbm6GZw" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_XV8EQEovEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_thJNgzhBEeS1WeMhbm6GZw" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_thJNhDhBEeS1WeMhbm6GZw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_thJNhThBEeS1WeMhbm6GZw" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bBrWMEovEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_thJ0kDhBEeS1WeMhbm6GZw" name="value" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_thJ0kThBEeS1WeMhbm6GZw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_thJ0kjhBEeS1WeMhbm6GZw" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fzTSIEovEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_lie3YhUUEeG6PvUxSTZnaw" memberEnd="_lie3YBUUEeG6PvUxSTZnaw _lie3YxUUEeG6PvUxSTZnaw">
-    <ownedEnd xmi:id="_lie3YxUUEeG6PvUxSTZnaw" type="_chEhQBUUEeG6PvUxSTZnaw" association="_lie3YhUUEeG6PvUxSTZnaw"/>
-  </uml:Association>
   <CDA:CDATemplate xmi:id="_gOTA8BUUEeG6PvUxSTZnaw" base_Class="_chEhQBUUEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.25">
     <ruleId>CONF:7372</ruleId>
     <ruleId>CONF:10517</ruleId>
   </CDA:CDATemplate>
-  <CDA:AssociationValidation xmi:id="_nE_L8BUUEeG6PvUxSTZnaw" base_Association="_lie3YhUUEeG6PvUxSTZnaw">
-    <ruleId>CONF:7366</ruleId>
-  </CDA:AssociationValidation>
   <uml:Class xmi:id="_VBXq8BUTEeG6PvUxSTZnaw" name="DrugVehicle">
     <ownedRule xmi:id="_G1AaMBq2EeGo461UQq-B1g" name="playingEntityCode" constrainedElement="_VBXq8BUTEeG6PvUxSTZnaw">
       <ownedComment xmi:id="_rjDdYOMSEeGfv4R-kzpM0g">
@@ -911,21 +901,21 @@ The UDI should be sent in the participantRole/id.</body>
     </generalization>
     <ownedAttribute xmi:id="_ZXk2MBUTEeG6PvUxSTZnaw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zsi7kBq1EeGo461UQq-B1g" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zsi7kRq1EeGo461UQq-B1g" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zsi7kBq1EeGo461UQq-B1g" value="1"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_kzEpIBUTEeG6PvUxSTZnaw" value="MANU"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ZXk2NRUTEeG6PvUxSTZnaw" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WVCTwEItEeG4bZAl2IGXmQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WVCTwUItEeG4bZAl2IGXmQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WVCTwEItEeG4bZAl2IGXmQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_MtfrYEreEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_A3sHMBq2EeGo461UQq-B1g" name="playingEntity">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CSa_0Bq2EeGo461UQq-B1g" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CSa_0Rq2EeGo461UQq-B1g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CSa_0Bq2EeGo461UQq-B1g" value="1"/>
       <association href="consol-immunizations.uml#_A3suQRq2EeGo461UQq-B1g"/>
     </ownedAttribute>
   </uml:Class>
@@ -947,19 +937,19 @@ The UDI should be sent in the participantRole/id.</body>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6Xx3MEFGEeGorO80f-Cppg" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7pldUEFGEeGorO80f-Cppg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7pldUUFGEeGorO80f-Cppg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7pldUEFGEeGorO80f-Cppg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6Xx3M0FGEeGorO80f-Cppg" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8HikoEFGEeGorO80f-Cppg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8HikoUFGEeGorO80f-Cppg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8HikoEFGEeGorO80f-Cppg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IfrmAEFHEeGorO80f-Cppg" name="admissionMedication" type="_LNP08EFGEeGorO80f-Cppg" association="_IfrmAkFHEeGorO80f-Cppg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ni36gFjqEeGRqYkwoeymcA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ni36gVjqEeGRqYkwoeymcA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ni36gFjqEeGRqYkwoeymcA" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_IYW3oBnXEeGs5a462vYX5Q" base_Class="_2Poj5BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.44">
@@ -990,12 +980,6 @@ The UDI should be sent in the participantRole/id.</body>
     <reference href="../consol-vocab.uml#_2Hn3YBSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7455</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ConstraintValidation xmi:id="_xlA8oBrcEeGo461UQq-B1g" severity="WARNING" base_Constraint="_pHR7UBrcEeGo461UQq-B1g">
-    <ruleId>CONF:16854</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_zB2uEBrcEeGo461UQq-B1g" severity="INFO" base_Constraint="_tZn6QBrcEeGo461UQq-B1g">
-    <ruleId>CONF:7373</ruleId>
-  </CDA:ConstraintValidation>
   <uml:Class xmi:id="_j3aTQBrTEeGo461UQq-B1g" name="MedicationSupplyOrder">
     <ownedRule xmi:id="_iZPioB7lEeGEaLkc3UAsAg" name="instructionInversionInd" constrainedElement="_j3aTQBrTEeGo461UQq-B1g">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_l6ZVMB7lEeGEaLkc3UAsAg">
@@ -1026,27 +1010,27 @@ The UDI should be sent in the participantRole/id.</body>
     </generalization>
     <ownedAttribute xmi:id="_p1olMBrTEeGo461UQq-B1g" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVfcUDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_p_5-MEb8Ed6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_p1olMRrTEeGo461UQq-B1g">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVfcUDcEd6xYZuu1VKCVw"/>
         <body>SPLY</body>
       </defaultValue>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_p_5-MEb8Ed6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p1pzUBrTEeGo461UQq-B1g" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKIuUCRBEeG4DdjGPr5_Vg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZKIuUSRBEeG4DdjGPr5_Vg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKIuUCRBEeG4DdjGPr5_Vg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_8voGMErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p1qaYBrTEeGo461UQq-B1g" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_U-F1UEruEd6FXKclYGEDCw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_mW4CcBubEeGnMahsPjlwOw" value="INT"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_U-F1UEruEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p1qaYhrTEeGo461UQq-B1g" name="quantity" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p1qaYxrTEeGo461UQq-B1g" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p1qaZBrTEeGo461UQq-B1g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p1qaYxrTEeGo461UQq-B1g" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_KwFJMEruEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p1rBcRrTEeGo461UQq-B1g" name="repeatNumber" visibility="private" aggregation="composite">
@@ -1054,20 +1038,20 @@ The UDI should be sent in the participantRole/id.</body>
         <body>In &quot;INT&quot; (intent) mood, the repeatNumber defines the number of allowed fills. For example, a repeatNumber of &quot;3&quot; means that the substance can be supplied up to 3 times (or, can be dispensed, with 2 refills) (CONF:16869)</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_wDsPEEo9Ed6c3qsAxlFHaQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p1rBchrTEeGo461UQq-B1g" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p1rBcxrTEeGo461UQq-B1g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p1rBchrTEeGo461UQq-B1g" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_D-T6cEruEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p1rogRrTEeGo461UQq-B1g" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UtyksELTEeGo1o5_NrjDhQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UtyksULTEeGo1o5_NrjDhQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UtyksELTEeGo1o5_NrjDhQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_42xlUErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_z3ymoBrTEeGo461UQq-B1g" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_no1zkCRBEeG4DdjGPr5_Vg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_no1zkSRBEeG4DdjGPr5_Vg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_no1zkCRBEeG4DdjGPr5_Vg" value="*"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_x1NnEErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IxCtcBrUEeGo461UQq-B1g" name="author" association="_IxDUgBrUEeGo461UQq-B1g">
@@ -1141,9 +1125,6 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:7474</ruleId>
     <ruleId>CONF:15606</ruleId>
   </CDA:EntryRelationship>
-  <CDA:ConstraintValidation xmi:id="_CGugsB7pEeGEaLkc3UAsAg" severity="WARNING" base_Constraint="_vY4cQBrcEeGo461UQq-B1g">
-    <ruleId>CONF:7369</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:TextValue xmi:id="_jKAbsB-qEeGKirKJsFylGA" base_Property="_2NJ3phSVEeGGzu7fmW9pXw"/>
   <CDA:TextValue xmi:id="_9b_aYB-tEeGKirKJsFylGA" base_Property="_iAoXJBVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7793</ruleId>
@@ -1195,11 +1176,11 @@ The UDI should be sent in the participantRole/id.</body>
     <ownedEnd xmi:id="_f6p3QyAMEeGKirKJsFylGA" type="_2T9DQBSVEeGGzu7fmW9pXw" association="_f6p3QiAMEeGKirKJsFylGA"/>
   </uml:Association>
   <uml:Association xmi:id="_zMF34jWmEeG32vxjh5_fjg">
+    <memberEnd href="consol-procedures.uml#_zMF34DWmEeG32vxjh5_fjg"/>
+    <memberEnd href="#_zMF34zWmEeG32vxjh5_fjg"/>
     <ownedEnd xmi:id="_zMF34zWmEeG32vxjh5_fjg" association="_zMF34jWmEeG32vxjh5_fjg">
       <type xmi:type="uml:Class" href="consol-procedures.uml#_OA_Q0DVyEeGaW4kr-GbV8Q"/>
     </ownedEnd>
-    <memberEnd href="consol-procedures.uml#_zMF34DWmEeG32vxjh5_fjg"/>
-    <memberEnd href="#_zMF34zWmEeG32vxjh5_fjg"/>
   </uml:Association>
   <CDA:CodeSystemConstraint xmi:id="_qXwewCUvEeG_gJw2x8CkdQ" code="10160-0" displayName="History of medication use" base_Property="_iAoXIxVdEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -1255,8 +1236,8 @@ The UDI should be sent in the participantRole/id.</body>
     </generalization>
     <ownedAttribute xmi:id="_OJAbcEFGEeGorO80f-Cppg" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_VI8CAEFGEeGorO80f-Cppg" value="ACT"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_OJAbcUFGEeGorO80f-Cppg" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -1264,12 +1245,12 @@ The UDI should be sent in the participantRole/id.</body>
     </ownedAttribute>
     <ownedAttribute xmi:id="_OJAbckFGEeGorO80f-Cppg" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_X3kygEFGEeGorO80f-Cppg" value="EVN"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_lThaQEFGEeGorO80f-Cppg" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_lThaQkFGEeGorO80f-Cppg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XCOSYHuIEeKhK5t8xrm9qQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XCO5cHuIEeKhK5t8xrm9qQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XCOSYHuIEeKhK5t8xrm9qQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_lThaQkFGEeGorO80f-Cppg" memberEnd="_lThaQEFGEeGorO80f-Cppg _lThaQ0FGEeGorO80f-Cppg">
@@ -1329,9 +1310,6 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:ConstraintValidation xmi:id="_XhPvkEIqEeG4bZAl2IGXmQ" base_Constraint="_L0emcEIqEeG4bZAl2IGXmQ">
     <ruleId>CONF:7542</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_WUhoUEIrEeG4bZAl2IGXmQ" base_Constraint="_Mu_RcEIrEeG4bZAl2IGXmQ">
-    <ruleId>CONF:7550</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_I_lOMEIwEeG4bZAl2IGXmQ" severity="WARNING" base_Property="_IQt9EEIwEeG4bZAl2IGXmQ">
     <ruleId>CONF:7458</ruleId>
   </CDA:PropertyValidation>
@@ -1348,11 +1326,11 @@ The UDI should be sent in the participantRole/id.</body>
     <ownedEnd xmi:id="_abWQcEOvEeG2teg5w9C5Rg" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_abVpYEOvEeG2teg5w9C5Rg"/>
   </uml:Association>
   <uml:Association xmi:id="_ooc9QEX9EeG6e5lG0YsSyQ">
+    <memberEnd href="consol-immunizations.uml#_ooahAEX9EeG6e5lG0YsSyQ"/>
+    <memberEnd href="#_oodkUEX9EeG6e5lG0YsSyQ"/>
     <ownedEnd xmi:id="_oodkUEX9EeG6e5lG0YsSyQ" association="_ooc9QEX9EeG6e5lG0YsSyQ">
       <type xmi:type="uml:Class" href="consol-immunizations.uml#_daTqABVOEeGbmN_W114JUw"/>
     </ownedEnd>
-    <memberEnd href="consol-immunizations.uml#_ooahAEX9EeG6e5lG0YsSyQ"/>
-    <memberEnd href="#_oodkUEX9EeG6e5lG0YsSyQ"/>
   </uml:Association>
   <CDA:TextValue xmi:id="_FqrhEFmsEeGRqYkwoeymcA" base_Property="_CrfzIFmsEeGRqYkwoeymcA">
     <ruleId>CONF:8154</ruleId>
@@ -1438,18 +1416,18 @@ The UDI should be sent in the participantRole/id.</body>
     </generalization>
     <ownedAttribute xmi:id="_WDq4QIqvEeOoMZgUoTghIg" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Rtt78IrAEeOoMZgUoTghIg" value="ACT"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_WDsGYIqvEeOoMZgUoTghIg" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Tfy9kIrAEeOoMZgUoTghIg" value="INT"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_WDrfVIqvEeOoMZgUoTghIg" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IquEsIqwEeOoMZgUoTghIg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IquEsYqwEeOoMZgUoTghIg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IquEsIqwEeOoMZgUoTghIg" value="*"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_WDrfUIqvEeOoMZgUoTghIg" name="code" visibility="private" aggregation="composite">
@@ -1458,19 +1436,19 @@ The UDI should be sent in the participantRole/id.</body>
     </ownedAttribute>
     <ownedAttribute xmi:id="_WDsGYYqvEeOoMZgUoTghIg" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jy1jUIqwEeOoMZgUoTghIg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jy1jUYqwEeOoMZgUoTghIg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jy1jUIqwEeOoMZgUoTghIg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_WDrfUYqvEeOoMZgUoTghIg" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JOgHMIqwEeOoMZgUoTghIg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JOguQIqwEeOoMZgUoTghIg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JOgHMIqwEeOoMZgUoTghIg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hbddYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_QSjMMIrFEeOoMZgUoTghIg" name="participant" visibility="private" type="_3bCi4IzvEeOoMZgUoTghIg" aggregation="composite">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VpFMAIrFEeOoMZgUoTghIg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VpFMAYrFEeOoMZgUoTghIg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VpFMAIrFEeOoMZgUoTghIg" value="*"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ZqOVgUxoEd6h-an5IXo-DA"/>
       <association href="../consol.uml#_QSkaUIrFEeOoMZgUoTghIg"/>
     </ownedAttribute>
@@ -1483,12 +1461,12 @@ The UDI should be sent in the participantRole/id.</body>
       </generalization>
       <ownedAttribute xmi:id="_8eX54IzvEeOoMZgUoTghIg" name="typeCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJB5UIzwEeOoMZgUoTghIg" value="RESP"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8eYg8IzvEeOoMZgUoTghIg" name="participantRole" visibility="private" type="_oE1GgIzyEeOoMZgUoTghIg" aggregation="composite">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8eYg8YzvEeOoMZgUoTghIg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8eYg8ozvEeOoMZgUoTghIg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8eYg8YzvEeOoMZgUoTghIg" value="1"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_uuZlAUoaEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_8eYg84zvEeOoMZgUoTghIg"/>
       </ownedAttribute>
@@ -1498,20 +1476,20 @@ The UDI should be sent in the participantRole/id.</body>
         </generalization>
         <ownedAttribute xmi:id="_ugFSsIzyEeOoMZgUoTghIg" name="classCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w5rnUIzyEeOoMZgUoTghIg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w5sOYIzyEeOoMZgUoTghIg" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w5rnUIzyEeOoMZgUoTghIg" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_1qHQcIzyEeOoMZgUoTghIg" value="ASSIGNED"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ugF5wIzyEeOoMZgUoTghIg" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FtAFQIzzEeOoMZgUoTghIg" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FtAsUIzzEeOoMZgUoTghIg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FtAFQIzzEeOoMZgUoTghIg" value="*"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_KfydsEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ugF5w4zyEeOoMZgUoTghIg" name="playingEntity" visibility="private" type="_iyoXoIzzEeOoMZgUoTghIg" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cek_oIzzEeOoMZgUoTghIg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cek_oYzzEeOoMZgUoTghIg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cek_oIzzEeOoMZgUoTghIg" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1ZUk4UoaEd6c3qsAxlFHaQ"/>
           <association href="../consol.uml#_ugGg0IzyEeOoMZgUoTghIg"/>
         </ownedAttribute>
@@ -1521,15 +1499,15 @@ The UDI should be sent in the participantRole/id.</body>
           </generalization>
           <ownedAttribute xmi:id="_nvzcQIzzEeOoMZgUoTghIg" name="classCode" visibility="private" isReadOnly="true">
             <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1p_fMIzzEeOoMZgUoTghIg" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1qAGQIzzEeOoMZgUoTghIg" value="1"/>
-            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1p_fMIzzEeOoMZgUoTghIg" value="1"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_9uuxsIzzEeOoMZgUoTghIg" value="PSN"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_nv0DUIzzEeOoMZgUoTghIg" name="name" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2njToIzzEeOoMZgUoTghIg" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2nj6sIzzEeOoMZgUoTghIg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2njToIzzEeOoMZgUoTghIg" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
         </nestedClassifier>
@@ -1578,18 +1556,18 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_3HD6IIzzEeOoMZgUoTghIg" base_Property="_nv0DUIzzEeOoMZgUoTghIg">
     <ruleId>CONF:28669</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_ZQpEwK-1EeO8duI_7f6kZw" name="AdmissionMedication2" clientDependency="_z821MLBkEeOtlapy2HWYww">
+  <uml:Class xmi:id="_ZQpEwK-1EeO8duI_7f6kZw" clientDependency="_z821MLBkEeOtlapy2HWYww" name="AdmissionMedication2">
     <ownedComment xmi:id="_qsCkoK-1EeO8duI_7f6kZw">
       <body>This template represents the medications taken by the patient prior to and at the time of admission.</body>
     </ownedComment>
     <generalization xmi:id="_ZQxAkK-1EeO8duI_7f6kZw" general="_LNP08EFGEeGorO80f-Cppg"/>
-    <substitution xmi:id="_z821MLBkEeOtlapy2HWYww" name="AdmissionMedication" supplier="_LNP08EFGEeGorO80f-Cppg" client="_ZQpEwK-1EeO8duI_7f6kZw" contract="_LNP08EFGEeGorO80f-Cppg"/>
+    <substitution xmi:id="_z821MLBkEeOtlapy2HWYww" name="AdmissionMedication" client="_ZQpEwK-1EeO8duI_7f6kZw" supplier="_LNP08EFGEeGorO80f-Cppg" contract="_LNP08EFGEeGorO80f-Cppg"/>
     <ownedAttribute xmi:id="_aab0gLN9EeOtlapy2HWYww" name="code" visibility="private" aggregation="composite" redefinedProperty="_OJAbcUFGEeGorO80f-Cppg">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_CyjAYPfdEeO297ryy8ptVg" name="medicationActivity2" type="_WnSCMOLAEeOc7-TVP7Wi6w" redefinedProperty="_lThaQEFGEeGorO80f-Cppg" association="_CymqwPfdEeO297ryy8ptVg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J9PsgPfdEeO297ryy8ptVg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J9PsgffdEeO297ryy8ptVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J9PsgPfdEeO297ryy8ptVg" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_hNuQEK-1EeO8duI_7f6kZw" base_Class="_ZQpEwK-1EeO8duI_7f6kZw" templateId="2.16.840.1.113883.10.20.22.4.36.2">
@@ -1608,7 +1586,7 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:ConstraintValidation xmi:id="_OTQ4wL59EeO8lb9TgnhnOQ" base_Constraint="_MI3dwL59EeO8lb9TgnhnOQ">
     <ruleId>CONF:NEW</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_WnSCMOLAEeOc7-TVP7Wi6w" name="MedicationActivity2" clientDependency="_C9_R8OLBEeOc7-TVP7Wi6w">
+  <uml:Class xmi:id="_WnSCMOLAEeOc7-TVP7Wi6w" clientDependency="_C9_R8OLBEeOc7-TVP7Wi6w" name="MedicationActivity2">
     <ownedComment xmi:id="_oiDlsOLAEeOc7-TVP7Wi6w">
       <body>A medication activity describes substance administrations that have actually occurred (e.g. pills ingested or injections given) or are intended to occur (e.g. &quot;take 2 tablets twice a day for the next 10 days&quot;). Medication activities in &quot;INT&quot; mood are reflections of what a clinician intends a patient to be taking. For example, a clinician may intend for a  patient to be administered Lisinopril  20 mg PO for blood pressure control.  However, what was actually administered was Lisinopril 10 mg.  In the latter case, the Medication activities in the &quot;EVN&quot; mood would reflect actual use.&#xD;
 At a minimum, a medication activity shall include an effectiveTime indicating the duration of the administration. Ambulatory medication lists generally provide a summary of use for a given medication over time - a medication activity in event mood with the duration reflecting when the medication started and stopped. Ongoing medications will not have a stop date (or a stop date with a suitable NULL value). Ambulatory medication lists will generally also have a frequency (e.g. a medication is being taken twice a day). Inpatient medications generally record each administration as a separate act.&#xD;
@@ -1678,56 +1656,56 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
       </specification>
     </ownedRule>
     <generalization xmi:id="_WnVFgOLAEeOc7-TVP7Wi6w" general="_2GHbgBSVEeGGzu7fmW9pXw"/>
-    <substitution xmi:id="_C9_R8OLBEeOc7-TVP7Wi6w" name="MedicationActivity" supplier="_2GHbgBSVEeGGzu7fmW9pXw" client="_WnSCMOLAEeOc7-TVP7Wi6w" contract="_2GHbgBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_C9_R8OLBEeOc7-TVP7Wi6w" name="MedicationActivity" client="_WnSCMOLAEeOc7-TVP7Wi6w" supplier="_2GHbgBSVEeGGzu7fmW9pXw" contract="_2GHbgBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_cF1gIOLBEeOc7-TVP7Wi6w" name="drugMonitoringAct" type="_MbKs8IqvEeOoMZgUoTghIg" association="_cF3VUOLBEeOc7-TVP7Wi6w">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gVDSkOLBEeOc7-TVP7Wi6w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gVDSkeLBEeOc7-TVP7Wi6w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gVDSkOLBEeOc7-TVP7Wi6w" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Uct9MOLCEeOc7-TVP7Wi6w" name="instruction2" redefinedProperty="_2G8h8hSVEeGGzu7fmW9pXw" association="_UcvyYOLCEeOc7-TVP7Wi6w">
       <type xmi:type="uml:Class" href="consol-other.uml#_D62NwOH7EeO04sHNODkHmQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XYrYAOLCEeOc7-TVP7Wi6w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XYrYAeLCEeOc7-TVP7Wi6w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XYrYAOLCEeOc7-TVP7Wi6w" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ju8CsOLFEeOc7-TVP7Wi6w" name="authorParticipation" association="_ju9Q0OLFEeOc7-TVP7Wi6w">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ju8CsuLFEeOc7-TVP7Wi6w" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ju8CseLFEeOc7-TVP7Wi6w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ju8CsuLFEeOc7-TVP7Wi6w" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_15BYEOLGEeOc7-TVP7Wi6w" name="substanceAdministeredAct" association="_15B_IOLGEeOc7-TVP7Wi6w">
       <type xmi:type="uml:Class" href="consol-other.uml#_KTrEAJpdEeOK6dzbL4VoTA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_15BYEuLGEeOc7-TVP7Wi6w" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_15BYEeLGEeOc7-TVP7Wi6w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_15BYEuLGEeOc7-TVP7Wi6w" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_5VihQOLREeOc7-TVP7Wi6w" name="repeatNumber" visibility="private" aggregation="composite" redefinedProperty="_0gGEIB-yEeGKirKJsFylGA">
       <ownedComment xmi:id="_6OTVQOLREeOc7-TVP7Wi6w">
         <body>Note: In &quot;INT&quot; (intent) mood, the repeatNumber defines the number of allowed administrations. For example, a repeatNumber of &quot;3&quot; means that the substance can be administered up to 3 times.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_wDsPEEo9Ed6c3qsAxlFHaQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5VihQeLREeOc7-TVP7Wi6w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5VihQuLREeOc7-TVP7Wi6w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5VihQeLREeOc7-TVP7Wi6w" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rX5FMOLSEeOc7-TVP7Wi6w" name="code" visibility="private" aggregation="composite" redefinedProperty="_2GHb0hSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_vpTQAOLSEeOc7-TVP7Wi6w">
         <body>Note: SubstanceAdministration.code is an optional field. Per HL7 Pharmacy Committee, &quot;this is intended to further specify the nature of the substance administration act. To date the committee has made no use of this attribute&quot;. Because the type of substance administration is generally implicit in the routeCode, in the consumable participant, etc, the field is generally not used, and there is no defined value set.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rX5FMeLSEeOc7-TVP7Wi6w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rX5FMuLSEeOc7-TVP7Wi6w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rX5FMeLSEeOc7-TVP7Wi6w" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="__4L5cOLSEeOc7-TVP7Wi6w" name="statusCode" visibility="private" redefinedProperty="_2GlVkBSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__4L5ceLSEeOc7-TVP7Wi6w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__4L5cuLSEeOc7-TVP7Wi6w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__4L5ceLSEeOc7-TVP7Wi6w" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6PKzwOLYEeOc7-TVP7Wi6w" name="administrationUnitCode" visibility="private" aggregation="composite" redefinedProperty="_2GHbxhSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6PKzweLYEeOc7-TVP7Wi6w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6PKzwuLYEeOc7-TVP7Wi6w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6PKzweLYEeOc7-TVP7Wi6w" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_OvC70OLaEeOc7-TVP7Wi6w" name="indication2" redefinedProperty="_7USBsBUSEeG6PvUxSTZnaw" association="_OvExAOLaEeOc7-TVP7Wi6w">
       <type xmi:type="uml:Class" href="consol-other.uml#_PrEOIOHoEeO04sHNODkHmQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OvC70uLaEeOc7-TVP7Wi6w" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OvC70eLaEeOc7-TVP7Wi6w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OvC70uLaEeOc7-TVP7Wi6w" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_090HgOLbEeOc7-TVP7Wi6w" name="doseQuantity" visibility="private" aggregation="composite" redefinedProperty="_2GHbwhSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_2C-YwOLbEeOc7-TVP7Wi6w">
@@ -1737,25 +1715,25 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
 &lt;/p></body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_090HgeLbEeOc7-TVP7Wi6w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_090HguLbEeOc7-TVP7Wi6w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_090HgeLbEeOc7-TVP7Wi6w" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_94MnMPiVEeOXlK95I8tUew" name="consumable" type="_NeRkMPiWEeOXlK95I8tUew" redefinedProperty="_abT0MEOvEeG2teg5w9C5Rg" association="_94Q4oPiVEeOXlK95I8tUew">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FR7N0PiWEeOXlK95I8tUew" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FR7N0fiWEeOXlK95I8tUew" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FR7N0PiWEeOXlK95I8tUew" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_mFk0oPiXEeOXlK95I8tUew" name="medicationSupplyOrder2" type="_InVpIOZ8EeOmzetP5oaH3A" redefinedProperty="_2GHb2BSVEeGGzu7fmW9pXw" association="_mFmp0PiXEeOXlK95I8tUew">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rjgc8PiXEeOXlK95I8tUew" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rjgc8fiXEeOXlK95I8tUew"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rjgc8PiXEeOXlK95I8tUew" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FAMSsPiYEeOXlK95I8tUew" name="medicationDispense2" type="_qH-ckOXfEeOkFcFJ9uzEEw" redefinedProperty="_H7DfgBUUEeG6PvUxSTZnaw" association="_FAOH4PiYEeOXlK95I8tUew">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FAM5wfiYEeOXlK95I8tUew" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FAM5wPiYEeOXlK95I8tUew"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FAM5wfiYEeOXlK95I8tUew" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_VkytcPiYEeOXlK95I8tUew" name="reactionObservation2" redefinedProperty="_2GHb2xSVEeGGzu7fmW9pXw" association="_Vkz7kPiYEeOXlK95I8tUew">
       <type xmi:type="uml:Class" href="consol-allergies.uml#_U3yosPDxEeOKPKE9au0oug"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aJfnsPiYEeOXlK95I8tUew" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aJfnsfiYEeOXlK95I8tUew"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aJfnsPiYEeOXlK95I8tUew" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_NeRkMPiWEeOXlK95I8tUew" name="Consumable">
       <ownedComment xmi:id="_bYElkPiWEeOXlK95I8tUew">
@@ -1763,8 +1741,8 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
       </ownedComment>
       <generalization xmi:id="_NeRkMfiWEeOXlK95I8tUew" general="_ou3j0G65EeGeVrQbtyMiPg"/>
       <ownedAttribute xmi:id="_pER24PiWEeOXlK95I8tUew" name="medicationInformation2" type="_Hz__kOXrEeOkFcFJ9uzEEw" redefinedProperty="_Feu6EHK2EeGig5KF4CgPyw" association="_pETsEPiWEeOXlK95I8tUew">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yq1hcPiWEeOXlK95I8tUew" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yq2IgPiWEeOXlK95I8tUew" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yq1hcPiWEeOXlK95I8tUew" value="1"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -1855,7 +1833,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
   <CDA:ConstraintValidation xmi:id="_GsKcUuXAEeOkFcFJ9uzEEw" base_Constraint="_GsKcUOXAEeOkFcFJ9uzEEw">
     <ruleId>CONF:7508</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_qH-ckOXfEeOkFcFJ9uzEEw" name="MedicationDispense2" clientDependency="_31L-AOXgEeOkFcFJ9uzEEw">
+  <uml:Class xmi:id="_qH-ckOXfEeOkFcFJ9uzEEw" clientDependency="_31L-AOXgEeOkFcFJ9uzEEw" name="MedicationDispense2">
     <ownedComment xmi:id="_zoMZIOXgEeOkFcFJ9uzEEw">
       <body>This template records the act of supplying medications (i.e., dispensing).</body>
     </ownedComment>
@@ -1884,10 +1862,10 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
       </specification>
     </ownedRule>
     <generalization xmi:id="_qH_DoOXfEeOkFcFJ9uzEEw" general="_DpoGkBUUEeG6PvUxSTZnaw"/>
-    <substitution xmi:id="_31L-AOXgEeOkFcFJ9uzEEw" name="MedicationDispense" supplier="_DpoGkBUUEeG6PvUxSTZnaw" client="_qH-ckOXfEeOkFcFJ9uzEEw" contract="_DpoGkBUUEeG6PvUxSTZnaw"/>
+    <substitution xmi:id="_31L-AOXgEeOkFcFJ9uzEEw" name="MedicationDispense" client="_qH-ckOXfEeOkFcFJ9uzEEw" supplier="_DpoGkBUUEeG6PvUxSTZnaw" contract="_DpoGkBUUEeG6PvUxSTZnaw"/>
     <ownedAttribute xmi:id="_QRadYPiaEeOXlK95I8tUew" name="medicationSupplyOrder2" type="_InVpIOZ8EeOmzetP5oaH3A" redefinedProperty="_3-zGABrYEeGo461UQq-B1g" association="_QRbrgPiaEeOXlK95I8tUew">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SmNKgPiaEeOXlK95I8tUew" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SmNxkPiaEeOXlK95I8tUew"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SmNKgPiaEeOXlK95I8tUew" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_vPdTwOXfEeOkFcFJ9uzEEw" base_Class="_qH-ckOXfEeOkFcFJ9uzEEw" templateId="2.16.840.1.113883.10.20.22.4.18.2">
@@ -1906,17 +1884,16 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
   <CDA:ConstraintValidation xmi:id="_VWi7YuXnEeOkFcFJ9uzEEw" base_Constraint="_VWi7YOXnEeOkFcFJ9uzEEw">
     <ruleId>CONF:9333</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_Hz__kOXrEeOkFcFJ9uzEEw" name="MedicationInformation2" clientDependency="_L3zMMOXrEeOkFcFJ9uzEEw">
+  <uml:Class xmi:id="_Hz__kOXrEeOkFcFJ9uzEEw" clientDependency="_L3zMMOXrEeOkFcFJ9uzEEw" name="MedicationInformation2">
     <ownedComment xmi:id="_RV3XYOXrEeOkFcFJ9uzEEw">
       <body>A medication should be recorded as a pre-coordinated ingredient + strength + dose form (e.g., &quot;metoprolol 25mg tablet&quot;, &quot;amoxicillin 400mg/5mL suspension&quot;) where possible. This includes RxNorm codes whose Term Type is SCD (semantic clinical drug), SBD (semantic brand drug), GPCK (generic pack), BPCK (brand pack).&#xD;
 NOTE: The dose (doseQuantity) represents how many of the consumables are to be administered at each administration event. As a result, the dose is always relative to the consumable. Thus, a patient consuming a single &quot;metoprolol 25mg tablet&quot; per administration will have a doseQuantity of &quot;1&quot;, whereas a patient consuming &quot;metoprolol&quot; will have a dose of &quot;25 mg&quot;.</body>
     </ownedComment>
     <generalization xmi:id="_H0AmoOXrEeOkFcFJ9uzEEw" general="_2T9DQBSVEeGGzu7fmW9pXw"/>
-    <substitution xmi:id="_L3zMMOXrEeOkFcFJ9uzEEw" name="MedicationInformation" supplier="_2T9DQBSVEeGGzu7fmW9pXw" client="_Hz__kOXrEeOkFcFJ9uzEEw" contract="_2T9DQBSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="_h3ogkOXrEeOkFcFJ9uzEEw" name="manufacturedMaterial" type="_Fn10kOXsEeOkFcFJ9uzEEw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h3ogkeXrEeOkFcFJ9uzEEw" value="1"/>
+    <substitution xmi:id="_L3zMMOXrEeOkFcFJ9uzEEw" name="MedicationInformation" client="_Hz__kOXrEeOkFcFJ9uzEEw" supplier="_2T9DQBSVEeGGzu7fmW9pXw" contract="_2T9DQBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_h3ogkOXrEeOkFcFJ9uzEEw" name="manufacturedMaterial" type="_Fn10kOXsEeOkFcFJ9uzEEw" redefinedProperty="_6Ti0YEIrEeG4bZAl2IGXmQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h3ogkuXrEeOkFcFJ9uzEEw" value="1"/>
-      <redefinedProperty href="consol-medications.uml#_6Ti0YEIrEeG4bZAl2IGXmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h3ogkeXrEeOkFcFJ9uzEEw" value="1"/>
       <association href="../consol.uml#_h3pusOXrEeOkFcFJ9uzEEw"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_Fn10kOXsEeOkFcFJ9uzEEw" name="MedicationInformationManufacturedMaterial">
@@ -1965,13 +1942,10 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
           <body>true</body>
         </specification>
       </ownedRule>
-      <generalization xmi:id="_Fn2boOXsEeOkFcFJ9uzEEw">
-        <general xmi:type="uml:Class" href="consol-medications.uml#__WUM4CAMEeGKirKJsFylGA"/>
-      </generalization>
-      <ownedAttribute xmi:id="_MeXngOXsEeOkFcFJ9uzEEw" name="code" visibility="private" type="_co0gEOXwEeOkFcFJ9uzEEw" aggregation="composite">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MeXngeXsEeOkFcFJ9uzEEw" value="1"/>
+      <generalization xmi:id="_Fn2boOXsEeOkFcFJ9uzEEw" general="__WUM4CAMEeGKirKJsFylGA"/>
+      <ownedAttribute xmi:id="_MeXngOXsEeOkFcFJ9uzEEw" name="code" visibility="private" type="_co0gEOXwEeOkFcFJ9uzEEw" aggregation="composite" redefinedProperty="_Dh74wCANEeGKirKJsFylGA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MeXnguXsEeOkFcFJ9uzEEw" value="1"/>
-        <redefinedProperty href="consol-medications.uml#_Dh74wCANEeGKirKJsFylGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MeXngeXsEeOkFcFJ9uzEEw" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_co0gEOXwEeOkFcFJ9uzEEw" name="CE">
         <ownedRule xmi:id="_4LnGsOXwEeOkFcFJ9uzEEw" name="codeTranslationTerminology" constrainedElement="_co0gEOXwEeOkFcFJ9uzEEw">
@@ -1985,8 +1959,8 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
         </generalization>
         <ownedAttribute xmi:id="_dVFJIOXwEeOkFcFJ9uzEEw" name="translation" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dVFJIeXwEeOkFcFJ9uzEEw" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dVFJIuXwEeOkFcFJ9uzEEw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dVFJIeXwEeOkFcFJ9uzEEw" value="*"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
         </ownedAttribute>
       </nestedClassifier>
@@ -2008,7 +1982,7 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
   <CDA:ConstraintValidation xmi:id="_5CwxIOXwEeOkFcFJ9uzEEw" severity="INFO" base_Constraint="_4LnGsOXwEeOkFcFJ9uzEEw">
     <ruleId>CONF:31884</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_InVpIOZ8EeOmzetP5oaH3A" name="MedicationSupplyOrder2" clientDependency="_azwWQOZ8EeOmzetP5oaH3A">
+  <uml:Class xmi:id="_InVpIOZ8EeOmzetP5oaH3A" clientDependency="_azwWQOZ8EeOmzetP5oaH3A" name="MedicationSupplyOrder2">
     <ownedComment xmi:id="_SYVCEOZ8EeOmzetP5oaH3A">
       <body>This template records the intent to supply a patient with medications.</body>
     </ownedComment>
@@ -2045,11 +2019,11 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
       </specification>
     </ownedRule>
     <generalization xmi:id="_InVpIeZ8EeOmzetP5oaH3A" general="_j3aTQBrTEeGo461UQq-B1g"/>
-    <substitution xmi:id="_azwWQOZ8EeOmzetP5oaH3A" name="MedicationSupplyOrder" supplier="_j3aTQBrTEeGo461UQq-B1g" client="_InVpIOZ8EeOmzetP5oaH3A" contract="_j3aTQBrTEeGo461UQq-B1g"/>
+    <substitution xmi:id="_azwWQOZ8EeOmzetP5oaH3A" name="MedicationSupplyOrder" client="_InVpIOZ8EeOmzetP5oaH3A" supplier="_j3aTQBrTEeGo461UQq-B1g" contract="_j3aTQBrTEeGo461UQq-B1g"/>
     <ownedAttribute xmi:id="_d36G8OaAEeOmzetP5oaH3A" name="instruction2" redefinedProperty="_PrKm8BrUEeGo461UQq-B1g" association="_d37VEOaAEeOmzetP5oaH3A">
       <type xmi:type="uml:Class" href="consol-other.uml#_D62NwOH7EeO04sHNODkHmQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wVxJYOaAEeOmzetP5oaH3A" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wVxJYeaAEeOmzetP5oaH3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wVxJYOaAEeOmzetP5oaH3A" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_MPdmYOZ8EeOmzetP5oaH3A" base_Class="_InVpIOZ8EeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.17.2">
@@ -2079,7 +2053,7 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
     <ruleId>CONF:7444</ruleId>
     <ruleId>CONF:31391</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_k_C20OaCEeOmzetP5oaH3A" name="NonMedicinalSupplyActivity2" clientDependency="_RKlYYOaDEeOmzetP5oaH3A">
+  <uml:Class xmi:id="_k_C20OaCEeOmzetP5oaH3A" clientDependency="_RKlYYOaDEeOmzetP5oaH3A" name="NonMedicinalSupplyActivity2">
     <ownedComment xmi:id="_vkE70OaCEeOmzetP5oaH3A">
       <body>This template represents equipment supplied to the patient (e.g. pumps, inhalers, wheelchairs). Devices applied to, or placed in, the patient are represented with the Procedure Activity Procedure (V2) (templateId: 2.16.840.1.113883.10.20.22.4.14.2.)</body>
     </ownedComment>
@@ -2092,11 +2066,11 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
       </specification>
     </ownedRule>
     <generalization xmi:id="_k_C20eaCEeOmzetP5oaH3A" general="_2HIvMBSVEeGGzu7fmW9pXw"/>
-    <substitution xmi:id="_RKlYYOaDEeOmzetP5oaH3A" name="NonMedicinalSupplyActivity" supplier="_2HIvMBSVEeGGzu7fmW9pXw" client="_k_C20OaCEeOmzetP5oaH3A" contract="_2HIvMBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_RKlYYOaDEeOmzetP5oaH3A" name="NonMedicinalSupplyActivity" client="_k_C20OaCEeOmzetP5oaH3A" supplier="_2HIvMBSVEeGGzu7fmW9pXw" contract="_2HIvMBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_fbsREOaEEeOmzetP5oaH3A" name="instruction2" association="_fbtfMOaEEeOmzetP5oaH3A">
       <type xmi:type="uml:Class" href="consol-other.uml#_D62NwOH7EeO04sHNODkHmQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hj_aUOaEEeOmzetP5oaH3A" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hj_aUeaEEeOmzetP5oaH3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hj_aUOaEEeOmzetP5oaH3A" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_nMp94OaCEeOmzetP5oaH3A" base_Class="_k_C20OaCEeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.50.2">
@@ -2167,18 +2141,18 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
     <ruleId>CONF:7474</ruleId>
     <ruleId>CONF:15606</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_ZLY3MPyqEeOlg_Cnc5bODw" name="HospitalAdmissionMedicationsSectionEntriesOptional2" clientDependency="_0HqQYPyqEeOlg_Cnc5bODw">
+  <uml:Class xmi:id="_ZLY3MPyqEeOlg_Cnc5bODw" clientDependency="_0HqQYPyqEeOlg_Cnc5bODw" name="HospitalAdmissionMedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_hnpR0PyqEeOlg_Cnc5bODw">
       <body>The section contains the medications administered prior to admission to the facility. The currently active medications must also be listed.</body>
     </ownedComment>
     <generalization xmi:id="_ZLbTcPyqEeOlg_Cnc5bODw" general="_2Poj5BSVEeGGzu7fmW9pXw"/>
-    <substitution xmi:id="_0HqQYPyqEeOlg_Cnc5bODw" name="HospitalAdmissionMedicationsSectionEntriesOptional" supplier="_2Poj5BSVEeGGzu7fmW9pXw" client="_ZLY3MPyqEeOlg_Cnc5bODw" contract="_2Poj5BSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_0HqQYPyqEeOlg_Cnc5bODw" name="HospitalAdmissionMedicationsSectionEntriesOptional" client="_ZLY3MPyqEeOlg_Cnc5bODw" supplier="_2Poj5BSVEeGGzu7fmW9pXw" contract="_2Poj5BSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_3BwqAPyqEeOlg_Cnc5bODw" name="code" visibility="private" redefinedProperty="_2Poj6RSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_9ZsnAPyrEeOlg_Cnc5bODw" name="admissionMedication2" type="_ZQpEwK-1EeO8duI_7f6kZw" redefinedProperty="_IfrmAEFHEeGorO80f-Cppg" association="_9ZvqUPyrEeOlg_Cnc5bODw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ZtOEfyrEeOlg_Cnc5bODw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9ZtOEPyrEeOlg_Cnc5bODw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ZtOEfyrEeOlg_Cnc5bODw" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_dxv-UPyqEeOlg_Cnc5bODw" base_Class="_ZLY3MPyqEeOlg_Cnc5bODw" templateId="2.16.840.1.113883.10.20.22.2.44.2">
@@ -2201,30 +2175,30 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
     <ruleId>CONF:10102</ruleId>
     <ruleId>CONF:15484</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_5OKxwP1bEeO5Hq-yrsJSmg" name="MedicalEquipmentSection2" clientDependency="_QpJ1gP1cEeO5Hq-yrsJSmg">
+  <uml:Class xmi:id="_5OKxwP1bEeO5Hq-yrsJSmg" clientDependency="_QpJ1gP1cEeO5Hq-yrsJSmg" name="MedicalEquipmentSection2">
     <ownedComment xmi:id="_GwZnsP1cEeO5Hq-yrsJSmg">
       <body>This section defines a patient's implanted and external health and medical devices and equipment. This section lists any pertinent durable medical equipment (DME) used to help maintain the patient's health status. All equipment relevant to the diagnosis, care, or treatment of a patient should be included. &#xD;
 Devices applied to, or placed in, the patient are represented with the Procedure Activity Procedure (V2) template. Equipment supplied to the patient (e.g. pumps, inhalers, wheelchairs) is represented by the Non-Medicinal Supply Activity V2 template.&#xD;
 These devices may be grouped together within a Medical Equipment Organizer. The organizer would probably not be used with devices applied in or on the patient but rather to organize a group of medical supplies the patient has been supplied with.</body>
     </ownedComment>
     <generalization xmi:id="_5OOcIP1bEeO5Hq-yrsJSmg" general="_2KEucBSVEeGGzu7fmW9pXw"/>
-    <substitution xmi:id="_QpJ1gP1cEeO5Hq-yrsJSmg" name="MedicalEquipmentSection" supplier="_2KEucBSVEeGGzu7fmW9pXw" client="_5OKxwP1bEeO5Hq-yrsJSmg" contract="_2KEucBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_QpJ1gP1cEeO5Hq-yrsJSmg" name="MedicalEquipmentSection" client="_5OKxwP1bEeO5Hq-yrsJSmg" supplier="_2KEucBSVEeGGzu7fmW9pXw" contract="_2KEucBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_3QXkIP1iEeO5Hq-yrsJSmg" name="code" visibility="private" isReadOnly="true" redefinedProperty="_2KF8kBSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_0uwGgP1jEeO5Hq-yrsJSmg" name="medicalEquipmentOrganizer" association="_0uxUoP1jEeO5Hq-yrsJSmg">
       <type xmi:type="uml:Class" href="consol-other.uml#_RbbCII0dEeOB0eBUISUB4Q"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0uwtkP1jEeO5Hq-yrsJSmg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0uwGgf1jEeO5Hq-yrsJSmg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0uwtkP1jEeO5Hq-yrsJSmg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Gncb0P1jEeO5Hq-yrsJSmg" name="nonMedicinalSupplyActivity2" type="_k_C20OaCEeOmzetP5oaH3A" redefinedProperty="_2KHxwBSVEeGGzu7fmW9pXw" association="_Gndp8P1jEeO5Hq-yrsJSmg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gncb0v1jEeO5Hq-yrsJSmg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gncb0f1jEeO5Hq-yrsJSmg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gncb0v1jEeO5Hq-yrsJSmg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_HN2fEP1kEeO5Hq-yrsJSmg" name="procedureActivityProcedure2" association="_HN47UP1kEeO5Hq-yrsJSmg">
       <type xmi:type="uml:Class" href="consol-procedures.uml#_fCVOQPDqEeOKPKE9au0oug"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HN2fEv1kEeO5Hq-yrsJSmg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HN2fEf1kEeO5Hq-yrsJSmg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HN2fEv1kEeO5Hq-yrsJSmg" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_-QVEEP1bEeO5Hq-yrsJSmg" base_Class="_5OKxwP1bEeO5Hq-yrsJSmg" templateId="2.16.840.1.113883.10.20.22.2.23.2">
@@ -2261,18 +2235,18 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:31885</ruleId>
     <ruleId>CONF:31886</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_F37nMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection2" clientDependency="_iESIMP4jEeOwFalSp0fRiw">
+  <uml:Class xmi:id="_F37nMP4jEeOwFalSp0fRiw" clientDependency="_iESIMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection2">
     <ownedComment xmi:id="_cc_vkP4jEeOwFalSp0fRiw">
       <body>The Medications Administered Section contains medications and fluids administered during a procedure. The section may also contain the procedure's encounter or other activity, excluding anesthetic medications. This section is not intended for ongoing medications and medication history.</body>
     </ownedComment>
     <generalization xmi:id="_F3_RkP4jEeOwFalSp0fRiw" general="_2Poj_BSVEeGGzu7fmW9pXw"/>
-    <substitution xmi:id="_iESIMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection" supplier="_2Poj_BSVEeGGzu7fmW9pXw" client="_F37nMP4jEeOwFalSp0fRiw" contract="_2Poj_BSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_iESIMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection" client="_F37nMP4jEeOwFalSp0fRiw" supplier="_2Poj_BSVEeGGzu7fmW9pXw" contract="_2Poj_BSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_yRsK8P4jEeOwFalSp0fRiw" name="code" visibility="private" redefinedProperty="_2PokARSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="__djIQP4jEeOwFalSp0fRiw" name="medicationActivity2" type="_WnSCMOLAEeOc7-TVP7Wi6w" redefinedProperty="_KTZYoFmsEeGRqYkwoeymcA" association="__dlkgP4jEeOwFalSp0fRiw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__djvUf4jEeOwFalSp0fRiw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__djvUP4jEeOwFalSp0fRiw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__djvUf4jEeOwFalSp0fRiw" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_XzcKgP4jEeOwFalSp0fRiw" base_Class="_F37nMP4jEeOwFalSp0fRiw" templateId="2.16.840.1.113883.10.20.22.2.38.2">
@@ -2295,7 +2269,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:8156</ruleId>
     <ruleId>CONF:15499</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_JUvaUAFaEeS0nNJt6oyOyQ" name="MedicationsSectionEntriesOptional2" clientDependency="_f7UloAFaEeS0nNJt6oyOyQ">
+  <uml:Class xmi:id="_JUvaUAFaEeS0nNJt6oyOyQ" clientDependency="_f7UloAFaEeS0nNJt6oyOyQ" name="MedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_R4TW0AFaEeS0nNJt6oyOyQ">
       <body>The Medications Section contains a patient's current medications and pertinent medication history. At a minimum, the currently active medications are listed. An entire medication history is an option. The section can describe a patient's prescription and dispense history and information about intended drug monitoring.</body>
     </ownedComment>
@@ -2306,13 +2280,13 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
       </specification>
     </ownedRule>
     <generalization xmi:id="_JUxPgAFaEeS0nNJt6oyOyQ" general="_iAoXEBVdEeGQCvUGzi1kDQ"/>
-    <substitution xmi:id="_f7UloAFaEeS0nNJt6oyOyQ" name="MedicationsSectionEntriesOptional" supplier="_iAoXEBVdEeGQCvUGzi1kDQ" client="_JUvaUAFaEeS0nNJt6oyOyQ" contract="_iAoXEBVdEeGQCvUGzi1kDQ"/>
+    <substitution xmi:id="_f7UloAFaEeS0nNJt6oyOyQ" name="MedicationsSectionEntriesOptional" client="_JUvaUAFaEeS0nNJt6oyOyQ" supplier="_iAoXEBVdEeGQCvUGzi1kDQ" contract="_iAoXEBVdEeGQCvUGzi1kDQ"/>
     <ownedAttribute xmi:id="_9cOpUAFbEeS0nNJt6oyOyQ" name="code" visibility="private" redefinedProperty="_iAoXIxVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_S7rikAFeEeS0nNJt6oyOyQ" name="medicationActivity2" type="_WnSCMOLAEeOc7-TVP7Wi6w" redefinedProperty="_FsPZUB-uEeGKirKJsFylGA" association="_S7tXwAFeEeS0nNJt6oyOyQ">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S7rikgFeEeS0nNJt6oyOyQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S7rikQFeEeS0nNJt6oyOyQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S7rikgFeEeS0nNJt6oyOyQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_N00TQAFaEeS0nNJt6oyOyQ" base_Class="_JUvaUAFaEeS0nNJt6oyOyQ" templateId="2.16.840.1.113883.10.20.22.2.1.2">
@@ -2338,7 +2312,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
   <CDA:ConstraintValidation xmi:id="_aUYZAAFfEeS0nNJt6oyOyQ" severity="INFO" base_Constraint="_GHMuAAFfEeS0nNJt6oyOyQ">
     <ruleId>CONF:15984</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_P2mp4ALQEeS0YMHMf4rRtQ" name="MedicationsSection2" clientDependency="_jpry0ALQEeS0YMHMf4rRtQ">
+  <uml:Class xmi:id="_P2mp4ALQEeS0YMHMf4rRtQ" clientDependency="_jpry0ALQEeS0YMHMf4rRtQ" name="MedicationsSection2">
     <ownedComment xmi:id="_w0ZgoALQEeS0YMHMf4rRtQ">
       <body>The Medications Section contains a patient's current medications and pertinent medication history. At a minimum, the currently active medications are listed. An entire medication history is an option. The section can describe a patient's prescription and dispense history and information about intended drug monitoring. &#xD;
 This section requires either an entry indicating the subject is not known to be on any medications or entries summarizing the subject's medications.</body>
@@ -2352,21 +2326,21 @@ This section requires either an entry indicating the subject is not known to be 
       </specification>
     </ownedRule>
     <generalization xmi:id="_P2ofEALQEeS0YMHMf4rRtQ" general="_JUvaUAFaEeS0nNJt6oyOyQ"/>
-    <substitution xmi:id="_jpry0ALQEeS0YMHMf4rRtQ" name="MedicationsSection" supplier="_2NIpgBSVEeGGzu7fmW9pXw" client="_P2mp4ALQEeS0YMHMf4rRtQ" contract="_2NIpgBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_jpry0ALQEeS0YMHMf4rRtQ" name="MedicationsSection" client="_P2mp4ALQEeS0YMHMf4rRtQ" supplier="_2NIpgBSVEeGGzu7fmW9pXw" contract="_2NIpgBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_1zOyIALQEeS0YMHMf4rRtQ" name="code" visibility="private" redefinedProperty="_9cOpUAFbEeS0nNJt6oyOyQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_tOrhsALREeS0YMHMf4rRtQ" name="medicationActivity2" type="_WnSCMOLAEeOc7-TVP7Wi6w" redefinedProperty="_S7rikAFeEeS0nNJt6oyOyQ" association="_tOsv0ALREeS0YMHMf4rRtQ">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wAF5YALREeS0YMHMf4rRtQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wAF5YQLREeS0YMHMf4rRtQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wAF5YALREeS0YMHMf4rRtQ" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_lq5VQALTEeS0YMHMf4rRtQ" name="title" visibility="private" redefinedProperty="_iAoXJBVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_lq4HIALTEeS0YMHMf4rRtQ" name="text" visibility="private" aggregation="composite" redefinedProperty="_iAoXJRVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lq4HIQLTEeS0YMHMf4rRtQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lq4HIgLTEeS0YMHMf4rRtQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lq4HIQLTEeS0YMHMf4rRtQ" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_V7Gi8ALQEeS0YMHMf4rRtQ" base_Class="_P2mp4ALQEeS0YMHMf4rRtQ" templateId="2.16.840.1.113883.10.20.22.2.1.1.2">
@@ -2395,4 +2369,71 @@ This section requires either an entry indicating the subject is not known to be 
   <CDA:PropertyValidation xmi:id="_qDd4AALTEeS0YMHMf4rRtQ" base_Property="_lq5VQALTEeS0YMHMf4rRtQ">
     <ruleId>CONF:7570</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_v45IADhBEeS1WeMhbm6GZw" severity="WARNING" base_Property="_thJNgDhBEeS1WeMhbm6GZw">
+    <ruleId>CONF:16854</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_xSNrYDhBEeS1WeMhbm6GZw" severity="INFO" base_Property="_thJNgzhBEeS1WeMhbm6GZw">
+    <ruleId>CONF:7373</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_zErHgDhBEeS1WeMhbm6GZw" severity="WARNING" base_Property="_thJ0kDhBEeS1WeMhbm6GZw">
+    <ruleId>CONF:7369</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_XA96QDhDEeS1WeMhbm6GZw" clientDependency="_9o9TsDhDEeS1WeMhbm6GZw" name="PreconditionForSubstanceAdministration2">
+    <ownedComment xmi:id="_ro_uMDhDEeS1WeMhbm6GZw">
+      <body>A criterion for administration can be used to record that the medication is to be administered only when the associated criteria are met.</body>
+    </ownedComment>
+    <generalization xmi:id="_XA-hUDhDEeS1WeMhbm6GZw" general="_chEhQBUUEeG6PvUxSTZnaw"/>
+    <substitution xmi:id="_9o9TsDhDEeS1WeMhbm6GZw" name="PreconditionForSubstanceAdministration" client="_XA96QDhDEeS1WeMhbm6GZw" supplier="_chEhQBUUEeG6PvUxSTZnaw" contract="_chEhQBUUEeG6PvUxSTZnaw"/>
+    <ownedAttribute xmi:id="_KDeToDhEEeS1WeMhbm6GZw" name="code" visibility="private" aggregation="composite" redefinedProperty="_thJNgDhBEeS1WeMhbm6GZw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NylCoDhEEeS1WeMhbm6GZw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NykbkDhEEeS1WeMhbm6GZw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vHbHcDhEEeS1WeMhbm6GZw" name="text" visibility="private" aggregation="composite" redefinedProperty="_thJNgzhBEeS1WeMhbm6GZw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vHbHcThEEeS1WeMhbm6GZw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vHbHcjhEEeS1WeMhbm6GZw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2fqgUDhEEeS1WeMhbm6GZw" name="value" visibility="private" aggregation="composite" redefinedProperty="_thJ0kDhBEeS1WeMhbm6GZw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Vn8YThEEeS1WeMhbm6GZw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Vn8YDhEEeS1WeMhbm6GZw" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_jmRN4DhDEeS1WeMhbm6GZw" base_Class="_XA96QDhDEeS1WeMhbm6GZw" templateId="2.16.840.1.113883.10.20.22.4.25.2">
+    <ruleId>CONF:1098-7372</ruleId>
+    <ruleId>CONF:1098-10517</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_7OGa0DhDEeS1WeMhbm6GZw" base_Generalization="_XA-hUDhDEeS1WeMhbm6GZw"/>
+  <CDA:PropertyValidation xmi:id="_KDeTozhEEeS1WeMhbm6GZw" base_Property="_KDeToDhEEeS1WeMhbm6GZw">
+    <ruleId>CONF:1098-32396</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_vHbugDhEEeS1WeMhbm6GZw" severity="INFO" base_Property="_vHbHcDhEEeS1WeMhbm6GZw">
+    <ruleId>CONF:1098-7373</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2fqgUzhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw"/>
+  <CDA:ValueSetConstraint xmi:id="_7o8uUDhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw">
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-7369</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_qeq-MDhFEeS1WeMhbm6GZw" code="ASSERTION" displayName="Assertion" base_Property="_KDeToDhEEeS1WeMhbm6GZw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-32397</ruleId>
+    <ruleId>CONF:1098-32398</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_U-R84DhbEeS1WeMhbm6GZw" memberEnd="_U-QuwDhbEeS1WeMhbm6GZw _U-R84ThbEeS1WeMhbm6GZw">
+    <ownedEnd xmi:id="_U-R84ThbEeS1WeMhbm6GZw" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_U-R84DhbEeS1WeMhbm6GZw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_VwGbYDhbEeS1WeMhbm6GZw" severity="INFO" base_Association="_U-R84DhbEeS1WeMhbm6GZw">
+    <ruleId>CONF:7546</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_8qelUDhbEeS1WeMhbm6GZw" base_Property="_oX0kcDhbEeS1WeMhbm6GZw">
+    <ruleId>CONF:7550</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_DEKEMDhcEeS1WeMhbm6GZw" memberEnd="_DEI2EDhcEeS1WeMhbm6GZw _DEKrQDhcEeS1WeMhbm6GZw">
+    <ownedEnd xmi:id="_DEKrQDhcEeS1WeMhbm6GZw" type="_niSDkDhbEeS1WeMhbm6GZw" association="_DEKEMDhcEeS1WeMhbm6GZw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_ECbqUDhcEeS1WeMhbm6GZw" base_Association="_DEKEMDhcEeS1WeMhbm6GZw">
+    <ruleId>CONF:16092</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
