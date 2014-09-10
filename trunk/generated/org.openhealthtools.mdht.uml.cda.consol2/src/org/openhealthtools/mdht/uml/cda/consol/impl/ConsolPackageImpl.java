@@ -2092,6 +2092,13 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass preconditionForSubstanceAdministration2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -6367,6 +6374,19 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				309);
 		}
 		return unstructuredDocument2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPreconditionForSubstanceAdministration2() {
+		if (preconditionForSubstanceAdministration2EClass == null) {
+			preconditionForSubstanceAdministration2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(310);
+		}
+		return preconditionForSubstanceAdministration2EClass;
 	}
 
 	/**

@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.operations.PreconditionOperations;
+import org.openhealthtools.mdht.uml.cda.operations.CriterionOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,17 +32,16 @@ import org.openhealthtools.mdht.uml.cda.operations.PreconditionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration#validatePreconditionForSubstanceAdministrationCriterionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration#validatePreconditionForSubstanceAdministrationCriterionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration#validatePreconditionForSubstanceAdministrationCriterionValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration#validatePreconditionForSubstanceAdministrationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration#validatePreconditionForSubstanceAdministrationCriterion(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration#validatePreconditionForSubstanceAdministrationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration#validatePreconditionForSubstanceAdministrationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration#validatePreconditionForSubstanceAdministrationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Value</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class PreconditionForSubstanceAdministrationOperations extends PreconditionOperations {
+public class PreconditionForSubstanceAdministrationOperations extends CriterionOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,192 +49,6 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 	 */
 	protected PreconditionForSubstanceAdministrationOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePreconditionForSubstanceAdministrationCriterionCode(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePreconditionForSubstanceAdministrationCriterionCode(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.criterion.oclIsUndefined() implies (not self.criterion.code.oclIsUndefined() or self.criterion.code.isNullFlavorDefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePreconditionForSubstanceAdministrationCriterionCode(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePreconditionForSubstanceAdministrationCriterionCode(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param preconditionForSubstanceAdministration The receiving '<em><b>Precondition For Substance Administration</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePreconditionForSubstanceAdministrationCriterionCode(
-			PreconditionForSubstanceAdministration preconditionForSubstanceAdministration, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION);
-			try {
-				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			preconditionForSubstanceAdministration)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_CODE,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCriterionCode"),
-					new Object[] { preconditionForSubstanceAdministration }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePreconditionForSubstanceAdministrationCriterionText(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion Text</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePreconditionForSubstanceAdministrationCriterionText(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.criterion.oclIsUndefined() implies not self.criterion.text.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePreconditionForSubstanceAdministrationCriterionText(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePreconditionForSubstanceAdministrationCriterionText(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param preconditionForSubstanceAdministration The receiving '<em><b>Precondition For Substance Administration</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePreconditionForSubstanceAdministrationCriterionText(
-			PreconditionForSubstanceAdministration preconditionForSubstanceAdministration, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION);
-			try {
-				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			preconditionForSubstanceAdministration)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCriterionText"),
-					new Object[] { preconditionForSubstanceAdministration }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePreconditionForSubstanceAdministrationCriterionValue(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePreconditionForSubstanceAdministrationCriterionValue(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.criterion.value.oclIsUndefined() or self.criterion.value.isNullFlavorUndefined()) implies (self.criterion.value.oclIsTypeOf(datatypes::CD))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePreconditionForSubstanceAdministrationCriterionValue(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePreconditionForSubstanceAdministrationCriterionValue(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param preconditionForSubstanceAdministration The receiving '<em><b>Precondition For Substance Administration</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePreconditionForSubstanceAdministrationCriterionValue(
-			PreconditionForSubstanceAdministration preconditionForSubstanceAdministration, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION);
-			try {
-				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			preconditionForSubstanceAdministration)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_VALUE,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCriterionValue"),
-					new Object[] { preconditionForSubstanceAdministration }));
-			}
-
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -301,25 +114,25 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePreconditionForSubstanceAdministrationCriterion(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePreconditionForSubstanceAdministrationCode(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePreconditionForSubstanceAdministrationCriterion(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePreconditionForSubstanceAdministrationCode(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.criterion->one(criterion : cda::Criterion | not criterion.oclIsUndefined() and criterion.oclIsKindOf(rim::Act))";
+	protected static final String VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePreconditionForSubstanceAdministrationCriterion(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Criterion</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validatePreconditionForSubstanceAdministrationCode(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePreconditionForSubstanceAdministrationCriterion(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePreconditionForSubstanceAdministrationCode(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -332,28 +145,152 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 	 * @generated
 	 */
 
-	public static boolean validatePreconditionForSubstanceAdministrationCriterion(
+	public static boolean validatePreconditionForSubstanceAdministrationCode(
 			PreconditionForSubstanceAdministration preconditionForSubstanceAdministration, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION);
 			try {
-				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			preconditionForSubstanceAdministration)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCriterion"),
+					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE,
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCode"),
+					new Object[] { preconditionForSubstanceAdministration }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePreconditionForSubstanceAdministrationText(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Text</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePreconditionForSubstanceAdministrationText(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePreconditionForSubstanceAdministrationText(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Text</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePreconditionForSubstanceAdministrationText(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param preconditionForSubstanceAdministration The receiving '<em><b>Precondition For Substance Administration</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validatePreconditionForSubstanceAdministrationText(
+			PreconditionForSubstanceAdministration preconditionForSubstanceAdministration, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION);
+			try {
+				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			preconditionForSubstanceAdministration)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT,
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationText"),
+					new Object[] { preconditionForSubstanceAdministration }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePreconditionForSubstanceAdministrationValue(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Value</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePreconditionForSubstanceAdministrationValue(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value.oclIsUndefined() or self.value.isNullFlavorUndefined()) implies (self.value.oclIsTypeOf(datatypes::CD))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePreconditionForSubstanceAdministrationValue(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePreconditionForSubstanceAdministrationValue(PreconditionForSubstanceAdministration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param preconditionForSubstanceAdministration The receiving '<em><b>Precondition For Substance Administration</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validatePreconditionForSubstanceAdministrationValue(
+			PreconditionForSubstanceAdministration preconditionForSubstanceAdministration, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION);
+			try {
+				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			preconditionForSubstanceAdministration)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE,
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationValue"),
 					new Object[] { preconditionForSubstanceAdministration }));
 			}
 

@@ -1862,10 +1862,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityInstructionsInversionInd/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityInstructionsInversionInd/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/MedicationActivityPreconditionSubstanceAdmTypeCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityPreconditionSubstanceAdmTypeCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityPreconditionSubstanceAdmTypeCode/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/MedicationActivityRateQuantityUnit">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityRateQuantityUnit/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityRateQuantityUnit/context"/>
@@ -1958,10 +1954,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityMedicationDispense/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityMedicationDispense/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/MedicationActivityPrecondition">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityPrecondition/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityPrecondition/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/MedicationActivityDrugVehicle">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityDrugVehicle/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityDrugVehicle/context"/>
@@ -1970,9 +1962,21 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityConsumable/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityConsumable/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/MedicationActivityPrecondition">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityPrecondition/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityPrecondition/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/MedicationActivityConsumableMedicationInformation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityConsumableMedicationInformation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityConsumableMedicationInformation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/MedicationActivityPreconditionTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityPreconditionTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityPreconditionTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/MedicationActivityPreconditionPreconditionForSubstanceAdministration">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityPreconditionPreconditionForSubstanceAdministration/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityPreconditionPreconditionForSubstanceAdministration/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/getMedicationSupplyOrder"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/getReactionObservation"/>
@@ -4759,10 +4763,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityDrugVehicleTypeCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityDrugVehicleTypeCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity/ImmunizationActivityPreconditionTypeCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityPreconditionTypeCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityPreconditionTypeCode/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity/ImmunizationActivityTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityTemplateId/context"/>
@@ -4851,10 +4851,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityReactionObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityReactionObservation/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity/ImmunizationActivityPrecondition">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityPrecondition/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityPrecondition/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity/ImmunizationActivityImmunizationRefusalReason">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityImmunizationRefusalReason/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityImmunizationRefusalReason/context"/>
@@ -4871,9 +4867,21 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityMedicationSupplyOrder/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityMedicationSupplyOrder/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity/ImmunizationActivityPrecondition">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityPrecondition/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityPrecondition/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity/ImmunizationActivityConsumableImmunizationMedicationInformation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityConsumableImmunizationMedicationInformation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityConsumableImmunizationMedicationInformation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity/ImmunizationActivityPreconditionTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityPreconditionTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityPreconditionTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity/ImmunizationActivityPreconditionPreconditionForSubstanceAdministration">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityPreconditionPreconditionForSubstanceAdministration/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity/ImmunizationActivityPreconditionPreconditionForSubstanceAdministration/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity/getDrugVehicle"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity/getIndication"/>
@@ -6846,25 +6854,21 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PreconditionForSubstanceAdministration">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterionCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterionCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterionCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterionText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterionText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterionText/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterionValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterionValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterionValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationTemplateId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterion">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterion/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCriterion/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration/PreconditionForSubstanceAdministrationValue/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ImmunizationMedicationInformation">
@@ -15685,6 +15689,16 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//UnstructuredDocument2/UnstructuredDocument2ComponentNonXMLBody">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//UnstructuredDocument2/UnstructuredDocument2ComponentNonXMLBody/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//UnstructuredDocument2/UnstructuredDocument2ComponentNonXMLBody/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PreconditionForSubstanceAdministration2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PreconditionForSubstanceAdministration2/PreconditionForSubstanceAdministrationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration2/PreconditionForSubstanceAdministrationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration2/PreconditionForSubstanceAdministrationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PreconditionForSubstanceAdministration2/PreconditionForSubstanceAdministrationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration2/PreconditionForSubstanceAdministrationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration2/PreconditionForSubstanceAdministrationValueP/context"/>
       </genOperations>
     </genClasses>
   </genPackages>
