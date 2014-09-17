@@ -405,7 +405,7 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SaXZgErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_3vyDUIlLEeOJGtGyq_dBbA" name="advanceDirectiveObservation" type="_2KlEwBSVEeGGzu7fmW9pXw" association="_3vzRcIlLEeOJGtGyq_dBbA">
+    <ownedAttribute xmi:id="_3vyDUIlLEeOJGtGyq_dBbA" name="advanceDirectiveObservation2" type="_GnllUK-9EeO8duI_7f6kZw" association="_3vzRcIlLEeOJGtGyq_dBbA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iU2WUIlMEeOJGtGyq_dBbA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iU1vQIlMEeOJGtGyq_dBbA" value="*"/>
     </ownedAttribute>
