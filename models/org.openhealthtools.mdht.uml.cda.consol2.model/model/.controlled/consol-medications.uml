@@ -1702,6 +1702,10 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6PKzwuLYEeOc7-TVP7Wi6w"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6PKzweLYEeOc7-TVP7Wi6w" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_4Nww4D3WEeSyGa6KC25kiw" name="precondition" type="_IU_TID3XEeSyGa6KC25kiw" redefinedProperty="_U-QuwDhbEeS1WeMhbm6GZw" association="_4NymED3WEeSyGa6KC25kiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Nx_AD3WEeSyGa6KC25kiw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Nx_AT3WEeSyGa6KC25kiw" value="*"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_OvC70OLaEeOc7-TVP7Wi6w" name="indication2" redefinedProperty="_7USBsBUSEeG6PvUxSTZnaw" association="_OvExAOLaEeOc7-TVP7Wi6w">
       <type xmi:type="uml:Class" href="consol-other.uml#_PrEOIOHoEeO04sHNODkHmQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OvC70eLaEeOc7-TVP7Wi6w"/>
@@ -1743,6 +1747,25 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
       <ownedAttribute xmi:id="_pER24PiWEeOXlK95I8tUew" name="medicationInformation2" type="_Hz__kOXrEeOkFcFJ9uzEEw" redefinedProperty="_Feu6EHK2EeGig5KF4CgPyw" association="_pETsEPiWEeOXlK95I8tUew">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yq2IgPiWEeOXlK95I8tUew" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yq1hcPiWEeOXlK95I8tUew" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_IU_TID3XEeSyGa6KC25kiw" name="Precondition">
+      <ownedComment xmi:id="_J1ZV8D3XEeSyGa6KC25kiw">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_IVJrMD3XEeSyGa6KC25kiw" general="_niSDkDhbEeS1WeMhbm6GZw"/>
+      <ownedAttribute xmi:id="_I32voD3XEeSyGa6KC25kiw" name="typeCode" visibility="private" redefinedProperty="_oX0kcDhbEeS1WeMhbm6GZw">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DjEm0D3YEeSyGa6KC25kiw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Di610D3YEeSyGa6KC25kiw" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_I32voz3XEeSyGa6KC25kiw" name="PRCN">
+          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
+          <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeapUDcEd6xYZuu1VKCVw"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JI6N8D3YEeSyGa6KC25kiw" name="preconditionForSubstanceAdministration2" type="_XA96QDhDEeS1WeMhbm6GZw" redefinedProperty="_DEI2EDhcEeS1WeMhbm6GZw" association="_JI8qMD3YEeSyGa6KC25kiw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MQkicD3YEeSyGa6KC25kiw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MQdNsD3YEeSyGa6KC25kiw" value="1"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -2435,5 +2458,20 @@ This section requires either an entry indicating the subject is not known to be 
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_ECbqUDhcEeS1WeMhbm6GZw" base_Association="_DEKEMDhcEeS1WeMhbm6GZw">
     <ruleId>CONF:16092</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_4NymED3WEeSyGa6KC25kiw" memberEnd="_4Nww4D3WEeSyGa6KC25kiw _4NymET3WEeSyGa6KC25kiw">
+    <ownedEnd xmi:id="_4NymET3WEeSyGa6KC25kiw" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_4NymED3WEeSyGa6KC25kiw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_481dYD3WEeSyGa6KC25kiw" severity="INFO" base_Association="_4NymED3WEeSyGa6KC25kiw">
+    <ruleId>CONF:31520</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_CKqpcD3YEeSyGa6KC25kiw" base_Property="_I32voD3XEeSyGa6KC25kiw">
+    <ruleId>CONF:31882</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_JI8qMD3YEeSyGa6KC25kiw" memberEnd="_JI6N8D3YEeSyGa6KC25kiw _JI8qMT3YEeSyGa6KC25kiw">
+    <ownedEnd xmi:id="_JI8qMT3YEeSyGa6KC25kiw" type="_IU_TID3XEeSyGa6KC25kiw" association="_JI8qMD3YEeSyGa6KC25kiw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_MwsM8D3YEeSyGa6KC25kiw" base_Association="_JI8qMD3YEeSyGa6KC25kiw">
+    <ruleId>CONF:31883</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>

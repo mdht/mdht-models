@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
   <uml:Class xmi:id="_2Pxt6xSVEeGGzu7fmW9pXw" name="GeneralStatusSection">
     <ownedComment xmi:id="_2Pxt7BSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
       <body>The General Status section describes general observations and readily observable attributes of the patient, including affect and demeanor, apparent age compared to actual age, gender, ethnicity, nutritional status based on appearance, body build and habitus (e.g., muscular, cachectic, obese), developmental or other deformities, gait and mobility, personal hygiene, evidence of distress, and voice quality and speech.</body>
@@ -9,19 +9,19 @@
     </generalization>
     <ownedAttribute xmi:id="_2Pxt7hSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Pxt7xSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Pxt8BSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Pxt7xSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qrBvsCzoEeG29eivM7bhbw" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uLFWECzoEeG29eivM7bhbw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uLFWESzoEeG29eivM7bhbw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uLFWECzoEeG29eivM7bhbw" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qrBIoCzoEeG29eivM7bhbw" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tptHUCzoEeG29eivM7bhbw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tptuYCzoEeG29eivM7bhbw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tptHUCzoEeG29eivM7bhbw" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
   </uml:Class>
@@ -45,28 +45,28 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     </ownedAttribute>
     <ownedAttribute xmi:id="_fHjFcCzoEeG29eivM7bhbw" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h5PJ8CzoEeG29eivM7bhbw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h5PJ8SzoEeG29eivM7bhbw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h5PJ8CzoEeG29eivM7bhbw" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_fHgpMCzoEeG29eivM7bhbw" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jVSRMCzoEeG29eivM7bhbw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jVS4QCzoEeG29eivM7bhbw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jVSRMCzoEeG29eivM7bhbw" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_sWz4oOcPEeGINOJ_SD9_dA" name="pressureUlcerObservation" association="_sWz4oucPEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="../consol.uml#_9rQowOZbEeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wJm00OcPEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wJwl0OcPEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wJm00OcPEeGINOJ_SD9_dA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_t1utsOcPEeGINOJ_SD9_dA" name="numberOfPressureUlcersObservation" type="_7c4ssOZbEeGINOJ_SD9_dA" association="_t133oOcPEeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wf7DEOcPEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wgE0EOcPEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wf7DEOcPEeGINOJ_SD9_dA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_u7gC8OcPEeGINOJ_SD9_dA" name="highestPressureUlcerStage" type="_4YgVsOZbEeGINOJ_SD9_dA" association="_u7pz8ecPEeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wyq_8OcPEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wy0J4OcPEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wyq_8OcPEeGINOJ_SD9_dA" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_ZHedIBnTEeGs5a462vYX5Q" base_Class="_2Pxt0hSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.2.10" assigningAuthorityName="HL7">
@@ -89,14 +89,14 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     </ownedAttribute>
     <ownedAttribute xmi:id="_VzwKhCtWEeGlWN0TVxk9LA" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k8pcQCtWEeGlWN0TVxk9LA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k8qDUCtWEeGlWN0TVxk9LA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k8pcQCtWEeGlWN0TVxk9LA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_VzwKgCtWEeGlWN0TVxk9LA" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lVxt8CtWEeGlWN0TVxk9LA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lVxt8StWEeGlWN0TVxk9LA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lVxt8CtWEeGlWN0TVxk9LA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
   </uml:Class>
@@ -164,18 +164,18 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     </generalization>
     <ownedAttribute xmi:id="_qBIkEOb2EeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_aAD3sOb3EeGINOJ_SD9_dA" value="OBS"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qBLnYOb2EeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_eiVwEOb3EeGINOJ_SD9_dA" value="EVN"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qBLAUOb2EeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kCV08Ob3EeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kCb7kOb3EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kCV08Ob3EeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qBJyMOb2EeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
@@ -184,8 +184,8 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     </ownedAttribute>
     <ownedAttribute xmi:id="_qBMOcOb2EeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tFwWMOb3EeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tF5gIOb3EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tFwWMOb3EeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
@@ -221,18 +221,18 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     </generalization>
     <ownedAttribute xmi:id="_4rvdsOb-EeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_6VXt8Ob-EeGINOJ_SD9_dA" value="OBS"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvduOb-EeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_JHTRMOb_EeGINOJ_SD9_dA" value="EVN"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdteb-EeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VCQAQOb_EeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VCTDkOb_EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VCQAQOb_EeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdseb-EeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
@@ -241,31 +241,31 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdueb-EeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nHtJwOb_EeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nHyCQOb_EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nHtJwOb_EeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdsub-EeGINOJ_SD9_dA" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qChVEOb_EeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qCkYYOb_EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qChVEOb_EeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdvOb-EeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsTfMOb_EeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tsXwoOb_EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsTfMOb_EeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdv-b-EeGINOJ_SD9_dA" name="author" visibility="private" aggregation="composite" association="_4rvdwub-EeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xRh5cOb_EeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xRh5ceb_EeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xRh5cOb_EeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DxAakOcCEeGINOJ_SD9_dA" name="entryRelationship" type="_EuSiMOcCEeGINOJ_SD9_dA" association="_DxKLkecCEeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PpH4EOcCEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PpH4EecCEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PpH4EOcCEeGINOJ_SD9_dA" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_EuSiMOcCEeGINOJ_SD9_dA" name="EntryRelationship">
       <ownedComment xmi:id="_T5qgMOcCEeGINOJ_SD9_dA">
@@ -276,12 +276,12 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
       </generalization>
       <ownedAttribute xmi:id="_FQgecOcCEeGINOJ_SD9_dA" name="typeCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_MHVMUOcCEeGINOJ_SD9_dA" value="SUBJ"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IRUkEOcCEeGINOJ_SD9_dA" name="observation" type="_lwnlkOcAEeGINOJ_SD9_dA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JOq9IOcCEeGINOJ_SD9_dA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JOxDwOcCEeGINOJ_SD9_dA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JOq9IOcCEeGINOJ_SD9_dA" value="1"/>
         <association href="../consol.uml#_IRUkEucCEeGINOJ_SD9_dA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_lwnlkOcAEeGINOJ_SD9_dA" name="Observation">
@@ -290,18 +290,18 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
         </generalization>
         <ownedAttribute xmi:id="_ng0-8OcAEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_qJm_EOcAEeGINOJ_SD9_dA" value="OBS"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ng1mAOcAEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_uDMfwOcAEeGINOJ_SD9_dA" value="EVN"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ng1mAecAEeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvPCAOvOEeGFM5lVxX0tzg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fvPCAevOEeGFM5lVxX0tzg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvPCAOvOEeGFM5lVxX0tzg" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
       </nestedClassifier>
@@ -375,18 +375,18 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     </generalization>
     <ownedAttribute xmi:id="_Bs8GoJp8EeOK6dzbL4VoTA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_5tYZoJp8EeOK6dzbL4VoTA" value="OBS"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs8tsJp8EeOK6dzbL4VoTA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_6UxJwJp8EeOK6dzbL4VoTA" value="EVN"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs8GpZp8EeOK6dzbL4VoTA" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Eko3EJp9EeOK6dzbL4VoTA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Eko3EZp9EeOK6dzbL4VoTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Eko3EJp9EeOK6dzbL4VoTA" value="*"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs8GoZp8EeOK6dzbL4VoTA" name="code" visibility="private" aggregation="composite">
@@ -395,20 +395,20 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs8tsZp8EeOK6dzbL4VoTA" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FGltkJp9EeOK6dzbL4VoTA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FGmUoJp9EeOK6dzbL4VoTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FGltkJp9EeOK6dzbL4VoTA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs8Gopp8EeOK6dzbL4VoTA" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FmjnEJp9EeOK6dzbL4VoTA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FmkOIJp9EeOK6dzbL4VoTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FmjnEJp9EeOK6dzbL4VoTA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs9UwJp8EeOK6dzbL4VoTA" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GNqDUJp9EeOK6dzbL4VoTA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GNqDUZp9EeOK6dzbL4VoTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GNqDUJp9EeOK6dzbL4VoTA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
@@ -448,17 +448,17 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
       <body>This template represents acquired or surgical wounds commonly found in the long term care population. It is not intended to encompass all wound types. The template includes the general type of wound (e.g., pressure ulcers, surgical incisions, deep tissue injury wounds) and may include wound measurements and wound characteristics.</body>
     </ownedComment>
     <generalization xmi:id="_09uFMZp_EeOK6dzbL4VoTA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
     </generalization>
     <ownedAttribute xmi:id="_D3928JqAEeOK6dzbL4VoTA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_l7Rc4JqDEeOK6dzbL4VoTA" value="OBS"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_D3928pqAEeOK6dzbL4VoTA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_n6MnsJqDEeOK6dzbL4VoTA" value="EVN"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_D3928ZqAEeOK6dzbL4VoTA" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -466,35 +466,35 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     </ownedAttribute>
     <ownedAttribute xmi:id="_D3_FEJqAEeOK6dzbL4VoTA" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XDWmYJqDEeOK6dzbL4VoTA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDWmYZqDEeOK6dzbL4VoTA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XDWmYJqDEeOK6dzbL4VoTA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_D3-eAJqAEeOK6dzbL4VoTA" name="targetSiteCode" visibility="private" type="_g_tdoJqKEeOK6dzbL4VoTA" aggregation="composite">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YhyTQJqDEeOK6dzbL4VoTA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YhyTQZqDEeOK6dzbL4VoTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YhyTQJqDEeOK6dzbL4VoTA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_b7VP0K75EeORf5eJaKt1KQ" name="authorParticipation" association="_b7XsEK75EeORf5eJaKt1KQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b7Wd8K75EeORf5eJaKt1KQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b7V24K75EeORf5eJaKt1KQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b7Wd8K75EeORf5eJaKt1KQ" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_YQpYkJqGEeOK6dzbL4VoTA" name="woundMeasurementObservation" type="_94MpsJp7EeOK6dzbL4VoTA" association="_YQqmsJqGEeOK6dzbL4VoTA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQp_oZqGEeOK6dzbL4VoTA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YQp_oJqGEeOK6dzbL4VoTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQp_oZqGEeOK6dzbL4VoTA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IJ468JqHEeOK6dzbL4VoTA" name="woundCharacteristics" association="_IJ6JEJqHEeOK6dzbL4VoTA">
       <type xmi:type="uml:Class" href="consol-problems.uml#_D6Lm0JpnEeOK6dzbL4VoTA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IJ5iAZqHEeOK6dzbL4VoTA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IJ5iAJqHEeOK6dzbL4VoTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IJ5iAZqHEeOK6dzbL4VoTA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_mSMLQJqHEeOK6dzbL4VoTA" name="highestPressureUlcerStage" type="_4YgVsOZbEeGINOJ_SD9_dA" association="_mSNZYJqHEeOK6dzbL4VoTA">
       <ownedComment xmi:id="_JQuVQJqJEeOK6dzbL4VoTA">
         <body>When the wound observed is a type of pressure ulcer, then this template SHOULD contain an entry for the Highest Pressure Ulcer Stage.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ou-90JqHEeOK6dzbL4VoTA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ou-90ZqHEeOK6dzbL4VoTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ou-90JqHEeOK6dzbL4VoTA" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_g_tdoJqKEeOK6dzbL4VoTA" name="CD">
       <ownedComment xmi:id="_kSKF0JqKEeOK6dzbL4VoTA">
@@ -507,8 +507,8 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
         <ownedComment xmi:id="_v6FLMJqKEeOK6dzbL4VoTA">
           <body>If targetSite/qualifierCode name/value pairs are used, care must be taken to avoid conflict with the SNOMED-CT body structure code used in observation/value.  SNOMED-CT body structure codes are often pre-coordinated with laterality.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hnEYkZqKEeOK6dzbL4VoTA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hnEYkpqKEeOK6dzbL4VoTA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hnEYkZqKEeOK6dzbL4VoTA" value="*"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__CseMD56Ed6cla2oXsPtlA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_88OL0JqKEeOK6dzbL4VoTA" name="CR">
@@ -517,13 +517,13 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
         </generalization>
         <ownedAttribute xmi:id="_-J9KQJqKEeOK6dzbL4VoTA" name="name" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_hSvR4D55Ed6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DjMf0JqLEeOK6dzbL4VoTA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DjNG4JqLEeOK6dzbL4VoTA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DjMf0JqLEeOK6dzbL4VoTA" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1BffAD56Ed6cla2oXsPtlA"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_-J9KQ5qKEeOK6dzbL4VoTA" name="value" visibility="private" type="_mGYxoJqMEeOK6dzbL4VoTA" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LPFNcJqLEeOK6dzbL4VoTA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LPF0gJqLEeOK6dzbL4VoTA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LPFNcJqLEeOK6dzbL4VoTA" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1Vdj4D56Ed6cla2oXsPtlA"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_mGYxoJqMEeOK6dzbL4VoTA" name="CD">
@@ -538,8 +538,8 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
           </generalization>
           <ownedAttribute xmi:id="_p-GqEJqMEeOK6dzbL4VoTA" name="code" visibility="private">
             <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsDigJqMEeOK6dzbL4VoTA" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tsEJkJqMEeOK6dzbL4VoTA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsDigJqMEeOK6dzbL4VoTA" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
           </ownedAttribute>
         </nestedClassifier>
@@ -627,25 +627,25 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     </generalization>
     <ownedAttribute xmi:id="_HoxBEJ2LEeORR8_YW0n_jQ" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_emycAJ2LEeORR8_YW0n_jQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_emycAZ2LEeORR8_YW0n_jQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_emycAJ2LEeORR8_YW0n_jQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_HoxoIJ2LEeORR8_YW0n_jQ" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e7PCAJ2LEeORR8_YW0n_jQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e7PpEJ2LEeORR8_YW0n_jQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e7PCAJ2LEeORR8_YW0n_jQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_HoxBE52LEeORR8_YW0n_jQ" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fQOakJ2LEeORR8_YW0n_jQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fQPBoJ2LEeORR8_YW0n_jQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fQOakJ2LEeORR8_YW0n_jQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_EOIQwJ2MEeORR8_YW0n_jQ" name="woundObservation" type="_09uFMJp_EeOK6dzbL4VoTA" association="_EOJe4J2MEeORR8_YW0n_jQ">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOIQwp2MEeORR8_YW0n_jQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EOIQwZ2MEeORR8_YW0n_jQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOIQwp2MEeORR8_YW0n_jQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_Mci5IJ2LEeORR8_YW0n_jQ" base_Class="_CDn9gJ2LEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.62">
@@ -679,7 +679,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   <CDA:AssociationValidation xmi:id="_cpIJ8K75EeORf5eJaKt1KQ" severity="WARNING" base_Association="_b7XsEK75EeORf5eJaKt1KQ">
     <ruleId>CONF:31542</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_-nZiYP4uEeObaveuCI77uA" name="PhysicalExamSection2" clientDependency="_Ug1T0P4vEeObaveuCI77uA">
+  <uml:Class xmi:id="_-nZiYP4uEeObaveuCI77uA" clientDependency="_Ug1T0P4vEeObaveuCI77uA" name="PhysicalExamSection2">
     <ownedComment xmi:id="_ITYfgP4vEeObaveuCI77uA">
       <body>The section includes direct observations made by a clinician. The examination may include the use of simple instruments and may also describe simple maneuvers performed directly on the patient's body. &#xD;
 It also includes observations made by the examining clinician using only inspection, palpation, auscultation, and percussion. It does not include laboratory or imaging findings. &#xD;
@@ -687,28 +687,28 @@ The exam may be limited to pertinent body systems based on the patient's chief c
 The Physical Exam section may contain multiple nested subsections; Vital Signs, General Status, and those listed in the Additional Physical Examination Subsections appendix.</body>
     </ownedComment>
     <generalization xmi:id="_-nb-oP4uEeObaveuCI77uA" general="_2Pxt0hSVEeGGzu7fmW9pXw"/>
-    <substitution xmi:id="_Ug1T0P4vEeObaveuCI77uA" name="PhysicalExamSection" supplier="_2Pxt0hSVEeGGzu7fmW9pXw" client="_-nZiYP4uEeObaveuCI77uA" contract="_2Pxt0hSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_Ug1T0P4vEeObaveuCI77uA" name="PhysicalExamSection" client="_-nZiYP4uEeObaveuCI77uA" supplier="_2Pxt0hSVEeGGzu7fmW9pXw" contract="_2Pxt0hSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_buWDYP4vEeObaveuCI77uA" name="code" visibility="private" redefinedProperty="_2Pxt4hSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_1IPq4P4vEeObaveuCI77uA" name="woundObservation" type="_09uFMJp_EeOK6dzbL4VoTA" association="_1ISHIP4vEeObaveuCI77uA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1IPq4v4vEeObaveuCI77uA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1IPq4f4vEeObaveuCI77uA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1IPq4v4vEeObaveuCI77uA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FUsrYP4wEeObaveuCI77uA" name="pressureUlcerObservation" redefinedProperty="_sWz4oOcPEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="../consol.uml#_9rQowOZbEeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FUsrYf4wEeObaveuCI77uA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FUsrYv4wEeObaveuCI77uA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FUsrYf4wEeObaveuCI77uA" value="*"/>
       <association href="../consol.uml#_FUvHoP4wEeObaveuCI77uA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_SEKAkP4wEeObaveuCI77uA" name="numberOfPressureUlcersObservation" type="_7c4ssOZbEeGINOJ_SD9_dA" redefinedProperty="_t1utsOcPEeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SEKAkf4wEeObaveuCI77uA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SEKAkv4wEeObaveuCI77uA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SEKAkf4wEeObaveuCI77uA" value="*"/>
       <association href="../consol.uml#_SEND4P4wEeObaveuCI77uA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_SEGWMP4wEeObaveuCI77uA" name="highestPressureUlcerStage" type="_4YgVsOZbEeGINOJ_SD9_dA" redefinedProperty="_u7gC8OcPEeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SEGWMf4wEeObaveuCI77uA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SEGWMv4wEeObaveuCI77uA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SEGWMf4wEeObaveuCI77uA" value="*"/>
       <association href="../consol.uml#_SEIycP4wEeObaveuCI77uA"/>
     </ownedAttribute>
   </uml:Class>
