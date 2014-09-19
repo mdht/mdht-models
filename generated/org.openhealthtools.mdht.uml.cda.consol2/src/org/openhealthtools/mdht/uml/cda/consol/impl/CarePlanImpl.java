@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.GoalsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsOutcomesSection;
 
+import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CarePlanOperations;
 
 /**
@@ -52,6 +53,16 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.CARE_PLAN;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CarePlanOperations.validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(this, diagnostics, context);
 	}
 
 	/**
@@ -193,6 +204,15 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	public boolean validateCarePlanHealthStatusEvaluationsOutcomesSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CarePlanOperations.validateCarePlanHealthStatusEvaluationsOutcomesSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCarePlanInterventionsSection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CarePlanOperations.validateCarePlanInterventionsSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -657,6 +677,15 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	@Override
 	public HealthStatusEvaluationsOutcomesSection getHealthStatusEvaluationsOutcomesSection() {
 		return CarePlanOperations.getHealthStatusEvaluationsOutcomesSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InterventionsSection2 getInterventionsSection2() {
+		return CarePlanOperations.getInterventionsSection2(this);
 	}
 
 	/**

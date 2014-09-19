@@ -20,9 +20,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer;
-import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
-import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
-
+import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
+import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicalEquipmentOrganizerOperations;
 import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
@@ -146,10 +145,9 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
+	public boolean validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(
 			this, diagnostics, context);
 	}
 
@@ -158,10 +156,9 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicalEquipmentOrganizerProcedureActivityProcedure(DiagnosticChain diagnostics,
+	public boolean validateMedicalEquipmentOrganizerProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerProcedureActivityProcedure(
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerProcedureActivityProcedure2(
 			this, diagnostics, context);
 	}
 
@@ -170,9 +167,8 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities() {
-		return MedicalEquipmentOrganizerOperations.getNonMedicinalSupplyActivities(this);
+	public EList<NonMedicinalSupplyActivity2> getNonMedicinalSupplyActivity2s() {
+		return MedicalEquipmentOrganizerOperations.getNonMedicinalSupplyActivity2s(this);
 	}
 
 	/**
@@ -180,9 +176,8 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProcedureActivityProcedure> getProcedureActivityProcedures() {
-		return MedicalEquipmentOrganizerOperations.getProcedureActivityProcedures(this);
+	public EList<ProcedureActivityProcedure2> getProcedureActivityProcedure2s() {
+		return MedicalEquipmentOrganizerOperations.getProcedureActivityProcedure2s(this);
 	}
 
 	/**

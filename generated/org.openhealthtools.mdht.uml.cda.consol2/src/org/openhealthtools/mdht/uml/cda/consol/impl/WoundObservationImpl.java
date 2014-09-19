@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.WoundObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Wound Observation</b></em>'.
@@ -37,7 +35,7 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  *
  * @generated
  */
-public class WoundObservationImpl extends ObservationImpl implements WoundObservation {
+public class WoundObservationImpl extends ProblemObservation2Impl implements WoundObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -55,16 +53,6 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.WOUND_OBSERVATION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateWoundObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WoundObservationOperations.validateWoundObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -268,6 +256,16 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	@Override
 	public HighestPressureUlcerStage getHighestPressureUlcerStage() {
 		return WoundObservationOperations.getHighestPressureUlcerStage(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return WoundObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**

@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation;
+import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
@@ -143,10 +143,9 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(DiagnosticChain diagnostics,
+	public boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(
 			this, diagnostics, context);
 	}
 
@@ -155,9 +154,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<AdvanceDirectiveObservation> getAdvanceDirectiveObservations() {
-		return AdvanceDirectiveOrganizerOperations.getAdvanceDirectiveObservations(this);
+	public EList<AdvanceDirectiveObservation2> getAdvanceDirectiveObservation2s() {
+		return AdvanceDirectiveOrganizerOperations.getAdvanceDirectiveObservation2s(this);
 	}
 
 	/**

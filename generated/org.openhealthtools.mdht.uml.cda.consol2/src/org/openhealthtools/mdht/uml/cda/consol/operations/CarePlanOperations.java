@@ -31,6 +31,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.GoalsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsOutcomesSection;
+import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -41,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Does Not Have Plan Of Treatment Section V2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Code</em>}</li>
@@ -55,6 +57,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanHealthConcernsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Health Concerns Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanGoalsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Goals Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanHealthStatusEvaluationsOutcomesSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Health Status Evaluations Outcomes Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInterventionsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Interventions Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan II Root</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanAuthenticatorAssignedEntityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Authenticator Assigned Entity Id</em>}</li>
@@ -97,6 +100,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getHealthConcernsSection() <em>Get Health Concerns Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getGoalsSection() <em>Get Goals Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getHealthStatusEvaluationsOutcomesSection() <em>Get Health Status Evaluations Outcomes Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getInterventionsSection2() <em>Get Interventions Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -111,6 +115,66 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	 */
 	protected CarePlanOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Does Not Have Plan Of Treatment Section V2</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->exists(s : cda::Section | not s.oclIsTypeOf(consol::PlanOfTreatmentSection2))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Does Not Have Plan Of Treatment Section V2</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param carePlan The receiving '<em><b>Care Plan</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(CarePlan carePlan,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CARE_PLAN);
+			try {
+				VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			carePlan)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.CARE_PLAN__CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2,
+					ConsolPlugin.INSTANCE.getString("CarePlanDoesNotHavePlanOfTreatmentSectionV2"),
+					new Object[] { carePlan }));
+			}
+
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -928,6 +992,64 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					ConsolValidator.CARE_PLAN__CARE_PLAN_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION,
 					ConsolPlugin.INSTANCE.getString("CarePlanHealthStatusEvaluationsOutcomesSection"),
 					new Object[] { carePlan }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCarePlanInterventionsSection2(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Interventions Section2</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCarePlanInterventionsSection2(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CARE_PLAN_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InterventionsSection2))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCarePlanInterventionsSection2(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Interventions Section2</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCarePlanInterventionsSection2(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_CARE_PLAN_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param carePlan The receiving '<em><b>Care Plan</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateCarePlanInterventionsSection2(CarePlan carePlan, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_CARE_PLAN_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CARE_PLAN);
+			try {
+				VALIDATE_CARE_PLAN_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARE_PLAN_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_CARE_PLAN_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			carePlan)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.CARE_PLAN__CARE_PLAN_INTERVENTIONS_SECTION2,
+					ConsolPlugin.INSTANCE.getString("CarePlanInterventionsSection2"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -3535,7 +3657,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 		if (GET_HEALTH_CONCERNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(363));
+				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(365));
 			try {
 				GET_HEALTH_CONCERNS_SECTION__EOCL_QRY = helper.createQuery(GET_HEALTH_CONCERNS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3576,7 +3698,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 		if (GET_GOALS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(364));
+				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(366));
 			try {
 				GET_GOALS_SECTION__EOCL_QRY = helper.createQuery(GET_GOALS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3617,7 +3739,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 		if (GET_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(365));
+				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(367));
 			try {
 				GET_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__EOCL_QRY = helper.createQuery(GET_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3626,6 +3748,47 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__EOCL_QRY);
 		return (HealthStatusEvaluationsOutcomesSection) query.evaluate(carePlan);
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getInterventionsSection2(CarePlan) <em>Get Interventions Section2</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInterventionsSection2(CarePlan)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_INTERVENTIONS_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InterventionsSection2))->asSequence()->any(true).oclAsType(consol::InterventionsSection2)";
+
+	/**
+	 * The cached OCL query for the '{@link #getInterventionsSection2(CarePlan) <em>Get Interventions Section2</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInterventionsSection2(CarePlan)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_INTERVENTIONS_SECTION2__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static InterventionsSection2 getInterventionsSection2(CarePlan carePlan) {
+		if (GET_INTERVENTIONS_SECTION2__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(368));
+			try {
+				GET_INTERVENTIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_INTERVENTIONS_SECTION2__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_INTERVENTIONS_SECTION2__EOCL_QRY);
+		return (InterventionsSection2) query.evaluate(carePlan);
 	}
 
 	/**

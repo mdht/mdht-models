@@ -24,8 +24,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActivityTemplateId MedicationActivity2InstructionsInversionInd MedicationActivity2SubstanceAdministeredActInversionInd MedicationActivity2EffectiveTimeIVLTSorTS MedicationActivityStatusCode MedicationActivityStatusCodeP MedicationActivityAdministrationUnitCode MedicationActivityConsumable MedicationActivity2MedicationActivityConsumableMedicationInformation2' templateId.root='2.16.840.1.113883.10.20.22.4.16.2' constraints.validation.warning='MedicationActivity2DoseQuantityorrateQuantity MedicationActivity2EffectiveTimePIVLTS MedicationActivityDoseQuantity MedicationActivity2AuthorParticipation' constraints.validation.info='MedicationActivity2EffectiveTimeIVLTSHigh MedicationActivityRepeatNumber MedicationActivityCode MedicationActivityAdministrationUnitCodeP MedicationActivity2DrugMonitoringAct MedicationActivityInstruction2 MedicationActivity2SubstanceAdministeredAct MedicationActivityIndication2 MedicationActivityMedicationSupplyOrder2 MedicationActivityMedicationDispense2 MedicationActivityReactionObservation2' constraints.validation.dependOn.MedicationActivityStatusCode='MedicationActivityStatusCodeP' administrationUnitCode.codeSystemName='' constraints.validation.dependOn.MedicationActivityAdministrationUnitCode='MedicationActivityAdministrationUnitCodeP' constraints.validation.query='MedicationActivity2MedicationActivityConsumableMedicationInformation2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActivityTemplateId MedicationActivity2InstructionsInversionInd MedicationActivity2SubstanceAdministeredActInversionInd MedicationActivity2EffectiveTimeIVLTSorTS MedicationActivityStatusCode MedicationActivityStatusCodeP MedicationActivityAdministrationUnitCode MedicationActivityConsumable MedicationActivity2MedicationActivityPreconditionTypeCode MedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2 MedicationActivity2MedicationActivityConsumableMedicationInformation2' templateId.root='2.16.840.1.113883.10.20.22.4.16.2' constraints.validation.warning='MedicationActivity2DoseQuantityorrateQuantity MedicationActivity2EffectiveTimePIVLTS MedicationActivityDoseQuantity MedicationActivity2AuthorParticipation' constraints.validation.info='MedicationActivity2EffectiveTimeIVLTSHigh MedicationActivityRepeatNumber MedicationActivityCode MedicationActivityAdministrationUnitCodeP MedicationActivity2DrugMonitoringAct MedicationActivityInstruction2 MedicationActivity2SubstanceAdministeredAct MedicationActivityIndication2 MedicationActivityMedicationSupplyOrder2 MedicationActivityMedicationDispense2 MedicationActivityReactionObservation2 MedicationActivityPrecondition' constraints.validation.dependOn.MedicationActivityStatusCode='MedicationActivityStatusCodeP' administrationUnitCode.codeSystemName='' constraints.validation.dependOn.MedicationActivityAdministrationUnitCode='MedicationActivityAdministrationUnitCodeP' constraints.validation.query='MedicationActivity2MedicationActivityPreconditionTypeCode MedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2 MedicationActivity2MedicationActivityConsumableMedicationInformation2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationActivity2Consumable constraints.validation.error='MedicationActivityConsumableMedicationInformation2'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationActivity2Precondition typeCode='PRCN' constraints.validation.error='MedicationActivityPreconditionTypeCode MedicationActivityPreconditionPreconditionForSubstanceAdministration2'"
  * @generated
  */
 public interface MedicationActivity2 extends MedicationActivity {
@@ -222,6 +223,32 @@ public interface MedicationActivity2 extends MedicationActivity {
 	 * @generated
 	 */
 	boolean validateMedicationActivityReactionObservation2(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->excluding(null)->reject(typeCode=vocab::ActRelationshipType::PRCN)'"
+	 * @generated
+	 */
+	boolean validateMedicationActivity2MedicationActivityPreconditionTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->excluding(null)->reject(criterion->one(criterion : cda::Criterion | not criterion.oclIsUndefined() and criterion.oclIsKindOf(consol::PreconditionForSubstanceAdministration2)))'"
+	 * @generated
+	 */
+	boolean validateMedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

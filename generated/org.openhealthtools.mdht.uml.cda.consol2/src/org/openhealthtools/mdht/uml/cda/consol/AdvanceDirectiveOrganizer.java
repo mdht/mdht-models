@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveOrganizerTemplateId AdvanceDirectiveOrganizerClassCode AdvanceDirectiveOrganizerMoodCode AdvanceDirectiveOrganizerId AdvanceDirectiveOrganizerCode AdvanceDirectiveOrganizerCodeP AdvanceDirectiveOrganizerStatusCode AdvanceDirectiveOrganizerStatusCodeP AdvanceDirectiveOrganizerAdvanceDirectiveObservation' templateId.root='2.16.840.1.113883.10.20.22.4.108' classCode='CLUSTER' moodCode='EVN' code.code='310301000' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='advance healthcare directive status' statusCode.code='completed' constraints.validation.dependOn.AdvanceDirectiveOrganizerStatusCode='AdvanceDirectiveOrganizerStatusCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveOrganizerTemplateId AdvanceDirectiveOrganizerClassCode AdvanceDirectiveOrganizerMoodCode AdvanceDirectiveOrganizerId AdvanceDirectiveOrganizerCode AdvanceDirectiveOrganizerCodeP AdvanceDirectiveOrganizerStatusCode AdvanceDirectiveOrganizerStatusCodeP AdvanceDirectiveOrganizerAdvanceDirectiveObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.108' classCode='CLUSTER' moodCode='EVN' code.code='310301000' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='advance healthcare directive status' statusCode.code='completed' constraints.validation.dependOn.AdvanceDirectiveOrganizerStatusCode='AdvanceDirectiveOrganizerStatusCodeP'"
  * @generated
  */
 public interface AdvanceDirectiveOrganizer extends Organizer {
@@ -133,20 +133,20 @@ public interface AdvanceDirectiveOrganizer extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::AdvanceDirectiveObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::AdvanceDirectiveObservation2))'"
 	 * @generated
 	 */
-	boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(DiagnosticChain diagnostics,
+	boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation)).oclAsType(consol::AdvanceDirectiveObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation2)).oclAsType(consol::AdvanceDirectiveObservation2)'"
 	 * @generated
 	 */
-	EList<AdvanceDirectiveObservation> getAdvanceDirectiveObservations();
+	EList<AdvanceDirectiveObservation2> getAdvanceDirectiveObservation2s();
 
 	/**
 	 * <!-- begin-user-doc -->
