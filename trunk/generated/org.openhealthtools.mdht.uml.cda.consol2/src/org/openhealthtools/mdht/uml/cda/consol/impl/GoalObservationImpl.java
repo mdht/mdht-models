@@ -25,9 +25,14 @@ import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 
+import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
+import org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2;
+import org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2;
+import org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2;
+import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2;
+import org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2;
 import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.GoalObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +43,7 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  *
  * @generated
  */
-public class GoalObservationImpl extends ObservationImpl implements GoalObservation {
+public class GoalObservationImpl extends PlannedObservation2Impl implements GoalObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -56,16 +61,6 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.GOAL_OBSERVATION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateGoalObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GoalObservationOperations.validateGoalObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -176,9 +171,63 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public PatientPriorityPreference getPatientPriorityPreference() {
-		return GoalObservationOperations.getPatientPriorityPreference(this);
+	public boolean validateGoalObservationPlannedEncounter2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalObservationOperations.validateGoalObservationPlannedEncounter2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservationPlannedObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalObservationOperations.validateGoalObservationPlannedObservation2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservationPlannedProcedure2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalObservationOperations.validateGoalObservationPlannedProcedure2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservationPlannedMedicationActivity2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return GoalObservationOperations.validateGoalObservationPlannedMedicationActivity2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservationPlannedSupply2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalObservationOperations.validateGoalObservationPlannedSupply2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservationPlannedAct2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalObservationOperations.validateGoalObservationPlannedAct2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientPriorityPreference getConsolPatientPriorityPreference() {
+		return GoalObservationOperations.getConsolPatientPriorityPreference(this);
 	}
 
 	/**
@@ -216,9 +265,8 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
-		return GoalObservationOperations.getProviderPriorityPreferences(this);
+	public EList<ProviderPriorityPreference> getConsolProviderPriorityPreferences() {
+		return GoalObservationOperations.getConsolProviderPriorityPreferences(this);
 	}
 
 	/**
@@ -229,6 +277,71 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	@Override
 	public EList<ExternalDocumentReference> getExternalDocumentReferences() {
 		return GoalObservationOperations.getExternalDocumentReferences(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PlannedEncounter2> getPlannedEncounter2s() {
+		return GoalObservationOperations.getPlannedEncounter2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PlannedObservation2> getPlannedObservation2s() {
+		return GoalObservationOperations.getPlannedObservation2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PlannedProcedure2> getPlannedProcedure2s() {
+		return GoalObservationOperations.getPlannedProcedure2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PlannedMedicationActivity2> getPlannedMedicationActivity2s() {
+		return GoalObservationOperations.getPlannedMedicationActivity2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PlannedSupply2> getPlannedSupply2s() {
+		return GoalObservationOperations.getPlannedSupply2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PlannedAct2> getPlannedAct2s() {
+		return GoalObservationOperations.getPlannedAct2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareActivityObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return GoalObservationOperations.validatePlanOfCareActivityObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**

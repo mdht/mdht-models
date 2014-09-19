@@ -166,6 +166,28 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationActivity2ImmunizationActivityPreconditionTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2ImmunizationActivityPreconditionTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<SubstanceAdministeredAct> getSubstanceAdministeredActs() {
 		return ImmunizationActivity2Operations.getSubstanceAdministeredActs(this);
@@ -323,6 +345,16 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	@Override
 	public boolean validateImmunizationActivityConsumable(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityConsumable(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateImmunizationActivityPrecondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivityPrecondition(this, diagnostics, context);
 	}
 
 	/**

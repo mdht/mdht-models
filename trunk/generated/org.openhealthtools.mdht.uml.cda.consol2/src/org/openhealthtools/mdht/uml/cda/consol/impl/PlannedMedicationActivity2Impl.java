@@ -295,6 +295,17 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedMedicationActivity2Precondition(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Precondition(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedMedicationActivity2IVLPQdoseQuantityUnit(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -323,6 +334,28 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	public boolean validatePlannedMedicationActivity2ConsumableMedicationInformation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ConsumableMedicationInformation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedMedicationActivity2PreconditionTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PreconditionTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2(
 			this, diagnostics, context);
 	}
 

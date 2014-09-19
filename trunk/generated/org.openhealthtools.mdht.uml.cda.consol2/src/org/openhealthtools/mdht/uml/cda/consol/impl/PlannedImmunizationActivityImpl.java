@@ -19,6 +19,8 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.Indication2;
+import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity;
 
@@ -268,9 +270,86 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedImmunizationActivityIndication2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityIndication2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityInstruction2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityInstruction2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityPrecondition(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPrecondition(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityConsumable(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityConsumable(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedImmunizationActivityIVLPQUnit(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityIVLPQUnit(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityConsumableImmunizationMedicationInformation2(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityConsumableImmunizationMedicationInformation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityPreconditionTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPreconditionTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(
 			this, diagnostics, context);
 	}
 
@@ -292,6 +371,24 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	@Override
 	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
 		return PlannedImmunizationActivityOperations.getProviderPriorityPreferences(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Indication2> getIndication2s() {
+		return PlannedImmunizationActivityOperations.getIndication2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Instruction2> getInstruction2s() {
+		return PlannedImmunizationActivityOperations.getInstruction2s(this);
 	}
 
 	/**

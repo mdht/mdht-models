@@ -244,6 +244,28 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationActivity2MedicationActivityPreconditionTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2MedicationActivityPreconditionTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateMedicationActivity2MedicationActivityConsumableMedicationInformation2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -391,6 +413,16 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityConsumable(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivity2Operations.validateMedicationActivityConsumable(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationActivityPrecondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivityPrecondition(this, diagnostics, context);
 	}
 
 	/**

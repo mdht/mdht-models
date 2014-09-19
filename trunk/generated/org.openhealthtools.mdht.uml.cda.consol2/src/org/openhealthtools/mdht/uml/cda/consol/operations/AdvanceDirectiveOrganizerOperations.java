@@ -24,7 +24,7 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation;
+import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
@@ -49,8 +49,8 @@ import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#getAdvanceDirectiveObservations() <em>Get Advance Directive Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#getAdvanceDirectiveObservation2s() <em>Get Advance Directive Observation2s</em>}</li>
  * </ul>
  * </p>
  *
@@ -568,25 +568,25 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation2</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::AdvanceDirectiveObservation))";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::AdvanceDirectiveObservation2))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation2</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -599,28 +599,28 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 */
 
-	public static boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(
+	public static boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			advanceDirectiveOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveObservation"),
+					ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2,
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveObservation2"),
 					new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -630,24 +630,24 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer) <em>Get Advance Directive Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getAdvanceDirectiveObservation2s(AdvanceDirectiveOrganizer) <em>Get Advance Directive Observation2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer)
+	 * @see #getAdvanceDirectiveObservation2s(AdvanceDirectiveOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation)).oclAsType(consol::AdvanceDirectiveObservation)";
+	protected static final String GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation2)).oclAsType(consol::AdvanceDirectiveObservation2)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer) <em>Get Advance Directive Observations</em>}' query operation.
+	 * The cached OCL query for the '{@link #getAdvanceDirectiveObservation2s(AdvanceDirectiveOrganizer) <em>Get Advance Directive Observation2s</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer)
+	 * @see #getAdvanceDirectiveObservation2s(AdvanceDirectiveOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -655,23 +655,23 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 */
 
-	public static EList<AdvanceDirectiveObservation> getAdvanceDirectiveObservations(
+	public static EList<AdvanceDirectiveObservation2> getAdvanceDirectiveObservation2s(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer) {
-		if (GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY == null) {
+		if (GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER,
 				ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER.getEAllOperations().get(61));
 			try {
-				GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_EXP);
+				GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<AdvanceDirectiveObservation> result = (Collection<AdvanceDirectiveObservation>) query.evaluate(advanceDirectiveOrganizer);
-		return new BasicEList.UnmodifiableEList<AdvanceDirectiveObservation>(result.size(), result.toArray());
+		Collection<AdvanceDirectiveObservation2> result = (Collection<AdvanceDirectiveObservation2>) query.evaluate(advanceDirectiveOrganizer);
+		return new BasicEList.UnmodifiableEList<AdvanceDirectiveObservation2>(result.size(), result.toArray());
 	}
 
 } // AdvanceDirectiveOrganizerOperations

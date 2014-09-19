@@ -22,6 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection;
 
+import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthConcernsSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
@@ -121,9 +122,29 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHealthConcernsSectionHealthStatusObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthStatusObservation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<HealthConcernAct> getHealthConcernActs() {
 		return HealthConcernsSectionOperations.getHealthConcernActs(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HealthStatusObservation2 getHealthStatusObservation2() {
+		return HealthConcernsSectionOperations.getHealthStatusObservation2(this);
 	}
 
 	/**

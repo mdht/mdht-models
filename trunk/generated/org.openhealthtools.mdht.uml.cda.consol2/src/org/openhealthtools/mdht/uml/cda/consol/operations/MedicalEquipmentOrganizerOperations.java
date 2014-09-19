@@ -27,9 +27,8 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer;
-import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
-import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
-
+import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
+import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
@@ -50,10 +49,10 @@ import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Non Medicinal Supply Activity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerProcedureActivityProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Procedure Activity Procedure</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#getNonMedicinalSupplyActivities() <em>Get Non Medicinal Supply Activities</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#getProcedureActivityProcedures() <em>Get Procedure Activity Procedures</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Non Medicinal Supply Activity2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerProcedureActivityProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Procedure Activity Procedure2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#getNonMedicinalSupplyActivity2s() <em>Get Non Medicinal Supply Activity2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#getProcedureActivityProcedure2s() <em>Get Procedure Activity Procedure2s</em>}</li>
  * </ul>
  * </p>
  *
@@ -571,25 +570,25 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Non Medicinal Supply Activity</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Non Medicinal Supply Activity2</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.supply.oclIsUndefined() and component.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity))";
+	protected static final String VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.supply.oclIsUndefined() and component.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Non Medicinal Supply Activity</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Non Medicinal Supply Activity2</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -602,28 +601,28 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 */
 
-	public static boolean validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(
+	public static boolean validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerNonMedicinalSupplyActivity"),
+					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2,
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerNonMedicinalSupplyActivity2"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -633,25 +632,25 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentOrganizerProcedureActivityProcedure(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Procedure Activity Procedure</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentOrganizerProcedureActivityProcedure2(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Procedure Activity Procedure2</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicalEquipmentOrganizerProcedureActivityProcedure(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicalEquipmentOrganizerProcedureActivityProcedure2(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.procedure.oclIsUndefined() and component.procedure.oclIsKindOf(consol::ProcedureActivityProcedure))";
+	protected static final String VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.procedure.oclIsUndefined() and component.procedure.oclIsKindOf(consol::ProcedureActivityProcedure2))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentOrganizerProcedureActivityProcedure(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Procedure Activity Procedure</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentOrganizerProcedureActivityProcedure2(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Procedure Activity Procedure2</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicalEquipmentOrganizerProcedureActivityProcedure(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicalEquipmentOrganizerProcedureActivityProcedure2(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -664,28 +663,28 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 */
 
-	public static boolean validateMedicalEquipmentOrganizerProcedureActivityProcedure(
+	public static boolean validateMedicalEquipmentOrganizerProcedureActivityProcedure2(
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerProcedureActivityProcedure"),
+					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2,
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerProcedureActivityProcedure2"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -695,24 +694,24 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getNonMedicinalSupplyActivities(MedicalEquipmentOrganizer) <em>Get Non Medicinal Supply Activities</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getNonMedicinalSupplyActivity2s(MedicalEquipmentOrganizer) <em>Get Non Medicinal Supply Activity2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNonMedicinalSupplyActivities(MedicalEquipmentOrganizer)
+	 * @see #getNonMedicinalSupplyActivity2s(MedicalEquipmentOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NON_MEDICINAL_SUPPLY_ACTIVITIES__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity)).oclAsType(consol::NonMedicinalSupplyActivity)";
+	protected static final String GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2)).oclAsType(consol::NonMedicinalSupplyActivity2)";
 
 	/**
-	 * The cached OCL query for the '{@link #getNonMedicinalSupplyActivities(MedicalEquipmentOrganizer) <em>Get Non Medicinal Supply Activities</em>}' query operation.
+	 * The cached OCL query for the '{@link #getNonMedicinalSupplyActivity2s(MedicalEquipmentOrganizer) <em>Get Non Medicinal Supply Activity2s</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNonMedicinalSupplyActivities(MedicalEquipmentOrganizer)
+	 * @see #getNonMedicinalSupplyActivity2s(MedicalEquipmentOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_NON_MEDICINAL_SUPPLY_ACTIVITIES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -720,44 +719,44 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 */
 
-	public static EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities(
+	public static EList<NonMedicinalSupplyActivity2> getNonMedicinalSupplyActivity2s(
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer) {
-		if (GET_NON_MEDICINAL_SUPPLY_ACTIVITIES__EOCL_QRY == null) {
+		if (GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER,
 				ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER.getEAllOperations().get(62));
 			try {
-				GET_NON_MEDICINAL_SUPPLY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_NON_MEDICINAL_SUPPLY_ACTIVITIES__EOCL_EXP);
+				GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_MEDICINAL_SUPPLY_ACTIVITIES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<NonMedicinalSupplyActivity> result = (Collection<NonMedicinalSupplyActivity>) query.evaluate(medicalEquipmentOrganizer);
-		return new BasicEList.UnmodifiableEList<NonMedicinalSupplyActivity>(result.size(), result.toArray());
+		Collection<NonMedicinalSupplyActivity2> result = (Collection<NonMedicinalSupplyActivity2>) query.evaluate(medicalEquipmentOrganizer);
+		return new BasicEList.UnmodifiableEList<NonMedicinalSupplyActivity2>(result.size(), result.toArray());
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getProcedureActivityProcedures(MedicalEquipmentOrganizer) <em>Get Procedure Activity Procedures</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getProcedureActivityProcedure2s(MedicalEquipmentOrganizer) <em>Get Procedure Activity Procedure2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProcedureActivityProcedures(MedicalEquipmentOrganizer)
+	 * @see #getProcedureActivityProcedure2s(MedicalEquipmentOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure)).oclAsType(consol::ProcedureActivityProcedure)";
+	protected static final String GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure2)).oclAsType(consol::ProcedureActivityProcedure2)";
 
 	/**
-	 * The cached OCL query for the '{@link #getProcedureActivityProcedures(MedicalEquipmentOrganizer) <em>Get Procedure Activity Procedures</em>}' query operation.
+	 * The cached OCL query for the '{@link #getProcedureActivityProcedure2s(MedicalEquipmentOrganizer) <em>Get Procedure Activity Procedure2s</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProcedureActivityProcedures(MedicalEquipmentOrganizer)
+	 * @see #getProcedureActivityProcedure2s(MedicalEquipmentOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -765,23 +764,23 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 */
 
-	public static EList<ProcedureActivityProcedure> getProcedureActivityProcedures(
+	public static EList<ProcedureActivityProcedure2> getProcedureActivityProcedure2s(
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer) {
-		if (GET_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
+		if (GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER,
 				ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER.getEAllOperations().get(63));
 			try {
-				GET_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP);
+				GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProcedureActivityProcedure> result = (Collection<ProcedureActivityProcedure>) query.evaluate(medicalEquipmentOrganizer);
-		return new BasicEList.UnmodifiableEList<ProcedureActivityProcedure>(result.size(), result.toArray());
+		Collection<ProcedureActivityProcedure2> result = (Collection<ProcedureActivityProcedure2>) query.evaluate(medicalEquipmentOrganizer);
+		return new BasicEList.UnmodifiableEList<ProcedureActivityProcedure2>(result.size(), result.toArray());
 	}
 
 } // MedicalEquipmentOrganizerOperations
