@@ -17,7 +17,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation;
+import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveOrganizerOperations;
@@ -42,8 +42,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#getAdvanceDirectiveObservations() <em>Get Advance Directive Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#getAdvanceDirectiveObservation2s() <em>Get Advance Directive Observation2s</em>}</li>
  * </ul>
  * </p>
  *
@@ -341,14 +341,12 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
-	* Note: AdvanceDirectiveObservation will need to be changed to the v2 version and this test will need to be removed.
-	* Otherwise, the test code should be the same.
 	*/
 	@Test
-	public void testValidateAdvanceDirectiveOrganizerAdvanceDirectiveObservation() {
-		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerAdvanceDirectiveObservationTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
-			"validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2() {
+		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2TestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
+			"validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -359,20 +357,21 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AdvanceDirectiveOrganizer target) {
 				target.init();
-				AdvanceDirectiveObservation ado = ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation();
+				AdvanceDirectiveObservation2 ado = ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2();
 				target.addObservation(ado);
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(
+				return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(
 					(AdvanceDirectiveOrganizer) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAdvanceDirectiveOrganizerAdvanceDirectiveObservationTestCase.doValidationTest();
+		validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2TestCase.doValidationTest();
 	}
 
 	/**
@@ -380,10 +379,10 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAdvanceDirectiveObservations() {
+	public void testGetAdvanceDirectiveObservation2s() {
 
 		AdvanceDirectiveOrganizer target = objectFactory.create();
-		target.getAdvanceDirectiveObservations();
+		target.getAdvanceDirectiveObservation2s();
 
 	}
 

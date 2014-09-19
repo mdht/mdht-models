@@ -20,6 +20,7 @@ import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.Consumable;
 import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedMedicationActivity2Operations;
@@ -27,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
+import org.openhealthtools.mdht.uml.hl7.vocab.ActRelationshipType;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
@@ -57,9 +59,12 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2Indication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Indication2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2Instruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2Consumable(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Consumable</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2Precondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Precondition</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2IVLPQdoseQuantityUnit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 IVLP Qdose Quantity Unit</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2IVLPQrateQuantityUnit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 IVLP Qrate Quantity Unit</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2ConsumableMedicationInformation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Consumable Medication Information2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2PreconditionTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Precondition Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Precondition Precondition For Substance Administration2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#getIndication2s() <em>Get Indication2s</em>}</li>
@@ -791,6 +796,41 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedMedicationActivity2Precondition() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2PreconditionTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlannedMedicationActivity2Precondition",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_MEDICATION_ACTIVITY2_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedMedicationActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedMedicationActivity2 target) {
+				target.init();
+				Precondition p = CDAFactory.eINSTANCE.createPrecondition();
+				target.getPreconditions().add(p);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Precondition(
+					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedMedicationActivity2PreconditionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
 	* modified VALIDATE_PLANNED_MEDICATION_ACTIVITY2_IVLP_QDOSE_QUANTITY_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP 
 	* due to inline datatype OCL generation issue
 	*/
@@ -894,6 +934,83 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 		};
 
 		validatePlannedMedicationActivity2ConsumableMedicationInformation2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedMedicationActivity2PreconditionTypeCode() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2PreconditionTypeCodeTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlannedMedicationActivity2PreconditionTypeCode",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_MEDICATION_ACTIVITY2_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedMedicationActivity2 target) {
+				target.init();
+				Precondition p = CDAFactory.eINSTANCE.createPrecondition();
+				target.getPreconditions().add(p);
+				p.setTypeCode(ActRelationshipType.APND);
+			}
+
+			@Override
+			protected void updateToPass(PlannedMedicationActivity2 target) {
+				for (Precondition p : target.getPreconditions()) {
+					p.setTypeCode(ActRelationshipType.PRCN);
+				}
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PreconditionTypeCode(
+					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedMedicationActivity2PreconditionTypeCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2TestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_MEDICATION_ACTIVITY2_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedMedicationActivity2 target) {
+				target.init();
+				Precondition p = CDAFactory.eINSTANCE.createPrecondition();
+				target.getPreconditions().add(p);
+			}
+
+			@Override
+			protected void updateToPass(PlannedMedicationActivity2 target) {
+				for (Precondition p : target.getPreconditions()) {
+					p.setCriterion(ConsolFactory.eINSTANCE.createPreconditionForSubstanceAdministration2().init());
+				}
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2(
+					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2TestCase.doValidationTest();
 	}
 
 	/**

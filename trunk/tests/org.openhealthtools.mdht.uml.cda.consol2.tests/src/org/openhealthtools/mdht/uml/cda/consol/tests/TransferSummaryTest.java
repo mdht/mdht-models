@@ -18,7 +18,14 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
+import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
+import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection;
+import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
+import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllnessSection;
+import org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection;
+import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
+import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.TransferSummary;
 import org.openhealthtools.mdht.uml.cda.consol.operations.TransferSummaryOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
@@ -37,6 +44,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Has An Assement And Plan Section2 Or Both Assement Section And Plan Of Treatment Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Does Not Have Assement And Plan Section2 When Assement And Plan Of Treatment2 Are Present</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Code</em>}</li>
@@ -44,6 +53,32 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryParticipantSupport(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryParticipantCallbackContact(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryDocumentationOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryAdvanceDirectivesSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Advance Directives Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryAllergiesSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Allergies Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryPhysicalExamSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Physical Exam Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryEncountersSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Encounters Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryFamilyHistorySection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Family History Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryFunctionalStatusSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Functional Status Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryHospitalDischargeDiagnosis2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Hospital Discharge Diagnosis2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryImmunizationsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Immunizations Section Entries Optional2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryMedicalEquipmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Medical Equipment Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryMedicationsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Medications Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryPayersSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Payers Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryPlanOfTreatmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Plan Of Treatment Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryProblemSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Problem Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryProceduresSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Procedures Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryResultsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Results Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummarySocialHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Social History Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryVitalSignsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Vital Signs Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryMentalStatusSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Mental Status Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryGeneralStatusSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary General Status Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryReviewOfSystemsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Review Of Systems Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryNutritionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Nutrition Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryReasonForReferralSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Reason For Referral Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryHistoryOfPastIllnessSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary History Of Past Illness Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryHistoryOfPresentIllnessSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary History Of Present Illness Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryAssessmentAndPlanSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Assessment And Plan Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryAssessmentSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Assessment Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary II Root</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Associated Entity Associated Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryParticipantSupportAssociatedEntityClassCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Associated Entity Class Code P</em>}</li>
@@ -68,6 +103,32 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryDocumentationOfServiceEventEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of Service Event Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryDocumentationOfServiceEventPerformer1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of Service Event Performer1</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryDocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of Service Event</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAdvanceDirectivesSection2() <em>Get Advance Directives Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAllergiesSection2() <em>Get Allergies Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getPhysicalExamSection2() <em>Get Physical Exam Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getEncountersSection2() <em>Get Encounters Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getFamilyHistorySection() <em>Get Family History Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getFunctionalStatusSection2() <em>Get Functional Status Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getHospitalDischargeDiagnosis2() <em>Get Hospital Discharge Diagnosis2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getImmunizationsSectionEntriesOptional2() <em>Get Immunizations Section Entries Optional2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getMedicalEquipmentSection2() <em>Get Medical Equipment Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getMedicationsSection2() <em>Get Medications Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getPayersSection2() <em>Get Payers Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getPlanOfTreatmentSection2() <em>Get Plan Of Treatment Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getProblemSection2() <em>Get Problem Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getProceduresSection2() <em>Get Procedures Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getResultsSection2() <em>Get Results Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getSocialHistorySection2() <em>Get Social History Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getVitalSignsSection2() <em>Get Vital Signs Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getMentalStatusSection() <em>Get Mental Status Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getGeneralStatusSection() <em>Get General Status Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getReviewOfSystemsSection() <em>Get Review Of Systems Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getNutritionSection() <em>Get Nutrition Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getReasonForReferralSection2() <em>Get Reason For Referral Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getHistoryOfPastIllnessSection2() <em>Get History Of Past Illness Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getHistoryOfPresentIllnessSection() <em>Get History Of Present Illness Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAssessmentAndPlanSection2() <em>Get Assessment And Plan Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAssessmentSection() <em>Get Assessment Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -76,6 +137,163 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  */
 
 public class TransferSummaryTest extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TransferSummary target) {
+						target.init();
+					}
+
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TransferSummary target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
+					}
+
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TransferSummary target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
+					}
+
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(TransferSummary target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
+
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(TransferSummary target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
+						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresentTestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TransferSummary target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
+						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
+					}
+
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TransferSummary target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
+						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
+					}
+
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TransferSummary target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
+						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
+						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
+					}
+
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(TransferSummary target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
+
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(TransferSummary target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
+						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresentTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -317,6 +535,939 @@ public class TransferSummaryTest extends CDAValidationTest {
 		};
 
 		validateTransferSummaryDocumentationOfTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryAdvanceDirectivesSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryAdvanceDirectivesSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryAdvanceDirectivesSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createAdvanceDirectivesSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryAdvanceDirectivesSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryAdvanceDirectivesSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryAllergiesSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryAllergiesSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryAllergiesSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createAllergiesSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryAllergiesSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryAllergiesSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryPhysicalExamSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryPhysicalExamSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryPhysicalExamSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createPhysicalExamSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryPhysicalExamSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryPhysicalExamSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryEncountersSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryEncountersSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryEncountersSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ENCOUNTERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createEncountersSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryEncountersSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryEncountersSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateTransferSummaryFamilyHistorySection() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryFamilyHistorySectionTestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryFamilyHistorySection",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+
+				/* FamilyHistorySection */
+				FamilyHistorySection section =
+
+				ConsolFactory.eINSTANCE.createFamilyHistorySection().init();
+
+				target.addSection(section);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryFamilyHistorySection(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryFamilyHistorySectionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryFunctionalStatusSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryFunctionalStatusSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryFunctionalStatusSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createFunctionalStatusSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryFunctionalStatusSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryFunctionalStatusSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryHospitalDischargeDiagnosis2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryHospitalDischargeDiagnosis2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryHospitalDischargeDiagnosis2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_HOSPITAL_DISCHARGE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createHospitalDischargeDiagnosisSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryHospitalDischargeDiagnosis2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryHospitalDischargeDiagnosis2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryImmunizationsSectionEntriesOptional2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryImmunizationsSectionEntriesOptional2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryImmunizationsSectionEntriesOptional2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createImmunizationsSectionEntriesOptional2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryImmunizationsSectionEntriesOptional2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryImmunizationsSectionEntriesOptional2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryMedicalEquipmentSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryMedicalEquipmentSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryMedicalEquipmentSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createMedicalEquipmentSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryMedicalEquipmentSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryMedicalEquipmentSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryMedicationsSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryMedicationsSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryMedicationsSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createMedicationsSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryMedicationsSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryMedicationsSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryPayersSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryPayersSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryPayersSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createPayersSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryPayersSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryPayersSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryPlanOfTreatmentSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryPlanOfTreatmentSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryPlanOfTreatmentSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryPlanOfTreatmentSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryPlanOfTreatmentSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryProblemSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryProblemSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryProblemSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createProblemSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryProblemSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryProblemSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryProceduresSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryProceduresSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryProceduresSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createProceduresSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryProceduresSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryProceduresSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryResultsSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryResultsSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryResultsSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createResultsSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryResultsSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryResultsSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummarySocialHistorySection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummarySocialHistorySection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummarySocialHistorySection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createSocialHistorySection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummarySocialHistorySection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummarySocialHistorySection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryVitalSignsSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryVitalSignsSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryVitalSignsSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createVitalSignsSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryVitalSignsSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryVitalSignsSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateTransferSummaryMentalStatusSection() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryMentalStatusSectionTestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryMentalStatusSection",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+
+				/* MentalStatusSection */
+				MentalStatusSection section =
+
+				ConsolFactory.eINSTANCE.createMentalStatusSection().init();
+
+				target.addSection(section);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryMentalStatusSection(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryMentalStatusSectionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateTransferSummaryGeneralStatusSection() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryGeneralStatusSectionTestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryGeneralStatusSection",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+
+				/* GeneralStatusSection */
+				GeneralStatusSection section =
+
+				ConsolFactory.eINSTANCE.createGeneralStatusSection().init();
+
+				target.addSection(section);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryGeneralStatusSection(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryGeneralStatusSectionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateTransferSummaryReviewOfSystemsSection() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryReviewOfSystemsSectionTestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryReviewOfSystemsSection",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+
+				/* ReviewOfSystemsSection */
+				ReviewOfSystemsSection section =
+
+				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
+
+				target.addSection(section);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryReviewOfSystemsSection(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryReviewOfSystemsSectionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateTransferSummaryNutritionSection() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryNutritionSectionTestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryNutritionSection",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+
+				/* NutritionSection */
+				NutritionSection section =
+
+				ConsolFactory.eINSTANCE.createNutritionSection().init();
+
+				target.addSection(section);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryNutritionSection(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryNutritionSectionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryReasonForReferralSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryReasonForReferralSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryReasonForReferralSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createReasonForReferralSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryReasonForReferralSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryReasonForReferralSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryHistoryOfPastIllnessSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryHistoryOfPastIllnessSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryHistoryOfPastIllnessSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createHistoryOfPastIllnessSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryHistoryOfPastIllnessSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryHistoryOfPastIllnessSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateTransferSummaryHistoryOfPresentIllnessSection() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryHistoryOfPresentIllnessSectionTestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryHistoryOfPresentIllnessSection",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+
+				/* HistoryOfPresentIllnessSection */
+				HistoryOfPresentIllnessSection section =
+
+				ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
+
+				target.addSection(section);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryHistoryOfPresentIllnessSection(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryHistoryOfPresentIllnessSectionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTransferSummaryAssessmentAndPlanSection2() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryAssessmentAndPlanSection2TestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryAssessmentAndPlanSection2",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryAssessmentAndPlanSection2(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryAssessmentAndPlanSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateTransferSummaryAssessmentSection() {
+		OperationsTestCase<TransferSummary> validateTransferSummaryAssessmentSectionTestCase = new OperationsTestCase<TransferSummary>(
+			"validateTransferSummaryAssessmentSection",
+			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TransferSummary target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TransferSummary target) {
+				target.init();
+
+				/* AssessmentSection */
+				AssessmentSection section =
+
+				ConsolFactory.eINSTANCE.createAssessmentSection().init();
+
+				target.addSection(section);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TransferSummaryOperations.validateTransferSummaryAssessmentSection(
+					(TransferSummary) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTransferSummaryAssessmentSectionTestCase.doValidationTest();
 	}
 
 	/**
@@ -1185,6 +2336,318 @@ public class TransferSummaryTest extends CDAValidationTest {
 		};
 
 		validateTransferSummaryDocumentationOfServiceEventTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetAdvanceDirectivesSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getAdvanceDirectivesSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetAllergiesSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getAllergiesSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetPhysicalExamSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getPhysicalExamSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetEncountersSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getEncountersSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetFamilyHistorySection() {
+
+		TransferSummary target = objectFactory.create();
+		target.getFamilyHistorySection();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetFunctionalStatusSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getFunctionalStatusSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetHospitalDischargeDiagnosis2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getHospitalDischargeDiagnosis2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetImmunizationsSectionEntriesOptional2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getImmunizationsSectionEntriesOptional2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetMedicalEquipmentSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getMedicalEquipmentSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetMedicationsSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getMedicationsSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetPayersSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getPayersSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetPlanOfTreatmentSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getPlanOfTreatmentSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetProblemSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getProblemSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetProceduresSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getProceduresSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetResultsSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getResultsSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetSocialHistorySection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getSocialHistorySection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetVitalSignsSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getVitalSignsSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetMentalStatusSection() {
+
+		TransferSummary target = objectFactory.create();
+		target.getMentalStatusSection();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetGeneralStatusSection() {
+
+		TransferSummary target = objectFactory.create();
+		target.getGeneralStatusSection();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetReviewOfSystemsSection() {
+
+		TransferSummary target = objectFactory.create();
+		target.getReviewOfSystemsSection();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetNutritionSection() {
+
+		TransferSummary target = objectFactory.create();
+		target.getNutritionSection();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetReasonForReferralSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getReasonForReferralSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetHistoryOfPastIllnessSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getHistoryOfPastIllnessSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetHistoryOfPresentIllnessSection() {
+
+		TransferSummary target = objectFactory.create();
+		target.getHistoryOfPresentIllnessSection();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetAssessmentAndPlanSection2() {
+
+		TransferSummary target = objectFactory.create();
+		target.getAssessmentAndPlanSection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetAssessmentSection() {
+
+		TransferSummary target = objectFactory.create();
+		target.getAssessmentSection();
+
 	}
 
 	/**
