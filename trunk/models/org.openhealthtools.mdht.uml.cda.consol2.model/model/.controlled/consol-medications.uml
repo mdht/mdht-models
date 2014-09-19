@@ -1754,7 +1754,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_IVJrMD3XEeSyGa6KC25kiw" general="_niSDkDhbEeS1WeMhbm6GZw"/>
-      <ownedAttribute xmi:id="_I32voD3XEeSyGa6KC25kiw" name="typeCode" visibility="private" redefinedProperty="_oX0kcDhbEeS1WeMhbm6GZw">
+      <ownedAttribute xmi:id="_I32voD3XEeSyGa6KC25kiw" name="typeCode" visibility="private" isReadOnly="true" redefinedProperty="_oX0kcDhbEeS1WeMhbm6GZw">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DjEm0D3YEeSyGa6KC25kiw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Di610D3YEeSyGa6KC25kiw" value="1"/>
