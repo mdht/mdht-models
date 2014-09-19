@@ -2652,7 +2652,7 @@ The Planned Observation template may also indicate the potential insurance cover
       <generalization xmi:id="_3nDAED3fEeSyGa6KC25kiw">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OJn4MEcaEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_4W5vsD3fEeSyGa6KC25kiw" name="typeCode" visibility="private">
+      <ownedAttribute xmi:id="_4W5vsD3fEeSyGa6KC25kiw" name="typeCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__K2IsD3fEeSyGa6KC25kiw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__KuM4D3fEeSyGa6KC25kiw" value="1"/>
