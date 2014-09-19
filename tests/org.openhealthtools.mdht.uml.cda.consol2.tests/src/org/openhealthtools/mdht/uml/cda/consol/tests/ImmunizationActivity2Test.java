@@ -20,6 +20,7 @@ import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.Participant2;
+import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DrugVehicle;
@@ -28,6 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationActivity2O
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.vocab.ActRelationshipType;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
@@ -47,6 +49,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#validateImmunizationActivityReactionObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Reaction Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#validateImmunizationActivityInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#validateImmunizationActivity2ImmunizationActivityConsumableImmunizationMedicationInformation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity2 Immunization Activity Consumable Immunization Medication Information2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#validateImmunizationActivity2ImmunizationActivityPreconditionTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity2 Immunization Activity Precondition Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#validateImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity2 Immunization Activity Precondition Precondition For Substance Administration2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#getSubstanceAdministeredActs() <em>Get Substance Administered Acts</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#getConsolDrugVehicles() <em>Get Consol Drug Vehicles</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#getConsolIndication2s() <em>Get Consol Indication2s</em>}</li>
@@ -63,6 +67,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#validateImmunizationActivityNegationInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Negation Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#validateImmunizationActivityDrugVehicle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Drug Vehicle</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#validateImmunizationActivityConsumable(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Consumable</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2#validateImmunizationActivityPrecondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Precondition</em>}</li>
  * </ul>
  * </p>
  *
@@ -392,6 +397,81 @@ public class ImmunizationActivity2Test extends CDAValidationTest {
 		};
 
 		validateImmunizationActivity2ImmunizationActivityConsumableImmunizationMedicationInformation2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateImmunizationActivity2ImmunizationActivityPreconditionTypeCode() {
+		OperationsTestCase<ImmunizationActivity2> validateImmunizationActivity2ImmunizationActivityPreconditionTypeCodeTestCase = new OperationsTestCase<ImmunizationActivity2>(
+			"validateImmunizationActivity2ImmunizationActivityPreconditionTypeCode",
+			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_ACTIVITY2_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationActivity2 target) {
+				target.init();
+				Precondition pre = CDAFactory.eINSTANCE.createPrecondition();
+				target.getPreconditions().add(pre);
+				pre.setTypeCode(ActRelationshipType.APND);
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationActivity2 target) {
+				for (Precondition p : target.getPreconditions()) {
+					p.setTypeCode(ActRelationshipType.PRCN);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ImmunizationActivity2Operations.validateImmunizationActivity2ImmunizationActivityPreconditionTypeCode(
+					(ImmunizationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateImmunizationActivity2ImmunizationActivityPreconditionTypeCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2() {
+		OperationsTestCase<ImmunizationActivity2> validateImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2TestCase = new OperationsTestCase<ImmunizationActivity2>(
+			"validateImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2",
+			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_ACTIVITY2_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationActivity2 target) {
+				target.init();
+				Precondition pre = CDAFactory.eINSTANCE.createPrecondition();
+				target.getPreconditions().add(pre);
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationActivity2 target) {
+				for (Precondition p : target.getPreconditions()) {
+					p.setCriterion(ConsolFactory.eINSTANCE.createPreconditionForSubstanceAdministration2().init());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ImmunizationActivity2Operations.validateImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(
+					(ImmunizationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2TestCase.doValidationTest();
 	}
 
 	/**
@@ -800,6 +880,41 @@ public class ImmunizationActivity2Test extends CDAValidationTest {
 		};
 
 		validateImmunizationActivityConsumableTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateImmunizationActivityPrecondition() {
+		OperationsTestCase<ImmunizationActivity2> validateImmunizationActivityPreconditionTestCase = new OperationsTestCase<ImmunizationActivity2>(
+			"validateImmunizationActivityPrecondition",
+			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationActivity2 target) {
+				target.init();
+				Precondition pre = CDAFactory.eINSTANCE.createPrecondition();
+				target.getPreconditions().add(pre);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ImmunizationActivity2Operations.validateImmunizationActivityPrecondition(
+					(ImmunizationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateImmunizationActivityPreconditionTestCase.doValidationTest();
 	}
 
 	/**

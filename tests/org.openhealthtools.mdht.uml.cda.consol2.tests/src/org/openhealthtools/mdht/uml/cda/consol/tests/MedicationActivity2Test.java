@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
@@ -29,6 +30,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.EIVL_TS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.PIVL_TS;
+import org.openhealthtools.mdht.uml.hl7.vocab.ActRelationshipType;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
@@ -55,6 +57,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityMedicationSupplyOrder2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Medication Supply Order2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityMedicationDispense2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Medication Dispense2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityReactionObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Reaction Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2MedicationActivityPreconditionTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 Medication Activity Precondition Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 Medication Activity Precondition Precondition For Substance Administration2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2MedicationActivityConsumableMedicationInformation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 Medication Activity Consumable Medication Information2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#getDrugMonitoringAct() <em>Get Drug Monitoring Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#getConsolInstruction2() <em>Get Consol Instruction2</em>}</li>
@@ -70,6 +74,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityAdministrationUnitCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Administration Unit Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Dose Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityConsumable(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Consumable</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityPrecondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Precondition</em>}</li>
  * </ul>
  * </p>
  *
@@ -701,6 +706,83 @@ public class MedicationActivity2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateMedicationActivity2MedicationActivityPreconditionTypeCode() {
+		OperationsTestCase<MedicationActivity2> validateMedicationActivity2MedicationActivityPreconditionTypeCodeTestCase = new OperationsTestCase<MedicationActivity2>(
+			"validateMedicationActivity2MedicationActivityPreconditionTypeCode",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY2_MEDICATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationActivity2 target) {
+				target.init();
+				Precondition p = CDAFactory.eINSTANCE.createPrecondition();
+				target.getPreconditions().add(p);
+				p.setTypeCode(ActRelationshipType.APND);
+			}
+
+			@Override
+			protected void updateToPass(MedicationActivity2 target) {
+				for (Precondition p : target.getPreconditions()) {
+					p.setTypeCode(ActRelationshipType.PRCN);
+				}
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationActivity2Operations.validateMedicationActivity2MedicationActivityPreconditionTypeCode(
+					(MedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationActivity2MedicationActivityPreconditionTypeCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateMedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2() {
+		OperationsTestCase<MedicationActivity2> validateMedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2TestCase = new OperationsTestCase<MedicationActivity2>(
+			"validateMedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY2_MEDICATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationActivity2 target) {
+				target.init();
+				Precondition p = CDAFactory.eINSTANCE.createPrecondition();
+				target.getPreconditions().add(p);
+			}
+
+			@Override
+			protected void updateToPass(MedicationActivity2 target) {
+				for (Precondition p : target.getPreconditions()) {
+					p.setCriterion(ConsolFactory.eINSTANCE.createPreconditionForSubstanceAdministration2().init());
+				}
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationActivity2Operations.validateMedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2(
+					(MedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateMedicationActivity2MedicationActivityConsumableMedicationInformation2() {
 		OperationsTestCase<MedicationActivity2> validateMedicationActivity2MedicationActivityConsumableMedicationInformation2TestCase = new OperationsTestCase<MedicationActivity2>(
 			"validateMedicationActivity2MedicationActivityConsumableMedicationInformation2",
@@ -1064,6 +1146,41 @@ public class MedicationActivity2Test extends CDAValidationTest {
 		};
 
 		validateMedicationActivityConsumableTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateMedicationActivityPrecondition() {
+		OperationsTestCase<MedicationActivity2> validateMedicationActivityPreconditionTestCase = new OperationsTestCase<MedicationActivity2>(
+			"validateMedicationActivityPrecondition",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicationActivity2 target) {
+				target.init();
+				Precondition p = CDAFactory.eINSTANCE.createPrecondition();
+				target.getPreconditions().add(p);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationActivity2Operations.validateMedicationActivityPrecondition(
+					(MedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationActivityPreconditionTestCase.doValidationTest();
 	}
 
 	/**
