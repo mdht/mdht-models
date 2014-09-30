@@ -1450,9 +1450,10 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				// Simply requires a dischargeDispositionCode element in encompassingEncounter
+				// requires a dischargeDispositionCode element in encompassingEncounter
+				// and the correct codeSystem for the NUBC UB-04 FL17-Patient Status valueSet
 				target.getComponentOf().getEncompassingEncounter().setDischargeDispositionCode(
-					DatatypesFactory.eINSTANCE.createCE("notChecked", "2.16.840.1.113883.12.112"));
+					DatatypesFactory.eINSTANCE.createCE("notChecked", "2.16.840.1.113883.6.301.5"));
 			}
 
 			@Override

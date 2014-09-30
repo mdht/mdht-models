@@ -23,6 +23,8 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterActivity2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
+import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
@@ -33,12 +35,12 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivity2SdtcDDCFromNUBCOrDD(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activity2 Sdtc DDC From NUBC Or DD</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesIndication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Indication2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesEncounterDiagnosis2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Diagnosis2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#getConsolIndication2s() <em>Get Consol Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#getConsolEncounterDiagnosis2s() <em>Get Consol Encounter Diagnosis2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesSDTCDischargeDispositionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities SDTC Discharge Disposition Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesSDTCDischargeDispositionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities SDTC Discharge Disposition Code</em>}</li>
  * </ul>
  * </p>
@@ -47,6 +49,92 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  */
 
 public class EncounterActivity2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateEncounterActivity2SdtcDDCFromNUBCOrDD() {
+		OperationsTestCase<EncounterActivity2> validateEncounterActivity2SdtcDDCFromNUBCOrDDTestCase = new OperationsTestCase<EncounterActivity2>(
+			"validateEncounterActivity2SdtcDDCFromNUBCOrDD",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITY2_SDTC_DDC_FROM_NUBC_OR_DD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			private static final String NUBC_CODESYSTEM_VALUE = "2.16.840.1.113883.6.301.5";
+
+			private static final String DDC_CODESYSTEM_VALUE = "2.16.840.1.113883.12.112";
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(EncounterActivity2 target) {
+						// Fails due to incorrect codeSystem
+						target.init();
+						CE sdtcCode = DatatypesFactory.eINSTANCE.createCE();
+						sdtcCode.setCode("AnyStringRequired"); // Required to be defined, but not to any specific String
+						sdtcCode.setCodeSystem(CDAValidationTest.BAD_CODESYSTEM_ID); // apply incorrect codeSystem
+						target.getSDTCDischargeDispositionCodes().add(sdtcCode);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(EncounterActivity2 target) {
+						// even though it has the correct codeSystem -
+						// fails due to not having a code defined at all
+						target.init();
+						CE sdtcCode = DatatypesFactory.eINSTANCE.createCE();
+						sdtcCode.setCodeSystem(NUBC_CODESYSTEM_VALUE); // apply incorrect codeSystem
+						target.getSDTCDischargeDispositionCodes().add(sdtcCode);
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(EncounterActivity2 target) {
+						target.init();
+
+						CE sdtcCode = DatatypesFactory.eINSTANCE.createCE();
+						sdtcCode.setCode("notChecked"); // Required to be defined, but not to any specific String
+						sdtcCode.setCodeSystem(NUBC_CODESYSTEM_VALUE); // the actual constraint checked which must be accurate
+						sdtcCode.setCodeSystemName("NUBC UB-04 FL17-Patient Status"); // not required (not checked as a constraint)
+						target.getSDTCDischargeDispositionCodes().add(sdtcCode);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(EncounterActivity2 target) {
+						target.init();
+						CE sdtcCode = DatatypesFactory.eINSTANCE.createCE();
+						sdtcCode.setCode("notChecked"); // Required to be defined, but not to any specific String
+						sdtcCode.setCodeSystem(DDC_CODESYSTEM_VALUE); // the actual constraint checked which must be accurate
+						sdtcCode.setCodeSystemName("HL7 Discharge Disposition"); // not required (not checked as a constraint)
+						target.getSDTCDischargeDispositionCodes().add(sdtcCode);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterActivity2Operations.validateEncounterActivity2SdtcDDCFromNUBCOrDD(
+					(EncounterActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterActivity2SdtcDDCFromNUBCOrDDTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -181,40 +269,6 @@ public class EncounterActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testValidateEncounterActivitiesSDTCDischargeDispositionCodeP() {
-		OperationsTestCase<EncounterActivity2> validateEncounterActivitiesSDTCDischargeDispositionCodePTestCase = new OperationsTestCase<EncounterActivity2>(
-			"validateEncounterActivitiesSDTCDischargeDispositionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITIES_SDTC_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(EncounterActivity2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(EncounterActivity2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return EncounterActivity2Operations.validateEncounterActivitiesSDTCDischargeDispositionCodeP(
-					(EncounterActivity2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateEncounterActivitiesSDTCDischargeDispositionCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated NOT
 	*/
 	@Test
@@ -226,14 +280,15 @@ public class EncounterActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(EncounterActivity2 target) {
+				// Fails due to not existing
 				target.init();
-				target.getSDTCDischargeDispositionCodes().remove(1); // why are there two in init()?
 			}
 
 			@Override
 			protected void updateToPass(EncounterActivity2 target) {
-				target.getSDTCDischargeDispositionCodes().get(0).setCode("hasACode");
-				target.getSDTCDischargeDispositionCodes().get(0).setCodeSystem("2.16.840.1.113883.12.112");
+				// only needs to exist for this test
+				CE sdtcCode = DatatypesFactory.eINSTANCE.createCE();
+				target.getSDTCDischargeDispositionCodes().add(sdtcCode);
 			}
 
 			@Override

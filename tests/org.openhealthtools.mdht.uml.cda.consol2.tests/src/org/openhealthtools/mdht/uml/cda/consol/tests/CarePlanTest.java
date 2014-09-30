@@ -17,8 +17,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
+import org.openhealthtools.mdht.uml.cda.Authenticator;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.InformationRecipient;
+import org.openhealthtools.mdht.uml.cda.IntendedRecipient;
+import org.openhealthtools.mdht.uml.cda.Organization;
+import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.CarePlan;
@@ -30,6 +34,8 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CarePlanOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
+import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
 import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
@@ -62,12 +68,23 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanHealthStatusEvaluationsOutcomesSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Health Status Evaluations Outcomes Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInterventionsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Interventions Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan II Root</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Information Recipient Name</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Received Organization Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Received Organization Name</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Received Organization Standard Industry Class Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Received Organization Standard Industry Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Addr</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Telecom</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientInformationRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Information Recipient</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientReceivedOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Received Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanAuthenticatorAssignedEntityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Authenticator Assigned Entity Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanAuthenticatorAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Authenticator Assigned Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanAuthenticatorAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Authenticator Assigned Entity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanAuthenticatorTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Authenticator Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanAuthenticatorSignatureCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Authenticator Signature Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanAuthenticatorSDTCSignatureText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Authenticator SDTC Signature Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanAuthenticatorAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Authenticator Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCarePlanReviewAssociatedEntityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Care Plan Review Associated Entity Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCarePlanReviewAssociatedEntityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Care Plan Review Associated Entity Id</em>}</li>
@@ -720,6 +737,414 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateCarePlanInformationRecipientIntendedRecipientInformationRecipientName() {
+		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientInformationRecipientNameTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(intendedRec);
+				Person ir2 = CDAFactory.eINSTANCE.createPerson();
+				ir.getIntendedRecipient().setInformationRecipient(ir2);
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				PN name = DatatypesFactory.eINSTANCE.createPN();
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.getIntendedRecipient().getInformationRecipient().getNames().add(name);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanInformationRecipientIntendedRecipientInformationRecipientNameTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId() {
+		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationIdTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(intendedRec);
+				Organization recOrg = CDAFactory.eINSTANCE.createOrganization();
+				intendedRec.setReceivedOrganization(recOrg);
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.getIntendedRecipient().getReceivedOrganization().getIds().add(
+						DatatypesFactory.eINSTANCE.createII());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName() {
+		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationNameTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(intendedRec);
+				Organization recOrg = CDAFactory.eINSTANCE.createOrganization();
+				intendedRec.setReceivedOrganization(recOrg);
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.getIntendedRecipient().getReceivedOrganization().getNames().add(
+						DatatypesFactory.eINSTANCE.createON());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationNameTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP() {
+		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodePTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(intendedRec);
+				Organization recOrg = CDAFactory.eINSTANCE.createOrganization();
+				intendedRec.setReceivedOrganization(recOrg);
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.getIntendedRecipient().getReceivedOrganization().setStandardIndustryClassCode(
+						DatatypesFactory.eINSTANCE.createCE());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode() {
+		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(intendedRec);
+				Organization recOrg = CDAFactory.eINSTANCE.createOrganization();
+				intendedRec.setReceivedOrganization(recOrg);
+				recOrg.setStandardIndustryClassCode(DatatypesFactory.eINSTANCE.createCE());
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.getIntendedRecipient().getReceivedOrganization().setStandardIndustryClassCode(
+						DatatypesFactory.eINSTANCE.createCE("notChecked", "2.16.840.1.113883.6.101"));
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCarePlanInformationRecipientIntendedRecipientId() {
+		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientIdTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanInformationRecipientIntendedRecipientId",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(intendedRec);
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.getIntendedRecipient().getIds().add(DatatypesFactory.eINSTANCE.createII());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientId(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanInformationRecipientIntendedRecipientIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCarePlanInformationRecipientIntendedRecipientAddr() {
+		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientAddrTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanInformationRecipientIntendedRecipientAddr",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(intendedRec);
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.getIntendedRecipient().getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientAddr(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanInformationRecipientIntendedRecipientAddrTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCarePlanInformationRecipientIntendedRecipientTelecom() {
+		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientTelecomTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanInformationRecipientIntendedRecipientTelecom",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(intendedRec);
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.getIntendedRecipient().getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientTelecom(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanInformationRecipientIntendedRecipientTelecomTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCarePlanInformationRecipientIntendedRecipientInformationRecipient() {
+		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientInformationRecipientTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanInformationRecipientIntendedRecipientInformationRecipient",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(intendedRec);
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				Person ir2 = CDAFactory.eINSTANCE.createPerson();
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.getIntendedRecipient().setInformationRecipient(ir2);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientInformationRecipient(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanInformationRecipientIntendedRecipientInformationRecipientTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCarePlanInformationRecipientIntendedRecipientReceivedOrganization() {
+		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanInformationRecipientIntendedRecipientReceivedOrganization",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(intendedRec);
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				Organization recOrg = CDAFactory.eINSTANCE.createOrganization();
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.getIntendedRecipient().setReceivedOrganization(recOrg);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganization(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipient() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipient",
@@ -928,6 +1353,44 @@ public class CarePlanTest extends CDAValidationTest {
 		};
 
 		validateCarePlanAuthenticatorSignatureCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCarePlanAuthenticatorSDTCSignatureText() {
+		OperationsTestCase<CarePlan> validateCarePlanAuthenticatorSDTCSignatureTextTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanAuthenticatorSDTCSignatureText",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_AUTHENTICATOR_SDTC_SIGNATURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				Authenticator auth = CDAFactory.eINSTANCE.createAuthenticator();
+				target.getAuthenticators().add(auth);
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				ED sdtcSigText = DatatypesFactory.eINSTANCE.createED();
+				for (Authenticator a : target.getAuthenticators()) {
+					a.setSDTCSignatureText(sdtcSigText);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanAuthenticatorSDTCSignatureText(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanAuthenticatorSDTCSignatureTextTestCase.doValidationTest();
 	}
 
 	/**
