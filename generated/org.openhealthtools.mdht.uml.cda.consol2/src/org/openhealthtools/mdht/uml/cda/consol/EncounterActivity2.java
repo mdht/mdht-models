@@ -22,10 +22,22 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncounterActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterActivitiesTemplateId EncounterActivitiesSDTCDischargeDispositionCode' templateId.root='2.16.840.1.113883.10.20.22.4.49.2' sDTCDischargeDispositionCode.codeSystem='2.16.840.1.113883.12.112' sDTCDischargeDispositionCode.codeSystemName='HL7DischargeDisposition' constraints.validation.info='EncounterActivitiesSDTCDischargeDispositionCodeP EncounterActivitiesIndication2 EncounterActivitiesEncounterDiagnosis2' constraints.validation.dependOn.EncounterActivitiesSDTCDischargeDispositionCode='EncounterActivitiesSDTCDischargeDispositionCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterActivitiesTemplateId EncounterActivity2SdtcDDCFromNUBCOrDD' templateId.root='2.16.840.1.113883.10.20.22.4.49.2' constraints.validation.info='EncounterActivitiesSDTCDischargeDispositionCode EncounterActivitiesIndication2 EncounterActivitiesEncounterDiagnosis2'"
  * @generated
  */
 public interface EncounterActivity2 extends EncounterActivities {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.sDTCDischargeDispositionCode->isEmpty() or self.sDTCDischargeDispositionCode->exists(element | element.isNullFlavorUndefined())) implies (self.sDTCDischargeDispositionCode->forAll( element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and let value : datatypes::CE = element.oclAsType(datatypes::CE) in (value.codeSystem = \'2.16.840.1.113883.6.301.5\' or value.codeSystem = \'2.16.840.1.113883.12.112\') and not value.code.oclIsUndefined()))'"
+	 * @generated
+	 */
+	boolean validateEncounterActivity2SdtcDDCFromNUBCOrDD(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -116,6 +116,16 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncounterActivitiesSdtcDDCFromNUBCOrDD(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncounterActivitiesOperations.validateEncounterActivitiesSdtcDDCFromNUBCOrDD(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateEncounterActivitiesTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesTemplateId(this, diagnostics, context);
@@ -169,18 +179,6 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	@Override
 	public boolean validateEncounterActivitiesEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateEncounterActivitiesSDTCDischargeDispositionCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateEncounterActivitiesSDTCDischargeDispositionCodeP(
-			this, diagnostics, context);
 	}
 
 	/**

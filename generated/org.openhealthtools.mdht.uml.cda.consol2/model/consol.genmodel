@@ -3687,6 +3687,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesServiceDeliveryTypeCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesServiceDeliveryTypeCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesSdtcDDCFromNUBCOrDD">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSdtcDDCFromNUBCOrDD/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSdtcDDCFromNUBCOrDD/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesTemplateId/context"/>
@@ -3710,10 +3714,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesEffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesEffectiveTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesEffectiveTime/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCode/diagnostics"/>
@@ -12231,6 +12231,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureActivityObservation2/getConsolInstruction2"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//EncounterActivity2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivity2/EncounterActivity2SdtcDDCFromNUBCOrDD">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivity2/EncounterActivity2SdtcDDCFromNUBCOrDD/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivity2/EncounterActivity2SdtcDDCFromNUBCOrDD/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivity2/EncounterActivitiesIndication2">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivity2/EncounterActivitiesIndication2/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivity2/EncounterActivitiesIndication2/context"/>
@@ -12800,6 +12804,46 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanIIRoot/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanIIRoot/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientInformationRecipientName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientInformationRecipientName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientInformationRecipientName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientTelecom">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientTelecom/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientTelecom/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientInformationRecipient">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientInformationRecipient/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientInformationRecipient/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipientReceivedOrganization/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipient">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipient/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanInformationRecipientIntendedRecipient/context"/>
@@ -12823,6 +12867,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanAuthenticatorSignatureCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanAuthenticatorSignatureCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanAuthenticatorSignatureCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanAuthenticatorSDTCSignatureText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanAuthenticatorSDTCSignatureText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanAuthenticatorSDTCSignatureText/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CarePlan/CarePlanAuthenticatorAssignedEntity">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CarePlan/CarePlanAuthenticatorAssignedEntity/diagnostics"/>
