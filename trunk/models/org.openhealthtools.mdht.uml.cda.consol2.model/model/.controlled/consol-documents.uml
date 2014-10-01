@@ -1656,7 +1656,7 @@ The type of consent (e.g., a consent to perform the related serviceEvent) is con
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_pKF8YF1FEeO84_IebRjYkg">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>dischargeDispositionCode SHOULD be selected from ValueSet NUBC UB-04 FL17-Patient Status 2.16.840.1.113883.6.301.5 STATIC</body>
+            <body>dischargeDispositionCode SHOULD be selected from ValueSet NUBC UB-04 FL17-Patient Status 2.16.840.1.113883.3.88.12.80.33 (code system 2.16.840.1.113883.6.301.5) DYNAMIC</body>
             <body>dischargeDispositionCode.oclIsUndefined() or dischargeDispositionCode.isNullFlavorUndefined() implies let value : datatypes::CE = dischargeDispositionCode.oclAsType(datatypes::CE) in value.codeSystem &lt;> '2.16.840.1.113883.12.112' implies value.codeSystem = '2.16.840.1.113883.6.301.5' and not value.code.oclIsUndefined()</body>
           </specification>
         </ownedRule>
