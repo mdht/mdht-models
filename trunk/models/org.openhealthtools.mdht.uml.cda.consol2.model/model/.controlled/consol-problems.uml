@@ -984,7 +984,7 @@ The effectiveTime represents the clinically relevant time of the observation. Th
     </ownedAttribute>
   </uml:Class>
   <CDA:ConformsTo xmi:id="_JanU4OEFEeOmBMTtnrPqww" base_Generalization="_DMwEcOEFEeOmBMTtnrPqww"/>
-  <CDA:CDATemplate xmi:id="_QRxZ8OEFEeOmBMTtnrPqww" base_Class="_DMvdYOEFEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.5.2">
+  <CDA:CDATemplate xmi:id="_QRxZ8OEFEeOmBMTtnrPqww" base_Class="_DMvdYOEFEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.5" templateVersion="2014-06-09">
     <ruleId>CONF:16756</ruleId>
     <ruleId>CONF:16757</ruleId>
   </CDA:CDATemplate>
@@ -1063,7 +1063,7 @@ Many systems display the nested Problem Observation with the most recent author 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1zMDYPifEeOXlK95I8tUew" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_1-Y8cOzbEeOnE-G4kptBiw" base_Class="_y5C8IOzbEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.3.2">
+  <CDA:CDATemplate xmi:id="_1-Y8cOzbEeOnE-G4kptBiw" base_Class="_y5C8IOzbEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.3" templateVersion="2014-06-09">
     <ruleId>CONF:16772</ruleId>
     <ruleId>CONF:16773</ruleId>
   </CDA:CDATemplate>
@@ -1223,7 +1223,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_tIFIIPDCEeOKPKE9au0oug" base_Class="_prDAkPDCEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.4.2">
+  <CDA:CDATemplate xmi:id="_tIFIIPDCEeOKPKE9au0oug" base_Class="_prDAkPDCEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.4" templateVersion="2014-06-09">
     <ruleId>CONF:14926</ruleId>
     <ruleId>CONF:14927</ruleId>
   </CDA:CDATemplate>
@@ -1307,7 +1307,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-o9hMAFmEeSJ2uHfynwxCw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_fcIjsAFkEeSJ2uHfynwxCw" base_Class="_ZgLioAFkEeSJ2uHfynwxCw" templateId="2.16.840.1.113883.10.20.22.2.5.2">
+  <CDA:CDATemplate xmi:id="_fcIjsAFkEeSJ2uHfynwxCw" base_Class="_ZgLioAFkEeSJ2uHfynwxCw" templateId="2.16.840.1.113883.10.20.22.2.5" templateVersion="2014-06-09">
     <ruleId>CONF:7877</ruleId>
     <ruleId>CONF:10440</ruleId>
   </CDA:CDATemplate>
@@ -1360,7 +1360,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_szXagQLYEeSyydFGYJajGA" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_z4rXsALVEeSyydFGYJajGA" base_Class="_IXrA4ALVEeSyydFGYJajGA" templateId="2.16.840.1.113883.10.20.22.2.5.1.2">
+  <CDA:CDATemplate xmi:id="_z4rXsALVEeSyydFGYJajGA" base_Class="_IXrA4ALVEeSyydFGYJajGA" templateId="2.16.840.1.113883.10.20.22.2.5.1" templateVersion="2014-06-09">
     <ruleId>CONF:9179</ruleId>
     <ruleId>CONF:10441</ruleId>
   </CDA:CDATemplate>

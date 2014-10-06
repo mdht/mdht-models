@@ -621,7 +621,7 @@ The general category of the patient's directive is documented in the observation
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_LsOj4K-9EeO8duI_7f6kZw" base_Class="_GnllUK-9EeO8duI_7f6kZw" templateId="2.16.840.1.113883.10.20.22.4.48.2">
+  <CDA:CDATemplate xmi:id="_LsOj4K-9EeO8duI_7f6kZw" base_Class="_GnllUK-9EeO8duI_7f6kZw" templateId="2.16.840.1.113883.10.20.22.4.48" templateVersion="2014-06-09">
     <ruleId>CONF:8655</ruleId>
     <ruleId>CONF:10485</ruleId>
   </CDA:CDATemplate>
@@ -691,7 +691,7 @@ This section differentiates between 'advance directives' and 'advance directive 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RMMJoAFYEeSLIY0bHb-fFQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_oceOsAFXEeSLIY0bHb-fFQ" base_Class="_jsKhYAFXEeSLIY0bHb-fFQ" templateId="2.16.840.1.113883.10.20.22.2.21.2">
+  <CDA:CDATemplate xmi:id="_oceOsAFXEeSLIY0bHb-fFQ" base_Class="_jsKhYAFXEeSLIY0bHb-fFQ" templateId="2.16.840.1.113883.10.20.22.2.21" templateVersion="2014-06-09">
     <ruleId>CONF:7928</ruleId>
     <ruleId>CONF:10376</ruleId>
   </CDA:CDATemplate>
@@ -735,7 +735,7 @@ This section differentiates between 'advance directives' and 'advance directive 
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_tbHJUAIPEeS-F85KYVlDyA" base_Class="_ZFbCkAIPEeS-F85KYVlDyA" templateId="2.16.840.1.113883.10.20.22.2.21.1.2">
+  <CDA:CDATemplate xmi:id="_tbHJUAIPEeS-F85KYVlDyA" base_Class="_ZFbCkAIPEeS-F85KYVlDyA" templateId="2.16.840.1.113883.10.20.22.2.21.1" templateVersion="2014-06-09">
     <ruleId>CONF:30227</ruleId>
     <ruleId>CONF:30228</ruleId>
   </CDA:CDATemplate>

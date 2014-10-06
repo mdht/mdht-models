@@ -1101,7 +1101,7 @@ This information should be included in an Immunization Activity when available. 
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_GXjukOE8EeOTq9XEMvvkWw" base_Class="_zI6vcOE7EeOTq9XEMvvkWw" templateId="2.16.840.1.113883.10.20.22.4.52.2">
+  <CDA:CDATemplate xmi:id="_GXjukOE8EeOTq9XEMvvkWw" base_Class="_zI6vcOE7EeOTq9XEMvvkWw" templateId="2.16.840.1.113883.10.20.22.4.52" templateVersion="2014-06-09">
     <ruleId>CONF:8828</ruleId>
     <ruleId>CONF:10498</ruleId>
   </CDA:CDATemplate>
@@ -1227,7 +1227,7 @@ This information should be included in an Immunization Activity when available. 
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_W8SwIOHUEeO04sHNODkHmQ" base_Class="_Rx8LIOHUEeO04sHNODkHmQ" templateId="2.16.840.1.113883.10.20.22.4.54.2">
+  <CDA:CDATemplate xmi:id="_W8SwIOHUEeO04sHNODkHmQ" base_Class="_Rx8LIOHUEeO04sHNODkHmQ" templateId="2.16.840.1.113883.10.20.22.4.54" templateVersion="2014-06-09">
     <ruleId>CONF:9004</ruleId>
     <ruleId>CONF:10499</ruleId>
   </CDA:CDATemplate>
@@ -1307,7 +1307,7 @@ This information should be included in an Immunization Activity when available. 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XHuN8fy4EeO1SvUcmWeLDQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_qxeRMPy3EeO1SvUcmWeLDQ" base_Class="_kdQhIPy3EeO1SvUcmWeLDQ" templateId="2.16.840.1.113883.10.20.22.2.2.2">
+  <CDA:CDATemplate xmi:id="_qxeRMPy3EeO1SvUcmWeLDQ" base_Class="_kdQhIPy3EeO1SvUcmWeLDQ" templateId="2.16.840.1.113883.10.20.22.2" templateVersion="2014-06-09">
     <ruleId>CONF:7965</ruleId>
     <ruleId>CONF:10399</ruleId>
   </CDA:CDATemplate>
@@ -1349,7 +1349,7 @@ This information should be included in an Immunization Activity when available. 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4abIwQLOEeSIPYXg7AgJzw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_6KbjQALNEeSIPYXg7AgJzw" base_Class="_14bikALNEeSIPYXg7AgJzw" templateId="2.16.840.1.113883.10.20.22.2.2.1.2">
+  <CDA:CDATemplate xmi:id="_6KbjQALNEeSIPYXg7AgJzw" base_Class="_14bikALNEeSIPYXg7AgJzw" templateId="2.16.840.1.113883.10.20.22.2.2.1" templateVersion="2014-06-09">
     <ruleId>CONF:9015</ruleId>
     <ruleId>CONF:10400</ruleId>
   </CDA:CDATemplate>
