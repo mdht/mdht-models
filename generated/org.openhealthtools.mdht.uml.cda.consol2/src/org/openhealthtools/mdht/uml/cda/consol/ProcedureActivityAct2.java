@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureActivityAct2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityActTemplateId ProcedureActivityAct2InstructionsInversion' templateId.root='2.16.840.1.113883.10.20.22.4.12.2' constraints.validation.info='ProcedureActivityActInstruction2 ProcedureActivityActIndication2 ProcedureActivityActMedicationActivity2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityActTemplateId ProcedureActivityAct2InstructionsInversion' templateId.root='2.16.840.1.113883.10.20.22.4.12' templateId.extension='2014-06-09' constraints.validation.info='ProcedureActivityActInstruction2 ProcedureActivityActIndication2 ProcedureActivityActMedicationActivity2'"
  * @generated
  */
 public interface ProcedureActivityAct2 extends ProcedureActivityAct {

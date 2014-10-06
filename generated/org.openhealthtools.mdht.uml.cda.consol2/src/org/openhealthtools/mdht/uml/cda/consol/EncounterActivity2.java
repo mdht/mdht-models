@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncounterActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterActivitiesTemplateId EncounterActivity2SdtcDDCFromNUBCOrDD' templateId.root='2.16.840.1.113883.10.20.22.4.49.2' constraints.validation.info='EncounterActivitiesSDTCDischargeDispositionCode EncounterActivitiesIndication2 EncounterActivitiesEncounterDiagnosis2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterActivitiesTemplateId EncounterActivity2SdtcDDCFromNUBCOrDD' templateId.root='2.16.840.1.113883.10.20.22.4.49' templateId.extension='2014-06-09' constraints.validation.info='EncounterActivitiesSDTCDischargeDispositionCode EncounterActivitiesIndication2 EncounterActivitiesEncounterDiagnosis2'"
  * @generated
  */
 public interface EncounterActivity2 extends EncounterActivities {

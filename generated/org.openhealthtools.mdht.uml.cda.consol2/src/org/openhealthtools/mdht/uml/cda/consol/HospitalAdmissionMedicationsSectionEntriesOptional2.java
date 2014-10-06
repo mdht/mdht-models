@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalAdmissionMedicationsSectionEntriesOptional2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId HospitalAdmissionMedicationsSectionEntriesOptionalCode HospitalAdmissionMedicationsSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.44.2' code.code='42346-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Medications on Admission' constraints.validation.dependOn.HospitalAdmissionMedicationsSectionEntriesOptionalCode='HospitalAdmissionMedicationsSectionEntriesOptionalCodeP' constraints.validation.warning='HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId HospitalAdmissionMedicationsSectionEntriesOptionalCode HospitalAdmissionMedicationsSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.44' templateId.extension='2014-06-09' code.code='42346-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Medications on Admission' constraints.validation.dependOn.HospitalAdmissionMedicationsSectionEntriesOptionalCode='HospitalAdmissionMedicationsSectionEntriesOptionalCodeP' constraints.validation.warning='HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication2'"
  * @generated
  */
 public interface HospitalAdmissionMedicationsSectionEntriesOptional2 extends

@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCognitiveStatusOrganizer2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerCode CognitiveStatusResultOrganizerCognitiveStatusObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.75.2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerCode CognitiveStatusResultOrganizerCognitiveStatusObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.75' templateId.extension='2014-06-09'"
  * @generated
  */
 public interface CognitiveStatusOrganizer2 extends CognitiveStatusResultOrganizer {

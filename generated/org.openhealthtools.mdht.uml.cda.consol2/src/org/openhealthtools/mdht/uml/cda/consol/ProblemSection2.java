@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP ProblemSection2Title ProblemSection2Text ProblemSectionEntriesOptionalProblemConcernAct2' templateId.root='2.16.840.1.113883.10.20.22.2.5.1.2' code.code='11450-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Problem List' constraints.validation.dependOn.ProblemSectionEntriesOptionalCode='ProblemSectionEntriesOptionalCodeP' constraints.validation.info='ProblemSectionEntriesOptional2HealthStatusObservation2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP ProblemSection2Title ProblemSection2Text ProblemSectionEntriesOptionalProblemConcernAct2' templateId.root='2.16.840.1.113883.10.20.22.2.5.1' templateId.extension='2014-06-09' code.code='11450-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Problem List' constraints.validation.dependOn.ProblemSectionEntriesOptionalCode='ProblemSectionEntriesOptionalCodeP' constraints.validation.info='ProblemSectionEntriesOptional2HealthStatusObservation2'"
  * @generated
  */
 public interface ProblemSection2 extends ProblemSectionEntriesOptional2 {

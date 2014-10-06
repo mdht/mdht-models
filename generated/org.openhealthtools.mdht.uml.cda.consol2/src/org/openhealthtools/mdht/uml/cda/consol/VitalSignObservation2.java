@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationValue VitalSignObservation2PQUnit' templateId.root='2.16.840.1.113883.10.20.22.4.27.2' constraints.validation.warning='VitalSignObservation2AuthorParticipation' constraints.validation.query='VitalSignObservation2PQUnit'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationValue VitalSignObservation2PQUnit' templateId.root='2.16.840.1.113883.10.20.22.4.27' templateId.extension='2014-06-09' constraints.validation.warning='VitalSignObservation2AuthorParticipation' constraints.validation.query='VitalSignObservation2PQUnit'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolVitalSignObservation2PQ unit='1' constraints.validation.error='VitalSignObservation2PQUnit'"
  * @generated
  */

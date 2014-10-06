@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedSupply2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivitySupplyTemplateId PlannedSupply2StatusCode PlannedSupply2StatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.43.2' statusCode.code='active' constraints.validation.warning='PlannedSupply2EffectiveTime PlannedSupply2AuthorParticipation' constraints.validation.info='PlannedSupply2RepeatNumber PlannedSupply2Quantity PlannedSupply2Product PlannedSupply2Performer PlannedSupply2ProductInstance PlannedSupply2PatientPriorityPreference PlannedSupply2ProviderPriorityPreference PlannedSupply2Indication2 PlannedSupply2Instruction2 PlannedSupply2PlannedCoverage'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivitySupplyTemplateId PlannedSupply2StatusCode PlannedSupply2StatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.43' templateId.extension='2014-06-09' statusCode.code='active' constraints.validation.warning='PlannedSupply2EffectiveTime PlannedSupply2AuthorParticipation' constraints.validation.info='PlannedSupply2RepeatNumber PlannedSupply2Quantity PlannedSupply2Product PlannedSupply2Performer PlannedSupply2ProductInstance PlannedSupply2PatientPriorityPreference PlannedSupply2ProviderPriorityPreference PlannedSupply2Indication2 PlannedSupply2Instruction2 PlannedSupply2PlannedCoverage'"
  * @generated
  */
 public interface PlannedSupply2 extends PlanOfCareActivitySupply {
@@ -35,7 +35,7 @@ public interface PlannedSupply2 extends PlanOfCareActivitySupply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'active\')'"
 	 * @generated
 	 */
 	boolean validatePlannedSupply2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

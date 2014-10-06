@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalAdmissionDiagnosis2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalAdmissionDiagnosisTemplateId HospitalAdmissionDiagnosisCode HospitalAdmissionDiagnosisCodeP HospitalAdmissionDiagnosisProblemObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.34.2' code.code='46241-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Admission diagnosis' constraints.validation.dependOn.HospitalAdmissionDiagnosisCode='HospitalAdmissionDiagnosisCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalAdmissionDiagnosisTemplateId HospitalAdmissionDiagnosisCode HospitalAdmissionDiagnosisCodeP HospitalAdmissionDiagnosisProblemObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.34' templateId.extension='2014-06-09' code.code='46241-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Admission diagnosis' constraints.validation.dependOn.HospitalAdmissionDiagnosisCode='HospitalAdmissionDiagnosisCodeP'"
  * @generated
  */
 public interface HospitalAdmissionDiagnosis2 extends HospitalAdmissionDiagnosis {

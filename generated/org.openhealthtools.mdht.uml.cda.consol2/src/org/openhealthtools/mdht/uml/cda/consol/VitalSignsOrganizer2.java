@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignsOrganizer2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizerTemplateId VitalSignsOrganizerCode VitalSignsOrganizerCodeP VitalSignsOrganizerVitalSignObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.26.2' code.code='46680005' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Vital signs' constraints.validation.dependOn.VitalSignsOrganizerCode='VitalSignsOrganizerCodeP' constraints.validation.info='VitalSignsOrganizerEffectiveTime' constraints.validation.warning='VitalSignsOrganizer2AuthorParticipation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizerTemplateId VitalSignsOrganizerCode VitalSignsOrganizerCodeP VitalSignsOrganizerVitalSignObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.26' templateId.extension='2014-06-09' code.code='46680005' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Vital signs' constraints.validation.dependOn.VitalSignsOrganizerCode='VitalSignsOrganizerCodeP' constraints.validation.info='VitalSignsOrganizerEffectiveTime' constraints.validation.warning='VitalSignsOrganizer2AuthorParticipation'"
  * @generated
  */
 public interface VitalSignsOrganizer2 extends VitalSignsOrganizer {

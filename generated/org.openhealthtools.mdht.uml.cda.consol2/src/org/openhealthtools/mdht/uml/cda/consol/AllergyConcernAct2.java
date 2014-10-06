@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyConcernAct2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEffectiveTime AllergyProblemActAllergyObservation2 AllergyConcernAct2IVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.30.2' constraints.validation.warning='AllergyConcernAct2AuthorParticipation' constraints.validation.query='AllergyConcernAct2IVLTSLow AllergyConcernAct2IVLTSHigh' constraints.validation.info='AllergyConcernAct2IVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEffectiveTime AllergyProblemActAllergyObservation2 AllergyConcernAct2IVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.30' templateId.extension='2014-06-09' constraints.validation.warning='AllergyConcernAct2AuthorParticipation' constraints.validation.query='AllergyConcernAct2IVLTSLow AllergyConcernAct2IVLTSHigh' constraints.validation.info='AllergyConcernAct2IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyConcernAct2IVLTS constraints.validation.error='AllergyConcernAct2IVLTSLow' constraints.validation.info='AllergyConcernAct2IVLTSHigh'"
  * @generated
  */
