@@ -2426,7 +2426,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UwQqcPieEeOXlK95I8tUew" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_EebnEOwvEeOqa975IP2wug" base_Class="__SgUwOwuEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.51.2">
+  <CDA:CDATemplate xmi:id="_EebnEOwvEeOqa975IP2wug" base_Class="__SgUwOwuEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.51" templateVersion="2014-06-09">
     <ruleId>CONF:16766</ruleId>
     <ruleId>CONF:16767</ruleId>
   </CDA:CDATemplate>
@@ -2454,7 +2454,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5AcfAPieEeOXlK95I8tUew" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_CPNVMOzZEeOnE-G4kptBiw" base_Class="_5l3g0OzYEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.65.2">
+  <CDA:CDATemplate xmi:id="_CPNVMOzZEeOnE-G4kptBiw" base_Class="_5l3g0OzYEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.65" templateVersion="2014-06-09">
     <ruleId>CONF:16770</ruleId>
     <ruleId>CONF:16771</ruleId>
   </CDA:CDATemplate>
@@ -2519,7 +2519,7 @@ The common notion of &quot;procedure&quot; is broader than that specified by the
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M2v9sfDhEeOKPKE9au0oug" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_Iv6S4PDbEeOKPKE9au0oug" base_Class="_CFMuYPDbEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.12.2">
+  <CDA:CDATemplate xmi:id="_Iv6S4PDbEeOKPKE9au0oug" base_Class="_CFMuYPDbEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.12" templateVersion="2014-06-09">
     <ruleId>CONF:8291</ruleId>
     <ruleId>CONF:10519</ruleId>
   </CDA:CDATemplate>
@@ -2587,7 +2587,7 @@ This template represents procedures that result in new information about the pat
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_72HDAPDnEeOKPKE9au0oug" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_UKVOIPDjEeOKPKE9au0oug" base_Class="_QoLWAPDjEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.13.2">
+  <CDA:CDATemplate xmi:id="_UKVOIPDjEeOKPKE9au0oug" base_Class="_QoLWAPDjEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.13" templateVersion="2014-06-09">
     <ruleId>CONF:8238</ruleId>
     <ruleId>CONF:10520</ruleId>
   </CDA:CDATemplate>
@@ -2680,7 +2680,7 @@ This template can be used with a contained Product Instance template to represen
       <generalization xmi:id="_ZJi5IfDuEeOKPKE9au0oug" general="_JIc0oBxEEeGIELeDlfT77A"/>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_i9ajwPDqEeOKPKE9au0oug" base_Class="_fCVOQPDqEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.14.2">
+  <CDA:CDATemplate xmi:id="_i9ajwPDqEeOKPKE9au0oug" base_Class="_fCVOQPDqEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.14" templateVersion="2014-06-09">
     <ruleId>CONF:7654</ruleId>
     <ruleId>CONF:10521</ruleId>
   </CDA:CDATemplate>
@@ -2759,7 +2759,7 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PyCSUfvSEeOyiMEKhdqMGA" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_ia4XYPu_EeOyiMEKhdqMGA" base_Class="_aetyEPu_EeOyiMEKhdqMGA" templateId="2.16.840.1.113883.10.20.22.2.25.2">
+  <CDA:CDATemplate xmi:id="_ia4XYPu_EeOyiMEKhdqMGA" base_Class="_aetyEPu_EeOyiMEKhdqMGA" templateId="2.16.840.1.113883.10.20.22.2.25" templateVersion="2014-06-09">
     <ruleId>CONF:8066</ruleId>
     <ruleId>CONF:10380</ruleId>
   </CDA:CDATemplate>
@@ -2814,7 +2814,7 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iqwAkfvZEeOes-3T-2HryA" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_EuKGcPvYEeOes-3T-2HryA" base_Class="_6M-msPvXEeOes-3T-2HryA" templateId="2.16.840.1.113883.10.20.22.2.37.2">
+  <CDA:CDATemplate xmi:id="_EuKGcPvYEeOes-3T-2HryA" base_Class="_6M-msPvXEeOes-3T-2HryA" templateId="2.16.840.1.113883.10.20.22.2.37" templateVersion="2014-06-09">
     <ruleId>CONF:8174</ruleId>
     <ruleId>CONF:10384</ruleId>
   </CDA:CDATemplate>
@@ -2854,7 +2854,7 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bo3vsf4-EeO_F_2qLv6FWQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_h_DrIP49EeO_F_2qLv6FWQ" base_Class="_dz0ZwP49EeO_F_2qLv6FWQ" templateId="2.16.840.1.113883.10.20.22.2.30.2">
+  <CDA:CDATemplate xmi:id="_h_DrIP49EeO_F_2qLv6FWQ" base_Class="_dz0ZwP49EeO_F_2qLv6FWQ" templateId="2.16.840.1.113883.10.20.22.2.30" templateVersion="2014-06-09">
     <ruleId>CONF:8082</ruleId>
     <ruleId>CONF:10436</ruleId>
   </CDA:CDATemplate>
@@ -2890,7 +2890,7 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2pwmUP5CEeOmw9RN80Tpig" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_rcLJAP5BEeOmw9RN80Tpig" base_Class="_MLNngP5BEeOmw9RN80Tpig" templateId="2.16.840.1.113883.10.20.22.2.36.2">
+  <CDA:CDATemplate xmi:id="_rcLJAP5BEeOmw9RN80Tpig" base_Class="_MLNngP5BEeOmw9RN80Tpig" templateId="2.16.840.1.113883.10.20.22.2.36" templateVersion="2014-06-09">
     <ruleId>CONF:8167</ruleId>
     <ruleId>CONF:10438</ruleId>
   </CDA:CDATemplate>
@@ -2926,7 +2926,7 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u8_dAP5EEeOBnLkJOVC8NQ" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_NcdsoP5EEeOBnLkJOVC8NQ" base_Class="_JFd3MP5EEeOBnLkJOVC8NQ" templateId="2.16.840.1.113883.10.20.22.2.34.2">
+  <CDA:CDATemplate xmi:id="_NcdsoP5EEeOBnLkJOVC8NQ" base_Class="_JFd3MP5EEeOBnLkJOVC8NQ" templateId="2.16.840.1.113883.10.20.22.2.34" templateVersion="2014-06-09">
     <ruleId>CONF:8097</ruleId>
     <ruleId>CONF:10439</ruleId>
   </CDA:CDATemplate>
@@ -2963,7 +2963,7 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j_3WMv5GEeO_r7yO9mhwnA" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_qE4pIP5FEeO_r7yO9mhwnA" base_Class="_lLOykP5FEeO_r7yO9mhwnA" templateId="2.16.840.1.113883.10.20.22.2.28.2">
+  <CDA:CDATemplate xmi:id="_qE4pIP5FEeO_r7yO9mhwnA" base_Class="_lLOykP5FEeO_r7yO9mhwnA" templateId="2.16.840.1.113883.10.20.22.2.28" templateVersion="2014-06-09">
     <ruleId>CONF:8078</ruleId>
     <ruleId>CONF:10443</ruleId>
   </CDA:CDATemplate>
@@ -3000,7 +3000,7 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xq_cIgBzEeSjnfOPJpFg3A" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_Bht34ABzEeSjnfOPJpFg3A" base_Class="_5_O94AByEeSjnfOPJpFg3A" templateId="2.16.840.1.113883.10.20.22.2.29.2">
+  <CDA:CDATemplate xmi:id="_Bht34ABzEeSjnfOPJpFg3A" base_Class="_5_O94AByEeSjnfOPJpFg3A" templateId="2.16.840.1.113883.10.20.22.2.29" templateVersion="2014-06-09">
     <ruleId>CONF:8058</ruleId>
     <ruleId>CONF:10445</ruleId>
   </CDA:CDATemplate>
@@ -3043,7 +3043,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WdE6sAB3EeSLOb2O6vSPzg" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_DJmw0AB1EeSLOb2O6vSPzg" base_Class="_80dMoAB0EeSLOb2O6vSPzg" templateId="2.16.840.1.113883.10.20.22.2.7.2">
+  <CDA:CDATemplate xmi:id="_DJmw0AB1EeSLOb2O6vSPzg" base_Class="_80dMoAB0EeSLOb2O6vSPzg" templateId="2.16.840.1.113883.10.20.22.2.7" templateVersion="2014-06-09">
     <ruleId>CONF:6270</ruleId>
     <ruleId>CONF:6271</ruleId>
   </CDA:CDATemplate>
@@ -3117,7 +3117,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zpHhoQLpEeSBA9s7kRnaEg" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_SVwgAALoEeSBA9s7kRnaEg" base_Class="_N6wUUALoEeSBA9s7kRnaEg" templateId="2.16.840.1.113883.10.20.22.2.7.1.2">
+  <CDA:CDATemplate xmi:id="_SVwgAALoEeSBA9s7kRnaEg" base_Class="_N6wUUALoEeSBA9s7kRnaEg" templateId="2.16.840.1.113883.10.20.22.2.7.1" templateVersion="2014-06-09">
     <ruleId>CONF:7891</ruleId>
     <ruleId>CONF:10447</ruleId>
   </CDA:CDATemplate>

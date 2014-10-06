@@ -1570,7 +1570,7 @@ The UDI should be sent in the participantRole/id.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J9PsgPfdEeO297ryy8ptVg" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_hNuQEK-1EeO8duI_7f6kZw" base_Class="_ZQpEwK-1EeO8duI_7f6kZw" templateId="2.16.840.1.113883.10.20.22.4.36.2">
+  <CDA:CDATemplate xmi:id="_hNuQEK-1EeO8duI_7f6kZw" base_Class="_ZQpEwK-1EeO8duI_7f6kZw" templateId="2.16.840.1.113883.10.20.22.4.36" templateVersion="2014-06-09">
     <ruleId>CONF:16758</ruleId>
     <ruleId>CONF:16759</ruleId>
   </CDA:CDATemplate>
@@ -1769,7 +1769,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_iMX2AOLAEeOc7-TVP7Wi6w" base_Class="_WnSCMOLAEeOc7-TVP7Wi6w" templateId="2.16.840.1.113883.10.20.22.4.16.2">
+  <CDA:CDATemplate xmi:id="_iMX2AOLAEeOc7-TVP7Wi6w" base_Class="_WnSCMOLAEeOc7-TVP7Wi6w" templateId="2.16.840.1.113883.10.20.22.4.16" templateVersion="2014-06-09">
     <ruleId>CONF:7499</ruleId>
     <ruleId>CONF:10504</ruleId>
   </CDA:CDATemplate>
@@ -1891,7 +1891,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SmNKgPiaEeOXlK95I8tUew" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_vPdTwOXfEeOkFcFJ9uzEEw" base_Class="_qH-ckOXfEeOkFcFJ9uzEEw" templateId="2.16.840.1.113883.10.20.22.4.18.2">
+  <CDA:CDATemplate xmi:id="_vPdTwOXfEeOkFcFJ9uzEEw" base_Class="_qH-ckOXfEeOkFcFJ9uzEEw" templateId="2.16.840.1.113883.10.20.22.4.18" templateVersion="2014-06-09">
     <ruleId>CONF:7453</ruleId>
     <ruleId>CONF:10505</ruleId>
   </CDA:CDATemplate>
@@ -1990,7 +1990,7 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
     </nestedClassifier>
   </uml:Class>
   <CDA:ConformsTo xmi:id="_MhZi0OXrEeOkFcFJ9uzEEw" base_Generalization="_H0AmoOXrEeOkFcFJ9uzEEw"/>
-  <CDA:CDATemplate xmi:id="_NVU6IOXrEeOkFcFJ9uzEEw" base_Class="_Hz__kOXrEeOkFcFJ9uzEEw" templateId="2.16.840.1.113883.10.20.22.4.23.2">
+  <CDA:CDATemplate xmi:id="_NVU6IOXrEeOkFcFJ9uzEEw" base_Class="_Hz__kOXrEeOkFcFJ9uzEEw" templateId="2.16.840.1.113883.10.20.22.4.23" templateVersion="2014-06-09">
     <ruleId>CONF:7409</ruleId>
     <ruleId>CONF:10506</ruleId>
   </CDA:CDATemplate>
@@ -2049,7 +2049,7 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wVxJYOaAEeOmzetP5oaH3A" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_MPdmYOZ8EeOmzetP5oaH3A" base_Class="_InVpIOZ8EeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.17.2">
+  <CDA:CDATemplate xmi:id="_MPdmYOZ8EeOmzetP5oaH3A" base_Class="_InVpIOZ8EeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.17" templateVersion="2014-06-09">
     <ruleId>CONF:7429</ruleId>
     <ruleId>CONF:10507</ruleId>
   </CDA:CDATemplate>
@@ -2096,7 +2096,7 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hj_aUOaEEeOmzetP5oaH3A" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_nMp94OaCEeOmzetP5oaH3A" base_Class="_k_C20OaCEeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.50.2">
+  <CDA:CDATemplate xmi:id="_nMp94OaCEeOmzetP5oaH3A" base_Class="_k_C20OaCEeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.50" templateVersion="2014-06-09">
     <ruleId>CONF:8747</ruleId>
     <ruleId>CONF:10509</ruleId>
   </CDA:CDATemplate>
@@ -2178,7 +2178,7 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ZtOEfyrEeOlg_Cnc5bODw" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_dxv-UPyqEeOlg_Cnc5bODw" base_Class="_ZLY3MPyqEeOlg_Cnc5bODw" templateId="2.16.840.1.113883.10.20.22.2.44.2">
+  <CDA:CDATemplate xmi:id="_dxv-UPyqEeOlg_Cnc5bODw" base_Class="_ZLY3MPyqEeOlg_Cnc5bODw" templateId="2.16.840.1.113883.10.20.22.2.44" templateVersion="2014-06-09">
     <ruleId>CONF:10098</ruleId>
     <ruleId>CONF:10392</ruleId>
   </CDA:CDATemplate>
@@ -2224,7 +2224,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HN2fEv1kEeO5Hq-yrsJSmg" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_-QVEEP1bEeO5Hq-yrsJSmg" base_Class="_5OKxwP1bEeO5Hq-yrsJSmg" templateId="2.16.840.1.113883.10.20.22.2.23.2">
+  <CDA:CDATemplate xmi:id="_-QVEEP1bEeO5Hq-yrsJSmg" base_Class="_5OKxwP1bEeO5Hq-yrsJSmg" templateId="2.16.840.1.113883.10.20.22.2.23" templateVersion="2014-06-09">
     <ruleId>CONF:7944</ruleId>
     <ruleId>CONF:10404</ruleId>
   </CDA:CDATemplate>
@@ -2272,7 +2272,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__djvUf4jEeOwFalSp0fRiw" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_XzcKgP4jEeOwFalSp0fRiw" base_Class="_F37nMP4jEeOwFalSp0fRiw" templateId="2.16.840.1.113883.10.20.22.2.38.2">
+  <CDA:CDATemplate xmi:id="_XzcKgP4jEeOwFalSp0fRiw" base_Class="_F37nMP4jEeOwFalSp0fRiw" templateId="2.16.840.1.113883.10.20.22.2.38" templateVersion="2014-06-09">
     <ruleId>CONF:8152</ruleId>
     <ruleId>CONF:10405</ruleId>
   </CDA:CDATemplate>
@@ -2312,7 +2312,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S7rikgFeEeS0nNJt6oyOyQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_N00TQAFaEeS0nNJt6oyOyQ" base_Class="_JUvaUAFaEeS0nNJt6oyOyQ" templateId="2.16.840.1.113883.10.20.22.2.1.2">
+  <CDA:CDATemplate xmi:id="_N00TQAFaEeS0nNJt6oyOyQ" base_Class="_JUvaUAFaEeS0nNJt6oyOyQ" templateId="2.16.840.1.113883.10.20.22.2.1" templateVersion="2014-06-09">
     <ruleId>CONF:7791</ruleId>
     <ruleId>CONF:10432</ruleId>
   </CDA:CDATemplate>
@@ -2366,7 +2366,7 @@ This section requires either an entry indicating the subject is not known to be 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lq4HIQLTEeS0YMHMf4rRtQ" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_V7Gi8ALQEeS0YMHMf4rRtQ" base_Class="_P2mp4ALQEeS0YMHMf4rRtQ" templateId="2.16.840.1.113883.10.20.22.2.1.1.2">
+  <CDA:CDATemplate xmi:id="_V7Gi8ALQEeS0YMHMf4rRtQ" base_Class="_P2mp4ALQEeS0YMHMf4rRtQ" templateId="2.16.840.1.113883.10.20.22.2.1.1" templateVersion="2014-06-09">
     <ruleId>CONF:7568</ruleId>
     <ruleId>CONF:10433</ruleId>
   </CDA:CDATemplate>
@@ -2423,7 +2423,7 @@ This section requires either an entry indicating the subject is not known to be 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Vn8YDhEEeS1WeMhbm6GZw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_jmRN4DhDEeS1WeMhbm6GZw" base_Class="_XA96QDhDEeS1WeMhbm6GZw" templateId="2.16.840.1.113883.10.20.22.4.25.2">
+  <CDA:CDATemplate xmi:id="_jmRN4DhDEeS1WeMhbm6GZw" base_Class="_XA96QDhDEeS1WeMhbm6GZw" templateId="2.16.840.1.113883.10.20.22.4.25" templateVersion="2014-06-09">
     <ruleId>CONF:1098-7372</ruleId>
     <ruleId>CONF:1098-10517</ruleId>
   </CDA:CDATemplate>

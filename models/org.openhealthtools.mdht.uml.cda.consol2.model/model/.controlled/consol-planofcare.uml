@@ -1831,7 +1831,7 @@ The priority of the activity to the patient and provider is communicated through
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hbddYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_oz60oOaYEeOmzetP5oaH3A" base_Class="_lLnRMOaYEeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.39.2">
+  <CDA:CDATemplate xmi:id="_oz60oOaYEeOmzetP5oaH3A" base_Class="_lLnRMOaYEeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.39" templateVersion="2014-06-09">
     <ruleId>CONF:30430</ruleId>
     <ruleId>CONF:30431</ruleId>
   </CDA:CDATemplate>
@@ -1990,7 +1990,7 @@ The priority of the activity to the patient and provider is communicated through
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_ucA3wOdXEeOqBOMhgDlycQ" base_Class="_bDPFMOdXEeOqBOMhgDlycQ" templateId="2.16.840.1.113883.10.20.22.4.40.2">
+  <CDA:CDATemplate xmi:id="_ucA3wOdXEeOqBOMhgDlycQ" base_Class="_bDPFMOdXEeOqBOMhgDlycQ" templateId="2.16.840.1.113883.10.20.22.4.40" templateVersion="2014-06-09">
     <ruleId>CONF:30437</ruleId>
     <ruleId>CONF:30438</ruleId>
   </CDA:CDATemplate>
@@ -2175,7 +2175,7 @@ The Planned Observation template may also indicate the potential insurance cover
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_74YPEOd_EeOqBOMhgDlycQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_msiWsOdvEeOqBOMhgDlycQ" base_Class="_jKZssOdvEeOqBOMhgDlycQ" templateId="2.16.840.1.113883.10.20.22.4.44.2">
+  <CDA:CDATemplate xmi:id="_msiWsOdvEeOqBOMhgDlycQ" base_Class="_jKZssOdvEeOqBOMhgDlycQ" templateId="2.16.840.1.113883.10.20.22.4.44" templateVersion="2014-06-09">
     <ruleId>CONF:30451</ruleId>
     <ruleId>CONF:30452</ruleId>
   </CDA:CDATemplate>
@@ -2382,7 +2382,7 @@ The Planned Observation template may also indicate the potential insurance cover
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RFtX8egOEeO-iJTuAv7BKQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_hMr2QOeEEeOqBOMhgDlycQ" base_Class="_cs0YsOeEEeOqBOMhgDlycQ" templateId="2.16.840.1.113883.10.20.22.4.41.2">
+  <CDA:CDATemplate xmi:id="_hMr2QOeEEeOqBOMhgDlycQ" base_Class="_cs0YsOeEEeOqBOMhgDlycQ" templateId="2.16.840.1.113883.10.20.22.4.41" templateVersion="2014-06-09">
     <ruleId>CONF:30444</ruleId>
     <ruleId>CONF:30445</ruleId>
   </CDA:CDATemplate>
@@ -2669,7 +2669,7 @@ The Planned Observation template may also indicate the potential insurance cover
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_e9gG0OgREeO-iJTuAv7BKQ" base_Class="_Yj45YOgREeO-iJTuAv7BKQ" templateId="2.16.840.1.113883.10.20.22.4.42.2">
+  <CDA:CDATemplate xmi:id="_e9gG0OgREeO-iJTuAv7BKQ" base_Class="_Yj45YOgREeO-iJTuAv7BKQ" templateId="2.16.840.1.113883.10.20.22.4.42" templateVersion="2014-06-09">
     <ruleId>CONF:30465</ruleId>
     <ruleId>CONF:30466</ruleId>
   </CDA:CDATemplate>
@@ -2909,7 +2909,7 @@ Depending on the type of supply, the product or participant will be either a Med
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_8HEwIOg0EeO-iJTuAv7BKQ" base_Class="_vEd1cOg0EeO-iJTuAv7BKQ" templateId="2.16.840.1.113883.10.20.22.4.43.2">
+  <CDA:CDATemplate xmi:id="_8HEwIOg0EeO-iJTuAv7BKQ" base_Class="_vEd1cOg0EeO-iJTuAv7BKQ" templateId="2.16.840.1.113883.10.20.22.4.43" templateVersion="2014-06-09">
     <ruleId>CONF:30463</ruleId>
     <ruleId>CONF:30464</ruleId>
   </CDA:CDATemplate>
@@ -3101,7 +3101,7 @@ The plan may also indicate that patient education will be provided.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7KbrQv45EeO_Yb9cO8w3bA" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_4RLqYP4yEeO_Yb9cO8w3bA" base_Class="_bwml0P4yEeO_Yb9cO8w3bA" templateId="2.16.840.1.113883.10.20.22.2.10.2">
+  <CDA:CDATemplate xmi:id="_4RLqYP4yEeO_Yb9cO8w3bA" base_Class="_bwml0P4yEeO_Yb9cO8w3bA" templateId="2.16.840.1.113883.10.20.22.2.10" templateVersion="2014-06-09">
     <ruleId>CONF:7723</ruleId>
     <ruleId>CONF:10435</ruleId>
   </CDA:CDATemplate>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
   <uml:Class xmi:id="_2JxzgBSVEeGGzu7fmW9pXw" name="ResultOrganizer">
     <ownedComment xmi:id="_MrZPsCvWEeGz1sWhj323cg">
       <body>&lt;p>&#xD;
@@ -43,20 +43,20 @@ If any Results Observation within the organizer has a statusCode of 'active', th
     </ownedAttribute>
     <ownedAttribute xmi:id="_2JzBoxSVEeGGzu7fmW9pXw" name="id" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2JzBpBSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2JzBpRSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2JzBpBSVEeGGzu7fmW9pXw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2JzoshSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2JxzgxSVEeGGzu7fmW9pXw" name="resultObservation" type="_2J1d4BSVEeGGzu7fmW9pXw" association="_2JxzhxSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2JxzhBSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2JxzhRSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2JxzhBSVEeGGzu7fmW9pXw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DiXJUB7KEeGaOZtrEokzNQ" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nzWGYCXhEeGmGonM_wRfcQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nzWGYSXhEeGmGonM_wRfcQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nzWGYCXhEeGmGonM_wRfcQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
@@ -163,8 +163,8 @@ Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or o
     </generalization>
     <ownedAttribute xmi:id="_2J4hMRSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2J4hMhSVEeGGzu7fmW9pXw" value="OBS"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2J4hMxSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
@@ -172,16 +172,16 @@ Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or o
     </ownedAttribute>
     <ownedAttribute xmi:id="_2J5IQBSVEeGGzu7fmW9pXw" name="id" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J5IQRSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J5IQhSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J5IQRSVEeGGzu7fmW9pXw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2J1d6hSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_JTUuoByWEeGaOZtrEokzNQ" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JTUuoRyWEeGaOZtrEokzNQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JTUuohyWEeGaOZtrEokzNQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JTUuoRyWEeGaOZtrEokzNQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2J5vUBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
@@ -191,26 +191,26 @@ Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or o
         <body>Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards) CONF:16838</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J1d7RSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J1d7hSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J1d7RSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2J1d7xSVEeGGzu7fmW9pXw" name="value" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2J6WYBSVEeGGzu7fmW9pXw" name="interpretationCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J6WYhSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J6WYxSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J6WYhSVEeGGzu7fmW9pXw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2J6WZRSVEeGGzu7fmW9pXw" name="methodCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J6WZxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J6WaBSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J6WZxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Wwv9wBt9EeG4C_iCHrZZ9w" name="targetSiteCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wwv9wht9EeG4C_iCHrZZ9w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wwv9wxt9EeG4C_iCHrZZ9w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wwv9wht9EeG4C_iCHrZZ9w" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:ConstraintValidation xmi:id="_2J69chSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J69cBSVEeGGzu7fmW9pXw">
@@ -270,19 +270,19 @@ Procedure results are typically generated by a clinician to provide more granula
     </ownedAttribute>
     <ownedAttribute xmi:id="_7vYSAB7FEeGaOZtrEokzNQ" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7vYSAR7FEeGaOZtrEokzNQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7vYSAh7FEeGaOZtrEokzNQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7vYSAR7FEeGaOZtrEokzNQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
       <redefinedProperty href="#_gwkXoB7EEeGaOZtrEokzNQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2Js7DhSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Js7DxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Js7EBSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Js7DxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_wGYWEBrJEeGZ46SdiDZtPQ" name="resultOrganizer" type="_2JxzgBSVEeGGzu7fmW9pXw" association="_wGY9IBrJEeGZ46SdiDZtPQ">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Av2XsB7FEeGaOZtrEokzNQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Av2XsR7FEeGaOZtrEokzNQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Av2XsB7FEeGaOZtrEokzNQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2JtiEBSVEeGGzu7fmW9pXw" base_Class="_2Js7AxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.3.1" assigningAuthorityName="">
@@ -327,18 +327,18 @@ Procedure results are typically generated by a clinician to provide more granula
     </ownedAttribute>
     <ownedAttribute xmi:id="_gwkXoB7EEeGaOZtrEokzNQ" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lZ9koB7EEeGaOZtrEokzNQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lZ-LsB7EEeGaOZtrEokzNQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lZ9koB7EEeGaOZtrEokzNQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_xGqiGBVdEeGQCvUGzi1kDQ" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xGqiGRVdEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xGqiGhVdEeGQCvUGzi1kDQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xGqiGRVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GXWIoBrIEeGZ46SdiDZtPQ" name="resultOrganizer" type="_2JxzgBSVEeGGzu7fmW9pXw" association="_GXXWwBrIEeGZ46SdiDZtPQ">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K9fNUBrIEeGZ46SdiDZtPQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K9f0YBrIEeGZ46SdiDZtPQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K9fNUBrIEeGZ46SdiDZtPQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_OydAEBVfEeGQCvUGzi1kDQ" base_Class="_xGqiEBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.3">
@@ -437,7 +437,7 @@ Procedure results are typically generated by a clinician to provide more granula
     <reference href="../consol-vocab.uml#_NOFzsOJaEeG3cO7ebC3QuA"/>
     <ruleId>CONF:14849</ruleId>
   </CDA:ValueSetConstraint>
-  <uml:Class xmi:id="_H85E0PF7EeOmsLWmq5fnqQ" name="ResultObservation2" clientDependency="_fO4koPF7EeOmsLWmq5fnqQ">
+  <uml:Class xmi:id="_H85E0PF7EeOmsLWmq5fnqQ" clientDependency="_fO4koPF7EeOmsLWmq5fnqQ" name="ResultObservation2">
     <ownedComment xmi:id="_TU3CoPF7EeOmsLWmq5fnqQ">
       <body>This template represents the results of a lab, radiology, or other study performed on a patient.&#xD;
 The result observation includes a statusCode to allow recording the status of an observation. &quot;Pending&quot; results (e.g., a test has been run but results have not been reported yet) should be represented as &quot;active&quot; ActStatus.</body>
@@ -472,22 +472,22 @@ Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or o
       </specification>
     </ownedRule>
     <generalization xmi:id="_H85E0fF7EeOmsLWmq5fnqQ" general="_2J1d4BSVEeGGzu7fmW9pXw"/>
-    <substitution xmi:id="_fO4koPF7EeOmsLWmq5fnqQ" name="ResultObservation" supplier="_2J1d4BSVEeGGzu7fmW9pXw" client="_H85E0PF7EeOmsLWmq5fnqQ" contract="_2J1d4BSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_fO4koPF7EeOmsLWmq5fnqQ" name="ResultObservation" client="_H85E0PF7EeOmsLWmq5fnqQ" supplier="_2J1d4BSVEeGGzu7fmW9pXw" contract="_2J1d4BSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_wzr4IPF7EeOmsLWmq5fnqQ" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_2J1d6xSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_3qILgPF7EeOmsLWmq5fnqQ">
         <body>Note: Represents the biologically relevant time of the measurement (e.g. the time a blood pressure reading is obtained, the time the blood sample was obtained for a chemistry test).</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wzr4IfF7EeOmsLWmq5fnqQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wzr4IvF7EeOmsLWmq5fnqQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wzr4IfF7EeOmsLWmq5fnqQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_kQYTIPF8EeOmsLWmq5fnqQ" name="authorParticipation" association="_kQZhQPF8EeOmsLWmq5fnqQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kQY6MfF8EeOmsLWmq5fnqQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kQY6MPF8EeOmsLWmq5fnqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kQY6MfF8EeOmsLWmq5fnqQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_OdUE4PF7EeOmsLWmq5fnqQ" base_Class="_H85E0PF7EeOmsLWmq5fnqQ" templateId="2.16.840.1.113883.10.20.22.4.2.2">
+  <CDA:CDATemplate xmi:id="_OdUE4PF7EeOmsLWmq5fnqQ" base_Class="_H85E0PF7EeOmsLWmq5fnqQ" templateId="2.16.840.1.113883.10.20.22.4" templateVersion="2014-06-09">
     <ruleId>CONF:7136</ruleId>
     <ruleId>CONF:9138</ruleId>
   </CDA:CDATemplate>
@@ -511,7 +511,7 @@ Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or o
   <CDA:ConstraintValidation xmi:id="_T_jhQPGCEeOmsLWmq5fnqQ" severity="INFO" base_Constraint="_SvOh0PGCEeOmsLWmq5fnqQ">
     <ruleId>CONF:31866</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_gU40UPGEEeOmsLWmq5fnqQ" name="ResultOrganizer2" clientDependency="_7ztg8PGEEeOmsLWmq5fnqQ">
+  <uml:Class xmi:id="_gU40UPGEEeOmsLWmq5fnqQ" clientDependency="_7ztg8PGEEeOmsLWmq5fnqQ" name="ResultOrganizer2">
     <ownedComment xmi:id="_r11vAPGEEeOmsLWmq5fnqQ">
       <body>This template provides a mechanism for grouping result observations. It contains information applicable to all of the contained result observations. The Result Organizer code categorizes the contained results into one of several commonly accepted values (e.g., &quot;Hematology&quot;, &quot;Chemistry&quot;, &quot;Nuclear Medicine&quot;). &#xD;
 If any Result Observation within the organizer has a statusCode of 'active', the Result Organizer must also have as statusCode of 'active'.</body>
@@ -534,28 +534,27 @@ Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or o
       </specification>
     </ownedRule>
     <generalization xmi:id="_gU40UfGEEeOmsLWmq5fnqQ" general="_2JxzgBSVEeGGzu7fmW9pXw"/>
-    <substitution xmi:id="_7ztg8PGEEeOmsLWmq5fnqQ" name="ResultOrganizer" supplier="_2JxzgBSVEeGGzu7fmW9pXw" client="_gU40UPGEEeOmsLWmq5fnqQ" contract="_2JxzgBSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="__AULkPGfEeOmsLWmq5fnqQ" name="resultObservation2" type="_H85E0PF7EeOmsLWmq5fnqQ" association="__AWn0PGfEeOmsLWmq5fnqQ">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMcTEPGgEeOmsLWmq5fnqQ" value="*"/>
+    <substitution xmi:id="_7ztg8PGEEeOmsLWmq5fnqQ" name="ResultOrganizer" client="_gU40UPGEEeOmsLWmq5fnqQ" supplier="_2JxzgBSVEeGGzu7fmW9pXw" contract="_2JxzgBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="__AULkPGfEeOmsLWmq5fnqQ" name="resultObservation2" type="_H85E0PF7EeOmsLWmq5fnqQ" redefinedProperty="_2JxzgxSVEeGGzu7fmW9pXw" association="__AWn0PGfEeOmsLWmq5fnqQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMc6IPGgEeOmsLWmq5fnqQ" value="1"/>
-      <redefinedProperty href="consol-results.uml#_2JxzgxSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMcTEPGgEeOmsLWmq5fnqQ" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_TLSSAPJOEeOA6ZIOnFjrYQ" name="effectiveTime" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_AK_bcPJPEeOA6ZIOnFjrYQ">
         <body>Note: The effectiveTime is an interval that spans the effectiveTimes of the contained result observations. Because all contained result observations have a required time stamp, it is not required that this effectiveTime be populated.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLSSAfJOEeOA6ZIOnFjrYQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TLSSAvJOEeOA6ZIOnFjrYQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLSSAfJOEeOA6ZIOnFjrYQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_VIaUIErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Q4zckPJPEeOA6ZIOnFjrYQ" name="authorParticipation" association="_Q40qsPJPEeOA6ZIOnFjrYQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q4zckvJPEeOA6ZIOnFjrYQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q4zckfJPEeOA6ZIOnFjrYQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q4zckvJPEeOA6ZIOnFjrYQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_jSlUgPGEEeOmsLWmq5fnqQ" base_Class="_gU40UPGEEeOmsLWmq5fnqQ" templateId="2.16.840.1.113883.10.20.22.4.1.2">
+  <CDA:CDATemplate xmi:id="_jSlUgPGEEeOmsLWmq5fnqQ" base_Class="_gU40UPGEEeOmsLWmq5fnqQ" templateId="2.16.840.1.113883.10.20.22.4.1" templateVersion="2014-06-09">
     <ruleId>CONF:7126</ruleId>
     <ruleId>CONF:9134</ruleId>
   </CDA:CDATemplate>
@@ -580,7 +579,7 @@ Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or o
   <CDA:AssociationValidation xmi:id="_R8VWIPJPEeOA6ZIOnFjrYQ" severity="WARNING" base_Association="_Q40qsPJPEeOA6ZIOnFjrYQ">
     <ruleId>CONF:31149</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_yaJ3QAFAEeSaVZ5WxWd94w" name="ResultsSectionEntriesOptional2" clientDependency="_-lsnEAFAEeSaVZ5WxWd94w">
+  <uml:Class xmi:id="_yaJ3QAFAEeSaVZ5WxWd94w" clientDependency="_-lsnEAFAEeSaVZ5WxWd94w" name="ResultsSectionEntriesOptional2">
     <ownedComment xmi:id="_4GquIAFAEeSaVZ5WxWd94w">
       <body>This section contains the results of observations generated by laboratories, imaging and other procedures. The scope includes observations of hematology, chemistry, serology, virology, toxicology, microbiology, plain x-ray, ultrasound, CT, MRI, angiography, echocardiography, nuclear medicine, pathology, and procedure observations. &#xD;
 This section often includes notable results such as abnormal values or relevant trends. It can contain all results for the period of time being documented.&#xD;
@@ -589,16 +588,16 @@ Imaging results are typically generated by a clinician reviewing the output of a
 Procedure results are typically generated by a clinician to provide more granular information about component observations made during  a procedure, such as where a gastroenterologist reports the size of a polyp observed during a colonoscopy.</body>
     </ownedComment>
     <generalization xmi:id="_yaM6kAFAEeSaVZ5WxWd94w" general="_xGqiEBVdEeGQCvUGzi1kDQ"/>
-    <substitution xmi:id="_-lsnEAFAEeSaVZ5WxWd94w" name="ResultsSectionEntriesOptional" supplier="_xGqiEBVdEeGQCvUGzi1kDQ" client="_yaJ3QAFAEeSaVZ5WxWd94w" contract="_xGqiEBVdEeGQCvUGzi1kDQ"/>
+    <substitution xmi:id="_-lsnEAFAEeSaVZ5WxWd94w" name="ResultsSectionEntriesOptional" client="_yaJ3QAFAEeSaVZ5WxWd94w" supplier="_xGqiEBVdEeGQCvUGzi1kDQ" contract="_xGqiEBVdEeGQCvUGzi1kDQ"/>
     <ownedAttribute xmi:id="_eNpvcAFFEeSaVZ5WxWd94w" name="code" visibility="private" redefinedProperty="_xGqiFhVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_m7CWUAFFEeSaVZ5WxWd94w" name="resultOrganizer2" type="_gU40UPGEEeOmsLWmq5fnqQ" redefinedProperty="_GXWIoBrIEeGZ46SdiDZtPQ" association="_m7FZoAFFEeSaVZ5WxWd94w">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m7C9YQFFEeSaVZ5WxWd94w" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m7C9YAFFEeSaVZ5WxWd94w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m7C9YQFFEeSaVZ5WxWd94w" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2-WbMAFAEeSaVZ5WxWd94w" base_Class="_yaJ3QAFAEeSaVZ5WxWd94w" templateId="2.16.840.1.113883.10.20.22.2.3.2">
+  <CDA:CDATemplate xmi:id="_2-WbMAFAEeSaVZ5WxWd94w" base_Class="_yaJ3QAFAEeSaVZ5WxWd94w" templateId="2.16.840.1.113883.10.20.22.2.3" templateVersion="2014-06-09">
     <ruleId>CONF:7116</ruleId>
     <ruleId>CONF:9136</ruleId>
   </CDA:CDATemplate>
@@ -618,7 +617,7 @@ Procedure results are typically generated by a clinician to provide more granula
     <ruleId>CONF:7119</ruleId>
     <ruleId>CONF:15515</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_bAAhEALtEeSueJWOLw5iaQ" name="ResultsSection2" clientDependency="_tU0VMALtEeSueJWOLw5iaQ">
+  <uml:Class xmi:id="_bAAhEALtEeSueJWOLw5iaQ" clientDependency="_tU0VMALtEeSueJWOLw5iaQ" name="ResultsSection2">
     <ownedComment xmi:id="_gHqXYALtEeSueJWOLw5iaQ">
       <body>The Results section contains observations of results generated by laboratories, imaging procedures, and other procedures. These coded result observations are contained within a Results Organizer in the Results Section. The scope includes observations such as hematology, chemistry, serology, virology, toxicology, microbiology, plain x-ray, ultrasound, CT, MRI, angiography, echocardiography, nuclear medicine, pathology, and procedure observations. The section often includes notable results such as abnormal values or relevant trends, and could contain all results for the period of time being documented.&#xD;
 Laboratory results are typically generated by laboratories providing analytic services in areas such as chemistry, hematology, serology, histology, cytology, anatomic pathology, microbiology, and/or virology. These observations are based on analysis of specimens obtained from the patient and submitted to the laboratory.&#xD;
@@ -626,26 +625,26 @@ Imaging results are typically generated by a clinician reviewing the output of a
 Procedure results are typically generated by a clinician to provide more granular information about component observations made during  a procedure, such as where a gastroenterologist reports the size of a polyp observed during a colonoscopy.</body>
     </ownedComment>
     <generalization xmi:id="_bAC9UALtEeSueJWOLw5iaQ" general="_yaJ3QAFAEeSaVZ5WxWd94w"/>
-    <substitution xmi:id="_tU0VMALtEeSueJWOLw5iaQ" name="ResultsSection" supplier="_2Js7AxSVEeGGzu7fmW9pXw" client="_bAAhEALtEeSueJWOLw5iaQ" contract="_2Js7AxSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_tU0VMALtEeSueJWOLw5iaQ" name="ResultsSection" client="_bAAhEALtEeSueJWOLw5iaQ" supplier="_2Js7AxSVEeGGzu7fmW9pXw" contract="_2Js7AxSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_0-RkcALuEeSueJWOLw5iaQ" name="code" visibility="private" redefinedProperty="_eNpvcAFFEeSaVZ5WxWd94w">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="__2V6MALuEeSueJWOLw5iaQ" name="resultOrganizer2" type="_gU40UPGEEeOmsLWmq5fnqQ" redefinedProperty="_m7CWUAFFEeSaVZ5WxWd94w" association="__2YWcALuEeSueJWOLw5iaQ">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DqYzkALvEeSueJWOLw5iaQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DqYzkQLvEeSueJWOLw5iaQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DqYzkALvEeSueJWOLw5iaQ" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_WU_RgALvEeSueJWOLw5iaQ" name="title" visibility="private" aggregation="composite" redefinedProperty="_gwkXoB7EEeGaOZtrEokzNQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WU_RgQLvEeSueJWOLw5iaQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WU_RggLvEeSueJWOLw5iaQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WU_RgQLvEeSueJWOLw5iaQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_WU-qcALvEeSueJWOLw5iaQ" name="text" visibility="private" aggregation="composite" redefinedProperty="_xGqiGBVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WU-qcQLvEeSueJWOLw5iaQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WU-qcgLvEeSueJWOLw5iaQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WU-qcQLvEeSueJWOLw5iaQ" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_e0ccAALtEeSueJWOLw5iaQ" base_Class="_bAAhEALtEeSueJWOLw5iaQ" templateId="2.16.840.1.113883.10.20.22.2.3.1.2">
+  <CDA:CDATemplate xmi:id="_e0ccAALtEeSueJWOLw5iaQ" base_Class="_bAAhEALtEeSueJWOLw5iaQ" templateId="2.16.840.1.113883.10.20.22.2.3.1" templateVersion="2014-06-09">
     <ruleId>CONF:7108</ruleId>
     <ruleId>CONF:9137</ruleId>
   </CDA:CDATemplate>

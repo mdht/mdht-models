@@ -1003,7 +1003,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <ruleId>CONF:19160</ruleId>
     <ruleId>CONF:32156</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_sazhQLkxEeODDJAC5t5vpw" base_Class="_aJr6ULkxEeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.60.2">
+  <CDA:CDATemplate xmi:id="_sazhQLkxEeODDJAC5t5vpw" base_Class="_aJr6ULkxEeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.60" templateVersion="2014-06-09">
     <ruleId>CONF:8897</ruleId>
     <ruleId>CONF:10492</ruleId>
   </CDA:CDATemplate>
@@ -1122,7 +1122,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_Vf2sQOwlEeOqa975IP2wug" base_Class="_Q0ODkOwlEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.61.2">
+  <CDA:CDATemplate xmi:id="_Vf2sQOwlEeOqa975IP2wug" base_Class="_Q0ODkOwlEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.61" templateVersion="2014-06-09">
     <ruleId>CONF:8900</ruleId>
     <ruleId>CONF:10516</ruleId>
   </CDA:CDATemplate>
@@ -1177,7 +1177,7 @@ The sources of payment are represented as a Coverage Activity, which identifies 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZcOl4v4mEeOzC5ykp-XCaA" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_yGcSUP4lEeOzC5ykp-XCaA" base_Class="_twgM0P4lEeOzC5ykp-XCaA" templateId="2.16.840.1.113883.10.20.22.2.18.2">
+  <CDA:CDATemplate xmi:id="_yGcSUP4lEeOzC5ykp-XCaA" base_Class="_twgM0P4lEeOzC5ykp-XCaA" templateId="2.16.840.1.113883.10.20.22.2.18" templateVersion="2014-06-09">
     <ruleId>CONF:7924</ruleId>
     <ruleId>CONF:10434</ruleId>
   </CDA:CDATemplate>

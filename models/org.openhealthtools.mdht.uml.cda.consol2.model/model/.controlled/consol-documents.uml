@@ -5579,7 +5579,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_YqH-8PK9EeGFUPBL8qS7yQ" base_Property="_X72iwD_LEeGXieeKs7NJjA">
     <ruleId>CONF:17189</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_1Fd-MPK9EeGFUPBL8qS7yQ" base_Class="_sfqx0D_bEeGnev0fONNFyw" templateId="2.16.840.1.113883.10.20.21.3.1">
+  <CDA:CDATemplate xmi:id="_1Fd-MPK9EeGFUPBL8qS7yQ" base_Class="_sfqx0D_bEeGnev0fONNFyw" templateId="2.16.840.1.113883.10.20.21.3.1" templateVersion="2014-06-09">
     <ruleId>CONF:9480</ruleId>
     <ruleId>CONF:10068</ruleId>
   </CDA:CDATemplate>
@@ -6168,7 +6168,7 @@ The type of consent is conveyed in consent/code. Consents in the header have bee
       <generalization xmi:id="_7ydUUBwkEeSMr-NWzQuDBw" general="_-_hKwPI0EeGu1M-cCXg0Dg"/>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_vsuMsJ5QEeOr4eM3k36wAg" base_Class="_dduXkJ5OEeOr4eM3k36wAg" templateId="2.16.840.1.113883.10.20.22.1.1.2">
+  <CDA:CDATemplate xmi:id="_vsuMsJ5QEeOr4eM3k36wAg" base_Class="_dduXkJ5OEeOr4eM3k36wAg" templateId="2.16.840.1.113883.10.20.22.1.1" templateVersion="2014-06-09">
     <ruleId>CONF:5252</ruleId>
     <ruleId>CONF:10036</ruleId>
   </CDA:CDATemplate>
@@ -9413,7 +9413,7 @@ A Consultation Note is always associated with an encounter;  the id element of
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_acTmUCFmEeSt4IEYu7xgbw" base_Class="_PkP3oCFmEeSt4IEYu7xgbw" templateId="2.16.840.1.113883.10.20.22.1.4.2">
+  <CDA:CDATemplate xmi:id="_acTmUCFmEeSt4IEYu7xgbw" base_Class="_PkP3oCFmEeSt4IEYu7xgbw" templateId="2.16.840.1.113883.10.20.22.1.4" templateVersion="2014-06-09">
     <ruleId>CONF:1098-8375</ruleId>
     <ruleId>CONF:1098-10040</ruleId>
     <ruleId>CONF:1098-32502</ruleId>
@@ -9944,7 +9944,7 @@ The serviceEvent/performer represents the healthcare providers involved in the c
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_qGSfMCGjEeSt4IEYu7xgbw" base_Class="_lPMNYCGjEeSt4IEYu7xgbw" templateId="2.16.840.1.113883.10.20.22.1.2.2">
+  <CDA:CDATemplate xmi:id="_qGSfMCGjEeSt4IEYu7xgbw" base_Class="_lPMNYCGjEeSt4IEYu7xgbw" templateId="2.16.840.1.113883.10.20.22.1" templateVersion="2014-06-09">
     <ruleId>CONF:1098-8450</ruleId>
     <ruleId>CONF:1098-10038</ruleId>
   </CDA:CDATemplate>
@@ -10681,7 +10681,7 @@ Note: The section/code SHOULD be selected from LOINC or DICOM for sections not l
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_8pFr8CJnEeSBLYc2hU6GfA" base_Class="_4JRRsCJnEeSBLYc2hU6GfA" templateId="2.16.840.1.113883.10.20.22.1.5.2">
+  <CDA:CDATemplate xmi:id="_8pFr8CJnEeSBLYc2hU6GfA" base_Class="_4JRRsCJnEeSBLYc2hU6GfA" templateId="2.16.840.1.113883.10.20.22.1.5" templateVersion="2014-06-09">
     <ruleId>CONF:1098-8404</ruleId>
     <ruleId>CONF:1098-10042</ruleId>
   </CDA:CDATemplate>
@@ -11242,7 +11242,7 @@ The dischargeDispositionCode, @displayName, or NUBC UB-04 Print Name, must be di
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_JYLpECP6EeS4d9o7u1_H3A" base_Class="_89EzQCP5EeS4d9o7u1_H3A" templateId="2.16.840.1.113883.10.20.22.1.8.2">
+  <CDA:CDATemplate xmi:id="_JYLpECP6EeS4d9o7u1_H3A" base_Class="_89EzQCP5EeS4d9o7u1_H3A" templateId="2.16.840.1.113883.10.20.22.1.8" templateVersion="2014-06-09">
     <ruleId>CONF:1098-8463</ruleId>
     <ruleId>CONF:1098-10044</ruleId>
   </CDA:CDATemplate>
@@ -11797,7 +11797,7 @@ The H&amp;P Note is always associated with an encounter.</body>
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_LsLiMClvEeSoCqqrpX8LzQ" base_Class="_4mLhsCluEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.3.2">
+  <CDA:CDATemplate xmi:id="_LsLiMClvEeSoCqqrpX8LzQ" base_Class="_4mLhsCluEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.3" templateVersion="2014-06-09">
     <ruleId>CONF:1098-8283</ruleId>
     <ruleId>CONF:1098-10046</ruleId>
   </CDA:CDATemplate>
@@ -12385,7 +12385,7 @@ The performer represents clinicians who actually and principally carry out the s
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_jaxNYC1fEeSoCqqrpX8LzQ" base_Class="_aH1CYC1fEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.7.2">
+  <CDA:CDATemplate xmi:id="_jaxNYC1fEeSoCqqrpX8LzQ" base_Class="_aH1CYC1fEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.7" templateVersion="2014-06-09">
     <ruleId>CONF:1098-8483</ruleId>
     <ruleId>CONF:1098-10048</ruleId>
   </CDA:CDATemplate>
@@ -13110,7 +13110,7 @@ The performer participant represents clinicians who actually and principally car
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_ONtyAC4pEeSoCqqrpX8LzQ" base_Class="_JD8b0C4pEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.6.2">
+  <CDA:CDATemplate xmi:id="_ONtyAC4pEeSoCqqrpX8LzQ" base_Class="_JD8b0C4pEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.6" templateVersion="2014-06-09">
     <ruleId>CONF:1098-8496</ruleId>
     <ruleId>CONF:1098-10050</ruleId>
   </CDA:CDATemplate>
@@ -13798,7 +13798,7 @@ All visits take place at a specific location. When available, the location ID is
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_vc8OUC-aEeSoCqqrpX8LzQ" base_Class="_qVEVkC-aEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.9.2">
+  <CDA:CDATemplate xmi:id="_vc8OUC-aEeSoCqqrpX8LzQ" base_Class="_qVEVkC-aEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.9" templateVersion="2014-06-09">
     <ruleId>CONF:1098-7588</ruleId>
     <ruleId>CONF:1098-10052</ruleId>
   </CDA:CDATemplate>
@@ -14141,7 +14141,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_SxqvIC-6EeSoCqqrpX8LzQ" base_Class="_MrNuQC-6EeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.10.2">
+  <CDA:CDATemplate xmi:id="_SxqvIC-6EeSoCqqrpX8LzQ" base_Class="_MrNuQC-6EeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.10" templateVersion="2014-06-09">
     <ruleId>CONF:1098-7710</ruleId>
     <ruleId>CONF:1098-10054</ruleId>
   </CDA:CDATemplate>

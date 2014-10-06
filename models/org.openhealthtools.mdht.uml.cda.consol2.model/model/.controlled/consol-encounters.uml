@@ -401,7 +401,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-bD4YPgAEeOYeZoWJF5yyQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_WBACIMzDEeO93sHu8pHB2g" base_Class="_RGU34MzDEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.49.2">
+  <CDA:CDATemplate xmi:id="_WBACIMzDEeO93sHu8pHB2g" base_Class="_RGU34MzDEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.49" templateVersion="2014-06-09">
     <ruleId>CONF:8712</ruleId>
     <ruleId>CONF:26353</ruleId>
   </CDA:CDATemplate>
@@ -428,7 +428,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X3uK4Pf_EeOYeZoWJF5yyQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_wJ4rAMzNEeO93sHu8pHB2g" base_Class="_jH6CcMzNEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.80.2">
+  <CDA:CDATemplate xmi:id="_wJ4rAMzNEeO93sHu8pHB2g" base_Class="_jH6CcMzNEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.80" templateVersion="2014-06-09">
     <ruleId>CONF:14895</ruleId>
     <ruleId>CONF:14896</ruleId>
   </CDA:CDATemplate>
@@ -478,7 +478,7 @@
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_roxZkPvbEeOJwYDYIUCQDg" base_Class="_kgM0YPvbEeOJwYDYIUCQDg" templateId="2.16.840.1.113883.10.20.22.2.22.2">
+  <CDA:CDATemplate xmi:id="_roxZkPvbEeOJwYDYIUCQDg" base_Class="_kgM0YPvbEeOJwYDYIUCQDg" templateId="2.16.840.1.113883.10.20.22.2.22" templateVersion="2014-06-09">
     <ruleId>CONF:7940</ruleId>
     <ruleId>CONF:10386</ruleId>
   </CDA:CDATemplate>
@@ -520,7 +520,7 @@
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_0SqCYAIvEeScubSeRE1upQ" base_Class="_ogD-EAIvEeScubSeRE1upQ" templateId="2.16.840.1.113883.10.20.22.2.22.1.2">
+  <CDA:CDATemplate xmi:id="_0SqCYAIvEeScubSeRE1upQ" base_Class="_ogD-EAIvEeScubSeRE1upQ" templateId="2.16.840.1.113883.10.20.22.2.22.1" templateVersion="2014-06-09">
     <ruleId>CONF:8705</ruleId>
     <ruleId>CONF:10387</ruleId>
   </CDA:CDATemplate>

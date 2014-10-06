@@ -2675,7 +2675,7 @@ Devices applied to, or placed in, the patient are represented with the Procedure
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_BcRmkMzTEeO93sHu8pHB2g" base_Class="_3WqogMzSEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.67.2">
+  <CDA:CDATemplate xmi:id="_BcRmkMzTEeO93sHu8pHB2g" base_Class="_3WqogMzSEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.67" templateVersion="2014-06-09">
     <ruleId>CONF:13889</ruleId>
     <ruleId>CONF:13890</ruleId>
   </CDA:CDATemplate>
@@ -2735,7 +2735,7 @@ Devices applied to, or placed in, the patient are represented with the Procedure
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xJnBYuD_EeOmBMTtnrPqww" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_4XOfoOD0EeOmBMTtnrPqww" base_Class="_yU2tgOD0EeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.66.2">
+  <CDA:CDATemplate xmi:id="_4XOfoOD0EeOmBMTtnrPqww" base_Class="_yU2tgOD0EeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.66" templateVersion="2014-06-09">
     <ruleId>CONF:14361</ruleId>
     <ruleId>CONF:14362</ruleId>
   </CDA:CDATemplate>
@@ -2788,7 +2788,7 @@ Devices applied to, or placed in, the patient are represented with the Procedure
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_stp7IPgDEeOYeZoWJF5yyQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_O0QywOEIEeOmBMTtnrPqww" base_Class="_GM6icOEIEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.34.2">
+  <CDA:CDATemplate xmi:id="_O0QywOEIEeOmBMTtnrPqww" base_Class="_GM6icOEIEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.34" templateVersion="2014-06-09">
     <ruleId>CONF:16767</ruleId>
     <ruleId>CONF:16748</ruleId>
   </CDA:CDATemplate>
@@ -2870,7 +2870,7 @@ Devices applied to, or placed in, the patient are represented with the Procedure
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zCqi8eHqEeO04sHNODkHmQ" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_VcCuQOHoEeO04sHNODkHmQ" base_Class="_PrEOIOHoEeO04sHNODkHmQ" templateId="2.16.840.1.113883.10.20.22.4.19.2">
+  <CDA:CDATemplate xmi:id="_VcCuQOHoEeO04sHNODkHmQ" base_Class="_PrEOIOHoEeO04sHNODkHmQ" templateId="2.16.840.1.113883.10.20.22.4.19" templateVersion="2014-06-09">
     <ruleId>CONF:7482</ruleId>
     <ruleId>CONF:10502</ruleId>
   </CDA:CDATemplate>
@@ -2903,7 +2903,7 @@ Devices applied to, or placed in, the patient are represented with the Procedure
     <generalization xmi:id="_D62NweH7EeO04sHNODkHmQ" general="_2G8h9RSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_CuJUoOH8EeO04sHNODkHmQ" name="Instructions" client="_D62NwOH7EeO04sHNODkHmQ" supplier="_2G8h9RSVEeGGzu7fmW9pXw" contract="_2G8h9RSVEeGGzu7fmW9pXw"/>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_sESL0OH7EeO04sHNODkHmQ" base_Class="_D62NwOH7EeO04sHNODkHmQ" templateId="2.16.840.1.113883.10.20.22.4.20.2">
+  <CDA:CDATemplate xmi:id="_sESL0OH7EeO04sHNODkHmQ" base_Class="_D62NwOH7EeO04sHNODkHmQ" templateId="2.16.840.1.113883.10.20.22.4.20" templateVersion="2014-06-09">
     <ruleId>CONF:7393</ruleId>
     <ruleId>CONF:10503</ruleId>
   </CDA:CDATemplate>
@@ -2940,7 +2940,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_u01UoPvVEeOvZJBdQKQrqQ" base_Class="_q_8twPvVEeOvZJBdQKQrqQ" templateId="2.16.840.1.113883.10.20.22.2.9.2">
+  <CDA:CDATemplate xmi:id="_u01UoPvVEeOvZJBdQKQrqQ" base_Class="_q_8twPvVEeOvZJBdQKQrqQ" templateId="2.16.840.1.113883.10.20.22.2.9" templateVersion="2014-06-09">
     <ruleId>CONF:7705</ruleId>
     <ruleId>CONF:10381</ruleId>
   </CDA:CDATemplate>
@@ -3033,7 +3033,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3L7KEvyTEeOozpLKXSm5NA" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="___nqwPyHEeOozpLKXSm5NA" base_Class="_8rMFkPyHEeOozpLKXSm5NA" templateId="2.16.840.1.113883.10.20.22.2.14.2">
+  <CDA:CDATemplate xmi:id="___nqwPyHEeOozpLKXSm5NA" base_Class="_8rMFkPyHEeOozpLKXSm5NA" templateId="2.16.840.1.113883.10.20.22.2.14" templateVersion="2014-06-09">
     <ruleId>CONF:7920</ruleId>
     <ruleId>CONF:10389</ruleId>
   </CDA:CDATemplate>
@@ -3096,7 +3096,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ehZzQfyiEeOC19UEcu7MOw" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_xSfwMPyhEeOC19UEcu7MOw" base_Class="_sZlggPyhEeOC19UEcu7MOw" templateId="2.16.840.1.113883.10.20.22.2.20.2">
+  <CDA:CDATemplate xmi:id="_xSfwMPyhEeOC19UEcu7MOw" base_Class="_sZlggPyhEeOC19UEcu7MOw" templateId="2.16.840.1.113883.10.20.22.2.20" templateVersion="2014-06-09">
     <ruleId>CONF:7828</ruleId>
     <ruleId>CONF:10390</ruleId>
   </CDA:CDATemplate>
@@ -3130,7 +3130,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y0gTIPyoEeOc0tW1-DpN-Q" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_h9zhUPylEeOc0tW1-DpN-Q" base_Class="_ctJgAPylEeOc0tW1-DpN-Q" templateId="2.16.840.1.113883.10.20.22.2.43.2">
+  <CDA:CDATemplate xmi:id="_h9zhUPylEeOc0tW1-DpN-Q" base_Class="_ctJgAPylEeOc0tW1-DpN-Q" templateId="2.16.840.1.113883.10.20.22.2.43" templateVersion="2014-06-09">
     <ruleId>CONF:9930</ruleId>
     <ruleId>CONF:10391</ruleId>
   </CDA:CDATemplate>
@@ -3166,7 +3166,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wm0K8v1VEeOKqrimxttICg" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_ql7GEP1HEeOVx4YMwgfjlA" base_Class="_k8L2YP1HEeOVx4YMwgfjlA" templateId="2.16.840.1.113883.10.20.22.2.45.2">
+  <CDA:CDATemplate xmi:id="_ql7GEP1HEeOVx4YMwgfjlA" base_Class="_k8L2YP1HEeOVx4YMwgfjlA" templateId="2.16.840.1.113883.10.20.22.2.45" templateVersion="2014-06-09">
     <ruleId>CONF:10112</ruleId>
     <ruleId>CONF:31384</ruleId>
   </CDA:CDATemplate>
@@ -3205,7 +3205,7 @@ Instructions are a subset of interventions and may include self-care instruction
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H9bNwv1XEeOW-qBXb0kbTA" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_dPAxgP1WEeOW-qBXb0kbTA" base_Class="_YCS1AP1WEeOW-qBXb0kbTA" templateId="2.16.840.1.113883.10.20.21.2.3.2">
+  <CDA:CDATemplate xmi:id="_dPAxgP1WEeOW-qBXb0kbTA" base_Class="_YCS1AP1WEeOW-qBXb0kbTA" templateId="2.16.840.1.113883.10.20.21.2.3" templateVersion="2014-06-09">
     <ruleId>CONF:8680</ruleId>
     <ruleId>CONF:10461</ruleId>
   </CDA:CDATemplate>
@@ -3240,7 +3240,7 @@ Instructions are a subset of interventions and may include self-care instruction
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SIdjggB6EeS20Pddu0dxVw" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_j0EfEAB5EeS20Pddu0dxVw" base_Class="_Ya0H0AB5EeS20Pddu0dxVw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.1.2">
+  <CDA:CDATemplate xmi:id="_j0EfEAB5EeS20Pddu0dxVw" base_Class="_Ya0H0AB5EeS20Pddu0dxVw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.1" templateVersion="2014-06-09">
     <ruleId>CONF:7844</ruleId>
     <ruleId>CONF:10468</ruleId>
   </CDA:CDATemplate>
