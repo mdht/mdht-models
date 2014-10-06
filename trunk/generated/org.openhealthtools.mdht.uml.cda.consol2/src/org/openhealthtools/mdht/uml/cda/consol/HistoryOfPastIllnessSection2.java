@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHistoryOfPastIllnessSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HistoryOfPastIllnessSectionTemplateId HistoryOfPastIllnessSectionCode HistoryOfPastIllnessSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.20.2' code.code='11348-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of Past Illness' constraints.validation.dependOn.HistoryOfPastIllnessSectionCode='HistoryOfPastIllnessSectionCodeP' constraints.validation.info='HistoryOfPastIllnessSectionProblemObservation2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HistoryOfPastIllnessSectionTemplateId HistoryOfPastIllnessSectionCode HistoryOfPastIllnessSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.20' templateId.extension='2014-06-09' code.code='11348-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of Past Illness' constraints.validation.dependOn.HistoryOfPastIllnessSectionCode='HistoryOfPastIllnessSectionCodeP' constraints.validation.info='HistoryOfPastIllnessSectionProblemObservation2'"
  * @generated
  */
 public interface HistoryOfPastIllnessSection2 extends HistoryOfPastIllnessSection {

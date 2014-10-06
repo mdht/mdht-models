@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.21.1" extension="2014-06-09"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.21"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.21" extension="2014-06-09"/>
+          <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance Directives"/>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

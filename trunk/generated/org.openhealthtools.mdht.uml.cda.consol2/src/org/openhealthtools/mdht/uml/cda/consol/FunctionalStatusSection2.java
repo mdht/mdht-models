@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFunctionalStatusSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusSectionTemplateId FunctionalStatusSectionCode FunctionalStatusSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.14.2' code.code='47420-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Functional Status' constraints.validation.dependOn.FunctionalStatusSectionCode='FunctionalStatusSectionCodeP' constraints.validation.info='FunctionalStatusSectionFunctionalStatusOrganizer2 FunctionalStatusSectionFunctionalStatusObservation2 FunctionalStatusSectionNonMedicinalSupplyActivity2 FunctionalStatusSection2SelfCareActivities FunctionalStatusSection2SensoryAndSpeechStatus'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusSectionTemplateId FunctionalStatusSectionCode FunctionalStatusSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.14' templateId.extension='2014-06-09' code.code='47420-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Functional Status' constraints.validation.dependOn.FunctionalStatusSectionCode='FunctionalStatusSectionCodeP' constraints.validation.info='FunctionalStatusSectionFunctionalStatusOrganizer2 FunctionalStatusSectionFunctionalStatusObservation2 FunctionalStatusSectionNonMedicinalSupplyActivity2 FunctionalStatusSection2SelfCareActivities FunctionalStatusSection2SensoryAndSpeechStatus'"
  * @generated
  */
 public interface FunctionalStatusSection2 extends FunctionalStatusSection {

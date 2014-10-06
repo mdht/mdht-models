@@ -22920,6 +22920,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteDocumentationOfServiceEvent2">
       <details key="constraints.validation.error" value="ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2PreciseToTheDay ProgressNoteDocumentationOfServiceEvent2ClassCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.21.3.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute ProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteDocumentationOfServiceEvent2EffectiveTime"/>
       <details key="constraints.validation.info" value="ProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond"/>
       <details key="classCode" value="PCPR"/>
@@ -24853,7 +24854,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="AdvanceDirectiveObservation2" eSuperTypes="#//AdvanceDirectiveObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationCode AdvanceDirectiveObservationCodeP AdvanceDirectiveObservationEffectiveTime AdvanceDirectiveObservation2IVLTSLow AdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierParticipantRole AdvanceDirectiveObservation2CustodianCustodianRoleAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName AdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity AdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianRole AdvanceDirectiveObservationReferenceExternalDocumentId AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceTypeCode AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocument"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.48.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.48"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.dependOn.AdvanceDirectiveObservationCode"
@@ -26011,7 +26013,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="NonMedicinalSupplyActivity2" eSuperTypes="#//NonMedicinalSupplyActivity">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivity2Instruction2InversionInd"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.50.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.50"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="NonMedicinalSupplyActivity2Instruction2"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -26050,7 +26053,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Instruction2" eSuperTypes="#//Instructions">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="InstructionsTemplateId"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.20.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.20"/>
+      <details key="templateId.extension" value="2014-06-09"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="InstructionsTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -26068,7 +26072,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityProcedure2" eSuperTypes="#//ProcedureActivityProcedure">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureActivityProcedureTemplateId ProcedureActivityProcedure2InstructionsInversion ProcedureActivityProcedureTargetSiteCode"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.14.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.14"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="targetSiteCode.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="targetSiteCode.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.warning" value="ProcedureActivityProcedureTargetSiteCodeP"/>
@@ -26167,7 +26172,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Indication2" eSuperTypes="#//Indication">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="IndicationTemplateId IndicationCodeP IndicationId"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.19.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.19"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="Indication2Text IndicationValue"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
@@ -26279,7 +26285,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicationActivity2" eSuperTypes="#//MedicationActivity">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationActivityTemplateId MedicationActivity2InstructionsInversionInd MedicationActivity2SubstanceAdministeredActInversionInd MedicationActivity2EffectiveTimeIVLTSorTS MedicationActivityStatusCode MedicationActivityStatusCodeP MedicationActivityAdministrationUnitCode MedicationActivityConsumable MedicationActivity2MedicationActivityPreconditionTypeCode MedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2 MedicationActivity2MedicationActivityConsumableMedicationInformation2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.16.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.16"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="MedicationActivity2DoseQuantityorrateQuantity MedicationActivity2EffectiveTimePIVLTS MedicationActivityDoseQuantity MedicationActivity2AuthorParticipation"/>
       <details key="constraints.validation.info" value="MedicationActivity2EffectiveTimeIVLTSHigh MedicationActivityRepeatNumber MedicationActivityCode MedicationActivityAdministrationUnitCodeP MedicationActivity2DrugMonitoringAct MedicationActivityInstruction2 MedicationActivity2SubstanceAdministeredAct MedicationActivityIndication2 MedicationActivityMedicationSupplyOrder2 MedicationActivityMedicationDispense2 MedicationActivityReactionObservation2 MedicationActivityPrecondition"/>
       <details key="constraints.validation.dependOn.MedicationActivityStatusCode"
@@ -26669,7 +26676,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicationSupplyOrder2" eSuperTypes="#//MedicationSupplyOrder">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationSupplyOrderTemplateId MedicationSupplyOrder2ContainsMedicationOrImmunization MedicationSupplyOrder2InstructionInversionInd"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.17.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.17"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="MedicationSupplyOrder2ContainsMedicationInformation2 MedicationSupplyOrder2ContainsImmunizationMedicationInformation2 MedicationSupplyOrderInstruction2"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -26736,7 +26744,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicationDispense2" eSuperTypes="#//MedicationDispense">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationDispenseTemplateId MedicationDispense2ContainsMedicationOrImmunization"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.18.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.18"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="MedicationDispense2ContainsMedicationInformation2 MedicationDispense2ContainsImmunizationMedicationInformation2 MedicationDispenseMedicationSupplyOrder2"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -26794,7 +26803,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ReactionObservation2" eSuperTypes="#//ReactionObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ReactionObservationTemplateId ReactionObservation2ProcedureActivityProcedureInversionInd ReactionObservation2MedicationActivityInversionInd ReactionObservation2SeverityObservationInversionInd ReactionObservationCode ReactionObservationCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.9.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.9"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="ASSERTION"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.5.4"/>
       <details key="code.codeSystemName" value="HL7ActCode"/>
@@ -26906,7 +26916,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="SeverityObservation2" eSuperTypes="#//SeverityObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SeverityObservationTemplateId SeverityObservationCode SeverityObservationCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.8.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.8"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="SEV"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.5.4"/>
       <details key="code.codeSystemName" value="HL7ActCode"/>
@@ -27731,7 +27742,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlannedObservation2" eSuperTypes="#//PlanOfCareActivityObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivityObservationTemplateId PlannedObservation2Code PlannedObservation2StatusCode PlannedObservation2StatusCodeP PlannedObservation2TargetSiteCode"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.44.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.44"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="statusCode.code" value="active"/>
       <details key="constraints.validation.warning" value="PlannedObservation2EffectiveTime PlannedObservation2TargetSiteCodeP PlannedObservation2AuthorParticipation"/>
       <details key="constraints.validation.info" value="PlannedObservation2Value PlannedObservation2MethodCode PlannedObservation2Performer PlannedObservation2PatientPriorityPreference PlannedObservation2ProviderPriorityPreference PlannedObservation2Indication2 PlannedObservation2Instruction2 PlannedObservation2PlannedCoverage"/>
@@ -29286,7 +29298,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProblemObservation2" eSuperTypes="#//ProblemObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProblemObservationTemplateId ProblemObservation2HasOnsetDate ProblemObservationEffectiveTime ProblemObservationValueP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.4.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.4"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="ProblemObservation2HasResolutionDate ProblemObservationNegationInd ProblemObservation2PatientPriorityPreference ProblemObservation2PrognosisObservation ProblemObservation2ProviderPriorityPreference ProblemObservation2CDQualifier ProblemObservation2CDCode"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
@@ -29933,7 +29946,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="AllergyObservation2" eSuperTypes="#//AllergyObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SubstanceOrDeviceAllergyObservationTemplateId AllergyObservation2ReactionInversionIndicator AllergyObservation2SeverityInversionIndicator AllergyObservationCodeP AllergyObservationValue AllergyObservationValueP AllergyObservationStatusCode AllergyObservationStatusCodeP AllergyObservationEffectiveTime AllergyObservationParticipant AllergyObservation2EDTELValue AllergyObservation2IVLTSLow AllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference AllergyObservation2ParticipantParticipantRolePlayingEntityAllergyClassMedication AllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance AllergyObservation2ParticipantParticipantRolePlayingEntityReferenceValue AllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCodeP AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCode AllergyObservation2ParticipantAllergyObservationParticipantParticipantRolePlayingEntity AllergyObservation2AllergyObservationParticipantParticipantRole"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.7.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.7"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="AllergyObservation2NegationInd AllergyObservationCode AllergyObservation2SeverityObservation2 AllergyObservation2IVLTSHigh"/>
       <details key="constraints.validation.warning" value="AllergyObservation2Text AllergyObservation2AuthorParticipation AllergyObservationReactionObservation2 AllergyObservation2EDReference"/>
       <details key="code.code" value="ASSERTION"/>
@@ -30311,7 +30325,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusObservation2" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="CognitiveStatusObservation2TemplateId CognitiveStatusObservation2ClassCode CognitiveStatusObservation2MoodCode CognitiveStatusObservation2Id CognitiveStatusObservation2Code CognitiveStatusObservation2CodeP CognitiveStatusObservation2StatusCode CognitiveStatusObservation2StatusCodeP CognitiveStatusObservation2EffectiveTime CognitiveStatusObservation2Value"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.74.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.74"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="CognitiveStatusObservation2ValueDatatype CognitiveStatusObservation2Text CognitiveStatusObservation2AuthorParticipation"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
@@ -30487,7 +30502,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="CurrentSmokingStatus2" eSuperTypes="#//SmokingStatusObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="TobaccoUseTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP SmokingStatusObservationCode SmokingStatusObservationCodeP SmokingStatusObservationEffectiveTime"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.78.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.78"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.dependOn.SmokingStatusObservationValue"
@@ -30586,7 +30602,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="EncounterDiagnosis2" eSuperTypes="#//EncounterDiagnosis">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="EncounterDiagnosisTemplateId EncounterDiagnosisCode EncounterDiagnosisCodeP EncounterDiagnosisProblemObservation2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.80.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.80"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="29308-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -30640,7 +30657,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusObservation2" eSuperTypes="#//FunctionalStatusResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultObservationTemplateId ResultObservationCode ResultObservationCodeP FunctionalStatusObservation2ReferenceRangeObservationRangeNoCode"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.67.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.67"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="364644000"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
@@ -30746,7 +30764,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionDiagnosis2" eSuperTypes="#//HospitalAdmissionDiagnosis">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalAdmissionDiagnosisTemplateId HospitalAdmissionDiagnosisCode HospitalAdmissionDiagnosisCodeP HospitalAdmissionDiagnosisProblemObservation2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.34.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.34"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="46241-6"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -30802,7 +30821,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PostprocedureDiagnosis2" eSuperTypes="#//PostprocedureDiagnosis">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PostprocedureDiagnosisTemplateId PostprocedureDiagnosisCode PostprocedureDiagnosisCodeP PostprocedureDiagnosisProblemObservation2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.51.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.51"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="59769-0"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -30856,7 +30876,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PreoperativeDiagnosis2" eSuperTypes="#//PreoperativeDiagnosis">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PreoperativeDiagnosisTemplateId PreoperativeDiagnosisCode PreoperativeDiagnosisCodeP PreoperativeDiagnosisProblemObservation2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.65.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.65"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="10219-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -30910,7 +30931,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ResultObservation2" eSuperTypes="#//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultObservationTemplateId ResultObservationEffectiveTime"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.2.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="ResultObservation2CodeValue ResultObservation2AuthorParticipation"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -30967,7 +30989,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="SocialHistoryObservation2" eSuperTypes="#//SocialHistoryObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SocialHistoryObservationTemplateId SocialHistoryObservationCodeP SocialHistoryObservation2EffectiveTime"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.38.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.38"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="SocialHistoryObservationValue SocialHistoryObservationCode SocialHistoryObservation2AuthorParticipation"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
@@ -31038,7 +31061,8 @@
       eSuperTypes="#//SubstanceOrDeviceAllergyObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SubstanceOrDeviceAllergyObservationTemplateId SubstanceOrDeviceAllergyObservation2ReactionInversionIndicator SubstanceOrDeviceAllergyObservation2SeverityInversionIndicator SubstanceOrDeviceAllergyObservationEffectiveTime SubstanceOrDeviceAllergyObservationValue SubstanceOrDeviceAllergyObservationValueP SubstanceOrDeviceAllergyObservationCode SubstanceOrDeviceAllergyObservationCodeP SubstanceOrDeviceAllergyObservation2IVLTSLow SubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication SubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference SubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityReferenceValue SubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue SubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyClassMedication SubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance SubstanceOrDeviceAllergyObservation2ParticipantParticipantRoleSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeP SubstanceOrDeviceAllergyObservation2ParticipantSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity SubstanceOrDeviceAllergyObservation2SubstanceOrDeviceAllergyObservationParticipantParticipantRole"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.24.3.90.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.24.3.90"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.dependOn.SubstanceOrDeviceAllergyObservationValue"
@@ -31325,7 +31349,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="TobaccoUse2" eSuperTypes="#//TobaccoUse">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="TobaccoUseTemplateId TobaccoUseEffectiveTime TobaccoUseCode TobaccoUseCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.85.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.85"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="229819007"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
@@ -31402,7 +31427,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="VitalSignObservation2" eSuperTypes="#//VitalSignObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="VitalSignObservationTemplateId VitalSignObservationValue VitalSignObservation2PQUnit"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.27.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.27"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="VitalSignObservation2AuthorParticipation"/>
       <details key="constraints.validation.query" value="VitalSignObservation2PQUnit"/>
     </eAnnotations>
@@ -31455,7 +31481,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ResultOrganizer2" eSuperTypes="#//ResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultOrganizerTemplateId ResultOrganizerResultObservation2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="ResultOrganizer2CodeValue ResultOrganizer2AuthorParticipation"/>
       <details key="constraints.validation.info" value="ResultOrganizer2EffectiveTime"/>
     </eAnnotations>
@@ -31522,7 +31549,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProblemConcernAct2" eSuperTypes="#//ProblemConcernAct">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProblemConcernActTemplateId ProblemConcernAct2EffectiveTimeLow ProblemConcernActStatusCode ProblemConcernActStatusCodeP ProblemConcernActEffectiveTime ProblemConcernActCode ProblemConcernActCodeP ProblemConcernActProblemObservation2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.3.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.3"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="ProblemConcernAct2EffectiveTimeHigh ProblemConcernAct2ProviderPriorityPreference"/>
       <details key="constraints.validation.dependOn.ProblemConcernActStatusCode" value="ProblemConcernActStatusCodeP"/>
       <details key="code.code" value="CONC"/>
@@ -31647,7 +31675,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlannedEncounter2" eSuperTypes="#//PlanOfCareActivityEncounter">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivityEncounterTemplateId PlannedEncounter2CodeP PlannedEncounter2StatusCode PlannedEncounter2StatusCodeP PlannedEncounter2EffectiveTime PlannedEncounter2PerformerAssignedEntity"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.40.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.40"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.warning" value="PlannedEncounter2Code PlannedEncounter2Author"/>
@@ -31791,7 +31820,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlannedProcedure2" eSuperTypes="#//PlanOfCareActivityProcedure">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivityProcedureTemplateId PlannedProcedure2Instruction2InversionInd PlannedProcedure2Code PlannedProcedure2StatusCode PlannedProcedure2StatusCodeP PlannedProcedure2TargetSiteCode"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.41.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.41"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="statusCode.code" value="active"/>
       <details key="constraints.validation.warning" value="PlannedProcedure2EffectiveTime PlannedProcedure2AuthorParticipation"/>
       <details key="constraints.validation.info" value="PlannedProcedure2MethodCode PlannedProcedure2TargetSiteCodeP PlannedProcedure2Performer PlannedProcedure2PatientPriorityPreference PlannedProcedure2ProviderPriorityPreference PlannedProcedure2Indication2 PlannedProcedure2Instruction2 PlannedProcedure2PlannedCoverage"/>
@@ -31962,7 +31992,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlannedMedicationActivity2" eSuperTypes="#//PlanOfCareActivitySubstanceAdministration">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivitySubstanceAdministrationTemplateId PlannedMedicationActivity2StatusCode PlannedMedicationActivity2StatusCodeP PlannedMedicationActivity2EffectiveTime PlannedMedicationActivity2RouteCode PlannedMedicationActivity2ApproachSiteCode PlannedMedicationActivity2AdministrationUnitCode PlannedMedicationActivity2Consumable PlannedMedicationActivity2ConsumableMedicationInformation2 PlannedMedicationActivity2PreconditionTypeCode PlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.42.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.42"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="statusCode.code" value="active"/>
       <details key="constraints.validation.info" value="PlannedMedicationActivity2RepeatNumber PlannedMedicationActivity2RouteCodeP PlannedMedicationActivity2ApproachSiteCodeP PlannedMedicationActivity2DoseQuantity PlannedMedicationActivity2RateQuantity PlannedMedicationActivity2MaxDoseQuantity PlannedMedicationActivity2AdministrationUnitCodeP PlannedMedicationActivity2Performer PlannedMedicationActivity2PatientPriorityPreference PlannedMedicationActivity2ProviderPriorityPreference PlannedMedicationActivity2Indication2 PlannedMedicationActivity2Instruction2 PlannedMedicationActivity2Precondition"/>
       <details key="routeCode.codeSystem" value="2.16.840.1.113883.3.26.1.1"/>
@@ -32255,7 +32286,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlannedSupply2" eSuperTypes="#//PlanOfCareActivitySupply">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivitySupplyTemplateId PlannedSupply2StatusCode PlannedSupply2StatusCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.43.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.43"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="statusCode.code" value="active"/>
       <details key="constraints.validation.warning" value="PlannedSupply2EffectiveTime PlannedSupply2AuthorParticipation"/>
       <details key="constraints.validation.info" value="PlannedSupply2RepeatNumber PlannedSupply2Quantity PlannedSupply2Product PlannedSupply2Performer PlannedSupply2ProductInstance PlannedSupply2PatientPriorityPreference PlannedSupply2ProviderPriorityPreference PlannedSupply2Indication2 PlannedSupply2Instruction2 PlannedSupply2PlannedCoverage"/>
@@ -32414,7 +32446,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlannedAct2" eSuperTypes="#//PlanOfCareActivityAct">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivityActTemplateId PlannedAct2Code PlannedAct2StatusCode PlannedAct2StatusCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.39.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.39"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="statusCode.code" value="active"/>
       <details key="constraints.validation.warning" value="PlannedAct2EffectiveTime PlannedAct2AuthorParticipation"/>
       <details key="constraints.validation.info" value="PlannedAct2Indication2 PlannedAct2Instruction2 PlannedAct2PatientPriorityPreference PlannedAct2ProviderPriorityPreference PlannedAct2Performer"/>
@@ -32977,7 +33010,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ImmunizationActivity2" eSuperTypes="#//ImmunizationActivity">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ImmunizationActivityTemplateId ImmunizationActivityStatusCode ImmunizationActivityStatusCodeP ImmunizationActivityAdministrationUnitCode ImmunizationActivityConsumable ImmunizationActivity2ImmunizationActivityConsumableImmunizationMedicationInformation2 ImmunizationActivity2ImmunizationActivityPreconditionTypeCode ImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.52.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.52"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="ImmunizationActivityCode ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCodeP ImmunizationActivityNegationInd ImmunizationActivity2SubstanceAdministeredAct ImmunizationActivityDrugVehicle ImmunizationActivityIndication2 ImmunizationActivityMedicationSupplyOrder2 ImmunizationActivityMedicationDispense2 ImmunizationActivityReactionObservation2 ImmunizationActivityInstruction2 ImmunizationActivityPrecondition"/>
       <details key="constraints.validation.dependOn.ImmunizationActivityStatusCode"
           value="ImmunizationActivityStatusCodeP"/>
@@ -33224,7 +33258,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityAct2" eSuperTypes="#//ProcedureActivityAct">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureActivityActTemplateId ProcedureActivityAct2InstructionsInversion"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.12.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.12"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="ProcedureActivityActInstruction2 ProcedureActivityActIndication2 ProcedureActivityActMedicationActivity2"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -33285,7 +33320,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityObservation2" eSuperTypes="#//ProcedureActivityObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureActivityObservationTemplateId ProcedureActivityObservation2InstructionsInversion ProcedureActivityObservationTargetSiteCode"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.13.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.13"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="targetSiteCode.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="targetSiteCode.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.warning" value="ProcedureActivityObservationTargetSiteCodeP"/>
@@ -33373,7 +33409,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="EncounterActivity2" eSuperTypes="#//EncounterActivities">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="EncounterActivitiesTemplateId EncounterActivity2SdtcDDCFromNUBCOrDD"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.49.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.49"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="EncounterActivitiesSDTCDischargeDispositionCode EncounterActivitiesIndication2 EncounterActivitiesEncounterDiagnosis2"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -34089,7 +34126,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="HealthStatusObservation2" eSuperTypes="#//HealthStatusObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HealthStatusObservationTemplateId HealthStatusObservationCode HealthStatusObservationCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.5.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.5"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="11323-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -34332,7 +34370,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusOrganizer2" eSuperTypes="#//CognitiveStatusResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultOrganizerTemplateId ResultOrganizerCode CognitiveStatusResultOrganizerCognitiveStatusObservation2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.75.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.75"/>
+      <details key="templateId.extension" value="2014-06-09"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ResultOrganizerTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -34506,7 +34545,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="USRealmHeader2" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsTitle GeneralHeaderConstraintsRealmCode GeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsAuthor GeneralHeaderConstraintsCustodian USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode USRealmHeader2RecordTargetGeneralHeaderConstraintsRecordTargetPatientRolePatient USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRole USRealmHeader2InformantHasAssignedEntityOrRelatedEntity USRealmHeader2GeneralHeaderConstraintsComponentOfEncompassingEncounter USRealmHeader2ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization USRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEvent"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="realmCode.code" value="US"/>
       <details key="constraints.validation.info" value="GeneralHeaderConstraintsDataEnterer GeneralHeaderConstraintsInformationRecipient GeneralHeaderConstraintsAuthenticator GeneralHeaderConstraintsInformant GeneralHeaderConstraintsInFulfillmentOf GeneralHeaderConstraintsComponentOf GeneralHeaderConstraintsSupportParticipant GeneralHeaderConstraintsDocumentationOf GeneralHeaderConstraintsAuthorization USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian USRealmHeader2LegalAuthenticatorSDTCSignatureText USRealmHeader2AuthenticatorSDTCSignatureText"/>
       <details key="constraints.validation.warning" value="GeneralHeaderConstraintsLegalAuthenticator USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication USRealmHeader2DocumentationOfGeneralHeaderConstraintsDocumentationOfServiceEventPerformer"/>
@@ -35677,7 +35717,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="InterventionsSection2" eSuperTypes="#//InterventionsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="InterventionsSectionTemplateId InterventionsSectionCode InterventionsSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.21.2.3.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.21.2.3"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="62387-6"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -36356,7 +36397,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlanOfTreatmentSection2" eSuperTypes="#//PlanOfCareSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareSectionTemplateId PlanOfCareSectionCode PlanOfCareSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.10.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.10"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="18776-5"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -36500,7 +36542,8 @@
       eSuperTypes="#//AdvanceDirectivesSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionEntriesOptionalCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.21.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.21"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="42348-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -36560,7 +36603,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ImmunizationsSection2" eSuperTypes="#//ImmunizationsSectionEntriesOptional2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionEntriesOptionalCodeP ImmunizationsSection2Title ImmunizationsSection2Text ImmunizationsSectionEntriesOptionalImmunizationActivity2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.2.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.2.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="11369-6"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -36641,7 +36685,8 @@
       eSuperTypes="#//ImmunizationsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionEntriesOptionalCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.2.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="11369-6"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -36700,7 +36745,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProblemSection2" eSuperTypes="#//ProblemSectionEntriesOptional2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP ProblemSection2Title ProblemSection2Text ProblemSectionEntriesOptionalProblemConcernAct2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.5.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.5.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="11450-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -36794,7 +36840,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProblemSectionEntriesOptional2" eSuperTypes="#//ProblemSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.5.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.5"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="11450-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -36865,7 +36912,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProceduresSectionEntriesOptional2" eSuperTypes="#//ProceduresSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProceduresSectionEntriesOptionalTemplateId ProceduresSectionEntriesOptionalCode ProceduresSectionEntriesOptionalCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.7.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.7"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="47519-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -36948,7 +36996,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ResultsSection2" eSuperTypes="#//ResultsSectionEntriesOptional2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP ResultsSection2Title ResultsSection2Text ResultsSectionEntriesOptionalResultOrganizer2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.3.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.3.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="30954-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -37028,7 +37077,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ResultsSectionEntriesOptional2" eSuperTypes="#//ResultsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.3.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.3"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="30954-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -37087,7 +37137,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="SocialHistorySection2" eSuperTypes="#//SocialHistorySection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.17.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.17"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="29762-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -37199,7 +37250,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="VitalSignsSection2" eSuperTypes="#//VitalSignsSectionEntriesOptional2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalCodeP VitalSignsSection2Title VitalSignsSection2Text VitalSignsSectionEntriesOptionalVitalSignsOrganizer2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.4.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.4.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="8716-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -37279,7 +37331,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="VitalSignsSectionEntriesOptional2" eSuperTypes="#//VitalSignsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.4.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.4"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="8716-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -37338,7 +37391,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="VitalSignsOrganizer2" eSuperTypes="#//VitalSignsOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="VitalSignsOrganizerTemplateId VitalSignsOrganizerCode VitalSignsOrganizerCodeP VitalSignsOrganizerVitalSignObservation2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.26.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.26"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="46680005"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
@@ -37413,7 +37467,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusSection2" eSuperTypes="#//FunctionalStatusSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="FunctionalStatusSectionTemplateId FunctionalStatusSectionCode FunctionalStatusSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.14.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.14"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="47420-5"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -37526,7 +37581,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusOrganizer2" eSuperTypes="#//FunctionalStatusResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultOrganizerTemplateId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP FunctionalStatusResultOrganizerFunctionalStatusObservation2 FunctionalStatusOrganizer2SelfCareActivities"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.66.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.66"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="FunctionalStatusOrganizer2CodeCodeSystem FunctionalStatusOrganizer2AuthorParticipation"/>
       <details key="statusCode.code" value="completed"/>
       <details key="constraints.validation.dependOn.ResultOrganizerStatusCode" value="ResultOrganizerStatusCodeP"/>
@@ -37618,7 +37674,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PhysicalExamSection2" eSuperTypes="#//PhysicalExamSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PhysicalExamSectionTemplateId PhysicalExamSectionCode PhysicalExamSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.2.10.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.2.10"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="29545-1"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -37701,7 +37758,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicalEquipmentSection2" eSuperTypes="#//MedicalEquipmentSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.23.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.23"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="46264-8"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -37779,7 +37837,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="AllergiesSection2" eSuperTypes="#//AllergiesSectionEntriesOptional2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AllergiesSectionEntriesOptionalTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionEntriesOptionalCodeP AllergiesSection2Title AllergiesSection2Text AllergiesSectionEntriesOptionalAllergyConcernAct2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.6.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.6.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="48765-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -37859,7 +37918,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="AllergiesSectionEntriesOptional2" eSuperTypes="#//AllergiesSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AllergiesSectionEntriesOptionalTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionEntriesOptionalCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.6.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.6"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="48765-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -37918,7 +37978,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="AllergyConcernAct2" eSuperTypes="#//AllergyProblemAct">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AllergyProblemActTemplateId AllergyProblemActEffectiveTime AllergyProblemActAllergyObservation2 AllergyConcernAct2IVLTSLow"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.30.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.30"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="AllergyConcernAct2AuthorParticipation"/>
       <details key="constraints.validation.query" value="AllergyConcernAct2IVLTSLow AllergyConcernAct2IVLTSHigh"/>
       <details key="constraints.validation.info" value="AllergyConcernAct2IVLTSHigh"/>
@@ -38010,7 +38071,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="AssessmentAndPlanSection2" eSuperTypes="#//AssessmentAndPlanSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AssessmentAndPlanSectionTemplateId AssessmentAndPlanSectionCode AssessmentAndPlanSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.9.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.9"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="51847-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -38067,7 +38129,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="HistoryOfPastIllnessSection2" eSuperTypes="#//HistoryOfPastIllnessSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HistoryOfPastIllnessSectionTemplateId HistoryOfPastIllnessSectionCode HistoryOfPastIllnessSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.20.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.20"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="11348-0"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -38126,7 +38189,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicationsSection2" eSuperTypes="#//MedicationsSectionEntriesOptional2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationsSectionEntriesOptionalTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalCodeP MedicationsSection2Title MedicationsSection2Text MedicationsSectionEntriesOptionalMedicationActivity2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.1.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.1.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="10160-0"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -38216,7 +38280,8 @@
       eSuperTypes="#//MedicationsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationsSectionEntriesOptionalTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="10160-0"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -38273,7 +38338,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ReasonForReferralSection2" eSuperTypes="#//ReasonForReferralSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ReasonForReferralSectionTemplateId ReasonForReferralSectionCode ReasonForReferralSectionCodeP"/>
-      <details key="templateId.root" value="1.3.6.1.4.1.19376.1.5.3.1.3.1.2"/>
+      <details key="templateId.root" value="1.3.6.1.4.1.19376.1.5.3.1.3.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="42349-1"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -38986,7 +39052,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="AdvanceDirectivesSection2" eSuperTypes="#//AdvanceDirectivesSectionEntriesOptional2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveOrganizer"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.21.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.21.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="AdvanceDirectivesSectionEntriesOptionalTemplateId"
@@ -39020,7 +39087,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="EncountersSection2" eSuperTypes="#//EncountersSectionEntriesOptional2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="EncountersSectionEntriesOptionalTemplateId EncountersSectionEntriesOptionalCode EncountersSectionEntriesOptionalCodeP EncountersSection2Text EncountersSection2Title EncountersSectionEntriesOptionalEncounterActivity2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.22.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.22.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="46240-8"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -39100,7 +39168,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="EncountersSectionEntriesOptional2" eSuperTypes="#//EncountersSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="EncountersSectionEntriesOptionalTemplateId EncountersSectionEntriesOptionalCode EncountersSectionEntriesOptionalCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.22.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.22"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="46240-8"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -39160,7 +39229,8 @@
       eSuperTypes="#//HospitalDischargeDiagnosisSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalDischargeDiagnosisSectionTemplateId HospitalDischargeDiagnosisSectionCode HospitalDischargeDiagnosisSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.24.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.24"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="11535-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -39220,7 +39290,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeDiagnosis2" eSuperTypes="#//HospitalDischargeDiagnosis">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalDischargeDiagnosisTemplateId HospitalDischargeDiagnosisCode HospitalDischargeDiagnosisCodeP HospitalDischargeDiagnosisProblemObservation2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.33.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.33"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="11535-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -39276,7 +39347,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PayersSection2" eSuperTypes="#//PayersSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PayersSectionTemplateId PayersSectionCode PayersSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.18.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.18"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="48768-6"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -39331,7 +39403,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="CoverageActivity2" eSuperTypes="#//CoverageActivity">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="CoverageActivityTemplateId CoverageActivityCode CoverageActivityCodeP CoverageActivityPolicyActivity2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.60.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.60"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="48768-6"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -39394,7 +39467,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PolicyActivity2" eSuperTypes="#//PolicyActivity">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PolicyActivityTemplateId PolicyActivityPayer PolicyActivityCoverage PolicyActivity2PolicyActivityPayerPayerAssignedEntity PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCodeP PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivity2PolicyActivityGuarantorGuarantorAssignedEntity PolicyActivity2CoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime PolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime PolicyActivity2PolicyActivityCoverageCoverageRole"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.61.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.61"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="PolicyActivityGuarantor PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityTelecom PolicyActivity2CoveragePolicyActivityCoverageCoverageRoleCoveragePlayingEntity"/>
       <details key="constraints.validation.info" value="PolicyActivity2PayerPolicyActivityPayerPayerAssignedEntityTelecom"/>
       <details key="constraints.validation.query" value="PolicyActivity2PayerPolicyActivityPayerPayerAssignedEntityTelecom PolicyActivity2PolicyActivityPayerPayerAssignedEntity PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityTelecom PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCodeP PolicyActivity2GuarantorPolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivity2PolicyActivityGuarantorGuarantorAssignedEntity PolicyActivity2CoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime PolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime PolicyActivity2CoveragePolicyActivityCoverageCoverageRoleCoveragePlayingEntity PolicyActivity2PolicyActivityCoverageCoverageRole"/>
@@ -39573,7 +39647,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProceduresSection2" eSuperTypes="#//ProceduresSectionEntriesOptional2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProceduresSectionEntriesOptionalTemplateId ProceduresSection2HasProcedureActivity ProceduresSectionEntriesOptionalCode ProceduresSectionEntriesOptionalCodeP ProceduresSection2Title ProceduresSection2Text"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.7.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.7.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="47519-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -40687,7 +40762,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="AdmissionMedication2" eSuperTypes="#//AdmissionMedication">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AdmissionMedicationTemplateId AdmissionMedicationCode AdmissionMedicationCodeP AdmissionMedicationMedicationActivity2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.36.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.36"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="42346-7"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -40741,7 +40817,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="DeceasedObservation2" eSuperTypes="#//DeceasedObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="DeceasedObservationTemplateId DeceasedObservationCode DeceasedObservationCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.79.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.79"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="ASSERTION"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
@@ -40796,7 +40873,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="DischargeMedication2" eSuperTypes="#//DischargeMedication">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="DischargeMedicationTemplateId DischargeMedicationCode DischargeMedicationCodeP DischargeMedicationMedicationActivity2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.35.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.35"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="10183-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -40850,7 +40928,8 @@
       eSuperTypes="#//ImmunizationMedicationInformation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ImmunizationMedicationInformationTemplateId ImmunizationMedicationInformationManufacturedMaterial ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialTextReferenceValue ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceValue ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCodeTranslation ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.54.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.54"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation"/>
       <details key="constraints.validation.query" value="ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialTextReferenceValue ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceValue ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCodeTranslation ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode"/>
     </eAnnotations>
@@ -40961,7 +41040,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicationInformation2" eSuperTypes="#//MedicationInformation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationInformationTemplateId MedicationInformationManufacturedMaterial MedicationInformation2MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformation2MedicationInformationManufacturedMaterialCodeTranslation MedicationInformation2MedicationInformationManufacturedMaterialReference MedicationInformation2MedicationInformationManufacturedMaterialOriginalTextReferenceValue MedicationInformation2MedicationInformationManufacturedMaterialReferenceValue MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeP MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.23.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.23"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="MedicationInformation2MedicationInformationManufacturedMaterialCETranslation"/>
       <details key="constraints.validation.query" value="MedicationInformation2MedicationInformationManufacturedMaterialCETranslation MedicationInformation2MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformation2MedicationInformationManufacturedMaterialCodeTranslation MedicationInformation2MedicationInformationManufacturedMaterialReference MedicationInformation2MedicationInformationManufacturedMaterialOriginalTextReferenceValue MedicationInformation2MedicationInformationManufacturedMaterialReferenceValue MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeP MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode"/>
       <details key="constraints.validation.dependOn.MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode"
@@ -41087,7 +41167,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PhysicianofRecordParticipant2" eSuperTypes="#//PhysicianofRecordParticipant">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PhysicianofRecordParticipantTemplateId PhysicianofRecordParticipantAssignedEntity PhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.2.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.query" value="PhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName PhysicianofRecordParticipant2AssignedEntityHasNationalProviderId PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization"/>
       <details key="constraints.validation.warning" value="PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName PhysicianofRecordParticipant2AssignedEntityHasNationalProviderId PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson"/>
       <details key="constraints.validation.info" value="PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization"/>
@@ -41180,7 +41261,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="AnesthesiaSection2" eSuperTypes="#//AnesthesiaSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AnesthesiaSectionTemplateId AnesthesiaSectionCode AnesthesiaSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.25.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.25"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="59774-0"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41246,7 +41328,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ComplicationsSection2" eSuperTypes="#//ComplicationsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ComplicationsSectionTemplateId ComplicationsSectionCode ComplicationsSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.37.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.37"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="55109-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41312,7 +41395,8 @@
       eSuperTypes="#//HospitalAdmissionDiagnosisSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode HospitalAdmissionDiagnosisSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.43.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.43"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="46241-6"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41373,7 +41457,8 @@
       eSuperTypes="#//HospitalAdmissionMedicationsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId HospitalAdmissionMedicationsSectionEntriesOptionalCode HospitalAdmissionMedicationsSectionEntriesOptionalCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.44.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.44"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="42346-7"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41434,7 +41519,8 @@
       eSuperTypes="#//HospitalDischargeMedicationsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalDischargeMedicationsSectionEntriesOptionalTemplateId"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.11.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.11"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -41466,7 +41552,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="InstructionsSection2" eSuperTypes="#//InstructionsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="InstructionsSectionTemplateId InstructionsSectionCode InstructionsSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.45.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.45"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="69730-0"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41521,7 +41608,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicationsAdministeredSection2" eSuperTypes="#//MedicationsAdministeredSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationsAdministeredSectionTemplateId MedicationsAdministeredSectionCode MedicationsAdministeredSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.38.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.38"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="29549-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41580,7 +41668,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlannedProcedureSection2" eSuperTypes="#//PlannedProcedureSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlannedProcedureSectionTemplateId PlannedProcedureSectionCode PlannedProcedureSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.30.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.30"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="59772-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41636,7 +41725,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PostprocedureDiagnosisSection2" eSuperTypes="#//PostprocedureDiagnosisSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PostprocedureDiagnosisSectionTemplateId PostprocedureDiagnosisSectionCode PostprocedureDiagnosisSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.36.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.36"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="59769-0"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41695,7 +41785,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PreoperativeDiagnosisSection2" eSuperTypes="#//PreoperativeDiagnosisSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PreoperativeDiagnosisSectionTemplateId PreoperativeDiagnosisSectionCode PreoperativeDiagnosisSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.34.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.34"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="10219-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41754,7 +41845,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureFindingsSection2" eSuperTypes="#//ProcedureFindingsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureFindingsSectionTemplateId ProcedureFindingsSectionCode ProcedureFindingsSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.28.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.28"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="59776-5"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41811,7 +41903,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureIndicationsSection2" eSuperTypes="#//ProcedureIndicationsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureIndicationsSectionTemplateId ProcedureIndicationsSectionCode ProcedureIndicationsSectionCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.29.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.29"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="59768-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41871,7 +41964,8 @@
       eSuperTypes="#//HospitalDischargeMedicationsSectionEntriesOptional2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalDischargeMedicationsSectionEntriesOptionalTemplateId HospitalDischargeMedicationsSection2Code HospitalDischargeMedicationsSection2CodeP HospitalDischargeMedicationsSection2Title HospitalDischargeMedicationsSection2Text HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.11.1.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.11.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="10183-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -41947,7 +42041,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ConsultationNote2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent ConsultationNote2HasReasonForReferral2OrReasonForVisit ConsultationNote2Code ConsultationNote2CodeP ConsultationNote2InFulfillmentOf ConsultationNote2ComponentOf ConsultationNote2HistoryOfPresentIllnessSection ConsultationNote2AllergiesSection2 ConsultationNote2ProblemSection2 ConsultationNote2ParticipantAssociatedEntityAssociatedPersonName ConsultationNote2ParticipantAssociatedEntityClassCode ConsultationNote2ParticipantAssociatedEntityId ConsultationNote2ParticipantAssociatedEntityTelecom ConsultationNote2ParticipantAssociatedEntityAssociatedPerson ConsultationNote2ParticipantTypeCode ConsultationNote2ParticipantAssociatedEntity ConsultationNote2InFulfillmentOfOrderId ConsultationNote2InFulfillmentOfOrder ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay ConsultationNote2ComponentOfEncompassingEncounterId ConsultationNote2ComponentOfEncompassingEncounterEffectiveTime ConsultationNote2ComponentOfEncompassingEncounter"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.4.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.4"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.info" value="ConsultationNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 GeneralHeaderConstraintsTitle ConsultationNote2AssessmentSection ConsultationNote2AssessmentAndPlanSection2 ConsultationNote2PlanOfTreatmentSection2 ConsultationNote2ReasonForReferralSection2 ConsultationNote2ReasonForVisitSection ConsultationNote2ChiefComplaintSection ConsultationNote2ChiefComplaintAndReasonForVisitSection ConsultationNote2GeneralStatusSection ConsultationNote2HistoryOfPastIllnessSection2 ConsultationNote2ImmunizationsSectionEntriesOptional2 ConsultationNote2ProceduresSectionEntriesOptional2 ConsultationNote2SocialHistorySection2 ConsultationNote2VitalSignsSection2 ConsultationNote2AdvanceDirectivesSectionEntriesOptional2 ConsultationNote2FunctionalStatusSection2 ConsultationNote2ReviewOfSystemsSection ConsultationNote2MedicalEquipmentSection2 ConsultationNote2MentalStatusSection ConsultationNote2NutritionSection ConsultationNote2ParticipantAssociatedEntityScopingOrganization ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond ConsultationNote2ComponentOfEncompassingEncounterResponsibleParty ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipant"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -42581,7 +42676,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ContinuityOfCareDocument2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ContinuityOfCareDocument2Code ContinuityOfCareDocument2CodeP ContinuityOfCareDocument2Author ContinuityOfCareDocument2DocumentationOf ContinuityOfCareDocument2AllergiesSection2 ContinuityOfCareDocument2MedicationsSection2 ContinuityOfCareDocument2ProblemSection2 ContinuityOfCareDocument2ResultsSection2 ContinuityOfCareDocument2SocialHistorySection2 ContinuityOfCareDocument2VitalSignsSection2 ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocument2AuthorAssignedAuthor ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocument2DocumentationOfServiceEventClassCode ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime ContinuityOfCareDocument2DocumentationOfServiceEvent"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.2.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="34133-9"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -42968,7 +43064,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="DiagnosticImagingReport2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId DiagnosticImagingReport2Id DiagnosticImagingReport2CodeP DiagnosticImagingReport2DocumentationOf DiagnosticImagingReport2FindingsSection DiagnosticImagingReport2Component2 DiagnosticImagingReport2Informant DiagnosticImagingReport2IIRoot DiagnosticImagingReport2ParticipantAssociatedEntityPersonName DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReport2ParticipantAssociatedEntity DiagnosticImagingReport2InFulfillmentOfOrderId DiagnosticImagingReport2InFulfillmentOfOrder DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventCode DiagnosticImagingReport2DocumentationOfServiceEvent DiagnosticImagingReport2RelatedDocumentParentDocumentId DiagnosticImagingReport2RelatedDocumentParentDocument DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime DiagnosticImagingReport2ComponentOfEncompassingEncounter DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP DiagnosticImagingReport2ComponentStructuredBodyComponent3Section DiagnosticImagingReport2ComponentStructuredBody"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.5.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.5"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.warning" value="DiagnosticImagingReport2Code DiagnosticImagingReport2DICOMObjectCatalogSection DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventPerformer DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute DiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2 DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText"/>
@@ -43568,7 +43665,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="DischargeSummary2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId DischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection DischargeSummary2Code DischargeSummary2CodeP DischargeSummary2ComponentOf DischargeSummary2AllergiesSectionEntriesOptional2 DischargeSummary2HospitalCourseSection DischargeSummary2PlanOfTreatmentSection2 DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow DischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DischargeSummary2ComponentOfEncompassingEncounterEffectiveTime DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP DischargeSummary2ComponentOfEncompassingEncounter"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.8.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.8"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.DischargeSummary2Code" value="DischargeSummary2CodeP"/>
@@ -43992,7 +44090,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="HistoryAndPhysicalNote2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId HistoryAndPhysicalNote2HasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit HistoryAndPhysicalNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 HistoryAndPhysicalNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent HistoryAndPhysicalNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection HistoryAndPhysicalNote2Code HistoryAndPhysicalNote2CodeP HistoryAndPhysicalNote2ComponentOf HistoryAndPhysicalNote2AllergiesSectionEntriesOptional2 HistoryAndPhysicalNote2GeneralStatusSection HistoryAndPhysicalNote2HistoryOfPastIllnessSection2 HistoryAndPhysicalNote2MedicationsSectionEntriesOptional2 HistoryAndPhysicalNote2PhysicalExamSection2 HistoryAndPhysicalNote2ResultsSectionEntriesOptional2 HistoryAndPhysicalNote2ReviewOfSystemsSection HistoryAndPhysicalNote2SocialHistorySection2 HistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2 HistoryAndPhysicalNote2InformationRecipientIntendedRecipient HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheDay HistoryAndPhysicalNote2ComponentOfEncompassingEncounterId HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime HistoryAndPhysicalNote2ComponentOfEncompassingEncounter"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.3.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.3"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.HistoryAndPhysicalNote2Code" value="HistoryAndPhysicalNote2CodeP"/>
@@ -44492,7 +44591,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="OperativeNote2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId OperativeNote2Code OperativeNote2CodeP OperativeNote2DocumentationOf OperativeNote2AnesthesiaSection2 OperativeNote2ComplicationsSection2 OperativeNote2PreoperativeDiagnosisSection2 OperativeNote2ProcedureEstimatedBloodLossSection OperativeNote2ProcedureFindingsSection2 OperativeNote2ProcedureSpecimensTakenSection OperativeNote2ProcedureDescriptionSection OperativeNote2PostoperativeDiagnosisSection OperativeNote2DocumentationOfServiceEventIVLTSLow OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP OperativeNote2DocumentationOfServiceEventPerformerTypeCode OperativeNote2DocumentationOfServiceEventPerformerAssignedEntity OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNote2DocumentationOfServiceEventPreciseToTheDay OperativeNote2DocumentationOfServiceEventProcedureCodes OperativeNote2DocumentationOfServiceEventEffectiveTime OperativeNote2DocumentationOfServiceEventCode OperativeNote2DocumentationOfServiceEventPerformer OperativeNote2DocumentationOfServiceEvent OperativeNote2AuthorizationConsentClassCode OperativeNote2AuthorizationConsentMoodCode OperativeNote2AuthorizationConsentStatusCode OperativeNote2AuthorizationTypeCode OperativeNote2AuthorizationConsent"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.7.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.7"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.OperativeNote2Code" value="OperativeNote2CodeP"/>
@@ -44955,7 +45055,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureNote2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ProcedureNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 ProcedureNote2SectionTitles ProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent ProcedureNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ProcedureNote2Code ProcedureNote2CodeP ProcedureNote2DocumentationOf ProcedureNote2ComplicationsSection2 ProcedureNote2ProcedureDescriptionSection ProcedureNote2ProcedureIndicationsSection2 ProcedureNote2PostprocedureDiagnosisSection2 ProcedureNote2ParticipantAssociatedEntityClassCode ProcedureNote2ParticipantAssociatedEntityAssociatedPerson ProcedureNote2ParticipantTypeCode ProcedureNote2ParticipantFunctionCode ProcedureNote2ParticipantFunctionCodeP ProcedureNote2ParticipantAssociatedEntity ProcedureNote2DocumentationOfServiceEventIVLTSLow ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventPreciseToTheDay ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEvent ProcedureNote2AuthorizationConsentClassCode ProcedureNote2AuthorizationConsentMoodCode ProcedureNote2AuthorizationConsentStatusCode ProcedureNote2AuthorizationTypeCode ProcedureNote2AuthorizationConsent ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProcedureNote2ComponentOfEncompassingEncounterCode ProcedureNote2ComponentOfEncompassingEncounterLocation ProcedureNote2ComponentOfEncompassingEncounter"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.6.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.6"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.ProcedureNote2Code" value="ProcedureNote2CodeP"/>
@@ -45765,7 +45866,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProgressNote2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 ProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent ProgressNote2Code ProgressNote2CodeP ProgressNote2ComponentOf ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventPreciseToTheDay ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventClassCode ProgressNote2DocumentationOfServiceEvent ProgressNote2ComponentOfEncompassingEncounterIVLTSLow ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounter"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.9.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.9"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.ProgressNote2Code" value="ProgressNote2CodeP"/>
@@ -46235,7 +46337,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="UnstructuredDocument2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId UnstructuredDocument2RecordTarget UnstructuredDocument2Custodian UnstructuredDocument2Component UnstructuredDocument2RecordTargetPatientRoleId UnstructuredDocument2RecordTargetPatientRole UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization UnstructuredDocument2CustodianAssignedCustodian UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats UnstructuredDocument2ComponentNonXMLBodyText UnstructuredDocument2ComponentNonXMLBody"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.10.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.10"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.query" value="UnstructuredDocument2RecordTargetPatientRoleId UnstructuredDocument2RecordTargetPatientRole UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization UnstructuredDocument2CustodianAssignedCustodian UnstructuredDocument2ComponentNonXMLBodyEDMediaType UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats UnstructuredDocument2ComponentNonXMLBodyText UnstructuredDocument2ComponentNonXMLBody"/>
       <details key="constraints.validation.info" value="UnstructuredDocument2ComponentNonXMLBodyEDMediaType"/>
     </eAnnotations>
@@ -46382,7 +46485,8 @@
       eSuperTypes="#//PreconditionForSubstanceAdministration">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PreconditionForSubstanceAdministrationTemplateId PreconditionForSubstanceAdministrationCode PreconditionForSubstanceAdministrationCodeP PreconditionForSubstanceAdministrationValue PreconditionForSubstanceAdministrationValueP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.25.2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.25"/>
+      <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="ASSERTION"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.5.4"/>
       <details key="code.codeSystemName" value="HL7ActCode"/>

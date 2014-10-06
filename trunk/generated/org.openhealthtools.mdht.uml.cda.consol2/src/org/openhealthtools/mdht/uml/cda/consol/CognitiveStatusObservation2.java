@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCognitiveStatusObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CognitiveStatusObservation2TemplateId CognitiveStatusObservation2ClassCode CognitiveStatusObservation2MoodCode CognitiveStatusObservation2Id CognitiveStatusObservation2Code CognitiveStatusObservation2CodeP CognitiveStatusObservation2StatusCode CognitiveStatusObservation2StatusCodeP CognitiveStatusObservation2EffectiveTime CognitiveStatusObservation2Value' templateId.root='2.16.840.1.113883.10.20.22.4.74.2' constraints.validation.warning='CognitiveStatusObservation2ValueDatatype CognitiveStatusObservation2Text CognitiveStatusObservation2AuthorParticipation' classCode='OBS' moodCode='EVN' code.code='311465003' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Cognitive functions' constraints.validation.dependOn.CognitiveStatusObservation2Code='CognitiveStatusObservation2CodeP' statusCode.code='completed' constraints.validation.info='CognitiveStatusObservation2NonMedicinalSupplyActivity2 CognitiveStatusObservation2CaregiverCharacteristics CognitiveStatusObservation2AssessmentScaleObservation CognitiveStatusObservation2ReferenceRange'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CognitiveStatusObservation2TemplateId CognitiveStatusObservation2ClassCode CognitiveStatusObservation2MoodCode CognitiveStatusObservation2Id CognitiveStatusObservation2Code CognitiveStatusObservation2CodeP CognitiveStatusObservation2StatusCode CognitiveStatusObservation2StatusCodeP CognitiveStatusObservation2EffectiveTime CognitiveStatusObservation2Value' templateId.root='2.16.840.1.113883.10.20.22.4.74' templateId.extension='2014-06-09' constraints.validation.warning='CognitiveStatusObservation2ValueDatatype CognitiveStatusObservation2Text CognitiveStatusObservation2AuthorParticipation' classCode='OBS' moodCode='EVN' code.code='311465003' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Cognitive functions' constraints.validation.dependOn.CognitiveStatusObservation2Code='CognitiveStatusObservation2CodeP' statusCode.code='completed' constraints.validation.info='CognitiveStatusObservation2NonMedicinalSupplyActivity2 CognitiveStatusObservation2CaregiverCharacteristics CognitiveStatusObservation2AssessmentScaleObservation CognitiveStatusObservation2ReferenceRange'"
  * @generated
  */
 public interface CognitiveStatusObservation2 extends Observation {
@@ -49,7 +49,7 @@ public interface CognitiveStatusObservation2 extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.74.2\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.74\' and id.extension = \'2014-06-09\')'"
 	 * @generated
 	 */
 	boolean validateCognitiveStatusObservation2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -109,7 +109,7 @@ public interface CognitiveStatusObservation2 extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'311465003\' and value.codeSystem = \'2.16.840.1.113883.6.96\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'311465003\' and value.codeSystem = \'2.16.840.1.113883.6.96\')'"
 	 * @generated
 	 */
 	boolean validateCognitiveStatusObservation2Code(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -133,7 +133,7 @@ public interface CognitiveStatusObservation2 extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateCognitiveStatusObservation2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

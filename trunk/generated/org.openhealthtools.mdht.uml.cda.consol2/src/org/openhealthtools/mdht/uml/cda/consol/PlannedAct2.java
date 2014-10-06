@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedAct2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityActTemplateId PlannedAct2Code PlannedAct2StatusCode PlannedAct2StatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.39.2' statusCode.code='active' constraints.validation.warning='PlannedAct2EffectiveTime PlannedAct2AuthorParticipation' constraints.validation.info='PlannedAct2Indication2 PlannedAct2Instruction2 PlannedAct2PatientPriorityPreference PlannedAct2ProviderPriorityPreference PlannedAct2Performer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityActTemplateId PlannedAct2Code PlannedAct2StatusCode PlannedAct2StatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.39' templateId.extension='2014-06-09' statusCode.code='active' constraints.validation.warning='PlannedAct2EffectiveTime PlannedAct2AuthorParticipation' constraints.validation.info='PlannedAct2Indication2 PlannedAct2Instruction2 PlannedAct2PatientPriorityPreference PlannedAct2ProviderPriorityPreference PlannedAct2Performer'"
  * @generated
  */
 public interface PlannedAct2 extends PlanOfCareActivityAct {
@@ -47,7 +47,7 @@ public interface PlannedAct2 extends PlanOfCareActivityAct {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'active\')'"
 	 * @generated
 	 */
 	boolean validatePlannedAct2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

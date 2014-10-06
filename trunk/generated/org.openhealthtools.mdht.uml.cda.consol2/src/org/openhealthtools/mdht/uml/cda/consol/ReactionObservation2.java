@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReactionObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReactionObservationTemplateId ReactionObservation2ProcedureActivityProcedureInversionInd ReactionObservation2MedicationActivityInversionInd ReactionObservation2SeverityObservationInversionInd ReactionObservationCode ReactionObservationCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.9.2' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.ReactionObservationCode='ReactionObservationCodeP' constraints.validation.info='ReactionObservationProcedureActivityProcedure2 ReactionObservationMedicationActivity2 ReactionObservationSeverityObservation2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReactionObservationTemplateId ReactionObservation2ProcedureActivityProcedureInversionInd ReactionObservation2MedicationActivityInversionInd ReactionObservation2SeverityObservationInversionInd ReactionObservationCode ReactionObservationCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.9' templateId.extension='2014-06-09' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.ReactionObservationCode='ReactionObservationCodeP' constraints.validation.info='ReactionObservationProcedureActivityProcedure2 ReactionObservationMedicationActivity2 ReactionObservationSeverityObservation2'"
  * @generated
  */
 public interface ReactionObservation2 extends ReactionObservation {

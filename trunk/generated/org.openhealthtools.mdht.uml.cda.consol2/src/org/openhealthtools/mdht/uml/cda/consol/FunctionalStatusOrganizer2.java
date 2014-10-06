@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFunctionalStatusOrganizer2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP FunctionalStatusResultOrganizerFunctionalStatusObservation2 FunctionalStatusOrganizer2SelfCareActivities' templateId.root='2.16.840.1.113883.10.20.22.4.66.2' constraints.validation.warning='FunctionalStatusOrganizer2CodeCodeSystem FunctionalStatusOrganizer2AuthorParticipation' statusCode.code='completed' constraints.validation.dependOn.ResultOrganizerStatusCode='ResultOrganizerStatusCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP FunctionalStatusResultOrganizerFunctionalStatusObservation2 FunctionalStatusOrganizer2SelfCareActivities' templateId.root='2.16.840.1.113883.10.20.22.4.66' templateId.extension='2014-06-09' constraints.validation.warning='FunctionalStatusOrganizer2CodeCodeSystem FunctionalStatusOrganizer2AuthorParticipation' statusCode.code='completed' constraints.validation.dependOn.ResultOrganizerStatusCode='ResultOrganizerStatusCodeP'"
  * @generated
  */
 public interface FunctionalStatusOrganizer2 extends FunctionalStatusResultOrganizer {

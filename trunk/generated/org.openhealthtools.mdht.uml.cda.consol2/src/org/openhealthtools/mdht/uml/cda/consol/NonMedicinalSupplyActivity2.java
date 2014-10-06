@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getNonMedicinalSupplyActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivity2Instruction2InversionInd' templateId.root='2.16.840.1.113883.10.20.22.4.50.2' constraints.validation.info='NonMedicinalSupplyActivity2Instruction2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivity2Instruction2InversionInd' templateId.root='2.16.840.1.113883.10.20.22.4.50' templateId.extension='2014-06-09' constraints.validation.info='NonMedicinalSupplyActivity2Instruction2'"
  * @generated
  */
 public interface NonMedicinalSupplyActivity2 extends NonMedicinalSupplyActivity {

@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultObservationTemplateId ResultObservationEffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4.2.2' constraints.validation.warning='ResultObservation2CodeValue ResultObservation2AuthorParticipation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultObservationTemplateId ResultObservationEffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4' templateId.extension='2014-06-09' constraints.validation.warning='ResultObservation2CodeValue ResultObservation2AuthorParticipation'"
  * @generated
  */
 public interface ResultObservation2 extends ResultObservation {

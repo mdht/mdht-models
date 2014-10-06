@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSeverityObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeverityObservationTemplateId SeverityObservationCode SeverityObservationCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.8.2' code.code='SEV' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Severity' constraints.validation.dependOn.SeverityObservationCode='SeverityObservationCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeverityObservationTemplateId SeverityObservationCode SeverityObservationCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.8' templateId.extension='2014-06-09' code.code='SEV' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Severity' constraints.validation.dependOn.SeverityObservationCode='SeverityObservationCodeP'"
  * @generated
  */
 public interface SeverityObservation2 extends SeverityObservation {
