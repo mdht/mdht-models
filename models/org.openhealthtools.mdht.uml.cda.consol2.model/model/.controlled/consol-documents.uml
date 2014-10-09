@@ -5579,7 +5579,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_YqH-8PK9EeGFUPBL8qS7yQ" base_Property="_X72iwD_LEeGXieeKs7NJjA">
     <ruleId>CONF:17189</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_1Fd-MPK9EeGFUPBL8qS7yQ" base_Class="_sfqx0D_bEeGnev0fONNFyw" templateId="2.16.840.1.113883.10.20.21.3.1" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_1Fd-MPK9EeGFUPBL8qS7yQ" base_Class="_sfqx0D_bEeGnev0fONNFyw" templateId="2.16.840.1.113883.10.20.21.3.1">
     <ruleId>CONF:9480</ruleId>
     <ruleId>CONF:10068</ruleId>
   </CDA:CDATemplate>
