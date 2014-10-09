@@ -22920,7 +22920,6 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteDocumentationOfServiceEvent2">
       <details key="constraints.validation.error" value="ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2PreciseToTheDay ProgressNoteDocumentationOfServiceEvent2ClassCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.21.3.1"/>
-      <details key="templateId.extension" value="2014-06-09"/>
       <details key="constraints.validation.warning" value="ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute ProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteDocumentationOfServiceEvent2EffectiveTime"/>
       <details key="constraints.validation.info" value="ProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond"/>
       <details key="classCode" value="PCPR"/>
