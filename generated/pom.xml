@@ -29,6 +29,8 @@
 		<module>org.openhealthtools.mdht.uml.cda.hitsp</module>
 		 
 		<module>org.openhealthtools.mdht.uml.cda.consol</module>
+		
+		<module>org.openhealthtools.mdht.uml.cda.consol2</module>
 
 
 
