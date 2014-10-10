@@ -8,6 +8,8 @@
  * Contributors:
  *     Dan Brown (Audacious Inquiry) - initial API and implementation
  *     								 - modified VALIDATE_CARE_PLAN_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP due to inline datatype OCL generation issue 
+ *     								 - temporarily modified VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP 
+ *     								   for the ability to ignore for validation purposes. Note: The JUnit still fails overall so we will not forget the issue.   
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
@@ -133,10 +135,17 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
+	 * @generated NOT
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->exists(s : cda::Section | not s.oclIsTypeOf(consol::PlanOfTreatmentSection2))";
+	// current generated from model
+	// protected static final String VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP =
+	// "self.getAllSections()->exists(s : cda::Section | not s.oclIsTypeOf(consol::PlanOfTreatmentSection2))";
+	// temporary replacement until the OCL is worked out so that we don't fail for an invalid reason
+	// basically we end up converting the test from and expect pass to an expect fail so that the error is never fired (invalidly)
+	// but the JUnit test still recognizes the constraint is not working on an internal levels
+	// TODO: Remove NOT from @generated when OCL is fixed in the model
+	protected static final String VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Does Not Have Plan Of Treatment Section V2</em>}' invariant operation.
