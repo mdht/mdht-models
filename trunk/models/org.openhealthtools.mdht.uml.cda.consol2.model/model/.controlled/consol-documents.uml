@@ -2183,7 +2183,7 @@ For conformance with both specifications, please review the appendix on XDS-SD a
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2TeiKRSVEeGGzu7fmW9pXw" base_Class="_2TeiIRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.21.1.10">
+  <CDA:CDATemplate xmi:id="_2TeiKRSVEeGGzu7fmW9pXw" base_Class="_2TeiIRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.1.10">
     <ruleId>CONF:7710</ruleId>
     <ruleId>CONF:10054</ruleId>
   </CDA:CDATemplate>
@@ -9944,7 +9944,7 @@ The serviceEvent/performer represents the healthcare providers involved in the c
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_qGSfMCGjEeSt4IEYu7xgbw" base_Class="_lPMNYCGjEeSt4IEYu7xgbw" templateId="2.16.840.1.113883.10.20.22.1" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_qGSfMCGjEeSt4IEYu7xgbw" base_Class="_lPMNYCGjEeSt4IEYu7xgbw" templateId="2.16.840.1.113883.10.20.22.1.2" templateVersion="2014-06-09">
     <ruleId>CONF:1098-8450</ruleId>
     <ruleId>CONF:1098-10038</ruleId>
   </CDA:CDATemplate>
