@@ -411,7 +411,7 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
     </ownedAttribute>
   </uml:Class>
   <CDA:PropertyValidation xmi:id="_plDcQIlGEeOJGtGyq_dBbA" base_Property="_IBSKoYlGEeOJGtGyq_dBbA">
-    <ruleId>CONF:28415</ruleId>
+    <ruleId>CONF:1098-28415</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_qeOf8IlGEeOJGtGyq_dBbA" base_Property="_IBSKoIlGEeOJGtGyq_dBbA">
     <ruleId>CONF:28410</ruleId>
@@ -440,10 +440,9 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
     <ruleId>CONF:28420</ruleId>
     <ruleId>CONF:28421</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CodeSystemConstraint xmi:id="_Q1ChAInPEeOJGtGyq_dBbA" code="310301000" displayName="advance healthcare directive status" base_Property="_IBSKoYlGEeOJGtGyq_dBbA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31230</ruleId>
-    <ruleId>CONF:31231</ruleId>
+  <CDA:CodeSystemConstraint xmi:id="_Q1ChAInPEeOJGtGyq_dBbA" code="45473-6" displayName="Advance directive - living will" base_Property="_IBSKoYlGEeOJGtGyq_dBbA">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-31230</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_GnllUK-9EeO8duI_7f6kZw" clientDependency="_4mXW8LBkEeOtlapy2HWYww" name="AdvanceDirectiveObservation2">
     <ownedComment xmi:id="_V-vVgK-9EeO8duI_7f6kZw">
