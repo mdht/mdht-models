@@ -15,6 +15,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
@@ -52,6 +53,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient Guardian Code From Personal Relationship Or Responsible Party</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient General Header Constraints Record Target Patient Role Patient Guardian Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient General Header Constraints Record Target Patient Role Patient Guardian Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>}</li>
@@ -94,6 +96,42 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  */
 
 public class USRealmHeader2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty() {
+		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsiblePartyTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty",
+			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_FROM_PERSONAL_RELATIONSHIP_OR_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsiblePartyTestCase.doValidationTest();
+	}
 
 	/**
 	*
