@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveOrganizerTemplateId AdvanceDirectiveOrganizerClassCode AdvanceDirectiveOrganizerMoodCode AdvanceDirectiveOrganizerId AdvanceDirectiveOrganizerCode AdvanceDirectiveOrganizerCodeP AdvanceDirectiveOrganizerStatusCode AdvanceDirectiveOrganizerStatusCodeP AdvanceDirectiveOrganizerAdvanceDirectiveObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.108' classCode='CLUSTER' moodCode='EVN' code.code='310301000' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='advance healthcare directive status' statusCode.code='completed' constraints.validation.dependOn.AdvanceDirectiveOrganizerStatusCode='AdvanceDirectiveOrganizerStatusCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveOrganizerTemplateId AdvanceDirectiveOrganizerClassCode AdvanceDirectiveOrganizerMoodCode AdvanceDirectiveOrganizerId AdvanceDirectiveOrganizerCode AdvanceDirectiveOrganizerCodeP AdvanceDirectiveOrganizerStatusCode AdvanceDirectiveOrganizerStatusCodeP AdvanceDirectiveOrganizerAdvanceDirectiveObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.108' classCode='CLUSTER' moodCode='EVN' code.code='45473-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Advance directive - living will' statusCode.code='completed' constraints.validation.dependOn.AdvanceDirectiveOrganizerStatusCode='AdvanceDirectiveOrganizerStatusCodeP'"
  * @generated
  */
 public interface AdvanceDirectiveOrganizer extends Organizer {
@@ -85,7 +85,7 @@ public interface AdvanceDirectiveOrganizer extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'310301000\' and value.codeSystem = \'2.16.840.1.113883.6.96\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'45473-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateAdvanceDirectiveOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
