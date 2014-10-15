@@ -5931,6 +5931,14 @@ OIDs SHALL be no more than 64 characters in length..</body>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Iy9tUBwREeSMr-NWzQuDBw" value="*"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_al6nABwQEeSMr-NWzQuDBw" name="Guardian">
+            <ownedRule xmi:id="_ildAUFP-EeSRgsl8Ss66oQ" name="CodeFromPersonalRelationshipOrResponsibleParty">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ildAUVP-EeSRgsl8Ss66oQ">
+                <language>Analysis</language>
+                <language>OCL</language>
+                <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+                <body>true</body>
+              </specification>
+            </ownedRule>
             <generalization xmi:id="_al7OEBwQEeSMr-NWzQuDBw" general="_-vjwcCylEeGMXrZ0DiQwGg"/>
             <ownedAttribute xmi:id="_iidm0BwQEeSMr-NWzQuDBw" name="code" visibility="private" aggregation="composite" redefinedProperty="_Cm0V4CymEeGMXrZ0DiQwGg">
               <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
