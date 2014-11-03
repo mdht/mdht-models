@@ -206,6 +206,17 @@ public class SubstanceOrDeviceAllergyObservationImpl extends ObservationImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSubstanceOrDeviceAllergyObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SubstanceOrDeviceAllergyObservationOperations.validateSubstanceOrDeviceAllergyObservationValueP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSubstanceOrDeviceAllergyObservationAllergyStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservationOperations.validateSubstanceOrDeviceAllergyObservationAllergyStatusObservation(

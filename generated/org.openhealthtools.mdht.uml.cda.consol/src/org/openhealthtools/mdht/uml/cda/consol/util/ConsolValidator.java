@@ -2291,20 +2291,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_SEVERITY_INVERSION_INDICATOR = 282;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Playing Entity Code Systems' of 'Allergy Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_PLAYING_ENTITY_CODE_SYSTEMS = 283;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Template Id' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_TEMPLATE_ID = 284;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_TEMPLATE_ID = 283;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Class Code' of 'Allergy Observation'.
@@ -2312,7 +2304,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_CLASS_CODE = 285;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_CLASS_CODE = 284;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Mood Code' of 'Allergy Observation'.
@@ -2320,7 +2312,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_MOOD_CODE = 286;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_MOOD_CODE = 285;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Id' of 'Allergy Observation'.
@@ -2328,7 +2320,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ID = 287;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ID = 286;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Code P' of 'Allergy Observation'.
@@ -2336,7 +2328,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_CODE_P = 288;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_CODE_P = 287;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Code' of 'Allergy Observation'.
@@ -2344,7 +2336,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_CODE = 289;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_CODE = 288;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Status Code' of 'Allergy Observation'.
@@ -2352,7 +2344,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_STATUS_CODE = 290;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_STATUS_CODE = 289;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Effective Time' of 'Allergy Observation'.
@@ -2360,7 +2352,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_EFFECTIVE_TIME = 291;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_EFFECTIVE_TIME = 290;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Value' of 'Allergy Observation'.
@@ -2368,7 +2360,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_VALUE = 292;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_VALUE = 291;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Reaction Observation' of 'Allergy Observation'.
@@ -2376,7 +2368,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_REACTION_OBSERVATION = 293;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_REACTION_OBSERVATION = 292;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Severity Observation' of 'Allergy Observation'.
@@ -2384,7 +2376,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_SEVERITY_OBSERVATION = 294;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_SEVERITY_OBSERVATION = 293;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Status Observation' of 'Allergy Observation'.
@@ -2392,7 +2384,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_STATUS_OBSERVATION = 295;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_STATUS_OBSERVATION = 294;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant' of 'Allergy Observation'.
@@ -2400,7 +2392,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT = 296;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT = 295;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity CE Original Text' of 'Allergy Observation'.
@@ -2408,7 +2400,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_ORIGINAL_TEXT = 297;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_ORIGINAL_TEXT = 296;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity CE Translation' of 'Allergy Observation'.
@@ -2416,7 +2408,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_TRANSLATION = 298;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_TRANSLATION = 297;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity Original Text Reference Value' of 'Allergy Observation'.
@@ -2424,7 +2416,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE = 299;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE = 298;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity Reference Value' of 'Allergy Observation'.
@@ -2432,7 +2424,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_REFERENCE_VALUE = 300;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_REFERENCE_VALUE = 299;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity Original Text Reference' of 'Allergy Observation'.
@@ -2440,7 +2432,15 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE = 301;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE = 300;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity Code Terminology Value Set Group SRFI' of 'Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE_TERMINOLOGY_VALUE_SET_GROUP_SRFI = 301;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity Class Code' of 'Allergy Observation'.
@@ -18027,12 +18027,20 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE = 2249;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Value P' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE_P = 2250;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Allergy Status Observation' of 'Substance Or Device Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_ALLERGY_STATUS_OBSERVATION = 2250;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_ALLERGY_STATUS_OBSERVATION = 2251;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Reaction Observation' of 'Substance Or Device Allergy Observation'.
@@ -18040,7 +18048,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_REACTION_OBSERVATION = 2251;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_REACTION_OBSERVATION = 2252;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Severity Observation' of 'Substance Or Device Allergy Observation'.
@@ -18048,7 +18056,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION = 2252;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION = 2253;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant' of 'Substance Or Device Allergy Observation'.
@@ -18056,7 +18064,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT = 2253;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT = 2254;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity CE Original Text' of 'Substance Or Device Allergy Observation'.
@@ -18064,7 +18072,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_ORIGINAL_TEXT = 2254;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_ORIGINAL_TEXT = 2255;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity CE Translation' of 'Substance Or Device Allergy Observation'.
@@ -18072,7 +18080,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_TRANSLATION = 2255;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_TRANSLATION = 2256;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Original Text Reference Value' of 'Substance Or Device Allergy Observation'.
@@ -18080,7 +18088,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE = 2256;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE = 2257;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Reference Value' of 'Substance Or Device Allergy Observation'.
@@ -18088,7 +18096,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_REFERENCE_VALUE = 2257;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_REFERENCE_VALUE = 2258;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Original Text Reference' of 'Substance Or Device Allergy Observation'.
@@ -18096,7 +18104,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE = 2258;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE = 2259;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Class Code' of 'Substance Or Device Allergy Observation'.
@@ -18104,7 +18112,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE = 2259;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE = 2260;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Code' of 'Substance Or Device Allergy Observation'.
@@ -18112,7 +18120,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE = 2260;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE = 2261;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Class Code' of 'Substance Or Device Allergy Observation'.
@@ -18120,7 +18128,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE = 2261;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE = 2262;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity' of 'Substance Or Device Allergy Observation'.
@@ -18128,7 +18136,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY = 2262;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY = 2263;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Type Code' of 'Substance Or Device Allergy Observation'.
@@ -18136,7 +18144,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_TYPE_CODE = 2263;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_TYPE_CODE = 2264;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role' of 'Substance Or Device Allergy Observation'.
@@ -18144,7 +18152,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE = 2264;
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE = 2265;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -18152,7 +18160,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2264;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2265;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -23052,10 +23060,6 @@ public class ConsolValidator extends EObjectValidator {
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyPlayingEntityCodeSystems(
-				allergyObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateAllergyObservation_validateAllergyObservationTemplateId(
 				allergyObservation, diagnostics, context);
 		}
@@ -23124,6 +23128,10 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
+				allergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -23228,17 +23236,6 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateAllergyObservation_validateAllergyObservationSeverityInversionIndicator(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return allergyObservation.validateAllergyObservationSeverityInversionIndicator(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateAllergyObservationAllergyPlayingEntityCodeSystems constraint of '<em>Allergy Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyPlayingEntityCodeSystems(
-			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyPlayingEntityCodeSystems(diagnostics, context);
 	}
 
 	/**
@@ -23441,6 +23438,18 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return allergyObservation.validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI constraint of '<em>Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI(
+			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return allergyObservation.validateAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI(
 			diagnostics, context);
 	}
 
@@ -69414,6 +69423,10 @@ public class ConsolValidator extends EObjectValidator {
 				substanceOrDeviceAllergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationValueP(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationAllergyStatusObservation(
 				substanceOrDeviceAllergyObservation, diagnostics, context);
 		}
@@ -69640,6 +69653,19 @@ public class ConsolValidator extends EObjectValidator {
 			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationValue(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationValueP constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationValueP(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationValueP(
 			diagnostics, context);
 	}
 
