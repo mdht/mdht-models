@@ -543,7 +543,7 @@ public class EncounterActivitiesTest extends CDAValidationTest {
 			objectFactory) {
 
 			// constant codeSystem for sdtc:dischargeDispositionCode
-			private static final String DDC_CODESYSTEM_VALUE = "2.16.840.1.113883.12.112";
+			private static final String DDC_CODESYSTEM_VALUE = "2.16.840.1.113883.6.301.5";
 
 			@Override
 			protected void updateToFail(EncounterActivities target) {
@@ -551,24 +551,18 @@ public class EncounterActivitiesTest extends CDAValidationTest {
 				CE sdtcCode = DatatypesFactory.eINSTANCE.createCE();
 				sdtcCode.setCode("AnyStringRequired"); // Required to be defined, but not to any specific String
 				sdtcCode.setCodeSystem("1.23.456.7.89123.4.567.89"); // apply incorrect codeSystem
-				sdtcCode.setCodeSystemName("NothingRequired"); // not required (not checked as a constraint)
 				target.getSDTCDischargeDispositionCodes().add(sdtcCode);
 			}
 
 			@Override
 			protected void updateToPass(EncounterActivities target) {
 				target.getSDTCDischargeDispositionCodes().remove(0); // get rid of incorrect code added for updateToFail
-				target.init(); // not required to pass but makes XML snippet output more complete
-				// generates by default
-				// ...
-				// <sdtc:dischargeDispositionCode codeSystem="WhateverItIs" codeSystemName="HL7DischargeDisposition"/>
-				// ...
+				target.init();
 				target.getSDTCDischargeDispositionCodes().remove(0); // remove default element since it has no code
 				// Now setup/add all proper attributes
 				CE sdtcCode = DatatypesFactory.eINSTANCE.createCE();
 				sdtcCode.setCode("42"); // Required to be defined, but not to any specific String
 				sdtcCode.setCodeSystem(DDC_CODESYSTEM_VALUE); // the actual constraint checked which must be accurate
-				sdtcCode.setCodeSystemName("HL7 Discharge Disposition"); // not required (not checked as a constraint)
 				target.getSDTCDischargeDispositionCodes().add(sdtcCode);
 			}
 
