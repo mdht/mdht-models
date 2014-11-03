@@ -155,17 +155,6 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_oguNAANMEeKJMbqTnrzczw" name="allergyPlayingEntityCodeSystems" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_zzqg4ANMEeKJMbqTnrzczw">
-        <body>Duplicated constraint to make OCL easier to write. Check AllergyObservationParticipant->ParticipantRole->PlayingEntity for original conformance rules.</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ue3mcANMEeKJMbqTnrzczw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>In an allergy to a specific medication the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC. In an allergy to a class of medications the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC. In an allergy to a food or other substance the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC</body>
-        <body>(self.value->forAll(value | value.isNullFlavorUndefined())) implies (((self.value->forAll(value | value.oclAsType(datatypes::CD).code = '419511003' or value.oclAsType(datatypes::CD).code = '416098002' or value.oclAsType(datatypes::CD).code = '59037007')) and (self.participant.participantRole.playingEntity->forAll(code.isNullFlavorDefined() or code.codeSystem = '2.16.840.1.113883.6.88' or code.codeSystem='2.16.840.1.113883.3.26.1.5'))) or ((self.value->forAll(value | value.oclAsType(datatypes::CD).code = '418471000' or value.oclAsType(datatypes::CD).code = '414285001' or value.oclAsType(datatypes::CD).code = '235719002')) and (self.participant.participantRole.playingEntity->forAll(code.isNullFlavorDefined() or code.codeSystem = '2.16.840.1.113883.4.9'))) or ((self.value->forAll(value | value.oclAsType(datatypes::CD).code = '420134006' or value.oclAsType(datatypes::CD).code = '418038007' or value.oclAsType(datatypes::CD).code = '419199007')) and (self.participant.participantRole.playingEntity->forAll(code.isNullFlavorDefined() or code.codeSystem = '2.16.840.1.113883.6.88' or code.codeSystem='2.16.840.1.113883.3.26.1.5' or code.codeSystem = '2.16.840.1.113883.4.9'))))</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_2F5ZERSVEeGGzu7fmW9pXw" general="_mgny4NF8EeOHUokOVP95oQ"/>
     <ownedAttribute xmi:id="_2Em_oBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
@@ -285,6 +274,14 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <language>OCL</language>
               <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
               <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.oclIsUndefined()</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_tYfO8GFNEeSNI6leTohBaQ" name="codeTerminologyValueSetGroupSRFI" constrainedElement="_E1B60DJBEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_wdgfIGFNEeSNI6leTohBaQ">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>code SHALL be selected from ValueSet Substance-Reactant for Intolerance 2.16.840.1.113762.1.4.1010.1 DYNAMIC. Note: Value set intentionally defined as a GROUPING made up of: Value Set: Medication Drug Class (2.16.840.1.113883.3.88.12.80.18) (NDFRT drug class codes); Value Set: Clinical Drug Ingredient (2.16.840.1.113762.1.4.1010.7) (RxNORM ingredient codes); Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII ingredient codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT substance codes).</body>
+              <body>( code.oclIsUndefined() or code.isNullFlavorUndefined() ) implies ( not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and ( ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.3.26.1.5' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.6.88' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.4.9' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined() ) ) )</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_E1B60TJBEeG6R8Pb5FT2Ow">
@@ -1065,11 +1062,6 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_0mkLsOJWEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_wNrf4OJWEeG3cO7ebC3QuA">
     <ruleId>CONF:15929</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2G02UANMEeKJMbqTnrzczw" base_Constraint="_oguNAANMEeKJMbqTnrzczw">
-    <ruleId>CONF:7421</ruleId>
-    <ruleId>CONF:10083</ruleId>
-    <ruleId>CONF:10084</ruleId>
-  </CDA:ConstraintValidation>
   <uml:Class xmi:id="_uCiIYLNwEeOtlapy2HWYww" clientDependency="_0f27sLNxEeOtlapy2HWYww" name="AllergyConcernAct2">
     <ownedComment xmi:id="_kWCYcLNxEeOtlapy2HWYww">
       <body>This template reflects an ongoing concern on behalf of the provider that placed the allergy on a patient's allergy list. So long as the underlying condition is of concern to the provider (i.e. so long as the allergy, whether active or resolved, is of ongoing concern and interest to the provider), the statusCode is &quot;active&quot;. Only when the underlying allergy is no longer of concern is the statusCode set to &quot;completed&quot;. The effectiveTime reflects the time that the underlying allergy was felt to be a concern.&#xD;
@@ -1637,6 +1629,14 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.oclIsUndefined()</body>
             </specification>
           </ownedRule>
+          <ownedRule xmi:id="_yXHowGOVEeSLXfr4DK4AdA" name="codeTerminologyValueSetGroupSRFI" constrainedElement="_E1B60DJBEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_yXHowWOVEeSLXfr4DK4AdA">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>code SHALL be selected from ValueSet Substance-Reactant for Intolerance 2.16.840.1.113762.1.4.1010.1 DYNAMIC. Note: Value set intentionally defined as a GROUPING made up of: Value Set: Medication Drug Class (2.16.840.1.113883.3.88.12.80.18) (NDFRT drug class codes); Value Set: Clinical Drug Ingredient (2.16.840.1.113762.1.4.1010.7) (RxNORM ingredient codes); Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII ingredient codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT substance codes).</body>
+              <body>( code.oclIsUndefined() or code.isNullFlavorUndefined() ) implies ( not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and ( ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.3.26.1.5' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.6.88' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.4.9' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined() ) ) )</body>
+            </specification>
+          </ownedRule>
           <generalization xmi:id="_3jqVgdIeEeO-TcA3qYv-cw">
             <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
           </generalization>
@@ -2126,11 +2126,9 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:AssociationValidation xmi:id="_7gXcIPMOEeOrR8IF-aqVyQ" severity="WARNING" base_Association="_4B3U8PMOEeOrR8IF-aqVyQ">
     <ruleId>CONF:16318</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_EuBMk_MREeOrR8IF-aqVyQ" base_Property="_EuBMkPMREeOrR8IF-aqVyQ"/>
-  <CDA:ValueSetConstraint xmi:id="_1bLfMPMREeOrR8IF-aqVyQ" base_Property="_EuBMkPMREeOrR8IF-aqVyQ" severity="INFO">
-    <reference href="../consol-vocab.uml#_hO26YPMSEeOrR8IF-aqVyQ"/>
+  <CDA:PropertyValidation xmi:id="_EuBMk_MREeOrR8IF-aqVyQ" base_Property="_EuBMkPMREeOrR8IF-aqVyQ">
     <ruleId>CONF:16324</ruleId>
-  </CDA:ValueSetConstraint>
+  </CDA:PropertyValidation>
   <uml:Association xmi:id="_zLuGkPMoEeOrR8IF-aqVyQ" memberEnd="_zLs4cPMoEeOrR8IF-aqVyQ _zLutoPMoEeOrR8IF-aqVyQ">
     <ownedEnd xmi:id="_zLutoPMoEeOrR8IF-aqVyQ" type="_K3M6IPKJEeOn7bMsPcStOw" association="_zLuGkPMoEeOrR8IF-aqVyQ"/>
   </uml:Association>
@@ -2221,11 +2219,9 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:AssociationValidation xmi:id="_sYQyIPrxEeO3D4OxHxUkag" base_Association="_qBuYkPrxEeO3D4OxHxUkag">
     <ruleId>CONF:7406</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_yZI6APryEeO3D4OxHxUkag" base_Property="_yZIS8PryEeO3D4OxHxUkag"/>
-  <CDA:ValueSetConstraint xmi:id="_2GIJIPryEeO3D4OxHxUkag" base_Property="_yZIS8PryEeO3D4OxHxUkag">
-    <reference href="../consol-vocab.uml#_hO26YPMSEeOrR8IF-aqVyQ"/>
+  <CDA:PropertyValidation xmi:id="_yZI6APryEeO3D4OxHxUkag" base_Property="_yZIS8PryEeO3D4OxHxUkag">
     <ruleId>CONF:7419</ruleId>
-  </CDA:ValueSetConstraint>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_KgdlsPr7EeO3D4OxHxUkag" code="completed" base_Property="_Kgc-oPr7EeO3D4OxHxUkag">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:19085</ruleId>
@@ -2315,4 +2311,10 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:PropertyValidation xmi:id="_NFIWIAIzEeScubSeRE1upQ" base_Property="_I_93kAIzEeScubSeRE1upQ">
     <ruleId>CONF:7534</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_1ymUgGFNEeSNI6leTohBaQ" base_Constraint="_tYfO8GFNEeSNI6leTohBaQ">
+    <ruleId>CONF:7419</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_yXIP0GOVEeSLXfr4DK4AdA" severity="INFO" base_Constraint="_yXHowGOVEeSLXfr4DK4AdA">
+    <ruleId>CONF:16324</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
