@@ -612,6 +612,8 @@ http://phinvads.cdc.gov/vads/ViewValueSet.action?id=7AFDBFB5-A277-DE11-9B52-0015
       <ownedLiteral xmi:id="_c2yPE6DqEd-dVeaMP0XXQw" name="414285001"/>
       <ownedLiteral xmi:id="_c2yPEaDqEd-dVeaMP0XXQw" name="59037007"/>
       <ownedLiteral xmi:id="_c2y2IKDqEd-dVeaMP0XXQw" name="235719002"/>
+      <ownedLiteral xmi:id="_9SpiQGBgEeSnzLLNSxnDkQ" name="232347008"/>
+      <ownedLiteral xmi:id="_A1LN0GBhEeSnzLLNSxnDkQ" name="426232007"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dRWEIKDqEd-dVeaMP0XXQw" name="Medication Brand Name">
       <ownedComment xmi:id="_1Nq3ICXZEeGD8_EQPvfzIQ">
@@ -3148,9 +3150,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_p_5iMfJiEeO2NaSiicarcg" conceptName="transportation details (observable entity)" base_EnumerationLiteral="_p_5iMPJiEeO2NaSiicarcg"/>
   <term:ValueSetCode xmi:id="_sFk1QPJiEeO2NaSiicarcg" conceptName="Housing history (observable entity)" base_EnumerationLiteral="_sFkOMPJiEeO2NaSiicarcg"/>
   <term:ValueSetCode xmi:id="_t_SI4fJiEeO2NaSiicarcg" conceptName="Dosage of radiation exposure (observable entity)" base_EnumerationLiteral="_t_SI4PJiEeO2NaSiicarcg"/>
-  <term:ValueSetVersion xmi:id="_hO26YPMSEeOrR8IF-aqVyQ" identifier="2.16.840.1.113762.1.4.1010.1" binding="Dynamic" base_Enumeration="_hO2TUPMSEeOrR8IF-aqVyQ">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
-  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_hO26YPMSEeOrR8IF-aqVyQ" identifier="2.16.840.1.113762.1.4.1010.1" binding="Dynamic" base_Enumeration="_hO2TUPMSEeOrR8IF-aqVyQ"/>
   <term:ValueSetVersion xmi:id="_bb5h4BwSEeSMr-NWzQuDBw" identifier="TempPatientLanguageOID" binding="Dynamic" base_Enumeration="_bb460BwSEeSMr-NWzQuDBw"/>
   <term:ValueSetVersion xmi:id="_tcT18CL6EeS4d9o7u1_H3A" identifier="1.3.6.1.4.1.12009.10.2.5" fullName="LOINC Imaging Document Codes" binding="Dynamic" base_Enumeration="_tcSn0CL6EeS4d9o7u1_H3A">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -3164,4 +3164,6 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_VYpK4C1pEeSoCqqrpX8LzQ" conceptName="Consulting Provider" base_EnumerationLiteral="_VYoj0C1pEeSoCqqrpX8LzQ"/>
   <term:ValueSetCode xmi:id="_Zp8oAC1pEeSoCqqrpX8LzQ" conceptName="Primary Care Provider" base_EnumerationLiteral="_Zp8A8C1pEeSoCqqrpX8LzQ"/>
   <term:ValueSetCode xmi:id="_bldScS1pEeSoCqqrpX8LzQ" conceptName="Referring Provider" base_EnumerationLiteral="_bldScC1pEeSoCqqrpX8LzQ"/>
+  <term:ValueSetCode xmi:id="_9SqJUGBgEeSnzLLNSxnDkQ" conceptName="Dander (animal) allergy" base_EnumerationLiteral="_9SpiQGBgEeSnzLLNSxnDkQ"/>
+  <term:ValueSetCode xmi:id="_A1LN0WBhEeSnzLLNSxnDkQ" conceptName="Environmental allergy" base_EnumerationLiteral="_A1LN0GBhEeSnzLLNSxnDkQ"/>
 </xmi:XMI>
