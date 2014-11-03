@@ -72,6 +72,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Original Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Original Text Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Code Terminology Value Set Group SRFI</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation#validateSubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Participant Participant Role Class Code</em>}</li>
@@ -967,6 +968,141 @@ public class SubstanceOrDeviceAllergyObservationTest extends CDAValidationTest {
 		};
 
 		validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI() {
+		OperationsTestCase<SubstanceOrDeviceAllergyObservation> validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFITestCase = new OperationsTestCase<SubstanceOrDeviceAllergyObservation>(
+			"validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI",
+			operationsForOCL.getOCLValue("VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE_TERMINOLOGY_VALUE_SET_GROUP_SRFI__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			private static final String CS_OID_NDF_RT = "2.16.840.1.113883.3.26.1.5";
+
+			private static final String CS_OID_RXNORM = "2.16.840.1.113883.6.88";
+
+			private static final String CS_OID_USED_BY_UNIQUE_INGREDIENT_IDENTIFIER_VALUE_SET = "2.16.840.1.113883.4.9";
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SubstanceOrDeviceAllergyObservation target) {
+						target.init();
+						Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+						ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+						PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
+
+						pr.setPlayingEntity(pe);
+						par.setParticipantRole(pr);
+						target.getParticipants().add(par);
+					}
+				});
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SubstanceOrDeviceAllergyObservation target) {
+						target.getParticipants().clear();
+
+						Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+						ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+						PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
+
+						pe.setCode(DatatypesFactory.eINSTANCE.createCE("mustExistOnly", BAD_CODESYSTEM_ID));
+
+						pr.setPlayingEntity(pe);
+						par.setParticipantRole(pr);
+						target.getParticipants().add(par);
+					}
+				});
+
+			};
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SubstanceOrDeviceAllergyObservation target) {
+						target.getParticipants().clear();
+
+						Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+						ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+						PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
+
+						pe.setCode(DatatypesFactory.eINSTANCE.createCE("mustExistOnly", CS_OID_NDF_RT));
+
+						pr.setPlayingEntity(pe);
+						par.setParticipantRole(pr);
+						target.getParticipants().add(par);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SubstanceOrDeviceAllergyObservation target) {
+						target.getParticipants().clear();
+
+						Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+						ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+						PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
+
+						pe.setCode(DatatypesFactory.eINSTANCE.createCE("mustExistOnly", CS_OID_RXNORM));
+
+						pr.setPlayingEntity(pe);
+						par.setParticipantRole(pr);
+						target.getParticipants().add(par);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SubstanceOrDeviceAllergyObservation target) {
+						target.getParticipants().clear();
+
+						Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+						ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+						PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
+
+						pe.setCode(DatatypesFactory.eINSTANCE.createCE(
+							"mustExistOnly", CS_OID_USED_BY_UNIQUE_INGREDIENT_IDENTIFIER_VALUE_SET));
+
+						pr.setPlayingEntity(pe);
+						par.setParticipantRole(pr);
+						target.getParticipants().add(par);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SubstanceOrDeviceAllergyObservation target) {
+						target.getParticipants().clear();
+
+						Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+						ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+						PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
+
+						pe.setCode(DatatypesFactory.eINSTANCE.createCE("mustExistOnly", SNOMEDCT_ID));
+
+						pr.setPlayingEntity(pe);
+						par.setParticipantRole(pr);
+						target.getParticipants().add(par);
+					}
+				});
+
+			};
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SubstanceOrDeviceAllergyObservationOperations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI(
+					(SubstanceOrDeviceAllergyObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFITestCase.doValidationTest();
 	}
 
 	/**
