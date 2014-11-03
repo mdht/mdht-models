@@ -815,7 +815,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_ENCOUNTER_ACTIVITIES_SDTC_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.sDTCDischargeDispositionCode->isEmpty() or self.sDTCDischargeDispositionCode->exists(element | element.isNullFlavorUndefined())) implies (self.sDTCDischargeDispositionCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.12.112' and not value.code.oclIsUndefined()))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.301.5' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEncounterActivitiesSDTCDischargeDispositionCode(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities SDTC Discharge Disposition Code</em>}' invariant operation.
