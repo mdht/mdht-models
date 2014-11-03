@@ -339,6 +339,17 @@ public class SubstanceOrDeviceAllergyObservationImpl extends ObservationImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SubstanceOrDeviceAllergyObservationOperations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

@@ -1164,10 +1164,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationSeverityInversionIndicator/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationSeverityInversionIndicator/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationAllergyPlayingEntityCodeSystems">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyPlayingEntityCodeSystems/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyPlayingEntityCodeSystems/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationClassCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationClassCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationClassCode/context"/>
@@ -1235,6 +1231,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityClassCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityClassCode/diagnostics"/>
@@ -1356,6 +1356,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation/SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation/SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation/SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation/SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation/SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation/SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation/SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation/SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode/diagnostics"/>
@@ -11272,10 +11276,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCode/context"/>
@@ -11514,10 +11514,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2ParticipantParticipantRoleSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2ParticipantParticipantRoleSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2ParticipantParticipantRoleSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2ParticipantParticipantRoleSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2ParticipantParticipantRoleSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode/diagnostics"/>
