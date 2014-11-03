@@ -597,6 +597,8 @@ http://phinvads.cdc.gov/vads/ViewValueSet.action?id=7AFDBFB5-A277-DE11-9B52-0015
       <ownedLiteral xmi:id="_c2yPE6DqEd-dVeaMP0XXQw" name="414285001"/>
       <ownedLiteral xmi:id="_c2yPEaDqEd-dVeaMP0XXQw" name="59037007"/>
       <ownedLiteral xmi:id="_c2y2IKDqEd-dVeaMP0XXQw" name="235719002"/>
+      <ownedLiteral xmi:id="_FSqs0GBhEeSANuG0qM3tjw" name="232347008"/>
+      <ownedLiteral xmi:id="_HnbkwGBhEeSANuG0qM3tjw" name="426232007"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dRWEIKDqEd-dVeaMP0XXQw" name="Medication Brand Name">
       <ownedComment xmi:id="_1Nq3ICXZEeGD8_EQPvfzIQ">
@@ -1265,6 +1267,14 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_oX2t4GBhEeSANuG0qM3tjw" name="Substance-Reactant for Intolerance">
+      <ownedComment xmi:id="_5NtQsGBhEeSANuG0qM3tjw">
+        <body>A substance or other type of agent (eg. Sunshine) that may be associated with an intolerance reaction event or a propensity to such an event. These concepts are expected to be at a more general level of abstraction (ingredients versus more specific formulations). This value set is quite general and includes concepts that may never cause an adverse event, particularly the included SNOMED CT concepts. The code system-specific value sets in this grouping value set are intended to provide broad coverage of all kinds of agents, but the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and drawn from the available code systems in the following priority order: NDFRT, then RXNORM, then UNII, then SNOMEDCT. This overarching grouping value set is intended to support identification of drug classes, individual medication ingredients, foods, general substances and environmental entities.  &#xD;
+Value set intensionally defined as a GROUPING made up of:  &#xD;
+Value Set: Medication Drug Class (2.16.840.1.113883.3.88.12.80.18) (NDFRT drug class codes); Value Set: Clinical Drug Ingredient (2.16.840.1.113762.1.4.1010.7) (RxNORM ingredient codes); Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII ingredient codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT substance codes).&#xD;&#xD;
+Valueset Source: https://vsac.nlm.nih.gov/</body>
+      </ownedComment>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -1349,7 +1359,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KsN1ICF_Ed-M3adQxwHq4g"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2L5TYhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.33" fullName="Admission Type" source="National Uniform Billing Committee (NUBC)" url="www.nubc.org" definition="See (UB-04/NUBC CURRENT UB DATA SPECIFICATIONS MANUAL) UB-04 FL14." binding="Dynamic" base_Enumeration="_2L5TYBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Th4S0EgeEeSQ-Puym4H24g"/>
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_vbHVcEgcEeSfpbeq3Ftc1g"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2MRG0BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.22" version="7" fullName="Vaccine Administered Value Set" definition="Vaccine Name Keyword: Clinical Vaccines, Vaccine Names" revisionDate="10/22/2008" binding="Dynamic" base_Enumeration="_2MQfxBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
@@ -2525,4 +2535,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_vX05cWK1EeOD5bEp3nNX5w" conceptName="scrub nurse" base_EnumerationLiteral="_vX05cGK1EeOD5bEp3nNX5w"/>
   <term:ValueSetCode xmi:id="_yNuIgWK1EeOD5bEp3nNX5w" conceptName="third assistant" base_EnumerationLiteral="_yNuIgGK1EeOD5bEp3nNX5w"/>
   <term:ValueSetCode xmi:id="_rHli8MmlEeORzvZavFqkkg" conceptName="influenza, recombinant, injectable, preservative free" base_EnumerationLiteral="_rF7WEMmlEeORzvZavFqkkg"/>
+  <term:ValueSetCode xmi:id="_FSrT4GBhEeSANuG0qM3tjw" conceptName="Dander (animal) allergy" base_EnumerationLiteral="_FSqs0GBhEeSANuG0qM3tjw"/>
+  <term:ValueSetCode xmi:id="_HncL0GBhEeSANuG0qM3tjw" conceptName="Environmental allergy" base_EnumerationLiteral="_HnbkwGBhEeSANuG0qM3tjw"/>
+  <term:ValueSetVersion xmi:id="_oX3U8GBhEeSANuG0qM3tjw" identifier="2.16.840.1.113762.1.4.1010.1" binding="Dynamic" base_Enumeration="_oX2t4GBhEeSANuG0qM3tjw"/>
 </xmi:XMI>
