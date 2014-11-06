@@ -6987,12 +6987,20 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_TYPE_CODE = 869;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Sdtc DDC From NUBC Or DD' of 'Encounter Activities'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SDTC_DDC_FROM_NUBC_OR_DD = 870;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Template Id' of 'Encounter Activities'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_TEMPLATE_ID = 870;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_TEMPLATE_ID = 871;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Class Code' of 'Encounter Activities'.
@@ -7000,7 +7008,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CLASS_CODE = 871;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CLASS_CODE = 872;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Mood Code' of 'Encounter Activities'.
@@ -7008,7 +7016,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_MOOD_CODE = 872;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_MOOD_CODE = 873;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Id' of 'Encounter Activities'.
@@ -7016,7 +7024,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ID = 873;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ID = 874;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Code' of 'Encounter Activities'.
@@ -7024,7 +7032,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CODE = 874;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CODE = 875;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Effective Time' of 'Encounter Activities'.
@@ -7032,15 +7040,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_EFFECTIVE_TIME = 875;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities SDTC Discharge Disposition Code P' of 'Encounter Activities'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SDTC_DISCHARGE_DISPOSITION_CODE_P = 876;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_EFFECTIVE_TIME = 876;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities SDTC Discharge Disposition Code' of 'Encounter Activities'.
@@ -34764,6 +34764,10 @@ public class ConsolValidator extends EObjectValidator {
 				encounterActivities, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateEncounterActivities_validateEncounterActivitiesSdtcDDCFromNUBCOrDD(
+				encounterActivities, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateEncounterActivities_validateEncounterActivitiesTemplateId(
 				encounterActivities, diagnostics, context);
 		}
@@ -34785,10 +34789,6 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateEncounterActivities_validateEncounterActivitiesEffectiveTime(
-				encounterActivities, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEncounterActivities_validateEncounterActivitiesSDTCDischargeDispositionCodeP(
 				encounterActivities, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -34878,6 +34878,17 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the validateEncounterActivitiesSdtcDDCFromNUBCOrDD constraint of '<em>Encounter Activities</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterActivities_validateEncounterActivitiesSdtcDDCFromNUBCOrDD(
+			EncounterActivities encounterActivities, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encounterActivities.validateEncounterActivitiesSdtcDDCFromNUBCOrDD(diagnostics, context);
+	}
+
+	/**
 	 * Validates the validateEncounterActivitiesTemplateId constraint of '<em>Encounter Activities</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34941,17 +34952,6 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateEncounterActivities_validateEncounterActivitiesEffectiveTime(
 			EncounterActivities encounterActivities, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return encounterActivities.validateEncounterActivitiesEffectiveTime(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateEncounterActivitiesSDTCDischargeDispositionCodeP constraint of '<em>Encounter Activities</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEncounterActivities_validateEncounterActivitiesSDTCDischargeDispositionCodeP(
-			EncounterActivities encounterActivities, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return encounterActivities.validateEncounterActivitiesSDTCDischargeDispositionCodeP(diagnostics, context);
 	}
 
 	/**
