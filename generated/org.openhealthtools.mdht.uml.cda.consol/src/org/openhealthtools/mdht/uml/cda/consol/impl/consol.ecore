@@ -9308,18 +9308,14 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EncounterActivities" eSuperTypes="urn:hl7-org:v3#//Encounter">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="EncounterActivitiesTemplateId EncounterActivitiesCodeOriginalTextReferenceValue EncounterActivitiesServiceDeliveryTypeCode EncounterActivitiesClassCode EncounterActivitiesMoodCode EncounterActivitiesId EncounterActivitiesEffectiveTime EncounterActivitiesSDTCDischargeDispositionCode EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity"/>
+      <details key="constraints.validation.error" value="EncounterActivitiesTemplateId EncounterActivitiesCodeOriginalTextReferenceValue EncounterActivitiesServiceDeliveryTypeCode EncounterActivitiesSdtcDDCFromNUBCOrDD EncounterActivitiesClassCode EncounterActivitiesMoodCode EncounterActivitiesId EncounterActivitiesEffectiveTime EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.49"/>
       <details key="constraints.validation.warning" value="EncounterActivitiesCodeOriginalText EncounterActivitiesCodeOriginalTextReference EncounterActivitiesReferenceValue EncounterActivitiesCode"/>
       <details key="classCode" value="ENC"/>
       <details key="moodCode" value="EVN"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.12"/>
       <details key="code.codeSystemName" value="CPT-4"/>
-      <details key="sDTCDischargeDispositionCode.codeSystem" value="2.16.840.1.113883.6.301.5"/>
-      <details key="sDTCDischargeDispositionCode.codeSystemName" value="NUBC UB-04 FL17-Patient Status"/>
-      <details key="constraints.validation.info" value="EncounterActivitiesSDTCDischargeDispositionCodeP EncounterActivitiesServiceDeliveryLocation EncounterActivitiesIndication EncounterActivitiesEncounterPerformer EncounterActivitiesEncounterDiagnosis EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode"/>
-      <details key="constraints.validation.dependOn.EncounterActivitiesSDTCDischargeDispositionCode"
-          value="EncounterActivitiesSDTCDischargeDispositionCodeP"/>
+      <details key="constraints.validation.info" value="EncounterActivitiesSDTCDischargeDispositionCode EncounterActivitiesServiceDeliveryLocation EncounterActivitiesIndication EncounterActivitiesEncounterPerformer EncounterActivitiesEncounterDiagnosis EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode"/>
       <details key="constraints.validation.query" value="EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolEncounterActivitiesEncounterPerformer">
@@ -9365,6 +9361,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="EncounterActivitiesServiceDeliveryTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="EncounterActivitiesSdtcDDCFromNUBCOrDD" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -9419,15 +9424,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="EncounterActivitiesEffectiveTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="EncounterActivitiesSDTCDischargeDispositionCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">

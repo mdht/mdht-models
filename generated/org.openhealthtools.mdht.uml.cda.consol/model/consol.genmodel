@@ -3565,6 +3565,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesServiceDeliveryTypeCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesServiceDeliveryTypeCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesSdtcDDCFromNUBCOrDD">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSdtcDDCFromNUBCOrDD/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSdtcDDCFromNUBCOrDD/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesTemplateId/context"/>
@@ -3588,10 +3592,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesEffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesEffectiveTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesEffectiveTime/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCode/diagnostics"/>
