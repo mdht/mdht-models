@@ -26388,7 +26388,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__REALM_CODE = CDAPackage.PRECONDITION__REALM_CODE;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__REALM_CODE = CDAPackage.CRITERION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -26397,7 +26397,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TYPE_ID = CDAPackage.PRECONDITION__TYPE_ID;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TYPE_ID = CDAPackage.CRITERION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -26406,16 +26406,34 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TEMPLATE_ID = CDAPackage.PRECONDITION__TEMPLATE_ID;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TEMPLATE_ID = CDAPackage.CRITERION__TEMPLATE_ID;
 
 	/**
-	 * The feature id for the '<em><b>Criterion</b></em>' containment reference.
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__CRITERION = CDAPackage.PRECONDITION__CRITERION;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__CODE = CDAPackage.CRITERION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TEXT = CDAPackage.CRITERION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__VALUE = CDAPackage.CRITERION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -26424,16 +26442,25 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__NULL_FLAVOR = CDAPackage.PRECONDITION__NULL_FLAVOR;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__NULL_FLAVOR = CDAPackage.CRITERION__NULL_FLAVOR;
 
 	/**
-	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__TYPE_CODE = CDAPackage.PRECONDITION__TYPE_CODE;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__CLASS_CODE = CDAPackage.CRITERION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__MOOD_CODE = CDAPackage.CRITERION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Precondition For Substance Administration</em>' class.
@@ -26442,7 +26469,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_FEATURE_COUNT = CDAPackage.PRECONDITION_FEATURE_COUNT + 0;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_FEATURE_COUNT = CDAPackage.CRITERION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.

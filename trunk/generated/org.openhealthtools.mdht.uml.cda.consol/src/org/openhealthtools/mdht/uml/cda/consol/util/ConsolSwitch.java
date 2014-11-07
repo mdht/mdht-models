@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.util.Switch;
 import org.openhealthtools.mdht.uml.cda.Author;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
+import org.openhealthtools.mdht.uml.cda.Criterion;
 import org.openhealthtools.mdht.uml.cda.Encounter;
 import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
@@ -23,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.Performer1;
-import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.RelatedSubject;
 import org.openhealthtools.mdht.uml.cda.Section;
@@ -31,7 +31,6 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.Supply;
 import org.openhealthtools.mdht.uml.cda.consol.*;
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
-import org.openhealthtools.mdht.uml.hl7.rim.ActRelationship;
 import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.openhealthtools.mdht.uml.hl7.rim.Participation;
 import org.openhealthtools.mdht.uml.hl7.rim.Role;
@@ -2292,10 +2291,10 @@ public class ConsolSwitch<T> extends Switch<T> {
 				PreconditionForSubstanceAdministration preconditionForSubstanceAdministration = (PreconditionForSubstanceAdministration) theEObject;
 				T result = casePreconditionForSubstanceAdministration(preconditionForSubstanceAdministration);
 				if (result == null) {
-					result = casePrecondition(preconditionForSubstanceAdministration);
+					result = caseCriterion(preconditionForSubstanceAdministration);
 				}
 				if (result == null) {
-					result = caseActRelationship(preconditionForSubstanceAdministration);
+					result = caseAct(preconditionForSubstanceAdministration);
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(preconditionForSubstanceAdministration);
@@ -5229,21 +5228,6 @@ public class ConsolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Act Relationship</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Act Relationship</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseActRelationship(ActRelationship object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Anesthesia Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -6024,17 +6008,17 @@ public class ConsolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Precondition</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Criterion</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Precondition</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Criterion</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePrecondition(Precondition object) {
+	public T caseCriterion(Criterion object) {
 		return null;
 	}
 
