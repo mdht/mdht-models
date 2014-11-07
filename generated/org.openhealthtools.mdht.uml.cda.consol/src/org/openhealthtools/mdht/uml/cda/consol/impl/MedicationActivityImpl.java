@@ -191,17 +191,6 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivityPreconditionSubstanceAdmTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityPreconditionSubstanceAdmTypeCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMedicationActivityRateQuantityUnit(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityRateQuantityUnit(this, diagnostics, context);
 	}
@@ -388,6 +377,27 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	public boolean validateMedicationActivityConsumableMedicationInformation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityConsumableMedicationInformation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityPreconditionTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityPreconditionTypeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
 			this, diagnostics, context);
 	}
 

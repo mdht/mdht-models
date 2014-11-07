@@ -133,6 +133,17 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationActivityOperations.validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateImmunizationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivityOperations.validateImmunizationActivityTemplateId(this, diagnostics, context);
 	}
