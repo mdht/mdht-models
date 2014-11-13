@@ -22,7 +22,11 @@
 
 	<modules>
 		<module>org.openhealthtools.mdht.uml.cda.test</module>
+		<module>org.openhealthtools.mdht.uml.cda.consol.tests</module>
+		<!-- <module>org.openhealthtools.mdht.uml.cda.mu2consol.tests</module> -->
 		<module>org.openhealthtools.mdht.uml.cda.ccd.tests</module>
+		<!-- <module>org.openhealthtools.mdht.uml.cda.consol2.tests</module> -->
+		<!-- <module>org.openhealthtools.mdht.uml.cda.qrda.tests</module> -->
 	
 	</modules>
 	<build>
