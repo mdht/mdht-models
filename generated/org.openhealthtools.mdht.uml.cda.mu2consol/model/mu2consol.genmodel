@@ -3,6 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.mu2consol/src"
     modelPluginID="org.openhealthtools.mdht.uml.cda.mu2consol" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
     dynamicTemplates="true" modelName="mu2consol_Ecore" modelPluginClass="Mu2consolPlugin"
+    testsDirectory="/org.openhealthtools.mdht.uml.cda.mu2consol.tests/src/test/java"
     importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="7.0" copyrightFields="false"
     runtimeVersion="2.9" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.genmodel#//consol platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab platform:/plugin/org.eclipse.uml2.types/model/Types.genmodel#//types"
     pluralizedGetters="true" invariantPrefix="validate">
