@@ -1,0 +1,102 @@
+<!--
+    Copyright (c) 2014 Dan Brown.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+        Dan Brown - initial API and implementation
+        
+    Usage:
+    Run this as an ant task after a full transform, reload, regen (model and test code) has been run
+    to fix the manifests in the generated and test projects.
+    
+    Reason for requirement:
+    Due to the build process requiring separate jars, the ant test process requiring separate module names, 
+    and keeping a commitment to allowing old consol code to work with consol2; 
+    The id had to be changed to consol2 even though the source is listed as consol1.
+    This transformation fixes the issue and related issues without polluting the JET.
+   
+    Fixes include:
+    Location:
+    /META-INF/MANIFEST.MF
+	1. Replace:
+	Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.consol;singleton:=true
+	with:
+	Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.consol2;singleton:=true
+	Location:
+    ../org.openhealthtools.mdht.uml.cda.consol2.tests/META-INF/MANIFEST.MF
+	1. Replace:
+	Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.consol.tests;singleton:=true
+	with:
+	Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.consol2.tests;singleton:=true
+    2. Remove the following line from the file altogether:
+    Export-Package: org.openhealthtools.mdht.uml.cda.consol.tests
+    3. Remove the following line from the file altogether (under Require-Bundle):
+    " org.openhealthtools.mdht.uml.cda.consol;visibility:=reexport,"
+    as
+    org.openhealthtools.mdht.uml.cda.consol2;visibility:=reexport
+    is already represented and consol would not exist/be able to be resolved.
+ -->
+ <project name="Consol2 Manfiests Post Model and Test code Generation Fix" basedir="." default="all">
+ 
+ 	<!-- Locations -->
+ 	<property name="LocalGenManifest" location="${basedir}/META-INF/MANIFEST.MF" />
+ 	<property name="ExternalTestManifest" location="${basedir}/../org.openhealthtools.mdht.uml.cda.consol2.tests/META-INF/MANIFEST.MF" />
+ 	
+ 	<!-- Replacements -->
+ 	<!-- /search strings -->
+ 	<property name="genSearch1" value="Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.consol;singleton:=true" />
+ 	<property name="testsSearch1" value="Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.consol.tests;singleton:=true" />	
+ 	<!-- /replacement strings -->
+ 	<property name="genReplace1" value="Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.consol2;singleton:=true" />
+ 	<property name="testsReplace1" value="Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.consol2.tests;singleton:=true" />
+ 	
+ 	<!-- Removals -->
+ 	<!-- /search strings -->
+ 	<property name="testsRemove1" value="Export-Package: org.openhealthtools.mdht.uml.cda.consol.tests" />
+ 	<!-- note: part of Require-Bundle. The space and comma are necessary to remove entire line -->
+ 	<property name="testsRemove2" value=" org.openhealthtools.mdht.uml.cda.consol;visibility:=reexport," />
+ 	
+ 	<target name="all">
+ 		<echo level="info" message="Updating Manifests..." />
+ 		<antcall target="fixGen" />
+ 		<antcall target="fixTests" />
+ 	</target>
+ 	
+ 	<target name="fixGen">
+ 		<echo level="info" message="Updating Generated Project:" />
+ 		<echo level="info" message="Location: ${localGenManifest}" />
+ 		
+ 		<echo level="info" message="1." />
+ 		<echo level="info" message="Replace: ${genSearch1}" />
+ 		<echo level="info" message="With:    ${genReplace1}" />
+ 		
+ 		<replace file="${LocalGenManifest}" token="${genSearch1}" value="${genReplace1}" failOnNoReplacements="true" />
+ 		
+ 	</target>
+ 	
+ 	<target name="fixTests">
+ 		<echo level="info" message="Updating Tests Project:" />
+ 		<echo level="info" message="Location: ${ExternalTestManifest}" />
+ 		
+ 		<echo level="info" message="1." />
+ 		<echo level="info" message="Replace: ${testsSearch1}" />
+ 		<echo level="info" message="With:    ${testsReplace1}" />
+ 		<replace file="${ExternalTestManifest}" token="${testsSearch1}" value="${testsReplace1}" failOnNoReplacements="true" />
+ 		
+ 		<echo level="info" message="2." />
+ 		<echo level="info" message="Remove: ${testsRemove1}" />
+ 		<!-- <replace file="${ExternalTestManifest}" token="${testsRemove1}" value="" failOnNoReplaceMents="true" /> -->
+ 		<replaceregexp file="${ExternalTestManifest}" match="${testsRemove1}\n" replace="" />
+ 		
+ 		<echo level="info" message="3." />
+ 		<echo level="info" message="Remove: ${testsRemove2}" />
+ 		<!-- <replace file="${ExternalTestManifest}" token="${testsRemove2}" value="" failOnNoReplaceMents="true" /> -->
+ 		<replaceregexp file="${ExternalTestManifest}" match="${testsRemove2}\n" replace="" />
+ 		
+ 	</target>
+ 
+ </project>
+ 
