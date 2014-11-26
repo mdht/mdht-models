@@ -27,13 +27,14 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.TransitionOfCareAmb
  * <em><b>Transition Of Care Ambulatory Summary</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class TransitionOfCareAmbulatorySummaryImpl extends
 		SummaryOfCareRecordImpl implements TransitionOfCareAmbulatorySummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected TransitionOfCareAmbulatorySummaryImpl() {
@@ -42,6 +43,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -50,72 +52,87 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	public boolean validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateTransitionOfCareAmbulatorySummaryReasonForReferral(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryReasonForReferral(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateTransitionOfCareAmbulatorySummaryMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryMedicationsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MedicationsSection getMedicationsSection() {
-		return TransitionOfCareAmbulatorySummaryOperations.getMedicationsSection(this);
+	public boolean validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareAmbulatorySummaryOperations
+				.validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(
+						this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public boolean validateTransitionOfCareAmbulatorySummaryReasonForReferral(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareAmbulatorySummaryOperations
+				.validateTransitionOfCareAmbulatorySummaryReasonForReferral(
+						this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public boolean validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareAmbulatorySummaryOperations
+				.validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(
+						this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public boolean validateTransitionOfCareAmbulatorySummaryMedicationsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareAmbulatorySummaryOperations
+				.validateTransitionOfCareAmbulatorySummaryMedicationsSection(
+						this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public MedicationsSection getMedicationsSection() {
+		return TransitionOfCareAmbulatorySummaryOperations
+				.getMedicationsSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public TransitionOfCareAmbulatorySummary init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public TransitionOfCareAmbulatorySummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // TransitionOfCareAmbulatorySummaryImpl

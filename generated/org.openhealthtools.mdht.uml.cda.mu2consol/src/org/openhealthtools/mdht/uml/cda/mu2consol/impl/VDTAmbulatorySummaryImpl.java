@@ -27,13 +27,14 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTAmbulatorySummar
  * <em><b>VDT Ambulatory Summary</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 		implements VDTAmbulatorySummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected VDTAmbulatorySummaryImpl() {
@@ -42,6 +43,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -50,28 +52,34 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTAmbulatorySummaryProviderNameAndContactInfo(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryProviderNameAndContactInfo(this, diagnostics, context);
+	public boolean validateVDTAmbulatorySummaryProviderNameAndContactInfo(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTAmbulatorySummaryOperations
+				.validateVDTAmbulatorySummaryProviderNameAndContactInfo(this,
+						diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTAmbulatorySummaryMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryMedicationsSection(this, diagnostics, context);
+	public boolean validateVDTAmbulatorySummaryMedicationsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTAmbulatorySummaryOperations
+				.validateVDTAmbulatorySummaryMedicationsSection(this,
+						diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -81,21 +89,23 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public VDTAmbulatorySummary init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public VDTAmbulatorySummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // VDTAmbulatorySummaryImpl

@@ -56,6 +56,7 @@ public class ResultsSectionOperations
 		org.openhealthtools.mdht.uml.cda.consol.operations.ResultsSectionOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected ResultsSectionOperations() {
@@ -63,9 +64,11 @@ public class ResultsSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMu2consolResultOrganizers(ResultsSection) <em>Get Mu2consol Result Organizers</em>}' operation.
-	 * <!-- begin-user-doc
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolResultOrganizers(ResultsSection)
+	 * <em>Get Mu2consol Result Organizers</em>}' operation. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolResultOrganizers(ResultsSection)
 	 * @generated
 	 * @ordered
@@ -101,33 +104,48 @@ public class ResultsSectionOperations
 			ResultsSection resultsSection) {
 		if (GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.RESULTS_SECTION, Mu2consolPackage.Literals.RESULTS_SECTION.getEAllOperations().get(65));
+			helper.setOperationContext(
+					Mu2consolPackage.Literals.RESULTS_SECTION,
+					Mu2consolPackage.Literals.RESULTS_SECTION
+							.getEAllOperations().get(65));
 			try {
-				GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+				GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_QRY = helper
+						.createQuery(GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(
+						pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV
+				.createQuery(GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ResultOrganizer> result = (Collection<ResultOrganizer>) query.evaluate(resultsSection);
-		return new BasicEList.UnmodifiableEList<ResultOrganizer>(result.size(), result.toArray());
+		Collection<ResultOrganizer> result = (Collection<ResultOrganizer>) query
+				.evaluate(resultsSection);
+		return new BasicEList.UnmodifiableEList<ResultOrganizer>(result.size(),
+				result.toArray());
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResultsSectionEntriesOptionalTemplateId(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Entries Optional Template Id</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateResultsSectionEntriesOptionalTemplateId(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '
+	 * {@link #validateResultsSectionEntriesOptionalTemplateId(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Results Section Entries Optional Template Id</em>}'
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateResultsSectionEntriesOptionalTemplateId(ResultsSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	protected static final String VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResultsSectionEntriesOptionalTemplateId(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Entries Optional Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateResultsSectionEntriesOptionalTemplateId(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL invariant for the '
+	 * {@link #validateResultsSectionEntriesOptionalTemplateId(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Results Section Entries Optional Template Id</em>}'
+	 * invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateResultsSectionEntriesOptionalTemplateId(ResultsSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -152,88 +170,108 @@ public class ResultsSectionOperations
 	public static boolean validateResultsSectionEntriesOptionalTemplateId(
 			ResultsSection resultsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-  	  
+
 		if (VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.RESULTS_SECTION);
 			try {
-				VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+				VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
+						.createInvariant(VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(
+						pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(resultsSection)) {
+		if (!EOCL_ENV
+				.createQuery(
+						VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+				.check(resultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalTemplateId"),
-						 new Object [] { resultsSection }));
+				diagnostics
+						.add(new BasicDiagnostic(
+								Diagnostic.ERROR,
+								Mu2consolValidator.DIAGNOSTIC_SOURCE,
+								Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
+								Mu2consolPlugin.INSTANCE
+										.getString("ResultsSectionEntriesOptionalTemplateId"),
+								new Object[] { resultsSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Result Organizer</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '
+	 * {@link #validateResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Results Section Result Organizer</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateResultsSectionResultOrganizer(ResultsSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	protected static final String VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(mu2consol::ResultOrganizer))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Result Organizer</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL invariant for the '
+	 * {@link #validateResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Results Section Result Organizer</em>}' invariant operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateResultsSectionResultOrganizer(ResultsSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param resultsSection The receiving '<em><b>Results Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * 
+	 * @param resultsSection
+	 *            The receiving '<em><b>Results Section</b></em>' model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResultsSectionResultOrganizer(ResultsSection resultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateResultsSectionResultOrganizer(
+			ResultsSection resultsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.RESULTS_SECTION);
 			try {
-				VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+				VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
+						.createInvariant(VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(
+						pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(resultsSection)) {
+		if (!EOCL_ENV
+				.createQuery(
+						VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+				.check(resultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_RESULT_ORGANIZER,
-						 Mu2consolPlugin.INSTANCE.getString("ResultsSectionResultOrganizer"),
-						 new Object [] { resultsSection }));
+				diagnostics
+						.add(new BasicDiagnostic(
+								Diagnostic.ERROR,
+								Mu2consolValidator.DIAGNOSTIC_SOURCE,
+								Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_RESULT_ORGANIZER,
+								Mu2consolPlugin.INSTANCE
+										.getString("ResultsSectionResultOrganizer"),
+								new Object[] { resultsSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;

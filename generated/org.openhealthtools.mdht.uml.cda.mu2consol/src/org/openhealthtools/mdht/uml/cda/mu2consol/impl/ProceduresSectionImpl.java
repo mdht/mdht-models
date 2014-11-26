@@ -28,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ProceduresSectionOp
  * <em><b>Procedures Section</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class ProceduresSectionImpl extends
@@ -36,6 +36,7 @@ public class ProceduresSectionImpl extends
 		implements ProceduresSection {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected ProceduresSectionImpl() {
@@ -44,6 +45,7 @@ public class ProceduresSectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -53,50 +55,60 @@ public class ProceduresSectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public EList<ProcedureActivityProcedure> getMu2consolProcedureActivityProcedures() {
-		return ProceduresSectionOperations.getMu2consolProcedureActivityProcedures(this);
+		return ProceduresSectionOperations
+				.getMu2consolProcedureActivityProcedures(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityProcedure(this, diagnostics, context);
+		return ProceduresSectionOperations
+				.validateProceduresSectionEntriesOptionalTemplateId(this,
+						diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public boolean validateProceduresSectionProcedureActivityProcedure(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionOperations
+				.validateProceduresSectionProcedureActivityProcedure(this,
+						diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public ProceduresSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public ProceduresSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProceduresSectionImpl
