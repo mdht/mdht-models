@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultObservationOp
  * <em><b>Result Observation</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class ResultObservationImpl extends
@@ -34,6 +34,7 @@ public class ResultObservationImpl extends
 		implements ResultObservation {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected ResultObservationImpl() {
@@ -42,6 +43,7 @@ public class ResultObservationImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -51,31 +53,35 @@ public class ResultObservationImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateResultObservationTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
+		return ResultObservationOperations.validateResultObservationTemplateId(
+				this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public ResultObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public ResultObservation init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ResultObservationImpl

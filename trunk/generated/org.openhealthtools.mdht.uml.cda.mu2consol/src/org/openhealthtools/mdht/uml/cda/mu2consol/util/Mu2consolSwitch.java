@@ -50,21 +50,22 @@ import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
  * starting with the actual class of the object and proceeding up the
  * inheritance hierarchy until a non-null result is returned, which is the
  * result of the switch. <!-- end-user-doc -->
+ * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage
  * @generated
  */
 public class Mu2consolSwitch<T> extends Switch<T> {
 	/**
-	 * The cached model package
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static Mu2consolPackage modelPackage;
 
 	/**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc --> <!--
+	 * Creates an instance of the switch. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Mu2consolSwitch() {
@@ -74,9 +75,9 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Checks whether this is a switch for the given package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Checks whether this is a switch for the given package. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @parameter ePackage the package in question.
 	 * @return whether this is a switch for the given package.
 	 * @generated
@@ -87,266 +88,542 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-	 * <!-- begin-user-doc --> <!--
+	 * Calls <code>caseXXX</code> for each class of the model until one returns
+	 * a non null result; it yields that result. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * @return the first non-null result returned by a <code>caseXXX</code> call.
+	 * 
+	 * @return the first non-null result returned by a <code>caseXXX</code>
+	 *         call.
 	 * @generated
 	 */
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case Mu2consolPackage.GENERAL_HEADER_CONSTRAINTS: {
-				GeneralHeaderConstraints generalHeaderConstraints = (GeneralHeaderConstraints)theEObject;
-				T result = caseGeneralHeaderConstraints(generalHeaderConstraints);
-				if (result == null) result = caseConsol_GeneralHeaderConstraints(generalHeaderConstraints);
-				if (result == null) result = caseClinicalDocument(generalHeaderConstraints);
-				if (result == null) result = caseAct(generalHeaderConstraints);
-				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+		case Mu2consolPackage.GENERAL_HEADER_CONSTRAINTS: {
+			GeneralHeaderConstraints generalHeaderConstraints = (GeneralHeaderConstraints) theEObject;
+			T result = caseGeneralHeaderConstraints(generalHeaderConstraints);
+			if (result == null) {
+				result = caseConsol_GeneralHeaderConstraints(generalHeaderConstraints);
 			}
-			case Mu2consolPackage.SUMMARY_OF_CARE_RECORD: {
-				SummaryOfCareRecord summaryOfCareRecord = (SummaryOfCareRecord)theEObject;
-				T result = caseSummaryOfCareRecord(summaryOfCareRecord);
-				if (result == null) result = caseGeneralHeaderConstraints(summaryOfCareRecord);
-				if (result == null) result = caseConsol_GeneralHeaderConstraints(summaryOfCareRecord);
-				if (result == null) result = caseClinicalDocument(summaryOfCareRecord);
-				if (result == null) result = caseAct(summaryOfCareRecord);
-				if (result == null) result = caseInfrastructureRoot(summaryOfCareRecord);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseClinicalDocument(generalHeaderConstraints);
 			}
-			case Mu2consolPackage.SOCIAL_HISTORY_SECTION: {
-				SocialHistorySection socialHistorySection = (SocialHistorySection)theEObject;
-				T result = caseSocialHistorySection(socialHistorySection);
-				if (result == null) result = caseConsol_SocialHistorySection(socialHistorySection);
-				if (result == null) result = caseSection(socialHistorySection);
-				if (result == null) result = caseAct(socialHistorySection);
-				if (result == null) result = caseInfrastructureRoot(socialHistorySection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseAct(generalHeaderConstraints);
 			}
-			case Mu2consolPackage.SMOKING_STATUS_OBSERVATION: {
-				SmokingStatusObservation smokingStatusObservation = (SmokingStatusObservation)theEObject;
-				T result = caseSmokingStatusObservation(smokingStatusObservation);
-				if (result == null) result = caseConsol_SmokingStatusObservation(smokingStatusObservation);
-				if (result == null) result = caseTobaccoUse(smokingStatusObservation);
-				if (result == null) result = caseObservation(smokingStatusObservation);
-				if (result == null) result = caseClinicalStatement(smokingStatusObservation);
-				if (result == null) result = caseAct(smokingStatusObservation);
-				if (result == null) result = caseInfrastructureRoot(smokingStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseInfrastructureRoot(generalHeaderConstraints);
 			}
-			case Mu2consolPackage.RESULTS_SECTION: {
-				ResultsSection resultsSection = (ResultsSection)theEObject;
-				T result = caseResultsSection(resultsSection);
-				if (result == null) result = caseConsol_ResultsSection(resultsSection);
-				if (result == null) result = caseResultsSectionEntriesOptional(resultsSection);
-				if (result == null) result = caseSection(resultsSection);
-				if (result == null) result = caseAct(resultsSection);
-				if (result == null) result = caseInfrastructureRoot(resultsSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = defaultCase(theEObject);
 			}
-			case Mu2consolPackage.RESULT_ORGANIZER: {
-				ResultOrganizer resultOrganizer = (ResultOrganizer)theEObject;
-				T result = caseResultOrganizer(resultOrganizer);
-				if (result == null) result = caseConsol_ResultOrganizer(resultOrganizer);
-				if (result == null) result = caseOrganizer(resultOrganizer);
-				if (result == null) result = caseClinicalStatement(resultOrganizer);
-				if (result == null) result = caseAct(resultOrganizer);
-				if (result == null) result = caseInfrastructureRoot(resultOrganizer);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			return result;
+		}
+		case Mu2consolPackage.SUMMARY_OF_CARE_RECORD: {
+			SummaryOfCareRecord summaryOfCareRecord = (SummaryOfCareRecord) theEObject;
+			T result = caseSummaryOfCareRecord(summaryOfCareRecord);
+			if (result == null) {
+				result = caseGeneralHeaderConstraints(summaryOfCareRecord);
 			}
-			case Mu2consolPackage.RESULT_OBSERVATION: {
-				ResultObservation resultObservation = (ResultObservation)theEObject;
-				T result = caseResultObservation(resultObservation);
-				if (result == null) result = caseConsol_ResultObservation(resultObservation);
-				if (result == null) result = caseObservation(resultObservation);
-				if (result == null) result = caseClinicalStatement(resultObservation);
-				if (result == null) result = caseAct(resultObservation);
-				if (result == null) result = caseInfrastructureRoot(resultObservation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseConsol_GeneralHeaderConstraints(summaryOfCareRecord);
 			}
-			case Mu2consolPackage.PROCEDURES_SECTION: {
-				ProceduresSection proceduresSection = (ProceduresSection)theEObject;
-				T result = caseProceduresSection(proceduresSection);
-				if (result == null) result = caseConsol_ProceduresSection(proceduresSection);
-				if (result == null) result = caseProceduresSectionEntriesOptional(proceduresSection);
-				if (result == null) result = caseSection(proceduresSection);
-				if (result == null) result = caseAct(proceduresSection);
-				if (result == null) result = caseInfrastructureRoot(proceduresSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseClinicalDocument(summaryOfCareRecord);
 			}
-			case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE: {
-				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure)theEObject;
-				T result = caseProcedureActivityProcedure(procedureActivityProcedure);
-				if (result == null) result = caseConsol_ProcedureActivityProcedure(procedureActivityProcedure);
-				if (result == null) result = caseProcedure(procedureActivityProcedure);
-				if (result == null) result = caseClinicalStatement(procedureActivityProcedure);
-				if (result == null) result = caseAct(procedureActivityProcedure);
-				if (result == null) result = caseInfrastructureRoot(procedureActivityProcedure);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseAct(summaryOfCareRecord);
 			}
-			case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: {
-				ClinicalOfficeVisitSummary clinicalOfficeVisitSummary = (ClinicalOfficeVisitSummary)theEObject;
-				T result = caseClinicalOfficeVisitSummary(clinicalOfficeVisitSummary);
-				if (result == null) result = caseGeneralHeaderConstraints(clinicalOfficeVisitSummary);
-				if (result == null) result = caseConsol_GeneralHeaderConstraints(clinicalOfficeVisitSummary);
-				if (result == null) result = caseClinicalDocument(clinicalOfficeVisitSummary);
-				if (result == null) result = caseAct(clinicalOfficeVisitSummary);
-				if (result == null) result = caseInfrastructureRoot(clinicalOfficeVisitSummary);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseInfrastructureRoot(summaryOfCareRecord);
 			}
-			case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION: {
-				MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection)theEObject;
-				T result = caseMedicationsAdministeredSection(medicationsAdministeredSection);
-				if (result == null) result = caseConsol_MedicationsAdministeredSection(medicationsAdministeredSection);
-				if (result == null) result = caseSection(medicationsAdministeredSection);
-				if (result == null) result = caseAct(medicationsAdministeredSection);
-				if (result == null) result = caseInfrastructureRoot(medicationsAdministeredSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = defaultCase(theEObject);
 			}
-			case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: {
-				TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary = (TransitionOfCareAmbulatorySummary)theEObject;
-				T result = caseTransitionOfCareAmbulatorySummary(transitionOfCareAmbulatorySummary);
-				if (result == null) result = caseSummaryOfCareRecord(transitionOfCareAmbulatorySummary);
-				if (result == null) result = caseGeneralHeaderConstraints(transitionOfCareAmbulatorySummary);
-				if (result == null) result = caseConsol_GeneralHeaderConstraints(transitionOfCareAmbulatorySummary);
-				if (result == null) result = caseClinicalDocument(transitionOfCareAmbulatorySummary);
-				if (result == null) result = caseAct(transitionOfCareAmbulatorySummary);
-				if (result == null) result = caseInfrastructureRoot(transitionOfCareAmbulatorySummary);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			return result;
+		}
+		case Mu2consolPackage.SOCIAL_HISTORY_SECTION: {
+			SocialHistorySection socialHistorySection = (SocialHistorySection) theEObject;
+			T result = caseSocialHistorySection(socialHistorySection);
+			if (result == null) {
+				result = caseConsol_SocialHistorySection(socialHistorySection);
 			}
-			case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY: {
-				TransitionOfCareInpatientSummary transitionOfCareInpatientSummary = (TransitionOfCareInpatientSummary)theEObject;
-				T result = caseTransitionOfCareInpatientSummary(transitionOfCareInpatientSummary);
-				if (result == null) result = caseSummaryOfCareRecord(transitionOfCareInpatientSummary);
-				if (result == null) result = caseGeneralHeaderConstraints(transitionOfCareInpatientSummary);
-				if (result == null) result = caseConsol_GeneralHeaderConstraints(transitionOfCareInpatientSummary);
-				if (result == null) result = caseClinicalDocument(transitionOfCareInpatientSummary);
-				if (result == null) result = caseAct(transitionOfCareInpatientSummary);
-				if (result == null) result = caseInfrastructureRoot(transitionOfCareInpatientSummary);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseSection(socialHistorySection);
 			}
-			case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY: {
-				ViewDownloadTransmitSummary viewDownloadTransmitSummary = (ViewDownloadTransmitSummary)theEObject;
-				T result = caseViewDownloadTransmitSummary(viewDownloadTransmitSummary);
-				if (result == null) result = caseGeneralHeaderConstraints(viewDownloadTransmitSummary);
-				if (result == null) result = caseConsol_GeneralHeaderConstraints(viewDownloadTransmitSummary);
-				if (result == null) result = caseClinicalDocument(viewDownloadTransmitSummary);
-				if (result == null) result = caseAct(viewDownloadTransmitSummary);
-				if (result == null) result = caseInfrastructureRoot(viewDownloadTransmitSummary);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseAct(socialHistorySection);
 			}
-			case Mu2consolPackage.VDT_INPATIENT_SUMMARY: {
-				VDTInpatientSummary vdtInpatientSummary = (VDTInpatientSummary)theEObject;
-				T result = caseVDTInpatientSummary(vdtInpatientSummary);
-				if (result == null) result = caseViewDownloadTransmitSummary(vdtInpatientSummary);
-				if (result == null) result = caseGeneralHeaderConstraints(vdtInpatientSummary);
-				if (result == null) result = caseConsol_GeneralHeaderConstraints(vdtInpatientSummary);
-				if (result == null) result = caseClinicalDocument(vdtInpatientSummary);
-				if (result == null) result = caseAct(vdtInpatientSummary);
-				if (result == null) result = caseInfrastructureRoot(vdtInpatientSummary);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseInfrastructureRoot(socialHistorySection);
 			}
-			case Mu2consolPackage.VDT_AMBULATORY_SUMMARY: {
-				VDTAmbulatorySummary vdtAmbulatorySummary = (VDTAmbulatorySummary)theEObject;
-				T result = caseVDTAmbulatorySummary(vdtAmbulatorySummary);
-				if (result == null) result = caseViewDownloadTransmitSummary(vdtAmbulatorySummary);
-				if (result == null) result = caseGeneralHeaderConstraints(vdtAmbulatorySummary);
-				if (result == null) result = caseConsol_GeneralHeaderConstraints(vdtAmbulatorySummary);
-				if (result == null) result = caseClinicalDocument(vdtAmbulatorySummary);
-				if (result == null) result = caseAct(vdtAmbulatorySummary);
-				if (result == null) result = caseInfrastructureRoot(vdtAmbulatorySummary);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = defaultCase(theEObject);
 			}
-			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: {
-				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection)theEObject;
-				T result = caseFunctionalStatusSection(functionalStatusSection);
-				if (result == null) result = caseConsol_FunctionalStatusSection(functionalStatusSection);
-				if (result == null) result = caseSection(functionalStatusSection);
-				if (result == null) result = caseAct(functionalStatusSection);
-				if (result == null) result = caseInfrastructureRoot(functionalStatusSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			return result;
+		}
+		case Mu2consolPackage.SMOKING_STATUS_OBSERVATION: {
+			SmokingStatusObservation smokingStatusObservation = (SmokingStatusObservation) theEObject;
+			T result = caseSmokingStatusObservation(smokingStatusObservation);
+			if (result == null) {
+				result = caseConsol_SmokingStatusObservation(smokingStatusObservation);
 			}
-			case Mu2consolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION: {
-				CognitiveStatusResultObservation cognitiveStatusResultObservation = (CognitiveStatusResultObservation)theEObject;
-				T result = caseCognitiveStatusResultObservation(cognitiveStatusResultObservation);
-				if (result == null) result = caseConsol_CognitiveStatusResultObservation(cognitiveStatusResultObservation);
-				if (result == null) result = caseResultObservation(cognitiveStatusResultObservation);
-				if (result == null) result = caseConsol_ResultObservation(cognitiveStatusResultObservation);
-				if (result == null) result = caseObservation(cognitiveStatusResultObservation);
-				if (result == null) result = caseClinicalStatement(cognitiveStatusResultObservation);
-				if (result == null) result = caseAct(cognitiveStatusResultObservation);
-				if (result == null) result = caseInfrastructureRoot(cognitiveStatusResultObservation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseTobaccoUse(smokingStatusObservation);
 			}
-			case Mu2consolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER: {
-				CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer = (CognitiveStatusResultOrganizer)theEObject;
-				T result = caseCognitiveStatusResultOrganizer(cognitiveStatusResultOrganizer);
-				if (result == null) result = caseConsol_CognitiveStatusResultOrganizer(cognitiveStatusResultOrganizer);
-				if (result == null) result = caseResultOrganizer(cognitiveStatusResultOrganizer);
-				if (result == null) result = caseConsol_ResultOrganizer(cognitiveStatusResultOrganizer);
-				if (result == null) result = caseOrganizer(cognitiveStatusResultOrganizer);
-				if (result == null) result = caseClinicalStatement(cognitiveStatusResultOrganizer);
-				if (result == null) result = caseAct(cognitiveStatusResultOrganizer);
-				if (result == null) result = caseInfrastructureRoot(cognitiveStatusResultOrganizer);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseObservation(smokingStatusObservation);
 			}
-			case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION: {
-				FunctionalStatusResultObservation functionalStatusResultObservation = (FunctionalStatusResultObservation)theEObject;
-				T result = caseFunctionalStatusResultObservation(functionalStatusResultObservation);
-				if (result == null) result = caseConsol_FunctionalStatusResultObservation(functionalStatusResultObservation);
-				if (result == null) result = caseResultObservation(functionalStatusResultObservation);
-				if (result == null) result = caseConsol_ResultObservation(functionalStatusResultObservation);
-				if (result == null) result = caseObservation(functionalStatusResultObservation);
-				if (result == null) result = caseClinicalStatement(functionalStatusResultObservation);
-				if (result == null) result = caseAct(functionalStatusResultObservation);
-				if (result == null) result = caseInfrastructureRoot(functionalStatusResultObservation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseClinicalStatement(smokingStatusObservation);
 			}
-			case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER: {
-				FunctionalStatusResultOrganizer functionalStatusResultOrganizer = (FunctionalStatusResultOrganizer)theEObject;
-				T result = caseFunctionalStatusResultOrganizer(functionalStatusResultOrganizer);
-				if (result == null) result = caseConsol_FunctionalStatusResultOrganizer(functionalStatusResultOrganizer);
-				if (result == null) result = caseResultOrganizer(functionalStatusResultOrganizer);
-				if (result == null) result = caseConsol_ResultOrganizer(functionalStatusResultOrganizer);
-				if (result == null) result = caseOrganizer(functionalStatusResultOrganizer);
-				if (result == null) result = caseClinicalStatement(functionalStatusResultOrganizer);
-				if (result == null) result = caseAct(functionalStatusResultOrganizer);
-				if (result == null) result = caseInfrastructureRoot(functionalStatusResultOrganizer);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
+			if (result == null) {
+				result = caseAct(smokingStatusObservation);
 			}
-			default: return defaultCase(theEObject);
+			if (result == null) {
+				result = caseInfrastructureRoot(smokingStatusObservation);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.RESULTS_SECTION: {
+			ResultsSection resultsSection = (ResultsSection) theEObject;
+			T result = caseResultsSection(resultsSection);
+			if (result == null) {
+				result = caseConsol_ResultsSection(resultsSection);
+			}
+			if (result == null) {
+				result = caseResultsSectionEntriesOptional(resultsSection);
+			}
+			if (result == null) {
+				result = caseSection(resultsSection);
+			}
+			if (result == null) {
+				result = caseAct(resultsSection);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(resultsSection);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.RESULT_ORGANIZER: {
+			ResultOrganizer resultOrganizer = (ResultOrganizer) theEObject;
+			T result = caseResultOrganizer(resultOrganizer);
+			if (result == null) {
+				result = caseConsol_ResultOrganizer(resultOrganizer);
+			}
+			if (result == null) {
+				result = caseOrganizer(resultOrganizer);
+			}
+			if (result == null) {
+				result = caseClinicalStatement(resultOrganizer);
+			}
+			if (result == null) {
+				result = caseAct(resultOrganizer);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(resultOrganizer);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.RESULT_OBSERVATION: {
+			ResultObservation resultObservation = (ResultObservation) theEObject;
+			T result = caseResultObservation(resultObservation);
+			if (result == null) {
+				result = caseConsol_ResultObservation(resultObservation);
+			}
+			if (result == null) {
+				result = caseObservation(resultObservation);
+			}
+			if (result == null) {
+				result = caseClinicalStatement(resultObservation);
+			}
+			if (result == null) {
+				result = caseAct(resultObservation);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(resultObservation);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.PROCEDURES_SECTION: {
+			ProceduresSection proceduresSection = (ProceduresSection) theEObject;
+			T result = caseProceduresSection(proceduresSection);
+			if (result == null) {
+				result = caseConsol_ProceduresSection(proceduresSection);
+			}
+			if (result == null) {
+				result = caseProceduresSectionEntriesOptional(proceduresSection);
+			}
+			if (result == null) {
+				result = caseSection(proceduresSection);
+			}
+			if (result == null) {
+				result = caseAct(proceduresSection);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(proceduresSection);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE: {
+			ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure) theEObject;
+			T result = caseProcedureActivityProcedure(procedureActivityProcedure);
+			if (result == null) {
+				result = caseConsol_ProcedureActivityProcedure(procedureActivityProcedure);
+			}
+			if (result == null) {
+				result = caseProcedure(procedureActivityProcedure);
+			}
+			if (result == null) {
+				result = caseClinicalStatement(procedureActivityProcedure);
+			}
+			if (result == null) {
+				result = caseAct(procedureActivityProcedure);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(procedureActivityProcedure);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: {
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary = (ClinicalOfficeVisitSummary) theEObject;
+			T result = caseClinicalOfficeVisitSummary(clinicalOfficeVisitSummary);
+			if (result == null) {
+				result = caseGeneralHeaderConstraints(clinicalOfficeVisitSummary);
+			}
+			if (result == null) {
+				result = caseConsol_GeneralHeaderConstraints(clinicalOfficeVisitSummary);
+			}
+			if (result == null) {
+				result = caseClinicalDocument(clinicalOfficeVisitSummary);
+			}
+			if (result == null) {
+				result = caseAct(clinicalOfficeVisitSummary);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(clinicalOfficeVisitSummary);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION: {
+			MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection) theEObject;
+			T result = caseMedicationsAdministeredSection(medicationsAdministeredSection);
+			if (result == null) {
+				result = caseConsol_MedicationsAdministeredSection(medicationsAdministeredSection);
+			}
+			if (result == null) {
+				result = caseSection(medicationsAdministeredSection);
+			}
+			if (result == null) {
+				result = caseAct(medicationsAdministeredSection);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(medicationsAdministeredSection);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: {
+			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary = (TransitionOfCareAmbulatorySummary) theEObject;
+			T result = caseTransitionOfCareAmbulatorySummary(transitionOfCareAmbulatorySummary);
+			if (result == null) {
+				result = caseSummaryOfCareRecord(transitionOfCareAmbulatorySummary);
+			}
+			if (result == null) {
+				result = caseGeneralHeaderConstraints(transitionOfCareAmbulatorySummary);
+			}
+			if (result == null) {
+				result = caseConsol_GeneralHeaderConstraints(transitionOfCareAmbulatorySummary);
+			}
+			if (result == null) {
+				result = caseClinicalDocument(transitionOfCareAmbulatorySummary);
+			}
+			if (result == null) {
+				result = caseAct(transitionOfCareAmbulatorySummary);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(transitionOfCareAmbulatorySummary);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY: {
+			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary = (TransitionOfCareInpatientSummary) theEObject;
+			T result = caseTransitionOfCareInpatientSummary(transitionOfCareInpatientSummary);
+			if (result == null) {
+				result = caseSummaryOfCareRecord(transitionOfCareInpatientSummary);
+			}
+			if (result == null) {
+				result = caseGeneralHeaderConstraints(transitionOfCareInpatientSummary);
+			}
+			if (result == null) {
+				result = caseConsol_GeneralHeaderConstraints(transitionOfCareInpatientSummary);
+			}
+			if (result == null) {
+				result = caseClinicalDocument(transitionOfCareInpatientSummary);
+			}
+			if (result == null) {
+				result = caseAct(transitionOfCareInpatientSummary);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(transitionOfCareInpatientSummary);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY: {
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary = (ViewDownloadTransmitSummary) theEObject;
+			T result = caseViewDownloadTransmitSummary(viewDownloadTransmitSummary);
+			if (result == null) {
+				result = caseGeneralHeaderConstraints(viewDownloadTransmitSummary);
+			}
+			if (result == null) {
+				result = caseConsol_GeneralHeaderConstraints(viewDownloadTransmitSummary);
+			}
+			if (result == null) {
+				result = caseClinicalDocument(viewDownloadTransmitSummary);
+			}
+			if (result == null) {
+				result = caseAct(viewDownloadTransmitSummary);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(viewDownloadTransmitSummary);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.VDT_INPATIENT_SUMMARY: {
+			VDTInpatientSummary vdtInpatientSummary = (VDTInpatientSummary) theEObject;
+			T result = caseVDTInpatientSummary(vdtInpatientSummary);
+			if (result == null) {
+				result = caseViewDownloadTransmitSummary(vdtInpatientSummary);
+			}
+			if (result == null) {
+				result = caseGeneralHeaderConstraints(vdtInpatientSummary);
+			}
+			if (result == null) {
+				result = caseConsol_GeneralHeaderConstraints(vdtInpatientSummary);
+			}
+			if (result == null) {
+				result = caseClinicalDocument(vdtInpatientSummary);
+			}
+			if (result == null) {
+				result = caseAct(vdtInpatientSummary);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(vdtInpatientSummary);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.VDT_AMBULATORY_SUMMARY: {
+			VDTAmbulatorySummary vdtAmbulatorySummary = (VDTAmbulatorySummary) theEObject;
+			T result = caseVDTAmbulatorySummary(vdtAmbulatorySummary);
+			if (result == null) {
+				result = caseViewDownloadTransmitSummary(vdtAmbulatorySummary);
+			}
+			if (result == null) {
+				result = caseGeneralHeaderConstraints(vdtAmbulatorySummary);
+			}
+			if (result == null) {
+				result = caseConsol_GeneralHeaderConstraints(vdtAmbulatorySummary);
+			}
+			if (result == null) {
+				result = caseClinicalDocument(vdtAmbulatorySummary);
+			}
+			if (result == null) {
+				result = caseAct(vdtAmbulatorySummary);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(vdtAmbulatorySummary);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: {
+			FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection) theEObject;
+			T result = caseFunctionalStatusSection(functionalStatusSection);
+			if (result == null) {
+				result = caseConsol_FunctionalStatusSection(functionalStatusSection);
+			}
+			if (result == null) {
+				result = caseSection(functionalStatusSection);
+			}
+			if (result == null) {
+				result = caseAct(functionalStatusSection);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(functionalStatusSection);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION: {
+			CognitiveStatusResultObservation cognitiveStatusResultObservation = (CognitiveStatusResultObservation) theEObject;
+			T result = caseCognitiveStatusResultObservation(cognitiveStatusResultObservation);
+			if (result == null) {
+				result = caseConsol_CognitiveStatusResultObservation(cognitiveStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseResultObservation(cognitiveStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseConsol_ResultObservation(cognitiveStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseObservation(cognitiveStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseClinicalStatement(cognitiveStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseAct(cognitiveStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(cognitiveStatusResultObservation);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER: {
+			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer = (CognitiveStatusResultOrganizer) theEObject;
+			T result = caseCognitiveStatusResultOrganizer(cognitiveStatusResultOrganizer);
+			if (result == null) {
+				result = caseConsol_CognitiveStatusResultOrganizer(cognitiveStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseResultOrganizer(cognitiveStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseConsol_ResultOrganizer(cognitiveStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseOrganizer(cognitiveStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseClinicalStatement(cognitiveStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseAct(cognitiveStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(cognitiveStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION: {
+			FunctionalStatusResultObservation functionalStatusResultObservation = (FunctionalStatusResultObservation) theEObject;
+			T result = caseFunctionalStatusResultObservation(functionalStatusResultObservation);
+			if (result == null) {
+				result = caseConsol_FunctionalStatusResultObservation(functionalStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseResultObservation(functionalStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseConsol_ResultObservation(functionalStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseObservation(functionalStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseClinicalStatement(functionalStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseAct(functionalStatusResultObservation);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(functionalStatusResultObservation);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER: {
+			FunctionalStatusResultOrganizer functionalStatusResultOrganizer = (FunctionalStatusResultOrganizer) theEObject;
+			T result = caseFunctionalStatusResultOrganizer(functionalStatusResultOrganizer);
+			if (result == null) {
+				result = caseConsol_FunctionalStatusResultOrganizer(functionalStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseResultOrganizer(functionalStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseConsol_ResultOrganizer(functionalStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseOrganizer(functionalStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseClinicalStatement(functionalStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseAct(functionalStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = caseInfrastructureRoot(functionalStatusResultOrganizer);
+			}
+			if (result == null) {
+				result = defaultCase(theEObject);
+			}
+			return result;
+		}
+		default:
+			return defaultCase(theEObject);
 		}
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>General Header Constraints</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>General Header Constraints</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -355,12 +632,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Summary Of Care Record</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Summary Of Care Record</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Summary Of Care Record</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Summary Of Care Record</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -369,12 +649,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Clinical Office Visit Summary</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Clinical Office Visit Summary</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Clinical Office Visit Summary</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Clinical Office Visit Summary</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -383,27 +666,33 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Medications Administered Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Medications Administered Section</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Medications Administered Section</em>'. <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Medications Administered Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMedicationsAdministeredSection(MedicationsAdministeredSection object) {
+	public T caseMedicationsAdministeredSection(
+			MedicationsAdministeredSection object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Transition Of Care Ambulatory Summary</em>'.
-	 * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Transition Of Care Ambulatory Summary</em>'. <!-- begin-user-doc -->
 	 * This implementation returns null; returning a non-null result will
 	 * terminate the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Transition Of Care Ambulatory Summary</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Transition Of Care Ambulatory Summary</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -413,12 +702,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Transition Of Care Inpatient Summary</em>'.
-	 * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Transition Of Care Inpatient Summary</em>'. <!-- begin-user-doc -->
 	 * This implementation returns null; returning a non-null result will
 	 * terminate the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Transition Of Care Inpatient Summary</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Transition Of Care Inpatient Summary</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -428,12 +720,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>View Download Transmit Summary</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>View Download Transmit Summary</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>View Download Transmit Summary</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>View Download Transmit Summary</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -442,12 +737,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>VDT Inpatient Summary</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>VDT Inpatient Summary</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>VDT Inpatient Summary</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>VDT Inpatient Summary</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -456,12 +754,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>VDT Ambulatory Summary</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>VDT Ambulatory Summary</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>VDT Ambulatory Summary</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>VDT Ambulatory Summary</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -470,13 +771,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Functional Status Section</em>'. <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Functional Status Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -485,72 +788,87 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cognitive Status Result Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Cognitive Status Result Observation</em>'. <!-- begin-user-doc -->
+	 * This implementation returns null; returning a non-null result will
+	 * terminate the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Cognitive Status Result Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCognitiveStatusResultObservation(CognitiveStatusResultObservation object) {
+	public T caseCognitiveStatusResultObservation(
+			CognitiveStatusResultObservation object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cognitive Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cognitive Status Result Organizer</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Cognitive Status Result Organizer</em>'. <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Cognitive Status Result Organizer</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCognitiveStatusResultOrganizer(CognitiveStatusResultOrganizer object) {
+	public T caseCognitiveStatusResultOrganizer(
+			CognitiveStatusResultOrganizer object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Functional Status Result Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Functional Status Result Observation</em>'. <!-- begin-user-doc -->
+	 * This implementation returns null; returning a non-null result will
+	 * terminate the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Functional Status Result Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFunctionalStatusResultObservation(FunctionalStatusResultObservation object) {
+	public T caseFunctionalStatusResultObservation(
+			FunctionalStatusResultObservation object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Functional Status Result Organizer</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Functional Status Result Organizer</em>'. <!-- begin-user-doc -->
+	 * This implementation returns null; returning a non-null result will
+	 * terminate the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Functional Status Result Organizer</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFunctionalStatusResultOrganizer(FunctionalStatusResultOrganizer object) {
+	public T caseFunctionalStatusResultOrganizer(
+			FunctionalStatusResultOrganizer object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Result Observation</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Result Observation</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Result Observation</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Result Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -559,12 +877,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedures Section</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Procedures Section</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedures Section</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Procedures Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -573,12 +894,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Procedure Activity Procedure</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Procedure Activity Procedure</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -587,12 +911,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Result Organizer</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Result Organizer</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -601,12 +928,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Results Section</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Results Section</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Results Section</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Results Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -615,12 +945,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Social History Section</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Social History Section</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Social History Section</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Social History Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -629,12 +962,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Smoking Status Observation</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Smoking Status Observation</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Smoking Status Observation</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Smoking Status Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -643,12 +979,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Infrastructure Root</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Infrastructure Root</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Infrastructure Root</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Infrastructure Root</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -674,12 +1013,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Clinical Document</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Clinical Document</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -688,12 +1030,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>General Header Constraints</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>General Header Constraints</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -703,12 +1048,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Section</em>'.
-	 * <!-- begin-user-doc --> This implementation returns
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Section</em>'. <!-- begin-user-doc --> This implementation returns
 	 * null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Section</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -717,102 +1065,123 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Medications Administered Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Medications Administered Section</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Medications Administered Section</em>'. <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Medications Administered Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_MedicationsAdministeredSection(org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection object) {
+	public T caseConsol_MedicationsAdministeredSection(
+			org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Functional Status Section</em>'. <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Functional Status Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_FunctionalStatusSection(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection object) {
+	public T caseConsol_FunctionalStatusSection(
+			org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cognitive Status Result Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Cognitive Status Result Observation</em>'. <!-- begin-user-doc -->
+	 * This implementation returns null; returning a non-null result will
+	 * terminate the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Cognitive Status Result Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_CognitiveStatusResultObservation(org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation object) {
+	public T caseConsol_CognitiveStatusResultObservation(
+			org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cognitive Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cognitive Status Result Organizer</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Cognitive Status Result Organizer</em>'. <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Cognitive Status Result Organizer</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_CognitiveStatusResultOrganizer(org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer object) {
+	public T caseConsol_CognitiveStatusResultOrganizer(
+			org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Functional Status Result Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Functional Status Result Observation</em>'. <!-- begin-user-doc -->
+	 * This implementation returns null; returning a non-null result will
+	 * terminate the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Functional Status Result Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_FunctionalStatusResultObservation(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation object) {
+	public T caseConsol_FunctionalStatusResultObservation(
+			org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Functional Status Result Organizer</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Functional Status Result Organizer</em>'. <!-- begin-user-doc -->
+	 * This implementation returns null; returning a non-null result will
+	 * terminate the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Functional Status Result Organizer</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_FunctionalStatusResultOrganizer(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer object) {
+	public T caseConsol_FunctionalStatusResultOrganizer(
+			org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Result Observation</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Result Observation</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Result Observation</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Result Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -822,12 +1191,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedures Section Entries Optional</em>'.
-	 * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Procedures Section Entries Optional</em>'. <!-- begin-user-doc -->
 	 * This implementation returns null; returning a non-null result will
 	 * terminate the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedures Section Entries Optional</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Procedures Section Entries Optional</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -837,12 +1209,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedures Section</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Procedures Section</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedures Section</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Procedures Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -852,12 +1227,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedure</em>'.
-	 * <!-- begin-user-doc --> This implementation returns
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Procedure</em>'. <!-- begin-user-doc --> This implementation returns
 	 * null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedure</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Procedure</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -866,12 +1244,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Procedure Activity Procedure</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Procedure Activity Procedure</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -881,12 +1262,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Organizer</em>'.
-	 * <!-- begin-user-doc --> This implementation returns
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Organizer</em>'. <!-- begin-user-doc --> This implementation returns
 	 * null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Organizer</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Organizer</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -895,12 +1279,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Result Organizer</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Result Organizer</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -910,12 +1297,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Results Section Entries Optional</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Results Section Entries Optional</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Results Section Entries Optional</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Results Section Entries Optional</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -925,12 +1315,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Results Section</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Results Section</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Results Section</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Results Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -940,12 +1333,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Social History Section</em>'.
-	 * <!-- begin-user-doc --> This
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Social History Section</em>'. <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
 	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Social History Section</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Social History Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -955,12 +1351,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Clinical Statement</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Clinical Statement</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Clinical Statement</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Clinical Statement</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -969,12 +1368,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Observation</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Observation</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Observation</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -983,12 +1385,15 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Tobacco Use</em>'.
-	 * <!-- begin-user-doc --> This implementation
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Tobacco Use</em>'. <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
 	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Tobacco Use</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Tobacco Use</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -997,27 +1402,33 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Smoking Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Smoking Status Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>Smoking Status Observation</em>'. <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>Smoking Status Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_SmokingStatusObservation(org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation object) {
+	public T caseConsol_SmokingStatusObservation(
+			org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
-	 * <!-- begin-user-doc --> This implementation returns
+	 * Returns the result of interpreting the object as an instance of '
+	 * <em>EObject</em>'. <!-- begin-user-doc --> This implementation returns
 	 * null; returning a non-null result will terminate the switch, but this is
 	 * the last case anyway. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * 
+	 * @param object
+	 *            the target of the switch.
+	 * @return the result of interpreting the object as an instance of '
+	 *         <em>EObject</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */

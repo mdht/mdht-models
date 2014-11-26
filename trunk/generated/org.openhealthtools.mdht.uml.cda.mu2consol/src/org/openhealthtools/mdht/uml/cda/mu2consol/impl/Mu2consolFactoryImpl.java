@@ -38,33 +38,34 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary;
 /**
  * <!-- begin-user-doc --> An implementation of the model <b>Factory</b>. <!--
  * end-user-doc -->
+ * 
  * @generated
  */
 public class Mu2consolFactoryImpl extends EFactoryImpl implements
 		Mu2consolFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc --> <!--
+	 * Creates the default factory implementation. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static Mu2consolFactory init() {
 		try {
-			Mu2consolFactory theMu2consolFactory = (Mu2consolFactory)EPackage.Registry.INSTANCE.getEFactory(Mu2consolPackage.eNS_URI);
+			Mu2consolFactory theMu2consolFactory = (Mu2consolFactory) EPackage.Registry.INSTANCE
+					.getEFactory(Mu2consolPackage.eNS_URI);
 			if (theMu2consolFactory != null) {
 				return theMu2consolFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new Mu2consolFactoryImpl();
 	}
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc --> <!--
+	 * Creates an instance of the factory. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Mu2consolFactoryImpl() {
@@ -73,39 +74,63 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case Mu2consolPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
-			case Mu2consolPackage.SUMMARY_OF_CARE_RECORD: return createSummaryOfCareRecord();
-			case Mu2consolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
-			case Mu2consolPackage.SMOKING_STATUS_OBSERVATION: return createSmokingStatusObservation();
-			case Mu2consolPackage.RESULTS_SECTION: return createResultsSection();
-			case Mu2consolPackage.RESULT_ORGANIZER: return createResultOrganizer();
-			case Mu2consolPackage.RESULT_OBSERVATION: return createResultObservation();
-			case Mu2consolPackage.PROCEDURES_SECTION: return createProceduresSection();
-			case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureActivityProcedure();
-			case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: return createClinicalOfficeVisitSummary();
-			case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION: return createMedicationsAdministeredSection();
-			case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: return createTransitionOfCareAmbulatorySummary();
-			case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY: return createTransitionOfCareInpatientSummary();
-			case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY: return createViewDownloadTransmitSummary();
-			case Mu2consolPackage.VDT_INPATIENT_SUMMARY: return createVDTInpatientSummary();
-			case Mu2consolPackage.VDT_AMBULATORY_SUMMARY: return createVDTAmbulatorySummary();
-			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
-			case Mu2consolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION: return createCognitiveStatusResultObservation();
-			case Mu2consolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER: return createCognitiveStatusResultOrganizer();
-			case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION: return createFunctionalStatusResultObservation();
-			case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER: return createFunctionalStatusResultOrganizer();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		case Mu2consolPackage.GENERAL_HEADER_CONSTRAINTS:
+			return createGeneralHeaderConstraints();
+		case Mu2consolPackage.SUMMARY_OF_CARE_RECORD:
+			return createSummaryOfCareRecord();
+		case Mu2consolPackage.SOCIAL_HISTORY_SECTION:
+			return createSocialHistorySection();
+		case Mu2consolPackage.SMOKING_STATUS_OBSERVATION:
+			return createSmokingStatusObservation();
+		case Mu2consolPackage.RESULTS_SECTION:
+			return createResultsSection();
+		case Mu2consolPackage.RESULT_ORGANIZER:
+			return createResultOrganizer();
+		case Mu2consolPackage.RESULT_OBSERVATION:
+			return createResultObservation();
+		case Mu2consolPackage.PROCEDURES_SECTION:
+			return createProceduresSection();
+		case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE:
+			return createProcedureActivityProcedure();
+		case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY:
+			return createClinicalOfficeVisitSummary();
+		case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION:
+			return createMedicationsAdministeredSection();
+		case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY:
+			return createTransitionOfCareAmbulatorySummary();
+		case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY:
+			return createTransitionOfCareInpatientSummary();
+		case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY:
+			return createViewDownloadTransmitSummary();
+		case Mu2consolPackage.VDT_INPATIENT_SUMMARY:
+			return createVDTInpatientSummary();
+		case Mu2consolPackage.VDT_AMBULATORY_SUMMARY:
+			return createVDTAmbulatorySummary();
+		case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION:
+			return createFunctionalStatusSection();
+		case Mu2consolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION:
+			return createCognitiveStatusResultObservation();
+		case Mu2consolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER:
+			return createCognitiveStatusResultOrganizer();
+		case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION:
+			return createFunctionalStatusResultObservation();
+		case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER:
+			return createFunctionalStatusResultOrganizer();
+		default:
+			throw new IllegalArgumentException("The class '" + eClass.getName()
+					+ "' is not a valid classifier");
 		}
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -116,6 +141,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -126,6 +152,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -135,8 +162,8 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -147,6 +174,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -157,6 +185,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -167,6 +196,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -177,6 +207,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -187,6 +218,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -196,8 +228,8 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -207,8 +239,8 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -218,8 +250,8 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -229,8 +261,8 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -240,8 +272,8 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -252,6 +284,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -262,6 +295,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -272,6 +306,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -282,6 +317,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -292,6 +328,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -302,6 +339,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -312,6 +350,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -322,15 +361,17 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public Mu2consolPackage getMu2consolPackage() {
-		return (Mu2consolPackage)getEPackage();
+		return (Mu2consolPackage) getEPackage();
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @deprecated
 	 * @generated
 	 */

@@ -27,18 +27,20 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.FunctionalStatusRes
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultOrganizerOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Functional Status Result Organizer</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Functional Status Result Organizer</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
-public class FunctionalStatusResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.FunctionalStatusResultOrganizerImpl implements FunctionalStatusResultOrganizer {
+public class FunctionalStatusResultOrganizerImpl
+		extends
+		org.openhealthtools.mdht.uml.cda.consol.impl.FunctionalStatusResultOrganizerImpl
+		implements FunctionalStatusResultOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected FunctionalStatusResultOrganizerImpl() {
@@ -46,8 +48,8 @@ public class FunctionalStatusResultOrganizerImpl extends org.openhealthtools.mdh
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -56,8 +58,8 @@ public class FunctionalStatusResultOrganizerImpl extends org.openhealthtools.mdh
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -66,52 +68,60 @@ public class FunctionalStatusResultOrganizerImpl extends org.openhealthtools.mdh
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+	public boolean validateResultOrganizerTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultOrganizerOperations
+				.validateResultOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validateResultOrganizerResultObservation(this, diagnostics, context);
+	public boolean validateResultOrganizerResultObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizerOperations
+				.validateResultOrganizerResultObservation(this, diagnostics,
+						context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public EList<FunctionalStatusResultObservation> getMu2consolFunctionalStatusResultObservations() {
-		return FunctionalStatusResultOrganizerOperations.getMu2consolFunctionalStatusResultObservations(this);
+		return FunctionalStatusResultOrganizerOperations
+				.getMu2consolFunctionalStatusResultObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public FunctionalStatusResultOrganizer init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-	public FunctionalStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //FunctionalStatusResultOrganizerImpl
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public FunctionalStatusResultOrganizer init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // FunctionalStatusResultOrganizerImpl

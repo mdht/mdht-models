@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ProcedureActivityPr
  * <em><b>Procedure Activity Procedure</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class ProcedureActivityProcedureImpl
@@ -35,6 +35,7 @@ public class ProcedureActivityProcedureImpl
 		implements ProcedureActivityProcedure {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected ProcedureActivityProcedureImpl() {
@@ -43,6 +44,7 @@ public class ProcedureActivityProcedureImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -51,52 +53,63 @@ public class ProcedureActivityProcedureImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	public boolean validateMU2CONSOLProcedureActivityProcedureCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateMU2CONSOLProcedureActivityProcedureCodeValue(this, diagnostics, context);
+	public boolean validateMU2CONSOLProcedureActivityProcedureCodeValue(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations
+				.validateMU2CONSOLProcedureActivityProcedureCodeValue(this,
+						diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateProcedureActivityProcedureTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureCode(this, diagnostics, context);
+		return ProcedureActivityProcedureOperations
+				.validateProcedureActivityProcedureTemplateId(this,
+						diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityProcedureCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations
+				.validateProcedureActivityProcedureCode(this, diagnostics,
+						context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public ProcedureActivityProcedure init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public ProcedureActivityProcedure init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProcedureActivityProcedureImpl

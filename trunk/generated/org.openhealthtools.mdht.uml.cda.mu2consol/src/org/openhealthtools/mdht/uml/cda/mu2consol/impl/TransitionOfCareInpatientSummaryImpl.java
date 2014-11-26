@@ -27,13 +27,14 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.TransitionOfCareInp
  * <em><b>Transition Of Care Inpatient Summary</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class TransitionOfCareInpatientSummaryImpl extends
 		SummaryOfCareRecordImpl implements TransitionOfCareInpatientSummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected TransitionOfCareInpatientSummaryImpl() {
@@ -42,6 +43,7 @@ public class TransitionOfCareInpatientSummaryImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -50,61 +52,74 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	public boolean validateTransitionOfCareInpatientSummaryMedications(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryMedications(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateTransitionOfCareInpatientSummaryEncounterDiagnoses(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryEncounterDiagnoses(this, diagnostics, context);
+	public boolean validateTransitionOfCareInpatientSummaryMedications(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryMedications(this,
+						diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public boolean validateTransitionOfCareInpatientSummaryEncounterDiagnoses(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryEncounterDiagnoses(
+						this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(this, diagnostics, context);
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
+						this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
-		return TransitionOfCareInpatientSummaryOperations.getHospitalDischargeInstructionsSection(this);
+		return TransitionOfCareInpatientSummaryOperations
+				.getHospitalDischargeInstructionsSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public TransitionOfCareInpatientSummary init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public TransitionOfCareInpatientSummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // TransitionOfCareInpatientSummaryImpl

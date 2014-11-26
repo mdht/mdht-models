@@ -36,13 +36,14 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SummaryOfCareRecord
  * <em><b>Summary Of Care Record</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 		implements SummaryOfCareRecord {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected SummaryOfCareRecordImpl() {
@@ -51,6 +52,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -60,132 +62,168 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateSummaryOfCareRecordCarePlanning(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCarePlanning(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSummaryOfCareRecordVitalSigns(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordVitalSigns(this, diagnostics, context);
+		return SummaryOfCareRecordOperations
+				.validateSummaryOfCareRecordCarePlanning(this, diagnostics,
+						context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public boolean validateSummaryOfCareRecordVitalSigns(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations
+				.validateSummaryOfCareRecordVitalSigns(this, diagnostics,
+						context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateSummaryOfCareRecordProblemSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProblemSection(this, diagnostics, context);
+		return SummaryOfCareRecordOperations
+				.validateSummaryOfCareRecordProblemSection(this, diagnostics,
+						context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateSummaryOfCareRecordAllergiesSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordAllergiesSection(this, diagnostics, context);
+		return SummaryOfCareRecordOperations
+				.validateSummaryOfCareRecordAllergiesSection(this, diagnostics,
+						context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateSummaryOfCareRecordImmunizationsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordImmunizationsSection(this, diagnostics, context);
+		return SummaryOfCareRecordOperations
+				.validateSummaryOfCareRecordImmunizationsSection(this,
+						diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateSummaryOfCareRecordSocialHistorySection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordSocialHistorySection(this, diagnostics, context);
+		return SummaryOfCareRecordOperations
+				.validateSummaryOfCareRecordSocialHistorySection(this,
+						diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateSummaryOfCareRecordResultsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordResultsSection(this, diagnostics, context);
+		return SummaryOfCareRecordOperations
+				.validateSummaryOfCareRecordResultsSection(this, diagnostics,
+						context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateSummaryOfCareRecordProceduresSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProceduresSection(this, diagnostics, context);
+		return SummaryOfCareRecordOperations
+				.validateSummaryOfCareRecordProceduresSection(this,
+						diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean validateSummaryOfCareRecordFunctionalStatusSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordFunctionalStatusSection(this, diagnostics, context);
+		return SummaryOfCareRecordOperations
+				.validateSummaryOfCareRecordFunctionalStatusSection(this,
+						diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public FunctionalStatusSection retrieveFunctionalStatusSection() {
-		return SummaryOfCareRecordOperations.retrieveFunctionalStatusSection(this);
+		return SummaryOfCareRecordOperations
+				.retrieveFunctionalStatusSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public HospitalDischargeDiagnosisSection retrieveHospitalDischargeDiagnosisSection() {
-		return SummaryOfCareRecordOperations.retrieveHospitalDischargeDiagnosisSection(this);
+		return SummaryOfCareRecordOperations
+				.retrieveHospitalDischargeDiagnosisSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public PostoperativeDiagnosisSection retrievePostoperativeDiagnosisSection() {
-		return SummaryOfCareRecordOperations.retrievePostoperativeDiagnosisSection(this);
+		return SummaryOfCareRecordOperations
+				.retrievePostoperativeDiagnosisSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public PostprocedureDiagnosisSection retrievePostprocedureDiagnosisSection() {
-		return SummaryOfCareRecordOperations.retrievePostprocedureDiagnosisSection(this);
+		return SummaryOfCareRecordOperations
+				.retrievePostprocedureDiagnosisSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -195,6 +233,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -204,6 +243,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -213,6 +253,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -222,6 +263,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -231,6 +273,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -240,6 +283,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -249,21 +293,23 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public SummaryOfCareRecord init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public SummaryOfCareRecord init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // SummaryOfCareRecordImpl
