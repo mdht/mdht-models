@@ -53,24 +53,18 @@ OR have at least one componentOf/encompassingEncounter/encounterParticipant</bod
         <ownedAttribute xmi:id="_5PUfENkMEeGsqcJR8eqiMw" name="patientRole" visibility="private" type="_UtJQsNkOEeGsqcJR8eqiMw" aggregation="composite" association="_5PVGINkMEeGsqcJR8eqiMw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5PUfEtkMEeGsqcJR8eqiMw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5PUfEdkMEeGsqcJR8eqiMw" value="1"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_P7bcIUALEd6wZe6nFLrjsw"/>
+          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wyrCACypEeGMXrZ0DiQwGg"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_UtJQsNkOEeGsqcJR8eqiMw" name="PatientRole">
-          <ownedComment xmi:id="_MezX0Pa-EeGi99B_x568TQ">
-            <body>INLINE</body>
-          </ownedComment>
           <generalization xmi:id="_WWJ14NkOEeGsqcJR8eqiMw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_qjbOUCylEeGMXrZ0DiQwGg"/>
           </generalization>
-          <ownedAttribute xmi:id="_Fy-4sPbBEeGulbiehZqi1g" name="patient" type="_HNoRwPbBEeGulbiehZqi1g" association="_Fy-4s_bBEeGulbiehZqi1g">
+          <ownedAttribute xmi:id="_Fy-4sPbBEeGulbiehZqi1g" name="patient" type="_HNoRwPbBEeGulbiehZqi1g" aggregation="composite" association="_Fy-4s_bBEeGulbiehZqi1g">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fy-4svbBEeGulbiehZqi1g" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fy-4sfbBEeGulbiehZqi1g" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_A7-n4CyqEeGMXrZ0DiQwGg"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_HNoRwPbBEeGulbiehZqi1g" name="Patient">
-            <ownedComment xmi:id="_VmU1oPbBEeGulbiehZqi1g">
-              <body>INLINE</body>
-            </ownedComment>
             <generalization xmi:id="_HNoRwfbBEeGulbiehZqi1g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wfQTkCylEeGMXrZ0DiQwGg"/>
             </generalization>
@@ -86,15 +80,12 @@ OR have at least one componentOf/encompassingEncounter/encounterParticipant</bod
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lsBG0PbBEeGulbiehZqi1g" value="1"/>
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_7OuuACylEeGMXrZ0DiQwGg"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_SFucsvbBEeGulbiehZqi1g" name="languageCommunication" type="__cXXsAeREeK0r-pCA5uczw" association="_SFuctPbBEeGulbiehZqi1g">
+            <ownedAttribute xmi:id="_SFucsvbBEeGulbiehZqi1g" name="languageCommunication" type="__cXXsAeREeK0r-pCA5uczw" aggregation="composite" association="_SFuctPbBEeGulbiehZqi1g">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rtIdkc6-EeKPs4cOcTCFcQ"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rtIdkM6-EeKPs4cOcTCFcQ" value="*"/>
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_GmM4YCytEeGMXrZ0DiQwGg"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="__cXXsAeREeK0r-pCA5uczw" name="LanguageCommunication">
-              <ownedComment xmi:id="_lVviMAeTEeK0r-pCA5uczw">
-                <body>INLINE</body>
-              </ownedComment>
               <ownedRule xmi:id="_9F_3YE1xEeONDoDAAUcK5g" name="languageCodeTermCaseInsensitive" constrainedElement="__cXXsAeREeK0r-pCA5uczw">
                 <specification xmi:type="uml:OpaqueExpression" xmi:id="_GNGwYE1zEeONDoDAAUcK5g">
                   <language>Analysis</language>
