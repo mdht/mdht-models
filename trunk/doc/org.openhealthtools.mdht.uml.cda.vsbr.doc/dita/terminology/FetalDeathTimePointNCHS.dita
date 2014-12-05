@@ -15,21 +15,9 @@
 <row><entry>Value Set</entry><entry>Fetal Death Time Point (NCHS) - 2.16.840.1.114222.4.11.7112</entry></row>
 <row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
 <row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source</entry><entry>PHIN VADS</entry></row>
 <row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7112</entry></row>
-<row><entry>Description</entry><entry>A list of time points during the delivery process at which the fetal death is thought to have occured.  Note, SNOMED is being used as the primary source for codes within the value set.
-</entry></row>
-</tbody></tgroup></table>
-<table audience="valuesetvalues" ><tgroup cols="3"> 
-<colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
-<thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
-</row></thead><tbody>
-<row><entry>434681000124104</entry><entry>SNOMEDCT</entry><entry>Death at time of first assessment, no labor ongoing</entry></row>
-<row><entry>434671000124102</entry><entry>SNOMEDCT</entry><entry>Dead at time of first assessment, labor ongoing</entry></row>
-<row><entry>434631000124100</entry><entry>SNOMEDCT</entry><entry>Died during labor, after first assessment</entry></row>
-<row><entry>261665006</entry><entry>SNOMEDCT</entry><entry>Unknown</entry></row>
+<row><entry>Definition</entry><entry>The value set contains a list of items to indicate when the fetus died with respect to labor and assessment.</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

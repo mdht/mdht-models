@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b></tt> (CONF:241)
 <ul><li><p><lines><i>The negation indicator defines whether or not the specified procedure was perfomred during the course of delivery.  A  value of true indicates a procedure was NOT performed.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> with @xsi:type="CE" (CONF:242), which <b>SHALL</b> be selected from ValueSet<tt> </tt><b> STATIC</b> (CONF:243)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> with @xsi:type="CE" (CONF:242), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ObstetricProceduresNCHS.dita">Obstetric Procedures (NCHS)</xref> 2.16.840.1.114222.4.11.7136</tt><b> DYNAMIC</b> (CONF:243)
 <ul><li><p><lines><i>A code value that indicates the nature of the procedure - it specifies the nature of the obstetric procedure about which information is provided.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b></tt> (CONF:241)
 <ul><li><p><lines><i>The negation indicator defines whether or not the specified procedure was perfomred during the course of delivery.  A  value of true indicates a procedure was NOT performed.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> with @xsi:type="CE" (CONF:242), which <b>SHALL</b> be selected from ValueSet<tt> </tt><b> STATIC</b> (CONF:243)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> with @xsi:type="CE" (CONF:242), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ObstetricProceduresNCHS.dita">Obstetric Procedures (NCHS)</xref> 2.16.840.1.114222.4.11.7136</tt><b> DYNAMIC</b> (CONF:243)
 <ul><li><p><lines><i>A code value that indicates the nature of the procedure - it specifies the nature of the obstetric procedure about which information is provided.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

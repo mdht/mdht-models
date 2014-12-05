@@ -13,21 +13,10 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Histological Placental Examination (NCHS) - 2.16.840.1.114222.4.11.7138</entry></row>
-<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
 <row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source</entry><entry>PHIN VADS</entry></row>
 <row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7138</entry></row>
 <row><entry>Definition</entry><entry>The value set contains the list of values used to indicate whether or not a histological placental examination was performed.</entry></row>
-</tbody></tgroup></table>
-<table audience="valuesetvalues" ><tgroup cols="3"> 
-<colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
-<thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
-</row></thead><tbody>
-<row><entry>398166005</entry><entry>SNOMEDCT</entry><entry>Was an histological placental examination performed? Yes</entry></row>
-<row><entry>262008008</entry><entry>SNOMEDCT</entry><entry>Was an histological placental examination performed? No</entry></row>
-<row><entry>397943006</entry><entry>SNOMEDCT</entry><entry>Was an histological placental examination  performed? Planned</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Fetal Death Cause or Condition (NCHS)</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.xxxx"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Fetal Death Cause or Condition (NCHS) - 2.16.840.1.114222.4.11.xxxx</entry></row>
+<row><entry>Source</entry><entry>PHIN VADS - when it gets added</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.xxxx (TBD)</entry></row>
+<row><entry>Definition</entry><entry>A list of causes or conditions to be recorded as beginning the sequence of events resulting in, or contributing to the death of a fetus.</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

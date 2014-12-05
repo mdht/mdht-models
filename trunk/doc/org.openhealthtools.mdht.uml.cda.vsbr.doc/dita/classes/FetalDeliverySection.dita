@@ -61,6 +61,12 @@
 					</entry>
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.51"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.10.20.26.19"/>
 							...
 						</observation>

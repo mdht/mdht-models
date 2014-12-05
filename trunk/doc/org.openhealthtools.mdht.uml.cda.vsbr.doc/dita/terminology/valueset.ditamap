@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Value Sets">
-<topicref href="ApgarAssessmentNCHS.dita" type="topic" />
+<topicref href="ApgarAssessmentsNCHS.dita" type="topic" />
 <topicref href="AutopsyExaminationNCHS.dita" type="topic" />
 <topicref href="BirthAndFetalDeathFinancialClassNCHS.dita" type="topic" />
 <topicref href="BirthAttendantTitlesNCHS.dita" type="topic" />
 <topicref href="BirthOrDeliveryOccurredNCHS.dita" type="topic" />
 <topicref href="CertifierTitlesNCHS.dita" type="topic" />
 <topicref href="DeliveryRoutesNCHS.dita" type="topic" />
+<topicref href="FetalDeathCauseOrConditionNCHS.dita" type="topic" />
 <topicref href="FetalDeathTimePointNCHS.dita" type="topic" />
 <topicref href="FetalPresentationsNCHS.dita" type="topic" />
 <topicref href="HistologicalPlacentalExaminationNCHS.dita" type="topic" />
@@ -15,19 +16,13 @@
 <topicref href="InfectionsDuringPregnancyLiveBirthNCHS.dita" type="topic" />
 <topicref href="KaryotypeDownSyndromeNCHS.dita" type="topic" />
 <topicref href="KaryotypeSuspectedChromosomalDisorderNCHS.dita" type="topic" />
-<topicref href="LOINC.dita" type="topic" />
 <topicref href="LaborAndDeliveryCharacteristicsNCHS.dita" type="topic" />
 <topicref href="MaternalMorbiditiesNCHS.dita" type="topic" />
 <topicref href="MaternalVitalSignsNCHS.dita" type="topic" />
 <topicref href="NewbornAbnormalConditionsNCHS.dita" type="topic" />
 <topicref href="NewbornCongenitalAnomaliesNCHS.dita" type="topic" />
 <topicref href="NewbornVitalSignsNCHS.dita" type="topic" />
-<topicref href="NullFlavor.dita" type="topic" />
 <topicref href="ObstetricProceduresNCHS.dita" type="topic" />
 <topicref href="OnsetLaborNCHS.dita" type="topic" />
-<topicref href="PHINVSCDCLocalCodingSystem.dita" type="topic" />
 <topicref href="PregnancyRiskFactorsNCHS.dita" type="topic" />
-<topicref href="SNOMEDCT.dita" type="topic" />
-<topicref href="SourceOfPaymentTypologyPHDSC.dita" type="topic" />
-<topicref href="SourceOfPaymentTypologyPHDSCCodeSystem.dita" type="topic" />
 </map>
