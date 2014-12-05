@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Fetal Delivery Death Causal Information - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.10.20.26.51</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.26.51"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The template contains information provided by the clinician to indicate the cause or causes behind the death of a fetus.  The template definition draws on that used for the death certificate, but acknowledges the differences found within the fetal death report.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.51"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC_TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li><p><lines><i>A code that indicates that death causal information is provided.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> <p><lines><i>Information regarding the initiating cause of fetal death.</i></lines></p><ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC_TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)<p><lines><i>An indication that the observation contains information regarding a specific cause of death.</i></lines></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value1</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathCauseOrConditionNCHS.dita">Fetal Death Cause or Condition (NCHS)</xref> 2.16.840.1.114222.4.11.xxxx</tt><b> DYNAMIC</b><p><lines><i>The cause or condition which most likely began the series of events resulting in the death of the fetus is to be recorded.  The information should be provided as text to fully record the provider's view of the cause.  The appropriate code should be valued as well.</i></lines></p></li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> <p><lines><i>Information regarding other significant causes or conditions contributing to fetal death.</i></lines></p><ol><li> Such components <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> Such components <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is CDA Observation<ol>
+<li>Contains exactly one [1..1] CDA Observation</li></ol></li><li> Such components <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC_TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value1</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathCauseOrConditionNCHS.dita">Fetal Death Cause or Condition (NCHS)</xref> 2.16.840.1.114222.4.11.xxxx</tt><b> DYNAMIC</b><p><lines><i>All other conditions contributing to the death of the fetus should be recorded.  The information should be provided as text to fully record the provider's view of the cause.  The appropriate code should be valued as well.</i></lines></p></li></ol> </li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC_TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li><p><lines><i>A code that indicates that death causal information is provided.</i></lines></p></li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with @xsi:type="CS"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> <p><lines><i>Information regarding the initiating cause of fetal death.</i></lines></p><ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC_TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)<p><lines><i>An indication that the observation contains information regarding a specific cause of death.</i></lines></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value1</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathCauseOrConditionNCHS.dita">Fetal Death Cause or Condition (NCHS)</xref> 2.16.840.1.114222.4.11.xxxx</tt><b> DYNAMIC</b><p><lines><i>The cause or condition which most likely began the series of events resulting in the death of the fetus is to be recorded.  The information should be provided as text to fully record the provider's view of the cause.  The appropriate code should be valued as well.</i></lines></p></li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> <p><lines><i>Information regarding other significant causes or conditions contributing to fetal death.</i></lines></p><ol><li> Such components <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> Such components <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is CDA Observation<ol>
+<li>Contains exactly one [1..1] CDA Observation</li></ol></li><li> Such components <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC_TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value1</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathCauseOrConditionNCHS.dita">Fetal Death Cause or Condition (NCHS)</xref> 2.16.840.1.114222.4.11.xxxx</tt><b> DYNAMIC</b><p><lines><i>All other conditions contributing to the death of the fetus should be recorded.  The information should be provided as text to fully record the provider's view of the cause.  The appropriate code should be valued as well.</i></lines></p></li></ol> </li></ol>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Fetal Delivery Death Causal Information</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.10.20.26.51</tt>]</p>
+</body>
+</topic>

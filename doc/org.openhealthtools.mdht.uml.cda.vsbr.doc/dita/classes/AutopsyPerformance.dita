@@ -32,7 +32,7 @@
 									<value xsi:type="BL" value="true"/>
 									<entryRelationship typeCode="COMP">
 										<observation classCode="OBS" moodCode="EVN">
-											<code code="LOINC_TBD" displayName="Autopsy and histological placental examination was used in determining cause of death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<code code="74498-7" displayName="Autopsy and histological placental examination was used in determining cause of death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 											<value xsi:type="BL" value="true"/>
 										</observation>
 									</entryRelationship>

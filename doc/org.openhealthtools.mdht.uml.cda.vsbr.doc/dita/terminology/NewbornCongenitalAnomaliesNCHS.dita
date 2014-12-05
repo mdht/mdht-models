@@ -13,31 +13,10 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Newborn Congenital Anomalies (NCHS) - 2.16.840.1.114222.4.11.7122</entry></row>
-<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
 <row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source</entry><entry>PHIN VADS</entry></row>
 <row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7122</entry></row>
 <row><entry>Definition</entry><entry>The value set contain the list of values use to specify malformations of the newborn diagnosed prenatally or after delivery.</entry></row>
-</tbody></tgroup></table>
-<table audience="valuesetvalues" ><tgroup cols="3"> 
-<colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
-<thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
-</row></thead><tbody>
-<row><entry>89369001</entry><entry>SNOMEDCT</entry><entry>Anencephaly</entry></row>
-<row><entry>67531005</entry><entry>SNOMEDCT</entry><entry>Meningomyelocele/Spina bifida</entry></row>
-<row><entry>12770006</entry><entry>SNOMEDCT</entry><entry>Cyanotic congenital heart disease</entry></row>
-<row><entry>17190001</entry><entry>SNOMEDCT</entry><entry>Congenital diaphragmatic hernia</entry></row>
-<row><entry>18735004</entry><entry>SNOMEDCT</entry><entry>Omphalocele</entry></row>
-<row><entry>72951007</entry><entry>SNOMEDCT</entry><entry>Gastroschisis</entry></row>
-<row><entry>67341007</entry><entry>SNOMEDCT</entry><entry>Limb reduction defect (excluding congenital amputation and dwarfing syndromes)</entry></row>
-<row><entry>80281008</entry><entry>SNOMEDCT</entry><entry>Cleft Lip with or without Cleft Palate</entry></row>
-<row><entry>87979003</entry><entry>SNOMEDCT</entry><entry>Cleft Palate alone</entry></row>
-<row><entry>70156005</entry><entry>SNOMEDCT</entry><entry>Down Syndrome</entry></row>
-<row><entry>409709004</entry><entry>SNOMEDCT</entry><entry>Suspected chromosomal disorder</entry></row>
-<row><entry>416010008</entry><entry>SNOMEDCT</entry><entry>Hypospadias</entry></row>
-<row><entry>260413007</entry><entry>SNOMEDCT</entry><entry>None of the specified items in this value set (including concept codes: 89369001, 67531005, 12770006,  17190001, 18735004, 72951007, 67341007, 67341007, 80281008, 87979003, 70156005, 409709004, 416010008) for Newborn Congenital Anomalies</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -13,26 +13,10 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Birth and Fetal Death Financial Class (NCHS) - 2.16.840.1.114222.4.11.7163</entry></row>
-<row><entry>Code System</entry><entry>Source of Payment Typology (PHDSC) Code System - 2.16.840.1.113883.221.5</entry></row>
 <row><entry>Version</entry><entry>Dynamic</entry></row>
+<row><entry>Source</entry><entry>PHIN VADS</entry></row>
 <row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7163</entry></row>
 <row><entry>Definition</entry><entry>The value set contains the list of values used to indicate  the principle source of payment for the labor and delivery. Note, the Public Health Data Consortium Source of Payment Typology is being used as the primary source for codes within the value set.</entry></row>
-</tbody></tgroup></table>
-<table audience="valuesetvalues" ><tgroup cols="3"> 
-<colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
-<thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
-</row></thead><tbody>
-<row><entry>33</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Indian Health Service or Tribe</entry></row>
-<row><entry>2</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>MEDICAID</entry></row>
-<row><entry>99</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>No Typology Code available for payment source</entry></row>
-<row><entry>38</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Other Government (Federal, State, Local not specified)</entry></row>
-<row><entry>5</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>PRIVATE HEALTH INSURANCE</entry></row>
-<row><entry>81</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Self-pay</entry></row>
-<row><entry>311</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>TRICARE (CHAMPUS)</entry></row>
-<row><entry>9999</entry><entry>Source of Payment Typology (PHDSC) Code System</entry><entry>Unavailable / Unknown</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
