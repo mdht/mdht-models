@@ -738,7 +738,7 @@ Required if the person is female and in the age range 5 to 75 years.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_K6HN4FGqEeGSqNO1bVTZyw" name="Death Causal Information">
       <ownedComment xmi:id="_XIpAQFGqEeGSqNO1bVTZyw">
-        <body>The template contains information provided by the clinican to indicate the cause or causes behind the person's death.  The information includes the chain of events that directly caused the death, and includes other significant conditions contributing to death.  There may be up to four causal elements provided, along with a single statement of the other significant conditions.</body>
+        <body>The template contains information provided by the clinician to indicate the cause or causes behind the person's death.  The information includes the chain of events that directly caused the death, and includes other significant conditions contributing to death.  There may be up to four causal elements provided, along with a single statement of the other significant conditions.</body>
       </ownedComment>
       <generalization xmi:id="_K6HN4VGqEeGSqNO1bVTZyw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
@@ -1313,7 +1313,7 @@ Required if the decedent suffered an injury leading to death.</body>
     <packagedElement xmi:type="uml:Association" href="#_Lrk1IlGsEeGSqNO1bVTZyw"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_YpKeMFGyEeGSqNO1bVTZyw" name="Autopsy Performance">
       <ownedComment xmi:id="_kztDMFKIEeG6eOb5pyaZOw">
-        <body>Information on the performance of an autopsy.  Minimally, information on whether or not an autopsy was performed is recorded.</body>
+        <body>The template contains information on the performance of an autopsy.  Minimally, information on whether or not an autopsy was performed is recorded.</body>
       </ownedComment>
       <generalization xmi:id="_YpLFQFGyEeGSqNO1bVTZyw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -1952,7 +1952,7 @@ The element is required if the pronouncing and certifying physicians are differe
   <CDA:PropertyValidation xmi:id="_sTJxIEtSEeGCUrfdtxCbHg" base_Property="_pkHYAUtSEeGCUrfdtxCbHg">
     <ruleId>CONF:100</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_tkVFIEtSEeGCUrfdtxCbHg" code="69443-0" displayName="Tobacco Use" base_Property="_pkHYAEtSEeGCUrfdtxCbHg" mandatory="true">
+  <CDA:CodeSystemConstraint xmi:id="_tkVFIEtSEeGCUrfdtxCbHg" code="69443-0" displayName="Did tobacco use contribute to death" base_Property="_pkHYAEtSEeGCUrfdtxCbHg" mandatory="true">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:101</ruleId>
   </CDA:CodeSystemConstraint>
@@ -2106,7 +2106,7 @@ The element is required if the pronouncing and certifying physicians are differe
   <CDA:PropertyValidation xmi:id="_ulVK0FHDEeGSqNO1bVTZyw" mandatory="true" base_Property="_dbeG4VHDEeGSqNO1bVTZyw">
     <ruleId>CONF:220</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_vHcZYFHDEeGSqNO1bVTZyw" code="LOINC TBD" displayName="Coroner Indicator" base_Property="_dbeG4VHDEeGSqNO1bVTZyw">
+  <CDA:CodeSystemConstraint xmi:id="_vHcZYFHDEeGSqNO1bVTZyw" code="69438-0" displayName="Referral note forensic medicine" base_Property="_dbeG4VHDEeGSqNO1bVTZyw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:221</ruleId>
   </CDA:CodeSystemConstraint>
@@ -2704,7 +2704,7 @@ Additional causes of death up to two may be recorded. These are entered in a def
   <CDA:PropertyValidation xmi:id="_TLre016VEeO_5svOqPnaJg" base_Property="_TLq3kF6VEeO_5svOqPnaJg">
     <ruleId>CONF:236</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_TLre1F6VEeO_5svOqPnaJg" code="LOINC TBD" displayName="Death Pronouncer" base_Property="_TLq3kV6VEeO_5svOqPnaJg" mandatory="true">
+  <CDA:CodeSystemConstraint xmi:id="_TLre1F6VEeO_5svOqPnaJg" code="74499-5" displayName="Death pronouncer details" base_Property="_TLq3kV6VEeO_5svOqPnaJg" mandatory="true">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:238</ruleId>
   </CDA:CodeSystemConstraint>
