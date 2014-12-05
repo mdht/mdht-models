@@ -24,7 +24,60 @@
 <p audience="Examples"><b>Death Causal Information example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_DeathCausalInformation.dita#classId/example">
+<codeblock>
+<![CDATA[
+<entry>
+						<!-- Cause of Death -->
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.6"/>
+							<code code="69453-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause Of Death (US Standard Certificate of Death)"/>
+							<statusCode code="completed"/>
+							<!-- Note, at least one component containing death cause information is required -->
+							<component typeCode="COMP">
+								<sequenceNumber value="1"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="21984-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of Death"/>
+									<value xsi:type="CD">
+									<originalText>PROBABLE ATCVD</originalText>
+									</value> 
+									<!-- Descriptive text that indicates one or more diseases, injuries, or complications that were implicated as a cause of the person's death. -->
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="69440-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Disease onset to death interval"/>
+											<value xsi:type="ED">Three Days</value>
+											<!-- A measure of the time interval between the onset of the disease, injury or complication, and the person's death. -->
+										</observation>
+									</entryRelationship>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<sequenceNumber value="2"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="21984-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of Death"/>
+									<value xsi:type="CD">
+									<originalText>HTN</originalText>
+									</value>
+									<!-- Descriptive text that indicates one or more diseases, injuries, or complications that were implicated as a cause of the person's death. -->
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="69440-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Disease onset to death interval"/>
+											<value xsi:type="ED">2 months</value>
+											<!-- A measure of the time interval between the onset of the disease, injury or complication, and the person's death. -->
+										</observation>
+									</entryRelationship>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="69441-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death cause other significant conditions"/>
+									<value xsi:type="CD">
+									<originalText>Descriptive text that provides information on a significant condition or conditions that contributed to death, but did not result in the underlying cause that is elsewhere described.</originalText>
+									</value>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+]]>
 </codeblock>
 </body>
 </topic>

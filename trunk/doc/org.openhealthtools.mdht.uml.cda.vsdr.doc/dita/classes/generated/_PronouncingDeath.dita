@@ -22,7 +22,7 @@ Note, information on the pronouncing physician is only provided when the pronoun
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt> (CONF:237)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Death Pronouncer</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:238)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="74499-5" </tt><i>Death pronouncer details</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:238)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:239)
 <ul><li><p><lines><i>Provide the date and time at which the decedent was pronounced dead.</i></lines></p></li></ul></li>
@@ -35,7 +35,7 @@ The element is required if the pronouncing and certifying physicians are differe
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt> (CONF:237)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Death Pronouncer</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:238)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="74499-5" </tt><i>Death pronouncer details</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:238)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:239)
 <ul><li><p><lines><i>Provide the date and time at which the decedent was pronounced dead.</i></lines></p></li></ul></li>

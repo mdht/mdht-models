@@ -24,7 +24,16 @@
 <p audience="Examples"><b>Pregnancy Status example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_PregnancyStatus.dita#classId/example">
+<codeblock>
+<![CDATA[
+<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.12"/>
+							<code code="69442-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pregnancy Status"/>
+							<value code="PHC1260" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Not pregnant within the past year" xsi:type="CD"/>
+						</observation>
+					</entry>
+]]>
 </codeblock>
 </body>
 </topic>

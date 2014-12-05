@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:232)<tt><b>/@code</b>="58332-8" </tt><i>Location of Death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:233)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:234), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/DeathLocationTypeNCHS.dita">Death Location Type (NCHS)</xref></tt><b> STATIC</b> (CONF:235)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:234), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PlaceOfDeathNCHS.dita">Place of Death (NCHS)</xref> 2.16.840.1.114222.4.11.7216</tt><b> DYNAMIC</b> (CONF:235)
 <ul><li><p><lines><i>A code value to indicate the type of location where the patient died.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:232)<tt><b>/@code</b>="58332-8" </tt><i>Location of Death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:233)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:234), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/DeathLocationTypeNCHS.dita">Death Location Type (NCHS)</xref></tt><b> STATIC</b> (CONF:235)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:234), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PlaceOfDeathNCHS.dita">Place of Death (NCHS)</xref> 2.16.840.1.114222.4.11.7216</tt><b> DYNAMIC</b> (CONF:235)
 <ul><li><p><lines><i>A code value to indicate the type of location where the patient died.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

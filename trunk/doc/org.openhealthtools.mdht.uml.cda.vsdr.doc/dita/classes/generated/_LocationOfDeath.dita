@@ -23,7 +23,7 @@
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:69)
 <ul><li><p><lines><i>Information about the place where death occurred.  It is provided if no address can be.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type AD (CONF:70)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="AD" (CONF:70)
 <ul><li><p><lines><i>The mailing address for the place where the person died.  This attribute is collected if the person died at a home, a health facility, or other location with a postal address.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -35,7 +35,7 @@
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:69)
 <ul><li><p><lines><i>Information about the place where death occurred.  It is provided if no address can be.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type AD (CONF:70)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="AD" (CONF:70)
 <ul><li><p><lines><i>The mailing address for the place where the person died.  This attribute is collected if the person died at a home, a health facility, or other location with a postal address.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

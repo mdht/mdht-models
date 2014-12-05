@@ -22,7 +22,21 @@
 <p audience="Examples"><b>Date and Time of Death example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_DateAndTimeOfDeath.dita#classId/example">
+<codeblock>
+<![CDATA[
+<entry>
+						<!-- Time of Death Observation -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.13"/>
+							<code code="31211-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date of Death"/>
+							<text>Optional information relevant to the date/time of death in cases where the point in time can in no way be established.</text>
+							<effectiveTime>
+								<low value="20121201100000"/>
+								<high value="20121201100000"/>
+							</effectiveTime>
+						</observation>
+					</entry>
+]]>
 </codeblock>
 </body>
 </topic>

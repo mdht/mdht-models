@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:89)<tt><b>/@code</b>="69449-7" </tt><i>Manner of Death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:90)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:91), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MannerOfDeathNCHS.dita">Manner Of Death (NCHS)</xref> 2.16.840.1.114222.4.11.6002</tt><b> STATIC</b> (CONF:92)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:91), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MannerOfDeathNCHS.dita">Manner Of Death (NCHS)</xref> 2.16.840.1.114222.4.11.6002</tt><b> DYNAMIC</b> (CONF:92)
 <ul><li><p><lines><i>A coded indication of the manner in which the person died.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:89)<tt><b>/@code</b>="69449-7" </tt><i>Manner of Death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:90)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:91), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MannerOfDeathNCHS.dita">Manner Of Death (NCHS)</xref> 2.16.840.1.114222.4.11.6002</tt><b> STATIC</b> (CONF:92)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:91), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MannerOfDeathNCHS.dita">Manner Of Death (NCHS)</xref> 2.16.840.1.114222.4.11.6002</tt><b> DYNAMIC</b> (CONF:92)
 <ul><li><p><lines><i>A coded indication of the manner in which the person died.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

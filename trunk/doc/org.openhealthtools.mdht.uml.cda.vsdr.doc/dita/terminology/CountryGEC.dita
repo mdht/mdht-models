@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Country (GEC)</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.7162"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Country (GEC) - 2.16.840.1.114222.4.11.7162</entry></row>
+<row><entry>Version</entry><entry>1</entry></row>
+<row><entry>Source</entry><entry>PHIN Vocabulary Access and Distribution System</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7162</entry></row>
+<row><entry>Description</entry><entry>Country value seet incluudes current countries as well as historical countries based on Geopolitical Entities and Codes (GEC).  This list will be used for coding of birth, fetal death, and death certificates from 2014 onwards.  A few codes appear more than once in the list alphabetized under commonly used variants of the offical name.  Note that the codes are not available for countries that ceased to exist prior to June 15, 1970.
+</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

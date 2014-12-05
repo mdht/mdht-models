@@ -22,7 +22,38 @@
 <p audience="Examples"><b>Pronouncing Death example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_PronouncingDeath.dita#classId/example">
+<codeblock>
+<![CDATA[
+<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.15"/>
+							<code code="74499-5"  codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death pronouncer details"/>
+							<effectiveTime>
+								<low value="20121201100000"/>
+								<high value="20121201100000"/>
+							</effectiveTime>
+							<performer typeCode="PRF">
+								<assignedEntity classCode="ASSIGNED">
+									<id root="1.1.2" extension="1234567"/>
+									<!-- Provide an OID that identifies the namespace for the identifier. -->
+									<addr use="WP">
+										<streetAddressLine>104 SECONDARY STREET</streetAddressLine>
+										<city>SALT LAKE CITY</city>
+										<state>UT</state>
+										<postalCode>84111</postalCode>
+									</addr>
+									<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+										<name>
+											<family>Buck</family>
+											<given>Jane</given>
+											<given>F.</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+						</observation>
+					</entry>
+]]>
 </codeblock>
 </body>
 </topic>

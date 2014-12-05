@@ -37,6 +37,28 @@
 				this guide. Value set names and OIDs are summarized in the table
 				Summary of Value Sets. Each named value set in this summary table is
 				stored in a template database that will be maintained by CHCA.</p>
+				<p> The Implementation Guide provides definition for the vocabulary items
+				 that are needed as content for those elements using coded data types. The 
+				 use of coded types, and the precise expression of the valid content of code
+				  sets is essential to enable efficient processing of subject data report content,
+				   and to allow the proper use of the contained data. Within this guide, the 
+				   vocabulary section documents the various act code values used to define structural
+				   elements - to identify particular acts or observations. It also defines the several
+				    value sets needed to constrain the semantic content of coded items. In principle, 
+				    all the vocabulary needed to support subject data reporting would draw on a common 
+				    set of concepts. This has been done wherever possible, and the Public Health Information 
+				    Network (PHIN) Vocabulary Access and Distribution System (VADS) is used as the repository
+				     and source for the commonly agreed upon vocabulary items.</p>
+				     <p>In a nunber of cases, the NCVS edit specifications for data collection allow the entry
+				      of "UNKNOWN" to represent the case in which desired information is not available. This
+				       concept is captured, within this implementation guide, through use of the nullFlavor
+				        - UNK". The reader should note that the value sets for this implementation guide 
+include concepts from the HL7 NullFlavor code system as well as from other code systems, e.g., SNOMED CT. 
+If an instance needs to contain an value such as UNK - from the NullFlavor code systems, that value is passed within
+ the nullFlavor attribute of the coded element as opposed to within the code attribute.</p>
+ <p>
+Throughout this Implementation Guide, the bindings between coded attributes and the cited value sets are dynamic. It
+is expected that implementations will use the most recent version of the value sets as published within PHIN VADS.</p>
 		</body>
 	</topic>
 </topic>
