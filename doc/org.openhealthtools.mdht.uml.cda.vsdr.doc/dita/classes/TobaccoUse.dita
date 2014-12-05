@@ -24,7 +24,17 @@
 <p audience="Examples"><b>Tobacco Use example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_TobaccoUse.dita#classId/example">
+<codeblock>
+<![CDATA[
+<entry>
+						<!-- Tobacco Use - This is optional -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.14"/>
+							<code code="69443-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Did tobacco use contribute to death"/>
+							<value code="373067005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="No" xsi:type="CD"/>
+						</observation>
+					</entry>
+]]>
 </codeblock>
 </body>
 </topic>

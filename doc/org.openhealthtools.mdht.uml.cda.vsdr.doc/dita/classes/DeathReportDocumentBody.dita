@@ -23,7 +23,94 @@
 <p audience="Examples"><b>Death Report Document Body example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_DeathReportDocumentBody.dita#classId/example">
+<codeblock>
+<![CDATA[
+		<structuredBody>
+			<component>
+				<!-- Death Information Template -->
+				<section>
+					<templateId root="2.16.840.1.113883.10.20.26.1.1"/>
+					<code code="69409-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="U.S. standard certificate of death - 2003 revision"/>
+					<title/>
+					<confidentialityCode code="Value"/>
+					<entry>
+						<!-- Time of Death Observation -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.13"/>
+						</observation>
+					</entry>
+					<entry>
+						<!-- Location of Death Observation -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.10"/>
+						</observation>
+					</entry>
+					<entry>
+						<!-- Death Location Type Observation -->
+						<observation classCode="OBS" moodCode="EVN">
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.11"/>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.15"/>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.12"/>
+						</observation>
+					</entry>
+					<entry>
+						<!-- Tobacco Use - This is optional -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.14"/>
+						</observation>
+					</entry>
+					<entry>
+						<!-- Injury - This is optional -->
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.9"/>
+     					</organizer>
+					</entry>
+					<entry>
+						<!-- Cause of Death -->
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.6"/>
+						</organizer>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.2"/>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.3"/>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.24.1.14"/>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.4"/>
+						</observation>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+]]>
 </codeblock>
 </body>
 </topic>

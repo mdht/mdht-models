@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:44)<tt><b>/@code</b>="31211-6" </tt><i>Date of Death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:45)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> with data type TS (CONF:46)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> with @xsi:type="TS" (CONF:46)
 <ul><li><p><lines><i>Provide the date and time of death if it is known.</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:47)
 <ul><li><p><lines><i>Provide information relevant to the date/time of death in cases where the point in time can in no way be established.  If needed, supplemental text may be added to indicate that date/time information, while present, is approximate.</i></lines></p></li></ul></li>
@@ -35,7 +35,7 @@
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:47)
 <ul><li><p><lines><i>Provide information relevant to the date/time of death in cases where the point in time can in no way be established.  If needed, supplemental text may be added to indicate that date/time information, while present, is approximate.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> with data type TS (CONF:46)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> with @xsi:type="TS" (CONF:46)
 <ul><li><p><lines><i>Provide the date and time of death if it is known.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

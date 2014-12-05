@@ -3,6 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>Certifier Titles (NCHS)</title>
 <prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.7212"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -11,8 +12,12 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>Certifier Titles (NCHS)</entry></row>
-<row><entry>Description</entry><entry>The code system collects the possible professional roles played by the person who certifies the death.
+<row><entry>Value Set</entry><entry>Certifier Titles (NCHS) - 2.16.840.1.114222.4.11.7212</entry></row>
+<row><entry>Code System</entry><entry>PHIN VS (CDC Local Coding System) - 2.16.840.1.114222.4.5.274</entry></row>
+<row><entry>Version</entry><entry>2</entry></row>
+<row><entry>Source</entry><entry>PHIN Vocabulary Access and Distribution System</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7212</entry></row>
+<row><entry>Description</entry><entry>The value set collects all the codes defined within the Certifier Types coding system.
 </entry></row>
 </tbody></tgroup></table>
 </section>

@@ -24,7 +24,24 @@
 <p audience="Examples"><b>Coroner Case Transfer example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_CoronerCaseTransfer.dita#classId/example">
+<codeblock>
+<![CDATA[
+<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.4"/>
+							<id root="1.1" extension="1111111"/>
+							<code code="69438-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referral note forensic medicine"/>
+							<value xsi:type="BL" value="true"/>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="69452-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Coroner - medical examiner case number"/>
+									<value xsi:type="II" root="1.2.33" extension="1234-aa"/>
+									<!-- Provide an OID that identifies the namespace for the identifier. -->
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entry>
+]]>
 </codeblock>
 </body>
 </topic>

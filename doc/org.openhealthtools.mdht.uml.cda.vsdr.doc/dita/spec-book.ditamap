@@ -15,7 +15,7 @@
     	<prodinfo>
 			<prodname>CDAR2L3_IG_RDIVR</prodname>
 			<vrmlist>
-				<vrm release="R1_N1" version="2014JAN" ></vrm>
+				<vrm release="R1_N1" version="2014NOV" ></vrm>
 			</vrmlist>
 			<brand>HL7 IG for CDA R2</brand>
 			<series>DSTU</series>

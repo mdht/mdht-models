@@ -23,7 +23,43 @@
 <p audience="Examples"><b>Injury example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_Injury.dita#classId/example">
+<codeblock>
+<![CDATA[
+					<entry>
+						<!-- Injury - This is optional -->
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.9"/>
+							<code code="71481-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Did the death of this person involve injury of any kind"/>
+							<statusCode code="completed"/>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="11374-6" displayName="Injury incident description" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<text mediaType="text/plain">A description of how the injury occurred.</text>
+									<effectiveTime value="20121129"/>
+									<value xsi:type="BL" value="true"/>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="69444-8" displayName="Did death result from injury at work" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="BL" value="false"/>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="69448-9" displayName="Injury leading to death associated with transportation event" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="BL" value="true"/>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="69451-3" displayName="Transportation role of decedent" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="236320001" displayName="Driver/Operator" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+]]>
 </codeblock>
 </body>
 </topic>

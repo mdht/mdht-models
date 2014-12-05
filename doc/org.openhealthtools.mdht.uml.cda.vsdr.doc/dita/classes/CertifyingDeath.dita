@@ -22,7 +22,39 @@
 <p audience="Examples"><b>Certifying Death example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_CertifyingDeath.dita#classId/example">
+<codeblock>
+<![CDATA[
+<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.7"/>
+							<code code="69437-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death Certifier"/>
+							<effectiveTime>
+								<low value="20121201100000"/>
+								<high value="20121201100000"/>
+							</effectiveTime>
+							<performer typeCode="PRF">
+								<assignedEntity classCode="ASSIGNED">
+									<id root="1.1" extension="1234567"/>
+									<!-- Provide an OID that identifies the namespace for the identifier. -->
+									<code code="309343006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Physician"/>
+									<addr use="WP">
+										<streetAddressLine>104 MAIN STREET</streetAddressLine>
+										<city>SALT LAKE CITY</city>
+										<state>UT</state>
+										<postalCode>84111</postalCode>
+									</addr>
+									<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+										<name>
+											<family>Doe</family>
+											<given>John</given>
+											<given>M.</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+						</observation>
+					</entry>
+]]>
 </codeblock>
 </body>
 </topic>

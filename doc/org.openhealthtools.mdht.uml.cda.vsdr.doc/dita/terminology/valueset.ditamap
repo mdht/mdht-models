@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Value Sets">
+<topicref href="CertifierTitlesNCHS.dita" type="topic" />
+<topicref href="CertifierTypesNCHS.dita" type="topic" />
 <topicref href="ContributoryTobaccoUseNCHS.dita" type="topic" />
-<topicref href="DeathCertifierTitlesNCHS.dita" type="topic" />
-<topicref href="DeathLocationTypeNCHS.dita" type="topic" />
-<topicref href="DecedentTransportationRelationshipNCHS.dita" type="topic" />
-<topicref href="HL70136.dita" type="topic" />
-<topicref href="LOINC.dita" type="topic" />
+<topicref href="CountryGEC.dita" type="topic" />
 <topicref href="MannerOfDeathNCHS.dita" type="topic" />
-<topicref href="PHINVSCDCLocalCodingSystem.dita" type="topic" />
+<topicref href="PlaceOfDeathNCHS.dita" type="topic" />
 <topicref href="PregnancyStatusNCHS.dita" type="topic" />
-<topicref href="SNOMEDCT.dita" type="topic" />
+<topicref href="TransportationRelationshipsNCHS.dita" type="topic" />
 </map>

@@ -22,7 +22,17 @@
 <p audience="Examples"><b>Death Location Type example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_DeathLocationType.dita#classId/example">
+<codeblock>
+<![CDATA[
+<entry>
+						<!-- Death Location Type Observation -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.10"/>
+							<code code="58332-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of Death"/>
+							<value xsi:type="CD" code="440041000124106" displayName="Death in hospital-based emergency department" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+						</observation>
+					</entry>
+]]>
 </codeblock>
 </body>
 </topic>
