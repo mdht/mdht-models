@@ -646,7 +646,7 @@ steward that is entrusted with the care of the document. Every CDA document has 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_D3ZlILvOEeGkEvM80TFRNQ" name="Fetal Delivery Section">
       <ownedComment xmi:id="_EPvBALycEeGUNfs_q_VvNQ">
-        <body>The section contains information on the delivered fetus.  Note, if there is a multiple delivery, there will be a separate report for each delivered fetus.  The content of the section is drawn from labor and delivery records and from the patient's medical record.  &#xD;
+        <body>The section contains information on the delivered fetus.  Note, if there is a multiple delivery, there will be a separate report for each delivered fetus.  The content of the section is drawn from labor and delivery records, and from the patient's medical record.  &#xD;
 &#xD;
 The reader should note that the subject of this section - the delivered fetus - is different from the overall subject of the clinical document - which is the mother.</body>
       </ownedComment>
@@ -3652,14 +3652,14 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_vo5noF62EeSZyO9y8eHPuw" name="Fetal Delivery Death Causal Information">
       <ownedComment xmi:id="_Byr3gF63EeSZyO9y8eHPuw">
-        <body>The template contains information provided by the clinician to indicate the cause or causes behind the death of a fetus.  The template definition draws on that used for the death certificate, but acknowledges the differences found within the fetal death report.</body>
+        <body>The template contains information provided by the clinician to indicate the cause or causes behind the death of a fetus.  It is expected that original text will be provided as a full description of the cause as well as a code value.</body>
       </ownedComment>
       <generalization xmi:id="_vpF04F62EeSZyO9y8eHPuw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_zoY8AF62EeSZyO9y8eHPuw" name="classCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOnw0DcEd6xYZuu1VKCVw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_-iNIwF63EeSZyO9y8eHPuw" value="CLUSTER"/>
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_bW0CcH-7EeSYVv3Lav_UzQ" value="OBS"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_zolJQ162EeSZyO9y8eHPuw" name="moodCode" visibility="private" isReadOnly="true">
@@ -3678,13 +3678,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8tq5cGwzEeSlVvd1GaV4Qw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_owFOUF65EeSZyO9y8eHPuw" name="componentCause" type="_fLGGgF64EeSZyO9y8eHPuw" association="_owFOU165EeSZyO9y8eHPuw">
-        <ownedComment xmi:id="_1GOGQGw7EeSlVvd1GaV4Qw">
-          <body>Information regarding the initiating cause of fetal death.</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qNWdkV65EeSZyO9y8eHPuw" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qNWdkF65EeSZyO9y8eHPuw" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_FhxbkF67EeSkHO3L8cyXqQ" name="componentOtherSignificantCondition" type="_5s6tcF66EeSkHO3L8cyXqQ" association="_Fhxbk167EeSkHO3L8cyXqQ">
         <ownedComment xmi:id="_BtDq8Gw8EeSlVvd1GaV4Qw">
           <body>Information regarding other significant causes or conditions contributing to fetal death.</body>
@@ -3692,56 +3685,15 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FhxbkV67EeSkHO3L8cyXqQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fhxbkl67EeSkHO3L8cyXqQ" value="*"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_fLGGgF64EeSZyO9y8eHPuw" name="ComponentCause">
-        <generalization xmi:id="_imP-wF64EeSZyO9y8eHPuw">
-          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cEUTcEcEEd6besF9iFIJkQ"/>
-        </generalization>
-        <ownedAttribute xmi:id="_ql5V4F64EeSZyO9y8eHPuw" name="typeCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YLHRkWwqEeSlVvd1GaV4Qw" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YLHRkGwqEeSlVvd1GaV4Qw" value="1"/>
-          <defaultValue xmi:type="uml:InstanceValue" xmi:id="_ql5V4164EeSZyO9y8eHPuw" name="COMP">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-            <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZukDcEd6xYZuu1VKCVw"/>
-          </defaultValue>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CHhbMEouEd6c3qsAxlFHaQ"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_ii4FMF65EeSZyO9y8eHPuw" name="deathCause" type="_v1lt4F64EeSZyO9y8eHPuw" association="_ii4FM165EeSZyO9y8eHPuw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kwBSMV65EeSZyO9y8eHPuw" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kwBSMF65EeSZyO9y8eHPuw" value="1"/>
-        </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_v1lt4F64EeSZyO9y8eHPuw" name="DeathCause">
-          <generalization xmi:id="_wszpwF64EeSZyO9y8eHPuw">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_zXa14F64EeSZyO9y8eHPuw" name="classCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_3DvWoF64EeSZyO9y8eHPuw" value="OBS"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_AFkjgF65EeSZyO9y8eHPuw" name="moodCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_JoIe4F65EeSZyO9y8eHPuw" value="EVN"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_zXa14V64EeSZyO9y8eHPuw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
-            <ownedComment xmi:id="_UIF2oF65EeSZyO9y8eHPuw">
-              <body>An indication that the observation contains information regarding a specific cause of death.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_WSR2QF65EeSZyO9y8eHPuw" name="value1" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_AkvLQGwsEeSlVvd1GaV4Qw">
-              <body>The cause or condition which most likely began the series of events resulting in the death of the fetus is to be recorded.  The information should be provided as text to fully record the provider's view of the cause.  The appropriate code should be valued as well.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nda-AWwqEeSlVvd1GaV4Qw" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nda-AGwqEeSlVvd1GaV4Qw" value="1"/>
-            <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
-          </ownedAttribute>
-        </nestedClassifier>
-      </nestedClassifier>
+      <ownedAttribute xmi:id="_fJzy8H-7EeSYVv3Lav_UzQ" name="value1" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_vyZV0H-7EeSYVv3Lav_UzQ">
+          <body>The cause or condition which most likely began the series of events resulting in the death of the fetus is to be recorded.  The information should be provided as text to fully record the provider's view of the cause.  The appropriate code should be valued as well.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l3iPMX-7EeSYVv3Lav_UzQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l3iPMH-7EeSYVv3Lav_UzQ" value="1"/>
+        <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_5s6tcF66EeSkHO3L8cyXqQ" name="ComponentOtherSignificantCondition">
         <generalization xmi:id="_6dvtcF66EeSkHO3L8cyXqQ">
           <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cEUTcEcEEd6besF9iFIJkQ"/>
@@ -3795,12 +3747,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ii4FM165EeSZyO9y8eHPuw" memberEnd="_ii4FMF65EeSZyO9y8eHPuw _ii4FNF65EeSZyO9y8eHPuw">
-      <ownedEnd xmi:id="_ii4FNF65EeSZyO9y8eHPuw" type="_fLGGgF64EeSZyO9y8eHPuw" association="_ii4FM165EeSZyO9y8eHPuw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_owFOU165EeSZyO9y8eHPuw" memberEnd="_owFOUF65EeSZyO9y8eHPuw _owFOVF65EeSZyO9y8eHPuw">
-      <ownedEnd xmi:id="_owFOVF65EeSZyO9y8eHPuw" type="_vo5noF62EeSZyO9y8eHPuw" association="_owFOU165EeSZyO9y8eHPuw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_9otNl166EeSkHO3L8cyXqQ" memberEnd="_9otNlF66EeSkHO3L8cyXqQ _9otNmF66EeSkHO3L8cyXqQ">
       <ownedEnd xmi:id="_9otNmF66EeSkHO3L8cyXqQ" type="_5s6tcF66EeSkHO3L8cyXqQ" association="_9otNl166EeSkHO3L8cyXqQ"/>
@@ -5480,27 +5426,14 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   <CDA:CodeSystemConstraint xmi:id="_P05_oF64EeSZyO9y8eHPuw" code="LOINC_TBD" base_Property="_zolJQF62EeSZyO9y8eHPuw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_4q7W4F64EeSZyO9y8eHPuw" base_Property="_zXa14F64EeSZyO9y8eHPuw"/>
-  <CDA:PropertyValidation xmi:id="_IDhRgF65EeSZyO9y8eHPuw" base_Property="_AFkjgF65EeSZyO9y8eHPuw"/>
-  <CDA:PropertyValidation xmi:id="_NtDs4F65EeSZyO9y8eHPuw" base_Property="_zXa14V64EeSZyO9y8eHPuw"/>
-  <CDA:CodeSystemConstraint xmi:id="_ON3T4F65EeSZyO9y8eHPuw" code="LOINC_TBD" base_Property="_zXa14V64EeSZyO9y8eHPuw">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_lIJeUF65EeSZyO9y8eHPuw" base_Association="_ii4FM165EeSZyO9y8eHPuw"/>
-  <CDA:AssociationValidation xmi:id="_qmbr8F65EeSZyO9y8eHPuw" base_Association="_owFOU165EeSZyO9y8eHPuw"/>
   <CDA:PropertyValidation xmi:id="_CVTfkF67EeSkHO3L8cyXqQ" base_Property="_9otNkF66EeSkHO3L8cyXqQ"/>
   <CDA:AssociationValidation xmi:id="_HgiOUF67EeSkHO3L8cyXqQ" severity="WARNING" base_Association="_Fhxbk167EeSkHO3L8cyXqQ"/>
   <CDA:AssociationValidation xmi:id="_YifTcF67EeSkHO3L8cyXqQ" base_Association="_WTP0s167EeSkHO3L8cyXqQ"/>
   <CDA:AssociationValidation xmi:id="_QCmSUGwqEeSlVvd1GaV4Qw" base_Association="_9otNl166EeSkHO3L8cyXqQ"/>
-  <CDA:PropertyValidation xmi:id="_YkxHsGwqEeSlVvd1GaV4Qw" base_Property="_ql5V4F64EeSZyO9y8eHPuw"/>
   <CDA:PropertyValidation xmi:id="_cdLjsGwqEeSlVvd1GaV4Qw" base_Property="_UBJPMF67EeSkHO3L8cyXqQ"/>
   <CDA:PropertyValidation xmi:id="_hkfbwGwqEeSlVvd1GaV4Qw" base_Property="_UBJPMl67EeSkHO3L8cyXqQ"/>
   <CDA:PropertyValidation xmi:id="_iPsU4GwqEeSlVvd1GaV4Qw" base_Property="_UBJPMV67EeSkHO3L8cyXqQ"/>
   <CDA:PropertyValidation xmi:id="_kDRyYGwqEeSlVvd1GaV4Qw" base_Property="_UBJPM167EeSkHO3L8cyXqQ"/>
-  <CDA:PropertyValidation xmi:id="_l3YNQGwqEeSlVvd1GaV4Qw" base_Property="_WSR2QF65EeSZyO9y8eHPuw"/>
-  <CDA:ValueSetConstraint xmi:id="_A6SkgGwsEeSlVvd1GaV4Qw" base_Property="_WSR2QF65EeSZyO9y8eHPuw">
-    <reference href="vsbr-vocab.uml#_M9cCwWwrEeSlVvd1GaV4Qw"/>
-  </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_DamlIGwsEeSlVvd1GaV4Qw" base_Property="_UBJPM167EeSkHO3L8cyXqQ">
     <reference href="vsbr-vocab.uml#_M9cCwWwrEeSlVvd1GaV4Qw"/>
   </CDA:ValueSetConstraint>
@@ -5508,4 +5441,8 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   <CDA:CodeSystemConstraint xmi:id="_K7y9UGw6EeSlVvd1GaV4Qw" code="LOINC_TBD" base_Property="_UBJPMV67EeSkHO3L8cyXqQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_nxDVkH-7EeSYVv3Lav_UzQ" base_Property="_fJzy8H-7EeSYVv3Lav_UzQ"/>
+  <CDA:ValueSetConstraint xmi:id="_wfynUH-7EeSYVv3Lav_UzQ" base_Property="_fJzy8H-7EeSYVv3Lav_UzQ">
+    <reference href="vsbr-vocab.uml#_M9cCwWwrEeSlVvd1GaV4Qw"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
