@@ -20,9 +20,39 @@
 </ol>
 <p> </p>
 <p><b>Fetal Delivery Death Causal Information example</b></p>
-<!-- TODO: insert custom instance example here -->
-<!-- generated instance example follows -->
-<codeblock conref="generated/_FetalDeliveryDeathCausalInformation.dita#classId/example">
+
+<codeblock>
+<![CDATA[
+<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.51"/>
+							<code code="LOINC_TBD" displayName="Fetal Death Cause" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="LOINC_TBD" displayName="Initial cause of fetal death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="AP" displayName="Abuptio placenta" codeSystem="2.16.999">
+											
+											</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="LOINC_TBD" displayName="Contributing cause to fetal death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="FI" displayName="Fetal Injury" codeSystem="2.16.999">
+										<originalText mediaType="text/plain">Severe damage to the heart and lungs</originalText>
+									</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="LOINC_TBD" displayName="Contributing cause to fetal death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="OFCD" displayName="Other Fetal Conditions/Disorders" codeSystem="2.16.999">
+										<originalText mediaType="text/plain">Severe bacterial infection</originalText>
+									</value>
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>
