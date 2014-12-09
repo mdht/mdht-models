@@ -21,8 +21,7 @@
 	<code code="69409-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="U.S. standard certificate of death - 2003 revision"/>
 	<title/>
 	<!-- SHALL contain exactly one [1..1] code/@code="69409-1" U.S. standard certificate of death - 2003
-revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
-• The .code value indicates that the document contans death information. -->
+revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC) -->
 	<effectiveTime/>
 	<confidentialityCode code="N" codeSystem="2.16.840.1.11.3883.5.25" codeSystemName="Confidentiality" displayName="Normal"/>
 	<languageCode code="en-us"/>
@@ -106,6 +105,14 @@ revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
 						</observation>
 					</entry>
 					<entry>
+						<!-- Death Location Type Observation -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.10"/>
+							<code code="58332-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of Death"/>
+							<value xsi:type="CD" code="440041000124106" displayName="Death in hospital-based emergency department" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+						</observation>
+					</entry>
+					<entry>
 						<observation classCode="OBS" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.10.20.26.1.7"/>
 							<code code="69437-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death Certifier"/>
@@ -117,7 +124,7 @@ revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
 								<assignedEntity classCode="ASSIGNED">
 									<id root="1.1" extension="1234567"/>
 									<!-- Provide an OID that identifies the namespace for the identifier. -->
-									<code code="CP" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Certifying Physician (MD, DP)"/>
+									<code code="309343006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Physician"/>
 									<addr use="WP">
 										<streetAddressLine>104 MAIN STREET</streetAddressLine>
 										<city>SALT LAKE CITY</city>
@@ -144,8 +151,8 @@ revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
 					</entry>
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.10.20.26.1.7"/>
-							<code code="LOINC_TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death Pronouncer"/>
+							<templateId root="2.16.840.1.113883.10.20.26.1.15"/>
+							<code code="74499-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death pronouncer details"/>
 							<effectiveTime>
 								<low value="20121201100000"/>
 								<high value="20121201100000"/>
@@ -175,21 +182,21 @@ revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
 						<observation classCode="OBS" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.10.20.26.1.12"/>
 							<code code="69442-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pregnancy Status"/>
-							<value code="PS1" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Not pregnant within the past year" xsi:type="CD"/>
+							<value code="PHC1260" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Not pregnant within the past year" xsi:type="CD"/>
 						</observation>
 					</entry>
 					<entry>
 						<!-- Tobacco Use - This is optional -->
 						<observation classCode="OBS" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.10.20.24.1.9"/>
-							<code code="69443-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tobacco Use"/>
-							<value code="N" codeSystem="2.16.840.1.113883.12.136" codeSystemName="HL70136" displayName="No" xsi:type="CD"/>
+							<templateId root="2.16.840.1.113883.10.20.26.1.14"/>
+							<code code="69443-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Did tobacco use contribute to death"/>
+							<value code="373067005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="No" xsi:type="CD"/>
 						</observation>
 					</entry>
 					<entry>
 						<!-- Injury - This is optional -->
 						<organizer classCode="CLUSTER" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.10.20.24.1.10"/>
+							<templateId root="2.16.840.1.113883.10.20.26.1.9"/>
 							<code code="71481-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Did the death of this person involve injury of any kind"/>
 							<statusCode code="completed"/>
 							<component typeCode="COMP">
@@ -215,15 +222,15 @@ revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
 							<component typeCode="COMP">
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="69451-3" displayName="Transportation role of decedent" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-									<value xsi:type="CD" code="303980003" displayName="Driver of moter vehicle" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+									<value xsi:type="CD" code="236320001" displayName="Driver/Operator" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
 								</observation>
 							</component>
 						</organizer>
 					</entry>
 					<entry>
-						<!-- Cause of Death - This is optional -->
+						<!-- Cause of Death -->
 						<organizer classCode="CLUSTER" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.10.20.24.1.6"/>
+							<templateId root="2.16.840.1.113883.10.20.26.1.6"/>
 							<code code="69453-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause Of Death (US Standard Certificate of Death)"/>
 							<statusCode code="completed"/>
 							<!-- Note, at least one component containing death cause information is required -->
@@ -231,7 +238,9 @@ revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
 								<sequenceNumber value="1"/>
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="21984-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of Death"/>
-									<value xsi:type="ED">PROBABLE ATCVD</value>
+									<value xsi:type="CD">
+										<originalText>PROBABLE ATCVD</originalText>
+									</value>
 									<!-- Descriptive text that indicates one or more diseases, injuries, or complications that were implicated as a cause of the person's death. -->
 									<entryRelationship typeCode="COMP">
 										<observation classCode="OBS" moodCode="EVN">
@@ -246,7 +255,9 @@ revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
 								<sequenceNumber value="2"/>
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="21984-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of Death"/>
-									<value xsi:type="ED">HTN</value>
+									<value xsi:type="CD">
+										<originalText>HTN</originalText>
+									</value>
 									<!-- Descriptive text that indicates one or more diseases, injuries, or complications that were implicated as a cause of the person's death. -->
 									<entryRelationship typeCode="COMP">
 										<observation classCode="OBS" moodCode="EVN">
@@ -260,14 +271,16 @@ revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
 							<component typeCode="COMP">
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="69441-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death cause other significant conditions"/>
-									<value xsi:type="ED">Descriptive text that provides information on a significant condition or conditions that contributed to death, but did not result in the underlying cause that is elsewhere described. </value>
+									<value xsi:type="CD">
+										<originalText>Descriptive text that provides information on a significant condition or conditions that contributed to death, but did not result in the underlying cause that is elsewhere described.</originalText>
+									</value>
 								</observation>
 							</component>
 						</organizer>
 					</entry>
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.10.20.24.1.11"/>
+							<templateId root="2.16.840.1.113883.10.20.26.1.2"/>
 							<code code="21986-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy Status"/>
 							<effectiveTime>
 								<low value="20121202100000"/>
@@ -290,9 +303,16 @@ revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
 					</entry>
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.10.20.24.1.13"/>
+							<templateId root="2.16.840.1.113883.10.20.26.1.3"/>
 							<code code="69436-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy results available"/>
 							<value xsi:type="BL" value="true"/>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.1.3"/>
+									<code code="18743-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy report"/>
+									<value xsi:type="ED" mediaType="text/plain">A text string with the autopsy report content.  Note, alternate media types may be supported by implementers.</value>
+								</observation>
+							</entryRelationship>
 						</observation>
 					</entry>
 					<entry>
@@ -305,9 +325,9 @@ revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
 					</entry>
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.10.20.24.1.12"/>
+							<templateId root="2.16.840.1.113883.10.20.26.1.4"/>
 							<id root="1.1" extension="1111111"/>
-							<code code="LOINC_TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Coroner Assignment"/>
+							<code code="69438-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referral note forensic medicine"/>
 							<value xsi:type="BL" value="true"/>
 							<entryRelationship typeCode="COMP">
 								<observation classCode="OBS" moodCode="EVN">
@@ -323,6 +343,7 @@ revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
 		</structuredBody>
 	</component>
 </ClinicalDocument>
+
 		
 ]]>
 		</codeblock>

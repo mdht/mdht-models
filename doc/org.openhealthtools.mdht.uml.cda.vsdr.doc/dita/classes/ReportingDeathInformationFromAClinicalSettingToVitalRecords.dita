@@ -41,7 +41,7 @@
 	<title/>
 	<!-- SHALL contain exactly one [1..1] code/@code="69409-1" U.S. standard certificate of death - 2003
 revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
-• The .code value indicates that the document contans death information. -->
+The .code value indicates that the document contans death information. -->
 	<effectiveTime/>
 	<confidentialityCode code="N" codeSystem="2.16.840.1.11.3883.5.25" codeSystemName="Confidentiality" displayName="Normal"/>
 	<languageCode code="en-us"/>
