@@ -738,7 +738,9 @@ Required if the person is female and in the age range 5 to 75 years.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_K6HN4FGqEeGSqNO1bVTZyw" name="Death Causal Information">
       <ownedComment xmi:id="_XIpAQFGqEeGSqNO1bVTZyw">
-        <body>The template contains information provided by the clinician to indicate the cause or causes behind the person's death.  The information includes the chain of events that directly caused the death, and includes other significant conditions contributing to death.  There may be up to four causal elements provided, along with a single statement of the other significant conditions.</body>
+        <body>The template contains information provided by the clinician to indicate the cause or causes behind the person's death.  The information includes the chain of events that directly caused the death, and includes other significant conditions contributing to death.  For clinician reporting, there may be up to four causal elements provided, along with a single statement of the other significant conditions.&#xD;
+&#xD;
+The clinical document is also used by the National Center for Health Statistics to provide a set of codes for the cause of death.  The ICD classification system is used for cause of death coding, and the coding is done using the SuperMICAR algorithm to transform the information provided by the clinician into a set of coded values.  When coded cause of death information is provided, the clinican supplied text is included using the original text property of the CD data type.</body>
       </ownedComment>
       <generalization xmi:id="_K6HN4VGqEeGSqNO1bVTZyw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
@@ -772,8 +774,8 @@ Required if the person is female and in the age range 5 to 75 years.</body>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SaXZgErcEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_gAPJoFKHEeG6eOb5pyaZOw" name="componentCause" type="_eKrIsFHjEeGSqNO1bVTZyw" association="_gAdzIFKHEeG6eOb5pyaZOw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q8klgW94EeGducFY2S5l3A" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q8klgG94EeGducFY2S5l3A" value="4"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oo4x0H8MEeSYVv3Lav_UzQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OoskkH8MEeSYVv3Lav_UzQ" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_gTl4kFKJEeG6eOb5pyaZOw" name="componentOtherSignificantCondition" type="_p-Tw0FHNEeGSqNO1bVTZyw" association="_gTl4klKJEeG6eOb5pyaZOw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1P1wkV0hEeO_5svOqPnaJg"/>
@@ -885,7 +887,9 @@ Required if the person is female and in the age range 5 to 75 years.</body>
           </ownedAttribute>
           <ownedAttribute xmi:id="_IRy7clHkEeGSqNO1bVTZyw" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_amqZ8FHkEeGSqNO1bVTZyw">
-              <body>In order to comply with NCHS edit specifications, the entry is descriptive text with a maximum length of 120 characters. . Death causes are ordered sequentially with the immediate cause of death given the sequence number &quot;1&quot;, and the underlying cause of death being given the highest sequence number among the set of cited causes. Each cause of death is associated with a numeric observation Death Cause Interval which captures the approximate interval between the onset of the death cause (condition) and death. This linkage is implemented through the use of actRelationship.sequenceNumber.</body>
+              <body>In order to comply with NCHS edit specifications, clinician entry is descriptive text with a maximum length of 120 characters. . Death causes are ordered sequentially with the immediate cause of death given the sequence number &quot;1&quot;, and the underlying cause of death being given the highest sequence number among the set of cited causes. Each cause of death is associated with a numeric observation Death Cause Interval which captures the approximate interval between the onset of the death cause (condition) and death. This linkage is implemented through the use of actRelationship.sequenceNumber.&#xD;
+&#xD;
+At a later point in time, cause of death codes are assigned thorugh processing the clinician supplied text.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xf4VgV0mEeO_5svOqPnaJg" value="1"/>
@@ -2175,9 +2179,9 @@ The element is required if the pronouncing and certifying physicians are differe
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_gAdzIFKHEeG6eOb5pyaZOw" memberEnd="_gAPJoFKHEeG6eOb5pyaZOw _gAdzIVKHEeG6eOb5pyaZOw">
     <ownedComment xmi:id="_p1E9EG-tEeGducFY2S5l3A">
-      <body>Up to four events - diseases, injuries, or complications may be entered to record the cause of death. The immediate cause of death and the underlying cause of death must be reported. &#xD;
+      <body>A clinician may enter up to four events - diseases, injuries, or complications - in order to to record the cause of death. The immediate cause of death and the underlying cause of death must be reported.   Additional causes of death up to two may be recorded. These are entered in a defined sequence, and the order of each is recorded using sequence number. In addition, the approximate time interval from onset until death is captured as well. this information is captured in the related Component Death Cause Interval observation. The act relationship sequence number value is used to associate the time between onset and death with the relevant event.&#xD;
 &#xD;
-Additional causes of death up to two may be recorded. These are entered in a defined sequence, and the order of each is recorded using sequence number. In addition, the approximate time interval from onset until death is captured as well. this information is captured in the related Component Death Cause Interval observation. The act relationship sequence number value is used to associate the time between onset and death with the relevant event.</body>
+The clinician provided information is used by the National Center for Health Statistics to provide ICD codes for the cause or causes of death.  A single clinician provided entry may lead to multiple codes being assigned.</body>
     </ownedComment>
     <ownedEnd xmi:id="_gAdzIVKHEeG6eOb5pyaZOw" type="_K6HN4FGqEeGSqNO1bVTZyw" association="_gAdzIFKHEeG6eOb5pyaZOw"/>
   </uml:Association>
