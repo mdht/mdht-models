@@ -2090,7 +2090,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_qu2JgeWUEeGKmvzED_He2w" conceptName="Never smoker (Never Smoked)" base_EnumerationLiteral="_qu2JgOWUEeGKmvzED_He2w"/>
   <term:ValueSetCode xmi:id="_shQiUeWUEeGKmvzED_He2w" conceptName="Smoker, current status unknown" base_EnumerationLiteral="_shQiUOWUEeGKmvzED_He2w"/>
   <term:ValueSetCode xmi:id="_uoyPgeWUEeGKmvzED_He2w" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_uoyPgOWUEeGKmvzED_He2w"/>
-  <term:ValueSetVersion xmi:id="_3NE1YOcAEeGINOJ_SD9_dA" identifier="2.16.840.1.113883.11.20.9.35" definition="This value set enumerates the type of a pressure ulcer" binding="Dynamic" base_Enumeration="_3NDnQOcAEeGINOJ_SD9_dA">
+  <term:ValueSetVersion xmi:id="_3NE1YOcAEeGINOJ_SD9_dA" identifier="2.16.840.1.113883.11.20.9.35" version="2014-09-01" definition="This value set enumerates the type of a pressure ulcer" base_Enumeration="_3NDnQOcAEeGINOJ_SD9_dA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_9AVNcOcAEeGINOJ_SD9_dA" conceptName="Pressure Ulcer Stage 1" base_EnumerationLiteral="_9AUmYOcAEeGINOJ_SD9_dA"/>
