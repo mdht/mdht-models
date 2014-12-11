@@ -492,6 +492,13 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IJ5iAJqHEeOK6dzbL4VoTA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IJ5iAZqHEeOK6dzbL4VoTA" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_u2ScgIF0EeSMbOpQu8Kfvw" name="numberOfPressureUlcersObservation2" type="_YYgjwIC3EeS108flGLVEBA" association="_u2URsIF0EeSMbOpQu8Kfvw">
+      <ownedComment xmi:id="_Q8dQkIF1EeSMbOpQu8Kfvw">
+        <body>When the wound observed is a type of pressure ulcer, then this template SHOULD contain an entry for the Number of Pressure Ulcers.</body>
+      </ownedComment>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u2ScgYF0EeSMbOpQu8Kfvw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u2TDkIF0EeSMbOpQu8Kfvw" value="*"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_mSMLQJqHEeOK6dzbL4VoTA" name="highestPressureUlcerStage" type="_4YgVsOZbEeGINOJ_SD9_dA" association="_mSNZYJqHEeOK6dzbL4VoTA">
       <ownedComment xmi:id="_JQuVQJqJEeOK6dzbL4VoTA">
         <body>When the wound observed is a type of pressure ulcer, then this template SHOULD contain an entry for the Highest Pressure Ulcer Stage.</body>
@@ -837,4 +844,12 @@ The Physical Exam section may contain multiple nested subsections; Vital Signs, 
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31930</ruleId>
   </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_u2URsIF0EeSMbOpQu8Kfvw" memberEnd="_u2ScgIF0EeSMbOpQu8Kfvw _u2U4wIF0EeSMbOpQu8Kfvw">
+    <ownedEnd xmi:id="_u2U4wIF0EeSMbOpQu8Kfvw" type="_09uFMJp_EeOK6dzbL4VoTA" association="_u2URsIF0EeSMbOpQu8Kfvw"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_8PJUAIF0EeSMbOpQu8Kfvw" severity="INFO" base_Association="_u2URsIF0EeSMbOpQu8Kfvw" typeCode="COMP">
+    <ruleId>CONF:1098-31890</ruleId>
+    <ruleId>CONF:1098-31891</ruleId>
+    <ruleId>CONF:1098-31892</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>
