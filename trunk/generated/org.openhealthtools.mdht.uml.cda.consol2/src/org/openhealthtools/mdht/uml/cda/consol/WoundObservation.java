@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getWoundObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationTemplateId WoundObservationClassCode WoundObservationMoodCode WoundObservationCode WoundObservationCodeP WoundObservationValueP WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue' templateId.root='2.16.840.1.113883.10.20.22.4.114' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='assertion' constraints.validation.dependOn.WoundObservationCode='WoundObservationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='WoundObservationValue WoundObservationTargetSiteCode WoundObservationTargetSiteCodeP WoundObservationWoundMeasurementObservation WoundObservationWoundCharacteristics WoundObservationHighestPressureUlcerStage WoundObservationAuthorParticipation' constraints.validation.dependOn.WoundObservationValue='WoundObservationValueP' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.WoundObservationTargetSiteCode='WoundObservationTargetSiteCodeP' constraints.validation.query='WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue WoundObservationCDQualifier' constraints.validation.info='WoundObservationCDQualifier'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationTemplateId WoundObservationClassCode WoundObservationMoodCode WoundObservationCode WoundObservationCodeP WoundObservationValueP WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue' templateId.root='2.16.840.1.113883.10.20.22.4.114' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='assertion' constraints.validation.dependOn.WoundObservationCode='WoundObservationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='WoundObservationValue WoundObservationTargetSiteCode WoundObservationTargetSiteCodeP WoundObservationWoundMeasurementObservation WoundObservationWoundCharacteristics WoundObservationHighestPressureUlcerStage WoundObservationAuthorParticipation' constraints.validation.dependOn.WoundObservationValue='WoundObservationValueP' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.WoundObservationTargetSiteCode='WoundObservationTargetSiteCodeP' constraints.validation.info='WoundObservationNumberOfPressureUlcersObservation2 WoundObservationCDQualifier' constraints.validation.query='WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue WoundObservationCDQualifier'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolWoundObservationCD constraints.validation.info='WoundObservationCDQualifier' constraints.validation.error='WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue' constraints.validation.query='WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolWoundObservationCDCR name.code='272741003' name.codeSystem='2.16.840.1.113883.6.96' name.codeSystemName='SNOMEDCT' name.displayName='laterality' constraints.validation.error='WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue WoundObservationCDCRCDCode' constraints.validation.query='WoundObservationCDCRCDCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolWoundObservationCDCRCD constraints.validation.error='WoundObservationCDCRCDCode'"
@@ -182,6 +182,19 @@ public interface WoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @generated
+	 */
+	boolean validateWoundObservationNumberOfPressureUlcersObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined()).qualifier->excluding(null)->select(isNullFlavorUndefined()).value->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not code.oclIsUndefined() )))'"
 	 * @generated
 	 */
@@ -261,6 +274,15 @@ public interface WoundObservation extends ProblemObservation2 {
 	 * @generated
 	 */
 	HighestPressureUlcerStage getHighestPressureUlcerStage();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation2)).oclAsType(consol::NumberOfPressureUlcersObservation2)'"
+	 * @generated
+	 */
+	EList<NumberOfPressureUlcersObservation2> getNumberOfPressureUlcersObservation2s();
 
 	/**
 	 * <!-- begin-user-doc -->

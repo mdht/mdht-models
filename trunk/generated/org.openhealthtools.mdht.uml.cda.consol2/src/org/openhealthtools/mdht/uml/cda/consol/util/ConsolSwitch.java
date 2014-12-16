@@ -4047,6 +4047,29 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2: {
+				NumberOfPressureUlcersObservation2 numberOfPressureUlcersObservation2 = (NumberOfPressureUlcersObservation2) theEObject;
+				T result = caseNumberOfPressureUlcersObservation2(numberOfPressureUlcersObservation2);
+				if (result == null) {
+					result = caseNumberOfPressureUlcersObservation(numberOfPressureUlcersObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(numberOfPressureUlcersObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(numberOfPressureUlcersObservation2);
+				}
+				if (result == null) {
+					result = caseAct(numberOfPressureUlcersObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(numberOfPressureUlcersObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.EXTERNAL_DOCUMENT_REFERENCE: {
 				ExternalDocumentReference externalDocumentReference = (ExternalDocumentReference) theEObject;
 				T result = caseExternalDocumentReference(externalDocumentReference);
@@ -5561,20 +5584,20 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2: {
-				HospitalDischargeDiagnosisSection2 hospitalDischargeDiagnosisSection2 = (HospitalDischargeDiagnosisSection2) theEObject;
-				T result = caseHospitalDischargeDiagnosisSection2(hospitalDischargeDiagnosisSection2);
+			case ConsolPackage.DISCHARGE_DIAGNOSIS_SECTION2: {
+				DischargeDiagnosisSection2 dischargeDiagnosisSection2 = (DischargeDiagnosisSection2) theEObject;
+				T result = caseDischargeDiagnosisSection2(dischargeDiagnosisSection2);
 				if (result == null) {
-					result = caseHospitalDischargeDiagnosisSection(hospitalDischargeDiagnosisSection2);
+					result = caseHospitalDischargeDiagnosisSection(dischargeDiagnosisSection2);
 				}
 				if (result == null) {
-					result = caseSection(hospitalDischargeDiagnosisSection2);
+					result = caseSection(dischargeDiagnosisSection2);
 				}
 				if (result == null) {
-					result = caseAct(hospitalDischargeDiagnosisSection2);
+					result = caseAct(dischargeDiagnosisSection2);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeDiagnosisSection2);
+					result = caseInfrastructureRoot(dischargeDiagnosisSection2);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -5902,60 +5925,60 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2: {
-				HospitalAdmissionDiagnosisSection2 hospitalAdmissionDiagnosisSection2 = (HospitalAdmissionDiagnosisSection2) theEObject;
-				T result = caseHospitalAdmissionDiagnosisSection2(hospitalAdmissionDiagnosisSection2);
+			case ConsolPackage.ADMISSION_DIAGNOSIS_SECTION2: {
+				AdmissionDiagnosisSection2 admissionDiagnosisSection2 = (AdmissionDiagnosisSection2) theEObject;
+				T result = caseAdmissionDiagnosisSection2(admissionDiagnosisSection2);
 				if (result == null) {
-					result = caseHospitalAdmissionDiagnosisSection(hospitalAdmissionDiagnosisSection2);
+					result = caseHospitalAdmissionDiagnosisSection(admissionDiagnosisSection2);
 				}
 				if (result == null) {
-					result = caseSection(hospitalAdmissionDiagnosisSection2);
+					result = caseSection(admissionDiagnosisSection2);
 				}
 				if (result == null) {
-					result = caseAct(hospitalAdmissionDiagnosisSection2);
+					result = caseAct(admissionDiagnosisSection2);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(hospitalAdmissionDiagnosisSection2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2: {
-				HospitalAdmissionMedicationsSectionEntriesOptional2 hospitalAdmissionMedicationsSectionEntriesOptional2 = (HospitalAdmissionMedicationsSectionEntriesOptional2) theEObject;
-				T result = caseHospitalAdmissionMedicationsSectionEntriesOptional2(hospitalAdmissionMedicationsSectionEntriesOptional2);
-				if (result == null) {
-					result = caseHospitalAdmissionMedicationsSectionEntriesOptional(hospitalAdmissionMedicationsSectionEntriesOptional2);
-				}
-				if (result == null) {
-					result = caseSection(hospitalAdmissionMedicationsSectionEntriesOptional2);
-				}
-				if (result == null) {
-					result = caseAct(hospitalAdmissionMedicationsSectionEntriesOptional2);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalAdmissionMedicationsSectionEntriesOptional2);
+					result = caseInfrastructureRoot(admissionDiagnosisSection2);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
 			}
-			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2: {
-				HospitalDischargeMedicationsSectionEntriesOptional2 hospitalDischargeMedicationsSectionEntriesOptional2 = (HospitalDischargeMedicationsSectionEntriesOptional2) theEObject;
-				T result = caseHospitalDischargeMedicationsSectionEntriesOptional2(hospitalDischargeMedicationsSectionEntriesOptional2);
+			case ConsolPackage.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2: {
+				AdmissionMedicationsSectionEntriesOptional2 admissionMedicationsSectionEntriesOptional2 = (AdmissionMedicationsSectionEntriesOptional2) theEObject;
+				T result = caseAdmissionMedicationsSectionEntriesOptional2(admissionMedicationsSectionEntriesOptional2);
 				if (result == null) {
-					result = caseHospitalDischargeMedicationsSectionEntriesOptional(hospitalDischargeMedicationsSectionEntriesOptional2);
+					result = caseHospitalAdmissionMedicationsSectionEntriesOptional(admissionMedicationsSectionEntriesOptional2);
 				}
 				if (result == null) {
-					result = caseSection(hospitalDischargeMedicationsSectionEntriesOptional2);
+					result = caseSection(admissionMedicationsSectionEntriesOptional2);
 				}
 				if (result == null) {
-					result = caseAct(hospitalDischargeMedicationsSectionEntriesOptional2);
+					result = caseAct(admissionMedicationsSectionEntriesOptional2);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeMedicationsSectionEntriesOptional2);
+					result = caseInfrastructureRoot(admissionMedicationsSectionEntriesOptional2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2: {
+				DischargeMedicationsSectionEntriesOptional2 dischargeMedicationsSectionEntriesOptional2 = (DischargeMedicationsSectionEntriesOptional2) theEObject;
+				T result = caseDischargeMedicationsSectionEntriesOptional2(dischargeMedicationsSectionEntriesOptional2);
+				if (result == null) {
+					result = caseHospitalDischargeMedicationsSectionEntriesOptional(dischargeMedicationsSectionEntriesOptional2);
+				}
+				if (result == null) {
+					result = caseSection(dischargeMedicationsSectionEntriesOptional2);
+				}
+				if (result == null) {
+					result = caseAct(dischargeMedicationsSectionEntriesOptional2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dischargeMedicationsSectionEntriesOptional2);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -6102,23 +6125,23 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2: {
-				HospitalDischargeMedicationsSection2 hospitalDischargeMedicationsSection2 = (HospitalDischargeMedicationsSection2) theEObject;
-				T result = caseHospitalDischargeMedicationsSection2(hospitalDischargeMedicationsSection2);
+			case ConsolPackage.DISCHARGE_MEDICATIONS_SECTION2: {
+				DischargeMedicationsSection2 dischargeMedicationsSection2 = (DischargeMedicationsSection2) theEObject;
+				T result = caseDischargeMedicationsSection2(dischargeMedicationsSection2);
 				if (result == null) {
-					result = caseHospitalDischargeMedicationsSectionEntriesOptional2(hospitalDischargeMedicationsSection2);
+					result = caseDischargeMedicationsSectionEntriesOptional2(dischargeMedicationsSection2);
 				}
 				if (result == null) {
-					result = caseHospitalDischargeMedicationsSectionEntriesOptional(hospitalDischargeMedicationsSection2);
+					result = caseHospitalDischargeMedicationsSectionEntriesOptional(dischargeMedicationsSection2);
 				}
 				if (result == null) {
-					result = caseSection(hospitalDischargeMedicationsSection2);
+					result = caseSection(dischargeMedicationsSection2);
 				}
 				if (result == null) {
-					result = caseAct(hospitalDischargeMedicationsSection2);
+					result = caseAct(dischargeMedicationsSection2);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeMedicationsSection2);
+					result = caseInfrastructureRoot(dischargeMedicationsSection2);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -9510,6 +9533,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Number Of Pressure Ulcers Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Number Of Pressure Ulcers Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNumberOfPressureUlcersObservation2(NumberOfPressureUlcersObservation2 object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Wound Measurement Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -10515,6 +10553,51 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Admission Diagnosis Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Admission Diagnosis Section2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdmissionDiagnosisSection2(AdmissionDiagnosisSection2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Admission Medications Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Admission Medications Section Entries Optional2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdmissionMedicationsSectionEntriesOptional2(AdmissionMedicationsSectionEntriesOptional2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Discharge Medications Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Discharge Medications Section Entries Optional2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDischargeMedicationsSectionEntriesOptional2(DischargeMedicationsSectionEntriesOptional2 object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Encounters Section Entries Optional2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -10526,6 +10609,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseEncountersSectionEntriesOptional2(EncountersSectionEntriesOptional2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Discharge Diagnosis Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Discharge Diagnosis Section2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDischargeDiagnosisSection2(DischargeDiagnosisSection2 object) {
 		return null;
 	}
 
@@ -10556,68 +10654,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseHistoryOfPastIllnessSection2(HistoryOfPastIllnessSection2 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Hospital Admission Diagnosis Section2</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Hospital Admission Diagnosis Section2</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseHospitalAdmissionDiagnosisSection2(HospitalAdmissionDiagnosisSection2 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Hospital Admission Medications Section Entries Optional2</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Hospital Admission Medications Section Entries Optional2</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseHospitalAdmissionMedicationsSectionEntriesOptional2(
-			HospitalAdmissionMedicationsSectionEntriesOptional2 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Diagnosis Section2</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Diagnosis Section2</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseHospitalDischargeDiagnosisSection2(HospitalDischargeDiagnosisSection2 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Medications Section Entries Optional2</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Medications Section Entries Optional2</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseHospitalDischargeMedicationsSectionEntriesOptional2(
-			HospitalDischargeMedicationsSectionEntriesOptional2 object) {
 		return null;
 	}
 
@@ -10817,6 +10853,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Discharge Medications Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Discharge Medications Section2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDischargeMedicationsSection2(DischargeMedicationsSection2 object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Procedures Section Entries Optional2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -10993,21 +11044,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseEncountersSection2(EncountersSection2 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Medications Section2</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Medications Section2</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseHospitalDischargeMedicationsSection2(HospitalDischargeMedicationsSection2 object) {
 		return null;
 	}
 

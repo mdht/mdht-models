@@ -227,7 +227,7 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection2))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2))'"
 	 * @generated
 	 */
 	boolean validateTransferSummaryHospitalDischargeDiagnosis2(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -829,10 +829,10 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection2))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosisSection2)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2))->asSequence()->any(true).oclAsType(consol::DischargeDiagnosisSection2)'"
 	 * @generated
 	 */
-	HospitalDischargeDiagnosisSection2 getHospitalDischargeDiagnosis2();
+	DischargeDiagnosisSection2 getHospitalDischargeDiagnosis2();
 
 	/**
 	 * <!-- begin-user-doc -->

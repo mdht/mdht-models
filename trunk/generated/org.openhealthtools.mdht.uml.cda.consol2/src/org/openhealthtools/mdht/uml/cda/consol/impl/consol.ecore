@@ -29114,8 +29114,8 @@
       <details key="targetSiteCode.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.dependOn.WoundObservationTargetSiteCode"
           value="WoundObservationTargetSiteCodeP"/>
+      <details key="constraints.validation.info" value="WoundObservationNumberOfPressureUlcersObservation2 WoundObservationCDQualifier"/>
       <details key="constraints.validation.query" value="WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue WoundObservationCDQualifier"/>
-      <details key="constraints.validation.info" value="WoundObservationCDQualifier"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolWoundObservationCD">
       <details key="constraints.validation.info" value="WoundObservationCDQualifier"/>
@@ -29253,6 +29253,15 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="WoundObservationNumberOfPressureUlcersObservation2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="WoundObservationCDCRCDCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -29304,6 +29313,8 @@
         eType="#//WoundCharacteristics"/>
     <eOperations name="getHighestPressureUlcerStage" ordered="false" lowerBound="1"
         eType="#//HighestPressureUlcerStage"/>
+    <eOperations name="getNumberOfPressureUlcersObservation2s" ordered="false" lowerBound="1"
+        upperBound="-1" eType="#//NumberOfPressureUlcersObservation2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProblemObservation2" eSuperTypes="#//ProblemObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
@@ -29788,6 +29799,172 @@
       </eParameters>
     </eOperations>
     <eOperations name="WoundCharacteristicsCDCodeSystem" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NumberOfPressureUlcersObservation2"
+      eSuperTypes="#//NumberOfPressureUlcersObservation">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="NumberOfPressureUlcersObservationTemplateId NumberOfPressureUlcersObservationCode NumberOfPressureUlcersObservationCodeP NumberOfPressureUlcersObservationEntryRelationship NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode NumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP NumberOfPressureUlcersObservation2EntryRelationshipObservationCode NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationValueP NumberOfPressureUlcersObservation2NumberOfPressureUlcersObservationEntryRelationshipTypeCode NumberOfPressureUlcersObservation2NumberOfPressureUlcersObservationEntryRelationshipObservation"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.76"/>
+      <details key="templateId.extension" value="2014-06-09"/>
+      <details key="code.code" value="75277-4"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="code.displayName" value="Number of pressure ulcers"/>
+      <details key="constraints.validation.dependOn.NumberOfPressureUlcersObservationCode"
+          value="NumberOfPressureUlcersObservationCodeP"/>
+      <details key="constraints.validation.query" value="NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode NumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP NumberOfPressureUlcersObservation2EntryRelationshipObservationCode NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationValueP NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationValue NumberOfPressureUlcersObservation2NumberOfPressureUlcersObservationEntryRelationshipTypeCode NumberOfPressureUlcersObservation2NumberOfPressureUlcersObservationEntryRelationshipObservation"/>
+      <details key="constraints.validation.dependOn.NumberOfPressureUlcersObservation2EntryRelationshipObservationCode"
+          value="NumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP"/>
+      <details key="constraints.validation.warning" value="NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationValue"/>
+      <details key="constraints.validation.dependOn.NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationValue"
+          value="NumberOfPressureUlcersObservationEntryRelationshipObservationValueP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNumberOfPressureUlcersObservation2EntryRelationship">
+      <details key="typeCode" value="SUBJ"/>
+      <details key="constraints.validation.error" value="NumberOfPressureUlcersObservationEntryRelationshipTypeCode NumberOfPressureUlcersObservationEntryRelationshipObservation"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNumberOfPressureUlcersObservation2EntryRelationshipObservation">
+      <details key="classCode" value="OBS"/>
+      <details key="constraints.validation.error" value="NumberOfPressureUlcersObservationEntryRelationshipObservationClassCode NumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode NumberOfPressureUlcersObservation2EntryRelationshipObservationCode NumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP NumberOfPressureUlcersObservationEntryRelationshipObservationValueP"/>
+      <details key="moodCode" value="EVN"/>
+      <details key="code.code" value="ASSERTION"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.5.4"/>
+      <details key="code.codeSystemName" value="HL7ActCode"/>
+      <details key="code.displayName" value="Assertion"/>
+      <details key="constraints.validation.dependOn.NumberOfPressureUlcersObservation2EntryRelationshipObservationCode"
+          value="NumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP"/>
+      <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="value.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.warning" value="NumberOfPressureUlcersObservationEntryRelationshipObservationValue"/>
+      <details key="constraints.validation.dependOn.NumberOfPressureUlcersObservationEntryRelationshipObservationValue"
+          value="NumberOfPressureUlcersObservationEntryRelationshipObservationValueP"/>
+    </eAnnotations>
+    <eAnnotations source="duplicates">
+      <contents xsi:type="ecore:EOperation" name="NumberOfPressureUlcersObservationTemplateId"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="redefines" references="#//NumberOfPressureUlcersObservation/NumberOfPressureUlcersObservationTemplateId"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+        <eParameters name="context">
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="NumberOfPressureUlcersObservationCodeP"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="redefines" references="#//NumberOfPressureUlcersObservation/NumberOfPressureUlcersObservationCodeP"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+        <eParameters name="context">
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="NumberOfPressureUlcersObservationCode"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="redefines" references="#//NumberOfPressureUlcersObservation/NumberOfPressureUlcersObservationCode"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+        <eParameters name="context">
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="NumberOfPressureUlcersObservationEntryRelationship"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="redefines" references="#//NumberOfPressureUlcersObservation/NumberOfPressureUlcersObservationEntryRelationship"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+        <eParameters name="context">
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+    </eAnnotations>
+    <eOperations name="NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="NumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="NumberOfPressureUlcersObservation2EntryRelationshipObservationCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationValueP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="NumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationValue"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="NumberOfPressureUlcersObservation2NumberOfPressureUlcersObservationEntryRelationshipTypeCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="NumberOfPressureUlcersObservation2NumberOfPressureUlcersObservationEntryRelationshipObservation"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -39008,7 +39185,7 @@
     <eOperations name="getFunctionalStatusSection2" ordered="false" lowerBound="1"
         eType="#//FunctionalStatusSection2"/>
     <eOperations name="getHospitalDischargeDiagnosis2" ordered="false" lowerBound="1"
-        eType="#//HospitalDischargeDiagnosisSection2"/>
+        eType="#//DischargeDiagnosisSection2"/>
     <eOperations name="getImmunizationsSectionEntriesOptional2" ordered="false" lowerBound="1"
         eType="#//ImmunizationsSectionEntriesOptional2"/>
     <eOperations name="getMedicalEquipmentSection2" ordered="false" lowerBound="1"
@@ -39212,8 +39389,7 @@
     <eOperations name="getConsolEncounterActivity2s" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//EncounterActivity2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeDiagnosisSection2"
-      eSuperTypes="#//HospitalDischargeDiagnosisSection">
+  <eClassifiers xsi:type="ecore:EClass" name="DischargeDiagnosisSection2" eSuperTypes="#//HospitalDischargeDiagnosisSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalDischargeDiagnosisSectionTemplateId HospitalDischargeDiagnosisSectionCode HospitalDischargeDiagnosisSectionCodeP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.24"/>
@@ -41378,8 +41554,7 @@
     <eOperations name="getConsolProblemObservation2s" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//ProblemObservation2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionDiagnosisSection2"
-      eSuperTypes="#//HospitalAdmissionDiagnosisSection">
+  <eClassifiers xsi:type="ecore:EClass" name="AdmissionDiagnosisSection2" eSuperTypes="#//HospitalAdmissionDiagnosisSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode HospitalAdmissionDiagnosisSectionCodeP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.43"/>
@@ -41440,7 +41615,7 @@
     <eOperations name="getConsolHospitalAdmissionDiagnosis2" ordered="false" lowerBound="1"
         eType="#//HospitalAdmissionDiagnosis2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionMedicationsSectionEntriesOptional2"
+  <eClassifiers xsi:type="ecore:EClass" name="AdmissionMedicationsSectionEntriesOptional2"
       eSuperTypes="#//HospitalAdmissionMedicationsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId HospitalAdmissionMedicationsSectionEntriesOptionalCode HospitalAdmissionMedicationsSectionEntriesOptionalCodeP"/>
@@ -41502,7 +41677,7 @@
     <eOperations name="getConsolAdmissionMedication2s" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//AdmissionMedication2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeMedicationsSectionEntriesOptional2"
+  <eClassifiers xsi:type="ecore:EClass" name="DischargeMedicationsSectionEntriesOptional2"
       eSuperTypes="#//HospitalDischargeMedicationsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalDischargeMedicationsSectionEntriesOptionalTemplateId"/>
@@ -41947,23 +42122,22 @@
     <eOperations name="getConsolIndication2s" ordered="false" lowerBound="1" upperBound="-1"
         eType="#//Indication2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeMedicationsSection2"
-      eSuperTypes="#//HospitalDischargeMedicationsSectionEntriesOptional2">
+  <eClassifiers xsi:type="ecore:EClass" name="DischargeMedicationsSection2" eSuperTypes="#//DischargeMedicationsSectionEntriesOptional2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="HospitalDischargeMedicationsSectionEntriesOptionalTemplateId HospitalDischargeMedicationsSection2Code HospitalDischargeMedicationsSection2CodeP HospitalDischargeMedicationsSection2Title HospitalDischargeMedicationsSection2Text HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2"/>
+      <details key="constraints.validation.error" value="HospitalDischargeMedicationsSectionEntriesOptionalTemplateId DischargeMedicationsSection2Code DischargeMedicationsSection2CodeP DischargeMedicationsSection2Title DischargeMedicationsSection2Text HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.11.1"/>
       <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.code" value="10183-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="Hospital Discharge Medications"/>
-      <details key="constraints.validation.dependOn.HospitalDischargeMedicationsSection2Code"
-          value="HospitalDischargeMedicationsSection2CodeP"/>
+      <details key="constraints.validation.dependOn.DischargeMedicationsSection2Code"
+          value="DischargeMedicationsSection2CodeP"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="HospitalDischargeMedicationsSectionEntriesOptionalTemplateId"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//HospitalDischargeMedicationsSectionEntriesOptional/HospitalDischargeMedicationsSectionEntriesOptionalTemplateId #//HospitalDischargeMedicationsSectionEntriesOptional2/%duplicates%/HospitalDischargeMedicationsSectionEntriesOptionalTemplateId"/>
+        <eAnnotations source="redefines" references="#//HospitalDischargeMedicationsSectionEntriesOptional/HospitalDischargeMedicationsSectionEntriesOptionalTemplateId #//DischargeMedicationsSectionEntriesOptional2/%duplicates%/HospitalDischargeMedicationsSectionEntriesOptionalTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
         <eParameters name="context">
           <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -41974,7 +42148,7 @@
       </contents>
       <contents xsi:type="ecore:EOperation" name="HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//HospitalDischargeMedicationsSectionEntriesOptional2/HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2"/>
+        <eAnnotations source="redefines" references="#//DischargeMedicationsSectionEntriesOptional2/HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
         <eParameters name="context">
           <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -41985,10 +42159,10 @@
       </contents>
       <contents xsi:type="ecore:EOperation" name="getConsolDischargeMedication2s"
           ordered="false" lowerBound="1" upperBound="-1" eType="#//DischargeMedication2">
-        <eAnnotations source="redefines" references="#//HospitalDischargeMedicationsSectionEntriesOptional2/getConsolDischargeMedication2s"/>
+        <eAnnotations source="redefines" references="#//DischargeMedicationsSectionEntriesOptional2/getConsolDischargeMedication2s"/>
       </contents>
     </eAnnotations>
-    <eOperations name="HospitalDischargeMedicationsSection2CodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="DischargeMedicationsSection2CodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -41997,7 +42171,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="HospitalDischargeMedicationsSection2Code" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="DischargeMedicationsSection2Code" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -42006,7 +42180,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="HospitalDischargeMedicationsSection2Title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="DischargeMedicationsSection2Title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -42015,7 +42189,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="HospitalDischargeMedicationsSection2Text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="DischargeMedicationsSection2Text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">

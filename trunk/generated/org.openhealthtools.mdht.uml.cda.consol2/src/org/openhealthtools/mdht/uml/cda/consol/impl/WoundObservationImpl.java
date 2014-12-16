@@ -20,6 +20,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
+import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.WoundCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.WoundMeasurementObservation;
 import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
@@ -183,6 +184,17 @@ public class WoundObservationImpl extends ProblemObservation2Impl implements Wou
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateWoundObservationNumberOfPressureUlcersObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return WoundObservationOperations.validateWoundObservationNumberOfPressureUlcersObservation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateWoundObservationCDCRCDCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return WoundObservationOperations.validateWoundObservationCDCRCDCode(this, diagnostics, context);
@@ -256,6 +268,15 @@ public class WoundObservationImpl extends ProblemObservation2Impl implements Wou
 	@Override
 	public HighestPressureUlcerStage getHighestPressureUlcerStage() {
 		return WoundObservationOperations.getHighestPressureUlcerStage(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<NumberOfPressureUlcersObservation2> getNumberOfPressureUlcersObservation2s() {
+		return WoundObservationOperations.getNumberOfPressureUlcersObservation2s(this);
 	}
 
 	/**
