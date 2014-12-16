@@ -22,13 +22,13 @@ import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSection2;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllnessSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection2;
@@ -760,7 +760,7 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HospitalDischargeDiagnosisSection2 getHospitalDischargeDiagnosis2() {
+	public DischargeDiagnosisSection2 getHospitalDischargeDiagnosis2() {
 		return TransferSummaryOperations.getHospitalDischargeDiagnosis2(this);
 	}
 

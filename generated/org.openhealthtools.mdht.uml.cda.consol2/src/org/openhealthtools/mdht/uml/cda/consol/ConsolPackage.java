@@ -37422,7 +37422,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPatientReferralAct()
 	 * @generated
 	 */
-	int PATIENT_REFERRAL_ACT = 231;
+	int PATIENT_REFERRAL_ACT = 232;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PlannedCoverageImpl <em>Planned Coverage</em>}' class.
@@ -37462,7 +37462,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getInterventionAct()
 	 * @generated
 	 */
-	int INTERVENTION_ACT = 226;
+	int INTERVENTION_ACT = 227;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ExternalDocumentReferenceImpl <em>External Document Reference</em>}' class.
@@ -37472,7 +37472,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getExternalDocumentReference()
 	 * @generated
 	 */
-	int EXTERNAL_DOCUMENT_REFERENCE = 204;
+	int EXTERNAL_DOCUMENT_REFERENCE = 205;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PlannedImmunizationActivityImpl <em>Planned Immunization Activity</em>}' class.
@@ -37482,7 +37482,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPlannedImmunizationActivity()
 	 * @generated
 	 */
-	int PLANNED_IMMUNIZATION_ACTIVITY = 232;
+	int PLANNED_IMMUNIZATION_ACTIVITY = 233;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PrognosisObservationImpl <em>Prognosis Observation</em>}' class.
@@ -37502,7 +37502,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProgressTowardGoalObservation()
 	 * @generated
 	 */
-	int PROGRESS_TOWARD_GOAL_OBSERVATION = 225;
+	int PROGRESS_TOWARD_GOAL_OBSERVATION = 226;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProviderPriorityPreferenceImpl <em>Provider Priority Preference</em>}' class.
@@ -37582,7 +37582,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getGoalsSection()
 	 * @generated
 	 */
-	int GOALS_SECTION = 233;
+	int GOALS_SECTION = 234;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HealthConcernsSectionImpl <em>Health Concerns Section</em>}' class.
@@ -37592,7 +37592,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHealthConcernsSection()
 	 * @generated
 	 */
-	int HEALTH_CONCERNS_SECTION = 234;
+	int HEALTH_CONCERNS_SECTION = 235;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HealthStatusEvaluationsOutcomesSectionImpl <em>Health Status Evaluations Outcomes Section</em>}' class.
@@ -37602,7 +37602,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHealthStatusEvaluationsOutcomesSection()
 	 * @generated
 	 */
-	int HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION = 236;
+	int HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION = 237;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MentalStatusSectionImpl <em>Mental Status Section</em>}' class.
@@ -37612,7 +37612,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMentalStatusSection()
 	 * @generated
 	 */
-	int MENTAL_STATUS_SECTION = 237;
+	int MENTAL_STATUS_SECTION = 238;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.NutritionSectionImpl <em>Nutrition Section</em>}' class.
@@ -37622,7 +37622,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getNutritionSection()
 	 * @generated
 	 */
-	int NUTRITION_SECTION = 239;
+	int NUTRITION_SECTION = 240;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PhysicalFindingsOfSkinSectionImpl <em>Physical Findings Of Skin Section</em>}' class.
@@ -37632,7 +37632,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPhysicalFindingsOfSkinSection()
 	 * @generated
 	 */
-	int PHYSICAL_FINDINGS_OF_SKIN_SECTION = 240;
+	int PHYSICAL_FINDINGS_OF_SKIN_SECTION = 241;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.USRealmHeader2Impl <em>US Realm Header2</em>}' class.
@@ -37642,7 +37642,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUSRealmHeader2()
 	 * @generated
 	 */
-	int US_REALM_HEADER2 = 241;
+	int US_REALM_HEADER2 = 242;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CarePlanImpl <em>Care Plan</em>}' class.
@@ -37652,7 +37652,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCarePlan()
 	 * @generated
 	 */
-	int CARE_PLAN = 242;
+	int CARE_PLAN = 243;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ReferralNoteImpl <em>Referral Note</em>}' class.
@@ -37662,7 +37662,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReferralNote()
 	 * @generated
 	 */
-	int REFERRAL_NOTE = 244;
+	int REFERRAL_NOTE = 245;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.TransferSummaryImpl <em>Transfer Summary</em>}' class.
@@ -37672,7 +37672,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getTransferSummary()
 	 * @generated
 	 */
-	int TRANSFER_SUMMARY = 270;
+	int TRANSFER_SUMMARY = 271;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.USRealmHeaderPatientGeneratedDocumentImpl <em>US Realm Header Patient Generated Document</em>}' class.
@@ -37682,7 +37682,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUSRealmHeaderPatientGeneratedDocument()
 	 * @generated
 	 */
-	int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT = 280;
+	int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT = 281;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AuthorParticipationImpl <em>Author Participation</em>}' class.
@@ -37692,7 +37692,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAuthorParticipation()
 	 * @generated
 	 */
-	int AUTHOR_PARTICIPATION = 281;
+	int AUTHOR_PARTICIPATION = 282;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionMedication2Impl <em>Admission Medication2</em>}' class.
@@ -37702,7 +37702,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdmissionMedication2()
 	 * @generated
 	 */
-	int ADMISSION_MEDICATION2 = 282;
+	int ADMISSION_MEDICATION2 = 283;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveObservation2Impl <em>Advance Directive Observation2</em>}' class.
@@ -37722,7 +37722,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAllergyConcernAct2()
 	 * @generated
 	 */
-	int ALLERGY_CONCERN_ACT2 = 264;
+	int ALLERGY_CONCERN_ACT2 = 265;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AllergyObservation2Impl <em>Allergy Observation2</em>}' class.
@@ -37732,7 +37732,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAllergyObservation2()
 	 * @generated
 	 */
-	int ALLERGY_OBSERVATION2 = 205;
+	int ALLERGY_OBSERVATION2 = 206;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusOrganizer2Impl <em>Cognitive Status Organizer2</em>}' class.
@@ -37742,7 +37742,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCognitiveStatusOrganizer2()
 	 * @generated
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2 = 238;
+	int COGNITIVE_STATUS_ORGANIZER2 = 239;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusObservation2Impl <em>Cognitive Status Observation2</em>}' class.
@@ -37752,7 +37752,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCognitiveStatusObservation2()
 	 * @generated
 	 */
-	int COGNITIVE_STATUS_OBSERVATION2 = 206;
+	int COGNITIVE_STATUS_OBSERVATION2 = 207;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CoverageActivity2Impl <em>Coverage Activity2</em>}' class.
@@ -37762,7 +37762,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCoverageActivity2()
 	 * @generated
 	 */
-	int COVERAGE_ACTIVITY2 = 277;
+	int COVERAGE_ACTIVITY2 = 278;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CurrentSmokingStatus2Impl <em>Current Smoking Status2</em>}' class.
@@ -37772,7 +37772,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCurrentSmokingStatus2()
 	 * @generated
 	 */
-	int CURRENT_SMOKING_STATUS2 = 207;
+	int CURRENT_SMOKING_STATUS2 = 208;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DeceasedObservation2Impl <em>Deceased Observation2</em>}' class.
@@ -37782,7 +37782,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDeceasedObservation2()
 	 * @generated
 	 */
-	int DECEASED_OBSERVATION2 = 283;
+	int DECEASED_OBSERVATION2 = 284;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeMedication2Impl <em>Discharge Medication2</em>}' class.
@@ -37792,7 +37792,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeMedication2()
 	 * @generated
 	 */
-	int DISCHARGE_MEDICATION2 = 284;
+	int DISCHARGE_MEDICATION2 = 285;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.EncounterActivity2Impl <em>Encounter Activity2</em>}' class.
@@ -37802,7 +37802,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncounterActivity2()
 	 * @generated
 	 */
-	int ENCOUNTER_ACTIVITY2 = 230;
+	int ENCOUNTER_ACTIVITY2 = 231;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.EncounterDiagnosis2Impl <em>Encounter Diagnosis2</em>}' class.
@@ -37812,7 +37812,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncounterDiagnosis2()
 	 * @generated
 	 */
-	int ENCOUNTER_DIAGNOSIS2 = 208;
+	int ENCOUNTER_DIAGNOSIS2 = 209;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.FunctionalStatusObservation2Impl <em>Functional Status Observation2</em>}' class.
@@ -37822,7 +37822,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getFunctionalStatusObservation2()
 	 * @generated
 	 */
-	int FUNCTIONAL_STATUS_OBSERVATION2 = 209;
+	int FUNCTIONAL_STATUS_OBSERVATION2 = 210;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.FunctionalStatusOrganizer2Impl <em>Functional Status Organizer2</em>}' class.
@@ -37832,7 +37832,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getFunctionalStatusOrganizer2()
 	 * @generated
 	 */
-	int FUNCTIONAL_STATUS_ORGANIZER2 = 259;
+	int FUNCTIONAL_STATUS_ORGANIZER2 = 260;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HealthStatusObservation2Impl <em>Health Status Observation2</em>}' class.
@@ -37842,7 +37842,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHealthStatusObservation2()
 	 * @generated
 	 */
-	int HEALTH_STATUS_OBSERVATION2 = 235;
+	int HEALTH_STATUS_OBSERVATION2 = 236;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionDiagnosis2Impl <em>Hospital Admission Diagnosis2</em>}' class.
@@ -37852,7 +37852,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalAdmissionDiagnosis2()
 	 * @generated
 	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS2 = 210;
+	int HOSPITAL_ADMISSION_DIAGNOSIS2 = 211;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeDiagnosis2Impl <em>Hospital Discharge Diagnosis2</em>}' class.
@@ -37862,7 +37862,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeDiagnosis2()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS2 = 275;
+	int HOSPITAL_DISCHARGE_DIAGNOSIS2 = 276;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ImmunizationActivity2Impl <em>Immunization Activity2</em>}' class.
@@ -37872,7 +37872,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getImmunizationActivity2()
 	 * @generated
 	 */
-	int IMMUNIZATION_ACTIVITY2 = 227;
+	int IMMUNIZATION_ACTIVITY2 = 228;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ImmunizationMedicationInformation2Impl <em>Immunization Medication Information2</em>}' class.
@@ -37882,7 +37882,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getImmunizationMedicationInformation2()
 	 * @generated
 	 */
-	int IMMUNIZATION_MEDICATION_INFORMATION2 = 285;
+	int IMMUNIZATION_MEDICATION_INFORMATION2 = 286;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.Indication2Impl <em>Indication2</em>}' class.
@@ -37932,7 +37932,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationInformation2()
 	 * @generated
 	 */
-	int MEDICATION_INFORMATION2 = 286;
+	int MEDICATION_INFORMATION2 = 287;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationSupplyOrder2Impl <em>Medication Supply Order2</em>}' class.
@@ -37962,7 +37962,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPhysicianofRecordParticipant2()
 	 * @generated
 	 */
-	int PHYSICIANOF_RECORD_PARTICIPANT2 = 287;
+	int PHYSICIANOF_RECORD_PARTICIPANT2 = 288;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PlannedAct2Impl <em>Planned Act2</em>}' class.
@@ -37972,7 +37972,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPlannedAct2()
 	 * @generated
 	 */
-	int PLANNED_ACT2 = 224;
+	int PLANNED_ACT2 = 225;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PlannedEncounter2Impl <em>Planned Encounter2</em>}' class.
@@ -37982,7 +37982,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPlannedEncounter2()
 	 * @generated
 	 */
-	int PLANNED_ENCOUNTER2 = 220;
+	int PLANNED_ENCOUNTER2 = 221;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PlannedObservation2Impl <em>Planned Observation2</em>}' class.
@@ -38002,7 +38002,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPlannedProcedure2()
 	 * @generated
 	 */
-	int PLANNED_PROCEDURE2 = 221;
+	int PLANNED_PROCEDURE2 = 222;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PlannedMedicationActivity2Impl <em>Planned Medication Activity2</em>}' class.
@@ -38012,7 +38012,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPlannedMedicationActivity2()
 	 * @generated
 	 */
-	int PLANNED_MEDICATION_ACTIVITY2 = 222;
+	int PLANNED_MEDICATION_ACTIVITY2 = 223;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PlannedSupply2Impl <em>Planned Supply2</em>}' class.
@@ -38022,7 +38022,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPlannedSupply2()
 	 * @generated
 	 */
-	int PLANNED_SUPPLY2 = 223;
+	int PLANNED_SUPPLY2 = 224;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PolicyActivity2Impl <em>Policy Activity2</em>}' class.
@@ -38032,7 +38032,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPolicyActivity2()
 	 * @generated
 	 */
-	int POLICY_ACTIVITY2 = 278;
+	int POLICY_ACTIVITY2 = 279;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PostprocedureDiagnosis2Impl <em>Postprocedure Diagnosis2</em>}' class.
@@ -38042,7 +38042,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPostprocedureDiagnosis2()
 	 * @generated
 	 */
-	int POSTPROCEDURE_DIAGNOSIS2 = 211;
+	int POSTPROCEDURE_DIAGNOSIS2 = 212;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosis2Impl <em>Preoperative Diagnosis2</em>}' class.
@@ -38052,7 +38052,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreoperativeDiagnosis2()
 	 * @generated
 	 */
-	int PREOPERATIVE_DIAGNOSIS2 = 212;
+	int PREOPERATIVE_DIAGNOSIS2 = 213;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProblemConcernAct2Impl <em>Problem Concern Act2</em>}' class.
@@ -38062,7 +38062,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProblemConcernAct2()
 	 * @generated
 	 */
-	int PROBLEM_CONCERN_ACT2 = 219;
+	int PROBLEM_CONCERN_ACT2 = 220;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProblemObservation2Impl <em>Problem Observation2</em>}' class.
@@ -38082,7 +38082,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityAct2()
 	 * @generated
 	 */
-	int PROCEDURE_ACTIVITY_ACT2 = 228;
+	int PROCEDURE_ACTIVITY_ACT2 = 229;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityObservation2Impl <em>Procedure Activity Observation2</em>}' class.
@@ -38092,7 +38092,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityObservation2()
 	 * @generated
 	 */
-	int PROCEDURE_ACTIVITY_OBSERVATION2 = 229;
+	int PROCEDURE_ACTIVITY_OBSERVATION2 = 230;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedure2Impl <em>Procedure Activity Procedure2</em>}' class.
@@ -38122,7 +38122,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultObservation2()
 	 * @generated
 	 */
-	int RESULT_OBSERVATION2 = 213;
+	int RESULT_OBSERVATION2 = 214;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ResultOrganizer2Impl <em>Result Organizer2</em>}' class.
@@ -38132,7 +38132,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultOrganizer2()
 	 * @generated
 	 */
-	int RESULT_ORGANIZER2 = 218;
+	int RESULT_ORGANIZER2 = 219;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SeverityObservation2Impl <em>Severity Observation2</em>}' class.
@@ -47226,6 +47226,295 @@ public interface ConsolPackage extends EPackage {
 	int WOUND_CHARACTERISTICS_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.NumberOfPressureUlcersObservation2Impl <em>Number Of Pressure Ulcers Observation2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.NumberOfPressureUlcersObservation2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getNumberOfPressureUlcersObservation2()
+	 * @generated
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2 = 204;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__REALM_CODE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__TYPE_ID = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__TEMPLATE_ID = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__ID = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__CODE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__DERIVATION_EXPR = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__TEXT = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__STATUS_CODE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__EFFECTIVE_TIME = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__PRIORITY_CODE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__REPEAT_NUMBER = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__LANGUAGE_CODE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__VALUE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__INTERPRETATION_CODE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__METHOD_CODE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__TARGET_SITE_CODE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__SUBJECT = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__SPECIMEN = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__PERFORMER = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__AUTHOR = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__INFORMANT = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__PARTICIPANT = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__ENTRY_RELATIONSHIP = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__REFERENCE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__PRECONDITION = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__REFERENCE_RANGE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__NULL_FLAVOR = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__CLASS_CODE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__MOOD_CODE = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__NEGATION_IND = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Number Of Pressure Ulcers Observation2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_FEATURE_COUNT = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
@@ -49708,7 +49997,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSocialHistoryObservation2()
 	 * @generated
 	 */
-	int SOCIAL_HISTORY_OBSERVATION2 = 214;
+	int SOCIAL_HISTORY_OBSERVATION2 = 215;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -49997,7 +50286,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSubstanceOrDeviceAllergyObservation2()
 	 * @generated
 	 */
-	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2 = 215;
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2 = 216;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -50286,7 +50575,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getTobaccoUse2()
 	 * @generated
 	 */
-	int TOBACCO_USE2 = 216;
+	int TOBACCO_USE2 = 217;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -50575,7 +50864,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVitalSignObservation2()
 	 * @generated
 	 */
-	int VITAL_SIGN_OBSERVATION2 = 217;
+	int VITAL_SIGN_OBSERVATION2 = 218;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -56462,7 +56751,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVitalSignsOrganizer2()
 	 * @generated
 	 */
-	int VITAL_SIGNS_ORGANIZER2 = 257;
+	int VITAL_SIGNS_ORGANIZER2 = 258;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AnesthesiaSection2Impl <em>Anesthesia Section2</em>}' class.
@@ -56472,7 +56761,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAnesthesiaSection2()
 	 * @generated
 	 */
-	int ANESTHESIA_SECTION2 = 288;
+	int ANESTHESIA_SECTION2 = 289;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AssessmentAndPlanSection2Impl <em>Assessment And Plan Section2</em>}' class.
@@ -56482,7 +56771,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAssessmentAndPlanSection2()
 	 * @generated
 	 */
-	int ASSESSMENT_AND_PLAN_SECTION2 = 265;
+	int ASSESSMENT_AND_PLAN_SECTION2 = 266;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ComplicationsSection2Impl <em>Complications Section2</em>}' class.
@@ -56492,7 +56781,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getComplicationsSection2()
 	 * @generated
 	 */
-	int COMPLICATIONS_SECTION2 = 289;
+	int COMPLICATIONS_SECTION2 = 290;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.EncountersSectionEntriesOptional2Impl <em>Encounters Section Entries Optional2</em>}' class.
@@ -56502,7 +56791,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncountersSectionEntriesOptional2()
 	 * @generated
 	 */
-	int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2 = 273;
+	int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2 = 274;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.FunctionalStatusSection2Impl <em>Functional Status Section2</em>}' class.
@@ -56512,7 +56801,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getFunctionalStatusSection2()
 	 * @generated
 	 */
-	int FUNCTIONAL_STATUS_SECTION2 = 258;
+	int FUNCTIONAL_STATUS_SECTION2 = 259;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HistoryOfPastIllnessSection2Impl <em>History Of Past Illness Section2</em>}' class.
@@ -56522,47 +56811,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHistoryOfPastIllnessSection2()
 	 * @generated
 	 */
-	int HISTORY_OF_PAST_ILLNESS_SECTION2 = 266;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionDiagnosisSection2Impl <em>Hospital Admission Diagnosis Section2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionDiagnosisSection2Impl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalAdmissionDiagnosisSection2()
-	 * @generated
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2 = 290;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionMedicationsSectionEntriesOptional2Impl <em>Hospital Admission Medications Section Entries Optional2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionMedicationsSectionEntriesOptional2Impl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalAdmissionMedicationsSectionEntriesOptional2()
-	 * @generated
-	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2 = 291;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeDiagnosisSection2Impl <em>Hospital Discharge Diagnosis Section2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeDiagnosisSection2Impl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeDiagnosisSection2()
-	 * @generated
-	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2 = 274;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeMedicationsSectionEntriesOptional2Impl <em>Hospital Discharge Medications Section Entries Optional2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeMedicationsSectionEntriesOptional2Impl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeMedicationsSectionEntriesOptional2()
-	 * @generated
-	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2 = 292;
+	int HISTORY_OF_PAST_ILLNESS_SECTION2 = 267;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ImmunizationsSectionEntriesOptional2Impl <em>Immunizations Section Entries Optional2</em>}' class.
@@ -56572,7 +56821,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getImmunizationsSectionEntriesOptional2()
 	 * @generated
 	 */
-	int IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2 = 248;
+	int IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2 = 249;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.InstructionsSection2Impl <em>Instructions Section2</em>}' class.
@@ -56582,7 +56831,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getInstructionsSection2()
 	 * @generated
 	 */
-	int INSTRUCTIONS_SECTION2 = 293;
+	int INSTRUCTIONS_SECTION2 = 294;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.InterventionsSection2Impl <em>Interventions Section2</em>}' class.
@@ -56592,7 +56841,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getInterventionsSection2()
 	 * @generated
 	 */
-	int INTERVENTIONS_SECTION2 = 243;
+	int INTERVENTIONS_SECTION2 = 244;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -57052,7 +57301,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicalEquipmentSection2()
 	 * @generated
 	 */
-	int MEDICAL_EQUIPMENT_SECTION2 = 261;
+	int MEDICAL_EQUIPMENT_SECTION2 = 262;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSection2Impl <em>Medications Administered Section2</em>}' class.
@@ -57062,7 +57311,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationsAdministeredSection2()
 	 * @generated
 	 */
-	int MEDICATIONS_ADMINISTERED_SECTION2 = 294;
+	int MEDICATIONS_ADMINISTERED_SECTION2 = 295;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PayersSection2Impl <em>Payers Section2</em>}' class.
@@ -57072,7 +57321,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPayersSection2()
 	 * @generated
 	 */
-	int PAYERS_SECTION2 = 276;
+	int PAYERS_SECTION2 = 277;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PhysicalExamSection2Impl <em>Physical Exam Section2</em>}' class.
@@ -57082,7 +57331,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPhysicalExamSection2()
 	 * @generated
 	 */
-	int PHYSICAL_EXAM_SECTION2 = 260;
+	int PHYSICAL_EXAM_SECTION2 = 261;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PlanOfTreatmentSection2Impl <em>Plan Of Treatment Section2</em>}' class.
@@ -57092,7 +57341,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPlanOfTreatmentSection2()
 	 * @generated
 	 */
-	int PLAN_OF_TREATMENT_SECTION2 = 245;
+	int PLAN_OF_TREATMENT_SECTION2 = 246;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -57273,7 +57522,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPlannedProcedureSection2()
 	 * @generated
 	 */
-	int PLANNED_PROCEDURE_SECTION2 = 295;
+	int PLANNED_PROCEDURE_SECTION2 = 296;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PostprocedureDiagnosisSection2Impl <em>Postprocedure Diagnosis Section2</em>}' class.
@@ -57283,7 +57532,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPostprocedureDiagnosisSection2()
 	 * @generated
 	 */
-	int POSTPROCEDURE_DIAGNOSIS_SECTION2 = 296;
+	int POSTPROCEDURE_DIAGNOSIS_SECTION2 = 297;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosisSection2Impl <em>Preoperative Diagnosis Section2</em>}' class.
@@ -57293,7 +57542,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreoperativeDiagnosisSection2()
 	 * @generated
 	 */
-	int PREOPERATIVE_DIAGNOSIS_SECTION2 = 297;
+	int PREOPERATIVE_DIAGNOSIS_SECTION2 = 298;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureFindingsSection2Impl <em>Procedure Findings Section2</em>}' class.
@@ -57303,7 +57552,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureFindingsSection2()
 	 * @generated
 	 */
-	int PROCEDURE_FINDINGS_SECTION2 = 298;
+	int PROCEDURE_FINDINGS_SECTION2 = 299;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureIndicationsSection2Impl <em>Procedure Indications Section2</em>}' class.
@@ -57313,7 +57562,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureIndicationsSection2()
 	 * @generated
 	 */
-	int PROCEDURE_INDICATIONS_SECTION2 = 299;
+	int PROCEDURE_INDICATIONS_SECTION2 = 300;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProceduresSectionEntriesOptional2Impl <em>Procedures Section Entries Optional2</em>}' class.
@@ -57323,7 +57572,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProceduresSectionEntriesOptional2()
 	 * @generated
 	 */
-	int PROCEDURES_SECTION_ENTRIES_OPTIONAL2 = 251;
+	int PROCEDURES_SECTION_ENTRIES_OPTIONAL2 = 252;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ReasonForReferralSection2Impl <em>Reason For Referral Section2</em>}' class.
@@ -57333,7 +57582,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReasonForReferralSection2()
 	 * @generated
 	 */
-	int REASON_FOR_REFERRAL_SECTION2 = 269;
+	int REASON_FOR_REFERRAL_SECTION2 = 270;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ResultsSectionEntriesOptional2Impl <em>Results Section Entries Optional2</em>}' class.
@@ -57343,7 +57592,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultsSectionEntriesOptional2()
 	 * @generated
 	 */
-	int RESULTS_SECTION_ENTRIES_OPTIONAL2 = 253;
+	int RESULTS_SECTION_ENTRIES_OPTIONAL2 = 254;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistorySection2Impl <em>Social History Section2</em>}' class.
@@ -57353,7 +57602,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSocialHistorySection2()
 	 * @generated
 	 */
-	int SOCIAL_HISTORY_SECTION2 = 254;
+	int SOCIAL_HISTORY_SECTION2 = 255;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignsSectionEntriesOptional2Impl <em>Vital Signs Section Entries Optional2</em>}' class.
@@ -57363,7 +57612,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVitalSignsSectionEntriesOptional2()
 	 * @generated
 	 */
-	int VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2 = 256;
+	int VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2 = 257;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectivesSectionEntriesOptional2Impl <em>Advance Directives Section Entries Optional2</em>}' class.
@@ -57373,7 +57622,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdvanceDirectivesSectionEntriesOptional2()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2 = 246;
+	int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2 = 247;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -57725,7 +57974,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationsSectionEntriesOptional2()
 	 * @generated
 	 */
-	int MEDICATIONS_SECTION_ENTRIES_OPTIONAL2 = 268;
+	int MEDICATIONS_SECTION_ENTRIES_OPTIONAL2 = 269;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProblemSectionEntriesOptional2Impl <em>Problem Section Entries Optional2</em>}' class.
@@ -57735,7 +57984,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProblemSectionEntriesOptional2()
 	 * @generated
 	 */
-	int PROBLEM_SECTION_ENTRIES_OPTIONAL2 = 250;
+	int PROBLEM_SECTION_ENTRIES_OPTIONAL2 = 251;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectivesSection2Impl <em>Advance Directives Section2</em>}' class.
@@ -57745,7 +57994,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdvanceDirectivesSection2()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVES_SECTION2 = 271;
+	int ADVANCE_DIRECTIVES_SECTION2 = 272;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AllergiesSectionEntriesOptional2Impl <em>Allergies Section Entries Optional2</em>}' class.
@@ -57755,7 +58004,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAllergiesSectionEntriesOptional2()
 	 * @generated
 	 */
-	int ALLERGIES_SECTION_ENTRIES_OPTIONAL2 = 263;
+	int ALLERGIES_SECTION_ENTRIES_OPTIONAL2 = 264;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AllergiesSection2Impl <em>Allergies Section2</em>}' class.
@@ -57765,7 +58014,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAllergiesSection2()
 	 * @generated
 	 */
-	int ALLERGIES_SECTION2 = 262;
+	int ALLERGIES_SECTION2 = 263;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.EncountersSection2Impl <em>Encounters Section2</em>}' class.
@@ -57775,17 +58024,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncountersSection2()
 	 * @generated
 	 */
-	int ENCOUNTERS_SECTION2 = 272;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeMedicationsSection2Impl <em>Hospital Discharge Medications Section2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeMedicationsSection2Impl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeMedicationsSection2()
-	 * @generated
-	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2 = 300;
+	int ENCOUNTERS_SECTION2 = 273;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ImmunizationsSection2Impl <em>Immunizations Section2</em>}' class.
@@ -57795,7 +58034,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getImmunizationsSection2()
 	 * @generated
 	 */
-	int IMMUNIZATIONS_SECTION2 = 247;
+	int IMMUNIZATIONS_SECTION2 = 248;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -58147,7 +58386,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationsSection2()
 	 * @generated
 	 */
-	int MEDICATIONS_SECTION2 = 267;
+	int MEDICATIONS_SECTION2 = 268;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProblemSection2Impl <em>Problem Section2</em>}' class.
@@ -58157,7 +58396,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProblemSection2()
 	 * @generated
 	 */
-	int PROBLEM_SECTION2 = 249;
+	int PROBLEM_SECTION2 = 250;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -58680,7 +58919,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProceduresSection2()
 	 * @generated
 	 */
-	int PROCEDURES_SECTION2 = 279;
+	int PROCEDURES_SECTION2 = 280;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ResultsSection2Impl <em>Results Section2</em>}' class.
@@ -58690,7 +58929,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultsSection2()
 	 * @generated
 	 */
-	int RESULTS_SECTION2 = 252;
+	int RESULTS_SECTION2 = 253;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -59213,7 +59452,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVitalSignsSection2()
 	 * @generated
 	 */
-	int VITAL_SIGNS_SECTION2 = 255;
+	int VITAL_SIGNS_SECTION2 = 256;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -62465,13 +62704,23 @@ public interface ConsolPackage extends EPackage {
 	int ENCOUNTERS_SECTION2_FEATURE_COUNT = ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeDiagnosisSection2Impl <em>Discharge Diagnosis Section2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.DischargeDiagnosisSection2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeDiagnosisSection2()
+	 * @generated
+	 */
+	int DISCHARGE_DIAGNOSIS_SECTION2 = 275;
+
+	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__REALM_CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__REALM_CODE;
+	int DISCHARGE_DIAGNOSIS_SECTION2__REALM_CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -62480,7 +62729,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__TYPE_ID = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__TYPE_ID;
+	int DISCHARGE_DIAGNOSIS_SECTION2__TYPE_ID = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -62489,7 +62738,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__TEMPLATE_ID = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__TEMPLATE_ID;
+	int DISCHARGE_DIAGNOSIS_SECTION2__TEMPLATE_ID = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -62498,7 +62747,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__ID = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__ID;
+	int DISCHARGE_DIAGNOSIS_SECTION2__ID = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -62507,7 +62756,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__CODE;
+	int DISCHARGE_DIAGNOSIS_SECTION2__CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -62516,7 +62765,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__TITLE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__TITLE;
+	int DISCHARGE_DIAGNOSIS_SECTION2__TITLE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -62525,7 +62774,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__TEXT = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__TEXT;
+	int DISCHARGE_DIAGNOSIS_SECTION2__TEXT = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -62534,7 +62783,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__CONFIDENTIALITY_CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__CONFIDENTIALITY_CODE;
+	int DISCHARGE_DIAGNOSIS_SECTION2__CONFIDENTIALITY_CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -62543,7 +62792,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__LANGUAGE_CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__LANGUAGE_CODE;
+	int DISCHARGE_DIAGNOSIS_SECTION2__LANGUAGE_CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -62552,7 +62801,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__SUBJECT = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__SUBJECT;
+	int DISCHARGE_DIAGNOSIS_SECTION2__SUBJECT = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -62561,7 +62810,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__AUTHOR = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__AUTHOR;
+	int DISCHARGE_DIAGNOSIS_SECTION2__AUTHOR = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -62570,7 +62819,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__INFORMANT = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__INFORMANT;
+	int DISCHARGE_DIAGNOSIS_SECTION2__INFORMANT = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -62579,7 +62828,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__ENTRY = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__ENTRY;
+	int DISCHARGE_DIAGNOSIS_SECTION2__ENTRY = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -62588,7 +62837,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__COMPONENT = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__COMPONENT;
+	int DISCHARGE_DIAGNOSIS_SECTION2__COMPONENT = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -62597,7 +62846,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__SECTION_ID = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__SECTION_ID;
+	int DISCHARGE_DIAGNOSIS_SECTION2__SECTION_ID = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -62606,7 +62855,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__NULL_FLAVOR = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__NULL_FLAVOR;
+	int DISCHARGE_DIAGNOSIS_SECTION2__NULL_FLAVOR = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -62615,7 +62864,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__CLASS_CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__CLASS_CODE;
+	int DISCHARGE_DIAGNOSIS_SECTION2__CLASS_CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -62624,16 +62873,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2__MOOD_CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__MOOD_CODE;
+	int DISCHARGE_DIAGNOSIS_SECTION2__MOOD_CODE = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__MOOD_CODE;
 
 	/**
-	 * The number of structural features of the '<em>Hospital Discharge Diagnosis Section2</em>' class.
+	 * The number of structural features of the '<em>Discharge Diagnosis Section2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2_FEATURE_COUNT = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_FEATURE_COUNT + 0;
+	int DISCHARGE_DIAGNOSIS_SECTION2_FEATURE_COUNT = HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -65300,175 +65549,14 @@ public interface ConsolPackage extends EPackage {
 	int COMPLICATIONS_SECTION2_FEATURE_COUNT = COMPLICATIONS_SECTION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionDiagnosisSection2Impl <em>Admission Diagnosis Section2</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionDiagnosisSection2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdmissionDiagnosisSection2()
 	 * @generated
-	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__REALM_CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__TYPE_ID = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__TEMPLATE_ID = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__ID = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Title</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__TITLE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__TITLE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__TEXT = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__CONFIDENTIALITY_CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__CONFIDENTIALITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__LANGUAGE_CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__SUBJECT = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__AUTHOR = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__INFORMANT = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__ENTRY = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__ENTRY;
-
-	/**
-	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__COMPONENT = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__COMPONENT;
-
-	/**
-	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__SECTION_ID = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__SECTION_ID;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__NULL_FLAVOR = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__CLASS_CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2__MOOD_CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__MOOD_CODE;
-
-	/**
-	 * The number of structural features of the '<em>Hospital Admission Diagnosis Section2</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2_FEATURE_COUNT = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_FEATURE_COUNT + 0;
+	int ADMISSION_DIAGNOSIS_SECTION2 = 291;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -65477,7 +65565,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__REALM_CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__REALM_CODE;
+	int ADMISSION_DIAGNOSIS_SECTION2__REALM_CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -65486,7 +65574,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TYPE_ID = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TYPE_ID;
+	int ADMISSION_DIAGNOSIS_SECTION2__TYPE_ID = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -65495,7 +65583,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEMPLATE_ID = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TEMPLATE_ID;
+	int ADMISSION_DIAGNOSIS_SECTION2__TEMPLATE_ID = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -65504,7 +65592,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ID = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__ID;
+	int ADMISSION_DIAGNOSIS_SECTION2__ID = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -65513,7 +65601,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CODE;
+	int ADMISSION_DIAGNOSIS_SECTION2__CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -65522,7 +65610,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TITLE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TITLE;
+	int ADMISSION_DIAGNOSIS_SECTION2__TITLE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -65531,7 +65619,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEXT = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TEXT;
+	int ADMISSION_DIAGNOSIS_SECTION2__TEXT = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -65540,7 +65628,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CONFIDENTIALITY_CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CONFIDENTIALITY_CODE;
+	int ADMISSION_DIAGNOSIS_SECTION2__CONFIDENTIALITY_CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -65549,7 +65637,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__LANGUAGE_CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__LANGUAGE_CODE;
+	int ADMISSION_DIAGNOSIS_SECTION2__LANGUAGE_CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -65558,7 +65646,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SUBJECT = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__SUBJECT;
+	int ADMISSION_DIAGNOSIS_SECTION2__SUBJECT = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -65567,7 +65655,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__AUTHOR = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__AUTHOR;
+	int ADMISSION_DIAGNOSIS_SECTION2__AUTHOR = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -65576,7 +65664,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__INFORMANT = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__INFORMANT;
+	int ADMISSION_DIAGNOSIS_SECTION2__INFORMANT = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -65585,7 +65673,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ENTRY = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__ENTRY;
+	int ADMISSION_DIAGNOSIS_SECTION2__ENTRY = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -65594,7 +65682,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__COMPONENT = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__COMPONENT;
+	int ADMISSION_DIAGNOSIS_SECTION2__COMPONENT = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -65603,7 +65691,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SECTION_ID = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__SECTION_ID;
+	int ADMISSION_DIAGNOSIS_SECTION2__SECTION_ID = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -65612,7 +65700,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__NULL_FLAVOR = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__NULL_FLAVOR;
+	int ADMISSION_DIAGNOSIS_SECTION2__NULL_FLAVOR = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -65621,7 +65709,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CLASS_CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CLASS_CODE;
+	int ADMISSION_DIAGNOSIS_SECTION2__CLASS_CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -65630,16 +65718,26 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__MOOD_CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MOOD_CODE;
+	int ADMISSION_DIAGNOSIS_SECTION2__MOOD_CODE = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__MOOD_CODE;
 
 	/**
-	 * The number of structural features of the '<em>Hospital Admission Medications Section Entries Optional2</em>' class.
+	 * The number of structural features of the '<em>Admission Diagnosis Section2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_FEATURE_COUNT = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT + 0;
+	int ADMISSION_DIAGNOSIS_SECTION2_FEATURE_COUNT = HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionMedicationsSectionEntriesOptional2Impl <em>Admission Medications Section Entries Optional2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionMedicationsSectionEntriesOptional2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdmissionMedicationsSectionEntriesOptional2()
+	 * @generated
+	 */
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2 = 292;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -65648,7 +65746,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__REALM_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__REALM_CODE;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__REALM_CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -65657,7 +65755,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TYPE_ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TYPE_ID;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TYPE_ID = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -65666,7 +65764,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEMPLATE_ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TEMPLATE_ID;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEMPLATE_ID = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -65675,7 +65773,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__ID;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ID = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -65684,7 +65782,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CODE;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -65693,7 +65791,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TITLE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TITLE;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TITLE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -65702,7 +65800,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEXT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TEXT;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEXT = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -65711,7 +65809,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CONFIDENTIALITY_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CONFIDENTIALITY_CODE;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CONFIDENTIALITY_CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -65720,7 +65818,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__LANGUAGE_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__LANGUAGE_CODE;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__LANGUAGE_CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -65729,7 +65827,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SUBJECT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__SUBJECT;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SUBJECT = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -65738,7 +65836,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__AUTHOR = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__AUTHOR;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__AUTHOR = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -65747,7 +65845,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__INFORMANT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__INFORMANT;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__INFORMANT = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -65756,7 +65854,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ENTRY = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__ENTRY;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ENTRY = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -65765,7 +65863,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__COMPONENT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__COMPONENT;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__COMPONENT = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -65774,7 +65872,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SECTION_ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__SECTION_ID;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SECTION_ID = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -65783,7 +65881,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__NULL_FLAVOR = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__NULL_FLAVOR;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__NULL_FLAVOR = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -65792,7 +65890,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CLASS_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CLASS_CODE;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CLASS_CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -65801,16 +65899,197 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__MOOD_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MOOD_CODE;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__MOOD_CODE = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MOOD_CODE;
 
 	/**
-	 * The number of structural features of the '<em>Hospital Discharge Medications Section Entries Optional2</em>' class.
+	 * The number of structural features of the '<em>Admission Medications Section Entries Optional2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_FEATURE_COUNT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT + 0;
+	int ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_FEATURE_COUNT = HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeMedicationsSectionEntriesOptional2Impl <em>Discharge Medications Section Entries Optional2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.DischargeMedicationsSectionEntriesOptional2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeMedicationsSectionEntriesOptional2()
+	 * @generated
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2 = 293;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__REALM_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TYPE_ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEMPLATE_ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TITLE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEXT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CONFIDENTIALITY_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CONFIDENTIALITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__LANGUAGE_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SUBJECT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__AUTHOR = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__INFORMANT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ENTRY = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__ENTRY;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__COMPONENT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SECTION_ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__SECTION_ID;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__NULL_FLAVOR = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CLASS_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__MOOD_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Discharge Medications Section Entries Optional2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_FEATURE_COUNT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -67010,13 +67289,23 @@ public interface ConsolPackage extends EPackage {
 	int PROCEDURE_INDICATIONS_SECTION2_FEATURE_COUNT = PROCEDURE_INDICATIONS_SECTION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeMedicationsSection2Impl <em>Discharge Medications Section2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.DischargeMedicationsSection2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeMedicationsSection2()
+	 * @generated
+	 */
+	int DISCHARGE_MEDICATIONS_SECTION2 = 301;
+
+	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__REALM_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__REALM_CODE;
+	int DISCHARGE_MEDICATIONS_SECTION2__REALM_CODE = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -67025,7 +67314,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__TYPE_ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TYPE_ID;
+	int DISCHARGE_MEDICATIONS_SECTION2__TYPE_ID = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -67034,7 +67323,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__TEMPLATE_ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEMPLATE_ID;
+	int DISCHARGE_MEDICATIONS_SECTION2__TEMPLATE_ID = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -67043,7 +67332,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ID;
+	int DISCHARGE_MEDICATIONS_SECTION2__ID = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -67052,7 +67341,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CODE;
+	int DISCHARGE_MEDICATIONS_SECTION2__CODE = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -67061,7 +67350,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__TITLE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TITLE;
+	int DISCHARGE_MEDICATIONS_SECTION2__TITLE = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -67070,7 +67359,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__TEXT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEXT;
+	int DISCHARGE_MEDICATIONS_SECTION2__TEXT = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -67079,7 +67368,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__CONFIDENTIALITY_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CONFIDENTIALITY_CODE;
+	int DISCHARGE_MEDICATIONS_SECTION2__CONFIDENTIALITY_CODE = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -67088,7 +67377,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__LANGUAGE_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__LANGUAGE_CODE;
+	int DISCHARGE_MEDICATIONS_SECTION2__LANGUAGE_CODE = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -67097,7 +67386,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__SUBJECT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SUBJECT;
+	int DISCHARGE_MEDICATIONS_SECTION2__SUBJECT = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -67106,7 +67395,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__AUTHOR = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__AUTHOR;
+	int DISCHARGE_MEDICATIONS_SECTION2__AUTHOR = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -67115,7 +67404,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__INFORMANT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__INFORMANT;
+	int DISCHARGE_MEDICATIONS_SECTION2__INFORMANT = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -67124,7 +67413,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__ENTRY = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ENTRY;
+	int DISCHARGE_MEDICATIONS_SECTION2__ENTRY = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -67133,7 +67422,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__COMPONENT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__COMPONENT;
+	int DISCHARGE_MEDICATIONS_SECTION2__COMPONENT = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -67142,7 +67431,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__SECTION_ID = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SECTION_ID;
+	int DISCHARGE_MEDICATIONS_SECTION2__SECTION_ID = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -67151,7 +67440,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__NULL_FLAVOR = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__NULL_FLAVOR;
+	int DISCHARGE_MEDICATIONS_SECTION2__NULL_FLAVOR = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -67160,7 +67449,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__CLASS_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CLASS_CODE;
+	int DISCHARGE_MEDICATIONS_SECTION2__CLASS_CODE = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -67169,16 +67458,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2__MOOD_CODE = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__MOOD_CODE;
+	int DISCHARGE_MEDICATIONS_SECTION2__MOOD_CODE = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__MOOD_CODE;
 
 	/**
-	 * The number of structural features of the '<em>Hospital Discharge Medications Section2</em>' class.
+	 * The number of structural features of the '<em>Discharge Medications Section2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2_FEATURE_COUNT = HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_FEATURE_COUNT + 0;
+	int DISCHARGE_MEDICATIONS_SECTION2_FEATURE_COUNT = DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ConsultationNote2Impl <em>Consultation Note2</em>}' class.
@@ -67188,7 +67477,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getConsultationNote2()
 	 * @generated
 	 */
-	int CONSULTATION_NOTE2 = 301;
+	int CONSULTATION_NOTE2 = 302;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -67477,7 +67766,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getContinuityOfCareDocument2()
 	 * @generated
 	 */
-	int CONTINUITY_OF_CARE_DOCUMENT2 = 302;
+	int CONTINUITY_OF_CARE_DOCUMENT2 = 303;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -67766,7 +68055,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDiagnosticImagingReport2()
 	 * @generated
 	 */
-	int DIAGNOSTIC_IMAGING_REPORT2 = 303;
+	int DIAGNOSTIC_IMAGING_REPORT2 = 304;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -68055,7 +68344,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeSummary2()
 	 * @generated
 	 */
-	int DISCHARGE_SUMMARY2 = 304;
+	int DISCHARGE_SUMMARY2 = 305;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -68344,7 +68633,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHistoryAndPhysicalNote2()
 	 * @generated
 	 */
-	int HISTORY_AND_PHYSICAL_NOTE2 = 305;
+	int HISTORY_AND_PHYSICAL_NOTE2 = 306;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -68633,7 +68922,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getOperativeNote2()
 	 * @generated
 	 */
-	int OPERATIVE_NOTE2 = 306;
+	int OPERATIVE_NOTE2 = 307;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -68922,7 +69211,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureNote2()
 	 * @generated
 	 */
-	int PROCEDURE_NOTE2 = 307;
+	int PROCEDURE_NOTE2 = 308;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -69211,7 +69500,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProgressNote2()
 	 * @generated
 	 */
-	int PROGRESS_NOTE2 = 308;
+	int PROGRESS_NOTE2 = 309;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -69500,7 +69789,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredDocument2()
 	 * @generated
 	 */
-	int UNSTRUCTURED_DOCUMENT2 = 309;
+	int UNSTRUCTURED_DOCUMENT2 = 310;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -69789,7 +70078,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreconditionForSubstanceAdministration2()
 	 * @generated
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2 = 310;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2 = 311;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -71652,6 +71941,16 @@ public interface ConsolPackage extends EPackage {
 	EClass getWoundCharacteristics();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2 <em>Number Of Pressure Ulcers Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Number Of Pressure Ulcers Observation2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2
+	 * @generated
+	 */
+	EClass getNumberOfPressureUlcersObservation2();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.WoundMeasurementObservation <em>Wound Measurement Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72322,6 +72621,36 @@ public interface ConsolPackage extends EPackage {
 	EClass getComplicationsSection2();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2 <em>Admission Diagnosis Section2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Admission Diagnosis Section2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2
+	 * @generated
+	 */
+	EClass getAdmissionDiagnosisSection2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2 <em>Admission Medications Section Entries Optional2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Admission Medications Section Entries Optional2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2
+	 * @generated
+	 */
+	EClass getAdmissionMedicationsSectionEntriesOptional2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSectionEntriesOptional2 <em>Discharge Medications Section Entries Optional2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Discharge Medications Section Entries Optional2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSectionEntriesOptional2
+	 * @generated
+	 */
+	EClass getDischargeMedicationsSectionEntriesOptional2();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional2 <em>Encounters Section Entries Optional2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72330,6 +72659,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getEncountersSectionEntriesOptional2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2 <em>Discharge Diagnosis Section2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Discharge Diagnosis Section2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2
+	 * @generated
+	 */
+	EClass getDischargeDiagnosisSection2();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2 <em>Functional Status Section2</em>}'.
@@ -72350,46 +72689,6 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getHistoryOfPastIllnessSection2();
-
-	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection2 <em>Hospital Admission Diagnosis Section2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Hospital Admission Diagnosis Section2</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection2
-	 * @generated
-	 */
-	EClass getHospitalAdmissionDiagnosisSection2();
-
-	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional2 <em>Hospital Admission Medications Section Entries Optional2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Hospital Admission Medications Section Entries Optional2</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional2
-	 * @generated
-	 */
-	EClass getHospitalAdmissionMedicationsSectionEntriesOptional2();
-
-	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection2 <em>Hospital Discharge Diagnosis Section2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Hospital Discharge Diagnosis Section2</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection2
-	 * @generated
-	 */
-	EClass getHospitalDischargeDiagnosisSection2();
-
-	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSectionEntriesOptional2 <em>Hospital Discharge Medications Section Entries Optional2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Hospital Discharge Medications Section Entries Optional2</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSectionEntriesOptional2
-	 * @generated
-	 */
-	EClass getHospitalDischargeMedicationsSectionEntriesOptional2();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2 <em>Immunizations Section Entries Optional2</em>}'.
@@ -72522,6 +72821,16 @@ public interface ConsolPackage extends EPackage {
 	EClass getProcedureIndicationsSection2();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2 <em>Discharge Medications Section2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Discharge Medications Section2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2
+	 * @generated
+	 */
+	EClass getDischargeMedicationsSection2();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2 <em>Procedures Section Entries Optional2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72640,16 +72949,6 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getEncountersSection2();
-
-	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection2 <em>Hospital Discharge Medications Section2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Hospital Discharge Medications Section2</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection2
-	 * @generated
-	 */
-	EClass getHospitalDischargeMedicationsSection2();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2 <em>Immunizations Section2</em>}'.
@@ -74784,6 +75083,16 @@ public interface ConsolPackage extends EPackage {
 		EClass WOUND_CHARACTERISTICS = eINSTANCE.getWoundCharacteristics();
 
 		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.NumberOfPressureUlcersObservation2Impl <em>Number Of Pressure Ulcers Observation2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.NumberOfPressureUlcersObservation2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getNumberOfPressureUlcersObservation2()
+		 * @generated
+		 */
+		EClass NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2 = eINSTANCE.getNumberOfPressureUlcersObservation2();
+
+		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.WoundMeasurementObservationImpl <em>Wound Measurement Observation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -75454,6 +75763,36 @@ public interface ConsolPackage extends EPackage {
 		EClass COMPLICATIONS_SECTION2 = eINSTANCE.getComplicationsSection2();
 
 		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionDiagnosisSection2Impl <em>Admission Diagnosis Section2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionDiagnosisSection2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdmissionDiagnosisSection2()
+		 * @generated
+		 */
+		EClass ADMISSION_DIAGNOSIS_SECTION2 = eINSTANCE.getAdmissionDiagnosisSection2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionMedicationsSectionEntriesOptional2Impl <em>Admission Medications Section Entries Optional2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionMedicationsSectionEntriesOptional2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdmissionMedicationsSectionEntriesOptional2()
+		 * @generated
+		 */
+		EClass ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2 = eINSTANCE.getAdmissionMedicationsSectionEntriesOptional2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeMedicationsSectionEntriesOptional2Impl <em>Discharge Medications Section Entries Optional2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.DischargeMedicationsSectionEntriesOptional2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeMedicationsSectionEntriesOptional2()
+		 * @generated
+		 */
+		EClass DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2 = eINSTANCE.getDischargeMedicationsSectionEntriesOptional2();
+
+		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.EncountersSectionEntriesOptional2Impl <em>Encounters Section Entries Optional2</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -75462,6 +75801,16 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2 = eINSTANCE.getEncountersSectionEntriesOptional2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeDiagnosisSection2Impl <em>Discharge Diagnosis Section2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.DischargeDiagnosisSection2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeDiagnosisSection2()
+		 * @generated
+		 */
+		EClass DISCHARGE_DIAGNOSIS_SECTION2 = eINSTANCE.getDischargeDiagnosisSection2();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.FunctionalStatusSection2Impl <em>Functional Status Section2</em>}' class.
@@ -75482,46 +75831,6 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass HISTORY_OF_PAST_ILLNESS_SECTION2 = eINSTANCE.getHistoryOfPastIllnessSection2();
-
-		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionDiagnosisSection2Impl <em>Hospital Admission Diagnosis Section2</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionDiagnosisSection2Impl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalAdmissionDiagnosisSection2()
-		 * @generated
-		 */
-		EClass HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2 = eINSTANCE.getHospitalAdmissionDiagnosisSection2();
-
-		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionMedicationsSectionEntriesOptional2Impl <em>Hospital Admission Medications Section Entries Optional2</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionMedicationsSectionEntriesOptional2Impl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalAdmissionMedicationsSectionEntriesOptional2()
-		 * @generated
-		 */
-		EClass HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2 = eINSTANCE.getHospitalAdmissionMedicationsSectionEntriesOptional2();
-
-		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeDiagnosisSection2Impl <em>Hospital Discharge Diagnosis Section2</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeDiagnosisSection2Impl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeDiagnosisSection2()
-		 * @generated
-		 */
-		EClass HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2 = eINSTANCE.getHospitalDischargeDiagnosisSection2();
-
-		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeMedicationsSectionEntriesOptional2Impl <em>Hospital Discharge Medications Section Entries Optional2</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeMedicationsSectionEntriesOptional2Impl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeMedicationsSectionEntriesOptional2()
-		 * @generated
-		 */
-		EClass HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2 = eINSTANCE.getHospitalDischargeMedicationsSectionEntriesOptional2();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ImmunizationsSectionEntriesOptional2Impl <em>Immunizations Section Entries Optional2</em>}' class.
@@ -75654,6 +75963,16 @@ public interface ConsolPackage extends EPackage {
 		EClass PROCEDURE_INDICATIONS_SECTION2 = eINSTANCE.getProcedureIndicationsSection2();
 
 		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeMedicationsSection2Impl <em>Discharge Medications Section2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.DischargeMedicationsSection2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeMedicationsSection2()
+		 * @generated
+		 */
+		EClass DISCHARGE_MEDICATIONS_SECTION2 = eINSTANCE.getDischargeMedicationsSection2();
+
+		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProceduresSectionEntriesOptional2Impl <em>Procedures Section Entries Optional2</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -75772,16 +76091,6 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ENCOUNTERS_SECTION2 = eINSTANCE.getEncountersSection2();
-
-		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeMedicationsSection2Impl <em>Hospital Discharge Medications Section2</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeMedicationsSection2Impl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeMedicationsSection2()
-		 * @generated
-		 */
-		EClass HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2 = eINSTANCE.getHospitalDischargeMedicationsSection2();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ImmunizationsSection2Impl <em>Immunizations Section2</em>}' class.

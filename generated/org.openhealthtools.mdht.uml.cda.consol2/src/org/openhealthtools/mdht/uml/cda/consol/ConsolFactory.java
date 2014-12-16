@@ -1623,6 +1623,15 @@ public interface ConsolFactory extends EFactory {
 	WoundCharacteristics createWoundCharacteristics();
 
 	/**
+	 * Returns a new object of class '<em>Number Of Pressure Ulcers Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Number Of Pressure Ulcers Observation2</em>'.
+	 * @generated
+	 */
+	NumberOfPressureUlcersObservation2 createNumberOfPressureUlcersObservation2();
+
+	/**
 	 * Returns a new object of class '<em>Wound Measurement Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2226,6 +2235,33 @@ public interface ConsolFactory extends EFactory {
 	ComplicationsSection2 createComplicationsSection2();
 
 	/**
+	 * Returns a new object of class '<em>Admission Diagnosis Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Admission Diagnosis Section2</em>'.
+	 * @generated
+	 */
+	AdmissionDiagnosisSection2 createAdmissionDiagnosisSection2();
+
+	/**
+	 * Returns a new object of class '<em>Admission Medications Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Admission Medications Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	AdmissionMedicationsSectionEntriesOptional2 createAdmissionMedicationsSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Discharge Medications Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Discharge Medications Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	DischargeMedicationsSectionEntriesOptional2 createDischargeMedicationsSectionEntriesOptional2();
+
+	/**
 	 * Returns a new object of class '<em>Encounters Section Entries Optional2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2233,6 +2269,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	EncountersSectionEntriesOptional2 createEncountersSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Discharge Diagnosis Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Discharge Diagnosis Section2</em>'.
+	 * @generated
+	 */
+	DischargeDiagnosisSection2 createDischargeDiagnosisSection2();
 
 	/**
 	 * Returns a new object of class '<em>Functional Status Section2</em>'.
@@ -2251,42 +2296,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	HistoryOfPastIllnessSection2 createHistoryOfPastIllnessSection2();
-
-	/**
-	 * Returns a new object of class '<em>Hospital Admission Diagnosis Section2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Hospital Admission Diagnosis Section2</em>'.
-	 * @generated
-	 */
-	HospitalAdmissionDiagnosisSection2 createHospitalAdmissionDiagnosisSection2();
-
-	/**
-	 * Returns a new object of class '<em>Hospital Admission Medications Section Entries Optional2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Hospital Admission Medications Section Entries Optional2</em>'.
-	 * @generated
-	 */
-	HospitalAdmissionMedicationsSectionEntriesOptional2 createHospitalAdmissionMedicationsSectionEntriesOptional2();
-
-	/**
-	 * Returns a new object of class '<em>Hospital Discharge Diagnosis Section2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Hospital Discharge Diagnosis Section2</em>'.
-	 * @generated
-	 */
-	HospitalDischargeDiagnosisSection2 createHospitalDischargeDiagnosisSection2();
-
-	/**
-	 * Returns a new object of class '<em>Hospital Discharge Medications Section Entries Optional2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Hospital Discharge Medications Section Entries Optional2</em>'.
-	 * @generated
-	 */
-	HospitalDischargeMedicationsSectionEntriesOptional2 createHospitalDischargeMedicationsSectionEntriesOptional2();
 
 	/**
 	 * Returns a new object of class '<em>Immunizations Section Entries Optional2</em>'.
@@ -2406,6 +2415,15 @@ public interface ConsolFactory extends EFactory {
 	ProcedureIndicationsSection2 createProcedureIndicationsSection2();
 
 	/**
+	 * Returns a new object of class '<em>Discharge Medications Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Discharge Medications Section2</em>'.
+	 * @generated
+	 */
+	DischargeMedicationsSection2 createDischargeMedicationsSection2();
+
+	/**
 	 * Returns a new object of class '<em>Procedures Section Entries Optional2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2512,15 +2530,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	EncountersSection2 createEncountersSection2();
-
-	/**
-	 * Returns a new object of class '<em>Hospital Discharge Medications Section2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Hospital Discharge Medications Section2</em>'.
-	 * @generated
-	 */
-	HospitalDischargeMedicationsSection2 createHospitalDischargeMedicationsSection2();
 
 	/**
 	 * Returns a new object of class '<em>Immunizations Section2</em>'.

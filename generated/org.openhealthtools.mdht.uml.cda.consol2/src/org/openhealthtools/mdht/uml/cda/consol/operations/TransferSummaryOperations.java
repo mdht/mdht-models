@@ -31,13 +31,13 @@ import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
+import org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSection2;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllnessSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection2;
@@ -1078,7 +1078,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_HOSPITAL_DISCHARGE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection2))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_HOSPITAL_DISCHARGE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryHospitalDischargeDiagnosis2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Hospital Discharge Diagnosis2</em>}' invariant operation.
@@ -4089,7 +4089,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HOSPITAL_DISCHARGE_DIAGNOSIS2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection2))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosisSection2)";
+	protected static final String GET_HOSPITAL_DISCHARGE_DIAGNOSIS2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2))->asSequence()->any(true).oclAsType(consol::DischargeDiagnosisSection2)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHospitalDischargeDiagnosis2(TransferSummary) <em>Get Hospital Discharge Diagnosis2</em>}' query operation.
@@ -4107,7 +4107,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 
-	public static HospitalDischargeDiagnosisSection2 getHospitalDischargeDiagnosis2(TransferSummary transferSummary) {
+	public static DischargeDiagnosisSection2 getHospitalDischargeDiagnosis2(TransferSummary transferSummary) {
 		if (GET_HOSPITAL_DISCHARGE_DIAGNOSIS2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -4120,7 +4120,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HOSPITAL_DISCHARGE_DIAGNOSIS2__EOCL_QRY);
-		return (HospitalDischargeDiagnosisSection2) query.evaluate(transferSummary);
+		return (DischargeDiagnosisSection2) query.evaluate(transferSummary);
 	}
 
 	/**

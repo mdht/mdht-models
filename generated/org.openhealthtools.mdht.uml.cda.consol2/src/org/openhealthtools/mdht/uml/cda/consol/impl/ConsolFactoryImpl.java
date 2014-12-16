@@ -468,6 +468,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createWoundMeasurementObservation();
 			case ConsolPackage.WOUND_CHARACTERISTICS:
 				return createWoundCharacteristics();
+			case ConsolPackage.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2:
+				return createNumberOfPressureUlcersObservation2();
 			case ConsolPackage.EXTERNAL_DOCUMENT_REFERENCE:
 				return createExternalDocumentReference();
 			case ConsolPackage.ALLERGY_OBSERVATION2:
@@ -608,8 +610,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncountersSection2();
 			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2:
 				return createEncountersSectionEntriesOptional2();
-			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2:
-				return createHospitalDischargeDiagnosisSection2();
+			case ConsolPackage.DISCHARGE_DIAGNOSIS_SECTION2:
+				return createDischargeDiagnosisSection2();
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS2:
 				return createHospitalDischargeDiagnosis2();
 			case ConsolPackage.PAYERS_SECTION2:
@@ -640,12 +642,12 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAnesthesiaSection2();
 			case ConsolPackage.COMPLICATIONS_SECTION2:
 				return createComplicationsSection2();
-			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2:
-				return createHospitalAdmissionDiagnosisSection2();
-			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
-				return createHospitalAdmissionMedicationsSectionEntriesOptional2();
-			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
-				return createHospitalDischargeMedicationsSectionEntriesOptional2();
+			case ConsolPackage.ADMISSION_DIAGNOSIS_SECTION2:
+				return createAdmissionDiagnosisSection2();
+			case ConsolPackage.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
+				return createAdmissionMedicationsSectionEntriesOptional2();
+			case ConsolPackage.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
+				return createDischargeMedicationsSectionEntriesOptional2();
 			case ConsolPackage.INSTRUCTIONS_SECTION2:
 				return createInstructionsSection2();
 			case ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION2:
@@ -660,8 +662,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedureFindingsSection2();
 			case ConsolPackage.PROCEDURE_INDICATIONS_SECTION2:
 				return createProcedureIndicationsSection2();
-			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2:
-				return createHospitalDischargeMedicationsSection2();
+			case ConsolPackage.DISCHARGE_MEDICATIONS_SECTION2:
+				return createDischargeMedicationsSection2();
 			case ConsolPackage.CONSULTATION_NOTE2:
 				return createConsultationNote2();
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT2:
@@ -2639,6 +2641,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public NumberOfPressureUlcersObservation2 createNumberOfPressureUlcersObservation2() {
+		NumberOfPressureUlcersObservation2Impl numberOfPressureUlcersObservation2 = new NumberOfPressureUlcersObservation2Impl();
+		return numberOfPressureUlcersObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public WoundMeasurementObservation createWoundMeasurementObservation() {
 		WoundMeasurementObservationImpl woundMeasurementObservation = new WoundMeasurementObservationImpl();
@@ -3376,10 +3388,50 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public AdmissionDiagnosisSection2 createAdmissionDiagnosisSection2() {
+		AdmissionDiagnosisSection2Impl admissionDiagnosisSection2 = new AdmissionDiagnosisSection2Impl();
+		return admissionDiagnosisSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdmissionMedicationsSectionEntriesOptional2 createAdmissionMedicationsSectionEntriesOptional2() {
+		AdmissionMedicationsSectionEntriesOptional2Impl admissionMedicationsSectionEntriesOptional2 = new AdmissionMedicationsSectionEntriesOptional2Impl();
+		return admissionMedicationsSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DischargeMedicationsSectionEntriesOptional2 createDischargeMedicationsSectionEntriesOptional2() {
+		DischargeMedicationsSectionEntriesOptional2Impl dischargeMedicationsSectionEntriesOptional2 = new DischargeMedicationsSectionEntriesOptional2Impl();
+		return dischargeMedicationsSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EncountersSectionEntriesOptional2 createEncountersSectionEntriesOptional2() {
 		EncountersSectionEntriesOptional2Impl encountersSectionEntriesOptional2 = new EncountersSectionEntriesOptional2Impl();
 		return encountersSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DischargeDiagnosisSection2 createDischargeDiagnosisSection2() {
+		DischargeDiagnosisSection2Impl dischargeDiagnosisSection2 = new DischargeDiagnosisSection2Impl();
+		return dischargeDiagnosisSection2;
 	}
 
 	/**
@@ -3402,50 +3454,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public HistoryOfPastIllnessSection2 createHistoryOfPastIllnessSection2() {
 		HistoryOfPastIllnessSection2Impl historyOfPastIllnessSection2 = new HistoryOfPastIllnessSection2Impl();
 		return historyOfPastIllnessSection2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HospitalAdmissionDiagnosisSection2 createHospitalAdmissionDiagnosisSection2() {
-		HospitalAdmissionDiagnosisSection2Impl hospitalAdmissionDiagnosisSection2 = new HospitalAdmissionDiagnosisSection2Impl();
-		return hospitalAdmissionDiagnosisSection2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HospitalAdmissionMedicationsSectionEntriesOptional2 createHospitalAdmissionMedicationsSectionEntriesOptional2() {
-		HospitalAdmissionMedicationsSectionEntriesOptional2Impl hospitalAdmissionMedicationsSectionEntriesOptional2 = new HospitalAdmissionMedicationsSectionEntriesOptional2Impl();
-		return hospitalAdmissionMedicationsSectionEntriesOptional2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HospitalDischargeDiagnosisSection2 createHospitalDischargeDiagnosisSection2() {
-		HospitalDischargeDiagnosisSection2Impl hospitalDischargeDiagnosisSection2 = new HospitalDischargeDiagnosisSection2Impl();
-		return hospitalDischargeDiagnosisSection2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HospitalDischargeMedicationsSectionEntriesOptional2 createHospitalDischargeMedicationsSectionEntriesOptional2() {
-		HospitalDischargeMedicationsSectionEntriesOptional2Impl hospitalDischargeMedicationsSectionEntriesOptional2 = new HospitalDischargeMedicationsSectionEntriesOptional2Impl();
-		return hospitalDischargeMedicationsSectionEntriesOptional2;
 	}
 
 	/**
@@ -3596,6 +3604,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public DischargeMedicationsSection2 createDischargeMedicationsSection2() {
+		DischargeMedicationsSection2Impl dischargeMedicationsSection2 = new DischargeMedicationsSection2Impl();
+		return dischargeMedicationsSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public ProceduresSectionEntriesOptional2 createProceduresSectionEntriesOptional2() {
 		ProceduresSectionEntriesOptional2Impl proceduresSectionEntriesOptional2 = new ProceduresSectionEntriesOptional2Impl();
@@ -3721,17 +3739,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public EncountersSection2 createEncountersSection2() {
 		EncountersSection2Impl encountersSection2 = new EncountersSection2Impl();
 		return encountersSection2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HospitalDischargeMedicationsSection2 createHospitalDischargeMedicationsSection2() {
-		HospitalDischargeMedicationsSection2Impl hospitalDischargeMedicationsSection2 = new HospitalDischargeMedicationsSection2Impl();
-		return hospitalDischargeMedicationsSection2;
 	}
 
 	/**
