@@ -848,7 +848,7 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <ruleId>CONF:7667</ruleId>
     <ruleId>CONF:15536</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_jfuGYPytEeOmn53IDV99zw" clientDependency="_KptZoPyuEeOmn53IDV99zw" name="HospitalDischargeDiagnosisSection2">
+  <uml:Class xmi:id="_jfuGYPytEeOmn53IDV99zw" clientDependency="_KptZoPyuEeOmn53IDV99zw" name="DischargeDiagnosisSection2">
     <ownedComment xmi:id="_CsRpAPyuEeOmn53IDV99zw">
       <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. This section includes an optional entry to record patient conditions.</body>
     </ownedComment>
@@ -882,7 +882,7 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <ruleId>CONF:7983</ruleId>
     <ruleId>CONF:15489</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_HlfBYPyzEeOfAK77IvEBUw" clientDependency="_aFs0QPyzEeOfAK77IvEBUw" name="HospitalDischargeMedicationsSectionEntriesOptional2">
+  <uml:Class xmi:id="_HlfBYPyzEeOfAK77IvEBUw" clientDependency="_aFs0QPyzEeOfAK77IvEBUw" name="DischargeMedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_PlPGMPyzEeOfAK77IvEBUw">
       <body>This section contains the medications the patient is intended to take or stop after discharge. Current, active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list.</body>
     </ownedComment>
@@ -905,7 +905,7 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <ruleId>CONF:7820</ruleId>
     <ruleId>CONF:15490</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_Jt0moAI0EeSRkrs1G7P_XQ" clientDependency="_bZ0uUAI0EeSRkrs1G7P_XQ" name="HospitalDischargeMedicationsSection2">
+  <uml:Class xmi:id="_Jt0moAI0EeSRkrs1G7P_XQ" clientDependency="_bZ0uUAI0EeSRkrs1G7P_XQ" name="DischargeMedicationsSection2">
     <ownedComment xmi:id="_RgJTcAI0EeSRkrs1G7P_XQ">
       <body>This section defines the medications that the patient is intended to take (or stop) after discharge. At a minimum, the currently active medications should be listed, with an entire medication history as an option. &#xD;
 It may also include a patient's prescription history and indicate the source of the medication list, (e.g. a pharmacy system, patient).</body>
