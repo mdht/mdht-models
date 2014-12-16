@@ -767,7 +767,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(TransferSummary target) {
 				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createHospitalDischargeDiagnosisSection2().init());
+				target.addSection(ConsolFactory.eINSTANCE.createDischargeDiagnosisSection2().init());
 			}
 
 			@Override

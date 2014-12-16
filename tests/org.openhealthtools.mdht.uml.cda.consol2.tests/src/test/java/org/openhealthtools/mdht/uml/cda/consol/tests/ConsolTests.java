@@ -121,9 +121,9 @@ import org.junit.runners.Suite;
 		AllergiesSectionEntriesOptional2Test.class, AnesthesiaSection2Test.class, AssessmentAndPlanSection2Test.class,
 		ComplicationsSection2Test.class, EncountersSection2Test.class, EncountersSectionEntriesOptional2Test.class,
 		FunctionalStatusSection2Test.class, HistoryOfPastIllnessSection2Test.class,
-		HospitalAdmissionDiagnosisSection2Test.class, HospitalAdmissionMedicationsSectionEntriesOptional2Test.class,
-		HospitalDischargeDiagnosisSection2Test.class, HospitalDischargeMedicationsSection2Test.class,
-		HospitalDischargeMedicationsSectionEntriesOptional2Test.class, ImmunizationsSection2Test.class,
+		AdmissionDiagnosisSection2Test.class, AdmissionMedicationsSectionEntriesOptional2Test.class,
+		DischargeDiagnosisSection2Test.class, DischargeMedicationsSection2Test.class,
+		DischargeMedicationsSectionEntriesOptional2Test.class, ImmunizationsSection2Test.class,
 		ImmunizationsSectionEntriesOptional2Test.class, InstructionsSection2Test.class,
 		InterventionsSection2Test.class, MedicalEquipmentSection2Test.class, MedicationsAdministeredSection2Test.class,
 		MedicationsSection2Test.class, MedicationsSectionEntriesOptional2Test.class, PayersSection2Test.class,
@@ -136,7 +136,7 @@ import org.junit.runners.Suite;
 		VitalSignsSectionEntriesOptional2Test.class, ConsultationNote2Test.class, ContinuityOfCareDocument2Test.class,
 		DiagnosticImagingReport2Test.class, DischargeSummary2Test.class, HistoryAndPhysicalNote2Test.class,
 		OperativeNote2Test.class, ProcedureNote2Test.class, ProgressNote2Test.class, UnstructuredDocument2Test.class,
-		PreconditionForSubstanceAdministration2Test.class })
+		PreconditionForSubstanceAdministration2Test.class, NumberOfPressureUlcersObservation2Test.class })
 public class ConsolTests {
 
 	/**
