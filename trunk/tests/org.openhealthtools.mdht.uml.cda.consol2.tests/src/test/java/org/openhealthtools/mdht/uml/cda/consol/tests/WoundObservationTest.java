@@ -50,6 +50,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationWoundCharacteristics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Wound Characteristics</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationHighestPressureUlcerStage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Highest Pressure Ulcer Stage</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationNumberOfPressureUlcersObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Number Of Pressure Ulcers Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationCDCRCDCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation CDCRCD Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationCDCRName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation CDCR Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationCDCRNameP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation CDCR Name P</em>}</li>
@@ -58,6 +59,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#getWoundMeasurementObservations() <em>Get Wound Measurement Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#getWoundCharacteristicss() <em>Get Wound Characteristicss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#getHighestPressureUlcerStage() <em>Get Highest Pressure Ulcer Stage</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#getNumberOfPressureUlcersObservation2s() <em>Get Number Of Pressure Ulcers Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
  * </ul>
  * </p>
@@ -503,6 +505,43 @@ public class WoundObservationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateWoundObservationNumberOfPressureUlcersObservation2() {
+		OperationsTestCase<WoundObservation> validateWoundObservationNumberOfPressureUlcersObservation2TestCase = new OperationsTestCase<WoundObservation>(
+			"validateWoundObservationNumberOfPressureUlcersObservation2",
+			operationsForOCL.getOCLValue("VALIDATE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(WoundObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(WoundObservation target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
+				er.setObservation(ConsolFactory.eINSTANCE.createNumberOfPressureUlcersObservation2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return WoundObservationOperations.validateWoundObservationNumberOfPressureUlcersObservation2(
+					(WoundObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateWoundObservationNumberOfPressureUlcersObservation2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateWoundObservationCDCRCDCode() {
 		OperationsTestCase<WoundObservation> validateWoundObservationCDCRCDCodeTestCase = new OperationsTestCase<WoundObservation>(
 			"validateWoundObservationCDCRCDCode",
@@ -707,6 +746,18 @@ public class WoundObservationTest extends CDAValidationTest {
 
 		WoundObservation target = objectFactory.create();
 		target.getHighestPressureUlcerStage();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetNumberOfPressureUlcersObservation2s() {
+
+		WoundObservation target = objectFactory.create();
+		target.getNumberOfPressureUlcersObservation2s();
 
 	}
 
