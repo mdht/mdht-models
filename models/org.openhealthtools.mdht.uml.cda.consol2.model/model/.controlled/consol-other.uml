@@ -3116,7 +3116,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
     <ruleId>CONF:8792</ruleId>
     <ruleId>CONF:15476</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_ctJgAPylEeOc0tW1-DpN-Q" clientDependency="_zXi0UPylEeOc0tW1-DpN-Q" name="HospitalAdmissionDiagnosisSection2">
+  <uml:Class xmi:id="_ctJgAPylEeOc0tW1-DpN-Q" clientDependency="_zXi0UPylEeOc0tW1-DpN-Q" name="AdmissionDiagnosisSection2">
     <ownedComment xmi:id="_mqyN0PylEeOc0tW1-DpN-Q">
       <body>This section contains a narrative description of the problems or diagnoses identified by the clinician at the time of the patient's admission. This section may contain coded entries representing the admitting diagnoses.</body>
     </ownedComment>

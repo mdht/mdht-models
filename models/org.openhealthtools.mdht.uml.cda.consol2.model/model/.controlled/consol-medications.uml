@@ -2164,7 +2164,7 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
     <ruleId>CONF:7474</ruleId>
     <ruleId>CONF:15606</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_ZLY3MPyqEeOlg_Cnc5bODw" clientDependency="_0HqQYPyqEeOlg_Cnc5bODw" name="HospitalAdmissionMedicationsSectionEntriesOptional2">
+  <uml:Class xmi:id="_ZLY3MPyqEeOlg_Cnc5bODw" clientDependency="_0HqQYPyqEeOlg_Cnc5bODw" name="AdmissionMedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_hnpR0PyqEeOlg_Cnc5bODw">
       <body>The section contains the medications administered prior to admission to the facility. The currently active medications must also be listed.</body>
     </ownedComment>
