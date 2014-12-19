@@ -331,12 +331,16 @@
   <CDA:CodeSystemConstraint xmi:id="_2IYsYRSVEeGGzu7fmW9pXw" code="10157-6" displayName="Family History" base_Property="_2IYsYBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15470</ruleId>
+    <ruleId>R2.0=CONF:1098-15470</ruleId>
+    <ruleId>R2.0=CONF:1098-32481</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2IZ6gRSVEeGGzu7fmW9pXw" base_Property="_2IZ6gBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7934</ruleId>
+    <ruleId>R2.0=CONF:1098-7934</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2IahkxSVEeGGzu7fmW9pXw" base_Property="_2IahkBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7935</ruleId>
+    <ruleId>R2.0=CONF:1098-7935</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_2IYFUxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2IYFURSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7955</ruleId>
@@ -426,6 +430,7 @@
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_CXj0UOMxEeGfv4R-kzpM0g" base_Property="_2IYsYBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:15469</ruleId>
+    <ruleId>R2.0=CONF:1098-15469</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_W_-YIGRSEeOD5bEp3nNX5w" base_Property="_8y9tUCHjEeGFLIX-2_sWzA">
     <ruleId>CONF:8626</ruleId>
@@ -454,11 +459,12 @@
   <CDA:PropertyValidation xmi:id="_CJtXUIY-EeS7A_69H25Pzw" base_Property="_2IuDkBSVEeGGzu7fmW9pXw">
     <ruleId>R2.0=CONF:1098-8590</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_6whQEIbpEeSxzopshBnQuw" name="FamilyHistoryOrganizer2">
+  <uml:Class xmi:id="_6whQEIbpEeSxzopshBnQuw" clientDependency="_9xVDsIevEeSBauRYePLghA" name="FamilyHistoryOrganizer2">
     <ownedComment xmi:id="_2ylZ4Ib0EeSxzopshBnQuw">
       <body>The Family History Organizer associates a set of observations with a family member. For example, the Family History Organizer can group a set of observations about the patient's father.</body>
     </ownedComment>
     <generalization xmi:id="_6wieMIbpEeSxzopshBnQuw" general="_2IbIoBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_9xVDsIevEeSBauRYePLghA" name="FamilyHistoryOrganizer" client="_6whQEIbpEeSxzopshBnQuw" supplier="_2IbIoBSVEeGGzu7fmW9pXw" contract="_2IbIoBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_0htuAIb1EeSxzopshBnQuw" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4i65oYb1EeSxzopshBnQuw" value="1"/>
@@ -492,5 +498,29 @@
   <CDA:AssociationValidation xmi:id="_V9PXsIb4EeSxzopshBnQuw" base_Association="_ULPOkIb4EeSxzopshBnQuw">
     <ruleId>CONF:1098-32428</ruleId>
     <ruleId>CONF:1098-32429</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_NGivoIevEeSBauRYePLghA" clientDependency="_vQOKsIevEeSBauRYePLghA" name="FamilyHistorySection2">
+    <ownedComment xmi:id="_q8o1oIevEeSBauRYePLghA">
+      <body>This section contains data defining the patient's genetic relatives in terms of possible or relevant health risk factors that have a potential impact on the patient's healthcare risk profile.</body>
+    </ownedComment>
+    <generalization xmi:id="_NGjWsIevEeSBauRYePLghA" general="_2IWQIxSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_vQOKsIevEeSBauRYePLghA" name="FamilyHistorySection" client="_NGivoIevEeSBauRYePLghA" supplier="_2IWQIxSVEeGGzu7fmW9pXw" contract="_2IWQIxSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_iHmAMIeyEeSBauRYePLghA" name="familyHistoryOrganizer2" type="_6whQEIbpEeSxzopshBnQuw" redefinedProperty="_2IWQKhSVEeGGzu7fmW9pXw" association="_iHnOUIeyEeSBauRYePLghA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iHmnQIeyEeSBauRYePLghA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iHmnQYeyEeSBauRYePLghA" value="*"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_XeUbwIevEeSBauRYePLghA" base_Class="_NGivoIevEeSBauRYePLghA" templateId="2.16.840.1.113883.10.20.22.2.15" templateVersion="2014-06-09">
+    <ruleId>CONF:1098-7932</ruleId>
+    <ruleId>CONF:1098-10388</ruleId>
+    <ruleId>CONF:1098-32607</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_ruNcgIevEeSBauRYePLghA" base_Generalization="_NGjWsIevEeSBauRYePLghA"/>
+  <uml:Association xmi:id="_iHnOUIeyEeSBauRYePLghA" memberEnd="_iHmAMIeyEeSBauRYePLghA _iHn1YIeyEeSBauRYePLghA">
+    <ownedEnd xmi:id="_iHn1YIeyEeSBauRYePLghA" type="_NGivoIevEeSBauRYePLghA" association="_iHnOUIeyEeSBauRYePLghA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_nmVg0IeyEeSBauRYePLghA" severity="INFO" base_Association="_iHnOUIeyEeSBauRYePLghA">
+    <ruleId>CONF:1098-32430</ruleId>
+    <ruleId>CONF:1098-32431</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>
