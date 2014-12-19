@@ -215,15 +215,6 @@
               <body>age of a relative at the time of a family history observation SHOULD be inferred by comparing RelatedSubject/subject/birthTime with Observation/effectiveTime</body>
             </specification>
           </ownedRule>
-          <ownedRule xmi:id="_p19koNc5EeGfQ6frO0B-Jg" name="ageOfRelativeDeath">
-            <ownedComment xmi:id="_p19kodc5EeGfQ6frO0B-Jg">
-              <body>UNIMPLEMENTABLE</body>
-            </ownedComment>
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_p19kotc5EeGfQ6frO0B-Jg">
-              <language>Analysis</language>
-              <body>age of a relative at the time of death MAY be inferred by comparing RelatedSubject/subject/birthTime with RelatedSubject/subject/sdwg:deceasedTime</body>
-            </specification>
-          </ownedRule>
           <generalization xmi:id="_IcmzQdc5EeGfQ6frO0B-Jg">
             <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_r19lQEcaEd6besF9iFIJkQ"/>
           </generalization>
@@ -257,8 +248,7 @@
           </ownedAttribute>
           <ownedAttribute xmi:id="_QeHLlNc5EeGfQ6frO0B-Jg" name="sDTCId" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_Ad0QYKbBEeKAJ7JddNoP1Q">
-              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary&#xD;
-extension to CDA R2 for the use of the id element.</body>
+              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the id element.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QeHLltc5EeGfQ6frO0B-Jg"/>
@@ -295,9 +285,11 @@ extension to CDA R2 for the use of the id element.</body>
   <CDA:ConstraintValidation xmi:id="_2IkSkBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:PropertyValidation xmi:id="_2IlgshSVEeGGzu7fmW9pXw" base_Property="_2IlgsBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8600</ruleId>
+    <ruleId>R2.0=CONF:1098-8600</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2ImHxBSVEeGGzu7fmW9pXw" base_Property="_2ImHwBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8601</ruleId>
+    <ruleId>R2.0=CONF:1098-8601</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2Imu0xSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2Imu1BSVEeGGzu7fmW9pXw">
@@ -392,38 +384,45 @@ extension to CDA R2 for the use of the id element.</body>
   <CDA:PropertyValidation xmi:id="_G2dBIHnsEeGgiPp0lBONag" base_Property="_2IpyJhSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_xoDdYNc4EeGfQ6frO0B-Jg" base_Property="_uHs8ENc4EeGfQ6frO0B-Jg">
     <ruleId>CONF:15245</ruleId>
+    <ruleId>R2.0=CONF:1098-15245</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_-8ThsNc4EeGfQ6frO0B-Jg" base_Property="_6_OoINc4EeGfQ6frO0B-Jg" severity="WARNING">
     <reference href="../consol-vocab.uml#_bkwYcW1EEeGCevFpokwODw"/>
     <ruleId>CONF:15247</ruleId>
+    <ruleId>R2.0=CONF:1098-15247</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_CY-c4Nc5EeGfQ6frO0B-Jg" base_Property="_6_OoINc4EeGfQ6frO0B-Jg">
     <ruleId>CONF:15246</ruleId>
+    <ruleId>R2.0=CONF:1098-15246</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_UVIgcNc5EeGfQ6frO0B-Jg" severity="WARNING" base_Property="_QeHLlNc5EeGfQ6frO0B-Jg">
     <ruleId>CONF:15249</ruleId>
+    <ruleId>R2.0=CONF:1098-15249</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_VkoZcNc5EeGfQ6frO0B-Jg" base_Property="_QeGkgNc5EeGfQ6frO0B-Jg">
     <ruleId>CONF:15974</ruleId>
+    <ruleId>R2.0=CONF:1098-15974</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_WfOZcNc5EeGfQ6frO0B-Jg" severity="WARNING" base_Property="_QeGkg9c5EeGfQ6frO0B-Jg">
     <ruleId>CONF:15976</ruleId>
+    <ruleId>R2.0=CONF:1098-15976</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_XHprYNc5EeGfQ6frO0B-Jg" severity="INFO" base_Property="_QeHLkNc5EeGfQ6frO0B-Jg">
     <ruleId>CONF:15981</ruleId>
+    <ruleId>R2.0=CONF:1098-15981</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_X9cD4Nc5EeGfQ6frO0B-Jg" severity="INFO" base_Property="_QeHLktc5EeGfQ6frO0B-Jg">
     <ruleId>CONF:15982</ruleId>
+    <ruleId>R2.0=CONF:1098-15982</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_oC2BM9c5EeGfQ6frO0B-Jg" severity="WARNING" base_Constraint="_oC2BMNc5EeGfQ6frO0B-Jg">
     <ruleId>CONF:15983</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_p1-LsNc5EeGfQ6frO0B-Jg" severity="INFO" base_Constraint="_p19koNc5EeGfQ6frO0B-Jg">
-    <ruleId>CONF:8632</ruleId>
+    <ruleId>R2.0=CONF:1098-15983</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_BVPq0NdAEeGfQ6frO0B-Jg" base_Property="_QeGkgNc5EeGfQ6frO0B-Jg">
     <reference href="../consol-vocab.uml#_LGTEUDVREeGIw7CntkyPQw"/>
     <ruleId>CONF:15975</ruleId>
+    <ruleId>R2.0=CONF:1098-15975</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_CXj0UOMxEeGfv4R-kzpM0g" base_Property="_2IYsYBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:15469</ruleId>
@@ -453,7 +452,45 @@ extension to CDA R2 for the use of the id element.</body>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_ApQOAIY6EeS7A_69H25Pzw" base_Property="_ApNKsIY6EeS7A_69H25Pzw"/>
   <CDA:PropertyValidation xmi:id="_CJtXUIY-EeS7A_69H25Pzw" base_Property="_2IuDkBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8590</ruleId>
     <ruleId>R2.0=CONF:1098-8590</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_6whQEIbpEeSxzopshBnQuw" name="FamilyHistoryOrganizer2">
+    <ownedComment xmi:id="_2ylZ4Ib0EeSxzopshBnQuw">
+      <body>The Family History Organizer associates a set of observations with a family member. For example, the Family History Organizer can group a set of observations about the patient's father.</body>
+    </ownedComment>
+    <generalization xmi:id="_6wieMIbpEeSxzopshBnQuw" general="_2IbIoBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_0htuAIb1EeSxzopshBnQuw" name="id" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4i65oYb1EeSxzopshBnQuw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4i65oIb1EeSxzopshBnQuw" value="*"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_G_dccErcEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ULNZYIb4EeSxzopshBnQuw" name="familyHistoryObservation2" type="_YvV88IV5EeSRBMdZotACQg" redefinedProperty="_2IpyIBSVEeGGzu7fmW9pXw" association="_ULPOkIb4EeSxzopshBnQuw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eLNesIb4EeSxzopshBnQuw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eLM3oIb4EeSxzopshBnQuw" value="*"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_V0HNsIb0EeSxzopshBnQuw" base_Class="_6whQEIbpEeSxzopshBnQuw" templateId="2.16.840.1.113883.10.20.22.4.45" templateVersion="2014-06-09">
+    <ruleId>CONF:1098-8604</ruleId>
+    <ruleId>CONF:1098-10497</ruleId>
+    <ruleId>CONF:1098-32606</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_3mqFsIb1EeSxzopshBnQuw" base_Property="_0htuAIb1EeSxzopshBnQuw">
+    <ruleId>CONF:1098-32485</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_OjSZgIb2EeSxzopshBnQuw" base_Property="_2IokABSVEeGGzu7fmW9pXw">
+    <ruleId>R2.0=CONF:1098-8602</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_a7MxYIb2EeSxzopshBnQuw" code="completed" displayName="Completed" base_Property="_2IokABSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8602</ruleId>
+    <ruleId>R2.0=CONF:1098-19099</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_ULPOkIb4EeSxzopshBnQuw" memberEnd="_ULNZYIb4EeSxzopshBnQuw _ULP1oIb4EeSxzopshBnQuw">
+    <ownedEnd xmi:id="_ULP1oIb4EeSxzopshBnQuw" type="_6whQEIbpEeSxzopshBnQuw" association="_ULPOkIb4EeSxzopshBnQuw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_V9PXsIb4EeSxzopshBnQuw" base_Association="_ULPOkIb4EeSxzopshBnQuw">
+    <ruleId>CONF:1098-32428</ruleId>
+    <ruleId>CONF:1098-32429</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

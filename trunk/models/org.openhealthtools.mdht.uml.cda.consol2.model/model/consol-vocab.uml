@@ -1048,7 +1048,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_A3NsoPt_EeG3vphfH83rmA" name="TITLE"/>
       <ownedLiteral xmi:id="_ChZWgPt_EeG3vphfH83rmA" name="VV"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_bkwYcG1EEeGCevFpokwODw" name="FamilyHistoryRelatedSubjectCode">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_bkwYcG1EEeGCevFpokwODw" name="Family Member Value Set">
       <ownedLiteral xmi:id="_yNrfQRJaEeKjxqZmTX2rRQ" name="ADOPT"/>
       <ownedLiteral xmi:id="_yNrfQxJaEeKjxqZmTX2rRQ" name="AUNT"/>
       <ownedLiteral xmi:id="_yNrfRRJaEeKjxqZmTX2rRQ" name="CHILD"/>
@@ -2035,7 +2035,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_WCFaEG1EEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.26" base_Enumeration="_WCEzAG1EEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_u8E4IWShEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_bkwYcW1EEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.19579" version="1" definition="Family Relationships record the familial relationship of a person to another person. This value set is to be used when it is necessary to record family relationships (e.g., next of kin, or blood relations). This is a subset of the value set used for personal relationships" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_bkwYcG1EEeGCevFpokwODw">
+  <term:ValueSetVersion xmi:id="_bkwYcW1EEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.19579" version="1" source="http://www.hl7.org" definition="Family Relationships record the familial relationship of a person to another person. This value set is to be used when it is necessary to record family relationships (e.g., next of kin, or blood relations). This is a subset of the value set used for personal relationships" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_bkwYcG1EEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_fgCQUG1GEeGCevFpokwODw" identifier="2.16.840.1.114222.4.11.837" binding="Dynamic" base_Enumeration="_fgBpQG1GEeGCevFpokwODw">
