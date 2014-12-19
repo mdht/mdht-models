@@ -54,6 +54,41 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
     <ruleId>CONF:8532</ruleId>
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_H1UdcEVEEeGAh_iQGJvI5w" name="PhysicianReadingStudyPerformer">
+    <ownedComment xmi:id="_s137QIfHEeSBauRYePLghA">
+      <body>This participant is the Physician Reading Study Performer defined in documentationOf/serviceEvent and is usually different from the attending physician. The reading physician interprets the images and evidence of the study (DICOM Definition)</body>
+    </ownedComment>
+    <ownedRule xmi:id="_GoNVEIfBEeSBauRYePLghA" name="preciseToTheDayIVLTS">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_GoNVEYfBEeSBauRYePLghA">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>not self.time.value.oclIsUndefined() implies self.time.value.size() >= 8</body>
+        <body>The content of time SHALL be a conformant US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.3). SHALL be precise to the day</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Nct5UIfCEeSBauRYePLghA" name="preciseToTheMinuteIVLTS">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Nct5UYfCEeSBauRYePLghA">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>not self.time.value.oclIsUndefined() implies self.time.value.size() >= 12</body>
+        <body>The content of time SHALL be a conformant US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.3). SHOULD be precise to the minute</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_8bhMsIfCEeSBauRYePLghA" name="preciseToTheSecondIVLTS">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_8bhMsYfCEeSBauRYePLghA">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>not self.time.value.oclIsUndefined() implies self.time.value.size() >= 14</body>
+        <body>The content of time SHALL be a conformant US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.3). MAY be precise to the second</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_f6dKgIfDEeSBauRYePLghA" name="ifMorePreciseThanDayIncludeTimeZoneOffsetIVLTS">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_f6dKgYfDEeSBauRYePLghA">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>not self.time.value.oclIsUndefined() and self.time.value.size() > 8 implies self.time.value.size() >= 15</body>
+        <body>The content of time SHALL be a conformant US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.3). If more precise than day, SHOULD include time-zone offset</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_H1UdcUVEEeGAh_iQGJvI5w">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
     </generalization>
@@ -63,8 +98,9 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L0RmUUVEEeGAh_iQGJvI5w" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zictUErfEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_L0RmU0VEEeGAh_iQGJvI5w" name="typeCode" visibility="private">
+    <ownedAttribute xmi:id="_L0RmU0VEEeGAh_iQGJvI5w" name="typeCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOqckDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_-TXb8Ie-EeSBauRYePLghA" value="PRF"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3_p4cErfEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_1B44wErXEeGJpZWiuxRVIw" name="assignedEntity" type="_kAWv0EVEEeGAh_iQGJvI5w" association="_1B44wkrXEeGJpZWiuxRVIw">
@@ -75,14 +111,6 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <ownedComment xmi:id="_qe2NoPEkEeGPm_ynmLKd6Q">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_JHwgQEVFEeGAh_iQGJvI5w" name="hasNationalProviderId" constrainedElement="_kAWv0EVEEeGAh_iQGJvI5w">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_MuIKAEVFEeGAh_iQGJvI5w">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
-          <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
-        </specification>
-      </ownedRule>
       <ownedRule xmi:id="_iiXSYEVFEeGAh_iQGJvI5w" name="hasDICOM" constrainedElement="_kAWv0EVEEeGAh_iQGJvI5w">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_j-wX4EVFEeGAh_iQGJvI5w">
           <language>Analysis</language>
@@ -99,20 +127,28 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
           <body>not self.assignedPerson->isEmpty() or  not self.representedOrganization->isEmpty()</body>
         </specification>
       </ownedRule>
+      <ownedRule xmi:id="_JHwgQEVFEeGAh_iQGJvI5w" name="hasNationalProviderId" constrainedElement="_kAWv0EVEEeGAh_iQGJvI5w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_MuIKAEVFEeGAh_iQGJvI5w">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
+          <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_n5NQsEVEEeGAh_iQGJvI5w">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_xNHFAEVEEeGAh_iQGJvI5w" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1HJRoUVEEeGAh_iQGJvI5w" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1HJRoEVEEeGAh_iQGJvI5w" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_xNHFA0VEEeGAh_iQGJvI5w" name="id" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xNHFBUVEEeGAh_iQGJvI5w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xNHFBEVEEeGAh_iQGJvI5w" value="*"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_xNHFAEVEEeGAh_iQGJvI5w" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1HJRoUVEEeGAh_iQGJvI5w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1HJRoEVEEeGAh_iQGJvI5w" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -121,15 +157,19 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_12YWMEVEEeGAh_iQGJvI5w" base_Property="_xNHFAEVEEeGAh_iQGJvI5w">
     <ruleId>CONF:8427</ruleId>
+    <ruleId>R2.0=CONF:1098-8427</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2Qm0EEVEEeGAh_iQGJvI5w" base_Property="_xNHFA0VEEeGAh_iQGJvI5w">
     <ruleId>CONF:10033</ruleId>
+    <ruleId>R2.0=CONF:1098-10033</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_QXCKYEVFEeGAh_iQGJvI5w" severity="WARNING" base_Constraint="_JHwgQEVFEeGAh_iQGJvI5w">
     <ruleId>CONF:10034</ruleId>
+    <ruleId>R2.0=CONF:1098-32135</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_BXdh0EVHEeGAh_iQGJvI5w" base_Constraint="_OdeLQEVGEeGAh_iQGJvI5w">
     <ruleId>CONF:8429</ruleId>
+    <ruleId>R2.0=CONF:1098-8429</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_fdFU0Eb4EeGp67IkyTw1fg" code="121181" displayName="Dicom Object Catalog" base_Property="_eLH9sEb4EeGp67IkyTw1fg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
@@ -1048,9 +1088,11 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_nuSUsErXEeGJpZWiuxRVIw" severity="INFO" base_Property="_L0RmUEVEEeGAh_iQGJvI5w">
     <ruleId>CONF:8425</ruleId>
+    <ruleId>R2.0=CONF:1098-8425</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_vaLCUErXEeGJpZWiuxRVIw" base_Property="_L0RmU0VEEeGAh_iQGJvI5w">
     <ruleId>CONF:8424</ruleId>
+    <ruleId>R2.0=CONF:1098-8424</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_mJkAUErcEeGJpZWiuxRVIw" base_Constraint="_d5wtUErcEeGJpZWiuxRVIw">
     <ruleId>CONF:9213</ruleId>
@@ -1209,7 +1251,10 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
     <ruleId>CONF:9268</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_-7P9MMUuEeGigaKyc-jgFA" base_Constraint="_Lp03oEb2EeGp67IkyTw1fg"/>
-  <CDA:ConstraintValidation xmi:id="_GpCIQMUvEeGigaKyc-jgFA" base_Constraint="_iiXSYEVFEeGAh_iQGJvI5w"/>
+  <CDA:ConstraintValidation xmi:id="_GpCIQMUvEeGigaKyc-jgFA" base_Constraint="_iiXSYEVFEeGAh_iQGJvI5w">
+    <ruleId>CONF:8428</ruleId>
+    <ruleId>R2.0=CONF:1098-8428</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_Qo4XcMbuEeGp28IjMvW3Ag" base_Property="_g5YnsFwVEeG0y_7i0ygc4g">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_vhyX0NdhEeGlV9-AkwqSzg"/>
   </CDA:CodeSystemConstraint>
@@ -1421,4 +1466,41 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:PropertyValidation xmi:id="_YLzdwOaWEeOmzetP5oaH3A" severity="WARNING" base_Property="_T-xcoOaWEeOmzetP5oaH3A">
     <ruleId>CONF:16075</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_zKKIUIe9EeSBauRYePLghA" clientDependency="_SbKGEIe-EeSBauRYePLghA" name="PhysicianReadingStudyPerformer2">
+    <ownedComment xmi:id="__iuAcIe9EeSBauRYePLghA">
+      <body>This participant is the Physician Reading Study Performer defined in documentationOf/serviceEvent. It is usually different from the attending physician. The reading physician interprets the images and evidence of the study (DICOM Definition).</body>
+    </ownedComment>
+    <generalization xmi:id="_zKKvYIe9EeSBauRYePLghA" general="_H1UdcEVEEeGAh_iQGJvI5w"/>
+    <substitution xmi:id="_SbKGEIe-EeSBauRYePLghA" name="PhysicianReadingStudyPerformer" client="_zKKIUIe9EeSBauRYePLghA" supplier="_H1UdcEVEEeGAh_iQGJvI5w" contract="_H1UdcEVEEeGAh_iQGJvI5w"/>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_CclwkIe-EeSBauRYePLghA" base_Class="_zKKIUIe9EeSBauRYePLghA" templateId="2.16.840.1.113883.10.20.6.2.1" templateVersion="2014-06-09">
+    <ruleId>CONF:1098-30773</ruleId>
+    <ruleId>CONF:1098-30774</ruleId>
+    <ruleId>CONF:1098-32564</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_QTsDQIe-EeSBauRYePLghA" base_Generalization="_zKKvYIe9EeSBauRYePLghA"/>
+  <CDA:ConstraintValidation xmi:id="_GoNVEofBEeSBauRYePLghA" base_Constraint="_GoNVEIfBEeSBauRYePLghA">
+    <ruleId>CONF:8425</ruleId>
+    <ruleId>CONF:10078</ruleId>
+    <ruleId>R2.0=CONF:1098-8425</ruleId>
+    <ruleId>R2.0=CONF:81-10078</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Nct5UofCEeSBauRYePLghA" severity="WARNING" base_Constraint="_Nct5UIfCEeSBauRYePLghA">
+    <ruleId>CONF:8425</ruleId>
+    <ruleId>CONF:10079</ruleId>
+    <ruleId>R2.0=CONF:1098-8425</ruleId>
+    <ruleId>R2.0=CONF:81-10079</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_8bhMsofCEeSBauRYePLghA" severity="INFO" base_Constraint="_8bhMsIfCEeSBauRYePLghA">
+    <ruleId>CONF:8425</ruleId>
+    <ruleId>CONF:10080</ruleId>
+    <ruleId>R2.0=CONF:1098-8425</ruleId>
+    <ruleId>R2.0=CONF:81-10080</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_f6dxkIfDEeSBauRYePLghA" severity="WARNING" base_Constraint="_f6dKgIfDEeSBauRYePLghA">
+    <ruleId>CONF:8425</ruleId>
+    <ruleId>CONF:10081</ruleId>
+    <ruleId>R2.0=CONF:1098-8425</ruleId>
+    <ruleId>R2.0=CONF:81-10081</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
