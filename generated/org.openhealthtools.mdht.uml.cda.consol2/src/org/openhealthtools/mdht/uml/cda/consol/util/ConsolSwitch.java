@@ -6375,6 +6375,109 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2: {
+				FamilyHistoryObservation2 familyHistoryObservation2 = (FamilyHistoryObservation2) theEObject;
+				T result = caseFamilyHistoryObservation2(familyHistoryObservation2);
+				if (result == null) {
+					result = caseFamilyHistoryObservation(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2: {
+				FamilyHistoryOrganizer2 familyHistoryOrganizer2 = (FamilyHistoryOrganizer2) theEObject;
+				T result = caseFamilyHistoryOrganizer2(familyHistoryOrganizer2);
+				if (result == null) {
+					result = caseFamilyHistoryOrganizer(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseOrganizer(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FAMILY_HISTORY_SECTION2: {
+				FamilyHistorySection2 familyHistorySection2 = (FamilyHistorySection2) theEObject;
+				T result = caseFamilyHistorySection2(familyHistorySection2);
+				if (result == null) {
+					result = caseFamilyHistorySection(familyHistorySection2);
+				}
+				if (result == null) {
+					result = caseSection(familyHistorySection2);
+				}
+				if (result == null) {
+					result = caseAct(familyHistorySection2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistorySection2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER2: {
+				PhysicianReadingStudyPerformer2 physicianReadingStudyPerformer2 = (PhysicianReadingStudyPerformer2) theEObject;
+				T result = casePhysicianReadingStudyPerformer2(physicianReadingStudyPerformer2);
+				if (result == null) {
+					result = casePhysicianReadingStudyPerformer(physicianReadingStudyPerformer2);
+				}
+				if (result == null) {
+					result = casePerformer1(physicianReadingStudyPerformer2);
+				}
+				if (result == null) {
+					result = caseParticipation(physicianReadingStudyPerformer2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(physicianReadingStudyPerformer2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COURSE_OF_CARE_SECTION: {
+				CourseOfCareSection courseOfCareSection = (CourseOfCareSection) theEObject;
+				T result = caseCourseOfCareSection(courseOfCareSection);
+				if (result == null) {
+					result = caseSection(courseOfCareSection);
+				}
+				if (result == null) {
+					result = caseAct(courseOfCareSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(courseOfCareSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -11284,6 +11387,81 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePreconditionForSubstanceAdministration2(PreconditionForSubstanceAdministration2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Family History Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Family History Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFamilyHistoryObservation2(FamilyHistoryObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Family History Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Family History Organizer2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFamilyHistoryOrganizer2(FamilyHistoryOrganizer2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Family History Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Family History Section2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFamilyHistorySection2(FamilyHistorySection2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Physician Reading Study Performer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Physician Reading Study Performer2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePhysicianReadingStudyPerformer2(PhysicianReadingStudyPerformer2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Course Of Care Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Course Of Care Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCourseOfCareSection(CourseOfCareSection object) {
 		return null;
 	}
 

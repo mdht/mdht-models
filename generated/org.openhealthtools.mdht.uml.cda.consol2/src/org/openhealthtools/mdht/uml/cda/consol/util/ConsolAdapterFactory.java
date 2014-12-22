@@ -1656,6 +1656,31 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseFamilyHistoryObservation2(FamilyHistoryObservation2 object) {
+			return createFamilyHistoryObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryOrganizer2(FamilyHistoryOrganizer2 object) {
+			return createFamilyHistoryOrganizer2Adapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistorySection2(FamilyHistorySection2 object) {
+			return createFamilyHistorySection2Adapter();
+		}
+
+		@Override
+		public Adapter casePhysicianReadingStudyPerformer2(PhysicianReadingStudyPerformer2 object) {
+			return createPhysicianReadingStudyPerformer2Adapter();
+		}
+
+		@Override
+		public Adapter caseCourseOfCareSection(CourseOfCareSection object) {
+			return createCourseOfCareSectionAdapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -6354,6 +6379,76 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPreconditionForSubstanceAdministration2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation2 <em>Family History Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation2
+	 * @generated
+	 */
+	public Adapter createFamilyHistoryObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2 <em>Family History Organizer2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2
+	 * @generated
+	 */
+	public Adapter createFamilyHistoryOrganizer2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2 <em>Family History Section2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2
+	 * @generated
+	 */
+	public Adapter createFamilyHistorySection2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer2 <em>Physician Reading Study Performer2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer2
+	 * @generated
+	 */
+	public Adapter createPhysicianReadingStudyPerformer2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CourseOfCareSection <em>Course Of Care Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CourseOfCareSection
+	 * @generated
+	 */
+	public Adapter createCourseOfCareSectionAdapter() {
 		return null;
 	}
 

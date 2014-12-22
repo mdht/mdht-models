@@ -3819,6 +3819,14 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer/FamilyHistoryOrganizerMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer/FamilyHistoryOrganizerMoodCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistoryOrganizer/FamilyHistoryOrganizerStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer/FamilyHistoryOrganizerStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer/FamilyHistoryOrganizerStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistoryOrganizer/FamilyHistoryOrganizerStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer/FamilyHistoryOrganizerStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer/FamilyHistoryOrganizerStatusCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistoryOrganizer/FamilyHistoryOrganizerFamilyHistoryObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer/FamilyHistoryOrganizerFamilyHistoryObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer/FamilyHistoryOrganizerFamilyHistoryObservation/context"/>
@@ -3905,6 +3913,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistoryObservation/FamilyHistoryObservationEffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryObservation/FamilyHistoryObservationEffectiveTime/diagnostics"/>
@@ -8911,6 +8923,22 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DiagnosticImagingReport/getDICOMObjectCatalogSection"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PhysicianReadingStudyPerformer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerPreciseToTheDayIVLTS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerPreciseToTheDayIVLTS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerPreciseToTheDayIVLTS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerPreciseToTheMinuteIVLTS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerPreciseToTheMinuteIVLTS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerPreciseToTheMinuteIVLTS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerPreciseToTheSecondIVLTS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerPreciseToTheSecondIVLTS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerPreciseToTheSecondIVLTS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerTemplateId/context"/>
@@ -8927,10 +8955,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntity/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntity/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityHasDICOM">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityHasDICOM/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityHasDICOM/context"/>
@@ -8939,13 +8963,17 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PhysicianReadingStudyPerformer/PhysicianReadingStudyPerformerAssignedEntityCode/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PhysicianofRecordParticipant">
@@ -16332,6 +16360,48 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PreconditionForSubstanceAdministration2/PreconditionForSubstanceAdministrationValueP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration2/PreconditionForSubstanceAdministrationValueP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PreconditionForSubstanceAdministration2/PreconditionForSubstanceAdministrationValueP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//FamilyHistoryObservation2"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//FamilyHistoryOrganizer2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistoryOrganizer2/FamilyHistoryOrganizer2Id">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer2/FamilyHistoryOrganizer2Id/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer2/FamilyHistoryOrganizer2Id/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistoryOrganizer2/FamilyHistoryOrganizerFamilyHistoryObservation2">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer2/FamilyHistoryOrganizerFamilyHistoryObservation2/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistoryOrganizer2/FamilyHistoryOrganizerFamilyHistoryObservation2/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistoryOrganizer2/getConsolFamilyHistoryObservation2s"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//FamilyHistorySection2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistorySection2/FamilyHistorySectionFamilyHistoryOrganizer2">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistorySection2/FamilyHistorySectionFamilyHistoryOrganizer2/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistorySection2/FamilyHistorySectionFamilyHistoryOrganizer2/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistorySection2/getConsolFamilyHistoryOrganizer2s"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PhysicianReadingStudyPerformer2"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//CourseOfCareSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CourseOfCareSection/CourseOfCareSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CourseOfCareSection/CourseOfCareSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CourseOfCareSection/CourseOfCareSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CourseOfCareSection/CourseOfCareSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CourseOfCareSection/CourseOfCareSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CourseOfCareSection/CourseOfCareSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CourseOfCareSection/CourseOfCareSectionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CourseOfCareSection/CourseOfCareSectionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CourseOfCareSection/CourseOfCareSectionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CourseOfCareSection/CourseOfCareSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CourseOfCareSection/CourseOfCareSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CourseOfCareSection/CourseOfCareSectionTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CourseOfCareSection/CourseOfCareSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CourseOfCareSection/CourseOfCareSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CourseOfCareSection/CourseOfCareSectionText/context"/>
       </genOperations>
     </genClasses>
   </genPackages>

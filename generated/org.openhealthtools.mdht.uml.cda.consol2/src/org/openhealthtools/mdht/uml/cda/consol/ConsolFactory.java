@@ -2676,6 +2676,51 @@ public interface ConsolFactory extends EFactory {
 	PreconditionForSubstanceAdministration2 createPreconditionForSubstanceAdministration2();
 
 	/**
+	 * Returns a new object of class '<em>Family History Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Observation2</em>'.
+	 * @generated
+	 */
+	FamilyHistoryObservation2 createFamilyHistoryObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Family History Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Organizer2</em>'.
+	 * @generated
+	 */
+	FamilyHistoryOrganizer2 createFamilyHistoryOrganizer2();
+
+	/**
+	 * Returns a new object of class '<em>Family History Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Section2</em>'.
+	 * @generated
+	 */
+	FamilyHistorySection2 createFamilyHistorySection2();
+
+	/**
+	 * Returns a new object of class '<em>Physician Reading Study Performer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Physician Reading Study Performer2</em>'.
+	 * @generated
+	 */
+	PhysicianReadingStudyPerformer2 createPhysicianReadingStudyPerformer2();
+
+	/**
+	 * Returns a new object of class '<em>Course Of Care Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Course Of Care Section</em>'.
+	 * @generated
+	 */
+	CourseOfCareSection createCourseOfCareSection();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

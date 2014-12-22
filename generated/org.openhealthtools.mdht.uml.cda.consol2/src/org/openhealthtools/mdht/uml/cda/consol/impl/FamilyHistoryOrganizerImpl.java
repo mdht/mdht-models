@@ -88,6 +88,24 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistoryOrganizerStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

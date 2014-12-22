@@ -56,6 +56,50 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePhysicianReadingStudyPerformerPreciseToTheDayIVLTS(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerPreciseToTheDayIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicianReadingStudyPerformerPreciseToTheMinuteIVLTS(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerPreciseToTheMinuteIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicianReadingStudyPerformerPreciseToTheSecondIVLTS(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerPreciseToTheSecondIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicianReadingStudyPerformerIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePhysicianReadingStudyPerformerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

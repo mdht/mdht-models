@@ -2106,6 +2106,41 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass familyHistoryObservation2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass familyHistoryOrganizer2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass familyHistorySection2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass physicianReadingStudyPerformer2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass courseOfCareSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -6402,6 +6437,71 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				ConsolPackage.eNS_URI).getEClassifiers().get(311);
 		}
 		return preconditionForSubstanceAdministration2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFamilyHistoryObservation2() {
+		if (familyHistoryObservation2EClass == null) {
+			familyHistoryObservation2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				312);
+		}
+		return familyHistoryObservation2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFamilyHistoryOrganizer2() {
+		if (familyHistoryOrganizer2EClass == null) {
+			familyHistoryOrganizer2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				313);
+		}
+		return familyHistoryOrganizer2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFamilyHistorySection2() {
+		if (familyHistorySection2EClass == null) {
+			familyHistorySection2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				314);
+		}
+		return familyHistorySection2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPhysicianReadingStudyPerformer2() {
+		if (physicianReadingStudyPerformer2EClass == null) {
+			physicianReadingStudyPerformer2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(315);
+		}
+		return physicianReadingStudyPerformer2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCourseOfCareSection() {
+		if (courseOfCareSectionEClass == null) {
+			courseOfCareSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				316);
+		}
+		return courseOfCareSectionEClass;
 	}
 
 	/**
