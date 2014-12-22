@@ -549,4 +549,48 @@
   <CDA:ConstraintValidation xmi:id="_soEP8kglEeSfpbeq3Ftc1g" base_Constraint="_soEP8EglEeSfpbeq3Ftc1g">
     <ruleId>CONF:9929</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_S0oqIIfLEeSBauRYePLghA" name="CourseOfCareSection">
+    <ownedComment xmi:id="_2fYPUIfLEeSBauRYePLghA">
+      <body>The Course of Care section describes what happened during the course of an encounter.</body>
+    </ownedComment>
+    <generalization xmi:id="_S0pRMIfLEeSBauRYePLghA">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_gi4i0IfLEeSBauRYePLghA" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pl5mAIfMEeSBauRYePLghA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pl4-8IfMEeSBauRYePLghA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_gi5w8IfLEeSBauRYePLghA" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p7td8YfMEeSBauRYePLghA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p7td8IfMEeSBauRYePLghA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_gi5J4IfLEeSBauRYePLghA" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q1eXgIfMEeSBauRYePLghA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q1dwcIfMEeSBauRYePLghA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_jfFOMIfLEeSBauRYePLghA" base_Class="_S0oqIIfLEeSBauRYePLghA" templateId="2.16.840.1.113883.10.20.22.2.64">
+    <ruleId>CONF:1098-32640</ruleId>
+    <ruleId>CONF:1098-32642</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_k73f0IfMEeSBauRYePLghA" base_Property="_gi4i0IfLEeSBauRYePLghA">
+    <ruleId>CONF:1098-32641</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_l5CSsIfMEeSBauRYePLghA" base_Property="_gi5J4IfLEeSBauRYePLghA">
+    <ruleId>CONF:1098-32644</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_meB2IIfMEeSBauRYePLghA" base_Property="_gi5w8IfLEeSBauRYePLghA">
+    <ruleId>CONF:1098-32643</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_wrS7YIfMEeSBauRYePLghA" code="8648-8" displayName="Hospital Course Narrative" base_Property="_gi4i0IfLEeSBauRYePLghA">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-32645</ruleId>
+    <ruleId>CONF:1098-32646</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
