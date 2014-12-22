@@ -684,6 +684,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createUnstructuredDocument2();
 			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2:
 				return createPreconditionForSubstanceAdministration2();
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2:
+				return createFamilyHistoryObservation2();
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2:
+				return createFamilyHistoryOrganizer2();
+			case ConsolPackage.FAMILY_HISTORY_SECTION2:
+				return createFamilyHistorySection2();
+			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER2:
+				return createPhysicianReadingStudyPerformer2();
+			case ConsolPackage.COURSE_OF_CARE_SECTION:
+				return createCourseOfCareSection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -3905,6 +3915,56 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PreconditionForSubstanceAdministration2 createPreconditionForSubstanceAdministration2() {
 		PreconditionForSubstanceAdministration2Impl preconditionForSubstanceAdministration2 = new PreconditionForSubstanceAdministration2Impl();
 		return preconditionForSubstanceAdministration2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistoryObservation2 createFamilyHistoryObservation2() {
+		FamilyHistoryObservation2Impl familyHistoryObservation2 = new FamilyHistoryObservation2Impl();
+		return familyHistoryObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistoryOrganizer2 createFamilyHistoryOrganizer2() {
+		FamilyHistoryOrganizer2Impl familyHistoryOrganizer2 = new FamilyHistoryOrganizer2Impl();
+		return familyHistoryOrganizer2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistorySection2 createFamilyHistorySection2() {
+		FamilyHistorySection2Impl familyHistorySection2 = new FamilyHistorySection2Impl();
+		return familyHistorySection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhysicianReadingStudyPerformer2 createPhysicianReadingStudyPerformer2() {
+		PhysicianReadingStudyPerformer2Impl physicianReadingStudyPerformer2 = new PhysicianReadingStudyPerformer2Impl();
+		return physicianReadingStudyPerformer2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CourseOfCareSection createCourseOfCareSection() {
+		CourseOfCareSectionImpl courseOfCareSection = new CourseOfCareSectionImpl();
+		return courseOfCareSection;
 	}
 
 	/**
