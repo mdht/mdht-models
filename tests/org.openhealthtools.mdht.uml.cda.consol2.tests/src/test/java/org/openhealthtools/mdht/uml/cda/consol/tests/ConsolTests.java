@@ -136,7 +136,9 @@ import org.junit.runners.Suite;
 		VitalSignsSectionEntriesOptional2Test.class, ConsultationNote2Test.class, ContinuityOfCareDocument2Test.class,
 		DiagnosticImagingReport2Test.class, DischargeSummary2Test.class, HistoryAndPhysicalNote2Test.class,
 		OperativeNote2Test.class, ProcedureNote2Test.class, ProgressNote2Test.class, UnstructuredDocument2Test.class,
-		PreconditionForSubstanceAdministration2Test.class, NumberOfPressureUlcersObservation2Test.class })
+		PreconditionForSubstanceAdministration2Test.class, NumberOfPressureUlcersObservation2Test.class,
+		FamilyHistoryObservation2Test.class, FamilyHistoryOrganizer2Test.class, FamilyHistorySection2Test.class,
+		PhysicianReadingStudyPerformer2Test.class, CourseOfCareSectionTest.class })
 public class ConsolTests {
 
 	/**
