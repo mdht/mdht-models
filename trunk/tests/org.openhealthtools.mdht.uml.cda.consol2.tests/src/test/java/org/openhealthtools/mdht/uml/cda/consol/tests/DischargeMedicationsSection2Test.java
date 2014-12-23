@@ -34,10 +34,10 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section2 Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section2 Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section2 Title</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section2 Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section2 Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section2 Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section2 Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section2 Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entries Optional Discharge Medication2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#getConsolDischargeMedication2s() <em>Get Consol Discharge Medication2s</em>}</li>
@@ -57,7 +57,7 @@ public class DischargeMedicationsSection2Test extends CDAValidationTest {
 	public void testValidateDischargeMedicationsSection2CodeP() {
 		OperationsTestCase<DischargeMedicationsSection2> validateDischargeMedicationsSection2CodePTestCase = new OperationsTestCase<DischargeMedicationsSection2>(
 			"validateDischargeMedicationsSection2CodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -91,7 +91,7 @@ public class DischargeMedicationsSection2Test extends CDAValidationTest {
 	public void testValidateDischargeMedicationsSection2Code() {
 		OperationsTestCase<DischargeMedicationsSection2> validateDischargeMedicationsSection2CodeTestCase = new OperationsTestCase<DischargeMedicationsSection2>(
 			"validateDischargeMedicationsSection2Code",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -132,7 +132,7 @@ public class DischargeMedicationsSection2Test extends CDAValidationTest {
 	public void testValidateDischargeMedicationsSection2Title() {
 		OperationsTestCase<DischargeMedicationsSection2> validateDischargeMedicationsSection2TitleTestCase = new OperationsTestCase<DischargeMedicationsSection2>(
 			"validateDischargeMedicationsSection2Title",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
