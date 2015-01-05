@@ -661,7 +661,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_SIQ9cPweEeGXDIdcQJhgtg" name="T"/>
       <ownedLiteral xmi:id="_TjXpgPweEeGXDIdcQJhgtg" name="W"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfTnoKDqEd-dVeaMP0XXQw" name="Race Value Set"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfTnoKDqEd-dVeaMP0XXQw" name="Race"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ywcy0Gg7Ed-ilOLYnIx0jA" name="INDRoleclassCodes">
       <ownedComment xmi:id="_EE4vEGg8Ed-ilOLYnIx0jA">
         <body>Specific classification codes for further qualifying RoleClass codes.</body>
@@ -843,7 +843,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_L-N6MPwXEeGXDIdcQJhgtg" name="47048-4"/>
       <ownedLiteral xmi:id="_M3BKcPwXEeGXDIdcQJhgtg" name="48807-2"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-bWMgD-UEeGvOdejHZ7dYg" name="Healthcare Provider Taxonomy (NUCC - HIPAA)"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-bWMgD-UEeGvOdejHZ7dYg" name="Healthcare Provider Taxonomy (HIPAA)"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_6yjb4D_LEeGXieeKs7NJjA" name="ProgressNoteDocumentTypeCode">
       <ownedLiteral xmi:id="_40kfABfREeKlBPC3X0poXg" name="11506-3"/>
       <ownedLiteral xmi:id="_6G1YIBfREeKlBPC3X0poXg" name="18733-6"/>
@@ -990,7 +990,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_plkFsPtrEeG3vphfH83rmA" name="UD"/>
       <ownedLiteral xmi:id="_rKHBoPtrEeG3vphfH83rmA" name="UR"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2dkqcG1DEeGCevFpokwODw" name="CountryValueSet"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2dkqcG1DEeGCevFpokwODw" name="Country"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_9yUqcG1DEeGCevFpokwODw" name="DICOMQuantityMeasurementTypeCodes">
       <ownedLiteral xmi:id="_nkyN0Pt4EeG3vphfH83rmA" name="121211"/>
       <ownedLiteral xmi:id="_pcsxsPt4EeG3vphfH83rmA" name="121206"/>
@@ -1126,7 +1126,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_NB1IwPwWEeGXDIdcQJhgtg" name="TMP"/>
       <ownedLiteral xmi:id="_N-EHgPwWEeGXDIdcQJhgtg" name="WP"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2Qf68G1HEeGCevFpokwODw" name="PostalCodeValueSet"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2Qf68G1HEeGCevFpokwODw" name="PostalCode"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_9c_94G1HEeGCevFpokwODw" name="StateValueSet"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ekou8G1IEeGCevFpokwODw" name="SupportedFileFormats">
       <ownedLiteral xmi:id="_ewH6APwXEeGXDIdcQJhgtg" name="application/msword"/>
@@ -1639,8 +1639,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_bb460BwSEeSMr-NWzQuDBw" name="PatientLanguage">
       <ownedComment xmi:id="_q3FdgBwSEeSMr-NWzQuDBw">
-        <body>This value set contains codes for the representation of language names as defined by the Library of Congress, the ISO 639-2 registration authority. This value set contains a subset of the ISO 639-2 alpha-3 code set, limited to those that have a corresponding ISO 639-1 alpha-2 code as required for representing a patient's language under Meaningful Use Stage 2. &#xD;
-Valueset Source: http://www.loc.gov/standards/iso639-2/php/code_list.php</body>
+        <body>This value set contains codes for the representation of language names as defined by the Library of Congress, the ISO 639-2 registration authority. This value set contains a subset of the ISO 639-2 alpha-3 code set, limited to those that have a corresponding ISO 639-1 alpha-2 code as required for representing a patient's language under Meaningful Use Stage 2.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_tcSn0CL6EeS4d9o7u1_H3A" name="LOINC Imaging Document Codes"/>
@@ -1663,6 +1662,17 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedComment xmi:id="_hRIUkYY5EeS7A_69H25Pzw">
         <body>This value set indicates the level of medical judgment used to determine the existence of a problem.</body>
       </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_PPY8QIuxEeSZu6J-Yjmr9w" name="Race Category Excluding Nulls">
+      <ownedLiteral xmi:id="_3G3noIuxEeSZu6J-Yjmr9w" name="1002-5"/>
+      <ownedLiteral xmi:id="_7mZuAIuxEeSZu6J-Yjmr9w" name="2028-9"/>
+      <ownedLiteral xmi:id="_9ox1cIuxEeSZu6J-Yjmr9w" name="2054-5"/>
+      <ownedLiteral xmi:id="__RJhcIuxEeSZu6J-Yjmr9w" name="2076-8"/>
+      <ownedLiteral xmi:id="_AO7YUIuyEeSZu6J-Yjmr9w" name="2106-3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_mBa3sIuzEeSZu6J-Yjmr9w" name="EthnicityGroup">
+      <ownedLiteral xmi:id="_mBa3sYuzEeSZu6J-Yjmr9w" name="2135-2"/>
+      <ownedLiteral xmi:id="_mBa3souzEeSZu6J-Yjmr9w" name="2186-5"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -1846,13 +1856,13 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_c6o0UaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_GT_LgSjSEeGpe-vtKtXilA"/>
-  <term:ValueSetVersion xmi:id="_8K870TVPEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.16926" fullName="Basic Confidentiality Kind Value Set" source="HL7" effectiveDate="2010-04-21" base_Enumeration="_8K870DVPEeGIw7CntkyPQw">
+  <term:ValueSetVersion xmi:id="_8K870TVPEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.16926" version="2010-04-21" fullName="Basic Confidentiality Kind Value Set" source="HL7" effectiveDate="2010-04-21" base_Enumeration="_8K870DVPEeGIw7CntkyPQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_-5gOQGdLEeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw">
+  <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" binding="Dynamic" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_PaapkGdREeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_F4z3QDrtEeG-aJb2h_4S8w" identifier="2.16.840.1.113883.3.88.12.3221.5.2" version="20081218" fullName="Health Insurance Type Value Set" source="HITSP" definition="This value set uses the ACS X12 vocabulary for Insurance Type Code (ASC X12 Data Element 1336) and has been limited by HITSP to the value set reproduced below in Table 2-52 Health Insurance Type Value Set Definition&#xD;&#xA;The type of health plan covering the individual, e.g., an HMO, PPO, POS, etc." effectiveDate="20081218" releaseDate="20081218" binding="Dynamic" base_Enumeration="_F4ypIDrtEeG-aJb2h_4S8w">
@@ -1930,13 +1940,13 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_0Uo48EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.14914" version="1" fullName="Race Value Set" definition="A Value Set of codes for Classifying data based upon race.&#xD;&#xA;Race is always reported at the discretion of the person for whom this attribute is reported, and reporting must be completed according to Federal guidelines for race reporting. Any code descending from the Race concept (1000-9) in that terminology may be used in the exchange." binding="Dynamic" base_Enumeration="_dfTnoKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2aTk8EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.19185" version="1" fullName="Religious Affiliation Value Set" definition="This reflects the spiritual faith affiliation" base_Enumeration="_dfhqEKDqEd-dVeaMP0XXQw">
+  <term:ValueSetVersion xmi:id="_2aTk8EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.19185" version="1" fullName="Religious Affiliation Value Set" definition="This reflects the spiritual faith affiliation" binding="Dynamic" base_Enumeration="_dfhqEKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfoXwaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_4m1G4EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.11.20.9.33" base_Enumeration="_ywcy0Gg7Ed-ilOLYnIx0jA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_9lb5cEFbEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.12212" version="1" fullName="Marital Status Value Set" definition="Marital Status is the domestic partnership status of a person." base_Enumeration="_dRMTIKDqEd-dVeaMP0XXQw">
+  <term:ValueSetVersion xmi:id="_9lb5cEFbEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.12212" version="1" fullName="Marital Status Value Set" definition="Marital Status is the domestic partnership status of a person." binding="Dynamic" base_Enumeration="_dRMTIKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dRQkkaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_hJA70UUvEeGdQ4KWAmnbhw" identifier="2.16.840.1.113883.11.20.9.32" fullName="DIR LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_hJA70EUvEeGdQ4KWAmnbhw">
@@ -2020,7 +2030,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_I5UjIG07EeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.16866" base_Enumeration="_I3CEIG07EeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_FTjLUGPwEeGskvPNzg7rUw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2dlRgG1DEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.63" base_Enumeration="_2dkqcG1DEeGCevFpokwODw">
+  <term:ValueSetVersion xmi:id="_2dlRgG1DEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.63" fullName="CountryValueSet" binding="Dynamic" base_Enumeration="_2dkqcG1DEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1ZiywKFkEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_9yUqcW1DEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.30" base_Enumeration="_9yUqcG1DEeGCevFpokwODw">
@@ -2053,7 +2063,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_x6zGAG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.10637" base_Enumeration="_x6ye8G1HEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_lC2TwGSiEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2QgiAG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.2" binding="Dynamic" base_Enumeration="_2Qf68G1HEeGCevFpokwODw">
+  <term:ValueSetVersion xmi:id="_2QgiAG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.2" fullName="PostalCodeValueSet" binding="Dynamic" base_Enumeration="_2Qf68G1HEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_WdSYkGSiEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_9dAk8G1HEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.1" base_Enumeration="_9c_94G1HEeGCevFpokwODw">
@@ -2906,7 +2916,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_1jJukDp5EeOpivxgTh7oFg" conceptName="durable power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_1jJHgDp5EeOpivxgTh7oFg"/>
   <term:ValueSetCode xmi:id="_13RkcTp5EeOpivxgTh7oFg" conceptName="healthcare power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_13RkcDp5EeOpivxgTh7oFg"/>
   <term:ValueSetCode xmi:id="_2LBm4Tp5EeOpivxgTh7oFg" conceptName="special power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_2LBm4Dp5EeOpivxgTh7oFg"/>
-  <term:ValueSetVersion xmi:id="_jVJukGKxEeOD5bEp3nNX5w" identifier="2.16.840.1.113883.1.11.10267" fullName="ParticipationFunction" base_Enumeration="_jU_WgGKxEeOD5bEp3nNX5w">
+  <term:ValueSetVersion xmi:id="_jVJukGKxEeOD5bEp3nNX5w" identifier="2.16.840.1.113883.1.11.10267" version="2014-09-01" fullName="ParticipationFunction" base_Enumeration="_jU_WgGKxEeOD5bEp3nNX5w">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_vDghMGKzEeOD5bEp3nNX5w" conceptName="admitting physician" base_EnumerationLiteral="_vDf6IGKzEeOD5bEp3nNX5w"/>
@@ -3156,7 +3166,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_sFk1QPJiEeO2NaSiicarcg" conceptName="Housing history (observable entity)" base_EnumerationLiteral="_sFkOMPJiEeO2NaSiicarcg"/>
   <term:ValueSetCode xmi:id="_t_SI4fJiEeO2NaSiicarcg" conceptName="Dosage of radiation exposure (observable entity)" base_EnumerationLiteral="_t_SI4PJiEeO2NaSiicarcg"/>
   <term:ValueSetVersion xmi:id="_hO26YPMSEeOrR8IF-aqVyQ" identifier="2.16.840.1.113762.1.4.1010.1" binding="Dynamic" base_Enumeration="_hO2TUPMSEeOrR8IF-aqVyQ"/>
-  <term:ValueSetVersion xmi:id="_bb5h4BwSEeSMr-NWzQuDBw" identifier="TempPatientLanguageOID" binding="Dynamic" base_Enumeration="_bb460BwSEeSMr-NWzQuDBw"/>
+  <term:ValueSetVersion xmi:id="_bb5h4BwSEeSMr-NWzQuDBw" identifier="2.16.840.1.113883.11.20.9.64" source="http://www.loc.gov/standards/iso639-2/php/code_list.php" binding="Dynamic" base_Enumeration="_bb460BwSEeSMr-NWzQuDBw"/>
   <term:ValueSetVersion xmi:id="_tcT18CL6EeS4d9o7u1_H3A" identifier="1.3.6.1.4.1.12009.10.2.5" fullName="LOINC Imaging Document Codes" binding="Dynamic" base_Enumeration="_tcSn0CL6EeS4d9o7u1_H3A">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
@@ -3174,4 +3184,17 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_hRIUmoY5EeS7A_69H25Pzw" identifier="2.16.840.1.113883.3.88.12.3221.7.2" version="2014-09-02" source="http://www.loinc.org/" revisionDate="07/23/2009" base_Enumeration="_hRIUkIY5EeS7A_69H25Pzw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_PPZjUIuxEeSZu6J-Yjmr9w" identifier="2.16.840.1.113883.3.2074.1.1.3" binding="Dynamic" base_Enumeration="_PPY8QIuxEeSZu6J-Yjmr9w">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_3G4OsIuxEeSZu6J-Yjmr9w" conceptName="American Indian or Alaska Native" base_EnumerationLiteral="_3G3noIuxEeSZu6J-Yjmr9w"/>
+  <term:ValueSetCode xmi:id="_7maVEIuxEeSZu6J-Yjmr9w" conceptName="Asian" base_EnumerationLiteral="_7mZuAIuxEeSZu6J-Yjmr9w"/>
+  <term:ValueSetCode xmi:id="_9ox1cYuxEeSZu6J-Yjmr9w" conceptName="Black or African American" base_EnumerationLiteral="_9ox1cIuxEeSZu6J-Yjmr9w"/>
+  <term:ValueSetCode xmi:id="__RJhcYuxEeSZu6J-Yjmr9w" conceptName="Native Hawaiian or Other Pacific Islander" base_EnumerationLiteral="__RJhcIuxEeSZu6J-Yjmr9w"/>
+  <term:ValueSetCode xmi:id="_AO7YUYuyEeSZu6J-Yjmr9w" conceptName="White" base_EnumerationLiteral="_AO7YUIuyEeSZu6J-Yjmr9w"/>
+  <term:ValueSetVersion xmi:id="_mBa3s4uzEeSZu6J-Yjmr9w" identifier="2.16.840.1.114222.4.11.837" source="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=35D34BBC-617F-DD11-B38D-00188B398520" binding="Dynamic" base_Enumeration="_mBa3sIuzEeSZu6J-Yjmr9w">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_mBa3tIuzEeSZu6J-Yjmr9w" conceptName="Hispanic or Latino" base_EnumerationLiteral="_mBa3sYuzEeSZu6J-Yjmr9w"/>
+  <term:ValueSetCode xmi:id="_mBa3tYuzEeSZu6J-Yjmr9w" conceptName="Not Hispanic or Latino" base_EnumerationLiteral="_mBa3souzEeSZu6J-Yjmr9w"/>
 </xmi:XMI>

@@ -57,43 +57,11 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
     <ownedComment xmi:id="_s137QIfHEeSBauRYePLghA">
       <body>This participant is the Physician Reading Study Performer defined in documentationOf/serviceEvent and is usually different from the attending physician. The reading physician interprets the images and evidence of the study (DICOM Definition)</body>
     </ownedComment>
-    <ownedRule xmi:id="_GoNVEIfBEeSBauRYePLghA" name="preciseToTheDayIVLTS">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_GoNVEYfBEeSBauRYePLghA">
-        <language>OCL</language>
-        <language>Analysis</language>
-        <body>not self.time.value.oclIsUndefined() implies self.time.value.size() >= 8</body>
-        <body>The content of time SHALL be a conformant US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.3). SHALL be precise to the day</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_Nct5UIfCEeSBauRYePLghA" name="preciseToTheMinuteIVLTS">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Nct5UYfCEeSBauRYePLghA">
-        <language>OCL</language>
-        <language>Analysis</language>
-        <body>not self.time.value.oclIsUndefined() implies self.time.value.size() >= 12</body>
-        <body>The content of time SHALL be a conformant US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.3). SHOULD be precise to the minute</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_8bhMsIfCEeSBauRYePLghA" name="preciseToTheSecondIVLTS">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_8bhMsYfCEeSBauRYePLghA">
-        <language>OCL</language>
-        <language>Analysis</language>
-        <body>not self.time.value.oclIsUndefined() implies self.time.value.size() >= 14</body>
-        <body>The content of time SHALL be a conformant US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.3). MAY be precise to the second</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_f6dKgIfDEeSBauRYePLghA" name="ifMorePreciseThanDayIncludeTimeZoneOffsetIVLTS">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_f6dKgYfDEeSBauRYePLghA">
-        <language>OCL</language>
-        <language>Analysis</language>
-        <body>not self.time.value.oclIsUndefined() and self.time.value.size() > 8 implies self.time.value.size() >= 15</body>
-        <body>The content of time SHALL be a conformant US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.3). If more precise than day, SHOULD include time-zone offset</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_H1UdcUVEEeGAh_iQGJvI5w">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
     </generalization>
     <ownedAttribute xmi:id="_L0RmUEVEEeGAh_iQGJvI5w" name="time" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="consol-documents.uml#_kkAUwJBkEeSSfIVHL_x3Xw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L0RmUkVEEeGAh_iQGJvI5w"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L0RmUUVEEeGAh_iQGJvI5w" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zictUErfEd6FXKclYGEDCw"/>
@@ -1479,28 +1447,4 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
     <ruleId>CONF:1098-32564</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_QTsDQIe-EeSBauRYePLghA" base_Generalization="_zKKvYIe9EeSBauRYePLghA"/>
-  <CDA:ConstraintValidation xmi:id="_GoNVEofBEeSBauRYePLghA" base_Constraint="_GoNVEIfBEeSBauRYePLghA">
-    <ruleId>CONF:8425</ruleId>
-    <ruleId>CONF:10078</ruleId>
-    <ruleId>R2.0=CONF:1098-8425</ruleId>
-    <ruleId>R2.0=CONF:81-10078</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_Nct5UofCEeSBauRYePLghA" severity="WARNING" base_Constraint="_Nct5UIfCEeSBauRYePLghA">
-    <ruleId>CONF:8425</ruleId>
-    <ruleId>CONF:10079</ruleId>
-    <ruleId>R2.0=CONF:1098-8425</ruleId>
-    <ruleId>R2.0=CONF:81-10079</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_8bhMsofCEeSBauRYePLghA" severity="INFO" base_Constraint="_8bhMsIfCEeSBauRYePLghA">
-    <ruleId>CONF:8425</ruleId>
-    <ruleId>CONF:10080</ruleId>
-    <ruleId>R2.0=CONF:1098-8425</ruleId>
-    <ruleId>R2.0=CONF:81-10080</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_f6dxkIfDEeSBauRYePLghA" severity="WARNING" base_Constraint="_f6dKgIfDEeSBauRYePLghA">
-    <ruleId>CONF:8425</ruleId>
-    <ruleId>CONF:10081</ruleId>
-    <ruleId>R2.0=CONF:1098-8425</ruleId>
-    <ruleId>R2.0=CONF:81-10081</ruleId>
-  </CDA:ConstraintValidation>
 </xmi:XMI>

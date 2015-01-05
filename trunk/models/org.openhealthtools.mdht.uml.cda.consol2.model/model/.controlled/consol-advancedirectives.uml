@@ -523,10 +523,7 @@ The general category of the patient's directive is documented in the observation
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_MtfrYEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_XXUwkLFTEeOtlapy2HWYww" name="addr" visibility="private" aggregation="composite" redefinedProperty="_7kDBYCseEeGQ5rkpDKAt8A">
-          <ownedComment xmi:id="_lcrhsLFTEeOtlapy2HWYww">
-            <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:28453).</body>
-          </ownedComment>
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="consol-documents.uml#_SCLDAJA9EeSSfIVHL_x3Xw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cIUaYbFTEeOtlapy2HWYww"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cIUaYLFTEeOtlapy2HWYww" value="1"/>
         </ownedAttribute>
@@ -589,10 +586,7 @@ The general category of the patient's directive is documented in the observation
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_MtfrYEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_EnlMkLFWEeOtlapy2HWYww" name="addr" visibility="private" aggregation="composite">
-          <ownedComment xmi:id="_agI0QLFWEeOtlapy2HWYww">
-            <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:28452).</body>
-          </ownedComment>
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="consol-documents.uml#_SCLDAJA9EeSSfIVHL_x3Xw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EnlMkrFWEeOtlapy2HWYww"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EnlMkbFWEeOtlapy2HWYww" value="*"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_TCqdsEreEd6FXKclYGEDCw"/>
@@ -656,7 +650,7 @@ The general category of the patient's directive is documented in the observation
     <ruleId>CONF:28440</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_XXVXoLFTEeOtlapy2HWYww" severity="WARNING" base_Property="_XXUwkLFTEeOtlapy2HWYww">
-    <ruleId>CONF:8671</ruleId>
+    <ruleId>CONF:1098-8671</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_iHQBhrFUEeOtlapy2HWYww" base_Property="_iHQBg7FUEeOtlapy2HWYww">
     <ruleId>CONF:8673</ruleId>
@@ -672,7 +666,7 @@ The general category of the patient's directive is documented in the observation
     <ruleId>CONF:28446</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_W6N2cLFWEeOtlapy2HWYww" severity="INFO" base_Property="_EnlMkLFWEeOtlapy2HWYww">
-    <ruleId>CONF:28451</ruleId>
+    <ruleId>CONF:1098-28451</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_jsKhYAFXEeSLIY0bHb-fFQ" clientDependency="_8GwoAAFXEeSLIY0bHb-fFQ" name="AdvanceDirectivesSectionEntriesOptional2">
     <ownedComment xmi:id="_pViksAFXEeSLIY0bHb-fFQ">
