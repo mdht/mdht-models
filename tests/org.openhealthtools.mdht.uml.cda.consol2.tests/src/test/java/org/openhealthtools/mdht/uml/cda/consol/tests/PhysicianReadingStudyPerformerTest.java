@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
+import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 
 /**
@@ -35,14 +36,14 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerPreciseToTheDayIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Precise To The Day IVLTS</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerPreciseToTheMinuteIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Precise To The Minute IVLTS</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerPreciseToTheSecondIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Precise To The Second IVLTS</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer If More Precise Than Day Include Time Zone Offset IVLTS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Assigned Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer General Header Constraints US Realm Date And Time DT Precise To The Day IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer General Header Constraints US Realm Date And Time DT Precise To The Minute IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer General Header Constraints US Realm Date And Time DT Precise To The Second IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer General Header Constraints US Realm Date And Time DT If More Precise Than Day Include Time Zone Offset IVLTS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerAssignedEntityHasDICOM(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Assigned Entity Has DICOM</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Assigned Entity Has Assigned Person Or Represented Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer#validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Assigned Entity Has National Provider Id</em>}</li>
@@ -55,150 +56,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  */
 
 public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePhysicianReadingStudyPerformerPreciseToTheDayIVLTS() {
-		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerPreciseToTheDayIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
-			"validatePhysicianReadingStudyPerformerPreciseToTheDayIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
-				time.setValue("1234");
-				target.setTime(time);
-			}
-
-			@Override
-			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				target.getTime().setValue(PRECISE_TO_DAY);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerPreciseToTheDayIVLTS(
-					(PhysicianReadingStudyPerformer) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePhysicianReadingStudyPerformerPreciseToTheDayIVLTSTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePhysicianReadingStudyPerformerPreciseToTheMinuteIVLTS() {
-		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerPreciseToTheMinuteIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
-			"validatePhysicianReadingStudyPerformerPreciseToTheMinuteIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
-				time.setValue("1234");
-				target.setTime(time);
-			}
-
-			@Override
-			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				target.getTime().setValue(PRECISE_TO_MINUTE);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerPreciseToTheMinuteIVLTS(
-					(PhysicianReadingStudyPerformer) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePhysicianReadingStudyPerformerPreciseToTheMinuteIVLTSTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePhysicianReadingStudyPerformerPreciseToTheSecondIVLTS() {
-		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerPreciseToTheSecondIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
-			"validatePhysicianReadingStudyPerformerPreciseToTheSecondIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
-				time.setValue("1234");
-				target.setTime(time);
-			}
-
-			@Override
-			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				target.getTime().setValue(PRECISE_TO_SECOND);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerPreciseToTheSecondIVLTS(
-					(PhysicianReadingStudyPerformer) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePhysicianReadingStudyPerformerPreciseToTheSecondIVLTSTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePhysicianReadingStudyPerformerIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS() {
-		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
-			"validatePhysicianReadingStudyPerformerIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
-				time.setValue(PRECISE_TO_MINUTE);
-				target.setTime(time);
-			}
-
-			@Override
-			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				target.getTime().setValue(PRECISE_TO_MINUTE_WITH_TIMEZONE);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
-					(PhysicianReadingStudyPerformer) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePhysicianReadingStudyPerformerIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -336,6 +193,166 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 		};
 
 		validatePhysicianReadingStudyPerformerAssignedEntityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS() {
+		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
+			"validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicianReadingStudyPerformer target) {
+				target.init();
+				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
+				IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+				low.setValue("1234");
+				time.setLow(low);
+				target.setTime(time);
+			}
+
+			@Override
+			protected void updateToPass(PhysicianReadingStudyPerformer target) {
+				target.getTime().getLow().setValue(PRECISE_TO_DAY);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
+					(PhysicianReadingStudyPerformer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS() {
+		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
+			"validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicianReadingStudyPerformer target) {
+				target.init();
+				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
+				IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+				high.setValue("1234");
+				time.setHigh(high);
+				target.setTime(time);
+			}
+
+			@Override
+			protected void updateToPass(PhysicianReadingStudyPerformer target) {
+				target.getTime().getHigh().setValue(PRECISE_TO_MINUTE);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
+					(PhysicianReadingStudyPerformer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS() {
+		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
+			"validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicianReadingStudyPerformer target) {
+				target.init();
+				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
+				IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+				IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+				low.setValue("1234");
+				high.setValue("1234");
+				time.setLow(low);
+				time.setHigh(high);
+				target.setTime(time);
+			}
+
+			@Override
+			protected void updateToPass(PhysicianReadingStudyPerformer target) {
+				target.getTime().getLow().setValue(PRECISE_TO_SECOND);
+				target.getTime().getHigh().setValue(PRECISE_TO_SECOND);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
+					(PhysicianReadingStudyPerformer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS() {
+		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
+			"validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicianReadingStudyPerformer target) {
+				target.init();
+				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
+				IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+				IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+				low.setValue(PRECISE_TO_MINUTE);
+				high.setValue(PRECISE_TO_MINUTE);
+				time.setLow(low);
+				time.setHigh(high);
+				target.setTime(time);
+			}
+
+			@Override
+			protected void updateToPass(PhysicianReadingStudyPerformer target) {
+				target.getTime().getLow().setValue(PRECISE_TO_MINUTE_WITH_TIMEZONE);
+				target.getTime().getHigh().setValue(PRECISE_TO_MINUTE_WITH_TIMEZONE);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
+					(PhysicianReadingStudyPerformer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase.doValidationTest();
 	}
 
 	/**

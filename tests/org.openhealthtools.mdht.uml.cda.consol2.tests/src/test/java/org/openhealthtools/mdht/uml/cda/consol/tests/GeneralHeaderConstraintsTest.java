@@ -9,6 +9,7 @@
  *     Sean Muir (JKM Software) - initial API and implementation
  *     Dan Brown (Audacious Inquiry) - additional testing code
  *     								 - errata 227 testing code
+ *     								 - various new constraints
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
@@ -829,7 +830,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateGeneralHeaderConstraintsLanguageCode() {
@@ -841,12 +842,12 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 			@Override
 			protected void updateToFail(GeneralHeaderConstraints target) {
 				target.init();
+				target.setLanguageCode(DatatypesFactory.eINSTANCE.createCS());
 			}
 
 			@Override
 			protected void updateToPass(GeneralHeaderConstraints target) {
-
-				target.setLanguageCode(DatatypesFactory.eINSTANCE.createCS("value"));
+				target.getLanguageCode().setCode("hasCode");
 			}
 
 			@Override
@@ -861,45 +862,44 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		validateGeneralHeaderConstraintsLanguageCodeTestCase.doValidationTest();
 	}
 
-	// /**
-	// *
-	// * @generated not
-	// */
-	// @Test
-	// public void testValidateGeneralHeaderConstraintsLanguageCode() {
-	// OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLanguageCodeTestCase = new
-	// OperationsTestCase<GeneralHeaderConstraints>(
-	// "validateGeneralHeaderConstraintsLanguageCode",
-	// operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-	// objectFactory) {
-	//
-	// @Override
-	// protected void updateToFail(GeneralHeaderConstraints target) {
-	//
-	// }
-	//
-	// @Override
-	// protected void updateToPass(GeneralHeaderConstraints target) {
-	// target.init();
-	// target.setLanguageCode(DatatypesFactory.eINSTANCE.createCS());
-	//
-	// }
-	//
-	// @Override
-	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-	//
-	// return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLanguageCode(
-	// (GeneralHeaderConstraints) objectToTest, diagnostician, map);
-	// }
-	//
-	// };
-	//
-	// validateGeneralHeaderConstraintsLanguageCodeTestCase.doValidationTest();
-	// }
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsLanguageCodeP() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLanguageCodePTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsLanguageCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.init();
+				target.setLanguageCode(DatatypesFactory.eINSTANCE.createCS());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLanguageCodeP(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsLanguageCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
-	* @generated not  not
+	* @generated not
 	*/
 	@Test
 	public void testValidateGeneralHeaderConstraintsSetId() {
@@ -1418,6 +1418,146 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsAuthorizationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheDayTS() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheDayTSTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheDayTS",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_PRECISE_TO_THE_DAY_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				TS effectiveTime = DatatypesFactory.eINSTANCE.createTS("1234");
+				target.setEffectiveTime(effectiveTime);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getEffectiveTime().setValue(PRECISE_TO_DAY);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheDayTS(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheDayTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheMinuteTS() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheMinuteTSTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheMinuteTS",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_PRECISE_TO_THE_MINUTE_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				TS effectiveTime = DatatypesFactory.eINSTANCE.createTS("1234");
+				target.setEffectiveTime(effectiveTime);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getEffectiveTime().setValue(PRECISE_TO_MINUTE);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheMinuteTS(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheMinuteTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheSecondTS() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheSecondTSTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheSecondTS",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_PRECISE_TO_THE_SECOND_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				TS effectiveTime = DatatypesFactory.eINSTANCE.createTS("1234");
+				target.setEffectiveTime(effectiveTime);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getEffectiveTime().setValue(PRECISE_TO_SECOND);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheSecondTS(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheSecondTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsUSRealmDateAndTimeDTMIfMorePreciseThanDayIncludeTimeZoneOffsetTS() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMIfMorePreciseThanDayIncludeTimeZoneOffsetTSTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMIfMorePreciseThanDayIncludeTimeZoneOffsetTS",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				TS effectiveTime = DatatypesFactory.eINSTANCE.createTS(PRECISE_TO_MINUTE);
+				target.setEffectiveTime(effectiveTime);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getEffectiveTime().setValue(PRECISE_TO_MINUTE_WITH_TIMEZONE);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMIfMorePreciseThanDayIncludeTimeZoneOffsetTS(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMIfMorePreciseThanDayIncludeTimeZoneOffsetTSTestCase.doValidationTest();
 	}
 
 	/**
@@ -6706,6 +6846,41 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				LegalAuthenticator la = CDAFactory.eINSTANCE.createLegalAuthenticator();
+				target.setLegalAuthenticator(la);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getLegalAuthenticator().setAssignedEntity(CDAFactory.eINSTANCE.createAssignedEntity());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated not
 	*/
 	@Test
@@ -7526,6 +7701,43 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsAuthenticatorTimeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsAuthenticatorSignatureCodeP() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthenticatorSignatureCodePTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthenticatorSignatureCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_SIGNATURE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Authenticator authenticator = CDAFactory.eINSTANCE.createAuthenticator();
+				target.getAuthenticators().add(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				for (Authenticator a : target.getAuthenticators()) {
+					a.setSignatureCode(DatatypesFactory.eINSTANCE.createCS());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorSignatureCodeP(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthenticatorSignatureCodePTestCase.doValidationTest();
 	}
 
 	/**
@@ -12358,96 +12570,6 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateGeneralHeaderConstraintsInformantAssignedEntity() {
-		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantAssignedEntityTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
-			"validateGeneralHeaderConstraintsInformantAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(GeneralHeaderConstraints target) {
-				target.init();
-
-				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-
-				target.getInformants().add(informant);
-			}
-
-			@Override
-			protected void updateToPass(GeneralHeaderConstraints target) {
-				target.getInformants().clear();
-
-				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-
-				informant.setAssignedEntity(ae);
-
-				target.getInformants().add(informant);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntity(
-					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateGeneralHeaderConstraintsInformantAssignedEntityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateGeneralHeaderConstraintsInformantRelatedEntity() {
-		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantRelatedEntityTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
-			"validateGeneralHeaderConstraintsInformantRelatedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(GeneralHeaderConstraints target) {
-				target.init();
-
-				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-
-				target.getInformants().add(informant);
-			}
-
-			@Override
-			protected void updateToPass(GeneralHeaderConstraints target) {
-				target.getInformants().clear();
-
-				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-				RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
-
-				informant.setRelatedEntity(re);
-
-				target.getInformants().add(informant);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntity(
-					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateGeneralHeaderConstraintsInformantRelatedEntityTestCase.doValidationTest();
 	}
 
 	/**
