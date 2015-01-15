@@ -42781,15 +42781,15 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ConsultationNote2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent ConsultationNote2HasReasonForReferral2OrReasonForVisit ConsultationNote2Code ConsultationNote2CodeP ConsultationNote2InFulfillmentOf ConsultationNote2ComponentOf ConsultationNote2HistoryOfPresentIllnessSection ConsultationNote2AllergiesSection2 ConsultationNote2ProblemSection2 ConsultationNote2ParticipantAssociatedEntityAssociatedPersonName ConsultationNote2ParticipantAssociatedEntityClassCode ConsultationNote2ParticipantAssociatedEntityId ConsultationNote2ParticipantAssociatedEntityTelecom ConsultationNote2ParticipantAssociatedEntityAssociatedPerson ConsultationNote2ParticipantTypeCode ConsultationNote2ParticipantAssociatedEntity ConsultationNote2InFulfillmentOfOrderId ConsultationNote2InFulfillmentOfOrder ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay ConsultationNote2ComponentOfEncompassingEncounterId ConsultationNote2ComponentOfEncompassingEncounterEffectiveTime ConsultationNote2ComponentOfEncompassingEncounter"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent ConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection ConsultationNote2Code ConsultationNote2CodeP ConsultationNote2InFulfillmentOf ConsultationNote2ComponentOf ConsultationNote2HistoryOfPresentIllnessSection ConsultationNote2AllergiesSection2 ConsultationNote2ProblemSection2 ConsultationNote2ParticipantAssociatedEntityAssociatedPersonName ConsultationNote2ParticipantAssociatedEntityClassCode ConsultationNote2ParticipantAssociatedEntityId ConsultationNote2ParticipantAssociatedEntityTelecom ConsultationNote2ParticipantAssociatedEntityAssociatedPerson ConsultationNote2ParticipantTypeCode ConsultationNote2ParticipantAssociatedEntity ConsultationNote2InFulfillmentOfOrderId ConsultationNote2InFulfillmentOfOrder ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity ConsultationNote2ComponentOfEncompassingEncounterId ConsultationNote2ComponentOfEncompassingEncounterEffectiveTime ConsultationNote2ComponentOfEncompassingEncounter"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.4"/>
       <details key="templateId.extension" value="2014-06-09"/>
-      <details key="constraints.validation.info" value="ConsultationNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 GeneralHeaderConstraintsTitle ConsultationNote2AssessmentSection ConsultationNote2AssessmentAndPlanSection2 ConsultationNote2PlanOfTreatmentSection2 ConsultationNote2ReasonForReferralSection2 ConsultationNote2ReasonForVisitSection ConsultationNote2ChiefComplaintSection ConsultationNote2ChiefComplaintAndReasonForVisitSection ConsultationNote2GeneralStatusSection ConsultationNote2HistoryOfPastIllnessSection2 ConsultationNote2ImmunizationsSectionEntriesOptional2 ConsultationNote2ProceduresSectionEntriesOptional2 ConsultationNote2SocialHistorySection2 ConsultationNote2VitalSignsSection2 ConsultationNote2AdvanceDirectivesSectionEntriesOptional2 ConsultationNote2FunctionalStatusSection2 ConsultationNote2ReviewOfSystemsSection ConsultationNote2MedicalEquipmentSection2 ConsultationNote2MentalStatusSection ConsultationNote2NutritionSection ConsultationNote2ParticipantAssociatedEntityScopingOrganization ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond ConsultationNote2ComponentOfEncompassingEncounterResponsibleParty ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipant"/>
+      <details key="constraints.validation.info" value="ConsultationNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 ConsultationNote2AssessmentSection ConsultationNote2AssessmentAndPlanSection2 ConsultationNote2PlanOfTreatmentSection2 ConsultationNote2ReasonForVisitSection ConsultationNote2ChiefComplaintSection ConsultationNote2ChiefComplaintAndReasonForVisitSection ConsultationNote2GeneralStatusSection ConsultationNote2HistoryOfPastIllnessSection2 ConsultationNote2ImmunizationsSectionEntriesOptional2 ConsultationNote2ProceduresSectionEntriesOptional2 ConsultationNote2SocialHistorySection2 ConsultationNote2VitalSignsSection2 ConsultationNote2AdvanceDirectivesSectionEntriesOptional2 ConsultationNote2FunctionalStatusSection2 ConsultationNote2ReviewOfSystemsSection ConsultationNote2MedicalEquipmentSection2 ConsultationNote2MentalStatusSection ConsultationNote2NutritionSection ConsultationNote2FamilyHistorySection2 ConsultationNote2ParticipantAssociatedEntityScopingOrganization ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS ConsultationNote2ComponentOfEncompassingEncounterResponsibleParty ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipant"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.ConsultationNote2Code" value="ConsultationNote2CodeP"/>
-      <details key="constraints.validation.warning" value="ConsultationNote2Participant ConsultationNote2PhysicalExamSection2 ConsultationNote2MedicationsSection2 ConsultationNote2ResultsSection2 ConsultationNote2ParticipantAssociatedEntityAddr ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute ConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset"/>
-      <details key="constraints.validation.query" value="ConsultationNote2ParticipantAssociatedEntityAssociatedPersonName ConsultationNote2ParticipantAssociatedEntityClassCode ConsultationNote2ParticipantAssociatedEntityId ConsultationNote2ParticipantAssociatedEntityAddr ConsultationNote2ParticipantAssociatedEntityTelecom ConsultationNote2ParticipantAssociatedEntityAssociatedPerson ConsultationNote2ParticipantAssociatedEntityScopingOrganization ConsultationNote2ParticipantTypeCode ConsultationNote2ParticipantAssociatedEntity ConsultationNote2InFulfillmentOfOrderId ConsultationNote2InFulfillmentOfOrder ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond ConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset ConsultationNote2ComponentOfEncompassingEncounterId ConsultationNote2ComponentOfEncompassingEncounterEffectiveTime ConsultationNote2ComponentOfEncompassingEncounterResponsibleParty ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipant ConsultationNote2ComponentOfEncompassingEncounter"/>
+      <details key="constraints.validation.warning" value="ConsultationNote2Participant ConsultationNote2PhysicalExamSection2 ConsultationNote2MedicationsSection2 ConsultationNote2ResultsSection2 ConsultationNote2ParticipantAssociatedEntityAddr ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"/>
+      <details key="constraints.validation.query" value="ConsultationNote2ParticipantAssociatedEntityAssociatedPersonName ConsultationNote2ParticipantAssociatedEntityClassCode ConsultationNote2ParticipantAssociatedEntityId ConsultationNote2ParticipantAssociatedEntityAddr ConsultationNote2ParticipantAssociatedEntityTelecom ConsultationNote2ParticipantAssociatedEntityAssociatedPerson ConsultationNote2ParticipantAssociatedEntityScopingOrganization ConsultationNote2ParticipantTypeCode ConsultationNote2ParticipantAssociatedEntity ConsultationNote2InFulfillmentOfOrderId ConsultationNote2InFulfillmentOfOrder ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity ConsultationNote2ComponentOfEncompassingEncounterId ConsultationNote2ComponentOfEncompassingEncounterEffectiveTime ConsultationNote2ComponentOfEncompassingEncounterResponsibleParty ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipant ConsultationNote2ComponentOfEncompassingEncounter"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNote2Participant">
       <details key="typeCode" value="CALLBCK"/>
@@ -42814,9 +42814,10 @@
       <details key="constraints.validation.error" value="ConsultationNote2ComponentOfEncompassingEncounter"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNote2ComponentOfEncompassingEncounter">
-      <details key="constraints.validation.error" value="ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay ConsultationNote2ComponentOfEncompassingEncounterId ConsultationNote2ComponentOfEncompassingEncounterEffectiveTime"/>
-      <details key="constraints.validation.warning" value="ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute ConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset"/>
-      <details key="constraints.validation.info" value="ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond ConsultationNote2ComponentOfEncompassingEncounterResponsibleParty ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipant"/>
+      <details key="constraints.validation.error" value="ConsultationNote2ComponentOfEncompassingEncounterId ConsultationNote2ComponentOfEncompassingEncounterEffectiveTime ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS"/>
+      <details key="constraints.validation.info" value="ConsultationNote2ComponentOfEncompassingEncounterResponsibleParty ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipant ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS"/>
+      <details key="constraints.validation.query" value="ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"/>
+      <details key="constraints.validation.warning" value="ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNote2ComponentOfEncompassingEncounterResponsibleParty">
       <details key="constraints.validation.error" value="ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity"/>
@@ -42836,16 +42837,6 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="GeneralHeaderConstraintsTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//GeneralHeaderConstraints/GeneralHeaderConstraintsTitle #//USRealmHeader2/%duplicates%/GeneralHeaderConstraintsTitle"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-        <eParameters name="context">
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
     </eAnnotations>
     <eOperations name="ConsultationNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -42857,7 +42848,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"
+    <eOperations name="ConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -42867,7 +42858,8 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ConsultationNote2HasReasonForReferral2OrReasonForVisit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="ConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -42940,15 +42932,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="ConsultationNote2PlanOfTreatmentSection2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ConsultationNote2ReasonForReferralSection2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -43147,6 +43130,15 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="ConsultationNote2FamilyHistorySection2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="ConsultationNote2ParticipantAssociatedEntityAssociatedPersonName"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -43249,6 +43241,46 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="ConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -43280,46 +43312,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="ConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -43382,8 +43374,6 @@
         eType="#//AssessmentAndPlanSection2"/>
     <eOperations name="getPlanOfTreatmentSection2" ordered="false" lowerBound="1"
         eType="#//PlanOfTreatmentSection2"/>
-    <eOperations name="getReasonForReferralSection2" ordered="false" lowerBound="1"
-        eType="#//ReasonForReferralSection2"/>
     <eOperations name="getReasonForVisitSection" ordered="false" lowerBound="1" eType="#//ReasonForVisitSection"/>
     <eOperations name="getHistoryOfPresentIllnessSection" ordered="false" lowerBound="1"
         eType="#//HistoryOfPresentIllnessSection"/>
@@ -43413,6 +43403,124 @@
         eType="#//MedicalEquipmentSection2"/>
     <eOperations name="getMentalStatusSection" ordered="false" lowerBound="1" eType="#//MentalStatusSection"/>
     <eOperations name="getNutritionSection" ordered="false" lowerBound="1" eType="#//NutritionSection"/>
+    <eOperations name="getFamilyHistorySection2" ordered="false" lowerBound="1" eType="#//FamilyHistorySection2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistorySection2" eSuperTypes="#//FamilyHistorySection">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="FamilyHistorySectionTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.15"/>
+      <details key="templateId.extension" value="2014-06-09"/>
+      <details key="constraints.validation.info" value="FamilyHistorySectionFamilyHistoryOrganizer2"/>
+    </eAnnotations>
+    <eAnnotations source="duplicates">
+      <contents xsi:type="ecore:EOperation" name="FamilyHistorySectionTemplateId"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="redefines" references="#//FamilyHistorySection/FamilyHistorySectionTemplateId"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+        <eParameters name="context">
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+    </eAnnotations>
+    <eOperations name="FamilyHistorySectionFamilyHistoryOrganizer2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getConsolFamilyHistoryOrganizer2s" ordered="false" lowerBound="1"
+        upperBound="-1" eType="#//FamilyHistoryOrganizer2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistoryOrganizer2" eSuperTypes="#//FamilyHistoryOrganizer">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizer2Id FamilyHistoryOrganizerFamilyHistoryObservation2"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.45"/>
+      <details key="templateId.extension" value="2014-06-09"/>
+    </eAnnotations>
+    <eAnnotations source="duplicates">
+      <contents xsi:type="ecore:EOperation" name="FamilyHistoryOrganizerTemplateId"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="redefines" references="#//FamilyHistoryOrganizer/FamilyHistoryOrganizerTemplateId"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+        <eParameters name="context">
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+    </eAnnotations>
+    <eOperations name="FamilyHistoryOrganizer2Id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="FamilyHistoryOrganizerFamilyHistoryObservation2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getConsolFamilyHistoryObservation2s" ordered="false" lowerBound="1"
+        upperBound="-1" eType="#//FamilyHistoryObservation2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistoryObservation2" eSuperTypes="#//FamilyHistoryObservation">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="FamilyHistoryObservationTemplateId FamilyHistoryObservationCodeP"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.46"/>
+      <details key="templateId.extension" value="2014-06-09"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="constraints.validation.warning" value="FamilyHistoryObservationCode"/>
+      <details key="constraints.validation.dependOn.FamilyHistoryObservationCode"
+          value="FamilyHistoryObservationCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="duplicates">
+      <contents xsi:type="ecore:EOperation" name="FamilyHistoryObservationTemplateId"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="redefines" references="#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+        <eParameters name="context">
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="FamilyHistoryObservationCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="redefines" references="#//FamilyHistoryObservation/FamilyHistoryObservationCodeP"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+        <eParameters name="context">
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="FamilyHistoryObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="redefines" references="#//FamilyHistoryObservation/FamilyHistoryObservationCode"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+        <eParameters name="context">
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+    </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ContinuityOfCareDocument2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
@@ -43426,7 +43534,7 @@
       <details key="constraints.validation.dependOn.ContinuityOfCareDocument2Code"
           value="ContinuityOfCareDocument2CodeP"/>
       <details key="constraints.validation.warning" value="ContinuityOfCareDocument2ProceduresSection2 ContinuityOfCareDocument2PlanOfTreatmentSection2 ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocument2DocumentationOfServiceEventPerformer"/>
-      <details key="constraints.validation.info" value="ContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2 ContinuityOfCareDocument2EncountersSectionEntriesOptional2 ContinuityOfCareDocument2FunctionalStatusSection2 ContinuityOfCareDocument2ImmunizationsSection2 ContinuityOfCareDocument2MedicalEquipmentSection2 ContinuityOfCareDocument2PayersSection2 ContinuityOfCareDocument2MentalStatusSection ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity"/>
+      <details key="constraints.validation.info" value="ContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2 ContinuityOfCareDocument2EncountersSectionEntriesOptional2 ContinuityOfCareDocument2FunctionalStatusSection2 ContinuityOfCareDocument2ImmunizationsSection2 ContinuityOfCareDocument2MedicalEquipmentSection2 ContinuityOfCareDocument2PayersSection2 ContinuityOfCareDocument2MentalStatusSection ContinuityOfCareDocument2NutritionSection ContinuityOfCareDocument2FamilyHistorySection2 ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity"/>
       <details key="constraints.validation.query" value="ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocument2AuthorAssignedAuthor ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity ContinuityOfCareDocument2DocumentationOfServiceEventClassCode ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime ContinuityOfCareDocument2DocumentationOfServiceEventPerformer ContinuityOfCareDocument2DocumentationOfServiceEvent"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2Author">
@@ -43643,6 +43751,24 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="ContinuityOfCareDocument2NutritionSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ContinuityOfCareDocument2FamilyHistorySection2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -43801,22 +43927,24 @@
     <eOperations name="getSocialHistorySection2" ordered="false" lowerBound="1" eType="#//SocialHistorySection2"/>
     <eOperations name="getVitalSignsSection2" ordered="false" lowerBound="1" eType="#//VitalSignsSection2"/>
     <eOperations name="getMentalStatusSection" ordered="false" lowerBound="1" eType="#//MentalStatusSection"/>
+    <eOperations name="getNutritionSection" ordered="false" lowerBound="1" eType="#//NutritionSection"/>
+    <eOperations name="getFamilyHistorySection2" ordered="false" lowerBound="1" eType="#//FamilyHistorySection2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DiagnosticImagingReport2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId DiagnosticImagingReport2Id DiagnosticImagingReport2CodeP DiagnosticImagingReport2DocumentationOf DiagnosticImagingReport2FindingsSection DiagnosticImagingReport2Component2 DiagnosticImagingReport2Informant DiagnosticImagingReport2IIRoot DiagnosticImagingReport2ParticipantAssociatedEntityPersonName DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReport2ParticipantAssociatedEntity DiagnosticImagingReport2InFulfillmentOfOrderId DiagnosticImagingReport2InFulfillmentOfOrder DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventCode DiagnosticImagingReport2DocumentationOfServiceEvent DiagnosticImagingReport2RelatedDocumentParentDocumentId DiagnosticImagingReport2RelatedDocumentParentDocument DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime DiagnosticImagingReport2ComponentOfEncompassingEncounter DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP DiagnosticImagingReport2ComponentStructuredBodyComponent3Section DiagnosticImagingReport2ComponentStructuredBody"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId DiagnosticImagingReport2Id DiagnosticImagingReport2CodeP DiagnosticImagingReport2DocumentationOf DiagnosticImagingReport2FindingsSection DiagnosticImagingReport2Component2 DiagnosticImagingReport2Informant DiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters DiagnosticImagingReport2IIRoot DiagnosticImagingReport2ParticipantAssociatedEntityPersonName DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReport2ParticipantAssociatedEntity DiagnosticImagingReport2InFulfillmentOfOrderId DiagnosticImagingReport2InFulfillmentOfOrder DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventCode DiagnosticImagingReport2DocumentationOfServiceEvent DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength DiagnosticImagingReport2RelatedDocumentParentDocumentId DiagnosticImagingReport2RelatedDocumentParentDocument DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime DiagnosticImagingReport2ComponentOfEncompassingEncounter DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP DiagnosticImagingReport2ComponentStructuredBodyComponent3Section DiagnosticImagingReport2ComponentStructuredBody"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.5"/>
       <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
-      <details key="constraints.validation.warning" value="DiagnosticImagingReport2Code DiagnosticImagingReport2DICOMObjectCatalogSection DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventPerformer DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute DiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2 DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText"/>
+      <details key="constraints.validation.warning" value="DiagnosticImagingReport2Code DiagnosticImagingReport2DICOMObjectCatalogSection DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2 DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2 DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText"/>
       <details key="constraints.validation.dependOn.DiagnosticImagingReport2Code"
           value="DiagnosticImagingReport2CodeP"/>
-      <details key="constraints.validation.info" value="DiagnosticImagingReport2InformationRecipient DiagnosticImagingReport2Participant DiagnosticImagingReport2InFulfillmentOf DiagnosticImagingReport2RelatedDocument DiagnosticImagingReport2ComponentOf DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3"/>
-      <details key="constraints.validation.query" value="DiagnosticImagingReport2IIRoot DiagnosticImagingReport2ParticipantAssociatedEntityPersonName DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReport2ParticipantAssociatedEntity DiagnosticImagingReport2InFulfillmentOfOrderId DiagnosticImagingReport2InFulfillmentOfOrder DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventCode DiagnosticImagingReport2DocumentationOfServiceEventPerformer DiagnosticImagingReport2DocumentationOfServiceEvent DiagnosticImagingReport2RelatedDocumentParentDocumentId DiagnosticImagingReport2RelatedDocumentParentDocument DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond DiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2 DiagnosticImagingReport2ComponentOfEncompassingEncounter DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3Section DiagnosticImagingReport2ComponentStructuredBodyComponent3 DiagnosticImagingReport2ComponentStructuredBody"/>
+      <details key="constraints.validation.info" value="DiagnosticImagingReport2InformationRecipient DiagnosticImagingReport2Participant DiagnosticImagingReport2InFulfillmentOf DiagnosticImagingReport2RelatedDocument DiagnosticImagingReport2ComponentOf DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3"/>
+      <details key="constraints.validation.query" value="DiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters DiagnosticImagingReport2IIRoot DiagnosticImagingReport2ParticipantAssociatedEntityPersonName DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReport2ParticipantAssociatedEntity DiagnosticImagingReport2InFulfillmentOfOrderId DiagnosticImagingReport2InFulfillmentOfOrder DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventCode DiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2 DiagnosticImagingReport2DocumentationOfServiceEvent DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength DiagnosticImagingReport2RelatedDocumentParentDocumentId DiagnosticImagingReport2RelatedDocumentParentDocument DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2 DiagnosticImagingReport2ComponentOfEncompassingEncounter DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3Section DiagnosticImagingReport2ComponentStructuredBodyComponent3 DiagnosticImagingReport2ComponentStructuredBody"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2II">
-      <details key="constraints.validation.error" value="DiagnosticImagingReport2IIRoot"/>
+      <details key="constraints.validation.error" value="DiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters DiagnosticImagingReport2IIRoot"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2Participant">
       <details key="constraints.validation.error" value="DiagnosticImagingReport2ParticipantAssociatedEntity"/>
@@ -43839,21 +43967,26 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2DocumentationOfServiceEvent">
       <details key="classCode" value="ACT"/>
       <details key="constraints.validation.error" value="DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventCode"/>
-      <details key="constraints.validation.warning" value="DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventPerformer"/>
+      <details key="constraints.validation.warning" value="DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2RelatedDocument">
       <details key="constraints.validation.error" value="DiagnosticImagingReport2RelatedDocumentParentDocument"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2RelatedDocumentParentDocument">
-      <details key="constraints.validation.error" value="DiagnosticImagingReport2RelatedDocumentParentDocumentId"/>
+      <details key="constraints.validation.error" value="DiagnosticImagingReport2RelatedDocumentParentDocumentId DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength"/>
+      <details key="constraints.validation.query" value="DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2RelatedDocumentParentDocumentII">
+      <details key="constraints.validation.error" value="DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2ComponentOf">
       <details key="constraints.validation.error" value="DiagnosticImagingReport2ComponentOfEncompassingEncounter"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2ComponentOfEncompassingEncounter">
-      <details key="constraints.validation.error" value="DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime"/>
-      <details key="constraints.validation.warning" value="DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute DiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2"/>
-      <details key="constraints.validation.info" value="DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty"/>
+      <details key="constraints.validation.error" value="DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS"/>
+      <details key="constraints.validation.info" value="DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS"/>
+      <details key="constraints.validation.warning" value="DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2 DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"/>
+      <details key="constraints.validation.query" value="DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty">
       <details key="constraints.validation.error" value="DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity"/>
@@ -44010,6 +44143,16 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="DiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="DiagnosticImagingReport2IIRoot" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -44094,7 +44237,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="DiagnosticImagingReport2DocumentationOfServiceEventPerformer"
+    <eOperations name="DiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -44105,6 +44248,16 @@
       </eParameters>
     </eOperations>
     <eOperations name="DiagnosticImagingReport2DocumentationOfServiceEvent" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -44131,6 +44284,46 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -44142,46 +44335,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="DiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -44405,15 +44558,15 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DischargeSummary2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId DischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection DischargeSummary2Code DischargeSummary2CodeP DischargeSummary2ComponentOf DischargeSummary2AllergiesSectionEntriesOptional2 DischargeSummary2HospitalCourseSection DischargeSummary2PlanOfTreatmentSection2 DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow DischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DischargeSummary2ComponentOfEncompassingEncounterEffectiveTime DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP DischargeSummary2ComponentOfEncompassingEncounter"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId DischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection DischargeSummary2Code DischargeSummary2CodeP DischargeSummary2ComponentOf DischargeSummary2AllergiesSectionEntriesOptional2 DischargeSummary2HospitalCourseSection DischargeSummary2PlanOfTreatmentSection2 DischargeSummary2DischargeDiagnosisSection2 DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow DischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DischargeSummary2ComponentOfEncompassingEncounterEffectiveTime DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP DischargeSummary2ComponentOfEncompassingEncounter"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.8"/>
       <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.DischargeSummary2Code" value="DischargeSummary2CodeP"/>
-      <details key="constraints.validation.info" value="DischargeSummary2Participant DischargeSummary2ChiefComplaintSection DischargeSummary2ChiefComplaintAndReasonForVisitSection DischargeSummary2NutritionSection DischargeSummary2FunctionalStatusSection2 DischargeSummary2HistoryOfPastIllnessSection2 DischargeSummary2HistoryOfPresentIllnessSection DischargeSummary2HospitalConsultationsSection DischargeSummary2HospitalDischargeInstructionsSection DischargeSummary2HospitalDischargePhysicalSection DischargeSummary2HospitalDischargeStudiesSummarySection DischargeSummary2ImmunizationsSectionEntriesOptional2 DischargeSummary2ProblemSectionEntriesOptional2 DischargeSummary2ProceduresSectionEntriesOptional2 DischargeSummary2ReasonForVisitSection DischargeSummary2ReviewOfSystemsSection DischargeSummary2SocialHistorySection2 DischargeSummary2VitalSignsSectionEntriesOptional2 DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant DischargeSummary2ComponentOfEncompassingEncounterResponsibleParty"/>
-      <details key="constraints.validation.query" value="DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow DischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DischargeSummary2ComponentOfEncompassingEncounterEffectiveTime DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant DischargeSummary2ComponentOfEncompassingEncounterResponsibleParty DischargeSummary2ComponentOfEncompassingEncounter"/>
-      <details key="constraints.validation.warning" value="DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode"/>
+      <details key="constraints.validation.info" value="DischargeSummary2Participant DischargeSummary2ChiefComplaintSection DischargeSummary2ChiefComplaintAndReasonForVisitSection DischargeSummary2NutritionSection DischargeSummary2FunctionalStatusSection2 DischargeSummary2HistoryOfPastIllnessSection2 DischargeSummary2HistoryOfPresentIllnessSection DischargeSummary2HospitalConsultationsSection DischargeSummary2HospitalDischargeInstructionsSection DischargeSummary2HospitalDischargePhysicalSection DischargeSummary2HospitalDischargeStudiesSummarySection DischargeSummary2ImmunizationsSectionEntriesOptional2 DischargeSummary2ProblemSectionEntriesOptional2 DischargeSummary2ProceduresSectionEntriesOptional2 DischargeSummary2ReasonForVisitSection DischargeSummary2ReviewOfSystemsSection DischargeSummary2SocialHistorySection2 DischargeSummary2VitalSignsSectionEntriesOptional2 DischargeSummary2FamilyHistorySection2 DischargeSummary2AdmissionDiagnosisSection2 DischargeSummary2AdmissionMedicationsSectionEntriesOptional2 DischargeSummary2DischargeMedicationsSection2 DischargeSummary2DischargeDietSection DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant DischargeSummary2ComponentOfEncompassingEncounterResponsibleParty"/>
+      <details key="constraints.validation.warning" value="DischargeSummary2DischargeMedicationsSectionEntriesOptional2 DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode"/>
+      <details key="constraints.validation.query" value="DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow DischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DischargeSummary2ComponentOfEncompassingEncounterEffectiveTime DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant DischargeSummary2ComponentOfEncompassingEncounterResponsibleParty DischargeSummary2ComponentOfEncompassingEncounter"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeSummary2ComponentOf">
       <details key="constraints.validation.error" value="DischargeSummary2ComponentOfEncompassingEncounter"/>
@@ -44432,8 +44585,14 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant">
       <details key="constraints.validation.error" value="DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity"/>
     </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity">
+      <details key="constraints.validation.warning" value="DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization"/>
+    </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeSummary2ComponentOfEncompassingEncounterResponsibleParty">
       <details key="constraints.validation.error" value="DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity">
+      <details key="constraints.validation.warning" value="DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="GeneralHeaderConstraintsTemplateId"
@@ -44674,6 +44833,71 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="DischargeSummary2DischargeDiagnosisSection2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DischargeSummary2DischargeMedicationsSectionEntriesOptional2"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DischargeSummary2FamilyHistorySection2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DischargeSummary2AdmissionDiagnosisSection2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DischargeSummary2AdmissionMedicationsSectionEntriesOptional2"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DischargeSummary2DischargeMedicationsSection2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DischargeSummary2DischargeDietSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -44694,6 +44918,26 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -44705,6 +44949,26 @@
       </eParameters>
     </eOperations>
     <eOperations name="DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -44827,18 +45091,30 @@
     <eOperations name="getSocialHistorySection2" ordered="false" lowerBound="1" eType="#//SocialHistorySection2"/>
     <eOperations name="getVitalSignsSectionEntriesOptional2" ordered="false" lowerBound="1"
         eType="#//VitalSignsSectionEntriesOptional2"/>
+    <eOperations name="getDischargeDiagnosisSection2" ordered="false" lowerBound="1"
+        eType="#//DischargeDiagnosisSection2"/>
+    <eOperations name="getDischargeMedicationsSectionEntriesOptional2" ordered="false"
+        lowerBound="1" eType="#//DischargeMedicationsSectionEntriesOptional2"/>
+    <eOperations name="getFamilyHistorySection2" ordered="false" lowerBound="1" eType="#//FamilyHistorySection2"/>
+    <eOperations name="getAdmissionDiagnosisSection2" ordered="false" lowerBound="1"
+        eType="#//AdmissionDiagnosisSection2"/>
+    <eOperations name="getAdmissionMedicationsSectionEntriesOptional2" ordered="false"
+        lowerBound="1" eType="#//AdmissionMedicationsSectionEntriesOptional2"/>
+    <eOperations name="getDischargeMedicationsSection2" ordered="false" lowerBound="1"
+        eType="#//DischargeMedicationsSection2"/>
+    <eOperations name="getDischargeDietSection" ordered="false" lowerBound="1" eType="#//DischargeDietSection"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HistoryAndPhysicalNote2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId HistoryAndPhysicalNote2HasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit HistoryAndPhysicalNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 HistoryAndPhysicalNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent HistoryAndPhysicalNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection HistoryAndPhysicalNote2Code HistoryAndPhysicalNote2CodeP HistoryAndPhysicalNote2ComponentOf HistoryAndPhysicalNote2AllergiesSectionEntriesOptional2 HistoryAndPhysicalNote2GeneralStatusSection HistoryAndPhysicalNote2HistoryOfPastIllnessSection2 HistoryAndPhysicalNote2MedicationsSectionEntriesOptional2 HistoryAndPhysicalNote2PhysicalExamSection2 HistoryAndPhysicalNote2ResultsSectionEntriesOptional2 HistoryAndPhysicalNote2ReviewOfSystemsSection HistoryAndPhysicalNote2SocialHistorySection2 HistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2 HistoryAndPhysicalNote2InformationRecipientIntendedRecipient HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheDay HistoryAndPhysicalNote2ComponentOfEncompassingEncounterId HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime HistoryAndPhysicalNote2ComponentOfEncompassingEncounter"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId HistoryAndPhysicalNote2HasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit HistoryAndPhysicalNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 HistoryAndPhysicalNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent HistoryAndPhysicalNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection HistoryAndPhysicalNote2Code HistoryAndPhysicalNote2CodeP HistoryAndPhysicalNote2ComponentOf HistoryAndPhysicalNote2AllergiesSectionEntriesOptional2 HistoryAndPhysicalNote2GeneralStatusSection HistoryAndPhysicalNote2HistoryOfPastIllnessSection2 HistoryAndPhysicalNote2MedicationsSectionEntriesOptional2 HistoryAndPhysicalNote2PhysicalExamSection2 HistoryAndPhysicalNote2ResultsSectionEntriesOptional2 HistoryAndPhysicalNote2ReviewOfSystemsSection HistoryAndPhysicalNote2SocialHistorySection2 HistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2 HistoryAndPhysicalNote2FamilyHistorySection2 HistoryAndPhysicalNote2InformationRecipientIntendedRecipient HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity HistoryAndPhysicalNote2ComponentOfEncompassingEncounterId HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime HistoryAndPhysicalNote2ComponentOfEncompassingEncounter"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.3"/>
       <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.HistoryAndPhysicalNote2Code" value="HistoryAndPhysicalNote2CodeP"/>
-      <details key="constraints.validation.info" value="HistoryAndPhysicalNote2InformationRecipient HistoryAndPhysicalNote2Participant HistoryAndPhysicalNote2InFulfillmentOf HistoryAndPhysicalNote2AssessmentSection HistoryAndPhysicalNote2PlanOfTreatmentSection2 HistoryAndPhysicalNote2AssessmentAndPlanSection2 HistoryAndPhysicalNote2ChiefComplaintSection HistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSection HistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2 HistoryAndPhysicalNote2InstructionsSection2 HistoryAndPhysicalNote2ProblemSectionEntriesOptional2 HistoryAndPhysicalNote2ProceduresSectionEntriesOptional2 HistoryAndPhysicalNote2ReasonForVisitSection HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheSecond HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant HistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation"/>
-      <details key="constraints.validation.warning" value="HistoryAndPhysicalNote2HistoryOfPresentIllnessSection HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheMinute HistoryAndPhysicalNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset"/>
-      <details key="constraints.validation.query" value="HistoryAndPhysicalNote2InformationRecipientIntendedRecipient HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheDay HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheMinute HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheSecond HistoryAndPhysicalNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset HistoryAndPhysicalNote2ComponentOfEncompassingEncounterId HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant HistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation HistoryAndPhysicalNote2ComponentOfEncompassingEncounter"/>
+      <details key="constraints.validation.info" value="HistoryAndPhysicalNote2InformationRecipient HistoryAndPhysicalNote2Participant HistoryAndPhysicalNote2InFulfillmentOf HistoryAndPhysicalNote2AssessmentSection HistoryAndPhysicalNote2PlanOfTreatmentSection2 HistoryAndPhysicalNote2AssessmentAndPlanSection2 HistoryAndPhysicalNote2ChiefComplaintSection HistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSection HistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2 HistoryAndPhysicalNote2InstructionsSection2 HistoryAndPhysicalNote2ProblemSectionEntriesOptional2 HistoryAndPhysicalNote2ProceduresSectionEntriesOptional2 HistoryAndPhysicalNote2ReasonForVisitSection HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant HistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation"/>
+      <details key="constraints.validation.warning" value="HistoryAndPhysicalNote2HistoryOfPresentIllnessSection HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"/>
+      <details key="constraints.validation.query" value="HistoryAndPhysicalNote2InformationRecipientIntendedRecipient HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity HistoryAndPhysicalNote2ComponentOfEncompassingEncounterId HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant HistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation HistoryAndPhysicalNote2ComponentOfEncompassingEncounter"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHistoryAndPhysicalNote2InformationRecipient">
       <details key="constraints.validation.error" value="HistoryAndPhysicalNote2InformationRecipientIntendedRecipient"/>
@@ -44847,9 +45123,10 @@
       <details key="constraints.validation.error" value="HistoryAndPhysicalNote2ComponentOfEncompassingEncounter"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHistoryAndPhysicalNote2ComponentOfEncompassingEncounter">
-      <details key="constraints.validation.error" value="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheDay HistoryAndPhysicalNote2ComponentOfEncompassingEncounterId HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime"/>
-      <details key="constraints.validation.warning" value="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheMinute HistoryAndPhysicalNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset"/>
-      <details key="constraints.validation.info" value="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheSecond HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant HistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation"/>
+      <details key="constraints.validation.error" value="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterId HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS"/>
+      <details key="constraints.validation.info" value="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant HistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS"/>
+      <details key="constraints.validation.query" value="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"/>
+      <details key="constraints.validation.warning" value="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty">
       <details key="constraints.validation.error" value="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity"/>
@@ -45147,7 +45424,56 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="HistoryAndPhysicalNote2FamilyHistorySection2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="HistoryAndPhysicalNote2InformationRecipientIntendedRecipient"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -45188,46 +45514,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheDay"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheMinute"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheSecond"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="HistoryAndPhysicalNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -45328,6 +45614,7 @@
     <eOperations name="getSocialHistorySection2" ordered="false" lowerBound="1" eType="#//SocialHistorySection2"/>
     <eOperations name="getVitalSignsSectionEntriesOptional2" ordered="false" lowerBound="1"
         eType="#//VitalSignsSectionEntriesOptional2"/>
+    <eOperations name="getFamilyHistorySection2" ordered="false" lowerBound="1" eType="#//FamilyHistorySection2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OperativeNote2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
@@ -47300,123 +47587,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistoryObservation2" eSuperTypes="#//FamilyHistoryObservation">
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="FamilyHistoryObservationTemplateId FamilyHistoryObservationCodeP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.46"/>
-      <details key="templateId.extension" value="2014-06-09"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
-      <details key="code.codeSystemName" value="LOINC"/>
-      <details key="constraints.validation.warning" value="FamilyHistoryObservationCode"/>
-      <details key="constraints.validation.dependOn.FamilyHistoryObservationCode"
-          value="FamilyHistoryObservationCodeP"/>
-    </eAnnotations>
-    <eAnnotations source="duplicates">
-      <contents xsi:type="ecore:EOperation" name="FamilyHistoryObservationTemplateId"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-        <eParameters name="context">
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
-      <contents xsi:type="ecore:EOperation" name="FamilyHistoryObservationCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//FamilyHistoryObservation/FamilyHistoryObservationCodeP"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-        <eParameters name="context">
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
-      <contents xsi:type="ecore:EOperation" name="FamilyHistoryObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//FamilyHistoryObservation/FamilyHistoryObservationCode"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-        <eParameters name="context">
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistoryOrganizer2" eSuperTypes="#//FamilyHistoryOrganizer">
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizer2Id FamilyHistoryOrganizerFamilyHistoryObservation2"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.45"/>
-      <details key="templateId.extension" value="2014-06-09"/>
-    </eAnnotations>
-    <eAnnotations source="duplicates">
-      <contents xsi:type="ecore:EOperation" name="FamilyHistoryOrganizerTemplateId"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//FamilyHistoryOrganizer/FamilyHistoryOrganizerTemplateId"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-        <eParameters name="context">
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
-    </eAnnotations>
-    <eOperations name="FamilyHistoryOrganizer2Id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="FamilyHistoryOrganizerFamilyHistoryObservation2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="getConsolFamilyHistoryObservation2s" ordered="false" lowerBound="1"
-        upperBound="-1" eType="#//FamilyHistoryObservation2"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistorySection2" eSuperTypes="#//FamilyHistorySection">
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="FamilyHistorySectionTemplateId"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.15"/>
-      <details key="templateId.extension" value="2014-06-09"/>
-      <details key="constraints.validation.info" value="FamilyHistorySectionFamilyHistoryOrganizer2"/>
-    </eAnnotations>
-    <eAnnotations source="duplicates">
-      <contents xsi:type="ecore:EOperation" name="FamilyHistorySectionTemplateId"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//FamilyHistorySection/FamilyHistorySectionTemplateId"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-        <eParameters name="context">
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
-    </eAnnotations>
-    <eOperations name="FamilyHistorySectionFamilyHistoryOrganizer2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="getConsolFamilyHistoryOrganizer2s" ordered="false" lowerBound="1"
-        upperBound="-1" eType="#//FamilyHistoryOrganizer2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PhysicianReadingStudyPerformer2" eSuperTypes="#//PhysicianReadingStudyPerformer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">

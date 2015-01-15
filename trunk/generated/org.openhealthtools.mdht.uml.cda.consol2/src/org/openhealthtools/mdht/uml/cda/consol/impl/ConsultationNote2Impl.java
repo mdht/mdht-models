@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSe
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2;
+import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2;
@@ -34,7 +35,6 @@ import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2;
-import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
@@ -88,9 +88,9 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
+	public boolean validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
+		return ConsultationNote2Operations.validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			this, diagnostics, context);
 	}
 
@@ -99,9 +99,9 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote2HasReasonForReferral2OrReasonForVisit(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2HasReasonForReferral2OrReasonForVisit(
+	public boolean validateConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(
 			this, diagnostics, context);
 	}
 
@@ -178,17 +178,6 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	public boolean validateConsultationNote2PlanOfTreatmentSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2PlanOfTreatmentSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConsultationNote2ReasonForReferralSection2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ReasonForReferralSection2(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -405,6 +394,16 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateConsultationNote2FamilyHistorySection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateConsultationNote2FamilyHistorySection2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateConsultationNote2ParticipantAssociatedEntityAssociatedPersonName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityAssociatedPersonName(
@@ -522,6 +521,50 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
@@ -558,50 +601,6 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
 			this, diagnostics, context);
 	}
 
@@ -685,15 +684,6 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public PlanOfTreatmentSection2 getPlanOfTreatmentSection2() {
 		return ConsultationNote2Operations.getPlanOfTreatmentSection2(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ReasonForReferralSection2 getReasonForReferralSection2() {
-		return ConsultationNote2Operations.getReasonForReferralSection2(this);
 	}
 
 	/**
@@ -890,9 +880,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	public FamilyHistorySection2 getFamilyHistorySection2() {
+		return ConsultationNote2Operations.getFamilyHistorySection2(this);
 	}
 
 	/**
@@ -901,8 +890,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateGeneralHeaderConstraintsTitle(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 
 	/**

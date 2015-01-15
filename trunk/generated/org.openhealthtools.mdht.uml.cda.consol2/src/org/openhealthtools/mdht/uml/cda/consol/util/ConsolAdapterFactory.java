@@ -1611,6 +1611,21 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseFamilyHistorySection2(FamilyHistorySection2 object) {
+			return createFamilyHistorySection2Adapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryOrganizer2(FamilyHistoryOrganizer2 object) {
+			return createFamilyHistoryOrganizer2Adapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryObservation2(FamilyHistoryObservation2 object) {
+			return createFamilyHistoryObservation2Adapter();
+		}
+
+		@Override
 		public Adapter caseContinuityOfCareDocument2(ContinuityOfCareDocument2 object) {
 			return createContinuityOfCareDocument2Adapter();
 		}
@@ -1653,21 +1668,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePreconditionForSubstanceAdministration2(PreconditionForSubstanceAdministration2 object) {
 			return createPreconditionForSubstanceAdministration2Adapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryObservation2(FamilyHistoryObservation2 object) {
-			return createFamilyHistoryObservation2Adapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryOrganizer2(FamilyHistoryOrganizer2 object) {
-			return createFamilyHistoryOrganizer2Adapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistorySection2(FamilyHistorySection2 object) {
-			return createFamilyHistorySection2Adapter();
 		}
 
 		@Override

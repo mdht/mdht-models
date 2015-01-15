@@ -6171,6 +6171,72 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.FAMILY_HISTORY_SECTION2: {
+				FamilyHistorySection2 familyHistorySection2 = (FamilyHistorySection2) theEObject;
+				T result = caseFamilyHistorySection2(familyHistorySection2);
+				if (result == null) {
+					result = caseFamilyHistorySection(familyHistorySection2);
+				}
+				if (result == null) {
+					result = caseSection(familyHistorySection2);
+				}
+				if (result == null) {
+					result = caseAct(familyHistorySection2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistorySection2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2: {
+				FamilyHistoryOrganizer2 familyHistoryOrganizer2 = (FamilyHistoryOrganizer2) theEObject;
+				T result = caseFamilyHistoryOrganizer2(familyHistoryOrganizer2);
+				if (result == null) {
+					result = caseFamilyHistoryOrganizer(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseOrganizer(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2: {
+				FamilyHistoryObservation2 familyHistoryObservation2 = (FamilyHistoryObservation2) theEObject;
+				T result = caseFamilyHistoryObservation2(familyHistoryObservation2);
+				if (result == null) {
+					result = caseFamilyHistoryObservation(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT2: {
 				ContinuityOfCareDocument2 continuityOfCareDocument2 = (ContinuityOfCareDocument2) theEObject;
 				T result = caseContinuityOfCareDocument2(continuityOfCareDocument2);
@@ -6369,72 +6435,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(preconditionForSubstanceAdministration2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2: {
-				FamilyHistoryObservation2 familyHistoryObservation2 = (FamilyHistoryObservation2) theEObject;
-				T result = caseFamilyHistoryObservation2(familyHistoryObservation2);
-				if (result == null) {
-					result = caseFamilyHistoryObservation(familyHistoryObservation2);
-				}
-				if (result == null) {
-					result = caseObservation(familyHistoryObservation2);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryObservation2);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryObservation2);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryObservation2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2: {
-				FamilyHistoryOrganizer2 familyHistoryOrganizer2 = (FamilyHistoryOrganizer2) theEObject;
-				T result = caseFamilyHistoryOrganizer2(familyHistoryOrganizer2);
-				if (result == null) {
-					result = caseFamilyHistoryOrganizer(familyHistoryOrganizer2);
-				}
-				if (result == null) {
-					result = caseOrganizer(familyHistoryOrganizer2);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryOrganizer2);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryOrganizer2);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryOrganizer2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.FAMILY_HISTORY_SECTION2: {
-				FamilyHistorySection2 familyHistorySection2 = (FamilyHistorySection2) theEObject;
-				T result = caseFamilyHistorySection2(familyHistorySection2);
-				if (result == null) {
-					result = caseFamilyHistorySection(familyHistorySection2);
-				}
-				if (result == null) {
-					result = caseSection(familyHistorySection2);
-				}
-				if (result == null) {
-					result = caseAct(familyHistorySection2);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistorySection2);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);

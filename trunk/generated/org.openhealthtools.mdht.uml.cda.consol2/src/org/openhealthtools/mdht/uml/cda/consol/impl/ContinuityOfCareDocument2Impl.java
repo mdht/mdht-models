@@ -18,11 +18,13 @@ import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional2;
+import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection;
+import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
 import org.openhealthtools.mdht.uml.cda.consol.PayersSection2;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection2;
@@ -262,6 +264,28 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	public boolean validateContinuityOfCareDocument2MentalStatusSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2MentalStatusSection(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocument2NutritionSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2NutritionSection(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocument2FamilyHistorySection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2FamilyHistorySection2(
 			this, diagnostics, context);
 	}
 
@@ -552,6 +576,24 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public MentalStatusSection getMentalStatusSection() {
 		return ContinuityOfCareDocument2Operations.getMentalStatusSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NutritionSection getNutritionSection() {
+		return ContinuityOfCareDocument2Operations.getNutritionSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistorySection2 getFamilyHistorySection2() {
+		return ContinuityOfCareDocument2Operations.getFamilyHistorySection2(this);
 	}
 
 	/**

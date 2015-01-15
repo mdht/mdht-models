@@ -185,6 +185,17 @@ public class DiagnosticImagingReport2Impl extends USRealmHeader2Impl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReport2IIRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2IIRoot(this, diagnostics, context);
 	}
@@ -282,9 +293,9 @@ public class DiagnosticImagingReport2Impl extends USRealmHeader2Impl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticImagingReport2DocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2DocumentationOfServiceEventPerformer(
+	public boolean validateDiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2(
 			this, diagnostics, context);
 	}
 
@@ -296,6 +307,17 @@ public class DiagnosticImagingReport2Impl extends USRealmHeader2Impl implements 
 	public boolean validateDiagnosticImagingReport2DocumentationOfServiceEvent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2DocumentationOfServiceEvent(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength(
 			this, diagnostics, context);
 	}
 
@@ -326,6 +348,50 @@ public class DiagnosticImagingReport2Impl extends USRealmHeader2Impl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization(
@@ -340,50 +406,6 @@ public class DiagnosticImagingReport2Impl extends USRealmHeader2Impl implements 
 	public boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
 			this, diagnostics, context);
 	}
 

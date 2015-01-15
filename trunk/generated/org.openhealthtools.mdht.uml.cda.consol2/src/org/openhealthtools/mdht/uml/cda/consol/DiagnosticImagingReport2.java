@@ -19,19 +19,20 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDiagnosticImagingReport2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId DiagnosticImagingReport2Id DiagnosticImagingReport2CodeP DiagnosticImagingReport2DocumentationOf DiagnosticImagingReport2FindingsSection DiagnosticImagingReport2Component2 DiagnosticImagingReport2Informant DiagnosticImagingReport2IIRoot DiagnosticImagingReport2ParticipantAssociatedEntityPersonName DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReport2ParticipantAssociatedEntity DiagnosticImagingReport2InFulfillmentOfOrderId DiagnosticImagingReport2InFulfillmentOfOrder DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventCode DiagnosticImagingReport2DocumentationOfServiceEvent DiagnosticImagingReport2RelatedDocumentParentDocumentId DiagnosticImagingReport2RelatedDocumentParentDocument DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime DiagnosticImagingReport2ComponentOfEncompassingEncounter DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP DiagnosticImagingReport2ComponentStructuredBodyComponent3Section DiagnosticImagingReport2ComponentStructuredBody' templateId.root='2.16.840.1.113883.10.20.22.1.5' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='DiagnosticImagingReport2Code DiagnosticImagingReport2DICOMObjectCatalogSection DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventPerformer DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute DiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2 DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText' constraints.validation.dependOn.DiagnosticImagingReport2Code='DiagnosticImagingReport2CodeP' constraints.validation.info='DiagnosticImagingReport2InformationRecipient DiagnosticImagingReport2Participant DiagnosticImagingReport2InFulfillmentOf DiagnosticImagingReport2RelatedDocument DiagnosticImagingReport2ComponentOf DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3' constraints.validation.query='DiagnosticImagingReport2IIRoot DiagnosticImagingReport2ParticipantAssociatedEntityPersonName DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReport2ParticipantAssociatedEntity DiagnosticImagingReport2InFulfillmentOfOrderId DiagnosticImagingReport2InFulfillmentOfOrder DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventCode DiagnosticImagingReport2DocumentationOfServiceEventPerformer DiagnosticImagingReport2DocumentationOfServiceEvent DiagnosticImagingReport2RelatedDocumentParentDocumentId DiagnosticImagingReport2RelatedDocumentParentDocument DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond DiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2 DiagnosticImagingReport2ComponentOfEncompassingEncounter DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3Section DiagnosticImagingReport2ComponentStructuredBodyComponent3 DiagnosticImagingReport2ComponentStructuredBody'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2II constraints.validation.error='DiagnosticImagingReport2IIRoot'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId DiagnosticImagingReport2Id DiagnosticImagingReport2CodeP DiagnosticImagingReport2DocumentationOf DiagnosticImagingReport2FindingsSection DiagnosticImagingReport2Component2 DiagnosticImagingReport2Informant DiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters DiagnosticImagingReport2IIRoot DiagnosticImagingReport2ParticipantAssociatedEntityPersonName DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReport2ParticipantAssociatedEntity DiagnosticImagingReport2InFulfillmentOfOrderId DiagnosticImagingReport2InFulfillmentOfOrder DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventCode DiagnosticImagingReport2DocumentationOfServiceEvent DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength DiagnosticImagingReport2RelatedDocumentParentDocumentId DiagnosticImagingReport2RelatedDocumentParentDocument DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime DiagnosticImagingReport2ComponentOfEncompassingEncounter DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP DiagnosticImagingReport2ComponentStructuredBodyComponent3Section DiagnosticImagingReport2ComponentStructuredBody' templateId.root='2.16.840.1.113883.10.20.22.1.5' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='DiagnosticImagingReport2Code DiagnosticImagingReport2DICOMObjectCatalogSection DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2 DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2 DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText' constraints.validation.dependOn.DiagnosticImagingReport2Code='DiagnosticImagingReport2CodeP' constraints.validation.info='DiagnosticImagingReport2InformationRecipient DiagnosticImagingReport2Participant DiagnosticImagingReport2InFulfillmentOf DiagnosticImagingReport2RelatedDocument DiagnosticImagingReport2ComponentOf DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3' constraints.validation.query='DiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters DiagnosticImagingReport2IIRoot DiagnosticImagingReport2ParticipantAssociatedEntityPersonName DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReport2ParticipantAssociatedEntity DiagnosticImagingReport2InFulfillmentOfOrderId DiagnosticImagingReport2InFulfillmentOfOrder DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventCode DiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2 DiagnosticImagingReport2DocumentationOfServiceEvent DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength DiagnosticImagingReport2RelatedDocumentParentDocumentId DiagnosticImagingReport2RelatedDocumentParentDocument DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2 DiagnosticImagingReport2ComponentOfEncompassingEncounter DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation DiagnosticImagingReport2ComponentStructuredBodyComponent3Section DiagnosticImagingReport2ComponentStructuredBodyComponent3 DiagnosticImagingReport2ComponentStructuredBody'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2II constraints.validation.error='DiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters DiagnosticImagingReport2IIRoot'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2Participant constraints.validation.error='DiagnosticImagingReport2ParticipantAssociatedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2ParticipantAssociatedEntity constraints.validation.error='DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2ParticipantAssociatedEntityPerson constraints.validation.error='DiagnosticImagingReport2ParticipantAssociatedEntityPersonName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2InFulfillmentOf constraints.validation.error='DiagnosticImagingReport2InFulfillmentOfOrder'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2InFulfillmentOfOrder constraints.validation.error='DiagnosticImagingReport2InFulfillmentOfOrderId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2DocumentationOf constraints.validation.error='DiagnosticImagingReport2DocumentationOfServiceEvent'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2DocumentationOfServiceEvent classCode='ACT' constraints.validation.error='DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventCode' constraints.validation.warning='DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventPerformer'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2DocumentationOfServiceEvent classCode='ACT' constraints.validation.error='DiagnosticImagingReport2DocumentationOfServiceEventClassCode DiagnosticImagingReport2DocumentationOfServiceEventCode' constraints.validation.warning='DiagnosticImagingReport2DocumentationOfServiceEventId DiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2RelatedDocument constraints.validation.error='DiagnosticImagingReport2RelatedDocumentParentDocument'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2RelatedDocumentParentDocument constraints.validation.error='DiagnosticImagingReport2RelatedDocumentParentDocumentId'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2RelatedDocumentParentDocument constraints.validation.error='DiagnosticImagingReport2RelatedDocumentParentDocumentId DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength' constraints.validation.query='DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2RelatedDocumentParentDocumentII constraints.validation.error='DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2ComponentOf constraints.validation.error='DiagnosticImagingReport2ComponentOfEncompassingEncounter'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2ComponentOfEncompassingEncounter constraints.validation.error='DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime' constraints.validation.warning='DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute DiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2' constraints.validation.info='DiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2ComponentOfEncompassingEncounter constraints.validation.error='DiagnosticImagingReport2ComponentOfEncompassingEncounterId DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS' constraints.validation.info='DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS' constraints.validation.warning='DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2 DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS' constraints.validation.query='DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty constraints.validation.error='DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity constraints.validation.warning='DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReport2Component constraints.validation.error='DiagnosticImagingReport2ComponentStructuredBody'"
@@ -207,6 +208,19 @@ public interface DiagnosticImagingReport2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->excluding(null)->select(isNullFlavorUndefined())->reject(id.root.size() <= 64)'"
+	 * @generated
+	 */
+	boolean validateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not root.oclIsUndefined() )))'"
 	 * @generated
 	 */
@@ -323,11 +337,11 @@ public interface DiagnosticImagingReport2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(consol::PhysicianReadingStudyPerformer2)))'"
 	 * @generated
 	 */
-	boolean validateDiagnosticImagingReport2DocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateDiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,6 +354,19 @@ public interface DiagnosticImagingReport2 extends USRealmHeader2 {
 	 * @generated
 	 */
 	boolean validateDiagnosticImagingReport2DocumentationOfServiceEvent(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.relatedDocument->excluding(null).parentDocument->excluding(null).id->excluding(null)->select(isNullFlavorUndefined())->reject(not root.oclIsUndefined() implies root.size() <= 64)'"
+	 * @generated
+	 */
+	boolean validateDiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
@@ -375,6 +402,58 @@ public interface DiagnosticImagingReport2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject(isNullFlavorUndefined() implies ((not value.oclIsUndefined() implies value.size() >= 8) and ((not low.value.oclIsUndefined() and low.isNullFlavorUndefined() implies low.value.size() >= 8) and (not high.value.oclIsUndefined() and high.isNullFlavorUndefined() implies high.value.size() >= 8))))'"
+	 * @generated
+	 */
+	boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject(isNullFlavorUndefined() implies ((not value.oclIsUndefined() implies value.size() >= 12) and ((not low.value.oclIsUndefined() and low.isNullFlavorUndefined() implies low.value.size() >= 12) and (not high.value.oclIsUndefined() and high.isNullFlavorUndefined() implies high.value.size() >= 12))))'"
+	 * @generated
+	 */
+	boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject(isNullFlavorUndefined() implies ((not value.oclIsUndefined() implies value.size() >= 14) and ((not low.value.oclIsUndefined() and low.isNullFlavorUndefined() implies low.value.size() >= 14) and (not high.value.oclIsUndefined() and high.isNullFlavorUndefined() implies high.value.size() >= 14))))'"
+	 * @generated
+	 */
+	boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject((not value.oclIsUndefined() and value.size() > 8 implies value.size() >= 15) and ((not low.value.oclIsUndefined() and low.value.size() > 8 implies low.value.size() >= 15) and (not high.value.oclIsUndefined() and high.value.size() > 8 implies high.value.size() >= 15)))'"
+	 * @generated
+	 */
+	boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson->size() = 1 or representedOrganization->size() = 1)'"
 	 * @generated
 	 */
@@ -392,58 +471,6 @@ public interface DiagnosticImagingReport2 extends USRealmHeader2 {
 	 * @generated
 	 */
 	boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 8)'"
-	 * @generated
-	 */
-	boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 12)'"
-	 * @generated
-	 */
-	boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 14)'"
-	 * @generated
-	 */
-	boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() and effectiveTime.value.size() > 8 implies effectiveTime.value.size() >= 15)'"
-	 * @generated
-	 */
-	boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
