@@ -29,6 +29,7 @@ import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection;
+import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ContinuityOfCareDocument2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
@@ -65,6 +66,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#validateContinuityOfCareDocument2SocialHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Social History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#validateContinuityOfCareDocument2VitalSignsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Vital Signs Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#validateContinuityOfCareDocument2MentalStatusSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Mental Status Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#validateContinuityOfCareDocument2NutritionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Nutrition Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#validateContinuityOfCareDocument2FamilyHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Family History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#validateContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Author Assigned Author Has Assigned Person Or Represented Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#validateContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Author Assigned Author Has Represent Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#validateContinuityOfCareDocument2AuthorAssignedAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Author Assigned Author</em>}</li>
@@ -94,6 +97,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#getSocialHistorySection2() <em>Get Social History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#getVitalSignsSection2() <em>Get Vital Signs Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#getMentalStatusSection() <em>Get Mental Status Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#getNutritionSection() <em>Get Nutrition Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#getFamilyHistorySection2() <em>Get Family History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -761,6 +766,81 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 		};
 
 		validateContinuityOfCareDocument2MentalStatusSectionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateContinuityOfCareDocument2NutritionSection() {
+		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2NutritionSectionTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
+			"validateContinuityOfCareDocument2NutritionSection",
+			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ContinuityOfCareDocument2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ContinuityOfCareDocument2 target) {
+				target.init();
+
+				/* NutritionSection */
+				NutritionSection section =
+
+				ConsolFactory.eINSTANCE.createNutritionSection().init();
+
+				target.addSection(section);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2NutritionSection(
+					(ContinuityOfCareDocument2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateContinuityOfCareDocument2NutritionSectionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateContinuityOfCareDocument2FamilyHistorySection2() {
+		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2FamilyHistorySection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
+			"validateContinuityOfCareDocument2FamilyHistorySection2",
+			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ContinuityOfCareDocument2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ContinuityOfCareDocument2 target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createFamilyHistorySection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2FamilyHistorySection2(
+					(ContinuityOfCareDocument2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateContinuityOfCareDocument2FamilyHistorySection2TestCase.doValidationTest();
 	}
 
 	/**
@@ -1627,6 +1707,30 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 
 		ContinuityOfCareDocument2 target = objectFactory.create();
 		target.getMentalStatusSection();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetNutritionSection() {
+
+		ContinuityOfCareDocument2 target = objectFactory.create();
+		target.getNutritionSection();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetFamilyHistorySection2() {
+
+		ContinuityOfCareDocument2 target = objectFactory.create();
+		target.getFamilyHistorySection2();
 
 	}
 

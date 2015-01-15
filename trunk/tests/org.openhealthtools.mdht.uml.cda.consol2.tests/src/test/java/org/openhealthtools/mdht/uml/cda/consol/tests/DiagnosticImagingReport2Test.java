@@ -29,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.InFulfillmentOf;
 import org.openhealthtools.mdht.uml.cda.Order;
 import org.openhealthtools.mdht.uml.cda.ParentDocument;
 import org.openhealthtools.mdht.uml.cda.Participant1;
-import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.RelatedDocument;
 import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
@@ -72,6 +71,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2DICOMObjectCatalogSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 DICOM Object Catalog Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2Component2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2Informant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Informant</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 II Root OI Ds Must Be No More Than64 Characters</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2IIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 II Root</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ParticipantAssociatedEntityPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Participant Associated Entity Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Participant Associated Entity Associated Person</em>}</li>
@@ -81,16 +81,17 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2DocumentationOfServiceEventClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Documentation Of Service Event Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2DocumentationOfServiceEventId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Documentation Of Service Event Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2DocumentationOfServiceEventCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Documentation Of Service Event Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2DocumentationOfServiceEventPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Documentation Of Service Event Performer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Documentation Of Service Event Physician Reading Study Performer2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2DocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Documentation Of Service Event</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Related Document Parent Document II Oids Length</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2RelatedDocumentParentDocumentId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Related Document Parent Document Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2RelatedDocumentParentDocument(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Related Document Parent Document</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Day IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Minute IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Second IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT If More Precise Than Day Include Time Zone Offset IVLTS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter Responsible Party Assigned Entity Has Assign Person Or Represented Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter Responsible Party Assigned Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter Precise To The Day</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter Precise To The Minute</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter Precise To The Second</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter If More Precise Than Day Include Time Zone Offset</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter Responsible Party</em>}</li>
@@ -591,6 +592,43 @@ public class DiagnosticImagingReport2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters() {
+		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64CharactersTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
+			"validateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters",
+			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT_OI_DS_MUST_BE_NO_MORE_THAN64_CHARACTERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DiagnosticImagingReport2 target) {
+				target.init();
+				// 65 characters, 1 over
+				II id = DatatypesFactory.eINSTANCE.createII("02345678901234567890223456789032345678904234567890523456789062345");
+				target.setId(id);
+			}
+
+			@Override
+			protected void updateToPass(DiagnosticImagingReport2 target) {
+				// 64 characters (or less)
+				target.getId().setRoot("0234567890123456789022345678903234567890423456789052345678906234");
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters(
+					(DiagnosticImagingReport2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64CharactersTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateDiagnosticImagingReport2IIRoot() {
 		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2IIRootTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
 			"validateDiagnosticImagingReport2IIRoot",
@@ -958,40 +996,39 @@ public class DiagnosticImagingReport2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateDiagnosticImagingReport2DocumentationOfServiceEventPerformer() {
-		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2DocumentationOfServiceEventPerformerTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
-			"validateDiagnosticImagingReport2DocumentationOfServiceEventPerformer",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateDiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2() {
+		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2TestCase = new OperationsTestCase<DiagnosticImagingReport2>(
+			"validateDiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2",
+			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_PHYSICIAN_READING_STUDY_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DiagnosticImagingReport2 target) {
 				target.init();
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				target.getDocumentationOfs().add(dof);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				dof.setServiceEvent(se);
 			}
 
 			@Override
 			protected void updateToPass(DiagnosticImagingReport2 target) {
-				Performer1 p = CDAFactory.eINSTANCE.createPerformer1();
-				for (DocumentationOf dof : target.getDocumentationOfs()) {
-					dof.getServiceEvent().getPerformers().add(p);
+				for (DocumentationOf doc : target.getDocumentationOfs()) {
+					doc.getServiceEvent().getPerformers().add(
+						ConsolFactory.eINSTANCE.createPhysicianReadingStudyPerformer2().init());
 				}
-
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2DocumentationOfServiceEventPerformer(
+				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2(
 					(DiagnosticImagingReport2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateDiagnosticImagingReport2DocumentationOfServiceEventPerformerTestCase.doValidationTest();
+		validateDiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2TestCase.doValidationTest();
 	}
 
 	/**
@@ -1030,6 +1067,51 @@ public class DiagnosticImagingReport2Test extends CDAValidationTest {
 		};
 
 		validateDiagnosticImagingReport2DocumentationOfServiceEventTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateDiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength() {
+		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLengthTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
+			"validateDiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength",
+			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_II_OIDS_LENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DiagnosticImagingReport2 target) {
+				target.init();
+				RelatedDocument rdoc = CDAFactory.eINSTANCE.createRelatedDocument();
+				target.getRelatedDocuments().add(rdoc);
+				ParentDocument pdoc = CDAFactory.eINSTANCE.createParentDocument();
+				rdoc.setParentDocument(pdoc);
+				// 65 characters, 1 over
+				II id = DatatypesFactory.eINSTANCE.createII("02345678901234567890223456789032345678904234567890523456789062345");
+				pdoc.getIds().add(id);
+			}
+
+			@Override
+			protected void updateToPass(DiagnosticImagingReport2 target) {
+				for (RelatedDocument rdoc : target.getRelatedDocuments()) {
+					for (II id : rdoc.getParentDocument().getIds()) {
+						// 64 characters or less (64)
+						id.setRoot("0234567890123456789022345678903234567890423456789052345678906234");
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength(
+					(DiagnosticImagingReport2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLengthTestCase.doValidationTest();
 	}
 
 	/**
@@ -1107,6 +1189,171 @@ public class DiagnosticImagingReport2Test extends CDAValidationTest {
 		};
 
 		validateDiagnosticImagingReport2RelatedDocumentParentDocumentTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS() {
+		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTSTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
+			"validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DiagnosticImagingReport2 target) {
+				target.init();
+				Component1 component = CDAFactory.eINSTANCE.createComponent1();
+				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+				component.setEncompassingEncounter(ee);
+				target.setComponentOf(component);
+
+				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912");
+				ee.setEffectiveTime(ivlts);
+			}
+
+			@Override
+			protected void updateToPass(DiagnosticImagingReport2 target) {
+				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_DAY);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
+					(DiagnosticImagingReport2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS() {
+		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTSTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
+			"validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DiagnosticImagingReport2 target) {
+				target.init();
+				Component1 component = CDAFactory.eINSTANCE.createComponent1();
+				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+				component.setEncompassingEncounter(ee);
+				target.setComponentOf(component);
+
+				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
+				ee.setEffectiveTime(ivlts);
+			}
+
+			@Override
+			protected void updateToPass(DiagnosticImagingReport2 target) {
+				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_MINUTE);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
+					(DiagnosticImagingReport2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS() {
+		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTSTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
+			"validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DiagnosticImagingReport2 target) {
+				target.init();
+				Component1 component = CDAFactory.eINSTANCE.createComponent1();
+				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+				component.setEncompassingEncounter(ee);
+				target.setComponentOf(component);
+
+				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE);
+				ee.setEffectiveTime(ivlts);
+			}
+
+			@Override
+			protected void updateToPass(DiagnosticImagingReport2 target) {
+				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_SECOND);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
+					(DiagnosticImagingReport2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS() {
+		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
+			"validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DiagnosticImagingReport2 target) {
+				target.init();
+				Component1 component = CDAFactory.eINSTANCE.createComponent1();
+				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+				component.setEncompassingEncounter(ee);
+				target.setComponentOf(component);
+
+				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
+				ee.setEffectiveTime(ivlts);
+			}
+
+			@Override
+			protected void updateToPass(DiagnosticImagingReport2 target) {
+				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(
+					PRECISE_TO_SECOND_WITH_TIMEZONE);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
+					(DiagnosticImagingReport2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase.doValidationTest();
 	}
 
 	/**
@@ -1206,171 +1453,6 @@ public class DiagnosticImagingReport2Test extends CDAValidationTest {
 		};
 
 		validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay() {
-		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDayTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
-			"validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DiagnosticImagingReport2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(DiagnosticImagingReport2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_DAY);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDay(
-					(DiagnosticImagingReport2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheDayTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute() {
-		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinuteTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
-			"validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DiagnosticImagingReport2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(DiagnosticImagingReport2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_MINUTE);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinute(
-					(DiagnosticImagingReport2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheMinuteTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond() {
-		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecondTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
-			"validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DiagnosticImagingReport2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE);
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(DiagnosticImagingReport2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_SECOND);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecond(
-					(DiagnosticImagingReport2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPreciseToTheSecondTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset() {
-		OperationsTestCase<DiagnosticImagingReport2> validateDiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new OperationsTestCase<DiagnosticImagingReport2>(
-			"validateDiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DiagnosticImagingReport2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(DiagnosticImagingReport2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(
-					PRECISE_TO_SECOND_WITH_TIMEZONE);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
-					(DiagnosticImagingReport2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDiagnosticImagingReport2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase.doValidationTest();
 	}
 
 	/**
