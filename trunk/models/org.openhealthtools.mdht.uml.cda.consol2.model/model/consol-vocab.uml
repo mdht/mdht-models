@@ -1916,7 +1916,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_Z8iQMTstEeGvzMYhXuqAEA" identifier="2.16.840.1.113883.11.20.9.31" fullName="Consultation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_Z8iQMDstEeGvzMYhXuqAEA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_R_D60TzDEeGMk58Mp9-wVA" identifier="2.16.840.1.113883.11.20.4.1" fullName="Discharge Summary LOINC Document Codes" binding="Dynamic" base_Enumeration="_R_D60DzDEeGMk58Mp9-wVA">
+  <term:ValueSetVersion xmi:id="_R_D60TzDEeGMk58Mp9-wVA" identifier="2.16.840.1.113883.11.20.4.1" fullName="Discharge Summary LOINC Document Codes" definition="A value set of LOINC document codes for discharge summaries." binding="Dynamic" base_Enumeration="_R_D60DzDEeGMk58Mp9-wVA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_MBvVoD1kEeG3tde5scYNWA" identifier="3. 2.16.840.1.113883.1.11.20.22" fullName="H and P LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_MBuukD1kEeG3tde5scYNWA">
