@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getContinuityOfCareDocument2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ContinuityOfCareDocument2Code ContinuityOfCareDocument2CodeP ContinuityOfCareDocument2Author ContinuityOfCareDocument2DocumentationOf ContinuityOfCareDocument2AllergiesSection2 ContinuityOfCareDocument2MedicationsSection2 ContinuityOfCareDocument2ProblemSection2 ContinuityOfCareDocument2ResultsSection2 ContinuityOfCareDocument2SocialHistorySection2 ContinuityOfCareDocument2VitalSignsSection2 ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocument2AuthorAssignedAuthor ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocument2DocumentationOfServiceEventClassCode ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime ContinuityOfCareDocument2DocumentationOfServiceEvent' templateId.root='2.16.840.1.113883.10.20.22.1.2' templateId.extension='2014-06-09' code.code='34133-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Summarization of Episode Note' constraints.validation.dependOn.ContinuityOfCareDocument2Code='ContinuityOfCareDocument2CodeP' constraints.validation.warning='ContinuityOfCareDocument2ProceduresSection2 ContinuityOfCareDocument2PlanOfTreatmentSection2 ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocument2DocumentationOfServiceEventPerformer' constraints.validation.info='ContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2 ContinuityOfCareDocument2EncountersSectionEntriesOptional2 ContinuityOfCareDocument2FunctionalStatusSection2 ContinuityOfCareDocument2ImmunizationsSection2 ContinuityOfCareDocument2MedicalEquipmentSection2 ContinuityOfCareDocument2PayersSection2 ContinuityOfCareDocument2MentalStatusSection ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity' constraints.validation.query='ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocument2AuthorAssignedAuthor ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity ContinuityOfCareDocument2DocumentationOfServiceEventClassCode ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime ContinuityOfCareDocument2DocumentationOfServiceEventPerformer ContinuityOfCareDocument2DocumentationOfServiceEvent'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ContinuityOfCareDocument2Code ContinuityOfCareDocument2CodeP ContinuityOfCareDocument2Author ContinuityOfCareDocument2DocumentationOf ContinuityOfCareDocument2AllergiesSection2 ContinuityOfCareDocument2MedicationsSection2 ContinuityOfCareDocument2ProblemSection2 ContinuityOfCareDocument2ResultsSection2 ContinuityOfCareDocument2SocialHistorySection2 ContinuityOfCareDocument2VitalSignsSection2 ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocument2AuthorAssignedAuthor ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocument2DocumentationOfServiceEventClassCode ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime ContinuityOfCareDocument2DocumentationOfServiceEvent' templateId.root='2.16.840.1.113883.10.20.22.1.2' templateId.extension='2014-06-09' code.code='34133-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Summarization of Episode Note' constraints.validation.dependOn.ContinuityOfCareDocument2Code='ContinuityOfCareDocument2CodeP' constraints.validation.warning='ContinuityOfCareDocument2ProceduresSection2 ContinuityOfCareDocument2PlanOfTreatmentSection2 ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocument2DocumentationOfServiceEventPerformer' constraints.validation.info='ContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2 ContinuityOfCareDocument2EncountersSectionEntriesOptional2 ContinuityOfCareDocument2FunctionalStatusSection2 ContinuityOfCareDocument2ImmunizationsSection2 ContinuityOfCareDocument2MedicalEquipmentSection2 ContinuityOfCareDocument2PayersSection2 ContinuityOfCareDocument2MentalStatusSection ContinuityOfCareDocument2NutritionSection ContinuityOfCareDocument2FamilyHistorySection2 ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity' constraints.validation.query='ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocument2AuthorAssignedAuthor ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity ContinuityOfCareDocument2DocumentationOfServiceEventClassCode ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime ContinuityOfCareDocument2DocumentationOfServiceEventPerformer ContinuityOfCareDocument2DocumentationOfServiceEvent'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2Author constraints.validation.error='ContinuityOfCareDocument2AuthorAssignedAuthor'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2AuthorAssignedAuthor constraints.validation.error='ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2DocumentationOf constraints.validation.error='ContinuityOfCareDocument2DocumentationOfServiceEvent'"
@@ -265,6 +265,31 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	 * @generated
 	 */
 	boolean validateContinuityOfCareDocument2MentalStatusSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NutritionSection))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocument2NutritionSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection2))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocument2FamilyHistorySection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
@@ -583,6 +608,24 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	 * @generated
 	 */
 	MentalStatusSection getMentalStatusSection();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NutritionSection))->asSequence()->any(true).oclAsType(consol::NutritionSection)'"
+	 * @generated
+	 */
+	NutritionSection getNutritionSection();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection2))->asSequence()->any(true).oclAsType(consol::FamilyHistorySection2)'"
+	 * @generated
+	 */
+	FamilyHistorySection2 getFamilyHistorySection2();
 
 	/**
 	 * <!-- begin-user-doc -->

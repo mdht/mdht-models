@@ -666,6 +666,12 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDischargeMedicationsSection2();
 			case ConsolPackage.CONSULTATION_NOTE2:
 				return createConsultationNote2();
+			case ConsolPackage.FAMILY_HISTORY_SECTION2:
+				return createFamilyHistorySection2();
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2:
+				return createFamilyHistoryOrganizer2();
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2:
+				return createFamilyHistoryObservation2();
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT2:
 				return createContinuityOfCareDocument2();
 			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT2:
@@ -684,12 +690,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createUnstructuredDocument2();
 			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2:
 				return createPreconditionForSubstanceAdministration2();
-			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2:
-				return createFamilyHistoryObservation2();
-			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2:
-				return createFamilyHistoryOrganizer2();
-			case ConsolPackage.FAMILY_HISTORY_SECTION2:
-				return createFamilyHistorySection2();
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER2:
 				return createPhysicianReadingStudyPerformer2();
 			case ConsolPackage.COURSE_OF_CARE_SECTION:
