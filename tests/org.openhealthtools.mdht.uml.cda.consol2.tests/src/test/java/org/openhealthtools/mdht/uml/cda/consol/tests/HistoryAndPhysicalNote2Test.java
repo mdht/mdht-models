@@ -79,15 +79,16 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ReviewOfSystemsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Review Of Systems Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2SocialHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Social History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Vital Signs Section Entries Optional2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2FamilyHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Family History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Information Recipient Intended Recipient</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Day IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Minute IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Second IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT If More Precise Than Day Include Time Zone Offset IVLTS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Responsible Party Assigned Entity Has Person Or Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Responsible Party Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Encounter Participant Assigned Entity Has Person Or Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Encounter Participant Assigned Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Precise To The Day</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Precise To The Minute</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheSecond(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Precise To The Second</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter If More Precise Than Day Include Time Zone Offset</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Responsible Party</em>}</li>
@@ -114,6 +115,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getReviewOfSystemsSection() <em>Get Review Of Systems Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getSocialHistorySection2() <em>Get Social History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getVitalSignsSectionEntriesOptional2() <em>Get Vital Signs Section Entries Optional2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getFamilyHistorySection2() <em>Get Family History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -1422,6 +1424,40 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateHistoryAndPhysicalNote2FamilyHistorySection2() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2FamilyHistorySection2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2FamilyHistorySection2",
+			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createFamilyHistorySection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2FamilyHistorySection2(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2FamilyHistorySection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipientTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient",
@@ -1452,6 +1488,167 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 		};
 
 		validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipientTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTSTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+				target.init();
+				Component1 component = CDAFactory.eINSTANCE.createComponent1();
+				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+				component.setEncompassingEncounter(ee);
+				target.setComponentOf(component);
+
+				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912");
+				ee.setEffectiveTime(ivlts);
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_DAY);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTSTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+				target.init();
+				Component1 component = CDAFactory.eINSTANCE.createComponent1();
+				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+				component.setEncompassingEncounter(ee);
+				target.setComponentOf(component);
+
+				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
+				ee.setEffectiveTime(ivlts);
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_MINUTE);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTSTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+				target.init();
+				Component1 component = CDAFactory.eINSTANCE.createComponent1();
+				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+				component.setEncompassingEncounter(ee);
+				target.setComponentOf(component);
+
+				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE);
+				ee.setEffectiveTime(ivlts);
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_SECOND);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+				target.init();
+				Component1 component = CDAFactory.eINSTANCE.createComponent1();
+				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+				component.setEncompassingEncounter(ee);
+				target.setComponentOf(component);
+
+				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
+				ee.setEffectiveTime(ivlts);
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(
+					PRECISE_TO_MINUTE_WITH_TIMEZONE);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase.doValidationTest();
 	}
 
 	/**
@@ -1652,167 +1849,6 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 		};
 
 		validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheDay() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheDayTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheDay",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_DAY);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheDay(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheDayTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheMinute() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheMinuteTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheMinute",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_MINUTE);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheMinute(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheMinuteTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheSecond() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheSecondTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheSecond",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE);
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_SECOND);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheSecond(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterPreciseToTheSecondTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(
-					PRECISE_TO_MINUTE_WITH_TIMEZONE);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase.doValidationTest();
 	}
 
 	/**
@@ -2296,6 +2332,18 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 		HistoryAndPhysicalNote2 target = objectFactory.create();
 		target.getVitalSignsSectionEntriesOptional2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetFamilyHistorySection2() {
+
+		HistoryAndPhysicalNote2 target = objectFactory.create();
+		target.getFamilyHistorySection2();
 
 	}
 

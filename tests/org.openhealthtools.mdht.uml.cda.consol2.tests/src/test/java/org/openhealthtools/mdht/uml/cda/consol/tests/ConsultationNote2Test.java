@@ -41,7 +41,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ConsultationNote2Opera
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
+import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
+import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
 import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
 
@@ -54,8 +55,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Has An Assement And Plan Section2 Or Both Assement Section And Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Does Not Have Assement And Plan Section2 When Assement And Plan Of Treatment2 Are Present</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2HasReasonForReferral2OrReasonForVisit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Has Reason For Referral2 Or Reason For Visit</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Does Not Have Assement And Plan Section2 When Assement Or Plan Of Treatment2 Are Present</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Does Not Have Chief Complaint With Chief Complaint Or Reason For Visit Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2Participant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Participant</em>}</li>
@@ -64,7 +65,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2AssessmentSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Assessment Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2AssessmentAndPlanSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Assessment And Plan Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2PlanOfTreatmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ReasonForReferralSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Reason For Referral Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ReasonForVisitSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Reason For Visit Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2HistoryOfPresentIllnessSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 History Of Present Illness Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2PhysicalExamSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Physical Exam Section2</em>}</li>
@@ -86,6 +86,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2MedicalEquipmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Medical Equipment Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2MentalStatusSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Mental Status Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2NutritionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Nutrition Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2FamilyHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Family History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ParticipantAssociatedEntityAssociatedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Participant Associated Entity Associated Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ParticipantAssociatedEntityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Participant Associated Entity Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ParticipantAssociatedEntityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Participant Associated Entity Id</em>}</li>
@@ -97,14 +98,14 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ParticipantAssociatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Participant Associated Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2InFulfillmentOfOrderId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 In Fulfillment Of Order Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2InFulfillmentOfOrder(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 In Fulfillment Of Order</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Day IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Minute IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Second IVLTS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT If More Precise Than Day Include Time Zone Offset IVLTS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter Responsible Party Assigned Entity Has Person Organization Or Both</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter Responsible Party Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter Encounter Participant Assigned Entity Has Person Organization Or Both</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter Encounter Participant Assigned Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter Precise To The Day</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter Precise To The Minute</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter Precise To The Second</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter If More Precise Than Day Include Time Zone Offset</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateConsultationNote2ComponentOfEncompassingEncounterResponsibleParty(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note2 Component Of Encompassing Encounter Responsible Party</em>}</li>
@@ -113,7 +114,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getAssessmentSection() <em>Get Assessment Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getAssessmentAndPlanSection2() <em>Get Assessment And Plan Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getPlanOfTreatmentSection2() <em>Get Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getReasonForReferralSection2() <em>Get Reason For Referral Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getReasonForVisitSection() <em>Get Reason For Visit Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getHistoryOfPresentIllnessSection() <em>Get History Of Present Illness Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getPhysicalExamSection2() <em>Get Physical Exam Section2</em>}</li>
@@ -135,8 +135,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getMedicalEquipmentSection2() <em>Get Medical Equipment Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getMentalStatusSection() <em>Get Mental Status Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getNutritionSection() <em>Get Nutrition Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getFamilyHistorySection2() <em>Get Family History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateGeneralHeaderConstraintsTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Title</em>}</li>
  * </ul>
  * </p>
  *
@@ -226,10 +226,10 @@ public class ConsultationNote2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent() {
-		OperationsTestCase<ConsultationNote2> validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresentTestCase = new OperationsTestCase<ConsultationNote2>(
-			"validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent() {
+		OperationsTestCase<ConsultationNote2> validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresentTestCase = new OperationsTestCase<ConsultationNote2>(
+			"validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent",
+			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_OR_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -293,13 +293,13 @@ public class ConsultationNote2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ConsultationNote2Operations.validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
+				return ConsultationNote2Operations.validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 					(ConsultationNote2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresentTestCase.doValidationTest();
+		validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresentTestCase.doValidationTest();
 	}
 
 	/**
@@ -307,14 +307,51 @@ public class ConsultationNote2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateConsultationNote2HasReasonForReferral2OrReasonForVisit() {
-		OperationsTestCase<ConsultationNote2> validateConsultationNote2HasReasonForReferral2OrReasonForVisitTestCase = new OperationsTestCase<ConsultationNote2>(
-			"validateConsultationNote2HasReasonForReferral2OrReasonForVisit",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_HAS_REASON_FOR_REFERRAL2_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection() {
+		OperationsTestCase<ConsultationNote2> validateConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSectionTestCase = new OperationsTestCase<ConsultationNote2>(
+			"validateConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection",
+			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_DOES_NOT_HAVE_CHIEF_COMPLAINT_WITH_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			/*
+			 * SHALL NOT contain a Chief Complaint and Reason for Visit Section (2.16.840.1.113883.10.20.22.2.13)
+			 * when either a Chief Complaint Section (1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1)
+			 * or a Reason for Visit Section (2.16.840.1.113883.10.20.22.2.12) is present (CONF:1098-28940)
+			 */
+
 			@Override
-			protected void updateToFail(ConsultationNote2 target) {
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ConsultationNote2 target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
+					}
+
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ConsultationNote2 target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
+					}
+
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ConsultationNote2 target) {
+						target.init();
+						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
+						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
+					}
+
+				});
 
 			}
 
@@ -324,8 +361,7 @@ public class ConsultationNote2Test extends CDAValidationTest {
 					@Override
 					public void updateToPass(ConsultationNote2 target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createReasonForReferralSection2().init());
-
+						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 					}
 				});
 
@@ -333,22 +369,74 @@ public class ConsultationNote2Test extends CDAValidationTest {
 					@Override
 					public void updateToPass(ConsultationNote2 target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
+						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						// add unrelated section
+						target.addSection(ConsolFactory.eINSTANCE.createAdmissionDiagnosisSection2().init());
 					}
 				});
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ConsultationNote2Operations.validateConsultationNote2HasReasonForReferral2OrReasonForVisit(
+				return ConsultationNote2Operations.validateConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(
 					(ConsultationNote2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateConsultationNote2HasReasonForReferral2OrReasonForVisitTestCase.doValidationTest();
+		validateConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSectionTestCase.doValidationTest();
 	}
+
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateConsultationNote2HasReasonForReferral2OrReasonForVisit() {
+	// OperationsTestCase<ConsultationNote2> validateConsultationNote2HasReasonForReferral2OrReasonForVisitTestCase = new
+	// OperationsTestCase<ConsultationNote2>(
+	// "validateConsultationNote2HasReasonForReferral2OrReasonForVisit",
+	// operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_HAS_REASON_FOR_REFERRAL2_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(ConsultationNote2 target) {
+	//
+	// }
+	//
+	// @Override
+	// public void addPassTests() {
+	// addPassTest(new PassTest() {
+	// @Override
+	// public void updateToPass(ConsultationNote2 target) {
+	// target.init();
+	// target.addSection(ConsolFactory.eINSTANCE.createReasonForReferralSection2().init());
+	//
+	// }
+	// });
+	//
+	// addPassTest(new PassTest() {
+	// @Override
+	// public void updateToPass(ConsultationNote2 target) {
+	// target.init();
+	// target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
+	// }
+	// });
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return ConsultationNote2Operations.validateConsultationNote2HasReasonForReferral2OrReasonForVisit(
+	// (ConsultationNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateConsultationNote2HasReasonForReferral2OrReasonForVisitTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -637,40 +725,6 @@ public class ConsultationNote2Test extends CDAValidationTest {
 		};
 
 		validateConsultationNote2PlanOfTreatmentSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateConsultationNote2ReasonForReferralSection2() {
-		OperationsTestCase<ConsultationNote2> validateConsultationNote2ReasonForReferralSection2TestCase = new OperationsTestCase<ConsultationNote2>(
-			"validateConsultationNote2ReasonForReferralSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ConsultationNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ConsultationNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createReasonForReferralSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ConsultationNote2Operations.validateConsultationNote2ReasonForReferralSection2(
-					(ConsultationNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateConsultationNote2ReasonForReferralSection2TestCase.doValidationTest();
 	}
 
 	/**
@@ -1448,6 +1502,40 @@ public class ConsultationNote2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateConsultationNote2FamilyHistorySection2() {
+		OperationsTestCase<ConsultationNote2> validateConsultationNote2FamilyHistorySection2TestCase = new OperationsTestCase<ConsultationNote2>(
+			"validateConsultationNote2FamilyHistorySection2",
+			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ConsultationNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ConsultationNote2 target) {
+				target.init();
+				target.addSection(ConsolFactory.eINSTANCE.createFamilyHistorySection2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ConsultationNote2Operations.validateConsultationNote2FamilyHistorySection2(
+					(ConsultationNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateConsultationNote2FamilyHistorySection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateConsultationNote2ParticipantAssociatedEntityAssociatedPersonName() {
 		OperationsTestCase<ConsultationNote2> validateConsultationNote2ParticipantAssociatedEntityAssociatedPersonNameTestCase = new OperationsTestCase<ConsultationNote2>(
 			"validateConsultationNote2ParticipantAssociatedEntityAssociatedPersonName",
@@ -1877,6 +1965,365 @@ public class ConsultationNote2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS() {
+		OperationsTestCase<ConsultationNote2> validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTSTestCase = new OperationsTestCase<ConsultationNote2>(
+			"validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912");
+						ee.setEffectiveTime(ivlts);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
+						IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						low.setValue("200912");
+						high.setValue("200912");
+						et.setLow(low);
+						et.setHigh(high);
+						ee.setEffectiveTime(et);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
+						IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						low.setValue("200912");
+						high.setNullFlavor(NullFlavor.ASKU);
+						et.setLow(low);
+						et.setHigh(high);
+						ee.setEffectiveTime(et);
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_DAY);
+						ee.setEffectiveTime(ivlts);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
+						IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						low.setValue(PRECISE_TO_DAY);
+						high.setValue(PRECISE_TO_DAY);
+						et.setLow(low);
+						et.setHigh(high);
+						ee.setEffectiveTime(et);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
+						et.setNullFlavor(NullFlavor.ASKU);
+						ee.setEffectiveTime(et);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
+						IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						low.setNullFlavor(NullFlavor.ASKU);
+						high.setNullFlavor(NullFlavor.ASKU);
+						et.setLow(low);
+						et.setHigh(high);
+						ee.setEffectiveTime(et);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
+						IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						low.setNullFlavor(NullFlavor.ASKU);
+						high.setValue(PRECISE_TO_DAY);
+						et.setLow(low);
+						et.setHigh(high);
+						ee.setEffectiveTime(et);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
+					(ConsultationNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS() {
+		OperationsTestCase<ConsultationNote2> validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTSTestCase = new OperationsTestCase<ConsultationNote2>(
+			"validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ConsultationNote2 target) {
+				target.init();
+				Component1 component = CDAFactory.eINSTANCE.createComponent1();
+				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+				component.setEncompassingEncounter(ee);
+				target.setComponentOf(component);
+
+				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
+				ee.setEffectiveTime(ivlts);
+			}
+
+			@Override
+			protected void updateToPass(ConsultationNote2 target) {
+				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_MINUTE);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
+					(ConsultationNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS() {
+		OperationsTestCase<ConsultationNote2> validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTSTestCase = new OperationsTestCase<ConsultationNote2>(
+			"validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ConsultationNote2 target) {
+				target.init();
+				Component1 component = CDAFactory.eINSTANCE.createComponent1();
+				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+				component.setEncompassingEncounter(ee);
+				target.setComponentOf(component);
+
+				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE);
+				ee.setEffectiveTime(ivlts);
+			}
+
+			@Override
+			protected void updateToPass(ConsultationNote2 target) {
+				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_SECOND);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
+					(ConsultationNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS() {
+		OperationsTestCase<ConsultationNote2> validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase = new OperationsTestCase<ConsultationNote2>(
+			"validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS",
+			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
+						ee.setEffectiveTime(ivlts);
+					}
+
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
+						IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						low.setValue("2009121217");
+						et.setLow(low);
+						IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						high.setValue("2009121217");
+						et.setHigh(high);
+						ee.setEffectiveTime(et);
+					}
+
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MS_WITH_TIMEZONE);
+						ee.setEffectiveTime(ivlts);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ConsultationNote2 target) {
+						target.init();
+						Component1 component = CDAFactory.eINSTANCE.createComponent1();
+						EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+						component.setEncompassingEncounter(ee);
+						target.setComponentOf(component);
+
+						IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
+						IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						low.setValue(PRECISE_TO_MS_WITH_TIMEZONE);
+						et.setLow(low);
+						IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+						high.setValue(PRECISE_TO_MS_WITH_TIMEZONE);
+						et.setHigh(high);
+						ee.setEffectiveTime(et);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
+					(ConsultationNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth() {
 		OperationsTestCase<ConsultationNote2> validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBothTestCase = new OperationsTestCase<ConsultationNote2>(
 			"validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth",
@@ -2051,171 +2498,6 @@ public class ConsultationNote2Test extends CDAValidationTest {
 		};
 
 		validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay() {
-		OperationsTestCase<ConsultationNote2> validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDayTestCase = new OperationsTestCase<ConsultationNote2>(
-			"validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ConsultationNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(ConsultationNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_DAY);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDay(
-					(ConsultationNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheDayTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute() {
-		OperationsTestCase<ConsultationNote2> validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinuteTestCase = new OperationsTestCase<ConsultationNote2>(
-			"validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ConsultationNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(ConsultationNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_MINUTE);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinute(
-					(ConsultationNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheMinuteTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond() {
-		OperationsTestCase<ConsultationNote2> validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecondTestCase = new OperationsTestCase<ConsultationNote2>(
-			"validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ConsultationNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE);
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(ConsultationNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_SECOND);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecond(
-					(ConsultationNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateConsultationNote2ComponentOfEncompassingEncounterPreciseToTheSecondTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset() {
-		OperationsTestCase<ConsultationNote2> validateConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new OperationsTestCase<ConsultationNote2>(
-			"validateConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ConsultationNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(ConsultationNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(
-					PRECISE_TO_MS_WITH_TIMEZONE);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
-					(ConsultationNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateConsultationNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase.doValidationTest();
 	}
 
 	/**
@@ -2436,18 +2718,6 @@ public class ConsultationNote2Test extends CDAValidationTest {
 
 		ConsultationNote2 target = objectFactory.create();
 		target.getPlanOfTreatmentSection2();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetReasonForReferralSection2() {
-
-		ConsultationNote2 target = objectFactory.create();
-		target.getReasonForReferralSection2();
 
 	}
 
@@ -2708,6 +2978,18 @@ public class ConsultationNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+	public void testGetFamilyHistorySection2() {
+
+		ConsultationNote2 target = objectFactory.create();
+		target.getFamilyHistorySection2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<ConsultationNote2> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<ConsultationNote2>(
 			"validateGeneralHeaderConstraintsTemplateId",
@@ -2735,43 +3017,6 @@ public class ConsultationNote2Test extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsTemplateIdTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateGeneralHeaderConstraintsTitle() {
-		OperationsTestCase<ConsultationNote2> validateGeneralHeaderConstraintsTitleTestCase = new OperationsTestCase<ConsultationNote2>(
-			"validateGeneralHeaderConstraintsTitle",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ConsultationNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ConsultationNote2 target) {
-				target.init();
-
-				ST title = DatatypesFactory.eINSTANCE.createST("title");
-				target.setTitle(title);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ConsultationNote2Operations.validateGeneralHeaderConstraintsTitle(
-					(ConsultationNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateGeneralHeaderConstraintsTitleTestCase.doValidationTest();
 	}
 
 	/**
