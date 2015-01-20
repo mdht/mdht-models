@@ -12433,6 +12433,11 @@ The Operative Note is created immediately following a surgical or other high-ris
       <ownedComment xmi:id="_XbBL8C1hEeSoCqqrpX8LzQ">
         <body>INLINE</body>
       </ownedComment>
+      <ownedComment xmi:id="_oHcgcJ3EEeSofqct4VeYrw">
+        <body>DocumentationOf&#xD;
+A serviceEvent represents the main act, such as a colonoscopy or an appendectomy, being documented.  A serviceEvent can further specialize the act inherent in the ClinicalDocument/code, such as where the ClinicalDocument/code is simply &quot;Surgical Operation Note&quot; and the procedure is &quot;Appendectomy.&quot; serviceEvent is required in the Operative Note and it must be equivalent to or further specialize the value inherent in the ClinicalDocument/code; it shall not conflict with the value inherent in the ClinicalDocument/code, as such a conflict would create ambiguity.  serviceEvent/effectiveTime can be used to indicate the time the actual event (as opposed to the encounter surrounding the event) took place.&#xD;
+If the date and the duration of the procedure is known, serviceEvent/effectiveTime/low is used with a width element that describes the duration; no high element is used. However, if only the date is known, the date is placed in both the low and high elements.</body>
+      </ownedComment>
       <generalization xmi:id="_WFuM8C1hEeSoCqqrpX8LzQ">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1fhigEcEEd6besF9iFIJkQ"/>
       </generalization>
@@ -12441,11 +12446,6 @@ The Operative Note is created immediately following a surgical or other high-ris
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eA4FoC1hEeSoCqqrpX8LzQ" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_qsfcoC1hEeSoCqqrpX8LzQ" name="ServiceEvent">
-        <ownedComment xmi:id="_tx014C1hEeSoCqqrpX8LzQ">
-          <body>serviceEvent&#xD;
-A serviceEvent represents the main act, such as a colonoscopy or an appendectomy, being documented.  A serviceEvent can further specialize the act inherent in the ClinicalDocument/code, such as where the ClinicalDocument/code is simply &quot;Surgical Operation Note&quot; and the procedure is &quot;Appendectomy.&quot; serviceEvent is required in the Operative Note and it must be equivalent to or further specialize the value inherent in the ClinicalDocument/code; it shall not conflict with the value inherent in the ClinicalDocument/code, as such a conflict would create ambiguity.  serviceEvent/effectiveTime can be used to indicate the time the actual event (as opposed to the encounter surrounding the event) took place.&#xD;
-If the date and the duration of the procedure is known, serviceEvent/effectiveTime/low is used with a width element that describes the duration; no high element is used. However, if only the date is known, the date is placed in both the low and high elements.</body>
-        </ownedComment>
         <ownedRule xmi:id="_2sLaYC1kEeSoCqqrpX8LzQ" name="effectiveTimeHasHighWhenNoWidth">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_2sLaYS1kEeSoCqqrpX8LzQ">
             <language>Analysis</language>
@@ -12458,40 +12458,8 @@ If the date and the duration of the procedure is known, serviceEvent/effectiveTi
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_4SssQS1kEeSoCqqrpX8LzQ">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>When only the date and the length of the procedure are known a width element SHALL be present and the serviceEvent/effectiveTime/high SHALL not be present</body>
+            <body>When only the date and the length of the procedure are known a width element SHALL be present and the serviceEvent/effectiveTime/high SHALL NOT be present</body>
             <body>not self.effectiveTime.width.oclIsUndefined() xor not self.effectiveTime.high.oclIsUndefined()</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_idgsMC1lEeSoCqqrpX8LzQ" name="preciseToTheDay">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_idgsMS1lEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 8) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 8)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_kvdgsC1lEeSoCqqrpX8LzQ" name="preciseToTheMinute">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_kvdgsS1lEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 12) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 12)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_nR0IsC1lEeSoCqqrpX8LzQ" name="preciseToTheSecond">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_nR0IsS1lEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 14) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 14)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_pJv6sC1lEeSoCqqrpX8LzQ" name="ifMorePreciseThanDayIncludeTimeZoneOffset">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_pJv6sS1lEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() and self.effectiveTime.low.value.size() > 8 implies self.effectiveTime.low.value.size() >= 15) and (not self.effectiveTime.high.value.oclIsUndefined() and self.effectiveTime.high.value.size() > 8 implies self.effectiveTime.high.value.size() >= 15)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_VgqzkC1rEeSoCqqrpX8LzQ" name="procedureCodes">
@@ -12502,23 +12470,17 @@ If the date and the duration of the procedure is known, serviceEvent/effectiveTi
             <body>code.codeSystem = '2.16.840.1.113883.6.104' or code.codeSystem = '2.16.840.1.113883.6.12' or code.codeSystem = '2.16.840.1.113883.6.96'</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_00rCAC1rEeSoCqqrpX8LzQ" name="anyAssistantsAsSecondary">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_00rCAS1rEeSoCqqrpX8LzQ">
-            <language>Analysis</language>
-            <body>Any assistants SHALL be identified and SHALL be identified as secondary performers (SPRF)</body>
-          </specification>
-        </ownedRule>
         <generalization xmi:id="_qsk8MC1hEeSoCqqrpX8LzQ">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lriDUEcaEd6besF9iFIJkQ"/>
         </generalization>
-        <ownedAttribute xmi:id="_y5ZMoC1hEeSoCqqrpX8LzQ" name="effectiveTime" visibility="private" type="_f1HjEC1kEeSoCqqrpX8LzQ" aggregation="composite">
+        <ownedAttribute xmi:id="_y5ZMoC1hEeSoCqqrpX8LzQ" name="effectiveTime" visibility="private" type="_C74W0J3GEeSofqct4VeYrw" aggregation="composite">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1UQskC1hEeSoCqqrpX8LzQ" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1UMbIC1hEeSoCqqrpX8LzQ" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OYDkMEroEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QnvvEC1mEeSoCqqrpX8LzQ" name="performer" type="_osSGIC1mEeSoCqqrpX8LzQ" association="_Qnw9MC1mEeSoCqqrpX8LzQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cQyOwC1mEeSoCqqrpX8LzQ" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cQt9UC1mEeSoCqqrpX8LzQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__7Zy8J3GEeSofqct4VeYrw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__7ZL4J3GEeSofqct4VeYrw" value="*"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6MIl4EoVEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_74sT0C1qEeSoCqqrpX8LzQ" name="code" visibility="private" aggregation="composite">
@@ -12527,17 +12489,10 @@ If the date and the duration of the procedure is known, serviceEvent/effectiveTi
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9yhjQC1qEeSoCqqrpX8LzQ" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_I4F7kEroEd6FXKclYGEDCw"/>
         </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_f1HjEC1kEeSoCqqrpX8LzQ" name="IVLTS">
-          <generalization xmi:id="_f1OQwC1kEeSoCqqrpX8LzQ">
-            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-          </generalization>
-          <ownedAttribute xmi:id="_gLusQC1kEeSoCqqrpX8LzQ" name="low" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pVH5sC1kEeSoCqqrpX8LzQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pVDBMC1kEeSoCqqrpX8LzQ" value="1"/>
-            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
-          </ownedAttribute>
-        </nestedClassifier>
+        <ownedAttribute xmi:id="_yMSQMJ3JEeSofqct4VeYrw" name="performerAssistants" type="_IxQR8J3KEeSofqct4VeYrw" association="_yMTeUJ3JEeSofqct4VeYrw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yMSQMZ3JEeSofqct4VeYrw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yMSQMp3JEeSofqct4VeYrw" value="*"/>
+        </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_osSGIC1mEeSoCqqrpX8LzQ" name="Performer">
           <ownedComment xmi:id="_ulJW8C1mEeSoCqqrpX8LzQ">
             <body>performer&#xD;
@@ -12563,6 +12518,44 @@ The performer represents clinicians who actually and principally carry out the s
               <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O7930C1oEeSoCqqrpX8LzQ" value="1"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O75mYC1oEeSoCqqrpX8LzQ" value="1"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_C74W0J3GEeSofqct4VeYrw" name="USRealmDateAndTimeDT">
+          <generalization xmi:id="_C7494J3GEeSofqct4VeYrw" general="_kkAUwJBkEeSSfIVHL_x3Xw"/>
+          <ownedAttribute xmi:id="_E8dHcJ3GEeSofqct4VeYrw" name="low" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JlbdsZ3GEeSofqct4VeYrw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JlbdsJ3GEeSofqct4VeYrw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_IxQR8J3KEeSofqct4VeYrw" name="PerformerAssistants">
+          <ownedComment xmi:id="_hGQt8J3KEeSofqct4VeYrw">
+            <body>performer&#xD;
+This performer represents any assistants.</body>
+          </ownedComment>
+          <generalization xmi:id="_IxQ5AJ3KEeSofqct4VeYrw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_Kuv5YJ3KEeSofqct4VeYrw" name="typeCode" visibility="private" isReadOnly="true">
+            <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOqckDcEd6xYZuu1VKCVw"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_WgXtUJ3KEeSofqct4VeYrw" value="SPRF"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3_p4cErfEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_mGcqUJ3KEeSofqct4VeYrw" name="assignedEntity" type="_vsf-kJ3KEeSofqct4VeYrw" association="_mGd4cJ3KEeSofqct4VeYrw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nyIJAZ3KEeSofqct4VeYrw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nyIJAJ3KEeSofqct4VeYrw" value="1"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_vsf-kJ3KEeSofqct4VeYrw" name="AssignedEntity">
+            <generalization xmi:id="_vsgloJ3KEeSofqct4VeYrw">
+              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_wHsFwJ3KEeSofqct4VeYrw" name="code" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y6oHcZ3KEeSofqct4VeYrw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y6oHcJ3KEeSofqct4VeYrw" value="1"/>
               <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
             </ownedAttribute>
           </nestedClassifier>
@@ -12624,6 +12617,7 @@ The performer represents clinicians who actually and principally carry out the s
   <CDA:CDATemplate xmi:id="_jaxNYC1fEeSoCqqrpX8LzQ" base_Class="_aH1CYC1fEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.7" templateVersion="2014-06-09">
     <ruleId>CONF:1098-8483</ruleId>
     <ruleId>CONF:1098-10048</ruleId>
+    <ruleId>CONF:1098-32519</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_w825YC1fEeSoCqqrpX8LzQ" base_Generalization="_aH1pcC1fEeSoCqqrpX8LzQ"/>
   <CDA:PropertyValidation xmi:id="_apLmgC1gEeSoCqqrpX8LzQ" base_Property="_apK_cC1gEeSoCqqrpX8LzQ">
@@ -12648,30 +12642,11 @@ The performer represents clinicians who actually and principally carry out the s
   <CDA:PropertyValidation xmi:id="_z-biEC1hEeSoCqqrpX8LzQ" base_Property="_y5ZMoC1hEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-8494</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_gwxTAC1kEeSoCqqrpX8LzQ" base_Property="_gLusQC1kEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-8488</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_2sMogC1kEeSoCqqrpX8LzQ" base_Constraint="_2sLaYC1kEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-10058</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_4St6YC1kEeSoCqqrpX8LzQ" base_Constraint="_4SssQC1kEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-10060</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_idh6UC1lEeSoCqqrpX8LzQ" base_Constraint="_idgsMC1lEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10136</ruleId>
-    <ruleId>CONF:81-10127</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_kveu0C1lEeSoCqqrpX8LzQ" severity="WARNING" base_Constraint="_kvdgsC1lEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10136</ruleId>
-    <ruleId>CONF:81-10128</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_nR1W0C1lEeSoCqqrpX8LzQ" severity="INFO" base_Constraint="_nR0IsC1lEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10136</ruleId>
-    <ruleId>CONF:81-10129</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_pJwhwC1lEeSoCqqrpX8LzQ" severity="WARNING" base_Constraint="_pJv6sC1lEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10136</ruleId>
-    <ruleId>CONF:81-10130</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_Qnw9MC1mEeSoCqqrpX8LzQ" memberEnd="_QnvvEC1mEeSoCqqrpX8LzQ _QnxkQC1mEeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_QnxkQC1mEeSoCqqrpX8LzQ" type="_qsfcoC1hEeSoCqqrpX8LzQ" association="_Qnw9MC1mEeSoCqqrpX8LzQ"/>
@@ -12688,21 +12663,16 @@ The performer represents clinicians who actually and principally carry out the s
   <CDA:AssociationValidation xmi:id="_GFpXYC1oEeSoCqqrpX8LzQ" base_Association="_E4HNQC1oEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-10917</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_NvbMMC1oEeSoCqqrpX8LzQ" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-8490</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_WMkXoC1oEeSoCqqrpX8LzQ" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ" severity="WARNING">
+  <CDA:PropertyValidation xmi:id="_NvbMMC1oEeSoCqqrpX8LzQ" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ"/>
+  <CDA:ValueSetConstraint xmi:id="_WMkXoC1oEeSoCqqrpX8LzQ" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ">
     <reference href="../consol-vocab.uml#_8lYFkC1oEeSoCqqrpX8LzQ"/>
-    <ruleId>CONF:1098-8491</ruleId>
+    <ruleId>CONF:1098-8490</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8eWloC1qEeSoCqqrpX8LzQ" base_Property="_74sT0C1qEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-8487</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_VgsBsC1rEeSoCqqrpX8LzQ" base_Constraint="_VgqzkC1rEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-8487</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_00sQIC1rEeSoCqqrpX8LzQ" base_Constraint="_00rCAC1rEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-8512</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_2NDL8C30EeSoCqqrpX8LzQ" memberEnd="_2NBWwC30EeSoCqqrpX8LzQ _2NDzAC30EeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_2NDzAC30EeSoCqqrpX8LzQ" type="_aH1CYC1fEeSoCqqrpX8LzQ" association="_2NDL8C30EeSoCqqrpX8LzQ"/>
@@ -12849,19 +12819,11 @@ The Procedure Note is created immediately following a non-operative procedure. I
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_21Cn4S7XEeSoCqqrpX8LzQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL include an Assessment and Plan Section (V2) (templateId:2.16.840.1.113883.10.20.22.2.9.2), or an Assessment Section (templateId:2.16.840.1.113883.10.20.22.2.8) and a Plan of Treatment Section (V2) (templateId:2.16.840.1.113883.10.20.22.2.10.2)</body>
+        <body>SHALL contain an Assessment and Plan Section (V2) (2.16.840.1.113883.10.20.22.2.9:2014-06-09), or an Assessment Section (2.16.840.1.113883.10.20.22.2.8) and a Plan of Treatment Section (V2) (2.16.840.1.113883.10.20.22.2.10:2014-06-09)</body>
         <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfTreatmentSection2)) and  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection2))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_uVe6QC7aEeSoCqqrpX8LzQ" name="sectionTitles">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_uVe6QS7aEeSoCqqrpX8LzQ">
-        <language>OCL</language>
-        <language>Analysis</language>
-        <body>self.getAllSections()->forAll(section : cda::Section | not section.title.oclIsUndefined())</body>
-        <body>Each section SHALL have a title and the title SHALL NOT be empty</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_OlYJMC7bEeSoCqqrpX8LzQ" name="doesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent">
+    <ownedRule xmi:id="_OlYJMC7bEeSoCqqrpX8LzQ" name="doesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_OlYJMS7bEeSoCqqrpX8LzQ">
         <language>Analysis</language>
         <language>OCL</language>
@@ -12869,11 +12831,11 @@ The Procedure Note is created immediately following a non-operative procedure. I
         <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfTreatmentSection2)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection2))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_dOtxIC7bEeSoCqqrpX8LzQ" name="doesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection">
+    <ownedRule xmi:id="_dOtxIC7bEeSoCqqrpX8LzQ" name="doesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_dOtxIS7bEeSoCqqrpX8LzQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL NOT include a Chief Complaint and Reason for Visit Section with either a Chief Complaint Section or a Reason for Visit Section</body>
+        <body>SHALL NOT contain a Chief Complaint and Reason for Visit Section (2.16.840.1.113883.10.20.22.2.13) when either a Chief Complaint Section (1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1) or a Reason for Visit Section (2.16.840.1.113883.10.20.22.2.12) is present</body>
         <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
       </specification>
     </ownedRule>
@@ -12958,8 +12920,8 @@ The Procedure Note is created immediately following a non-operative procedure. I
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ik3j0C7REeSoCqqrpX8LzQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IksksC7REeSoCqqrpX8LzQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_UkxEUC7REeSoCqqrpX8LzQ" name="familyHistorySection" association="_UkyScC7REeSoCqqrpX8LzQ">
-      <type xmi:type="uml:Class" href="consol-familyhistory.uml#_2IWQIxSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_UkxEUC7REeSoCqqrpX8LzQ" name="familyHistorySection2" association="_UkyScC7REeSoCqqrpX8LzQ">
+      <type xmi:type="uml:Class" href="consol-familyhistory.uml#_NGivoIevEeSBauRYePLghA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFkNIC7REeSoCqqrpX8LzQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XFZOAC7REeSoCqqrpX8LzQ" value="1"/>
     </ownedAttribute>
@@ -13048,7 +13010,7 @@ The Procedure Note is created immediately following a non-operative procedure. I
         <body>INLINE</body>
       </ownedComment>
       <ownedComment xmi:id="_NzQ_wC4rEeSoCqqrpX8LzQ">
-        <body>participant&#xD;
+        <body>Participant&#xD;
 The participant element in the Procedure Note header follows the General Header Constraints for participants.</body>
       </ownedComment>
       <generalization xmi:id="_FfUzoC4rEeSoCqqrpX8LzQ">
@@ -13089,6 +13051,11 @@ The participant element in the Procedure Note header follows the General Header 
       <ownedComment xmi:id="_z-5tAC4uEeSoCqqrpX8LzQ">
         <body>INLINE</body>
       </ownedComment>
+      <ownedComment xmi:id="_C73Q4KAEEeSy_9HMspjkmw">
+        <body>documentationOf&#xD;
+A serviceEvent is required in the Procedure Note to represent the main act, such as a colonoscopy or a cardiac stress study, being documented. It must be equivalent to or further specialize the value inherent in the ClinicalDocument/@code (such as where the ClinicalDocument/@code is simply &quot;Procedure Note&quot; and the procedure is &quot;colonoscopy&quot;), and it shall not conflict with the value inherent in the ClinicalDocument/@code, as such a conflict would create ambiguity. A serviceEvent/effectiveTime element indicates the time the actual event (as opposed to the encounter surrounding the event) took place.&#xD;
+serviceEvent/effectiveTime may be represented two different ways in the Procedure Note. For accuracy to the second, the best method is effectiveTime/low together with effectiveTime/high. If a more general time, such as minutes or hours, is acceptable OR if the duration is unknown, an effectiveTime/low with a width element may be used. If the duration is unknown, the appropriate HL7 null value such as &quot;NI&quot; or &quot;NA&quot; must be used for the width element.</body>
+      </ownedComment>
       <generalization xmi:id="_yrOeoC4uEeSoCqqrpX8LzQ">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1fhigEcEEd6besF9iFIJkQ"/>
       </generalization>
@@ -13097,11 +13064,6 @@ The participant element in the Procedure Note header follows the General Header 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4739UC4uEeSoCqqrpX8LzQ" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="__LRe0C4uEeSoCqqrpX8LzQ" name="ServiceEvent">
-        <ownedComment xmi:id="_I5Fn8C4vEeSoCqqrpX8LzQ">
-          <body>serviceEvent&#xD;
-A serviceEvent is required in the Procedure Note to represent the main act, such as a colonoscopy or a cardiac stress study, being documented. It must be equivalent to or further specialize the value inherent in the ClinicalDocument/@code (such as where the ClinicalDocument/@code is simply &quot;Procedure Note&quot; and the procedure is &quot;colonoscopy&quot;), and it shall not conflict with the value inherent in the ClinicalDocument/@code, as such a conflict would create ambiguity. A serviceEvent/effectiveTime element indicates the time the actual event (as opposed to the encounter surrounding the event) took place.&#xD;
-serviceEvent/effectiveTime may be represented two different ways in the Procedure Note. For accuracy to the second, the best method is effectiveTime/low together with effectiveTime/high. If a more general time, such as minutes or hours, is acceptable OR if the duration is unknown, an effectiveTime/low with a width element may be used. If the duration is unknown, the appropriate HL7 null value such as &quot;NI&quot; or &quot;NA&quot; must be used for the width element.</body>
-        </ownedComment>
         <ownedRule xmi:id="_rXSsEC4wEeSoCqqrpX8LzQ" name="effectiveTimeHasHighWhenNoWidth">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_rXSsES4wEeSoCqqrpX8LzQ">
             <language>Analysis</language>
@@ -13118,38 +13080,6 @@ serviceEvent/effectiveTime may be represented two different ways in the Procedur
             <body>not self.effectiveTime.width.oclIsUndefined() xor not self.effectiveTime.high.oclIsUndefined()</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_MBlYAC4xEeSoCqqrpX8LzQ" name="preciseToTheDay">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_MBlYAS4xEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 8) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 8)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_OiQlAC4xEeSoCqqrpX8LzQ" name="preciseToTheMinute">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_OiQlAS4xEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 12) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 12)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_RCBMAC4xEeSoCqqrpX8LzQ" name="preciseToTheSecond">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_RCBMAS4xEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 14) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 14)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_TM36AC4xEeSoCqqrpX8LzQ" name="ifMorePreciseThanDayIncludeTimeZoneOffset">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TM36AS4xEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() and self.effectiveTime.low.value.size() > 8 implies self.effectiveTime.low.value.size() >= 15) and (not self.effectiveTime.high.value.oclIsUndefined() and self.effectiveTime.high.value.size() > 8 implies self.effectiveTime.high.value.size() >= 15)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
-          </specification>
-        </ownedRule>
         <ownedRule xmi:id="_H-6scC40EeSoCqqrpX8LzQ" name="procedureCodes">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_H-6scS40EeSoCqqrpX8LzQ">
             <language>Analysis</language>
@@ -13158,23 +13088,17 @@ serviceEvent/effectiveTime may be represented two different ways in the Procedur
             <body>code.codeSystem = '2.16.840.1.113883.6.104' or code.codeSystem = '2.16.840.1.113883.6.12' or code.codeSystem = '2.16.840.1.113883.6.96'</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_X78w4C40EeSoCqqrpX8LzQ" name="anyAssistantsAsSecondary">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_X78w4S40EeSoCqqrpX8LzQ">
-            <language>Analysis</language>
-            <body>Any assistants SHALL be identified and SHALL be identified as secondary performers (SPRF)</body>
-          </specification>
-        </ownedRule>
         <generalization xmi:id="__LbP0C4uEeSoCqqrpX8LzQ">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lriDUEcaEd6besF9iFIJkQ"/>
         </generalization>
-        <ownedAttribute xmi:id="_E1eBgC4vEeSoCqqrpX8LzQ" name="effectiveTime" visibility="private" type="_nlPMMC4vEeSoCqqrpX8LzQ" aggregation="composite">
+        <ownedAttribute xmi:id="_E1eBgC4vEeSoCqqrpX8LzQ" name="effectiveTime" visibility="private" type="_l_ZFEKAEEeSy_9HMspjkmw" aggregation="composite">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TeEpoC4vEeSoCqqrpX8LzQ" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Td9U4C4vEeSoCqqrpX8LzQ" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OYDkMEroEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_5dII4C4xEeSoCqqrpX8LzQ" name="performer" type="_yB3bwC4yEeSoCqqrpX8LzQ" association="_5dKlIC4xEeSoCqqrpX8LzQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7F1zIC4xEeSoCqqrpX8LzQ" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7FtQQC4xEeSoCqqrpX8LzQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5YVaQKAFEeSy_9HMspjkmw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5YUzMKAFEeSy_9HMspjkmw" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="__Nf6IC4zEeSoCqqrpX8LzQ" name="code" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -13182,17 +13106,10 @@ serviceEvent/effectiveTime may be represented two different ways in the Procedur
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ArKK8C40EeSoCqqrpX8LzQ" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_I4F7kEroEd6FXKclYGEDCw"/>
         </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_nlPMMC4vEeSoCqqrpX8LzQ" name="IVLTS">
-          <generalization xmi:id="_nlaLUC4vEeSoCqqrpX8LzQ">
-            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-          </generalization>
-          <ownedAttribute xmi:id="_oXJKQC4vEeSoCqqrpX8LzQ" name="low" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qg_LoC4vEeSoCqqrpX8LzQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qg324C4vEeSoCqqrpX8LzQ" value="1"/>
-            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
-          </ownedAttribute>
-        </nestedClassifier>
+        <ownedAttribute xmi:id="_-XJoMKAGEeSy_9HMspjkmw" name="performerAssistants" type="_LdTmIKAHEeSy_9HMspjkmw" association="_-XK2UKAGEeSy_9HMspjkmw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-XJoMaAGEeSy_9HMspjkmw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-XKPQKAGEeSy_9HMspjkmw" value="*"/>
+        </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_yB3bwC4yEeSoCqqrpX8LzQ" name="Performer">
           <ownedComment xmi:id="_1-7uQC4yEeSoCqqrpX8LzQ">
             <body>performer&#xD;
@@ -13218,6 +13135,44 @@ The performer participant represents clinicians who actually and principally car
               <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XMjJsS4zEeSoCqqrpX8LzQ"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XMjJsi4zEeSoCqqrpX8LzQ" value="1"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_l_ZFEKAEEeSy_9HMspjkmw" name="USRealmDateAndTimeDT">
+          <generalization xmi:id="_l_ZFEaAEEeSy_9HMspjkmw" general="_kkAUwJBkEeSSfIVHL_x3Xw"/>
+          <ownedAttribute xmi:id="_mbKbEKAEEeSy_9HMspjkmw" name="low" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n8MwAaAEEeSy_9HMspjkmw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n8MwAKAEEeSy_9HMspjkmw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_LdTmIKAHEeSy_9HMspjkmw" name="PerformerAssistants">
+          <ownedComment xmi:id="_XmuPAKAHEeSy_9HMspjkmw">
+            <body>performer&#xD;
+This performer identifies any assistants.</body>
+          </ownedComment>
+          <generalization xmi:id="_LdUNMKAHEeSy_9HMspjkmw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_NfvX8KAHEeSy_9HMspjkmw" name="typeCode" visibility="private" isReadOnly="true">
+            <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOqckDcEd6xYZuu1VKCVw"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_Qg3moKAHEeSy_9HMspjkmw" value="SPRF"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3_p4cErfEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_tsnIEKAHEeSy_9HMspjkmw" name="assignedEntity" type="_1Ns68KAHEeSy_9HMspjkmw" association="_tsoWMKAHEeSy_9HMspjkmw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v29fwaAHEeSy_9HMspjkmw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v29fwKAHEeSy_9HMspjkmw" value="1"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_1Ns68KAHEeSy_9HMspjkmw" name="AssignedEntity">
+            <generalization xmi:id="_1NtiAKAHEeSy_9HMspjkmw">
+              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_2ya2AKAHEeSy_9HMspjkmw" name="code" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ya2AaAHEeSy_9HMspjkmw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2ya2AqAHEeSy_9HMspjkmw" value="1"/>
               <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
             </ownedAttribute>
           </nestedClassifier>
@@ -13279,6 +13234,9 @@ The performer participant represents clinicians who actually and principally car
       <ownedComment xmi:id="_wzJp0C7KEeSoCqqrpX8LzQ">
         <body>INLINE</body>
       </ownedComment>
+      <ownedComment xmi:id="_4TxpIKAJEeSy_9HMspjkmw">
+        <body>componentOf</body>
+      </ownedComment>
       <generalization xmi:id="_sMMFwC7KEeSoCqqrpX8LzQ">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NWHRoEAJEd6wZe6nFLrjsw"/>
       </generalization>
@@ -13287,9 +13245,6 @@ The performer participant represents clinicians who actually and principally car
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CTWxMC7LEeSoCqqrpX8LzQ" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_MYkGoC7LEeSoCqqrpX8LzQ" name="EncompassingEncounter">
-        <ownedComment xmi:id="_SV5nwC7LEeSoCqqrpX8LzQ">
-          <body>encompassingEncounter</body>
-        </ownedComment>
         <generalization xmi:id="_MYyJEC7LEeSoCqqrpX8LzQ">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
         </generalization>
@@ -13349,6 +13304,7 @@ The performer participant represents clinicians who actually and principally car
   <CDA:CDATemplate xmi:id="_ONtyAC4pEeSoCqqrpX8LzQ" base_Class="_JD8b0C4pEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.6" templateVersion="2014-06-09">
     <ruleId>CONF:1098-8496</ruleId>
     <ruleId>CONF:1098-10050</ruleId>
+    <ruleId>CONF:1098-32520</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_4H4G0C4pEeSoCqqrpX8LzQ" base_Generalization="_JD8b0S4pEeSoCqqrpX8LzQ"/>
   <CDA:PropertyValidation xmi:id="_VZ85wC4qEeSoCqqrpX8LzQ" base_Property="_VZ7roC4qEeSoCqqrpX8LzQ">
@@ -13402,31 +13358,11 @@ The performer participant represents clinicians who actually and principally car
   <CDA:PropertyValidation xmi:id="_SOIEsC4vEeSoCqqrpX8LzQ" base_Property="_E1eBgC4vEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-10062</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_pbuzwC4vEeSoCqqrpX8LzQ" base_Property="_oXJKQC4vEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-26449</ruleId>
-    <ruleId>CONF:1098-8513</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_rXUhQC4wEeSoCqqrpX8LzQ" base_Constraint="_rXSsEC4wEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-8514</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_5CPZIC4wEeSoCqqrpX8LzQ" base_Constraint="_5COyEC4wEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-8515</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_MBmmIC4xEeSoCqqrpX8LzQ" base_Constraint="_MBlYAC4xEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10063</ruleId>
-    <ruleId>CONF:81-10127</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_OiRMEC4xEeSoCqqrpX8LzQ" severity="WARNING" base_Constraint="_OiQlAC4xEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10063</ruleId>
-    <ruleId>CONF:81-10128</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_RCBzEC4xEeSoCqqrpX8LzQ" severity="INFO" base_Constraint="_RCBMAC4xEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10063</ruleId>
-    <ruleId>CONF:81-10129</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_TM4hEC4xEeSoCqqrpX8LzQ" severity="WARNING" base_Constraint="_TM36AC4xEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10063</ruleId>
-    <ruleId>CONF:81-10130</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_5dKlIC4xEeSoCqqrpX8LzQ" memberEnd="_5dII4C4xEeSoCqqrpX8LzQ _5dKlIS4xEeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_5dKlIS4xEeSoCqqrpX8LzQ" type="__LRe0C4uEeSoCqqrpX8LzQ" association="_5dKlIC4xEeSoCqqrpX8LzQ"/>
@@ -13443,21 +13379,16 @@ The performer participant represents clinicians who actually and principally car
   <CDA:AssociationValidation xmi:id="_MI1koC4zEeSoCqqrpX8LzQ" base_Association="_KapkgC4zEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-14911</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_YJbBoC4zEeSoCqqrpX8LzQ" severity="WARNING" base_Property="_XMjJsC4zEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-14912</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_YJbBoC4zEeSoCqqrpX8LzQ" severity="WARNING" base_Property="_XMjJsC4zEeSoCqqrpX8LzQ"/>
   <CDA:ValueSetConstraint xmi:id="_ddEskC4zEeSoCqqrpX8LzQ" base_Property="_XMjJsC4zEeSoCqqrpX8LzQ">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
-    <ruleId>CONF:1098-14913</ruleId>
+    <ruleId>CONF:1098-14912</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__3LJQC4zEeSoCqqrpX8LzQ" base_Property="__Nf6IC4zEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-8511</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_H-76kC40EeSoCqqrpX8LzQ" base_Constraint="_H-6scC40EeSoCqqrpX8LzQ">
-    <ruleId>CONF:8511</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_X79_AC40EeSoCqqrpX8LzQ" base_Constraint="_X78w4C40EeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-8524</ruleId>
+    <ruleId>CONF:1098-8511</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_8Hxp4C40EeSoCqqrpX8LzQ" memberEnd="_8HvNoC40EeSoCqqrpX8LzQ _8HyQ8C40EeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_8HyQ8C40EeSoCqqrpX8LzQ" type="_JD8b0C4pEeSoCqqrpX8LzQ" association="_8Hxp4C40EeSoCqqrpX8LzQ"/>
@@ -13724,9 +13655,6 @@ The performer participant represents clinicians who actually and principally car
   <CDA:ConstraintValidation xmi:id="_21FEIC7XEeSoCqqrpX8LzQ" base_Constraint="_21Cn4C7XEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-30412</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_uVgvcC7aEeSoCqqrpX8LzQ" base_Constraint="_uVe6QC7aEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-30413</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_OlZ-YC7bEeSoCqqrpX8LzQ" base_Constraint="_OlYJMC7bEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-30414</ruleId>
   </CDA:ConstraintValidation>
@@ -13744,15 +13672,15 @@ A Progress Note is not a re-evaluation note. A Progress Note is not intended to 
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_bpjAsS-4EeSoCqqrpX8LzQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL include an Assessment and Plan Section (V2) (templateId:2.16.840.1.113883.10.20.22.2.9.2), or an Assessment Section (templateId:2.16.840.1.113883.10.20.22.2.8) and a Plan of Treatment Section (V2) (templateId:2.16.840.1.113883.10.20.22.2.10.2)</body>
+        <body>SHALL contain an Assessment and Plan Section (V2) (2.16.840.1.113883.10.20.22.2.9:2014-06-09), or an Assessment Section (2.16.840.1.113883.10.20.22.2.8) and a Plan of Treatment Section (V2) (2.16.840.1.113883.10.20.22.2.10:2014-06-09)</body>
         <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfTreatmentSection2)) and  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection2))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_pgQ44C-4EeSoCqqrpX8LzQ" name="doesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent">
+    <ownedRule xmi:id="_pgQ44C-4EeSoCqqrpX8LzQ" name="doesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_pgQ44S-4EeSoCqqrpX8LzQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL NOT include an Assessment and Plan Section (V2) (templateId: 2.16.840.1.113883.10.20.22.2.9.2) when an Assessment Section (templateId: 2.16.840.1.113883.10.20.22.2.8) and a Plan of Treatment Section (V2) (templateId: 2.16.840.1.113883.10.20.22.2.10.2) are present</body>
+        <body>SHALL NOT contain an Assessment and Plan Section (V2) (2.16.840.1.113883.10.20.22.2.9:2014-06-09) when either an Assessment Section (2.16.840.1.113883.10.20.22.2.8) or a Plan of Treatment Section (V2) (2.16.840.1.113883.10.20.22.2.10:2014-06-09) is present</body>
         <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfTreatmentSection2)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection2))</body>
       </specification>
     </ownedRule>
@@ -13849,9 +13777,19 @@ A Progress Note is not a re-evaluation note. A Progress Note is not intended to 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DO7hYC-3EeSoCqqrpX8LzQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DOutEC-3EeSoCqqrpX8LzQ" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_S6IXgKAcEeSy_9HMspjkmw" name="nutritionSection" association="_S6JloKAcEeSy_9HMspjkmw">
+      <type xmi:type="uml:Class" href="consol-socialhistory.uml#_MlM4IJ2GEeORR8_YW0n_jQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U0w4MKAcEeSy_9HMspjkmw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U0wRIKAcEeSy_9HMspjkmw" value="1"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_RYq3gC-cEeSoCqqrpX8LzQ" name="DocumentationOf">
       <ownedComment xmi:id="_SfVkoC-cEeSoCqqrpX8LzQ">
         <body>INLINE</body>
+      </ownedComment>
+      <ownedComment xmi:id="_yudMIKAZEeSy_9HMspjkmw">
+        <body>documentationOf&#xD;
+A documentationOf can contain a serviceEvent to further specialize the act inherent in the ClinicalDocument/code. &#xD;
+In a Progress Note, a serviceEvent can represent the event of writing the Progress Note. The serviceEvent/effectiveTime is the time period the note documents.</body>
       </ownedComment>
       <generalization xmi:id="_RY79QC-cEeSoCqqrpX8LzQ">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1fhigEcEEd6besF9iFIJkQ"/>
@@ -13861,49 +13799,12 @@ A Progress Note is not a re-evaluation note. A Progress Note is not intended to 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a_SMcC-cEeSoCqqrpX8LzQ" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_t2uzkC-cEeSoCqqrpX8LzQ" name="ServiceEvent">
-        <ownedComment xmi:id="_1_zzgC-cEeSoCqqrpX8LzQ">
-          <body>serviceEvent&#xD;
-A documentationOf can contain a serviceEvent to further specialize the act inherent in the ClinicalDocument/code. &#xD;
-In a Progress Note, a serviceEvent can represent the event of writing the Progress Note. The serviceEvent/effectiveTime is the time period the note documents.</body>
-        </ownedComment>
         <ownedRule xmi:id="_hmmXUC-fEeSoCqqrpX8LzQ" name="effectiveTimeHasHighWhenNoWidth">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_hmmXUS-fEeSoCqqrpX8LzQ">
             <language>Analysis</language>
             <language>OCL</language>
             <body>If a width element is not present, the serviceEvent SHALL include effectiveTime/high</body>
             <body>not self.effectiveTime.width.oclIsUndefined() xor not self.effectiveTime.high.oclIsUndefined()</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_8jrBwC-fEeSoCqqrpX8LzQ" name="preciseToTheDay">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8jrBwS-fEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 8) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 8)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_96GpMC-fEeSoCqqrpX8LzQ" name="preciseToTheMinute">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_96GpMS-fEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 12) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 12)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="__ncUwC-fEeSoCqqrpX8LzQ" name="preciseToTheSecond">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="__ncUwS-fEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 14) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 14)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_BvK2QC-gEeSoCqqrpX8LzQ" name="ifMorePreciseThanDayIncludeTimeZoneOffset">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_BvK2QS-gEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>(not self.effectiveTime.low.value.oclIsUndefined() and self.effectiveTime.low.value.size() > 8 implies self.effectiveTime.low.value.size() >= 15) and (not self.effectiveTime.high.value.oclIsUndefined() and self.effectiveTime.high.value.size() > 8 implies self.effectiveTime.high.value.size() >= 15)</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_t3CVkC-cEeSoCqqrpX8LzQ">
@@ -13916,19 +13817,17 @@ In a Progress Note, a serviceEvent can represent the event of writing the Progre
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_8fdXgC-cEeSoCqqrpX8LzQ" value="PCPR"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_U70MIEroEd6FXKclYGEDCw"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_x0lwRC-cEeSoCqqrpX8LzQ" name="effectiveTime" visibility="private" type="_LbzbAC-dEeSoCqqrpX8LzQ" aggregation="composite">
+        <ownedAttribute xmi:id="_x0lwRC-cEeSoCqqrpX8LzQ" name="effectiveTime" visibility="private" type="_OI354KAaEeSy_9HMspjkmw" aggregation="composite">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x0lwRS-cEeSoCqqrpX8LzQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0lwRi-cEeSoCqqrpX8LzQ" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OYDkMEroEd6FXKclYGEDCw"/>
         </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_LbzbAC-dEeSoCqqrpX8LzQ" name="IVLTS">
-          <generalization xmi:id="_LcCEgC-dEeSoCqqrpX8LzQ">
-            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-          </generalization>
-          <ownedAttribute xmi:id="_NMANUC-dEeSoCqqrpX8LzQ" name="low" visibility="private" aggregation="composite">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_OI354KAaEeSy_9HMspjkmw" name="USRealmDateAndTimeDT">
+          <generalization xmi:id="_OI4g8KAaEeSy_9HMspjkmw" general="_kkAUwJBkEeSSfIVHL_x3Xw"/>
+          <ownedAttribute xmi:id="_QjKLAKAaEeSy_9HMspjkmw" name="low" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RBeDAC-dEeSoCqqrpX8LzQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RBSc0C-dEeSoCqqrpX8LzQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S08AYKAaEeSy_9HMspjkmw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S07ZUKAaEeSy_9HMspjkmw" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
           </ownedAttribute>
         </nestedClassifier>
@@ -13939,7 +13838,7 @@ In a Progress Note, a serviceEvent can represent the event of writing the Progre
         <body>INLINE</body>
       </ownedComment>
       <ownedComment xmi:id="_WVkyMC-jEeSoCqqrpX8LzQ">
-        <body>encompassingEncounter&#xD;
+        <body>componentOf&#xD;
 The Progress Note is always associated with an encounter by the componentOf/encompassingEncounter element in the header.&#xD;
 The effectiveTime element for an encompassingEncounter represents the time or time interval in which the encounter took place. A single encounter may contain multiple Progress Notes; hence the effectiveTime elements for a Progress Note (recorded in serviceEvent) and for an encounter (recorded in encompassingEncounter) represent different time intervals. &#xD;
 All visits take place at a specific location. When available, the location ID is included in the encompassingEncounter/location/healthCareFacility/id element.</body>
@@ -13952,38 +13851,6 @@ All visits take place at a specific location. When available, the location ID is
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N560gC-jEeSoCqqrpX8LzQ" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_fYsYgC-jEeSoCqqrpX8LzQ" name="EncompassingEncounter">
-        <ownedRule xmi:id="_Fqth8C-kEeSoCqqrpX8LzQ" name="preciseToTheDay">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Fqth8S-kEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 8</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_GolfcC-kEeSoCqqrpX8LzQ" name="preciseToTheMinute">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_GolfcS-kEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 12</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_HgDS8C-kEeSoCqqrpX8LzQ" name="preciseToTheSecond">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_HgDS8S-kEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 14</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_IYvOcC-kEeSoCqqrpX8LzQ" name="ifMorePreciseThanDayIncludeTimeZoneOffset">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IYvOcS-kEeSoCqqrpX8LzQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>not self.effectiveTime.value.oclIsUndefined() and self.effectiveTime.value.size() > 8 implies self.effectiveTime.value.size() >= 15</body>
-            <body>The content of effectiveTime SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
-          </specification>
-        </ownedRule>
         <generalization xmi:id="_fY_6gC-jEeSoCqqrpX8LzQ">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
         </generalization>
@@ -13993,24 +13860,13 @@ All visits take place at a specific location. When available, the location ID is
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pm3csC-jEeSoCqqrpX8LzQ" value="*"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_kfYp8EozEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_ldWpoC-jEeSoCqqrpX8LzQ" name="effectiveTime" visibility="private" type="_4oyjwC-jEeSoCqqrpX8LzQ" aggregation="composite">
+        <ownedAttribute xmi:id="_ldWpoC-jEeSoCqqrpX8LzQ" name="effectiveTime" visibility="private" type="_JxqzoKAbEeSy_9HMspjkmw" aggregation="composite">
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_sKO1wEozEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ySJ8YC-kEeSoCqqrpX8LzQ" name="location" type="_55EqcC-kEeSoCqqrpX8LzQ" association="_ySON0C-kEeSoCqqrpX8LzQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Jn4wC-kEeSoCqqrpX8LzQ" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1JbEcC-kEeSoCqqrpX8LzQ" value="1"/>
         </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_4oyjwC-jEeSoCqqrpX8LzQ" name="IVLTS">
-          <generalization xmi:id="_4pDCcC-jEeSoCqqrpX8LzQ">
-            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-          </generalization>
-          <ownedAttribute xmi:id="_5LlHwC-jEeSoCqqrpX8LzQ" name="low" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6q8owC-jEeSoCqqrpX8LzQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6qwbgC-jEeSoCqqrpX8LzQ" value="1"/>
-            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
-          </ownedAttribute>
-        </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_55EqcC-kEeSoCqqrpX8LzQ" name="Location">
           <generalization xmi:id="_55VwMC-kEeSoCqqrpX8LzQ">
             <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_il6LoEcZEd6besF9iFIJkQ"/>
@@ -14031,12 +13887,22 @@ All visits take place at a specific location. When available, the location ID is
             </ownedAttribute>
           </nestedClassifier>
         </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_JxqzoKAbEeSy_9HMspjkmw" name="USRealmDateAndTimeDT">
+          <generalization xmi:id="_JxsBwKAbEeSy_9HMspjkmw" general="_kkAUwJBkEeSSfIVHL_x3Xw"/>
+          <ownedAttribute xmi:id="_LVldcKAbEeSy_9HMspjkmw" name="low" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NLCjMKAbEeSy_9HMspjkmw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NLB8IKAbEeSy_9HMspjkmw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+          </ownedAttribute>
+        </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_vc8OUC-aEeSoCqqrpX8LzQ" base_Class="_qVEVkC-aEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.9" templateVersion="2014-06-09">
     <ruleId>CONF:1098-7588</ruleId>
     <ruleId>CONF:1098-10052</ruleId>
+    <ruleId>CONF:1098-32521</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Fyde0C-bEeSoCqqrpX8LzQ" base_Generalization="_qVE8oC-aEeSoCqqrpX8LzQ"/>
   <CDA:PropertyValidation xmi:id="_b7DtoC-bEeSoCqqrpX8LzQ" base_Property="_b7CfgC-bEeSoCqqrpX8LzQ">
@@ -14064,27 +13930,8 @@ All visits take place at a specific location. When available, the location ID is
   <CDA:PropertyValidation xmi:id="_47BncC-cEeSoCqqrpX8LzQ" severity="WARNING" base_Property="_x0lwRC-cEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-9481</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_OiYxcC-dEeSoCqqrpX8LzQ" severity="WARNING" base_Property="_NMANUC-dEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-9482</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_hmozkC-fEeSoCqqrpX8LzQ" base_Constraint="_hmmXUC-fEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-10066</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_8js28C-fEeSoCqqrpX8LzQ" base_Constraint="_8jrBwC-fEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10137</ruleId>
-    <ruleId>CONF:81-10127</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_96H3UC-fEeSoCqqrpX8LzQ" severity="WARNING" base_Constraint="_96GpMC-fEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10137</ruleId>
-    <ruleId>CONF:81-10128</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="__nc70C-fEeSoCqqrpX8LzQ" severity="INFO" base_Constraint="__ncUwC-fEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10137</ruleId>
-    <ruleId>CONF:81-10129</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_BvMEYC-gEeSoCqqrpX8LzQ" severity="WARNING" base_Constraint="_BvK2QC-gEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10137</ruleId>
-    <ruleId>CONF:81-10130</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CDATemplate xmi:id="_SqvxIC-hEeSoCqqrpX8LzQ" base_Class="_t2uzkC-cEeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.21.3.1">
     <ruleId>CONF:1098-9480</ruleId>
@@ -14108,25 +13955,6 @@ All visits take place at a specific location. When available, the location ID is
   <CDA:PropertyValidation xmi:id="_rhyRQC-jEeSoCqqrpX8LzQ" base_Property="_ldWpoC-jEeSoCqqrpX8LzQ">
     <ruleId>CONF:1098-7598</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_53NesC-jEeSoCqqrpX8LzQ" base_Property="_5LlHwC-jEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-7599</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_FqvXIC-kEeSoCqqrpX8LzQ" base_Constraint="_Fqth8C-kEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10138</ruleId>
-    <ruleId>CONF:81-10127</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_GonUoC-kEeSoCqqrpX8LzQ" severity="WARNING" base_Constraint="_GolfcC-kEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10138</ruleId>
-    <ruleId>CONF:81-10128</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_HgD6AC-kEeSoCqqrpX8LzQ" severity="INFO" base_Constraint="_HgDS8C-kEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10138</ruleId>
-    <ruleId>CONF:81-10129</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_IYwckC-kEeSoCqqrpX8LzQ" severity="WARNING" base_Constraint="_IYvOcC-kEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-10138</ruleId>
-    <ruleId>CONF:81-10130</ruleId>
-  </CDA:ConstraintValidation>
   <uml:Association xmi:id="_ySON0C-kEeSoCqqrpX8LzQ" memberEnd="_ySJ8YC-kEeSoCqqrpX8LzQ _ySO04C-kEeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_ySO04C-kEeSoCqqrpX8LzQ" type="_fYsYgC-jEeSoCqqrpX8LzQ" association="_ySON0C-kEeSoCqqrpX8LzQ"/>
   </uml:Association>
@@ -14255,10 +14083,10 @@ All visits take place at a specific location. When available, the location ID is
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_MrNuQC-6EeSoCqqrpX8LzQ" clientDependency="_xeYeoC-7EeSoCqqrpX8LzQ" name="UnstructuredDocument2">
     <ownedComment xmi:id="_FCUNwC-7EeSoCqqrpX8LzQ">
-      <body>An Unstructured Document (UD) document type can (1) include unstructured content, such as a graphic, directly in a text element with a mediaType attribute, or (2) reference a single document file, such as a word-processing document  using a text/reference element.&#xD;
-For guidance on how to handle multiple files, on the selection of media types for this IG, and on the identification of external files, see the subsections which follow the constraints below.&#xD;
-IHE's XDS-SD (Cross-Transaction Specifications and Content Specifications, Scanned Documents Module) profile addresses a similar, more restricted use case, specifically for scanned documents or documents electronically created from existing text sources, and limits content to PDF-A or text. This Unstructured Documents implementation guide is applicable not only for scanned documents in non-PDF formats, but also for clinical documents produced through word processing applications, etc. &#xD;
-For conformance with both specifications, please review the appendix on XDS-SD and US Realm Clinical Document Header Comparison and ensure that your documents at a minimum conform to all the SHALL constraints from either specification.</body>
+      <body>An Unstructured Document (UD) document type can (1) include unstructured content, such as a graphic, directly in a text element with a mediaType attribute, or (2) reference a single document file, such as a word-processing document using a text/reference element.&#xD;
+For guidance on how to handle multiple files, on the selection of media types for this IG, and on the identification of external files, see the examples that follow the constraints below.&#xD;
+IHE's XDS-SD (Cross-Transaction Specifications and Content Specifications, Scanned Documents Module) profile addresses a similar, more restricted use case, specifically for scanned documents or documents electronically created from existing text sources, and limits content to PDF-A or text. This Unstructured Documents template is applicable not only for scanned documents in non-PDF formats, but also for clinical documents produced through word processing applications, etc. &#xD;
+For conformance with both specifications, implementers need to ensure that their documents at a minimum conform with the SHALL constraints from either specification.</body>
     </ownedComment>
     <generalization xmi:id="_MrPjcC-6EeSoCqqrpX8LzQ" general="_dduXkJ5OEeOr4eM3k36wAg"/>
     <substitution xmi:id="_xeYeoC-7EeSoCqqrpX8LzQ" name="UnstructuredDocument" client="_MrNuQC-6EeSoCqqrpX8LzQ" supplier="_2TeiIRSVEeGGzu7fmW9pXw" contract="_2TeiIRSVEeGGzu7fmW9pXw"/>
@@ -14380,6 +14208,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:CDATemplate xmi:id="_SxqvIC-6EeSoCqqrpX8LzQ" base_Class="_MrNuQC-6EeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.10" templateVersion="2014-06-09">
     <ruleId>CONF:1098-7710</ruleId>
     <ruleId>CONF:1098-10054</ruleId>
+    <ruleId>CONF:1098-32522</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_u1fw0C-7EeSoCqqrpX8LzQ" base_Generalization="_MrPjcC-6EeSoCqqrpX8LzQ"/>
   <uml:Association xmi:id="_dHbhsC-9EeSoCqqrpX8LzQ" memberEnd="_dHXQQC-9EeSoCqqrpX8LzQ _dHcIwC-9EeSoCqqrpX8LzQ">
@@ -15072,4 +14901,64 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:ConstraintValidation xmi:id="_dvC7wiMOEeS4d9o7u1_H3A" base_Constraint="_dvC7wCMOEeS4d9o7u1_H3A">
     <ruleId>CONF:1098-10032</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_IblgwJ3GEeSofqct4VeYrw" base_Property="_E8dHcJ3GEeSofqct4VeYrw">
+    <ruleId>CONF:1098-8488</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_yMTeUJ3JEeSofqct4VeYrw" memberEnd="_yMSQMJ3JEeSofqct4VeYrw _yMTeUZ3JEeSofqct4VeYrw">
+    <ownedEnd xmi:id="_yMTeUZ3JEeSofqct4VeYrw" type="_qsfcoC1hEeSoCqqrpX8LzQ" association="_yMTeUJ3JEeSofqct4VeYrw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_77gHgJ3JEeSofqct4VeYrw" severity="INFO" base_Association="_yMTeUJ3JEeSofqct4VeYrw">
+    <ruleId>CONF:1098-32736</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_Sf0B8J3KEeSofqct4VeYrw" base_Property="_Kuv5YJ3KEeSofqct4VeYrw">
+    <ruleId>CONF:1098-32738</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_mGd4cJ3KEeSofqct4VeYrw" memberEnd="_mGcqUJ3KEeSofqct4VeYrw _mGd4cZ3KEeSofqct4VeYrw">
+    <ownedEnd xmi:id="_mGd4cZ3KEeSofqct4VeYrw" type="_IxQR8J3KEeSofqct4VeYrw" association="_mGd4cJ3KEeSofqct4VeYrw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_mrw94J3KEeSofqct4VeYrw" base_Association="_mGd4cJ3KEeSofqct4VeYrw">
+    <ruleId>CONF:1098-32737</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_w-8d4J3KEeSofqct4VeYrw" base_Property="_wHsFwJ3KEeSofqct4VeYrw"/>
+  <CDA:ValueSetConstraint xmi:id="_zT1RoJ3KEeSofqct4VeYrw" base_Property="_wHsFwJ3KEeSofqct4VeYrw">
+    <reference href="../consol-vocab.uml#_8lYFkC1oEeSoCqqrpX8LzQ"/>
+    <ruleId>CONF:1098-32739</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_nNM8AKAEEeSy_9HMspjkmw" base_Property="_mbKbEKAEEeSy_9HMspjkmw">
+    <ruleId>CONF:1098-26449</ruleId>
+    <ruleId>CONF:1098-8513</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_-XK2UKAGEeSy_9HMspjkmw" memberEnd="_-XJoMKAGEeSy_9HMspjkmw _-XLdYKAGEeSy_9HMspjkmw">
+    <ownedEnd xmi:id="_-XLdYKAGEeSy_9HMspjkmw" type="__LRe0C4uEeSoCqqrpX8LzQ" association="_-XK2UKAGEeSy_9HMspjkmw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="__aulEKAGEeSy_9HMspjkmw" severity="INFO" base_Association="_-XK2UKAGEeSy_9HMspjkmw">
+    <ruleId>CONF:1098-32732</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_Paf0cKAHEeSy_9HMspjkmw" base_Property="_NfvX8KAHEeSy_9HMspjkmw">
+    <ruleId>CONF:1098-32734</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_tsoWMKAHEeSy_9HMspjkmw" memberEnd="_tsnIEKAHEeSy_9HMspjkmw _tsoWMaAHEeSy_9HMspjkmw">
+    <ownedEnd xmi:id="_tsoWMaAHEeSy_9HMspjkmw" type="_LdTmIKAHEeSy_9HMspjkmw" association="_tsoWMKAHEeSy_9HMspjkmw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_u678YKAHEeSy_9HMspjkmw" base_Association="_tsoWMKAHEeSy_9HMspjkmw">
+    <ruleId>CONF:1098-32733</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_4TKQAKAHEeSy_9HMspjkmw" severity="WARNING" base_Property="_2ya2AKAHEeSy_9HMspjkmw"/>
+  <CDA:ValueSetConstraint xmi:id="_7tDkAKAHEeSy_9HMspjkmw" base_Property="_2ya2AKAHEeSy_9HMspjkmw">
+    <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1098-32735</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_R3lnUKAaEeSy_9HMspjkmw" severity="WARNING" base_Property="_QjKLAKAaEeSy_9HMspjkmw">
+    <ruleId>CONF:1098-9482</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_MdLXoKAbEeSy_9HMspjkmw" base_Property="_LVldcKAbEeSy_9HMspjkmw">
+    <ruleId>CONF:1098-7599</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_S6JloKAcEeSy_9HMspjkmw" memberEnd="_S6IXgKAcEeSy_9HMspjkmw _S6JloaAcEeSy_9HMspjkmw">
+    <ownedEnd xmi:id="_S6JloaAcEeSy_9HMspjkmw" type="_qVEVkC-aEeSoCqqrpX8LzQ" association="_S6JloKAcEeSy_9HMspjkmw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_Tixr4KAcEeSy_9HMspjkmw" severity="INFO" base_Association="_S6JloKAcEeSy_9HMspjkmw">
+    <ruleId>CONF:1098-32626</ruleId>
+    <ruleId>CONF:1098-32627</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

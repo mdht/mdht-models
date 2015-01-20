@@ -2278,7 +2278,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_LUHNQPwXEeGXDIdcQJhgtg" base_EnumerationLiteral="_LUEJ8PwXEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_L-N6MfwXEeGXDIdcQJhgtg" base_EnumerationLiteral="_L-N6MPwXEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_M3BKcfwXEeGXDIdcQJhgtg" base_EnumerationLiteral="_M3BKcPwXEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_ewH6AfwXEeGXDIdcQJhgtg" conceptName="MSWord" base_EnumerationLiteral="_ewH6APwXEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_ewH6AfwXEeGXDIdcQJhgtg" conceptName="MSWORD" base_EnumerationLiteral="_ewH6APwXEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_jkrOIfwXEeGXDIdcQJhgtg" conceptName="PDF" base_EnumerationLiteral="_jkrOIPwXEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_k4wFIfwXEeGXDIdcQJhgtg" conceptName="Plain Text" base_EnumerationLiteral="_k4wFIPwXEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_lsKfEfwXEeGXDIdcQJhgtg" conceptName="RTF Text" base_EnumerationLiteral="_lsKfEPwXEeGXDIdcQJhgtg"/>
@@ -2287,16 +2287,16 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_5oayIfwXEeGXDIdcQJhgtg" conceptName="TIF Image" base_EnumerationLiteral="_5oayIPwXEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_7KCV4fwXEeGXDIdcQJhgtg" conceptName="JPEG Image" base_EnumerationLiteral="_7KCV4PwXEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_8x3PUfwXEeGXDIdcQJhgtg" conceptName="PNG Image" base_EnumerationLiteral="_8x3PUPwXEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_SHvnwfwYEeGXDIdcQJhgtg" base_EnumerationLiteral="_SHvnwPwYEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_TojTMfwYEeGXDIdcQJhgtg" base_EnumerationLiteral="_TojTMPwYEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_UqB-UfwYEeGXDIdcQJhgtg" base_EnumerationLiteral="_UqB-UPwYEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_VkBhYfwYEeGXDIdcQJhgtg" base_EnumerationLiteral="_VkBhYPwYEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_Wh10gfwYEeGXDIdcQJhgtg" base_EnumerationLiteral="_Wh10gPwYEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_XU63QfwYEeGXDIdcQJhgtg" base_EnumerationLiteral="_XU63QPwYEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_YJPQIfwYEeGXDIdcQJhgtg" base_EnumerationLiteral="_YJPQIPwYEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_Y0vEMPwYEeGXDIdcQJhgtg" base_EnumerationLiteral="_Y0sA4PwYEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_Zh6TQfwYEeGXDIdcQJhgtg" base_EnumerationLiteral="_Zh6TQPwYEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_akS9UPwYEeGXDIdcQJhgtg" base_EnumerationLiteral="_akP6APwYEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_SHvnwfwYEeGXDIdcQJhgtg" conceptName="Provider-unspecified Operation note" base_EnumerationLiteral="_SHvnwPwYEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_TojTMfwYEeGXDIdcQJhgtg" conceptName="Outpatient Surgical operation note" base_EnumerationLiteral="_TojTMPwYEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_UqB-UfwYEeGXDIdcQJhgtg" conceptName="Dentist Operation note" base_EnumerationLiteral="_UqB-UPwYEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_VkBhYfwYEeGXDIdcQJhgtg" conceptName="Podiatry Operation note" base_EnumerationLiteral="_VkBhYPwYEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_Wh10gfwYEeGXDIdcQJhgtg" conceptName="Physician, Operation note" base_EnumerationLiteral="_Wh10gPwYEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_XU63QfwYEeGXDIdcQJhgtg" conceptName="Urology Surgical operation note" base_EnumerationLiteral="_XU63QPwYEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_YJPQIfwYEeGXDIdcQJhgtg" conceptName="Surgery Surgical operation note" base_EnumerationLiteral="_YJPQIPwYEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_Y0vEMPwYEeGXDIdcQJhgtg" conceptName="Plastic surgery Surgical operation note" base_EnumerationLiteral="_Y0sA4PwYEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_Zh6TQfwYEeGXDIdcQJhgtg" conceptName="Orthopaedic surgery Surgical operation note" base_EnumerationLiteral="_Zh6TQPwYEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_akS9UPwYEeGXDIdcQJhgtg" conceptName="Otolaryngology Surgical operation note" base_EnumerationLiteral="_akP6APwYEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_i4bWsfwYEeGXDIdcQJhgtg" conceptName="anterior" base_EnumerationLiteral="_i4bWsPwYEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_lFQaoPwYEeGXDIdcQJhgtg" conceptName="left" base_EnumerationLiteral="_lFNXUPwYEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_mflDkfwYEeGXDIdcQJhgtg" conceptName="medial" base_EnumerationLiteral="_mflDkPwYEeGXDIdcQJhgtg"/>
@@ -3173,7 +3173,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_bh5u8CMzEeS4d9o7u1_H3A" identifier="2.16.840.1.113883.11.20.9.59" fullName="DIRSectionTypeCodes" base_Enumeration="_bh5H4CMzEeS4d9o7u1_H3A">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_8lYFkC1oEeSoCqqrpX8LzQ" identifier="2.16.840.1.113883.3.88.12.3221.4" binding="Dynamic" base_Enumeration="_8lXegC1oEeSoCqqrpX8LzQ">
+  <term:ValueSetVersion xmi:id="_8lYFkC1oEeSoCqqrpX8LzQ" identifier="2.16.840.1.113883.3.88.12.3221.4.2" binding="Dynamic" base_Enumeration="_8lXegC1oEeSoCqqrpX8LzQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfNhAaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_VYpK4C1pEeSoCqqrpX8LzQ" conceptName="Consulting Provider" base_EnumerationLiteral="_VYoj0C1pEeSoCqqrpX8LzQ"/>
