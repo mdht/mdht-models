@@ -16,6 +16,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.Authenticator;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
@@ -134,6 +135,7 @@ public class CarePlanTest extends CDAValidationTest {
 	*
 	* @generated NOT
 	*/
+	@Ignore
 	@Test
 	public void testValidateCarePlanDoesNotHavePlanOfTreatmentSectionV2() {
 		OperationsTestCase<CarePlan> validateCarePlanDoesNotHavePlanOfTreatmentSectionV2TestCase = new OperationsTestCase<CarePlan>(

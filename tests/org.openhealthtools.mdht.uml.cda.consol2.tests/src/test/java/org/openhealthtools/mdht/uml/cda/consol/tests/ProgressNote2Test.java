@@ -26,6 +26,7 @@ import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
+import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
 import org.openhealthtools.mdht.uml.cda.consol.ObjectiveSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProgressNote2;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
@@ -47,7 +48,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Has An Assement And Plan Section2 Or Both Assement Section And Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Does Not Have Assement And Plan Section2 When Assement And Plan Of Treatment2 Are Present</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Does Not Have Assement And Plan Section2 When Assement Or Plan Of Treatment2 Are Present</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of</em>}</li>
@@ -67,23 +68,16 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ReviewOfSystemsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Review Of Systems Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2SubjectiveSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Subjective Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2VitalSignsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Vital Signs Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event IVLTS Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2NutritionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Nutrition Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event US Realm Date And Time DT Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event Effective Time Has High When No Width</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventPreciseToTheDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event Precise To The Day</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventPreciseToTheMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event Precise To The Minute</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventPreciseToTheSecond(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event Precise To The Second</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event If More Precise Than Day Include Time Zone Offset</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter IVLTS Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter US Realm Date And Time DT Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter Location Health Care Facility Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter Location Health Care Facility</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter Precise To The Day</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter Precise To The Minute</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter Precise To The Second</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter If More Precise Than Day Include Time Zone Offset</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterLocation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter Location</em>}</li>
@@ -103,6 +97,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getReviewOfSystemsSection() <em>Get Review Of Systems Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getSubjectiveSection() <em>Get Subjective Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getVitalSignsSectionEntriesOptional2() <em>Get Vital Signs Section Entries Optional2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getNutritionSection() <em>Get Nutrition Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -202,10 +197,10 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresentTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresentTestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent",
+			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_OR_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -278,13 +273,13 @@ public class ProgressNote2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProgressNote2Operations.validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
+				return ProgressNote2Operations.validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 					(ProgressNote2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresentTestCase.doValidationTest();
+		validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresentTestCase.doValidationTest();
 	}
 
 	/**
@@ -982,10 +977,51 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateProgressNote2DocumentationOfServiceEventIVLTSLow() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventIVLTSLowTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2DocumentationOfServiceEventIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateProgressNote2NutritionSection() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2NutritionSectionTestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2NutritionSection",
+			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+				/* NutritionSection */
+				NutritionSection section =
+
+				ConsolFactory.eINSTANCE.createNutritionSection().init();
+
+				target.addSection(section);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2NutritionSection(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2NutritionSectionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLowTestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow",
+			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1019,13 +1055,13 @@ public class ProgressNote2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventIVLTSLow(
+				return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
 					(ProgressNote2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProgressNote2DocumentationOfServiceEventIVLTSLowTestCase.doValidationTest();
+		validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLowTestCase.doValidationTest();
 	}
 
 	/**
@@ -1078,179 +1114,183 @@ public class ProgressNote2Test extends CDAValidationTest {
 		validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidthTestCase.doValidationTest();
 	}
 
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2DocumentationOfServiceEventPreciseToTheDay() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventPreciseToTheDayTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2DocumentationOfServiceEventPreciseToTheDay",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912", "2013");
-				se.setEffectiveTime(ivlts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
-					PRECISE_TO_DAY);
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
-					PRECISE_TO_MINUTE);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventPreciseToTheDay(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2DocumentationOfServiceEventPreciseToTheDayTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2DocumentationOfServiceEventPreciseToTheMinute() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventPreciseToTheMinuteTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2DocumentationOfServiceEventPreciseToTheMinute",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				low.setValue("2009121217");
-				ts.setLow(low);
-				se.setEffectiveTime(ts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
-					PRECISE_TO_MINUTE);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventPreciseToTheMinute(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2DocumentationOfServiceEventPreciseToTheMinuteTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2DocumentationOfServiceEventPreciseToTheSecond() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventPreciseToTheSecondTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2DocumentationOfServiceEventPreciseToTheSecond",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				high.setValue(PRECISE_TO_MINUTE);
-				ts.setHigh(high);
-				se.setEffectiveTime(ts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
-					PRECISE_TO_SECOND);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventPreciseToTheSecond(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2DocumentationOfServiceEventPreciseToTheSecondTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE, PRECISE_TO_SECOND);
-				se.setEffectiveTime(ivlts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
-					PRECISE_TO_MS_WITH_TIMEZONE);
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
-					PRECISE_TO_HOUR_WITH_TIMEZONE);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase.doValidationTest();
-	}
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateProgressNote2DocumentationOfServiceEventPreciseToTheDay() {
+	// OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventPreciseToTheDayTestCase = new
+	// OperationsTestCase<ProgressNote2>(
+	// "validateProgressNote2DocumentationOfServiceEventPreciseToTheDay",
+	// operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(ProgressNote2 target) {
+	// target.init();
+	// DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+	// ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+	// IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912", "2013");
+	// se.setEffectiveTime(ivlts);
+	// dof.setServiceEvent(se);
+	// target.getDocumentationOfs().add(dof);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(ProgressNote2 target) {
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
+	// PRECISE_TO_DAY);
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
+	// PRECISE_TO_MINUTE);
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventPreciseToTheDay(
+	// (ProgressNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateProgressNote2DocumentationOfServiceEventPreciseToTheDayTestCase.doValidationTest();
+	// }
+	//
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateProgressNote2DocumentationOfServiceEventPreciseToTheMinute() {
+	// OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventPreciseToTheMinuteTestCase = new
+	// OperationsTestCase<ProgressNote2>(
+	// "validateProgressNote2DocumentationOfServiceEventPreciseToTheMinute",
+	// operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(ProgressNote2 target) {
+	// target.init();
+	// DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+	// ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+	// IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+	// IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+	// low.setValue("2009121217");
+	// ts.setLow(low);
+	// se.setEffectiveTime(ts);
+	// dof.setServiceEvent(se);
+	// target.getDocumentationOfs().add(dof);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(ProgressNote2 target) {
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
+	// PRECISE_TO_MINUTE);
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventPreciseToTheMinute(
+	// (ProgressNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateProgressNote2DocumentationOfServiceEventPreciseToTheMinuteTestCase.doValidationTest();
+	// }
+	//
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateProgressNote2DocumentationOfServiceEventPreciseToTheSecond() {
+	// OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventPreciseToTheSecondTestCase = new
+	// OperationsTestCase<ProgressNote2>(
+	// "validateProgressNote2DocumentationOfServiceEventPreciseToTheSecond",
+	// operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(ProgressNote2 target) {
+	// target.init();
+	// DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+	// ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+	// IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+	// IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+	// high.setValue(PRECISE_TO_MINUTE);
+	// ts.setHigh(high);
+	// se.setEffectiveTime(ts);
+	// dof.setServiceEvent(se);
+	// target.getDocumentationOfs().add(dof);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(ProgressNote2 target) {
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
+	// PRECISE_TO_SECOND);
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventPreciseToTheSecond(
+	// (ProgressNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateProgressNote2DocumentationOfServiceEventPreciseToTheSecondTestCase.doValidationTest();
+	// }
+	//
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset() {
+	// OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new
+	// OperationsTestCase<ProgressNote2>(
+	// "validateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset",
+	// operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(ProgressNote2 target) {
+	// target.init();
+	// DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+	// ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+	// IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE, PRECISE_TO_SECOND);
+	// se.setEffectiveTime(ivlts);
+	// dof.setServiceEvent(se);
+	// target.getDocumentationOfs().add(dof);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(ProgressNote2 target) {
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
+	// PRECISE_TO_MS_WITH_TIMEZONE);
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
+	// PRECISE_TO_HOUR_WITH_TIMEZONE);
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
+	// (ProgressNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -1424,10 +1464,10 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateProgressNote2ComponentOfEncompassingEncounterIVLTSLow() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterIVLTSLowTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ComponentOfEncompassingEncounterIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLowTestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow",
+			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1451,13 +1491,13 @@ public class ProgressNote2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterIVLTSLow(
+				return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow(
 					(ProgressNote2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProgressNote2ComponentOfEncompassingEncounterIVLTSLowTestCase.doValidationTest();
+		validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLowTestCase.doValidationTest();
 	}
 
 	/**
@@ -1546,170 +1586,174 @@ public class ProgressNote2Test extends CDAValidationTest {
 		validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityTestCase.doValidationTest();
 	}
 
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDayTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_DAY);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDayTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinuteTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_MINUTE);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinuteTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecondTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE);
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_SECOND);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecondTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
-
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
-				ee.setEffectiveTime(ivlts);
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(
-					PRECISE_TO_HOUR_WITH_TIMEZONE);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase.doValidationTest();
-	}
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay() {
+	// OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDayTestCase = new
+	// OperationsTestCase<ProgressNote2>(
+	// "validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay",
+	// operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(ProgressNote2 target) {
+	// target.init();
+	// Component1 component = CDAFactory.eINSTANCE.createComponent1();
+	// EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+	// component.setEncompassingEncounter(ee);
+	// target.setComponentOf(component);
+	//
+	// IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912");
+	// ee.setEffectiveTime(ivlts);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(ProgressNote2 target) {
+	// target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_DAY);
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay(
+	// (ProgressNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDayTestCase.doValidationTest();
+	// }
+	//
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute() {
+	// OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinuteTestCase = new
+	// OperationsTestCase<ProgressNote2>(
+	// "validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute",
+	// operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(ProgressNote2 target) {
+	// target.init();
+	// Component1 component = CDAFactory.eINSTANCE.createComponent1();
+	// EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+	// component.setEncompassingEncounter(ee);
+	// target.setComponentOf(component);
+	//
+	// IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
+	// ee.setEffectiveTime(ivlts);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(ProgressNote2 target) {
+	// target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_MINUTE);
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute(
+	// (ProgressNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinuteTestCase.doValidationTest();
+	// }
+	//
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond() {
+	// OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecondTestCase = new
+	// OperationsTestCase<ProgressNote2>(
+	// "validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond",
+	// operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(ProgressNote2 target) {
+	// target.init();
+	// Component1 component = CDAFactory.eINSTANCE.createComponent1();
+	// EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+	// component.setEncompassingEncounter(ee);
+	// target.setComponentOf(component);
+	//
+	// IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE);
+	// ee.setEffectiveTime(ivlts);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(ProgressNote2 target) {
+	// target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_SECOND);
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond(
+	// (ProgressNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecondTestCase.doValidationTest();
+	// }
+	//
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset() {
+	// OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new
+	// OperationsTestCase<ProgressNote2>(
+	// "validateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset",
+	// operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(ProgressNote2 target) {
+	// target.init();
+	// Component1 component = CDAFactory.eINSTANCE.createComponent1();
+	// EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+	// component.setEncompassingEncounter(ee);
+	// target.setComponentOf(component);
+	//
+	// IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
+	// ee.setEffectiveTime(ivlts);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(ProgressNote2 target) {
+	// target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(
+	// PRECISE_TO_HOUR_WITH_TIMEZONE);
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
+	// (ProgressNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -2038,6 +2082,18 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 		ProgressNote2 target = objectFactory.create();
 		target.getVitalSignsSectionEntriesOptional2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetNutritionSection() {
+
+		ProgressNote2 target = objectFactory.create();
+		target.getNutritionSection();
 
 	}
 
