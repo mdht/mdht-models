@@ -19,14 +19,16 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureNote2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ProcedureNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 ProcedureNote2SectionTitles ProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent ProcedureNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ProcedureNote2Code ProcedureNote2CodeP ProcedureNote2DocumentationOf ProcedureNote2ComplicationsSection2 ProcedureNote2ProcedureDescriptionSection ProcedureNote2ProcedureIndicationsSection2 ProcedureNote2PostprocedureDiagnosisSection2 ProcedureNote2ParticipantAssociatedEntityClassCode ProcedureNote2ParticipantAssociatedEntityAssociatedPerson ProcedureNote2ParticipantTypeCode ProcedureNote2ParticipantFunctionCode ProcedureNote2ParticipantFunctionCodeP ProcedureNote2ParticipantAssociatedEntity ProcedureNote2DocumentationOfServiceEventIVLTSLow ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventPreciseToTheDay ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEvent ProcedureNote2AuthorizationConsentClassCode ProcedureNote2AuthorizationConsentMoodCode ProcedureNote2AuthorizationConsentStatusCode ProcedureNote2AuthorizationTypeCode ProcedureNote2AuthorizationConsent ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProcedureNote2ComponentOfEncompassingEncounterCode ProcedureNote2ComponentOfEncompassingEncounterLocation ProcedureNote2ComponentOfEncompassingEncounter' templateId.root='2.16.840.1.113883.10.20.22.1.6' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ProcedureNote2Code='ProcedureNote2CodeP' constraints.validation.info='ProcedureNote2Participant ProcedureNote2Authorization ProcedureNote2AssessmentSection ProcedureNote2AssessmentAndPlanSection2 ProcedureNote2PlanOfTreatmentSection2 ProcedureNote2AllergiesSectionEntriesOptional2 ProcedureNote2AnesthesiaSection2 ProcedureNote2ChiefComplaintSection ProcedureNote2ChiefComplaintAndReasonForVisitSection ProcedureNote2FamilyHistorySection ProcedureNote2HistoryOfPastIllnessSection2 ProcedureNote2HistoryOfPresentIllnessSection ProcedureNote2MedicalHistorySection ProcedureNote2MedicationsSectionEntriesOptional2 ProcedureNote2MedicationsAdministeredSection2 ProcedureNote2PhysicalExamSection2 ProcedureNote2PlannedProcedureSection2 ProcedureNote2ProcedureDispositionSection ProcedureNote2ProcedureEstimatedBloodLossSection ProcedureNote2ProcedureFindingsSection2 ProcedureNote2ProcedureImplantsSection ProcedureNote2ProcedureSpecimensTakenSection ProcedureNote2ProceduresSectionEntriesOptional2 ProcedureNote2ReasonForVisitSection ProcedureNote2ReviewOfSystemsSection ProcedureNote2SocialHistorySection2 ProcedureNote2DocumentationOfServiceEventPreciseToTheSecond ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant' constraints.validation.warning='ProcedureNote2ComponentOf ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP ProcedureNote2DocumentationOfServiceEventPreciseToTheMinute ProcedureNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset ProcedureNote2ComponentOfEncompassingEncounterId' constraints.validation.query='ProcedureNote2ParticipantAssociatedEntityClassCode ProcedureNote2ParticipantAssociatedEntityAssociatedPerson ProcedureNote2ParticipantTypeCode ProcedureNote2ParticipantFunctionCode ProcedureNote2ParticipantFunctionCodeP ProcedureNote2ParticipantAssociatedEntity ProcedureNote2DocumentationOfServiceEventIVLTSLow ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventPreciseToTheDay ProcedureNote2DocumentationOfServiceEventPreciseToTheMinute ProcedureNote2DocumentationOfServiceEventPreciseToTheSecond ProcedureNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEvent ProcedureNote2AuthorizationConsentClassCode ProcedureNote2AuthorizationConsentMoodCode ProcedureNote2AuthorizationConsentStatusCode ProcedureNote2AuthorizationTypeCode ProcedureNote2AuthorizationConsent ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProcedureNote2ComponentOfEncompassingEncounterId ProcedureNote2ComponentOfEncompassingEncounterCode ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant ProcedureNote2ComponentOfEncompassingEncounterLocation ProcedureNote2ComponentOfEncompassingEncounter' constraints.validation.dependOn.ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode='ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ProcedureNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 ProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent ProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection ProcedureNote2Code ProcedureNote2CodeP ProcedureNote2DocumentationOf ProcedureNote2ComplicationsSection2 ProcedureNote2ProcedureDescriptionSection ProcedureNote2ProcedureIndicationsSection2 ProcedureNote2PostprocedureDiagnosisSection2 ProcedureNote2ParticipantAssociatedEntityClassCode ProcedureNote2ParticipantAssociatedEntityAssociatedPerson ProcedureNote2ParticipantTypeCode ProcedureNote2ParticipantFunctionCode ProcedureNote2ParticipantFunctionCodeP ProcedureNote2ParticipantAssociatedEntity ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEvent ProcedureNote2AuthorizationConsentClassCode ProcedureNote2AuthorizationConsentMoodCode ProcedureNote2AuthorizationConsentStatusCode ProcedureNote2AuthorizationTypeCode ProcedureNote2AuthorizationConsent ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProcedureNote2ComponentOfEncompassingEncounterCode ProcedureNote2ComponentOfEncompassingEncounterLocation ProcedureNote2ComponentOfEncompassingEncounter' templateId.root='2.16.840.1.113883.10.20.22.1.6' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ProcedureNote2Code='ProcedureNote2CodeP' constraints.validation.info='ProcedureNote2Participant ProcedureNote2Authorization ProcedureNote2AssessmentSection ProcedureNote2AssessmentAndPlanSection2 ProcedureNote2PlanOfTreatmentSection2 ProcedureNote2AllergiesSectionEntriesOptional2 ProcedureNote2AnesthesiaSection2 ProcedureNote2ChiefComplaintSection ProcedureNote2ChiefComplaintAndReasonForVisitSection ProcedureNote2FamilyHistorySection2 ProcedureNote2HistoryOfPastIllnessSection2 ProcedureNote2HistoryOfPresentIllnessSection ProcedureNote2MedicalHistorySection ProcedureNote2MedicationsSectionEntriesOptional2 ProcedureNote2MedicationsAdministeredSection2 ProcedureNote2PhysicalExamSection2 ProcedureNote2PlannedProcedureSection2 ProcedureNote2ProcedureDispositionSection ProcedureNote2ProcedureEstimatedBloodLossSection ProcedureNote2ProcedureFindingsSection2 ProcedureNote2ProcedureImplantsSection ProcedureNote2ProcedureSpecimensTakenSection ProcedureNote2ProceduresSectionEntriesOptional2 ProcedureNote2ReasonForVisitSection ProcedureNote2ReviewOfSystemsSection ProcedureNote2SocialHistorySection2 ProcedureNote2DocumentationOfServiceEventPerformerAssistants ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant' constraints.validation.warning='ProcedureNote2ComponentOf ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP ProcedureNote2ComponentOfEncompassingEncounterId' constraints.validation.query='ProcedureNote2ParticipantAssociatedEntityClassCode ProcedureNote2ParticipantAssociatedEntityAssociatedPerson ProcedureNote2ParticipantTypeCode ProcedureNote2ParticipantFunctionCode ProcedureNote2ParticipantFunctionCodeP ProcedureNote2ParticipantAssociatedEntity ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEventPerformerAssistants ProcedureNote2DocumentationOfServiceEvent ProcedureNote2AuthorizationConsentClassCode ProcedureNote2AuthorizationConsentMoodCode ProcedureNote2AuthorizationConsentStatusCode ProcedureNote2AuthorizationTypeCode ProcedureNote2AuthorizationConsent ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProcedureNote2ComponentOfEncompassingEncounterId ProcedureNote2ComponentOfEncompassingEncounterCode ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant ProcedureNote2ComponentOfEncompassingEncounterLocation ProcedureNote2ComponentOfEncompassingEncounter' constraints.validation.dependOn.ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode='ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP' constraints.validation.dependOn.ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode='ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2Participant typeCode='IND' constraints.validation.error='ProcedureNote2ParticipantTypeCode ProcedureNote2ParticipantFunctionCode ProcedureNote2ParticipantFunctionCodeP ProcedureNote2ParticipantAssociatedEntity' functionCode.code='PCP' functionCode.codeSystem='2.16.840.1.113883.5.88' functionCode.codeSystemName='ParticipationFunction' functionCode.displayName='Primary Care Physician'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2ParticipantAssociatedEntity classCode='PROV' constraints.validation.error='ProcedureNote2ParticipantAssociatedEntityClassCode ProcedureNote2ParticipantAssociatedEntityAssociatedPerson'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOf constraints.validation.error='ProcedureNote2DocumentationOfServiceEvent'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEvent constraints.validation.error='ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventPreciseToTheDay ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEventIVLTSLow' constraints.validation.warning='ProcedureNote2DocumentationOfServiceEventPreciseToTheMinute ProcedureNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.info='ProcedureNote2DocumentationOfServiceEventPreciseToTheSecond' constraints.validation.query='ProcedureNote2DocumentationOfServiceEventIVLTSLow'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEventIVLTS constraints.validation.error='ProcedureNote2DocumentationOfServiceEventIVLTSLow'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEvent constraints.validation.error='ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow' constraints.validation.info='ProcedureNote2DocumentationOfServiceEventPerformerAssistants' constraints.validation.query='ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEventPerformer typeCode='PPRF' constraints.validation.error='ProcedureNote2DocumentationOfServiceEventPerformerTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.error='ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode' constraints.validation.warning='ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP' constraints.validation.dependOn.ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode='ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDT constraints.validation.error='ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEventPerformerAssistants typeCode='SPRF' constraints.validation.error='ProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.error='ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode' constraints.validation.warning='ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP' constraints.validation.dependOn.ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode='ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2Authorization typeCode='AUTH' constraints.validation.error='ProcedureNote2AuthorizationTypeCode ProcedureNote2AuthorizationConsent'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2AuthorizationConsent classCode='CONS' constraints.validation.error='ProcedureNote2AuthorizationConsentClassCode ProcedureNote2AuthorizationConsentMoodCode ProcedureNote2AuthorizationConsentStatusCode' moodCode='EVN'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2ComponentOf constraints.validation.error='ProcedureNote2ComponentOfEncompassingEncounter'"
@@ -57,22 +59,10 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->forAll(section : cda::Section | not section.title.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateProcedureNote2SectionTitles(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfTreatmentSection2)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection2))'"
 	 * @generated
 	 */
-	boolean validateProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
+	boolean validateProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -85,7 +75,7 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))'"
 	 * @generated
 	 */
-	boolean validateProcedureNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+	boolean validateProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -302,10 +292,10 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection2))'"
 	 * @generated
 	 */
-	boolean validateProcedureNote2FamilyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureNote2FamilyHistorySection2(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -589,7 +579,7 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))'"
 	 * @generated
 	 */
-	boolean validateProcedureNote2DocumentationOfServiceEventIVLTSLow(DiagnosticChain diagnostics,
+	boolean validateProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
@@ -651,6 +641,58 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+	 * @generated
+	 */
+	boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
+	 * @generated
+	 */
+	boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(typeCode=vocab::x_ServiceEventPerformer::SPRF)'"
+	 * @generated
+	 */
+	boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
+	 * @generated
+	 */
+	boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.width.oclIsUndefined() xor not effectiveTime.high.oclIsUndefined())'"
 	 * @generated
 	 */
@@ -669,58 +711,6 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 */
 	boolean validateProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 8) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 8))'"
-	 * @generated
-	 */
-	boolean validateProcedureNote2DocumentationOfServiceEventPreciseToTheDay(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 12) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 12))'"
-	 * @generated
-	 */
-	boolean validateProcedureNote2DocumentationOfServiceEventPreciseToTheMinute(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 14) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 14))'"
-	 * @generated
-	 */
-	boolean validateProcedureNote2DocumentationOfServiceEventPreciseToTheSecond(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() and effectiveTime.low.value.size() > 8 implies effectiveTime.low.value.size() >= 15) and (not effectiveTime.high.value.oclIsUndefined() and effectiveTime.high.value.size() > 8 implies effectiveTime.high.value.size() >= 15))'"
-	 * @generated
-	 */
-	boolean validateProcedureNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -768,10 +758,23 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->one(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))'"
 	 * @generated
 	 */
 	boolean validateProcedureNote2DocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))'"
+	 * @generated
+	 */
+	boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistants(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
@@ -1054,10 +1057,10 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->any(true).oclAsType(consol::FamilyHistorySection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection2))->asSequence()->any(true).oclAsType(consol::FamilyHistorySection2)'"
 	 * @generated
 	 */
-	FamilyHistorySection getFamilyHistorySection();
+	FamilyHistorySection2 getFamilyHistorySection2();
 
 	/**
 	 * <!-- begin-user-doc -->

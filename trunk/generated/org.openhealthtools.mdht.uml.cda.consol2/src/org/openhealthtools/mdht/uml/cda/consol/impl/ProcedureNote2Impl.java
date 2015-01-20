@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSe
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection;
+import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllnessSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalHistorySection;
@@ -91,18 +91,9 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNote2SectionTitles(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2SectionTitles(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
+	public boolean validateProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
+		return ProcedureNote2Operations.validateProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			this, diagnostics, context);
 	}
 
@@ -111,9 +102,9 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+	public boolean validateProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+		return ProcedureNote2Operations.validateProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(
 			this, diagnostics, context);
 	}
 
@@ -284,8 +275,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNote2FamilyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2FamilyHistorySection(this, diagnostics, context);
+	public boolean validateProcedureNote2FamilyHistorySection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2FamilyHistorySection2(this, diagnostics, context);
 	}
 
 	/**
@@ -513,9 +504,9 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNote2DocumentationOfServiceEventIVLTSLow(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventIVLTSLow(
+	public boolean validateProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
 			this, diagnostics, context);
 	}
 
@@ -568,6 +559,50 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
@@ -582,50 +617,6 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	public boolean validateProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2DocumentationOfServiceEventPreciseToTheDay(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPreciseToTheDay(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2DocumentationOfServiceEventPreciseToTheMinute(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPreciseToTheMinute(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2DocumentationOfServiceEventPreciseToTheSecond(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPreciseToTheSecond(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
 			this, diagnostics, context);
 	}
 
@@ -670,6 +661,17 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	public boolean validateProcedureNote2DocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformer(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistants(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistants(
 			this, diagnostics, context);
 	}
 
@@ -923,8 +925,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FamilyHistorySection getFamilyHistorySection() {
-		return ProcedureNote2Operations.getFamilyHistorySection(this);
+	public FamilyHistorySection2 getFamilyHistorySection2() {
+		return ProcedureNote2Operations.getFamilyHistorySection2(this);
 	}
 
 	/**

@@ -70,21 +70,22 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2ProcedureDispositionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Procedure Disposition Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2ProcedureIndicationsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Procedure Indications Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2SurgicalDrainsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Surgical Drains Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event IVLTS Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event US Realm Date And Time DT Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assigned Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assigned Entity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assigned Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Effective Time Has High When No Width</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Effective Time No High If Width</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Day</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Minute</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Second</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event If More Precise Than Day Include Time Zone Offset</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventProcedureCodes(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Procedure Codes</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssistants(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2AuthorizationConsentClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Authorization Consent Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2AuthorizationConsentMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Authorization Consent Mood Code</em>}</li>
@@ -1328,25 +1329,25 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventIVLTSLow(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event IVLTS Low</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event US Realm Date And Time DT Low</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateOperativeNote2DocumentationOfServiceEventIVLTSLow(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))";
+	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventIVLTSLow(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event IVLTS Low</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event US Realm Date And Time DT Low</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateOperativeNote2DocumentationOfServiceEventIVLTSLow(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1359,29 +1360,30 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validateOperativeNote2DocumentationOfServiceEventIVLTSLow(OperativeNote2 operativeNote2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
+			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(operativeNote2);
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventIVLTSLow"),
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"),
 						new Object[] { eObject }));
 				}
 
@@ -1445,7 +1447,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
+						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE,
 						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode"),
@@ -1654,6 +1656,268 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.12.443' and (value.code = 'CP' or value.code = 'PP' or value.code = 'RP')))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote2 The receiving '<em><b>Operative Note2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(
+			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(operativeNote2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote2 The receiving '<em><b>Operative Note2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(
+			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(operativeNote2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Type Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(typeCode=vocab::x_ServiceEventPerformer::SPRF)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Type Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote2 The receiving '<em><b>Operative Note2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(
+			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(operativeNote2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote2 The receiving '<em><b>Operative Note2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(
+			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(operativeNote2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Effective Time Has High When No Width</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1774,266 +2038,6 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH,
 						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Day</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 8) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 8))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Day</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param operativeNote2 The receiving '<em><b>Operative Note2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay(
-			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(operativeNote2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPreciseToTheDay"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Minute</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 12) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 12))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Minute</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param operativeNote2 The receiving '<em><b>Operative Note2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute(
-			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(operativeNote2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPreciseToTheMinute"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Second</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 14) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 14))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Second</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param operativeNote2 The receiving '<em><b>Operative Note2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond(
-			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(operativeNote2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPreciseToTheSecond"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event If More Precise Than Day Include Time Zone Offset</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() and effectiveTime.low.value.size() > 8 implies effectiveTime.low.value.size() >= 15) and (not effectiveTime.high.value.oclIsUndefined() and effectiveTime.high.value.size() > 8 implies effectiveTime.high.value.size() >= 15))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event If More Precise Than Day Include Time Zone Offset</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param operativeNote2 The receiving '<em><b>Operative Note2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
-			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(operativeNote2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset"),
 						new Object[] { eObject }));
 				}
 
@@ -2244,7 +2248,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->one(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))";
+	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformer(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer</em>}' invariant operation.
@@ -2291,6 +2295,71 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER,
 						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformer"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistants(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNote2DocumentationOfServiceEventPerformerAssistants(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistants(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNote2DocumentationOfServiceEventPerformerAssistants(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote2 The receiving '<em><b>Operative Note2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistants(
+			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(operativeNote2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssistants"),
 						new Object[] { eObject }));
 				}
 
@@ -2714,7 +2783,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(395));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(396));
 			try {
 				GET_ANESTHESIA_SECTION2__EOCL_QRY = helper.createQuery(GET_ANESTHESIA_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2756,7 +2825,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(396));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(397));
 			try {
 				GET_COMPLICATIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_COMPLICATIONS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2798,7 +2867,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(397));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(398));
 			try {
 				GET_PREOPERATIVE_DIAGNOSIS_SECTION2__EOCL_QRY = helper.createQuery(GET_PREOPERATIVE_DIAGNOSIS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2840,7 +2909,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(398));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(399));
 			try {
 				GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2882,7 +2951,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(399));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(400));
 			try {
 				GET_PROCEDURE_FINDINGS_SECTION2__EOCL_QRY = helper.createQuery(GET_PROCEDURE_FINDINGS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2924,7 +2993,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(400));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(401));
 			try {
 				GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2966,7 +3035,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(401));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(402));
 			try {
 				GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3008,7 +3077,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(402));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(403));
 			try {
 				GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3050,7 +3119,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(403));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(404));
 			try {
 				GET_PROCEDURE_IMPLANTS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_IMPLANTS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3092,7 +3161,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(404));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(405));
 			try {
 				GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_QRY = helper.createQuery(GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3135,7 +3204,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(405));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(406));
 			try {
 				GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_QRY = helper.createQuery(GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3177,7 +3246,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(406));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(407));
 			try {
 				GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY = helper.createQuery(GET_PLAN_OF_TREATMENT_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3219,7 +3288,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(407));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(408));
 			try {
 				GET_PLANNED_PROCEDURE_SECTION2__EOCL_QRY = helper.createQuery(GET_PLANNED_PROCEDURE_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3261,7 +3330,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(408));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(409));
 			try {
 				GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_DISPOSITION_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3303,7 +3372,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(409));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(410));
 			try {
 				GET_PROCEDURE_INDICATIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_PROCEDURE_INDICATIONS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3345,7 +3414,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OPERATIVE_NOTE2,
-				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(410));
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(411));
 			try {
 				GET_SURGICAL_DRAINS_SECTION__EOCL_QRY = helper.createQuery(GET_SURGICAL_DRAINS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

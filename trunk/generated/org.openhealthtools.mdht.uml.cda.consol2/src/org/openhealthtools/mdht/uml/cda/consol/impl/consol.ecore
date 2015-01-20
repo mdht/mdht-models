@@ -45618,27 +45618,22 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OperativeNote2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId OperativeNote2Code OperativeNote2CodeP OperativeNote2DocumentationOf OperativeNote2AnesthesiaSection2 OperativeNote2ComplicationsSection2 OperativeNote2PreoperativeDiagnosisSection2 OperativeNote2ProcedureEstimatedBloodLossSection OperativeNote2ProcedureFindingsSection2 OperativeNote2ProcedureSpecimensTakenSection OperativeNote2ProcedureDescriptionSection OperativeNote2PostoperativeDiagnosisSection OperativeNote2DocumentationOfServiceEventIVLTSLow OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP OperativeNote2DocumentationOfServiceEventPerformerTypeCode OperativeNote2DocumentationOfServiceEventPerformerAssignedEntity OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNote2DocumentationOfServiceEventPreciseToTheDay OperativeNote2DocumentationOfServiceEventProcedureCodes OperativeNote2DocumentationOfServiceEventEffectiveTime OperativeNote2DocumentationOfServiceEventCode OperativeNote2DocumentationOfServiceEventPerformer OperativeNote2DocumentationOfServiceEvent OperativeNote2AuthorizationConsentClassCode OperativeNote2AuthorizationConsentMoodCode OperativeNote2AuthorizationConsentStatusCode OperativeNote2AuthorizationTypeCode OperativeNote2AuthorizationConsent"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId OperativeNote2Code OperativeNote2CodeP OperativeNote2DocumentationOf OperativeNote2AnesthesiaSection2 OperativeNote2ComplicationsSection2 OperativeNote2PreoperativeDiagnosisSection2 OperativeNote2ProcedureEstimatedBloodLossSection OperativeNote2ProcedureFindingsSection2 OperativeNote2ProcedureSpecimensTakenSection OperativeNote2ProcedureDescriptionSection OperativeNote2PostoperativeDiagnosisSection OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP OperativeNote2DocumentationOfServiceEventPerformerTypeCode OperativeNote2DocumentationOfServiceEventPerformerAssignedEntity OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP OperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNote2DocumentationOfServiceEventProcedureCodes OperativeNote2DocumentationOfServiceEventEffectiveTime OperativeNote2DocumentationOfServiceEventCode OperativeNote2DocumentationOfServiceEventPerformer OperativeNote2DocumentationOfServiceEvent OperativeNote2AuthorizationConsentClassCode OperativeNote2AuthorizationConsentMoodCode OperativeNote2AuthorizationConsentStatusCode OperativeNote2AuthorizationTypeCode OperativeNote2AuthorizationConsent"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.7"/>
       <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.OperativeNote2Code" value="OperativeNote2CodeP"/>
-      <details key="constraints.validation.info" value="OperativeNote2Authorization OperativeNote2ProcedureImplantsSection OperativeNote2OperativeNoteFluidSection OperativeNote2OperativeNoteSurgicalProcedureSection OperativeNote2PlanOfTreatmentSection2 OperativeNote2PlannedProcedureSection2 OperativeNote2ProcedureDispositionSection OperativeNote2ProcedureIndicationsSection2 OperativeNote2SurgicalDrainsSection OperativeNote2DocumentationOfServiceEventPreciseToTheSecond"/>
-      <details key="constraints.validation.query" value="OperativeNote2DocumentationOfServiceEventIVLTSLow OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP OperativeNote2DocumentationOfServiceEventPerformerTypeCode OperativeNote2DocumentationOfServiceEventPerformerAssignedEntity OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNote2DocumentationOfServiceEventPreciseToTheDay OperativeNote2DocumentationOfServiceEventPreciseToTheMinute OperativeNote2DocumentationOfServiceEventPreciseToTheSecond OperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset OperativeNote2DocumentationOfServiceEventProcedureCodes OperativeNote2DocumentationOfServiceEventEffectiveTime OperativeNote2DocumentationOfServiceEventCode OperativeNote2DocumentationOfServiceEventPerformer OperativeNote2DocumentationOfServiceEvent OperativeNote2AuthorizationConsentClassCode OperativeNote2AuthorizationConsentMoodCode OperativeNote2AuthorizationConsentStatusCode OperativeNote2AuthorizationTypeCode OperativeNote2AuthorizationConsent"/>
-      <details key="constraints.validation.warning" value="OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode OperativeNote2DocumentationOfServiceEventPreciseToTheMinute OperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset"/>
+      <details key="constraints.validation.info" value="OperativeNote2Authorization OperativeNote2ProcedureImplantsSection OperativeNote2OperativeNoteFluidSection OperativeNote2OperativeNoteSurgicalProcedureSection OperativeNote2PlanOfTreatmentSection2 OperativeNote2PlannedProcedureSection2 OperativeNote2ProcedureDispositionSection OperativeNote2ProcedureIndicationsSection2 OperativeNote2SurgicalDrainsSection OperativeNote2DocumentationOfServiceEventPerformerAssistants"/>
+      <details key="constraints.validation.query" value="OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP OperativeNote2DocumentationOfServiceEventPerformerTypeCode OperativeNote2DocumentationOfServiceEventPerformerAssignedEntity OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP OperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNote2DocumentationOfServiceEventProcedureCodes OperativeNote2DocumentationOfServiceEventEffectiveTime OperativeNote2DocumentationOfServiceEventCode OperativeNote2DocumentationOfServiceEventPerformer OperativeNote2DocumentationOfServiceEventPerformerAssistants OperativeNote2DocumentationOfServiceEvent OperativeNote2AuthorizationConsentClassCode OperativeNote2AuthorizationConsentMoodCode OperativeNote2AuthorizationConsentStatusCode OperativeNote2AuthorizationTypeCode OperativeNote2AuthorizationConsent"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2DocumentationOf">
       <details key="constraints.validation.error" value="OperativeNote2DocumentationOfServiceEvent"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2DocumentationOfServiceEvent">
-      <details key="constraints.validation.error" value="OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNote2DocumentationOfServiceEventPreciseToTheDay OperativeNote2DocumentationOfServiceEventProcedureCodes OperativeNote2DocumentationOfServiceEventEffectiveTime OperativeNote2DocumentationOfServiceEventCode OperativeNote2DocumentationOfServiceEventPerformer OperativeNote2DocumentationOfServiceEventIVLTSLow"/>
-      <details key="constraints.validation.warning" value="OperativeNote2DocumentationOfServiceEventPreciseToTheMinute OperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset"/>
-      <details key="constraints.validation.info" value="OperativeNote2DocumentationOfServiceEventPreciseToTheSecond"/>
-      <details key="constraints.validation.query" value="OperativeNote2DocumentationOfServiceEventIVLTSLow"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2DocumentationOfServiceEventIVLTS">
-      <details key="constraints.validation.error" value="OperativeNote2DocumentationOfServiceEventIVLTSLow"/>
+      <details key="constraints.validation.error" value="OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNote2DocumentationOfServiceEventProcedureCodes OperativeNote2DocumentationOfServiceEventEffectiveTime OperativeNote2DocumentationOfServiceEventCode OperativeNote2DocumentationOfServiceEventPerformer OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"/>
+      <details key="constraints.validation.info" value="OperativeNote2DocumentationOfServiceEventPerformerAssistants"/>
+      <details key="constraints.validation.query" value="OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2DocumentationOfServiceEventPerformer">
       <details key="typeCode" value="PPRF"/>
@@ -45647,8 +45642,19 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2DocumentationOfServiceEventPerformerAssignedEntity">
       <details key="code.codeSystem" value="2.16.840.1.113883.12.443"/>
       <details key="code.codeSystemName" value="Provider Role (HL7)"/>
-      <details key="constraints.validation.warning" value="OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode"/>
-      <details key="constraints.validation.error" value="OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP"/>
+      <details key="constraints.validation.error" value="OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDT">
+      <details key="constraints.validation.error" value="OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2DocumentationOfServiceEventPerformerAssistants">
+      <details key="typeCode" value="SPRF"/>
+      <details key="constraints.validation.error" value="OperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity">
+      <details key="code.codeSystem" value="2.16.840.1.113883.12.443"/>
+      <details key="code.codeSystemName" value="Provider Role (HL7)"/>
+      <details key="constraints.validation.error" value="OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2Authorization">
       <details key="typeCode" value="AUTH"/>
@@ -45852,7 +45858,8 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="OperativeNote2DocumentationOfServiceEventIVLTSLow" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -45901,6 +45908,46 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="OperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -45912,45 +45959,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="OperativeNote2DocumentationOfServiceEventPreciseToTheDay" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="OperativeNote2DocumentationOfServiceEventPreciseToTheMinute"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="OperativeNote2DocumentationOfServiceEventPreciseToTheSecond"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="OperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -45988,6 +45996,16 @@
       </eParameters>
     </eOperations>
     <eOperations name="OperativeNote2DocumentationOfServiceEventPerformer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="OperativeNote2DocumentationOfServiceEventPerformerAssistants"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -46082,17 +46100,19 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureNote2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ProcedureNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 ProcedureNote2SectionTitles ProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent ProcedureNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ProcedureNote2Code ProcedureNote2CodeP ProcedureNote2DocumentationOf ProcedureNote2ComplicationsSection2 ProcedureNote2ProcedureDescriptionSection ProcedureNote2ProcedureIndicationsSection2 ProcedureNote2PostprocedureDiagnosisSection2 ProcedureNote2ParticipantAssociatedEntityClassCode ProcedureNote2ParticipantAssociatedEntityAssociatedPerson ProcedureNote2ParticipantTypeCode ProcedureNote2ParticipantFunctionCode ProcedureNote2ParticipantFunctionCodeP ProcedureNote2ParticipantAssociatedEntity ProcedureNote2DocumentationOfServiceEventIVLTSLow ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventPreciseToTheDay ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEvent ProcedureNote2AuthorizationConsentClassCode ProcedureNote2AuthorizationConsentMoodCode ProcedureNote2AuthorizationConsentStatusCode ProcedureNote2AuthorizationTypeCode ProcedureNote2AuthorizationConsent ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProcedureNote2ComponentOfEncompassingEncounterCode ProcedureNote2ComponentOfEncompassingEncounterLocation ProcedureNote2ComponentOfEncompassingEncounter"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ProcedureNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 ProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent ProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection ProcedureNote2Code ProcedureNote2CodeP ProcedureNote2DocumentationOf ProcedureNote2ComplicationsSection2 ProcedureNote2ProcedureDescriptionSection ProcedureNote2ProcedureIndicationsSection2 ProcedureNote2PostprocedureDiagnosisSection2 ProcedureNote2ParticipantAssociatedEntityClassCode ProcedureNote2ParticipantAssociatedEntityAssociatedPerson ProcedureNote2ParticipantTypeCode ProcedureNote2ParticipantFunctionCode ProcedureNote2ParticipantFunctionCodeP ProcedureNote2ParticipantAssociatedEntity ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEvent ProcedureNote2AuthorizationConsentClassCode ProcedureNote2AuthorizationConsentMoodCode ProcedureNote2AuthorizationConsentStatusCode ProcedureNote2AuthorizationTypeCode ProcedureNote2AuthorizationConsent ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProcedureNote2ComponentOfEncompassingEncounterCode ProcedureNote2ComponentOfEncompassingEncounterLocation ProcedureNote2ComponentOfEncompassingEncounter"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.6"/>
       <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.ProcedureNote2Code" value="ProcedureNote2CodeP"/>
-      <details key="constraints.validation.info" value="ProcedureNote2Participant ProcedureNote2Authorization ProcedureNote2AssessmentSection ProcedureNote2AssessmentAndPlanSection2 ProcedureNote2PlanOfTreatmentSection2 ProcedureNote2AllergiesSectionEntriesOptional2 ProcedureNote2AnesthesiaSection2 ProcedureNote2ChiefComplaintSection ProcedureNote2ChiefComplaintAndReasonForVisitSection ProcedureNote2FamilyHistorySection ProcedureNote2HistoryOfPastIllnessSection2 ProcedureNote2HistoryOfPresentIllnessSection ProcedureNote2MedicalHistorySection ProcedureNote2MedicationsSectionEntriesOptional2 ProcedureNote2MedicationsAdministeredSection2 ProcedureNote2PhysicalExamSection2 ProcedureNote2PlannedProcedureSection2 ProcedureNote2ProcedureDispositionSection ProcedureNote2ProcedureEstimatedBloodLossSection ProcedureNote2ProcedureFindingsSection2 ProcedureNote2ProcedureImplantsSection ProcedureNote2ProcedureSpecimensTakenSection ProcedureNote2ProceduresSectionEntriesOptional2 ProcedureNote2ReasonForVisitSection ProcedureNote2ReviewOfSystemsSection ProcedureNote2SocialHistorySection2 ProcedureNote2DocumentationOfServiceEventPreciseToTheSecond ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant"/>
-      <details key="constraints.validation.warning" value="ProcedureNote2ComponentOf ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP ProcedureNote2DocumentationOfServiceEventPreciseToTheMinute ProcedureNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset ProcedureNote2ComponentOfEncompassingEncounterId"/>
-      <details key="constraints.validation.query" value="ProcedureNote2ParticipantAssociatedEntityClassCode ProcedureNote2ParticipantAssociatedEntityAssociatedPerson ProcedureNote2ParticipantTypeCode ProcedureNote2ParticipantFunctionCode ProcedureNote2ParticipantFunctionCodeP ProcedureNote2ParticipantAssociatedEntity ProcedureNote2DocumentationOfServiceEventIVLTSLow ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventPreciseToTheDay ProcedureNote2DocumentationOfServiceEventPreciseToTheMinute ProcedureNote2DocumentationOfServiceEventPreciseToTheSecond ProcedureNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEvent ProcedureNote2AuthorizationConsentClassCode ProcedureNote2AuthorizationConsentMoodCode ProcedureNote2AuthorizationConsentStatusCode ProcedureNote2AuthorizationTypeCode ProcedureNote2AuthorizationConsent ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProcedureNote2ComponentOfEncompassingEncounterId ProcedureNote2ComponentOfEncompassingEncounterCode ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant ProcedureNote2ComponentOfEncompassingEncounterLocation ProcedureNote2ComponentOfEncompassingEncounter"/>
+      <details key="constraints.validation.info" value="ProcedureNote2Participant ProcedureNote2Authorization ProcedureNote2AssessmentSection ProcedureNote2AssessmentAndPlanSection2 ProcedureNote2PlanOfTreatmentSection2 ProcedureNote2AllergiesSectionEntriesOptional2 ProcedureNote2AnesthesiaSection2 ProcedureNote2ChiefComplaintSection ProcedureNote2ChiefComplaintAndReasonForVisitSection ProcedureNote2FamilyHistorySection2 ProcedureNote2HistoryOfPastIllnessSection2 ProcedureNote2HistoryOfPresentIllnessSection ProcedureNote2MedicalHistorySection ProcedureNote2MedicationsSectionEntriesOptional2 ProcedureNote2MedicationsAdministeredSection2 ProcedureNote2PhysicalExamSection2 ProcedureNote2PlannedProcedureSection2 ProcedureNote2ProcedureDispositionSection ProcedureNote2ProcedureEstimatedBloodLossSection ProcedureNote2ProcedureFindingsSection2 ProcedureNote2ProcedureImplantsSection ProcedureNote2ProcedureSpecimensTakenSection ProcedureNote2ProceduresSectionEntriesOptional2 ProcedureNote2ReasonForVisitSection ProcedureNote2ReviewOfSystemsSection ProcedureNote2SocialHistorySection2 ProcedureNote2DocumentationOfServiceEventPerformerAssistants ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant"/>
+      <details key="constraints.validation.warning" value="ProcedureNote2ComponentOf ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP ProcedureNote2ComponentOfEncompassingEncounterId"/>
+      <details key="constraints.validation.query" value="ProcedureNote2ParticipantAssociatedEntityClassCode ProcedureNote2ParticipantAssociatedEntityAssociatedPerson ProcedureNote2ParticipantTypeCode ProcedureNote2ParticipantFunctionCode ProcedureNote2ParticipantFunctionCodeP ProcedureNote2ParticipantAssociatedEntity ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode ProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEventPerformerAssistants ProcedureNote2DocumentationOfServiceEvent ProcedureNote2AuthorizationConsentClassCode ProcedureNote2AuthorizationConsentMoodCode ProcedureNote2AuthorizationConsentStatusCode ProcedureNote2AuthorizationTypeCode ProcedureNote2AuthorizationConsent ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProcedureNote2ComponentOfEncompassingEncounterId ProcedureNote2ComponentOfEncompassingEncounterCode ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant ProcedureNote2ComponentOfEncompassingEncounterLocation ProcedureNote2ComponentOfEncompassingEncounter"/>
       <details key="constraints.validation.dependOn.ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode"
           value="ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode"
+          value="ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2Participant">
       <details key="typeCode" value="IND"/>
@@ -46110,13 +46130,9 @@
       <details key="constraints.validation.error" value="ProcedureNote2DocumentationOfServiceEvent"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEvent">
-      <details key="constraints.validation.error" value="ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventPreciseToTheDay ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEventIVLTSLow"/>
-      <details key="constraints.validation.warning" value="ProcedureNote2DocumentationOfServiceEventPreciseToTheMinute ProcedureNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset"/>
-      <details key="constraints.validation.info" value="ProcedureNote2DocumentationOfServiceEventPreciseToTheSecond"/>
-      <details key="constraints.validation.query" value="ProcedureNote2DocumentationOfServiceEventIVLTSLow"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEventIVLTS">
-      <details key="constraints.validation.error" value="ProcedureNote2DocumentationOfServiceEventIVLTSLow"/>
+      <details key="constraints.validation.error" value="ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth ProcedureNote2DocumentationOfServiceEventProcedureCodes ProcedureNote2DocumentationOfServiceEventEffectiveTime ProcedureNote2DocumentationOfServiceEventCode ProcedureNote2DocumentationOfServiceEventPerformer ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"/>
+      <details key="constraints.validation.info" value="ProcedureNote2DocumentationOfServiceEventPerformerAssistants"/>
+      <details key="constraints.validation.query" value="ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEventPerformer">
       <details key="typeCode" value="PPRF"/>
@@ -46129,6 +46145,21 @@
       <details key="constraints.validation.warning" value="ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP"/>
       <details key="constraints.validation.dependOn.ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode"
           value="ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDT">
+      <details key="constraints.validation.error" value="ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEventPerformerAssistants">
+      <details key="typeCode" value="SPRF"/>
+      <details key="constraints.validation.error" value="ProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity">
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
+      <details key="code.codeSystemName" value="NUCC Health Care Provider Taxonomy"/>
+      <details key="constraints.validation.error" value="ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode"/>
+      <details key="constraints.validation.warning" value="ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode"
+          value="ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2Authorization">
       <details key="typeCode" value="AUTH"/>
@@ -46180,16 +46211,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ProcedureNote2SectionTitles" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"
+    <eOperations name="ProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -46199,7 +46221,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ProcedureNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"
+    <eOperations name="ProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -46362,7 +46384,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ProcedureNote2FamilyHistorySection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="ProcedureNote2FamilyHistorySection2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -46570,7 +46592,8 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ProcedureNote2DocumentationOfServiceEventIVLTSLow" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -46619,6 +46642,46 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -46630,45 +46693,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNote2DocumentationOfServiceEventPreciseToTheDay" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNote2DocumentationOfServiceEventPreciseToTheMinute"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNote2DocumentationOfServiceEventPreciseToTheSecond"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -46706,6 +46730,16 @@
       </eParameters>
     </eOperations>
     <eOperations name="ProcedureNote2DocumentationOfServiceEventPerformer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ProcedureNote2DocumentationOfServiceEventPerformerAssistants"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -46862,7 +46896,7 @@
     <eOperations name="getChiefComplaintSection" ordered="false" lowerBound="1" eType="#//ChiefComplaintSection"/>
     <eOperations name="getChiefComplaintAndReasonForVisitSection" ordered="false"
         lowerBound="1" eType="#//ChiefComplaintAndReasonForVisitSection"/>
-    <eOperations name="getFamilyHistorySection" ordered="false" lowerBound="1" eType="#//FamilyHistorySection"/>
+    <eOperations name="getFamilyHistorySection2" ordered="false" lowerBound="1" eType="#//FamilyHistorySection2"/>
     <eOperations name="getHistoryOfPastIllnessSection2" ordered="false" lowerBound="1"
         eType="#//HistoryOfPastIllnessSection2"/>
     <eOperations name="getHistoryOfPresentIllnessSection" ordered="false" lowerBound="1"
@@ -46893,47 +46927,44 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProgressNote2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 ProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent ProgressNote2Code ProgressNote2CodeP ProgressNote2ComponentOf ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventPreciseToTheDay ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventClassCode ProgressNote2DocumentationOfServiceEvent ProgressNote2ComponentOfEncompassingEncounterIVLTSLow ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounter"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 ProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent ProgressNote2Code ProgressNote2CodeP ProgressNote2ComponentOf ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventClassCode ProgressNote2DocumentationOfServiceEvent ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounter"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.9"/>
       <details key="templateId.extension" value="2014-06-09"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.ProgressNote2Code" value="ProgressNote2CodeP"/>
-      <details key="constraints.validation.warning" value="ProgressNote2DocumentationOf ProgressNote2DocumentationOfServiceEventIVLTSLow ProgressNote2DocumentationOfServiceEventPreciseToTheMinute ProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset ProgressNote2DocumentationOfServiceEventEffectiveTime ProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute ProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset"/>
-      <details key="constraints.validation.info" value="ProgressNote2AssessmentSection ProgressNote2PlanOfTreatmentSection2 ProgressNote2AssessmentAndPlanSection2 ProgressNote2AllergiesSectionEntriesOptional2 ProgressNote2ChiefComplaintSection ProgressNote2InterventionsSection2 ProgressNote2InstructionsSection2 ProgressNote2MedicationsSectionEntriesOptional2 ProgressNote2ObjectiveSection ProgressNote2PhysicalExamSection2 ProgressNote2ProblemSectionEntriesOptional2 ProgressNote2ResultsSectionEntriesOptional2 ProgressNote2ReviewOfSystemsSection ProgressNote2SubjectiveSection ProgressNote2VitalSignsSectionEntriesOptional2 ProgressNote2DocumentationOfServiceEventPreciseToTheSecond ProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond"/>
-      <details key="constraints.validation.query" value="ProgressNote2DocumentationOfServiceEventIVLTSLow ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventPreciseToTheDay ProgressNote2DocumentationOfServiceEventPreciseToTheMinute ProgressNote2DocumentationOfServiceEventPreciseToTheSecond ProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventClassCode ProgressNote2DocumentationOfServiceEventEffectiveTime ProgressNote2DocumentationOfServiceEvent ProgressNote2ComponentOfEncompassingEncounterIVLTSLow ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay ProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute ProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond ProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounter"/>
+      <details key="constraints.validation.warning" value="ProgressNote2DocumentationOf ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow ProgressNote2DocumentationOfServiceEventEffectiveTime"/>
+      <details key="constraints.validation.info" value="ProgressNote2AssessmentSection ProgressNote2PlanOfTreatmentSection2 ProgressNote2AssessmentAndPlanSection2 ProgressNote2AllergiesSectionEntriesOptional2 ProgressNote2ChiefComplaintSection ProgressNote2InterventionsSection2 ProgressNote2InstructionsSection2 ProgressNote2MedicationsSectionEntriesOptional2 ProgressNote2ObjectiveSection ProgressNote2PhysicalExamSection2 ProgressNote2ProblemSectionEntriesOptional2 ProgressNote2ResultsSectionEntriesOptional2 ProgressNote2ReviewOfSystemsSection ProgressNote2SubjectiveSection ProgressNote2VitalSignsSectionEntriesOptional2 ProgressNote2NutritionSection"/>
+      <details key="constraints.validation.query" value="ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventClassCode ProgressNote2DocumentationOfServiceEventEffectiveTime ProgressNote2DocumentationOfServiceEvent ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounter"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2DocumentationOf">
       <details key="constraints.validation.error" value="ProgressNote2DocumentationOfServiceEvent"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2DocumentationOfServiceEvent">
-      <details key="constraints.validation.error" value="ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventPreciseToTheDay ProgressNote2DocumentationOfServiceEventClassCode"/>
+      <details key="constraints.validation.error" value="ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventClassCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.21.3.1"/>
-      <details key="constraints.validation.warning" value="ProgressNote2DocumentationOfServiceEventPreciseToTheMinute ProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset ProgressNote2DocumentationOfServiceEventEffectiveTime ProgressNote2DocumentationOfServiceEventIVLTSLow"/>
-      <details key="constraints.validation.info" value="ProgressNote2DocumentationOfServiceEventPreciseToTheSecond"/>
       <details key="classCode" value="PCPR"/>
-      <details key="constraints.validation.query" value="ProgressNote2DocumentationOfServiceEventIVLTSLow"/>
+      <details key="constraints.validation.warning" value="ProgressNote2DocumentationOfServiceEventEffectiveTime ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"/>
+      <details key="constraints.validation.query" value="ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2DocumentationOfServiceEventIVLTS">
-      <details key="constraints.validation.warning" value="ProgressNote2DocumentationOfServiceEventIVLTSLow"/>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDT">
+      <details key="constraints.validation.warning" value="ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOf">
       <details key="constraints.validation.error" value="ProgressNote2ComponentOfEncompassingEncounter"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounter">
-      <details key="constraints.validation.error" value="ProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounterIVLTSLow"/>
-      <details key="constraints.validation.warning" value="ProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute ProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset"/>
-      <details key="constraints.validation.info" value="ProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond"/>
-      <details key="constraints.validation.query" value="ProgressNote2ComponentOfEncompassingEncounterIVLTSLow"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounterIVLTS">
-      <details key="constraints.validation.error" value="ProgressNote2ComponentOfEncompassingEncounterIVLTSLow"/>
+      <details key="constraints.validation.error" value="ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow"/>
+      <details key="constraints.validation.query" value="ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounterLocation">
       <details key="constraints.validation.error" value="ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility">
       <details key="constraints.validation.error" value="ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDT">
+      <details key="constraints.validation.error" value="ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="GeneralHeaderConstraintsTemplateId"
@@ -46958,7 +46989,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"
+    <eOperations name="ProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -47139,7 +47170,17 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ProgressNote2DocumentationOfServiceEventIVLTSLow" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="ProgressNote2NutritionSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -47149,45 +47190,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProgressNote2DocumentationOfServiceEventPreciseToTheDay" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProgressNote2DocumentationOfServiceEventPreciseToTheMinute"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProgressNote2DocumentationOfServiceEventPreciseToTheSecond"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -47233,7 +47235,8 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ProgressNote2ComponentOfEncompassingEncounterIVLTSLow" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -47253,46 +47256,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -47361,6 +47324,7 @@
     <eOperations name="getSubjectiveSection" ordered="false" lowerBound="1" eType="#//SubjectiveSection"/>
     <eOperations name="getVitalSignsSectionEntriesOptional2" ordered="false" lowerBound="1"
         eType="#//VitalSignsSectionEntriesOptional2"/>
+    <eOperations name="getNutritionSection" ordered="false" lowerBound="1" eType="#//NutritionSection"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="UnstructuredDocument2" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">

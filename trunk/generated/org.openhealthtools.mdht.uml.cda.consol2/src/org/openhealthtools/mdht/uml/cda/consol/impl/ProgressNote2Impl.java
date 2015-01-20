@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSectionEntriesOptional2;
+import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
 import org.openhealthtools.mdht.uml.cda.consol.ObjectiveSection;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
@@ -78,9 +79,9 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
+	public boolean validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
+		return ProgressNote2Operations.validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			this, diagnostics, context);
 	}
 
@@ -268,9 +269,18 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNote2DocumentationOfServiceEventIVLTSLow(DiagnosticChain diagnostics,
+	public boolean validateProgressNote2NutritionSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProgressNote2Operations.validateProgressNote2NutritionSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventIVLTSLow(
+		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
 			this, diagnostics, context);
 	}
 
@@ -282,50 +292,6 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	public boolean validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProgressNote2DocumentationOfServiceEventPreciseToTheDay(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventPreciseToTheDay(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProgressNote2DocumentationOfServiceEventPreciseToTheMinute(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventPreciseToTheMinute(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProgressNote2DocumentationOfServiceEventPreciseToTheSecond(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventPreciseToTheSecond(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
 			this, diagnostics, context);
 	}
 
@@ -377,9 +343,9 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNote2ComponentOfEncompassingEncounterIVLTSLow(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterIVLTSLow(
+	public boolean validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow(
 			this, diagnostics, context);
 	}
 
@@ -402,50 +368,6 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	public boolean validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset(
 			this, diagnostics, context);
 	}
 
@@ -625,6 +547,15 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public VitalSignsSectionEntriesOptional2 getVitalSignsSectionEntriesOptional2() {
 		return ProgressNote2Operations.getVitalSignsSectionEntriesOptional2(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NutritionSection getNutritionSection() {
+		return ProgressNote2Operations.getNutritionSection(this);
 	}
 
 	/**
