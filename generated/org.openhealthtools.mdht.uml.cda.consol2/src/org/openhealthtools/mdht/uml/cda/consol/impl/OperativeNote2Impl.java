@@ -263,9 +263,9 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNote2DocumentationOfServiceEventIVLTSLow(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventIVLTSLow(
+	public boolean validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
 			this, diagnostics, context);
 	}
 
@@ -318,6 +318,50 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
@@ -332,50 +376,6 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	public boolean validateOperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
 			this, diagnostics, context);
 	}
 
@@ -420,6 +420,17 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	public boolean validateOperativeNote2DocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformer(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistants(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformerAssistants(
 			this, diagnostics, context);
 	}
 
