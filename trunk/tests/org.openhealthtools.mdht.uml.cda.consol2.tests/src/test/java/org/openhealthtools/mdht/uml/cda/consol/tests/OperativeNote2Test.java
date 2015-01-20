@@ -40,7 +40,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
 import org.openhealthtools.mdht.uml.hl7.vocab.ActClass;
 import org.openhealthtools.mdht.uml.hl7.vocab.ActMood;
 import org.openhealthtools.mdht.uml.hl7.vocab.ActRelationshipType;
@@ -74,21 +73,22 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2ProcedureDispositionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Procedure Disposition Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2ProcedureIndicationsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Procedure Indications Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2SurgicalDrainsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Surgical Drains Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event IVLTS Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event US Realm Date And Time DT Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assigned Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assigned Entity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assigned Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Effective Time Has High When No Width</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Effective Time No High If Width</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Day</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Minute</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Precise To The Second</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event If More Precise Than Day Include Time Zone Offset</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventProcedureCodes(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Procedure Codes</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEventPerformerAssistants(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2DocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2AuthorizationConsentClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Authorization Consent Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote2#validateOperativeNote2AuthorizationConsentMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Authorization Consent Mood Code</em>}</li>
@@ -878,10 +878,10 @@ public class OperativeNote2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateOperativeNote2DocumentationOfServiceEventIVLTSLow() {
-		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventIVLTSLowTestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2DocumentationOfServiceEventIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow() {
+		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLowTestCase = new OperationsTestCase<OperativeNote2>(
+			"validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow",
+			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -907,13 +907,13 @@ public class OperativeNote2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventIVLTSLow(
+				return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
 					(OperativeNote2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateOperativeNote2DocumentationOfServiceEventIVLTSLowTestCase.doValidationTest();
+		validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLowTestCase.doValidationTest();
 	}
 
 	/**
@@ -1122,6 +1122,217 @@ public class OperativeNote2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode() {
+		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeTestCase = new OperationsTestCase<OperativeNote2>(
+			"validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode",
+			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(OperativeNote2 target) {
+				target.init();
+				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				CE code = DatatypesFactory.eINSTANCE.createCE();
+				ae.setCode(code);
+				perf.setAssignedEntity(ae);
+				se.getPerformers().add(perf);
+				dof.setServiceEvent(se);
+				target.getDocumentationOfs().add(dof);
+
+			}
+
+			@Override
+			public void addPassTests() {
+				final String[] CODE_VALUES = "CP PP RP".split("\\s");
+				for (final String CUR_CODE : CODE_VALUES) {
+					addPassTest(new PassTest() {
+						@Override
+						public void updateToPass(OperativeNote2 target) {
+							target.getDocumentationOfs().clear();
+							DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+							ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+							Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+							AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+							CE code = DatatypesFactory.eINSTANCE.createCE(CUR_CODE, "2.16.840.1.113883.12.443");
+							ae.setCode(code);
+							perf.setAssignedEntity(ae);
+							se.getPerformers().add(perf);
+							dof.setServiceEvent(se);
+							target.getDocumentationOfs().add(dof);
+						}
+					});
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(
+					(OperativeNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP() {
+		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodePTestCase = new OperationsTestCase<OperativeNote2>(
+			"validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(OperativeNote2 target) {
+				target.init();
+				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				perf.setAssignedEntity(ae);
+				se.getPerformers().add(perf);
+				dof.setServiceEvent(se);
+				target.getDocumentationOfs().add(dof);
+
+			}
+
+			@Override
+			protected void updateToPass(OperativeNote2 target) {
+				target.getDocumentationOfs().clear();
+				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				CE code = DatatypesFactory.eINSTANCE.createCE();
+				ae.setCode(code);
+				perf.setAssignedEntity(ae);
+				se.getPerformers().add(perf);
+				dof.setServiceEvent(se);
+				target.getDocumentationOfs().add(dof);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(
+					(OperativeNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode() {
+		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCodeTestCase = new OperationsTestCase<OperativeNote2>(
+			"validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode",
+			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(OperativeNote2 target) {
+				target.init();
+				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
+				dof.setServiceEvent(se);
+				target.getDocumentationOfs().add(dof);
+			}
+
+			@Override
+			protected void updateToPass(OperativeNote2 target) {
+				target.getDocumentationOfs().clear();
+				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
+				se.getPerformers().add(perf);
+				dof.setServiceEvent(se);
+				target.getDocumentationOfs().add(dof);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(
+					(OperativeNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity() {
+		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityTestCase = new OperationsTestCase<OperativeNote2>(
+			"validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity",
+			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(OperativeNote2 target) {
+				target.init();
+				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
+				dof.setServiceEvent(se);
+				target.getDocumentationOfs().add(dof);
+
+			}
+
+			@Override
+			protected void updateToPass(OperativeNote2 target) {
+				target.getDocumentationOfs().clear();
+				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				perf.setAssignedEntity(ae);
+				se.getPerformers().add(perf);
+				dof.setServiceEvent(se);
+				target.getDocumentationOfs().add(dof);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(
+					(OperativeNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidthTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth",
@@ -1221,177 +1432,181 @@ public class OperativeNote2Test extends CDAValidationTest {
 		validateOperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidthTestCase.doValidationTest();
 	}
 
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateOperativeNote2DocumentationOfServiceEventPreciseToTheDay() {
-		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPreciseToTheDayTestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateOperativeNote2DocumentationOfServiceEventPreciseToTheDay() {
+	// OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPreciseToTheDayTestCase = new
+	// OperationsTestCase<OperativeNote2>(
+	// "validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay",
+	// operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(OperativeNote2 target) {
+	// target.init();
+	// DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+	// ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+	// IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912", "2013");
+	// se.setEffectiveTime(ivlts);
+	// dof.setServiceEvent(se);
+	// target.getDocumentationOfs().add(dof);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(OperativeNote2 target) {
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
+	// PRECISE_TO_DAY);
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
+	// PRECISE_TO_MINUTE);
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay(
+	// (OperativeNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateOperativeNote2DocumentationOfServiceEventPreciseToTheDayTestCase.doValidationTest();
+	// }
 
-			@Override
-			protected void updateToFail(OperativeNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912", "2013");
-				se.setEffectiveTime(ivlts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
-			}
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute() {
+	// OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinuteTestCase = new
+	// OperationsTestCase<OperativeNote2>(
+	// "validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute",
+	// operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(OperativeNote2 target) {
+	// target.init();
+	// DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+	// ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+	// IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+	// IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
+	// low.setValue("2009121217");
+	// ts.setLow(low);
+	// se.setEffectiveTime(ts);
+	// dof.setServiceEvent(se);
+	// target.getDocumentationOfs().add(dof);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(OperativeNote2 target) {
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
+	// PRECISE_TO_MINUTE);
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute(
+	// (OperativeNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinuteTestCase.doValidationTest();
+	// }
 
-			@Override
-			protected void updateToPass(OperativeNote2 target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
-					PRECISE_TO_DAY);
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
-					PRECISE_TO_MINUTE);
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond() {
+	// OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecondTestCase = new
+	// OperationsTestCase<OperativeNote2>(
+	// "validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond",
+	// operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(OperativeNote2 target) {
+	// target.init();
+	// DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+	// ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+	// IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+	// IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
+	// high.setValue(PRECISE_TO_MINUTE);
+	// ts.setHigh(high);
+	// se.setEffectiveTime(ts);
+	// dof.setServiceEvent(se);
+	// target.getDocumentationOfs().add(dof);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(OperativeNote2 target) {
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
+	// PRECISE_TO_SECOND);
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond(
+	// (OperativeNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecondTestCase.doValidationTest();
+	// }
 
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPreciseToTheDay(
-					(OperativeNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateOperativeNote2DocumentationOfServiceEventPreciseToTheDayTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute() {
-		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinuteTestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(OperativeNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				low.setValue("2009121217");
-				ts.setLow(low);
-				se.setEffectiveTime(ts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
-			}
-
-			@Override
-			protected void updateToPass(OperativeNote2 target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
-					PRECISE_TO_MINUTE);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinute(
-					(OperativeNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateOperativeNote2DocumentationOfServiceEventPreciseToTheMinuteTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond() {
-		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecondTestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(OperativeNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				high.setValue(PRECISE_TO_MINUTE);
-				ts.setHigh(high);
-				se.setEffectiveTime(ts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
-			}
-
-			@Override
-			protected void updateToPass(OperativeNote2 target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
-					PRECISE_TO_SECOND);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecond(
-					(OperativeNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateOperativeNote2DocumentationOfServiceEventPreciseToTheSecondTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset() {
-		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(OperativeNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE, PRECISE_TO_SECOND);
-				se.setEffectiveTime(ivlts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
-			}
-
-			@Override
-			protected void updateToPass(OperativeNote2 target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
-					PRECISE_TO_MS_WITH_TIMEZONE);
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
-					PRECISE_TO_MINUTE_WITH_TIMEZONE);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
-					(OperativeNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase.doValidationTest();
-	}
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset() {
+	// OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new
+	// OperationsTestCase<OperativeNote2>(
+	// "validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset",
+	// operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(OperativeNote2 target) {
+	// target.init();
+	// DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+	// ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+	// IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE, PRECISE_TO_SECOND);
+	// se.setEffectiveTime(ivlts);
+	// dof.setServiceEvent(se);
+	// target.getDocumentationOfs().add(dof);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(OperativeNote2 target) {
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getLow().setValue(
+	// PRECISE_TO_MS_WITH_TIMEZONE);
+	// target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().getHigh().setValue(
+	// PRECISE_TO_MINUTE_WITH_TIMEZONE);
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
+	// (OperativeNote2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateOperativeNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -1609,6 +1824,50 @@ public class OperativeNote2Test extends CDAValidationTest {
 		};
 
 		validateOperativeNote2DocumentationOfServiceEventPerformerTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssistants() {
+		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTestCase = new OperationsTestCase<OperativeNote2>(
+			"validateOperativeNote2DocumentationOfServiceEventPerformerAssistants",
+			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(OperativeNote2 target) {
+				target.init();
+				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				dof.setServiceEvent(se);
+				target.getDocumentationOfs().add(dof);
+			}
+
+			@Override
+			protected void updateToPass(OperativeNote2 target) {
+				target.getDocumentationOfs().clear();
+				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
+				dof.setServiceEvent(se);
+				target.getDocumentationOfs().add(dof);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformerAssistants(
+					(OperativeNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTestCase.doValidationTest();
 	}
 
 	/**
