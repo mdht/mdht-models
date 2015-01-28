@@ -1674,6 +1674,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_mBa3sYuzEeSZu6J-Yjmr9w" name="2135-2"/>
       <ownedLiteral xmi:id="_mBa3souzEeSZu6J-Yjmr9w" name="2186-5"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3uXygKZKEeSy2PrVxD6riw" name="Physical Exam Type"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3197,4 +3198,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_mBa3tIuzEeSZu6J-Yjmr9w" conceptName="Hispanic or Latino" base_EnumerationLiteral="_mBa3sYuzEeSZu6J-Yjmr9w"/>
   <term:ValueSetCode xmi:id="_mBa3tYuzEeSZu6J-Yjmr9w" conceptName="Not Hispanic or Latino" base_EnumerationLiteral="_mBa3souzEeSZu6J-Yjmr9w"/>
+  <term:ValueSetVersion xmi:id="_3uYZkKZKEeSy2PrVxD6riw" identifier="2.16.840.1.113883.11.20.9.65" version="2014-05-15" source="Value Set Source: http://www.search.loinc.org" definition="Additional section types that may be used under the Physical Examination section." base_Enumeration="_3uXygKZKEeSy2PrVxD6riw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
 </xmi:XMI>

@@ -84,6 +84,7 @@
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_2NWE4xSVEeGGzu7fmW9pXw" base_Property="_2NWE4BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7725</ruleId>
+    <ruleId>R2.0=CONF:1098-7725</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_2NWFABSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2NWE_hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7726.CONF:8804</ruleId>
@@ -346,6 +347,7 @@
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_loOasOMzEeGfv4R-kzpM0g" base_Property="_jNy_oOMzEeGfv4R-kzpM0g">
     <ruleId>CONF:16986</ruleId>
+    <ruleId>R2.0=CONF:1098-16986</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_u1XfsOMzEeGfv4R-kzpM0g" base_Property="_2NP-XRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:14749</ruleId>
@@ -3047,9 +3049,9 @@ Depending on the type of supply, the product or participant will be either a Med
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_bwml0P4yEeO_Yb9cO8w3bA" clientDependency="_bmfyIP4zEeO_Yb9cO8w3bA" name="PlanOfTreatmentSection2">
     <ownedComment xmi:id="_7lKjoP4yEeO_Yb9cO8w3bA">
-      <body>This section contains data that defines pending orders, interventions, encounters, services, and procedures for the patient. It is limited to prospective, unfulfilled, or incomplete orders and requests only. These are indicated by the @moodCode of the entries within this section. All active, incomplete, or pending orders, appointments, referrals, procedures, services, or any other pending event of clinical significance to the current care of the patient should be listed.&#xD;
+      <body>This section, formerly known as &quot;Plan of Care&quot;, contains data that define pending orders, interventions, encounters, services, and procedures for the patient. It is limited to prospective, unfulfilled, or incomplete orders and requests only. These are indicated by the @moodCode of the entries within this section. All active, incomplete, or pending orders, appointments, referrals, procedures, services, or any other pending event of clinical significance to the current care of the patient should be listed.&#xD;
 This section may also contain information about ongoing care of the patient, clinical reminders, patient's values, beliefs, preferences, care expectations, and overarching care goals. &#xD;
-Clinical reminders are placed here to provide prompts for disease prevention and management, patient safety, and health-care quality improvements, including widely accepted performance measures. &#xD;
+Clinical reminders are placed here to provide prompts for disease prevention and management, patient safety, and healthcare quality improvements, including widely accepted performance measures. &#xD;
 Values may include the importance of quality of life over longevity. These values are taken into account when prioritizing all problems and their treatments.&#xD;
 Beliefs may include comfort with dying or the refusal of blood transfusions because of the patient's religious convictions.  &#xD;
 Preferences may include liquid medicines over tablets, or treatment via secure email instead of in person. &#xD;
@@ -3100,82 +3102,92 @@ The plan may also indicate that patient education will be provided.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7KbrQf45EeO_Yb9cO8w3bA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7KbrQv45EeO_Yb9cO8w3bA" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_HBmdQKZREeSy2PrVxD6riw" name="plannedImmunizationActivity" association="_HBoScKZREeSy2PrVxD6riw">
+      <type xmi:type="uml:Class" href="consol-immunizations.uml#_KRcPwJXFEeOgXcDbh8Igkw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HBnEUKZREeSy2PrVxD6riw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HBnEUaZREeSy2PrVxD6riw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Rp3ccKZREeSy2PrVxD6riw" name="goalObservation" type="_-miMII9TEeOB0eBUISUB4Q" association="_Rp5RoKZREeSy2PrVxD6riw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rp4DgKZREeSy2PrVxD6riw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rp4DgaZREeSy2PrVxD6riw" value="*"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_4RLqYP4yEeO_Yb9cO8w3bA" base_Class="_bwml0P4yEeO_Yb9cO8w3bA" templateId="2.16.840.1.113883.10.20.22.2.10" templateVersion="2014-06-09">
-    <ruleId>CONF:7723</ruleId>
-    <ruleId>CONF:10435</ruleId>
+    <ruleId>CONF:1098-7723</ruleId>
+    <ruleId>CONF:1098-10435</ruleId>
+    <ruleId>CONF:1098-32501</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_YSzMwP4zEeO_Yb9cO8w3bA" base_Generalization="_bwppIP4yEeO_Yb9cO8w3bA"/>
   <CDA:CodeSystemConstraint xmi:id="_lXVaEP4zEeO_Yb9cO8w3bA" code="18776-5" displayName="Plan of Treatment" base_Property="_lXUzAP4zEeO_Yb9cO8w3bA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:14750</ruleId>
-    <ruleId>CONF:30813</ruleId>
+    <ruleId>CONF:1098-14750</ruleId>
+    <ruleId>CONF:1098-30813</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_lXXPQP4zEeO_Yb9cO8w3bA" base_Property="_lXUzAP4zEeO_Yb9cO8w3bA">
-    <ruleId>CONF:14749</ruleId>
+    <ruleId>CONF:1098-14749</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_UYbMcP40EeO_Yb9cO8w3bA" memberEnd="_UYZ-UP40EeO_Yb9cO8w3bA _UYbMcf40EeO_Yb9cO8w3bA">
     <ownedEnd xmi:id="_UYbMcf40EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_UYbMcP40EeO_Yb9cO8w3bA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_X0zMsP40EeO_Yb9cO8w3bA" severity="INFO" base_Association="_UYbMcP40EeO_Yb9cO8w3bA">
-    <ruleId>CONF:7726</ruleId>
-    <ruleId>CONF:14751</ruleId>
+    <ruleId>CONF:1098-7726</ruleId>
+    <ruleId>CONF:1098-14751</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_3Ls-IP40EeO_Yb9cO8w3bA" memberEnd="_3Lqh4P40EeO_Yb9cO8w3bA _3LtlMP40EeO_Yb9cO8w3bA">
     <ownedEnd xmi:id="_3LtlMP40EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_3Ls-IP40EeO_Yb9cO8w3bA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_47uKQP40EeO_Yb9cO8w3bA" severity="INFO" base_Association="_3Ls-IP40EeO_Yb9cO8w3bA">
-    <ruleId>CONF:8805</ruleId>
-    <ruleId>CONF:30472</ruleId>
+    <ruleId>CONF:1098-8805</ruleId>
+    <ruleId>CONF:1098-30472</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_boW2gP43EeO_Yb9cO8w3bA" memberEnd="_boVBUP43EeO_Yb9cO8w3bA _boW2gf43EeO_Yb9cO8w3bA">
     <ownedEnd xmi:id="_boW2gf43EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_boW2gP43EeO_Yb9cO8w3bA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_dwjSEP43EeO_Yb9cO8w3bA" severity="INFO" base_Association="_boW2gP43EeO_Yb9cO8w3bA">
-    <ruleId>CONF:8807</ruleId>
-    <ruleId>CONF:30473</ruleId>
+    <ruleId>CONF:1098-8807</ruleId>
+    <ruleId>CONF:1098-30473</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_ppoY4P43EeO_Yb9cO8w3bA" memberEnd="_ppmjsP43EeO_Yb9cO8w3bA _ppoY4f43EeO_Yb9cO8w3bA">
     <ownedEnd xmi:id="_ppoY4f43EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_ppoY4P43EeO_Yb9cO8w3bA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_q2ueIP43EeO_Yb9cO8w3bA" severity="INFO" base_Association="_ppoY4P43EeO_Yb9cO8w3bA">
-    <ruleId>CONF:8809</ruleId>
-    <ruleId>CONF:30474</ruleId>
+    <ruleId>CONF:1098-8809</ruleId>
+    <ruleId>CONF:1098-30474</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_VTBPoP44EeO_Yb9cO8w3bA" memberEnd="_VS-zYP44EeO_Yb9cO8w3bA _VTBPof44EeO_Yb9cO8w3bA">
     <ownedEnd xmi:id="_VTBPof44EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_VTBPoP44EeO_Yb9cO8w3bA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_V02KUP44EeO_Yb9cO8w3bA" severity="INFO" base_Association="_VTBPoP44EeO_Yb9cO8w3bA">
-    <ruleId>CONF:8811</ruleId>
-    <ruleId>CONF:30475</ruleId>
+    <ruleId>CONF:1098-8811</ruleId>
+    <ruleId>CONF:1098-30475</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_fvhqwP44EeO_Yb9cO8w3bA" memberEnd="_fvfOgP44EeO_Yb9cO8w3bA _fvhqwf44EeO_Yb9cO8w3bA">
     <ownedEnd xmi:id="_fvhqwf44EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_fvhqwP44EeO_Yb9cO8w3bA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_hzS5UP44EeO_Yb9cO8w3bA" severity="INFO" base_Association="_fvhqwP44EeO_Yb9cO8w3bA">
-    <ruleId>CONF:8813</ruleId>
-    <ruleId>CONF:30476</ruleId>
+    <ruleId>CONF:1098-8813</ruleId>
+    <ruleId>CONF:1098-30476</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_ZQeuQP45EeO_Yb9cO8w3bA" memberEnd="_ZQcSAP45EeO_Yb9cO8w3bA _ZQeuQf45EeO_Yb9cO8w3bA">
     <ownedEnd xmi:id="_ZQeuQf45EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_ZQeuQP45EeO_Yb9cO8w3bA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_aNtLgP45EeO_Yb9cO8w3bA" severity="INFO" base_Association="_ZQeuQP45EeO_Yb9cO8w3bA">
-    <ruleId>CONF:14695</ruleId>
-    <ruleId>CONF:31397</ruleId>
+    <ruleId>CONF:1098-14695</ruleId>
+    <ruleId>CONF:1098-31397</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_nEMVwP45EeO_Yb9cO8w3bA" memberEnd="_nEKgkP45EeO_Yb9cO8w3bA _nEM80P45EeO_Yb9cO8w3bA">
     <ownedEnd xmi:id="_nEM80P45EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_nEMVwP45EeO_Yb9cO8w3bA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_oSDQAP45EeO_Yb9cO8w3bA" severity="INFO" base_Association="_nEMVwP45EeO_Yb9cO8w3bA">
-    <ruleId>CONF:29621</ruleId>
-    <ruleId>CONF:30868</ruleId>
+    <ruleId>CONF:1098-29621</ruleId>
+    <ruleId>CONF:1098-30868</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_7Kc5YP45EeO_Yb9cO8w3bA" memberEnd="_7KbrQP45EeO_Yb9cO8w3bA _7Kc5Yf45EeO_Yb9cO8w3bA">
     <ownedEnd xmi:id="_7Kc5Yf45EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_7Kc5YP45EeO_Yb9cO8w3bA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_70y24P45EeO_Yb9cO8w3bA" severity="INFO" base_Association="_7Kc5YP45EeO_Yb9cO8w3bA">
-    <ruleId>CONF:31841</ruleId>
-    <ruleId>CONF:31864</ruleId>
+    <ruleId>CONF:1098-31841</ruleId>
+    <ruleId>CONF:1098-31864</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_t8B9YB5QEeSAEtTUKjFlSA" base_Property="_NrPC4OgTEeO-iJTuAv7BKQ">
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
@@ -3515,5 +3527,19 @@ The plan may also indicate that patient education will be provided.</body>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_KgRv4D3gEeSyGa6KC25kiw" base_Association="_JZrUMD3gEeSyGa6KC25kiw">
     <ruleId>CONF:32086</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_HBoScKZREeSy2PrVxD6riw" memberEnd="_HBmdQKZREeSy2PrVxD6riw _HBoScaZREeSy2PrVxD6riw">
+    <ownedEnd xmi:id="_HBoScaZREeSy2PrVxD6riw" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_HBoScKZREeSy2PrVxD6riw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_HvhTMKZREeSy2PrVxD6riw" severity="INFO" base_Association="_HBoScKZREeSy2PrVxD6riw">
+    <ruleId>CONF:1098-32353</ruleId>
+    <ruleId>CONF:1098-32354</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_Rp5RoKZREeSy2PrVxD6riw" memberEnd="_Rp3ccKZREeSy2PrVxD6riw _Rp5RoaZREeSy2PrVxD6riw">
+    <ownedEnd xmi:id="_Rp5RoaZREeSy2PrVxD6riw" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_Rp5RoKZREeSy2PrVxD6riw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_SODuoKZREeSy2PrVxD6riw" severity="INFO" base_Association="_Rp5RoKZREeSy2PrVxD6riw">
+    <ruleId>CONF:1098-32887</ruleId>
+    <ruleId>CONF:1098-32888</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>

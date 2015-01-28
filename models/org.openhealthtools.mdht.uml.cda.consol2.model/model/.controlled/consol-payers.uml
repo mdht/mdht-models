@@ -57,9 +57,11 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_2MZCoBSVEeGGzu7fmW9pXw" base_Property="_2MYbkBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7926</ruleId>
+    <ruleId>R2.0=CONF:1098-7926</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_2MZpsBSVEeGGzu7fmW9pXw" base_Property="_2MZCoRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7927</ruleId>
+    <ruleId>R2.0=CONF:1098-7927</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_PZBdMBUlEeGvPruliC3crg" name="PolicyActivity">
     <ownedComment xmi:id="_p8E5gFzAEeGt2doqSDULjA">
@@ -1163,7 +1165,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_twgM0P4lEeOzC5ykp-XCaA" clientDependency="_H268EP4mEeOzC5ykp-XCaA" name="PayersSection2">
     <ownedComment xmi:id="_1F8wYP4lEeOzC5ykp-XCaA">
-      <body>The Payers section contains data on the patient's payers, whether a 'third party' insurance, self-pay, other payer or guarantor, or some combination of payers, and is used to define which entity is the responsible fiduciary for the financial aspects of a patient's care.&#xD;
+      <body>The Payers Section contains data on the patient's payers, whether &quot;third party&quot; insurance, self-pay, other payer or guarantor, or some combination of payers, and is used to define which entity is the responsible fiduciary for the financial aspects of a patient's care.&#xD;
 Each unique instance of a payer and all the pertinent data needed to contact, bill to, and collect from that payer should be included. Authorization information that can be used to define pertinent referral, authorization tracking number, procedure, therapy, intervention, device, or similar authorizations for the patient or provider, or both should be included. At a minimum, the patient's pertinent current payment sources should be listed.&#xD;
 The sources of payment are represented as a Coverage Activity, which identifies all of the insurance policies or government or other programs that cover some or all of the patient's healthcare expenses. The policies or programs are sequenced by preference. The Coverage Activity has a sequence number that represents the preference order. Each policy or program identifies the covered party with respect to the payer, so that the identifiers can be recorded.</body>
     </ownedComment>
@@ -1178,23 +1180,24 @@ The sources of payment are represented as a Coverage Activity, which identifies 
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_yGcSUP4lEeOzC5ykp-XCaA" base_Class="_twgM0P4lEeOzC5ykp-XCaA" templateId="2.16.840.1.113883.10.20.22.2.18" templateVersion="2014-06-09">
-    <ruleId>CONF:7924</ruleId>
-    <ruleId>CONF:10434</ruleId>
+    <ruleId>CONF:1098-7924</ruleId>
+    <ruleId>CONF:1098-10434</ruleId>
+    <ruleId>CONF:1098-15395</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_GQnsoP4mEeOzC5ykp-XCaA" base_Generalization="_twipEP4lEeOzC5ykp-XCaA"/>
   <CDA:CodeSystemConstraint xmi:id="_KlFygf4mEeOzC5ykp-XCaA" code="48768-6" displayName="Payers" base_Property="_KlFygP4mEeOzC5ykp-XCaA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15396</ruleId>
-    <ruleId>CONF:32149</ruleId>
+    <ruleId>CONF:1098-15396</ruleId>
+    <ruleId>CONF:1098-32149</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_KlHAoP4mEeOzC5ykp-XCaA" base_Property="_KlFygP4mEeOzC5ykp-XCaA">
-    <ruleId>CONF:15395</ruleId>
+    <ruleId>CONF:1098-15395</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_ZcQbEP4mEeOzC5ykp-XCaA" memberEnd="_ZcOl4P4mEeOzC5ykp-XCaA _ZcRCIP4mEeOzC5ykp-XCaA">
     <ownedEnd xmi:id="_ZcRCIP4mEeOzC5ykp-XCaA" type="_twgM0P4lEeOzC5ykp-XCaA" association="_ZcQbEP4mEeOzC5ykp-XCaA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_a_NbkP4mEeOzC5ykp-XCaA" severity="WARNING" base_Association="_ZcQbEP4mEeOzC5ykp-XCaA">
-    <ruleId>CONF:7959</ruleId>
-    <ruleId>CONF:15501</ruleId>
+    <ruleId>CONF:1098-7959</ruleId>
+    <ruleId>CONF:1098-15501</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>

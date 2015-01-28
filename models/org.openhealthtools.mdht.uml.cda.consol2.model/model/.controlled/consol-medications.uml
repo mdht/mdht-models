@@ -605,17 +605,17 @@ Medication timing is complex. This template requires that there be a substanceAd
     <ownedAttribute xmi:id="_2PokARSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_CrfMEFmsEeGRqYkwoeymcA" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EAG1oVmsEeGRqYkwoeymcA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EAG1oFmsEeGRqYkwoeymcA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_CrfzIFmsEeGRqYkwoeymcA" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ehr4sVmsEeGRqYkwoeymcA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ehr4sFmsEeGRqYkwoeymcA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_CrfMEFmsEeGRqYkwoeymcA" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EAG1oVmsEeGRqYkwoeymcA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EAG1oFmsEeGRqYkwoeymcA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_KTZYoFmsEeGRqYkwoeymcA" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_KTbN0FmsEeGRqYkwoeymcA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LUqoYVmsEeGRqYkwoeymcA"/>
@@ -701,9 +701,11 @@ This section requires that there be either an entry indicating the subject is no
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2KHKsRSVEeGGzu7fmW9pXw" base_Property="_2KHKsBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7946</ruleId>
+    <ruleId>R2.0=CONF:1098-7946</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2KHKtRSVEeGGzu7fmW9pXw" base_Property="_2KHKshSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7947</ruleId>
+    <ruleId>R2.0=CONF:1098-7947</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_2KHxxRSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2KHxwxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7948.CONF:8755</ruleId>
@@ -935,17 +937,17 @@ The UDI should be sent in the participantRole/id.</body>
     <ownedAttribute xmi:id="_2Poj6RSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_6Xx3MEFGEeGorO80f-Cppg" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7pldUUFGEeGorO80f-Cppg" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7pldUEFGEeGorO80f-Cppg" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_6Xx3M0FGEeGorO80f-Cppg" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8HikoUFGEeGorO80f-Cppg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8HikoEFGEeGorO80f-Cppg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6Xx3MEFGEeGorO80f-Cppg" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7pldUUFGEeGorO80f-Cppg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7pldUEFGEeGorO80f-Cppg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IfrmAEFHEeGorO80f-Cppg" name="admissionMedication" type="_LNP08EFGEeGorO80f-Cppg" association="_IfrmAkFHEeGorO80f-Cppg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ni36gVjqEeGRqYkwoeymcA"/>
@@ -1128,9 +1130,11 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:TextValue xmi:id="_jKAbsB-qEeGKirKJsFylGA" base_Property="_2NJ3phSVEeGGzu7fmW9pXw"/>
   <CDA:TextValue xmi:id="_9b_aYB-tEeGKirKJsFylGA" base_Property="_iAoXJBVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7793</ruleId>
+    <ruleId>R2.0=CONF:1098-7793</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_AHD5gB-uEeGKirKJsFylGA" base_Property="_iAoXJRVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7794</ruleId>
+    <ruleId>R2.0=CONF:1098-7794</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_RpJawB-vEeGKirKJsFylGA" base_Property="_2GkHcBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7496</ruleId>
@@ -1223,9 +1227,11 @@ The UDI should be sent in the participantRole/id.</body>
   </uml:Association>
   <CDA:PropertyValidation xmi:id="_9FFK8EFGEeGorO80f-Cppg" base_Property="_6Xx3MEFGEeGorO80f-Cppg">
     <ruleId>CONF:10101</ruleId>
+    <ruleId>R2.0=CONF:1098-10101</ruleId>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_9dENIEFGEeGorO80f-Cppg" base_Property="_6Xx3M0FGEeGorO80f-Cppg">
     <ruleId>CONF:10100</ruleId>
+    <ruleId>R2.0=CONF:1098-10100</ruleId>
   </CDA:TextValue>
   <uml:Class xmi:id="_LNP08EFGEeGorO80f-Cppg" name="AdmissionMedication">
     <ownedComment xmi:id="_NdKLUHhrEeGJtvg2iiStYg">
@@ -1334,9 +1340,11 @@ The UDI should be sent in the participantRole/id.</body>
   </uml:Association>
   <CDA:TextValue xmi:id="_FqrhEFmsEeGRqYkwoeymcA" base_Property="_CrfzIFmsEeGRqYkwoeymcA">
     <ruleId>CONF:8154</ruleId>
+    <ruleId>R2.0=CONF:1098-8154</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_GxDTQFmsEeGRqYkwoeymcA" base_Property="_CrfMEFmsEeGRqYkwoeymcA">
     <ruleId>CONF:8155</ruleId>
+    <ruleId>R2.0=CONF:1098-8155</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_KTbN0FmsEeGRqYkwoeymcA" memberEnd="_KTZYoFmsEeGRqYkwoeymcA _KTb04FmsEeGRqYkwoeymcA">
     <ownedEnd xmi:id="_KTb04FmsEeGRqYkwoeymcA" type="_2Poj_BSVEeGGzu7fmW9pXw" association="_KTbN0FmsEeGRqYkwoeymcA"/>
@@ -2166,7 +2174,7 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_ZLY3MPyqEeOlg_Cnc5bODw" clientDependency="_0HqQYPyqEeOlg_Cnc5bODw" name="AdmissionMedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_hnpR0PyqEeOlg_Cnc5bODw">
-      <body>The section contains the medications administered prior to admission to the facility. The currently active medications must also be listed.</body>
+      <body>The section contains the medications taken by the patient prior to and at the time of admission to the facility.</body>
     </ownedComment>
     <generalization xmi:id="_ZLbTcPyqEeOlg_Cnc5bODw" general="_2Poj5BSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_0HqQYPyqEeOlg_Cnc5bODw" name="HospitalAdmissionMedicationsSectionEntriesOptional" client="_ZLY3MPyqEeOlg_Cnc5bODw" supplier="_2Poj5BSVEeGGzu7fmW9pXw" contract="_2Poj5BSVEeGGzu7fmW9pXw"/>
@@ -2179,29 +2187,30 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_dxv-UPyqEeOlg_Cnc5bODw" base_Class="_ZLY3MPyqEeOlg_Cnc5bODw" templateId="2.16.840.1.113883.10.20.22.2.44" templateVersion="2014-06-09">
-    <ruleId>CONF:10098</ruleId>
-    <ruleId>CONF:10392</ruleId>
+    <ruleId>CONF:1098-10098</ruleId>
+    <ruleId>CONF:1098-10392</ruleId>
+    <ruleId>CONF:1098-32560</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_ydsB4PyqEeOlg_Cnc5bODw" base_Generalization="_ZLbTcPyqEeOlg_Cnc5bODw"/>
   <CDA:CodeSystemConstraint xmi:id="_3BxREPyqEeOlg_Cnc5bODw" code="42346-7" displayName="Medications on Admission" base_Property="_3BwqAPyqEeOlg_Cnc5bODw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15483</ruleId>
-    <ruleId>CONF:32142</ruleId>
+    <ruleId>CONF:1098-15483</ruleId>
+    <ruleId>CONF:1098-32142</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_3BztUPyqEeOlg_Cnc5bODw" base_Property="_3BwqAPyqEeOlg_Cnc5bODw">
-    <ruleId>CONF:15482</ruleId>
+    <ruleId>CONF:1098-15482</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_9ZvqUPyrEeOlg_Cnc5bODw" memberEnd="_9ZsnAPyrEeOlg_Cnc5bODw _9ZvqUfyrEeOlg_Cnc5bODw">
     <ownedEnd xmi:id="_9ZvqUfyrEeOlg_Cnc5bODw" type="_ZLY3MPyqEeOlg_Cnc5bODw" association="_9ZvqUPyrEeOlg_Cnc5bODw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_-48zQPyrEeOlg_Cnc5bODw" severity="WARNING" base_Association="_9ZvqUPyrEeOlg_Cnc5bODw">
-    <ruleId>CONF:10102</ruleId>
-    <ruleId>CONF:15484</ruleId>
+    <ruleId>CONF:1098-10102</ruleId>
+    <ruleId>CONF:1098-15484</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_5OKxwP1bEeO5Hq-yrsJSmg" clientDependency="_QpJ1gP1cEeO5Hq-yrsJSmg" name="MedicalEquipmentSection2">
     <ownedComment xmi:id="_GwZnsP1cEeO5Hq-yrsJSmg">
       <body>This section defines a patient's implanted and external health and medical devices and equipment. This section lists any pertinent durable medical equipment (DME) used to help maintain the patient's health status. All equipment relevant to the diagnosis, care, or treatment of a patient should be included. &#xD;
-Devices applied to, or placed in, the patient are represented with the Procedure Activity Procedure (V2) template. Equipment supplied to the patient (e.g. pumps, inhalers, wheelchairs) is represented by the Non-Medicinal Supply Activity V2 template.&#xD;
+Devices applied to, or placed in, the patient are represented with the Procedure Activity Procedure (V2) template. Equipment supplied to the patient (e.g., pumps, inhalers, wheelchairs) is represented by the Non-Medicinal Supply Activity V2 template.&#xD;
 These devices may be grouped together within a Medical Equipment Organizer. The organizer would probably not be used with devices applied in or on the patient but rather to organize a group of medical supplies the patient has been supplied with.</body>
     </ownedComment>
     <generalization xmi:id="_5OOcIP1bEeO5Hq-yrsJSmg" general="_2KEucBSVEeGGzu7fmW9pXw"/>
@@ -2225,42 +2234,42 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_-QVEEP1bEeO5Hq-yrsJSmg" base_Class="_5OKxwP1bEeO5Hq-yrsJSmg" templateId="2.16.840.1.113883.10.20.22.2.23" templateVersion="2014-06-09">
-    <ruleId>CONF:7944</ruleId>
-    <ruleId>CONF:10404</ruleId>
+    <ruleId>CONF:1098-7944.CONF:1098-10404</ruleId>
+    <ruleId>CONF:1098-32523</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_NUwskP1cEeO5Hq-yrsJSmg" base_Generalization="_5OOcIP1bEeO5Hq-yrsJSmg"/>
   <CDA:CodeSystemConstraint xmi:id="_3QYLMP1iEeO5Hq-yrsJSmg" code="46264-8" displayName="Medical Equipment" base_Property="_3QXkIP1iEeO5Hq-yrsJSmg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15382</ruleId>
-    <ruleId>CONF:30828</ruleId>
+    <ruleId>CONF:1098-15382</ruleId>
+    <ruleId>CONF:1098-30828</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_3QancP1iEeO5Hq-yrsJSmg" base_Property="_3QXkIP1iEeO5Hq-yrsJSmg">
-    <ruleId>CONF:15381</ruleId>
+    <ruleId>CONF:1098-15381</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_Gndp8P1jEeO5Hq-yrsJSmg" memberEnd="_Gncb0P1jEeO5Hq-yrsJSmg _GneRAP1jEeO5Hq-yrsJSmg">
     <ownedEnd xmi:id="_GneRAP1jEeO5Hq-yrsJSmg" type="_5OKxwP1bEeO5Hq-yrsJSmg" association="_Gndp8P1jEeO5Hq-yrsJSmg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_I3XQAP1jEeO5Hq-yrsJSmg" severity="WARNING" base_Association="_Gndp8P1jEeO5Hq-yrsJSmg">
-    <ruleId>CONF:31125</ruleId>
-    <ruleId>CONF:31861</ruleId>
+    <ruleId>CONF:1098-31125</ruleId>
+    <ruleId>CONF:1098-31861</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_0uxUoP1jEeO5Hq-yrsJSmg" memberEnd="_0uwGgP1jEeO5Hq-yrsJSmg _0ux7sP1jEeO5Hq-yrsJSmg">
     <ownedEnd xmi:id="_0ux7sP1jEeO5Hq-yrsJSmg" type="_5OKxwP1bEeO5Hq-yrsJSmg" association="_0uxUoP1jEeO5Hq-yrsJSmg"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_1Z1q4P1jEeO5Hq-yrsJSmg" severity="WARNING" base_Association="_0uxUoP1jEeO5Hq-yrsJSmg">
-    <ruleId>CONF:7948</ruleId>
-    <ruleId>CONF:30351</ruleId>
+  <CDA:AssociationValidation xmi:id="_1Z1q4P1jEeO5Hq-yrsJSmg" severity="INFO" base_Association="_0uxUoP1jEeO5Hq-yrsJSmg">
+    <ruleId>CONF:1098-7948</ruleId>
+    <ruleId>CONF:1098-30351</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_HN47UP1kEeO5Hq-yrsJSmg" memberEnd="_HN2fEP1kEeO5Hq-yrsJSmg _HN47Uf1kEeO5Hq-yrsJSmg">
     <ownedEnd xmi:id="_HN47Uf1kEeO5Hq-yrsJSmg" type="_5OKxwP1bEeO5Hq-yrsJSmg" association="_HN47UP1kEeO5Hq-yrsJSmg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_IiWM0P1kEeO5Hq-yrsJSmg" severity="WARNING" base_Association="_HN47UP1kEeO5Hq-yrsJSmg">
-    <ruleId>CONF:31885</ruleId>
-    <ruleId>CONF:31886</ruleId>
+    <ruleId>CONF:1098-31885</ruleId>
+    <ruleId>CONF:1098-31886</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_F37nMP4jEeOwFalSp0fRiw" clientDependency="_iESIMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection2">
     <ownedComment xmi:id="_cc_vkP4jEeOwFalSp0fRiw">
-      <body>The Medications Administered Section contains medications and fluids administered during a procedure. The section may also contain the procedure's encounter or other activity, excluding anesthetic medications. This section is not intended for ongoing medications and medication history.</body>
+      <body>The Medications Administered Section usually resides inside a Procedure Note describing a procedure. This section defines medications and fluids administered during the procedure, its related encounter, or other procedure related activity excluding anesthetic medications. Anesthesia medications should be documented as described in the Anesthesia Section templateId 2.16.840.1.113883.10.20.22.2.25.</body>
     </ownedComment>
     <generalization xmi:id="_F3_RkP4jEeOwFalSp0fRiw" general="_2Poj_BSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_iESIMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection" client="_F37nMP4jEeOwFalSp0fRiw" supplier="_2Poj_BSVEeGGzu7fmW9pXw" contract="_2Poj_BSVEeGGzu7fmW9pXw"/>
@@ -2273,24 +2282,25 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_XzcKgP4jEeOwFalSp0fRiw" base_Class="_F37nMP4jEeOwFalSp0fRiw" templateId="2.16.840.1.113883.10.20.22.2.38" templateVersion="2014-06-09">
-    <ruleId>CONF:8152</ruleId>
-    <ruleId>CONF:10405</ruleId>
+    <ruleId>CONF:1098-8152</ruleId>
+    <ruleId>CONF:1098-10405</ruleId>
+    <ruleId>CONF:1098-32525</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_elEPUP4jEeOwFalSp0fRiw" base_Generalization="_F3_RkP4jEeOwFalSp0fRiw"/>
   <CDA:CodeSystemConstraint xmi:id="_yRsyAP4jEeOwFalSp0fRiw" code="29549-3" displayName="Medications Administered" base_Property="_yRsK8P4jEeOwFalSp0fRiw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15384</ruleId>
-    <ruleId>CONF:30829</ruleId>
+    <ruleId>CONF:1098-15384</ruleId>
+    <ruleId>CONF:1098-30829</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_yRvOQP4jEeOwFalSp0fRiw" base_Property="_yRsK8P4jEeOwFalSp0fRiw">
-    <ruleId>CONF:15383</ruleId>
+    <ruleId>CONF:1098-15383</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="__dlkgP4jEeOwFalSp0fRiw" memberEnd="__djIQP4jEeOwFalSp0fRiw __dmLkP4jEeOwFalSp0fRiw">
     <ownedEnd xmi:id="__dmLkP4jEeOwFalSp0fRiw" type="_F37nMP4jEeOwFalSp0fRiw" association="__dlkgP4jEeOwFalSp0fRiw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_BbDWwP4kEeOwFalSp0fRiw" severity="INFO" base_Association="__dlkgP4jEeOwFalSp0fRiw">
-    <ruleId>CONF:8156</ruleId>
-    <ruleId>CONF:15499</ruleId>
+    <ruleId>CONF:1098-8156</ruleId>
+    <ruleId>CONF:1098-15499</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_JUvaUAFaEeS0nNJt6oyOyQ" clientDependency="_f7UloAFaEeS0nNJt6oyOyQ" name="MedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_R4TW0AFaEeS0nNJt6oyOyQ">
@@ -2298,8 +2308,10 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     </ownedComment>
     <ownedRule xmi:id="_GHMuAAFfEeS0nNJt6oyOyQ" name="absenceOfMedications">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GHMuAgFfEeS0nNJt6oyOyQ">
+        <language>OCL</language>
         <language>Analysis</language>
-        <body>target entry Medication Activity (V2) if present, MAY contain zero or one [0..1] @nullFlavor</body>
+        <body>true</body>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_JUxPgAFaEeS0nNJt6oyOyQ" general="_iAoXEBVdEeGQCvUGzi1kDQ"/>
@@ -2313,47 +2325,47 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_N00TQAFaEeS0nNJt6oyOyQ" base_Class="_JUvaUAFaEeS0nNJt6oyOyQ" templateId="2.16.840.1.113883.10.20.22.2.1" templateVersion="2014-06-09">
-    <ruleId>CONF:7791</ruleId>
-    <ruleId>CONF:10432</ruleId>
+    <ruleId>CONF:1098-7791</ruleId>
+    <ruleId>CONF:1098-10432</ruleId>
+    <ruleId>CONF:1098-32500</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_eOKgQAFaEeS0nNJt6oyOyQ" base_Generalization="_JUxPgAFaEeS0nNJt6oyOyQ"/>
   <CDA:CodeSystemConstraint xmi:id="_9cOpUQFbEeS0nNJt6oyOyQ" code="10160-0" displayName="History of medication use" base_Property="_9cOpUAFbEeS0nNJt6oyOyQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15386</ruleId>
-    <ruleId>CONF:30824</ruleId>
+    <ruleId>CONF:1098-15386</ruleId>
+    <ruleId>CONF:1098-30824</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_DVQ5QAFcEeS0nNJt6oyOyQ" base_Property="_9cOpUAFbEeS0nNJt6oyOyQ">
-    <ruleId>CONF:15385</ruleId>
+    <ruleId>CONF:1098-15385</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_S7tXwAFeEeS0nNJt6oyOyQ" memberEnd="_S7rikAFeEeS0nNJt6oyOyQ _S7tXwQFeEeS0nNJt6oyOyQ">
     <ownedEnd xmi:id="_S7tXwQFeEeS0nNJt6oyOyQ" type="_JUvaUAFaEeS0nNJt6oyOyQ" association="_S7tXwAFeEeS0nNJt6oyOyQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_UcLsAAFeEeS0nNJt6oyOyQ" severity="WARNING" base_Association="_S7tXwAFeEeS0nNJt6oyOyQ">
-    <ruleId>CONF:7795</ruleId>
-    <ruleId>CONF:10076</ruleId>
+    <ruleId>CONF:1098-7795</ruleId>
+    <ruleId>CONF:1098-10076</ruleId>
   </CDA:AssociationValidation>
-  <CDA:ConstraintValidation xmi:id="_aUYZAAFfEeS0nNJt6oyOyQ" severity="INFO" base_Constraint="_GHMuAAFfEeS0nNJt6oyOyQ">
-    <ruleId>CONF:15984</ruleId>
-  </CDA:ConstraintValidation>
   <uml:Class xmi:id="_P2mp4ALQEeS0YMHMf4rRtQ" clientDependency="_jpry0ALQEeS0YMHMf4rRtQ" name="MedicationsSection2">
     <ownedComment xmi:id="_w0ZgoALQEeS0YMHMf4rRtQ">
       <body>The Medications Section contains a patient's current medications and pertinent medication history. At a minimum, the currently active medications are listed. An entire medication history is an option. The section can describe a patient's prescription and dispense history and information about intended drug monitoring. &#xD;
 This section requires either an entry indicating the subject is not known to be on any medications or entries summarizing the subject's medications.</body>
     </ownedComment>
-    <ownedRule xmi:id="_fcsjEALSEeS0YMHMf4rRtQ" name="absenceOfMedications">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fcsjEQLSEeS0YMHMf4rRtQ">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
-        <body>true</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_P2ofEALQEeS0YMHMf4rRtQ" general="_JUvaUAFaEeS0nNJt6oyOyQ"/>
     <substitution xmi:id="_jpry0ALQEeS0YMHMf4rRtQ" name="MedicationsSection" client="_P2mp4ALQEeS0YMHMf4rRtQ" supplier="_2NIpgBSVEeGGzu7fmW9pXw" contract="_2NIpgBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_RBbZ4KZFEeSy2PrVxD6riw" name="nullFlavor" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RBbZ4aZFEeSy2PrVxD6riw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RBbZ4qZFEeSy2PrVxD6riw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_UO1KAKZFEeSy2PrVxD6riw" value="NI"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_1zOyIALQEeS0YMHMf4rRtQ" name="code" visibility="private" redefinedProperty="_9cOpUAFbEeS0nNJt6oyOyQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_tOrhsALREeS0YMHMf4rRtQ" name="medicationActivity2" type="_WnSCMOLAEeOc7-TVP7Wi6w" redefinedProperty="_S7rikAFeEeS0nNJt6oyOyQ" association="_tOsv0ALREeS0YMHMf4rRtQ">
+      <ownedComment xmi:id="_F_v1IKZFEeSy2PrVxD6riw">
+        <body>If section/@nullFlavor is not present:</body>
+      </ownedComment>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wAF5YQLREeS0YMHMf4rRtQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wAF5YALREeS0YMHMf4rRtQ" value="*"/>
     </ownedAttribute>
@@ -2367,30 +2379,28 @@ This section requires either an entry indicating the subject is not known to be 
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_V7Gi8ALQEeS0YMHMf4rRtQ" base_Class="_P2mp4ALQEeS0YMHMf4rRtQ" templateId="2.16.840.1.113883.10.20.22.2.1.1" templateVersion="2014-06-09">
-    <ruleId>CONF:7568</ruleId>
-    <ruleId>CONF:10433</ruleId>
+    <ruleId>CONF:1098-7568</ruleId>
+    <ruleId>CONF:1098-10433</ruleId>
+    <ruleId>CONF:1098-32499</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_e1H3oALQEeS0YMHMf4rRtQ" base_Generalization="_P2ofEALQEeS0YMHMf4rRtQ"/>
   <CDA:CodeSystemConstraint xmi:id="_1zPZMALQEeS0YMHMf4rRtQ" code="10160-0" displayName="History of medication use" base_Property="_1zOyIALQEeS0YMHMf4rRtQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15388</ruleId>
-    <ruleId>CONF:30825</ruleId>
+    <ruleId>CONF:1098-15388</ruleId>
+    <ruleId>CONF:1098-30825</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_1zQnUALQEeS0YMHMf4rRtQ" base_Property="_1zOyIALQEeS0YMHMf4rRtQ">
-    <ruleId>CONF:15387</ruleId>
+    <ruleId>CONF:1098-15387</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_tOsv0ALREeS0YMHMf4rRtQ" memberEnd="_tOrhsALREeS0YMHMf4rRtQ _tOtW4ALREeS0YMHMf4rRtQ">
     <ownedEnd xmi:id="_tOtW4ALREeS0YMHMf4rRtQ" type="_P2mp4ALQEeS0YMHMf4rRtQ" association="_tOsv0ALREeS0YMHMf4rRtQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_vElTYALREeS0YMHMf4rRtQ" base_Association="_tOsv0ALREeS0YMHMf4rRtQ">
-    <ruleId>CONF:7572</ruleId>
-    <ruleId>CONF:10077</ruleId>
+    <ruleId>CONF:1098-7572</ruleId>
+    <ruleId>CONF:1098-10077</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_lq4uMALTEeS0YMHMf4rRtQ" base_Property="_lq4HIALTEeS0YMHMf4rRtQ">
-    <ruleId>CONF:7571</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_qDd4AALTEeS0YMHMf4rRtQ" base_Property="_lq5VQALTEeS0YMHMf4rRtQ">
-    <ruleId>CONF:7570</ruleId>
+    <ruleId>CONF:1098-7571</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_v45IADhBEeS1WeMhbm6GZw" severity="WARNING" base_Property="_thJNgDhBEeS1WeMhbm6GZw">
     <ruleId>CONF:16854</ruleId>
@@ -2474,4 +2484,10 @@ This section requires either an entry indicating the subject is not known to be 
   <CDA:AssociationValidation xmi:id="_MwsM8D3YEeSyGa6KC25kiw" base_Association="_JI8qMD3YEeSyGa6KC25kiw">
     <ruleId>CONF:31883</ruleId>
   </CDA:AssociationValidation>
+  <CDA:TextValue xmi:id="_2rwtsKZEEeSy2PrVxD6riw" base_Property="_lq5VQALTEeS0YMHMf4rRtQ">
+    <ruleId>CONF:1098-7570</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_R3HEsKZFEeSy2PrVxD6riw" severity="INFO" base_Property="_RBbZ4KZFEeSy2PrVxD6riw">
+    <ruleId>CONF:1098-32845</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
