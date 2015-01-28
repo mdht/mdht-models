@@ -341,9 +341,11 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_SzayYCscEeGQ5rkpDKAt8A" base_Property="_1RZdKBVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7930</ruleId>
+    <ruleId>R2.0=CONF:1098-7930</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_TtyI4CscEeGQ5rkpDKAt8A" base_Property="_1RZdKRVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7931</ruleId>
+    <ruleId>R2.0=CONF:1098-7931</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_m-faACsbEeGQ5rkpDKAt8A" memberEnd="_m-ey8CsbEeGQ5rkpDKAt8A _m-gBECsbEeGQ5rkpDKAt8A">
     <ownedEnd xmi:id="_m-gBECsbEeGQ5rkpDKAt8A" type="_1RZdIBVdEeGQCvUGzi1kDQ" association="_m-faACsbEeGQ5rkpDKAt8A"/>
@@ -672,49 +674,66 @@ The general category of the patient's directive is documented in the observation
     <ownedComment xmi:id="_pViksAFXEeSLIY0bHb-fFQ">
       <body>This section contains data defining the patient's advance directives and any reference to supporting documentation, including living wills, healthcare proxies, and CPR and resuscitation status. If the referenced documents are available, they can be included in the exchange package. &#xD;
 The most recent directives are required, if known, and should be listed in as much detail as possible. &#xD;
-This section differentiates between 'advance directives' and 'advance directive documents'. The former is the directions to be followed whereas the latter refers to a legal document containing those directions.</body>
+This section differentiates between &quot;advance directives&quot; and &quot;advance directive documents&quot;. The former is the directions to be followed whereas the latter refers to a legal document containing those directions.</body>
     </ownedComment>
     <generalization xmi:id="_jsNksAFXEeSLIY0bHb-fFQ" general="_1RZdIBVdEeGQCvUGzi1kDQ"/>
     <substitution xmi:id="_8GwoAAFXEeSLIY0bHb-fFQ" name="AdvanceDirectivesSectionEntriesOptional" client="_jsKhYAFXEeSLIY0bHb-fFQ" supplier="_1RZdIBVdEeGQCvUGzi1kDQ" contract="_1RZdIBVdEeGQCvUGzi1kDQ"/>
     <ownedAttribute xmi:id="_ERTAgAFYEeSLIY0bHb-fFQ" name="code" visibility="private" redefinedProperty="_1RZdJxVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_RMLikAFYEeSLIY0bHb-fFQ" name="advanceDirectiveOrganizer" type="_Z8VQYIlFEeOJGtGyq_dBbA" redefinedProperty="_m-ey8CsbEeGQ5rkpDKAt8A" association="_RMNXwAFYEeSLIY0bHb-fFQ">
+    <ownedAttribute xmi:id="_BNtZIKHJEeSCAevDCYfA4w" name="advanceDirectiveObservation2" type="_GnllUK-9EeO8duI_7f6kZw" redefinedProperty="_m-ey8CsbEeGQ5rkpDKAt8A" association="_BNunQKHJEeSCAevDCYfA4w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BNuAMKHJEeSCAevDCYfA4w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BNuAMaHJEeSCAevDCYfA4w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RMLikAFYEeSLIY0bHb-fFQ" name="advanceDirectiveOrganizer" type="_Z8VQYIlFEeOJGtGyq_dBbA" association="_RMNXwAFYEeSLIY0bHb-fFQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RMLikQFYEeSLIY0bHb-fFQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RMMJoAFYEeSLIY0bHb-fFQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_oceOsAFXEeSLIY0bHb-fFQ" base_Class="_jsKhYAFXEeSLIY0bHb-fFQ" templateId="2.16.840.1.113883.10.20.22.2.21" templateVersion="2014-06-09">
-    <ruleId>CONF:7928</ruleId>
-    <ruleId>CONF:10376</ruleId>
+    <ruleId>CONF:1098-7928</ruleId>
+    <ruleId>CONF:1098-10376</ruleId>
+    <ruleId>CONF:1098-15340</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_6rSIgAFXEeSLIY0bHb-fFQ" base_Generalization="_jsNksAFXEeSLIY0bHb-fFQ"/>
   <CDA:CodeSystemConstraint xmi:id="_ERTAgQFYEeSLIY0bHb-fFQ" code="42348-3" displayName="Advance Directives" base_Property="_ERTAgAFYEeSLIY0bHb-fFQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15342</ruleId>
-    <ruleId>CONF:30812</ruleId>
+    <ruleId>CONF:1098-15342</ruleId>
+    <ruleId>CONF:1098-30812</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_ERWD0AFYEeSLIY0bHb-fFQ" base_Property="_ERTAgAFYEeSLIY0bHb-fFQ">
-    <ruleId>CONF:15340</ruleId>
+    <ruleId>CONF:1098-15340</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_RMNXwAFYEeSLIY0bHb-fFQ" memberEnd="_RMLikAFYEeSLIY0bHb-fFQ _RMNXwQFYEeSLIY0bHb-fFQ">
     <ownedEnd xmi:id="_RMNXwQFYEeSLIY0bHb-fFQ" type="_jsKhYAFXEeSLIY0bHb-fFQ" association="_RMNXwAFYEeSLIY0bHb-fFQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_Sl4gcAFYEeSLIY0bHb-fFQ" severity="INFO" base_Association="_RMNXwAFYEeSLIY0bHb-fFQ">
-    <ruleId>CONF:7957</ruleId>
-    <ruleId>CONF:15443</ruleId>
+    <ruleId>CONF:1098-32891</ruleId>
+    <ruleId>CONF:1098-32892</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_ZFbCkAIPEeS-F85KYVlDyA" clientDependency="_KTbYcAIQEeS-F85KYVlDyA" name="AdvanceDirectivesSection2">
     <ownedComment xmi:id="_z2qQcAIPEeS-F85KYVlDyA">
       <body>This section contains data defining the patient's advance directives and any reference to supporting documentation, including living wills, healthcare proxies, and CPR and resuscitation status. If the referenced documents are available, they can be included in the exchange package.&#xD;
 The most recent directives are required, if known, and should be listed in as much detail as possible.&#xD;
-This section differentiates between 'advance directives' and 'advance directive documents'. The former is the directions to be followed whereas the latter refers to a legal document containing those directions.</body>
+This section differentiates between &quot;advance directives&quot; and &quot;advance directive documents&quot;. The former is the directions to be followed whereas the latter refers to a legal document containing those directions.</body>
     </ownedComment>
+    <ownedRule xmi:id="_qbVzIKJNEeSOc57SOMra_g" name="hasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer" constrainedElement="_8RsYYKJHEeSOc57SOMra_g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_RPDUYKJOEeSOc57SOMra_g">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If section/@nullFlavor is not present, this entry SHALL contain EITHER an Advance Directive Observation (V2) OR an Advance Directive Organizer</body>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one ( entry : cda::Entry | (not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AdvanceDirectiveObservation2)) xor (not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::AdvanceDirectiveOrganizer)) )</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_ZFc3wAIPEeS-F85KYVlDyA" general="_jsKhYAFXEeSLIY0bHb-fFQ"/>
     <substitution xmi:id="_KTbYcAIQEeS-F85KYVlDyA" name="AdvanceDirectivesSection" client="_ZFbCkAIPEeS-F85KYVlDyA" supplier="_2KgzUBSVEeGGzu7fmW9pXw" contract="_2KgzUBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_ZPJ4IKJGEeSOc57SOMra_g" name="advanceDirectiveObservation2" type="_GnllUK-9EeO8duI_7f6kZw" redefinedProperty="_BNtZIKHJEeSCAevDCYfA4w" association="_ZPLGQKJGEeSOc57SOMra_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKEyAaJGEeSOc57SOMra_g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKEyAKJGEeSOc57SOMra_g" value="*"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_-EDmoAIREeS-F85KYVlDyA" name="advanceDirectiveOrganizer" type="_Z8VQYIlFEeOJGtGyq_dBbA" redefinedProperty="_RMLikAFYEeSLIY0bHb-fFQ" association="_-EE0wAIREeS-F85KYVlDyA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lJDFIQISEeS-F85KYVlDyA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lJDFIAISEeS-F85KYVlDyA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l0Le8aJGEeSOc57SOMra_g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l0Le8KJGEeSOc57SOMra_g" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_udqOoAITEeS-F85KYVlDyA" name="code" visibility="private" redefinedProperty="_ERTAgAFYEeSLIY0bHb-fFQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -727,17 +746,75 @@ This section differentiates between 'advance directives' and 'advance directive 
     <ownedAttribute xmi:id="_VBvrkAIsEeSr1aKUYorURA" name="title" visibility="private" redefinedProperty="_1RZdKBVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_IXp24KJDEeSOc57SOMra_g" name="nullFlavor" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IXp24aJDEeSOc57SOMra_g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IXp24qJDEeSOc57SOMra_g" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZmdsQKJDEeSOc57SOMra_g" value="NI"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_q6X8sKJGEeSOc57SOMra_g" name="entry" type="_8RsYYKJHEeSOc57SOMra_g" association="_q6ZK0KJGEeSOc57SOMra_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tpSaAKJGEeSOc57SOMra_g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tpRy8KJGEeSOc57SOMra_g" value="*"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_8RsYYKJHEeSOc57SOMra_g" name="Entry">
+      <ownedComment xmi:id="_ZZFQYKJrEeSOc57SOMra_g">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_8RsYYaJHEeSOc57SOMra_g">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_ZN_LwKJMEeSOc57SOMra_g" name="advanceDirectiveObservation2" type="_GnllUK-9EeO8duI_7f6kZw" association="_ZOAZ4KJMEeSOc57SOMra_g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a-xM4aJMEeSOc57SOMra_g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a-xM4KJMEeSOc57SOMra_g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_WvAA0KJMEeSOc57SOMra_g" name="advanceDirectiveOrganizer" type="_Z8VQYIlFEeOJGtGyq_dBbA" association="_WvBO8KJMEeSOc57SOMra_g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aZsw8aJMEeSOc57SOMra_g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aZsw8KJMEeSOc57SOMra_g" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_tbHJUAIPEeS-F85KYVlDyA" base_Class="_ZFbCkAIPEeS-F85KYVlDyA" templateId="2.16.840.1.113883.10.20.22.2.21.1" templateVersion="2014-06-09">
-    <ruleId>CONF:30227</ruleId>
-    <ruleId>CONF:30228</ruleId>
+    <ruleId>CONF:1098-30227</ruleId>
+    <ruleId>CONF:1098-30228</ruleId>
+    <ruleId>CONF:1098-32512</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_1e-SEAIPEeS-F85KYVlDyA" base_Generalization="_ZFc3wAIPEeS-F85KYVlDyA"/>
   <uml:Association xmi:id="_-EE0wAIREeS-F85KYVlDyA" memberEnd="_-EDmoAIREeS-F85KYVlDyA _-EE0wQIREeS-F85KYVlDyA">
     <ownedEnd xmi:id="_-EE0wQIREeS-F85KYVlDyA" type="_ZFbCkAIPEeS-F85KYVlDyA" association="_-EE0wAIREeS-F85KYVlDyA"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_-3ZIEAIREeS-F85KYVlDyA" base_Association="_-EE0wAIREeS-F85KYVlDyA">
-    <ruleId>CONF:30235</ruleId>
-    <ruleId>CONF:30236</ruleId>
+  <uml:Association xmi:id="_BNunQKHJEeSCAevDCYfA4w" memberEnd="_BNtZIKHJEeSCAevDCYfA4w _BNvOUKHJEeSCAevDCYfA4w">
+    <ownedEnd xmi:id="_BNvOUKHJEeSCAevDCYfA4w" type="_jsKhYAFXEeSLIY0bHb-fFQ" association="_BNunQKHJEeSCAevDCYfA4w"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_ISqCkKHJEeSCAevDCYfA4w" severity="INFO" base_Association="_BNunQKHJEeSCAevDCYfA4w">
+    <ruleId>CONF:1098-7957</ruleId>
+    <ruleId>CONF:1098-15443</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_JVTx8KJDEeSOc57SOMra_g" severity="INFO" base_Property="_IXp24KJDEeSOc57SOMra_g">
+    <ruleId>CONF:1098-32800</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_ZPLGQKJGEeSOc57SOMra_g" memberEnd="_ZPJ4IKJGEeSOc57SOMra_g _ZPLGQaJGEeSOc57SOMra_g">
+    <ownedEnd xmi:id="_ZPLGQaJGEeSOc57SOMra_g" type="_ZFbCkAIPEeS-F85KYVlDyA" association="_ZPLGQKJGEeSOc57SOMra_g"/>
+  </uml:Association>
+  <uml:Association xmi:id="_q6ZK0KJGEeSOc57SOMra_g" memberEnd="_q6X8sKJGEeSOc57SOMra_g _q6ZK0aJGEeSOc57SOMra_g">
+    <ownedEnd xmi:id="_q6ZK0aJGEeSOc57SOMra_g" type="_ZFbCkAIPEeS-F85KYVlDyA" association="_q6ZK0KJGEeSOc57SOMra_g"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_uBWUsKJGEeSOc57SOMra_g" base_Association="_q6ZK0KJGEeSOc57SOMra_g">
+    <ruleId>CONF:1098-30235</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_WvBO8KJMEeSOc57SOMra_g" memberEnd="_WvAA0KJMEeSOc57SOMra_g _WvBO8aJMEeSOc57SOMra_g">
+    <ownedEnd xmi:id="_WvBO8aJMEeSOc57SOMra_g" type="_8RsYYKJHEeSOc57SOMra_g" association="_WvBO8KJMEeSOc57SOMra_g"/>
+  </uml:Association>
+  <uml:Association xmi:id="_ZOAZ4KJMEeSOc57SOMra_g" memberEnd="_ZN_LwKJMEeSOc57SOMra_g _ZOAZ4aJMEeSOc57SOMra_g">
+    <ownedEnd xmi:id="_ZOAZ4aJMEeSOc57SOMra_g" type="_8RsYYKJHEeSOc57SOMra_g" association="_ZOAZ4KJMEeSOc57SOMra_g"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_bRqTsKJMEeSOc57SOMra_g" severity="INFO" base_Association="_ZOAZ4KJMEeSOc57SOMra_g">
+    <ruleId>CONF:1098-30236</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_bq-yoKJMEeSOc57SOMra_g" severity="INFO" base_Association="_WvBO8KJMEeSOc57SOMra_g">
+    <ruleId>CONF:1098-32420</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_RoXMQKJOEeSOc57SOMra_g" base_Constraint="_qbVzIKJNEeSOc57SOMra_g">
+    <ruleId>CONF:1098-32881</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

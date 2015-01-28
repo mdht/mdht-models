@@ -508,10 +508,12 @@
     <ruleId>CONF:15368</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_trjPABqgEeGo461UQq-B1g" base_Property="_EuPlshVeEeGQCvUGzi1kDQ">
-    <ruleId>CONF:7967</ruleId>
+    <ruleId>CONF:7967.</ruleId>
+    <ruleId>R2.0=CONF:1098-7967</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_uNuH8BqgEeGo461UQq-B1g" base_Property="_EuPlsxVeEeGQCvUGzi1kDQ">
     <ruleId>CONF:7968</ruleId>
+    <ruleId>R2.0=CONF:1098-7968</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_wL6S8BqgEeGo461UQq-B1g" severity="WARNING">
     <ruleId>CONF:7969</ruleId>
@@ -1295,7 +1297,7 @@ This information should be included in an Immunization Activity when available. 
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_kdQhIPy3EeO1SvUcmWeLDQ" clientDependency="_7ore4Py3EeO1SvUcmWeLDQ" name="ImmunizationsSectionEntriesOptional2">
     <ownedComment xmi:id="_5M3jwPy3EeO1SvUcmWeLDQ">
-      <body>The Immunizations section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</body>
+      <body>The Immunizations Section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization Section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</body>
     </ownedComment>
     <generalization xmi:id="_kdS9YPy3EeO1SvUcmWeLDQ" general="_EuPloBVeEeGQCvUGzi1kDQ"/>
     <substitution xmi:id="_7ore4Py3EeO1SvUcmWeLDQ" name="ImmunizationsSectionEntriesOptional" client="_kdQhIPy3EeO1SvUcmWeLDQ" supplier="_EuPloBVeEeGQCvUGzi1kDQ" contract="_EuPloBVeEeGQCvUGzi1kDQ"/>
@@ -1307,36 +1309,47 @@ This information should be included in an Immunization Activity when available. 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XHuN8fy4EeO1SvUcmWeLDQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_qxeRMPy3EeO1SvUcmWeLDQ" base_Class="_kdQhIPy3EeO1SvUcmWeLDQ" templateId="2.16.840.1.113883.10.20.22.2" templateVersion="2014-06-09">
-    <ruleId>CONF:7965</ruleId>
-    <ruleId>CONF:10399</ruleId>
+  <CDA:CDATemplate xmi:id="_qxeRMPy3EeO1SvUcmWeLDQ" base_Class="_kdQhIPy3EeO1SvUcmWeLDQ" templateId="2.16.840.1.113883.10.20.22.2.2" templateVersion="2014-06-09">
+    <ruleId>CONF:1098-7965</ruleId>
+    <ruleId>CONF:1098-10399</ruleId>
+    <ruleId>CONF:1098-32529</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_5zZ_UPy3EeO1SvUcmWeLDQ" base_Generalization="_kdS9YPy3EeO1SvUcmWeLDQ"/>
   <CDA:CodeSystemConstraint xmi:id="_DNWKMPy4EeO1SvUcmWeLDQ" code="11369-6" displayName="Immunizations" base_Property="_DNVjIPy4EeO1SvUcmWeLDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15368</ruleId>
-    <ruleId>CONF:32146</ruleId>
+    <ruleId>CONF:1098-15368</ruleId>
+    <ruleId>CONF:1098-32146</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_DNXYUPy4EeO1SvUcmWeLDQ" base_Property="_DNVjIPy4EeO1SvUcmWeLDQ">
-    <ruleId>CONF:15367</ruleId>
+    <ruleId>CONF:1098-15367</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_XHwDIPy4EeO1SvUcmWeLDQ" memberEnd="_XHtm4Py4EeO1SvUcmWeLDQ _XHwqMPy4EeO1SvUcmWeLDQ">
     <ownedEnd xmi:id="_XHwqMPy4EeO1SvUcmWeLDQ" type="_kdQhIPy3EeO1SvUcmWeLDQ" association="_XHwDIPy4EeO1SvUcmWeLDQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_YSjpYPy4EeO1SvUcmWeLDQ" severity="WARNING" base_Association="_XHwDIPy4EeO1SvUcmWeLDQ">
-    <ruleId>CONF:7969</ruleId>
-    <ruleId>CONF:15494</ruleId>
+    <ruleId>CONF:1098-7969</ruleId>
+    <ruleId>CONF:1098-15494</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_14bikALNEeSIPYXg7AgJzw" clientDependency="_G26c8ALOEeSIPYXg7AgJzw" name="ImmunizationsSection2">
     <ownedComment xmi:id="_64PrgALNEeSIPYXg7AgJzw">
-      <body>The Immunizations section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</body>
+      <body>The Immunizations Section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization Section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</body>
     </ownedComment>
     <generalization xmi:id="_14dXwALNEeSIPYXg7AgJzw" general="_kdQhIPy3EeO1SvUcmWeLDQ"/>
     <substitution xmi:id="_G26c8ALOEeSIPYXg7AgJzw" name="ImmunizationsSection" client="_14bikALNEeSIPYXg7AgJzw" supplier="_2L7voBSVEeGGzu7fmW9pXw" contract="_2L7voBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_Stc7QKWfEeSPMaiGDG98Yg" name="nullFlavor" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Stc7QaWfEeSPMaiGDG98Yg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Stc7QqWfEeSPMaiGDG98Yg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_V6gtIKWfEeSPMaiGDG98Yg" value="NI"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_SpnO8ALOEeSIPYXg7AgJzw" name="code" visibility="private" redefinedProperty="_DNVjIPy4EeO1SvUcmWeLDQ">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_fiipMALOEeSIPYXg7AgJzw" name="immunizationActivity2" type="_zI6vcOE7EeOTq9XEMvvkWw" redefinedProperty="_XHtm4Py4EeO1SvUcmWeLDQ" association="_fikeYALOEeSIPYXg7AgJzw">
+      <ownedComment xmi:id="_MJoB4KWfEeSPMaiGDG98Yg">
+        <body>If section/@nullFlavor is not present:</body>
+      </ownedComment>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k7zM4ALOEeSIPYXg7AgJzw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k7yl0ALOEeSIPYXg7AgJzw" value="*"/>
     </ownedAttribute>
@@ -1350,30 +1363,28 @@ This information should be included in an Immunization Activity when available. 
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_6KbjQALNEeSIPYXg7AgJzw" base_Class="_14bikALNEeSIPYXg7AgJzw" templateId="2.16.840.1.113883.10.20.22.2.2.1" templateVersion="2014-06-09">
-    <ruleId>CONF:9015</ruleId>
-    <ruleId>CONF:10400</ruleId>
+    <ruleId>CONF:1098-9015</ruleId>
+    <ruleId>CONF:1098-10400</ruleId>
+    <ruleId>CONF:1098-32530</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Bq7gQALOEeSIPYXg7AgJzw" base_Generalization="_14dXwALNEeSIPYXg7AgJzw"/>
   <CDA:CodeSystemConstraint xmi:id="_Spn2AALOEeSIPYXg7AgJzw" code="11369-6" displayName="Immunizations" base_Property="_SpnO8ALOEeSIPYXg7AgJzw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15370</ruleId>
-    <ruleId>CONF:32147</ruleId>
+    <ruleId>CONF:1098-15370</ruleId>
+    <ruleId>CONF:1098-32147</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_SppEIALOEeSIPYXg7AgJzw" base_Property="_SpnO8ALOEeSIPYXg7AgJzw">
-    <ruleId>CONF:15369</ruleId>
+    <ruleId>CONF:1098-15369</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_fikeYALOEeSIPYXg7AgJzw" memberEnd="_fiipMALOEeSIPYXg7AgJzw _fikeYQLOEeSIPYXg7AgJzw">
     <ownedEnd xmi:id="_fikeYQLOEeSIPYXg7AgJzw" type="_14bikALNEeSIPYXg7AgJzw" association="_fikeYALOEeSIPYXg7AgJzw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_itTVAALOEeSIPYXg7AgJzw" base_Association="_fikeYALOEeSIPYXg7AgJzw">
-    <ruleId>CONF:9019</ruleId>
-    <ruleId>CONF:15495</ruleId>
+    <ruleId>CONF:1098-9019</ruleId>
+    <ruleId>CONF:1098-15495</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_4abv0ALOEeSIPYXg7AgJzw" base_Property="_4abIwALOEeSIPYXg7AgJzw">
-    <ruleId>CONF:9018</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_8VP_kALOEeSIPYXg7AgJzw" base_Property="_4abv0QLOEeSIPYXg7AgJzw">
-    <ruleId>CONF:9017</ruleId>
+    <ruleId>CONF:1098-9018</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_u501sDhXEeS1WeMhbm6GZw" memberEnd="_u5znkDhXEeS1WeMhbm6GZw _u501sThXEeS1WeMhbm6GZw">
     <ownedEnd xmi:id="_u501sThXEeS1WeMhbm6GZw" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_u501sDhXEeS1WeMhbm6GZw"/>
@@ -1448,4 +1459,10 @@ This information should be included in an Immunization Activity when available. 
   <CDA:AssociationValidation xmi:id="_SzZh0D3OEeSyGa6KC25kiw" base_Association="_O0YHgD3OEeSyGa6KC25kiw">
     <ruleId>CONF:15548</ruleId>
   </CDA:AssociationValidation>
+  <CDA:TextValue xmi:id="_A1c-8KWfEeSPMaiGDG98Yg" base_Property="_4abv0QLOEeSIPYXg7AgJzw">
+    <ruleId>CONF:1098-9017</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_T2JosKWfEeSPMaiGDG98Yg" severity="INFO" base_Property="_Stc7QKWfEeSPMaiGDG98Yg">
+    <ruleId>CONF:1098-32833</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
