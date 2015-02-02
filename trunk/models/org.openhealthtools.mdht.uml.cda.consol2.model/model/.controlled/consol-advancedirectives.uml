@@ -722,7 +722,7 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
         <language>Analysis</language>
         <language>OCL</language>
         <body>If section/@nullFlavor is not present, this entry SHALL contain EITHER an Advance Directive Observation (V2) OR an Advance Directive Organizer</body>
-        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one ( entry : cda::Entry | (not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AdvanceDirectiveObservation2)) xor (not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::AdvanceDirectiveOrganizer)) )</body>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AdvanceDirectiveObservation2)) xor self.getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::AdvanceDirectiveOrganizer))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_ZFc3wAIPEeS-F85KYVlDyA" general="_jsKhYAFXEeSLIY0bHb-fFQ"/>
