@@ -30,8 +30,10 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2#validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Advance Directive Organizer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2#getConsolAdvanceDirectiveOrganizers() <em>Get Consol Advance Directive Organizers</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2#validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional2 Advance Directive Organizer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2#validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Advance Directive Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2#getAdvanceDirectiveOrganizers() <em>Get Advance Directive Organizers</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2#getConsolAdvanceDirectiveObservation2s() <em>Get Consol Advance Directive Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2#validateAdvanceDirectivesSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2#validateAdvanceDirectivesSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2#validateAdvanceDirectivesSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Code</em>}</li>
@@ -48,10 +50,10 @@ public class AdvanceDirectivesSectionEntriesOptional2Test extends CDAValidationT
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveOrganizer() {
-		OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2> validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveOrganizerTestCase = new OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2>(
-			"validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveOrganizer",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer() {
+		OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2> validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerTestCase = new OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2>(
+			"validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -67,13 +69,46 @@ public class AdvanceDirectivesSectionEntriesOptional2Test extends CDAValidationT
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveOrganizer(
+				return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer(
 					(AdvanceDirectivesSectionEntriesOptional2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveOrganizerTestCase.doValidationTest();
+		validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation2() {
+		OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2> validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation2TestCase = new OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2>(
+			"validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation2",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectivesSectionEntriesOptional2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectivesSectionEntriesOptional2 target) {
+				target.addObservation(ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation2(
+					(AdvanceDirectivesSectionEntriesOptional2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation2TestCase.doValidationTest();
 	}
 
 	/**
@@ -81,10 +116,22 @@ public class AdvanceDirectivesSectionEntriesOptional2Test extends CDAValidationT
 	* @generated
 	*/
 	@Test
-	public void testGetConsolAdvanceDirectiveOrganizers() {
+	public void testGetAdvanceDirectiveOrganizers() {
 
 		AdvanceDirectivesSectionEntriesOptional2 target = objectFactory.create();
-		target.getConsolAdvanceDirectiveOrganizers();
+		target.getAdvanceDirectiveOrganizers();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolAdvanceDirectiveObservation2s() {
+
+		AdvanceDirectivesSectionEntriesOptional2 target = objectFactory.create();
+		target.getConsolAdvanceDirectiveObservation2s();
 
 	}
 

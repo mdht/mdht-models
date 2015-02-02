@@ -39,6 +39,8 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2HandoffCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Handoff Communication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2NutritionRecommendations(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Nutrition Recommendations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2PlannedImmunizationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Planned Immunization Activity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2GoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Goal Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolPlannedObservation2s() <em>Get Consol Planned Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolPlannedEncounter2s() <em>Get Consol Planned Encounter2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolPlannedAct2s() <em>Get Consol Planned Act2s</em>}</li>
@@ -48,6 +50,8 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolInstruction2s() <em>Get Consol Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getHandoffCommunications() <em>Get Handoff Communications</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getNutritionRecommendationss() <em>Get Nutrition Recommendationss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getPlannedImmunizationActivities() <em>Get Planned Immunization Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getGoalObservations() <em>Get Goal Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code</em>}</li>
@@ -358,6 +362,73 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfTreatmentSection2PlannedImmunizationActivity() {
+		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2PlannedImmunizationActivityTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
+			"validatePlanOfTreatmentSection2PlannedImmunizationActivity",
+			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlanOfTreatmentSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlanOfTreatmentSection2 target) {
+				target.addSubstanceAdministration(ConsolFactory.eINSTANCE.createPlannedImmunizationActivity().init());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2PlannedImmunizationActivity(
+					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfTreatmentSection2PlannedImmunizationActivityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfTreatmentSection2GoalObservation() {
+		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2GoalObservationTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
+			"validatePlanOfTreatmentSection2GoalObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlanOfTreatmentSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlanOfTreatmentSection2 target) {
+				target.addObservation(ConsolFactory.eINSTANCE.createGoalObservation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2GoalObservation(
+					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfTreatmentSection2GoalObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
@@ -461,6 +532,30 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 
 		PlanOfTreatmentSection2 target = objectFactory.create();
 		target.getNutritionRecommendationss();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetPlannedImmunizationActivities() {
+
+		PlanOfTreatmentSection2 target = objectFactory.create();
+		target.getPlannedImmunizationActivities();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetGoalObservations() {
+
+		PlanOfTreatmentSection2 target = objectFactory.create();
+		target.getGoalObservations();
 
 	}
 

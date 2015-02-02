@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdmissionDiagnosisSection2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -124,7 +125,7 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateHospitalAdmissionDiagnosisSectionCodeP() {
@@ -141,7 +142,7 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AdmissionDiagnosisSection2 target) {
 				target.init();
-
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
@@ -158,7 +159,7 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateHospitalAdmissionDiagnosisSectionCode() {
@@ -169,13 +170,14 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AdmissionDiagnosisSection2 target) {
-
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
 			protected void updateToPass(AdmissionDiagnosisSection2 target) {
-				target.init();
-
+				target.getCode().setCode("42347-5");
+				target.getCode().setCodeSystem(LOINC_ID);
 			}
 
 			@Override

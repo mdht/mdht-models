@@ -34,6 +34,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection2#validateResultsSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection2#validateResultsSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection2#validateResultsSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section2 Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection2#validateResultsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Entries Optional Template Id</em>}</li>
@@ -48,6 +49,40 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  */
 
 public class ResultsSection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateResultsSection2NullFlavor() {
+		OperationsTestCase<ResultsSection2> validateResultsSection2NullFlavorTestCase = new OperationsTestCase<ResultsSection2>(
+			"validateResultsSection2NullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_RESULTS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ResultsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultsSection2Operations.validateResultsSection2NullFlavor(
+					(ResultsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultsSection2NullFlavorTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -243,7 +278,7 @@ public class ResultsSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ResultsSection2 target) {
-				target.init();
+				// target.init defaults to a nullFlavor of NI which allows a pass
 			}
 
 			@Override

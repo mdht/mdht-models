@@ -30,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSectionInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#getConsolInstruction2s() <em>Get Consol Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Template Id</em>}</li>
@@ -45,6 +46,40 @@ public class InstructionsSection2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated
+	*/
+	@Test
+	public void testValidateInstructionsSection2NullFlavor() {
+		OperationsTestCase<InstructionsSection2> validateInstructionsSection2NullFlavorTestCase = new OperationsTestCase<InstructionsSection2>(
+			"validateInstructionsSection2NullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(InstructionsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(InstructionsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InstructionsSection2Operations.validateInstructionsSection2NullFlavor(
+					(InstructionsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInstructionsSection2NullFlavorTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated NOT
 	*/
 	@Test
@@ -56,7 +91,7 @@ public class InstructionsSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(InstructionsSection2 target) {
-				target.init();
+				// target.init defaults to a nullFlavor of NI which allows a pass
 			}
 
 			@Override

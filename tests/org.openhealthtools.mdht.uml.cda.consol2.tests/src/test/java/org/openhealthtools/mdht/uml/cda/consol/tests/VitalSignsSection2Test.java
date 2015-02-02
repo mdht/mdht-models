@@ -34,6 +34,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section2 Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Template Id</em>}</li>
@@ -48,6 +49,40 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  */
 
 public class VitalSignsSection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateVitalSignsSection2NullFlavor() {
+		OperationsTestCase<VitalSignsSection2> validateVitalSignsSection2NullFlavorTestCase = new OperationsTestCase<VitalSignsSection2>(
+			"validateVitalSignsSection2NullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(VitalSignsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(VitalSignsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignsSection2Operations.validateVitalSignsSection2NullFlavor(
+					(VitalSignsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignsSection2NullFlavorTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -243,7 +278,7 @@ public class VitalSignsSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(VitalSignsSection2 target) {
-				target.init();
+				// target.init defaults to a nullFlavor of NI which allows a pass
 			}
 
 			@Override

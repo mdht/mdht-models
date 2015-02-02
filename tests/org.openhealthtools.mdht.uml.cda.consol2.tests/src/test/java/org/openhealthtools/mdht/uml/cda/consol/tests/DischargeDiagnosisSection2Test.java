@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeDiagnosisSection2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -158,7 +159,7 @@ public class DischargeDiagnosisSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateHospitalDischargeDiagnosisSectionCode() {
@@ -169,13 +170,14 @@ public class DischargeDiagnosisSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(DischargeDiagnosisSection2 target) {
-
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
 			protected void updateToPass(DischargeDiagnosisSection2 target) {
-				target.init();
-
+				target.getCode().setCode("C-CDAV2-DDN");
+				target.getCode().setCodeSystem(LOINC_ID);
 			}
 
 			@Override

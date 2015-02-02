@@ -34,6 +34,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSection2#validateEncountersSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSection2#validateEncountersSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section2 Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSection2#validateEncountersSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSection2#validateEncountersSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Template Id</em>}</li>
@@ -48,6 +49,40 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  */
 
 public class EncountersSection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateEncountersSection2NullFlavor() {
+		OperationsTestCase<EncountersSection2> validateEncountersSection2NullFlavorTestCase = new OperationsTestCase<EncountersSection2>(
+			"validateEncountersSection2NullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(EncountersSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(EncountersSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncountersSection2Operations.validateEncountersSection2NullFlavor(
+					(EncountersSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncountersSection2NullFlavorTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -243,7 +278,7 @@ public class EncountersSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(EncountersSection2 target) {
-				target.init();
+				// target.init defaults to a nullFlavor of NI which allows a pass
 			}
 
 			@Override
