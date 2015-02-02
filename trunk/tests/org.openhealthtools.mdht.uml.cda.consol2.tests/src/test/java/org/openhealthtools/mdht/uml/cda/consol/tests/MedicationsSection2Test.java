@@ -16,7 +16,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
@@ -35,7 +34,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection2#validateMedicationsSection2AbsenceOfMedications(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section2 Absence Of Medications</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection2#validateMedicationsSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection2#validateMedicationsSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection2#validateMedicationsSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section2 Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection2#validateMedicationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Entries Optional Template Id</em>}</li>
@@ -53,15 +52,13 @@ public class MedicationsSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
-	* This constraint is being overridden as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
+	* @generated
 	*/
-	@Ignore
-	public void testValidateMedicationsSection2AbsenceOfMedications() {
-		OperationsTestCase<MedicationsSection2> validateMedicationsSection2AbsenceOfMedicationsTestCase = new OperationsTestCase<MedicationsSection2>(
-			"validateMedicationsSection2AbsenceOfMedications",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION2_ABSENCE_OF_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	@Test
+	public void testValidateMedicationsSection2NullFlavor() {
+		OperationsTestCase<MedicationsSection2> validateMedicationsSection2NullFlavorTestCase = new OperationsTestCase<MedicationsSection2>(
+			"validateMedicationsSection2NullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -78,13 +75,13 @@ public class MedicationsSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MedicationsSection2Operations.validateMedicationsSection2AbsenceOfMedications(
+				return MedicationsSection2Operations.validateMedicationsSection2NullFlavor(
 					(MedicationsSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateMedicationsSection2AbsenceOfMedicationsTestCase.doValidationTest();
+		validateMedicationsSection2NullFlavorTestCase.doValidationTest();
 	}
 
 	/**
@@ -281,7 +278,7 @@ public class MedicationsSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(MedicationsSection2 target) {
-				target.init();
+				// target.init defaults to a nullFlavor of NI which allows a pass
 			}
 
 			@Override

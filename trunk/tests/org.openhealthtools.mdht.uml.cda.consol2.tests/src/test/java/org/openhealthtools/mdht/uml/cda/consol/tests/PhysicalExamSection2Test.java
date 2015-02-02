@@ -17,10 +17,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
+import org.openhealthtools.mdht.uml.cda.CDAFactory;
+import org.openhealthtools.mdht.uml.cda.Component5;
+import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSection2Operations;
+import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSectionOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,6 +37,12 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2WoundObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Wound Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2Component(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2ComponentSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2ComponentSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2ComponentSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2ComponentSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2ComponentSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#getWoundObservations() <em>Get Wound Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#getConsolPressureUlcerObservations() <em>Get Consol Pressure Ulcer Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#getConsolHighestPressureUlcerStages() <em>Get Consol Highest Pressure Ulcer Stages</em>}</li>
@@ -38,8 +50,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionHighestPressureUlcerStage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Highest Pressure Ulcer Stage</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionNumberOfPressureUlcersObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Number Of Pressure Ulcers Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -79,6 +89,235 @@ public class PhysicalExamSection2Test extends CDAValidationTest {
 		};
 
 		validatePhysicalExamSection2WoundObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicalExamSection2Component() {
+		OperationsTestCase<PhysicalExamSection2> validatePhysicalExamSection2ComponentTestCase = new OperationsTestCase<PhysicalExamSection2>(
+			"validatePhysicalExamSection2Component",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicalExamSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PhysicalExamSection2 target) {
+				Component5 c5 = CDAFactory.eINSTANCE.createComponent5();
+				target.getComponents().add(c5);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicalExamSection2Operations.validatePhysicalExamSection2Component(
+					(PhysicalExamSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicalExamSection2ComponentTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicalExamSection2ComponentSectionCode() {
+		OperationsTestCase<PhysicalExamSection2> validatePhysicalExamSection2ComponentSectionCodeTestCase = new OperationsTestCase<PhysicalExamSection2>(
+			"validatePhysicalExamSection2ComponentSectionCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicalExamSection2 target) {
+				target.init();
+				Component5 c5 = CDAFactory.eINSTANCE.createComponent5();
+				target.getComponents().add(c5);
+				Section sec = CDAFactory.eINSTANCE.createSection();
+				c5.setSection(sec);
+			}
+
+			@Override
+			protected void updateToPass(PhysicalExamSection2 target) {
+				for (Component5 c5 : target.getComponents()) {
+					c5.getSection().setCode(
+						DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.1"));
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionCode(
+					(PhysicalExamSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicalExamSection2ComponentSectionCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicalExamSection2ComponentSectionCodeP() {
+		OperationsTestCase<PhysicalExamSection2> validatePhysicalExamSection2ComponentSectionCodePTestCase = new OperationsTestCase<PhysicalExamSection2>(
+			"validatePhysicalExamSection2ComponentSectionCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicalExamSection2 target) {
+				target.init();
+				Component5 c5 = CDAFactory.eINSTANCE.createComponent5();
+				target.getComponents().add(c5);
+				Section sec = CDAFactory.eINSTANCE.createSection();
+				c5.setSection(sec);
+			}
+
+			@Override
+			protected void updateToPass(PhysicalExamSection2 target) {
+				for (Component5 c5 : target.getComponents()) {
+					c5.getSection().setCode(DatatypesFactory.eINSTANCE.createCE());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionCodeP(
+					(PhysicalExamSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicalExamSection2ComponentSectionCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicalExamSection2ComponentSectionTitle() {
+		OperationsTestCase<PhysicalExamSection2> validatePhysicalExamSection2ComponentSectionTitleTestCase = new OperationsTestCase<PhysicalExamSection2>(
+			"validatePhysicalExamSection2ComponentSectionTitle",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicalExamSection2 target) {
+				target.init();
+				Component5 c5 = CDAFactory.eINSTANCE.createComponent5();
+				target.getComponents().add(c5);
+				Section sec = CDAFactory.eINSTANCE.createSection();
+				c5.setSection(sec);
+			}
+
+			@Override
+			protected void updateToPass(PhysicalExamSection2 target) {
+				for (Component5 c5 : target.getComponents()) {
+					c5.getSection().setTitle(DatatypesFactory.eINSTANCE.createST());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionTitle(
+					(PhysicalExamSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicalExamSection2ComponentSectionTitleTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicalExamSection2ComponentSectionText() {
+		OperationsTestCase<PhysicalExamSection2> validatePhysicalExamSection2ComponentSectionTextTestCase = new OperationsTestCase<PhysicalExamSection2>(
+			"validatePhysicalExamSection2ComponentSectionText",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicalExamSection2 target) {
+				target.init();
+				Component5 c5 = CDAFactory.eINSTANCE.createComponent5();
+				target.getComponents().add(c5);
+				Section sec = CDAFactory.eINSTANCE.createSection();
+				c5.setSection(sec);
+			}
+
+			@Override
+			protected void updateToPass(PhysicalExamSection2 target) {
+				for (Component5 c5 : target.getComponents()) {
+					StrucDocText sdt = CDAFactory.eINSTANCE.createStrucDocText();
+					c5.getSection().setText(sdt);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionText(
+					(PhysicalExamSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicalExamSection2ComponentSectionTextTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicalExamSection2ComponentSection() {
+		OperationsTestCase<PhysicalExamSection2> validatePhysicalExamSection2ComponentSectionTestCase = new OperationsTestCase<PhysicalExamSection2>(
+			"validatePhysicalExamSection2ComponentSection",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicalExamSection2 target) {
+				target.init();
+				Component5 c5 = CDAFactory.eINSTANCE.createComponent5();
+				target.getComponents().add(c5);
+			}
+
+			@Override
+			protected void updateToPass(PhysicalExamSection2 target) {
+				for (Component5 c5 : target.getComponents()) {
+					c5.setSection(CDAFactory.eINSTANCE.createSection());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSection(
+					(PhysicalExamSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicalExamSection2ComponentSectionTestCase.doValidationTest();
 	}
 
 	/**
@@ -262,7 +501,7 @@ public class PhysicalExamSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PhysicalExamSection2Operations.validatePhysicalExamSectionHighestPressureUlcerStage(
+				return PhysicalExamSectionOperations.validatePhysicalExamSectionHighestPressureUlcerStage(
 					(PhysicalExamSection2) objectToTest, diagnostician, map);
 			}
 
@@ -295,7 +534,7 @@ public class PhysicalExamSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PhysicalExamSection2Operations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(
+				return PhysicalExamSectionOperations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(
 					(PhysicalExamSection2) objectToTest, diagnostician, map);
 			}
 

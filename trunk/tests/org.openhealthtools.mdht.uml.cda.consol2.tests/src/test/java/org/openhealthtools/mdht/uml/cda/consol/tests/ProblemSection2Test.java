@@ -34,6 +34,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSection2#validateProblemSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSection2#validateProblemSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSection2#validateProblemSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section2 Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSection2#getConsolHealthStatusObservation2() <em>Get Consol Health Status Observation2</em>}</li>
@@ -50,6 +51,40 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  */
 
 public class ProblemSection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateProblemSection2NullFlavor() {
+		OperationsTestCase<ProblemSection2> validateProblemSection2NullFlavorTestCase = new OperationsTestCase<ProblemSection2>(
+			"validateProblemSection2NullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProblemSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProblemSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemSection2Operations.validateProblemSection2NullFlavor(
+					(ProblemSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemSection2NullFlavorTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -257,7 +292,7 @@ public class ProblemSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ProblemSection2 target) {
-				target.init();
+				// target.init defaults to a nullFlavor of NI which allows a pass
 			}
 
 			@Override
@@ -290,7 +325,7 @@ public class ProblemSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ProblemSection2 target) {
-				target.init();
+				// target.init defaults to a nullFlavor of NI which allows a pass
 			}
 
 			@Override

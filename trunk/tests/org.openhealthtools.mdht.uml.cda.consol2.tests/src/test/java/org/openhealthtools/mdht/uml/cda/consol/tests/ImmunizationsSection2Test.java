@@ -34,6 +34,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section2 Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Template Id</em>}</li>
@@ -48,6 +49,40 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  */
 
 public class ImmunizationsSection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateImmunizationsSection2NullFlavor() {
+		OperationsTestCase<ImmunizationsSection2> validateImmunizationsSection2NullFlavorTestCase = new OperationsTestCase<ImmunizationsSection2>(
+			"validateImmunizationsSection2NullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ImmunizationsSection2Operations.validateImmunizationsSection2NullFlavor(
+					(ImmunizationsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateImmunizationsSection2NullFlavorTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -243,7 +278,7 @@ public class ImmunizationsSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ImmunizationsSection2 target) {
-				target.init();
+				// target.init defaults to a nullFlavor of NI which allows a pass
 			}
 
 			@Override
