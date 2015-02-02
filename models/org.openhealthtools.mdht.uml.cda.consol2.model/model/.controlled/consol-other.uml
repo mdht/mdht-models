@@ -869,9 +869,11 @@ Any deviation from normal function displayed by the patient and recorded in the 
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_K9ULUCzpEeG29eivM7bhbw" base_Property="_HMSJsCzpEeG29eivM7bhbw">
     <ruleId>CONF:7846</ruleId>
+    <ruleId>R2.0=CONF:1098-7846</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_Me_ZcCzpEeG29eivM7bhbw" base_Property="_HMPtcCzpEeG29eivM7bhbw">
     <ruleId>CONF:7847</ruleId>
+    <ruleId>R2.0=CONF:1098-7847</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_j499ICzUEeGanY0p4MnU2w" memberEnd="_j47g4CzUEeGanY0p4MnU2w _j499ISzUEeGanY0p4MnU2w">
     <ownedEnd xmi:id="_j499ISzUEeGanY0p4MnU2w" type="_2Rwq0BSVEeGGzu7fmW9pXw" association="_j499ICzUEeGanY0p4MnU2w"/>
@@ -3255,7 +3257,7 @@ Instructions are a subset of interventions and may include self-care instruction
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_Ya0H0AB5EeS20Pddu0dxVw" clientDependency="_wLGGIAB5EeS20Pddu0dxVw" name="ReasonForReferralSection2">
     <ownedComment xmi:id="_kbRpAAB5EeS20Pddu0dxVw">
-      <body>This section contains the reason(s) for a patient's referral by a provider to a consulting provider. An optional Chief Complaint section may capture the patient's description of the reason for the consultation.</body>
+      <body>This section describes the clinical reason why a provider is sending a patient to another provider for care. The reason for referral may become the reason for visit documented by the receiving provider.</body>
     </ownedComment>
     <generalization xmi:id="_Ya3LIAB5EeS20Pddu0dxVw" general="_2PWQFxSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_wLGGIAB5EeS20Pddu0dxVw" name="ReasonForReferralSection" client="_Ya0H0AB5EeS20Pddu0dxVw" supplier="_2PWQFxSVEeGGzu7fmW9pXw" contract="_2PWQFxSVEeGGzu7fmW9pXw"/>
@@ -3269,24 +3271,25 @@ Instructions are a subset of interventions and may include self-care instruction
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_j0EfEAB5EeS20Pddu0dxVw" base_Class="_Ya0H0AB5EeS20Pddu0dxVw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.1" templateVersion="2014-06-09">
-    <ruleId>CONF:7844</ruleId>
-    <ruleId>CONF:10468</ruleId>
+    <ruleId>CONF:1098-7844</ruleId>
+    <ruleId>CONF:1098-10468</ruleId>
+    <ruleId>CONF:1098-32571</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_tGyAkAB5EeS20Pddu0dxVw" code="42349-1" displayName="Reason for Referral" base_Property="_tGxZgAB5EeS20Pddu0dxVw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15428</ruleId>
-    <ruleId>CONF:30867</ruleId>
+    <ruleId>CONF:1098-15428</ruleId>
+    <ruleId>CONF:1098-30867</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_tG0c0AB5EeS20Pddu0dxVw" base_Property="_tGxZgAB5EeS20Pddu0dxVw">
-    <ruleId>CONF:15427</ruleId>
+    <ruleId>CONF:1098-15427</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConformsTo xmi:id="_ukWKwAB5EeS20Pddu0dxVw" base_Generalization="_Ya3LIAB5EeS20Pddu0dxVw"/>
   <uml:Association xmi:id="_SIfYsAB6EeS20Pddu0dxVw" memberEnd="_SIdjgAB6EeS20Pddu0dxVw _SIf_wAB6EeS20Pddu0dxVw">
     <ownedEnd xmi:id="_SIf_wAB6EeS20Pddu0dxVw" type="_Ya0H0AB5EeS20Pddu0dxVw" association="_SIfYsAB6EeS20Pddu0dxVw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_SzdoUAB6EeS20Pddu0dxVw" severity="INFO" base_Association="_SIfYsAB6EeS20Pddu0dxVw">
-    <ruleId>CONF:30808</ruleId>
-    <ruleId>CONF:30897</ruleId>
+    <ruleId>CONF:1098-30808</ruleId>
+    <ruleId>CONF:1098-30897</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_wULHgKWqEeSPMaiGDG98Yg" severity="INFO" base_Property="_vDPrIKWqEeSPMaiGDG98Yg">
     <ruleId>CONF:1098-32835</ruleId>

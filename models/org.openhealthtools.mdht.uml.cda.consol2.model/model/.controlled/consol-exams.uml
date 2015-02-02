@@ -718,7 +718,7 @@ The Physical Exam Section may contain multiple nested subsections.</body>
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_ASUmAaZKEeSy2PrVxD6riw">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_dkuWIDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_dJUMoEcEEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_FSD2cKZKEeSy2PrVxD6riw" name="section" visibility="private" type="_Tk0xcKZKEeSy2PrVxD6riw" aggregation="composite">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FSD2caZKEeSy2PrVxD6riw" value="1"/>
