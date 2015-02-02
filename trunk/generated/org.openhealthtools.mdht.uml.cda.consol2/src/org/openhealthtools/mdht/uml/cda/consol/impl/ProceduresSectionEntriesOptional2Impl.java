@@ -107,9 +107,8 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProcedureActivityObservation2 getConsolProcedureActivityObservation2() {
-		return ProceduresSectionEntriesOptional2Operations.getConsolProcedureActivityObservation2(this);
+	public EList<ProcedureActivityObservation2> getConsolProcedureActivityObservation2s() {
+		return ProceduresSectionEntriesOptional2Operations.getConsolProcedureActivityObservation2s(this);
 	}
 
 	/**
@@ -117,9 +116,8 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProcedureActivityAct2 getConsolProcedureActivityAct2() {
-		return ProceduresSectionEntriesOptional2Operations.getConsolProcedureActivityAct2(this);
+	public EList<ProcedureActivityAct2> getConsolProcedureActivityAct2s() {
+		return ProceduresSectionEntriesOptional2Operations.getConsolProcedureActivityAct2s(this);
 	}
 
 	/**

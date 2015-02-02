@@ -59,6 +59,15 @@ public class ImmunizationsSection2Impl extends ImmunizationsSectionEntriesOption
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationsSection2NullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationsSection2Operations.validateImmunizationsSection2NullFlavor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateImmunizationsSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationsSection2Operations.validateImmunizationsSection2Title(this, diagnostics, context);

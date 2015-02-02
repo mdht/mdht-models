@@ -58,6 +58,15 @@ public class EncountersSection2Impl extends EncountersSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncountersSection2NullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSection2Operations.validateEncountersSection2NullFlavor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateEncountersSection2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSection2Operations.validateEncountersSection2Text(this, diagnostics, context);

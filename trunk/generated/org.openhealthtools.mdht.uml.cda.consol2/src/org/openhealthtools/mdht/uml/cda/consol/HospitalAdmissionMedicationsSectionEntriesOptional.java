@@ -30,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalAdmissionMedicationsSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId HospitalAdmissionMedicationsSectionEntriesOptionalCode HospitalAdmissionMedicationsSectionEntriesOptionalCodeP HospitalAdmissionMedicationsSectionEntriesOptionalText HospitalAdmissionMedicationsSectionEntriesOptionalTitle' templateId.root='2.16.840.1.113883.10.20.22.2.44' code.code='42346-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='MEDICATIONS ON ADMISSION' constraints.validation.warning='HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId HospitalAdmissionMedicationsSectionEntriesOptionalCode HospitalAdmissionMedicationsSectionEntriesOptionalCodeP HospitalAdmissionMedicationsSectionEntriesOptionalTitle HospitalAdmissionMedicationsSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.44' code.code='42346-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='MEDICATIONS ON ADMISSION' constraints.validation.warning='HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication'"
  * @generated
  */
 public interface HospitalAdmissionMedicationsSectionEntriesOptional extends Section {

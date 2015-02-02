@@ -58,10 +58,8 @@ public class MedicationsSection2Impl extends MedicationsSectionEntriesOptional2I
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicationsSection2AbsenceOfMedications(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationsSection2Operations.validateMedicationsSection2AbsenceOfMedications(this, diagnostics, context);
+	public boolean validateMedicationsSection2NullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsSection2Operations.validateMedicationsSection2NullFlavor(this, diagnostics, context);
 	}
 
 	/**

@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionEntriesOptionalTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalCodeP MedicationsSection2Title MedicationsSection2Text MedicationsSectionEntriesOptionalMedicationActivity2' templateId.root='2.16.840.1.113883.10.20.22.2.1.1' templateId.extension='2014-06-09' code.code='10160-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of medication use' constraints.validation.dependOn.MedicationsSectionEntriesOptionalCode='MedicationsSectionEntriesOptionalCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionEntriesOptionalTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalCodeP MedicationsSection2Title MedicationsSection2Text MedicationsSectionEntriesOptionalMedicationActivity2' templateId.root='2.16.840.1.113883.10.20.22.2.1.1' templateId.extension='2014-06-09' nullFlavor='NI' constraints.validation.info='MedicationsSection2NullFlavor' code.code='10160-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of medication use' constraints.validation.dependOn.MedicationsSectionEntriesOptionalCode='MedicationsSectionEntriesOptionalCodeP'"
  * @generated
  */
 public interface MedicationsSection2 extends MedicationsSectionEntriesOptional2 {
@@ -34,10 +34,10 @@ public interface MedicationsSection2 extends MedicationsSectionEntriesOptional2 
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'nullFlavor\')'"
 	 * @generated
 	 */
-	boolean validateMedicationsSection2AbsenceOfMedications(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationsSection2NullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

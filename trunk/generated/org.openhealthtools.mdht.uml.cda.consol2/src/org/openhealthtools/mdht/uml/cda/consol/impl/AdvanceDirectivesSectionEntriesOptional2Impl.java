@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
+import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -59,10 +60,9 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveOrganizer(
+	public boolean validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveOrganizer(
+		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer(
 			this, diagnostics, context);
 	}
 
@@ -71,9 +71,28 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<AdvanceDirectiveOrganizer> getConsolAdvanceDirectiveOrganizers() {
-		return AdvanceDirectivesSectionEntriesOptional2Operations.getConsolAdvanceDirectiveOrganizers(this);
+	public boolean validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation2(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AdvanceDirectiveOrganizer> getAdvanceDirectiveOrganizers() {
+		return AdvanceDirectivesSectionEntriesOptional2Operations.getAdvanceDirectiveOrganizers(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AdvanceDirectiveObservation2> getConsolAdvanceDirectiveObservation2s() {
+		return AdvanceDirectivesSectionEntriesOptional2Operations.getConsolAdvanceDirectiveObservation2s(this);
 	}
 
 	/**

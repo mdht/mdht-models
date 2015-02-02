@@ -51,7 +51,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CulturalAndReligiousObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Cultural And Religious Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CharacteristicsOfHomeEnvironment(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Characteristics Of Home Environment</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getConsolSocialHistoryObservation2s() <em>Get Consol Social History Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getConsolCurrentSmokingStatus2() <em>Get Consol Current Smoking Status2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getConsolCurrentSmokingStatus2s() <em>Get Consol Current Smoking Status2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getConsolTobaccoUse2s() <em>Get Consol Tobacco Use2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getCaregiverCharacteristicss() <em>Get Caregiver Characteristicss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getCulturalAndReligiousObservations() <em>Get Cultural And Religious Observations</em>}</li>
@@ -142,7 +142,7 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_CURRENT_SMOKING_STATUS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CurrentSmokingStatus2))";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_CURRENT_SMOKING_STATUS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CurrentSmokingStatus2))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionCurrentSmokingStatus2(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Current Smoking Status2</em>}' invariant operation.
@@ -481,24 +481,24 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolCurrentSmokingStatus2(SocialHistorySection2) <em>Get Consol Current Smoking Status2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolCurrentSmokingStatus2s(SocialHistorySection2) <em>Get Consol Current Smoking Status2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolCurrentSmokingStatus2(SocialHistorySection2)
+	 * @see #getConsolCurrentSmokingStatus2s(SocialHistorySection2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_CURRENT_SMOKING_STATUS2__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CurrentSmokingStatus2))->asSequence()->any(true).oclAsType(consol::CurrentSmokingStatus2)";
+	protected static final String GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CurrentSmokingStatus2)).oclAsType(consol::CurrentSmokingStatus2)";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolCurrentSmokingStatus2(SocialHistorySection2) <em>Get Consol Current Smoking Status2</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolCurrentSmokingStatus2s(SocialHistorySection2) <em>Get Consol Current Smoking Status2s</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolCurrentSmokingStatus2(SocialHistorySection2)
+	 * @see #getConsolCurrentSmokingStatus2s(SocialHistorySection2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_CURRENT_SMOKING_STATUS2__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -506,20 +506,23 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	 * @generated
 	 */
 
-	public static CurrentSmokingStatus2 getConsolCurrentSmokingStatus2(SocialHistorySection2 socialHistorySection2) {
-		if (GET_CONSOL_CURRENT_SMOKING_STATUS2__EOCL_QRY == null) {
+	public static EList<CurrentSmokingStatus2> getConsolCurrentSmokingStatus2s(
+			SocialHistorySection2 socialHistorySection2) {
+		if (GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
 				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(75));
 			try {
-				GET_CONSOL_CURRENT_SMOKING_STATUS2__EOCL_QRY = helper.createQuery(GET_CONSOL_CURRENT_SMOKING_STATUS2__EOCL_EXP);
+				GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_QRY = helper.createQuery(GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_CURRENT_SMOKING_STATUS2__EOCL_QRY);
-		return (CurrentSmokingStatus2) query.evaluate(socialHistorySection2);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<CurrentSmokingStatus2> result = (Collection<CurrentSmokingStatus2>) query.evaluate(socialHistorySection2);
+		return new BasicEList.UnmodifiableEList<CurrentSmokingStatus2>(result.size(), result.toArray());
 	}
 
 	/**

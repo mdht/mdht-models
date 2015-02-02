@@ -30,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationsAdministeredSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsAdministeredSectionTemplateId MedicationsAdministeredSectionCode MedicationsAdministeredSectionCodeP MedicationsAdministeredSectionText MedicationsAdministeredSectionTitle' templateId.root='2.16.840.1.113883.10.20.22.2.38' code.code='29549-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Medications Administered' constraints.validation.info='MedicationsAdministeredSectionMedicationActivity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsAdministeredSectionTemplateId MedicationsAdministeredSectionCode MedicationsAdministeredSectionCodeP MedicationsAdministeredSectionTitle MedicationsAdministeredSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.38' code.code='29549-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Medications Administered' constraints.validation.info='MedicationsAdministeredSectionMedicationActivity'"
  * @generated
  */
 public interface MedicationsAdministeredSection extends Section {

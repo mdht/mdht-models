@@ -143,9 +143,8 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public CurrentSmokingStatus2 getConsolCurrentSmokingStatus2() {
-		return SocialHistorySection2Operations.getConsolCurrentSmokingStatus2(this);
+	public EList<CurrentSmokingStatus2> getConsolCurrentSmokingStatus2s() {
+		return SocialHistorySection2Operations.getConsolCurrentSmokingStatus2s(this);
 	}
 
 	/**

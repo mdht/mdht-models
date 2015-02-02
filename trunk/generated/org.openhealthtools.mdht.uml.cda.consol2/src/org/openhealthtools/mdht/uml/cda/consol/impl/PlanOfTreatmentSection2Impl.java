@@ -19,12 +19,14 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendations;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2;
+import org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2;
@@ -163,6 +165,28 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlanOfTreatmentSection2PlannedImmunizationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2PlannedImmunizationActivity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlanOfTreatmentSection2GoalObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2GoalObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<PlannedObservation2> getConsolPlannedObservation2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedObservation2s(this);
@@ -246,6 +270,24 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	@Override
 	public EList<NutritionRecommendations> getNutritionRecommendationss() {
 		return PlanOfTreatmentSection2Operations.getNutritionRecommendationss(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PlannedImmunizationActivity> getPlannedImmunizationActivities() {
+		return PlanOfTreatmentSection2Operations.getPlannedImmunizationActivities(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<GoalObservation> getGoalObservations() {
+		return PlanOfTreatmentSection2Operations.getGoalObservations(this);
 	}
 
 	/**

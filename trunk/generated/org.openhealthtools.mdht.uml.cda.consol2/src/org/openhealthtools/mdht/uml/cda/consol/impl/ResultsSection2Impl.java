@@ -58,6 +58,15 @@ public class ResultsSection2Impl extends ResultsSectionEntriesOptional2Impl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultsSection2NullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSection2Operations.validateResultsSection2NullFlavor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultsSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSection2Operations.validateResultsSection2Title(this, diagnostics, context);

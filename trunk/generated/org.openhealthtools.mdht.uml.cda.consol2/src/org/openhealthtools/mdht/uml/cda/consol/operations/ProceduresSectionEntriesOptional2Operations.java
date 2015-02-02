@@ -45,8 +45,8 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#validateProceduresSectionEntriesOptionalProcedureActivityObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#validateProceduresSectionEntriesOptionalProcedureActivityAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Act2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#getConsolProcedureActivityProcedure2s() <em>Get Consol Procedure Activity Procedure2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#getConsolProcedureActivityObservation2() <em>Get Consol Procedure Activity Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#getConsolProcedureActivityAct2() <em>Get Consol Procedure Activity Act2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#getConsolProcedureActivityObservation2s() <em>Get Consol Procedure Activity Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#getConsolProcedureActivityAct2s() <em>Get Consol Procedure Activity Act2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#validateProceduresSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#validateProceduresSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#validateProceduresSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Code</em>}</li>
@@ -135,7 +135,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProcedureActivityObservation2))";
+	protected static final String VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProcedureActivityObservation2))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProceduresSectionEntriesOptionalProcedureActivityObservation2(ProceduresSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Observation2</em>}' invariant operation.
@@ -197,7 +197,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProcedureActivityAct2))";
+	protected static final String VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProcedureActivityAct2))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProceduresSectionEntriesOptionalProcedureActivityAct2(ProceduresSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Act2</em>}' invariant operation.
@@ -297,24 +297,24 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolProcedureActivityObservation2(ProceduresSectionEntriesOptional2) <em>Get Consol Procedure Activity Observation2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolProcedureActivityObservation2s(ProceduresSectionEntriesOptional2) <em>Get Consol Procedure Activity Observation2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolProcedureActivityObservation2(ProceduresSectionEntriesOptional2)
+	 * @see #getConsolProcedureActivityObservation2s(ProceduresSectionEntriesOptional2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureActivityObservation2))->asSequence()->any(true).oclAsType(consol::ProcedureActivityObservation2)";
+	protected static final String GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureActivityObservation2)).oclAsType(consol::ProcedureActivityObservation2)";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolProcedureActivityObservation2(ProceduresSectionEntriesOptional2) <em>Get Consol Procedure Activity Observation2</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolProcedureActivityObservation2s(ProceduresSectionEntriesOptional2) <em>Get Consol Procedure Activity Observation2s</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolProcedureActivityObservation2(ProceduresSectionEntriesOptional2)
+	 * @see #getConsolProcedureActivityObservation2s(ProceduresSectionEntriesOptional2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -322,42 +322,44 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 	 * @generated
 	 */
 
-	public static ProcedureActivityObservation2 getConsolProcedureActivityObservation2(
+	public static EList<ProcedureActivityObservation2> getConsolProcedureActivityObservation2s(
 			ProceduresSectionEntriesOptional2 proceduresSectionEntriesOptional2) {
-		if (GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2__EOCL_QRY == null) {
+		if (GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURES_SECTION_ENTRIES_OPTIONAL2,
 				ConsolPackage.Literals.PROCEDURES_SECTION_ENTRIES_OPTIONAL2.getEAllOperations().get(70));
 			try {
-				GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2__EOCL_QRY = helper.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2__EOCL_EXP);
+				GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2__EOCL_QRY);
-		return (ProcedureActivityObservation2) query.evaluate(proceduresSectionEntriesOptional2);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ProcedureActivityObservation2> result = (Collection<ProcedureActivityObservation2>) query.evaluate(proceduresSectionEntriesOptional2);
+		return new BasicEList.UnmodifiableEList<ProcedureActivityObservation2>(result.size(), result.toArray());
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolProcedureActivityAct2(ProceduresSectionEntriesOptional2) <em>Get Consol Procedure Activity Act2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolProcedureActivityAct2s(ProceduresSectionEntriesOptional2) <em>Get Consol Procedure Activity Act2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolProcedureActivityAct2(ProceduresSectionEntriesOptional2)
+	 * @see #getConsolProcedureActivityAct2s(ProceduresSectionEntriesOptional2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_PROCEDURE_ACTIVITY_ACT2__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProcedureActivityAct2))->asSequence()->any(true).oclAsType(consol::ProcedureActivityAct2)";
+	protected static final String GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProcedureActivityAct2)).oclAsType(consol::ProcedureActivityAct2)";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolProcedureActivityAct2(ProceduresSectionEntriesOptional2) <em>Get Consol Procedure Activity Act2</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolProcedureActivityAct2s(ProceduresSectionEntriesOptional2) <em>Get Consol Procedure Activity Act2s</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolProcedureActivityAct2(ProceduresSectionEntriesOptional2)
+	 * @see #getConsolProcedureActivityAct2s(ProceduresSectionEntriesOptional2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_PROCEDURE_ACTIVITY_ACT2__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -365,21 +367,23 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 	 * @generated
 	 */
 
-	public static ProcedureActivityAct2 getConsolProcedureActivityAct2(
+	public static EList<ProcedureActivityAct2> getConsolProcedureActivityAct2s(
 			ProceduresSectionEntriesOptional2 proceduresSectionEntriesOptional2) {
-		if (GET_CONSOL_PROCEDURE_ACTIVITY_ACT2__EOCL_QRY == null) {
+		if (GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURES_SECTION_ENTRIES_OPTIONAL2,
 				ConsolPackage.Literals.PROCEDURES_SECTION_ENTRIES_OPTIONAL2.getEAllOperations().get(71));
 			try {
-				GET_CONSOL_PROCEDURE_ACTIVITY_ACT2__EOCL_QRY = helper.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_ACT2__EOCL_EXP);
+				GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_ACT2__EOCL_QRY);
-		return (ProcedureActivityAct2) query.evaluate(proceduresSectionEntriesOptional2);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ProcedureActivityAct2> result = (Collection<ProcedureActivityAct2>) query.evaluate(proceduresSectionEntriesOptional2);
+		return new BasicEList.UnmodifiableEList<ProcedureActivityAct2>(result.size(), result.toArray());
 	}
 
 	/**

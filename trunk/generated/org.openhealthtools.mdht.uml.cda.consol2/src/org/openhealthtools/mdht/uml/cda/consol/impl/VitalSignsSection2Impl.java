@@ -58,6 +58,15 @@ public class VitalSignsSection2Impl extends VitalSignsSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateVitalSignsSection2NullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSection2Operations.validateVitalSignsSection2NullFlavor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateVitalSignsSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSection2Operations.validateVitalSignsSection2Title(this, diagnostics, context);

@@ -59,6 +59,15 @@ public class ProblemSection2Impl extends ProblemSectionEntriesOptional2Impl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemSection2NullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSection2Operations.validateProblemSection2NullFlavor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProblemSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSection2Operations.validateProblemSection2Title(this, diagnostics, context);
