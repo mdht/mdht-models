@@ -24,19 +24,16 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2;
-import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2;
 import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation;
-import org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
 import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
 
@@ -60,11 +57,8 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolFunctionalStatusObservation2s() <em>Get Consol Functional Status Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolCognitiveStatusResultOrganizers() <em>Get Consol Cognitive Status Result Organizers</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolCognitiveStatusResultObservations() <em>Get Consol Cognitive Status Result Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolFunctionalStatusProblemObservations() <em>Get Consol Functional Status Problem Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolCognitiveStatusProblemObservations() <em>Get Consol Cognitive Status Problem Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolNonMedicinalSupplyActivity2s() <em>Get Consol Non Medicinal Supply Activity2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolNumberOfPressureUlcersObservations() <em>Get Consol Number Of Pressure Ulcers Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolPressureUlcerObservations() <em>Get Consol Pressure Ulcer Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolHighestPressureUlcerStages() <em>Get Consol Highest Pressure Ulcer Stages</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getSelfCareActivitiess() <em>Get Self Care Activitiess</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getSensoryAndSpeechStatuss() <em>Get Sensory And Speech Statuss</em>}</li>
@@ -639,96 +633,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolFunctionalStatusProblemObservations(FunctionalStatusSection2) <em>Get Consol Functional Status Problem Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolFunctionalStatusProblemObservations(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_FUNCTIONAL_STATUS_PROBLEM_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusProblemObservation)).oclAsType(consol::FunctionalStatusProblemObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolFunctionalStatusProblemObservations(FunctionalStatusSection2) <em>Get Consol Functional Status Problem Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolFunctionalStatusProblemObservations(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_FUNCTIONAL_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-
-	public static EList<FunctionalStatusProblemObservation> getConsolFunctionalStatusProblemObservations(
-			FunctionalStatusSection2 functionalStatusSection2) {
-		if (GET_CONSOL_FUNCTIONAL_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(93));
-			try {
-				GET_CONSOL_FUNCTIONAL_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_FUNCTIONAL_STATUS_PROBLEM_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_FUNCTIONAL_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<FunctionalStatusProblemObservation> result = (Collection<FunctionalStatusProblemObservation>) query.evaluate(functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<FunctionalStatusProblemObservation>(result.size(), result.toArray());
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getConsolCognitiveStatusProblemObservations(FunctionalStatusSection2) <em>Get Consol Cognitive Status Problem Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolCognitiveStatusProblemObservations(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_COGNITIVE_STATUS_PROBLEM_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusProblemObservation)).oclAsType(consol::CognitiveStatusProblemObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolCognitiveStatusProblemObservations(FunctionalStatusSection2) <em>Get Consol Cognitive Status Problem Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolCognitiveStatusProblemObservations(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_COGNITIVE_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-
-	public static EList<CognitiveStatusProblemObservation> getConsolCognitiveStatusProblemObservations(
-			FunctionalStatusSection2 functionalStatusSection2) {
-		if (GET_CONSOL_COGNITIVE_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(94));
-			try {
-				GET_CONSOL_COGNITIVE_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_COGNITIVE_STATUS_PROBLEM_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_COGNITIVE_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<CognitiveStatusProblemObservation> result = (Collection<CognitiveStatusProblemObservation>) query.evaluate(functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<CognitiveStatusProblemObservation>(result.size(), result.toArray());
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #getConsolNonMedicinalSupplyActivity2s(FunctionalStatusSection2) <em>Get Consol Non Medicinal Supply Activity2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -760,7 +664,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(95));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(93));
 			try {
 				GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -805,7 +709,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(96));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(94));
 			try {
 				GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -816,51 +720,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		@SuppressWarnings("unchecked")
 		Collection<NumberOfPressureUlcersObservation> result = (Collection<NumberOfPressureUlcersObservation>) query.evaluate(functionalStatusSection2);
 		return new BasicEList.UnmodifiableEList<NumberOfPressureUlcersObservation>(result.size(), result.toArray());
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getConsolPressureUlcerObservations(FunctionalStatusSection2) <em>Get Consol Pressure Ulcer Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolPressureUlcerObservations(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PressureUlcerObservation)).oclAsType(consol::PressureUlcerObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolPressureUlcerObservations(FunctionalStatusSection2) <em>Get Consol Pressure Ulcer Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolPressureUlcerObservations(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-
-	public static EList<PressureUlcerObservation> getConsolPressureUlcerObservations(
-			FunctionalStatusSection2 functionalStatusSection2) {
-		if (GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(97));
-			try {
-				GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PressureUlcerObservation> result = (Collection<PressureUlcerObservation>) query.evaluate(functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<PressureUlcerObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -895,7 +754,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(98));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(95));
 			try {
 				GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_QRY = helper.createQuery(GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -939,7 +798,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(99));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(96));
 			try {
 				GET_SELF_CARE_ACTIVITIESS__EOCL_QRY = helper.createQuery(GET_SELF_CARE_ACTIVITIESS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -984,7 +843,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(100));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(97));
 			try {
 				GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY = helper.createQuery(GET_SENSORY_AND_SPEECH_STATUSS__EOCL_EXP);
 			} catch (ParserException pe) {

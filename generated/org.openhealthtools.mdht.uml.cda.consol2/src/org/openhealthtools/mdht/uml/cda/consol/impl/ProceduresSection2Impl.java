@@ -71,6 +71,15 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProceduresSection2NullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSection2Operations.validateProceduresSection2NullFlavor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProceduresSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSection2Operations.validateProceduresSection2Title(this, diagnostics, context);
@@ -84,6 +93,48 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	@Override
 	public boolean validateProceduresSection2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSection2Operations.validateProceduresSection2Text(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresSection2Entry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSection2Operations.validateProceduresSection2Entry(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresSection2EntryProcedureActivityAct2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSection2Operations.validateProceduresSection2EntryProcedureActivityAct2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresSection2EntryProcedureActivityObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSection2Operations.validateProceduresSection2EntryProcedureActivityObservation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresSection2EntryProcedureActivityProcedure2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSection2Operations.validateProceduresSection2EntryProcedureActivityProcedure2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -148,30 +199,6 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProceduresSectionEntriesOptionalProcedureActivityObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProceduresSectionEntriesOptionalProcedureActivityAct2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityAct2(
 			this, diagnostics, context);
 	}
 

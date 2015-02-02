@@ -59,6 +59,17 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationsSectionEntriesOptional2AbsenceOfMedications(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptional2AbsenceOfMedications(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

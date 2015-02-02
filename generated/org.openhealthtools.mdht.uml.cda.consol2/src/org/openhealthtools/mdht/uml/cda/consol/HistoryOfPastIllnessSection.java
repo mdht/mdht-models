@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * This section describes the history related to the patient's past complaints, problems, or diagnoses. It records these details up until and possibly pertinent to the patient's current complaint or reason for seeking medical care.
+ * This section contains a record of the patient's past complaints, problems, and diagnoses. It contains data from the patient's past up to the patient's current complaint or reason for seeking medical care.
  * <!-- end-model-doc -->
  *
  *

@@ -175,7 +175,7 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 			medicalEquipmentSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER,
 					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentOrganizer"),
 					new Object[] { medicalEquipmentSection2 }));

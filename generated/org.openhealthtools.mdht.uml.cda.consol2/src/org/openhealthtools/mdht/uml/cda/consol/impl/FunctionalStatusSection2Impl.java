@@ -18,18 +18,15 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2;
-import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2;
 import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation;
-import org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
 import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
 
@@ -180,26 +177,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * @generated
 	 */
 	@Override
-	public EList<FunctionalStatusProblemObservation> getConsolFunctionalStatusProblemObservations() {
-		return FunctionalStatusSection2Operations.getConsolFunctionalStatusProblemObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<CognitiveStatusProblemObservation> getConsolCognitiveStatusProblemObservations() {
-		return FunctionalStatusSection2Operations.getConsolCognitiveStatusProblemObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<NonMedicinalSupplyActivity2> getConsolNonMedicinalSupplyActivity2s() {
 		return FunctionalStatusSection2Operations.getConsolNonMedicinalSupplyActivity2s(this);
 	}
@@ -212,16 +189,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	@Override
 	public EList<NumberOfPressureUlcersObservation> getConsolNumberOfPressureUlcersObservations() {
 		return FunctionalStatusSection2Operations.getConsolNumberOfPressureUlcersObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<PressureUlcerObservation> getConsolPressureUlcerObservations() {
-		return FunctionalStatusSection2Operations.getConsolPressureUlcerObservations(this);
 	}
 
 	/**

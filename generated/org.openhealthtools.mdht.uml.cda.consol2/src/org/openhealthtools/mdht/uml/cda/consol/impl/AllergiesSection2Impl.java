@@ -58,6 +58,15 @@ public class AllergiesSection2Impl extends AllergiesSectionEntriesOptional2Impl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergiesSection2NullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergiesSection2Operations.validateAllergiesSection2NullFlavor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAllergiesSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergiesSection2Operations.validateAllergiesSection2Title(this, diagnostics, context);

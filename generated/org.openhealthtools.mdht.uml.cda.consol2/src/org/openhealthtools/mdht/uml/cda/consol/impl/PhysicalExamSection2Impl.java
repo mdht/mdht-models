@@ -71,6 +71,68 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePhysicalExamSection2Component(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSection2Operations.validatePhysicalExamSection2Component(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalExamSection2ComponentSectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalExamSection2ComponentSectionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalExamSection2ComponentSectionTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalExamSection2ComponentSectionText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalExamSection2ComponentSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<WoundObservation> getWoundObservations() {
 		return PhysicalExamSection2Operations.getWoundObservations(this);
@@ -134,30 +196,6 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	@Override
 	public boolean validatePhysicalExamSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSection2Operations.validatePhysicalExamSectionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePhysicalExamSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSection2Operations.validatePhysicalExamSectionHighestPressureUlcerStage(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSection2Operations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(
-			this, diagnostics, context);
 	}
 
 	/**

@@ -26,12 +26,14 @@ import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
+import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendations;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2;
+import org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2;
@@ -56,6 +58,8 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2HandoffCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Handoff Communication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2NutritionRecommendations(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Nutrition Recommendations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2PlannedImmunizationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Planned Immunization Activity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2GoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Goal Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolPlannedObservation2s() <em>Get Consol Planned Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolPlannedEncounter2s() <em>Get Consol Planned Encounter2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolPlannedAct2s() <em>Get Consol Planned Act2s</em>}</li>
@@ -65,6 +69,8 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolInstruction2s() <em>Get Consol Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getHandoffCommunications() <em>Get Handoff Communications</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getNutritionRecommendationss() <em>Get Nutrition Recommendationss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getPlannedImmunizationActivities() <em>Get Planned Immunization Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getGoalObservations() <em>Get Goal Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code</em>}</li>
@@ -618,6 +624,126 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validatePlanOfTreatmentSection2PlannedImmunizationActivity(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Planned Immunization Activity</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlanOfTreatmentSection2PlannedImmunizationActivity(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::PlannedImmunizationActivity))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePlanOfTreatmentSection2PlannedImmunizationActivity(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Planned Immunization Activity</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlanOfTreatmentSection2PlannedImmunizationActivity(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param planOfTreatmentSection2 The receiving '<em><b>Plan Of Treatment Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validatePlanOfTreatmentSection2PlannedImmunizationActivity(
+			PlanOfTreatmentSection2 planOfTreatmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2);
+			try {
+				VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			planOfTreatmentSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY,
+					ConsolPlugin.INSTANCE.getString("PlanOfTreatmentSection2PlannedImmunizationActivity"),
+					new Object[] { planOfTreatmentSection2 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePlanOfTreatmentSection2GoalObservation(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Goal Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlanOfTreatmentSection2GoalObservation(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::GoalObservation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePlanOfTreatmentSection2GoalObservation(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Goal Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlanOfTreatmentSection2GoalObservation(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param planOfTreatmentSection2 The receiving '<em><b>Plan Of Treatment Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validatePlanOfTreatmentSection2GoalObservation(
+			PlanOfTreatmentSection2 planOfTreatmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2);
+			try {
+				VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			planOfTreatmentSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("PlanOfTreatmentSection2GoalObservation"),
+					new Object[] { planOfTreatmentSection2 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getConsolPlannedObservation2s(PlanOfTreatmentSection2) <em>Get Consol Planned Observation2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -649,7 +775,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
-				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(83));
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(85));
 			try {
 				GET_CONSOL_PLANNED_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PLANNED_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -693,7 +819,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
-				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(84));
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(86));
 			try {
 				GET_CONSOL_PLANNED_ENCOUNTER2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PLANNED_ENCOUNTER2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -737,7 +863,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
-				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(85));
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(87));
 			try {
 				GET_CONSOL_PLANNED_ACT2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PLANNED_ACT2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -781,7 +907,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
-				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(86));
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(88));
 			try {
 				GET_CONSOL_PLANNED_PROCEDURE2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PLANNED_PROCEDURE2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -826,7 +952,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
-				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(87));
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(89));
 			try {
 				GET_CONSOL_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PLANNED_MEDICATION_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -870,7 +996,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
-				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(88));
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(90));
 			try {
 				GET_CONSOL_PLANNED_SUPPLY2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PLANNED_SUPPLY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -914,7 +1040,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
-				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(89));
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(91));
 			try {
 				GET_CONSOL_INSTRUCTION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_INSTRUCTION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -958,7 +1084,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
-				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(90));
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(92));
 			try {
 				GET_HANDOFF_COMMUNICATIONS__EOCL_QRY = helper.createQuery(GET_HANDOFF_COMMUNICATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1003,7 +1129,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
-				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(91));
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(93));
 			try {
 				GET_NUTRITION_RECOMMENDATIONSS__EOCL_QRY = helper.createQuery(GET_NUTRITION_RECOMMENDATIONSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1014,6 +1140,95 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		@SuppressWarnings("unchecked")
 		Collection<NutritionRecommendations> result = (Collection<NutritionRecommendations>) query.evaluate(planOfTreatmentSection2);
 		return new BasicEList.UnmodifiableEList<NutritionRecommendations>(result.size(), result.toArray());
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getPlannedImmunizationActivities(PlanOfTreatmentSection2) <em>Get Planned Immunization Activities</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPlannedImmunizationActivities(PlanOfTreatmentSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::PlannedImmunizationActivity)).oclAsType(consol::PlannedImmunizationActivity)";
+
+	/**
+	 * The cached OCL query for the '{@link #getPlannedImmunizationActivities(PlanOfTreatmentSection2) <em>Get Planned Immunization Activities</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPlannedImmunizationActivities(PlanOfTreatmentSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<PlannedImmunizationActivity> getPlannedImmunizationActivities(
+			PlanOfTreatmentSection2 planOfTreatmentSection2) {
+		if (GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(94));
+			try {
+				GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<PlannedImmunizationActivity> result = (Collection<PlannedImmunizationActivity>) query.evaluate(planOfTreatmentSection2);
+		return new BasicEList.UnmodifiableEList<PlannedImmunizationActivity>(result.size(), result.toArray());
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getGoalObservations(PlanOfTreatmentSection2) <em>Get Goal Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getGoalObservations(PlanOfTreatmentSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_GOAL_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::GoalObservation)).oclAsType(consol::GoalObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getGoalObservations(PlanOfTreatmentSection2) <em>Get Goal Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getGoalObservations(PlanOfTreatmentSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_GOAL_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<GoalObservation> getGoalObservations(PlanOfTreatmentSection2 planOfTreatmentSection2) {
+		if (GET_GOAL_OBSERVATIONS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
+				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(95));
+			try {
+				GET_GOAL_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_GOAL_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_GOAL_OBSERVATIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<GoalObservation> result = (Collection<GoalObservation>) query.evaluate(planOfTreatmentSection2);
+		return new BasicEList.UnmodifiableEList<GoalObservation>(result.size(), result.toArray());
 	}
 
 	/**

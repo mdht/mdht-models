@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
 
@@ -68,9 +69,29 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateInterventionsSection2HandoffCommunication(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InterventionsSection2Operations.validateInterventionsSection2HandoffCommunication(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<InterventionAct> getInterventionActs() {
 		return InterventionsSection2Operations.getInterventionActs(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<HandoffCommunication> getHandoffCommunications() {
+		return InterventionsSection2Operations.getHandoffCommunications(this);
 	}
 
 	/**

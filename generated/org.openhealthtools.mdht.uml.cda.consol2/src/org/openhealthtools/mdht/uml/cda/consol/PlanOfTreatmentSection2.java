@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfTreatmentSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareSectionTemplateId PlanOfCareSectionCode PlanOfCareSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.10' templateId.extension='2014-06-09' code.code='18776-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Plan of Treatment' constraints.validation.dependOn.PlanOfCareSectionCode='PlanOfCareSectionCodeP' constraints.validation.info='PlanOfCareSectionPlannedObservation2 PlanOfCareSectionPlannedEncounter2 PlanOfCareSectionPlannedAct2 PlanOfCareSectionPlannedProcedure2 PlanOfCareSectionPlannedMedicationActivity2 PlanOfCareSectionPlannedSupply2 PlanOfCareSectionInstruction2 PlanOfTreatmentSection2HandoffCommunication PlanOfTreatmentSection2NutritionRecommendations'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareSectionTemplateId PlanOfCareSectionCode PlanOfCareSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.10' templateId.extension='2014-06-09' code.code='18776-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Plan of Treatment' constraints.validation.dependOn.PlanOfCareSectionCode='PlanOfCareSectionCodeP' constraints.validation.info='PlanOfCareSectionPlannedObservation2 PlanOfCareSectionPlannedEncounter2 PlanOfCareSectionPlannedAct2 PlanOfCareSectionPlannedProcedure2 PlanOfCareSectionPlannedMedicationActivity2 PlanOfCareSectionPlannedSupply2 PlanOfCareSectionInstruction2 PlanOfTreatmentSection2HandoffCommunication PlanOfTreatmentSection2NutritionRecommendations PlanOfTreatmentSection2PlannedImmunizationActivity PlanOfTreatmentSection2GoalObservation'"
  * @generated
  */
 public interface PlanOfTreatmentSection2 extends PlanOfCareSection {
@@ -140,6 +140,31 @@ public interface PlanOfTreatmentSection2 extends PlanOfCareSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::PlannedImmunizationActivity))'"
+	 * @generated
+	 */
+	boolean validatePlanOfTreatmentSection2PlannedImmunizationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::GoalObservation))'"
+	 * @generated
+	 */
+	boolean validatePlanOfTreatmentSection2GoalObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PlannedObservation2)).oclAsType(consol::PlannedObservation2)'"
 	 * @generated
@@ -217,6 +242,24 @@ public interface PlanOfTreatmentSection2 extends PlanOfCareSection {
 	 * @generated
 	 */
 	EList<NutritionRecommendations> getNutritionRecommendationss();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::PlannedImmunizationActivity)).oclAsType(consol::PlannedImmunizationActivity)'"
+	 * @generated
+	 */
+	EList<PlannedImmunizationActivity> getPlannedImmunizationActivities();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::GoalObservation)).oclAsType(consol::GoalObservation)'"
+	 * @generated
+	 */
+	EList<GoalObservation> getGoalObservations();
 
 	/**
 	 * <!-- begin-user-doc -->

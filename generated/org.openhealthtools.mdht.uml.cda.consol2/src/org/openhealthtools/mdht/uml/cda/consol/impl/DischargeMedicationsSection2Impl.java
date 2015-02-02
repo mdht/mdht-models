@@ -55,6 +55,17 @@ public class DischargeMedicationsSection2Impl extends DischargeMedicationsSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDischargeMedicationsSection2NullFlavor(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeMedicationsSection2Operations.validateDischargeMedicationsSection2NullFlavor(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateDischargeMedicationsSection2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeMedicationsSection2Operations.validateDischargeMedicationsSection2CodeP(
 			this, diagnostics, context);

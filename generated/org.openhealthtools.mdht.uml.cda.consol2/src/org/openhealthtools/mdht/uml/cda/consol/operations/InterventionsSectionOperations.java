@@ -35,8 +35,8 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection#validateInterventionsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection#validateInterventionsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection#validateInterventionsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection#validateInterventionsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection#validateInterventionsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection#validateInterventionsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Text</em>}</li>
  * </ul>
  * </p>
  *
@@ -230,27 +230,6 @@ public class InterventionsSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInterventionsSectionText(InterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Text</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateInterventionsSectionText(InterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_INTERVENTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateInterventionsSectionText(InterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateInterventionsSectionText(InterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_INTERVENTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -307,6 +286,27 @@ public class InterventionsSectionOperations extends SectionOperations {
 	 */
 
 	protected static Constraint VALIDATE_INTERVENTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateInterventionsSectionText(InterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Text</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInterventionsSectionText(InterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_INTERVENTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateInterventionsSectionText(InterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Text</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInterventionsSectionText(InterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_INTERVENTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
