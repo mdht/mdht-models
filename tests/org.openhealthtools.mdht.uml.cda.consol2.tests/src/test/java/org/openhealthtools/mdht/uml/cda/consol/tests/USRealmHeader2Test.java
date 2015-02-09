@@ -17,21 +17,26 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
 import org.openhealthtools.mdht.uml.cda.Authenticator;
+import org.openhealthtools.mdht.uml.cda.Author;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.Component1;
 import org.openhealthtools.mdht.uml.cda.DataEnterer;
 import org.openhealthtools.mdht.uml.cda.DocumentationOf;
 import org.openhealthtools.mdht.uml.cda.Guardian;
 import org.openhealthtools.mdht.uml.cda.Informant12;
+import org.openhealthtools.mdht.uml.cda.InformationRecipient;
+import org.openhealthtools.mdht.uml.cda.IntendedRecipient;
 import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
 import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
 import org.openhealthtools.mdht.uml.cda.Participant1;
 import org.openhealthtools.mdht.uml.cda.Patient;
 import org.openhealthtools.mdht.uml.cda.PatientRole;
 import org.openhealthtools.mdht.uml.cda.Performer1;
+import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
 import org.openhealthtools.mdht.uml.cda.RelatedEntity;
 import org.openhealthtools.mdht.uml.cda.ServiceEvent;
@@ -39,11 +44,19 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.USRealmHeader2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ADXP;
 import org.openhealthtools.mdht.uml.hl7.datatypes.BL;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
+import org.openhealthtools.mdht.uml.hl7.datatypes.TEL;
+import org.openhealthtools.mdht.uml.hl7.datatypes.TS;
+import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
+import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
+import org.openhealthtools.mdht.uml.hl7.vocab.TelecommunicationAddressUse;
 
 /**
  * <!-- begin-user-doc -->
@@ -137,7 +150,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse() {
@@ -148,13 +161,27 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
+				pat.getGuardians().add(guardian);
+				guardian.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (RecordTarget rt : target.getRecordTargets()) {
+					for (Guardian g : rt.getPatientRole().getPatient().getGuardians()) {
+						for (TEL t : g.getTelecoms()) {
+							t.getUses().add(TelecommunicationAddressUse.AS);
+						}
+					}
+				}
 			}
 
 			@Override
@@ -299,7 +326,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom() {
@@ -310,13 +337,24 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
+				pat.getGuardians().add(guardian);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (RecordTarget rt : target.getRecordTargets()) {
+					for (Guardian g : rt.getPatientRole().getPatient().getGuardians()) {
+						g.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
+					}
+				}
 			}
 
 			@Override
@@ -425,7 +463,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToYear() {
@@ -436,13 +474,28 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				// fails if value is less than required number of digits (4)
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("123")); // fails as intended
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				// passes if value is more than or equal to required number of digits (6)
+				target.getRecordTargets().clear();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("1234")); // passes as intended
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
 			}
 
 			@Override
@@ -459,7 +512,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToDay() {
@@ -470,12 +523,28 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				// fails if value is less than required number of digits (8)
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("1234567")); // fails as intended
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
+				// passes if value is more than or equal to required number of digits (8)
+				target.getRecordTargets().clear();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("12345678")); // passes as intended
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
 
 			}
 
@@ -493,7 +562,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute() {
@@ -504,12 +573,28 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				// fails if value is less than required number of digits (10)
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("123456789")); // fails as intended
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
+				// passes if value is more than or equal to required number of digits (10)
+				target.getRecordTargets().clear();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("1234567890")); // passes as intended
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
 
 			}
 
@@ -591,7 +676,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				CE raceCode = DatatypesFactory.eINSTANCE.createCE("notChecked", "2.16.840.1.113883.6.238");
+				CE raceCode = DatatypesFactory.eINSTANCE.createCE("1002-5", "2.16.840.1.113883.6.238");
 				for (RecordTarget rt : target.getRecordTargets()) {
 					rt.getPatientRole().getPatient().setRaceCode(raceCode);
 				}
@@ -653,7 +738,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime() {
@@ -664,13 +749,29 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				// fails if no birthTime element exists
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				// passes if a birthTime element exists
+				TS btTS = DatatypesFactory.eINSTANCE.createTS();
+				btTS.setNullFlavor(NullFlavor.NAV);
+				target.getRecordTargets().clear();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS());
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
 			}
 
 			@Override
@@ -891,7 +992,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCodeP() {
@@ -902,13 +1003,16 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				target.setDataEnterer(de);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				de.setAssignedEntity(ae);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				target.getDataEnterer().getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
@@ -925,7 +1029,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCode() {
@@ -936,13 +1040,18 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				target.setDataEnterer(de);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				de.setAssignedEntity(ae);
+				ae.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				target.getDataEnterer().getAssignedEntity().setCode(
+					DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101"));
 			}
 
 			@Override
@@ -959,7 +1068,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntity() {
@@ -970,13 +1079,15 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				target.setDataEnterer(de);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				target.getDataEnterer().setAssignedEntity(ae);
 			}
 
 			@Override
@@ -993,7 +1104,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2AuthorAssignedAuthorIfAssignedPersonThenContainsCode() {
@@ -1004,13 +1115,20 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Author a = CDAFactory.eINSTANCE.createAuthor();
+				target.getAuthors().add(a);
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				a.setAssignedAuthor(aa);
+				Person ap = CDAFactory.eINSTANCE.createPerson();
+				aa.setAssignedPerson(ap);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (Author a : target.getAuthors()) {
+					a.getAssignedAuthor().setCode(DatatypesFactory.eINSTANCE.createCE());
+				}
 			}
 
 			@Override
@@ -1027,7 +1145,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2AuthorAssignedAuthorCodeTerminology() {
@@ -1038,13 +1156,22 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Author a = CDAFactory.eINSTANCE.createAuthor();
+				target.getAuthors().add(a);
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				a.setAssignedAuthor(aa);
+				Person ap = CDAFactory.eINSTANCE.createPerson();
+				aa.setAssignedPerson(ap);
+				aa.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (Author a : target.getAuthors()) {
+					a.getAssignedAuthor().setCode(
+						DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101"));
+				}
 			}
 
 			@Override
@@ -1061,7 +1188,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthor() {
@@ -1072,13 +1199,17 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Author a = CDAFactory.eINSTANCE.createAuthor();
+				target.getAuthors().add(a);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				for (Author a : target.getAuthors()) {
+					a.setAssignedAuthor(aa);
+				}
 			}
 
 			@Override
@@ -1095,7 +1226,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformationRecipientIntendedRecipientId() {
@@ -1106,13 +1237,19 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(intendedRec);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				II id = DatatypesFactory.eINSTANCE.createII();
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.getIntendedRecipient().getIds().add(id);
+				}
 			}
 
 			@Override
@@ -1129,7 +1266,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2GeneralHeaderConstraintsInformationRecipientIntendedRecipient() {
@@ -1140,13 +1277,17 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.setIntendedRecipient(intendedRec);
+				}
 			}
 
 			@Override
@@ -1235,7 +1376,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet() {
@@ -1246,13 +1387,23 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				ADXP sal = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getStreetAddressLines().add(sal);
+					}
+				}
 			}
 
 			@Override
@@ -1269,7 +1420,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP() {
@@ -1280,13 +1431,22 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getUses().add(PostalAddressUse.ABC);
+					}
+				}
 			}
 
 			@Override
@@ -1303,7 +1463,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse() {
@@ -1314,13 +1474,28 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
+				addr.getUses().add(PostalAddressUse.ABC);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getUses().clear();
+					}
+				}
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getUses().add(PostalAddressUse.DIR);
+					}
+				}
 			}
 
 			@Override
@@ -1337,7 +1512,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry() {
@@ -1348,13 +1523,23 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				ADXP country = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getCountries().add(country);
+					}
+				}
 			}
 
 			@Override
@@ -1371,7 +1556,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState() {
@@ -1382,13 +1567,23 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				ADXP state = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getStates().add(state);
+					}
+				}
 			}
 
 			@Override
@@ -1405,7 +1600,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity() {
@@ -1416,13 +1611,23 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				ADXP city = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getCities().add(city);
+					}
+				}
 			}
 
 			@Override
@@ -1439,7 +1644,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode() {
@@ -1450,13 +1655,23 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				ADXP postalCode = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getPostalCodes().add(postalCode);
+					}
+				}
 			}
 
 			@Override
@@ -1473,7 +1688,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
@@ -1484,13 +1699,23 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				ADXP sdl = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getStreetAddressLines().add(sdl);
+					}
+				}
 			}
 
 			@Override
@@ -1507,7 +1732,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCodeP() {
@@ -1518,13 +1743,18 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (Informant12 inf : target.getInformants()) {
+					inf.getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
+				}
 			}
 
 			@Override
@@ -1541,7 +1771,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCode() {
@@ -1552,13 +1782,19 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (Informant12 inf : target.getInformants()) {
+					inf.getAssignedEntity().setCode(
+						DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101"));
+				}
 			}
 
 			@Override
@@ -1575,7 +1811,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityAddr() {
@@ -1586,13 +1822,18 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (Informant12 inf : target.getInformants()) {
+					inf.getAssignedEntity().getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				}
 			}
 
 			@Override
@@ -1605,278 +1846,6 @@ public class USRealmHeader2Test extends CDAValidationTest {
 		};
 
 		validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityAddrTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreetTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreetTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseP() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUsePTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUsePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountry() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountryTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountryTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressState() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStateTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressState",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressState(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStateTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCity() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCityTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase.doValidationTest();
 	}
 
 	/**
@@ -2098,7 +2067,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP() {
@@ -2109,13 +2078,25 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				docOf.setServiceEvent(se);
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				perf.setAssignedEntity(ae);
 
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
+						perf.getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
+					}
+				}
 			}
 
 			@Override
@@ -2132,7 +2113,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode() {
@@ -2143,13 +2124,27 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				docOf.setServiceEvent(se);
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				perf.setAssignedEntity(ae);
+				ae.setCode(DatatypesFactory.eINSTANCE.createCE());
 
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
+						perf.getAssignedEntity().setCode(
+							DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101"));
+					}
+				}
 			}
 
 			@Override
@@ -2166,7 +2161,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP() {
@@ -2177,13 +2172,22 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				docOf.setServiceEvent(se);
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
+						perf.setFunctionCode(DatatypesFactory.eINSTANCE.createCE());
+					}
+				}
 			}
 
 			@Override
@@ -2200,7 +2204,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode() {
@@ -2211,13 +2215,23 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				docOf.setServiceEvent(se);
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
+				perf.setFunctionCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
+						perf.setFunctionCode(DatatypesFactory.eINSTANCE.createCE("ADMPHYS", "2.16.840.1.113883.5.88"));
+					}
+				}
 			}
 
 			@Override
@@ -2234,7 +2248,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity() {
@@ -2245,13 +2259,23 @@ public class USRealmHeader2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(USRealmHeader2 target) {
-
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				docOf.setServiceEvent(se);
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
+						perf.setAssignedEntity(ae);
+					}
+				}
 			}
 
 			@Override

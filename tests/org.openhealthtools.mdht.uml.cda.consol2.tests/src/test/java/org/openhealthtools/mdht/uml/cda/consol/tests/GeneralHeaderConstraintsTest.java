@@ -2057,12 +2057,12 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(GeneralHeaderConstraints target) {
-				// fails if value is less than required number of digits (6)
+				// fails if value is less than required number of digits (8)
 				target.init();
 				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
 				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
 				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("12345")); // fails as intended
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("1234567")); // fails as intended
 				pr.setPatient(patient);
 				re.setPatientRole(pr);
 				target.getRecordTargets().add(re);
@@ -2070,12 +2070,12 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(GeneralHeaderConstraints target) {
-				// passes if value is more than or equal to required number of digits (6)
+				// passes if value is more than or equal to required number of digits (8)
 				target.getRecordTargets().clear();
 				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
 				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
 				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("123456")); // passes as intended
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("12345678")); // passes as intended
 				pr.setPatient(patient);
 				re.setPatientRole(pr);
 				target.getRecordTargets().add(re);

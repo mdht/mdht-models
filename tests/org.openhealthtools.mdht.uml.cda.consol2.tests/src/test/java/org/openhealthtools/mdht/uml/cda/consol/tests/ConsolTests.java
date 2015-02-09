@@ -138,7 +138,7 @@ import org.junit.runners.Suite;
 		OperativeNote2Test.class, ProcedureNote2Test.class, ProgressNote2Test.class, UnstructuredDocument2Test.class,
 		PreconditionForSubstanceAdministration2Test.class, NumberOfPressureUlcersObservation2Test.class,
 		FamilyHistoryObservation2Test.class, FamilyHistoryOrganizer2Test.class, FamilyHistorySection2Test.class,
-		PhysicianReadingStudyPerformer2Test.class, CourseOfCareSectionTest.class })
+		PhysicianReadingStudyPerformer2Test.class, CourseOfCareSectionTest.class, USRealmHeader2Test.class })
 public class ConsolTests {
 
 	/**
