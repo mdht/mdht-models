@@ -80,9 +80,52 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateCoverageActivityPolicyActivity2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoverageActivity2Operations.validateCoverageActivityPolicyActivity2(this, diagnostics, context);
+	public boolean validateCoverageActivity2EntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationship(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCoverageActivity2EntryRelationshipINTValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipINTValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCoverageActivity2EntryRelationshipTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCoverageActivity2EntryRelationshipSequenceNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipSequenceNumber(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCoverageActivity2EntryRelationshipPolicyActivity2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipPolicyActivity2(
+			this, diagnostics, context);
 	}
 
 	/**

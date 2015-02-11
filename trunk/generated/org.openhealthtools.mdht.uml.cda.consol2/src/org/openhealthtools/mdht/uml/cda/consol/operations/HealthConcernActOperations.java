@@ -30,11 +30,9 @@ import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation;
-import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
-import org.openhealthtools.mdht.uml.cda.consol.CurrentSmokingStatus2;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer;
@@ -42,6 +40,7 @@ import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation;
+import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionalStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
@@ -57,6 +56,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ResultObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
 import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
+import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
@@ -2035,7 +2035,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEALTH_CONCERN_ACT_COGNITIVE_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::CognitiveStatusObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_HEALTH_CONCERN_ACT_COGNITIVE_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MentalStatusObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHealthConcernActCognitiveStatusObservation2(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Cognitive Status Observation2</em>}' invariant operation.
@@ -2095,7 +2095,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEALTH_CONCERN_ACT_COGNITIVE_STATUS_OBSERVATION2_EXTRA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::CognitiveStatusObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_HEALTH_CONCERN_ACT_COGNITIVE_STATUS_OBSERVATION2_EXTRA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MentalStatusObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHealthConcernActCognitiveStatusObservation2Extra(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Cognitive Status Observation2 Extra</em>}' invariant operation.
@@ -2155,7 +2155,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEALTH_CONCERN_ACT_CURRENT_SMOKING_STATUS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::CurrentSmokingStatus2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_HEALTH_CONCERN_ACT_CURRENT_SMOKING_STATUS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SmokingStatusMeaningfulUse2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHealthConcernActCurrentSmokingStatus2(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Current Smoking Status2</em>}' invariant operation.
@@ -4015,7 +4015,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_COGNITIVE_STATUS_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusObservation2)).oclAsType(consol::CognitiveStatusObservation2)";
+	protected static final String GET_COGNITIVE_STATUS_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MentalStatusObservation2)).oclAsType(consol::MentalStatusObservation2)";
 
 	/**
 	 * The cached OCL query for the '{@link #getCognitiveStatusObservation2s(HealthConcernAct) <em>Get Cognitive Status Observation2s</em>}' query operation.
@@ -4033,7 +4033,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<CognitiveStatusObservation2> getCognitiveStatusObservation2s(HealthConcernAct healthConcernAct) {
+	public static EList<MentalStatusObservation2> getCognitiveStatusObservation2s(HealthConcernAct healthConcernAct) {
 		if (GET_COGNITIVE_STATUS_OBSERVATION2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -4047,8 +4047,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_COGNITIVE_STATUS_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CognitiveStatusObservation2> result = (Collection<CognitiveStatusObservation2>) query.evaluate(healthConcernAct);
-		return new BasicEList.UnmodifiableEList<CognitiveStatusObservation2>(result.size(), result.toArray());
+		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(healthConcernAct);
+		return new BasicEList.UnmodifiableEList<MentalStatusObservation2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4059,7 +4059,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_COGNITIVE_STATUS_OBSERVATION2_EXTRAS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusObservation2)).oclAsType(consol::CognitiveStatusObservation2)";
+	protected static final String GET_COGNITIVE_STATUS_OBSERVATION2_EXTRAS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MentalStatusObservation2)).oclAsType(consol::MentalStatusObservation2)";
 
 	/**
 	 * The cached OCL query for the '{@link #getCognitiveStatusObservation2Extras(HealthConcernAct) <em>Get Cognitive Status Observation2 Extras</em>}' query operation.
@@ -4077,8 +4077,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<CognitiveStatusObservation2> getCognitiveStatusObservation2Extras(
-			HealthConcernAct healthConcernAct) {
+	public static EList<MentalStatusObservation2> getCognitiveStatusObservation2Extras(HealthConcernAct healthConcernAct) {
 		if (GET_COGNITIVE_STATUS_OBSERVATION2_EXTRAS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -4092,8 +4091,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_COGNITIVE_STATUS_OBSERVATION2_EXTRAS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CognitiveStatusObservation2> result = (Collection<CognitiveStatusObservation2>) query.evaluate(healthConcernAct);
-		return new BasicEList.UnmodifiableEList<CognitiveStatusObservation2>(result.size(), result.toArray());
+		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(healthConcernAct);
+		return new BasicEList.UnmodifiableEList<MentalStatusObservation2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4104,7 +4103,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CURRENT_SMOKING_STATUS2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CurrentSmokingStatus2)).oclAsType(consol::CurrentSmokingStatus2)";
+	protected static final String GET_CURRENT_SMOKING_STATUS2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SmokingStatusMeaningfulUse2)).oclAsType(consol::SmokingStatusMeaningfulUse2)";
 
 	/**
 	 * The cached OCL query for the '{@link #getCurrentSmokingStatus2s(HealthConcernAct) <em>Get Current Smoking Status2s</em>}' query operation.
@@ -4122,7 +4121,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<CurrentSmokingStatus2> getCurrentSmokingStatus2s(HealthConcernAct healthConcernAct) {
+	public static EList<SmokingStatusMeaningfulUse2> getCurrentSmokingStatus2s(HealthConcernAct healthConcernAct) {
 		if (GET_CURRENT_SMOKING_STATUS2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -4136,8 +4135,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CURRENT_SMOKING_STATUS2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CurrentSmokingStatus2> result = (Collection<CurrentSmokingStatus2>) query.evaluate(healthConcernAct);
-		return new BasicEList.UnmodifiableEList<CurrentSmokingStatus2>(result.size(), result.toArray());
+		Collection<SmokingStatusMeaningfulUse2> result = (Collection<SmokingStatusMeaningfulUse2>) query.evaluate(healthConcernAct);
+		return new BasicEList.UnmodifiableEList<SmokingStatusMeaningfulUse2>(result.size(), result.toArray());
 	}
 
 	/**

@@ -104,6 +104,17 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyObservation2AllergyStatusInversionIndicator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2AllergyStatusInversionIndicator(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAllergyObservation2ReactionInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -131,16 +142,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	@Override
 	public boolean validateAllergyObservation2NegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservation2NegationInd(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservation2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservation2Text(this, diagnostics, context);
 	}
 
 	/**
@@ -194,26 +195,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	public boolean validateAllergyObservation2SeverityObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservation2SeverityObservation2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservation2EDTELValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservation2EDTELValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservation2EDReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservation2EDReference(this, diagnostics, context);
 	}
 
 	/**

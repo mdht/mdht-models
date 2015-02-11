@@ -57,6 +57,28 @@ public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAdvanceDirectiveObservation2HasStartingTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2HasStartingTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveObservation2HasEndingTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2HasEndingTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAdvanceDirectiveObservation2Value(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2Value(
@@ -68,9 +90,31 @@ public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAdvanceDirectiveObservation2AuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2AuthorParticipation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAdvanceDirectiveObservation2IVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2IVLTSLow(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveObservation2IVLTSHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2IVLTSHigh(
 			this, diagnostics, context);
 	}
 
@@ -155,6 +199,17 @@ public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservatio
 	public boolean validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierTime(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierTime(
 			this, diagnostics, context);
 	}
 

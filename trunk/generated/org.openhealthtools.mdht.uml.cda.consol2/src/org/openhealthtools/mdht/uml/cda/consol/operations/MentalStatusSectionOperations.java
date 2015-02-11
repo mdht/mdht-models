@@ -27,11 +27,11 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation;
-import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation;
+import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
+import org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
@@ -622,7 +622,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MENTAL_STATUS_SECTION_COGNITIVE_STATUS_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::CognitiveStatusOrganizer2))";
+	protected static final String VALIDATE_MENTAL_STATUS_SECTION_COGNITIVE_STATUS_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::MentalStatusOrganizer2))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMentalStatusSectionCognitiveStatusOrganizer2(MentalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Cognitive Status Organizer2</em>}' invariant operation.
@@ -682,7 +682,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MENTAL_STATUS_SECTION_COGNITIVE_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CognitiveStatusObservation2))";
+	protected static final String VALIDATE_MENTAL_STATUS_SECTION_COGNITIVE_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::MentalStatusObservation2))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMentalStatusSectionCognitiveStatusObservation2(MentalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Cognitive Status Observation2</em>}' invariant operation.
@@ -980,7 +980,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_COGNITIVE_STATUS_ORGANIZER2S__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::CognitiveStatusOrganizer2)).oclAsType(consol::CognitiveStatusOrganizer2)";
+	protected static final String GET_COGNITIVE_STATUS_ORGANIZER2S__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::MentalStatusOrganizer2)).oclAsType(consol::MentalStatusOrganizer2)";
 
 	/**
 	 * The cached OCL query for the '{@link #getCognitiveStatusOrganizer2s(MentalStatusSection) <em>Get Cognitive Status Organizer2s</em>}' query operation.
@@ -998,7 +998,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 	 * @generated
 	 */
 
-	public static EList<CognitiveStatusOrganizer2> getCognitiveStatusOrganizer2s(MentalStatusSection mentalStatusSection) {
+	public static EList<MentalStatusOrganizer2> getCognitiveStatusOrganizer2s(MentalStatusSection mentalStatusSection) {
 		if (GET_COGNITIVE_STATUS_ORGANIZER2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1012,8 +1012,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_COGNITIVE_STATUS_ORGANIZER2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CognitiveStatusOrganizer2> result = (Collection<CognitiveStatusOrganizer2>) query.evaluate(mentalStatusSection);
-		return new BasicEList.UnmodifiableEList<CognitiveStatusOrganizer2>(result.size(), result.toArray());
+		Collection<MentalStatusOrganizer2> result = (Collection<MentalStatusOrganizer2>) query.evaluate(mentalStatusSection);
+		return new BasicEList.UnmodifiableEList<MentalStatusOrganizer2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1024,7 +1024,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_COGNITIVE_STATUS_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusObservation2)).oclAsType(consol::CognitiveStatusObservation2)";
+	protected static final String GET_COGNITIVE_STATUS_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MentalStatusObservation2)).oclAsType(consol::MentalStatusObservation2)";
 
 	/**
 	 * The cached OCL query for the '{@link #getCognitiveStatusObservation2s(MentalStatusSection) <em>Get Cognitive Status Observation2s</em>}' query operation.
@@ -1042,7 +1042,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 	 * @generated
 	 */
 
-	public static EList<CognitiveStatusObservation2> getCognitiveStatusObservation2s(
+	public static EList<MentalStatusObservation2> getCognitiveStatusObservation2s(
 			MentalStatusSection mentalStatusSection) {
 		if (GET_COGNITIVE_STATUS_OBSERVATION2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1057,8 +1057,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_COGNITIVE_STATUS_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CognitiveStatusObservation2> result = (Collection<CognitiveStatusObservation2>) query.evaluate(mentalStatusSection);
-		return new BasicEList.UnmodifiableEList<CognitiveStatusObservation2>(result.size(), result.toArray());
+		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(mentalStatusSection);
+		return new BasicEList.UnmodifiableEList<MentalStatusObservation2>(result.size(), result.toArray());
 	}
 
 	/**

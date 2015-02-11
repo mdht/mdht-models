@@ -24,10 +24,8 @@ import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation;
-import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
-import org.openhealthtools.mdht.uml.cda.consol.CurrentSmokingStatus2;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer;
@@ -35,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation;
+import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionalStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
@@ -50,6 +49,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ResultObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
 import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
+import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
@@ -798,7 +798,7 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CognitiveStatusObservation2> getCognitiveStatusObservation2s() {
+	public EList<MentalStatusObservation2> getCognitiveStatusObservation2s() {
 		return HealthConcernActOperations.getCognitiveStatusObservation2s(this);
 	}
 
@@ -807,7 +807,7 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CognitiveStatusObservation2> getCognitiveStatusObservation2Extras() {
+	public EList<MentalStatusObservation2> getCognitiveStatusObservation2Extras() {
 		return HealthConcernActOperations.getCognitiveStatusObservation2Extras(this);
 	}
 
@@ -816,7 +816,7 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CurrentSmokingStatus2> getCurrentSmokingStatus2s() {
+	public EList<SmokingStatusMeaningfulUse2> getCurrentSmokingStatus2s() {
 		return HealthConcernActOperations.getCurrentSmokingStatus2s(this);
 	}
 

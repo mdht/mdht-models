@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
-import org.openhealthtools.mdht.uml.cda.consol.CurrentSmokingStatus2;
+import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
@@ -142,7 +142,7 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_CURRENT_SMOKING_STATUS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CurrentSmokingStatus2))";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_CURRENT_SMOKING_STATUS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SmokingStatusMeaningfulUse2))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionCurrentSmokingStatus2(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Current Smoking Status2</em>}' invariant operation.
@@ -488,7 +488,7 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CurrentSmokingStatus2)).oclAsType(consol::CurrentSmokingStatus2)";
+	protected static final String GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SmokingStatusMeaningfulUse2)).oclAsType(consol::SmokingStatusMeaningfulUse2)";
 
 	/**
 	 * The cached OCL query for the '{@link #getConsolCurrentSmokingStatus2s(SocialHistorySection2) <em>Get Consol Current Smoking Status2s</em>}' query operation.
@@ -506,7 +506,7 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	 * @generated
 	 */
 
-	public static EList<CurrentSmokingStatus2> getConsolCurrentSmokingStatus2s(
+	public static EList<SmokingStatusMeaningfulUse2> getConsolCurrentSmokingStatus2s(
 			SocialHistorySection2 socialHistorySection2) {
 		if (GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -521,8 +521,8 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CurrentSmokingStatus2> result = (Collection<CurrentSmokingStatus2>) query.evaluate(socialHistorySection2);
-		return new BasicEList.UnmodifiableEList<CurrentSmokingStatus2>(result.size(), result.toArray());
+		Collection<SmokingStatusMeaningfulUse2> result = (Collection<SmokingStatusMeaningfulUse2>) query.evaluate(socialHistorySection2);
+		return new BasicEList.UnmodifiableEList<SmokingStatusMeaningfulUse2>(result.size(), result.toArray());
 	}
 
 	/**

@@ -37735,26 +37735,6 @@ public interface ConsolPackage extends EPackage {
 	int ALLERGY_OBSERVATION2 = 206;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusOrganizer2Impl <em>Cognitive Status Organizer2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusOrganizer2Impl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCognitiveStatusOrganizer2()
-	 * @generated
-	 */
-	int COGNITIVE_STATUS_ORGANIZER2 = 239;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusObservation2Impl <em>Cognitive Status Observation2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusObservation2Impl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCognitiveStatusObservation2()
-	 * @generated
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2 = 207;
-
-	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CoverageActivity2Impl <em>Coverage Activity2</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -37763,16 +37743,6 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	int COVERAGE_ACTIVITY2 = 278;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CurrentSmokingStatus2Impl <em>Current Smoking Status2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.CurrentSmokingStatus2Impl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCurrentSmokingStatus2()
-	 * @generated
-	 */
-	int CURRENT_SMOKING_STATUS2 = 208;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DeceasedObservation2Impl <em>Deceased Observation2</em>}' class.
@@ -48010,283 +47980,14 @@ public interface ConsolPackage extends EPackage {
 	int ALLERGY_OBSERVATION2_FEATURE_COUNT = ALLERGY_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MentalStatusObservation2Impl <em>Mental Status Observation2</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MentalStatusObservation2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMentalStatusObservation2()
 	 * @generated
-	 * @ordered
 	 */
-	int COGNITIVE_STATUS_OBSERVATION2__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__ID = CDAPackage.OBSERVATION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__CODE = CDAPackage.OBSERVATION__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__TEXT = CDAPackage.OBSERVATION__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__VALUE = CDAPackage.OBSERVATION__VALUE;
-
-	/**
-	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
-
-	/**
-	 * The number of structural features of the '<em>Cognitive Status Observation2</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITIVE_STATUS_OBSERVATION2_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int MENTAL_STATUS_OBSERVATION2 = 207;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -48295,7 +47996,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__REALM_CODE = SMOKING_STATUS_OBSERVATION__REALM_CODE;
+	int MENTAL_STATUS_OBSERVATION2__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -48304,7 +48005,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__TYPE_ID = SMOKING_STATUS_OBSERVATION__TYPE_ID;
+	int MENTAL_STATUS_OBSERVATION2__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -48313,7 +48014,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__TEMPLATE_ID = SMOKING_STATUS_OBSERVATION__TEMPLATE_ID;
+	int MENTAL_STATUS_OBSERVATION2__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -48322,7 +48023,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__ID = SMOKING_STATUS_OBSERVATION__ID;
+	int MENTAL_STATUS_OBSERVATION2__ID = CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -48331,7 +48032,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__CODE = SMOKING_STATUS_OBSERVATION__CODE;
+	int MENTAL_STATUS_OBSERVATION2__CODE = CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -48340,7 +48041,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__DERIVATION_EXPR = SMOKING_STATUS_OBSERVATION__DERIVATION_EXPR;
+	int MENTAL_STATUS_OBSERVATION2__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -48349,7 +48050,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__TEXT = SMOKING_STATUS_OBSERVATION__TEXT;
+	int MENTAL_STATUS_OBSERVATION2__TEXT = CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -48358,7 +48059,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__STATUS_CODE = SMOKING_STATUS_OBSERVATION__STATUS_CODE;
+	int MENTAL_STATUS_OBSERVATION2__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -48367,7 +48068,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__EFFECTIVE_TIME = SMOKING_STATUS_OBSERVATION__EFFECTIVE_TIME;
+	int MENTAL_STATUS_OBSERVATION2__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -48376,7 +48077,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__PRIORITY_CODE = SMOKING_STATUS_OBSERVATION__PRIORITY_CODE;
+	int MENTAL_STATUS_OBSERVATION2__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -48385,7 +48086,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__REPEAT_NUMBER = SMOKING_STATUS_OBSERVATION__REPEAT_NUMBER;
+	int MENTAL_STATUS_OBSERVATION2__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -48394,7 +48095,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__LANGUAGE_CODE = SMOKING_STATUS_OBSERVATION__LANGUAGE_CODE;
+	int MENTAL_STATUS_OBSERVATION2__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -48403,7 +48104,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__VALUE = SMOKING_STATUS_OBSERVATION__VALUE;
+	int MENTAL_STATUS_OBSERVATION2__VALUE = CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -48412,7 +48113,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__INTERPRETATION_CODE = SMOKING_STATUS_OBSERVATION__INTERPRETATION_CODE;
+	int MENTAL_STATUS_OBSERVATION2__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -48421,7 +48122,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__METHOD_CODE = SMOKING_STATUS_OBSERVATION__METHOD_CODE;
+	int MENTAL_STATUS_OBSERVATION2__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -48430,7 +48131,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__TARGET_SITE_CODE = SMOKING_STATUS_OBSERVATION__TARGET_SITE_CODE;
+	int MENTAL_STATUS_OBSERVATION2__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -48439,7 +48140,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__SUBJECT = SMOKING_STATUS_OBSERVATION__SUBJECT;
+	int MENTAL_STATUS_OBSERVATION2__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -48448,7 +48149,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__SPECIMEN = SMOKING_STATUS_OBSERVATION__SPECIMEN;
+	int MENTAL_STATUS_OBSERVATION2__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -48457,7 +48158,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__PERFORMER = SMOKING_STATUS_OBSERVATION__PERFORMER;
+	int MENTAL_STATUS_OBSERVATION2__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -48466,7 +48167,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__AUTHOR = SMOKING_STATUS_OBSERVATION__AUTHOR;
+	int MENTAL_STATUS_OBSERVATION2__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -48475,7 +48176,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__INFORMANT = SMOKING_STATUS_OBSERVATION__INFORMANT;
+	int MENTAL_STATUS_OBSERVATION2__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -48484,7 +48185,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__PARTICIPANT = SMOKING_STATUS_OBSERVATION__PARTICIPANT;
+	int MENTAL_STATUS_OBSERVATION2__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -48493,7 +48194,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__ENTRY_RELATIONSHIP = SMOKING_STATUS_OBSERVATION__ENTRY_RELATIONSHIP;
+	int MENTAL_STATUS_OBSERVATION2__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -48502,7 +48203,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__REFERENCE = SMOKING_STATUS_OBSERVATION__REFERENCE;
+	int MENTAL_STATUS_OBSERVATION2__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -48511,7 +48212,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__PRECONDITION = SMOKING_STATUS_OBSERVATION__PRECONDITION;
+	int MENTAL_STATUS_OBSERVATION2__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -48520,7 +48221,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__REFERENCE_RANGE = SMOKING_STATUS_OBSERVATION__REFERENCE_RANGE;
+	int MENTAL_STATUS_OBSERVATION2__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -48529,7 +48230,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__NULL_FLAVOR = SMOKING_STATUS_OBSERVATION__NULL_FLAVOR;
+	int MENTAL_STATUS_OBSERVATION2__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -48538,7 +48239,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__CLASS_CODE = SMOKING_STATUS_OBSERVATION__CLASS_CODE;
+	int MENTAL_STATUS_OBSERVATION2__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -48547,7 +48248,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__MOOD_CODE = SMOKING_STATUS_OBSERVATION__MOOD_CODE;
+	int MENTAL_STATUS_OBSERVATION2__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -48556,16 +48257,305 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2__NEGATION_IND = SMOKING_STATUS_OBSERVATION__NEGATION_IND;
+	int MENTAL_STATUS_OBSERVATION2__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
-	 * The number of structural features of the '<em>Current Smoking Status2</em>' class.
+	 * The number of structural features of the '<em>Mental Status Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENT_SMOKING_STATUS2_FEATURE_COUNT = SMOKING_STATUS_OBSERVATION_FEATURE_COUNT + 0;
+	int MENTAL_STATUS_OBSERVATION2_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SmokingStatusMeaningfulUse2Impl <em>Smoking Status Meaningful Use2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SmokingStatusMeaningfulUse2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSmokingStatusMeaningfulUse2()
+	 * @generated
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2 = 208;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__REALM_CODE = SMOKING_STATUS_OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__TYPE_ID = SMOKING_STATUS_OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__TEMPLATE_ID = SMOKING_STATUS_OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__ID = SMOKING_STATUS_OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__CODE = SMOKING_STATUS_OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__DERIVATION_EXPR = SMOKING_STATUS_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__TEXT = SMOKING_STATUS_OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__STATUS_CODE = SMOKING_STATUS_OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__EFFECTIVE_TIME = SMOKING_STATUS_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__PRIORITY_CODE = SMOKING_STATUS_OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__REPEAT_NUMBER = SMOKING_STATUS_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__LANGUAGE_CODE = SMOKING_STATUS_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__VALUE = SMOKING_STATUS_OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__INTERPRETATION_CODE = SMOKING_STATUS_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__METHOD_CODE = SMOKING_STATUS_OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__TARGET_SITE_CODE = SMOKING_STATUS_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__SUBJECT = SMOKING_STATUS_OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__SPECIMEN = SMOKING_STATUS_OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__PERFORMER = SMOKING_STATUS_OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__AUTHOR = SMOKING_STATUS_OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__INFORMANT = SMOKING_STATUS_OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__PARTICIPANT = SMOKING_STATUS_OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__ENTRY_RELATIONSHIP = SMOKING_STATUS_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__REFERENCE = SMOKING_STATUS_OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__PRECONDITION = SMOKING_STATUS_OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__REFERENCE_RANGE = SMOKING_STATUS_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__NULL_FLAVOR = SMOKING_STATUS_OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__CLASS_CODE = SMOKING_STATUS_OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__MOOD_CODE = SMOKING_STATUS_OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__NEGATION_IND = SMOKING_STATUS_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Smoking Status Meaningful Use2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2_FEATURE_COUNT = SMOKING_STATUS_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -55664,13 +55654,23 @@ public interface ConsolPackage extends EPackage {
 	int MENTAL_STATUS_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MentalStatusOrganizer2Impl <em>Mental Status Organizer2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MentalStatusOrganizer2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMentalStatusOrganizer2()
+	 * @generated
+	 */
+	int MENTAL_STATUS_ORGANIZER2 = 239;
+
+	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__REALM_CODE = COGNITIVE_STATUS_RESULT_ORGANIZER__REALM_CODE;
+	int MENTAL_STATUS_ORGANIZER2__REALM_CODE = COGNITIVE_STATUS_RESULT_ORGANIZER__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -55679,7 +55679,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__TYPE_ID = COGNITIVE_STATUS_RESULT_ORGANIZER__TYPE_ID;
+	int MENTAL_STATUS_ORGANIZER2__TYPE_ID = COGNITIVE_STATUS_RESULT_ORGANIZER__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -55688,7 +55688,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__TEMPLATE_ID = COGNITIVE_STATUS_RESULT_ORGANIZER__TEMPLATE_ID;
+	int MENTAL_STATUS_ORGANIZER2__TEMPLATE_ID = COGNITIVE_STATUS_RESULT_ORGANIZER__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -55697,7 +55697,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__ID = COGNITIVE_STATUS_RESULT_ORGANIZER__ID;
+	int MENTAL_STATUS_ORGANIZER2__ID = COGNITIVE_STATUS_RESULT_ORGANIZER__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -55706,7 +55706,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__CODE = COGNITIVE_STATUS_RESULT_ORGANIZER__CODE;
+	int MENTAL_STATUS_ORGANIZER2__CODE = COGNITIVE_STATUS_RESULT_ORGANIZER__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -55715,7 +55715,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__STATUS_CODE = COGNITIVE_STATUS_RESULT_ORGANIZER__STATUS_CODE;
+	int MENTAL_STATUS_ORGANIZER2__STATUS_CODE = COGNITIVE_STATUS_RESULT_ORGANIZER__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -55724,7 +55724,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__EFFECTIVE_TIME = COGNITIVE_STATUS_RESULT_ORGANIZER__EFFECTIVE_TIME;
+	int MENTAL_STATUS_ORGANIZER2__EFFECTIVE_TIME = COGNITIVE_STATUS_RESULT_ORGANIZER__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -55733,7 +55733,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__SUBJECT = COGNITIVE_STATUS_RESULT_ORGANIZER__SUBJECT;
+	int MENTAL_STATUS_ORGANIZER2__SUBJECT = COGNITIVE_STATUS_RESULT_ORGANIZER__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -55742,7 +55742,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__SPECIMEN = COGNITIVE_STATUS_RESULT_ORGANIZER__SPECIMEN;
+	int MENTAL_STATUS_ORGANIZER2__SPECIMEN = COGNITIVE_STATUS_RESULT_ORGANIZER__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -55751,7 +55751,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__PERFORMER = COGNITIVE_STATUS_RESULT_ORGANIZER__PERFORMER;
+	int MENTAL_STATUS_ORGANIZER2__PERFORMER = COGNITIVE_STATUS_RESULT_ORGANIZER__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -55760,7 +55760,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__AUTHOR = COGNITIVE_STATUS_RESULT_ORGANIZER__AUTHOR;
+	int MENTAL_STATUS_ORGANIZER2__AUTHOR = COGNITIVE_STATUS_RESULT_ORGANIZER__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -55769,7 +55769,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__INFORMANT = COGNITIVE_STATUS_RESULT_ORGANIZER__INFORMANT;
+	int MENTAL_STATUS_ORGANIZER2__INFORMANT = COGNITIVE_STATUS_RESULT_ORGANIZER__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -55778,7 +55778,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__PARTICIPANT = COGNITIVE_STATUS_RESULT_ORGANIZER__PARTICIPANT;
+	int MENTAL_STATUS_ORGANIZER2__PARTICIPANT = COGNITIVE_STATUS_RESULT_ORGANIZER__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -55787,7 +55787,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__REFERENCE = COGNITIVE_STATUS_RESULT_ORGANIZER__REFERENCE;
+	int MENTAL_STATUS_ORGANIZER2__REFERENCE = COGNITIVE_STATUS_RESULT_ORGANIZER__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -55796,7 +55796,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__PRECONDITION = COGNITIVE_STATUS_RESULT_ORGANIZER__PRECONDITION;
+	int MENTAL_STATUS_ORGANIZER2__PRECONDITION = COGNITIVE_STATUS_RESULT_ORGANIZER__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -55805,7 +55805,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__COMPONENT = COGNITIVE_STATUS_RESULT_ORGANIZER__COMPONENT;
+	int MENTAL_STATUS_ORGANIZER2__COMPONENT = COGNITIVE_STATUS_RESULT_ORGANIZER__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -55814,7 +55814,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__NULL_FLAVOR = COGNITIVE_STATUS_RESULT_ORGANIZER__NULL_FLAVOR;
+	int MENTAL_STATUS_ORGANIZER2__NULL_FLAVOR = COGNITIVE_STATUS_RESULT_ORGANIZER__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -55823,7 +55823,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__CLASS_CODE = COGNITIVE_STATUS_RESULT_ORGANIZER__CLASS_CODE;
+	int MENTAL_STATUS_ORGANIZER2__CLASS_CODE = COGNITIVE_STATUS_RESULT_ORGANIZER__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -55832,16 +55832,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2__MOOD_CODE = COGNITIVE_STATUS_RESULT_ORGANIZER__MOOD_CODE;
+	int MENTAL_STATUS_ORGANIZER2__MOOD_CODE = COGNITIVE_STATUS_RESULT_ORGANIZER__MOOD_CODE;
 
 	/**
-	 * The number of structural features of the '<em>Cognitive Status Organizer2</em>' class.
+	 * The number of structural features of the '<em>Mental Status Organizer2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_ORGANIZER2_FEATURE_COUNT = COGNITIVE_STATUS_RESULT_ORGANIZER_FEATURE_COUNT + 0;
+	int MENTAL_STATUS_ORGANIZER2_FEATURE_COUNT = COGNITIVE_STATUS_RESULT_ORGANIZER_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -72943,6 +72943,16 @@ public interface ConsolPackage extends EPackage {
 	EClass getMentalStatusSection();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2 <em>Mental Status Organizer2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mental Status Organizer2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2
+	 * @generated
+	 */
+	EClass getMentalStatusOrganizer2();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection <em>Nutrition Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -73063,24 +73073,24 @@ public interface ConsolPackage extends EPackage {
 	EClass getAllergyObservation2();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusOrganizer2 <em>Cognitive Status Organizer2</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2 <em>Mental Status Observation2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Cognitive Status Organizer2</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusOrganizer2
+	 * @return the meta object for class '<em>Mental Status Observation2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2
 	 * @generated
 	 */
-	EClass getCognitiveStatusOrganizer2();
+	EClass getMentalStatusObservation2();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusObservation2 <em>Cognitive Status Observation2</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2 <em>Smoking Status Meaningful Use2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Cognitive Status Observation2</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusObservation2
+	 * @return the meta object for class '<em>Smoking Status Meaningful Use2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2
 	 * @generated
 	 */
-	EClass getCognitiveStatusObservation2();
+	EClass getSmokingStatusMeaningfulUse2();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2 <em>Coverage Activity2</em>}'.
@@ -73091,16 +73101,6 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getCoverageActivity2();
-
-	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.CurrentSmokingStatus2 <em>Current Smoking Status2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Current Smoking Status2</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.CurrentSmokingStatus2
-	 * @generated
-	 */
-	EClass getCurrentSmokingStatus2();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2 <em>Deceased Observation2</em>}'.
@@ -76135,6 +76135,16 @@ public interface ConsolPackage extends EPackage {
 		EClass MENTAL_STATUS_SECTION = eINSTANCE.getMentalStatusSection();
 
 		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MentalStatusOrganizer2Impl <em>Mental Status Organizer2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MentalStatusOrganizer2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMentalStatusOrganizer2()
+		 * @generated
+		 */
+		EClass MENTAL_STATUS_ORGANIZER2 = eINSTANCE.getMentalStatusOrganizer2();
+
+		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.NutritionSectionImpl <em>Nutrition Section</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -76255,24 +76265,24 @@ public interface ConsolPackage extends EPackage {
 		EClass ALLERGY_OBSERVATION2 = eINSTANCE.getAllergyObservation2();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusOrganizer2Impl <em>Cognitive Status Organizer2</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MentalStatusObservation2Impl <em>Mental Status Observation2</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusOrganizer2Impl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCognitiveStatusOrganizer2()
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MentalStatusObservation2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMentalStatusObservation2()
 		 * @generated
 		 */
-		EClass COGNITIVE_STATUS_ORGANIZER2 = eINSTANCE.getCognitiveStatusOrganizer2();
+		EClass MENTAL_STATUS_OBSERVATION2 = eINSTANCE.getMentalStatusObservation2();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusObservation2Impl <em>Cognitive Status Observation2</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SmokingStatusMeaningfulUse2Impl <em>Smoking Status Meaningful Use2</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusObservation2Impl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCognitiveStatusObservation2()
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SmokingStatusMeaningfulUse2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSmokingStatusMeaningfulUse2()
 		 * @generated
 		 */
-		EClass COGNITIVE_STATUS_OBSERVATION2 = eINSTANCE.getCognitiveStatusObservation2();
+		EClass SMOKING_STATUS_MEANINGFUL_USE2 = eINSTANCE.getSmokingStatusMeaningfulUse2();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CoverageActivity2Impl <em>Coverage Activity2</em>}' class.
@@ -76283,16 +76293,6 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass COVERAGE_ACTIVITY2 = eINSTANCE.getCoverageActivity2();
-
-		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CurrentSmokingStatus2Impl <em>Current Smoking Status2</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.CurrentSmokingStatus2Impl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCurrentSmokingStatus2()
-		 * @generated
-		 */
-		EClass CURRENT_SMOKING_STATUS2 = eINSTANCE.getCurrentSmokingStatus2();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DeceasedObservation2Impl <em>Deceased Observation2</em>}' class.
