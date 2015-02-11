@@ -104,7 +104,7 @@ public class SocialHistorySection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(SocialHistorySection2 target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createCurrentSmokingStatus2().init());
+				target.addObservation(ConsolFactory.eINSTANCE.createSmokingStatusMeaningfulUse2().init());
 			}
 
 			@Override

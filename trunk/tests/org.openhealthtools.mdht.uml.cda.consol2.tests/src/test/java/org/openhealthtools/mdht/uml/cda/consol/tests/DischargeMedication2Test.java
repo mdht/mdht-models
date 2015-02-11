@@ -23,6 +23,8 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeMedication2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
+import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
@@ -34,6 +36,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedicationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedication2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication2 Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedication2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication2 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedicationMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Medication Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#getConsolMedicationActivity2s() <em>Get Consol Medication Activity2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Template Id</em>}</li>
@@ -78,6 +82,77 @@ public class DischargeMedication2Test extends CDAValidationTest {
 		};
 
 		validateDischargeMedicationCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateDischargeMedication2StatusCode() {
+		OperationsTestCase<DischargeMedication2> validateDischargeMedication2StatusCodeTestCase = new OperationsTestCase<DischargeMedication2>(
+			"validateDischargeMedication2StatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeMedication2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeMedication2 target) {
+				target.init();
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeMedication2Operations.validateDischargeMedication2StatusCode(
+					(DischargeMedication2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeMedication2StatusCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateDischargeMedication2StatusCodeP() {
+		OperationsTestCase<DischargeMedication2> validateDischargeMedication2StatusCodePTestCase = new OperationsTestCase<DischargeMedication2>(
+			"validateDischargeMedication2StatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeMedication2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeMedication2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeMedication2Operations.validateDischargeMedication2StatusCodeP(
+					(DischargeMedication2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeMedication2StatusCodePTestCase.doValidationTest();
 	}
 
 	/**

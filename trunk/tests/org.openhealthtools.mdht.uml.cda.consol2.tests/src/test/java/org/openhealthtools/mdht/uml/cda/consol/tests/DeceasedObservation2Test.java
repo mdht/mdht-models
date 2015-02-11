@@ -185,7 +185,7 @@ public class DeceasedObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(DeceasedObservation2 target) {
-				target.getCode().setCodeSystem(SNOMEDCT_ID);
+				target.getCode().setCodeSystem("2.16.840.1.113883.5.4");
 				target.getCode().setCode("ASSERTION");
 			}
 

@@ -387,7 +387,7 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MentalStatusSection target) {
 				target.init();
-				target.addOrganizer(ConsolFactory.eINSTANCE.createCognitiveStatusOrganizer2().init());
+				target.addOrganizer(ConsolFactory.eINSTANCE.createMentalStatusOrganizer2().init());
 			}
 
 			@Override
@@ -421,7 +421,7 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MentalStatusSection target) {
 				target.init();
-				target.addObservation(ConsolFactory.eINSTANCE.createCognitiveStatusObservation2().init());
+				target.addObservation(ConsolFactory.eINSTANCE.createMentalStatusObservation2().init());
 			}
 
 			@Override

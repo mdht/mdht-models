@@ -30,7 +30,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
@@ -47,25 +46,23 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2OriginalTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Original Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2OriginalTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Original Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Reference Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2AllergyStatusInversionIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Allergy Status Inversion Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ReactionInversionIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Reaction Inversion Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2SeverityInversionIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Severity Inversion Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2NegationInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Negation Ind</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationReactionObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Reaction Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2SeverityObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Severity Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2EDTELValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 EDTEL Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2EDReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 ED Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 IVLTS High</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Participant Participant Role Playing Entity Original Text Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Participant Participant Role Playing Entity Original Text Reference Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Participant Participant Role Playing Entity Allergy Specific Medication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyClassMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Participant Participant Role Playing Entity Allergy Class Medication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Participant Participant Role Playing Entity Allergy Food Other Substance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ParticipantParticipantRolePlayingEntityReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Participant Participant Role Playing Entity Reference Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Participant Participant Role Playing Entity Original Text Reference Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Participant Participant Role Playing Entity Allergy Specific Medication</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Participant Participant Role Playing Entity Original Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Participant Participant Role Allergy Observation Participant Participant Role Playing Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ParticipantAllergyObservationParticipantParticipantRolePlayingEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Participant Allergy Observation Participant Participant Role Playing Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2AllergyObservationParticipantParticipantRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Allergy Observation Participant Participant Role</em>}</li>
@@ -240,6 +237,42 @@ public class AllergyObservation2Test extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateAllergyObservation2AllergyStatusInversionIndicator() {
+		OperationsTestCase<AllergyObservation2> validateAllergyObservation2AllergyStatusInversionIndicatorTestCase = new OperationsTestCase<AllergyObservation2>(
+			"validateAllergyObservation2AllergyStatusInversionIndicator",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION2_ALLERGY_STATUS_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AllergyObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservation2Operations.validateAllergyObservation2AllergyStatusInversionIndicator(
+					(AllergyObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyObservation2AllergyStatusInversionIndicatorTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateAllergyObservation2ReactionInversionIndicator() {
@@ -346,43 +379,6 @@ public class AllergyObservation2Test extends CDAValidationTest {
 		};
 
 		validateAllergyObservation2NegationIndTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAllergyObservation2Text() {
-		OperationsTestCase<AllergyObservation2> validateAllergyObservation2TextTestCase = new OperationsTestCase<AllergyObservation2>(
-			"validateAllergyObservation2Text",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation2 target) {
-				target.init();
-
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				target.setText(text);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservation2Operations.validateAllergyObservation2Text(
-					(AllergyObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservation2TextTestCase.doValidationTest();
 	}
 
 	/**
@@ -558,75 +554,6 @@ public class AllergyObservation2Test extends CDAValidationTest {
 		};
 
 		validateAllergyObservation2SeverityObservation2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAllergyObservation2EDTELValue() {
-		OperationsTestCase<AllergyObservation2> validateAllergyObservation2EDTELValueTestCase = new OperationsTestCase<AllergyObservation2>(
-			"validateAllergyObservation2EDTELValue",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION2_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
-				target.setText(DatatypesFactory.eINSTANCE.createED());
-				target.getText().setReference(DatatypesFactory.eINSTANCE.createTEL());
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation2 target) {
-				target.getText().getReference().setValue("hasAValue");
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservation2Operations.validateAllergyObservation2EDTELValue(
-					(AllergyObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservation2EDTELValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAllergyObservation2EDReference() {
-		OperationsTestCase<AllergyObservation2> validateAllergyObservation2EDReferenceTestCase = new OperationsTestCase<AllergyObservation2>(
-			"validateAllergyObservation2EDReference",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION2_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
-				target.setText(DatatypesFactory.eINSTANCE.createED());
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation2 target) {
-				target.getText().setReference(DatatypesFactory.eINSTANCE.createTEL());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservation2Operations.validateAllergyObservation2EDReference(
-					(AllergyObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservation2EDReferenceTestCase.doValidationTest();
 	}
 
 	/**

@@ -1291,7 +1291,7 @@ public class HealthConcernActTest extends CDAValidationTest {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createCognitiveStatusObservation2().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createMentalStatusObservation2().init());
 				target.getEntryRelationships().add(er);
 
 			}
@@ -1329,7 +1329,7 @@ public class HealthConcernActTest extends CDAValidationTest {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createCognitiveStatusObservation2().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createMentalStatusObservation2().init());
 				target.getEntryRelationships().add(er);
 
 			}
@@ -1367,7 +1367,7 @@ public class HealthConcernActTest extends CDAValidationTest {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createCurrentSmokingStatus2().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createSmokingStatusMeaningfulUse2().init());
 				target.getEntryRelationships().add(er);
 
 			}
