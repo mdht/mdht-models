@@ -411,17 +411,17 @@ The smoking status value set includes a special code to communicate if the smoki
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Yz0EIeWQEeGKmvzED_He2w" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pipd8OWUEeGKmvzED_He2w" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pifs8OWUEeGKmvzED_He2w" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_Yz0rMeWQEeGKmvzED_He2w" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PN0dceWUEeGKmvzED_He2w" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PN0dcOWUEeGKmvzED_He2w" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Yz0EIeWQEeGKmvzED_He2w" name="effectiveTime" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pipd8OWUEeGKmvzED_He2w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pifs8OWUEeGKmvzED_He2w" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Yz0rNOWQEeGKmvzED_He2w" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -439,9 +439,11 @@ The smoking status value set includes a special code to communicate if the smoki
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_48H9AOWTEeGKmvzED_He2w" base_Property="_YzzdEOWQEeGKmvzED_He2w">
     <ruleId>CONF:14806</ruleId>
+    <ruleId>R2.0=CONF:1098-14806</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_8arukOWTEeGKmvzED_He2w" base_Property="_Yz0rMOWQEeGKmvzED_He2w">
     <ruleId>CONF:14807</ruleId>
+    <ruleId>R2.0=CONF:1098-14807</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_BYK8QOWUEeGKmvzED_He2w" base_Property="_Yz0EIOWQEeGKmvzED_He2w">
     <ruleId>CONF:14808</ruleId>
@@ -452,11 +454,12 @@ The smoking status value set includes a special code to communicate if the smoki
   <CDA:PropertyValidation xmi:id="_R6jJcOWUEeGKmvzED_He2w" base_Property="_Yz0EIeWQEeGKmvzED_He2w">
     <ruleId>CONF:14814</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_GdsEkOWUEeGKmvzED_He2w" base_Property="_Yz0rMeWQEeGKmvzED_He2w">
-    <ruleId>CONF:14809</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_GdsEkOWUEeGKmvzED_He2w" base_Property="_Yz0rMeWQEeGKmvzED_He2w"/>
   <CDA:CodeSystemConstraint xmi:id="_G4ULEOWUEeGKmvzED_He2w" code="completed" displayName="Completed" base_Property="_Yz0rMeWQEeGKmvzED_He2w">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:14809</ruleId>
+    <ruleId>R2.0=CONF:1098-14809</ruleId>
+    <ruleId>R2.0=CONF:1098-19116</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_UsxZcOWUEeGKmvzED_He2w" base_Property="_Yz0rNOWQEeGKmvzED_He2w">
     <ruleId>CONF:14810</ruleId>
@@ -876,11 +879,11 @@ USE THIS SECTION INSTEAD OF DISCHARGE DIET SECTION (DEPRECATED) template id:1.3.
   <CDA:AssociationValidation xmi:id="_dFAvYK4iEeORf5eJaKt1KQ" severity="WARNING" base_Association="_cg0dMK4iEeORf5eJaKt1KQ">
     <ruleId>CONF:31667</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_Hl3ScLk0EeODDJAC5t5vpw" clientDependency="_hY2vYLk0EeODDJAC5t5vpw" name="CurrentSmokingStatus2">
+  <uml:Class xmi:id="_Hl3ScLk0EeODDJAC5t5vpw" clientDependency="_hY2vYLk0EeODDJAC5t5vpw" name="SmokingStatusMeaningfulUse2">
     <ownedComment xmi:id="_05AVQLk0EeODDJAC5t5vpw">
-      <body>This template constrains the Tobacco Use template to represent the current smoking status of the patient as specified in Meaningful Use (MU) Stage 2 requirements. Historic smoking status observations as well as details about the smoking habit (e.g., how many per day) would be represented in the Tobacco Use template.&#xD;
+      <body>This template represents the current smoking status of the patient as specified in Meaningful Use (MU) Stage 2 requirements. Historic smoking status observations as well as details about the smoking habit (e.g., how many per day) would be represented in the Tobacco Use template.&#xD;
 This template represents a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime is constrained to a time stamp, and will approximately correspond with the author/time. Details regarding the time period when the patient is/was smoking would be recorded in the Tobacco Use template.&#xD;
-If the patient's current smoking status is unknown, the value element must be populated with SNOMED CT code '266927001' to communicate 'Unknown if ever smoked' from the Current Smoking Status Value Set.</body>
+If the patient's current smoking status is unknown, the value element must be populated with SNOMED CT code 266927001 to communicate &quot;Unknown if ever smoked&quot; from the Current Smoking Status Value Set.</body>
     </ownedComment>
     <ownedRule xmi:id="_leM_cLnJEeOgPNzo_e4B9A" name="effectiveTimeLow" constrainedElement="_RYJj0OWQEeGKmvzED_He2w">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_leM_cbnJEeOgPNzo_e4B9A">
@@ -892,21 +895,14 @@ If the patient's current smoking status is unknown, the value element must be po
     </ownedRule>
     <generalization xmi:id="_Hl5HoLk0EeODDJAC5t5vpw" general="_RYJj0OWQEeGKmvzED_He2w"/>
     <substitution xmi:id="_hY2vYLk0EeODDJAC5t5vpw" name="SmokingStatusObservation" client="_Hl3ScLk0EeODDJAC5t5vpw" supplier="_RYJj0OWQEeGKmvzED_He2w" contract="_RYJj0OWQEeGKmvzED_He2w"/>
-    <ownedAttribute xmi:id="_zeAVcLm5EeOgPNzo_e4B9A" name="value" visibility="private" aggregation="composite" redefinedProperty="_Yz0rNOWQEeGKmvzED_He2w">
-      <ownedComment xmi:id="_DdbUoLm8EeOgPNzo_e4B9A">
-        <body>If the patient's current smoking status is unknown, @code SHALL contain '266927001' (Unknown if ever smoked) from Current Smoking Status Value Set (2.16.840.1.113883.10.22.4.78.2) (CONF:31019).</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zeAVcrm5EeOgPNzo_e4B9A" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zeAVcbm5EeOgPNzo_e4B9A" value="1"/>
+    <ownedAttribute xmi:id="_-9hYUKzCEeSB84STE1Ny6A" name="id" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DJ3c8azDEeSB84STE1Ny6A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DJ3c8KzDEeSB84STE1Ny6A" value="*"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_jwglALm9EeOgPNzo_e4B9A" name="code" visibility="private" aggregation="composite" redefinedProperty="_Yz0EIOWQEeGKmvzED_He2w">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_iVQjcLnHEeOgPNzo_e4B9A" name="authorParticipation" association="_iVRxkLnHEeOgPNzo_e4B9A">
-      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iVQjcbnHEeOgPNzo_e4B9A"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iVRKgLnHEeOgPNzo_e4B9A" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_l98r8LnIEeOgPNzo_e4B9A" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_Yz0EIeWQEeGKmvzED_He2w">
       <ownedComment xmi:id="_rh6q0LnIEeOgPNzo_e4B9A">
@@ -916,35 +912,49 @@ If the patient's current smoking status is unknown, the value element must be po
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l98r8rnIEeOgPNzo_e4B9A" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l98r8bnIEeOgPNzo_e4B9A" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_zeAVcLm5EeOgPNzo_e4B9A" name="value" visibility="private" aggregation="composite" redefinedProperty="_Yz0rNOWQEeGKmvzED_He2w">
+      <ownedComment xmi:id="_DdbUoLm8EeOgPNzo_e4B9A">
+        <body>If the patient's current smoking status is unknown, @code SHALL contain '266927001' (Unknown if ever smoked) from ValueSet Current Smoking Status (2.16.840.1.113883.11.20.9.38 STATIC 2014-09-01) (CONF:1098-31019).</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zeAVcrm5EeOgPNzo_e4B9A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zeAVcbm5EeOgPNzo_e4B9A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iVQjcLnHEeOgPNzo_e4B9A" name="authorParticipation" association="_iVRxkLnHEeOgPNzo_e4B9A">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iVQjcbnHEeOgPNzo_e4B9A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iVRKgLnHEeOgPNzo_e4B9A" value="*"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_Nj2T0Lk0EeODDJAC5t5vpw" base_Class="_Hl3ScLk0EeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.78" templateVersion="2014-06-09">
-    <ruleId>CONF:14815</ruleId>
-    <ruleId>CONF:14816</ruleId>
+    <ruleId>CONF:1098-14815</ruleId>
+    <ruleId>CONF:1098-14816</ruleId>
+    <ruleId>CONF:1098-32573</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_b9FDMLk0EeODDJAC5t5vpw" base_Generalization="_Hl5HoLk0EeODDJAC5t5vpw"/>
   <CDA:PropertyValidation xmi:id="_zeA8gLm5EeOgPNzo_e4B9A" base_Property="_zeAVcLm5EeOgPNzo_e4B9A">
-    <ruleId>CONF:14810</ruleId>
+    <ruleId>CONF:1098-14810</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_zeBjkLm5EeOgPNzo_e4B9A" base_Property="_zeAVcLm5EeOgPNzo_e4B9A">
     <reference href="../consol-vocab.uml#_FHdfcbm6EeOgPNzo_e4B9A"/>
-    <ruleId>CONF:14817</ruleId>
+    <ruleId>CONF:1098-14817</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_jwhMELm9EeOgPNzo_e4B9A" base_Property="_jwglALm9EeOgPNzo_e4B9A">
-    <ruleId>CONF:19170</ruleId>
+    <ruleId>CONF:1098-19170</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_jwhMEbm9EeOgPNzo_e4B9A" code="229819007" displayName="Tobacco use and exposure" base_Property="_jwglALm9EeOgPNzo_e4B9A">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31039</ruleId>
-    <ruleId>CONF:32157</ruleId>
+  <CDA:CodeSystemConstraint xmi:id="_jwhMEbm9EeOgPNzo_e4B9A" code="72166-2" displayName="Tobacco smoking status NHIS" base_Property="_jwglALm9EeOgPNzo_e4B9A">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-31039</ruleId>
+    <ruleId>CONF:1098-32157</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_iVRxkLnHEeOgPNzo_e4B9A" memberEnd="_iVQjcLnHEeOgPNzo_e4B9A _iVRxkbnHEeOgPNzo_e4B9A">
     <ownedEnd xmi:id="_iVRxkbnHEeOgPNzo_e4B9A" type="_Hl3ScLk0EeODDJAC5t5vpw" association="_iVRxkLnHEeOgPNzo_e4B9A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_kqkN8LnHEeOgPNzo_e4B9A" severity="WARNING" base_Association="_iVRxkLnHEeOgPNzo_e4B9A">
-    <ruleId>CONF:31148</ruleId>
+    <ruleId>CONF:1098-31148</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_l98r87nIEeOgPNzo_e4B9A" base_Property="_l98r8LnIEeOgPNzo_e4B9A">
-    <ruleId>CONF:31928</ruleId>
+    <ruleId>CONF:1098-31928</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_b_iGIPJfEeO2NaSiicarcg" clientDependency="_IeHfgPJgEeO2NaSiicarcg" name="SocialHistoryObservation2">
     <ownedComment xmi:id="_vZHxAPJfEeO2NaSiicarcg">
@@ -1158,4 +1168,7 @@ The effectiveTime element is used to describe dates associated with the patient'
     <ruleId>CONF:1098-28825</ruleId>
     <ruleId>CONF:1098-28826</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_CRSPIKzDEeSB84STE1Ny6A" base_Property="_-9hYUKzCEeSB84STE1Ny6A">
+    <ruleId>CONF:1098-32401</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

@@ -425,17 +425,18 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="__AT6wL86EeOS5KuvmCHHew" base_Class="_4iF6IL86EeOS5KuvmCHHew" templateId="2.16.840.1.113883.10.20.22.4.79" templateVersion="2014-06-09">
-    <ruleId>CONF:14871</ruleId>
-    <ruleId>CONF:14872</ruleId>
+    <ruleId>CONF:1098-14871</ruleId>
+    <ruleId>CONF:1098-14872</ruleId>
+    <ruleId>CONF:1098-32541</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_JY_l0L87EeOS5KuvmCHHew" base_Generalization="_4iIWYL86EeOS5KuvmCHHew"/>
   <CDA:CodeSystemConstraint xmi:id="_tcUDEL87EeOS5KuvmCHHew" code="ASSERTION" displayName="Assertion" base_Property="_tcTcAL87EeOS5KuvmCHHew">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:19135</ruleId>
-    <ruleId>CONF:32158</ruleId>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-19135</ruleId>
+    <ruleId>CONF:1098-32158</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_tcWfUL87EeOS5KuvmCHHew" base_Property="_tcTcAL87EeOS5KuvmCHHew">
-    <ruleId>CONF:14853</ruleId>
+    <ruleId>CONF:1098-14853</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="__zeTcPM3EeOUvapeh9bVvQ" clientDependency="_agM0wPM4EeOUvapeh9bVvQ" name="VitalSignObservation2">
     <ownedComment xmi:id="_PYxNUPM4EeOUvapeh9bVvQ">
@@ -554,9 +555,9 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     <ownedEnd xmi:id="_AngxkffwEeO297ryy8ptVg" type="_4iF6IL86EeOS5KuvmCHHew" association="_AngxkPfwEeO297ryy8ptVg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_D-WxkPfwEeO297ryy8ptVg" severity="WARNING" base_Association="_AngxkPfwEeO297ryy8ptVg">
-    <ruleId>CONF:14868</ruleId>
-    <ruleId>CONF:14875</ruleId>
-    <ruleId>CONF:14870</ruleId>
+    <ruleId>CONF:1098-14868</ruleId>
+    <ruleId>CONF:1098-14875</ruleId>
+    <ruleId>CONF:1098-14870</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_8LkzYAFTEeSmasYc71ZgMQ" clientDependency="_6SqUgAFUEeSmasYc71ZgMQ" name="VitalSignsSectionEntriesOptional2">
     <ownedComment xmi:id="_MeZhoAFUEeSmasYc71ZgMQ">

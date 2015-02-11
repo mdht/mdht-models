@@ -1668,15 +1668,19 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_pRJ1cubyEeGINOJ_SD9_dA" severity="WARNING" base_Constraint="_pRJ1cObyEeGINOJ_SD9_dA">
     <ruleId>CONF:14234</ruleId>
+    <ruleId>R2.0=CONF:1098-14234</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_nm5IgubxEeGINOJ_SD9_dA" base_Property="_nm5IgObxEeGINOJ_SD9_dA">
     <ruleId>CONF:13905</ruleId>
+    <ruleId>R2.0=CONF:1098-13905</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_nm5Il-bxEeGINOJ_SD9_dA" base_Property="_nm5IlebxEeGINOJ_SD9_dA">
     <ruleId>CONF:13906</ruleId>
+    <ruleId>R2.0=CONF:1098-13906</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_nm5IjObxEeGINOJ_SD9_dA" base_Property="_nm5IiebxEeGINOJ_SD9_dA">
     <ruleId>CONF:13907</ruleId>
+    <ruleId>R2.0=CONF:1098-13907</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_nm5IhObxEeGINOJ_SD9_dA" base_Property="_nm5Ig-bxEeGINOJ_SD9_dA">
     <ruleId>CONF:13908</ruleId>
@@ -1688,16 +1692,20 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
     <ruleId>CONF:13926</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_nnC5gObxEeGINOJ_SD9_dA" base_Property="_nm5ImObxEeGINOJ_SD9_dA">
-    <ruleId>CONF:13929</ruleId>
+    <ruleId>R2.0=CONF:1098-13929</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_c4oZkObyEeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_nm5ImObxEeGINOJ_SD9_dA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:13929</ruleId>
+    <ruleId>R2.0=CONF:1098-19101</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_nm5IiObxEeGINOJ_SD9_dA" base_Property="_nm5IhebxEeGINOJ_SD9_dA">
     <ruleId>CONF:13930</ruleId>
+    <ruleId>R2.0=CONF:1098-13930</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_nnC5i-bxEeGINOJ_SD9_dA" base_Property="_nnC5iubxEeGINOJ_SD9_dA">
     <ruleId>CONF:13932</ruleId>
+    <ruleId>R2.0=CONF:1098-13932</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_nm5IkObxEeGINOJ_SD9_dA" severity="WARNING" base_Property="_nm5IjebxEeGINOJ_SD9_dA">
     <ruleId>CONF:13933</ruleId>
@@ -1721,13 +1729,19 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_bD_9wObzEeGINOJ_SD9_dA" severity="INFO" base_Association="_W54twObzEeGINOJ_SD9_dA" typeCode="REFR">
     <ruleId>CONF:13895</ruleId>
+    <ruleId>R2.0=CONF:1098-13895</ruleId>
     <ruleId>CONF:14597</ruleId>
+    <ruleId>R2.0=CONF:1098-14597</ruleId>
     <ruleId>CONF:13897</ruleId>
+    <ruleId>R2.0=CONF:1098-13897</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_bl80QObzEeGINOJ_SD9_dA" severity="INFO" base_Association="_YQkM0ObzEeGINOJ_SD9_dA" typeCode="COMP">
     <ruleId>CONF:14465</ruleId>
+    <ruleId>R2.0=CONF:1098-14465</ruleId>
     <ruleId>CONF:14598</ruleId>
+    <ruleId>R2.0=CONF:1098-14598</ruleId>
     <ruleId>CONF:14466</ruleId>
+    <ruleId>R2.0=CONF:1098-14466</ruleId>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_oa2DEObzEeGINOJ_SD9_dA" severity="WARNING" base_Association="_lvFAYObzEeGINOJ_SD9_dA">
     <ruleId>CONF:13937</ruleId>
@@ -2618,7 +2632,7 @@ Devices applied to, or placed in, the patient are represented with the Procedure
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_3WqogMzSEeO93sHu8pHB2g" clientDependency="_UB0lYMzTEeO93sHu8pHB2g" name="FunctionalStatusObservation2">
     <ownedComment xmi:id="_OemNYMzTEeO93sHu8pHB2g">
-      <body>This template represents the patient's physical function (e.g., mobility status, activities of daily living, self-care status) and problems that limit function (dyspnea, dysphagia). The template may include assessment scale observations, identify supporting caregivers, and provide information about non-medicinal supplies. This template is used to represent physical or developmental function of all patient populations and is not limited to the long-term care population.</body>
+      <body>This template represents the patient's physical function (e.g., mobility status, instrumental activities of daily living, self-care status) and problems that limit function (dyspnea, dysphagia). The template may include assessment scale observations, identify supporting caregivers, and provide information about non-medicinal supplies. This template is used to represent physical or developmental function of all patient populations.</body>
     </ownedComment>
     <ownedRule xmi:id="_2gS-oM7qEeO6qNoyVDglCA" name="textReference">
       <constrainedElement xmi:type="uml:Property" href="consol-results.uml#_JTUuoByWEeGaOZtrEokzNQ"/>
@@ -2647,6 +2661,11 @@ Devices applied to, or placed in, the patient are represented with the Procedure
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VxsVoszVEeO93sHu8pHB2g"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VxsVoczVEeO93sHu8pHB2g" value="*"/>
       <association href="../consol.uml#_VxuK0MzVEeO93sHu8pHB2g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ny_5wK2DEeS-n_bBhdNjYg" name="text" visibility="private" aggregation="composite" redefinedProperty="_nnC5hubxEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ny_5wa2DEeS-n_bBhdNjYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ny_5wq2DEeS-n_bBhdNjYg" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_BJU9YM7sEeO6qNoyVDglCA" name="interpretationCode" visibility="private" aggregation="composite" redefinedProperty="_nm5IjebxEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -2702,17 +2721,18 @@ Devices applied to, or placed in, the patient are represented with the Procedure
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_BcRmkMzTEeO93sHu8pHB2g" base_Class="_3WqogMzSEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.67" templateVersion="2014-06-09">
-    <ruleId>CONF:13889</ruleId>
-    <ruleId>CONF:13890</ruleId>
+    <ruleId>CONF:1098-13889</ruleId>
+    <ruleId>CONF:1098-13890</ruleId>
+    <ruleId>CONF:1098-32568</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_QrmQcMzTEeO93sHu8pHB2g" base_Generalization="_3WqogczSEeO93sHu8pHB2g"/>
   <CDA:PropertyValidation xmi:id="_wttiEMzTEeO93sHu8pHB2g" base_Property="_wts7AMzTEeO93sHu8pHB2g">
-    <ruleId>CONF:13908</ruleId>
+    <ruleId>CONF:1098-13908</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_wtuJIMzTEeO93sHu8pHB2g" code="364644000" displayName="functional observable" base_Property="_wts7AMzTEeO93sHu8pHB2g">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31522</ruleId>
-    <ruleId>CONF:31523</ruleId>
+  <CDA:CodeSystemConstraint xmi:id="_wtuJIMzTEeO93sHu8pHB2g" code="54522-8" displayName="Functional status" base_Property="_wts7AMzTEeO93sHu8pHB2g">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-31522</ruleId>
+    <ruleId>CONF:1098-31523</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_3YPq88zUEeO93sHu8pHB2g">
     <ruleId>CONF:13930</ruleId>
@@ -2721,7 +2741,7 @@ Devices applied to, or placed in, the patient are represented with the Procedure
     <ownedEnd xmi:id="_ezYEEc7vEeO6qNoyVDglCA" type="_3WqogMzSEeO93sHu8pHB2g" association="_ezYEEM7vEeO6qNoyVDglCA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_h0WhwM7vEeO6qNoyVDglCA" severity="WARNING" base_Association="_ezYEEM7vEeO6qNoyVDglCA">
-    <ruleId>CONF:13936</ruleId>
+    <ruleId>CONF:1098-13936</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_yU2tgOD0EeOmBMTtnrPqww" clientDependency="_PjB34OD1EeOmBMTtnrPqww" name="FunctionalStatusOrganizer2">
     <ownedComment xmi:id="_8KWzAOD0EeOmBMTtnrPqww">
@@ -2938,9 +2958,9 @@ Devices applied to, or placed in, the patient are represented with the Procedure
     <ownedEnd xmi:id="_xWPsUfgCEeOYeZoWJF5yyQ" type="_3WqogMzSEeO93sHu8pHB2g" association="_xWPsUPgCEeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_145YIPgCEeOYeZoWJF5yyQ" severity="INFO" base_Association="_xWPsUPgCEeOYeZoWJF5yyQ" typeCode="REFR">
-    <ruleId>CONF:13892</ruleId>
-    <ruleId>CONF:14596</ruleId>
-    <ruleId>CONF:14218</ruleId>
+    <ruleId>CONF:1098-13892</ruleId>
+    <ruleId>CONF:1098-14596</ruleId>
+    <ruleId>CONF:1098-14218</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_rHJ3YPgDEeOYeZoWJF5yyQ" memberEnd="_rHIpQPgDEeOYeZoWJF5yyQ _rHKecPgDEeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="_rHKecPgDEeOYeZoWJF5yyQ" type="_GM6icOEIEeOmBMTtnrPqww" association="_rHJ3YPgDEeOYeZoWJF5yyQ"/>

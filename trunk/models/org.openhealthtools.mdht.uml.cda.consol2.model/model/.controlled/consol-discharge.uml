@@ -68,9 +68,11 @@
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_pYIbUCUPEeGiOPpZVnfEJA" base_Property="_iYa3MCUPEeGiOPpZVnfEJA">
     <ruleId>CONF:7689</ruleId>
+    <ruleId>R2.0=CONF:1098-7689</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_sfKdsCUPEeGiOPpZVnfEJA" base_Property="_iYdTcCUPEeGiOPpZVnfEJA">
     <ruleId>CONF:7690</ruleId>
+    <ruleId>R2.0=CONF:1098-7690</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_wW7ZcCUPEeGiOPpZVnfEJA" code="10183-2" displayName="Discharge Medication" base_Property="_iYcFUCUPEeGiOPpZVnfEJA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -796,19 +798,26 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CWGHYff9EeOYeZoWJF5yyQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CWGHYPf9EeOYeZoWJF5yyQ" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_8lQt8K1mEeS-n_bBhdNjYg" name="statusCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__G91sa1mEeS-n_bBhdNjYg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__G91sK1mEeS-n_bBhdNjYg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_DU_AAMykEeO93sHu8pHB2g" base_Class="_EIeu8MyjEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.35" templateVersion="2014-06-09">
-    <ruleId>CONF:16760</ruleId>
-    <ruleId>CONF:16761</ruleId>
+    <ruleId>CONF:1098-16760</ruleId>
+    <ruleId>CONF:1098-16761</ruleId>
+    <ruleId>CONF:1098-32513</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_UCOZYMykEeO93sHu8pHB2g" base_Generalization="_EIhLMMyjEeO93sHu8pHB2g"/>
   <CDA:CodeSystemConstraint xmi:id="_0SZ7McyvEeO93sHu8pHB2g" code="10183-2" displayName="Discharge Medication" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:19161</ruleId>
-    <ruleId>CONF:32159</ruleId>
+    <ruleId>CONF:1098-19161</ruleId>
+    <ruleId>CONF:1098-32159</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2XxsQMyvEeO93sHu8pHB2g" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
-    <ruleId>CONF:7691</ruleId>
+    <ruleId>CONF:1098-7691</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" clientDependency="_sVxMAOEMEeOmBMTtnrPqww" name="HospitalDischargeDiagnosis2">
     <ownedComment xmi:id="_ao5hoOEMEeOmBMTtnrPqww">
@@ -842,9 +851,9 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <ownedEnd xmi:id="__fTgcff8EeOYeZoWJF5yyQ" type="_EIeu8MyjEeO93sHu8pHB2g" association="__fTgcPf8EeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_EPbAgPf9EeOYeZoWJF5yyQ" base_Association="__fTgcPf8EeOYeZoWJF5yyQ" typeCode="SUBJ">
-    <ruleId>CONF:7692</ruleId>
-    <ruleId>CONF:7693</ruleId>
-    <ruleId>CONF:15525</ruleId>
+    <ruleId>CONF:1098-7692</ruleId>
+    <ruleId>CONF:1098-7693</ruleId>
+    <ruleId>CONF:1098-15525</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_IZP4cPgEEeOYeZoWJF5yyQ" memberEnd="_IZODQPgEEeOYeZoWJF5yyQ _IZP4cfgEEeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="_IZP4cfgEEeOYeZoWJF5yyQ" type="_Trd1cOEMEeOmBMTtnrPqww" association="_IZP4cPgEEeOYeZoWJF5yyQ"/>
@@ -988,4 +997,11 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
   <CDA:PropertyValidation xmi:id="_lVOHoKMuEeS3pZBAijm94w" severity="INFO" base_Property="_kLdqQKMuEeS3pZBAijm94w">
     <ruleId>CONF:1098-32812</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_-GTp8K1mEeS-n_bBhdNjYg" base_Property="_8lQt8K1mEeS-n_bBhdNjYg">
+    <ruleId>CONF:1098-32779</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_CLgkwK1nEeS-n_bBhdNjYg" code="completed" displayName="Completed" base_Property="_8lQt8K1mEeS-n_bBhdNjYg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-32780</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
