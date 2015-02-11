@@ -367,9 +367,11 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   <CDA:ConstraintValidation xmi:id="_2EjVQRSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2Em_pBSVEeGGzu7fmW9pXw" base_Property="_2Em_ohSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7380</ruleId>
+    <ruleId>R2.0=CONF:1098-7380</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2EnmtBSVEeGGzu7fmW9pXw" base_Property="_2EnmsBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7382</ruleId>
+    <ruleId>R2.0=CONF:1098-7382</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2EbZcRSVEeGGzu7fmW9pXw" code="ASSERTION" base_Property="_2EaLdBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
@@ -541,16 +543,21 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_2EKTsBSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:PropertyValidation xmi:id="_2ELh0xSVEeGGzu7fmW9pXw" base_Property="_2ELh0RSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7469</ruleId>
+    <ruleId>R2.0=CONF:1098-7469</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2EMI4hSVEeGGzu7fmW9pXw" base_Property="_2EMI4BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7470</ruleId>
+    <ruleId>R2.0=CONF:1098-7470</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2EMv8xSVEeGGzu7fmW9pXw" base_Property="_2EMv8BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7472</ruleId>
+    <ruleId>R2.0=CONF:1098-7472</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2EN-ERSVEeGGzu7fmW9pXw" base_Property="_2ENXABSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2GDxJhSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7485</ruleId>
+    <ruleId>R2.0=CONF:1098-7485</ruleId>
+    <ruleId>R2.0=CONF:1098-19086</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2EPMNBSVEeGGzu7fmW9pXw" base_Property="_2EPMMBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7498</ruleId>
@@ -822,6 +829,7 @@ historical purposes.&#xD;
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_kWt0YBxSEeGGdsHVD60BZA" base_Property="_2Em_oBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7379</ruleId>
+    <ruleId>R2.0=CONF:1098-7379</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_eWhS0B0eEeGGdsHVD60BZA" base_Property="_2EaLdhSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
@@ -1008,13 +1016,16 @@ historical purposes.&#xD;
   <CDA:CodeSystemConstraint xmi:id="_bVJRwDJBEeG6R8Pb5FT2Ow" code="CSM" displayName="Consumable" base_Property="_098tYDJAEeG6R8Pb5FT2Ow">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Z0Bk4E6SEeC5ttwajeXVXg"/>
     <ruleId>CONF:7403</ruleId>
+    <ruleId>R2.0=CONF:1098-7403</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_j-UHADJBEeG6R8Pb5FT2Ow" code="MANU" displayName="Manufactured Product" base_Property="_6LgXYDJAEeG6R8Pb5FT2Ow">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
     <ruleId>CONF:7405</ruleId>
+    <ruleId>R2.0=CONF:1098-7405</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_96euEDJBEeG6R8Pb5FT2Ow" base_Property="_F56fQDJBEeG6R8Pb5FT2Ow">
     <ruleId>CONF:7407</ruleId>
+    <ruleId>R2.0=CONF:7407</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_M0Hb0DJCEeG6R8Pb5FT2Ow" base_Property="_KmLkoDJCEeG6R8Pb5FT2Ow">
     <ruleId>CONF:7419</ruleId>
@@ -1066,9 +1077,9 @@ historical purposes.&#xD;
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_uCiIYLNwEeOtlapy2HWYww" clientDependency="_0f27sLNxEeOtlapy2HWYww" name="AllergyConcernAct2">
     <ownedComment xmi:id="_kWCYcLNxEeOtlapy2HWYww">
-      <body>This template reflects an ongoing concern on behalf of the provider that placed the allergy on a patient's allergy list. So long as the underlying condition is of concern to the provider (i.e. so long as the allergy, whether active or resolved, is of ongoing concern and interest to the provider), the statusCode is &quot;active&quot;. Only when the underlying allergy is no longer of concern is the statusCode set to &quot;completed&quot;. The effectiveTime reflects the time that the underlying allergy was felt to be a concern.&#xD;
+      <body>This template reflects an ongoing concern on behalf of the provider that placed the allergy on a patient's allergy list. As long as the underlying condition is of concern to the provider (i.e., as long as the allergy, whether active or resolved, is of ongoing concern and interest to the provider), the statusCode is &quot;active&quot;. Only when the underlying allergy is no longer of concern is the statusCode set to &quot;completed&quot;. The effectiveTime reflects the time that the underlying allergy was felt to be a concern.&#xD;
 The statusCode of the Allergy Concern Act is the definitive indication of the status of the concern, whereas the effectiveTime of the nested Allergy - Intolerance Observation is the definitive indication of whether or not the underlying allergy is resolved. &#xD;
-The effectiveTime/low of the Allergy Concern Act asserts when the concern became active. This equates to the time the concern was authored in the patient's chart. The effectiveTime/high asserts when the concern was completed (e.g. when the clinician deemed there is no longer any need to track the underlying condition).</body>
+The effectiveTime/low of the Allergy Concern Act asserts when the concern became active. This equates to the time the concern was authored in the patient's chart. The effectiveTime/high asserts when the concern was completed (e.g., when the clinician deemed there is no longer any need to track the underlying condition).</body>
     </ownedComment>
     <ownedRule xmi:id="_a4EoULbWEeOohfENwVAdzg" name="effectiveTimeLow" constrainedElement="_2EAisBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4EoUbbWEeOohfENwVAdzg">
@@ -1101,6 +1112,7 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QNBWkfffEeO297ryy8ptVg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QNBWkPffEeO297ryy8ptVg" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_K0IpwKvuEeS-mulaI3YUlw" name="code" visibility="private" type="_LgbIAKvuEeS-mulaI3YUlw" redefinedProperty="_2EMv9BSVEeGGzu7fmW9pXw"/>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_dOdGMLN7EeOtlapy2HWYww" name="IVLTS">
       <ownedComment xmi:id="_lufNkLN7EeOtlapy2HWYww">
         <body>INLINE</body>
@@ -1127,17 +1139,42 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_LgbIAKvuEeS-mulaI3YUlw" name="CD">
+      <ownedComment xmi:id="_MH-kQKy_EeSB84STE1Ny6A">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_bqaDUKvuEeS-mulaI3YUlw" name="codeAndCodeSystemValues" constrainedElement="_nG6-gMTyEeOYw6YTCsSKiw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bqaDUavuEeS-mulaI3YUlw">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>/@code SHALL=&quot;CONC&quot; Concern (CodeSystem: HL7ActClass 2.16.840.1.113883.5.6)</body>
+          <body>(code = 'CONC' and codeSystem = '2.16.840.1.113883.5.6') or (code = '48765-2' and codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_LgbIAavuEeS-mulaI3YUlw" general="_nG6-gMTyEeOYw6YTCsSKiw"/>
+      <ownedAttribute xmi:id="_MnGcMKvuEeS-mulaI3YUlw" name="code" visibility="private" redefinedProperty="_nl9D4MTyEeOYw6YTCsSKiw">
+        <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MnGcMavuEeS-mulaI3YUlw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MnGcMqvuEeS-mulaI3YUlw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_MnHqUKvuEeS-mulaI3YUlw" name="codeSystem" visibility="private" redefinedProperty="_nl9q8MTyEeOYw6YTCsSKiw">
+        <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MnHqUavuEeS-mulaI3YUlw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MnHqUqvuEeS-mulaI3YUlw" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_ePScoLNxEeOtlapy2HWYww" base_Class="_uCiIYLNwEeOtlapy2HWYww" templateId="2.16.840.1.113883.10.20.22.4.30" templateVersion="2014-06-09">
-    <ruleId>CONF:7471</ruleId>
-    <ruleId>CONF:10489</ruleId>
+    <ruleId>CONF:1098-7471</ruleId>
+    <ruleId>CONF:1098-10489</ruleId>
+    <ruleId>CONF:1098-32543</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_ptgzcLNxEeOtlapy2HWYww" base_Generalization="_uCivcLNwEeOtlapy2HWYww"/>
   <uml:Association xmi:id="_lUnZMLN0EeOtlapy2HWYww" memberEnd="_lUlkALN0EeOtlapy2HWYww _lUnZMbN0EeOtlapy2HWYww">
     <ownedEnd xmi:id="_lUnZMbN0EeOtlapy2HWYww" type="_uCiIYLNwEeOtlapy2HWYww" association="_lUnZMLN0EeOtlapy2HWYww"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_r8PNcLN0EeOtlapy2HWYww" severity="WARNING" base_Association="_lUnZMLN0EeOtlapy2HWYww">
-    <ruleId>CONF:31145</ruleId>
+    <ruleId>CONF:1098-31145</ruleId>
   </CDA:AssociationValidation>
   <CDA:CodeSystemConstraint xmi:id="_I2tmcLN6EeOtlapy2HWYww" code="CONC" displayName="Concern">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
@@ -1148,26 +1185,20 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
     <ruleId>CONF:7477</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_aMz6I7N7EeOtlapy2HWYww" base_Property="_aMz6ILN7EeOtlapy2HWYww">
-    <ruleId>CONF:7498</ruleId>
+    <ruleId>CONF:1098-7498</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_gOK_oLN7EeOtlapy2HWYww" base_Property="_eKyyoLN7EeOtlapy2HWYww">
-    <ruleId>CONF:31534</ruleId>
+    <ruleId>CONF:1098-31534</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_iUUMwLN7EeOtlapy2HWYww" severity="INFO" base_Property="_eKyLkLN7EeOtlapy2HWYww">
-    <ruleId>CONF:31535</ruleId>
+    <ruleId>CONF:1098-31535</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_uVJogLj5EeODDJAC5t5vpw" clientDependency="_Oapv4Lj7EeODDJAC5t5vpw" name="AllergyObservation2">
     <ownedComment xmi:id="_d2V3QLj6EeODDJAC5t5vpw">
       <body>This template reflects a discrete observation about a patient's allergy or intolerance. Because it is a discrete observation, it will have a statusCode of &quot;completed&quot;. The effectiveTime, also referred to as the &quot;biologically relevant time&quot; is the time at which the observation holds for the patient. For a provider seeing a patient in the clinic today, observing a history of penicillin allergy that developed five years ago, the effectiveTime is five years ago. &#xD;
 The effectiveTime of the Allergy - Intolerance Observation is the definitive indication of whether or not the underlying allergy/intolerance is resolved. If known to be resolved, then an effectiveTime/high would be present. If the date of resolution is not known, then effectiveTime/high will be present with a nullFlavor of &quot;UNK&quot;.&#xD;
-NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent.</body>
+The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent, i.e., use playingEntity classCode = &quot;MMAT&quot; for all agents, manufactured or not.</body>
     </ownedComment>
-    <ownedRule xmi:id="_8hmjULj9EeODDJAC5t5vpw" name="textReferenceValuePointsToNarrative" constrainedElement="_uVJogLj5EeODDJAC5t5vpw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WjBd0Lj-EeODDJAC5t5vpw">
-        <language>Analysis</language>
-        <body>The text reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-      </specification>
-    </ownedRule>
     <ownedRule xmi:id="_OMO6kLkVEeODDJAC5t5vpw" name="valueOriginalText" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_OMO6kbkVEeODDJAC5t5vpw">
         <language>Analysis</language>
@@ -1194,6 +1225,14 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     </ownedRule>
     <ownedRule xmi:id="_dwX2gLkYEeODDJAC5t5vpw" name="referenceValue" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_dwX2gbkYEeODDJAC5t5vpw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_6bV7wKwAEeS-mulaI3YUlw" name="allergyStatusInversionIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6bV7wawAEeS-mulaI3YUlw">
         <language>Analysis</language>
         <language>OCL</language>
         <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
@@ -1232,11 +1271,6 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xu9-cbj8EeODDJAC5t5vpw" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_LYVyAExtEd6h-an5IXo-DA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_oT_3ALj8EeODDJAC5t5vpw" name="text" visibility="private" type="_76eHULj8EeODDJAC5t5vpw" aggregation="composite">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oT_3Arj8EeODDJAC5t5vpw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oT_3Abj8EeODDJAC5t5vpw" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_PWM_4LkAEeODDJAC5t5vpw" name="code" visibility="private" redefinedProperty="_2EaLdBSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
@@ -1273,28 +1307,10 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZywsfrwEeO3D4OxHxUkag" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZywsPrwEeO3D4OxHxUkag" value="1"/>
     </ownedAttribute>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_76eHULj8EeODDJAC5t5vpw" name="ED">
-      <generalization xmi:id="_76eHUbj8EeODDJAC5t5vpw">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-      </generalization>
-      <ownedAttribute xmi:id="__JBuALj8EeODDJAC5t5vpw" name="reference" visibility="private" type="_IBarALj9EeODDJAC5t5vpw" isOrdered="true" aggregation="composite" isDerived="true">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__JBuArj8EeODDJAC5t5vpw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__JBuAbj8EeODDJAC5t5vpw" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_PIRiAD54Ed6cla2oXsPtlA"/>
-      </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_IBarALj9EeODDJAC5t5vpw" name="TEL">
-        <generalization xmi:id="_IBarAbj9EeODDJAC5t5vpw">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
-        </generalization>
-        <ownedAttribute xmi:id="_JpDXMLj9EeODDJAC5t5vpw" name="value" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lk6m8bj9EeODDJAC5t5vpw" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lk6m8Lj9EeODDJAC5t5vpw" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_TBfLED5_Ed6cla2oXsPtlA"/>
-        </ownedAttribute>
-      </nestedClassifier>
-    </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_wqODoLkTEeODDJAC5t5vpw" name="IVLTS">
+      <ownedComment xmi:id="_P_7GMKy_EeSB84STE1Ny6A">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_wqOqsLkTEeODDJAC5t5vpw">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       </generalization>
@@ -1333,8 +1349,16 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uxzcYPrxEeO3D4OxHxUkag" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_dcuKcPryEeO3D4OxHxUkag" name="PlayingEntity">
-          <ownedRule xmi:id="_pMHe4Pr0EeO3D4OxHxUkag" name="originalTextReference">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_pMHe4fr0EeO3D4OxHxUkag">
+          <ownedRule xmi:id="_04NdIPr1EeO3D4OxHxUkag" name="originalTextReferenceValue">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_04NdIfr1EeO3D4OxHxUkag">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+              <body>true</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_OD_zUPr6EeO3D4OxHxUkag" name="allergySpecificMedication">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_OD_zUfr6EeO3D4OxHxUkag">
               <language>Analysis</language>
               <language>OCL</language>
               <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
@@ -1365,16 +1389,8 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <body>true</body>
             </specification>
           </ownedRule>
-          <ownedRule xmi:id="_04NdIPr1EeO3D4OxHxUkag" name="originalTextReferenceValue">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_04NdIfr1EeO3D4OxHxUkag">
-              <language>Analysis</language>
-              <language>OCL</language>
-              <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
-              <body>true</body>
-            </specification>
-          </ownedRule>
-          <ownedRule xmi:id="_OD_zUPr6EeO3D4OxHxUkag" name="allergySpecificMedication">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_OD_zUfr6EeO3D4OxHxUkag">
+          <ownedRule xmi:id="_pMHe4Pr0EeO3D4OxHxUkag" name="originalTextReference">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_pMHe4fr0EeO3D4OxHxUkag">
               <language>Analysis</language>
               <language>OCL</language>
               <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
@@ -1404,52 +1420,41 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_HX1C0Lj6EeODDJAC5t5vpw" base_Class="_uVJogLj5EeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.7" templateVersion="2014-06-09">
-    <ruleId>CONF:7381</ruleId>
-    <ruleId>CONF:10488</ruleId>
+    <ruleId>CONF:1098-7381</ruleId>
+    <ruleId>CONF:1098-10488</ruleId>
+    <ruleId>CONF:1098-32526</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_2XNlALj6EeODDJAC5t5vpw" base_Generalization="_uVNS4Lj5EeODDJAC5t5vpw"/>
   <uml:Association xmi:id="_Gwg5QLj8EeODDJAC5t5vpw" memberEnd="_GwfEELj8EeODDJAC5t5vpw _GwhgULj8EeODDJAC5t5vpw">
     <ownedEnd xmi:id="_GwhgULj8EeODDJAC5t5vpw" type="_uVJogLj5EeODDJAC5t5vpw" association="_Gwg5QLj8EeODDJAC5t5vpw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_LxPBILj8EeODDJAC5t5vpw" severity="WARNING" base_Association="_Gwg5QLj8EeODDJAC5t5vpw">
-    <ruleId>CONF:31143</ruleId>
+    <ruleId>CONF:1098-31143</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_ZN-6ILj8EeODDJAC5t5vpw" severity="INFO" base_Property="_Xu9-cLj8EeODDJAC5t5vpw">
-    <ruleId>CONF:31526</ruleId>
+    <ruleId>CONF:1098-31526</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_pFCSYLj8EeODDJAC5t5vpw" severity="WARNING" base_Property="_oT_3ALj8EeODDJAC5t5vpw">
-    <ruleId>CONF:31527</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_AA2t4Lj9EeODDJAC5t5vpw" severity="WARNING" base_Property="__JBuALj8EeODDJAC5t5vpw">
-    <ruleId>CONF:31528</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_Kpx0YLj9EeODDJAC5t5vpw" base_Property="_JpDXMLj9EeODDJAC5t5vpw">
-    <ruleId>CONF:31529</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_X7rS0Lj-EeODDJAC5t5vpw" base_Constraint="_8hmjULj9EeODDJAC5t5vpw">
-    <ruleId>CONF:31530</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:CodeSystemConstraint xmi:id="_PWNm8LkAEeODDJAC5t5vpw" code="ASSERTION" base_Property="_PWM_4LkAEeODDJAC5t5vpw" severity="INFO">
+  <CDA:CodeSystemConstraint xmi:id="_PWNm8LkAEeODDJAC5t5vpw" code="ASSERTION" displayName="Assertion" base_Property="_PWM_4LkAEeODDJAC5t5vpw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15948</ruleId>
-    <ruleId>CONF:32153</ruleId>
+    <ruleId>CONF:1098-15948</ruleId>
+    <ruleId>CONF:1098-32153</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_PWQDMLkAEeODDJAC5t5vpw" base_Property="_PWM_4LkAEeODDJAC5t5vpw">
-    <ruleId>CONF:15947</ruleId>
+    <ruleId>CONF:1098-15947</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_3bHDQbkAEeODDJAC5t5vpw" base_Property="_3bHDQLkAEeODDJAC5t5vpw">
     <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
-    <ruleId>CONF:7390</ruleId>
+    <ruleId>CONF:1098-7390</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8aRr8LkAEeODDJAC5t5vpw" base_Property="_3bHDQLkAEeODDJAC5t5vpw"/>
   <CDA:PropertyValidation xmi:id="_QjUYo7kTEeODDJAC5t5vpw" base_Property="_QjUYoLkTEeODDJAC5t5vpw">
-    <ruleId>CONF:7387</ruleId>
+    <ruleId>CONF:1098-7387</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_y0WY4LkTEeODDJAC5t5vpw" severity="INFO" base_Property="_xry1YLkTEeODDJAC5t5vpw">
-    <ruleId>CONF:31539</ruleId>
+    <ruleId>CONF:1098-31539</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_1c2sMLkTEeODDJAC5t5vpw" base_Property="_xrzccLkTEeODDJAC5t5vpw">
-    <ruleId>CONF:31538</ruleId>
+    <ruleId>CONF:1098-31538</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_j4148MTyEeOYw6YTCsSKiw" base_Property="_2EMv9BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:NEW</ruleId>
@@ -2163,31 +2168,31 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ownedEnd xmi:id="_K9gkwfffEeO297ryy8ptVg" type="_uCiIYLNwEeOtlapy2HWYww" association="_K9gkwPffEeO297ryy8ptVg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_QluKcPffEeO297ryy8ptVg" base_Association="_K9gkwPffEeO297ryy8ptVg" typeCode="SUBJ">
-    <ruleId>CONF:7509</ruleId>
-    <ruleId>CONF:7915</ruleId>
-    <ruleId>CONF:14925</ruleId>
+    <ruleId>CONF:1098-7509</ruleId>
+    <ruleId>CONF:1098-7915</ruleId>
+    <ruleId>CONF:1098-14925</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_c0oBMPfoEeO297ryy8ptVg" memberEnd="_c0mMAPfoEeO297ryy8ptVg _c0oBMffoEeO297ryy8ptVg">
     <ownedEnd xmi:id="_c0oBMffoEeO297ryy8ptVg" type="_uVJogLj5EeODDJAC5t5vpw" association="_c0oBMPfoEeO297ryy8ptVg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_jLhR0PfoEeO297ryy8ptVg" severity="WARNING" base_Association="_c0oBMPfoEeO297ryy8ptVg" typeCode="MFST">
-    <ruleId>CONF:7447</ruleId>
-    <ruleId>CONF:7907</ruleId>
-    <ruleId>CONF:15955</ruleId>
+    <ruleId>CONF:1098-7447</ruleId>
+    <ruleId>CONF:1098-7907</ruleId>
+    <ruleId>CONF:1098-15955</ruleId>
   </CDA:EntryRelationship>
   <CDA:ConstraintValidation xmi:id="_YbNUcvfpEeO297ryy8ptVg" base_Constraint="_YbNUcPfpEeO297ryy8ptVg">
-    <ruleId>CONF:7449</ruleId>
+    <ruleId>CONF:1098-7449</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_uBVvYvfpEeO297ryy8ptVg" base_Constraint="_uBVvYPfpEeO297ryy8ptVg">
-    <ruleId>CONF:9964</ruleId>
+    <ruleId>CONF:1098-9964</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_5r6gIPfpEeO297ryy8ptVg" memberEnd="_5r5SAPfpEeO297ryy8ptVg _5r6gIffpEeO297ryy8ptVg">
     <ownedEnd xmi:id="_5r6gIffpEeO297ryy8ptVg" type="_uVJogLj5EeODDJAC5t5vpw" association="_5r6gIPfpEeO297ryy8ptVg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_-N9H8PfpEeO297ryy8ptVg" severity="INFO" base_Association="_5r6gIPfpEeO297ryy8ptVg" typeCode="SUBJ">
-    <ruleId>CONF:9961</ruleId>
-    <ruleId>CONF:9962</ruleId>
-    <ruleId>CONF:15956</ruleId>
+    <ruleId>CONF:1098-9961</ruleId>
+    <ruleId>CONF:1098-9962</ruleId>
+    <ruleId>CONF:1098-15956</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_hOWwkPijEeOXlK95I8tUew" memberEnd="_hOU7YPijEeOXlK95I8tUew _hOWwkfijEeOXlK95I8tUew">
     <ownedEnd xmi:id="_hOWwkfijEeOXlK95I8tUew" type="_U3yosPDxEeOKPKE9au0oug" association="_hOWwkPijEeOXlK95I8tUew"/>
@@ -2204,7 +2209,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ownedEnd xmi:id="_EB8EEPrwEeO3D4OxHxUkag" type="_uVJogLj5EeODDJAC5t5vpw" association="_EB7dAPrwEeO3D4OxHxUkag"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_GCu3IPrwEeO3D4OxHxUkag" base_Association="_EB7dAPrwEeO3D4OxHxUkag">
-    <ruleId>CONF:7402</ruleId>
+    <ruleId>CONF:1098-7402</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_TUYTYPrwEeO3D4OxHxUkag">
     <ruleId>CONF:7403</ruleId>
@@ -2213,23 +2218,23 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ownedEnd xmi:id="___wyofrwEeO3D4OxHxUkag" type="_OIcaAPrwEeO3D4OxHxUkag" association="___wyoPrwEeO3D4OxHxUkag"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_DoCg4PrxEeO3D4OxHxUkag" base_Association="___wyoPrwEeO3D4OxHxUkag">
-    <ruleId>CONF:7404</ruleId>
+    <ruleId>CONF:1098-7404</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_qBuYkPrxEeO3D4OxHxUkag" memberEnd="_qBsjYPrxEeO3D4OxHxUkag _qBuYkfrxEeO3D4OxHxUkag">
     <ownedEnd xmi:id="_qBuYkfrxEeO3D4OxHxUkag" type="_OOs9kPrxEeO3D4OxHxUkag" association="_qBuYkPrxEeO3D4OxHxUkag"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_sYQyIPrxEeO3D4OxHxUkag" base_Association="_qBuYkPrxEeO3D4OxHxUkag">
-    <ruleId>CONF:7406</ruleId>
+    <ruleId>CONF:1098-7406</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_yZI6APryEeO3D4OxHxUkag" base_Property="_yZIS8PryEeO3D4OxHxUkag">
-    <ruleId>CONF:7419</ruleId>
+    <ruleId>CONF:1098-7419</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_KgdlsPr7EeO3D4OxHxUkag" code="completed" base_Property="_Kgc-oPr7EeO3D4OxHxUkag">
+  <CDA:CodeSystemConstraint xmi:id="_KgdlsPr7EeO3D4OxHxUkag" code="completed" displayName="Completed" base_Property="_Kgc-oPr7EeO3D4OxHxUkag">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:19085</ruleId>
+    <ruleId>CONF:1098-19085</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_L3BwAPr7EeO3D4OxHxUkag" base_Property="_Kgc-oPr7EeO3D4OxHxUkag">
-    <ruleId>CONF:19084</ruleId>
+    <ruleId>CONF:1098-19084</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_nWAcMAIjEeSVzfoPSatgpg" clientDependency="_DdymQAIkEeSVzfoPSatgpg" name="AllergiesSectionEntriesOptional2">
     <ownedComment xmi:id="_w56bYAIjEeSVzfoPSatgpg">
@@ -2333,4 +2338,17 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:PropertyValidation xmi:id="_CeCFYKJ1EeSOc57SOMra_g" severity="INFO" base_Property="_Blpr4KJ1EeSOc57SOMra_g">
     <ruleId>CONF:1098-32824</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_K0JQ0KvuEeS-mulaI3YUlw" base_Property="_K0IpwKvuEeS-mulaI3YUlw">
+    <ruleId>CONF:1098-7477</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_MnHDQKvuEeS-mulaI3YUlw" base_Property="_MnGcMKvuEeS-mulaI3YUlw">
+    <ruleId>CONF:1098-19158</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_MnHqU6vuEeS-mulaI3YUlw" base_Property="_MnHqUKvuEeS-mulaI3YUlw">
+    <ruleId>CONF:1098-32154</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_bqaqYKvuEeS-mulaI3YUlw" base_Constraint="_bqaDUKvuEeS-mulaI3YUlw">
+    <ruleId>CONF:1098-19158</ruleId>
+    <ruleId>CONF:1098-32154</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

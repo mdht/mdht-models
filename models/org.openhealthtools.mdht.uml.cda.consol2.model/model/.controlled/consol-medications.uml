@@ -1245,14 +1245,14 @@ The UDI should be sent in the participantRole/id.</body>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_VI8CAEFGEeGorO80f-Cppg" value="ACT"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_OJAbcUFGEeGorO80f-Cppg" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_OJAbckFGEeGorO80f-Cppg" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_X3kygEFGEeGorO80f-Cppg" value="EVN"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OJAbcUFGEeGorO80f-Cppg" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_lThaQEFGEeGorO80f-Cppg" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_lThaQkFGEeGorO80f-Cppg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XCO5cHuIEeKhK5t8xrm9qQ" value="1"/>
@@ -1268,6 +1268,7 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_T1CxMEFGEeGorO80f-Cppg" base_Property="_OJAbcEFGEeGorO80f-Cppg">
     <ruleId>CONF:7698</ruleId>
+    <ruleId>R2.0=CONF:1098-7698</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_aeBQUEFGEeGorO80f-Cppg" code="42346-7" displayName="Medications on Admission" base_Property="_OJAbcUFGEeGorO80f-Cppg" severity="INFO">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -1275,6 +1276,7 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_f8MwQEFGEeGorO80f-Cppg" base_Property="_OJAbckFGEeGorO80f-Cppg">
     <ruleId>CONF:7699</ruleId>
+    <ruleId>R2.0=CONF:1098-7699</ruleId>
   </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_qr4mEEFGEeGorO80f-Cppg" base_Association="_lThaQkFGEeGorO80f-Cppg" typeCode="SUBJ">
     <ruleId>CONF:7701</ruleId>
@@ -1579,17 +1581,18 @@ The UDI should be sent in the participantRole/id.</body>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_hNuQEK-1EeO8duI_7f6kZw" base_Class="_ZQpEwK-1EeO8duI_7f6kZw" templateId="2.16.840.1.113883.10.20.22.4.36" templateVersion="2014-06-09">
-    <ruleId>CONF:16758</ruleId>
-    <ruleId>CONF:16759</ruleId>
+    <ruleId>CONF:1098-16758</ruleId>
+    <ruleId>CONF:1098-16759</ruleId>
+    <ruleId>CONF:1098-32524</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_yc9jQK-1EeO8duI_7f6kZw" base_Generalization="_ZQxAkK-1EeO8duI_7f6kZw"/>
   <CDA:CodeSystemConstraint xmi:id="_aacbkLN9EeOtlapy2HWYww" code="42346-7" displayName="Medications on Admission" base_Property="_aab0gLN9EeOtlapy2HWYww">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15519</ruleId>
-    <ruleId>CONF:32152</ruleId>
+    <ruleId>CONF:1098-15519</ruleId>
+    <ruleId>CONF:1098-32152</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_aaeQwLN9EeOtlapy2HWYww" base_Property="_aab0gLN9EeOtlapy2HWYww">
-    <ruleId>CONF:15518</ruleId>
+    <ruleId>CONF:1098-15518</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_OTQ4wL59EeO8lb9TgnhnOQ" base_Constraint="_MI3dwL59EeO8lb9TgnhnOQ">
     <ruleId>CONF:NEW</ruleId>
@@ -2124,9 +2127,9 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
     <ownedEnd xmi:id="_CymqwffdEeO297ryy8ptVg" type="_ZQpEwK-1EeO8duI_7f6kZw" association="_CymqwPfdEeO297ryy8ptVg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_FxNw8PfdEeO297ryy8ptVg" base_Association="_CymqwPfdEeO297ryy8ptVg" typeCode="SUBJ">
-    <ruleId>CONF:7701</ruleId>
-    <ruleId>CONF:7702</ruleId>
-    <ruleId>CONF:15520</ruleId>
+    <ruleId>CONF:1098-7701</ruleId>
+    <ruleId>CONF:1098-7702</ruleId>
+    <ruleId>CONF:1098-15520</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_94Q4oPiVEeOXlK95I8tUew" memberEnd="_94MnMPiVEeOXlK95I8tUew _94RfsPiVEeOXlK95I8tUew">
     <ownedEnd xmi:id="_94RfsPiVEeOXlK95I8tUew" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_94Q4oPiVEeOXlK95I8tUew"/>

@@ -420,7 +420,7 @@ value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'ADOPT' or value.
                 <language>Analysis</language>
                 <language>OCL</language>
                 <body>precise to day</body>
-                <body>not value.oclIsUndefined() and value.size() >= 6</body>
+                <body>not value.oclIsUndefined() and value.size() >= 8</body>
               </specification>
             </ownedRule>
             <generalization xmi:id="_nFfhQJ4wEeKLDuYB2cFreQ">
@@ -6352,7 +6352,8 @@ The informant element describes an information source for any content within the
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_XG2yYI1fEeS-Q90NIeadnQ" name="RelatedEntity">
         <generalization xmi:id="_XG3ZcI1fEeS-Q90NIeadnQ" general="_ou68wDVWEeGIw7CntkyPQw"/>
-        <ownedAttribute xmi:id="_31evQI1gEeS-Q90NIeadnQ" name="addr" visibility="private" type="_i4zXgPIPEeGu1M-cCXg0Dg" aggregation="composite" redefinedProperty="_sVcXgDVWEeGIw7CntkyPQw">
+        <ownedAttribute xmi:id="_31evQI1gEeS-Q90NIeadnQ" name="addr" visibility="private" aggregation="composite" redefinedProperty="_sVcXgDVWEeGIw7CntkyPQw">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rw36QY1hEeS-Q90NIeadnQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rw36QI1hEeS-Q90NIeadnQ"/>
         </ownedAttribute>

@@ -3111,7 +3111,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_WaWroLFLEeOtlapy2HWYww" conceptName="Principal" base_EnumerationLiteral="_WaWEkLFLEeOtlapy2HWYww"/>
   <term:ValueSetCode xmi:id="_ZPklQbFLEeOtlapy2HWYww" conceptName="Secondary" base_EnumerationLiteral="_ZPklQLFLEeOtlapy2HWYww"/>
-  <term:ValueSetVersion xmi:id="_FHdfcbm6EeOgPNzo_e4B9A" identifier="2.16.840.1.113883.11.20.9.38" fullName="Current Smoking Status" binding="Dynamic" base_Enumeration="_FHdfcLm6EeOgPNzo_e4B9A">
+  <term:ValueSetVersion xmi:id="_FHdfcbm6EeOgPNzo_e4B9A" identifier="2.16.840.1.113883.11.20.9.38" version="2014-09-01" fullName="Current Smoking Status" base_Enumeration="_FHdfcLm6EeOgPNzo_e4B9A">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_xSdOcLm6EeOgPNzo_e4B9A" conceptName="Current every day smoker" base_EnumerationLiteral="_xScnYLm6EeOgPNzo_e4B9A"/>
@@ -3167,7 +3167,9 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_sFk1QPJiEeO2NaSiicarcg" conceptName="Housing history (observable entity)" base_EnumerationLiteral="_sFkOMPJiEeO2NaSiicarcg"/>
   <term:ValueSetCode xmi:id="_t_SI4fJiEeO2NaSiicarcg" conceptName="Dosage of radiation exposure (observable entity)" base_EnumerationLiteral="_t_SI4PJiEeO2NaSiicarcg"/>
   <term:ValueSetVersion xmi:id="_hO26YPMSEeOrR8IF-aqVyQ" identifier="2.16.840.1.113762.1.4.1010.1" binding="Dynamic" base_Enumeration="_hO2TUPMSEeOrR8IF-aqVyQ"/>
-  <term:ValueSetVersion xmi:id="_bb5h4BwSEeSMr-NWzQuDBw" identifier="2.16.840.1.113883.11.20.9.64" source="http://www.loc.gov/standards/iso639-2/php/code_list.php" binding="Dynamic" base_Enumeration="_bb460BwSEeSMr-NWzQuDBw"/>
+  <term:ValueSetVersion xmi:id="_bb5h4BwSEeSMr-NWzQuDBw" identifier="2.16.840.1.113883.11.20.9.64" source="http://www.loc.gov/standards/iso639-2/php/code_list.php" binding="Dynamic" base_Enumeration="_bb460BwSEeSMr-NWzQuDBw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_M_9VALC4EeSVMPnHsd38Lg"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_tcT18CL6EeS4d9o7u1_H3A" identifier="1.3.6.1.4.1.12009.10.2.5" fullName="LOINC Imaging Document Codes" binding="Dynamic" base_Enumeration="_tcSn0CL6EeS4d9o7u1_H3A">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
