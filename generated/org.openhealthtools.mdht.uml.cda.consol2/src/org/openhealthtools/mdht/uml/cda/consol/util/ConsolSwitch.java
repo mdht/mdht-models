@@ -4116,46 +4116,46 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.COGNITIVE_STATUS_OBSERVATION2: {
-				CognitiveStatusObservation2 cognitiveStatusObservation2 = (CognitiveStatusObservation2) theEObject;
-				T result = caseCognitiveStatusObservation2(cognitiveStatusObservation2);
+			case ConsolPackage.MENTAL_STATUS_OBSERVATION2: {
+				MentalStatusObservation2 mentalStatusObservation2 = (MentalStatusObservation2) theEObject;
+				T result = caseMentalStatusObservation2(mentalStatusObservation2);
 				if (result == null) {
-					result = caseObservation(cognitiveStatusObservation2);
+					result = caseObservation(mentalStatusObservation2);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(cognitiveStatusObservation2);
+					result = caseClinicalStatement(mentalStatusObservation2);
 				}
 				if (result == null) {
-					result = caseAct(cognitiveStatusObservation2);
+					result = caseAct(mentalStatusObservation2);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(cognitiveStatusObservation2);
+					result = caseInfrastructureRoot(mentalStatusObservation2);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
 			}
-			case ConsolPackage.CURRENT_SMOKING_STATUS2: {
-				CurrentSmokingStatus2 currentSmokingStatus2 = (CurrentSmokingStatus2) theEObject;
-				T result = caseCurrentSmokingStatus2(currentSmokingStatus2);
+			case ConsolPackage.SMOKING_STATUS_MEANINGFUL_USE2: {
+				SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2 = (SmokingStatusMeaningfulUse2) theEObject;
+				T result = caseSmokingStatusMeaningfulUse2(smokingStatusMeaningfulUse2);
 				if (result == null) {
-					result = caseSmokingStatusObservation(currentSmokingStatus2);
+					result = caseSmokingStatusObservation(smokingStatusMeaningfulUse2);
 				}
 				if (result == null) {
-					result = caseTobaccoUse(currentSmokingStatus2);
+					result = caseTobaccoUse(smokingStatusMeaningfulUse2);
 				}
 				if (result == null) {
-					result = caseObservation(currentSmokingStatus2);
+					result = caseObservation(smokingStatusMeaningfulUse2);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(currentSmokingStatus2);
+					result = caseClinicalStatement(smokingStatusMeaningfulUse2);
 				}
 				if (result == null) {
-					result = caseAct(currentSmokingStatus2);
+					result = caseAct(smokingStatusMeaningfulUse2);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(currentSmokingStatus2);
+					result = caseInfrastructureRoot(smokingStatusMeaningfulUse2);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -4819,26 +4819,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.COGNITIVE_STATUS_ORGANIZER2: {
-				CognitiveStatusOrganizer2 cognitiveStatusOrganizer2 = (CognitiveStatusOrganizer2) theEObject;
-				T result = caseCognitiveStatusOrganizer2(cognitiveStatusOrganizer2);
+			case ConsolPackage.MENTAL_STATUS_ORGANIZER2: {
+				MentalStatusOrganizer2 mentalStatusOrganizer2 = (MentalStatusOrganizer2) theEObject;
+				T result = caseMentalStatusOrganizer2(mentalStatusOrganizer2);
 				if (result == null) {
-					result = caseCognitiveStatusResultOrganizer(cognitiveStatusOrganizer2);
+					result = caseCognitiveStatusResultOrganizer(mentalStatusOrganizer2);
 				}
 				if (result == null) {
-					result = caseResultOrganizer(cognitiveStatusOrganizer2);
+					result = caseResultOrganizer(mentalStatusOrganizer2);
 				}
 				if (result == null) {
-					result = caseOrganizer(cognitiveStatusOrganizer2);
+					result = caseOrganizer(mentalStatusOrganizer2);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(cognitiveStatusOrganizer2);
+					result = caseClinicalStatement(mentalStatusOrganizer2);
 				}
 				if (result == null) {
-					result = caseAct(cognitiveStatusOrganizer2);
+					result = caseAct(mentalStatusOrganizer2);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(cognitiveStatusOrganizer2);
+					result = caseInfrastructureRoot(mentalStatusOrganizer2);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -9741,6 +9741,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mental Status Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mental Status Organizer2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMentalStatusOrganizer2(MentalStatusOrganizer2 object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Nutrition Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -9921,32 +9936,32 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cognitive Status Organizer2</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Mental Status Observation2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cognitive Status Organizer2</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Mental Status Observation2</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCognitiveStatusOrganizer2(CognitiveStatusOrganizer2 object) {
+	public T caseMentalStatusObservation2(MentalStatusObservation2 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cognitive Status Observation2</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Smoking Status Meaningful Use2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cognitive Status Observation2</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Smoking Status Meaningful Use2</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCognitiveStatusObservation2(CognitiveStatusObservation2 object) {
+	public T caseSmokingStatusMeaningfulUse2(SmokingStatusMeaningfulUse2 object) {
 		return null;
 	}
 
@@ -9962,21 +9977,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseCoverageActivity2(CoverageActivity2 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Current Smoking Status2</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Current Smoking Status2</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCurrentSmokingStatus2(CurrentSmokingStatus2 object) {
 		return null;
 	}
 

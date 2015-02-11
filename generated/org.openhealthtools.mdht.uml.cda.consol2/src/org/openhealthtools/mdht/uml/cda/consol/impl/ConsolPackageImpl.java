@@ -1336,6 +1336,13 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass mentalStatusOrganizer2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass nutritionSectionEClass = null;
 
 	/**
@@ -1420,14 +1427,14 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass cognitiveStatusOrganizer2EClass = null;
+	private EClass mentalStatusObservation2EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass cognitiveStatusObservation2EClass = null;
+	private EClass smokingStatusMeaningfulUse2EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1435,13 +1442,6 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * @generated
 	 */
 	private EClass coverageActivity2EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass currentSmokingStatus2EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4919,6 +4919,19 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getMentalStatusOrganizer2() {
+		if (mentalStatusOrganizer2EClass == null) {
+			mentalStatusOrganizer2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				239);
+		}
+		return mentalStatusOrganizer2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EClass getNutritionSection() {
 		if (nutritionSectionEClass == null) {
@@ -5087,13 +5100,12 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EClass getCognitiveStatusOrganizer2() {
-		if (cognitiveStatusOrganizer2EClass == null) {
-			cognitiveStatusOrganizer2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				239);
+	public EClass getMentalStatusObservation2() {
+		if (mentalStatusObservation2EClass == null) {
+			mentalStatusObservation2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				207);
 		}
-		return cognitiveStatusOrganizer2EClass;
+		return mentalStatusObservation2EClass;
 	}
 
 	/**
@@ -5101,13 +5113,12 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EClass getCognitiveStatusObservation2() {
-		if (cognitiveStatusObservation2EClass == null) {
-			cognitiveStatusObservation2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				207);
+	public EClass getSmokingStatusMeaningfulUse2() {
+		if (smokingStatusMeaningfulUse2EClass == null) {
+			smokingStatusMeaningfulUse2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				208);
 		}
-		return cognitiveStatusObservation2EClass;
+		return smokingStatusMeaningfulUse2EClass;
 	}
 
 	/**
@@ -5122,20 +5133,6 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				278);
 		}
 		return coverageActivity2EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getCurrentSmokingStatus2() {
-		if (currentSmokingStatus2EClass == null) {
-			currentSmokingStatus2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				208);
-		}
-		return currentSmokingStatus2EClass;
 	}
 
 	/**

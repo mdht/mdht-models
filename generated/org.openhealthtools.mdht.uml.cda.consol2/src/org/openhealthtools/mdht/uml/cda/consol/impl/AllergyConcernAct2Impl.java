@@ -119,6 +119,39 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyConcernAct2CDCodeAndCodeSystemValues(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyConcernAct2Operations.validateAllergyConcernAct2CDCodeAndCodeSystemValues(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyConcernAct2AllergyProblemActCDCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyConcernAct2Operations.validateAllergyConcernAct2AllergyProblemActCDCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyConcernAct2AllergyProblemActCDCodeSystem(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyConcernAct2Operations.validateAllergyConcernAct2AllergyProblemActCDCodeSystem(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<AllergyObservation2> getConsolAllergyObservation2s() {
 		return AllergyConcernAct2Operations.getConsolAllergyObservation2s(this);
@@ -142,6 +175,16 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	@Override
 	public boolean validateAllergyProblemActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyConcernAct2Operations.validateAllergyProblemActEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateAllergyProblemActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyConcernAct2Operations.validateAllergyProblemActCode(this, diagnostics, context);
 	}
 
 	/**

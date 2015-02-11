@@ -474,10 +474,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createExternalDocumentReference();
 			case ConsolPackage.ALLERGY_OBSERVATION2:
 				return createAllergyObservation2();
-			case ConsolPackage.COGNITIVE_STATUS_OBSERVATION2:
-				return createCognitiveStatusObservation2();
-			case ConsolPackage.CURRENT_SMOKING_STATUS2:
-				return createCurrentSmokingStatus2();
+			case ConsolPackage.MENTAL_STATUS_OBSERVATION2:
+				return createMentalStatusObservation2();
+			case ConsolPackage.SMOKING_STATUS_MEANINGFUL_USE2:
+				return createSmokingStatusMeaningfulUse2();
 			case ConsolPackage.ENCOUNTER_DIAGNOSIS2:
 				return createEncounterDiagnosis2();
 			case ConsolPackage.FUNCTIONAL_STATUS_OBSERVATION2:
@@ -538,8 +538,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createHealthStatusEvaluationsOutcomesSection();
 			case ConsolPackage.MENTAL_STATUS_SECTION:
 				return createMentalStatusSection();
-			case ConsolPackage.COGNITIVE_STATUS_ORGANIZER2:
-				return createCognitiveStatusOrganizer2();
+			case ConsolPackage.MENTAL_STATUS_ORGANIZER2:
+				return createMentalStatusOrganizer2();
 			case ConsolPackage.NUTRITION_SECTION:
 				return createNutritionSection();
 			case ConsolPackage.PHYSICAL_FINDINGS_OF_SKIN_SECTION:
@@ -2727,6 +2727,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public MentalStatusOrganizer2 createMentalStatusOrganizer2() {
+		MentalStatusOrganizer2Impl mentalStatusOrganizer2 = new MentalStatusOrganizer2Impl();
+		return mentalStatusOrganizer2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NutritionSection createNutritionSection() {
 		NutritionSectionImpl nutritionSection = new NutritionSectionImpl();
@@ -2859,10 +2869,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public CognitiveStatusOrganizer2 createCognitiveStatusOrganizer2() {
-		CognitiveStatusOrganizer2Impl cognitiveStatusOrganizer2 = new CognitiveStatusOrganizer2Impl();
-		return cognitiveStatusOrganizer2;
+	public MentalStatusObservation2 createMentalStatusObservation2() {
+		MentalStatusObservation2Impl mentalStatusObservation2 = new MentalStatusObservation2Impl();
+		return mentalStatusObservation2;
 	}
 
 	/**
@@ -2870,10 +2879,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public CognitiveStatusObservation2 createCognitiveStatusObservation2() {
-		CognitiveStatusObservation2Impl cognitiveStatusObservation2 = new CognitiveStatusObservation2Impl();
-		return cognitiveStatusObservation2;
+	public SmokingStatusMeaningfulUse2 createSmokingStatusMeaningfulUse2() {
+		SmokingStatusMeaningfulUse2Impl smokingStatusMeaningfulUse2 = new SmokingStatusMeaningfulUse2Impl();
+		return smokingStatusMeaningfulUse2;
 	}
 
 	/**
@@ -2885,17 +2893,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public CoverageActivity2 createCoverageActivity2() {
 		CoverageActivity2Impl coverageActivity2 = new CoverageActivity2Impl();
 		return coverageActivity2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CurrentSmokingStatus2 createCurrentSmokingStatus2() {
-		CurrentSmokingStatus2Impl currentSmokingStatus2 = new CurrentSmokingStatus2Impl();
-		return currentSmokingStatus2;
 	}
 
 	/**

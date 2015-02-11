@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
-import org.openhealthtools.mdht.uml.cda.consol.CurrentSmokingStatus2;
+import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
@@ -143,7 +143,7 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CurrentSmokingStatus2> getConsolCurrentSmokingStatus2s() {
+	public EList<SmokingStatusMeaningfulUse2> getConsolCurrentSmokingStatus2s() {
 		return SocialHistorySection2Operations.getConsolCurrentSmokingStatus2s(this);
 	}
 

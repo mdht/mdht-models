@@ -21,10 +21,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation;
-import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation;
+import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
+import org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
@@ -237,7 +237,7 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CognitiveStatusOrganizer2> getCognitiveStatusOrganizer2s() {
+	public EList<MentalStatusOrganizer2> getCognitiveStatusOrganizer2s() {
 		return MentalStatusSectionOperations.getCognitiveStatusOrganizer2s(this);
 	}
 
@@ -246,7 +246,7 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CognitiveStatusObservation2> getCognitiveStatusObservation2s() {
+	public EList<MentalStatusObservation2> getCognitiveStatusObservation2s() {
 		return MentalStatusSectionOperations.getCognitiveStatusObservation2s(this);
 	}
 

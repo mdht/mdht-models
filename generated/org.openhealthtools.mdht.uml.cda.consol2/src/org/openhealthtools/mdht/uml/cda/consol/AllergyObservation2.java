@@ -24,9 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationTemplateId AllergyObservation2ReactionInversionIndicator AllergyObservation2SeverityInversionIndicator AllergyObservationCodeP AllergyObservationValue AllergyObservationValueP AllergyObservationStatusCode AllergyObservationStatusCodeP AllergyObservationEffectiveTime AllergyObservationParticipant AllergyObservation2EDTELValue AllergyObservation2IVLTSLow AllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference AllergyObservation2ParticipantParticipantRolePlayingEntityAllergyClassMedication AllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance AllergyObservation2ParticipantParticipantRolePlayingEntityReferenceValue AllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCode AllergyObservation2ParticipantAllergyObservationParticipantParticipantRolePlayingEntity AllergyObservation2AllergyObservationParticipantParticipantRole' templateId.root='2.16.840.1.113883.10.20.22.4.7' templateId.extension='2014-06-09' constraints.validation.info='AllergyObservation2NegationInd AllergyObservationCode AllergyObservation2SeverityObservation2 AllergyObservation2IVLTSHigh' constraints.validation.warning='AllergyObservation2Text AllergyObservation2AuthorParticipation AllergyObservationReactionObservation2 AllergyObservation2EDReference' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.AllergyObservationCode='AllergyObservationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.AllergyObservationValue='AllergyObservationValueP' statusCode.code='completed' constraints.validation.dependOn.AllergyObservationStatusCode='AllergyObservationStatusCodeP' constraints.validation.query='AllergyObservation2EDTELValue AllergyObservation2EDReference AllergyObservation2IVLTSLow AllergyObservation2IVLTSHigh AllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference AllergyObservation2ParticipantParticipantRolePlayingEntityAllergyClassMedication AllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance AllergyObservation2ParticipantParticipantRolePlayingEntityReferenceValue AllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCode AllergyObservation2ParticipantAllergyObservationParticipantParticipantRolePlayingEntity AllergyObservation2AllergyObservationParticipantParticipantRole'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservation2ED constraints.validation.warning='AllergyObservation2EDReference' constraints.validation.error='AllergyObservation2EDTELValue' constraints.validation.query='AllergyObservation2EDTELValue'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservation2EDTEL constraints.validation.error='AllergyObservation2EDTELValue'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationTemplateId AllergyObservation2ReactionInversionIndicator AllergyObservation2SeverityInversionIndicator AllergyObservationCode AllergyObservationCodeP AllergyObservationValue AllergyObservationValueP AllergyObservationStatusCode AllergyObservationStatusCodeP AllergyObservationEffectiveTime AllergyObservationParticipant AllergyObservation2IVLTSLow AllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication AllergyObservation2ParticipantParticipantRolePlayingEntityAllergyClassMedication AllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance AllergyObservation2ParticipantParticipantRolePlayingEntityReferenceValue AllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCode AllergyObservation2ParticipantAllergyObservationParticipantParticipantRolePlayingEntity AllergyObservation2AllergyObservationParticipantParticipantRole' templateId.root='2.16.840.1.113883.10.20.22.4.7' templateId.extension='2014-06-09' constraints.validation.info='AllergyObservation2NegationInd AllergyObservation2SeverityObservation2 AllergyObservation2IVLTSHigh' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.AllergyObservationCode='AllergyObservationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.AllergyObservationValue='AllergyObservationValueP' statusCode.code='completed' constraints.validation.dependOn.AllergyObservationStatusCode='AllergyObservationStatusCodeP' constraints.validation.warning='AllergyObservation2AuthorParticipation AllergyObservationReactionObservation2' constraints.validation.query='AllergyObservation2IVLTSLow AllergyObservation2IVLTSHigh AllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication AllergyObservation2ParticipantParticipantRolePlayingEntityAllergyClassMedication AllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance AllergyObservation2ParticipantParticipantRolePlayingEntityReferenceValue AllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference AllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCode AllergyObservation2ParticipantAllergyObservationParticipantParticipantRolePlayingEntity AllergyObservation2AllergyObservationParticipantParticipantRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservation2IVLTS constraints.validation.error='AllergyObservation2IVLTSLow' constraints.validation.info='AllergyObservation2IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservation2Participant constraints.validation.error='AllergyObservationParticipantParticipantRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservation2ParticipantParticipantRole constraints.validation.error='AllergyObservationParticipantParticipantRolePlayingEntity'"
@@ -90,6 +88,19 @@ public interface AllergyObservation2 extends AllergyObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateAllergyObservation2AllergyStatusInversionIndicator(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::ReactionObservation2))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)'"
 	 * @generated
 	 */
@@ -120,18 +131,6 @@ public interface AllergyObservation2 extends AllergyObservation {
 	 * @generated
 	 */
 	boolean validateAllergyObservation2NegationInd(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateAllergyObservation2Text(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -192,30 +191,6 @@ public interface AllergyObservation2 extends AllergyObservation {
 	 * @generated
 	 */
 	boolean validateAllergyObservation2SeverityObservation2(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.text->excluding(null)->select(isNullFlavorUndefined()).reference->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not value.oclIsUndefined() )))'"
-	 * @generated
-	 */
-	boolean validateAllergyObservation2EDTELValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.text->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((reference.oclIsUndefined() or reference.isNullFlavorUndefined()) implies (not reference.oclIsUndefined()) )))'"
-	 * @generated
-	 */
-	boolean validateAllergyObservation2EDReference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

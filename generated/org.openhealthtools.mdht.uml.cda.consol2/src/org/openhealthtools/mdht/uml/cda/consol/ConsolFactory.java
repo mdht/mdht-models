@@ -1686,6 +1686,15 @@ public interface ConsolFactory extends EFactory {
 	MentalStatusSection createMentalStatusSection();
 
 	/**
+	 * Returns a new object of class '<em>Mental Status Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mental Status Organizer2</em>'.
+	 * @generated
+	 */
+	MentalStatusOrganizer2 createMentalStatusOrganizer2();
+
+	/**
 	 * Returns a new object of class '<em>Nutrition Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1794,22 +1803,22 @@ public interface ConsolFactory extends EFactory {
 	AllergyObservation2 createAllergyObservation2();
 
 	/**
-	 * Returns a new object of class '<em>Cognitive Status Organizer2</em>'.
+	 * Returns a new object of class '<em>Mental Status Observation2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cognitive Status Organizer2</em>'.
+	 * @return a new object of class '<em>Mental Status Observation2</em>'.
 	 * @generated
 	 */
-	CognitiveStatusOrganizer2 createCognitiveStatusOrganizer2();
+	MentalStatusObservation2 createMentalStatusObservation2();
 
 	/**
-	 * Returns a new object of class '<em>Cognitive Status Observation2</em>'.
+	 * Returns a new object of class '<em>Smoking Status Meaningful Use2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cognitive Status Observation2</em>'.
+	 * @return a new object of class '<em>Smoking Status Meaningful Use2</em>'.
 	 * @generated
 	 */
-	CognitiveStatusObservation2 createCognitiveStatusObservation2();
+	SmokingStatusMeaningfulUse2 createSmokingStatusMeaningfulUse2();
 
 	/**
 	 * Returns a new object of class '<em>Coverage Activity2</em>'.
@@ -1819,15 +1828,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	CoverageActivity2 createCoverageActivity2();
-
-	/**
-	 * Returns a new object of class '<em>Current Smoking Status2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Current Smoking Status2</em>'.
-	 * @generated
-	 */
-	CurrentSmokingStatus2 createCurrentSmokingStatus2();
 
 	/**
 	 * Returns a new object of class '<em>Deceased Observation2</em>'.
