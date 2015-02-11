@@ -44,9 +44,13 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActAllergyObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Allergy Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 IVLTS High</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2CDCodeAndCodeSystemValues(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 CD Code And Code System Values</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2AllergyProblemActCDCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 Allergy Problem Act CD Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2AllergyProblemActCDCodeSystem(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 Allergy Problem Act CD Code System</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#getConsolAllergyObservation2s() <em>Get Consol Allergy Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -215,6 +219,139 @@ public class AllergyConcernAct2Test extends CDAValidationTest {
 		};
 
 		validateAllergyConcernAct2IVLTSHighTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAllergyConcernAct2CDCodeAndCodeSystemValues() {
+		OperationsTestCase<AllergyConcernAct2> validateAllergyConcernAct2CDCodeAndCodeSystemValuesTestCase = new OperationsTestCase<AllergyConcernAct2>(
+			"validateAllergyConcernAct2CDCodeAndCodeSystemValues",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_CONCERN_ACT2_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(AllergyConcernAct2 target) {
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD());
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(AllergyConcernAct2 target) {
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, BAD_CODESYSTEM_ID));
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(AllergyConcernAct2 target) {
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("CONC", "2.16.840.1.113883.5.6"));
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(AllergyConcernAct2 target) {
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("48765-2", LOINC_ID));
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyConcernAct2Operations.validateAllergyConcernAct2CDCodeAndCodeSystemValues(
+					(AllergyConcernAct2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyConcernAct2CDCodeAndCodeSystemValuesTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAllergyConcernAct2AllergyProblemActCDCode() {
+		OperationsTestCase<AllergyConcernAct2> validateAllergyConcernAct2AllergyProblemActCDCodeTestCase = new OperationsTestCase<AllergyConcernAct2>(
+			"validateAllergyConcernAct2AllergyProblemActCDCode",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_CONCERN_ACT2_ALLERGY_PROBLEM_ACT_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyConcernAct2 target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(AllergyConcernAct2 target) {
+				target.getCode().setCode("mustExistOnly");
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyConcernAct2Operations.validateAllergyConcernAct2AllergyProblemActCDCode(
+					(AllergyConcernAct2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyConcernAct2AllergyProblemActCDCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAllergyConcernAct2AllergyProblemActCDCodeSystem() {
+		OperationsTestCase<AllergyConcernAct2> validateAllergyConcernAct2AllergyProblemActCDCodeSystemTestCase = new OperationsTestCase<AllergyConcernAct2>(
+			"validateAllergyConcernAct2AllergyProblemActCDCodeSystem",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_CONCERN_ACT2_ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyConcernAct2 target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(AllergyConcernAct2 target) {
+				target.getCode().setCodeSystem("mustExistOnly");
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyConcernAct2Operations.validateAllergyConcernAct2AllergyProblemActCDCodeSystem(
+					(AllergyConcernAct2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyConcernAct2AllergyProblemActCDCodeSystemTestCase.doValidationTest();
 	}
 
 	/**

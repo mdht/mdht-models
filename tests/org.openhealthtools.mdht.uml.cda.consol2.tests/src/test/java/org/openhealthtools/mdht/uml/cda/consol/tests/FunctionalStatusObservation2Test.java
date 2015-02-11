@@ -330,13 +330,14 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToFail(FunctionalStatusObservation2 target) {
 				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
 			}
 
 			@Override
 			protected void updateToPass(FunctionalStatusObservation2 target) {
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				cd.setCode("364644000");
-				cd.setCodeSystem(CDAValidationTest.SNOMEDCT_ID);
+				cd.setCode("54522-8");
+				cd.setCodeSystem(LOINC_ID);
 				target.setCode(cd);
 			}
 

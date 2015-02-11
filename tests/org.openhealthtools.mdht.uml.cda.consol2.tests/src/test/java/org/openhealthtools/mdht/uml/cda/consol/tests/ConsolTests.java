@@ -100,11 +100,11 @@ import org.junit.runners.Suite;
 		CarePlanTest.class, ReferralNoteTest.class, TransferSummaryTest.class,
 		USRealmHeaderPatientGeneratedDocumentTest.class, AuthorParticipationTest.class, AdmissionMedication2Test.class,
 		AdvanceDirectiveObservation2Test.class, AllergyConcernAct2Test.class, AllergyObservation2Test.class,
-		CognitiveStatusOrganizer2Test.class, CoverageActivity2Test.class, CurrentSmokingStatus2Test.class,
-		DeceasedObservation2Test.class, SubstanceOrDeviceAllergyObservationTest.class, DischargeMedication2Test.class,
-		EncounterActivity2Test.class, EncounterDiagnosis2Test.class, FunctionalStatusObservation2Test.class,
-		FunctionalStatusOrganizer2Test.class, HealthStatusObservation2Test.class,
-		HospitalAdmissionDiagnosis2Test.class, HospitalDischargeDiagnosis2Test.class, ImmunizationActivity2Test.class,
+		CoverageActivity2Test.class, DeceasedObservation2Test.class, SubstanceOrDeviceAllergyObservationTest.class,
+		DischargeMedication2Test.class, EncounterActivity2Test.class, EncounterDiagnosis2Test.class,
+		FunctionalStatusObservation2Test.class, FunctionalStatusOrganizer2Test.class,
+		HealthStatusObservation2Test.class, HospitalAdmissionDiagnosis2Test.class,
+		HospitalDischargeDiagnosis2Test.class, ImmunizationActivity2Test.class,
 		ImmunizationMedicationInformation2Test.class, Indication2Test.class, Instruction2Test.class,
 		MedicationActivity2Test.class, MedicationDispense2Test.class, MedicationInformation2Test.class,
 		MedicationSupplyOrder2Test.class, NonMedicinalSupplyActivity2Test.class,
@@ -116,7 +116,7 @@ import org.junit.runners.Suite;
 		ProcedureActivityProcedure2Test.class, ReactionObservation2Test.class, ResultObservation2Test.class,
 		ResultOrganizer2Test.class, SeverityObservation2Test.class, SocialHistoryObservation2Test.class,
 		SubstanceOrDeviceAllergyObservation2Test.class, TobaccoUse2Test.class, VitalSignObservation2Test.class,
-		VitalSignsOrganizer2Test.class, CognitiveStatusObservation2Test.class, AdvanceDirectivesSection2Test.class,
+		VitalSignsOrganizer2Test.class, AdvanceDirectivesSection2Test.class,
 		AdvanceDirectivesSectionEntriesOptional2Test.class, AllergiesSection2Test.class,
 		AllergiesSectionEntriesOptional2Test.class, AnesthesiaSection2Test.class, AssessmentAndPlanSection2Test.class,
 		ComplicationsSection2Test.class, EncountersSection2Test.class, EncountersSectionEntriesOptional2Test.class,
@@ -138,7 +138,8 @@ import org.junit.runners.Suite;
 		OperativeNote2Test.class, ProcedureNote2Test.class, ProgressNote2Test.class, UnstructuredDocument2Test.class,
 		PreconditionForSubstanceAdministration2Test.class, NumberOfPressureUlcersObservation2Test.class,
 		FamilyHistoryObservation2Test.class, FamilyHistoryOrganizer2Test.class, FamilyHistorySection2Test.class,
-		PhysicianReadingStudyPerformer2Test.class, CourseOfCareSectionTest.class, USRealmHeader2Test.class })
+		PhysicianReadingStudyPerformer2Test.class, CourseOfCareSectionTest.class, USRealmHeader2Test.class,
+		MentalStatusObservation2Test.class, MentalStatusOrganizer2Test.class, SmokingStatusMeaningfulUse2Test.class })
 public class ConsolTests {
 
 	/**

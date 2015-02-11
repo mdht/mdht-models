@@ -17,12 +17,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
+import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.openhealthtools.mdht.uml.cda.Participant2;
+import org.openhealthtools.mdht.uml.cda.Performer2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterActivity2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
@@ -36,12 +40,21 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivity2SdtcDDCFromNUBCOrDD(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activity2 Sdtc DDC From NUBC Or DD</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesIndication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Indication2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesEncounterDiagnosis2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Diagnosis2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivity2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activity2 CD Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activity2 Encounter Performer Encounter Activities Encounter Performer Encounter Performer Assigned Entity Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activity2 Encounter Performer Encounter Activities Encounter Performer Encounter Performer Assigned Entity Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivity2EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activity2 Encounter Activities Encounter Performer Encounter Performer Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#getConsolIndication2s() <em>Get Consol Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#getConsolEncounterDiagnosis2s() <em>Get Consol Encounter Diagnosis2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#getConsolServiceDeliveryLocations() <em>Get Consol Service Delivery Locations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesSDTCDischargeDispositionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities SDTC Discharge Disposition Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesServiceDeliveryLocation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Service Delivery Location</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesEncounterPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Performer</em>}</li>
  * </ul>
  * </p>
  *
@@ -138,6 +151,40 @@ public class EncounterActivity2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated
+	*/
+	@Test
+	public void testValidateEncounterActivitiesCodeP() {
+		OperationsTestCase<EncounterActivity2> validateEncounterActivitiesCodePTestCase = new OperationsTestCase<EncounterActivity2>(
+			"validateEncounterActivitiesCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITIES_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(EncounterActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(EncounterActivity2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterActivity2Operations.validateEncounterActivitiesCodeP(
+					(EncounterActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterActivitiesCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated NOT
 	*/
 	@Test
@@ -211,6 +258,167 @@ public class EncounterActivity2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateEncounterActivity2CDTranslation() {
+		OperationsTestCase<EncounterActivity2> validateEncounterActivity2CDTranslationTestCase = new OperationsTestCase<EncounterActivity2>(
+			"validateEncounterActivity2CDTranslation",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITY2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(EncounterActivity2 target) {
+				target.init();
+				CD code = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(code);
+			}
+
+			@Override
+			protected void updateToPass(EncounterActivity2 target) {
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterActivity2Operations.validateEncounterActivity2CDTranslation(
+					(EncounterActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterActivity2CDTranslationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP() {
+		OperationsTestCase<EncounterActivity2> validateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodePTestCase = new OperationsTestCase<EncounterActivity2>(
+			"validateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITY2_ENCOUNTER_PERFORMER_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(EncounterActivity2 target) {
+				target.init();
+				Performer2 ep = CDAFactory.eINSTANCE.createPerformer2();
+				target.getPerformers().add(ep);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				ep.setAssignedEntity(ae);
+			}
+
+			@Override
+			protected void updateToPass(EncounterActivity2 target) {
+				target.getPerformers().clear();
+				target.init();
+				Performer2 ep = CDAFactory.eINSTANCE.createPerformer2();
+				target.getPerformers().add(ep);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				ep.setAssignedEntity(ae);
+				ae.setCode(DatatypesFactory.eINSTANCE.createCE());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterActivity2Operations.validateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP(
+					(EncounterActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode() {
+		OperationsTestCase<EncounterActivity2> validateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeTestCase = new OperationsTestCase<EncounterActivity2>(
+			"validateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITY2_ENCOUNTER_PERFORMER_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(EncounterActivity2 target) {
+				target.init();
+				Performer2 ep = CDAFactory.eINSTANCE.createPerformer2();
+				target.getPerformers().add(ep);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				ep.setAssignedEntity(ae);
+			}
+
+			@Override
+			protected void updateToPass(EncounterActivity2 target) {
+				target.getPerformers().clear();
+				target.init();
+				Performer2 ep = CDAFactory.eINSTANCE.createPerformer2();
+				target.getPerformers().add(ep);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				ep.setAssignedEntity(ae);
+				ae.setCode(DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101"));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterActivity2Operations.validateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
+					(EncounterActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateEncounterActivity2EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity() {
+		OperationsTestCase<EncounterActivity2> validateEncounterActivity2EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityTestCase = new OperationsTestCase<EncounterActivity2>(
+			"validateEncounterActivity2EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITY2_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(EncounterActivity2 target) {
+				target.init();
+				Performer2 ep = CDAFactory.eINSTANCE.createPerformer2();
+				target.getPerformers().add(ep);
+			}
+
+			@Override
+			protected void updateToPass(EncounterActivity2 target) {
+				target.getPerformers().clear();
+				target.init();
+				Performer2 ep = CDAFactory.eINSTANCE.createPerformer2();
+				target.getPerformers().add(ep);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				ep.setAssignedEntity(ae);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterActivity2Operations.validateEncounterActivity2EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
+					(EncounterActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterActivity2EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
@@ -230,6 +438,18 @@ public class EncounterActivity2Test extends CDAValidationTest {
 
 		EncounterActivity2 target = objectFactory.create();
 		target.getConsolEncounterDiagnosis2s();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolServiceDeliveryLocations() {
+
+		EncounterActivity2 target = objectFactory.create();
+		target.getConsolServiceDeliveryLocations();
 
 	}
 
@@ -265,6 +485,41 @@ public class EncounterActivity2Test extends CDAValidationTest {
 		};
 
 		validateEncounterActivitiesTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateEncounterActivitiesCode() {
+		OperationsTestCase<EncounterActivity2> validateEncounterActivitiesCodeTestCase = new OperationsTestCase<EncounterActivity2>(
+			"validateEncounterActivitiesCode",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(EncounterActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(EncounterActivity2 target) {
+				target.init();
+				target.getCode().setCode("mustExistOnly");
+				target.getCode().setCodeSystem("2.16.840.1.113883.6.12");
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterActivity2Operations.validateEncounterActivitiesCode(
+					(EncounterActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterActivitiesCodeTestCase.doValidationTest();
 	}
 
 	/**
@@ -310,6 +565,78 @@ public class EncounterActivity2Test extends CDAValidationTest {
 		};
 
 		validateEncounterActivitiesSDTCDischargeDispositionCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateEncounterActivitiesServiceDeliveryLocation() {
+		OperationsTestCase<EncounterActivity2> validateEncounterActivitiesServiceDeliveryLocationTestCase = new OperationsTestCase<EncounterActivity2>(
+			"validateEncounterActivitiesServiceDeliveryLocation",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(EncounterActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(EncounterActivity2 target) {
+				target.init();
+				Participant2 p = CDAFactory.eINSTANCE.createParticipant2();
+				target.getParticipants().add(p);
+				p.setParticipantRole(ConsolFactory.eINSTANCE.createServiceDeliveryLocation().init());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterActivity2Operations.validateEncounterActivitiesServiceDeliveryLocation(
+					(EncounterActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterActivitiesServiceDeliveryLocationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateEncounterActivitiesEncounterPerformer() {
+		OperationsTestCase<EncounterActivity2> validateEncounterActivitiesEncounterPerformerTestCase = new OperationsTestCase<EncounterActivity2>(
+			"validateEncounterActivitiesEncounterPerformer",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(EncounterActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(EncounterActivity2 target) {
+				target.init();
+				Performer2 ep = CDAFactory.eINSTANCE.createPerformer2();
+				target.getPerformers().add(ep);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformer(
+					(EncounterActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterActivitiesEncounterPerformerTestCase.doValidationTest();
 	}
 
 	/**
