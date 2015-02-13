@@ -50,14 +50,14 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:226)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:225)<tt class="ph tt"><strong class="ph b">/@code</strong>="8665-2" </tt><em class="ph i">Date last menstrual period</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:225)<tt class="ph tt"><strong class="ph b">/@code</strong>="8665-2" </tt><em class="ph i">Date last menstrual period</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:466)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - it contains the date of the last menstrual period.</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:227)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="TS" (CONF:227)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The date the mother's last normal menstrual period began. (month, day and year.)</em></p>
 </div>
 </li>
@@ -69,11 +69,18 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Last Menstrual Period Date example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.33"/&gt;
+							&lt;code code="8665-2" displayName="Date last menstrual period" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="TS" value="20120401"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+</pre>
 
 </div>
 

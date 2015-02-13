@@ -50,14 +50,14 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:417)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:416)<tt class="ph tt"><strong class="ph b">/@code</strong>="73811-2" </tt><em class="ph i">Estimated time of fetal death</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:416)<tt class="ph tt"><strong class="ph b">/@code</strong>="73811-2" </tt><em class="ph i">Estimated time of fetal death</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:526)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - that it indicates the death of a fetus.</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:418), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/FetalDeathTimePointNCHS.html">Fetal Death Time Point (NCHS)</a> 2.16.840.1.114222.4.11.7112</tt><strong class="ph b"> STATIC</strong> December 1, 2013 (CONF:419)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:418), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/FetalDeathTimePointNCHS.html">Fetal Death Time Point (NCHS)</a> 2.16.840.1.114222.4.11.7112</tt><strong class="ph b"> DYNAMIC</strong> (CONF:419)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Information regarding the point within the delivery process at which fetal death occurred.</em></p>
 </div>
 </li>
@@ -69,11 +69,18 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Fetal Death Occurrance example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.22"/&gt;
+							&lt;code code="73811-2" displayName="Estimated time of fetal death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="CD" code="634661000124111" displayName="Died during labor, after first assessment" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+</pre>
 
 </div>
 

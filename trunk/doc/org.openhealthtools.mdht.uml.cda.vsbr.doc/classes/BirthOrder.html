@@ -32,7 +32,7 @@
 
 
 <div class="section">
-<div class="p"><p class="lines"><em class="ph i">The order in which the newborn or fetus was delivered in the pregnancy.  All live births and fetal losses resulting from the pregnancy should be included.</em></p>
+<div class="p"><p class="lines"><em class="ph i">The Birth Order templated records the order in which the newborn or fetus was delivered in the pregnancy.  All live births and fetal losses resulting from the pregnancy should be included.</em></p>
 </div>
 
 </div>
@@ -57,7 +57,7 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT (CONF:352)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="INT" (CONF:352)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Indicate the order delivered in the pregnancy of the baby or fetus, aka "Set Number".  Leave the field empty for singleton births or deliveries.</em></p>
 </div>
 </li>
@@ -69,11 +69,18 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Birth Order example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.16"/&gt;
+							&lt;code code="73771-8" displayName="Birth order" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="INT" value="2"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+</pre>
 
 </div>
 

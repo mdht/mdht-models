@@ -73,9 +73,9 @@
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:189) <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt> (CONF:191)</li>
 <li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:190) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:192)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:193)<tt class="ph tt"><strong class="ph b">/@code</strong>="68493-6" </tt><em class="ph i">Prenatal visits for this pregnancy</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:461)</li>
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:194)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:193)<tt class="ph tt"><strong class="ph b">/@code</strong>="68493-6" </tt><em class="ph i">Prenatal visits for this pregnancy</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT (CONF:195)<div class="p"><p class="lines"><em class="ph i">The number of prenatal visits for this pregnancy.  The entry is a non-negative integer within the range from zero to 98.</em></p>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="INT" (CONF:195)<div class="p"><p class="lines"><em class="ph i">The number of prenatal visits for this pregnancy.  The entry is a non-negative integer within the range from zero to 98.</em></p>
 </div>
 </li>
 </ol>
@@ -89,11 +89,27 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Pre-Natal Care example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+&lt;entry&gt;
+						&lt;act classCode="ACT" moodCode="EVN" negationInd="true"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.42"/&gt;
+							&lt;code code="73776-7" displayName="No Prenatal Care" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;effectiveTime&gt;
+								&lt;low value="20120521"/&gt;
+								&lt;high value="20121218"/&gt;
+							&lt;/effectiveTime&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;code code="68493-6" displayName="Prenatal visits for this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="INT" value="8"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+						&lt;/act&gt;
+					&lt;/entry&gt;
+</pre>
 
 </div>
 

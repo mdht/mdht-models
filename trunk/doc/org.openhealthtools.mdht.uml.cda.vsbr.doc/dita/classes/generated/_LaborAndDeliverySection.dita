@@ -31,7 +31,7 @@
 <li>Contains exactly one [1..1] <xref href="../OnsetOfLabor.dita">Onset of Labor</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.32</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:50)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcedureSection.dita">Labor and Delivery Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../ProcedureSection.dita">Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:449)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MothersVitalSignsSection.dita">Mothers Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.14</tt>)</li></ol></li>
@@ -53,7 +53,7 @@
 <li>Contains exactly one [1..1] <xref href="../OnsetOfLabor.dita">Onset of Labor</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.32</tt>)</li></ol><ul><li><p><lines><i>Onset of labor information is collected for a live birth certificate, but not for a fetal death report.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:50)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcedureSection.dita">Labor and Delivery Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../ProcedureSection.dita">Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:449)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MothersVitalSignsSection.dita">Mothers Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.14</tt>)</li></ol></li>
