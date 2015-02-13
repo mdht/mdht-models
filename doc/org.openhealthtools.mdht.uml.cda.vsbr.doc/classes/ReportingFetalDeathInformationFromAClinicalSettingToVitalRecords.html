@@ -120,7 +120,7 @@ information.  Within the II data type, use the root to record the identifying 
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">confidentialityCode</strong></tt> (CONF:149), where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.25 Confidentiality</tt>) (CONF:150)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">confidentialityCode</strong></tt> (CONF:149), which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.25 Confidentiality</tt>) (CONF:150)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">An indication of the level of confidentiality with which the document needs to be managed.</em></p>
 </div>
 </li>
@@ -135,14 +135,14 @@ information.  Within the II data type, use the root to record the identifying 
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt> (CONF:152) <ol class="ol" type="a"><li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="RCT" </tt> (CONF:164)</li>
-<li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> (CONF:165) <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PAT" </tt> (CONF:169)</li>
+<li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> (CONF:165) <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:166)<div class="p"><p class="lines"><em class="ph i">The current postal address for the mother.</em></p>
+</div>
+</li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PAT" </tt> (CONF:169)</li>
 <li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:167)<div class="p"><p class="lines"><em class="ph i">The medical record number assigned to the mother by the health care facility.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</em></p>
 </div>
 </li>
-<li class="li"> This patientRole <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:166)<div class="p"><p class="lines"><em class="ph i">The current postal address for the mother.</em></p>
-</div>
-</li>
-<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> with data type <a class="xref" href="generated/../Patient.html">Patient</a> (CONF:168)</li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> with @xsi:type="<a class="xref" href="generated/../Patient.html">Patient</a>" (CONF:168)</li>
 </ol>
  </li>
 </ol>
@@ -189,7 +189,7 @@ information.  Within the II data type, use the root to record the identifying 
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:459)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfInfectionFetalDeathSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.26.48]">History of Infection: Fetal Death Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.48</tt>)</li>
 </ol>
@@ -212,11 +212,166 @@ information.  Within the II data type, use the root to record the identifying 
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Reporting Fetal Death Information from a clinical setting to vital records example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+&lt;?xml version="1.0"?&gt;
+&lt;?xml-stylesheet type="text/xsl" href="CDA.xsl"?&gt;
+&lt;ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA_SDTC.xsd" classCode="DOCCLIN" moodCode="EVN"&gt;
+	&lt;!-- 
+********************************************************
+  CDA Header
+********************************************************
+--&gt;
+	&lt;realmCode code="US"/&gt;
+	&lt;typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/&gt;
+	&lt;templateId root="2.16.840.1.113883.10.20.26.2"/&gt;
+	&lt;!-- conforms to the guidance of the IG --&gt;
+	&lt;id root="1.22.33" extension="0810USA6363"/&gt;
+	&lt;!-- Vital Records document identifier.  We need to supply instruction regarding use of object identifiers (OIDs) or Globally Unique Identifiers (GUIDs). --&gt;
+	&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="69045-3" displayName="US standard report of fetal death"/&gt;
+	&lt;title&gt;Fetal Death Report&lt;/title&gt;
+	&lt;!-- Title of the report--&gt;
+	&lt;effectiveTime value="20121023"/&gt;
+	&lt;!-- Date the report was prepared --&gt;
+	&lt;confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/&gt;
+	&lt;!--Confidentiality is a contextual component of CDA, where the value expressed in the header holds true for the entire document, unless overridden by a nested value and 2.16.840.1.113883.5.25 is the OID for HL7--&gt;
+	&lt;languageCode code="en-US"/&gt;
+	&lt;!--LanguageCode example with language and country--&gt;
+	&lt;!--	
+	********************************************************
+    CDA Header: Participants
+    ********************************************************
+--&gt;
+	&lt;recordTarget typeCode="RCT"&gt;
+		&lt;!--The record target includes information regarding the mother.--&gt;
+		&lt;patientRole classCode="PAT"&gt;
+			&lt;id root="2.3.44.55" extension="V000-013-0001-0003"/&gt;
+			&lt;!-- Mother's Medical Record Number.  The root OID for the identifier indicates the name space the identifier value is drawn from. --&gt;
+			&lt;addr&gt;
+				&lt;streetAddressLine&gt;99 Somewhere Lane&lt;/streetAddressLine&gt;
+				&lt;city&gt;Metropolis&lt;/city&gt;
+				&lt;state&gt;Empire State&lt;/state&gt;
+				&lt;postalCode&gt;893444&lt;/postalCode&gt;
+			&lt;/addr&gt;
+			&lt;patient classCode="PSN" determinerCode="INSTANCE"&gt;
+				&lt;name&gt;
+					&lt;family&gt;Mother's family name&lt;/family&gt;
+					&lt;given&gt;Mother's given Name&lt;/given&gt;
+				&lt;/name&gt;
+			&lt;/patient&gt;
+		&lt;/patientRole&gt;
+	&lt;/recordTarget&gt;
+	&lt;!--
+	*********************************************************************
+    CDA Header: The Author of the Patient Narrative Document
+    *********************************************************************
+  --&gt;
+	&lt;author typeCode="AUT"&gt;
+		&lt;time nullFlavor="NI"/&gt;
+		&lt;assignedAuthor classCode="ASSIGNED"&gt;
+			&lt;id root="2.44.998" extension="300-23"/&gt;
+			&lt;!-- Document Author identifier.  The root OID for the document author identifier indicates the name space the identifier value is drawn from. --&gt;
+		&lt;/assignedAuthor&gt;
+	&lt;/author&gt;
+	&lt;custodian typeCode="CST"&gt;
+		&lt;assignedCustodian classCode="ASSIGNED"&gt;
+			&lt;representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE"&gt;
+				&lt;id root="2.889.3.55.2" extension="ABX_44445USA"/&gt;
+				&lt;!-- Document Custodian identifier.  The root OID for the custodian identifier indicates the name space the identifier value is drawn from. --&gt;
+			&lt;/representedCustodianOrganization&gt;
+		&lt;/assignedCustodian&gt;
+	&lt;/custodian&gt;
+	&lt;!-- 
+********************************************************
+Feta Death Report Content (CDA BODY)
+********************************************************
+--&gt;
+	&lt;component&gt;
+		&lt;structuredBody&gt;
+			&lt;!-- 
+		********************************************************
+Prenatal Testing and Surveillance Section
+********************************************************
+--&gt;
+			&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.3"/&gt;
+					...
+				&lt;/section&gt;
+			&lt;/component&gt;
+			&lt;!-- 
+		********************************************************
+Prior Pregnancy History Section
+********************************************************
+--&gt;
+			&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.12"/&gt;
+					...
+				&lt;/section&gt;
+			&lt;/component&gt;
+			&lt;!-- 
+		********************************************************
+History of Infection Section
+********************************************************
+--&gt;
+			&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.48"/&gt;
+					...
+				&lt;/section&gt;
+			&lt;/component&gt;
+			&lt;!-- 
+		********************************************************
+Labor and Delivery Section
+********************************************************
+--&gt;
+			&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.8"/&gt;
+					...
+					&lt;!--
+********************************************************
+Labor and Delivery Procedure Section
+********************************************************
+--&gt;
+					&lt;component&gt;
+						&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.7"/&gt;
+							...
+						&lt;/section&gt;
+					&lt;/component&gt;
+					&lt;!--
+********************************************************
+Mother's Vital Signs Section
+********************************************************
+--&gt;
+					&lt;component&gt;
+						&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.9"/&gt;
+							...
+						&lt;/section&gt;
+					&lt;/component&gt;
+				&lt;/section&gt;
+			&lt;/component&gt;
+			&lt;!-- 
+		********************************************************
+Fetal Delivery Section
+********************************************************
+--&gt;
+			&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.4"/&gt;
+					...
+				&lt;/section&gt;
+			&lt;/component&gt;
+		&lt;/structuredBody&gt;
+	&lt;/component&gt;
+&lt;/ClinicalDocument&gt;
+
+</pre>
 
 </div>
 

@@ -53,14 +53,14 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:396)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:395)<tt class="ph tt"><strong class="ph b">/@code</strong>="73765-0" </tt><em class="ph i">Planned to delivery at home</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:395)<tt class="ph tt"><strong class="ph b">/@code</strong>="73765-0" </tt><em class="ph i">Planned to deliver at home</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:520)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - it records whether the parents planned to deliver at home.</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL (CONF:397)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="BL" (CONF:397)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A Boolean value to indicate whether the mother planned to deliver at home.</em></p>
 </div>
 </li>
@@ -72,11 +72,18 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Planned Home Birth example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.26"/&gt;
+							&lt;code code="73765-0" displayName="Planned to deliver at home" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="BL" value="false"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+</pre>
 
 </div>
 

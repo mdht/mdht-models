@@ -14,9 +14,9 @@
 	   <bookmeta>
     	<author>Public Health and Emergency Response Work Group</author>
     	<prodinfo>
-			<prodname>CDAR2L3_IG_RDIVR</prodname>
+			<prodname>CDAR2L3_IG_RBFDIVR</prodname>
 			<vrmlist>
-				<vrm release="R1" version="2014DEC"></vrm>
+				<vrm release="R1" version="2015FEB"></vrm>
 			</vrmlist>
 			<brand>HL7 IG for CDA R2</brand>
 			<series>DSTU</series>

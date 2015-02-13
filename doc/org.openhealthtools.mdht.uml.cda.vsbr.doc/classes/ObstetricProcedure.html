@@ -60,7 +60,7 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> with data type CE (CONF:242), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ObstetricProcedureNCHS.html">Obstetric Procedure (NCHS)</a> 2.16.840.1.114222.4.11.7136</tt><strong class="ph b"> STATIC</strong> December 1, 2013 (CONF:243)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> with @xsi:type="CE" (CONF:242), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ObstetricProceduresNCHS.html">Obstetric Procedures (NCHS)</a> 2.16.840.1.114222.4.11.7136</tt><strong class="ph b"> DYNAMIC</strong> (CONF:243)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the procedure - it specifies the nature of the obstetric procedure about which information is provided.</em></p>
 </div>
 </li>
@@ -72,11 +72,44 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Obstetric Procedure example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+&lt;entry&gt;
+								&lt;procedure classCode="PROC" moodCode="EVN" negationInd="false"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.39"/&gt;
+									&lt;code code="240278000" displayName="External cephalic version" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+								&lt;/procedure&gt;
+							&lt;/entry&gt;
+							&lt;entry&gt;
+								&lt;procedure classCode="PROC" moodCode="EVN" negationInd="false"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.45"/&gt;
+									&lt;code code="72149-8" displayName="Delivery method" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;entryRelationship typeCode="COMP"&gt;
+										&lt;observation classCode="OBS" moodCode="EVN"&gt;
+											&lt;templateId root="2.16.840.1.113883.10.20.26.44"/&gt;
+											&lt;code code="73761-9" displayName="Fetal presentation at birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+											&lt;value xsi:type="CD" code="70028003" displayName="Vertex presentation" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+										&lt;/observation&gt;
+									&lt;/entryRelationship&gt;
+									&lt;entryRelationship typeCode="COMP"&gt;
+										&lt;observation classCode="OBS" moodCode="EVN"&gt;
+											&lt;templateId root="2.16.840.1.113883.10.20.26.44"/&gt;
+											&lt;code code="73762-7" displayName="Final route and method of delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+											&lt;value xsi:type="CD" code="200144004" displayName="Deliveries by cesarean" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+											&lt;entryRelationship typeCode="COMP"&gt;
+												&lt;observation classCode="OBS" moodCode="EVN"&gt;
+													&lt;templateId root="2.16.840.1.113883.10.20.26.44"/&gt;
+													&lt;code code="73760-1" displayName="If cesarean, a trial of labor was attempted" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+													&lt;value xsi:type="BL" value="true"/&gt;
+												&lt;/observation&gt;
+											&lt;/entryRelationship&gt;
+										&lt;/observation&gt;
+									&lt;/entryRelationship&gt;
+								&lt;/procedure&gt;
+							&lt;/entry&gt;
+</pre>
 
 </div>
 

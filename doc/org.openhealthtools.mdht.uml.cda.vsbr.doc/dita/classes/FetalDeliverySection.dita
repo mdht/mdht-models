@@ -26,7 +26,7 @@
 <![CDATA[<component>
 				<section classCode="DOCSECT" moodCode="EVN">
 					<templateId root="2.16.840.1.113883.10.20.26.4"/>
-					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="xxxx" displayName="Fetal delivery"/>
+					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="76400-1" displayName="Fetal Delivery Information"/>
 					<text>
                      ...
 					</text>

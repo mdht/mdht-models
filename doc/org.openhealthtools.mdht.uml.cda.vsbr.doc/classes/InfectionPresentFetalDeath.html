@@ -53,14 +53,14 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:237)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:235)<tt class="ph tt"><strong class="ph b">/@code</strong>="73769-2" </tt><em class="ph i">Infections present and or treated during this pregnancy for fetal death</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - it records nature of the infection about which information is provided.  For fetal death reporting refer to the value set: Fetal Death Reporting - Infections Present.</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:235)<tt class="ph tt"><strong class="ph b">/@code</strong>="73769-2" </tt><em class="ph i">Infections present and or treated during this pregnancy for fetal death</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:469)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - it records nature of the infection about which information is provided.  For fetal death reporting refer to the value set: Infections During Pregnancy Fetal Death (NCHS).</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:238), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/InfectionsPresentTreatedFetalDeathNCHS.html">Infections Present Treated: Fetal Death (NCHS)</a> 2.16.840.1.114222.4.11.7135</tt><strong class="ph b"> STATIC</strong> December 1, 2013
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:238), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/InfectionsDuringPregnancyFetalDeathNCHS.html">Infections During Pregnancy Fetal Death (NCHS)</a> 2.16.840.1.114222.4.11.7135</tt><strong class="ph b"> DYNAMIC</strong> (CONF:471)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The content of the observation will be drawn from the appropriate value set: Birth Reporting - Infections Present, or Fetal Death Reporting - Infections persent.</em></p>
 </div>
 </li>
@@ -72,11 +72,18 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Infection Present - Fetal Death example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+	&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.49"/&gt;
+							&lt;code code="73769-2" displayName="Infections present and or treated during this pregnancy for fetal death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="CD" code="4241002" displayName="Listeriosis" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+</pre>
 
 </div>
 

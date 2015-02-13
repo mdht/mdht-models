@@ -53,36 +53,36 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:274)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:272)<tt class="ph tt"><strong class="ph b">/@code</strong>="73780-9" </tt><em class="ph i">Congenital anomalies of the newborn</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:272)<tt class="ph tt"><strong class="ph b">/@code</strong>="73780-9" </tt><em class="ph i">Congenital anomalies of the newborn</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:481)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - it records the nature of the congenital anomaly about which information is provided.</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:275), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/NewbornCongenitalAnomalyNCHS.html">Newborn Congenital Anomaly (NCHS)</a> 2.16.840.1.114222.4.11.7122</tt><strong class="ph b"> STATIC</strong> December 1, 2013
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:275), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/NewbornCongenitalAnomaliesNCHS.html">Newborn Congenital Anomalies (NCHS)</a> 2.16.840.1.114222.4.11.7122</tt><strong class="ph b"> DYNAMIC</strong> (CONF:482)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> <div class="p"><p class="lines"><em class="ph i">Down confirmation information is relevant if Down syndrome has been chosen as a congenital anomaly.</em></p>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:483) <div class="p"><p class="lines"><em class="ph i">Down confirmation information is relevant if Down syndrome has been chosen as a congenital anomaly.</em></p>
 </div>
-<ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
-<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="73779-1" </tt><em class="ph i">Down syndrome karyotype status</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/KaryotypeDownSyndromeNCHS.html">Karyotype Down Syndrome (NCHS)</a> 2.16.840.1.114222.4.11.7116</tt><strong class="ph b"> STATIC</strong> December 1, 2013</li>
+<ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt> (CONF:485)</li>
+<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:486) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:487)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:488)<tt class="ph tt"><strong class="ph b">/@code</strong>="73779-1" </tt><em class="ph i">Down syndrome karyotype status</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:489)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:490)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:491), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/KaryotypeDownSyndromeNCHS.html">Karyotype Down Syndrome (NCHS)</a> 2.16.840.1.114222.4.11.7116</tt><strong class="ph b"> DYNAMIC</strong> (CONF:492)</li>
 </ol>
  </li>
 </ol>
 
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> <div class="p"><p class="lines"><em class="ph i">Chromosomal disorder confirmation information is relevant if chromosomal disorder syndrome has been chosen as a congenital anomaly.</em></p>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:484) <div class="p"><p class="lines"><em class="ph i">Chromosomal disorder confirmation information is relevant if chromosomal disorder syndrome has been chosen as a congenital anomaly.</em></p>
 </div>
-<ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
-<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="73778-3" </tt><em class="ph i">Suspected chromosomal disorder karyotype status</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/KaryotypeSuspectedChromosomalDisorderNCHS.html">Karyotype Suspected Chromosomal Disorder (NCHS)</a> 2.16.840.1.114222.4.11.7115</tt><strong class="ph b"> STATIC</strong> December 1, 2013</li>
+<ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt> (CONF:493)</li>
+<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:494) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:495)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:496)<tt class="ph tt"><strong class="ph b">/@code</strong>="73778-3" </tt><em class="ph i">Suspected chromosomal disorder karyotype status</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:497)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:498)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:499), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/KaryotypeSuspectedChromosomalDisorderNCHS.html">Karyotype Suspected Chromosomal Disorder (NCHS)</a> 2.16.840.1.114222.4.11.7115</tt><strong class="ph b"> DYNAMIC</strong> (CONF:500)</li>
 </ol>
  </li>
 </ol>
@@ -94,11 +94,44 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Congenital Anomaly example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+	&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.19"/&gt;
+							&lt;code code="73780-9" displayName="Congenital anomalies of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="CD" code="17190001" displayName="Congenital diaphragmatic hernia" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.19"/&gt;
+							&lt;code code="73780-9" displayName="Congenital anomalies of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="CD" code="70156005" displayName="Anomaly of chromosome pair 21" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;code code="73779-1" displayName="Down syndrome karyotype status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="442124003" displayName="Karyotype evaluation abnormal" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.19"/&gt;
+							&lt;code code="73780-9" displayName="Congenital anomalies of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="CD" code="409709004" displayName="Chromosomal disorder" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;code code="73778-3" displayName="Suspected chromosomal disorder karyotype status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="312948004" displayName="Karyotype determination" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+</pre>
 
 </div>
 

@@ -32,7 +32,7 @@
 
 
 <div class="section">
-<div class="p"><p class="lines"><em class="ph i">Information on whether or not an autopsy was  planned or performed, and if the findings of a performed autopsy were<br/>
+<div class="p"><p class="lines"><em class="ph i">The template contains information on whether or not an autopsy was  planned or performed, and if the findings of a performed autopsy were<br/>
 used in completing the medical portion of the fetal death report.</em></p>
 </div>
 
@@ -58,18 +58,20 @@ used in completing the medical portion of the fetal death report.</em></p>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:402), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AutopsyExaminationNCHS.html">Autopsy Examination (NCHS)</a> 2.16.840.1.114222.4.11.7137</tt><strong class="ph b"> STATIC</strong>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:402), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AutopsyExaminationNCHS.html">Autopsy Examination (NCHS)</a> 2.16.840.1.114222.4.11.7137</tt><strong class="ph b"> DYNAMIC</strong> (CONF:521)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A coded value that indicates whether an autopsy has been performed, has not been performed, or is planned.</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt> (CONF:410)</li>
-<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:412)<tt class="ph tt"><strong class="ph b">/@code</strong>="73767-6" </tt><em class="ph i">Histological placental examination was performed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:413)<div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - that it indicates whether a histological placental exam was performed or planned.</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:522) <div class="p"><p class="lines"><em class="ph i">Information to determine whether a histological placental exam was performed.</em></p>
+</div>
+<ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt> (CONF:410)</li>
+<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:524) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:412)<tt class="ph tt"><strong class="ph b">/@code</strong>="73767-6" </tt><em class="ph i">Histological placental examination was performed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:413)<div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - that it indicates whether a histological placental exam was performed or planned.</em></p>
 </div>
 </li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:414), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HistologicalPlacentalExaminationNCHS.html">Histological Placental Examination (NCHS)</a> 2.16.840.1.114222.4.11.7138</tt><strong class="ph b"> STATIC</strong><div class="p"><p class="lines"><em class="ph i">A coded value that indicates whether a histological placental exam has been performed, has not been performed, or is planned.</em></p>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:414), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HistologicalPlacentalExaminationNCHS.html">Histological Placental Examination (NCHS)</a> 2.16.840.1.114222.4.11.7138</tt><strong class="ph b"> DYNAMIC</strong> (CONF:525)<div class="p"><p class="lines"><em class="ph i">A coded value that indicates whether a histological placental exam has been performed, has not been performed, or is planned.</em></p>
 </div>
 </li>
 </ol>
@@ -81,10 +83,10 @@ used in completing the medical portion of the fetal death report.</em></p>
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:404) <div class="p"><p class="lines"><em class="ph i">If an autopsy has been performed, indicate whether or not the results were used for the fetal death report.</em></p>
 </div>
 <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt> (CONF:410)</li>
-<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:412), where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:413)<div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - that it indicates whether the results of a performed autopsy or a performed histological placental exam were used as part of determining the cause of death</em></p>
+<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:523) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:412)<tt class="ph tt"><strong class="ph b">/@code</strong>="74498-7" </tt><em class="ph i">Autopsy or Histological Results Used</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:413)<div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - that it indicates whether the results of a performed autopsy or a performed histological placental exam were used as part of determining the cause of death.</em></p>
 </div>
 </li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL (CONF:414)<div class="p"><p class="lines"><em class="ph i">An indicator to tell whether or not the findings of an autopsy or of a histological placental exam were used in completing the medical portion of the fetal death report.</em></p>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="BL" (CONF:414)<div class="p"><p class="lines"><em class="ph i">An indicator to tell whether or not the findings of an autopsy or of a histological placental exam were used in completing the medical portion of the fetal death report.</em></p>
 </div>
 </li>
 </ol>
@@ -98,11 +100,30 @@ used in completing the medical portion of the fetal death report.</em></p>
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Autopsy Performance example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.15"/&gt;
+							&lt;code code="73768-4" displayName="Autopsy was performed" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;value xsi:type="BL" value="true"/&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;code code="73767-6" displayName="Histological placental examination was performed" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="BL" value="true"/&gt;
+									&lt;entryRelationship typeCode="COMP"&gt;
+										&lt;observation classCode="OBS" moodCode="EVN"&gt;
+											&lt;code code="74498-7" displayName="Autopsy and histological placental examination was used in determining cause of death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+											&lt;value xsi:type="BL" value="true"/&gt;
+										&lt;/observation&gt;
+									&lt;/entryRelationship&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+</pre>
 
 </div>
 

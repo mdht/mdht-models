@@ -66,34 +66,34 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">subject</strong></tt> (CONF:55) <ol class="ol" type="a"><li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="SBJ" </tt> (CONF:65)</li>
 <li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">relatedSubject</strong></tt> (CONF:66) <ol class="ol" type="i"><li class="li"> This relatedSubject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PRS" </tt> (CONF:67)</li>
-<li class="li"> This relatedSubject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">subject</strong></tt> (CONF:68) <ol class="ol"><li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt> (CONF:69)</li>
-<li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt> (CONF:70)</li>
-<li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">sDTCId</strong></tt> (CONF:71)<div class="p"><p class="lines"><em class="ph i">An identifier assigned to the newborn.  The medical record number assigned by the delivering institution should be provided.</em></p>
-</div>
-</li>
-<li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:72)<div class="p"><p class="lines"><em class="ph i">The name provided for the newborn.</em></p>
-</div>
-</li>
-<li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt> (CONF:73), where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li>
+<li class="li"> This relatedSubject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="CHILD" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.111 RoleCode</tt>) (CONF:451)</li>
+<li class="li"> This relatedSubject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">subject</strong></tt> (CONF:68) <ol class="ol"><li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt> (CONF:73), which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li>
 <li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">birthTime</strong></tt> (CONF:75)<div class="p"><p class="lines"><em class="ph i">The birth date and time of the newborn.  By the same token, the date and time of delivery.</em></p>
 </div>
 </li>
+<li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt> (CONF:69)</li>
+<li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt> (CONF:70)</li>
+<li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:72)<div class="p"><p class="lines"><em class="ph i">The name provided for the newborn.</em></p>
+</div>
+</li>
+<li class="li"> This subject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">sDTCId</strong></tt> (CONF:71)<div class="p"><p class="lines"><em class="ph i">An identifier assigned to the newborn.  The medical record number assigned by the delivering institution should be provided.</em></p>
+</div>
+</li>
 </ol>
  </li>
-<li class="li"> This relatedSubject <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="CHILD" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.111 RoleCode</tt>)</li>
 </ol>
  </li>
 </ol>
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:56)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:56)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="Plurality.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.41]">Plurality</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.41</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:57)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:57)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Record birth order if not a single delivery.</em></p>
 </div>
 </li>
@@ -103,13 +103,13 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:58)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:58)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="NumberOfInfantsBornAlive.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.37]">Number of Infants Born Alive</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.37</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:59)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:59)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">One or more entries recording the presence of an abnormal condition may be recorded.  Each entry contains information for a single condition.</em></p>
 </div>
 </li>
@@ -119,7 +119,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:60)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:60)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">There may be multiple congenital anomalies recorded.  At least one observation will be present in the case that none are present.</em></p>
 </div>
 </li>
@@ -129,19 +129,19 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:61)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:61)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="InfantTransfer.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.29]">Infant Transfer</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.29</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:62)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:62)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="InfantLiving.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.28]">Infant Living</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.28</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:63)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:63)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="InfantBreastfed.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.27]">Infant Breastfed</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.27</tt>)</li>
 </ol>
@@ -153,7 +153,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:450)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="AssessmentsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.26.9]">Assessments Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.9</tt>)</li>
 </ol>
@@ -164,11 +164,111 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Newborn Delivery Section example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+			&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.10"/&gt;
+					&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="57075-4" displayName="Newborn delivery information from newborn Narrative"/&gt;
+					&lt;text&gt;
+						...
+					&lt;/text&gt;
+					&lt;subject typeCode="SBJ"&gt;
+						&lt;relatedSubject classCode="PRS"&gt;
+							&lt;subject classCode="PSN" determinerCode="INSTANCE"&gt;
+								&lt;sdtc:id root="2.1.33" extension="123-MR-8233"/&gt;
+								&lt;!-- The root OID for the newborn identifier indicates the name space the identifier value is drawn from.  --&gt;
+								&lt;name&gt;
+									&lt;family&gt;Johnson&lt;/family&gt;
+									&lt;given&gt;Baby Girl&lt;/given&gt;
+								&lt;/name&gt;
+								&lt;administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/&gt;
+								&lt;birthTime value="201301211300"/&gt;
+							&lt;/subject&gt;
+						&lt;/relatedSubject&gt;
+					&lt;/subject&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.41"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.13"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.13"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.19"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.19"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.19"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.29"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.28"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.27"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;!--
+********************************************************
+Newborn's Vital Signs Section
+********************************************************
+--&gt;
+					&lt;component&gt;
+						&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.11"/&gt;
+							...
+						&lt;/section&gt;
+					&lt;/component&gt;
+					&lt;!--
+********************************************************
+Assessment Section
+********************************************************
+--&gt;
+					&lt;component&gt;
+						&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.22.2.8"/&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.9"/&gt;
+							...
+						&lt;/section&gt;
+					&lt;/component&gt;
+				&lt;/section&gt;
+			&lt;/component&gt;
+</pre>
 
 </div>
 

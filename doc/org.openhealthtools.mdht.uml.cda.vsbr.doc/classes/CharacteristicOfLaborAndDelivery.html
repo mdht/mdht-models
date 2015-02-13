@@ -35,7 +35,7 @@
 
 
 <div class="section">
-<div class="p"><p class="lines"><em class="ph i">Information on whether the mother experienced one or more of a set of defined characteristics of labor and delivery.</em></p>
+<div class="p"><p class="lines"><em class="ph i">The template contains nformation on whether the mother experienced one or more of a set of defined characteristics of labor and delivery.</em></p>
 </div>
 
 </div>
@@ -53,14 +53,14 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:259)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:257)<tt class="ph tt"><strong class="ph b">/@code</strong>="73813-8" </tt><em class="ph i">Characteristics of labor and delivery</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:257)<tt class="ph tt"><strong class="ph b">/@code</strong>="73813-8" </tt><em class="ph i">Characteristics of labor and delivery</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:475)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - it indicates the nature of the labor and delivery characteristic about which information is provided.</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:260), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/LaborAndDeliveryCharacteristicsNCHS.html">Labor and Delivery Characteristics (NCHS)</a> 2.16.840.1.114222.4.11.7117</tt><strong class="ph b"> STATIC</strong> December 1, 2013
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:260), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/LaborAndDeliveryCharacteristicsNCHS.html">Labor and Delivery Characteristics (NCHS)</a> 2.16.840.1.114222.4.11.7117</tt><strong class="ph b"> DYNAMIC</strong> (CONF:476)
 </li>
 
 </ol>
@@ -68,11 +68,18 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Characteristic of Labor and Delivery example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.18"/&gt;
+									&lt;code code="73813-8" displayName="Characteristics of labor and delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="231064003" displayName="Intrathecal injection of local anesthetic agent" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+</pre>
 
 </div>
 

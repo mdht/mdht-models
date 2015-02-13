@@ -20,9 +20,9 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:337)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ApgarAssessmentsNCHS.dita">Apgar Assessments (NCHS)</xref> 2.16.840.1.114222.4.11.7210</tt><b> DYNAMIC</b> (CONF:540)
-<ul><li><p><lines><i>A code value that indicates the nature of the observation.   The value is drawn from the Newborn Vital Signs value set.</i></lines></p></li></ul></li>
+<ul><li><p><lines><i>A code value that indicates the nature of the observation.   The value is drawn from the Apgar Assessments value set.  Apgar scores are the only assessment type that is recorded.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:339)
-<ul><li><p><lines><i>The measured vital sign amount.  The meaning of the observation is dependent on the value of observation code.  The datatype for assessment value depends on the nature of the assessment.</i></lines></p></li></ul></li>
+<ul><li><p><lines><i>The measured assessment value.  The meaning of the observation is dependent on the value of observation code.  The datatype for assessment value depends on the nature of the assessment.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:334)
@@ -30,9 +30,9 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:337)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ApgarAssessmentsNCHS.dita">Apgar Assessments (NCHS)</xref> 2.16.840.1.114222.4.11.7210</tt><b> DYNAMIC</b> (CONF:540)
-<ul><li><p><lines><i>A code value that indicates the nature of the observation.   The value is drawn from the Newborn Vital Signs value set.</i></lines></p></li></ul></li>
+<ul><li><p><lines><i>A code value that indicates the nature of the observation.   The value is drawn from the Apgar Assessments value set.  Apgar scores are the only assessment type that is recorded.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:339)
-<ul><li><p><lines><i>The measured vital sign amount.  The meaning of the observation is dependent on the value of observation code.  The datatype for assessment value depends on the nature of the assessment.</i></lines></p></li></ul></li>
+<ul><li><p><lines><i>The measured assessment value.  The meaning of the observation is dependent on the value of observation code.  The datatype for assessment value depends on the nature of the assessment.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">

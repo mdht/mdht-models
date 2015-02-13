@@ -53,7 +53,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:370)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:369)<tt class="ph tt"><strong class="ph b">/@code</strong>="57073-9" </tt><em class="ph i">Prenatal events</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:369)<tt class="ph tt"><strong class="ph b">/@code</strong>="57073-9" </tt><em class="ph i">Prenatal events</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:515)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:371)
@@ -63,37 +63,37 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:372)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:372)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="DateOfLastLiveBirth.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.20]">Date of Last Live Birth</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.20</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:373)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:373)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="LastMenstrualPeriodDate.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.33]">Last Menstrual Period Date</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.33</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:374)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:374)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="NumberOfBirthsNowLiving.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.36]">Number of Births Now Living</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.36</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:375)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:375)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="NumberOfLiveBirthsNowDead.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.38]">Number of Live Births Now Dead</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.38</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:376)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:376)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="OtherPregnancyOutcome.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.40]">Other Pregnancy Outcome</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.40</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:377)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:377)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="EstimateOfGestation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.21]">Estimate of Gestation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.21</tt>)</li>
 </ol>
@@ -104,11 +104,56 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Prior Pregnancy History Section example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+&lt;component&gt;
+				&lt;section classCode="DOCSECT" moodCode="EVN"&gt;
+					&lt;templateId root="2.16.840.1.113883.10.20.26.12"/&gt;
+					&lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="57073-9" displayName="Prenatal events"/&gt;
+					&lt;text&gt;
+						...
+					&lt;/text&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.20"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.33"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.36"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.38"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.40"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+					&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.21"/&gt;
+							...
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+				&lt;/section&gt;
+			&lt;/component&gt;
+</pre>
 
 </div>
 

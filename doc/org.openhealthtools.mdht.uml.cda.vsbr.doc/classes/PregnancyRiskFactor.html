@@ -53,25 +53,25 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:247)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:245)<tt class="ph tt"><strong class="ph b">/@code</strong>="73775-9" </tt><em class="ph i">Risk factors in this pregnancy</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:245)<tt class="ph tt"><strong class="ph b">/@code</strong>="73775-9" </tt><em class="ph i">Risk factors in this pregnancy</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:472)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - the nature of the risk factor about which information is provided.</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:248), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PregnancyRiskFactorNCHS.html">Pregnancy Risk Factor (NCHS)</a> 2.16.840.1.114222.4.11.7126</tt><strong class="ph b"> STATIC</strong> December 1, 2013
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:248), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PregnancyRiskFactorsNCHS.html">Pregnancy Risk Factors (NCHS)</a> 2.16.840.1.114222.4.11.7126</tt><strong class="ph b"> DYNAMIC</strong> (CONF:473)
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:249) <div class="p"><p class="lines"><em class="ph i">If a risk factor of previous Cesarean delivery is recorded, the number of previous Cesarian deliveries should be noted.</em></p>
 </div>
 <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt> (CONF:250)</li>
 <li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:251) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:252)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:254)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:253)<tt class="ph tt"><strong class="ph b">/@code</strong>="68497-7" </tt><em class="ph i">Previous cesarean deliveries</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)<div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - the number of previous Cesarean deliveries.</em></p>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:253)<tt class="ph tt"><strong class="ph b">/@code</strong>="68497-7" </tt><em class="ph i">Previous cesarean deliveries</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:474)<div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - the number of previous Cesarean deliveries.</em></p>
 </div>
 </li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT (CONF:255)<div class="p"><p class="lines"><em class="ph i">The number of previous Cesarean deliveries.</em></p>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:254)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="INT" (CONF:255)<div class="p"><p class="lines"><em class="ph i">The number of previous Cesarean deliveries.</em></p>
 </div>
 </li>
 </ol>
@@ -85,11 +85,25 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Pregnancy Risk Factor example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+<pre class="pre codeblock">
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;templateId root="2.16.840.1.113883.10.20.26.44"/&gt;
+									&lt;code code="73775-9" displayName="Risk factors in this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="200144004" displayName="Deliveries by cesarean" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/&gt;
+									&lt;entryRelationship typeCode="COMP"&gt;
+										&lt;observation classCode="OBS" moodCode="EVN"&gt;
+											&lt;code code="68497-7" displayName="Previous cesarean deliveries" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+											&lt;value xsi:type="INT" value="1"/&gt;
+										&lt;/observation&gt;
+									&lt;/entryRelationship&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+
+</pre>
 
 </div>
 

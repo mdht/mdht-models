@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Fetal Delivery Death Causal Information"/>
+<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.26.51]"/>
+<meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.26.51]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Fetal Delivery Death Causal Information</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Fetal Delivery Death Causal Information</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.26.51</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">The template contains information provided by the clinician to indicate the cause or causes behind the death of a fetus.  It is expected that original text will be provided as a full description of the cause as well as a code value.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.26.51"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="LOINC_TBD" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code that indicates that death causal information is provided.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value1</strong></tt> with @xsi:type="CD", which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/FetalDeathCauseOrConditionNCHS.html">Fetal Death Cause or Condition (NCHS)</a> 2.16.840.1.114222.4.11.xxxx</tt><strong class="ph b"> DYNAMIC</strong>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The cause or condition which most likely began the series of events resulting in the death of the fetus is to be recorded.  The information should be provided as text to fully record the provider's view of the cause.  The appropriate code should be valued as well.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Fetal Delivery Death Causal Information example</strong></p>
+
+
+<pre class="pre codeblock">
+
+&lt;entry&gt;
+						&lt;observation classCode="OBS" moodCode="EVN"&gt;
+							&lt;templateId root="2.16.840.1.113883.10.20.26.51"/&gt;
+							&lt;code code="LOINC_TBD" displayName="Fetal Death Cause" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;code code="LOINC_TBD" displayName="Initial cause of fetal death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="AP" displayName="Abuptio placenta" codeSystem="2.16.999"&gt;
+											
+											&lt;/value&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;code code="LOINC_TBD" displayName="Contributing cause to fetal death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="FI" displayName="Fetal Injury" codeSystem="2.16.999"&gt;
+										&lt;originalText mediaType="text/plain"&gt;Severe damage to the heart and lungs&lt;/originalText&gt;
+									&lt;/value&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+							&lt;entryRelationship typeCode="COMP"&gt;
+								&lt;observation classCode="OBS" moodCode="EVN"&gt;
+									&lt;code code="LOINC_TBD" displayName="Contributing cause to fetal death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+									&lt;value xsi:type="CD" code="OFCD" displayName="Other Fetal Conditions/Disorders" codeSystem="2.16.999"&gt;
+										&lt;originalText mediaType="text/plain"&gt;Severe bacterial infection&lt;/originalText&gt;
+									&lt;/value&gt;
+								&lt;/observation&gt;
+							&lt;/entryRelationship&gt;
+						&lt;/observation&gt;
+					&lt;/entry&gt;
+</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>
