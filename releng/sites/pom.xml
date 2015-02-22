@@ -20,30 +20,9 @@
 
 
 	</repositories>
-
-<distributionManagement>
-  	<repository>
-  		<id>maven-repository</id>
-  		<url>file:/Users/seanmuir/Arepository</url>
-  	</repository>
-  </distributionManagement>
-  
-<!--  	<distributionManagement>
-		<repository>
-			<id>release</id>
-			<url>sftp://frs.sourceforge.net/home/frs/project/oht-modeling/Nightly Builds/UpdateSite/twodotoh</url>
-		</repository>
-		<snapshotRepository>
-			<id>nightly</id>
-			<url>sftp://frs.sourceforge.net/home/frs/project/oht-modeling/Nightly Builds/UpdateSite/twodotoh</url>
-		</snapshotRepository>
-	</distributionManagement>
--->
-
-
+ 
 	<modules>
-<!-- 		<module>cda.design.site</module>
- 	<module>cda.analyst.site</module> -->
+ 	<module>cda.analyst.site</module>  
 		<module>cda.developer.site</module> 
 	</modules>
 	<build>
