@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Vendor: %providerName
+Bundle-Version: 2.5.0.201502222103
+Bundle-Localization: plugin
+Bundle-Name: %pluginName
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.openhealthtools.mdht.cda.doc.user;singleton:=
+ true
+
