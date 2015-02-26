@@ -1501,8 +1501,8 @@ The type of consent (e.g., a consent to perform the related serviceEvent) is con
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_43rsEWjHEeGNoZ3kEkcY2A">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL NOT include a Chief Complaint and Reason for Visit Section with either a Chief Complaint Section or a Reason for Visit Section.</body>
-        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
+        <body>SHALL NOT include a Chief Complaint and Reason for Visit Section with either a Chief Complaint Section or a Reason for Visit Section</body>
+        <body>( self.getAllSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection)) ) implies not ( self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection)) )</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2U6FfBSVEeGGzu7fmW9pXw" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
@@ -1518,8 +1518,8 @@ The type of consent (e.g., a consent to perform the related serviceEvent) is con
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxmRSVEeGGzu7fmW9pXw" name="hospitalAdmissionDiagnosisSection" association="_2UnxzhSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-other.uml#_2PidQhSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxmxSVEeGGzu7fmW9pXw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxmhSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cVSn8L34EeSj3-4AHFlwHg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cVSA4L34EeSj3-4AHFlwHg" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxoRSVEeGGzu7fmW9pXw" name="hospitalDischargeDiagnosisSection" aggregation="composite" association="_2Unx1xSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-discharge.uml#_2PidURSVEeGGzu7fmW9pXw"/>
@@ -1763,7 +1763,7 @@ The type of consent (e.g., a consent to perform the related serviceEvent) is con
   <CDA:AssociationValidation xmi:id="_2UnxzRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2UnxyxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:10111</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2Unx0BSVEeGGzu7fmW9pXw" base_Association="_2UnxzhSVEeGGzu7fmW9pXw">
+  <CDA:AssociationValidation xmi:id="_2Unx0BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2UnxzhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9928</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Ut4MRSVEeGGzu7fmW9pXw" base_Association="_2Unx1xSVEeGGzu7fmW9pXw">
