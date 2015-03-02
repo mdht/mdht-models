@@ -1162,6 +1162,9 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_bwOiQOJsEeG3cO7ebC3QuA" name="271593001"/>
       <ownedLiteral xmi:id="_eIRXsOJsEeG3cO7ebC3QuA" name="21134002"/>
       <ownedLiteral xmi:id="_gxSBUOJsEeG3cO7ebC3QuA" name="161045001"/>
+      <ownedLiteral xmi:id="_HrA_8MEnEeSjB6vMjDsL5Q" name="419099009"/>
+      <ownedLiteral xmi:id="_M_3kwMEnEeSjB6vMjDsL5Q" name="135818000"/>
+      <ownedLiteral xmi:id="_Q5vZUMEnEeSjB6vMjDsL5Q" name="135815002"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_EA1dEOWTEeGKmvzED_He2w" name="Tobacco Use"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_bgiMQOWUEeGKmvzED_He2w" name="Smoking Status">
@@ -3203,4 +3206,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_3uYZkKZKEeSy2PrVxD6riw" identifier="2.16.840.1.113883.11.20.9.65" version="2014-05-15" source="Value Set Source: http://www.search.loinc.org" definition="Additional section types that may be used under the Physical Examination section." base_Enumeration="_3uXygKZKEeSy2PrVxD6riw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_HrA_8cEnEeSjB6vMjDsL5Q" conceptName="Deceased" base_EnumerationLiteral="_HrA_8MEnEeSjB6vMjDsL5Q"/>
+  <term:ValueSetCode xmi:id="_M_4L0MEnEeSjB6vMjDsL5Q" conceptName="General health poor" base_EnumerationLiteral="_M_3kwMEnEeSjB6vMjDsL5Q"/>
+  <term:ValueSetCode xmi:id="_Q5vZUcEnEeSjB6vMjDsL5Q" conceptName="General health good" base_EnumerationLiteral="_Q5vZUMEnEeSjB6vMjDsL5Q"/>
 </xmi:XMI>
