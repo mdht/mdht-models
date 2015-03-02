@@ -1478,12 +1478,15 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_A3R8wOb0EeGINOJ_SD9_dA" base_Property="_A3RVsOb0EeGINOJ_SD9_dA">
     <ruleId>CONF:14355</ruleId>
+    <ruleId>R2.0=1098-14355</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_A3VnIOb0EeGINOJ_SD9_dA" base_Property="_A3VAEeb0EeGINOJ_SD9_dA">
     <ruleId>CONF:14357</ruleId>
+    <ruleId>R2.0=1098-14357</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_A3VAEOb0EeGINOJ_SD9_dA" base_Property="_A3Tx8Ob0EeGINOJ_SD9_dA">
     <ruleId>CONF:14363</ruleId>
+    <ruleId>R2.0=CONF:1098-14363</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_A3TK4Ob0EeGINOJ_SD9_dA" base_Property="_A3Sj0Ob0EeGINOJ_SD9_dA">
     <ruleId>CONF:14364</ruleId>
@@ -2745,25 +2748,29 @@ Devices applied to, or placed in, the patient are represented with the Procedure
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_yU2tgOD0EeOmBMTtnrPqww" clientDependency="_PjB34OD1EeOmBMTtnrPqww" name="FunctionalStatusOrganizer2">
     <ownedComment xmi:id="_8KWzAOD0EeOmBMTtnrPqww">
-      <body>This template groups related functional status observations into categories (e.g ambulation, self-care).</body>
+      <body>This template groups related functional status observations into categories (e.g., mobility, self-care).</body>
     </ownedComment>
     <ownedRule xmi:id="_s7VVAOD9EeOmBMTtnrPqww" name="codeCodeSystem" constrainedElement="_2e1d0OD4EeOmBMTtnrPqww">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_19yM8OD9EeOmBMTtnrPqww">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>/code SHOULD be selected from ICF (codeSystem 2.16.840.1.113883.6.254) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
-        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+        <body>/code SHOULD be selected from ICF (codeSystem 2.16.840.1.113883.6.254) OR LOINC (2.16.840.1.113883.6.1)</body>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_yVKPgOD0EeOmBMTtnrPqww" general="_zBlUUOZbEeGINOJ_SD9_dA"/>
     <substitution xmi:id="_PjB34OD1EeOmBMTtnrPqww" name="FunctionalStatusResultOrganizer" client="_yU2tgOD0EeOmBMTtnrPqww" supplier="_zBlUUOZbEeGINOJ_SD9_dA" contract="_zBlUUOZbEeGINOJ_SD9_dA"/>
     <ownedAttribute xmi:id="_2e1d0OD4EeOmBMTtnrPqww" name="code" visibility="private" aggregation="composite" redefinedProperty="_A3Sj0Ob0EeGINOJ_SD9_dA">
       <ownedComment xmi:id="_47MLgOD4EeOmBMTtnrPqww">
-        <body>The code selected should indicate the category that groups the contained functional status evaluation observations (e.g. mobility, self-care, communication).</body>
+        <body>The code selected should indicate the category that groups the contained functional status evaluation observations (e.g., mobility, self-care, communication).</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2e2E4OD4EeOmBMTtnrPqww" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2e1d0eD4EeOmBMTtnrPqww" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xJnBYOD_EeOmBMTtnrPqww" name="authorParticipation" type="_7jqj4KrlEeOxqJAXCMXUYg" association="_xJoPgOD_EeOmBMTtnrPqww">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xJnBYeD_EeOmBMTtnrPqww"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xJnBYuD_EeOmBMTtnrPqww" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_MSp6AOD6EeOmBMTtnrPqww" name="functionalStatusObservation2" type="_3WqogMzSEeO93sHu8pHB2g" redefinedProperty="_aWt5oOb2EeGINOJ_SD9_dA" association="_MSrvMOD6EeOmBMTtnrPqww">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9cK0oOD-EeOmBMTtnrPqww" value="1"/>
@@ -2776,48 +2783,45 @@ Devices applied to, or placed in, the patient are represented with the Procedure
     <ownedAttribute xmi:id="_YReDIOD_EeOmBMTtnrPqww" name="statusCode" visibility="private" redefinedProperty="_A3WOMOb0EeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_xJnBYOD_EeOmBMTtnrPqww" name="authorParticipation" type="_7jqj4KrlEeOxqJAXCMXUYg" association="_xJoPgOD_EeOmBMTtnrPqww">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xJnBYeD_EeOmBMTtnrPqww"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xJnBYuD_EeOmBMTtnrPqww" value="*"/>
-    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_4XOfoOD0EeOmBMTtnrPqww" base_Class="_yU2tgOD0EeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.66" templateVersion="2014-06-09">
-    <ruleId>CONF:14361</ruleId>
-    <ruleId>CONF:14362</ruleId>
+    <ruleId>CONF:1098-14361</ruleId>
+    <ruleId>CONF:1098-14362</ruleId>
+    <ruleId>CONF:1098-32569</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_GPOxQOD1EeOmBMTtnrPqww" base_Generalization="_yVKPgOD0EeOmBMTtnrPqww"/>
   <CDA:PropertyValidation xmi:id="_2e2E4eD4EeOmBMTtnrPqww" base_Property="_2e1d0OD4EeOmBMTtnrPqww">
-    <ruleId>CONF:14364</ruleId>
+    <ruleId>CONF:1098-14364</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_MSrvMOD6EeOmBMTtnrPqww" memberEnd="_MSp6AOD6EeOmBMTtnrPqww _MSsWQOD6EeOmBMTtnrPqww">
     <ownedEnd xmi:id="_MSsWQOD6EeOmBMTtnrPqww" type="_yU2tgOD0EeOmBMTtnrPqww" association="_MSrvMOD6EeOmBMTtnrPqww"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_Z_rqsOD6EeOmBMTtnrPqww" base_Association="_MSrvMOD6EeOmBMTtnrPqww">
-    <ruleId>CONF:14359</ruleId>
-    <ruleId>CONF:14368</ruleId>
+    <ruleId>CONF:1098-14359</ruleId>
+    <ruleId>CONF:1098-14368</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_2w6TAOD9EeOmBMTtnrPqww" severity="WARNING" base_Constraint="_s7VVAOD9EeOmBMTtnrPqww">
-    <ruleId>CONF:31417</ruleId>
+    <ruleId>CONF:1098-31417</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_vXYEMOD-EeOmBMTtnrPqww" memberEnd="_vXW2EOD-EeOmBMTtnrPqww _vXYEMeD-EeOmBMTtnrPqww">
     <ownedEnd xmi:id="_vXYEMeD-EeOmBMTtnrPqww" type="_yU2tgOD0EeOmBMTtnrPqww" association="_vXYEMOD-EeOmBMTtnrPqww"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_wmSuYOD-EeOmBMTtnrPqww" base_Association="_vXYEMOD-EeOmBMTtnrPqww">
-    <ruleId>CONF:31432</ruleId>
-    <ruleId>CONF:31433</ruleId>
+    <ruleId>CONF:1098-31432</ruleId>
+    <ruleId>CONF:1098-31433</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_YReqMOD_EeOmBMTtnrPqww" base_Property="_YReDIOD_EeOmBMTtnrPqww">
-    <ruleId>CONF:14358</ruleId>
+    <ruleId>CONF:1098-14358</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_YRfRQOD_EeOmBMTtnrPqww" code="completed" displayName="Completed" base_Property="_YReDIOD_EeOmBMTtnrPqww">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31434</ruleId>
+    <ruleId>CONF:1098-31434</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_xJoPgOD_EeOmBMTtnrPqww" memberEnd="_xJnBYOD_EeOmBMTtnrPqww _xJo2kOD_EeOmBMTtnrPqww">
     <ownedEnd xmi:id="_xJo2kOD_EeOmBMTtnrPqww" type="_yU2tgOD0EeOmBMTtnrPqww" association="_xJoPgOD_EeOmBMTtnrPqww"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_yJfKAOD_EeOmBMTtnrPqww" severity="WARNING" base_Association="_xJoPgOD_EeOmBMTtnrPqww">
-    <ruleId>CONF:31585</ruleId>
+    <ruleId>CONF:1098-31585</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_GM6icOEIEeOmBMTtnrPqww" clientDependency="_kW7qAOEIEeOmBMTtnrPqww" name="HospitalAdmissionDiagnosis2">
     <ownedComment xmi:id="_XfoAYOEIEeOmBMTtnrPqww">
