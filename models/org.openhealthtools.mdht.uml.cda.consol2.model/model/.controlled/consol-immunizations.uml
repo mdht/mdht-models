@@ -589,6 +589,7 @@
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_KnNycBq0EeGo461UQq-B1g" base_Property="_jQ64EBVOEeGbmN_W114JUw">
     <ruleId>CONF:9002</ruleId>
+    <ruleId>R2.0=CONF:1098-9002</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_ix2VABq1EeGo461UQq-B1g" base_Property="_DrIWEBVOEeGbmN_W114JUw">
     <ruleId>CONF:8991</ruleId>
@@ -635,6 +636,7 @@
   </uml:Association>
   <CDA:PropertyValidation xmi:id="_NJzZABt6EeGnMahsPjlwOw" severity="INFO" base_Property="_jQ64FRVOEeGbmN_W114JUw">
     <ruleId>CONF:9005</ruleId>
+    <ruleId>R2.0=CONF:1098-9005</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_tcJCgBt7EeGnMahsPjlwOw" code="completed" base_Property="_Dr389hVOEeGbmN_W114JUw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -1266,13 +1268,12 @@ This information should be included in an Immunization Activity when available. 
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sCU5QuHVEeO04sHNODkHmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sCU5QeHVEeO04sHNODkHmQ" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_2daj0MKMEeSqg-Exmsy2kg" name="lotNumberText" visibility="private" aggregation="composite" redefinedProperty="_xgWngEX8EeG6e5lG0YsSyQ">
+        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_76a_EcKMEeSqg-Exmsy2kg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_76a_EMKMEeSqg-Exmsy2kg" value="1"/>
+      </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Ft3skOHlEeO04sHNODkHmQ" name="CE">
-        <ownedRule xmi:id="_biiSwOHlEeO04sHNODkHmQ" name="translationTerminology" constrainedElement="_Ft3skOHlEeO04sHNODkHmQ">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_rggLUOHlEeO04sHNODkHmQ">
-            <language>Analysis</language>
-            <body>translation MAY be selected from ValueSet Vaccine Clinical Drug 2.16.840.1.113762.1.4.1010.8 or from ValueSet Specific Vaccine Clinical Drug 2.16.840.1.113762.1.4.1010.10 DYNAMIC</body>
-          </specification>
-        </ownedRule>
         <generalization xmi:id="_Ft4ToOHlEeO04sHNODkHmQ">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         </generalization>
@@ -1286,19 +1287,18 @@ This information should be included in an Immunization Activity when available. 
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_W8SwIOHUEeO04sHNODkHmQ" base_Class="_Rx8LIOHUEeO04sHNODkHmQ" templateId="2.16.840.1.113883.10.20.22.4.54" templateVersion="2014-06-09">
-    <ruleId>CONF:9004</ruleId>
-    <ruleId>CONF:10499</ruleId>
+    <ruleId>CONF:1098-9004</ruleId>
+    <ruleId>CONF:1098-10499</ruleId>
+    <ruleId>CONF:1098-32602</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_jO7mcOHUEeO04sHNODkHmQ" base_Generalization="_Rx8LIeHUEeO04sHNODkHmQ"/>
   <CDA:ValueSetConstraint xmi:id="_sCU5Q-HVEeO04sHNODkHmQ" base_Property="_sCU5QOHVEeO04sHNODkHmQ">
     <reference href="../consol-vocab.uml#_UMJcYeHXEeO04sHNODkHmQ"/>
-    <ruleId>CONF:9007</ruleId>
+    <ruleId>CONF:1098-9007</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_TXeV0OHlEeO04sHNODkHmQ" severity="INFO" base_Property="_PMPEcOHlEeO04sHNODkHmQ"/>
-  <CDA:ConstraintValidation xmi:id="_jh1EkOHlEeO04sHNODkHmQ" severity="INFO" base_Constraint="_biiSwOHlEeO04sHNODkHmQ">
-    <ruleId>CONF:31543</ruleId>
-    <ruleId>CONF:31881</ruleId>
-  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_TXeV0OHlEeO04sHNODkHmQ" severity="INFO" base_Property="_PMPEcOHlEeO04sHNODkHmQ">
+    <ruleId>CONF:1098-31543</ruleId>
+  </CDA:PropertyValidation>
   <uml:Association xmi:id="_XyKGsPgFEeOYeZoWJF5yyQ" memberEnd="_XyHDYPgFEeOYeZoWJF5yyQ _XyKGsfgFEeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="_XyKGsfgFEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_XyKGsPgFEeOYeZoWJF5yyQ"/>
   </uml:Association>
@@ -1545,4 +1545,11 @@ This information should be included in an Immunization Activity when available. 
   <CDA:AssociationValidation xmi:id="_y8WpYMHzEeST26B_nQ4gxA" base_Association="_yQQYYMHzEeST26B_nQ4gxA">
     <ruleId>CONF:1098-31514</ruleId>
   </CDA:AssociationValidation>
+  <CDA:TextValue xmi:id="_2dcZAMKMEeSqg-Exmsy2kg" base_Property="_2daj0MKMEeSqg-Exmsy2kg">
+    <ruleId>CONF:1098-9014</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_5ss-wMKWEeSqg-Exmsy2kg" base_Property="_PMPEcOHlEeO04sHNODkHmQ" message="This code MAY contain zero or more [0..*] translation (CONF:1098-31543), which MAY be selected from ValueSet Vaccine Clinical Drug 2.16.840.1.113762.1.4.1010.8 DYNAMIC or from ValueSet Specific Vaccine Clinical Drug 2.16.840.1.113762.1.4.1010.10 DYNAMIC (CONF:1098-31881)" severity="INFO">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+    <ruleId>CONF:1098-31881</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>

@@ -2792,6 +2792,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_1ZGHcBt6EeGnMahsPjlwOw" severity="WARNING">
     <ruleId>CONF:9012</ruleId>
+    <ruleId>R2.0=CONF:1098-9012</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_0bKfkRt6EeGnMahsPjlwOw"/>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_qzhEUBuEEeGnMahsPjlwOw" templateId="11111"/>
@@ -4242,7 +4243,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:1098-15547</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_b88xIeHVEeO04sHNODkHmQ" base_Association="_b88KEOHVEeO04sHNODkHmQ">
-    <ruleId>CONF:9006</ruleId>
+    <ruleId>CONF:1098-9006</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_h3qVweXrEeOkFcFJ9uzEEw" base_Association="_h3pusOXrEeOkFcFJ9uzEEw">
     <ruleId>CONF:7411</ruleId>

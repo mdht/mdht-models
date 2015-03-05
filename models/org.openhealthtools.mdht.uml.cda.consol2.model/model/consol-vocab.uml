@@ -1678,6 +1678,12 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_mBa3souzEeSZu6J-Yjmr9w" name="2186-5"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_3uXygKZKEeSy2PrVxD6riw" name="Physical Exam Type"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_eCGnUMKTEeSqg-Exmsy2kg" name="Vaccine Clinical Drug"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0uuwQMKTEeSqg-Exmsy2kg" name="Specific Vaccine Clinical Drug"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_rvGXcMLCEeSqg-Exmsy2kg" name="MoodCodeEvnInt">
+      <ownedLiteral xmi:id="_rvGXccLCEeSqg-Exmsy2kg" name="EVN"/>
+      <ownedLiteral xmi:id="_rvGXcsLCEeSqg-Exmsy2kg" name="INT"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3209,4 +3215,15 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_HrA_8cEnEeSjB6vMjDsL5Q" conceptName="Deceased" base_EnumerationLiteral="_HrA_8MEnEeSjB6vMjDsL5Q"/>
   <term:ValueSetCode xmi:id="_M_4L0MEnEeSjB6vMjDsL5Q" conceptName="General health poor" base_EnumerationLiteral="_M_3kwMEnEeSjB6vMjDsL5Q"/>
   <term:ValueSetCode xmi:id="_Q5vZUcEnEeSjB6vMjDsL5Q" conceptName="General health good" base_EnumerationLiteral="_Q5vZUMEnEeSjB6vMjDsL5Q"/>
+  <term:ValueSetVersion xmi:id="_eCHOYMKTEeSqg-Exmsy2kg" identifier="2.16.840.1.113762.1.4.1010.8" url="https://vsac.nlm.nih.gov/" definition="Administrable vaccine medication formulations represented using  either a &quot;generic&quot; or &quot;brand-specific&quot; concept. &#xA;Value set intensionally defined from RXNORM (OID: 2.16.840.1.113883.6.88), comprised of those codes whose ingredients map to NDC codes that the CDC associates with CVX codes." binding="Dynamic" base_Enumeration="_eCGnUMKTEeSqg-Exmsy2kg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_0uvXUMKTEeSqg-Exmsy2kg" identifier="2.16.840.1.113762.1.4.1010.10" url="https://vsac.nlm.nih.gov/" definition="Administrable vaccine medication formulations represented using  either a &quot;generic&quot; or &quot;brand-specific&quot; concept. &#xA;Value set intensionally defined from RXNORM (OID: 2.16.840.1.113883.6.88), comprised of those codes whose ingredients map to NDC codes that the CDC associates with CVX codes." base_Enumeration="_0uuwQMKTEeSqg-Exmsy2kg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_rvGXc8LCEeSqg-Exmsy2kg" identifier="2.16.840.1.113883.11.20.9.18" version="2011-04-03" definition="Subset of HL7 ActMood codes, constrained to represent event (EVN) and intent (INT) moodes" base_Enumeration="_rvGXcMLCEeSqg-Exmsy2kg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_rvGXdMLCEeSqg-Exmsy2kg" conceptName="Event" base_EnumerationLiteral="_rvGXccLCEeSqg-Exmsy2kg"/>
+  <term:ValueSetCode xmi:id="_rvGXdcLCEeSqg-Exmsy2kg" conceptName="Intent" base_EnumerationLiteral="_rvGXcsLCEeSqg-Exmsy2kg"/>
 </xmi:XMI>
