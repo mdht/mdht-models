@@ -2914,6 +2914,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_lGDlICAMEeGKirKJsFylGA" severity="INFO">
     <ruleId>CONF:7416</ruleId>
+    <ruleId>R2.0=CONF:1098-7416</ruleId>
     <base_Association href=".controlled/consol-medications.uml#_f6p3QiAMEeGKirKJsFylGA"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_AFd2wB7tEeGaOZtrEokzNQ" severity="INFO">
@@ -4246,7 +4247,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:1098-9006</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_h3qVweXrEeOkFcFJ9uzEEw" base_Association="_h3pusOXrEeOkFcFJ9uzEEw">
-    <ruleId>CONF:7411</ruleId>
+    <ruleId>CONF:1098-7411</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_vp9jkeaREeOmzetP5oaH3A" base_Association="_vp88gOaREeOmzetP5oaH3A">
     <ruleId>CONF:8886</ruleId>

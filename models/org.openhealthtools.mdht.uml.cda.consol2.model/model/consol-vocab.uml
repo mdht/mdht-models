@@ -1617,13 +1617,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
 Valueset Source: https://vsac.nlm.nih.gov/</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_t8c_EOZ0EeO97uF_XMEmeg" name="Clinical Substance">
-      <ownedComment xmi:id="_1lkFgOZ0EeO97uF_XMEmeg">
-        <body>All substances that may need to be represented in the context of health care related activities.  This value set is quite broad in coverage and includes concepts that may never be needed in a health care activity event, particularly the included SNOMED CT concepts. The code system-specific value sets in this grouping value set are intended to provide broad coverage of all kinds of agents, but the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and drawn from the appropriate code system as noted: prescribable medications should use RXNORM concepts, more specific drugs and chemicals should be represented using UNII concepts, and any substances not found in either of those two code systems, should use the appropriate SNOMED CT concept. This overarching grouping value set is intended to support identification of prescribable medications, foods, general substances and environmental entities.  
-Value set intensionally defined as a GROUPING made up of: Value Set: Medication Clinical Drug (2.16.840.1.113762.1.4.1010.4) (RxNorm generic and brand codes); Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT codes).&#xD;
-Valueset Source: https://vsac.nlm.nih.gov/</body>
-      </ownedComment>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_t8c_EOZ0EeO97uF_XMEmeg" name="Clinical Substance"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_eLcPcOdbEeOqBOMhgDlycQ" name="Encounter Planned or Requested">
       <ownedComment xmi:id="_sDkc4OdbEeOqBOMhgDlycQ">
         <body>A value set of SNOMED-CT codes descending from  &quot;308335008&quot; patient encounter procedure (procedure).&#xD;
@@ -1683,6 +1677,10 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_rvGXcMLCEeSqg-Exmsy2kg" name="MoodCodeEvnInt">
       <ownedLiteral xmi:id="_rvGXccLCEeSqg-Exmsy2kg" name="EVN"/>
       <ownedLiteral xmi:id="_rvGXcsLCEeSqg-Exmsy2kg" name="INT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dy6PgMNpEeSRNKqIviDQAg" name="Medication Fill Status">
+      <ownedLiteral xmi:id="_dy6PgcNpEeSRNKqIviDQAg" name="aborted"/>
+      <ownedLiteral xmi:id="_dy6PgsNpEeSRNKqIviDQAg" name="completed"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -3163,7 +3161,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_0_S4geXsEeOkFcFJ9uzEEw" identifier="2.16.840.1.113762.1.4.1010.4" binding="Dynamic" base_Enumeration="_0_S4gOXsEeOkFcFJ9uzEEw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_t8fbUOZ0EeO97uF_XMEmeg" identifier="2.16.840.1.113762.1.4.1010.2" binding="Dynamic" base_Enumeration="_t8c_EOZ0EeO97uF_XMEmeg">
+  <term:ValueSetVersion xmi:id="_t8fbUOZ0EeO97uF_XMEmeg" identifier="2.16.840.1.113762.1.4.1010.2" source="https://vsac.nlm.nih.gov/" definition="All substances that may need to be represented in the context of health care related activities.  This value set is quite broad in coverage and includes concepts that may never be needed in a health care activity event, particularly the included SNOMED CT concepts. The code system-specific value sets in this grouping value set are intended to provide broad coverage of all kinds of agents, but the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and drawn from the appropriate code system as noted: prescribable medications should use RXNORM concepts, more specific drugs and chemicals should be represented using UNII concepts, and any substances not found in either of those two code systems, should use the appropriate SNOMED CT concept. This overarching grouping value set is intended to support identification of prescribable medications, foods, general substances and environmental entities.  &#xA;Value set intensionally defined as a GROUPING made up of: Value Set: Medication Clinical Drug (2.16.840.1.113762.1.4.1010.4) (RxNorm generic and brand codes); Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT codes)." binding="Dynamic" base_Enumeration="_t8c_EOZ0EeO97uF_XMEmeg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_eLc2gOdbEeOqBOMhgDlycQ" identifier="2.16.840.1.113883.11.20.9.52" base_Enumeration="_eLcPcOdbEeOqBOMhgDlycQ">
@@ -3226,4 +3224,9 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_rvGXdMLCEeSqg-Exmsy2kg" conceptName="Event" base_EnumerationLiteral="_rvGXccLCEeSqg-Exmsy2kg"/>
   <term:ValueSetCode xmi:id="_rvGXdcLCEeSqg-Exmsy2kg" conceptName="Intent" base_EnumerationLiteral="_rvGXcsLCEeSqg-Exmsy2kg"/>
+  <term:ValueSetVersion xmi:id="_dy62kMNpEeSRNKqIviDQAg" identifier="2.16.840.1.113883.3.88.12.80.64" version="2014-04-23" url="https://phinvads.cdc.gov/" revisionDate="07/23/2009" base_Enumeration="_dy6PgMNpEeSRNKqIviDQAg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_dy62kcNpEeSRNKqIviDQAg" conceptName="Aborted" usageNote="ActStatus" base_EnumerationLiteral="_dy6PgcNpEeSRNKqIviDQAg"/>
+  <term:ValueSetCode xmi:id="_dy62ksNpEeSRNKqIviDQAg" conceptName="Completed" usageNote="ActStatus" base_EnumerationLiteral="_dy6PgsNpEeSRNKqIviDQAg"/>
 </xmi:XMI>
