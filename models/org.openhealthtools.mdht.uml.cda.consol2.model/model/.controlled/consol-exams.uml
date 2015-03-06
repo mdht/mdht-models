@@ -848,6 +848,7 @@ The Physical Exam Section may contain multiple nested subsections.</body>
   <CDA:CDATemplate xmi:id="_2sh74IC3EeS108flGLVEBA" base_Class="_YYgjwIC3EeS108flGLVEBA" templateId="2.16.840.1.113883.10.20.22.4.76" templateVersion="2014-06-09">
     <ruleId>CONF:1098-14707</ruleId>
     <ruleId>CONF:1098-14708</ruleId>
+    <ruleId>CONF:1098-32604</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_dWmY8IC4EeS108flGLVEBA" base_Generalization="_YZLSIIC3EeS108flGLVEBA"/>
   <CDA:PropertyValidation xmi:id="_nvQ5EYC8EeS108flGLVEBA" base_Property="_nvQ5EIC8EeS108flGLVEBA">

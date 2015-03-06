@@ -728,7 +728,7 @@ This section requires that there be either an entry indicating the subject is no
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKhB8Ea7EeG7gbamepbPeA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHOULD contain zero or one [0..1] effectiveTime/high</body>
+        <body>effectiveTime, if present, SHOULD contain zero or one [0..1] high</body>
         <body>self.effectiveTime->size() = 1 implies self.effectiveTime.oclAsType(datatypes::IVL_TS)->forAll(high->size() = 1)</body>
       </specification>
     </ownedRule>
@@ -736,7 +736,7 @@ This section requires that there be either an entry indicating the subject is no
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_kenzUEa8EeG75M7WNoZ4Xg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>participant with target entry Product Instance SHALL contain exactly one [1..1] @typeCode=&quot;PRD&quot; Product (CodeSystem: HL7ParticipationType 2.16.840.1.113883.5.90)</body>
+        <body>participant with target entry Product Instance SHALL contain exactly one [1..1] @typeCode=&quot;PRD&quot; Product (CodeSystem: HL7ParticipationType 2.16.840.1.113883.5.90) STATIC</body>
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ProductInstance))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::PRD)</body>
       </specification>
     </ownedRule>
@@ -786,12 +786,14 @@ This section requires that there be either an entry indicating the subject is no
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_2HTHRRSVEeGGzu7fmW9pXw" base_Property="_2HTHQhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8748</ruleId>
+    <ruleId>R2.0=CONF:1098-8748</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2HJ9UBSVEeGGzu7fmW9pXw" base_Property="_2HIvXxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8749</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2HUVZBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2HUVYBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8751</ruleId>
+    <ruleId>R2.0=CONF:1098-8751</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_2HVjhRSVEeGGzu7fmW9pXw" base_Association="_2HVjgxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8752</ruleId>
@@ -1219,13 +1221,16 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_sCeZIDiAEeGSytqLITd2FA" base_Property="_2HSgMRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8745</ruleId>
+    <ruleId>R2.0=CONF:1098-8745</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_3ny2cDiAEeGSytqLITd2FA" base_Property="_2HTHQBSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
+    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
     <ruleId>CONF:8746</ruleId>
+    <ruleId>R2.0=CONF:1098-8746</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_61IfsDiBEeGSytqLITd2FA" severity="WARNING" base_Property="_5f05oDiBEeGSytqLITd2FA">
     <ruleId>CONF:15498</ruleId>
+    <ruleId>R2.0=CONF:1098-15498</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_utQ5gDiCEeGSytqLITd2FA" base_Property="_tsW2IDiCEeGSytqLITd2FA">
     <ruleId>CONF:7900</ruleId>
@@ -1349,9 +1354,11 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_Dl9JoEa7EeG7gbamepbPeA" severity="WARNING" base_Constraint="_uejSEEa6EeG7gbamepbPeA">
     <ruleId>CONF:16867</ruleId>
+    <ruleId>R2.0=CONF:1098-16867</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_moUDsEa8EeG75M7WNoZ4Xg" base_Constraint="_fELj4Ea8EeG75M7WNoZ4Xg">
     <ruleId>CONF:8754</ruleId>
+    <ruleId>R2.0=CONF:1098-8754</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_6Tr-UEIrEeG4bZAl2IGXmQ" memberEnd="_6Ti0YEIrEeG4bZAl2IGXmQ _6Tr-UUIrEeG4bZAl2IGXmQ">
     <ownedEnd xmi:id="_6Tr-UUIrEeG4bZAl2IGXmQ" type="_2T9DQBSVEeGGzu7fmW9pXw" association="_6Tr-UEIrEeG4bZAl2IGXmQ"/>
@@ -2213,7 +2220,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_k_C20OaCEeOmzetP5oaH3A" clientDependency="_RKlYYOaDEeOmzetP5oaH3A" name="NonMedicinalSupplyActivity2">
     <ownedComment xmi:id="_vkE70OaCEeOmzetP5oaH3A">
-      <body>This template represents equipment supplied to the patient (e.g. pumps, inhalers, wheelchairs). Devices applied to, or placed in, the patient are represented with the Procedure Activity Procedure (V2) (templateId: 2.16.840.1.113883.10.20.22.4.14.2.)</body>
+      <body>This template represents equipment supplied to the patient (e.g., pumps, inhalers, wheelchairs). Devices applied to, or placed in, the patient are represented with the Product Instance entry contained within a Procedure Activity Procedure (V2) (identifier: urn:hl7ii: 2.16.840.1.113883.10.20.22.4.14:2014-06-09)</body>
     </ownedComment>
     <ownedRule xmi:id="_1qtQ8OaEEeOmzetP5oaH3A" name="instruction2InversionInd" constrainedElement="_k_C20OaCEeOmzetP5oaH3A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_-3Oq4OaEEeOmzetP5oaH3A">
@@ -2230,22 +2237,30 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hj_aUeaEEeOmzetP5oaH3A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hj_aUOaEEeOmzetP5oaH3A" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_oW6N8MQSEeSt_63yiINGSw" name="statusCode" visibility="private" redefinedProperty="_2HIvXxSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Yas-AMQUEeSt_63yiINGSw" name="productInstance" type="_2G2bUxSVEeGGzu7fmW9pXw" redefinedProperty="_2HVjgBSVEeGGzu7fmW9pXw" association="_YauMIMQUEeSt_63yiINGSw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kpB8EcQUEeSt_63yiINGSw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kpB8EMQUEeSt_63yiINGSw" value="1"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_nMp94OaCEeOmzetP5oaH3A" base_Class="_k_C20OaCEeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.50" templateVersion="2014-06-09">
-    <ruleId>CONF:8747</ruleId>
-    <ruleId>CONF:10509</ruleId>
+    <ruleId>CONF:1098-8747</ruleId>
+    <ruleId>CONF:1098-10509</ruleId>
+    <ruleId>CONF:1098-32514</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_OdUg4OaDEeOmzetP5oaH3A" base_Generalization="_k_C20eaCEeOmzetP5oaH3A"/>
   <uml:Association xmi:id="_fbtfMOaEEeOmzetP5oaH3A" memberEnd="_fbsREOaEEeOmzetP5oaH3A _fbtfMeaEEeOmzetP5oaH3A">
     <ownedEnd xmi:id="_fbtfMeaEEeOmzetP5oaH3A" type="_k_C20OaCEeOmzetP5oaH3A" association="_fbtfMOaEEeOmzetP5oaH3A"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_ikbjoOaEEeOmzetP5oaH3A" severity="INFO" base_Association="_fbtfMOaEEeOmzetP5oaH3A" typeCode="SUBJ">
-    <ruleId>CONF:30277</ruleId>
-    <ruleId>CONF:30278</ruleId>
-    <ruleId>CONF:31393</ruleId>
+    <ruleId>CONF:1098-30277</ruleId>
+    <ruleId>CONF:1098-30278</ruleId>
+    <ruleId>CONF:1098-31393</ruleId>
   </CDA:EntryRelationship>
   <CDA:ConstraintValidation xmi:id="_RC5KEOaFEeOmzetP5oaH3A" base_Constraint="_1qtQ8OaEEeOmzetP5oaH3A">
-    <ruleId>CONF:30279</ruleId>
+    <ruleId>CONF:1098-30279</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_CymqwPfdEeO297ryy8ptVg" memberEnd="_CyjAYPfdEeO297ryy8ptVg _CymqwffdEeO297ryy8ptVg">
     <ownedEnd xmi:id="_CymqwffdEeO297ryy8ptVg" type="_ZQpEwK-1EeO8duI_7f6kZw" association="_CymqwPfdEeO297ryy8ptVg"/>
@@ -2648,4 +2663,18 @@ This section requires either an entry indicating the subject is not known to be 
   <CDA:PropertyValidation xmi:id="_Hv6hU8OIEeSRNKqIviDQAg" severity="WARNING" base_Property="_Hv6hUMOIEeSRNKqIviDQAg">
     <ruleId>CONF:1098-7434</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_oW7cEMQSEeSt_63yiINGSw" base_Property="_oW6N8MQSEeSt_63yiINGSw">
+    <ruleId>CONF:1098-8749</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_vPRM4MQSEeSt_63yiINGSw" base_Property="_oW6N8MQSEeSt_63yiINGSw">
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-32363</ruleId>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_YauMIMQUEeSt_63yiINGSw" memberEnd="_Yas-AMQUEeSt_63yiINGSw _YauzMMQUEeSt_63yiINGSw">
+    <ownedEnd xmi:id="_YauzMMQUEeSt_63yiINGSw" type="_k_C20OaCEeOmzetP5oaH3A" association="_YauMIMQUEeSt_63yiINGSw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_fY6GQMQUEeSt_63yiINGSw" severity="INFO" base_Association="_YauMIMQUEeSt_63yiINGSw">
+    <ruleId>CONF:1098-8752</ruleId>
+    <ruleId>CONF:1098-15900</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

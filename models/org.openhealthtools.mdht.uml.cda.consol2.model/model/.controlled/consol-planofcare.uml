@@ -138,7 +138,8 @@
     <ruleId>CONF-491</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2NWE9BSVEeGGzu7fmW9pXw" base_Property="_2NWE7xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8539</ruleId>
+    <ruleId>CONF:8546</ruleId>
+    <ruleId>R2.0=CONF:1098-8546</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_2NWFBBSVEeGGzu7fmW9pXw" name="PlanOfCareActivityEncounter">
     <generalization xmi:id="_2NcLhxSVEeGGzu7fmW9pXw">
@@ -329,7 +330,10 @@
     <reference href="../consol-vocab.uml#_u3o3AG1HEeGCevFpokwODw"/>
     <ruleId>CONF:8578</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_qSkasHkLEeGsJLFJFRpA9A" base_Property="_2NWE-RSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_qSkasHkLEeGsJLFJFRpA9A" base_Property="_2NWE-RSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8538</ruleId>
+    <ruleId>R2.0=CONF:1098-8538</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_3NtXsNyxEeG3d7pEoxuOZA" base_Property="_WZy4UCoNEeGHF88-qhhUMA">
     <ruleId>CONF:8564</ruleId>
   </CDA:PropertyValidation>
@@ -1775,12 +1779,14 @@ Intervention Acts can be related to each other, (eg. an Intervention Act with mo
   <uml:Class xmi:id="_lLnRMOaYEeOmzetP5oaH3A" clientDependency="_2VXAYOaYEeOmzetP5oaH3A" name="PlannedAct2">
     <ownedComment xmi:id="_tFG9AOaYEeOmzetP5oaH3A">
       <body>This template represents planned acts that are not classified as an observation or a procedure according to the HL7 RIM. Examples of these acts are a dressing change, the teaching or feeding of a patient or the providing of comfort measures. &#xD;
-The priority of the activity to the patient and provider is communicated through Patient Priority Preference and Provider Priority Preference. The effectiveTime indicates the time when the activity is intended to take place.</body>
+The priority of the activity to the patient and provider is communicated through Priority Preference. The effectiveTime indicates the time when the activity is intended to take place.</body>
     </ownedComment>
     <ownedRule xmi:id="_pRxcAOadEeOmzetP5oaH3A" name="codeFromLoincOrSnomed" constrainedElement="_lLnRMOaYEeOmzetP5oaH3A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_16-_QOadEeOmzetP5oaH3A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The code in a Planned Act SHOULD be selected from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
+        <body>(not code.oclIsUndefined() and code.isNullFlavorUndefined()) implies (code.codeSystem = '2.16.840.1.113883.6.1' or code.codeSystem = '2.16.840.1.113883.6.96')</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_lLn4QOaYEeOmzetP5oaH3A" general="_2NWE5xSVEeGGzu7fmW9pXw"/>
@@ -1795,13 +1801,9 @@ The priority of the activity to the patient and provider is communicated through
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wZZbcOacEeOmzetP5oaH3A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wZY0YOacEeOmzetP5oaH3A" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_9uK5oOabEeOmzetP5oaH3A" name="patientPriorityPreference" type="_UqXAAI6hEeOB0eBUISUB4Q" association="_9uMu0OabEeOmzetP5oaH3A">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9uLgsOabEeOmzetP5oaH3A"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9uLgseabEeOmzetP5oaH3A" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_TJBRoOacEeOmzetP5oaH3A" name="providerPriorityPreference" type="_ncafYJmaEeOLJeQez13EkQ" association="_TJCfwOacEeOmzetP5oaH3A">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TJBRoeacEeOmzetP5oaH3A"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TJBRouacEeOmzetP5oaH3A" value="*"/>
+    <ownedAttribute xmi:id="_Dd0fIMQ6EeSt_63yiINGSw" name="priorityPreference" type="_ncafYJmaEeOLJeQez13EkQ" association="_Dd1tQMQ6EeSt_63yiINGSw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dd0fIcQ6EeSt_63yiINGSw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dd0fIsQ6EeSt_63yiINGSw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_LC8NQOaaEeOmzetP5oaH3A" name="indication2" association="_LC9bYOaaEeOmzetP5oaH3A">
       <type xmi:type="uml:Class" href="consol-other.uml#_PrEOIOHoEeO04sHNODkHmQ"/>
@@ -1812,6 +1814,9 @@ The priority of the activity to the patient and provider is communicated through
       <type xmi:type="uml:Class" href="consol-other.uml#_D62NwOH7EeO04sHNODkHmQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cU4ZsOabEeOmzetP5oaH3A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cU4ZseabEeOmzetP5oaH3A" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_r7TgwMQdEeSt_63yiINGSw" name="moodCode" visibility="private" redefinedProperty="_2NWE8hSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="__uLNEOacEeOmzetP5oaH3A" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -1834,53 +1839,32 @@ The priority of the activity to the patient and provider is communicated through
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_oz60oOaYEeOmzetP5oaH3A" base_Class="_lLnRMOaYEeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.39" templateVersion="2014-06-09">
-    <ruleId>CONF:30430</ruleId>
-    <ruleId>CONF:30431</ruleId>
+    <ruleId>CONF:1098-30430</ruleId>
+    <ruleId>CONF:1098-30431</ruleId>
+    <ruleId>CONF:1098-32552</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_0pQD4OaYEeOmzetP5oaH3A" base_Generalization="_lLn4QOaYEeOmzetP5oaH3A"/>
   <uml:Association xmi:id="_LC9bYOaaEeOmzetP5oaH3A" memberEnd="_LC8NQOaaEeOmzetP5oaH3A _LC9bYeaaEeOmzetP5oaH3A">
     <ownedComment xmi:id="_3UM8UOaaEeOmzetP5oaH3A">
-      <body>This entryRelationship represents the indication for the act.</body>
+      <body>The following entryRelationship represents the indication for the act.</body>
     </ownedComment>
     <ownedEnd xmi:id="_LC9bYeaaEeOmzetP5oaH3A" type="_lLnRMOaYEeOmzetP5oaH3A" association="_LC9bYOaaEeOmzetP5oaH3A"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_khGpsOaaEeOmzetP5oaH3A" severity="INFO" base_Association="_LC9bYOaaEeOmzetP5oaH3A" typeCode="RSON">
-    <ruleId>CONF:32021</ruleId>
-    <ruleId>CONF:32022</ruleId>
-    <ruleId>CONF:32023</ruleId>
+    <ruleId>CONF:1098-32021</ruleId>
+    <ruleId>CONF:1098-32022</ruleId>
+    <ruleId>CONF:1098-32023</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_cU5AwOabEeOmzetP5oaH3A" memberEnd="_cU3yoOabEeOmzetP5oaH3A _cU5AweabEeOmzetP5oaH3A">
     <ownedComment xmi:id="_vQfvIOabEeOmzetP5oaH3A">
-      <body>This entryRelationship captures any instructions associated with the planned act.</body>
+      <body>The following entryRelationship captures any instructions associated with the planned act.</body>
     </ownedComment>
     <ownedEnd xmi:id="_cU5AweabEeOmzetP5oaH3A" type="_lLnRMOaYEeOmzetP5oaH3A" association="_cU5AwOabEeOmzetP5oaH3A"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_ePjWoOabEeOmzetP5oaH3A" severity="INFO" base_Association="_cU5AwOabEeOmzetP5oaH3A" typeCode="SUBJ">
-    <ruleId>CONF:32024</ruleId>
-    <ruleId>CONF:32025</ruleId>
-    <ruleId>CONF:32026</ruleId>
-  </CDA:EntryRelationship>
-  <uml:Association xmi:id="_9uMu0OabEeOmzetP5oaH3A" memberEnd="_9uK5oOabEeOmzetP5oaH3A _9uMu0eabEeOmzetP5oaH3A">
-    <ownedComment xmi:id="_PVeukOacEeOmzetP5oaH3A">
-      <body>This entryRelationship represents the priority that a patient places on the activity.</body>
-    </ownedComment>
-    <ownedEnd xmi:id="_9uMu0eabEeOmzetP5oaH3A" type="_lLnRMOaYEeOmzetP5oaH3A" association="_9uMu0OabEeOmzetP5oaH3A"/>
-  </uml:Association>
-  <CDA:EntryRelationship xmi:id="_D6_oQOacEeOmzetP5oaH3A" severity="INFO" base_Association="_9uMu0OabEeOmzetP5oaH3A" typeCode="REFR">
-    <ruleId>CONF:31067</ruleId>
-    <ruleId>CONF:31068</ruleId>
-    <ruleId>CONF:31069</ruleId>
-  </CDA:EntryRelationship>
-  <uml:Association xmi:id="_TJCfwOacEeOmzetP5oaH3A" memberEnd="_TJBRoOacEeOmzetP5oaH3A _TJCfweacEeOmzetP5oaH3A">
-    <ownedComment xmi:id="_Ud1vgOacEeOmzetP5oaH3A">
-      <body>This entryRelationship represents the priority that a provider places on the activity.</body>
-    </ownedComment>
-    <ownedEnd xmi:id="_TJCfweacEeOmzetP5oaH3A" type="_lLnRMOaYEeOmzetP5oaH3A" association="_TJCfwOacEeOmzetP5oaH3A"/>
-  </uml:Association>
-  <CDA:EntryRelationship xmi:id="_VvqjwOacEeOmzetP5oaH3A" severity="INFO" base_Association="_TJCfwOacEeOmzetP5oaH3A" typeCode="REFR">
-    <ruleId>CONF:31070</ruleId>
-    <ruleId>CONF:31071</ruleId>
-    <ruleId>CONF:31072</ruleId>
+    <ruleId>CONF:1098-32024</ruleId>
+    <ruleId>CONF:1098-32025</ruleId>
+    <ruleId>CONF:1098-32026</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_rbglIOacEeOmzetP5oaH3A" memberEnd="_rbfXAOacEeOmzetP5oaH3A _rbglIeacEeOmzetP5oaH3A">
     <ownedComment xmi:id="_zHqYgOacEeOmzetP5oaH3A">
@@ -1889,23 +1873,23 @@ The priority of the activity to the patient and provider is communicated through
     <ownedEnd xmi:id="_rbglIeacEeOmzetP5oaH3A" type="_lLnRMOaYEeOmzetP5oaH3A" association="_rbglIOacEeOmzetP5oaH3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_r725IOacEeOmzetP5oaH3A" severity="WARNING" base_Association="_rbglIOacEeOmzetP5oaH3A">
-    <ruleId>CONF:32020</ruleId>
+    <ruleId>CONF:1098-32020</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_Avk_sOadEeOmzetP5oaH3A" base_Property="__uLNEOacEeOmzetP5oaH3A">
-    <ruleId>CONF:31687</ruleId>
+    <ruleId>CONF:1098-31687</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_qVZcMOadEeOmzetP5oaH3A" severity="WARNING" base_Constraint="_pRxcAOadEeOmzetP5oaH3A">
-    <ruleId>CONF:32030</ruleId>
+    <ruleId>CONF:1098-32030</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_urEmgOaeEeOmzetP5oaH3A" base_Property="_t0TWkOaeEeOmzetP5oaH3A">
-    <ruleId>CONF:30432</ruleId>
+    <ruleId>CONF:1098-30432</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="__beBkOaeEeOmzetP5oaH3A" code="active" displayName="Active" base_Property="_t0TWkOaeEeOmzetP5oaH3A">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:32019</ruleId>
+    <ruleId>CONF:1098-32019</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_dvyUoOafEeOmzetP5oaH3A" severity="WARNING" base_Property="_dBBxMOafEeOmzetP5oaH3A">
-    <ruleId>CONF:30433</ruleId>
+    <ruleId>CONF:1098-30433</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_9X_RcOafEeOmzetP5oaH3A" memberEnd="_9X-DUOafEeOmzetP5oaH3A _9X_4gOafEeOmzetP5oaH3A">
     <ownedComment xmi:id="_GsDd0OagEeOmzetP5oaH3A">
@@ -1914,7 +1898,7 @@ The priority of the activity to the patient and provider is communicated through
     <ownedEnd xmi:id="_9X_4gOafEeOmzetP5oaH3A" type="_lLnRMOaYEeOmzetP5oaH3A" association="_9X_RcOafEeOmzetP5oaH3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_-WC1IOafEeOmzetP5oaH3A" severity="INFO" base_Association="_9X_RcOafEeOmzetP5oaH3A">
-    <ruleId>CONF:30435</ruleId>
+    <ruleId>CONF:1098-30435</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_bDPFMOdXEeOqBOMhgDlycQ" clientDependency="_NAoQoOdYEeOqBOMhgDlycQ" name="PlannedEncounter2">
     <ownedComment xmi:id="_3E6nQOdXEeOqBOMhgDlycQ">
@@ -3542,4 +3526,16 @@ The plan may also indicate that patient education will be provided.</body>
     <ruleId>CONF:1098-32887</ruleId>
     <ruleId>CONF:1098-32888</ruleId>
   </CDA:AssociationValidation>
+  <CDA:ValueSetConstraint xmi:id="_r7UH0MQdEeSt_63yiINGSw" base_Property="_r7TgwMQdEeSt_63yiINGSw" message="">
+    <reference href="../consol-vocab.uml#_sJV7YY3PEeOB0eBUISUB4Q"/>
+    <ruleId>CONF:1098-8539</ruleId>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_Dd1tQMQ6EeSt_63yiINGSw" memberEnd="_Dd0fIMQ6EeSt_63yiINGSw _Dd1tQcQ6EeSt_63yiINGSw">
+    <ownedEnd xmi:id="_Dd1tQcQ6EeSt_63yiINGSw" type="_lLnRMOaYEeOmzetP5oaH3A" association="_Dd1tQMQ6EeSt_63yiINGSw"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_IvraUMQ6EeSt_63yiINGSw" severity="INFO" base_Association="_Dd1tQMQ6EeSt_63yiINGSw" typeCode="REFR">
+    <ruleId>CONF:1098-31067</ruleId>
+    <ruleId>CONF:1098-31068</ruleId>
+    <ruleId>CONF:1098-31069</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>
