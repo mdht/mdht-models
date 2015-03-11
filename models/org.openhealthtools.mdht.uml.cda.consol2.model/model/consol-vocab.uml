@@ -148,7 +148,7 @@
       <ownedLiteral xmi:id="_kkTXEBMsEeK4go_VqYg1Bw" name="C38312"/>
       <ownedLiteral xmi:id="_kkTXEhMsEeK4go_VqYg1Bw" name="C38271"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H3H8RSVEeGGzu7fmW9pXw" name="Body Site Value Set"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H3H8RSVEeGGzu7fmW9pXw" name="Body Site"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H49IBSVEeGGzu7fmW9pXw" name="Medication Product Form Value Set">
       <ownedLiteral xmi:id="_iqQsQRMsEeK4go_VqYg1Bw" name="C42887"/>
       <ownedLiteral xmi:id="_iqRTURMsEeK4go_VqYg1Bw" name="C42888"/>
@@ -1618,14 +1618,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_t8c_EOZ0EeO97uF_XMEmeg" name="Clinical Substance"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_eLcPcOdbEeOqBOMhgDlycQ" name="Encounter Planned or Requested">
-      <ownedComment xmi:id="_sDkc4OdbEeOqBOMhgDlycQ">
-        <body>A value set of SNOMED-CT codes descending from  &quot;308335008&quot; patient encounter procedure (procedure).&#xD;
-&#xD;
-Specific URL Pending&#xD;
-Valueset Source: http://vtsl.vetmed.vt.edu/</body>
-      </ownedComment>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_eLcPcOdbEeOqBOMhgDlycQ" name="Encounter Planned"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_hO2TUPMSEeOrR8IF-aqVyQ" name="Substance-Reactant for Intolerance">
       <ownedComment xmi:id="_x9HncPMSEeOrR8IF-aqVyQ">
         <body>A substance or other type of agent (eg. Sunshine) that may be associated with an intolerance reaction event or a propensity to such an event. These concepts are expected to be at a more general level of abstraction (ingredients versus more specific formulations). This value set is quite general and includes concepts that may never cause an adverse event, particularly the included SNOMED CT concepts. The code system-specific value sets in this grouping value set are intended to provide broad coverage of all kinds of agents, but the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and drawn from the available code systems in the following priority order: NDFRT, then RXNORM, then UNII, then SNOMEDCT. This overarching grouping value set is intended to support identification of drug classes, individual medication ingredients, foods, general substances and environmental entities.  &#xD;
@@ -1681,6 +1674,22 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dy6PgMNpEeSRNKqIviDQAg" name="Medication Fill Status">
       <ownedLiteral xmi:id="_dy6PgcNpEeSRNKqIviDQAg" name="aborted"/>
       <ownedLiteral xmi:id="_dy6PgsNpEeSRNKqIviDQAg" name="completed"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_j7zfUMapEeSY-qHOFt9wVQ" name="Planned moodCode (SubstanceAdministration/Supply)">
+      <ownedComment xmi:id="_j7zfUcapEeSY-qHOFt9wVQ">
+        <body>These value set is used to restrict the moodCode on a substance administration or a supply to future moods.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_j7zfUsapEeSY-qHOFt9wVQ" name="INT"/>
+      <ownedLiteral xmi:id="_j7zfU8apEeSY-qHOFt9wVQ" name="PRMS"/>
+      <ownedLiteral xmi:id="_j7zfVMapEeSY-qHOFt9wVQ" name="PRP"/>
+      <ownedLiteral xmi:id="_j7zfVcapEeSY-qHOFt9wVQ" name="RQO"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SbIXQMdAEeShCO0Pdt1H3g" name="Planned moodCode (Observation)">
+      <ownedLiteral xmi:id="_SbIXQcdAEeShCO0Pdt1H3g" name="INT"/>
+      <ownedLiteral xmi:id="_SbIXQsdAEeShCO0Pdt1H3g" name="GOL"/>
+      <ownedLiteral xmi:id="_SbIXQ8dAEeShCO0Pdt1H3g" name="PRMS"/>
+      <ownedLiteral xmi:id="_SbIXRMdAEeShCO0Pdt1H3g" name="PRP"/>
+      <ownedLiteral xmi:id="_SbIXRcdAEeShCO0Pdt1H3g" name="RQO"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -3164,7 +3173,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_t8fbUOZ0EeO97uF_XMEmeg" identifier="2.16.840.1.113762.1.4.1010.2" source="https://vsac.nlm.nih.gov/" definition="All substances that may need to be represented in the context of health care related activities.  This value set is quite broad in coverage and includes concepts that may never be needed in a health care activity event, particularly the included SNOMED CT concepts. The code system-specific value sets in this grouping value set are intended to provide broad coverage of all kinds of agents, but the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and drawn from the appropriate code system as noted: prescribable medications should use RXNORM concepts, more specific drugs and chemicals should be represented using UNII concepts, and any substances not found in either of those two code systems, should use the appropriate SNOMED CT concept. This overarching grouping value set is intended to support identification of prescribable medications, foods, general substances and environmental entities.  &#xA;Value set intensionally defined as a GROUPING made up of: Value Set: Medication Clinical Drug (2.16.840.1.113762.1.4.1010.4) (RxNorm generic and brand codes); Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT codes)." binding="Dynamic" base_Enumeration="_t8c_EOZ0EeO97uF_XMEmeg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_eLc2gOdbEeOqBOMhgDlycQ" identifier="2.16.840.1.113883.11.20.9.52" base_Enumeration="_eLcPcOdbEeOqBOMhgDlycQ">
+  <term:ValueSetVersion xmi:id="_eLc2gOdbEeOqBOMhgDlycQ" identifier="2.16.840.1.113883.11.20.9.52" source="http://vtsl.vetmed.vt.edu/TerminologyMgt/RF2Browser/ISA.cfm?SCT_ConceptID=308335008" definition="A value set of SNOMED-CT codes descending from  &quot;308335008&quot; patient encounter procedure (procedure)." binding="Dynamic" base_Enumeration="_eLcPcOdbEeOqBOMhgDlycQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_ihf28fJiEeO2NaSiicarcg" conceptName="Household, family and support network detail (observable entity)" base_EnumerationLiteral="_ihf28PJiEeO2NaSiicarcg"/>
@@ -3229,4 +3238,19 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_dy62kcNpEeSRNKqIviDQAg" conceptName="Aborted" usageNote="ActStatus" base_EnumerationLiteral="_dy6PgcNpEeSRNKqIviDQAg"/>
   <term:ValueSetCode xmi:id="_dy62ksNpEeSRNKqIviDQAg" conceptName="Completed" usageNote="ActStatus" base_EnumerationLiteral="_dy6PgsNpEeSRNKqIviDQAg"/>
+  <term:ValueSetVersion xmi:id="_j7zfVsapEeSY-qHOFt9wVQ" identifier="2.16.840.1.113883.11.20.9.24" version="2011-09-30" fullName="Planned moodCode (SubstanceAdministration/Supply)" base_Enumeration="_j7zfUMapEeSY-qHOFt9wVQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_j7zfV8apEeSY-qHOFt9wVQ" conceptName="Intent" base_EnumerationLiteral="_j7zfUsapEeSY-qHOFt9wVQ"/>
+  <term:ValueSetCode xmi:id="_j7zfWMapEeSY-qHOFt9wVQ" conceptName="Promise" base_EnumerationLiteral="_j7zfU8apEeSY-qHOFt9wVQ"/>
+  <term:ValueSetCode xmi:id="_j7zfWcapEeSY-qHOFt9wVQ" conceptName="Proposal" base_EnumerationLiteral="_j7zfVMapEeSY-qHOFt9wVQ"/>
+  <term:ValueSetCode xmi:id="_j7zfWsapEeSY-qHOFt9wVQ" conceptName="Request" base_EnumerationLiteral="_j7zfVcapEeSY-qHOFt9wVQ"/>
+  <term:ValueSetVersion xmi:id="_SbIXRsdAEeShCO0Pdt1H3g" identifier="2.16.840.1.113883.11.20.9.25" version="2011-09-30" source="http://www.hl7.org" definition="This value set is used to restrict the moodCode on an to future moods." base_Enumeration="_SbIXQMdAEeShCO0Pdt1H3g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_SbIXR8dAEeShCO0Pdt1H3g" conceptName="Intent" base_EnumerationLiteral="_SbIXQcdAEeShCO0Pdt1H3g"/>
+  <term:ValueSetCode xmi:id="_SbIXSMdAEeShCO0Pdt1H3g" conceptName="Goal" base_EnumerationLiteral="_SbIXQsdAEeShCO0Pdt1H3g"/>
+  <term:ValueSetCode xmi:id="_SbIXScdAEeShCO0Pdt1H3g" conceptName="Promise" base_EnumerationLiteral="_SbIXQ8dAEeShCO0Pdt1H3g"/>
+  <term:ValueSetCode xmi:id="_SbIXSsdAEeShCO0Pdt1H3g" conceptName="Proposal" base_EnumerationLiteral="_SbIXRMdAEeShCO0Pdt1H3g"/>
+  <term:ValueSetCode xmi:id="_SbIXS8dAEeShCO0Pdt1H3g" conceptName="Request" base_EnumerationLiteral="_SbIXRcdAEeShCO0Pdt1H3g"/>
 </xmi:XMI>
