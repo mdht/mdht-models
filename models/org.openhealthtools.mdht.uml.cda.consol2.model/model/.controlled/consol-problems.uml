@@ -208,9 +208,11 @@ historical purposes.&#xD;
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2E0bAhSVEeGGzu7fmW9pXw" base_Property="_2E0bABSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9057</ruleId>
+    <ruleId>R2.0=CONF:1098-9057</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2E1CEBSVEeGGzu7fmW9pXw" base_Property="_2E0bAxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9072</ruleId>
+    <ruleId>R2.0=CONF:1098-9072</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2E1CEhSVEeGGzu7fmW9pXw" code="11323-3" displayName="Health status" base_Property="_2E1CERSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -226,6 +228,7 @@ historical purposes.&#xD;
   <CDA:ValueSetConstraint xmi:id="_2Eyl0BSVEeGGzu7fmW9pXw" base_Property="_2ExXuBSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_MTK-YeJsEeG3cO7ebC3QuA"/>
     <ruleId>CONF:9075</ruleId>
+    <ruleId>R2.0=CONF:1098-9075</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CDATemplate xmi:id="_p4UDcBnbEeGs5a462vYX5Q" base_Class="_2ExXsBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.5">
     <ruleId>CONF:16756</ruleId>
@@ -977,26 +980,65 @@ The effectiveTime represents the clinically relevant time of the observation. Th
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_DMvdYOEFEeOmBMTtnrPqww" clientDependency="_ItZpkOEFEeOmBMTtnrPqww" name="HealthStatusObservation2">
     <ownedComment xmi:id="_3pdyAOEFEeOmBMTtnrPqww">
-      <body>This template represents  information about the overall health status of the patient. To represent the impact of a specific problem or concern related to the patient's expected health outcome use the Prognosis Observation Template 2.16.840.1.113883.10.20.22.4.113.</body>
+      <body>This template represents information about the overall health status of the patient. To represent the impact of a specific problem or concern related to the patient's expected health outcome use the Prognosis Observation template 2.16.840.1.113883.10.20.22.4.113.</body>
     </ownedComment>
+    <ownedRule xmi:id="_RGF6oMEkEeSjB6vMjDsL5Q" name="hasTextReference">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_RGF6ocEkEeSjB6vMjDsL5Q">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_UJBgIMEkEeSjB6vMjDsL5Q" name="textReferenceValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UJBgIcEkEeSjB6vMjDsL5Q">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_YgU3kMEkEeSjB6vMjDsL5Q" name="hasTextReferenceValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YgU3kcEkEeSjB6vMjDsL5Q">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_DMwEcOEFEeOmBMTtnrPqww" general="_2ExXsBSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_ItZpkOEFEeOmBMTtnrPqww" name="HealthStatusObservation" client="_DMvdYOEFEeOmBMTtnrPqww" supplier="_2ExXsBSVEeGGzu7fmW9pXw" contract="_2ExXsBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_Zob5sMElEeSjB6vMjDsL5Q" name="id" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d4s1AcElEeSjB6vMjDsL5Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d4s1AMElEeSjB6vMjDsL5Q" value="*"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_gszMgOEGEeOmBMTtnrPqww" name="code" visibility="private" redefinedProperty="_2E1CERSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_mEZ9EMEjEeSjB6vMjDsL5Q" name="text" visibility="private" aggregation="composite" redefinedProperty="_2ExXtRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mEZ9EcEjEeSjB6vMjDsL5Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mEZ9EsEjEeSjB6vMjDsL5Q" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Voy-4MEmEeSjB6vMjDsL5Q" name="statusCode" visibility="private" redefinedProperty="_2E23QBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:ConformsTo xmi:id="_JanU4OEFEeOmBMTtnrPqww" base_Generalization="_DMwEcOEFEeOmBMTtnrPqww"/>
   <CDA:CDATemplate xmi:id="_QRxZ8OEFEeOmBMTtnrPqww" base_Class="_DMvdYOEFEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.5" templateVersion="2014-06-09">
-    <ruleId>CONF:16756</ruleId>
-    <ruleId>CONF:16757</ruleId>
+    <ruleId>CONF:1098-16756</ruleId>
+    <ruleId>CONF:1098-16757</ruleId>
+    <ruleId>CONF:1098-32558</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_gszzkOEGEeOmBMTtnrPqww" code="11323-3" displayName="Health status" base_Property="_gszMgOEGEeOmBMTtnrPqww">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:19144</ruleId>
-    <ruleId>CONF:32161</ruleId>
+    <ruleId>CONF:1098-19144</ruleId>
+    <ruleId>CONF:1098-32161</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_ia8wYOEGEeOmBMTtnrPqww" base_Property="_gszMgOEGEeOmBMTtnrPqww">
-    <ruleId>CONF:19143</ruleId>
+    <ruleId>CONF:1098-19143</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_y5C8IOzbEeOnE-G4kptBiw" clientDependency="_SmciAOzcEeOnE-G4kptBiw" name="ProblemConcernAct2">
     <ownedComment xmi:id="_-7idoOzbEeOnE-G4kptBiw">
@@ -1416,5 +1458,15 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_1Wtw0KcJEeSFQp5MpGZ8qw" severity="INFO" base_Property="_ybG7UKcJEeSFQp5MpGZ8qw">
     <ruleId>CONF:1098-32864</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_dGLy8MElEeSjB6vMjDsL5Q" base_Property="_Zob5sMElEeSjB6vMjDsL5Q">
+    <ruleId>CONF:1098-32486</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_Vo2CMMEmEeSjB6vMjDsL5Q" code="completed" displayName="Completed" base_Property="_Voy-4MEmEeSjB6vMjDsL5Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-19103</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_W-iCwMEmEeSjB6vMjDsL5Q" base_Property="_Voy-4MEmEeSjB6vMjDsL5Q">
+    <ruleId>CONF:1098-9074</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>
