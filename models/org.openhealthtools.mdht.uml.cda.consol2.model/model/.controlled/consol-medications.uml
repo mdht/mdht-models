@@ -390,10 +390,6 @@ Medication timing is complex. This template requires that there be a substanceAd
     <ruleId>CONF:7518</ruleId>
     <ruleId>R2.0=CONF:1098-7518</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2GLF4BSVEeGGzu7fmW9pXw" base_Property="_2GHbxhSVEeGGzu7fmW9pXw" severity="INFO">
-    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:7519</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_2G10RRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2G10QxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7522</ruleId>
     <ruleId>R2.0=CONF:1098-7522</ruleId>
@@ -2677,4 +2673,9 @@ This section requires either an entry indicating the subject is not known to be 
     <ruleId>CONF:1098-8752</ruleId>
     <ruleId>CONF:1098-15900</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_07H3UMhCEeSU-Km0iFeHDg" severity="INFO" base_Property="_2GHbxhSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_JAJr4MhDEeSU-Km0iFeHDg" base_Property="_2GHbxhSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7519</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

@@ -383,10 +383,6 @@ Medication timing is complex. This template requires that there be a substanceAd
   <CDA:PropertyValidation xmi:id="_2GLs8BSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbyhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7518</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2GLF4BSVEeGGzu7fmW9pXw" base_Property="_2GHbxhSVEeGGzu7fmW9pXw" severity="INFO">
-    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:7519</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_2G10RRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2G10QxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7522</ruleId>
   </CDA:AssociationValidation>
@@ -1434,4 +1430,9 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:AssociationValidation xmi:id="_CIz4gGYKEeSEPIr_Fd4TVg" base_Association="_AW-HcGYKEeSEPIr_Fd4TVg">
     <ruleId>CONF:16092</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_ijQdQMhEEeSU-Km0iFeHDg" severity="INFO" base_Property="_2GHbxhSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_jR-kcMhEEeSU-Km0iFeHDg" base_Property="_2GHbxhSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7519</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
