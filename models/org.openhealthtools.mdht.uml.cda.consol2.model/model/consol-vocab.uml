@@ -911,7 +911,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_aDpH0RJbEeKjxqZmTX2rRQ" name="STD"/>
       <ownedLiteral xmi:id="_aDpH0xJbEeKjxqZmTX2rRQ" name="UNDWRT"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_pWcQEF_lEeGt2doqSDULjA" name="Coverage Role Type Value Set">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_pWcQEF_lEeGt2doqSDULjA" name="Coverage Role Type">
       <ownedLiteral xmi:id="_KSQw4F_mEeGt2doqSDULjA" name="FAMDEP"/>
       <ownedLiteral xmi:id="_SFsQ8F_mEeGt2doqSDULjA" name="FSTUD"/>
       <ownedLiteral xmi:id="_UxOqIF_mEeGt2doqSDULjA" name="HANDIC"/>
