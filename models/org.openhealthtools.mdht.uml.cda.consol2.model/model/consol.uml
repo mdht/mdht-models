@@ -1871,17 +1871,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_40SJMPDFEeOKPKE9au0oug"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#__YbWMPDGEeOKPKE9au0oug"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_5Y9xUPDKEeOKPKE9au0oug"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_UxJqcPDLEeOKPKE9au0oug"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_p3bOsPDNEeOKPKE9au0oug">
-      <memberEnd href=".controlled/consol-problems.uml#_p3ZZgPDNEeOKPKE9au0oug"/>
-      <memberEnd href="#_p3bOsfDNEeOKPKE9au0oug"/>
-      <ownedEnd xmi:id="_p3bOsfDNEeOKPKE9au0oug" association="_p3bOsPDNEeOKPKE9au0oug">
-        <type xmi:type="uml:Class" href=".controlled/consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_OWS_gPDOEeOKPKE9au0oug">
       <memberEnd href=".controlled/consol-problems.uml#_OWRKUPDOEeOKPKE9au0oug"/>
       <memberEnd href="#_OWS_gfDOEeOKPKE9au0oug"/>
@@ -2615,6 +2607,35 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Dd1tQMQ6EeSt_63yiINGSw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_vaxzIMagEeSY-qHOFt9wVQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_2nYMYMdTEeShCO0Pdt1H3g"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QxdF4MnAEeSr1c1X9ACWbg">
+      <memberEnd href=".controlled/consol-problems.uml#_Qxb3wMnAEeSr1c1X9ACWbg"/>
+      <memberEnd href="#_Qxds8MnAEeSr1c1X9ACWbg"/>
+      <ownedEnd xmi:id="_Qxds8MnAEeSr1c1X9ACWbg" association="_QxdF4MnAEeSr1c1X9ACWbg">
+        <type xmi:type="uml:Class" href=".controlled/consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_O-xbwMnKEeSr1c1X9ACWbg">
+      <memberEnd href=".controlled/consol-procedures.uml#_O-u_gMnKEeSr1c1X9ACWbg"/>
+      <memberEnd href="#_O-yC0MnKEeSr1c1X9ACWbg"/>
+      <ownedEnd xmi:id="_O-yC0MnKEeSr1c1X9ACWbg" association="_O-xbwMnKEeSr1c1X9ACWbg">
+        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_CFMuYPDbEeOKPKE9au0oug"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qbOJ0MnKEeSr1c1X9ACWbg">
+      <memberEnd href=".controlled/consol-procedures.uml#_qbM7sMnKEeSr1c1X9ACWbg"/>
+      <memberEnd href="#_qbOJ0cnKEeSr1c1X9ACWbg"/>
+      <ownedEnd xmi:id="_qbOJ0cnKEeSr1c1X9ACWbg" association="_qbOJ0MnKEeSr1c1X9ACWbg">
+        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_chMe8MnKEeSr1c1X9ACWbg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NHX_0MnLEeSr1c1X9ACWbg">
+      <memberEnd href=".controlled/consol-procedures.uml#_NHWxsMnLEeSr1c1X9ACWbg"/>
+      <memberEnd href="#_NHX_0cnLEeSr1c1X9ACWbg"/>
+      <ownedEnd xmi:id="_NHX_0cnLEeSr1c1X9ACWbg" association="_NHX_0MnLEeSr1c1X9ACWbg">
+        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_61p78MnKEeSr1c1X9ACWbg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_56Cy0MnLEeSr1c1X9ACWbg"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
@@ -2845,8 +2866,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_RusKgBxsEeGXP8PxDYviDg" severity="INFO">
     <ruleId>CONF:8311</ruleId>
-    <ruleId>CONF:8312</ruleId>
     <ruleId>CONF:15599</ruleId>
+    <ruleId>R2.0=CONF:1098-8311</ruleId>
+    <ruleId>R2.0=CONF:1098-15599</ruleId>
     <base_Association href=".controlled/consol-procedures.uml#_OymM0BxsEeGXP8PxDYviDg"/>
   </CDA:AssociationValidation>
   <CDA:EntryRelationship xmi:id="_GmgfsBxtEeGXP8PxDYviDg" severity="INFO" typeCode="SUBJ">
@@ -4301,5 +4323,19 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_AThxoK12EeS-n_bBhdNjYg" base_Association="_AThKkK12EeS-n_bBhdNjYg">
     <ruleId>CONF:1098-8726</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:EntryRelationship xmi:id="_Qxds8cnAEeSr1c1X9ACWbg" severity="INFO" base_Association="_QxdF4MnAEeSr1c1X9ACWbg" typeCode="REFR">
+    <ruleId>CONF:1098-9063</ruleId>
+    <ruleId>CONF:1098-9068</ruleId>
+    <ruleId>CONF:1098-15591</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:AssociationValidation xmi:id="_O-yC0cnKEeSr1c1X9ACWbg" severity="WARNING" base_Association="_O-xbwMnKEeSr1c1X9ACWbg">
+    <ruleId>CONF:1098-8301</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_qbOJ0snKEeSr1c1X9ACWbg" base_Association="_qbOJ0MnKEeSr1c1X9ACWbg">
+    <ruleId>CONF:1098-8302</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_NHYm4MnLEeSr1c1X9ACWbg" severity="WARNING" base_Association="_NHX_0MnLEeSr1c1X9ACWbg">
+    <ruleId>CONF:1098-8306</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>

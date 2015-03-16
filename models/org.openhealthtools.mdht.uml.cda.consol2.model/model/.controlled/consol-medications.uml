@@ -2574,13 +2574,11 @@ This section requires either an entry indicating the subject is not known to be 
   <CDA:CDATemplate xmi:id="_jmRN4DhDEeS1WeMhbm6GZw" base_Class="_XA96QDhDEeS1WeMhbm6GZw" templateId="2.16.840.1.113883.10.20.22.4.25" templateVersion="2014-06-09">
     <ruleId>CONF:1098-7372</ruleId>
     <ruleId>CONF:1098-10517</ruleId>
+    <ruleId>CONF:1098-32603</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_7OGa0DhDEeS1WeMhbm6GZw" base_Generalization="_XA-hUDhDEeS1WeMhbm6GZw"/>
   <CDA:PropertyValidation xmi:id="_KDeTozhEEeS1WeMhbm6GZw" base_Property="_KDeToDhEEeS1WeMhbm6GZw">
     <ruleId>CONF:1098-32396</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_vHbugDhEEeS1WeMhbm6GZw" severity="INFO" base_Property="_vHbHcDhEEeS1WeMhbm6GZw">
-    <ruleId>CONF:1098-7373</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2fqgUzhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw"/>
   <CDA:ValueSetConstraint xmi:id="_7o8uUDhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw">
