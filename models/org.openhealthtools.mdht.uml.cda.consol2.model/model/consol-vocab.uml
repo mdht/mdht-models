@@ -911,7 +911,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_aDpH0RJbEeKjxqZmTX2rRQ" name="STD"/>
       <ownedLiteral xmi:id="_aDpH0xJbEeKjxqZmTX2rRQ" name="UNDWRT"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_pWcQEF_lEeGt2doqSDULjA" name="Coverage Role Type Value Set">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_pWcQEF_lEeGt2doqSDULjA" name="Coverage Role Type">
       <ownedLiteral xmi:id="_KSQw4F_mEeGt2doqSDULjA" name="FAMDEP"/>
       <ownedLiteral xmi:id="_SFsQ8F_mEeGt2doqSDULjA" name="FSTUD"/>
       <ownedLiteral xmi:id="_UxOqIF_mEeGt2doqSDULjA" name="HANDIC"/>
@@ -1691,6 +1691,21 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_SbIXRMdAEeShCO0Pdt1H3g" name="PRP"/>
       <ownedLiteral xmi:id="_SbIXRcdAEeShCO0Pdt1H3g" name="RQO"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SZOJMMmlEeSr1c1X9ACWbg" name="ProblemAct statusCode">
+      <ownedComment xmi:id="_SZOJMcmlEeSr1c1X9ACWbg">
+        <body>This value set indicates the status of the problem concern act.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_SZOJMsmlEeSr1c1X9ACWbg" name="active"/>
+      <ownedLiteral xmi:id="_SZOJM8mlEeSr1c1X9ACWbg" name="suspended"/>
+      <ownedLiteral xmi:id="_SZOJNMmlEeSr1c1X9ACWbg" name="aborted"/>
+      <ownedLiteral xmi:id="_SZOJNcmlEeSr1c1X9ACWbg" name="completed"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_QKWwAMnIEeSr1c1X9ACWbg" name="ProcedureAct statusCode">
+      <ownedLiteral xmi:id="_QKWwAcnIEeSr1c1X9ACWbg" name="completed"/>
+      <ownedLiteral xmi:id="_QKWwAsnIEeSr1c1X9ACWbg" name="active"/>
+      <ownedLiteral xmi:id="_QKWwA8nIEeSr1c1X9ACWbg" name="aborted"/>
+      <ownedLiteral xmi:id="_QKWwBMnIEeSr1c1X9ACWbg" name="cancelled"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -2044,7 +2059,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_HJGcsGibEeGYO5jeo5rr2w" conceptName="religious objection" base_EnumerationLiteral="_4WPsZmiaEeGYO5jeo5rr2w"/>
   <term:ValueSetCode xmi:id="_IYx74GibEeGYO5jeo5rr2w" conceptName="vaccine efficacy concerns" base_EnumerationLiteral="_4WPsZ2iaEeGYO5jeo5rr2w"/>
   <term:ValueSetCode xmi:id="_JOteUGibEeGYO5jeo5rr2w" conceptName="vaccine safety concerns" base_EnumerationLiteral="_4WPsaGiaEeGYO5jeo5rr2w"/>
-  <term:ValueSetVersion xmi:id="_I5UjIG07EeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.16866" base_Enumeration="_I3CEIG07EeGCevFpokwODw">
+  <term:ValueSetVersion xmi:id="_I5UjIG07EeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.16866" binding="Dynamic" base_Enumeration="_I3CEIG07EeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_FTjLUGPwEeGskvPNzg7rUw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2dlRgG1DEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.63" fullName="CountryValueSet" binding="Dynamic" base_Enumeration="_2dkqcG1DEeGCevFpokwODw">
@@ -3253,4 +3268,18 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_SbIXScdAEeShCO0Pdt1H3g" conceptName="Promise" base_EnumerationLiteral="_SbIXQ8dAEeShCO0Pdt1H3g"/>
   <term:ValueSetCode xmi:id="_SbIXSsdAEeShCO0Pdt1H3g" conceptName="Proposal" base_EnumerationLiteral="_SbIXRMdAEeShCO0Pdt1H3g"/>
   <term:ValueSetCode xmi:id="_SbIXS8dAEeShCO0Pdt1H3g" conceptName="Request" base_EnumerationLiteral="_SbIXRcdAEeShCO0Pdt1H3g"/>
+  <term:ValueSetVersion xmi:id="_SZOJNsmlEeSr1c1X9ACWbg" identifier="2.16.840.1.113883.11.20.9.19" version="2011-09-10" source="http://www.hl7.org" definition="A ValueSet of HL7 actStatus codes for use with a procedure activity" base_Enumeration="_SZOJMMmlEeSr1c1X9ACWbg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_SZOJN8mlEeSr1c1X9ACWbg" conceptName="Active" usageNote="A concern that is still being tracked." base_EnumerationLiteral="_SZOJMsmlEeSr1c1X9ACWbg"/>
+  <term:ValueSetCode xmi:id="_SZOJOMmlEeSr1c1X9ACWbg" conceptName="Suspended" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved." base_EnumerationLiteral="_SZOJM8mlEeSr1c1X9ACWbg"/>
+  <term:ValueSetCode xmi:id="_SZOJOcmlEeSr1c1X9ACWbg" conceptName="Aborted" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice." base_EnumerationLiteral="_SZOJNMmlEeSr1c1X9ACWbg"/>
+  <term:ValueSetCode xmi:id="_SZOJOsmlEeSr1c1X9ACWbg" conceptName="Completed" usageNote="The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for historical purposes." base_EnumerationLiteral="_SZOJNcmlEeSr1c1X9ACWbg"/>
+  <term:ValueSetVersion xmi:id="_QKXXEMnIEeSr1c1X9ACWbg" identifier="2.16.840.1.113883.11.20.9.22" version="2014-04-23" definition="A ValueSet of HL7 actStatus codes for use with a procedure activity" base_Enumeration="_QKWwAMnIEeSr1c1X9ACWbg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_QKXXEcnIEeSr1c1X9ACWbg" conceptName="Completed" base_EnumerationLiteral="_QKWwAcnIEeSr1c1X9ACWbg"/>
+  <term:ValueSetCode xmi:id="_QKXXEsnIEeSr1c1X9ACWbg" conceptName="Active" base_EnumerationLiteral="_QKWwAsnIEeSr1c1X9ACWbg"/>
+  <term:ValueSetCode xmi:id="_QKXXE8nIEeSr1c1X9ACWbg" conceptName="Aborted" base_EnumerationLiteral="_QKWwA8nIEeSr1c1X9ACWbg"/>
+  <term:ValueSetCode xmi:id="_QKXXFMnIEeSr1c1X9ACWbg" conceptName="Cancelled" base_EnumerationLiteral="_QKWwBMnIEeSr1c1X9ACWbg"/>
 </xmi:XMI>
