@@ -139,6 +139,7 @@
   <CDA:ConstraintValidation xmi:id="_2Jii8BSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:PropertyValidation xmi:id="_2JSrVBSVEeGGzu7fmW9pXw" base_Property="_2JSrURSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8551</ruleId>
+    <ruleId>R2.0=CONF:1098-8551</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2JPoABSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8558</ruleId>
@@ -211,9 +212,11 @@
   <CDA:PropertyValidation xmi:id="_2N6suRSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_fX96MBrYEeGJ_KU17uNyeA" base_Property="_2JSEQBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8548</ruleId>
+    <ruleId>R2.0=CONF:1098-8548</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_EqeHYBrZEeGJ_KU17uNyeA" base_Property="_2JSEQhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8549</ruleId>
+    <ruleId>R2.0=CONF:1098-8549</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_v5G0cBrcEeGJ_KU17uNyeA" base_Property="_2N6svBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:451</ruleId>
@@ -233,9 +236,11 @@
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_oW16cBtsEeGT89b80j3MTg" severity="WARNING" base_Constraint="_L9YKgBtsEeGT89b80j3MTg">
     <ruleId>CONF:8893</ruleId>
+    <ruleId>R2.0=CONF:1098-19221</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_BbV5sBttEeGT89b80j3MTg" severity="WARNING" base_Constraint="_4G8WIBtsEeGT89b80j3MTg">
     <ruleId>CONF:8894</ruleId>
+    <ruleId>R2.0=CONF:1098-19222</ruleId>
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_vBswQBtpEeGT89b80j3MTg" name="EstimatedDateOfDelivery">
     <ownedComment xmi:id="_rEXPUDyXEeGOm9opnDhYAQ">
@@ -298,6 +303,7 @@
   </uml:Association>
   <CDA:ConstraintValidation xmi:id="_p6vxUDyWEeGOm9opnDhYAQ" base_Constraint="_O-ANcBttEeGT89b80j3MTg">
     <ruleId>CONF:8895</ruleId>
+    <ruleId>R2.0=CONF:1098-19224</ruleId>
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_gIH_QOWQEeGKmvzED_He2w" name="TobaccoUse">
     <ownedComment xmi:id="_v5_OIOWTEeGKmvzED_He2w">
@@ -958,31 +964,42 @@ If the patient's current smoking status is unknown, the value element must be po
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_b_iGIPJfEeO2NaSiicarcg" clientDependency="_IeHfgPJgEeO2NaSiicarcg" name="SocialHistoryObservation2">
     <ownedComment xmi:id="_vZHxAPJfEeO2NaSiicarcg">
-      <body>This template represents a patient's occupations, lifestyle, and environmental health risk factors. Demographic data (e.g. marital status, race, ethnicity, religious affiliation) is captured in the header.</body>
+      <body>This template represents a patient's occupations, lifestyle, and environmental health risk factors. Demographic data (e.g., marital status, race, ethnicity, religious affiliation) are captured in the header. Though tobacco use and exposure may be represented with a Social History Observation, it is recommended to use the Current Smoking Status template or the Tobacco Use template instead, to represent smoking or tobacco habits.</body>
     </ownedComment>
     <ownedRule xmi:id="_xjQ34PJgEeO2NaSiicarcg" name="ifObsValueIsPQUnitIsUCUM">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_xjQ34fJgEeO2NaSiicarcg">
         <language>Analysis</language>
-        <body>If Observation/value is a physical quantity, the unit of measure SHALL be expressed using a valid Unified Code for Units of Measure (UCUM) expression</body>
+        <body>If Observation/value is a physical quantity (xsi:type=&quot;PQ&quot;), the unit of measure SHALL be selected from ValueSet UnitsOfMeasureCaseSensitive (2.16.840.1.113883.1.11.12839) DYNAMIC</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_eB5qUM3IEeSEZ8MJJ3ZzLg" name="referenceAttribute" constrainedElement="_b_iGIPJfEeO2NaSiicarcg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ry-0kM3IEeSEZ8MJJ3ZzLg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>The originalText, if present, SHOULD contain zero or one [0..1] reference</body>
+        <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_b_iGIfJfEeO2NaSiicarcg" general="_2JOZ4BSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_IeHfgPJgEeO2NaSiicarcg" name="SocialHistoryObservation" client="_b_iGIPJfEeO2NaSiicarcg" supplier="_2JOZ4BSVEeGGzu7fmW9pXw" contract="_2JOZ4BSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="_f0hlQPJgEeO2NaSiicarcg" name="value" visibility="private" aggregation="composite" redefinedProperty="_2JUggBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f0hlQvJgEeO2NaSiicarcg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f0hlQfJgEeO2NaSiicarcg" value="1"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_YzlcoPJhEeO2NaSiicarcg" name="code" visibility="private" aggregation="composite" redefinedProperty="_2JOZ4hSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dHC14fJhEeO2NaSiicarcg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dHC14PJhEeO2NaSiicarcg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_3Dg4MM3JEeSEZ8MJJ3ZzLg" name="statusCode" visibility="private" redefinedProperty="_2JTSYBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_VH7i4PJkEeO2NaSiicarcg" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-b18PJkEeO2NaSiicarcg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-bO4PJkEeO2NaSiicarcg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_f0hlQPJgEeO2NaSiicarcg" name="value" visibility="private" aggregation="composite" redefinedProperty="_2JUggBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f0hlQvJgEeO2NaSiicarcg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f0hlQfJgEeO2NaSiicarcg" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_1NpiIPJkEeO2NaSiicarcg" name="authorParticipation" association="_1NrXUPJkEeO2NaSiicarcg">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
@@ -991,29 +1008,26 @@ If the patient's current smoking status is unknown, the value element must be po
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_xXkasPJfEeO2NaSiicarcg" base_Class="_b_iGIPJfEeO2NaSiicarcg" templateId="2.16.840.1.113883.10.20.22.4.38" templateVersion="2014-06-09">
-    <ruleId>CONF:8550</ruleId>
-    <ruleId>CONF:10526</ruleId>
+    <ruleId>CONF:1098-8550</ruleId>
+    <ruleId>CONF:1098-10526</ruleId>
+    <ruleId>CONF:1098-32495</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_GAuQAPJgEeO2NaSiicarcg" base_Generalization="_b_iGIfJfEeO2NaSiicarcg"/>
   <CDA:PropertyValidation xmi:id="_f0hlQ_JgEeO2NaSiicarcg" severity="WARNING" base_Property="_f0hlQPJgEeO2NaSiicarcg">
-    <ruleId>CONF:8559</ruleId>
+    <ruleId>CONF:1098-8559</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_xjRe8PJgEeO2NaSiicarcg" base_Constraint="_xjQ34PJgEeO2NaSiicarcg">
-    <ruleId>CONF:8555</ruleId>
+    <ruleId>CONF:1098-8555</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_YzmDsPJhEeO2NaSiicarcg" base_Property="_YzlcoPJhEeO2NaSiicarcg"/>
-  <CDA:ValueSetConstraint xmi:id="_YzmDsfJhEeO2NaSiicarcg" base_Property="_YzlcoPJhEeO2NaSiicarcg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2JjKCRSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:8558</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_WZji0PJkEeO2NaSiicarcg" base_Property="_VH7i4PJkEeO2NaSiicarcg">
-    <ruleId>CONF:31868</ruleId>
+    <ruleId>CONF:1098-31868</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_1NrXUPJkEeO2NaSiicarcg" memberEnd="_1NpiIPJkEeO2NaSiicarcg _1NrXUfJkEeO2NaSiicarcg">
     <ownedEnd xmi:id="_1NrXUfJkEeO2NaSiicarcg" type="_b_iGIPJfEeO2NaSiicarcg" association="_1NrXUPJkEeO2NaSiicarcg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_1m03IPJkEeO2NaSiicarcg" severity="WARNING" base_Association="_1NrXUPJkEeO2NaSiicarcg">
-    <ruleId>CONF:31869</ruleId>
+    <ruleId>CONF:1098-31869</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_qHUXwPMxEeOUvapeh9bVvQ" clientDependency="_9Cu44PMxEeOUvapeh9bVvQ" name="TobaccoUse2">
     <ownedComment xmi:id="_y_7XMPMxEeOUvapeh9bVvQ">
@@ -1170,5 +1184,19 @@ The effectiveTime element is used to describe dates associated with the patient'
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_CRSPIKzDEeSB84STE1Ny6A" base_Property="_-9hYUKzCEeSB84STE1Ny6A">
     <ruleId>CONF:1098-32401</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_5sMHcM3FEeSEZ8MJJ3ZzLg" base_Property="_YzlcoPJhEeO2NaSiicarcg" severity="WARNING">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-8558</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_k0VncM3IEeSEZ8MJJ3ZzLg" severity="WARNING" base_Constraint="_eB5qUM3IEeSEZ8MJJ3ZzLg">
+    <ruleId>CONF:1098-19222</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_3DhfQM3JEeSEZ8MJJ3ZzLg" code="completed" base_Property="_3Dg4MM3JEeSEZ8MJJ3ZzLg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-19117</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_5ulXUM3JEeSEZ8MJJ3ZzLg" base_Property="_3Dg4MM3JEeSEZ8MJJ3ZzLg">
+    <ruleId>CONF:1098-8553</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>
