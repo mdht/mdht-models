@@ -212,13 +212,16 @@
   <CDA:ConstraintValidation xmi:id="_2OxoQBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2OxoRhSVEeGGzu7fmW9pXw" base_Property="_2OxoRBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7298</ruleId>
+    <ruleId>R2.0=CONF:1098-7298</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2OxoShSVEeGGzu7fmW9pXw" base_Property="_2OxoRxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7300</ruleId>
+    <ruleId>R2.0=CONF:1098-7300</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" base_Property="_2OrhuBSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7301</ruleId>
+    <ruleId>R2.0=CONF:1098-7301</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2OxoURSVEeGGzu7fmW9pXw" base_Property="_2OxoTRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7304</ruleId>
@@ -231,9 +234,11 @@
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2OxoXRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2OxoWRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7308</ruleId>
+    <ruleId>R2.0=CONF:1098-7308</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2OxoYhSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2OxoXhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7309</ruleId>
+    <ruleId>R2.0=CONF:1098-7309</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_2OlbCRSVEeGGzu7fmW9pXw" name="VitalSignsOrganizer">
     <ownedComment xmi:id="_YFDPQBwiEeG_RY8fzJjtMw">
@@ -329,6 +334,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:CodeSystemConstraint xmi:id="_2OlbJhSVEeGGzu7fmW9pXw" code="completed" base_Property="_2OlbFhSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7284</ruleId>
+    <ruleId>R2.0=CONF:1098-19120</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2OlbJRSVEeGGzu7fmW9pXw" base_Property="_2OlbEhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7288</ruleId>
@@ -349,10 +355,12 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_0NTTYBwiEeG_RY8fzJjtMw" base_Property="_2OxoQhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7297</ruleId>
+    <ruleId>R2.0=CONF:1098-7297</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_7-leYBwiEeG_RY8fzJjtMw" code="completed" base_Property="_2OxoSxSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7303</ruleId>
+    <ruleId>R2.0=CONF:1098-19119</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_uBdeYBwxEeG_RY8fzJjtMw" code="8716-3" displayName="Vital Signs" base_Property="_bRH8uxVeEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -377,12 +385,15 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_AnloAB7PEeGrB4pbKFQ9Sg" base_Property="_2OlbDhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7279</ruleId>
+    <ruleId>R2.0=CONF:1098-7279</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_BBhK8B7PEeGrB4pbKFQ9Sg" base_Property="_2OrhqBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7280</ruleId>
+    <ruleId>R2.0=CONF:1098-7280</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_KLIa0B7PEeGrB4pbKFQ9Sg" base_Property="_2OlbHhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7282</ruleId>
+    <ruleId>R2.0=CONF:1098-7282</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_RYfngOJuEeG3cO7ebC3QuA" base_Property="_bRH8uxVeEeGQCvUGzi1kDQ">
     <ruleId>CONF:15242</ruleId>
@@ -390,9 +401,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:PropertyValidation xmi:id="_cp5DQOJuEeG3cO7ebC3QuA" base_Property="_2OfUexSVEeGGzu7fmW9pXw">
     <ruleId>CONF:15962</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_AVlDoOJvEeG3cO7ebC3QuA" base_Property="_2OrhuBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7301</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_AVlDoOJvEeG3cO7ebC3QuA" base_Property="_2OrhuBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_hH31AOJvEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_X1YV8OJvEeG3cO7ebC3QuA">
     <ruleId>CONF:15943</ruleId>
   </CDA:ConstraintValidation>
@@ -440,10 +449,40 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   </CDA:PropertyValidation>
   <uml:Class xmi:id="__zeTcPM3EeOUvapeh9bVvQ" clientDependency="_agM0wPM4EeOUvapeh9bVvQ" name="VitalSignObservation2">
     <ownedComment xmi:id="_PYxNUPM4EeOUvapeh9bVvQ">
-      <body>Vital signs are represented as other results, with additional vocabulary constraints.</body>
+      <body>This template represents measurement of common vital signs. Vital signs are represented with additional vocabulary constraints for type of vital sign and unit of measure.</body>
     </ownedComment>
+    <ownedRule xmi:id="_finGcM85EeSJsu9BbhWxmQ" name="textReference">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_finGcc85EeSJsu9BbhWxmQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_gt-tYM85EeSJsu9BbhWxmQ" name="referenceValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gt-tYc85EeSJsu9BbhWxmQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_h4JacM85EeSJsu9BbhWxmQ" name="textReferenceValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_h4Jacc85EeSJsu9BbhWxmQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="__ze6gPM3EeOUvapeh9bVvQ" general="_2OrhsRSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_agM0wPM4EeOUvapeh9bVvQ" name="VitalSignObservation" client="__zeTcPM3EeOUvapeh9bVvQ" supplier="_2OrhsRSVEeGGzu7fmW9pXw" contract="_2OrhsRSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_7j7RkM84EeSJsu9BbhWxmQ" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_2OxoTRSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_CrGvoM85EeSJsu9BbhWxmQ"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7j7Rkc84EeSJsu9BbhWxmQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7j7Rks84EeSJsu9BbhWxmQ" value="1"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_qsjuoPM4EeOUvapeh9bVvQ" name="value" visibility="private" type="_vvXhMPM4EeOUvapeh9bVvQ" redefinedProperty="_2OxoUhSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_tt9NoPM5EeOUvapeh9bVvQ" name="authorParticipation" association="_tt_C0PM5EeOUvapeh9bVvQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
@@ -456,11 +495,27 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0--kMfM5EeOUvapeh9bVvQ" value="1"/>
       <association href="../consol.uml#_0-_yUPM5EeOUvapeh9bVvQ"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_Z4Sn8M85EeSJsu9BbhWxmQ" name="text" visibility="private" aggregation="composite" redefinedProperty="_21P6QB0YEeGYy5bW_e08gQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z4Sn8c85EeSJsu9BbhWxmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z4Sn8s85EeSJsu9BbhWxmQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_eEbiIM9CEeSJsu9BbhWxmQ" name="interpretationCode" visibility="private" redefinedProperty="_2OxoVBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eEbiIc9CEeSJsu9BbhWxmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eEbiIs9CEeSJsu9BbhWxmQ" value="1"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_vvXhMPM4EeOUvapeh9bVvQ" name="PQ">
+      <ownedComment xmi:id="_NyE5gM84EeSJsu9BbhWxmQ">
+        <body>INLINE</body>
+      </ownedComment>
       <ownedRule xmi:id="__As9QPM4EeOUvapeh9bVvQ" name="unitTerminology" constrainedElement="_vvXhMPM4EeOUvapeh9bVvQ">
+        <ownedComment xmi:id="_OsdSkM9CEeSJsu9BbhWxmQ">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_FguUsPM5EeOUvapeh9bVvQ">
           <language>Analysis</language>
-          <body>value/@unit SHALL be selected from CodeSystem UCUM (2.16.840.1.113883.6.8)</body>
+          <body>value/@unit SHALL be selected from ValueSet UnitsOfMeasureCaseSensitive 2.16.840.1.113883.1.11.12839 DYNAMIC</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_vvXhMfM4EeOUvapeh9bVvQ">
@@ -476,33 +531,36 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_D6_icPM4EeOUvapeh9bVvQ" base_Class="__zeTcPM3EeOUvapeh9bVvQ" templateId="2.16.840.1.113883.10.20.22.4.27" templateVersion="2014-06-09">
-    <ruleId>CONF:7299</ruleId>
-    <ruleId>CONF:10527</ruleId>
+    <ruleId>CONF:1098-7299</ruleId>
+    <ruleId>CONF:1098-10527</ruleId>
+    <ruleId>CONF:1098-32574</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_NJM-cPM4EeOUvapeh9bVvQ" base_Generalization="__ze6gPM3EeOUvapeh9bVvQ"/>
   <CDA:PropertyValidation xmi:id="_qskVsPM4EeOUvapeh9bVvQ" base_Property="_qsjuoPM4EeOUvapeh9bVvQ">
-    <ruleId>CONF:7305</ruleId>
+    <ruleId>CONF:1098-7305</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_xXOP0PM4EeOUvapeh9bVvQ" base_Property="_wF3VoPM4EeOUvapeh9bVvQ">
-    <ruleId>CONF:31579</ruleId>
+    <ruleId>CONF:1098-31579</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_Hnpk8PM5EeOUvapeh9bVvQ" base_Constraint="__As9QPM4EeOUvapeh9bVvQ">
-    <ruleId>CONF:31579</ruleId>
+    <ruleId>CONF:1098-31579</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_tt_C0PM5EeOUvapeh9bVvQ" memberEnd="_tt9NoPM5EeOUvapeh9bVvQ _tt_C0fM5EeOUvapeh9bVvQ">
     <ownedEnd xmi:id="_tt_C0fM5EeOUvapeh9bVvQ" type="__zeTcPM3EeOUvapeh9bVvQ" association="_tt_C0PM5EeOUvapeh9bVvQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_ueCmwPM5EeOUvapeh9bVvQ" severity="WARNING" base_Association="_tt_C0PM5EeOUvapeh9bVvQ">
-    <ruleId>CONF:7310</ruleId>
+    <ruleId>CONF:1098-7310</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_dDupoPV2EeONioZkBKP8eQ" clientDependency="_vMY4IPV2EeONioZkBKP8eQ" name="VitalSignsOrganizer2">
     <ownedComment xmi:id="_jK-7wPV2EeONioZkBKP8eQ">
-      <body>This template provides a mechanism for grouping vital signs (e.g. grouping systolic blood pressure and diastolic blood pressure).</body>
+      <body>This template provides a mechanism for grouping vital signs (e.g., grouping systolic blood pressure and diastolic blood pressure).</body>
     </ownedComment>
     <generalization xmi:id="_dDxF4PV2EeONioZkBKP8eQ" general="_2OlbCRSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_vMY4IPV2EeONioZkBKP8eQ" name="VitalSignsOrganizer" client="_dDupoPV2EeONioZkBKP8eQ" supplier="_2OlbCRSVEeGGzu7fmW9pXw" contract="_2OlbCRSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_74bwIPV6EeONioZkBKP8eQ" name="code" visibility="private" redefinedProperty="_2OlbERSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yNLcQM9GEeSJsu9BbhWxmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yNK1MM9GEeSJsu9BbhWxmQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_yESK8PV5EeONioZkBKP8eQ" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_2OlbEhSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_JH_-MPV6EeONioZkBKP8eQ">
@@ -523,33 +581,34 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_hsMpkPV2EeONioZkBKP8eQ" base_Class="_dDupoPV2EeONioZkBKP8eQ" templateId="2.16.840.1.113883.10.20.22.4.26" templateVersion="2014-06-09">
-    <ruleId>CONF:7281</ruleId>
-    <ruleId>CONF:10528</ruleId>
+    <ruleId>CONF:1098-7281</ruleId>
+    <ruleId>CONF:1098-10528</ruleId>
+    <ruleId>CONF:1098-32582</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_tTeOsPV2EeONioZkBKP8eQ" base_Generalization="_dDxF4PV2EeONioZkBKP8eQ"/>
   <CDA:PropertyValidation xmi:id="_yESK8_V5EeONioZkBKP8eQ" severity="INFO" base_Property="_yESK8PV5EeONioZkBKP8eQ">
-    <ruleId>CONF:7288</ruleId>
+    <ruleId>CONF:1098-7288</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_cqZm0PV6EeONioZkBKP8eQ" memberEnd="_cqXxoPV6EeONioZkBKP8eQ _cqaN4PV6EeONioZkBKP8eQ">
     <ownedEnd xmi:id="_cqaN4PV6EeONioZkBKP8eQ" type="_dDupoPV2EeONioZkBKP8eQ" association="_cqZm0PV6EeONioZkBKP8eQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_dXDRcPV6EeONioZkBKP8eQ" base_Association="_cqZm0PV6EeONioZkBKP8eQ">
-    <ruleId>CONF:7285</ruleId>
-    <ruleId>CONF:15946</ruleId>
+    <ruleId>CONF:1098-7285</ruleId>
+    <ruleId>CONF:1098-15946</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CodeSystemConstraint xmi:id="_74bwIfV6EeONioZkBKP8eQ" code="46680005" displayName="Vital signs" base_Property="_74bwIPV6EeONioZkBKP8eQ">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:19177</ruleId>
-    <ruleId>CONF:30901</ruleId>
+  <CDA:CodeSystemConstraint xmi:id="_74bwIfV6EeONioZkBKP8eQ" code="74728-7" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1" base_Property="_74bwIPV6EeONioZkBKP8eQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-32741</ruleId>
+    <ruleId>CONF:1098-32742</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_9vc8IPV6EeONioZkBKP8eQ" base_Property="_74bwIPV6EeONioZkBKP8eQ">
-    <ruleId>CONF:19176</ruleId>
+  <CDA:PropertyValidation xmi:id="_9vc8IPV6EeONioZkBKP8eQ" severity="INFO" base_Property="_74bwIPV6EeONioZkBKP8eQ">
+    <ruleId>CONF:1098-32740</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_QGEuIPV7EeONioZkBKP8eQ" memberEnd="_QGDgAPV7EeONioZkBKP8eQ _QGFVMPV7EeONioZkBKP8eQ">
     <ownedEnd xmi:id="_QGFVMPV7EeONioZkBKP8eQ" type="_dDupoPV2EeONioZkBKP8eQ" association="_QGEuIPV7EeONioZkBKP8eQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_QlZHYPV7EeONioZkBKP8eQ" severity="WARNING" base_Association="_QGEuIPV7EeONioZkBKP8eQ">
-    <ruleId>CONF:31153</ruleId>
+    <ruleId>CONF:1098-31153</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_AngxkPfwEeO297ryy8ptVg" memberEnd="_AnfjcPfwEeO297ryy8ptVg _AngxkffwEeO297ryy8ptVg">
     <ownedEnd xmi:id="_AngxkffwEeO297ryy8ptVg" type="_4iF6IL86EeOS5KuvmCHHew" association="_AngxkPfwEeO297ryy8ptVg"/>
@@ -659,5 +718,22 @@ Vital signs are represented in the same way as other results, but are aggregated
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_O1iYEKgcEeSoILDCw_oFwA" severity="INFO" base_Property="_Mq6TkKgcEeSoILDCw_oFwA">
     <ruleId>CONF:1098-32874</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_y0jtsM84EeSJsu9BbhWxmQ" base_Property="_2OxoSxSVEeGGzu7fmW9pXw">
+    <ruleId>R2.0=CONF:1098-7303</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_7j74oM84EeSJsu9BbhWxmQ" base_Property="_7j7RkM84EeSJsu9BbhWxmQ">
+    <ruleId>CONF:1098-7304</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_eEbiI89CEeSJsu9BbhWxmQ" severity="INFO" base_Property="_eEbiIM9CEeSJsu9BbhWxmQ">
+    <ruleId>CONF:1098-7307</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_nkHIoM9CEeSJsu9BbhWxmQ" base_Property="_eEbiIM9CEeSJsu9BbhWxmQ">
+    <reference href="../consol-vocab.uml#_UnwpwM2JEeSEZ8MJJ3ZzLg"/>
+    <ruleId>CONF:1098-32886</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_fH50gM9GEeSJsu9BbhWxmQ" base_Property="_2OlbERSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_sClFwM9HEeSJsu9BbhWxmQ" base_Property="_2OlbFhSVEeGGzu7fmW9pXw">
+    <ruleId>R2.0=CONF:1098-7284</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>

@@ -1706,6 +1706,25 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_QKWwA8nIEeSr1c1X9ACWbg" name="aborted"/>
       <ownedLiteral xmi:id="_QKWwBMnIEeSr1c1X9ACWbg" name="cancelled"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_UnwCsM2JEeSEZ8MJJ3ZzLg" name="Observation Interpretation (HL7)">
+      <ownedLiteral xmi:id="_UnwCsc2JEeSEZ8MJJ3ZzLg" name="A"/>
+      <ownedLiteral xmi:id="_UnwCss2JEeSEZ8MJJ3ZzLg" name="HX"/>
+      <ownedLiteral xmi:id="_UnwCs82JEeSEZ8MJJ3ZzLg" name="LX"/>
+      <ownedLiteral xmi:id="_UnwCtM2JEeSEZ8MJJ3ZzLg" name="B"/>
+      <ownedLiteral xmi:id="_UnwCtc2JEeSEZ8MJJ3ZzLg" name="Carrier"/>
+      <ownedLiteral xmi:id="_UnwCts2JEeSEZ8MJJ3ZzLg" name="D"/>
+      <ownedLiteral xmi:id="_UnwCt82JEeSEZ8MJJ3ZzLg" name="U"/>
+      <ownedLiteral xmi:id="_UnwCuM2JEeSEZ8MJJ3ZzLg" name="IND"/>
+      <ownedLiteral xmi:id="_UnwCuc2JEeSEZ8MJJ3ZzLg" name="I"/>
+      <ownedLiteral xmi:id="_UnwCus2JEeSEZ8MJJ3ZzLg" name="MS"/>
+      <ownedLiteral xmi:id="_UnwCu82JEeSEZ8MJJ3ZzLg" name="NEG"/>
+      <ownedLiteral xmi:id="_UnwCvM2JEeSEZ8MJJ3ZzLg" name="N"/>
+      <ownedLiteral xmi:id="_UnwCvc2JEeSEZ8MJJ3ZzLg" name="POS"/>
+      <ownedLiteral xmi:id="_UnwCvs2JEeSEZ8MJJ3ZzLg" name="R"/>
+      <ownedLiteral xmi:id="_UnwCv82JEeSEZ8MJJ3ZzLg" name="S"/>
+      <ownedLiteral xmi:id="_UnwCwM2JEeSEZ8MJJ3ZzLg" name="VS"/>
+      <ownedLiteral xmi:id="_UnwCwc2JEeSEZ8MJJ3ZzLg" name="W"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -2125,7 +2144,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_bwOiQeJsEeG3cO7ebC3QuA" conceptName="Severely ill" base_EnumerationLiteral="_bwOiQOJsEeG3cO7ebC3QuA"/>
   <term:ValueSetCode xmi:id="_eIRXseJsEeG3cO7ebC3QuA" conceptName="Disabled" base_EnumerationLiteral="_eIRXsOJsEeG3cO7ebC3QuA"/>
   <term:ValueSetCode xmi:id="_gxSBUeJsEeG3cO7ebC3QuA" conceptName="Severely disabled" base_EnumerationLiteral="_gxSBUOJsEeG3cO7ebC3QuA"/>
-  <term:ValueSetVersion xmi:id="_EA1dEeWTEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.41" definition="Contains all values descending from the SNOMED CT® 365980008 tobacco use and exposure - finding hierarchy&#xD;&#xA;http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" binding="Dynamic" base_Enumeration="_EA1dEOWTEeGKmvzED_He2w">
+  <term:ValueSetVersion xmi:id="_EA1dEeWTEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.41" source="http://vtsl.vetmed.vt.edu/TerminologyMgt/RF2Browser/ISA.cfm?SCT_ConceptID=365980008" definition="Contains all values descending from the SNOMED CT® 365980008 tobacco use and exposure - finding hierarchy&#xD;&#xA;http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" binding="Dynamic" base_Enumeration="_EA1dEOWTEeGKmvzED_He2w">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_bgrWMOWUEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.38" version="2012-07-01" definition="This value set indicates the current smoking status of a patient" base_Enumeration="_bgiMQOWUEeGKmvzED_He2w">
@@ -3282,4 +3301,24 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_QKXXEsnIEeSr1c1X9ACWbg" conceptName="Active" base_EnumerationLiteral="_QKWwAsnIEeSr1c1X9ACWbg"/>
   <term:ValueSetCode xmi:id="_QKXXE8nIEeSr1c1X9ACWbg" conceptName="Aborted" base_EnumerationLiteral="_QKWwA8nIEeSr1c1X9ACWbg"/>
   <term:ValueSetCode xmi:id="_QKXXFMnIEeSr1c1X9ACWbg" conceptName="Cancelled" base_EnumerationLiteral="_QKWwBMnIEeSr1c1X9ACWbg"/>
+  <term:ValueSetVersion xmi:id="_UnwpwM2JEeSEZ8MJJ3ZzLg" identifier="2.16.840.1.113883.1.11.78" version="2014-09-01" fullName="Observation Interpretation (HL7)" source="http://www.hl7.org" definition="Observation interpretation concepts that are based upon HL7 V3 vocabulary." revisionDate="07/07/2009" base_Enumeration="_UnwCsM2JEeSEZ8MJJ3ZzLg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1o75oaFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_Unwpwc2JEeSEZ8MJJ3ZzLg" conceptName="Abnormal" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCsc2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwpws2JEeSEZ8MJJ3ZzLg" conceptName="above high threshold" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCss2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwpw82JEeSEZ8MJJ3ZzLg" conceptName="below low threshold" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCs82JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_UnwpxM2JEeSEZ8MJJ3ZzLg" conceptName="better" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCtM2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwpxc2JEeSEZ8MJJ3ZzLg" conceptName="Carrier" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCtc2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwpxs2JEeSEZ8MJJ3ZzLg" conceptName="decreased" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCts2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwpx82JEeSEZ8MJJ3ZzLg" conceptName="increased" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCt82JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_UnwpyM2JEeSEZ8MJJ3ZzLg" conceptName="Indeterminate" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCuM2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwpyc2JEeSEZ8MJJ3ZzLg" conceptName="intermediate" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCuc2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwpys2JEeSEZ8MJJ3ZzLg" conceptName="moderately susceptible" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCus2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwpy82JEeSEZ8MJJ3ZzLg" conceptName="Negative" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCu82JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_UnwpzM2JEeSEZ8MJJ3ZzLg" conceptName="Normal" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCvM2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwpzc2JEeSEZ8MJJ3ZzLg" conceptName="Positive" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCvc2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwpzs2JEeSEZ8MJJ3ZzLg" conceptName="resistent" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCvs2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwpz82JEeSEZ8MJJ3ZzLg" conceptName="susceptible" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCv82JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwp0M2JEeSEZ8MJJ3ZzLg" conceptName="Very susceptible" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCwM2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetCode xmi:id="_Unwp0c2JEeSEZ8MJJ3ZzLg" conceptName="worse" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCwc2JEeSEZ8MJJ3ZzLg"/>
 </xmi:XMI>
