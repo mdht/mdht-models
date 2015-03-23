@@ -219,7 +219,7 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_NNEMAEb2EeGp67IkyTw1fg">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>SHALL contain a valid DICOM Organizational Role from DICOM CID 7452  (Value Set 1.2.840.10008.6.1.516)(@codeSystem is 1.2.840.10008.2.16.4) or an appropriate national health care provider coding system (e.g., NUCC in the U.S., where @codeSystem is 2.16.840.1.113883.6.101) (CONF:8889).</body>
+          <body>SHALL contain a valid DICOM Organizational Role from DICOM CID 7452  (Value Set 1.2.840.10008.6.1.516)(@codeSystem is 1.2.840.10008.2.16.4) or an appropriate national health care provider coding system (e.g., NUCC in the U.S., where @codeSystem is 2.16.840.1.113883.6.101)</body>
           <body>self.code.codeSystem = '1.2.840.10008.2.16.4' or self.code.codeSystem = '2.16.840.1.113883.6.101'</body>
         </specification>
       </ownedRule>
@@ -267,12 +267,15 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_hf0I8Eb1EeGp67IkyTw1fg" base_Property="_eSxlMEb1EeGp67IkyTw1fg">
     <ruleId>CONF:8881</ruleId>
+    <ruleId>R2.0=CONF:1098-8881</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_uuM10Eb1EeGp67IkyTw1fg" base_Property="_r84kwEb1EeGp67IkyTw1fg">
     <ruleId>CONF:8888</ruleId>
+    <ruleId>R2.0=CONF:1098-8888</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_zLaoAEb1EeGp67IkyTw1fg" base_Property="_r84kw0b1EeGp67IkyTw1fg">
     <ruleId>CONF:8887</ruleId>
+    <ruleId>R2.0=CONF:1098-8887</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_k8YhAEb2EeGp67IkyTw1fg" severity="WARNING" base_Property="_ir_ywEb2EeGp67IkyTw1fg">
     <ruleId>CONF:8890</ruleId>
@@ -1218,7 +1221,10 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:ConstraintValidation xmi:id="_0JlwQFwZEeG0y_7i0ygc4g" severity="WARNING" base_Constraint="_x-fKoFwZEeG0y_7i0ygc4g">
     <ruleId>CONF:9268</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_-7P9MMUuEeGigaKyc-jgFA" base_Constraint="_Lp03oEb2EeGp67IkyTw1fg"/>
+  <CDA:ConstraintValidation xmi:id="_-7P9MMUuEeGigaKyc-jgFA" base_Constraint="_Lp03oEb2EeGp67IkyTw1fg">
+    <ruleId>CONF:8889</ruleId>
+    <ruleId>R2.0=CONF:1098-8889</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_GpCIQMUvEeGigaKyc-jgFA" base_Constraint="_iiXSYEVFEeGAh_iQGJvI5w">
     <ruleId>CONF:8428</ruleId>
     <ruleId>R2.0=CONF:1098-8428</ruleId>
@@ -1380,11 +1386,11 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
       <ownedComment xmi:id="_3L4c4OaREeOmzetP5oaH3A">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_Lzh2UOaSEeOmzetP5oaH3A" name="hasNationalProviderId" constrainedElement="_kAWv0EVEEeGAh_iQGJvI5w">
+      <ownedRule xmi:id="_Lzh2UOaSEeOmzetP5oaH3A" name="hasNationalProviderId">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Lzh2UeaSEeOmzetP5oaH3A">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
+          <body>The id SHOULD include zero or one [0..1] id such that @root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
           <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
         </specification>
       </ownedRule>
@@ -1420,19 +1426,20 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_U1uQkOaHEeOmzetP5oaH3A" base_Class="_Ao2HkOaHEeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.6.2" templateVersion="2014-06-09">
-    <ruleId>CONF:16072</ruleId>
-    <ruleId>CONF:16073</ruleId>
+  <CDA:CDATemplate xmi:id="_U1uQkOaHEeOmzetP5oaH3A" base_Class="_Ao2HkOaHEeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.6.2.2" templateVersion="2014-06-09">
+    <ruleId>CONF:1098-16072</ruleId>
+    <ruleId>CONF:1098-16073</ruleId>
+    <ruleId>CONF:1098-32586</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_oFKg8OaHEeOmzetP5oaH3A" base_Generalization="_Ao2HkeaHEeOmzetP5oaH3A"/>
   <CDA:ConstraintValidation xmi:id="_LzidYOaSEeOmzetP5oaH3A" severity="WARNING" base_Constraint="_Lzh2UOaSEeOmzetP5oaH3A">
-    <ruleId>CONF:31203</ruleId>
+    <ruleId>CONF:1098-31203</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_y1eLYOaTEeOmzetP5oaH3A" message="Consol Assigned Person, if present, SHALL contain exactly one [1..1] US Realm Person Name (PN.US.FIELDED) (templateId:2.16.840.1.113883.10.20.22.5.1.1) (CONF:30929)" base_Property="_y1dkUOaTEeOmzetP5oaH3A">
-    <ruleId>CONF:30929</ruleId>
+    <ruleId>CONF:1098-30929</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_YLzdwOaWEeOmzetP5oaH3A" severity="WARNING" base_Property="_T-xcoOaWEeOmzetP5oaH3A">
-    <ruleId>CONF:16075</ruleId>
+    <ruleId>CONF:1098-16075</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_zKKIUIe9EeSBauRYePLghA" clientDependency="_SbKGEIe-EeSBauRYePLghA" name="PhysicianReadingStudyPerformer2">
     <ownedComment xmi:id="__iuAcIe9EeSBauRYePLghA">
