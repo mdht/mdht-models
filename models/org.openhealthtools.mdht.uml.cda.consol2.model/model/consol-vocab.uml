@@ -2144,7 +2144,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_bwOiQeJsEeG3cO7ebC3QuA" conceptName="Severely ill" base_EnumerationLiteral="_bwOiQOJsEeG3cO7ebC3QuA"/>
   <term:ValueSetCode xmi:id="_eIRXseJsEeG3cO7ebC3QuA" conceptName="Disabled" base_EnumerationLiteral="_eIRXsOJsEeG3cO7ebC3QuA"/>
   <term:ValueSetCode xmi:id="_gxSBUeJsEeG3cO7ebC3QuA" conceptName="Severely disabled" base_EnumerationLiteral="_gxSBUOJsEeG3cO7ebC3QuA"/>
-  <term:ValueSetVersion xmi:id="_EA1dEeWTEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.41" definition="Contains all values descending from the SNOMED CT® 365980008 tobacco use and exposure - finding hierarchy&#xD;&#xA;http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" binding="Dynamic" base_Enumeration="_EA1dEOWTEeGKmvzED_He2w">
+  <term:ValueSetVersion xmi:id="_EA1dEeWTEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.41" source="http://vtsl.vetmed.vt.edu/TerminologyMgt/RF2Browser/ISA.cfm?SCT_ConceptID=365980008" definition="Contains all values descending from the SNOMED CT® 365980008 tobacco use and exposure - finding hierarchy&#xD;&#xA;http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" binding="Dynamic" base_Enumeration="_EA1dEOWTEeGKmvzED_He2w">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_bgrWMOWUEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.38" version="2012-07-01" definition="This value set indicates the current smoking status of a patient" base_Enumeration="_bgiMQOWUEeGKmvzED_He2w">
