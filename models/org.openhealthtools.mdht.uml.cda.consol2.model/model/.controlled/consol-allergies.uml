@@ -10,13 +10,13 @@
       </ownedComment>
     </generalization>
     <ownedAttribute xmi:id="_2LN98BSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2LPMEBSVEeGGzu7fmW9pXw" name="title" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2LPzIBSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2LPzIhSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2LPzIRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
@@ -33,7 +33,7 @@
     <ruleId>CONF:10379</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2LN98RSVEeGGzu7fmW9pXw" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_2LN98BSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15350</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2LPMERSVEeGGzu7fmW9pXw" base_Property="_2LPMEBSVEeGGzu7fmW9pXw">
@@ -51,16 +51,16 @@
       <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
     <generalization xmi:id="_FHCOMBVgEeGQCvUGzi1kDQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_bGzYihVdEeGQCvUGzi1kDQ" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_bGzYixVdEeGQCvUGzi1kDQ" name="title" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_bGzYjBVdEeGQCvUGzi1kDQ" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bGzYjhVdEeGQCvUGzi1kDQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bGzYjRVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
@@ -157,37 +157,37 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     </ownedRule>
     <generalization xmi:id="_2F5ZERSVEeGGzu7fmW9pXw" general="_mgny4NF8EeOHUokOVP95oQ"/>
     <ownedAttribute xmi:id="_2Em_oBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2Em_oRSVEeGGzu7fmW9pXw" name="OBS">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2Em_ohSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2Em_oxSVEeGGzu7fmW9pXw" name="EVN">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EnmsBSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EnmsxSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EnmshSVEeGGzu7fmW9pXw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLdBSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EoNwxSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2Epb4BSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Epb4xSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Epb4hSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLdhSVEeGGzu7fmW9pXw" name="value" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_-xkhwBUvEeGbmN_W114JUw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" association="_-xkhwhUvEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xkhwRUvEeGbmN_W114JUw"/>
@@ -209,11 +209,11 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_0HgNkTJAEeG6R8Pb5FT2Ow">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_098tYDJAEeG6R8Pb5FT2Ow" name="typeCode" visibility="private">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Oi4gMDJBEeG6R8Pb5FT2Ow" name="participantRole" type="_4Lj44DJAEeG6R8Pb5FT2Ow" association="_Oi4gMjJBEeG6R8Pb5FT2Ow">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tJrDUTJBEeG6R8Pb5FT2Ow" value="1"/>
@@ -221,13 +221,13 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_4Lj44DJAEeG6R8Pb5FT2Ow" name="ParticipantRole">
         <generalization xmi:id="_4Lj44TJAEeG6R8Pb5FT2Ow">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_6LgXYDJAEeG6R8Pb5FT2Ow" name="classCode" visibility="private">
-          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uiVfYTJBEeG6R8Pb5FT2Ow" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uiVfYDJBEeG6R8Pb5FT2Ow" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QPyG4DJBEeG6R8Pb5FT2Ow" name="playingEntity" type="_E1B60DJBEeG6R8Pb5FT2Ow" association="_QPyG4jJBEeG6R8Pb5FT2Ow">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tvKWATJBEeG6R8Pb5FT2Ow" value="1"/>
@@ -285,35 +285,35 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
             </specification>
           </ownedRule>
           <generalization xmi:id="_E1B60TJBEeG6R8Pb5FT2Ow">
-            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
           </generalization>
           <ownedAttribute xmi:id="_F56fQDJBEeG6R8Pb5FT2Ow" name="classCode" visibility="private">
-            <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
+            <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7gMc8TJBEeG6R8Pb5FT2Ow" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7gMc8DJBEeG6R8Pb5FT2Ow" value="1"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_IIVpMDJCEeG6R8Pb5FT2Ow" value="MMAT"/>
-            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_KmLkoDJCEeG6R8Pb5FT2Ow" name="code" visibility="private" type="_C4w3oNJCEeOj_bXCpQOG9w" aggregation="composite">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MFs2oTJCEeG6R8Pb5FT2Ow" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MFs2oDJCEeG6R8Pb5FT2Ow" value="1"/>
-            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_C4w3oNJCEeOj_bXCpQOG9w" name="CE">
             <generalization xmi:id="_C4z68NJCEeOj_bXCpQOG9w">
-              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             </generalization>
             <ownedAttribute xmi:id="_NuttgNJCEeOj_bXCpQOG9w" name="originalText" visibility="private" aggregation="composite">
-              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NuttgtJCEeOj_bXCpQOG9w"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NuttgdJCEeOj_bXCpQOG9w" value="1"/>
-              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_TgJEsD55Ed6cla2oXsPtlA"/>
+              <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_TgJEsD55Ed6cla2oXsPtlA"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_PrSu8NJCEeOj_bXCpQOG9w" name="translation" visibility="private" aggregation="composite">
-              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PrSu8tJCEeOj_bXCpQOG9w"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PrSu8dJCEeOj_bXCpQOG9w" value="*"/>
-              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+              <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
             </ownedAttribute>
           </nestedClassifier>
         </nestedClassifier>
@@ -374,14 +374,14 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     <ruleId>R2.0=CONF:1098-7382</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2EbZcRSVEeGGzu7fmW9pXw" code="ASSERTION" base_Property="_2EaLdBSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15948</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2EoNwhSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF:7422</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2EoNxBSVEeGGzu7fmW9pXw" code="completed" base_Property="_2EoNwxSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7386</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2EqC8BSVEeGGzu7fmW9pXw" base_Property="_2Epb4BSVEeGGzu7fmW9pXw">
@@ -424,24 +424,24 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       </specification>
     </ownedRule>
     <generalization xmi:id="_2GDKExSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_2ELh0RSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2ELh0hSVEeGGzu7fmW9pXw" name="ACT">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYUDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYUDcEd6xYZuu1VKCVw"/>
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EMI4BSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2EMI4RSVEeGGzu7fmW9pXw" name="EVN">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EMv8BSVEeGGzu7fmW9pXw" name="id" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EMv8hSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EMv8RSVEeGGzu7fmW9pXw" value="*"/>
     </ownedAttribute>
@@ -462,7 +462,7 @@ The problem, allergy or medical state has been resolved and the concern no longe
 historical purposes.&#xD;
 &lt;/p></body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ENXAxSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2ENXAhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
@@ -470,7 +470,7 @@ historical purposes.&#xD;
       <ownedComment xmi:id="_2EPMMRSVEeGGzu7fmW9pXw">
         <body>The effectiveTime element records the starting and ending times during which the concern was active.</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EPMMxSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EPMMhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
@@ -491,19 +491,19 @@ historical purposes.&#xD;
         </specification>
       </ownedRule>
       <generalization xmi:id="_nG7lkMTyEeOYw6YTCsSKiw">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_nl9D4MTyEeOYw6YTCsSKiw" name="code" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_phVLccTyEeOYw6YTCsSKiw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_phVLcMTyEeOYw6YTCsSKiw" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nl9q8MTyEeOYw6YTCsSKiw" name="codeSystem" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p_fHEcTyEeOYw6YTCsSKiw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p_fHEMTyEeOYw6YTCsSKiw" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3fx3ADxkEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_3fx3ADxkEd6JwqSGecoePg"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -596,31 +596,31 @@ historical purposes.&#xD;
       </specification>
     </ownedRule>
     <generalization xmi:id="_2FODoBSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_2FKZQRSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2FKZQhSVEeGGzu7fmW9pXw" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FLAUBSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2FLAURSVEeGGzu7fmW9pXw" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FLAUxSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FGu5xSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rsy1gSKyEeG9m6LRl9ardQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rsy1gCKyEeG9m6LRl9ardQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FM1gBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FGu6hSVEeGGzu7fmW9pXw" name="value" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_cAAIcBneEeGs5a462vYX5Q" base_Class="_2FGu4hSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.8">
@@ -637,14 +637,14 @@ historical purposes.&#xD;
     <ruleId>R2.0=CONF:1098-7346</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2FLnYBSVEeGGzu7fmW9pXw" code="SEV" displayName="Severity observation" base_Property="_2FLAUxSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7349</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_2FHV8BSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FGu5xSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7350</ruleId>
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_2FM1gRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FM1gBSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7352</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2E_aIRSVEeGGzu7fmW9pXw" name="ReactionObservation">
@@ -725,42 +725,42 @@ historical purposes.&#xD;
       </specification>
     </ownedRule>
     <generalization xmi:id="_2FwPIhSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_2FAoQBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2FAoQRSVEeGGzu7fmW9pXw" name="OBS">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FAoQhSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_vhOLMNchEeGfQ6frO0B-Jg" value="EVN"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FBPUBSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ky9dsRrbEeGo461UQq-B1g" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ky9dsBrbEeGo461UQq-B1g" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FBPVRSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FDEgBSVEeGGzu7fmW9pXw" name="text" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZBorQSIgEeG9m6LRl9ardQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZBorQCIgEeG9m6LRl9ardQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FDrkRSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FE5sBSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ohOT0SIiEeG9m6LRl9ardQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ohOT0CIiEeG9m6LRl9ardQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FFgwRSVEeGGzu7fmW9pXw" name="value" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FGu4BSVEeGGzu7fmW9pXw" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2FRG8RSVEeGGzu7fmW9pXw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FGu4RSVEeGGzu7fmW9pXw"/>
@@ -801,7 +801,7 @@ historical purposes.&#xD;
     <ruleId>CONF:7330</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2FDrkhSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FDrkRSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7328</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2FFgwBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FE5sBSVEeGGzu7fmW9pXw">
@@ -818,7 +818,7 @@ historical purposes.&#xD;
     <ruleId>CONF:15922</ruleId>
   </CDA:EntryRelationship>
   <CDA:CodeSystemConstraint xmi:id="_KuCXYBwNEeGlALrr33gUJg" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_bGzYihVdEeGQCvUGzi1kDQ">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15346</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_skqTkBwNEeGlALrr33gUJg" base_Property="_bGzYixVdEeGQCvUGzi1kDQ">
@@ -849,30 +849,30 @@ historical purposes.&#xD;
       <body>This template represents the status of the allergy indicating whether it is active, no longer active, or is an historic allergy. There can be only one allergy status observation per alert observation.</body>
     </ownedComment>
     <generalization xmi:id="_2FbfABSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_2FV_cBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2FV_cRSVEeGGzu7fmW9pXw" name="OBS">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FV_cxSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2FV_dBSVEeGGzu7fmW9pXw" name="EVN">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FWmgBSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FX0oBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FRuChSVEeGGzu7fmW9pXw" name="value" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_52DvABnaEeGs5a462vYX5Q" base_Class="_2FRuAhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.28">
@@ -887,12 +887,12 @@ historical purposes.&#xD;
     <ruleId>CONF:7319</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2FWmgRSVEeGGzu7fmW9pXw" code="33999-4" displayName="Status" base_Property="_2FWmgBSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7320</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_2FS8IBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2FX0oRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FX0oBSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7321</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_2FTjMRSVEeGGzu7fmW9pXw" base_Property="_2FRuChSVEeGGzu7fmW9pXw">
@@ -1023,12 +1023,12 @@ historical purposes.&#xD;
     <ruleId>R2.0=CONF:1098-7335</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_bVJRwDJBEeG6R8Pb5FT2Ow" code="CSM" displayName="Consumable" base_Property="_098tYDJAEeG6R8Pb5FT2Ow">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Z0Bk4E6SEeC5ttwajeXVXg"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_Z0Bk4E6SEeC5ttwajeXVXg"/>
     <ruleId>CONF:7403</ruleId>
     <ruleId>R2.0=CONF:1098-7403</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_j-UHADJBEeG6R8Pb5FT2Ow" code="MANU" displayName="Manufactured Product" base_Property="_6LgXYDJAEeG6R8Pb5FT2Ow">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
     <ruleId>CONF:7405</ruleId>
     <ruleId>R2.0=CONF:1098-7405</ruleId>
   </CDA:CodeSystemConstraint>
@@ -1127,25 +1127,25 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_dOeUULN7EeOtlapy2HWYww">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       </generalization>
       <ownedAttribute xmi:id="_eKyyoLN7EeOtlapy2HWYww" name="low" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_rcZyoLN7EeOtlapy2HWYww">
           <body>Note: The effectiveTime/low asserts when the allergy was noted. This equates to the time the allergy was authored in the patient's chart.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hCSkMLN7EeOtlapy2HWYww" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hCQvALN7EeOtlapy2HWYww" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_eKyLkLN7EeOtlapy2HWYww" name="high" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_tY-0ELN7EeOtlapy2HWYww">
           <body>Note: It is clinically rare for an allergy to be &quot;resolved&quot;, even for patients undergoing allergy desensitization. As a result, effectiveTime/high will generally not be present.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eKyLkrN7EeOtlapy2HWYww"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eKyLkbN7EeOtlapy2HWYww" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_LgbIAKvuEeS-mulaI3YUlw" name="CD">
@@ -1162,12 +1162,12 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
       </ownedRule>
       <generalization xmi:id="_LgbIAavuEeS-mulaI3YUlw" general="_nG6-gMTyEeOYw6YTCsSKiw"/>
       <ownedAttribute xmi:id="_MnGcMKvuEeS-mulaI3YUlw" name="code" visibility="private" redefinedProperty="_nl9D4MTyEeOYw6YTCsSKiw">
-        <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MnGcMavuEeS-mulaI3YUlw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MnGcMqvuEeS-mulaI3YUlw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MnHqUKvuEeS-mulaI3YUlw" name="codeSystem" visibility="private" redefinedProperty="_nl9q8MTyEeOYw6YTCsSKiw">
-        <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MnHqUavuEeS-mulaI3YUlw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MnHqUqvuEeS-mulaI3YUlw" value="1"/>
       </ownedAttribute>
@@ -1186,7 +1186,7 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
     <ruleId>CONF:1098-31145</ruleId>
   </CDA:AssociationValidation>
   <CDA:CodeSystemConstraint xmi:id="_I2tmcLN6EeOtlapy2HWYww" code="CONC" displayName="Concern">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
     <ruleId>CONF:19158</ruleId>
     <ruleId>CONF:32154</ruleId>
   </CDA:CodeSystemConstraint>
@@ -1278,19 +1278,19 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xu9-crj8EeODDJAC5t5vpw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xu9-cbj8EeODDJAC5t5vpw" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_LYVyAExtEd6h-an5IXo-DA"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_LYVyAExtEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_PWM_4LkAEeODDJAC5t5vpw" name="code" visibility="private" redefinedProperty="_2EaLdBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_3bHDQLkAEeODDJAC5t5vpw" name="value" visibility="private" redefinedProperty="_2EaLdhSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_YroBsLkBEeODDJAC5t5vpw">
         <body>Note: The consumable participant points to the precise allergen or substance of intolerance. Because the consumable and the reaction are more clinically relevant than a categorization of the allergy/adverse event type, many systems will simply assign a fixed value here (e.g. &quot;allergy to substance&quot;).</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Kgc-oPr7EeO3D4OxHxUkag" name="statusCode" visibility="private" redefinedProperty="_2EoNwxSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_QjUYoLkTEeODDJAC5t5vpw" name="effectiveTime" visibility="private" type="_wqODoLkTEeODDJAC5t5vpw" aggregation="composite" redefinedProperty="_2Epb4BSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_atg7wLkTEeODDJAC5t5vpw">
@@ -1321,25 +1321,25 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_wqOqsLkTEeODDJAC5t5vpw">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       </generalization>
       <ownedAttribute xmi:id="_xrzccLkTEeODDJAC5t5vpw" name="low" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_DOJR0LkUEeODDJAC5t5vpw">
           <body>Note: The effectiveTime/low (a.k.a. &quot;onset date&quot;) asserts when the allergy/intolerance became biologically active.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4mAOcLkTEeODDJAC5t5vpw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4l_nYLkTEeODDJAC5t5vpw" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_xry1YLkTEeODDJAC5t5vpw" name="high" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_FuJwcLkUEeODDJAC5t5vpw">
           <body>Note: The effectiveTime/high (a.k.a. &quot;resolution date&quot;) asserts when the allergy/intolerance became biologically resolved.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xry1YrkTEeODDJAC5t5vpw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xry1YbkTEeODDJAC5t5vpw" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_OIcaAPrwEeO3D4OxHxUkag" name="Participant">
@@ -1414,12 +1414,12 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
           <nestedClassifier xmi:type="uml:Class" xmi:id="_BGJEgPr0EeO3D4OxHxUkag" name="CE">
             <generalization xmi:id="_BGJrkPr0EeO3D4OxHxUkag" general="_C4w3oNJCEeOj_bXCpQOG9w"/>
             <ownedAttribute xmi:id="_G6Dj4Pr0EeO3D4OxHxUkag" name="originalText" visibility="private" aggregation="composite" redefinedProperty="_NuttgNJCEeOj_bXCpQOG9w">
-              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G6Dj4vr0EeO3D4OxHxUkag"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G6Dj4fr0EeO3D4OxHxUkag" value="1"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_G6EK8Pr0EeO3D4OxHxUkag" name="translation" visibility="private" aggregation="composite" redefinedProperty="_PrSu8NJCEeOj_bXCpQOG9w">
-              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G6EK8vr0EeO3D4OxHxUkag"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G6EK8fr0EeO3D4OxHxUkag" value="*"/>
             </ownedAttribute>
@@ -1444,7 +1444,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>CONF:1098-31526</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_PWNm8LkAEeODDJAC5t5vpw" code="ASSERTION" displayName="Assertion" base_Property="_PWM_4LkAEeODDJAC5t5vpw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15948</ruleId>
     <ruleId>CONF:1098-32153</ruleId>
   </CDA:CodeSystemConstraint>
@@ -1506,45 +1506,45 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
       </specification>
     </ownedRule>
     <generalization xmi:id="_mgny6NF8EeOHUokOVP95oQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_mgny6dF8EeOHUokOVP95oQ" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_mgny6tF8EeOHUokOVP95oQ" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_mgny69F8EeOHUokOVP95oQ" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_mgny7NF8EeOHUokOVP95oQ" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_mgny7dF8EeOHUokOVP95oQ" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgny79F8EeOHUokOVP95oQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mgny7tF8EeOHUokOVP95oQ" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_mgny8NF8EeOHUokOVP95oQ" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_mgny8dF8EeOHUokOVP95oQ" name="statusCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgny89F8EeOHUokOVP95oQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mgny8tF8EeOHUokOVP95oQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_mgny9NF8EeOHUokOVP95oQ" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgny9tF8EeOHUokOVP95oQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mgny9dF8EeOHUokOVP95oQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_mgny99F8EeOHUokOVP95oQ" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgny-dF8EeOHUokOVP95oQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mgny-NF8EeOHUokOVP95oQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_w0LGUNF8EeOHUokOVP95oQ" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" association="_w0KfQNF8EeOHUokOVP95oQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w0LGUtF8EeOHUokOVP95oQ"/>
@@ -1567,12 +1567,12 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_cBOJodIdEeO-TcA3qYv-cw">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_v4zYENIdEeO-TcA3qYv-cw" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_9ijLQNIdEeO-TcA3qYv-cw" value="CSM"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_FB4DkNIeEeO-TcA3qYv-cw" name="participantRole" type="_PzEVQNIeEeO-TcA3qYv-cw" association="_FB4qoNIeEeO-TcA3qYv-cw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NxmMwdIeEeO-TcA3qYv-cw" value="1"/>
@@ -1580,14 +1580,14 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_PzEVQNIeEeO-TcA3qYv-cw" name="ParticipantRole">
         <generalization xmi:id="_PzEVQdIeEeO-TcA3qYv-cw">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_V0yAENIeEeO-TcA3qYv-cw" name="classCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V0yAEtIeEeO-TcA3qYv-cw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V0yAEdIeEeO-TcA3qYv-cw" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_V0yAE9IeEeO-TcA3qYv-cw" value="MANU"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_chiL8NIeEeO-TcA3qYv-cw" name="playingEntity" type="_3jqVgNIeEeO-TcA3qYv-cw" association="_chjaENIeEeO-TcA3qYv-cw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0xAAodIeEeO-TcA3qYv-cw" value="1"/>
@@ -1654,35 +1654,35 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
             </specification>
           </ownedRule>
           <generalization xmi:id="_3jqVgdIeEeO-TcA3qYv-cw">
-            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
           </generalization>
           <ownedAttribute xmi:id="_ArBioNIfEeO-TcA3qYv-cw" name="classCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
+            <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ArBiotIfEeO-TcA3qYv-cw" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ArBiodIfEeO-TcA3qYv-cw" value="1"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_ArBio9IfEeO-TcA3qYv-cw" value="MMAT"/>
-            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_6NgQINIfEeO-TcA3qYv-cw" name="code" visibility="private" type="_DNj7YNIgEeO-TcA3qYv-cw" aggregation="composite">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-GYmMdIfEeO-TcA3qYv-cw" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-GYmMNIfEeO-TcA3qYv-cw" value="1"/>
-            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_DNj7YNIgEeO-TcA3qYv-cw" name="CE">
             <generalization xmi:id="_DNkicNIgEeO-TcA3qYv-cw">
-              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             </generalization>
             <ownedAttribute xmi:id="_H48FYNIgEeO-TcA3qYv-cw" name="originalText" visibility="private" aggregation="composite">
-              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H48FYtIgEeO-TcA3qYv-cw"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H48FYdIgEeO-TcA3qYv-cw" value="1"/>
-              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_TgJEsD55Ed6cla2oXsPtlA"/>
+              <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_TgJEsD55Ed6cla2oXsPtlA"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_IvlZgNIgEeO-TcA3qYv-cw" name="translation" visibility="private" aggregation="composite">
-              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IvlZgtIgEeO-TcA3qYv-cw"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IvlZgdIgEeO-TcA3qYv-cw" value="*"/>
-              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+              <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
             </ownedAttribute>
           </nestedClassifier>
         </nestedClassifier>
@@ -1719,7 +1719,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>CONF:16345</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_mgoZ-NF8EeOHUokOVP95oQ" code="ASSERTION" displayName="Assertion" base_Property="_mgny8NF8EeOHUokOVP95oQ">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:16346</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_mgoZ-dF8EeOHUokOVP95oQ" base_Property="_mgny8dF8EeOHUokOVP95oQ">
@@ -1727,7 +1727,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>R2.0=CONF:1098-16308</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_mgoZ-tF8EeOHUokOVP95oQ" code="completed" displayName="Completed" base_Property="_mgny8dF8EeOHUokOVP95oQ">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:26354</ruleId>
     <ruleId>R2.0=CONF:1098-26354</ruleId>
   </CDA:CodeSystemConstraint>
@@ -1896,7 +1896,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <generalization xmi:id="_U3yosfDxEeOKPKE9au0oug" general="_2E_aIRSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_u_JzIPDxEeOKPKE9au0oug" name="ReactionObservation" client="_U3yosPDxEeOKPKE9au0oug" supplier="_2E_aIRSVEeGGzu7fmW9pXw" contract="_2E_aIRSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_QhJjIPDyEeOKPKE9au0oug" name="code" visibility="private" redefinedProperty="_2FBPVRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_gUHLgPF0EeOmsLWmq5fnqQ" name="procedureActivityProcedure2" redefinedProperty="_feOy4BrbEeGo461UQq-B1g" association="_gULc8PF0EeOmsLWmq5fnqQ">
       <type xmi:type="uml:Class" href="consol-procedures.uml#_fCVOQPDqEeOKPKE9au0oug"/>
@@ -1913,17 +1913,17 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_loXdwPijEeOXlK95I8tUew" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_B1Q8sMzcEeSLqosJ4F90vA" name="id" visibility="private" aggregation="composite" redefinedProperty="_2FBPUBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DAziwczcEeSLqosJ4F90vA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DAziwMzcEeSLqosJ4F90vA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_c7bRsMzcEeSLqosJ4F90vA" name="text" visibility="private" redefinedProperty="_2FDEgBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c7bRsczcEeSLqosJ4F90vA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c7bRsszcEeSLqosJ4F90vA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_xsMx8MzcEeSLqosJ4F90vA" name="statusCode" visibility="private" redefinedProperty="_2FDrkRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_XSaRAPDxEeOKPKE9au0oug" base_Class="_U3yosPDxEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.9" templateVersion="2014-06-09">
@@ -1936,7 +1936,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>CONF:1098-16851</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_UA4ZYPDyEeOKPKE9au0oug" code="ASSERTION" base_Property="_QhJjIPDyEeOKPKE9au0oug">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31124</ruleId>
     <ruleId>CONF:1098-32169</ruleId>
   </CDA:CodeSystemConstraint>
@@ -1999,15 +1999,15 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <generalization xmi:id="_B0p_kPJdEeO2NaSiicarcg" general="_2FGu4hSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_d5jNsPJdEeO2NaSiicarcg" name="SeverityObservation" client="_B0oKYPJdEeO2NaSiicarcg" supplier="_2FGu4hSVEeGGzu7fmW9pXw" contract="_2FGu4hSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="__Z27oPJdEeO2NaSiicarcg" name="code" visibility="private" redefinedProperty="_2FLAUxSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_LNTEMM26EeSEZ8MJJ3ZzLg" name="text" visibility="private" aggregation="composite" redefinedProperty="_2FGu5xSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LNTEMc26EeSEZ8MJJ3ZzLg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LNTEMs26EeSEZ8MJJ3ZzLg" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_tlNvkM26EeSEZ8MJJ3ZzLg" name="statusCode" visibility="private" redefinedProperty="_2FM1gBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_E9Cs0PJdEeO2NaSiicarcg" base_Class="_B0oKYPJdEeO2NaSiicarcg" templateId="2.16.840.1.113883.10.20.22.4.8" templateVersion="2014-06-09">
@@ -2017,7 +2017,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_b1UFEPJdEeO2NaSiicarcg" base_Generalization="_B0p_kPJdEeO2NaSiicarcg"/>
   <CDA:CodeSystemConstraint xmi:id="__Z3isPJdEeO2NaSiicarcg" code="SEV" displayName="Severity" base_Property="__Z27oPJdEeO2NaSiicarcg">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-19169</ruleId>
     <ruleId>CONF:1098-32170</ruleId>
   </CDA:CodeSystemConstraint>
@@ -2061,12 +2061,12 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <ownedComment xmi:id="_5UBh0PKJEeOn7bMsPcStOw">
         <body>Note: Many systems will simply assign a fixed value here (e.g., &quot;allergy to substance&quot;).</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dvwUgvKJEeOn7bMsPcStOw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dvwUgfKJEeOn7bMsPcStOw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_dvqN4PKJEeOn7bMsPcStOw" name="code" visibility="private" aggregation="composite" redefinedProperty="_mgny8NF8EeOHUokOVP95oQ">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4BzDgPMOEeOrR8IF-aqVyQ" name="participant" type="_DyEzoPMPEeOrR8IF-aqVyQ" redefinedProperty="_CAVaoNIdEeO-TcA3qYv-cw" association="_4B3U8PMOEeOrR8IF-aqVyQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4B2G0PMOEeOrR8IF-aqVyQ"/>
@@ -2090,19 +2090,19 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_nVkYMPKJEeOn7bMsPcStOw">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       </generalization>
       <ownedAttribute xmi:id="_nzKTI_KJEeOn7bMsPcStOw" name="low" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rDeNUfKJEeOn7bMsPcStOw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rDeNUPKJEeOn7bMsPcStOw" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nzKTIPKJEeOn7bMsPcStOw" name="high" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nzKTIvKJEeOn7bMsPcStOw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nzKTIfKJEeOn7bMsPcStOw" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_DyEzoPMPEeOrR8IF-aqVyQ" name="Participant">
@@ -2179,12 +2179,12 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
           <nestedClassifier xmi:type="uml:Class" xmi:id="_ceo4YPMtEeOrR8IF-aqVyQ" name="CE">
             <generalization xmi:id="_ceqtkPMtEeOrR8IF-aqVyQ" general="_DNj7YNIgEeO-TcA3qYv-cw"/>
             <ownedAttribute xmi:id="_doXgkPMtEeOrR8IF-aqVyQ" name="originalText" visibility="private" aggregation="composite" redefinedProperty="_H48FYNIgEeO-TcA3qYv-cw">
-              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_doXgkvMtEeOrR8IF-aqVyQ"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_doXgkfMtEeOrR8IF-aqVyQ" value="1"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_WtnfgPMuEeOrR8IF-aqVyQ" name="translation" visibility="private" aggregation="composite" redefinedProperty="_IvlZgNIgEeO-TcA3qYv-cw">
-              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WtnfgvMuEeOrR8IF-aqVyQ"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WtnfgfMuEeOrR8IF-aqVyQ" value="*"/>
             </ownedAttribute>
@@ -2203,7 +2203,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>CONF:1098-16345</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_dvrcAPKJEeOn7bMsPcStOw" code="ASSERTION" displayName="Assertion" base_Property="_dvqN4PKJEeOn7bMsPcStOw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-16346</ruleId>
     <ruleId>CONF:1098-32171</ruleId>
   </CDA:CodeSystemConstraint>
@@ -2326,7 +2326,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>CONF:1098-7419</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_KgdlsPr7EeO3D4OxHxUkag" code="completed" displayName="Completed" base_Property="_Kgc-oPr7EeO3D4OxHxUkag">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-19085</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_L3BwAPr7EeO3D4OxHxUkag" base_Property="_Kgc-oPr7EeO3D4OxHxUkag">
@@ -2339,7 +2339,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <generalization xmi:id="_nWC4cAIjEeSVzfoPSatgpg" general="_bGzYgBVdEeGQCvUGzi1kDQ"/>
     <substitution xmi:id="_DdymQAIkEeSVzfoPSatgpg" name="AllergiesSectionEntriesOptional" client="_nWAcMAIjEeSVzfoPSatgpg" supplier="_bGzYgBVdEeGQCvUGzi1kDQ" contract="_bGzYgBVdEeGQCvUGzi1kDQ"/>
     <ownedAttribute xmi:id="_UrrOkAIkEeSVzfoPSatgpg" name="code" visibility="private" redefinedProperty="_bGzYihVdEeGQCvUGzi1kDQ">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_j0EKAAIkEeSVzfoPSatgpg" name="allergyConcernAct2" type="_uCiIYLNwEeOtlapy2HWYww" redefinedProperty="_lqJOQB0aEeGGdsHVD60BZA" association="_j0GmQAIkEeSVzfoPSatgpg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j0ExEAIkEeSVzfoPSatgpg"/>
@@ -2352,7 +2352,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Bp4_sAIkEeSVzfoPSatgpg" base_Generalization="_nWC4cAIjEeSVzfoPSatgpg"/>
   <CDA:CodeSystemConstraint xmi:id="_UrrOkQIkEeSVzfoPSatgpg" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_UrrOkAIkEeSVzfoPSatgpg">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15346</ruleId>
     <ruleId>CONF:1098-32139</ruleId>
   </CDA:CodeSystemConstraint>
@@ -2373,14 +2373,14 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <generalization xmi:id="_EOQSgAInEeSr1aKUYorURA" general="_nWAcMAIjEeSVzfoPSatgpg"/>
     <substitution xmi:id="_tTejYAInEeSr1aKUYorURA" name="AllergiesSection" client="_EONPMAInEeSr1aKUYorURA" supplier="_2LMIwBSVEeGGzu7fmW9pXw" contract="_2LMIwBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_Blpr4KJ1EeSOc57SOMra_g" name="nullFlavor" visibility="private">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Blpr4aJ1EeSOc57SOMra_g"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Blpr4qJ1EeSOc57SOMra_g" value="1"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_D7zq8KJ1EeSOc57SOMra_g" value="NI"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ENCVEAIoEeSr1aKUYorURA" name="code" visibility="private" redefinedProperty="_UrrOkAIkEeSVzfoPSatgpg">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_kAEB0AIoEeSr1aKUYorURA" name="allergyConcernAct2" type="_uCiIYLNwEeOtlapy2HWYww" redefinedProperty="_j0EKAAIkEeSVzfoPSatgpg" association="_kAF3AAIoEeSr1aKUYorURA">
       <ownedComment xmi:id="_SZIasKJ2EeSOc57SOMra_g">
@@ -2390,10 +2390,10 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vqIm0AIpEeSr1aKUYorURA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_I_93kAIzEeScubSeRE1upQ" name="title" visibility="private" redefinedProperty="_bGzYixVdEeGQCvUGzi1kDQ">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_I_9QgAIzEeScubSeRE1upQ" name="text" visibility="private" aggregation="composite" redefinedProperty="_bGzYjBVdEeGQCvUGzi1kDQ">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I_9QggIzEeScubSeRE1upQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I_9QgQIzEeScubSeRE1upQ" value="1"/>
     </ownedAttribute>
@@ -2405,7 +2405,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Z2m7AAInEeSr1aKUYorURA" base_Generalization="_EOQSgAInEeSr1aKUYorURA"/>
   <CDA:CodeSystemConstraint xmi:id="_ENCVEQIoEeSr1aKUYorURA" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_ENCVEAIoEeSr1aKUYorURA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15350</ruleId>
     <ruleId>CONF:1098-32140</ruleId>
   </CDA:CodeSystemConstraint>
@@ -2452,7 +2452,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>CONF:1098-7329</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_xsNZAMzcEeSLqosJ4F90vA" code="completed" base_Property="_xsMx8MzcEeSLqosJ4F90vA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-19114</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_PqyFkMzdEeSLqosJ4F90vA" base_Property="_xsMx8MzcEeSLqosJ4F90vA">
@@ -2460,7 +2460,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_sXly0MzeEeSLqosJ4F90vA" base_Property="_2FFgwRSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_tlNvkc26EeSEZ8MJJ3ZzLg" code="completed" base_Property="_tlNvkM26EeSEZ8MJJ3ZzLg">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-19115</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_ujv0YM26EeSEZ8MJJ3ZzLg" base_Property="_tlNvkM26EeSEZ8MJJ3ZzLg">
