@@ -11,8 +11,17 @@
  -->
 <project name="CDA Model Transformation" basedir="." default="all">
 
-	<eclipse.convertPath resourcePath="org.openhealthtools.mdht.uml.cda" property="cdaPluginPath"/>
+	
 	<property name="modelName" value="consol" />
+	
+	<eclipse.convertPath resourcePath="org.openhealthtools.mdht.uml.cda" property="cdaPluginPath"/>
+	
+	<eclipse.convertPath resourcePath="org.openhealthtools.mdht.uml.cda.consol2.model/model/${modelName}.uml" property="modelPath.uml"/>
+
+<!--	<property name="modelPath.uml" location="${basedir}.model/model/${modelName}.uml"/> -->
+
+		
+
 	<property name="validation.failOnError" value="false" />
 	<property name="runPostProcessing" value="true" />
 
