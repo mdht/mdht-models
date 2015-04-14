@@ -24,10 +24,25 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedSupply2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivitySupplyTemplateId PlannedSupply2StatusCode PlannedSupply2StatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.43' templateId.extension='2014-06-09' statusCode.code='active' constraints.validation.warning='PlannedSupply2EffectiveTime PlannedSupply2AuthorParticipation' constraints.validation.info='PlannedSupply2RepeatNumber PlannedSupply2Quantity PlannedSupply2Product PlannedSupply2Performer PlannedSupply2ProductInstance PlannedSupply2PatientPriorityPreference PlannedSupply2ProviderPriorityPreference PlannedSupply2Indication2 PlannedSupply2Instruction2 PlannedSupply2PlannedCoverage'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivitySupplyTemplateId PlannedSupply2MedInfoXorImmunXorProductInstance PlanOfCareActivitySupplyMoodCode PlannedSupply2StatusCode PlannedSupply2StatusCodeP PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2' templateId.root='2.16.840.1.113883.10.20.22.4.43' templateId.extension='2014-06-09' statusCode.code='active' constraints.validation.warning='PlannedSupply2EffectiveTime PlannedSupply2AuthorParticipation PlannedSupply2ProductRecommended' constraints.validation.info='PlannedSupply2RepeatNumber PlannedSupply2Quantity PlannedSupply2Product PlannedSupply2Performer PlannedSupply2ProductInstance PlannedSupply2PriorityPreference PlannedSupply2Indication2 PlannedSupply2Instruction2 PlannedSupply2PlannedCoverage PlannedSupply2ProductManufacturedProduct' constraints.validation.query='PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2 PlannedSupply2ProductManufacturedProduct'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedSupply2Product constraints.validation.info='PlannedSupply2ProductManufacturedProduct'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedSupply2ProductManufacturedProduct constraints.validation.error='PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2'"
  * @generated
  */
 public interface PlannedSupply2 extends PlanOfCareActivitySupply {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)) xor (product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)) xor (participant.participantRole->select(oclIsTypeOf(consol::ProductInstance))->size() = 1 )'"
+	 * @generated
+	 */
+	boolean validatePlannedSupply2MedInfoXorImmunXorProductInstance(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -143,22 +158,10 @@ public interface PlannedSupply2 extends PlanOfCareActivitySupply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PatientPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
-	 * @generated
-	 */
-	boolean validatePlannedSupply2PatientPriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
-	boolean validatePlannedSupply2ProviderPriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlannedSupply2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,6 +202,43 @@ public interface PlannedSupply2 extends PlanOfCareActivitySupply {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product->one(product : cda::Product | not product.oclIsUndefined() and product.oclIsKindOf(rim::Participation))'"
+	 * @generated
+	 */
+	boolean validatePlannedSupply2ProductRecommended(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product->excluding(null).manufacturedProduct->excluding(null)->reject(oclIsTypeOf(consol::MedicationInformation2) xor oclIsTypeOf(consol::ImmunizationMedicationInformation2))'"
+	 * @generated
+	 */
+	boolean validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product->excluding(null)->reject(manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(cda::ManufacturedProduct)))'"
+	 * @generated
+	 */
+	boolean validatePlannedSupply2ProductManufacturedProduct(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance))->asSequence()->any(true).oclAsType(consol::ProductInstance)'"
 	 * @generated
@@ -209,19 +249,10 @@ public interface PlannedSupply2 extends PlanOfCareActivitySupply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PatientPriorityPreference)).oclAsType(consol::PatientPriorityPreference)'"
-	 * @generated
-	 */
-	EList<PatientPriorityPreference> getPatientPriorityPreferences();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)'"
 	 * @generated
 	 */
-	EList<ProviderPriorityPreference> getProviderPriorityPreferences();
+	EList<ProviderPriorityPreference> getPriorityPreferences();
 
 	/**
 	 * <!-- begin-user-doc -->

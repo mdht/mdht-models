@@ -93,6 +93,15 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationDispenseStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispense2Operations.validateMedicationDispenseStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateMedicationDispenseMedicationSupplyOrder2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -118,6 +127,26 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	@Override
 	public boolean validateMedicationDispenseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispenseTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationDispenseStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispense2Operations.validateMedicationDispenseStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationDispenseRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispense2Operations.validateMedicationDispenseRepeatNumber(this, diagnostics, context);
 	}
 
 	/**

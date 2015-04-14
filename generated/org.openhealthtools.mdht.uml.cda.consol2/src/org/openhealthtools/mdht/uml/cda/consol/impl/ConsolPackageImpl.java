@@ -4616,7 +4616,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPatientPriorityPreference() {
 		if (patientPriorityPreferenceEClass == null) {
 			patientPriorityPreferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				193);
+				195);
 		}
 		return patientPriorityPreferenceEClass;
 	}
@@ -4644,7 +4644,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPlannedCoverage() {
 		if (plannedCoverageEClass == null) {
 			plannedCoverageEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				195);
+				194);
 		}
 		return plannedCoverageEClass;
 	}
@@ -4756,7 +4756,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProviderPriorityPreference() {
 		if (providerPriorityPreferenceEClass == null) {
 			providerPriorityPreferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				194);
+				193);
 		}
 		return providerPriorityPreferenceEClass;
 	}

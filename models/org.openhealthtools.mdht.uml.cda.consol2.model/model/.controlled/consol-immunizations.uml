@@ -1552,4 +1552,5 @@ This information should be included in an Immunization Activity when available. 
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
     <ruleId>CONF:1098-31881</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_sgESQN_KEeS_Zazavvm12Q" base_Property="_sCU5QOHVEeO04sHNODkHmQ"/>
 </xmi:XMI>

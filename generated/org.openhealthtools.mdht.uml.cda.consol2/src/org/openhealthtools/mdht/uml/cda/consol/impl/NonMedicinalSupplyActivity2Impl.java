@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 
+import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NonMedicinalSupplyActivity2Operations;
 
 /**
@@ -70,6 +71,17 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateNonMedicinalSupplyActivityStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityStatusCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateNonMedicinalSupplyActivity2Instruction2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -92,9 +104,41 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public ProductInstance getConsolProductInstance() {
+		return NonMedicinalSupplyActivity2Operations.getConsolProductInstance(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateNonMedicinalSupplyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityStatusCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateNonMedicinalSupplyActivityProductInstance(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityProductInstance(
 			this, diagnostics, context);
 	}
 

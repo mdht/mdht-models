@@ -654,7 +654,7 @@ If any Result Observation within the organizer has a statusCode of &quot;active&
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q4zckfJPEeOA6ZIOnFjrYQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q4zckvJPEeOA6ZIOnFjrYQ" value="*"/>
     </ownedAttribute>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_-aBi0M21EeSEZ8MJJ3ZzLg" name="IVL_TS">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_-aBi0M21EeSEZ8MJJ3ZzLg" name="IVLTS">
       <ownedComment xmi:id="_Kj7T4M22EeSEZ8MJJ3ZzLg">
         <body>INLINE</body>
       </ownedComment>

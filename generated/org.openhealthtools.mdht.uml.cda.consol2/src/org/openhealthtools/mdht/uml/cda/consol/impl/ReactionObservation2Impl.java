@@ -106,9 +106,46 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateReactionObservation2TextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservation2TextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservation2TextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservation2TextReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservation2ReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservation2ReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateReactionObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -194,6 +231,26 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	@Override
 	public boolean validateReactionObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateReactionObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservationId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateReactionObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**

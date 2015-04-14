@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
-import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
@@ -55,6 +54,25 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PLANNED_PROCEDURE2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedProcedure2CodeFromLoincOrSnomed(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2CodeFromLoincOrSnomed(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedProcedure2CodeFromCptOrIcd(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2CodeFromCptOrIcd(this, diagnostics, context);
 	}
 
 	/**
@@ -162,23 +180,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlannedProcedure2PatientPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedProcedure2Operations.validatePlannedProcedure2PatientPriorityPreference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedProcedure2ProviderPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedProcedure2Operations.validatePlannedProcedure2ProviderPriorityPreference(
-			this, diagnostics, context);
+	public boolean validatePlannedProcedure2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2PriorityPreference(this, diagnostics, context);
 	}
 
 	/**
@@ -216,19 +219,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
-		return PlannedProcedure2Operations.getPatientPriorityPreferences(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
-		return PlannedProcedure2Operations.getProviderPriorityPreferences(this);
+	public EList<ProviderPriorityPreference> getPriorityPreferences() {
+		return PlannedProcedure2Operations.getPriorityPreferences(this);
 	}
 
 	/**
@@ -270,6 +262,16 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	public boolean validatePlanOfCareActivityProcedureTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedProcedure2Operations.validatePlanOfCareActivityProcedureTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlanOfCareActivityProcedureMoodCode(this, diagnostics, context);
 	}
 
 	/**

@@ -446,12 +446,12 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createGoalObservation();
 			case ConsolPackage.PLANNED_OBSERVATION2:
 				return createPlannedObservation2();
-			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE:
-				return createPatientPriorityPreference();
 			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE:
 				return createProviderPriorityPreference();
 			case ConsolPackage.PLANNED_COVERAGE:
 				return createPlannedCoverage();
+			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE:
+				return createPatientPriorityPreference();
 			case ConsolPackage.HEALTH_CONCERN_ACT:
 				return createHealthConcernAct();
 			case ConsolPackage.SELF_CARE_ACTIVITIES:

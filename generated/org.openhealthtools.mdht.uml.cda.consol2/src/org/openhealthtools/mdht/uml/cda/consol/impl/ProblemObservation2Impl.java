@@ -20,7 +20,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatus;
 import org.openhealthtools.mdht.uml.cda.consol.PrognosisObservation;
@@ -55,6 +54,36 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PROBLEM_OBSERVATION2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemObservation2HasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservation2HasTextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemObservation2TextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservation2TextReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemObservation2HasTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservation2HasTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,11 +133,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateProblemObservation2PatientPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemObservation2Operations.validateProblemObservation2PatientPriorityPreference(
-			this, diagnostics, context);
+	public boolean validateProblemObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -127,11 +153,9 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateProblemObservation2ProviderPriorityPreference(DiagnosticChain diagnostics,
+	public boolean validateProblemObservation2PriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservation2Operations.validateProblemObservation2ProviderPriorityPreference(
-			this, diagnostics, context);
+		return ProblemObservation2Operations.validateProblemObservation2PriorityPreference(this, diagnostics, context);
 	}
 
 	/**
@@ -171,16 +195,6 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * @generated
 	 */
 	@Override
-	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
-		return ProblemObservation2Operations.getPatientPriorityPreferences(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public PrognosisObservation getPrognosisObservation() {
 		return ProblemObservation2Operations.getPrognosisObservation(this);
 	}
@@ -190,9 +204,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
-		return ProblemObservation2Operations.getProviderPriorityPreferences(this);
+	public EList<ProviderPriorityPreference> getPriorityPreferences() {
+		return ProblemObservation2Operations.getPriorityPreferences(this);
 	}
 
 	/**
@@ -263,6 +276,46 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	@Override
 	public boolean validateProblemObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationProblemStatus(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservationProblemStatus(this, diagnostics, context);
 	}
 
 	/**

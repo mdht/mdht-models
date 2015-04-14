@@ -28,7 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
-import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
@@ -43,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Status Code P</em>}</li>
@@ -53,17 +53,16 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2TargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Performer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2PatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Patient Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2ProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Provider Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2PriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Indication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Indication2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Instruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2PlannedCoverage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Planned Coverage</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getPriorityPreferences() <em>Get Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getIndication2s() <em>Get Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getInstruction2s() <em>Get Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getPlannedCoverages() <em>Get Planned Coverages</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlanOfCareActivityObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlanOfCareActivityObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Mood Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -80,6 +79,76 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validatePlannedObservation2CodeP(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlannedObservation2CodeP(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePlannedObservation2CodeP(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlannedObservation2CodeP(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param plannedObservation2 The receiving '<em><b>Planned Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validatePlannedObservation2CodeP(PlannedObservation2 plannedObservation2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
+			try {
+				VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			plannedObservation2)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_CODE_P,
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2CodeP"), new Object[] { plannedObservation2 }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2CodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2CodeP", passToken);
+				}
+				passToken.add(plannedObservation2);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validatePlannedObservation2Code(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -87,7 +156,9 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+	protected static final String VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedObservation2Code(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Code</em>}' invariant operation.
@@ -114,6 +185,14 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	public static boolean validatePlannedObservation2Code(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2CodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(plannedObservation2)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
 		if (VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
@@ -127,7 +206,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 			plannedObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_CODE,
 					ConsolPlugin.INSTANCE.getString("PlannedObservation2Code"), new Object[] { plannedObservation2 }));
 			}
@@ -691,25 +770,25 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePlannedObservation2PatientPriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Patient Priority Preference</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePlannedObservation2PriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Priority Preference</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePlannedObservation2PatientPriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePlannedObservation2PriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_OBSERVATION2_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PatientPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePlannedObservation2PatientPriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Patient Priority Preference</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validatePlannedObservation2PriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Priority Preference</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePlannedObservation2PatientPriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePlannedObservation2PriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PLANNED_OBSERVATION2_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -722,86 +801,25 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @generated
 	 */
 
-	public static boolean validatePlannedObservation2PatientPriorityPreference(PlannedObservation2 plannedObservation2,
+	public static boolean validatePlannedObservation2PriorityPreference(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PLANNED_OBSERVATION2_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PLANNED_OBSERVATION2_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PATIENT_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2PatientPriorityPreference"),
-					new Object[] { plannedObservation2 }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePlannedObservation2ProviderPriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Provider Priority Preference</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePlannedObservation2ProviderPriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PLANNED_OBSERVATION2_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePlannedObservation2ProviderPriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Provider Priority Preference</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePlannedObservation2ProviderPriorityPreference(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PLANNED_OBSERVATION2_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param plannedObservation2 The receiving '<em><b>Planned Observation2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePlannedObservation2ProviderPriorityPreference(
-			PlannedObservation2 plannedObservation2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PLANNED_OBSERVATION2_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
-			try {
-				VALIDATE_PLANNED_OBSERVATION2_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PLANNED_OBSERVATION2_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedObservation2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PROVIDER_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2ProviderPriorityPreference"),
+					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PRIORITY_PREFERENCE,
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PriorityPreference"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -988,24 +1006,24 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPatientPriorityPreferences(PlannedObservation2) <em>Get Patient Priority Preferences</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getPriorityPreferences(PlannedObservation2) <em>Get Priority Preferences</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPatientPriorityPreferences(PlannedObservation2)
+	 * @see #getPriorityPreferences(PlannedObservation2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PATIENT_PRIORITY_PREFERENCES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PatientPriorityPreference)).oclAsType(consol::PatientPriorityPreference)";
+	protected static final String GET_PRIORITY_PREFERENCES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPatientPriorityPreferences(PlannedObservation2) <em>Get Patient Priority Preferences</em>}' query operation.
+	 * The cached OCL query for the '{@link #getPriorityPreferences(PlannedObservation2) <em>Get Priority Preferences</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPatientPriorityPreferences(PlannedObservation2)
+	 * @see #getPriorityPreferences(PlannedObservation2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PATIENT_PRIORITY_PREFERENCES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PRIORITY_PREFERENCES__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1013,64 +1031,19 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @generated
 	 */
 
-	public static EList<PatientPriorityPreference> getPatientPriorityPreferences(PlannedObservation2 plannedObservation2) {
-		if (GET_PATIENT_PRIORITY_PREFERENCES__EOCL_QRY == null) {
+	public static EList<ProviderPriorityPreference> getPriorityPreferences(PlannedObservation2 plannedObservation2) {
+		if (GET_PRIORITY_PREFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_OBSERVATION2,
 				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(70));
 			try {
-				GET_PATIENT_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PATIENT_PRIORITY_PREFERENCES__EOCL_EXP);
+				GET_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PRIORITY_PREFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PATIENT_PRIORITY_PREFERENCES__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PatientPriorityPreference> result = (Collection<PatientPriorityPreference>) query.evaluate(plannedObservation2);
-		return new BasicEList.UnmodifiableEList<PatientPriorityPreference>(result.size(), result.toArray());
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getProviderPriorityPreferences(PlannedObservation2) <em>Get Provider Priority Preferences</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProviderPriorityPreferences(PlannedObservation2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)";
-
-	/**
-	 * The cached OCL query for the '{@link #getProviderPriorityPreferences(PlannedObservation2) <em>Get Provider Priority Preferences</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProviderPriorityPreferences(PlannedObservation2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-
-	public static EList<ProviderPriorityPreference> getProviderPriorityPreferences(
-			PlannedObservation2 plannedObservation2) {
-		if (GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PLANNED_OBSERVATION2,
-				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(71));
-			try {
-				GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PRIORITY_PREFERENCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProviderPriorityPreference> result = (Collection<ProviderPriorityPreference>) query.evaluate(plannedObservation2);
 		return new BasicEList.UnmodifiableEList<ProviderPriorityPreference>(result.size(), result.toArray());
@@ -1107,7 +1080,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_OBSERVATION2,
-				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(72));
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(71));
 			try {
 				GET_INDICATION2S__EOCL_QRY = helper.createQuery(GET_INDICATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1151,7 +1124,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_OBSERVATION2,
-				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(73));
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(72));
 			try {
 				GET_INSTRUCTION2S__EOCL_QRY = helper.createQuery(GET_INSTRUCTION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1195,7 +1168,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_OBSERVATION2,
-				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(74));
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(73));
 			try {
 				GET_PLANNED_COVERAGES__EOCL_QRY = helper.createQuery(GET_PLANNED_COVERAGES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1260,6 +1233,67 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLAN_OF_CARE_ACTIVITY_OBSERVATION_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationTemplateId"),
+					new Object[] { plannedObservation2 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePlanOfCareActivityObservationMoodCode(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlanOfCareActivityObservationMoodCode(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation) and "
+			+ "let value : vocab::x_ActMoodDocumentObservation = self.moodCode.oclAsType(vocab::x_ActMoodDocumentObservation) in "
+			+ "value = vocab::x_ActMoodDocumentObservation::INT or value = vocab::x_ActMoodDocumentObservation::GOL or value = vocab::x_ActMoodDocumentObservation::PRMS or value = vocab::x_ActMoodDocumentObservation::PRP or value = vocab::x_ActMoodDocumentObservation::RQO";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePlanOfCareActivityObservationMoodCode(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlanOfCareActivityObservationMoodCode(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param plannedObservation2 The receiving '<em><b>Planned Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validatePlanOfCareActivityObservationMoodCode(PlannedObservation2 plannedObservation2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
+			try {
+				VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			plannedObservation2)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PLANNED_OBSERVATION2__PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationMoodCode"),
 					new Object[] { plannedObservation2 }));
 			}
 

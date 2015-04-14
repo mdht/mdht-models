@@ -157,6 +157,15 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateVitalSignObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignObservationOperations.validateVitalSignObservationStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateVitalSignObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignObservationOperations.validateVitalSignObservationEffectiveTime(this, diagnostics, context);

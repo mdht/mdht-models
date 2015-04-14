@@ -24,12 +24,61 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationActivityTemplateId ImmunizationActivityStatusCode ImmunizationActivityStatusCodeP ImmunizationActivityAdministrationUnitCode ImmunizationActivityConsumable ImmunizationActivity2ImmunizationActivityConsumableImmunizationMedicationInformation2 ImmunizationActivity2ImmunizationActivityPreconditionTypeCode ImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2' templateId.root='2.16.840.1.113883.10.20.22.4.52' templateId.extension='2014-06-09' constraints.validation.info='ImmunizationActivityCode ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCodeP ImmunizationActivityNegationInd ImmunizationActivity2SubstanceAdministeredAct ImmunizationActivityDrugVehicle ImmunizationActivityIndication2 ImmunizationActivityMedicationSupplyOrder2 ImmunizationActivityMedicationDispense2 ImmunizationActivityReactionObservation2 ImmunizationActivityInstruction2 ImmunizationActivityPrecondition' constraints.validation.dependOn.ImmunizationActivityStatusCode='ImmunizationActivityStatusCodeP' administrationUnitCode.codeSystemName='' constraints.validation.dependOn.ImmunizationActivityAdministrationUnitCode='ImmunizationActivityAdministrationUnitCodeP' constraints.validation.warning='ImmunizationActivity2AuthorParticipation' constraints.validation.query='ImmunizationActivity2ImmunizationActivityConsumableImmunizationMedicationInformation2 ImmunizationActivity2ImmunizationActivityPreconditionTypeCode ImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationActivityTemplateId ImmunizationActivity2InstructionInversion ImmunizationActivityStatusCode ImmunizationActivityStatusCodeP ImmunizationActivityAdministrationUnitCode ImmunizationActivityConsumable ImmunizationActivity2EntryRelationshipTypeCode ImmunizationActivity2EntryRelationshipInversionInd ImmunizationActivity2EntryRelationshipSubstanceAdministeredAct ImmunizationActivity2ImmunizationActivityConsumableImmunizationMedicationInformation2 ImmunizationActivity2ImmunizationActivityPreconditionTypeCode ImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2' templateId.root='2.16.840.1.113883.10.20.22.4.52' templateId.extension='2014-06-09' constraints.validation.info='ImmunizationActivityNegationInd ImmunizationActivityCode ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCodeP ImmunizationActivityDrugVehicle ImmunizationActivityIndication2 ImmunizationActivityMedicationSupplyOrder2 ImmunizationActivityMedicationDispense2 ImmunizationActivityReactionObservation2 ImmunizationActivityInstruction2 ImmunizationActivityPrecondition ImmunizationActivity2EntryRelationshipSequenceNumber' constraints.validation.dependOn.ImmunizationActivityStatusCode='ImmunizationActivityStatusCodeP' administrationUnitCode.codeSystemName='' constraints.validation.dependOn.ImmunizationActivityAdministrationUnitCode='ImmunizationActivityAdministrationUnitCodeP' constraints.validation.warning='ImmunizationActivity2AuthorParticipation ImmunizationActivity2EntryRelationshipForSubAdminAct' constraints.validation.query='ImmunizationActivity2EntryRelationshipTypeCode ImmunizationActivity2EntryRelationshipInversionInd ImmunizationActivity2EntryRelationshipSequenceNumber ImmunizationActivity2EntryRelationshipSubstanceAdministeredAct ImmunizationActivity2ImmunizationActivityConsumableImmunizationMedicationInformation2 ImmunizationActivity2ImmunizationActivityPreconditionTypeCode ImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationActivity2Consumable constraints.validation.error='ImmunizationActivityConsumableImmunizationMedicationInformation2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationActivity2Precondition typeCode='PRCN' constraints.validation.error='ImmunizationActivityPreconditionTypeCode ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationActivity2EntryRelationship typeCode='COMP' constraints.validation.error='ImmunizationActivity2EntryRelationshipTypeCode ImmunizationActivity2EntryRelationshipInversionInd ImmunizationActivity2EntryRelationshipSubstanceAdministeredAct' inversionInd='true' constraints.validation.info='ImmunizationActivity2EntryRelationshipSequenceNumber'"
  * @generated
  */
 public interface ImmunizationActivity2 extends ImmunizationActivity {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivity2TextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivity2ReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivity2TextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instruction2))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivity2InstructionInversion(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,19 +102,6 @@ public interface ImmunizationActivity2 extends ImmunizationActivity {
 	 * @generated
 	 */
 	boolean validateImmunizationActivity2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::SubstanceAdministeredAct) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
-	 * @generated
-	 */
-	boolean validateImmunizationActivity2SubstanceAdministeredAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,6 +170,71 @@ public interface ImmunizationActivity2 extends ImmunizationActivity {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivity2EntryRelationshipForSubAdminAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivity2EntryRelationshipTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(not inversionInd.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivity2EntryRelationshipInversionInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject((sequenceNumber.oclIsUndefined() or sequenceNumber.isNullFlavorUndefined()) implies (not sequenceNumber.oclIsUndefined()))'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivity2EntryRelationshipSequenceNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::SubstanceAdministeredAct)))'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivity2EntryRelationshipSubstanceAdministeredAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable->excluding(null)->reject(manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(consol::ImmunizationMedicationInformation2)))'"
 	 * @generated
 	 */
@@ -165,15 +266,6 @@ public interface ImmunizationActivity2 extends ImmunizationActivity {
 	 */
 	boolean validateImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::SubstanceAdministeredAct)).oclAsType(consol::SubstanceAdministeredAct)'"
-	 * @generated
-	 */
-	EList<SubstanceAdministeredAct> getSubstanceAdministeredActs();
 
 	/**
 	 * <!-- begin-user-doc -->

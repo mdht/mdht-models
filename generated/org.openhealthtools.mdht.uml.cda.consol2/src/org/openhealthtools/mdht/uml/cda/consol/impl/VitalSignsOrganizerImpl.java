@@ -108,6 +108,24 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateVitalSignsOrganizerCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVitalSignsOrganizerStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateVitalSignsOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerStatusCode(this, diagnostics, context);

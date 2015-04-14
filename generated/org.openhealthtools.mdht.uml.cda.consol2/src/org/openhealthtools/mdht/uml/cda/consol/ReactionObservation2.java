@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReactionObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReactionObservationTemplateId ReactionObservation2ProcedureActivityProcedureInversionInd ReactionObservation2MedicationActivityInversionInd ReactionObservation2SeverityObservationInversionInd ReactionObservationCode ReactionObservationCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.9' templateId.extension='2014-06-09' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.ReactionObservationCode='ReactionObservationCodeP' constraints.validation.info='ReactionObservationProcedureActivityProcedure2 ReactionObservationMedicationActivity2 ReactionObservationSeverityObservation2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReactionObservationTemplateId ReactionObservation2ProcedureActivityProcedureInversionInd ReactionObservation2MedicationActivityInversionInd ReactionObservation2SeverityObservationInversionInd ReactionObservationCode ReactionObservationCodeP ReactionObservationId ReactionObservationStatusCode ReactionObservationStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.9' templateId.extension='2014-06-09' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.ReactionObservationCode='ReactionObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.ReactionObservationStatusCode='ReactionObservationStatusCodeP' constraints.validation.info='ReactionObservationProcedureActivityProcedure2 ReactionObservationMedicationActivity2 ReactionObservationSeverityObservation2'"
  * @generated
  */
 public interface ReactionObservation2 extends ReactionObservation {
@@ -86,10 +86,58 @@ public interface ReactionObservation2 extends ReactionObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateReactionObservation2TextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateReactionObservation2TextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateReactionObservation2ReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateReactionObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateReactionObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

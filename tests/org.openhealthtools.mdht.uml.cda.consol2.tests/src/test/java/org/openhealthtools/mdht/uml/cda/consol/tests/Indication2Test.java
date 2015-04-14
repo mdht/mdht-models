@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.Indication2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,11 +35,10 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndication2ProblemIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Problem Indication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndication2CodeNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Code Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndication2CodeNullFlavorValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Code Null Flavor Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndication2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Value</em>}</li>
  * </ul>
@@ -154,41 +152,6 @@ public class Indication2Test extends CDAValidationTest {
 		};
 
 		validateIndication2CodeNullFlavorValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateIndication2Text() {
-		OperationsTestCase<Indication2> validateIndication2TextTestCase = new OperationsTestCase<Indication2>(
-			"validateIndication2Text",
-			operationsForOCL.getOCLValue("VALIDATE_INDICATION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
-
-			@Override
-			protected void updateToFail(Indication2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Indication2 target) {
-				target.init();
-
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				target.setText(text);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return Indication2Operations.validateIndication2Text((Indication2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateIndication2TextTestCase.doValidationTest();
 	}
 
 	/**

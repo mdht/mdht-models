@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
-import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
@@ -55,6 +54,15 @@ public class PlannedObservation2Impl extends PlanOfCareActivityObservationImpl i
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PLANNED_OBSERVATION2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedObservation2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedObservation2Operations.validatePlannedObservation2CodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -162,23 +170,9 @@ public class PlannedObservation2Impl extends PlanOfCareActivityObservationImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlannedObservation2PatientPriorityPreference(DiagnosticChain diagnostics,
+	public boolean validatePlannedObservation2PriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedObservation2Operations.validatePlannedObservation2PatientPriorityPreference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedObservation2ProviderPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedObservation2Operations.validatePlannedObservation2ProviderPriorityPreference(
-			this, diagnostics, context);
+		return PlannedObservation2Operations.validatePlannedObservation2PriorityPreference(this, diagnostics, context);
 	}
 
 	/**
@@ -216,19 +210,8 @@ public class PlannedObservation2Impl extends PlanOfCareActivityObservationImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
-		return PlannedObservation2Operations.getPatientPriorityPreferences(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
-		return PlannedObservation2Operations.getProviderPriorityPreferences(this);
+	public EList<ProviderPriorityPreference> getPriorityPreferences() {
+		return PlannedObservation2Operations.getPriorityPreferences(this);
 	}
 
 	/**
@@ -270,6 +253,17 @@ public class PlannedObservation2Impl extends PlanOfCareActivityObservationImpl i
 	public boolean validatePlanOfCareActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedObservation2Operations.validatePlanOfCareActivityObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedObservation2Operations.validatePlanOfCareActivityObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**

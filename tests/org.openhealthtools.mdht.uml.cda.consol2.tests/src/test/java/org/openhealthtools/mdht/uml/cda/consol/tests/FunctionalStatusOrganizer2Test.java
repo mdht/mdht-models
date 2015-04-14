@@ -64,7 +64,7 @@ public class FunctionalStatusOrganizer2Test extends CDAValidationTest {
 			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_ORGANIZER2_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			private final String valCodeSystems[] = { "2.16.840.1.113883.6.254", CDAValidationTest.SNOMEDCT_ID };
+			private final String[] valCodeSystems = { "2.16.840.1.113883.6.254", CDAValidationTest.LOINC_ID };
 
 			@Override
 			protected void updateToFail(FunctionalStatusOrganizer2 target) {
@@ -73,20 +73,17 @@ public class FunctionalStatusOrganizer2Test extends CDAValidationTest {
 			}
 
 			@Override
-			protected void updateToPass(FunctionalStatusOrganizer2 target) {
-				target.getCode().setCodeSystem(valCodeSystems[0]);
-			}
-
-			@Override
 			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(FunctionalStatusOrganizer2 target) {
-						target.init();
-						target.setCode(DatatypesFactory.eINSTANCE.createCD());
-						target.getCode().setCodeSystem(CDAValidationTest.SNOMEDCT_ID);
-					}
-				});
+				for (final String cs : valCodeSystems) {
+					addPassTest(new PassTest() {
+						@Override
+						public void updateToPass(FunctionalStatusOrganizer2 target) {
+							target.init();
+							target.setCode(DatatypesFactory.eINSTANCE.createCD());
+							target.getCode().setCodeSystem(cs);
+						}
+					});
+				}
 			}
 
 			@Override

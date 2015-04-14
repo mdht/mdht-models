@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 
+import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityProcedure2Operations;
 
 /**
@@ -73,6 +74,50 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureActivityProcedure2CodeCodeSystems(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedure2CodeCodeSystems(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedure2CodeSuggestedCodeSystems(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedure2CodeSuggestedCodeSystems(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedure2ServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedure2ServiceDeliveryLocationTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedureStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureStatusCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProcedureActivityProcedureIndication2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -109,6 +154,61 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureActivityProcedure2AuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedure2AuthorParticipation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedure2ReactionObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedure2ReactionObservation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedure2ProcedureActivityPerformerProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedure2ProcedureActivityPerformerProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedure2ProcedureActivityPerformerProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedure2ProcedureActivityPerformerProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedure2ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedure2ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<Indication2> getConsolIndication2s() {
 		return ProcedureActivityProcedure2Operations.getConsolIndication2s(this);
@@ -132,6 +232,15 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	@Override
 	public Instruction2 getConsolInstruction2() {
 		return ProcedureActivityProcedure2Operations.getConsolInstruction2(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ReactionObservation2> getReactionObservation2s() {
+		return ProcedureActivityProcedure2Operations.getReactionObservation2s(this);
 	}
 
 	/**
@@ -175,8 +284,41 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * @generated
 	 */
 	@Override
+	public boolean validateProcedureActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureMoodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityProcedureStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureStatusCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateProcedureActivityProcedureSpecimen(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureSpecimen(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityProcedurePerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedurePerformer(
 			this, diagnostics, context);
 	}
 

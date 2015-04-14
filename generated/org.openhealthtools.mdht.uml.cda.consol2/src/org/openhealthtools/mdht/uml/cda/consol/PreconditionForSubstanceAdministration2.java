@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPreconditionForSubstanceAdministration2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PreconditionForSubstanceAdministrationTemplateId PreconditionForSubstanceAdministrationCode PreconditionForSubstanceAdministrationCodeP PreconditionForSubstanceAdministrationValue PreconditionForSubstanceAdministrationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.25' templateId.extension='2014-06-09' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.info='PreconditionForSubstanceAdministrationText' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PreconditionForSubstanceAdministrationTemplateId PreconditionForSubstanceAdministrationCode PreconditionForSubstanceAdministrationCodeP PreconditionForSubstanceAdministrationValue PreconditionForSubstanceAdministrationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.25' templateId.extension='2014-06-09' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface PreconditionForSubstanceAdministration2 extends PreconditionForSubstanceAdministration {

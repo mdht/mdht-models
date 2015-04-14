@@ -227,7 +227,7 @@ public interface GoalObservation extends PlannedObservation2 {
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PatientPriorityPreference))->asSequence()->any(true).oclAsType(consol::PatientPriorityPreference)'"
 	 * @generated
 	 */
-	PatientPriorityPreference getConsolPatientPriorityPreference();
+	PatientPriorityPreference getPatientPriorityPreference();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,7 +263,7 @@ public interface GoalObservation extends PlannedObservation2 {
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)'"
 	 * @generated
 	 */
-	EList<ProviderPriorityPreference> getConsolProviderPriorityPreferences();
+	EList<ProviderPriorityPreference> getProviderPriorityPreferences();
 
 	/**
 	 * <!-- begin-user-doc -->

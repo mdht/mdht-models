@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
-import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
 
@@ -236,22 +235,9 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlannedMedicationActivity2PatientPriorityPreference(DiagnosticChain diagnostics,
+	public boolean validatePlannedMedicationActivity2PriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PatientPriorityPreference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedMedicationActivity2ProviderPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ProviderPriorityPreference(
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PriorityPreference(
 			this, diagnostics, context);
 	}
 
@@ -364,19 +350,8 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
-		return PlannedMedicationActivity2Operations.getPatientPriorityPreferences(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
-		return PlannedMedicationActivity2Operations.getProviderPriorityPreferences(this);
+	public EList<ProviderPriorityPreference> getPriorityPreferences() {
+		return PlannedMedicationActivity2Operations.getPriorityPreferences(this);
 	}
 
 	/**
@@ -408,6 +383,18 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	public boolean validatePlanOfCareActivitySubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedMedicationActivity2Operations.validatePlanOfCareActivitySubstanceAdministrationTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareActivitySubstanceAdministrationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlanOfCareActivitySubstanceAdministrationMoodCode(
 			this, diagnostics, context);
 	}
 

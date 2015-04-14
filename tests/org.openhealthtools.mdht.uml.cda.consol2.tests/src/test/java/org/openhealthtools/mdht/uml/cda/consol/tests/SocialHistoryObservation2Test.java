@@ -11,6 +11,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -21,6 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistoryObservation2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
@@ -32,12 +34,15 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2ReferenceAttribute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Reference Attribute</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -45,6 +50,75 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  */
 
 public class SocialHistoryObservation2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSocialHistoryObservation2ReferenceAttribute() {
+		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservation2ReferenceAttributeTestCase = new OperationsTestCase<SocialHistoryObservation2>(
+			"validateSocialHistoryObservation2ReferenceAttribute",
+			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION2_REFERENCE_ATTRIBUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SocialHistoryObservation2 target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+				target.getCode().setOriginalText(DatatypesFactory.eINSTANCE.createED());
+			}
+
+			@Override
+			protected void updateToPass(SocialHistoryObservation2 target) {
+				target.getCode().getOriginalText().setReference(DatatypesFactory.eINSTANCE.createTEL());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SocialHistoryObservation2Operations.validateSocialHistoryObservation2ReferenceAttribute(
+					(SocialHistoryObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSocialHistoryObservation2ReferenceAttributeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateSocialHistoryObservationStatusCodeP() {
+		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservationStatusCodePTestCase = new OperationsTestCase<SocialHistoryObservation2>(
+			"validateSocialHistoryObservationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SocialHistoryObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SocialHistoryObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCodeP(
+					(SocialHistoryObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSocialHistoryObservationStatusCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -189,7 +263,7 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSocialHistoryObservationCode() {
@@ -206,8 +280,8 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(SocialHistoryObservation2 target) {
-				target.getCode().setCode("229819007");
-				target.getCode().setCodeSystem(SNOMEDCT_ID);
+				target.getCode().setCode("");
+				target.getCode().setCodeSystem(LOINC_ID);
 			}
 
 			@Override
@@ -254,6 +328,50 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 		};
 
 		validateSocialHistoryObservationCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateSocialHistoryObservationStatusCode() {
+		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservationStatusCodeTestCase = new OperationsTestCase<SocialHistoryObservation2>(
+			"validateSocialHistoryObservationStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SocialHistoryObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SocialHistoryObservation2 target) {
+				target.init();
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
+
+			}
+
+			@Override
+			protected void setDependency(SocialHistoryObservation2 target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationStatusCodeP", passToken);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCode(
+					(SocialHistoryObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSocialHistoryObservationStatusCodeTestCase.doValidationTest();
 	}
 
 	/**

@@ -40,9 +40,9 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2EffectiveTimeHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Effective Time High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2ProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Provider Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2PriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActProblemObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Problem Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#getPriorityPreferences() <em>Get Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#getConsolProblemObservation2s() <em>Get Consol Problem Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Status Code</em>}</li>
@@ -204,10 +204,10 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateProblemConcernAct2ProviderPriorityPreference() {
-		OperationsTestCase<ProblemConcernAct2> validateProblemConcernAct2ProviderPriorityPreferenceTestCase = new OperationsTestCase<ProblemConcernAct2>(
-			"validateProblemConcernAct2ProviderPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT2_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateProblemConcernAct2PriorityPreference() {
+		OperationsTestCase<ProblemConcernAct2> validateProblemConcernAct2PriorityPreferenceTestCase = new OperationsTestCase<ProblemConcernAct2>(
+			"validateProblemConcernAct2PriorityPreference",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -226,13 +226,13 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProblemConcernAct2Operations.validateProblemConcernAct2ProviderPriorityPreference(
+				return ProblemConcernAct2Operations.validateProblemConcernAct2PriorityPreference(
 					(ProblemConcernAct2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProblemConcernAct2ProviderPriorityPreferenceTestCase.doValidationTest();
+		validateProblemConcernAct2PriorityPreferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -277,10 +277,10 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProviderPriorityPreferences() {
+	public void testGetPriorityPreferences() {
 
 		ProblemConcernAct2 target = objectFactory.create();
-		target.getProviderPriorityPreferences();
+		target.getPriorityPreferences();
 
 	}
 

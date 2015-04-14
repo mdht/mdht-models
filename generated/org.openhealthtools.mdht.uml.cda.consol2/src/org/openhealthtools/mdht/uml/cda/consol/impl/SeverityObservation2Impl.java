@@ -56,9 +56,46 @@ public class SeverityObservation2Impl extends SeverityObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSeverityObservation2TextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeverityObservation2Operations.validateSeverityObservation2TextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSeverityObservation2TextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SeverityObservation2Operations.validateSeverityObservation2TextReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSeverityObservation2ReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeverityObservation2Operations.validateSeverityObservation2ReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSeverityObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservation2Operations.validateSeverityObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSeverityObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeverityObservation2Operations.validateSeverityObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -79,6 +116,16 @@ public class SeverityObservation2Impl extends SeverityObservationImpl implements
 	@Override
 	public boolean validateSeverityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservation2Operations.validateSeverityObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSeverityObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeverityObservation2Operations.validateSeverityObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**

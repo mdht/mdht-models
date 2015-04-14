@@ -157,6 +157,15 @@ public class SeverityObservationImpl extends ObservationImpl implements Severity
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSeverityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeverityObservationOperations.validateSeverityObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public SeverityObservation init() {
 		return Initializer.Util.init(this);

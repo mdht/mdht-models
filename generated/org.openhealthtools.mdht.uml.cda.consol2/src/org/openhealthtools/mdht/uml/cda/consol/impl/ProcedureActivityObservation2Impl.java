@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2;
 
+import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityObservation2Operations;
 
 /**
@@ -73,6 +74,39 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureActivityObservation2CodeCodeSystems(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2CodeCodeSystems(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservation2CodeSuggestedCodeSystems(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2CodeSuggestedCodeSystems(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationStatusCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProcedureActivityObservationIndication2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -101,6 +135,72 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	public boolean validateProcedureActivityObservationInstruction2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationInstruction2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservation2AuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2AuthorParticipation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservation2ReactionObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2ReactionObservation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservation2ANYNullFlavor(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2ANYNullFlavor(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservation2ProcedureActivityObservationProcedureObservationPerformerAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2ProcedureActivityObservationProcedureObservationPerformerAssignedEntity(
 			this, diagnostics, context);
 	}
 
@@ -139,6 +239,15 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<ReactionObservation2> getReactionObservation2s() {
+		return ProcedureActivityObservation2Operations.getReactionObservation2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProcedureActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -167,6 +276,52 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	public boolean validateProcedureActivityObservationTargetSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationTargetSiteCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationMoodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationStatusCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationPerformer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationPerformer(
 			this, diagnostics, context);
 	}
 

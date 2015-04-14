@@ -3818,26 +3818,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE: {
-				PatientPriorityPreference patientPriorityPreference = (PatientPriorityPreference) theEObject;
-				T result = casePatientPriorityPreference(patientPriorityPreference);
-				if (result == null) {
-					result = caseObservation(patientPriorityPreference);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(patientPriorityPreference);
-				}
-				if (result == null) {
-					result = caseAct(patientPriorityPreference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(patientPriorityPreference);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE: {
 				ProviderPriorityPreference providerPriorityPreference = (ProviderPriorityPreference) theEObject;
 				T result = caseProviderPriorityPreference(providerPriorityPreference);
@@ -3872,6 +3852,26 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(plannedCoverage);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE: {
+				PatientPriorityPreference patientPriorityPreference = (PatientPriorityPreference) theEObject;
+				T result = casePatientPriorityPreference(patientPriorityPreference);
+				if (result == null) {
+					result = caseObservation(patientPriorityPreference);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(patientPriorityPreference);
+				}
+				if (result == null) {
+					result = caseAct(patientPriorityPreference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientPriorityPreference);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);

@@ -30,6 +30,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 import org.openhealthtools.mdht.uml.hl7.vocab.ActRelationshipType;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -54,8 +55,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2AdministrationUnitCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Administration Unit Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2Performer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2PatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Patient Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2ProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Provider Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2PriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2Indication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Indication2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2Instruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2Consumable(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Consumable</em>}</li>
@@ -65,11 +65,11 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2ConsumableMedicationInformation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Consumable Medication Information2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2PreconditionTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Precondition Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Precondition Precondition For Substance Administration2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#getPriorityPreferences() <em>Get Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#getIndication2s() <em>Get Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#getInstruction2s() <em>Get Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlanOfCareActivitySubstanceAdministrationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Substance Administration Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlanOfCareActivitySubstanceAdministrationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Substance Administration Mood Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -620,46 +620,10 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidatePlannedMedicationActivity2PatientPriorityPreference() {
-		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2PatientPriorityPreferenceTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
-			"validatePlannedMedicationActivity2PatientPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_MEDICATION_ACTIVITY2_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedMedicationActivity2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedMedicationActivity2 target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createPatientPriorityPreference().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PatientPriorityPreference(
-					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedMedicationActivity2PatientPriorityPreferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedMedicationActivity2ProviderPriorityPreference() {
-		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2ProviderPriorityPreferenceTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
-			"validatePlannedMedicationActivity2ProviderPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_MEDICATION_ACTIVITY2_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidatePlannedMedicationActivity2PriorityPreference() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2PriorityPreferenceTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlannedMedicationActivity2PriorityPreference",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_MEDICATION_ACTIVITY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -678,13 +642,13 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ProviderPriorityPreference(
+				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PriorityPreference(
 					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePlannedMedicationActivity2ProviderPriorityPreferenceTestCase.doValidationTest();
+		validatePlannedMedicationActivity2PriorityPreferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -1018,22 +982,10 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPatientPriorityPreferences() {
+	public void testGetPriorityPreferences() {
 
 		PlannedMedicationActivity2 target = objectFactory.create();
-		target.getPatientPriorityPreferences();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetProviderPriorityPreferences() {
-
-		PlannedMedicationActivity2 target = objectFactory.create();
-		target.getProviderPriorityPreferences();
+		target.getPriorityPreferences();
 
 	}
 
@@ -1093,6 +1045,40 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 		};
 
 		validatePlanOfCareActivitySubstanceAdministrationTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfCareActivitySubstanceAdministrationMoodCode() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlanOfCareActivitySubstanceAdministrationMoodCodeTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlanOfCareActivitySubstanceAdministrationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedMedicationActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedMedicationActivity2 target) {
+				target.init();
+				target.setMoodCode(x_DocumentSubstanceMood.INT);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedMedicationActivity2Operations.validatePlanOfCareActivitySubstanceAdministrationMoodCode(
+					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareActivitySubstanceAdministrationMoodCodeTestCase.doValidationTest();
 	}
 
 	/**

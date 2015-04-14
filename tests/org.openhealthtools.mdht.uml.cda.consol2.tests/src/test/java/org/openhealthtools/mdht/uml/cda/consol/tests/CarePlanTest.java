@@ -16,7 +16,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.Authenticator;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
@@ -135,7 +134,6 @@ public class CarePlanTest extends CDAValidationTest {
 	*
 	* @generated NOT
 	*/
-	@Ignore
 	@Test
 	public void testValidateCarePlanDoesNotHavePlanOfTreatmentSectionV2() {
 		OperationsTestCase<CarePlan> validateCarePlanDoesNotHavePlanOfTreatmentSectionV2TestCase = new OperationsTestCase<CarePlan>(
@@ -152,12 +150,12 @@ public class CarePlanTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				// remove and replace with a different section so that there is no PlanOfTreatmentSection2 in the XML
-				for (Section s : target.getSections()) {
-					s.getTemplateIds().clear();
-					s.setCode(null);
-					s.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII("SOME OTHER TEMPLATE"));
-				}
+				// since the sections are an unmodifiable list (cannot do target.getSections().clear()),
+				// walk the cda to clear everything in the component(s)
+				target.getComponent().getStructuredBody().getComponents().clear();
+				// add a random section which IS allowed
+				Section hcs = ConsolFactory.eINSTANCE.createHealthConcernsSection().init();
+				target.addSection(hcs);
 			}
 
 			@Override

@@ -73,7 +73,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FUNCTIONAL_STATUS_ORGANIZER2_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.96'";
+	protected static final String VALIDATE_FUNCTIONAL_STATUS_ORGANIZER2_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.1'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFunctionalStatusOrganizer2CodeCodeSystem(FunctionalStatusOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Organizer2 Code Code System</em>}' invariant operation.

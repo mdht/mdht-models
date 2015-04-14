@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getNonMedicinalSupplyActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivity2Instruction2InversionInd' templateId.root='2.16.840.1.113883.10.20.22.4.50' templateId.extension='2014-06-09' constraints.validation.info='NonMedicinalSupplyActivity2Instruction2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivity2Instruction2InversionInd NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.50' templateId.extension='2014-06-09' constraints.validation.dependOn.NonMedicinalSupplyActivityStatusCode='NonMedicinalSupplyActivityStatusCodeP' constraints.validation.info='NonMedicinalSupplyActivity2Instruction2 NonMedicinalSupplyActivityProductInstance'"
  * @generated
  */
 public interface NonMedicinalSupplyActivity2 extends NonMedicinalSupplyActivity {
@@ -47,6 +47,18 @@ public interface NonMedicinalSupplyActivity2 extends NonMedicinalSupplyActivity 
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateNonMedicinalSupplyActivityStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::Instruction2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
 	 * @generated
 	 */
@@ -60,6 +72,15 @@ public interface NonMedicinalSupplyActivity2 extends NonMedicinalSupplyActivity 
 	 * @generated
 	 */
 	Instruction2 getInstruction2();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance))->asSequence()->any(true).oclAsType(consol::ProductInstance)'"
+	 * @generated
+	 */
+	ProductInstance getConsolProductInstance();
 
 	/**
 	 * <!-- begin-user-doc -->

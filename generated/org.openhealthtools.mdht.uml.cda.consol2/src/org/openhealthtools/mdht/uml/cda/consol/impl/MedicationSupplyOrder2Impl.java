@@ -105,6 +105,15 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationSupplyOrderStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateMedicationSupplyOrderInstruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstruction2(this, diagnostics, context);
@@ -128,6 +137,26 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	@Override
 	public boolean validateMedicationSupplyOrderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationSupplyOrderStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationSupplyOrderRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderRepeatNumber(this, diagnostics, context);
 	}
 
 	/**

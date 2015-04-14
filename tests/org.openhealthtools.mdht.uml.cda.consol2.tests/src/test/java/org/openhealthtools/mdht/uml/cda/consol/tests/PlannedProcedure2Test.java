@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentProcedureMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,6 +38,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2CodeFromLoincOrSnomed(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Code From Loinc Or Snomed</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2CodeFromCptOrIcd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Code From Cpt Or Icd</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2Instruction2InversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Instruction2 Inversion Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Status Code</em>}</li>
@@ -47,17 +50,16 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2TargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2Performer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2PatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Patient Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2ProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Provider Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2PriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2Indication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Indication2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2Instruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2PlannedCoverage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Planned Coverage</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#getPriorityPreferences() <em>Get Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#getIndication2s() <em>Get Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#getInstruction2s() <em>Get Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#getPlannedCoverages() <em>Get Planned Coverages</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlanOfCareActivityProcedureTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Procedure Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlanOfCareActivityProcedureMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Procedure Mood Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -65,6 +67,104 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  */
 
 public class PlannedProcedure2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedProcedure2CodeFromLoincOrSnomed() {
+		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2CodeFromLoincOrSnomedTestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlannedProcedure2CodeFromLoincOrSnomed",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_LOINC_OR_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedProcedure2 target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedProcedure2 target) {
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("any", LOINC_ID));
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedProcedure2 target) {
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("any", SNOMEDCT_ID));
+					}
+				});
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedure2Operations.validatePlannedProcedure2CodeFromLoincOrSnomed(
+					(PlannedProcedure2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedure2CodeFromLoincOrSnomedTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedProcedure2CodeFromCptOrIcd() {
+		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2CodeFromCptOrIcdTestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlannedProcedure2CodeFromCptOrIcd",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_CPT_OR_ICD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			private static final String CPT = "2.16.840.1.113883.6.12", ICD = "2.16.840.1.113883.6.4";
+
+			@Override
+			protected void updateToFail(PlannedProcedure2 target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedProcedure2 target) {
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("any", CPT));
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedProcedure2 target) {
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("any", ICD));
+					}
+				});
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedure2Operations.validatePlannedProcedure2CodeFromCptOrIcd(
+					(PlannedProcedure2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedure2CodeFromCptOrIcdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -425,46 +525,10 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidatePlannedProcedure2PatientPriorityPreference() {
-		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2PatientPriorityPreferenceTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2PatientPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedProcedure2 target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createPatientPriorityPreference().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedProcedure2Operations.validatePlannedProcedure2PatientPriorityPreference(
-					(PlannedProcedure2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedProcedure2PatientPriorityPreferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedProcedure2ProviderPriorityPreference() {
-		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2ProviderPriorityPreferenceTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2ProviderPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidatePlannedProcedure2PriorityPreference() {
+		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2PriorityPreferenceTestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlannedProcedure2PriorityPreference",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -483,13 +547,13 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PlannedProcedure2Operations.validatePlannedProcedure2ProviderPriorityPreference(
+				return PlannedProcedure2Operations.validatePlannedProcedure2PriorityPreference(
 					(PlannedProcedure2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePlannedProcedure2ProviderPriorityPreferenceTestCase.doValidationTest();
+		validatePlannedProcedure2PriorityPreferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -605,22 +669,10 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPatientPriorityPreferences() {
+	public void testGetPriorityPreferences() {
 
 		PlannedProcedure2 target = objectFactory.create();
-		target.getPatientPriorityPreferences();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetProviderPriorityPreferences() {
-
-		PlannedProcedure2 target = objectFactory.create();
-		target.getProviderPriorityPreferences();
+		target.getPriorityPreferences();
 
 	}
 
@@ -692,6 +744,40 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 		};
 
 		validatePlanOfCareActivityProcedureTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfCareActivityProcedureMoodCode() {
+		OperationsTestCase<PlannedProcedure2> validatePlanOfCareActivityProcedureMoodCodeTestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlanOfCareActivityProcedureMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedProcedure2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedure2 target) {
+				target.init();
+				target.setMoodCode(x_DocumentProcedureMood.INT);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedure2Operations.validatePlanOfCareActivityProcedureMoodCode(
+					(PlannedProcedure2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareActivityProcedureMoodCodeTestCase.doValidationTest();
 	}
 
 	/**

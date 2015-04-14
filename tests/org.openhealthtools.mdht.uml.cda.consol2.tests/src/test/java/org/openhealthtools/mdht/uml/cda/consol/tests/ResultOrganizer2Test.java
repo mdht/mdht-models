@@ -40,6 +40,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizerResultObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Result Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 IVLTS Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#getConsolResultObservation2s() <em>Get Consol Result Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  * </ul>
@@ -261,6 +263,76 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 		};
 
 		validateResultOrganizer2AuthorParticipationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateResultOrganizer2IVLTSLow() {
+		OperationsTestCase<ResultOrganizer2> validateResultOrganizer2IVLTSLowTestCase = new OperationsTestCase<ResultOrganizer2>(
+			"validateResultOrganizer2IVLTSLow",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultOrganizer2 target) {
+				target.init();
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
+			}
+
+			@Override
+			protected void updateToPass(ResultOrganizer2 target) {
+				target.getEffectiveTime().setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultOrganizer2Operations.validateResultOrganizer2IVLTSLow(
+					(ResultOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultOrganizer2IVLTSLowTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateResultOrganizer2IVLTSHigh() {
+		OperationsTestCase<ResultOrganizer2> validateResultOrganizer2IVLTSHighTestCase = new OperationsTestCase<ResultOrganizer2>(
+			"validateResultOrganizer2IVLTSHigh",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultOrganizer2 target) {
+				target.init();
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
+			}
+
+			@Override
+			protected void updateToPass(ResultOrganizer2 target) {
+				target.getEffectiveTime().setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultOrganizer2Operations.validateResultOrganizer2IVLTSHigh(
+					(ResultOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultOrganizer2IVLTSHighTestCase.doValidationTest();
 	}
 
 	/**

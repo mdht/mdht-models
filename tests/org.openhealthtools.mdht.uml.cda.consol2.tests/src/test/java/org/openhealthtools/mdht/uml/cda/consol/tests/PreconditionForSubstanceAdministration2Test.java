@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PreconditionForSubstan
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +35,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration2#validatePreconditionForSubstanceAdministrationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration2#validatePreconditionForSubstanceAdministrationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration2#validatePreconditionForSubstanceAdministrationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration2#validatePreconditionForSubstanceAdministrationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration2#validatePreconditionForSubstanceAdministrationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Value</em>}</li>
  * </ul>
  * </p>
@@ -181,43 +179,6 @@ public class PreconditionForSubstanceAdministration2Test extends CDAValidationTe
 		};
 
 		validatePreconditionForSubstanceAdministrationCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePreconditionForSubstanceAdministrationText() {
-		OperationsTestCase<PreconditionForSubstanceAdministration2> validatePreconditionForSubstanceAdministrationTextTestCase = new OperationsTestCase<PreconditionForSubstanceAdministration2>(
-			"validatePreconditionForSubstanceAdministrationText",
-			operationsForOCL.getOCLValue("VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PreconditionForSubstanceAdministration2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PreconditionForSubstanceAdministration2 target) {
-				target.init();
-
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				target.setText(text);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationText(
-					(PreconditionForSubstanceAdministration2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePreconditionForSubstanceAdministrationTextTestCase.doValidationTest();
 	}
 
 	/**

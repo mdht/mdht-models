@@ -24,11 +24,47 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationTemplateId ProblemObservation2HasOnsetDate ProblemObservationEffectiveTime ProblemObservationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.4' templateId.extension='2014-06-09' constraints.validation.info='ProblemObservation2HasResolutionDate ProblemObservationNegationInd ProblemObservation2PatientPriorityPreference ProblemObservation2PrognosisObservation ProblemObservation2ProviderPriorityPreference ProblemObservation2CDQualifier ProblemObservation2CDCode' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='ProblemObservationValue ProblemObservation2AuthorParticipation' constraints.validation.dependOn.ProblemObservationValue='ProblemObservationValueP' constraints.validation.query='ProblemObservation2CDQualifier ProblemObservation2CDCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationTemplateId ProblemObservation2HasOnsetDate ProblemObservationEffectiveTime ProblemObservationValueP ProblemObservationCodeP ProblemObservationStatusCode ProblemObservationStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.4' templateId.extension='2014-06-09' constraints.validation.info='ProblemObservation2HasResolutionDate ProblemObservationNegationInd ProblemObservation2PrognosisObservation ProblemObservation2PriorityPreference ProblemObservationProblemStatus ProblemObservation2CDQualifier ProblemObservation2CDCode' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='ProblemObservationValue ProblemObservationCode ProblemObservation2AuthorParticipation' constraints.validation.dependOn.ProblemObservationValue='ProblemObservationValueP' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ProblemObservationCode='ProblemObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.ProblemObservationStatusCode='ProblemObservationStatusCodeP' constraints.validation.query='ProblemObservation2CDQualifier ProblemObservation2CDCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProblemObservation2CD constraints.validation.info='ProblemObservation2CDQualifier ProblemObservation2CDCode'"
  * @generated
  */
 public interface ProblemObservation2 extends ProblemObservation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateProblemObservation2HasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateProblemObservation2TextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateProblemObservation2HasTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -84,11 +120,10 @@ public interface ProblemObservation2 extends ProblemObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PatientPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateProblemObservation2PatientPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -112,8 +147,7 @@ public interface ProblemObservation2 extends ProblemObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
-	boolean validateProblemObservation2ProviderPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemObservation2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,15 +189,6 @@ public interface ProblemObservation2 extends ProblemObservation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PatientPriorityPreference)).oclAsType(consol::PatientPriorityPreference)'"
-	 * @generated
-	 */
-	EList<PatientPriorityPreference> getPatientPriorityPreferences();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PrognosisObservation))->asSequence()->any(true).oclAsType(consol::PrognosisObservation)'"
 	 * @generated
 	 */
@@ -176,7 +201,7 @@ public interface ProblemObservation2 extends ProblemObservation {
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)'"
 	 * @generated
 	 */
-	EList<ProviderPriorityPreference> getProviderPriorityPreferences();
+	EList<ProviderPriorityPreference> getPriorityPreferences();
 
 	/**
 	 * <!-- begin-user-doc -->

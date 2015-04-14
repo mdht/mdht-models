@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.SubstanceAdministeredAct;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationActivity2Operations;
 
 /**
@@ -64,6 +62,46 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationActivity2TextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2TextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivity2ReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2ReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivity2TextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2TextReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivity2InstructionInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2InstructionInversion(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateImmunizationActivityStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityStatusCodeP(this, diagnostics, context);
@@ -78,18 +116,6 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	public boolean validateImmunizationActivity2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivity2AuthorParticipation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateImmunizationActivity2SubstanceAdministeredAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ImmunizationActivity2Operations.validateImmunizationActivity2SubstanceAdministeredAct(
 			this, diagnostics, context);
 	}
 
@@ -154,6 +180,61 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationActivity2EntryRelationshipForSubAdminAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2EntryRelationshipForSubAdminAct(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivity2EntryRelationshipTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2EntryRelationshipTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivity2EntryRelationshipInversionInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2EntryRelationshipInversionInd(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivity2EntryRelationshipSequenceNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2EntryRelationshipSequenceNumber(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivity2EntryRelationshipSubstanceAdministeredAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2EntryRelationshipSubstanceAdministeredAct(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateImmunizationActivity2ImmunizationActivityConsumableImmunizationMedicationInformation2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -181,16 +262,6 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<SubstanceAdministeredAct> getSubstanceAdministeredActs() {
-		return ImmunizationActivity2Operations.getSubstanceAdministeredActs(this);
 	}
 
 	/**

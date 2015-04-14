@@ -54,7 +54,7 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->exists(s : cda::Section | not s.oclIsTypeOf(consol::PlanOfTreatmentSection2))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.getAllSections()->exists(s : cda::Section | s.oclIsTypeOf(consol::PlanOfTreatmentSection2))'"
 	 * @generated
 	 */
 	boolean validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(DiagnosticChain diagnostics, Map<Object, Object> context);
