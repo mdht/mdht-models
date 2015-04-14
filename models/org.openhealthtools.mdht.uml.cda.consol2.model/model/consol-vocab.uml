@@ -1725,6 +1725,14 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_UnwCwM2JEeSEZ8MJJ3ZzLg" name="VS"/>
       <ownedLiteral xmi:id="_UnwCwc2JEeSEZ8MJJ3ZzLg" name="W"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_uzm0MOLVEeS505YV9ux2XA" name="Planned Intervention moodCode">
+      <ownedLiteral xmi:id="_JTw5IOLWEeS505YV9ux2XA" name="APT"/>
+      <ownedLiteral xmi:id="_LRMPIOLWEeS505YV9ux2XA" name="ARQ"/>
+      <ownedLiteral xmi:id="_NSGW8OLWEeS505YV9ux2XA" name="INT"/>
+      <ownedLiteral xmi:id="_OKW0oOLWEeS505YV9ux2XA" name="PRMS"/>
+      <ownedLiteral xmi:id="_PHGJsOLWEeS505YV9ux2XA" name="PRP"/>
+      <ownedLiteral xmi:id="_QStBMOLWEeS505YV9ux2XA" name="RQO"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3321,4 +3329,13 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_Unwpz82JEeSEZ8MJJ3ZzLg" conceptName="susceptible" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCv82JEeSEZ8MJJ3ZzLg"/>
   <term:ValueSetCode xmi:id="_Unwp0M2JEeSEZ8MJJ3ZzLg" conceptName="Very susceptible" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCwM2JEeSEZ8MJJ3ZzLg"/>
   <term:ValueSetCode xmi:id="_Unwp0c2JEeSEZ8MJJ3ZzLg" conceptName="worse" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCwc2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetVersion xmi:id="_uznbQOLVEeS505YV9ux2XA" identifier="2.16.840.1.113883.11.20.9.54" fullName="Planned Intervention moodCode" source="http://www.hl7.org/documentcenter/public/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/vocabulary.html" definition="Contains all the moodCode values it is possible to have for a Planned Intervention." binding="Dynamic" base_Enumeration="_uzm0MOLVEeS505YV9ux2XA">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_JTw5IeLWEeS505YV9ux2XA" conceptName="Appointment" base_EnumerationLiteral="_JTw5IOLWEeS505YV9ux2XA"/>
+  <term:ValueSetCode xmi:id="_LRMPIeLWEeS505YV9ux2XA" conceptName="Appointment Request" base_EnumerationLiteral="_LRMPIOLWEeS505YV9ux2XA"/>
+  <term:ValueSetCode xmi:id="_NSGW8eLWEeS505YV9ux2XA" conceptName="Intent" base_EnumerationLiteral="_NSGW8OLWEeS505YV9ux2XA"/>
+  <term:ValueSetCode xmi:id="_OKXbsOLWEeS505YV9ux2XA" conceptName="Promise" base_EnumerationLiteral="_OKW0oOLWEeS505YV9ux2XA"/>
+  <term:ValueSetCode xmi:id="_PHGJseLWEeS505YV9ux2XA" conceptName="Proposal" base_EnumerationLiteral="_PHGJsOLWEeS505YV9ux2XA"/>
+  <term:ValueSetCode xmi:id="_QStoQOLWEeS505YV9ux2XA" conceptName="Request" base_EnumerationLiteral="_QStBMOLWEeS505YV9ux2XA"/>
 </xmi:XMI>

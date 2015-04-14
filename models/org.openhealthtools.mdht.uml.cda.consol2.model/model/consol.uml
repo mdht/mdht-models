@@ -2670,6 +2670,31 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_FfMjsMzPEeSLqosJ4F90vA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_YnbSYM2LEeSEZ8MJJ3ZzLg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_p-V64M2LEeSEZ8MJJ3ZzLg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_dGARYOLSEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_teHrIOLZEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_3IyZoOLZEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_UU7jsOLaEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Y1zG0OLaEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_coJXEOLaEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_3oyS4OLaEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_PWyZQOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_TepmgOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_WyhyEOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_ZmV9gOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_6gMIYOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#__iT-cOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_CQSnoOLcEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_FaHfUOLcEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_IUwEcOLcEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_onmHcOLhEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_wLYpAOLhEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_88_TQOLhEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_09LuoOLiEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_kMGhoOLjEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_pTSL8OLlEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Pd67AOLmEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_N2lUUOLnEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_8vCvIOLnEeS505YV9ux2XA"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
