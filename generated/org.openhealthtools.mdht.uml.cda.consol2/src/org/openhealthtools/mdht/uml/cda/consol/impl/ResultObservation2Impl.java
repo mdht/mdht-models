@@ -76,10 +76,107 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultObservation2TextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservation2TextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservation2ReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservation2ReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservation2TextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservation2TextReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservation2NoObservationRangeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservation2NoObservationRangeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservationInterpretationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationInterpretationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservation2AuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservation2ReferenceRange(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservation2ReferenceRange(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservation2ReferenceRangeObservationRangeValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservation2ReferenceRangeObservationRangeValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservation2ReferenceRangeObservationRangeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservation2ReferenceRangeObservationRangeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservation2ReferenceRangeObservationRange(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservation2ReferenceRangeObservationRange(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,6 +197,36 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	@Override
 	public boolean validateResultObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservationEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationInterpretationCode(this, diagnostics, context);
 	}
 
 	/**

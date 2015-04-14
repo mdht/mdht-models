@@ -35,7 +35,7 @@ public interface FunctionalStatusOrganizer2 extends FunctionalStatusResultOrgani
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.isNullFlavorDefined() or self.code.codeSystem = \'2.16.840.1.113883.6.254\' or self.code.codeSystem = \'2.16.840.1.113883.6.96\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.isNullFlavorDefined() or self.code.codeSystem = \'2.16.840.1.113883.6.254\' or self.code.codeSystem = \'2.16.840.1.113883.6.1\''"
 	 * @generated
 	 */
 	boolean validateFunctionalStatusOrganizer2CodeCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context);

@@ -87,16 +87,6 @@ public class Indication2Impl extends IndicationImpl implements Indication2 {
 	 * @generated
 	 */
 	@Override
-	public boolean validateIndication2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Indication2Operations.validateIndication2Text(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateIndicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return Indication2Operations.validateIndicationTemplateId(this, diagnostics, context);
 	}

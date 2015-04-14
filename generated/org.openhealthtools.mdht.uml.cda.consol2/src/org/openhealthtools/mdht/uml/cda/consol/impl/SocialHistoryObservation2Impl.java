@@ -56,6 +56,27 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSocialHistoryObservation2ReferenceAttribute(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2ReferenceAttribute(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSocialHistoryObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSocialHistoryObservation2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -114,6 +135,17 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	@Override
 	public boolean validateSocialHistoryObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSocialHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**

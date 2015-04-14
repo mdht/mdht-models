@@ -57,6 +57,17 @@ public class ImmunizationMedicationInformation2Impl extends ImmunizationMedicati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -129,10 +140,32 @@ public class ImmunizationMedicationInformation2Impl extends ImmunizationMedicati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText(
 			this, diagnostics, context);
 	}
 

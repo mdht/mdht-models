@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultOrganizer2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerResultObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.1' templateId.extension='2014-06-09' constraints.validation.warning='ResultOrganizer2CodeValue ResultOrganizer2AuthorParticipation' constraints.validation.info='ResultOrganizer2EffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerResultObservation2 ResultOrganizer2IVLTSLow ResultOrganizer2IVLTSHigh' templateId.root='2.16.840.1.113883.10.20.22.4.1' templateId.extension='2014-06-09' constraints.validation.warning='ResultOrganizer2CodeValue ResultOrganizer2AuthorParticipation' constraints.validation.info='ResultOrganizer2EffectiveTime' constraints.validation.query='ResultOrganizer2IVLTSLow ResultOrganizer2IVLTSHigh'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolResultOrganizer2IVLTS constraints.validation.error='ResultOrganizer2IVLTSLow ResultOrganizer2IVLTSHigh'"
  * @generated
  */
 public interface ResultOrganizer2 extends ResultOrganizer {
@@ -87,6 +88,30 @@ public interface ResultOrganizer2 extends ResultOrganizer {
 	 * @generated
 	 */
 	boolean validateResultOrganizer2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))'"
+	 * @generated
+	 */
+	boolean validateResultOrganizer2IVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((high.oclIsUndefined() or high.isNullFlavorUndefined()) implies (not high.oclIsUndefined()) )))'"
+	 * @generated
+	 */
+	boolean validateResultOrganizer2IVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

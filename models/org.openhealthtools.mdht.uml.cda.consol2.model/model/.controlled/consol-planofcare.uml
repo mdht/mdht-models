@@ -1919,7 +1919,7 @@ The priority of the activity to the patient and provider is communicated through
         <language>Analysis</language>
         <language>OCL</language>
         <body>participant with target entry serviceDeliveryLocation if present, SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)</body>
-        <body>self.participant->select(par : cda::Participant2 | par.oclIsTypeOf(consol::ServiceDeliveryLocation))->forAll(pars : cda::Participant2 | pars.typeCode='LOC')</body>
+        <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsTypeOf(consol::ServiceDeliveryLocation))->forAll(pars : cda::Participant2 | pars.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_bDRhcOdXEeOqBOMhgDlycQ" general="_2NWFBBSVEeGGzu7fmW9pXw"/>
@@ -2730,26 +2730,12 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
 The effective time indicates the time when the supply is intended to take place and author time indicates when the documentation of the plan occurred. The Planned Supply template may also indicate the potential insurance coverage for the procedure. &#xD;
 Depending on the type of supply, the product or participant will be either a Medication Information product (medication), an Immunization Medication Information product (immunization), or a Product Instance participant (device/equipment).</body>
     </ownedComment>
-    <ownedRule xmi:id="_7c0tsOg-EeO-iJTuAv7BKQ" name="ifProductIsMedInfoThenNotImmun">
+    <ownedRule xmi:id="_7c0tsOg-EeO-iJTuAv7BKQ" name="MedInfoXorImmunXorProductInstance">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_7bs24Og_EeO-iJTuAv7BKQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>If the product is Medication Information (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.23:2014-06-09) then the product SHALL NOT be Immunization Medication Information (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.54:2014-06-09) and the participant SHALL NOT be Product Instance</body>
-        <body>product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2) implies (not product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2) )</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_Gu8iMOg_EeO-iJTuAv7BKQ" name="ifProductIsImmunThenNotMedInfo">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="__K6TkOg_EeO-iJTuAv7BKQ">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>If the product is Immunization Medication Information (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.54:2014-06-09) then the product SHALL NOT be Medication Information (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.23:2014-06-09) and the participant SHALL NOT be Product Instance</body>
-        <body>product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2) implies (not product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2) )</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_raBJsOhEEeO-iJTuAv7BKQ" name="ifProductInstanceNotMedInfoOrMedInfoImmun" constrainedElement="_vEd1cOg0EeO-iJTuAv7BKQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_61KCAOhEEeO-iJTuAv7BKQ">
-        <language>Analysis</language>
-        <body>If the participant is Product Instance then the product SHALL NOT be Medication Information (V2) and the product SHALL NOT be Immunization Medication Information (V2)</body>
+        <body>If the product is Medication Information (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.23:2014-06-09) then the product SHALL NOT be Immunization Medication Information (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.54:2014-06-09) and the participant SHALL NOT be Product Instance.  If the product is Immunization Medication Information (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.54:2014-06-09) then the product SHALL NOT be Medication Information (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.23:2014-06-09) and the participant SHALL NOT be Product Instance.  If the participant is Product Instance then the product SHALL NOT be Medication Information (V2) and the product SHALL NOT be Immunization Medication Information (V2).</body>
+        <body>(product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)) xor (product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)) xor (participant.participantRole->select(oclIsTypeOf(consol::ProductInstance))->size() = 1 )</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_vEecgOg0EeO-iJTuAv7BKQ" general="_2NoY5BSVEeGGzu7fmW9pXw"/>
@@ -2926,9 +2912,6 @@ Depending on the type of supply, the product or participant will be either a Med
     <ruleId>CONF:1098-32094</ruleId>
     <ruleId>CONF:1098-32095</ruleId>
   </CDA:AssociationValidation>
-  <CDA:ConstraintValidation xmi:id="_sDngUOhEEeO-iJTuAv7BKQ" base_Constraint="_raBJsOhEEeO-iJTuAv7BKQ">
-    <ruleId>CONF:1098-32096</ruleId>
-  </CDA:ConstraintValidation>
   <uml:Association xmi:id="_RJsSUOp6EeOfFtFITOHUWA" memberEnd="_RJrEMOp6EeOfFtFITOHUWA _RJsSUep6EeOfFtFITOHUWA">
     <ownedComment xmi:id="_WMtgQOp6EeOfFtFITOHUWA">
       <body>The following entryRelationship represents the priority that a patient or a provider places on the supply.</body>
@@ -3525,8 +3508,7 @@ The plan may also indicate that patient education will be provided.</body>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_zmjXUMdhEeShCO0Pdt1H3g" base_Constraint="_7c0tsOg-EeO-iJTuAv7BKQ">
     <ruleId>CONF:1098-32092</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2CnxIMdhEeShCO0Pdt1H3g" base_Constraint="_Gu8iMOg_EeO-iJTuAv7BKQ">
     <ruleId>CONF:1098-32093</ruleId>
+    <ruleId>CONF:1098-32096</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>

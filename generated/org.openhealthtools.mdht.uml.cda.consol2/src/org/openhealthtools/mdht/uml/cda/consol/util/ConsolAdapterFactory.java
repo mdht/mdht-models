@@ -1059,11 +1059,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter casePatientPriorityPreference(PatientPriorityPreference object) {
-			return createPatientPriorityPreferenceAdapter();
-		}
-
-		@Override
 		public Adapter caseProviderPriorityPreference(ProviderPriorityPreference object) {
 			return createProviderPriorityPreferenceAdapter();
 		}
@@ -1071,6 +1066,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePlannedCoverage(PlannedCoverage object) {
 			return createPlannedCoverageAdapter();
+		}
+
+		@Override
+		public Adapter casePatientPriorityPreference(PatientPriorityPreference object) {
+			return createPatientPriorityPreferenceAdapter();
 		}
 
 		@Override

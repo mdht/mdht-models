@@ -100,11 +100,8 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateProblemConcernAct2ProviderPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemConcernAct2Operations.validateProblemConcernAct2ProviderPriorityPreference(
-			this, diagnostics, context);
+	public boolean validateProblemConcernAct2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernAct2Operations.validateProblemConcernAct2PriorityPreference(this, diagnostics, context);
 	}
 
 	/**
@@ -122,9 +119,8 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
-		return ProblemConcernAct2Operations.getProviderPriorityPreferences(this);
+	public EList<ProviderPriorityPreference> getPriorityPreferences() {
+		return ProblemConcernAct2Operations.getPriorityPreferences(this);
 	}
 
 	/**

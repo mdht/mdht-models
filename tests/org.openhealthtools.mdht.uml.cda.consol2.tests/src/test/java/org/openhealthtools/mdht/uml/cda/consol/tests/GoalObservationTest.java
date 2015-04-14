@@ -51,11 +51,11 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Medication Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedSupply2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Supply2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Act2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getConsolPatientPriorityPreference() <em>Get Consol Patient Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPatientPriorityPreference() <em>Get Patient Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getGoalObservations() <em>Get Goal Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getActReferences() <em>Get Act References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getHealthConcernActs() <em>Get Health Concern Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getConsolProviderPriorityPreferences() <em>Get Consol Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getExternalDocumentReferences() <em>Get External Document References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedEncounter2s() <em>Get Planned Encounter2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedObservation2s() <em>Get Planned Observation2s</em>}</li>
@@ -663,10 +663,10 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolPatientPriorityPreference() {
+	public void testGetPatientPriorityPreference() {
 
 		GoalObservation target = objectFactory.create();
-		target.getConsolPatientPriorityPreference();
+		target.getPatientPriorityPreference();
 
 	}
 
@@ -711,10 +711,10 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolProviderPriorityPreferences() {
+	public void testGetProviderPriorityPreferences() {
 
 		GoalObservation target = objectFactory.create();
-		target.getConsolProviderPriorityPreferences();
+		target.getProviderPriorityPreferences();
 
 	}
 

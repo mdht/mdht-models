@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationTextReferenceValue VitalSignObservationClassCode VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationCodeP VitalSignObservationStatusCode VitalSignObservationEffectiveTime VitalSignObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.27' constraints.validation.warning='VitalSignObservationTextReference VitalSignObservationReferenceValue VitalSignObservationCode VitalSignObservationText' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.VitalSignObservationCode='VitalSignObservationCodeP' statusCode.code='completed' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode VitalSignObservationAuthor'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationTextReferenceValue VitalSignObservationClassCode VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationCodeP VitalSignObservationStatusCode VitalSignObservationStatusCodeP VitalSignObservationEffectiveTime VitalSignObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.27' constraints.validation.warning='VitalSignObservationTextReference VitalSignObservationReferenceValue VitalSignObservationCode VitalSignObservationText' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.VitalSignObservationCode='VitalSignObservationCodeP' statusCode.code='completed' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode VitalSignObservationAuthor'"
  * @generated
  */
 public interface VitalSignObservation extends Observation {
@@ -148,6 +148,18 @@ public interface VitalSignObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateVitalSignObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateVitalSignObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

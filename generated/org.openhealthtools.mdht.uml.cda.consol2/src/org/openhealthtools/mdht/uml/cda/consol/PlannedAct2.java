@@ -24,10 +24,22 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedAct2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityActTemplateId PlannedAct2Code PlannedAct2StatusCode PlannedAct2StatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.39' templateId.extension='2014-06-09' statusCode.code='active' constraints.validation.warning='PlannedAct2EffectiveTime PlannedAct2AuthorParticipation' constraints.validation.info='PlannedAct2Indication2 PlannedAct2Instruction2 PlannedAct2PatientPriorityPreference PlannedAct2ProviderPriorityPreference PlannedAct2Performer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityActTemplateId PlanOfCareActivityActMoodCode PlannedAct2Code PlannedAct2StatusCode PlannedAct2StatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.39' templateId.extension='2014-06-09' constraints.validation.warning='PlannedAct2CodeFromLoincOrSnomed PlannedAct2EffectiveTime PlannedAct2AuthorParticipation' statusCode.code='active' constraints.validation.info='PlannedAct2Indication2 PlannedAct2Instruction2 PlannedAct2Performer PlannedAct2PriorityPreference'"
  * @generated
  */
 public interface PlannedAct2 extends PlanOfCareActivityAct {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not code.oclIsUndefined() and code.isNullFlavorUndefined()) implies (code.codeSystem = \'2.16.840.1.113883.6.1\' or code.codeSystem = \'2.16.840.1.113883.6.96\')'"
+	 * @generated
+	 */
+	boolean validatePlannedAct2CodeFromLoincOrSnomed(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -107,30 +119,6 @@ public interface PlannedAct2 extends PlanOfCareActivityAct {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PatientPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
-	 * @generated
-	 */
-	boolean validatePlannedAct2PatientPriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
-	 * @generated
-	 */
-	boolean validatePlannedAct2ProviderPriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
 	 * @generated
 	 */
@@ -147,6 +135,18 @@ public interface PlannedAct2 extends PlanOfCareActivityAct {
 	 * @generated
 	 */
 	boolean validatePlannedAct2Performer(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
+	boolean validatePlannedAct2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -170,19 +170,10 @@ public interface PlannedAct2 extends PlanOfCareActivityAct {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PatientPriorityPreference)).oclAsType(consol::PatientPriorityPreference)'"
-	 * @generated
-	 */
-	EList<PatientPriorityPreference> getPatientPriorityPreferences();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)'"
 	 * @generated
 	 */
-	EList<ProviderPriorityPreference> getProviderPriorityPreferences();
+	EList<ProviderPriorityPreference> getPriorityPreferences();
 
 	/**
 	 * <!-- begin-user-doc -->

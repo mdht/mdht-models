@@ -237,6 +237,15 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateReactionObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateReactionObservationSeverityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

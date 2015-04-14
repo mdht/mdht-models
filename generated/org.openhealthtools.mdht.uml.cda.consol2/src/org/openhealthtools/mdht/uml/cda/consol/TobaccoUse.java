@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getTobaccoUse()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TobaccoUseTemplateId TobaccoUseEffectiveTimeLow TobaccoUseClassCode TobaccoUseMoodCode TobaccoUseCode TobaccoUseCodeP TobaccoUseEffectiveTime TobaccoUseStatusCode TobaccoUseStatusCodeP TobaccoUseValue TobaccoUseValueP' templateId.root='2.16.840.1.113883.10.20.22.4.85' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.TobaccoUseCode='TobaccoUseCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TobaccoUseTemplateId TobaccoUseEffectiveTimeLow TobaccoUseClassCode TobaccoUseMoodCode TobaccoUseCode TobaccoUseCodeP TobaccoUseStatusCode TobaccoUseStatusCodeP TobaccoUseEffectiveTime TobaccoUseValue TobaccoUseValueP' templateId.root='2.16.840.1.113883.10.20.22.4.85' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.TobaccoUseCode='TobaccoUseCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface TobaccoUse extends Observation {

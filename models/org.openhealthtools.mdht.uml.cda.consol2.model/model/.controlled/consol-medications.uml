@@ -1745,7 +1745,7 @@ This effectiveTime represents either the medication duration (i.e., the time the
         <language>Analysis</language>
         <language>OCL</language>
         <body>If an effectiveTime is present with @xsi:type=&quot;IVL_TS&quot; or @xsi:type=&quot;TS&quot;, this effectiveTime SHALL contain either a low or a @value but not both</body>
-        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).low->size() = 1) xor self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))->forAll( eff | eff.oclAsType(datatypes:: SXCM_TS).value->size() = 1 or eff.oclAsType(datatypes::SXCM_TS).isNullFlavorDefined())</body>
+        <body>( self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).low->size() = 1) )  and  ( self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))->forAll( eff | eff.oclAsType(datatypes:: SXCM_TS).value->size() = 1 or eff.oclAsType(datatypes::SXCM_TS).isNullFlavorDefined()) )</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_WnVFgOLAEeOc7-TVP7Wi6w" general="_2GHbgBSVEeGGzu7fmW9pXw"/>

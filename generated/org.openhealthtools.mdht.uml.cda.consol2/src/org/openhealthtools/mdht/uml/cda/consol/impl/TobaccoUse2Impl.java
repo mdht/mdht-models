@@ -56,6 +56,15 @@ public class TobaccoUse2Impl extends TobaccoUseImpl implements TobaccoUse2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateTobaccoUse2Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TobaccoUse2Operations.validateTobaccoUse2Id(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateTobaccoUse2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUse2Operations.validateTobaccoUse2AuthorParticipation(this, diagnostics, context);

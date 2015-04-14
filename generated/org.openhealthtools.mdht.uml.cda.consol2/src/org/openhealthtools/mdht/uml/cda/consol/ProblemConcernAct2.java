@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemConcernAct2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemConcernActTemplateId ProblemConcernAct2EffectiveTimeLow ProblemConcernActStatusCode ProblemConcernActStatusCodeP ProblemConcernActEffectiveTime ProblemConcernActCode ProblemConcernActCodeP ProblemConcernActProblemObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.3' templateId.extension='2014-06-09' constraints.validation.info='ProblemConcernAct2EffectiveTimeHigh ProblemConcernAct2ProviderPriorityPreference' constraints.validation.dependOn.ProblemConcernActStatusCode='ProblemConcernActStatusCodeP' code.code='CONC' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' code.displayName='Concern' constraints.validation.dependOn.ProblemConcernActCode='ProblemConcernActCodeP' constraints.validation.warning='ProblemConcernAct2AuthorParticipation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemConcernActTemplateId ProblemConcernAct2EffectiveTimeLow ProblemConcernActStatusCode ProblemConcernActStatusCodeP ProblemConcernActEffectiveTime ProblemConcernActCode ProblemConcernActCodeP ProblemConcernActProblemObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.3' templateId.extension='2014-06-09' constraints.validation.info='ProblemConcernAct2EffectiveTimeHigh ProblemConcernAct2PriorityPreference' constraints.validation.dependOn.ProblemConcernActStatusCode='ProblemConcernActStatusCodeP' code.code='CONC' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' code.displayName='Concern' constraints.validation.dependOn.ProblemConcernActCode='ProblemConcernActCodeP' constraints.validation.warning='ProblemConcernAct2AuthorParticipation'"
  * @generated
  */
 public interface ProblemConcernAct2 extends ProblemConcernAct {
@@ -86,8 +86,7 @@ public interface ProblemConcernAct2 extends ProblemConcernAct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
-	boolean validateProblemConcernAct2ProviderPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemConcernAct2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,7 +107,7 @@ public interface ProblemConcernAct2 extends ProblemConcernAct {
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)'"
 	 * @generated
 	 */
-	EList<ProviderPriorityPreference> getProviderPriorityPreferences();
+	EList<ProviderPriorityPreference> getPriorityPreferences();
 
 	/**
 	 * <!-- begin-user-doc -->

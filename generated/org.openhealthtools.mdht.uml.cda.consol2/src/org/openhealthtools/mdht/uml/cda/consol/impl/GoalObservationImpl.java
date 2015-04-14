@@ -226,8 +226,8 @@ public class GoalObservationImpl extends PlannedObservation2Impl implements Goal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PatientPriorityPreference getConsolPatientPriorityPreference() {
-		return GoalObservationOperations.getConsolPatientPriorityPreference(this);
+	public PatientPriorityPreference getPatientPriorityPreference() {
+		return GoalObservationOperations.getPatientPriorityPreference(this);
 	}
 
 	/**
@@ -265,8 +265,8 @@ public class GoalObservationImpl extends PlannedObservation2Impl implements Goal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProviderPriorityPreference> getConsolProviderPriorityPreferences() {
-		return GoalObservationOperations.getConsolProviderPriorityPreferences(this);
+	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
+		return GoalObservationOperations.getProviderPriorityPreferences(this);
 	}
 
 	/**

@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,6 +38,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2MedInfoXorImmunXorProductInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Med Info Xor Immun Xor Product Instance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Effective Time</em>}</li>
@@ -46,18 +48,20 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2Performer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2ProductInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Product Instance</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2PatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Patient Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2ProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Provider Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2PriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2Indication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Indication2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2Instruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2PlannedCoverage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Planned Coverage</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2ProductRecommended(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Product Recommended</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Product Manufactured Product Med Info2 Xor Immun Med Info2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2ProductManufacturedProduct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Product Manufactured Product</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getProductInstance() <em>Get Product Instance</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getPriorityPreferences() <em>Get Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getIndication2s() <em>Get Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getInstruction2s() <em>Get Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getPlannedCoverages() <em>Get Planned Coverages</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlanOfCareActivitySupplyTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlanOfCareActivitySupplyMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Mood Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -65,6 +69,113 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  */
 
 public class PlannedSupply2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePlannedSupply2MedInfoXorImmunXorProductInstance() {
+		OperationsTestCase<PlannedSupply2> validatePlannedSupply2MedInfoXorImmunXorProductInstanceTestCase = new OperationsTestCase<PlannedSupply2>(
+			"validatePlannedSupply2MedInfoXorImmunXorProductInstance",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			// OCL
+			// protected static final String VALIDATE_PLANNED_SUPPLY2_IF_PRODUCT_IS_MED_INFO_THEN_NOT_IMMUN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP =
+			// "(product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)) xor (product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)) xor (participant.participantRole->select(oclIsTypeOf(consol::ProductInstance))->size() = 1 )";
+
+			@Override
+			public void addFailTests() {
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(PlannedSupply2 target) {
+						// 1 has Med2 and ProductInstance
+						target.init();
+						target.setProduct(CDAFactory.eINSTANCE.createProduct());
+						target.getProduct().setManufacturedProduct(
+							ConsolFactory.eINSTANCE.createMedicationInformation2().init());
+						target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
+						for (Participant2 p : target.getParticipants()) {
+							p.setParticipantRole(ConsolFactory.eINSTANCE.createProductInstance().init());
+						}
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(PlannedSupply2 target) {
+						// 2 has Immun2 and ProductInstance
+						target.init();
+						target.setProduct(CDAFactory.eINSTANCE.createProduct());
+						target.getProduct().setManufacturedProduct(
+							ConsolFactory.eINSTANCE.createImmunizationMedicationInformation2().init());
+						target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
+						for (Participant2 p : target.getParticipants()) {
+							p.setParticipantRole(ConsolFactory.eINSTANCE.createProductInstance().init());
+						}
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(PlannedSupply2 target) {
+						// 3. none of the requirements are met (generic cda manufacturedProduct)
+						target.init();
+						target.setProduct(CDAFactory.eINSTANCE.createProduct());
+						target.getProduct().setManufacturedProduct(CDAFactory.eINSTANCE.createManufacturedProduct());
+					}
+				});
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedSupply2 target) {
+						// has Med2 only
+						target.init();
+						target.setProduct(CDAFactory.eINSTANCE.createProduct());
+						target.getProduct().setManufacturedProduct(
+							ConsolFactory.eINSTANCE.createMedicationInformation2().init());
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedSupply2 target) {
+						// has Immun2 only
+						target.init();
+						target.setProduct(CDAFactory.eINSTANCE.createProduct());
+						target.getProduct().setManufacturedProduct(
+							ConsolFactory.eINSTANCE.createImmunizationMedicationInformation2().init());
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedSupply2 target) {
+						// has ProductInstance only
+						target.init();
+						target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
+						for (Participant2 p : target.getParticipants()) {
+							p.setParticipantRole(ConsolFactory.eINSTANCE.createProductInstance().init());
+						}
+					}
+				});
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedSupply2Operations.validatePlannedSupply2MedInfoXorImmunXorProductInstance(
+					(PlannedSupply2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedSupply2MedInfoXorImmunXorProductInstanceTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -382,46 +493,10 @@ public class PlannedSupply2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidatePlannedSupply2PatientPriorityPreference() {
-		OperationsTestCase<PlannedSupply2> validatePlannedSupply2PatientPriorityPreferenceTestCase = new OperationsTestCase<PlannedSupply2>(
-			"validatePlannedSupply2PatientPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedSupply2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedSupply2 target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createPatientPriorityPreference().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedSupply2Operations.validatePlannedSupply2PatientPriorityPreference(
-					(PlannedSupply2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedSupply2PatientPriorityPreferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedSupply2ProviderPriorityPreference() {
-		OperationsTestCase<PlannedSupply2> validatePlannedSupply2ProviderPriorityPreferenceTestCase = new OperationsTestCase<PlannedSupply2>(
-			"validatePlannedSupply2ProviderPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidatePlannedSupply2PriorityPreference() {
+		OperationsTestCase<PlannedSupply2> validatePlannedSupply2PriorityPreferenceTestCase = new OperationsTestCase<PlannedSupply2>(
+			"validatePlannedSupply2PriorityPreference",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -440,13 +515,13 @@ public class PlannedSupply2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PlannedSupply2Operations.validatePlannedSupply2ProviderPriorityPreference(
+				return PlannedSupply2Operations.validatePlannedSupply2PriorityPreference(
 					(PlannedSupply2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePlannedSupply2ProviderPriorityPreferenceTestCase.doValidationTest();
+		validatePlannedSupply2PriorityPreferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -559,6 +634,125 @@ public class PlannedSupply2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedSupply2ProductRecommended() {
+		OperationsTestCase<PlannedSupply2> validatePlannedSupply2ProductRecommendedTestCase = new OperationsTestCase<PlannedSupply2>(
+			"validatePlannedSupply2ProductRecommended",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_PRODUCT_RECOMMENDED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedSupply2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlannedSupply2 target) {
+				target.setProduct(CDAFactory.eINSTANCE.createProduct());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedSupply2Operations.validatePlannedSupply2ProductRecommended(
+					(PlannedSupply2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedSupply2ProductRecommendedTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2() {
+		OperationsTestCase<PlannedSupply2> validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2TestCase = new OperationsTestCase<PlannedSupply2>(
+			"validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedSupply2 target) {
+				target.init();
+				target.setProduct(CDAFactory.eINSTANCE.createProduct());
+				target.getProduct().setManufacturedProduct(CDAFactory.eINSTANCE.createManufacturedProduct());
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedSupply2 target) {
+						target.setProduct(CDAFactory.eINSTANCE.createProduct());
+						target.getProduct().setManufacturedProduct(
+							ConsolFactory.eINSTANCE.createMedicationInformation2().init());
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedSupply2 target) {
+						target.setProduct(CDAFactory.eINSTANCE.createProduct());
+						target.getProduct().setManufacturedProduct(
+							ConsolFactory.eINSTANCE.createImmunizationMedicationInformation2().init());
+					}
+				});
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedSupply2Operations.validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(
+					(PlannedSupply2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedSupply2ProductManufacturedProduct() {
+		OperationsTestCase<PlannedSupply2> validatePlannedSupply2ProductManufacturedProductTestCase = new OperationsTestCase<PlannedSupply2>(
+			"validatePlannedSupply2ProductManufacturedProduct",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedSupply2 target) {
+				target.init();
+				target.setProduct(CDAFactory.eINSTANCE.createProduct());
+			}
+
+			@Override
+			protected void updateToPass(PlannedSupply2 target) {
+				target.getProduct().setManufacturedProduct(CDAFactory.eINSTANCE.createManufacturedProduct());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedSupply2Operations.validatePlannedSupply2ProductManufacturedProduct(
+					(PlannedSupply2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedSupply2ProductManufacturedProductTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
@@ -574,22 +768,10 @@ public class PlannedSupply2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPatientPriorityPreferences() {
+	public void testGetPriorityPreferences() {
 
 		PlannedSupply2 target = objectFactory.create();
-		target.getPatientPriorityPreferences();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetProviderPriorityPreferences() {
-
-		PlannedSupply2 target = objectFactory.create();
-		target.getProviderPriorityPreferences();
+		target.getPriorityPreferences();
 
 	}
 
@@ -661,6 +843,40 @@ public class PlannedSupply2Test extends CDAValidationTest {
 		};
 
 		validatePlanOfCareActivitySupplyTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfCareActivitySupplyMoodCode() {
+		OperationsTestCase<PlannedSupply2> validatePlanOfCareActivitySupplyMoodCodeTestCase = new OperationsTestCase<PlannedSupply2>(
+			"validatePlanOfCareActivitySupplyMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedSupply2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedSupply2 target) {
+				target.init();
+				target.setMoodCode(x_DocumentSubstanceMood.INT);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedSupply2Operations.validatePlanOfCareActivitySupplyMoodCode(
+					(PlannedSupply2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareActivitySupplyMoodCodeTestCase.doValidationTest();
 	}
 
 	/**

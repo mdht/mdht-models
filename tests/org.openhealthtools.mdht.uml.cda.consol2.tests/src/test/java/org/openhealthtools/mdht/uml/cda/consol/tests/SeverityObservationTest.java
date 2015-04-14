@@ -7,6 +7,7 @@
  *
  * Contributors:
  *     Sean Muir (JKM Software) - initial API and implementation
+ *     Dan Brown (Audacious Inquiry) - additional testing code
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
@@ -45,6 +46,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeverityObservation#validateSeverityObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Observation Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeverityObservation#validateSeverityObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeverityObservation#validateSeverityObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Observation Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeverityObservation#validateSeverityObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Observation Value P</em>}</li>
  * </ul>
  * </p>
  *
@@ -400,13 +402,14 @@ public class SeverityObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SeverityObservation target) {
-
+				target.init();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 			}
 
 			@Override
 			protected void updateToPass(SeverityObservation target) {
-				target.init();
-
+				target.getValues().clear();
 				CD value = DatatypesFactory.eINSTANCE.createCD();
 				value.setCodeSystem("2.16.840.1.113883.6.96");
 				value.setCode("255604002");
@@ -423,6 +426,41 @@ public class SeverityObservationTest extends CDAValidationTest {
 		};
 
 		validateSeverityObservationValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSeverityObservationValueP() {
+		OperationsTestCase<SeverityObservation> validateSeverityObservationValuePTestCase = new OperationsTestCase<SeverityObservation>(
+			"validateSeverityObservationValueP",
+			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SeverityObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SeverityObservation target) {
+				target.init();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SeverityObservationOperations.validateSeverityObservationValueP(
+					(SeverityObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSeverityObservationValuePTestCase.doValidationTest();
 	}
 
 	/**

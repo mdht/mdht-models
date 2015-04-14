@@ -65,11 +65,11 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Medication Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedSupply2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Supply2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Act2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getConsolPatientPriorityPreference() <em>Get Consol Patient Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPatientPriorityPreference() <em>Get Patient Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getGoalObservations() <em>Get Goal Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getActReferences() <em>Get Act References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getHealthConcernActs() <em>Get Health Concern Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getConsolProviderPriorityPreferences() <em>Get Consol Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getExternalDocumentReferences() <em>Get External Document References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedEncounter2s() <em>Get Planned Encounter2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedObservation2s() <em>Get Planned Observation2s</em>}</li>
@@ -1031,24 +1031,24 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolPatientPriorityPreference(GoalObservation) <em>Get Consol Patient Priority Preference</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getPatientPriorityPreference(GoalObservation) <em>Get Patient Priority Preference</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolPatientPriorityPreference(GoalObservation)
+	 * @see #getPatientPriorityPreference(GoalObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_PATIENT_PRIORITY_PREFERENCE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PatientPriorityPreference))->asSequence()->any(true).oclAsType(consol::PatientPriorityPreference)";
+	protected static final String GET_PATIENT_PRIORITY_PREFERENCE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PatientPriorityPreference))->asSequence()->any(true).oclAsType(consol::PatientPriorityPreference)";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolPatientPriorityPreference(GoalObservation) <em>Get Consol Patient Priority Preference</em>}' query operation.
+	 * The cached OCL query for the '{@link #getPatientPriorityPreference(GoalObservation) <em>Get Patient Priority Preference</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolPatientPriorityPreference(GoalObservation)
+	 * @see #getPatientPriorityPreference(GoalObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_PATIENT_PRIORITY_PREFERENCE__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PATIENT_PRIORITY_PREFERENCE__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1056,19 +1056,19 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 	 * @generated
 	 */
 
-	public static PatientPriorityPreference getConsolPatientPriorityPreference(GoalObservation goalObservation) {
-		if (GET_CONSOL_PATIENT_PRIORITY_PREFERENCE__EOCL_QRY == null) {
+	public static PatientPriorityPreference getPatientPriorityPreference(GoalObservation goalObservation) {
+		if (GET_PATIENT_PRIORITY_PREFERENCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(91));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(90));
 			try {
-				GET_CONSOL_PATIENT_PRIORITY_PREFERENCE__EOCL_QRY = helper.createQuery(GET_CONSOL_PATIENT_PRIORITY_PREFERENCE__EOCL_EXP);
+				GET_PATIENT_PRIORITY_PREFERENCE__EOCL_QRY = helper.createQuery(GET_PATIENT_PRIORITY_PREFERENCE__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PATIENT_PRIORITY_PREFERENCE__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PATIENT_PRIORITY_PREFERENCE__EOCL_QRY);
 		return (PatientPriorityPreference) query.evaluate(goalObservation);
 	}
 
@@ -1103,7 +1103,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(92));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(91));
 			try {
 				GET_GOAL_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_GOAL_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1147,7 +1147,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(93));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(92));
 			try {
 				GET_ACT_REFERENCES__EOCL_QRY = helper.createQuery(GET_ACT_REFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1191,7 +1191,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(94));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(93));
 			try {
 				GET_HEALTH_CONCERN_ACTS__EOCL_QRY = helper.createQuery(GET_HEALTH_CONCERN_ACTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1205,24 +1205,24 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolProviderPriorityPreferences(GoalObservation) <em>Get Consol Provider Priority Preferences</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getProviderPriorityPreferences(GoalObservation) <em>Get Provider Priority Preferences</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolProviderPriorityPreferences(GoalObservation)
+	 * @see #getProviderPriorityPreferences(GoalObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_PROVIDER_PRIORITY_PREFERENCES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)";
+	protected static final String GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolProviderPriorityPreferences(GoalObservation) <em>Get Consol Provider Priority Preferences</em>}' query operation.
+	 * The cached OCL query for the '{@link #getProviderPriorityPreferences(GoalObservation) <em>Get Provider Priority Preferences</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolProviderPriorityPreferences(GoalObservation)
+	 * @see #getProviderPriorityPreferences(GoalObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1230,19 +1230,19 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 	 * @generated
 	 */
 
-	public static EList<ProviderPriorityPreference> getConsolProviderPriorityPreferences(GoalObservation goalObservation) {
-		if (GET_CONSOL_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY == null) {
+	public static EList<ProviderPriorityPreference> getProviderPriorityPreferences(GoalObservation goalObservation) {
+		if (GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(95));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(94));
 			try {
-				GET_CONSOL_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_CONSOL_PROVIDER_PRIORITY_PREFERENCES__EOCL_EXP);
+				GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProviderPriorityPreference> result = (Collection<ProviderPriorityPreference>) query.evaluate(goalObservation);
 		return new BasicEList.UnmodifiableEList<ProviderPriorityPreference>(result.size(), result.toArray());
@@ -1279,7 +1279,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(96));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(95));
 			try {
 				GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_QRY = helper.createQuery(GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1323,7 +1323,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(97));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(96));
 			try {
 				GET_PLANNED_ENCOUNTER2S__EOCL_QRY = helper.createQuery(GET_PLANNED_ENCOUNTER2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1367,7 +1367,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(98));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(97));
 			try {
 				GET_PLANNED_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_PLANNED_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1411,7 +1411,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(99));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(98));
 			try {
 				GET_PLANNED_PROCEDURE2S__EOCL_QRY = helper.createQuery(GET_PLANNED_PROCEDURE2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1455,7 +1455,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(100));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(99));
 			try {
 				GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1499,7 +1499,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(101));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(100));
 			try {
 				GET_PLANNED_SUPPLY2S__EOCL_QRY = helper.createQuery(GET_PLANNED_SUPPLY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1543,7 +1543,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(102));
+				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(101));
 			try {
 				GET_PLANNED_ACT2S__EOCL_QRY = helper.createQuery(GET_PLANNED_ACT2S__EOCL_EXP);
 			} catch (ParserException pe) {

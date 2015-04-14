@@ -24,12 +24,48 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActivityTemplateId MedicationActivity2InstructionsInversionInd MedicationActivity2SubstanceAdministeredActInversionInd MedicationActivity2EffectiveTimeIVLTSorTS MedicationActivityStatusCode MedicationActivityStatusCodeP MedicationActivityAdministrationUnitCode MedicationActivityConsumable MedicationActivity2MedicationActivityPreconditionTypeCode MedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2 MedicationActivity2MedicationActivityConsumableMedicationInformation2' templateId.root='2.16.840.1.113883.10.20.22.4.16' templateId.extension='2014-06-09' constraints.validation.warning='MedicationActivity2DoseQuantityorrateQuantity MedicationActivity2EffectiveTimePIVLTS MedicationActivityDoseQuantity MedicationActivity2AuthorParticipation' constraints.validation.info='MedicationActivity2EffectiveTimeIVLTSHigh MedicationActivityRepeatNumber MedicationActivityCode MedicationActivityAdministrationUnitCodeP MedicationActivity2DrugMonitoringAct MedicationActivityInstruction2 MedicationActivity2SubstanceAdministeredAct MedicationActivityIndication2 MedicationActivityMedicationSupplyOrder2 MedicationActivityMedicationDispense2 MedicationActivityReactionObservation2 MedicationActivityPrecondition' constraints.validation.dependOn.MedicationActivityStatusCode='MedicationActivityStatusCodeP' administrationUnitCode.codeSystemName='' constraints.validation.dependOn.MedicationActivityAdministrationUnitCode='MedicationActivityAdministrationUnitCodeP' constraints.validation.query='MedicationActivity2MedicationActivityPreconditionTypeCode MedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2 MedicationActivity2MedicationActivityConsumableMedicationInformation2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActivityTemplateId MedicationActivity2InstructionsInversionInd MedicationActivity2SubstanceAdministeredActInversionInd MedicationActivity2EffectiveTimeIVLTSorTS MedicationActivity2EffectiveTimeIVLTSLowXorValue MedicationActivityStatusCode MedicationActivityStatusCodeP MedicationActivityRouteCode MedicationActivityDoseQuantity MedicationActivityAdministrationUnitCode MedicationActivityConsumable MedicationActivity2MedicationActivityPreconditionTypeCode MedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2 MedicationActivity2MedicationActivityConsumableMedicationInformation2' templateId.root='2.16.840.1.113883.10.20.22.4.16' templateId.extension='2014-06-09' constraints.validation.warning='MedicationActivity2DoseQuantityorrateQuantity MedicationActivity2EffectiveTimeIVLTSLow MedicationActivity2EffectiveTimePIVLTS MedicationActivityRouteCodeP MedicationActivity2AuthorParticipation' constraints.validation.info='MedicationActivity2SubstanceAdministeredActSequenceNumber MedicationActivity2EffectiveTimeIVLTSHigh MedicationActivityCode MedicationActivityRepeatNumber MedicationActivityAdministrationUnitCodeP MedicationActivity2DrugMonitoringAct MedicationActivityInstruction2 MedicationActivity2SubstanceAdministeredAct MedicationActivityIndication2 MedicationActivityMedicationSupplyOrder2 MedicationActivityMedicationDispense2 MedicationActivityReactionObservation2 MedicationActivityPrecondition' constraints.validation.dependOn.MedicationActivityStatusCode='MedicationActivityStatusCodeP' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1' routeCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.MedicationActivityRouteCode='MedicationActivityRouteCodeP' administrationUnitCode.codeSystemName='' constraints.validation.dependOn.MedicationActivityAdministrationUnitCode='MedicationActivityAdministrationUnitCodeP' constraints.validation.query='MedicationActivity2MedicationActivityPreconditionTypeCode MedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration2 MedicationActivity2MedicationActivityConsumableMedicationInformation2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationActivity2Consumable constraints.validation.error='MedicationActivityConsumableMedicationInformation2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationActivity2Precondition typeCode='PRCN' constraints.validation.error='MedicationActivityPreconditionTypeCode MedicationActivityPreconditionPreconditionForSubstanceAdministration2'"
  * @generated
  */
 public interface MedicationActivity2 extends MedicationActivity {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateMedicationActivity2TextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateMedicationActivity2ReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validateMedicationActivity2TextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -75,6 +111,19 @@ public interface MedicationActivity2 extends MedicationActivity {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::SubstanceAdministeredAct))->forAll(ent : cda::EntryRelationship | not ent.sequenceNumber.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateMedicationActivity2SubstanceAdministeredActSequenceNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).high->size() = 1)'"
 	 * @generated
 	 */
@@ -99,6 +148,19 @@ public interface MedicationActivity2 extends MedicationActivity {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='( self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).low->size() = 1) )  and  ( self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))->forAll( eff | eff.oclAsType(datatypes:: SXCM_TS).value->size() = 1 or eff.oclAsType(datatypes::SXCM_TS).isNullFlavorDefined()) )'"
+	 * @generated
+	 */
+	boolean validateMedicationActivity2EffectiveTimeIVLTSLowXorValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->size() = 1 xor self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))->size() = 1'"
 	 * @generated
 	 */
@@ -111,10 +173,10 @@ public interface MedicationActivity2 extends MedicationActivity {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).low->size() = 1)'"
 	 * @generated
 	 */
-	boolean validateMedicationActivityStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationActivity2EffectiveTimeIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -123,10 +185,10 @@ public interface MedicationActivity2 extends MedicationActivity {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationActivityAdministrationUnitCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationActivityStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

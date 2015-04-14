@@ -6521,7 +6521,7 @@ Please see: Appendix E in Volume 1 of this guide to view Care Plan Relationship 
         <language>Analysis</language>
         <language>OCL</language>
         <body>SHALL NOT contain Plan of Treatment Section (V2) (templateId:2.16.840.1.113883.10.20.22.2.10.2)</body>
-        <body>self.getAllSections()->exists(s : cda::Section | not s.oclIsTypeOf(consol::PlanOfTreatmentSection2))</body>
+        <body>not self.getAllSections()->exists(s : cda::Section | s.oclIsTypeOf(consol::PlanOfTreatmentSection2))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2jWfwZ5wEeOr4eM3k36wAg" general="_dduXkJ5OEeOr4eM3k36wAg"/>
