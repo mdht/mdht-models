@@ -6502,19 +6502,19 @@ For information on mixed content see the Extensible Markup Language reference (h
   <uml:Class xmi:id="_2jWfwJ5wEeOr4eM3k36wAg" name="CarePlan">
     <ownedComment xmi:id="_hOzuoJ5xEeOr4eM3k36wAg">
       <body>CARE PLAN FRAMEWORK&#xD;
-A Care Plan is a consensus-driven dynamic plan that represents all of a patient's and Care Team Members' prioritized concerns, goals, and planned interventions. It serves as a blueprint shared by all Care Team Members, including the patient, to guide the Care Team Members (including Patients, their caregivers, providers and patient's care. A Care Plan integrates multiple interventions proposed by multiple providers and disciplines for multiple conditions.&#xD;
+A Care Plan (including Home Health Plan of Care (HHPoC)) is a consensus-driven dynamic plan that represents a patient's and Care Team Members' prioritized concerns, goals, and planned interventions. It serves as a blueprint shared by all Care Team Members (including the patient, their caregivers and providers), to guide the patient's care. A Care Plan integrates multiple interventions proposed by multiple providers and disciplines for multiple conditions.&#xD;
 A Care Plan represents one or more Plan(s) of Care and serves to reconcile and resolve conflicts between the various Plans of Care developed for a specific patient by different providers. While both a plan of care and a care plan include the patient's life goals and require Care Team Members (including patients) to prioritize goals and interventions, the reconciliation process becomes more complex as the number of plans of care increases. The Care Plan also serves to enable longitudinal coordination of care.&#xD;
 The CDA Care Plan represents an instance of this dynamic Care Plan at a point in time. The CDA document itself is NOT dynamic.&#xD;
 Key differentiators between a Care Plan CDA and CCD (another &quot;snapshot in time&quot; document):&#xD;
-???????Requires relationships between various acts:&#xD;
-????????????????o????Health Concerns&#xD;
-????????????????o????Problems&#xD;
-????????????????o????Interventions&#xD;
-????????????????o????Goals&#xD;
-????????????????o????Outcomes&#xD;
-???????Provides the ability to identify patient and provider priorities with each act&#xD;
-???????Provides a header participant to indicate occurrences of Care Plan review&#xD;
-Please see: Appendix E in Volume 1 of this guide to view Care Plan Relationship Diagrams and story board.</body>
+Requires relationships between various acts:&#xD;
+Health Concerns&#xD;
+Problems&#xD;
+Interventions&#xD;
+Goals&#xD;
+Outcomes&#xD;
+Provides the ability to identify patient and provider priorities with each act&#xD;
+Provides a header participant to indicate occurrences of Care Plan review&#xD;
+Please see Volume 1 of this guide to view a Care Plan Relationship diagram and story board.</body>
     </ownedComment>
     <ownedRule xmi:id="_qk9kcJ8bEeOr4eM3k36wAg" name="doesNotHavePlanOfTreatmentSectionV2" constrainedElement="_2jWfwJ5wEeOr4eM3k36wAg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_zdJGEJ8bEeOr4eM3k36wAg">
@@ -6976,8 +6976,8 @@ The Care Plan is continually evolving and dynamic. The Care Plan CDA instance is
   </CDA:PropertyValidation>
   <CDA:ConformsTo xmi:id="_qS_r8J5xEeOr4eM3k36wAg" base_Generalization="_2jWfwZ5wEeOr4eM3k36wAg"/>
   <CDA:CDATemplate xmi:id="_yJ1FUJ5xEeOr4eM3k36wAg" base_Class="_2jWfwJ5wEeOr4eM3k36wAg" templateId="2.16.840.1.113883.10.20.22.1.15">
-    <ruleId>CONF:28741</ruleId>
-    <ruleId>CONF:28742</ruleId>
+    <ruleId>CONF:1098-28741</ruleId>
+    <ruleId>CONF:1098-28742</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_RILM0J5yEeOr4eM3k36wAg" base_Property="_WQ_WMJ5xEeOr4eM3k36wAg">
     <ruleId>CONF:28748</ruleId>

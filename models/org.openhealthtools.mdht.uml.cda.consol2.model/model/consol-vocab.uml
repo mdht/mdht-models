@@ -1733,6 +1733,15 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_PHGJsOLWEeS505YV9ux2XA" name="PRP"/>
       <ownedLiteral xmi:id="_QStBMOLWEeS505YV9ux2XA" name="RQO"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_uUyNION4EeS_XOr-dz_KWA" name="ProblemAct statusCode">
+      <ownedComment xmi:id="_uUyNIeN4EeS_XOr-dz_KWA">
+        <body>This value set indicates the status of the problem concern act.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_uUyNIuN4EeS_XOr-dz_KWA" name="active"/>
+      <ownedLiteral xmi:id="_uUyNI-N4EeS_XOr-dz_KWA" name="suspended"/>
+      <ownedLiteral xmi:id="_uUyNJON4EeS_XOr-dz_KWA" name="aborted"/>
+      <ownedLiteral xmi:id="_uUyNJeN4EeS_XOr-dz_KWA" name="completed"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3338,4 +3347,11 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_OKXbsOLWEeS505YV9ux2XA" conceptName="Promise" base_EnumerationLiteral="_OKW0oOLWEeS505YV9ux2XA"/>
   <term:ValueSetCode xmi:id="_PHGJseLWEeS505YV9ux2XA" conceptName="Proposal" base_EnumerationLiteral="_PHGJsOLWEeS505YV9ux2XA"/>
   <term:ValueSetCode xmi:id="_QStoQOLWEeS505YV9ux2XA" conceptName="Request" base_EnumerationLiteral="_QStBMOLWEeS505YV9ux2XA"/>
+  <term:ValueSetVersion xmi:id="_uUyNJuN4EeS_XOr-dz_KWA" identifier="2.16.840.1.113883.11.20.9.19" version="2014-03-24" source="http://www.hl7.org" definition="A ValueSet of HL7 actStatus codes for use with a procedure activity" base_Enumeration="_uUyNION4EeS_XOr-dz_KWA">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_uUyNJ-N4EeS_XOr-dz_KWA" conceptName="Active" usageNote="A concern that is still being tracked." base_EnumerationLiteral="_uUyNIuN4EeS_XOr-dz_KWA"/>
+  <term:ValueSetCode xmi:id="_uUyNKON4EeS_XOr-dz_KWA" conceptName="Suspended" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved." base_EnumerationLiteral="_uUyNI-N4EeS_XOr-dz_KWA"/>
+  <term:ValueSetCode xmi:id="_uUyNKeN4EeS_XOr-dz_KWA" conceptName="Aborted" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice." base_EnumerationLiteral="_uUyNJON4EeS_XOr-dz_KWA"/>
+  <term:ValueSetCode xmi:id="_uUyNKuN4EeS_XOr-dz_KWA" conceptName="Completed" usageNote="The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for historical purposes." base_EnumerationLiteral="_uUyNJeN4EeS_XOr-dz_KWA"/>
 </xmi:XMI>
