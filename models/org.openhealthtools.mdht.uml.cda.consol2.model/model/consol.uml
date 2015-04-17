@@ -2736,6 +2736,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_TeyvYOOqEeS_XOr-dz_KWA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_JbYUQOOrEeS_XOr-dz_KWA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_6SLrEOOrEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_9Qy_sOUIEeS-cp9IWljmeQ"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
