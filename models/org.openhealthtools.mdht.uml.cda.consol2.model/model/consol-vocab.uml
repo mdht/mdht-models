@@ -1527,12 +1527,6 @@ Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/v
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_pucFwJ8TEeOr4eM3k36wAg" name="Related Document (append/replace)">
-      <ownedComment xmi:id="_uzlaoJ8TEeOr4eM3k36wAg">
-        <body>The Related Document value set is used to constrain a related document to two concepts - append and replace. 
- 
-Specific URL pending&#xD;
-Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/vocabulary.html</body>
-      </ownedComment>
       <ownedLiteral xmi:id="_1gleIJ8TEeOr4eM3k36wAg" name="APND"/>
       <ownedLiteral xmi:id="_3ySbAJ8TEeOr4eM3k36wAg" name="RPLC"/>
     </packagedElement>
@@ -1724,6 +1718,23 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_UnwCv82JEeSEZ8MJJ3ZzLg" name="S"/>
       <ownedLiteral xmi:id="_UnwCwM2JEeSEZ8MJJ3ZzLg" name="VS"/>
       <ownedLiteral xmi:id="_UnwCwc2JEeSEZ8MJJ3ZzLg" name="W"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_uzm0MOLVEeS505YV9ux2XA" name="Planned Intervention moodCode">
+      <ownedLiteral xmi:id="_JTw5IOLWEeS505YV9ux2XA" name="APT"/>
+      <ownedLiteral xmi:id="_LRMPIOLWEeS505YV9ux2XA" name="ARQ"/>
+      <ownedLiteral xmi:id="_NSGW8OLWEeS505YV9ux2XA" name="INT"/>
+      <ownedLiteral xmi:id="_OKW0oOLWEeS505YV9ux2XA" name="PRMS"/>
+      <ownedLiteral xmi:id="_PHGJsOLWEeS505YV9ux2XA" name="PRP"/>
+      <ownedLiteral xmi:id="_QStBMOLWEeS505YV9ux2XA" name="RQO"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_uUyNION4EeS_XOr-dz_KWA" name="ProblemAct statusCode">
+      <ownedComment xmi:id="_uUyNIeN4EeS_XOr-dz_KWA">
+        <body>This value set indicates the status of the problem concern act.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_uUyNIuN4EeS_XOr-dz_KWA" name="active"/>
+      <ownedLiteral xmi:id="_uUyNI-N4EeS_XOr-dz_KWA" name="suspended"/>
+      <ownedLiteral xmi:id="_uUyNJON4EeS_XOr-dz_KWA" name="aborted"/>
+      <ownedLiteral xmi:id="_uUyNJeN4EeS_XOr-dz_KWA" name="completed"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -1994,7 +2005,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_2aTk8EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.19185" version="1" fullName="Religious Affiliation Value Set" definition="This reflects the spiritual faith affiliation" binding="Dynamic" base_Enumeration="_dfhqEKDqEd-dVeaMP0XXQw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfoXwaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_4m1G4EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.11.20.9.33" base_Enumeration="_ywcy0Gg7Ed-ilOLYnIx0jA">
+  <term:ValueSetVersion xmi:id="_4m1G4EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.11.20.9.33" version="2011-09-30" base_Enumeration="_ywcy0Gg7Ed-ilOLYnIx0jA">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_9lb5cEFbEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.12212" version="1" fullName="Marital Status Value Set" definition="Marital Status is the domestic partnership status of a person." binding="Dynamic" base_Enumeration="_dRMTIKDqEd-dVeaMP0XXQw">
@@ -3142,7 +3153,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_x4P9YZ6CEeOr4eM3k36wAg" identifier="2.16.840.1.113883.11.20.12.1" fullName="Personal And Legal Relationship Role Type" binding="Dynamic" base_Enumeration="_x4P9YJ6CEeOr4eM3k36wAg">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_pucs0J8TEeOr4eM3k36wAg" identifier="2.16.840.1.113883.11.20.9.62" fullName="Related Document (append/replace)" base_Enumeration="_pucFwJ8TEeOr4eM3k36wAg">
+  <term:ValueSetVersion xmi:id="_pucs0J8TEeOr4eM3k36wAg" identifier="2.16.840.1.113883.11.20.9.62" version="2014-09-01" fullName="Related Document (append/replace)" source="http://www.hl7.org/documentcenter/public/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/vocabulary.html" definition="The Related Document value set is used to constrain a related document to two concepts - append and replace." base_Enumeration="_pucFwJ8TEeOr4eM3k36wAg">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_f6DvAE6SEeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_1gleIZ8TEeOr4eM3k36wAg" conceptName="Append" base_EnumerationLiteral="_1gleIJ8TEeOr4eM3k36wAg"/>
@@ -3321,4 +3332,20 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_Unwpz82JEeSEZ8MJJ3ZzLg" conceptName="susceptible" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCv82JEeSEZ8MJJ3ZzLg"/>
   <term:ValueSetCode xmi:id="_Unwp0M2JEeSEZ8MJJ3ZzLg" conceptName="Very susceptible" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCwM2JEeSEZ8MJJ3ZzLg"/>
   <term:ValueSetCode xmi:id="_Unwp0c2JEeSEZ8MJJ3ZzLg" conceptName="worse" usageNote="ObservationInterpretation" base_EnumerationLiteral="_UnwCwc2JEeSEZ8MJJ3ZzLg"/>
+  <term:ValueSetVersion xmi:id="_uznbQOLVEeS505YV9ux2XA" identifier="2.16.840.1.113883.11.20.9.54" fullName="Planned Intervention moodCode" source="http://www.hl7.org/documentcenter/public/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/vocabulary.html" definition="Contains all the moodCode values it is possible to have for a Planned Intervention." binding="Dynamic" base_Enumeration="_uzm0MOLVEeS505YV9ux2XA">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_JTw5IeLWEeS505YV9ux2XA" conceptName="Appointment" base_EnumerationLiteral="_JTw5IOLWEeS505YV9ux2XA"/>
+  <term:ValueSetCode xmi:id="_LRMPIeLWEeS505YV9ux2XA" conceptName="Appointment Request" base_EnumerationLiteral="_LRMPIOLWEeS505YV9ux2XA"/>
+  <term:ValueSetCode xmi:id="_NSGW8eLWEeS505YV9ux2XA" conceptName="Intent" base_EnumerationLiteral="_NSGW8OLWEeS505YV9ux2XA"/>
+  <term:ValueSetCode xmi:id="_OKXbsOLWEeS505YV9ux2XA" conceptName="Promise" base_EnumerationLiteral="_OKW0oOLWEeS505YV9ux2XA"/>
+  <term:ValueSetCode xmi:id="_PHGJseLWEeS505YV9ux2XA" conceptName="Proposal" base_EnumerationLiteral="_PHGJsOLWEeS505YV9ux2XA"/>
+  <term:ValueSetCode xmi:id="_QStoQOLWEeS505YV9ux2XA" conceptName="Request" base_EnumerationLiteral="_QStBMOLWEeS505YV9ux2XA"/>
+  <term:ValueSetVersion xmi:id="_uUyNJuN4EeS_XOr-dz_KWA" identifier="2.16.840.1.113883.11.20.9.19" version="2014-03-24" source="http://www.hl7.org" definition="A ValueSet of HL7 actStatus codes for use with a procedure activity" base_Enumeration="_uUyNION4EeS_XOr-dz_KWA">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_uUyNJ-N4EeS_XOr-dz_KWA" conceptName="Active" usageNote="A concern that is still being tracked." base_EnumerationLiteral="_uUyNIuN4EeS_XOr-dz_KWA"/>
+  <term:ValueSetCode xmi:id="_uUyNKON4EeS_XOr-dz_KWA" conceptName="Suspended" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved." base_EnumerationLiteral="_uUyNI-N4EeS_XOr-dz_KWA"/>
+  <term:ValueSetCode xmi:id="_uUyNKeN4EeS_XOr-dz_KWA" conceptName="Aborted" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice." base_EnumerationLiteral="_uUyNJON4EeS_XOr-dz_KWA"/>
+  <term:ValueSetCode xmi:id="_uUyNKuN4EeS_XOr-dz_KWA" conceptName="Completed" usageNote="The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for historical purposes." base_EnumerationLiteral="_uUyNJeN4EeS_XOr-dz_KWA"/>
 </xmi:XMI>
