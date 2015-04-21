@@ -16,7 +16,7 @@
 	<property name="validation.failOnError" value="false" />
 	<property name="runPostProcessing" value="true" />
 
-	<eclipse.convertPath resourcePath="org.openhealthtools.mdht.uml.cda.consol2.model/model/${modelName}.uml" property="modelPath.uml"/>
+	<eclipse.convertPath resourcePath="org.openhealthtools.mdht.uml.cda.consol.model/model/${modelName}.uml" property="modelPath.uml"/>
 
 	<macrodef name="convertEcorePaths">
 		<attribute name="filePath" />
