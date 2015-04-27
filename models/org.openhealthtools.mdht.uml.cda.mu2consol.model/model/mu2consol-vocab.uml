@@ -217,7 +217,7 @@
     </profileApplication>
   </uml:Package>
   <term:ValueSetVersion xmi:id="_ezB0kPuJEeGx4ophOjh2tw" base_Enumeration="_ey3cgPuJEeGx4ophOjh2tw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_zhFYAPuJEeGx4ophOjh2tw" conceptName="Current every day smoker" base_EnumerationLiteral="_oFwkMPuJEeGx4ophOjh2tw"/>
   <term:ValueSetCode xmi:id="_7HBOoPuJEeGx4ophOjh2tw" conceptName="Current some day smoker" base_EnumerationLiteral="_7HAnkPuJEeGx4ophOjh2tw"/>
@@ -228,12 +228,12 @@
   <term:ValueSetCode xmi:id="_YzP34PuTEeGx4ophOjh2tw" conceptName="Heavy tobacco smoker" base_EnumerationLiteral="_YzPQ0PuTEeGx4ophOjh2tw"/>
   <term:ValueSetCode xmi:id="_eByZUPuTEeGx4ophOjh2tw" conceptName="Light tobacco smoker" base_EnumerationLiteral="_eBxyQPuTEeGx4ophOjh2tw"/>
   <term:ValueSetVersion xmi:id="_GE2YsALeEeK7TpEj_YCJGQ" base_Enumeration="_GE1KkALeEeK7TpEj_YCJGQ">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_R4zH4ALeEeK7TpEj_YCJGQ" conceptName="Hispanic or Latino" base_EnumerationLiteral="_R4yg0ALeEeK7TpEj_YCJGQ"/>
   <term:ValueSetCode xmi:id="_YkSIcALeEeK7TpEj_YCJGQ" conceptName="Not Hispanic or Latino" base_EnumerationLiteral="_YkRhYALeEeK7TpEj_YCJGQ"/>
   <term:ValueSetVersion xmi:id="_iw_0EALeEeK7TpEj_YCJGQ" base_Enumeration="_iw_NAALeEeK7TpEj_YCJGQ">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_vxlVgALeEeK7TpEj_YCJGQ" conceptName="American Indian or Alaska Native" base_EnumerationLiteral="_vxkucALeEeK7TpEj_YCJGQ"/>
   <term:ValueSetCode xmi:id="_8m3l4QLeEeK7TpEj_YCJGQ" conceptName="Asian" base_EnumerationLiteral="_8m3l4ALeEeK7TpEj_YCJGQ"/>
@@ -241,7 +241,7 @@
   <term:ValueSetCode xmi:id="_Fnf44ALfEeK7TpEj_YCJGQ" conceptName="White" base_EnumerationLiteral="_FnfR0ALfEeK7TpEj_YCJGQ"/>
   <term:ValueSetCode xmi:id="_SNDt8ANdEeKNWa1y_3e0dw" conceptName="Black or African American" base_EnumerationLiteral="_SNCf0ANdEeKNWa1y_3e0dw"/>
   <term:ValueSetVersion xmi:id="_bjYjEAQsEeKhXbyWShxPyQ" base_Enumeration="_bjPZIAQsEeKhXbyWShxPyQ">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_-OczkAZTEeKw_PsLFI_pog" conceptName="Afar" base_EnumerationLiteral="_9617EAZTEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_kmEj0AZWEeKw_PsLFI_pog" conceptName="Abkhazian" base_EnumerationLiteral="_kmD8wAZWEeKw_PsLFI_pog"/>
@@ -364,7 +364,7 @@
   <term:ValueSetCode xmi:id="_jB4LMAZsEeKw_PsLFI_pog" conceptName="Ndonga" base_EnumerationLiteral="_jB3kIAZsEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_j7odsQZsEeKw_PsLFI_pog" conceptName="Nepali" base_EnumerationLiteral="_j7odsAZsEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_k9PrsAZsEeKw_PsLFI_pog" conceptName="Norwegian Nynorsk; Nynorsk, Norwegian" base_EnumerationLiteral="_k9PEoAZsEeKw_PsLFI_pog"/>
-  <term:ValueSetCode xmi:id="_mNXPwAZsEeKw_PsLFI_pog" conceptName="BokmÃ¥l, Norwegian; Norwegian BokmÃ¥l" base_EnumerationLiteral="_mNWosAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_mNXPwAZsEeKw_PsLFI_pog" conceptName="Bokm????l, Norwegian; Norwegian Bokm????l" base_EnumerationLiteral="_mNWosAZsEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_nVwbMAZsEeKw_PsLFI_pog" conceptName="Norwegian" base_EnumerationLiteral="_nVv0IAZsEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_oi91MQZsEeKw_PsLFI_pog" conceptName="Chichewa; Chewa; Nyanja" base_EnumerationLiteral="_oi91MAZsEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_pVs5sQZsEeKw_PsLFI_pog" conceptName="Occitan (post 1500)" base_EnumerationLiteral="_pVs5sAZsEeKw_PsLFI_pog"/>
@@ -420,7 +420,7 @@
   <term:ValueSetCode xmi:id="_AFdkQAZvEeKw_PsLFI_pog" conceptName="Uzbek" base_EnumerationLiteral="_AFc9MAZvEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_BFdosAZvEeKw_PsLFI_pog" conceptName="Venda" base_EnumerationLiteral="_BFdBoAZvEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_CLIQQAZvEeKw_PsLFI_pog" conceptName="Vietnamese" base_EnumerationLiteral="_CLHpMAZvEeKw_PsLFI_pog"/>
-  <term:ValueSetCode xmi:id="_DGUtMAZvEeKw_PsLFI_pog" conceptName="VolapÃ¼k" base_EnumerationLiteral="_DGUGIAZvEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_DGUtMAZvEeKw_PsLFI_pog" conceptName="Volap????k" base_EnumerationLiteral="_DGUGIAZvEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_EEp9sAZvEeKw_PsLFI_pog" conceptName="Walloon" base_EnumerationLiteral="_EEpWoAZvEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_E8u1MQZvEeKw_PsLFI_pog" conceptName="Wolof" base_EnumerationLiteral="_E8u1MAZvEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_GGM-sAZvEeKw_PsLFI_pog" conceptName="Xhosa" base_EnumerationLiteral="_GGMXoAZvEeKw_PsLFI_pog"/>
