@@ -1640,9 +1640,6 @@ public class ConsolSwitch<T> extends Switch<T> {
 				SmokingStatusObservation smokingStatusObservation = (SmokingStatusObservation) theEObject;
 				T result = caseSmokingStatusObservation(smokingStatusObservation);
 				if (result == null) {
-					result = caseTobaccoUse(smokingStatusObservation);
-				}
-				if (result == null) {
 					result = caseObservation(smokingStatusObservation);
 				}
 				if (result == null) {
