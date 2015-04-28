@@ -12,7 +12,7 @@
 <project name="CDA Model Transformation" basedir="." default="all">
 	<eclipse.convertPath resourcePath="org.openhealthtools.mdht.uml.cda" property="cdaPluginPath"/>
 	<property name="modelName" value="mu2consol" />
-	<property name="validation.failOnError" value="true" />	<property name="runPostProcessing" value="true" />
+	<property name="validation.failOnError" value="true" />	<property name="runPostProcessing" value="true" />		<eclipse.convertPath resourcePath="org.openhealthtools.mdht.uml.cda.mu2consol.model/model/${modelName}.uml" property="modelPath.uml"/>
 	<macrodef name="convertEcorePaths">
 		<attribute name="filePath" />
 		<sequential>
