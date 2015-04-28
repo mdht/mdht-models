@@ -6,7 +6,6 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -15,7 +14,6 @@ import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusObservationOperations;
-import org.openhealthtools.mdht.uml.cda.consol.operations.TobaccoUseOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
@@ -30,17 +28,20 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationEffectiveTimeLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Effective Time Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateTobaccoUseTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationIVLTSCenter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS Center</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS High</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationIVLTSWidth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS Width</em>}</li>
  * </ul>
  * </p>
  *
@@ -51,42 +52,36 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateSmokingStatusObservationEffectiveTimeLow() {
-		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationEffectiveTimeLowTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationEffectiveTimeLow",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateSmokingStatusObservationTemplateId() {
+		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationTemplateIdTestCase = new OperationsTestCase<SmokingStatusObservation>(
+			"validateSmokingStatusObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SmokingStatusObservation target) {
-				target.init();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
 
-				target.setEffectiveTime(ts);
 			}
 
 			@Override
 			protected void updateToPass(SmokingStatusObservation target) {
 				target.init();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				ts.setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
-				target.setEffectiveTime(ts);
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTimeLow(
+				return SmokingStatusObservationOperations.validateSmokingStatusObservationTemplateId(
 					(SmokingStatusObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateSmokingStatusObservationEffectiveTimeLowTestCase.doValidationTest();
+		validateSmokingStatusObservationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**
@@ -230,7 +225,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationEffectiveTime() {
@@ -248,8 +243,18 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(SmokingStatusObservation target) {
 				target.init();
 
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(ts);
+				// TODO: fix this issue
+				// we can't use the below code due to changing the datatype from IVL_TS to TS which was required by errata 596
+				// 596 caused this transform error: Property type does not conform to redefined property type:
+				// consol::SmokingStatusObservation::effectiveTime'
+				// SXCM_TS eTimeTS = DatatypesFactory.eINSTANCE.createIVL_TS();
+				// target.setEffectiveTime(eTimeTS);
+
+				// forced to used an IVL_TS instead...
+				// Since IVL_TS inherits from TS we still can use a value as required
+				// Since high and low are not enforced, using IVL_TS should work fine...
+				IVL_TS eTimeTS = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(eTimeTS);
 
 			}
 
@@ -325,13 +330,6 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 			}
 
 			@Override
-			protected void setDependency(SmokingStatusObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservationStatusCodeP", passToken);
-			}
-
-			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
 				return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCode(
@@ -382,7 +380,147 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationIVLTSCenter() {
+		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSCenterTestCase = new OperationsTestCase<SmokingStatusObservation>(
+			"validateSmokingStatusObservationIVLTSCenter",
+			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_CENTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusObservation target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.getEffectiveTime().setCenter(DatatypesFactory.eINSTANCE.createIVXB_TS());
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusObservation target) {
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSCenter(
+					(SmokingStatusObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationIVLTSCenterTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationIVLTSHigh() {
+		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSHighTestCase = new OperationsTestCase<SmokingStatusObservation>(
+			"validateSmokingStatusObservationIVLTSHigh",
+			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusObservation target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.getEffectiveTime().setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusObservation target) {
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSHigh(
+					(SmokingStatusObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationIVLTSHighTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationIVLTSLow() {
+		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSLowTestCase = new OperationsTestCase<SmokingStatusObservation>(
+			"validateSmokingStatusObservationIVLTSLow",
+			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusObservation target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.getEffectiveTime().setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusObservation target) {
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSLow(
+					(SmokingStatusObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationIVLTSLowTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationIVLTSWidth() {
+		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSWidthTestCase = new OperationsTestCase<SmokingStatusObservation>(
+			"validateSmokingStatusObservationIVLTSWidth",
+			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusObservation target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.getEffectiveTime().setWidth((DatatypesFactory.eINSTANCE.createPQ()));
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusObservation target) {
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSWidth(
+					(SmokingStatusObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationIVLTSWidthTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationValue() {
@@ -400,7 +538,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(SmokingStatusObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD("449868002", "2.16.840.1.113883.6.96", "", "");
+				CD value = DatatypesFactory.eINSTANCE.createCD("449868002", SNOMEDCT_ID);
 				target.getValues().add(value);
 
 			}
@@ -415,76 +553,6 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 		};
 
 		validateSmokingStatusObservationValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateTobaccoUseTemplateId() {
-		OperationsTestCase<SmokingStatusObservation> validateTobaccoUseTemplateIdTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateTobaccoUseTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(SmokingStatusObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(SmokingStatusObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return SmokingStatusObservationOperations.validateTobaccoUseTemplateId(
-					(SmokingStatusObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateTobaccoUseTemplateIdTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateTobaccoUseValue() {
-		OperationsTestCase<SmokingStatusObservation> validateTobaccoUseValueTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateTobaccoUseValue",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
-
-			@Override
-			protected void updateToFail(SmokingStatusObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(SmokingStatusObservation target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD("449868002", "2.16.840.1.113883.6.96", "", "");
-				target.getValues().add(value);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return TobaccoUseOperations.validateTobaccoUseValue(
-					(SmokingStatusObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateTobaccoUseValueTestCase.doValidationTest();
 	}
 
 	/**
