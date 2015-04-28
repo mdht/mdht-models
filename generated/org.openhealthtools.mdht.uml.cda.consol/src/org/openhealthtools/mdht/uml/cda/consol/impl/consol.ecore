@@ -4375,11 +4375,11 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationActivity" eSuperTypes="urn:hl7-org:v3#//SubstanceAdministration">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MedicationActivityTemplateId MedicationActivityTextReferenceValue MedicationActivityEffectiveTimeIVLTSorTS MedicationActivityEffectiveTimeIVLTSLow MedicationActivityEffectiveTimeIVLTSHigh  MedicationActivityEffectiveTimeTSValue MedicationActivityEffectiveTimeOperator MedicationActivityDrugVehicleTypeCode MedicationActivityInstructionsInversionInd MedicationActivityRateQuantityUnit MedicationActivityClassCode MedicationActivityMoodCode MedicationActivityId MedicationActivityStatusCode MedicationActivityRouteCode MedicationActivityApproachSiteCode MedicationActivityConsumable MedicationActivityConsumableMedicationInformation MedicationActivityPreconditionTypeCode MedicationActivityPreconditionPreconditionForSubstanceAdministration"/>
+      <details key="constraints.validation.error" value="MedicationActivityTemplateId MedicationActivityTextReferenceValue MedicationActivityEffectiveTimeIVLTSorTS MedicationActivityEffectiveTimeIVLTSLow MedicationActivityEffectiveTimeIVLTSHigh  MedicationActivityEffectiveTimeTSValue MedicationActivityEffectiveTimeOperator MedicationActivityDrugVehicleTypeCode MedicationActivityInstructionsInversionInd MedicationActivityRateQuantityUnit MedicationActivityClassCode MedicationActivityMoodCode MedicationActivityId MedicationActivityStatusCode MedicationActivityRouteCode MedicationActivityApproachSiteCode MedicationActivityAdministrationUnitCode MedicationActivityConsumable MedicationActivityConsumableMedicationInformation MedicationActivityPreconditionTypeCode MedicationActivityPreconditionPreconditionForSubstanceAdministration"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.16"/>
       <details key="constraints.validation.warning" value="MedicationActivityDoseQuantityorrateQuantity MedicationActivityTextReference MedicationActivityReferenceValue MedicationActivityEffectiveTimePIVLTS MedicationActivityDoseQuantityUnit MedicationActivityDoseQuantity MedicationActivityText"/>
       <details key="classCode" value="SBADM"/>
-      <details key="constraints.validation.info" value="MedicationActivityCode MedicationActivityRouteCodeP MedicationActivityApproachSiteCodeP MedicationActivityRateQuantity MedicationActivityMaxDoseQuantity MedicationActivityAdministrationUnitCode MedicationActivityRepeatNumber MedicationActivityMedicationSupplyOrder MedicationActivityReactionObservation MedicationActivityPerformer MedicationActivityInstructions MedicationActivityIndication MedicationActivityMedicationDispense MedicationActivityDrugVehicle MedicationActivityPrecondition"/>
+      <details key="constraints.validation.info" value="MedicationActivityCode MedicationActivityRouteCodeP MedicationActivityApproachSiteCodeP MedicationActivityRateQuantity MedicationActivityMaxDoseQuantity MedicationActivityAdministrationUnitCodeP MedicationActivityRepeatNumber MedicationActivityMedicationSupplyOrder MedicationActivityReactionObservation MedicationActivityPerformer MedicationActivityInstructions MedicationActivityIndication MedicationActivityMedicationDispense MedicationActivityDrugVehicle MedicationActivityPrecondition"/>
       <details key="routeCode.codeSystem" value="2.16.840.1.113883.3.26.1.1"/>
       <details key="routeCode.codeSystemName" value="NCI Thesaurus"/>
       <details key="constraints.validation.dependOn.MedicationActivityRouteCode" value="MedicationActivityRouteCodeP"/>
@@ -4387,6 +4387,10 @@
       <details key="approachSiteCode.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.dependOn.MedicationActivityApproachSiteCode"
           value="MedicationActivityApproachSiteCodeP"/>
+      <details key="administrationUnitCode.codeSystem" value="2.16.840.1.113883.3.26.1.1"/>
+      <details key="administrationUnitCode.codeSystemName" value="NCI Thesaurus"/>
+      <details key="constraints.validation.dependOn.MedicationActivityAdministrationUnitCode"
+          value="MedicationActivityAdministrationUnitCodeP"/>
       <details key="constraints.validation.query" value="MedicationActivityConsumableMedicationInformation MedicationActivityPreconditionTypeCode MedicationActivityPreconditionPreconditionForSubstanceAdministration"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationActivityConsumable">
@@ -4631,6 +4635,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="MedicationActivityMaxDoseQuantity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="MedicationActivityAdministrationUnitCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -15087,9 +15100,9 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SmokingStatusObservation" eSuperTypes="#//TobaccoUse">
+  <eClassifiers xsi:type="ecore:EClass" name="SmokingStatusObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="TobaccoUseTemplateId SmokingStatusObservationEffectiveTimeLow SmokingStatusObservationClassCode SmokingStatusObservationMoodCode SmokingStatusObservationCode SmokingStatusObservationCodeP SmokingStatusObservationEffectiveTime SmokingStatusObservationStatusCode SmokingStatusObservationStatusCodeP SmokingStatusObservationValue SmokingStatusObservationValueP"/>
+      <details key="constraints.validation.error" value="SmokingStatusObservationTemplateId SmokingStatusObservationClassCode SmokingStatusObservationMoodCode SmokingStatusObservationCode SmokingStatusObservationCodeP SmokingStatusObservationEffectiveTime SmokingStatusObservationStatusCode SmokingStatusObservationStatusCodeP SmokingStatusObservationValue SmokingStatusObservationValueP SmokingStatusObservationIVLTSCenter SmokingStatusObservationIVLTSHigh SmokingStatusObservationIVLTSLow SmokingStatusObservationIVLTSWidth"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.78"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
@@ -15100,26 +15113,14 @@
       <details key="constraints.validation.dependOn.SmokingStatusObservationCode"
           value="SmokingStatusObservationCodeP"/>
       <details key="statusCode.code" value="completed"/>
-      <details key="constraints.validation.dependOn.SmokingStatusObservationStatusCode"
-          value="SmokingStatusObservationStatusCodeP"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
-      <details key="constraints.validation.dependOn.SmokingStatusObservationValue"
-          value="SmokingStatusObservationValueP"/>
+      <details key="constraints.validation.query" value="SmokingStatusObservationIVLTSCenter SmokingStatusObservationIVLTSHigh SmokingStatusObservationIVLTSLow SmokingStatusObservationIVLTSWidth"/>
     </eAnnotations>
-    <eAnnotations source="duplicates">
-      <contents xsi:type="ecore:EOperation" name="TobaccoUseTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//TobaccoUse/TobaccoUseTemplateId"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-        <eParameters name="context">
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSmokingStatusObservationIVLTS">
+      <details key="constraints.validation.error" value="SmokingStatusObservationIVLTSCenter SmokingStatusObservationIVLTSHigh SmokingStatusObservationIVLTSLow SmokingStatusObservationIVLTSWidth"/>
     </eAnnotations>
-    <eOperations name="SmokingStatusObservationEffectiveTimeLow" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="SmokingStatusObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -15173,6 +15174,15 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="SmokingStatusObservationStatusCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="SmokingStatusObservationStatusCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -15182,7 +15192,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="SmokingStatusObservationStatusCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="SmokingStatusObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -15200,7 +15210,34 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="SmokingStatusObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="SmokingStatusObservationIVLTSCenter" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="SmokingStatusObservationIVLTSHigh" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="SmokingStatusObservationIVLTSLow" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="SmokingStatusObservationIVLTSWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -16961,12 +16998,12 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DischargeSummary" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId DischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection DischargeSummaryCode DischargeSummaryCodeP DischargeSummaryHospitalAdmissionDiagnosisSection DischargeSummaryHospitalDischargeDiagnosisSection DischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional DischargeSummaryHospitalCourseSection DischargeSummaryPlanOfCareSection DischargeSummaryComponentOf DischargeSummaryAllergiesSectionEntriesOptional DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode DischargeSummaryComponentOfEncompassingEncounter3EffectiveTime DischargeSummaryComponentOfEncompassingEncounter"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId DischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection DischargeSummaryCode DischargeSummaryCodeP DischargeSummaryHospitalDischargeDiagnosisSection DischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional DischargeSummaryHospitalCourseSection DischargeSummaryPlanOfCareSection DischargeSummaryComponentOf DischargeSummaryAllergiesSectionEntriesOptional DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode DischargeSummaryComponentOfEncompassingEncounter3EffectiveTime DischargeSummaryComponentOfEncompassingEncounter"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.8"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.DischargeSummaryCode" value="DischargeSummaryCodeP"/>
-      <details key="constraints.validation.info" value="DischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional DischargeSummaryDischargeDietSection DischargeSummaryFunctionalStatusSection DischargeSummaryHistoryOfPresentIllnessSection DischargeSummaryHistoryOfPastIllnessSection DischargeSummaryChiefComplaintAndReasonForVisitSection DischargeSummaryChiefComplaintSection DischargeSummaryFamilyHistorySection DischargeSummaryHospitalConsultationsSection DischargeSummaryHospitalDischargeInstructionsSection DischargeSummaryHospitalDischargePhysicalSection DischargeSummaryHospitalDischargeStudiesSummarySection DischargeSummaryImmunizationsSectionEntriesOptional DischargeSummaryProblemSectionEntriesOptional DischargeSummaryProceduresSectionEntriesOptional DischargeSummaryReasonForVisitSection DischargeSummaryReviewOfSystemsSection DischargeSummarySocialHistorySection DischargeSummaryVitalSignsSectionEntriesOptional DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem DischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant"/>
+      <details key="constraints.validation.info" value="DischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional DischargeSummaryHospitalAdmissionDiagnosisSection DischargeSummaryDischargeDietSection DischargeSummaryFunctionalStatusSection DischargeSummaryHistoryOfPresentIllnessSection DischargeSummaryHistoryOfPastIllnessSection DischargeSummaryChiefComplaintAndReasonForVisitSection DischargeSummaryChiefComplaintSection DischargeSummaryFamilyHistorySection DischargeSummaryHospitalConsultationsSection DischargeSummaryHospitalDischargeInstructionsSection DischargeSummaryHospitalDischargePhysicalSection DischargeSummaryHospitalDischargeStudiesSummarySection DischargeSummaryImmunizationsSectionEntriesOptional DischargeSummaryProblemSectionEntriesOptional DischargeSummaryProceduresSectionEntriesOptional DischargeSummaryReasonForVisitSection DischargeSummaryReviewOfSystemsSection DischargeSummarySocialHistorySection DischargeSummaryVitalSignsSectionEntriesOptional DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem DischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant"/>
       <details key="constraints.validation.query" value="DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode DischargeSummaryComponentOfEncompassingEncounter3EffectiveTime DischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant DischargeSummaryComponentOfEncompassingEncounter"/>
       <details key="constraints.validation.warning" value="DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet"/>
     </eAnnotations>

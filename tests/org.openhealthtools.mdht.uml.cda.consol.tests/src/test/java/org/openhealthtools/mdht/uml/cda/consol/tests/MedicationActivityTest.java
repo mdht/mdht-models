@@ -10,6 +10,7 @@
  *     Dan Brown (Audacious Inquiry) - additional testing code
  *                                   - added multiple new tests as per artf3817 : SITE435 Implement Errata 423
  *                                   - additional code as per Errata 506
+ *                                   - additional code as per SITE-1373
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
@@ -87,6 +88,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Dose Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityRateQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Rate Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityMaxDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Max Dose Quantity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityAdministrationUnitCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Administration Unit Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityAdministrationUnitCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Administration Unit Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityRepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Repeat Number</em>}</li>
@@ -1255,13 +1257,13 @@ public class MedicationActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateMedicationActivityAdministrationUnitCode() {
-		OperationsTestCase<MedicationActivity> validateMedicationActivityAdministrationUnitCodeTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityAdministrationUnitCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateMedicationActivityAdministrationUnitCodeP() {
+		OperationsTestCase<MedicationActivity> validateMedicationActivityAdministrationUnitCodePTestCase = new OperationsTestCase<MedicationActivity>(
+			"validateMedicationActivityAdministrationUnitCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1272,8 +1274,92 @@ public class MedicationActivityTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MedicationActivity target) {
 				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationActivityOperations.validateMedicationActivityAdministrationUnitCodeP(
+					(MedicationActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationActivityAdministrationUnitCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateMedicationActivityAdministrationUnitCode() {
+		OperationsTestCase<MedicationActivity> validateMedicationActivityAdministrationUnitCodeTestCase = new OperationsTestCase<MedicationActivity>(
+			"validateMedicationActivityAdministrationUnitCode",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE(
+							BAD_CODE_VALUE, "2.16.840.1.113883.3.26.1.1"));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE(
+							"C42887", BAD_CODESYSTEM_ID));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE("code", "sadadsa"));
+
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE());
+						target.getAdministrationUnitCode().setCodeSystem("");
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE());
+						target.getAdministrationUnitCode().setCode("");
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+
+					}
+				});
+			}
+
+			@Override
+			protected void updateToPass(MedicationActivity target) {
+				target.init();
 				target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE(
-					"code", "2.16.840.1.113883.3.26.1.1"));
+					"C42887", "2.16.840.1.113883.3.26.1.1"));
 
 			}
 

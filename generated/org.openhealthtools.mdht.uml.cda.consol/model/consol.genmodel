@@ -1775,6 +1775,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityMaxDoseQuantity/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityMaxDoseQuantity/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/MedicationActivityAdministrationUnitCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityAdministrationUnitCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityAdministrationUnitCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity/MedicationActivityAdministrationUnitCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityAdministrationUnitCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity/MedicationActivityAdministrationUnitCode/context"/>
@@ -5550,9 +5554,9 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//SmokingStatusObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationEffectiveTimeLow">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationEffectiveTimeLow/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationEffectiveTimeLow/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationTemplateId/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationClassCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationClassCode/diagnostics"/>
@@ -5574,21 +5578,37 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationEffectiveTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationEffectiveTime/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationStatusCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationStatusCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationStatusCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationStatusCodeP/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationStatusCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationStatusCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValueP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValueP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValueP/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSCenter">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSCenter/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSCenter/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSHigh">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSHigh/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSHigh/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSLow">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSLow/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSLow/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSWidth">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSWidth/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SmokingStatusObservation/SmokingStatusObservationIVLTSWidth/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//TobaccoUse">
