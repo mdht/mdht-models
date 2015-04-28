@@ -387,15 +387,9 @@
 If the patient is a smoker (77176002), the effectiveTime/low element must be present. If the patient is an ex-smoker (8517006), both the effectiveTime/low and effectiveTime/high element must be present.&#xD;
 The smoking status value set includes a special code to communicate if the smoking status is unknown which is different from how Consolidated CDA generally communicates unknown information.</body>
     </ownedComment>
-    <ownedRule xmi:id="_5lXR0OWUEeGKmvzED_He2w" name="effectiveTimeLow" constrainedElement="_RYJj0OWQEeGKmvzED_He2w">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_7peeoOWUEeGKmvzED_He2w">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>This constraint is being overridden as it has been removed and should never fire.</body>
-        <body>true</body>
-      </specification>
-    </ownedRule>
-    <generalization xmi:id="_reIG0OWTEeGKmvzED_He2w" general="_gIH_QOWQEeGKmvzED_He2w"/>
+    <generalization xmi:id="_reIG0OWTEeGKmvzED_He2w">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
     <ownedAttribute xmi:id="_YzzdEOWQEeGKmvzED_He2w" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_4hWFgOWTEeGKmvzED_He2w" value="OBS"/>
@@ -410,11 +404,10 @@ The smoking status value set includes a special code to communicate if the smoki
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Yz0EIeWQEeGKmvzED_He2w" name="effectiveTime" visibility="private" aggregation="composite">
+    <ownedAttribute xmi:id="_Yz0EIeWQEeGKmvzED_He2w" name="effectiveTime" visibility="private" type="_W3DfwOq9EeSZr99IhXi9Zw" aggregation="composite">
       <ownedComment xmi:id="_GDwm4Og6EeSUlo9Nuj5Bcg">
         <body>Note: This template represents a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime is constrained to just a time stamp, and will approximately correspond with the author/time.</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pipd8OWUEeGKmvzED_He2w" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pifs8OWUEeGKmvzED_He2w" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
@@ -431,6 +424,38 @@ The smoking status value set includes a special code to communicate if the smoki
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WF5IgOWUEeGKmvzED_He2w" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_W3DfwOq9EeSZr99IhXi9Zw" name="IVLTS">
+      <ownedComment xmi:id="_bqDX4OrBEeSinuKq_KdHtQ">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_W3Dfweq9EeSZr99IhXi9Zw">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_eUgIwOq9EeSZr99IhXi9Zw" name="center" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XT1s8eq-EeSZr99IhXi9Zw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XT1s8Oq-EeSZr99IhXi9Zw"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_imjmAD6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_eUgIw-q9EeSZr99IhXi9Zw" name="high" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YJ7nceq-EeSZr99IhXi9Zw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YJ7ncOq-EeSZr99IhXi9Zw"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_eUgIxuq9EeSZr99IhXi9Zw" name="low" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yz-C8eq-EeSZr99IhXi9Zw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yz-C8Oq-EeSZr99IhXi9Zw"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_eUgIyeq9EeSZr99IhXi9Zw" name="width" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZeSyUeq-EeSZr99IhXi9Zw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZeSyUOq-EeSZr99IhXi9Zw"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_kXgmQD6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_93hgAOWTEeGKmvzED_He2w" base_Class="_RYJj0OWQEeGKmvzED_He2w" templateId="2.16.840.1.113883.10.20.22.4.78">
     <ruleId>CONF:14815</ruleId>
@@ -448,7 +473,7 @@ The smoking status value set includes a special code to communicate if the smoki
   <CDA:CodeSystemConstraint xmi:id="_CSfPcOWUEeGKmvzED_He2w" code="ASSERTION" displayName="Assertion" base_Property="_Yz0EIOWQEeGKmvzED_He2w">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_R6jJcOWUEeGKmvzED_He2w" base_Property="_Yz0EIeWQEeGKmvzED_He2w">
+  <CDA:PropertyValidation xmi:id="_R6jJcOWUEeGKmvzED_He2w" message="Consol Smoking Status Observation SHALL contain exactly one [1..1] effectiveTime with @xsi:type=&quot;TS&quot; (CONF:14814)" base_Property="_Yz0EIeWQEeGKmvzED_He2w">
     <ruleId>CONF:14814</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_GdsEkOWUEeGKmvzED_He2w" base_Property="_Yz0rMeWQEeGKmvzED_He2w">
@@ -487,4 +512,8 @@ The smoking status value set includes a special code to communicate if the smoki
   <CDA:PropertyValidation xmi:id="_mMh3UGRREeOD5bEp3nNX5w" base_Property="_2N6ssBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:457</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_TXiPcOq-EeSZr99IhXi9Zw" message="effectiveTime of type TS cannot include a center" base_Property="_eUgIwOq9EeSZr99IhXi9Zw"/>
+  <CDA:PropertyValidation xmi:id="_TqWdwOq-EeSZr99IhXi9Zw" message="effectiveTime of type TS cannot include a high" base_Property="_eUgIw-q9EeSZr99IhXi9Zw"/>
+  <CDA:PropertyValidation xmi:id="_T8eIgOq-EeSZr99IhXi9Zw" message="effectiveTime of type TS cannot include a low" base_Property="_eUgIxuq9EeSZr99IhXi9Zw"/>
+  <CDA:PropertyValidation xmi:id="_UO5VQOq-EeSZr99IhXi9Zw" message="effectiveTime of type TS cannot include a width" base_Property="_eUgIyeq9EeSZr99IhXi9Zw"/>
 </xmi:XMI>
