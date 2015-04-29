@@ -216,6 +216,33 @@ public class DischargeSummaryTest extends CDAValidationTest {
 					}
 				});
 
+				// has to pass if has none of the sections in the rule as well (next 3 tests test this)
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(DischargeSummary target) {
+						// blank
+						target.init();
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(DischargeSummary target) {
+						target.init();
+						// this section is mandatory in DischargeSummary anyway...
+						target.addSection(ConsolFactory.eINSTANCE.createAllergiesSectionEntriesOptional().init());
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(DischargeSummary target) {
+						target.init();
+						// test with random section
+						target.addSection(ConsolFactory.eINSTANCE.createAdvanceDirectivesSection().init());
+					}
+				});
+
 			}
 
 			@Override
