@@ -23,27 +23,28 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCarePlan()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId CarePlanDoesNotHavePlanOfTreatmentSectionV2 CarePlanId CarePlanCode CarePlanCodeP CarePlanTitle CarePlanDocumentationOf CarePlanHealthConcernsSection CarePlanGoalsSection CarePlanIIRoot CarePlanInformationRecipientIntendedRecipientInformationRecipientName CarePlanInformationRecipientIntendedRecipientReceivedOrganizationName CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode CarePlanInformationRecipientIntendedRecipientId CarePlanInformationRecipientIntendedRecipient CarePlanAuthenticatorAssignedEntityId CarePlanAuthenticatorAssignedEntityCode CarePlanAuthenticatorAssignedEntityCodeP CarePlanAuthenticatorTime CarePlanAuthenticatorSignatureCode CarePlanAuthenticatorAssignedEntity CarePlanParticipantCarePlanReviewAssociatedEntityClassCode CarePlanParticipantCarePlanReviewAssociatedEntityId CarePlanParticipantCarePlanReviewTypeCode CarePlanParticipantCarePlanReviewFunctionCode CarePlanParticipantCarePlanReviewFunctionCodeP CarePlanParticipantCarePlanReviewTime CarePlanParticipantCarePlanReviewAssociatedEntity CarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName CarePlanParticipantCaregiverAssociatedEntityClassCodeP CarePlanParticipantCaregiverAssociatedEntityClassCode CarePlanParticipantCaregiverAssociatedEntityAssociatedPerson CarePlanParticipantCaregiverTypeCode CarePlanParticipantCaregiverAssociatedEntity CarePlanDocumentationOfServiceEventPerformerAssignedEntityId CarePlanDocumentationOfServiceEventPerformerTypeCode CarePlanDocumentationOfServiceEventClassCode CarePlanDocumentationOfServiceEventEffectiveTime CarePlanDocumentationOfServiceEventPerformer1 CarePlanDocumentationOfServiceEvent CarePlanRelatedDocumentParentDocumentSetId CarePlanRelatedDocumentParentDocumentVersionNumber CarePlanRelatedDocumentTypeCodeP CarePlanRelatedDocumentTypeCode CarePlanRelatedDocumentParentDocument CarePlanComponentOfEncompassingEncounterEffectiveTime CarePlanComponentOfEncompassingEncounter' templateId.root='2.16.840.1.113883.10.20.22.1.15' code.code='CarePlan-X' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Care Plan' constraints.validation.dependOn.CarePlanCode='CarePlanCodeP' constraints.validation.warning='CarePlanInformationRecipient CarePlanAuthenticator CarePlanParticipantCarePlanReview CarePlanParticipantCaregiver CarePlanComponentOf CarePlanHealthStatusEvaluationsOutcomesSection CarePlanInterventionsSection2 CarePlanInformationRecipientIntendedRecipientReceivedOrganizationId CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP CarePlanInformationRecipientIntendedRecipientAddr CarePlanInformationRecipientIntendedRecipientTelecom CarePlanInformationRecipientIntendedRecipientInformationRecipient CarePlanInformationRecipientIntendedRecipientReceivedOrganization CarePlanParticipantCarePlanReviewAssociatedEntityCodeP CarePlanParticipantCarePlanReviewAssociatedEntityCode CarePlanDocumentationOfServiceEventPerformerAssignedEntity CarePlanComponentOfEncompassingEncounterCode' constraints.validation.info='CarePlanRelatedDocument CarePlanAuthenticatorSDTCSignatureText CarePlanDocumentationOfServiceEventPerformerAssignedEntityCode' constraints.validation.query='CarePlanIIRoot CarePlanInformationRecipientIntendedRecipientInformationRecipientName CarePlanInformationRecipientIntendedRecipientReceivedOrganizationId CarePlanInformationRecipientIntendedRecipientReceivedOrganizationName CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode CarePlanInformationRecipientIntendedRecipientId CarePlanInformationRecipientIntendedRecipientAddr CarePlanInformationRecipientIntendedRecipientTelecom CarePlanInformationRecipientIntendedRecipientInformationRecipient CarePlanInformationRecipientIntendedRecipientReceivedOrganization CarePlanInformationRecipientIntendedRecipient CarePlanAuthenticatorAssignedEntityId CarePlanAuthenticatorAssignedEntityCode CarePlanAuthenticatorAssignedEntityCodeP CarePlanAuthenticatorTime CarePlanAuthenticatorSignatureCode CarePlanAuthenticatorSDTCSignatureText CarePlanAuthenticatorAssignedEntity CarePlanParticipantCarePlanReviewAssociatedEntityClassCode CarePlanParticipantCarePlanReviewAssociatedEntityId CarePlanParticipantCarePlanReviewAssociatedEntityCodeP CarePlanParticipantCarePlanReviewAssociatedEntityCode CarePlanParticipantCarePlanReviewTypeCode CarePlanParticipantCarePlanReviewFunctionCode CarePlanParticipantCarePlanReviewFunctionCodeP CarePlanParticipantCarePlanReviewTime CarePlanParticipantCarePlanReviewAssociatedEntity CarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName CarePlanParticipantCaregiverAssociatedEntityClassCodeP CarePlanParticipantCaregiverAssociatedEntityClassCode CarePlanParticipantCaregiverAssociatedEntityAssociatedPerson CarePlanParticipantCaregiverTypeCode CarePlanParticipantCaregiverAssociatedEntity CarePlanDocumentationOfServiceEventPerformerAssignedEntityId CarePlanDocumentationOfServiceEventPerformerAssignedEntityCode CarePlanDocumentationOfServiceEventPerformerTypeCode CarePlanDocumentationOfServiceEventPerformerAssignedEntity CarePlanDocumentationOfServiceEventClassCode CarePlanDocumentationOfServiceEventEffectiveTime CarePlanDocumentationOfServiceEventPerformer1 CarePlanDocumentationOfServiceEvent CarePlanRelatedDocumentParentDocumentSetId CarePlanRelatedDocumentParentDocumentVersionNumber CarePlanRelatedDocumentTypeCodeP CarePlanRelatedDocumentTypeCode CarePlanRelatedDocumentParentDocument CarePlanComponentOfEncompassingEncounterCode CarePlanComponentOfEncompassingEncounterEffectiveTime CarePlanComponentOfEncompassingEncounter' constraints.validation.dependOn.CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode='CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP' constraints.validation.dependOn.CarePlanParticipantCarePlanReviewAssociatedEntityCode='CarePlanParticipantCarePlanReviewAssociatedEntityCodeP' constraints.validation.dependOn.CarePlanParticipantCaregiverAssociatedEntityClassCode='CarePlanParticipantCaregiverAssociatedEntityClassCodeP' constraints.validation.dependOn.CarePlanRelatedDocumentTypeCode='CarePlanRelatedDocumentTypeCodeP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanII constraints.validation.error='CarePlanIIRoot'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId CarePlanDoesNotHavePlanOfTreatmentSectionV2 CarePlanCode CarePlanCodeP CarePlanDocumentationOf CarePlanHealthConcernsSection CarePlanGoalsSection CarePlanInformationRecipientIntendedRecipientInformationRecipientName CarePlanInformationRecipientIntendedRecipientReceivedOrganizationName CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode CarePlanInformationRecipientIntendedRecipientId CarePlanInformationRecipientIntendedRecipient CarePlanAuthenticatorAssignedEntityId CarePlanAuthenticatorAssignedEntityCode CarePlanAuthenticatorAssignedEntityCodeP CarePlanAuthenticatorTime CarePlanAuthenticatorSignatureCode CarePlanAuthenticatorAssignedEntity CarePlanParticipantCarePlanReviewAssociatedEntityClassCode CarePlanParticipantCarePlanReviewAssociatedEntityId CarePlanParticipantCarePlanReviewAssociatedEntityCode CarePlanParticipantCarePlanReviewTypeCode CarePlanParticipantCarePlanReviewFunctionCode CarePlanParticipantCarePlanReviewFunctionCodeP CarePlanParticipantCarePlanReviewTime CarePlanParticipantCarePlanReviewAssociatedEntity CarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName CarePlanParticipantCaregiverAssociatedEntityClassCodeP CarePlanParticipantCaregiverAssociatedEntityClassCode CarePlanParticipantCaregiverAssociatedEntityAssociatedPerson CarePlanParticipantCaregiverTypeCode CarePlanParticipantCaregiverAssociatedEntity CarePlanDocumentationOfServiceEventIVLTSLow CarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName CarePlanDocumentationOfServiceEventPerformerAssignedEntityId CarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson CarePlanDocumentationOfServiceEventPerformerAssignedEntity CarePlanDocumentationOfServiceEventClassCode CarePlanDocumentationOfServiceEventEffectiveTime CarePlanDocumentationOfServiceEventPerformer1 CarePlanDocumentationOfServiceEvent CarePlanRelatedDocumentParentDocumentSetId CarePlanRelatedDocumentParentDocumentVersionNumber CarePlanRelatedDocumentTypeCodeP CarePlanRelatedDocumentTypeCode CarePlanRelatedDocumentParentDocument CarePlanComponentOfEncompassingEncounterEffectiveTime CarePlanComponentOfEncompassingEncounter' templateId.root='2.16.840.1.113883.10.20.22.1.15' code.code='52521-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Overall Plan of Care/\u200bAdvance Care Directives' constraints.validation.dependOn.CarePlanCode='CarePlanCodeP' constraints.validation.warning='CarePlanSetId CarePlanVersionNumber CarePlanInformationRecipient CarePlanAuthenticator CarePlanParticipantCarePlanReview CarePlanParticipantCaregiver CarePlanComponentOf CarePlanHealthStatusEvaluationsOutcomesSection CarePlanInterventionsSection2 CarePlanInformationRecipientIntendedRecipientReceivedOrganizationId CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP CarePlanInformationRecipientIntendedRecipientAddr CarePlanInformationRecipientIntendedRecipientTelecom CarePlanInformationRecipientIntendedRecipientInformationRecipient CarePlanInformationRecipientIntendedRecipientReceivedOrganization CarePlanParticipantCarePlanReviewAssociatedEntityCodeP' constraints.validation.info='CarePlanRelatedDocument CarePlanAuthenticatorSDTCSignatureText CarePlanDocumentationOfServiceEventIVLTSHigh CarePlanDocumentationOfServiceEventPerformerAssignedEntityCode' constraints.validation.query='CarePlanInformationRecipientIntendedRecipientInformationRecipientName CarePlanInformationRecipientIntendedRecipientReceivedOrganizationId CarePlanInformationRecipientIntendedRecipientReceivedOrganizationName CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode CarePlanInformationRecipientIntendedRecipientId CarePlanInformationRecipientIntendedRecipientAddr CarePlanInformationRecipientIntendedRecipientTelecom CarePlanInformationRecipientIntendedRecipientInformationRecipient CarePlanInformationRecipientIntendedRecipientReceivedOrganization CarePlanInformationRecipientIntendedRecipient CarePlanAuthenticatorAssignedEntityId CarePlanAuthenticatorAssignedEntityCode CarePlanAuthenticatorAssignedEntityCodeP CarePlanAuthenticatorTime CarePlanAuthenticatorSignatureCode CarePlanAuthenticatorSDTCSignatureText CarePlanAuthenticatorAssignedEntity CarePlanParticipantCarePlanReviewAssociatedEntityClassCode CarePlanParticipantCarePlanReviewAssociatedEntityId CarePlanParticipantCarePlanReviewAssociatedEntityCodeP CarePlanParticipantCarePlanReviewAssociatedEntityCode CarePlanParticipantCarePlanReviewTypeCode CarePlanParticipantCarePlanReviewFunctionCode CarePlanParticipantCarePlanReviewFunctionCodeP CarePlanParticipantCarePlanReviewTime CarePlanParticipantCarePlanReviewAssociatedEntity CarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName CarePlanParticipantCaregiverAssociatedEntityClassCodeP CarePlanParticipantCaregiverAssociatedEntityClassCode CarePlanParticipantCaregiverAssociatedEntityAssociatedPerson CarePlanParticipantCaregiverTypeCode CarePlanParticipantCaregiverAssociatedEntity CarePlanDocumentationOfServiceEventIVLTSLow CarePlanDocumentationOfServiceEventIVLTSHigh CarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName CarePlanDocumentationOfServiceEventPerformerAssignedEntityId CarePlanDocumentationOfServiceEventPerformerAssignedEntityCode CarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson CarePlanDocumentationOfServiceEventPerformerAssignedEntity CarePlanDocumentationOfServiceEventClassCode CarePlanDocumentationOfServiceEventEffectiveTime CarePlanDocumentationOfServiceEventPerformer1 CarePlanDocumentationOfServiceEvent CarePlanRelatedDocumentParentDocumentSetId CarePlanRelatedDocumentParentDocumentVersionNumber CarePlanRelatedDocumentTypeCodeP CarePlanRelatedDocumentTypeCode CarePlanRelatedDocumentParentDocument CarePlanComponentOfEncompassingEncounterEffectiveTime CarePlanComponentOfEncompassingEncounter' constraints.validation.dependOn.CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode='CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP' constraints.validation.dependOn.CarePlanParticipantCarePlanReviewAssociatedEntityCode='CarePlanParticipantCarePlanReviewAssociatedEntityCodeP' constraints.validation.dependOn.CarePlanParticipantCaregiverAssociatedEntityClassCode='CarePlanParticipantCaregiverAssociatedEntityClassCodeP' constraints.validation.dependOn.CarePlanRelatedDocumentTypeCode='CarePlanRelatedDocumentTypeCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanInformationRecipient constraints.validation.error='CarePlanInformationRecipientIntendedRecipient'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanInformationRecipientIntendedRecipient constraints.validation.error='CarePlanInformationRecipientIntendedRecipientId' constraints.validation.warning='CarePlanInformationRecipientIntendedRecipientAddr CarePlanInformationRecipientIntendedRecipientTelecom CarePlanInformationRecipientIntendedRecipientInformationRecipient CarePlanInformationRecipientIntendedRecipientReceivedOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanInformationRecipientIntendedRecipientInformationRecipient constraints.validation.error='CarePlanInformationRecipientIntendedRecipientInformationRecipientName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanInformationRecipientIntendedRecipientReceivedOrganization constraints.validation.warning='CarePlanInformationRecipientIntendedRecipientReceivedOrganizationId CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP' constraints.validation.error='CarePlanInformationRecipientIntendedRecipientReceivedOrganizationName CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode' standardIndustryClassCode.codeSystem='2.16.840.1.113883.6.101' standardIndustryClassCode.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.dependOn.CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode='CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanAuthenticator constraints.validation.error='CarePlanAuthenticatorTime CarePlanAuthenticatorSignatureCode CarePlanAuthenticatorAssignedEntity' constraints.validation.info='CarePlanAuthenticatorSDTCSignatureText'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanAuthenticatorAssignedEntity constraints.validation.error='CarePlanAuthenticatorAssignedEntityId CarePlanAuthenticatorAssignedEntityCode CarePlanAuthenticatorAssignedEntityCodeP' code.code='SELF' code.codeSystem='2.16.840.1.113883.5.111' code.codeSystemName='RoleCode' code.displayName='self'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanParticipantCarePlanReview typeCode='IND' constraints.validation.error='CarePlanParticipantCarePlanReviewTypeCode CarePlanParticipantCarePlanReviewFunctionCode CarePlanParticipantCarePlanReviewFunctionCodeP CarePlanParticipantCarePlanReviewTime CarePlanParticipantCarePlanReviewAssociatedEntity' functionCode.code='425268008' functionCode.codeSystem='2.16.840.1.113883.6.96' functionCode.codeSystemName='SNOMEDCT' functionCode.displayName='Review of Care Plan'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanParticipantCarePlanReviewAssociatedEntity classCode='ASSIGNED' constraints.validation.error='CarePlanParticipantCarePlanReviewAssociatedEntityClassCode CarePlanParticipantCarePlanReviewAssociatedEntityId' code.codeSystem='2.16.840.1.113883.5.111' code.codeSystemName='RoleCode' constraints.validation.warning='CarePlanParticipantCarePlanReviewAssociatedEntityCode CarePlanParticipantCarePlanReviewAssociatedEntityCodeP' constraints.validation.dependOn.CarePlanParticipantCarePlanReviewAssociatedEntityCode='CarePlanParticipantCarePlanReviewAssociatedEntityCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanAuthenticatorAssignedEntity constraints.validation.error='CarePlanAuthenticatorAssignedEntityId CarePlanAuthenticatorAssignedEntityCode CarePlanAuthenticatorAssignedEntityCodeP' code.code='ONESELF' code.codeSystem='2.16.840.1.113883.5.111' code.codeSystemName='RoleCode' code.displayName='Self'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanParticipantCarePlanReview typeCode='VRF' constraints.validation.error='CarePlanParticipantCarePlanReviewTypeCode CarePlanParticipantCarePlanReviewFunctionCode CarePlanParticipantCarePlanReviewFunctionCodeP CarePlanParticipantCarePlanReviewTime CarePlanParticipantCarePlanReviewAssociatedEntity' functionCode.code='425268008' functionCode.codeSystem='2.16.840.1.113883.6.96' functionCode.codeSystemName='SNOMEDCT' functionCode.displayName='Review of Care Plan'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanParticipantCarePlanReviewAssociatedEntity classCode='ASSIGNED' constraints.validation.error='CarePlanParticipantCarePlanReviewAssociatedEntityClassCode CarePlanParticipantCarePlanReviewAssociatedEntityId CarePlanParticipantCarePlanReviewAssociatedEntityCode' code.codeSystem='2.16.840.1.113883.5.111' code.codeSystemName='RoleCode' constraints.validation.warning='CarePlanParticipantCarePlanReviewAssociatedEntityCodeP' constraints.validation.dependOn.CarePlanParticipantCarePlanReviewAssociatedEntityCode='CarePlanParticipantCarePlanReviewAssociatedEntityCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanParticipantCaregiver typeCode='IND' constraints.validation.error='CarePlanParticipantCaregiverTypeCode CarePlanParticipantCaregiverAssociatedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanParticipantCaregiverAssociatedEntity constraints.validation.error='CarePlanParticipantCaregiverAssociatedEntityClassCode CarePlanParticipantCaregiverAssociatedEntityClassCodeP CarePlanParticipantCaregiverAssociatedEntityAssociatedPerson' constraints.validation.dependOn.CarePlanParticipantCaregiverAssociatedEntityClassCode='CarePlanParticipantCaregiverAssociatedEntityClassCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson constraints.validation.error='CarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanDocumentationOf constraints.validation.error='CarePlanDocumentationOfServiceEvent'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanDocumentationOfServiceEvent classCode='PCPR' constraints.validation.error='CarePlanDocumentationOfServiceEventClassCode CarePlanDocumentationOfServiceEventEffectiveTime CarePlanDocumentationOfServiceEventPerformer1'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanDocumentationOfServiceEventPerformer typeCode='PRF' constraints.validation.error='CarePlanDocumentationOfServiceEventPerformerTypeCode' constraints.validation.warning='CarePlanDocumentationOfServiceEventPerformerAssignedEntity'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanDocumentationOfServiceEventPerformerAssignedEntity constraints.validation.error='CarePlanDocumentationOfServiceEventPerformerAssignedEntityId' constraints.validation.info='CarePlanDocumentationOfServiceEventPerformerAssignedEntityCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanDocumentationOfServiceEvent classCode='PCPR' constraints.validation.error='CarePlanDocumentationOfServiceEventClassCode CarePlanDocumentationOfServiceEventEffectiveTime CarePlanDocumentationOfServiceEventPerformer1 CarePlanDocumentationOfServiceEventIVLTSLow' constraints.validation.query='CarePlanDocumentationOfServiceEventIVLTSLow CarePlanDocumentationOfServiceEventIVLTSHigh' constraints.validation.info='CarePlanDocumentationOfServiceEventIVLTSHigh'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanDocumentationOfServiceEventPerformer constraints.validation.error='CarePlanDocumentationOfServiceEventPerformerAssignedEntity'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanDocumentationOfServiceEventPerformerAssignedEntity constraints.validation.error='CarePlanDocumentationOfServiceEventPerformerAssignedEntityId CarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson' constraints.validation.info='CarePlanDocumentationOfServiceEventPerformerAssignedEntityCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson constraints.validation.error='CarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanDocumentationOfServiceEventIVLTS constraints.validation.error='CarePlanDocumentationOfServiceEventIVLTSLow' constraints.validation.info='CarePlanDocumentationOfServiceEventIVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanRelatedDocument constraints.validation.error='CarePlanRelatedDocumentTypeCode CarePlanRelatedDocumentTypeCodeP CarePlanRelatedDocumentParentDocument' constraints.validation.dependOn.CarePlanRelatedDocumentTypeCode='CarePlanRelatedDocumentTypeCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanRelatedDocumentParentDocument constraints.validation.error='CarePlanRelatedDocumentParentDocumentSetId CarePlanRelatedDocumentParentDocumentVersionNumber'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanComponentOf constraints.validation.error='CarePlanComponentOfEncompassingEncounter'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanComponentOfEncompassingEncounter constraints.validation.warning='CarePlanComponentOfEncompassingEncounterCode' constraints.validation.error='CarePlanComponentOfEncompassingEncounterEffectiveTime'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanComponentOfEncompassingEncounter constraints.validation.error='CarePlanComponentOfEncompassingEncounterEffectiveTime'"
  * @generated
  */
 public interface CarePlan extends USRealmHeader2 {
@@ -66,18 +67,6 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id.oclIsUndefined() or self.id.isNullFlavorUndefined()) implies (not self.id.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateCarePlanId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
@@ -90,7 +79,7 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'CarePlan-X\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'52521-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateCarePlanCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -102,10 +91,22 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.setId.oclIsUndefined() or self.setId.isNullFlavorUndefined()) implies (not self.setId.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateCarePlanTitle(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCarePlanSetId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.versionNumber.oclIsUndefined() or self.versionNumber.isNullFlavorUndefined()) implies (not self.versionNumber.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateCarePlanVersionNumber(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,7 +187,7 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->exists(componentOf : cda::Component1 | not componentOf.oclIsUndefined() and componentOf.oclIsKindOf(cda::Component1))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->one(componentOf : cda::Component1 | not componentOf.oclIsUndefined() and componentOf.oclIsKindOf(cda::Component1))'"
 	 * @generated
 	 */
 	boolean validateCarePlanComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -239,18 +240,6 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @generated
 	 */
 	boolean validateCarePlanInterventionsSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not root.oclIsUndefined() )))'"
-	 * @generated
-	 */
-	boolean validateCarePlanIIRoot(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,7 +403,7 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.authenticator->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.code = \'SELF\' and value.codeSystem = \'2.16.840.1.113883.5.111\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.authenticator->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.code = \'ONESELF\' and value.codeSystem = \'2.16.840.1.113883.5.111\'))'"
 	 * @generated
 	 */
 	boolean validateCarePlanAuthenticatorAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -538,7 +527,7 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->reject(typeCode=vocab::ParticipationType::IND)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->reject(typeCode=vocab::ParticipationType::VRF)'"
 	 * @generated
 	 */
 	boolean validateCarePlanParticipantCarePlanReviewTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -678,6 +667,44 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))'"
+	 * @generated
+	 */
+	boolean validateCarePlanDocumentationOfServiceEventIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((high.oclIsUndefined() or high.isNullFlavorUndefined()) implies (not high.oclIsUndefined()) )))'"
+	 * @generated
+	 */
+	boolean validateCarePlanDocumentationOfServiceEventIVLTSHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null).assignedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (name->size() = 1))'"
+	 * @generated
+	 */
+	boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
 	 * @generated
 	 */
@@ -704,11 +731,11 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(typeCode=vocab::x_ServiceEventPerformer::PRF)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person)))'"
 	 * @generated
 	 */
-	boolean validateCarePlanDocumentationOfServiceEventPerformerTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -834,19 +861,6 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @generated
 	 */
 	boolean validateCarePlanRelatedDocumentParentDocument(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
-	 * @generated
-	 */
-	boolean validateCarePlanComponentOfEncompassingEncounterCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

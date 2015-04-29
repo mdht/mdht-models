@@ -2721,6 +2721,24 @@ public interface ConsolFactory extends EFactory {
 	CourseOfCareSection createCourseOfCareSection();
 
 	/**
+	 * Returns a new object of class '<em>Planned Intervention Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Intervention Act</em>'.
+	 * @generated
+	 */
+	PlannedInterventionAct createPlannedInterventionAct();
+
+	/**
+	 * Returns a new object of class '<em>Risk Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Risk Concern Act</em>'.
+	 * @generated
+	 */
+	RiskConcernAct createRiskConcernAct();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
