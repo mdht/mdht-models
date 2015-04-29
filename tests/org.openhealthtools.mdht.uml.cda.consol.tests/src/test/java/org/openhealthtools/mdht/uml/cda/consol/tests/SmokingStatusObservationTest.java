@@ -225,7 +225,9 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
+	* 
+	* Note: This is being treated as a TS instead of an IVL_TS via nested constraints and custom messages.
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationEffectiveTime() {
@@ -243,18 +245,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(SmokingStatusObservation target) {
 				target.init();
 
-				// TODO: fix this issue
-				// we can't use the below code due to changing the datatype from IVL_TS to TS which was required by errata 596
-				// 596 caused this transform error: Property type does not conform to redefined property type:
-				// consol::SmokingStatusObservation::effectiveTime'
-				// SXCM_TS eTimeTS = DatatypesFactory.eINSTANCE.createIVL_TS();
-				// target.setEffectiveTime(eTimeTS);
-
-				// forced to used an IVL_TS instead...
-				// Since IVL_TS inherits from TS we still can use a value as required
-				// Since high and low are not enforced, using IVL_TS should work fine...
-				IVL_TS eTimeTS = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(eTimeTS);
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
 
 			}
 
