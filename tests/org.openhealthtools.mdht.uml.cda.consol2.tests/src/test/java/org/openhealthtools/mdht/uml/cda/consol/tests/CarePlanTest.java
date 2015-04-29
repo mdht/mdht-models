@@ -242,7 +242,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCarePlanSetId() {
@@ -258,6 +258,7 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
+				target.setSetId(DatatypesFactory.eINSTANCE.createII());
 
 			}
 
@@ -274,7 +275,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCarePlanVersionNumber() {
@@ -291,6 +292,7 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
+				target.setVersionNumber(DatatypesFactory.eINSTANCE.createINT());
 
 			}
 
@@ -1922,7 +1924,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventIVLTSLow() {
@@ -1933,13 +1935,17 @@ public class CarePlanTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-
+				target.init();
+				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+				target.getDocumentationOfs().get(0).getServiceEvent().setEffectiveTime(
+					DatatypesFactory.eINSTANCE.createIVL_TS());
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.init();
-
+				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().setLow(
+					DatatypesFactory.eINSTANCE.createIVXB_TS());
 			}
 
 			@Override
@@ -1956,7 +1962,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventIVLTSHigh() {
@@ -1967,13 +1973,17 @@ public class CarePlanTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-
+				target.init();
+				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+				target.getDocumentationOfs().get(0).getServiceEvent().setEffectiveTime(
+					DatatypesFactory.eINSTANCE.createIVL_TS());
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.init();
-
+				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().setHigh(
+					DatatypesFactory.eINSTANCE.createIVXB_TS());
 			}
 
 			@Override
@@ -1990,7 +2000,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName() {
@@ -2001,13 +2011,21 @@ public class CarePlanTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-
+				target.init();
+				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
+					CDAFactory.eINSTANCE.createPerformer1());
+				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
+					CDAFactory.eINSTANCE.createAssignedEntity());
+				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).getAssignedEntity().setAssignedPerson(
+					CDAFactory.eINSTANCE.createPerson());
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.init();
-
+				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).getAssignedEntity().getAssignedPerson().getNames().add(
+					DatatypesFactory.eINSTANCE.createPN());
 			}
 
 			@Override
@@ -2102,7 +2120,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson() {
@@ -2113,13 +2131,19 @@ public class CarePlanTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-
+				target.init();
+				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
+					CDAFactory.eINSTANCE.createPerformer1());
+				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
+					CDAFactory.eINSTANCE.createAssignedEntity());
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.init();
-
+				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).getAssignedEntity().setAssignedPerson(
+					CDAFactory.eINSTANCE.createPerson());
 			}
 
 			@Override
