@@ -10,6 +10,7 @@
  *     Dan Brown (Audacious Inquiry) - additional testing code
  *                                   - added multiple new tests as per artf3817 : SITE435 Implement Errata 423
  *                                   - additional code as per Errata 506
+ *                                   - additional code as per SITE-1373
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
@@ -1300,8 +1301,58 @@ public class MedicationActivityTest extends CDAValidationTest {
 			objectFactory) {
 
 			@Override
-			protected void updateToFail(MedicationActivity target) {
+			public void addFailTests() {
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE(
+							BAD_CODE_VALUE, "2.16.840.1.113883.3.26.1.1"));
+					}
+				});
 
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE(
+							"C42887", BAD_CODESYSTEM_ID));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE("code", "sadadsa"));
+
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE());
+						target.getAdministrationUnitCode().setCodeSystem("");
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE());
+						target.getAdministrationUnitCode().setCode("");
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+
+					}
+				});
 			}
 
 			@Override
