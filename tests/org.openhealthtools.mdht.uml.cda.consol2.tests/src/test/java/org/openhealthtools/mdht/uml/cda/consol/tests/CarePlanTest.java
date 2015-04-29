@@ -36,12 +36,10 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
 import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
 import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipDocument;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,10 +50,10 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Does Not Have Plan Of Treatment Section V2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanSetId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Set Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanVersionNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Version Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanAuthenticator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Authenticator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCarePlanReview(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Care Plan Review</em>}</li>
@@ -67,7 +65,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanGoalsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Goals Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanHealthStatusEvaluationsOutcomesSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Health Status Evaluations Outcomes Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInterventionsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Interventions Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan II Root</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Information Recipient Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Received Organization Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Received Organization Name</em>}</li>
@@ -101,9 +98,12 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Associated Person</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event IVLTS Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event IVLTS High</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Assigned Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Assigned Person</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Effective Time</em>}</li>
@@ -114,7 +114,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentTypeCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Type Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentParentDocument(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Parent Document</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentOfEncompassingEncounterCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Of Encompassing Encounter Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentOfEncompassingEncounterEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Of Encompassing Encounter Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentOfEncompassingEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Of Encompassing Encounter</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getHealthConcernsSection() <em>Get Health Concerns Section</em>}</li>
@@ -168,38 +167,6 @@ public class CarePlanTest extends CDAValidationTest {
 		};
 
 		validateCarePlanDoesNotHavePlanOfTreatmentSectionV2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateCarePlanId() {
-		OperationsTestCase<CarePlan> validateCarePlanIdTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanId",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
-
-			@Override
-			protected void updateToFail(CarePlan target) {
-
-			}
-
-			@Override
-			protected void updateToPass(CarePlan target) {
-				target.init();
-				target.setId(DatatypesFactory.eINSTANCE.createII());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CarePlanOperations.validateCarePlanId((CarePlan) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCarePlanIdTestCase.doValidationTest();
 	}
 
 	/**
@@ -278,10 +245,10 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateCarePlanTitle() {
-		OperationsTestCase<CarePlan> validateCarePlanTitleTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanTitle",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+	public void testValidateCarePlanSetId() {
+		OperationsTestCase<CarePlan> validateCarePlanSetIdTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanSetId",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
@@ -292,20 +259,50 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToPass(CarePlan target) {
 				target.init();
 
-				ST title = DatatypesFactory.eINSTANCE.createST("title");
-				target.setTitle(title);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanSetId((CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanSetIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateCarePlanVersionNumber() {
+		OperationsTestCase<CarePlan> validateCarePlanVersionNumberTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanVersionNumber",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CarePlanOperations.validateCarePlanTitle((CarePlan) objectToTest, diagnostician, map);
+				return CarePlanOperations.validateCarePlanVersionNumber((CarePlan) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateCarePlanTitleTestCase.doValidationTest();
+		validateCarePlanVersionNumberTestCase.doValidationTest();
 	}
 
 	/**
@@ -697,39 +694,6 @@ public class CarePlanTest extends CDAValidationTest {
 		};
 
 		validateCarePlanInterventionsSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* modified VALIDATE_CARE_PLAN_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP due to inline datatype OCL generation issue
-	*/
-	@Test
-	public void testValidateCarePlanIIRoot() {
-		OperationsTestCase<CarePlan> validateCarePlanIIRootTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanIIRoot",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
-
-			@Override
-			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.setId(DatatypesFactory.eINSTANCE.createII());
-			}
-
-			@Override
-			protected void updateToPass(CarePlan target) {
-				target.getId().setRoot("HasARoot");
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CarePlanOperations.validateCarePlanIIRoot((CarePlan) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCarePlanIIRootTestCase.doValidationTest();
 	}
 
 	/**
@@ -1236,7 +1200,7 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.getAuthenticators().get(0).getAssignedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("SELF", "2.16.840.1.113883.5.111"));
+					DatatypesFactory.eINSTANCE.createCE("ONESELF", "2.16.840.1.113883.5.111"));
 			}
 
 			@Override
@@ -1591,7 +1555,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
+				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
 			}
 
 			@Override
@@ -1958,6 +1922,108 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated
+	*/
+	@Test
+	public void testValidateCarePlanDocumentationOfServiceEventIVLTSLow() {
+		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventIVLTSLowTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanDocumentationOfServiceEventIVLTSLow",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanDocumentationOfServiceEventIVLTSLow(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanDocumentationOfServiceEventIVLTSLowTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateCarePlanDocumentationOfServiceEventIVLTSHigh() {
+		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventIVLTSHighTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanDocumentationOfServiceEventIVLTSHigh",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanDocumentationOfServiceEventIVLTSHigh(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanDocumentationOfServiceEventIVLTSHighTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName() {
+		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonNameTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonNameTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated NOT
 	*/
 	@Test
@@ -2036,42 +2102,36 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateCarePlanDocumentationOfServiceEventPerformerTypeCode() {
-		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventPerformerTypeCodeTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanDocumentationOfServiceEventPerformerTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson() {
+		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
-				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
-					CDAFactory.eINSTANCE.createPerformer1());
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setTypeCode(
-					x_ServiceEventPerformer.SPRF);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setTypeCode(
-					x_ServiceEventPerformer.PRF);
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerTypeCode(
+				return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(
 					(CarePlan) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateCarePlanDocumentationOfServiceEventPerformerTypeCodeTestCase.doValidationTest();
+		validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonTestCase.doValidationTest();
 	}
 
 	/**
@@ -2425,41 +2485,6 @@ public class CarePlanTest extends CDAValidationTest {
 		};
 
 		validateCarePlanRelatedDocumentParentDocumentTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateCarePlanComponentOfEncompassingEncounterCode() {
-		OperationsTestCase<CarePlan> validateCarePlanComponentOfEncompassingEncounterCodeTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanComponentOfEncompassingEncounterCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.setComponentOf(CDAFactory.eINSTANCE.createComponent1());
-				target.getComponentOf().setEncompassingEncounter(CDAFactory.eINSTANCE.createEncompassingEncounter());
-			}
-
-			@Override
-			protected void updateToPass(CarePlan target) {
-				target.getComponentOf().getEncompassingEncounter().setCode(DatatypesFactory.eINSTANCE.createCE());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CarePlanOperations.validateCarePlanComponentOfEncompassingEncounterCode(
-					(CarePlan) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCarePlanComponentOfEncompassingEncounterCodeTestCase.doValidationTest();
 	}
 
 	/**
