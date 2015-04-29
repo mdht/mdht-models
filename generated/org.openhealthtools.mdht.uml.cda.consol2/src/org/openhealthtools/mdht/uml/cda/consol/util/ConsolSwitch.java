@@ -1679,9 +1679,6 @@ public class ConsolSwitch<T> {
 				SmokingStatusObservation smokingStatusObservation = (SmokingStatusObservation) theEObject;
 				T result = caseSmokingStatusObservation(smokingStatusObservation);
 				if (result == null) {
-					result = caseTobaccoUse(smokingStatusObservation);
-				}
-				if (result == null) {
 					result = caseObservation(smokingStatusObservation);
 				}
 				if (result == null) {
@@ -4143,9 +4140,6 @@ public class ConsolSwitch<T> {
 					result = caseSmokingStatusObservation(smokingStatusMeaningfulUse2);
 				}
 				if (result == null) {
-					result = caseTobaccoUse(smokingStatusMeaningfulUse2);
-				}
-				if (result == null) {
 					result = caseObservation(smokingStatusMeaningfulUse2);
 				}
 				if (result == null) {
@@ -6472,6 +6466,46 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(courseOfCareSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PLANNED_INTERVENTION_ACT: {
+				PlannedInterventionAct plannedInterventionAct = (PlannedInterventionAct) theEObject;
+				T result = casePlannedInterventionAct(plannedInterventionAct);
+				if (result == null) {
+					result = caseCDA_Act(plannedInterventionAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(plannedInterventionAct);
+				}
+				if (result == null) {
+					result = caseAct(plannedInterventionAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(plannedInterventionAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RISK_CONCERN_ACT: {
+				RiskConcernAct riskConcernAct = (RiskConcernAct) theEObject;
+				T result = caseRiskConcernAct(riskConcernAct);
+				if (result == null) {
+					result = caseCDA_Act(riskConcernAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(riskConcernAct);
+				}
+				if (result == null) {
+					result = caseAct(riskConcernAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(riskConcernAct);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -11462,6 +11496,36 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseCourseOfCareSection(CourseOfCareSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Planned Intervention Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Planned Intervention Act</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePlannedInterventionAct(PlannedInterventionAct object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Risk Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Risk Concern Act</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRiskConcernAct(RiskConcernAct object) {
 		return null;
 	}
 

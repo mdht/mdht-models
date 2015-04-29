@@ -694,6 +694,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPhysicianReadingStudyPerformer2();
 			case ConsolPackage.COURSE_OF_CARE_SECTION:
 				return createCourseOfCareSection();
+			case ConsolPackage.PLANNED_INTERVENTION_ACT:
+				return createPlannedInterventionAct();
+			case ConsolPackage.RISK_CONCERN_ACT:
+				return createRiskConcernAct();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -3962,6 +3966,26 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public CourseOfCareSection createCourseOfCareSection() {
 		CourseOfCareSectionImpl courseOfCareSection = new CourseOfCareSectionImpl();
 		return courseOfCareSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedInterventionAct createPlannedInterventionAct() {
+		PlannedInterventionActImpl plannedInterventionAct = new PlannedInterventionActImpl();
+		return plannedInterventionAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RiskConcernAct createRiskConcernAct() {
+		RiskConcernActImpl riskConcernAct = new RiskConcernActImpl();
+		return riskConcernAct;
 	}
 
 	/**

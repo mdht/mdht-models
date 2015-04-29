@@ -28,13 +28,11 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2EffectiveTimeLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Effective Time Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateTobaccoUseTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value</em>}</li>
  * </ul>
@@ -50,72 +48,6 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	 */
 	protected SmokingStatusMeaningfulUse2Operations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSmokingStatusMeaningfulUse2EffectiveTimeLow(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Effective Time Low</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSmokingStatusMeaningfulUse2EffectiveTimeLow(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSmokingStatusMeaningfulUse2EffectiveTimeLow(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Effective Time Low</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSmokingStatusMeaningfulUse2EffectiveTimeLow(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param smokingStatusMeaningfulUse2 The receiving '<em><b>Smoking Status Meaningful Use2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateSmokingStatusMeaningfulUse2EffectiveTimeLow(
-			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.SMOKING_STATUS_MEANINGFUL_USE2);
-			try {
-				VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			smokingStatusMeaningfulUse2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_MEANINGFUL_USE2_EFFECTIVE_TIME_LOW,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"SmokingStatusMeaningfulUse2EffectiveTimeLow",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									smokingStatusMeaningfulUse2, context) }),
-					new Object[] { smokingStatusMeaningfulUse2 }));
-			}
-
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -241,25 +173,25 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateTobaccoUseTemplateId(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationTemplateId(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Template Id</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateTobaccoUseTemplateId(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateSmokingStatusObservationTemplateId(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.78' and id.extension = '2014-06-09')";
+	protected static final String VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.78' and id.extension = '2014-06-09')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateTobaccoUseTemplateId(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateSmokingStatusObservationTemplateId(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateTobaccoUseTemplateId(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateSmokingStatusObservationTemplateId(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -272,25 +204,26 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	 * @generated
 	 */
 
-	public static boolean validateTobaccoUseTemplateId(SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSmokingStatusObservationTemplateId(
+			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-		if (VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SMOKING_STATUS_MEANINGFUL_USE2);
 			try {
-				VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			smokingStatusMeaningfulUse2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__TOBACCO_USE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTemplateId"),
+					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationTemplateId"),
 					new Object[] { smokingStatusMeaningfulUse2 }));
 			}
 
@@ -432,66 +365,6 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_CODE,
 					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationCode"),
-					new Object[] { smokingStatusMeaningfulUse2 }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationEffectiveTime(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Effective Time</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSmokingStatusObservationEffectiveTime(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSmokingStatusObservationEffectiveTime(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Effective Time</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSmokingStatusObservationEffectiveTime(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param smokingStatusMeaningfulUse2 The receiving '<em><b>Smoking Status Meaningful Use2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateSmokingStatusObservationEffectiveTime(
-			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.SMOKING_STATUS_MEANINGFUL_USE2);
-			try {
-				VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			smokingStatusMeaningfulUse2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationEffectiveTime"),
 					new Object[] { smokingStatusMeaningfulUse2 }));
 			}
 

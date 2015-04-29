@@ -16,6 +16,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusObservationOperations;
+import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusObservati
  *
  * @generated
  */
-public class SmokingStatusObservationImpl extends TobaccoUseImpl implements SmokingStatusObservation {
+public class SmokingStatusObservationImpl extends ObservationImpl implements SmokingStatusObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,11 +52,8 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateSmokingStatusObservationEffectiveTimeLow(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTimeLow(
-			this, diagnostics, context);
+	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -146,9 +144,36 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationValue(this, diagnostics, context);
+	public boolean validateSmokingStatusObservationIVLTSCenter(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSCenter(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSmokingStatusObservationIVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSHigh(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSmokingStatusObservationIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSLow(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSmokingStatusObservationIVLTSWidth(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSWidth(this, diagnostics, context);
 	}
 
 	/**
@@ -157,8 +182,8 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	 * @generated
 	 */
 	@Override
-	public boolean validateTobaccoUseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateTobaccoUseTemplateId(this, diagnostics, context);
+	public boolean validateSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**

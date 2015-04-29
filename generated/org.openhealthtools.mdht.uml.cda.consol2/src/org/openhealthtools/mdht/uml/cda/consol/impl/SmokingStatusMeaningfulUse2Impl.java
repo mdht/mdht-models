@@ -53,17 +53,6 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSmokingStatusMeaningfulUse2EffectiveTimeLow(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2EffectiveTimeLow(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateSmokingStatusMeaningfulUse2Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2Id(this, diagnostics, context);
 	}
@@ -85,8 +74,9 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 * @generated
 	 */
 	@Override
-	public boolean validateTobaccoUseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateTobaccoUseTemplateId(this, diagnostics, context);
+	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -107,18 +97,6 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	@Override
 	public boolean validateSmokingStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSmokingStatusObservationEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationEffectiveTime(
-			this, diagnostics, context);
 	}
 
 	/**

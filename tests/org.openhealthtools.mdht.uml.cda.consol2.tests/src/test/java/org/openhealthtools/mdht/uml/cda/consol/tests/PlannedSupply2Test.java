@@ -72,7 +72,7 @@ public class PlannedSupply2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidatePlannedSupply2MedInfoXorImmunXorProductInstance() {
