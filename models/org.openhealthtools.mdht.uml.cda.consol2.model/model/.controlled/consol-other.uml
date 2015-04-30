@@ -3272,6 +3272,11 @@ Instructions are a subset of interventions and may include self-care instruction
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6IGUIKW0EeSPMaiGDG98Yg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6IFtEKW0EeSPMaiGDG98Yg" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_P3sXcO7PEeSlj6niJbPAAA" name="plannedInterventionAct" association="_P4Q_Mu7PEeSlj6niJbPAAA">
+      <type xmi:type="uml:Class" href="consol-planofcare.uml#_dGARYOLSEeS505YV9ux2XA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P4Q_MO7PEeSlj6niJbPAAA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P4Q_Me7PEeSlj6niJbPAAA" value="*"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_dPAxgP1WEeOW-qBXb0kbTA" base_Class="_YCS1AP1WEeOW-qBXb0kbTA" templateId="2.16.840.1.113883.10.20.21.2.3" templateVersion="2014-06-09">
     <ruleId>CONF:1098-8680</ruleId>
@@ -3339,5 +3344,12 @@ Instructions are a subset of interventions and may include self-care instruction
   <CDA:AssociationValidation xmi:id="_4uVr4KW0EeSPMaiGDG98Yg" severity="INFO" base_Association="_2nmB0KW0EeSPMaiGDG98Yg">
     <ruleId>CONF:1098-32402</ruleId>
     <ruleId>CONF:1098-32403</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_P4Q_Mu7PEeSlj6niJbPAAA" memberEnd="_P3sXcO7PEeSlj6niJbPAAA _P4Q_M-7PEeSlj6niJbPAAA">
+    <ownedEnd xmi:id="_P4Q_M-7PEeSlj6niJbPAAA" type="_YCS1AP1WEeOW-qBXb0kbTA" association="_P4Q_Mu7PEeSlj6niJbPAAA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_RHOssO7PEeSlj6niJbPAAA" severity="WARNING" base_Association="_P4Q_Mu7PEeSlj6niJbPAAA">
+    <ruleId>CONF:1098-32730</ruleId>
+    <ruleId>CONF:1098-32731</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>
