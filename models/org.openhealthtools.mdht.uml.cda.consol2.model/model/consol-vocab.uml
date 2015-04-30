@@ -1530,12 +1530,7 @@ Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/v
       <ownedLiteral xmi:id="_1gleIJ8TEeOr4eM3k36wAg" name="APND"/>
       <ownedLiteral xmi:id="_3ySbAJ8TEeOr4eM3k36wAg" name="RPLC"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lIHr8KAFEeOQs7VC4HptuQ" name="ReferralDocumentType">
-      <ownedComment xmi:id="_tTDtEKAFEeOQs7VC4HptuQ">
-        <body>A referral note provides a consulting physician specified patient information about the patient referred. Specific URL Pending&#xD;
-Valueset Source: http://www.loinc.org/</body>
-      </ownedComment>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lIHr8KAFEeOQs7VC4HptuQ" name="ReferralDocumentType"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2htmMKDPEeOPqKnBFQcY_A" name="TransferDocumentType">
       <ownedComment xmi:id="_EkaE4KDQEeOPqKnBFQcY_A">
         <body>A transfer document is exchanged between care providers when a patient transfers from one care setting to another. Specific URL Pending&#xD;
@@ -1735,6 +1730,17 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_uUyNI-N4EeS_XOr-dz_KWA" name="suspended"/>
       <ownedLiteral xmi:id="_uUyNJON4EeS_XOr-dz_KWA" name="aborted"/>
       <ownedLiteral xmi:id="_uUyNJeN4EeS_XOr-dz_KWA" name="completed"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_9ZCoYO9eEeSE7JpIy9Dpjg" name="INDRoleclassCodes">
+      <ownedComment xmi:id="_9ZCoYe9eEeSE7JpIy9Dpjg">
+        <body>Specific classification codes for further qualifying RoleClass codes.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_9ZCoYu9eEeSE7JpIy9Dpjg" name="PRS"/>
+      <ownedLiteral xmi:id="_9ZCoY-9eEeSE7JpIy9Dpjg" name="NOK"/>
+      <ownedLiteral xmi:id="_9ZCoZO9eEeSE7JpIy9Dpjg" name="CAREGIVER"/>
+      <ownedLiteral xmi:id="_9ZCoZe9eEeSE7JpIy9Dpjg" name="AGNT"/>
+      <ownedLiteral xmi:id="_9ZCoZu9eEeSE7JpIy9Dpjg" name="GUAR"/>
+      <ownedLiteral xmi:id="_9ZCoZ-9eEeSE7JpIy9Dpjg" name="ECON"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -3158,7 +3164,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_1gleIZ8TEeOr4eM3k36wAg" conceptName="Append" base_EnumerationLiteral="_1gleIJ8TEeOr4eM3k36wAg"/>
   <term:ValueSetCode xmi:id="_3ySbAZ8TEeOr4eM3k36wAg" conceptName="Replace" base_EnumerationLiteral="_3ySbAJ8TEeOr4eM3k36wAg"/>
-  <term:ValueSetVersion xmi:id="_lIHr8aAFEeOQs7VC4HptuQ" identifier="2.16.840.1.113883.1.11.20.2.3" fullName="ReferralDocumentType" binding="Dynamic" base_Enumeration="_lIHr8KAFEeOQs7VC4HptuQ">
+  <term:ValueSetVersion xmi:id="_lIHr8aAFEeOQs7VC4HptuQ" identifier="2.16.840.1.113883.1.11.20.2.3" fullName="ReferralDocumentType" source="http://www.loinc.org/" definition="A referral note provides a consulting physician specified patient information about the patient referred. Specific URL Pending" binding="Dynamic" base_Enumeration="_lIHr8KAFEeOQs7VC4HptuQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2hwCcKDPEeOPqKnBFQcY_A" identifier="2.16.840.1.113883.1.11.20.2.4" fullName="TransferDocumentType" binding="Dynamic" base_Enumeration="_2htmMKDPEeOPqKnBFQcY_A">
@@ -3348,4 +3354,13 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_uUyNKON4EeS_XOr-dz_KWA" conceptName="Suspended" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved." base_EnumerationLiteral="_uUyNI-N4EeS_XOr-dz_KWA"/>
   <term:ValueSetCode xmi:id="_uUyNKeN4EeS_XOr-dz_KWA" conceptName="Aborted" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice." base_EnumerationLiteral="_uUyNJON4EeS_XOr-dz_KWA"/>
   <term:ValueSetCode xmi:id="_uUyNKuN4EeS_XOr-dz_KWA" conceptName="Completed" usageNote="The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for historical purposes." base_EnumerationLiteral="_uUyNJeN4EeS_XOr-dz_KWA"/>
+  <term:ValueSetVersion xmi:id="_9ZCoaO9eEeSE7JpIy9Dpjg" identifier="2.16.840.1.113883.11.20.9.33" binding="Dynamic" base_Enumeration="_9ZCoYO9eEeSE7JpIy9Dpjg">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_9ZCoae9eEeSE7JpIy9Dpjg" conceptName="personal relationship" base_EnumerationLiteral="_9ZCoYu9eEeSE7JpIy9Dpjg"/>
+  <term:ValueSetCode xmi:id="_9ZCoau9eEeSE7JpIy9Dpjg" conceptName="next of kin" base_EnumerationLiteral="_9ZCoY-9eEeSE7JpIy9Dpjg"/>
+  <term:ValueSetCode xmi:id="_9ZCoa-9eEeSE7JpIy9Dpjg" conceptName="caregiver" base_EnumerationLiteral="_9ZCoZO9eEeSE7JpIy9Dpjg"/>
+  <term:ValueSetCode xmi:id="_9ZCobO9eEeSE7JpIy9Dpjg" conceptName="agent" base_EnumerationLiteral="_9ZCoZe9eEeSE7JpIy9Dpjg"/>
+  <term:ValueSetCode xmi:id="_9ZCobe9eEeSE7JpIy9Dpjg" conceptName="guarantor" base_EnumerationLiteral="_9ZCoZu9eEeSE7JpIy9Dpjg"/>
+  <term:ValueSetCode xmi:id="_9ZCobu9eEeSE7JpIy9Dpjg" conceptName="emergency contact" base_EnumerationLiteral="_9ZCoZ-9eEeSE7JpIy9Dpjg"/>
 </xmi:XMI>
