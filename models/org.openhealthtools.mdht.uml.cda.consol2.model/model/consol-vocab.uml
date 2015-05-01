@@ -1531,12 +1531,7 @@ Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/v
       <ownedLiteral xmi:id="_3ySbAJ8TEeOr4eM3k36wAg" name="RPLC"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_lIHr8KAFEeOQs7VC4HptuQ" name="ReferralDocumentType"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2htmMKDPEeOPqKnBFQcY_A" name="TransferDocumentType">
-      <ownedComment xmi:id="_EkaE4KDQEeOPqKnBFQcY_A">
-        <body>A transfer document is exchanged between care providers when a patient transfers from one care setting to another. Specific URL Pending&#xD;
-Valueset Source: http://www.loinc.org/</body>
-      </ownedComment>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2htmMKDPEeOPqKnBFQcY_A" name="TransferDocumentType"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_uGevcKoIEeO4L-NdFOGFPw" name="ParticipationType"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_I2mLsLFLEeOtlapy2HWYww" name="Healthcare Agent Qualifier Value Set">
       <ownedComment xmi:id="_P46-8LFLEeOtlapy2HWYww">
@@ -2161,7 +2156,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_bwOiQeJsEeG3cO7ebC3QuA" conceptName="Severely ill" base_EnumerationLiteral="_bwOiQOJsEeG3cO7ebC3QuA"/>
   <term:ValueSetCode xmi:id="_eIRXseJsEeG3cO7ebC3QuA" conceptName="Disabled" base_EnumerationLiteral="_eIRXsOJsEeG3cO7ebC3QuA"/>
   <term:ValueSetCode xmi:id="_gxSBUeJsEeG3cO7ebC3QuA" conceptName="Severely disabled" base_EnumerationLiteral="_gxSBUOJsEeG3cO7ebC3QuA"/>
-  <term:ValueSetVersion xmi:id="_EA1dEeWTEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.41" source="http://vtsl.vetmed.vt.edu/TerminologyMgt/RF2Browser/ISA.cfm?SCT_ConceptID=365980008" definition="Contains all values descending from the SNOMED CT?? 365980008 tobacco use and exposure - finding hierarchy&#xD;&#xA;http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" binding="Dynamic" base_Enumeration="_EA1dEOWTEeGKmvzED_He2w">
+  <term:ValueSetVersion xmi:id="_EA1dEeWTEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.41" url="http://vtsl.vetmed.vt.edu/TerminologyMgt/RF2Browser/ISA.cfm?SCT_ConceptID=365980008" definition="Contains all values descending from the SNOMED CT?? 365980008 tobacco use and exposure - finding hierarchy&#xD;&#xA;http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" binding="Dynamic" base_Enumeration="_EA1dEOWTEeGKmvzED_He2w">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_bgrWMOWUEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.38" version="2012-07-01" definition="This value set indicates the current smoking status of a patient" base_Enumeration="_bgiMQOWUEeGKmvzED_He2w">
@@ -3167,7 +3162,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_lIHr8aAFEeOQs7VC4HptuQ" identifier="2.16.840.1.113883.1.11.20.2.3" fullName="ReferralDocumentType" source="http://www.loinc.org/" definition="A referral note provides a consulting physician specified patient information about the patient referred. Specific URL Pending" binding="Dynamic" base_Enumeration="_lIHr8KAFEeOQs7VC4HptuQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2hwCcKDPEeOPqKnBFQcY_A" identifier="2.16.840.1.113883.1.11.20.2.4" fullName="TransferDocumentType" binding="Dynamic" base_Enumeration="_2htmMKDPEeOPqKnBFQcY_A">
+  <term:ValueSetVersion xmi:id="_2hwCcKDPEeOPqKnBFQcY_A" identifier="2.16.840.1.113883.1.11.20.2.4" fullName="TransferDocumentType" url="http://search.loinc.org/search.zul?query=transfer+summary+note" definition="A transfer document is exchanged between care providers when a patient transfers from one care setting to another. This value set includes all LOINC codes whose Component = Transfer Summary Note* and SCALE_TYPE = Doc." binding="Dynamic" base_Enumeration="_2htmMKDPEeOPqKnBFQcY_A">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_uGfWgKoIEeO4L-NdFOGFPw" identifier="2.16.840.1.113883.1.11.10901" fullName="ParticipationType" base_Enumeration="_uGevcKoIEeO4L-NdFOGFPw">

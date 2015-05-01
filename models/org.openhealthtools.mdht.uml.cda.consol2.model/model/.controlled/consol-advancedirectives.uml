@@ -456,13 +456,13 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
     <ownedComment xmi:id="_V-vVgK-9EeO8duI_7f6kZw">
       <body>This clinical statement represents Advance Directive Observation findings (e.g., &quot;resuscitation status is Full Code&quot;) rather than orders. It should not be considered a legal document or a substitute for the actual Advance Directive document. The related legal documents are referenced using the reference/externalReference element.&#xD;
 The Advance Directive Observation describes the patient's directives, including but not limited to:&#xD;
-???????Medications&#xD;
-???????Transfer of Care to Hospital&#xD;
-???????Treatment&#xD;
-???????Procedures&#xD;
-???????Intubation and Ventilation&#xD;
-???????Diagnostic Tests&#xD;
-???????Tests&#xD;
+Medications&#xD;
+Transfer of Care to Hospital&#xD;
+Treatment&#xD;
+Procedures&#xD;
+Intubation and Ventilation&#xD;
+Diagnostic Tests&#xD;
+Tests&#xD;
 The general category of the patient's directive is documented in the observation/code element. The observation/value element contains the detailed patient directive which may be coded or text. For example, a category directive may be antibiotics, and the details would be intravenous antibiotics only.</body>
     </ownedComment>
     <ownedRule xmi:id="_B2cNcKvXEeS-mulaI3YUlw" name="hasStartingTime" constrainedElement="_GnllUK-9EeO8duI_7f6kZw">
