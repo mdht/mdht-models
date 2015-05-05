@@ -372,7 +372,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSCenter() {
@@ -407,7 +407,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSHigh() {
@@ -442,7 +442,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSLow() {
@@ -477,7 +477,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSWidth() {
