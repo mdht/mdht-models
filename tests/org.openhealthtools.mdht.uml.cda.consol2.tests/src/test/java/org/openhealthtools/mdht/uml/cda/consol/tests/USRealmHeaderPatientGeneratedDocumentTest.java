@@ -52,10 +52,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document In Fulfillment Of</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentDocumentationOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Documentation Of</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role II Root</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role II Extension</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian II Root</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian II Extension</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Code</em>}</li>
@@ -66,7 +62,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Provider Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author II Root</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author CE Code System And Terminology</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author CE Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author Code</em>}</li>
@@ -77,13 +73,13 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Informant Related Entity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Informant Related Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Informant Related Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization II Root</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Information Recipient Intended Recipient II Root</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Information Recipient Intended Recipient Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Information Recipient Intended Recipient</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity CE Code System And Terminology</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity CE Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity Code</em>}</li>
@@ -115,6 +111,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  */
 
 public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest {
+
+	private static final String ROLECODE_CODESYSTEM = "2.16.840.1.113883.5.111";
 
 	/**
 	*
@@ -480,160 +478,6 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 		};
 
 		validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot() {
-		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRootTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
-			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
-				target.init();
-				target.getRecordTargets().add(CDAFactory.eINSTANCE.createRecordTarget());
-				target.getRecordTargets().get(0).setPatientRole(CDAFactory.eINSTANCE.createPatientRole());
-				target.getRecordTargets().get(0).getPatientRole().getIds().add(DatatypesFactory.eINSTANCE.createII());
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
-				target.getRecordTargets().get(0).getPatientRole().getIds().get(0).setRoot("TheIDHasARoot");
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot(
-					(USRealmHeaderPatientGeneratedDocument) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRootTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension() {
-		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtensionTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
-			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
-				target.init();
-				target.getRecordTargets().add(CDAFactory.eINSTANCE.createRecordTarget());
-				target.getRecordTargets().get(0).setPatientRole(CDAFactory.eINSTANCE.createPatientRole());
-				target.getRecordTargets().get(0).getPatientRole().getIds().add(DatatypesFactory.eINSTANCE.createII());
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
-				target.getRecordTargets().get(0).getPatientRole().getIds().get(0).setExtension("TheIDHasAnExtension");
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension(
-					(USRealmHeaderPatientGeneratedDocument) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtensionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot() {
-		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRootTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
-			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
-				target.init();
-				target.getRecordTargets().add(CDAFactory.eINSTANCE.createRecordTarget());
-				target.getRecordTargets().get(0).setPatientRole(CDAFactory.eINSTANCE.createPatientRole());
-				target.getRecordTargets().get(0).getPatientRole().setPatient(CDAFactory.eINSTANCE.createPatient());
-				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().add(
-					CDAFactory.eINSTANCE.createGuardian());
-				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(0).getIds().add(
-					DatatypesFactory.eINSTANCE.createII());
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
-				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(0).getIds().get(0).setRoot(
-					"TheIDHasARoot");
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot(
-					(USRealmHeaderPatientGeneratedDocument) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRootTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension() {
-		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtensionTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
-			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
-				target.init();
-				target.getRecordTargets().add(CDAFactory.eINSTANCE.createRecordTarget());
-				target.getRecordTargets().get(0).setPatientRole(CDAFactory.eINSTANCE.createPatientRole());
-				target.getRecordTargets().get(0).getPatientRole().setPatient(CDAFactory.eINSTANCE.createPatient());
-				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().add(
-					CDAFactory.eINSTANCE.createGuardian());
-				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(0).getIds().add(
-					DatatypesFactory.eINSTANCE.createII());
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
-				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(0).getIds().get(0).setExtension(
-					"TheIDHasAnExtension");
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension(
-					(USRealmHeaderPatientGeneratedDocument) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtensionTestCase.doValidationTest();
 	}
 
 	/**
@@ -1011,10 +855,10 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot() {
-		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRootTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
-			"validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology() {
+		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminologyTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
+			"validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology",
+			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1022,25 +866,27 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 				target.init();
 				target.getAuthors().add(CDAFactory.eINSTANCE.createAuthor());
 				target.getAuthors().get(0).setAssignedAuthor(CDAFactory.eINSTANCE.createAssignedAuthor());
-				target.getAuthors().get(0).getAssignedAuthor().getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.getAuthors().get(0).getAssignedAuthor().setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
-				II root = DatatypesFactory.eINSTANCE.createII("HasARoot");
-				target.getAuthors().get(0).getAssignedAuthor().getIds().set(0, root);
+				// Note: The existence of @code itself is enforced by another constraint:
+				// testValidateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode
+				target.getAuthors().get(0).getAssignedAuthor().setCode(
+					DatatypesFactory.eINSTANCE.createCE("notCheckedInThisTest", ROLECODE_CODESYSTEM));
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot(
+				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology(
 					(USRealmHeaderPatientGeneratedDocument) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRootTestCase.doValidationTest();
+		validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminologyTestCase.doValidationTest();
 	}
 
 	/**
@@ -1413,51 +1259,6 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot() {
-		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRootTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
-			"validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
-				target.init();
-				Custodian cus = CDAFactory.eINSTANCE.createCustodian();
-				target.setCustodian(cus);
-				AssignedCustodian aCus = CDAFactory.eINSTANCE.createAssignedCustodian();
-				cus.setAssignedCustodian(aCus);
-				CustodianOrganization repCusOrg = CDAFactory.eINSTANCE.createCustodianOrganization();
-				aCus.setRepresentedCustodianOrganization(repCusOrg);
-				II idWithoutRoot = DatatypesFactory.eINSTANCE.createII();
-				target.getCustodian().getAssignedCustodian().getRepresentedCustodianOrganization().getIds().add(
-					idWithoutRoot);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
-				target.getCustodian().getAssignedCustodian().getRepresentedCustodianOrganization().getIds().clear();
-				II idWithRoot = DatatypesFactory.eINSTANCE.createII("HasRoot");
-				target.getCustodian().getAssignedCustodian().getRepresentedCustodianOrganization().getIds().add(
-					idWithRoot);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot(
-					(USRealmHeaderPatientGeneratedDocument) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRootTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId",
@@ -1675,6 +1476,45 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 		};
 
 		validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology() {
+		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminologyTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
+			"validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology",
+			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
+				target.init();
+				target.setLegalAuthenticator(CDAFactory.eINSTANCE.createLegalAuthenticator());
+				target.getLegalAuthenticator().setAssignedEntity(CDAFactory.eINSTANCE.createAssignedEntity());
+				target.getLegalAuthenticator().getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
+				// Note: The existence of @code itself is enforced by another constraint:
+				// testValidateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode
+				target.getLegalAuthenticator().getAssignedEntity().setCode(
+					DatatypesFactory.eINSTANCE.createCE("notCheckedInThisTest", ROLECODE_CODESYSTEM));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology(
+					(USRealmHeaderPatientGeneratedDocument) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminologyTestCase.doValidationTest();
 	}
 
 	/**
