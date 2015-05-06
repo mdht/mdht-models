@@ -17,11 +17,14 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
+import org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2;
+import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.CourseOfCareSection;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSection2;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection;
@@ -97,16 +100,6 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransferSummaryOperations.validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateTransferSummaryId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryId(this, diagnostics, context);
 	}
 
 	/**
@@ -224,16 +217,6 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	public boolean validateTransferSummaryFunctionalStatusSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return TransferSummaryOperations.validateTransferSummaryFunctionalStatusSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateTransferSummaryHospitalDischargeDiagnosis2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryHospitalDischargeDiagnosis2(this, diagnostics, context);
 	}
 
 	/**
@@ -422,9 +405,39 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateTransferSummaryIIRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryIIRoot(this, diagnostics, context);
+	public boolean validateTransferSummaryDischargeDiagnosisSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return TransferSummaryOperations.validateTransferSummaryDischargeDiagnosisSection2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return TransferSummaryOperations.validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTransferSummaryAdmissionDiagnosisSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return TransferSummaryOperations.validateTransferSummaryAdmissionDiagnosisSection2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTransferSummaryCourseOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransferSummaryOperations.validateTransferSummaryCourseOfCareSection(this, diagnostics, context);
 	}
 
 	/**
@@ -612,30 +625,6 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 * @generated
 	 */
 	@Override
-	public boolean validateTransferSummaryDocumentationOfServiceEventPerformerAssignedEntityId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerAssignedEntityId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateTransferSummaryDocumentationOfServiceEventPerformerAssignedEntityCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerAssignedEntityCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateTransferSummaryDocumentationOfServiceEventPerformerTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerTypeCode(
@@ -647,10 +636,20 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateTransferSummaryDocumentationOfServiceEventPerformerAssignedEntity(
+	public boolean validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerAssignedEntity(
+		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCode(
 			this, diagnostics, context);
 	}
 
@@ -671,10 +670,9 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateTransferSummaryDocumentationOfServiceEventEffectiveTime(DiagnosticChain diagnostics,
+	public boolean validateTransferSummaryDocumentationOfServiceEventCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventEffectiveTime(
+		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventCode(
 			this, diagnostics, context);
 	}
 
@@ -753,15 +751,6 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public FunctionalStatusSection2 getFunctionalStatusSection2() {
 		return TransferSummaryOperations.getFunctionalStatusSection2(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DischargeDiagnosisSection2 getHospitalDischargeDiagnosis2() {
-		return TransferSummaryOperations.getHospitalDischargeDiagnosis2(this);
 	}
 
 	/**
@@ -933,6 +922,42 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public AssessmentSection getAssessmentSection() {
 		return TransferSummaryOperations.getAssessmentSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DischargeDiagnosisSection2 getDischargeDiagnosisSection2() {
+		return TransferSummaryOperations.getDischargeDiagnosisSection2(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdmissionMedicationsSectionEntriesOptional2 getAdmissionMedicationsSectionEntriesOptional2() {
+		return TransferSummaryOperations.getAdmissionMedicationsSectionEntriesOptional2(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdmissionDiagnosisSection2 getAdmissionDiagnosisSection2() {
+		return TransferSummaryOperations.getAdmissionDiagnosisSection2(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CourseOfCareSection getCourseOfCareSection() {
+		return TransferSummaryOperations.getCourseOfCareSection(this);
 	}
 
 	/**

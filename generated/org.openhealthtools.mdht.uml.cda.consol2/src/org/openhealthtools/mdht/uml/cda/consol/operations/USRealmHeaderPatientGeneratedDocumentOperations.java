@@ -50,10 +50,6 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document In Fulfillment Of</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentDocumentationOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Documentation Of</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role II Root</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role II Extension</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian II Root</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian II Extension</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Code</em>}</li>
@@ -64,7 +60,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Provider Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author II Root</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author CE Code System And Terminology</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author CE Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author Code</em>}</li>
@@ -75,13 +71,13 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Informant Related Entity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Informant Related Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Informant Related Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization II Root</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Information Recipient Intended Recipient II Root</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Information Recipient Intended Recipient Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Information Recipient Intended Recipient</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity CE Code System And Terminology</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity CE Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity Code</em>}</li>
@@ -804,270 +800,6 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role II Root</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).id->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not root.oclIsUndefined() )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role II Root</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeaderPatientGeneratedDocument The receiving '<em><b>US Realm Header Patient Generated Document</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot(
-			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeaderPatientGeneratedDocument);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_ROOT,
-						ConsolPlugin.INSTANCE.getString("USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role II Extension</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).id->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not extension.oclIsUndefined() )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role II Extension</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeaderPatientGeneratedDocument The receiving '<em><b>US Realm Header Patient Generated Document</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension(
-			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeaderPatientGeneratedDocument);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_EXTENSION,
-						ConsolPlugin.INSTANCE.getString("USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian II Root</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null).id->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not root.oclIsUndefined() )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian II Root</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeaderPatientGeneratedDocument The receiving '<em><b>US Realm Header Patient Generated Document</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot(
-			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeaderPatientGeneratedDocument);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_ROOT,
-						ConsolPlugin.INSTANCE.getString("USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian II Extension</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null).id->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not extension.oclIsUndefined() )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian II Extension</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeaderPatientGeneratedDocument The receiving '<em><b>US Realm Header Patient Generated Document</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension(
-			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeaderPatientGeneratedDocument);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_EXTENSION,
-						ConsolPlugin.INSTANCE.getString("USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Id</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1752,25 +1484,25 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author II Root</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author CE Code System And Terminology</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->excluding(null).assignedAuthor->excluding(null).id->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not root.oclIsUndefined() )))";
+	protected static final String VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->excluding(null).assignedAuthor->excluding(null).code->excluding(null)->select(isNullFlavorUndefined())->reject(isNullFlavorUndefined() implies (codeSystem = '2.16.840.1.113883.5.111'))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author II Root</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Author Assigned Author CE Code System And Terminology</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1783,21 +1515,21 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot(
+	public static boolean validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeaderPatientGeneratedDocument);
+		Object oclResult = VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeaderPatientGeneratedDocument);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
@@ -1806,8 +1538,8 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_II_ROOT,
-						ConsolPlugin.INSTANCE.getString("USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot"),
+						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY,
+						ConsolPlugin.INSTANCE.getString("USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology"),
 						new Object[] { eObject }));
 				}
 
@@ -2002,7 +1734,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
+						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CODE,
 						ConsolPlugin.INSTANCE.getString("USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode"),
@@ -2526,72 +2258,6 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization II Root</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null).id->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not root.oclIsUndefined() )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization II Root</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeaderPatientGeneratedDocument The receiving '<em><b>US Realm Header Patient Generated Document</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot(
-			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeaderPatientGeneratedDocument);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_II_ROOT,
-						ConsolPlugin.INSTANCE.getString("USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization Id</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2978,6 +2644,72 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT,
 						ConsolPlugin.INSTANCE.getString("USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity CE Code System And Terminology</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.legalAuthenticator->excluding(null).assignedEntity->excluding(null).code->excluding(null)->select(isNullFlavorUndefined())->reject(isNullFlavorUndefined() implies (codeSystem = '2.16.840.1.113883.5.111'))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity CE Code System And Terminology</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology(USRealmHeaderPatientGeneratedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param usRealmHeaderPatientGeneratedDocument The receiving '<em><b>US Realm Header Patient Generated Document</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeaderPatientGeneratedDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY,
+						ConsolPlugin.INSTANCE.getString("USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology"),
 						new Object[] { eObject }));
 				}
 

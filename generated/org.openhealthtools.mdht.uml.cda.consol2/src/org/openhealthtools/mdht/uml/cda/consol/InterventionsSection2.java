@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getInterventionsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InterventionsSectionTemplateId InterventionsSectionCode InterventionsSectionCodeP' templateId.root='2.16.840.1.113883.10.20.21.2.3' templateId.extension='2014-06-09' code.code='62387-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Interventions Provided' constraints.validation.dependOn.InterventionsSectionCode='InterventionsSectionCodeP' constraints.validation.warning='InterventionsSection2InterventionAct' constraints.validation.info='InterventionsSection2HandoffCommunication'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InterventionsSectionTemplateId InterventionsSectionCode InterventionsSectionCodeP' templateId.root='2.16.840.1.113883.10.20.21.2.3' templateId.extension='2014-06-09' code.code='62387-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Interventions Provided' constraints.validation.dependOn.InterventionsSectionCode='InterventionsSectionCodeP' constraints.validation.warning='InterventionsSection2InterventionAct InterventionsSection2PlannedInterventionAct' constraints.validation.info='InterventionsSection2HandoffCommunication'"
  * @generated
  */
 public interface InterventionsSection2 extends InterventionsSection {
@@ -55,6 +55,18 @@ public interface InterventionsSection2 extends InterventionsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::PlannedInterventionAct))'"
+	 * @generated
+	 */
+	boolean validateInterventionsSection2PlannedInterventionAct(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InterventionAct)).oclAsType(consol::InterventionAct)'"
 	 * @generated
@@ -69,6 +81,15 @@ public interface InterventionsSection2 extends InterventionsSection {
 	 * @generated
 	 */
 	EList<HandoffCommunication> getHandoffCommunications();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlannedInterventionAct)).oclAsType(consol::PlannedInterventionAct)'"
+	 * @generated
+	 */
+	EList<PlannedInterventionAct> getPlannedInterventionActs();
 
 	/**
 	 * <!-- begin-user-doc -->
