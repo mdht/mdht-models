@@ -23,8 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getTransferSummary()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId TransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 TransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent TransferSummaryId TransferSummaryCode TransferSummaryCodeP TransferSummaryTitle TransferSummaryDocumentationOf TransferSummaryAllergiesSection2 TransferSummaryMedicationsSection2 TransferSummaryProblemSection2 TransferSummaryResultsSection2 TransferSummaryVitalSignsSection2 TransferSummaryReasonForReferralSection2 TransferSummaryIIRoot TransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName TransferSummaryParticipantSupportAssociatedEntityClassCodeP TransferSummaryParticipantSupportAssociatedEntityClassCode TransferSummaryParticipantSupportAssociatedEntityAssociatedPerson TransferSummaryParticipantSupportTypeCode TransferSummaryParticipantSupportAssociatedEntity TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName TransferSummaryParticipantCallbackContactAssociatedEntityClassCode TransferSummaryParticipantCallbackContactAssociatedEntityId TransferSummaryParticipantCallbackContactAssociatedEntityTelecom TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson TransferSummaryParticipantCallbackContactTypeCode TransferSummaryParticipantCallbackContactAssociatedEntity TransferSummaryDocumentationOfServiceEventPerformerTypeCode TransferSummaryDocumentationOfServiceEventClassCode TransferSummaryDocumentationOfServiceEventEffectiveTime TransferSummaryDocumentationOfServiceEventPerformer1 TransferSummaryDocumentationOfServiceEvent' templateId.root='2.16.840.1.113883.10.20.22.1.13' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.TransferSummaryCode='TransferSummaryCodeP' constraints.validation.warning='TransferSummaryParticipantSupport TransferSummaryParticipantCallbackContact TransferSummaryAdvanceDirectivesSection2 TransferSummaryFunctionalStatusSection2 TransferSummaryHospitalDischargeDiagnosis2 TransferSummaryProceduresSection2 TransferSummarySocialHistorySection2 TransferSummaryMentalStatusSection TransferSummaryNutritionSection TransferSummaryHistoryOfPresentIllnessSection TransferSummaryParticipantCallbackContactAssociatedEntityAddr TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityId TransferSummaryDocumentationOfServiceEventPerformerAssignedEntity' constraints.validation.info='TransferSummaryPhysicalExamSection2 TransferSummaryEncountersSection2 TransferSummaryFamilyHistorySection TransferSummaryImmunizationsSectionEntriesOptional2 TransferSummaryMedicalEquipmentSection2 TransferSummaryPayersSection2 TransferSummaryPlanOfTreatmentSection2 TransferSummaryGeneralStatusSection TransferSummaryReviewOfSystemsSection TransferSummaryHistoryOfPastIllnessSection2 TransferSummaryAssessmentAndPlanSection2 TransferSummaryAssessmentSection TransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityCode' constraints.validation.query='TransferSummaryIIRoot TransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName TransferSummaryParticipantSupportAssociatedEntityClassCodeP TransferSummaryParticipantSupportAssociatedEntityClassCode TransferSummaryParticipantSupportAssociatedEntityAssociatedPerson TransferSummaryParticipantSupportTypeCode TransferSummaryParticipantSupportAssociatedEntity TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName TransferSummaryParticipantCallbackContactAssociatedEntityClassCode TransferSummaryParticipantCallbackContactAssociatedEntityId TransferSummaryParticipantCallbackContactAssociatedEntityAddr TransferSummaryParticipantCallbackContactAssociatedEntityTelecom TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson TransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization TransferSummaryParticipantCallbackContactTypeCode TransferSummaryParticipantCallbackContactAssociatedEntity TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityId TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityCode TransferSummaryDocumentationOfServiceEventPerformerTypeCode TransferSummaryDocumentationOfServiceEventPerformerAssignedEntity TransferSummaryDocumentationOfServiceEventClassCode TransferSummaryDocumentationOfServiceEventEffectiveTime TransferSummaryDocumentationOfServiceEventPerformer1 TransferSummaryDocumentationOfServiceEvent' constraints.validation.dependOn.TransferSummaryParticipantSupportAssociatedEntityClassCode='TransferSummaryParticipantSupportAssociatedEntityClassCodeP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryII constraints.validation.error='TransferSummaryIIRoot'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId TransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 TransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent TransferSummaryCode TransferSummaryCodeP TransferSummaryTitle TransferSummaryDocumentationOf TransferSummaryAllergiesSection2 TransferSummaryMedicationsSection2 TransferSummaryProblemSection2 TransferSummaryResultsSection2 TransferSummaryVitalSignsSection2 TransferSummaryReasonForReferralSection2 TransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName TransferSummaryParticipantSupportAssociatedEntityClassCodeP TransferSummaryParticipantSupportAssociatedEntityClassCode TransferSummaryParticipantSupportAssociatedEntityAssociatedPerson TransferSummaryParticipantSupportTypeCode TransferSummaryParticipantSupportAssociatedEntity TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName TransferSummaryParticipantCallbackContactAssociatedEntityClassCode TransferSummaryParticipantCallbackContactAssociatedEntityId TransferSummaryParticipantCallbackContactAssociatedEntityTelecom TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson TransferSummaryParticipantCallbackContactTypeCode TransferSummaryParticipantCallbackContactAssociatedEntity TransferSummaryDocumentationOfServiceEventPerformerTypeCode TransferSummaryDocumentationOfServiceEventClassCode TransferSummaryDocumentationOfServiceEventPerformer1 TransferSummaryDocumentationOfServiceEvent' templateId.root='2.16.840.1.113883.10.20.22.1.13' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.TransferSummaryCode='TransferSummaryCodeP' constraints.validation.warning='TransferSummaryParticipantSupport TransferSummaryParticipantCallbackContact TransferSummaryAdvanceDirectivesSection2 TransferSummaryFunctionalStatusSection2 TransferSummaryProceduresSection2 TransferSummarySocialHistorySection2 TransferSummaryMentalStatusSection TransferSummaryNutritionSection TransferSummaryHistoryOfPresentIllnessSection TransferSummaryDischargeDiagnosisSection2 TransferSummaryParticipantCallbackContactAssociatedEntityAddr TransferSummaryDocumentationOfServiceEventPerformerFunctionCode' constraints.validation.info='TransferSummaryPhysicalExamSection2 TransferSummaryEncountersSection2 TransferSummaryFamilyHistorySection TransferSummaryImmunizationsSectionEntriesOptional2 TransferSummaryMedicalEquipmentSection2 TransferSummaryPayersSection2 TransferSummaryPlanOfTreatmentSection2 TransferSummaryGeneralStatusSection TransferSummaryReviewOfSystemsSection TransferSummaryHistoryOfPastIllnessSection2 TransferSummaryAssessmentAndPlanSection2 TransferSummaryAssessmentSection TransferSummaryAdmissionMedicationsSectionEntriesOptional2 TransferSummaryAdmissionDiagnosisSection2 TransferSummaryCourseOfCareSection TransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization TransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP TransferSummaryDocumentationOfServiceEventCode' constraints.validation.query='TransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName TransferSummaryParticipantSupportAssociatedEntityClassCodeP TransferSummaryParticipantSupportAssociatedEntityClassCode TransferSummaryParticipantSupportAssociatedEntityAssociatedPerson TransferSummaryParticipantSupportTypeCode TransferSummaryParticipantSupportAssociatedEntity TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName TransferSummaryParticipantCallbackContactAssociatedEntityClassCode TransferSummaryParticipantCallbackContactAssociatedEntityId TransferSummaryParticipantCallbackContactAssociatedEntityAddr TransferSummaryParticipantCallbackContactAssociatedEntityTelecom TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson TransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization TransferSummaryParticipantCallbackContactTypeCode TransferSummaryParticipantCallbackContactAssociatedEntity TransferSummaryDocumentationOfServiceEventPerformerTypeCode TransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP TransferSummaryDocumentationOfServiceEventPerformerFunctionCode TransferSummaryDocumentationOfServiceEventClassCode TransferSummaryDocumentationOfServiceEventCode TransferSummaryDocumentationOfServiceEventPerformer1 TransferSummaryDocumentationOfServiceEvent' constraints.validation.dependOn.TransferSummaryParticipantSupportAssociatedEntityClassCode='TransferSummaryParticipantSupportAssociatedEntityClassCodeP' constraints.validation.dependOn.TransferSummaryDocumentationOfServiceEventPerformerFunctionCode='TransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryParticipantSupport typeCode='IND' constraints.validation.error='TransferSummaryParticipantSupportTypeCode TransferSummaryParticipantSupportAssociatedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryParticipantSupportAssociatedEntity constraints.validation.error='TransferSummaryParticipantSupportAssociatedEntityClassCode TransferSummaryParticipantSupportAssociatedEntityClassCodeP TransferSummaryParticipantSupportAssociatedEntityAssociatedPerson' constraints.validation.dependOn.TransferSummaryParticipantSupportAssociatedEntityClassCode='TransferSummaryParticipantSupportAssociatedEntityClassCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson constraints.validation.error='TransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName'"
@@ -32,9 +31,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryParticipantCallbackContactAssociatedEntity classCode='ASSIGNED' constraints.validation.error='TransferSummaryParticipantCallbackContactAssociatedEntityClassCode TransferSummaryParticipantCallbackContactAssociatedEntityId TransferSummaryParticipantCallbackContactAssociatedEntityTelecom TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson' constraints.validation.warning='TransferSummaryParticipantCallbackContactAssociatedEntityAddr' constraints.validation.info='TransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson constraints.validation.error='TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryDocumentationOf constraints.validation.error='TransferSummaryDocumentationOfServiceEvent'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryDocumentationOfServiceEvent classCode='PCPR' constraints.validation.error='TransferSummaryDocumentationOfServiceEventClassCode TransferSummaryDocumentationOfServiceEventEffectiveTime TransferSummaryDocumentationOfServiceEventPerformer1'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryDocumentationOfServiceEventPerformer typeCode='PRF' constraints.validation.error='TransferSummaryDocumentationOfServiceEventPerformerTypeCode' constraints.validation.warning='TransferSummaryDocumentationOfServiceEventPerformerAssignedEntity'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryDocumentationOfServiceEventPerformerAssignedEntity constraints.validation.warning='TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityId' constraints.validation.info='TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryDocumentationOfServiceEvent classCode='PCPR' constraints.validation.error='TransferSummaryDocumentationOfServiceEventClassCode TransferSummaryDocumentationOfServiceEventPerformer1' constraints.validation.info='TransferSummaryDocumentationOfServiceEventCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTransferSummaryDocumentationOfServiceEventPerformer typeCode='PRF' constraints.validation.error='TransferSummaryDocumentationOfServiceEventPerformerTypeCode' functionCode.codeSystem='2.16.840.1.113883.6.101' functionCode.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.warning='TransferSummaryDocumentationOfServiceEventPerformerFunctionCode' constraints.validation.info='TransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP' constraints.validation.dependOn.TransferSummaryDocumentationOfServiceEventPerformerFunctionCode='TransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP'"
  * @generated
  */
 public interface TransferSummary extends USRealmHeader2 {
@@ -63,18 +61,6 @@ public interface TransferSummary extends USRealmHeader2 {
 	 */
 	boolean validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id.oclIsUndefined() or self.id.isNullFlavorUndefined()) implies (not self.id.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateTransferSummaryId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -219,18 +205,6 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * @generated
 	 */
 	boolean validateTransferSummaryFunctionalStatusSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2))'"
-	 * @generated
-	 */
-	boolean validateTransferSummaryHospitalDischargeDiagnosis2(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -469,10 +443,47 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not root.oclIsUndefined() )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2))'"
 	 * @generated
 	 */
-	boolean validateTransferSummaryIIRoot(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateTransferSummaryDischargeDiagnosisSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionMedicationsSectionEntriesOptional2))'"
+	 * @generated
+	 */
+	boolean validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionDiagnosisSection2))'"
+	 * @generated
+	 */
+	boolean validateTransferSummaryAdmissionDiagnosisSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::CourseOfCareSection))'"
+	 * @generated
+	 */
+	boolean validateTransferSummaryCourseOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -675,32 +686,6 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
-	 * @generated
-	 */
-	boolean validateTransferSummaryDocumentationOfServiceEventPerformerAssignedEntityId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
-	 * @generated
-	 */
-	boolean validateTransferSummaryDocumentationOfServiceEventPerformerAssignedEntityCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(typeCode=vocab::x_ServiceEventPerformer::PRF)'"
 	 * @generated
 	 */
@@ -714,10 +699,23 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateTransferSummaryDocumentationOfServiceEventPerformerAssignedEntity(DiagnosticChain diagnostics,
+	boolean validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined() and functionCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
+	 * @generated
+	 */
+	boolean validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
@@ -740,10 +738,10 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateTransferSummaryDocumentationOfServiceEventEffectiveTime(DiagnosticChain diagnostics,
+	boolean validateTransferSummaryDocumentationOfServiceEventCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
@@ -824,15 +822,6 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * @generated
 	 */
 	FunctionalStatusSection2 getFunctionalStatusSection2();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2))->asSequence()->any(true).oclAsType(consol::DischargeDiagnosisSection2)'"
-	 * @generated
-	 */
-	DischargeDiagnosisSection2 getHospitalDischargeDiagnosis2();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1004,6 +993,42 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * @generated
 	 */
 	AssessmentSection getAssessmentSection();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2))->asSequence()->any(true).oclAsType(consol::DischargeDiagnosisSection2)'"
+	 * @generated
+	 */
+	DischargeDiagnosisSection2 getDischargeDiagnosisSection2();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionMedicationsSectionEntriesOptional2))->asSequence()->any(true).oclAsType(consol::AdmissionMedicationsSectionEntriesOptional2)'"
+	 * @generated
+	 */
+	AdmissionMedicationsSectionEntriesOptional2 getAdmissionMedicationsSectionEntriesOptional2();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionDiagnosisSection2))->asSequence()->any(true).oclAsType(consol::AdmissionDiagnosisSection2)'"
+	 * @generated
+	 */
+	AdmissionDiagnosisSection2 getAdmissionDiagnosisSection2();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::CourseOfCareSection))->asSequence()->any(true).oclAsType(consol::CourseOfCareSection)'"
+	 * @generated
+	 */
+	CourseOfCareSection getCourseOfCareSection();
 
 	/**
 	 * <!-- begin-user-doc -->

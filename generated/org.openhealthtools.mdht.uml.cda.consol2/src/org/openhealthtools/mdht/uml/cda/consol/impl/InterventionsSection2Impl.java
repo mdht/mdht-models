@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
 
+import org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.InterventionsSection2Operations;
 
 /**
@@ -80,6 +81,17 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateInterventionsSection2PlannedInterventionAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InterventionsSection2Operations.validateInterventionsSection2PlannedInterventionAct(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<InterventionAct> getInterventionActs() {
 		return InterventionsSection2Operations.getInterventionActs(this);
@@ -92,6 +104,15 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 */
 	public EList<HandoffCommunication> getHandoffCommunications() {
 		return InterventionsSection2Operations.getHandoffCommunications(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PlannedInterventionAct> getPlannedInterventionActs() {
+		return InterventionsSection2Operations.getPlannedInterventionActs(this);
 	}
 
 	/**

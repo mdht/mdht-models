@@ -550,6 +550,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCarePlan();
 			case ConsolPackage.INTERVENTIONS_SECTION2:
 				return createInterventionsSection2();
+			case ConsolPackage.PLANNED_INTERVENTION_ACT:
+				return createPlannedInterventionAct();
 			case ConsolPackage.REFERRAL_NOTE:
 				return createReferralNote();
 			case ConsolPackage.PLAN_OF_TREATMENT_SECTION2:
@@ -602,6 +604,12 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createMedicationsSectionEntriesOptional2();
 			case ConsolPackage.REASON_FOR_REFERRAL_SECTION2:
 				return createReasonForReferralSection2();
+			case ConsolPackage.FAMILY_HISTORY_SECTION2:
+				return createFamilyHistorySection2();
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2:
+				return createFamilyHistoryOrganizer2();
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2:
+				return createFamilyHistoryObservation2();
 			case ConsolPackage.TRANSFER_SUMMARY:
 				return createTransferSummary();
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION2:
@@ -610,10 +618,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncountersSection2();
 			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2:
 				return createEncountersSectionEntriesOptional2();
-			case ConsolPackage.DISCHARGE_DIAGNOSIS_SECTION2:
-				return createDischargeDiagnosisSection2();
-			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS2:
-				return createHospitalDischargeDiagnosis2();
 			case ConsolPackage.PAYERS_SECTION2:
 				return createPayersSection2();
 			case ConsolPackage.COVERAGE_ACTIVITY2:
@@ -622,12 +626,22 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPolicyActivity2();
 			case ConsolPackage.PROCEDURES_SECTION2:
 				return createProceduresSection2();
+			case ConsolPackage.DISCHARGE_DIAGNOSIS_SECTION2:
+				return createDischargeDiagnosisSection2();
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS2:
+				return createHospitalDischargeDiagnosis2();
+			case ConsolPackage.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
+				return createAdmissionMedicationsSectionEntriesOptional2();
+			case ConsolPackage.ADMISSION_MEDICATION2:
+				return createAdmissionMedication2();
+			case ConsolPackage.ADMISSION_DIAGNOSIS_SECTION2:
+				return createAdmissionDiagnosisSection2();
+			case ConsolPackage.COURSE_OF_CARE_SECTION:
+				return createCourseOfCareSection();
 			case ConsolPackage.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT:
 				return createUSRealmHeaderPatientGeneratedDocument();
 			case ConsolPackage.AUTHOR_PARTICIPATION:
 				return createAuthorParticipation();
-			case ConsolPackage.ADMISSION_MEDICATION2:
-				return createAdmissionMedication2();
 			case ConsolPackage.DECEASED_OBSERVATION2:
 				return createDeceasedObservation2();
 			case ConsolPackage.DISCHARGE_MEDICATION2:
@@ -642,10 +656,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAnesthesiaSection2();
 			case ConsolPackage.COMPLICATIONS_SECTION2:
 				return createComplicationsSection2();
-			case ConsolPackage.ADMISSION_DIAGNOSIS_SECTION2:
-				return createAdmissionDiagnosisSection2();
-			case ConsolPackage.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
-				return createAdmissionMedicationsSectionEntriesOptional2();
 			case ConsolPackage.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
 				return createDischargeMedicationsSectionEntriesOptional2();
 			case ConsolPackage.INSTRUCTIONS_SECTION2:
@@ -666,12 +676,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDischargeMedicationsSection2();
 			case ConsolPackage.CONSULTATION_NOTE2:
 				return createConsultationNote2();
-			case ConsolPackage.FAMILY_HISTORY_SECTION2:
-				return createFamilyHistorySection2();
-			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2:
-				return createFamilyHistoryOrganizer2();
-			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2:
-				return createFamilyHistoryObservation2();
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT2:
 				return createContinuityOfCareDocument2();
 			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT2:
@@ -692,10 +696,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPreconditionForSubstanceAdministration2();
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER2:
 				return createPhysicianReadingStudyPerformer2();
-			case ConsolPackage.COURSE_OF_CARE_SECTION:
-				return createCourseOfCareSection();
-			case ConsolPackage.PLANNED_INTERVENTION_ACT:
-				return createPlannedInterventionAct();
 			case ConsolPackage.RISK_CONCERN_ACT:
 				return createRiskConcernAct();
 			default:

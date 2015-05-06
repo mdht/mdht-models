@@ -1319,6 +1319,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter casePlannedInterventionAct(PlannedInterventionAct object) {
+			return createPlannedInterventionActAdapter();
+		}
+
+		@Override
 		public Adapter caseReferralNote(ReferralNote object) {
 			return createReferralNoteAdapter();
 		}
@@ -1449,6 +1454,21 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseFamilyHistorySection2(FamilyHistorySection2 object) {
+			return createFamilyHistorySection2Adapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryOrganizer2(FamilyHistoryOrganizer2 object) {
+			return createFamilyHistoryOrganizer2Adapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryObservation2(FamilyHistoryObservation2 object) {
+			return createFamilyHistoryObservation2Adapter();
+		}
+
+		@Override
 		public Adapter caseTransferSummary(TransferSummary object) {
 			return createTransferSummaryAdapter();
 		}
@@ -1466,16 +1486,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseEncountersSectionEntriesOptional2(EncountersSectionEntriesOptional2 object) {
 			return createEncountersSectionEntriesOptional2Adapter();
-		}
-
-		@Override
-		public Adapter caseDischargeDiagnosisSection2(DischargeDiagnosisSection2 object) {
-			return createDischargeDiagnosisSection2Adapter();
-		}
-
-		@Override
-		public Adapter caseHospitalDischargeDiagnosis2(HospitalDischargeDiagnosis2 object) {
-			return createHospitalDischargeDiagnosis2Adapter();
 		}
 
 		@Override
@@ -1499,6 +1509,37 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseDischargeDiagnosisSection2(DischargeDiagnosisSection2 object) {
+			return createDischargeDiagnosisSection2Adapter();
+		}
+
+		@Override
+		public Adapter caseHospitalDischargeDiagnosis2(HospitalDischargeDiagnosis2 object) {
+			return createHospitalDischargeDiagnosis2Adapter();
+		}
+
+		@Override
+		public Adapter caseAdmissionMedicationsSectionEntriesOptional2(
+				AdmissionMedicationsSectionEntriesOptional2 object) {
+			return createAdmissionMedicationsSectionEntriesOptional2Adapter();
+		}
+
+		@Override
+		public Adapter caseAdmissionMedication2(AdmissionMedication2 object) {
+			return createAdmissionMedication2Adapter();
+		}
+
+		@Override
+		public Adapter caseAdmissionDiagnosisSection2(AdmissionDiagnosisSection2 object) {
+			return createAdmissionDiagnosisSection2Adapter();
+		}
+
+		@Override
+		public Adapter caseCourseOfCareSection(CourseOfCareSection object) {
+			return createCourseOfCareSectionAdapter();
+		}
+
+		@Override
 		public Adapter caseUSRealmHeaderPatientGeneratedDocument(USRealmHeaderPatientGeneratedDocument object) {
 			return createUSRealmHeaderPatientGeneratedDocumentAdapter();
 		}
@@ -1506,11 +1547,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseAuthorParticipation(AuthorParticipation object) {
 			return createAuthorParticipationAdapter();
-		}
-
-		@Override
-		public Adapter caseAdmissionMedication2(AdmissionMedication2 object) {
-			return createAdmissionMedication2Adapter();
 		}
 
 		@Override
@@ -1546,17 +1582,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseComplicationsSection2(ComplicationsSection2 object) {
 			return createComplicationsSection2Adapter();
-		}
-
-		@Override
-		public Adapter caseAdmissionDiagnosisSection2(AdmissionDiagnosisSection2 object) {
-			return createAdmissionDiagnosisSection2Adapter();
-		}
-
-		@Override
-		public Adapter caseAdmissionMedicationsSectionEntriesOptional2(
-				AdmissionMedicationsSectionEntriesOptional2 object) {
-			return createAdmissionMedicationsSectionEntriesOptional2Adapter();
 		}
 
 		@Override
@@ -1611,21 +1636,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseFamilyHistorySection2(FamilyHistorySection2 object) {
-			return createFamilyHistorySection2Adapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryOrganizer2(FamilyHistoryOrganizer2 object) {
-			return createFamilyHistoryOrganizer2Adapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryObservation2(FamilyHistoryObservation2 object) {
-			return createFamilyHistoryObservation2Adapter();
-		}
-
-		@Override
 		public Adapter caseContinuityOfCareDocument2(ContinuityOfCareDocument2 object) {
 			return createContinuityOfCareDocument2Adapter();
 		}
@@ -1673,16 +1683,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePhysicianReadingStudyPerformer2(PhysicianReadingStudyPerformer2 object) {
 			return createPhysicianReadingStudyPerformer2Adapter();
-		}
-
-		@Override
-		public Adapter caseCourseOfCareSection(CourseOfCareSection object) {
-			return createCourseOfCareSectionAdapter();
-		}
-
-		@Override
-		public Adapter casePlannedInterventionAct(PlannedInterventionAct object) {
-			return createPlannedInterventionActAdapter();
 		}
 
 		@Override

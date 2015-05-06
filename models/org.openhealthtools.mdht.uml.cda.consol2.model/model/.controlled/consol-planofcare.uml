@@ -3716,12 +3716,12 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
     <ruleId>CONF:1098-32679</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_EcWW4OLZEeS505YV9ux2XA" code="362956003" displayName="procedure / intervention (navigational concept)" base_Property="_oM2_IOLUEeS505YV9ux2XA">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-32682</ruleId>
     <ruleId>CONF:1098-32683</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_YuBgUOLZEeS505YV9ux2XA" code="active" displayName="Active" base_Property="_oM4NQeLUEeS505YV9ux2XA">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-32684</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_teHrIOLZEeS505YV9ux2XA" memberEnd="_teGdAOLZEeS505YV9ux2XA _teISMOLZEeS505YV9ux2XA">
@@ -4533,4 +4533,5 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <CDA:AssociationValidation xmi:id="_70TlIOOrEeS_XOr-dz_KWA" base_Association="_6SLrEOOrEeS_XOr-dz_KWA">
     <ruleId>CONF:1098-32771</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_nVZ7gPNjEeSXVvUWxGszbQ" base_Property="_oM4NQOLUEeS505YV9ux2XA"/>
 </xmi:XMI>

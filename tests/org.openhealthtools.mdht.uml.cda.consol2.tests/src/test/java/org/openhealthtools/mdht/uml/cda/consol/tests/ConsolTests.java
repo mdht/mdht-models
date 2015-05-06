@@ -10,6 +10,7 @@ import junit.framework.JUnit4TestAdapter;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+import org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct;
 
 /**
  * <!-- begin-user-doc -->
@@ -139,7 +140,8 @@ import org.junit.runners.Suite;
 		PreconditionForSubstanceAdministration2Test.class, NumberOfPressureUlcersObservation2Test.class,
 		FamilyHistoryObservation2Test.class, FamilyHistoryOrganizer2Test.class, FamilyHistorySection2Test.class,
 		PhysicianReadingStudyPerformer2Test.class, CourseOfCareSectionTest.class, USRealmHeader2Test.class,
-		MentalStatusObservation2Test.class, MentalStatusOrganizer2Test.class, SmokingStatusMeaningfulUse2Test.class })
+		MentalStatusObservation2Test.class, MentalStatusOrganizer2Test.class, SmokingStatusMeaningfulUse2Test.class,
+		RiskConcernActTest.class, PlannedInterventionAct.class })
 public class ConsolTests {
 
 	/**

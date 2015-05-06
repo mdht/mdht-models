@@ -11,8 +11,6 @@ import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
@@ -22,10 +20,8 @@ import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOp
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
-import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
-import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection;
+import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2;
@@ -125,16 +121,6 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 * @generated
 	 */
 	@Override
-	public boolean validateReferralNoteTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteTitle(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateReferralNoteInformationRecipient(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReferralNoteOperations.validateReferralNoteInformationRecipient(this, diagnostics, context);
 	}
@@ -165,28 +151,6 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateReferralNoteChiefComplaintSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteChiefComplaintSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateReferralNoteChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteChiefComplaintAndReasonForVisitSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateReferralNotePlanOfTreatmentSection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReferralNoteOperations.validateReferralNotePlanOfTreatmentSection2(this, diagnostics, context);
 	}
@@ -210,15 +174,6 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	public boolean validateReferralNoteHistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReferralNoteOperations.validateReferralNoteHistoryOfPresentIllnessSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReferralNoteFamilyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteFamilyHistorySection(this, diagnostics, context);
 	}
 
 	/**
@@ -308,9 +263,9 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReferralNoteAdvanceDirectivesSectionEntriesOptional22(DiagnosticChain diagnostics,
+	public boolean validateReferralNoteAdvanceDirectivesSectionEntriesOptional2b(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteAdvanceDirectivesSectionEntriesOptional22(
+		return ReferralNoteOperations.validateReferralNoteAdvanceDirectivesSectionEntriesOptional2b(
 			this, diagnostics, context);
 	}
 
@@ -412,23 +367,8 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateReferralNoteInformationRecipientIntendedRecipientPersonPNFamily(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientPersonPNFamily(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateReferralNoteInformationRecipientIntendedRecipientPersonPNGiven(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientPersonPNGiven(
-			this, diagnostics, context);
+	public boolean validateReferralNoteFamilyHistorySection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReferralNoteOperations.validateReferralNoteFamilyHistorySection2(this, diagnostics, context);
 	}
 
 	/**
@@ -464,18 +404,6 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	public boolean validateReferralNoteInformationRecipientIntendedRecipientTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientTelecom(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateReferralNoteInformationRecipientIntendedRecipientReceivedOrganization(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientReceivedOrganization(
 			this, diagnostics, context);
 	}
 
@@ -556,10 +484,9 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateReferralNoteParticipantCaregiverNullFlavor(DiagnosticChain diagnostics,
+	public boolean validateReferralNoteParticipantCaregiverTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteParticipantCaregiverNullFlavor(this, diagnostics, context);
+		return ReferralNoteOperations.validateReferralNoteParticipantCaregiverTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -627,6 +554,17 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateReferralNoteParticipantCallbackContactAssociatedEntityClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReferralNoteOperations.validateReferralNoteParticipantCallbackContactAssociatedEntityClassCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -674,26 +612,6 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ChiefComplaintSection> getChiefComplaintSections() {
-		return ReferralNoteOperations.getChiefComplaintSections(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
-		return ReferralNoteOperations.getChiefComplaintAndReasonForVisitSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public PlanOfTreatmentSection2 getPlanOfTreatmentSection2() {
 		return ReferralNoteOperations.getPlanOfTreatmentSection2(this);
 	}
@@ -714,15 +632,6 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 */
 	public HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection() {
 		return ReferralNoteOperations.getHistoryOfPresentIllnessSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FamilyHistorySection getFamilyHistorySection() {
-		return ReferralNoteOperations.getFamilyHistorySection(this);
 	}
 
 	/**
@@ -811,8 +720,8 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdvanceDirectivesSectionEntriesOptional2 getAdvanceDirectivesSectionEntriesOptional22() {
-		return ReferralNoteOperations.getAdvanceDirectivesSectionEntriesOptional22(this);
+	public AdvanceDirectivesSectionEntriesOptional2 getAdvanceDirectivesSectionEntriesOptional2b() {
+		return ReferralNoteOperations.getAdvanceDirectivesSectionEntriesOptional2b(this);
 	}
 
 	/**
@@ -903,6 +812,15 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 */
 	public ReasonForReferralSection2 getReasonForReferralSection2() {
 		return ReferralNoteOperations.getReasonForReferralSection2(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistorySection2 getFamilyHistorySection2() {
+		return ReferralNoteOperations.getFamilyHistorySection2(this);
 	}
 
 	/**
