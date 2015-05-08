@@ -41,6 +41,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActMoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Mood Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Code P</em>}</li>
@@ -167,6 +168,40 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 		};
 
 		validatePlannedInterventionActClassCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedInterventionActMoodCodeP() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActMoodCodePTestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActMoodCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				// only checking attribute existence for this test not value
+				target.setMoodCode(x_DocumentActMood.EVN);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActMoodCodeP(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActMoodCodePTestCase.doValidationTest();
 	}
 
 	/**
