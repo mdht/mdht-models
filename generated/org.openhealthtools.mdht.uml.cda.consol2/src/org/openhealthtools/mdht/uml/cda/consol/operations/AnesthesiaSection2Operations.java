@@ -113,7 +113,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("AnesthesiaSectionProcedureActivityProcedure2"),
+					ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionProcedureActivityProcedure2"),
 					new Object[] { anesthesiaSection2 }));
 			}
 
@@ -172,7 +172,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_MEDICATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("AnesthesiaSectionMedicationActivity2"),
+					ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionMedicationActivity2"),
 					new Object[] { anesthesiaSection2 }));
 			}
 
@@ -320,7 +320,8 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AnesthesiaSectionTemplateId"), new Object[] { anesthesiaSection2 }));
+					ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionTemplateId"),
+					new Object[] { anesthesiaSection2 }));
 			}
 
 			return false;
@@ -378,7 +379,8 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AnesthesiaSectionCodeP"), new Object[] { anesthesiaSection2 }));
+					ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionCodeP"),
+					new Object[] { anesthesiaSection2 }));
 			}
 
 			if (context != null) {
@@ -458,7 +460,8 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("AnesthesiaSectionCode"), new Object[] { anesthesiaSection2 }));
+					ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionCode"),
+					new Object[] { anesthesiaSection2 }));
 			}
 
 			return false;

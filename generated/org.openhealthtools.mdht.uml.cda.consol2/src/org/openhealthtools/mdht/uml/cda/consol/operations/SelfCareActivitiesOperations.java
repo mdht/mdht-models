@@ -106,7 +106,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesTemplateId"),
+					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesTemplateId"),
 					new Object[] { selfCareActivities }));
 			}
 
@@ -165,7 +165,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesClassCode"), new Object[] { selfCareActivities }));
+					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesClassCode"),
+					new Object[] { selfCareActivities }));
 			}
 
 			return false;
@@ -223,7 +224,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesMoodCode"), new Object[] { selfCareActivities }));
+					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesMoodCode"),
+					new Object[] { selfCareActivities }));
 			}
 
 			return false;
@@ -281,7 +283,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesCodeP"), new Object[] { selfCareActivities }));
+					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesCodeP"),
+					new Object[] { selfCareActivities }));
 			}
 
 			if (context != null) {
@@ -361,7 +364,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CODE,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesCode"), new Object[] { selfCareActivities }));
+					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesCode"),
+					new Object[] { selfCareActivities }));
 			}
 
 			return false;
@@ -421,7 +425,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_VALUE,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesValue"), new Object[] { selfCareActivities }));
+					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesValue"),
+					new Object[] { selfCareActivities }));
 			}
 
 			return false;
@@ -479,7 +484,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesValueP"), new Object[] { selfCareActivities }));
+					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesValueP"),
+					new Object[] { selfCareActivities }));
 			}
 
 			return false;

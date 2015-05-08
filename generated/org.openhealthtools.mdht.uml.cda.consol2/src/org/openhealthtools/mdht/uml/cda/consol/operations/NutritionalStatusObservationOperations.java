@@ -118,9 +118,10 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 			nutritionalStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationTemplateId"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -178,9 +179,10 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 			nutritionalStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationClassCode"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -238,9 +240,10 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 			nutritionalStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationMoodCode"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -300,7 +303,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationId"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationId"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -360,7 +363,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationCodeP"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -442,7 +445,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationCode"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationCode"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -501,9 +504,10 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 			nutritionalStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationStatusCode"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -561,9 +565,10 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 			nutritionalStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationStatusCodeP"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -622,9 +627,10 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 			nutritionalStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationEffectiveTime"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -686,7 +692,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationValue"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationValue"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -746,7 +752,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationValueP"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationValueP"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -808,7 +814,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_NUTRITION_ASSESSMENT,
-					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionAssessment"),
+					ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationNutritionAssessment"),
 					new Object[] { nutritionalStatusObservation }));
 			}
 

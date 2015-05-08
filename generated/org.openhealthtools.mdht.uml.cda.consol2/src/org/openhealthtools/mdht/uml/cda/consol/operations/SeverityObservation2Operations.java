@@ -108,7 +108,7 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"SeverityObservation2TextReference",
+								"SeverityObservation2SeverityObservation2TextReference",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									severityObservation2, context) }), new Object[] { severityObservation2 }));
 			}
@@ -171,7 +171,7 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"SeverityObservation2TextReferenceValue",
+								"SeverityObservation2SeverityObservation2TextReferenceValue",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									severityObservation2, context) }), new Object[] { severityObservation2 }));
 			}
@@ -234,7 +234,7 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"SeverityObservation2ReferenceValue",
+								"SeverityObservation2SeverityObservation2ReferenceValue",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									severityObservation2, context) }), new Object[] { severityObservation2 }));
 			}
@@ -294,7 +294,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION2__SEVERITY_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationCodeP"), new Object[] { severityObservation2 }));
+					ConsolPlugin.INSTANCE.getString("SeverityObservation2SeverityObservationCodeP"),
+					new Object[] { severityObservation2 }));
 			}
 
 			if (context != null) {
@@ -364,7 +365,7 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION2__SEVERITY_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("SeverityObservation2SeverityObservationStatusCodeP"),
 					new Object[] { severityObservation2 }));
 			}
 
@@ -435,7 +436,7 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION2__SEVERITY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("SeverityObservation2SeverityObservationTemplateId"),
 					new Object[] { severityObservation2 }));
 			}
 
@@ -504,7 +505,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION2__SEVERITY_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationCode"), new Object[] { severityObservation2 }));
+					ConsolPlugin.INSTANCE.getString("SeverityObservation2SeverityObservationCode"),
+					new Object[] { severityObservation2 }));
 			}
 
 			return false;
@@ -571,7 +573,7 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION2__SEVERITY_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("SeverityObservation2SeverityObservationStatusCode"),
 					new Object[] { severityObservation2 }));
 			}
 

@@ -108,7 +108,7 @@ public class NutritionRecommendationsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsNutritionRecommendationsTemplateId"),
 					new Object[] { nutritionRecommendations }));
 			}
 
@@ -167,7 +167,7 @@ public class NutritionRecommendationsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsClassCode"),
+					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsNutritionRecommendationsClassCode"),
 					new Object[] { nutritionRecommendations }));
 			}
 
@@ -226,7 +226,7 @@ public class NutritionRecommendationsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_MOOD_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsMoodCodeP"),
+					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsNutritionRecommendationsMoodCodeP"),
 					new Object[] { nutritionRecommendations }));
 			}
 
@@ -307,7 +307,7 @@ public class NutritionRecommendationsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsMoodCode"),
+					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsNutritionRecommendationsMoodCode"),
 					new Object[] { nutritionRecommendations }));
 			}
 
@@ -366,7 +366,7 @@ public class NutritionRecommendationsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsCodeP"),
+					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsNutritionRecommendationsCodeP"),
 					new Object[] { nutritionRecommendations }));
 			}
 
@@ -447,7 +447,7 @@ public class NutritionRecommendationsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsCode"),
+					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsNutritionRecommendationsCode"),
 					new Object[] { nutritionRecommendations }));
 			}
 
@@ -507,7 +507,7 @@ public class NutritionRecommendationsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsStatusCode"),
+					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsNutritionRecommendationsStatusCode"),
 					new Object[] { nutritionRecommendations }));
 			}
 
@@ -566,7 +566,7 @@ public class NutritionRecommendationsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsNutritionRecommendationsStatusCodeP"),
 					new Object[] { nutritionRecommendations }));
 			}
 
@@ -625,7 +625,7 @@ public class NutritionRecommendationsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("NutritionRecommendationsNutritionRecommendationsEffectiveTime"),
 					new Object[] { nutritionRecommendations }));
 			}
 

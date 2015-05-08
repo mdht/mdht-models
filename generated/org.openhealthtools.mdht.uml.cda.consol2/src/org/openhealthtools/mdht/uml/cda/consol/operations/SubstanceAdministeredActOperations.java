@@ -108,7 +108,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActTemplateId"),
+					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActTemplateId"),
 					new Object[] { substanceAdministeredAct }));
 			}
 
@@ -167,7 +167,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActClassCode"),
+					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActClassCode"),
 					new Object[] { substanceAdministeredAct }));
 			}
 
@@ -226,7 +226,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActMoodCode"),
+					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActMoodCode"),
 					new Object[] { substanceAdministeredAct }));
 			}
 
@@ -285,7 +285,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActId"),
+					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActId"),
 					new Object[] { substanceAdministeredAct }));
 			}
 
@@ -344,7 +344,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActCodeP"),
+					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActCodeP"),
 					new Object[] { substanceAdministeredAct }));
 			}
 
@@ -425,7 +425,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActCode"),
+					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActCode"),
 					new Object[] { substanceAdministeredAct }));
 			}
 
@@ -485,7 +485,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActStatusCode"),
+					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActStatusCode"),
 					new Object[] { substanceAdministeredAct }));
 			}
 
@@ -544,7 +544,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActStatusCodeP"),
 					new Object[] { substanceAdministeredAct }));
 			}
 
@@ -603,7 +603,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActEffectiveTime"),
 					new Object[] { substanceAdministeredAct }));
 			}
 

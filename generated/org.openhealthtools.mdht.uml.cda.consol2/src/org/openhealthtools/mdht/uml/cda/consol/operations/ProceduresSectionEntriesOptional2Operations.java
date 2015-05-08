@@ -118,7 +118,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION_ENTRIES_OPTIONAL2__PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalProcedureActivityProcedure2"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptional2ProceduresSectionEntriesOptionalProcedureActivityProcedure2"),
 					new Object[] { proceduresSectionEntriesOptional2 }));
 			}
 
@@ -180,7 +180,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION_ENTRIES_OPTIONAL2__PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalProcedureActivityObservation2"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptional2ProceduresSectionEntriesOptionalProcedureActivityObservation2"),
 					new Object[] { proceduresSectionEntriesOptional2 }));
 			}
 
@@ -242,7 +242,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION_ENTRIES_OPTIONAL2__PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_ACT2,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalProcedureActivityAct2"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptional2ProceduresSectionEntriesOptionalProcedureActivityAct2"),
 					new Object[] { proceduresSectionEntriesOptional2 }));
 			}
 
@@ -439,7 +439,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION_ENTRIES_OPTIONAL2__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptional2ProceduresSectionEntriesOptionalTemplateId"),
 					new Object[] { proceduresSectionEntriesOptional2 }));
 			}
 
@@ -497,9 +497,10 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 			proceduresSectionEntriesOptional2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION_ENTRIES_OPTIONAL2__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptional2ProceduresSectionEntriesOptionalCodeP"),
 					new Object[] { proceduresSectionEntriesOptional2 }));
 			}
 
@@ -581,9 +582,10 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 			proceduresSectionEntriesOptional2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION_ENTRIES_OPTIONAL2__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptional2ProceduresSectionEntriesOptionalCode"),
 					new Object[] { proceduresSectionEntriesOptional2 }));
 			}
 

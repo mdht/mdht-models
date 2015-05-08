@@ -103,9 +103,10 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationFamilyHistoryDeathObservationTemplateId"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
 
@@ -163,9 +164,10 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationFamilyHistoryDeathObservationClassCode"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
 
@@ -223,9 +225,10 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationFamilyHistoryDeathObservationMoodCode"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
 
@@ -287,7 +290,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationFamilyHistoryDeathObservationCode"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
 
@@ -346,9 +349,10 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationFamilyHistoryDeathObservationStatusCode"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
 
@@ -410,7 +414,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationValue"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationFamilyHistoryDeathObservationValue"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
 
@@ -468,9 +472,10 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationValueP"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationFamilyHistoryDeathObservationValueP"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
 

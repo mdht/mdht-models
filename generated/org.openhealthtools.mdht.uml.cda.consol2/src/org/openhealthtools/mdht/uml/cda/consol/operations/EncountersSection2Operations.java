@@ -112,7 +112,7 @@ public class EncountersSection2Operations extends EncountersSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION2__ENCOUNTERS_SECTION2_NULL_FLAVOR,
-					ConsolPlugin.INSTANCE.getString("EncountersSection2NullFlavor"),
+					ConsolPlugin.INSTANCE.getString("EncountersSection2EncountersSection2NullFlavor"),
 					new Object[] { encountersSection2 }));
 			}
 
@@ -171,7 +171,8 @@ public class EncountersSection2Operations extends EncountersSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION2__ENCOUNTERS_SECTION2_TEXT,
-					ConsolPlugin.INSTANCE.getString("EncountersSection2Text"), new Object[] { encountersSection2 }));
+					ConsolPlugin.INSTANCE.getString("EncountersSection2EncountersSection2Text"),
+					new Object[] { encountersSection2 }));
 			}
 
 			return false;
@@ -229,7 +230,8 @@ public class EncountersSection2Operations extends EncountersSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION2__ENCOUNTERS_SECTION2_TITLE,
-					ConsolPlugin.INSTANCE.getString("EncountersSection2Title"), new Object[] { encountersSection2 }));
+					ConsolPlugin.INSTANCE.getString("EncountersSection2EncountersSection2Title"),
+					new Object[] { encountersSection2 }));
 			}
 
 			return false;
@@ -288,7 +290,7 @@ public class EncountersSection2Operations extends EncountersSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("EncountersSection2EncountersSectionEntriesOptionalTemplateId"),
 					new Object[] { encountersSection2 }));
 			}
 
@@ -347,7 +349,7 @@ public class EncountersSection2Operations extends EncountersSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("EncountersSection2EncountersSectionEntriesOptionalCodeP"),
 					new Object[] { encountersSection2 }));
 			}
 
@@ -429,7 +431,7 @@ public class EncountersSection2Operations extends EncountersSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("EncountersSection2EncountersSectionEntriesOptionalCode"),
 					new Object[] { encountersSection2 }));
 			}
 
@@ -487,9 +489,10 @@ public class EncountersSection2Operations extends EncountersSectionEntriesOption
 			encountersSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncounterActivity2"),
+					ConsolPlugin.INSTANCE.getString("EncountersSection2EncountersSectionEntriesOptionalEncounterActivity2"),
 					new Object[] { encountersSection2 }));
 			}
 

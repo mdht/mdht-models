@@ -181,7 +181,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2,
-					ConsolPlugin.INSTANCE.getString("CarePlanDoesNotHavePlanOfTreatmentSectionV2"),
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDoesNotHavePlanOfTreatmentSectionV2"),
 					new Object[] { carePlan }));
 			}
 
@@ -238,7 +238,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.CARE_PLAN__CARE_PLAN_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CarePlanCodeP"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanCodeP"), new Object[] { carePlan }));
 			}
 
 			if (context != null) {
@@ -316,7 +316,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.CARE_PLAN__CARE_PLAN_CODE,
-					ConsolPlugin.INSTANCE.getString("CarePlanCode"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanCode"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -372,7 +372,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.CARE_PLAN__CARE_PLAN_SET_ID,
-					ConsolPlugin.INSTANCE.getString("CarePlanSetId"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanSetId"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -429,7 +429,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_VERSION_NUMBER,
-					ConsolPlugin.INSTANCE.getString("CarePlanVersionNumber"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanVersionNumber"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -487,7 +487,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT,
-					ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipient"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipient"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -544,7 +544,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR,
-					ConsolPlugin.INSTANCE.getString("CarePlanAuthenticator"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticator"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -602,7 +602,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW,
-					ConsolPlugin.INSTANCE.getString("CarePlanParticipantCarePlanReview"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReview"),
+					new Object[] { carePlan }));
 			}
 
 			return false;
@@ -660,7 +661,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER,
-					ConsolPlugin.INSTANCE.getString("CarePlanParticipantCaregiver"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCaregiver"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -717,7 +718,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOf"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOf"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -774,7 +775,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT,
-					ConsolPlugin.INSTANCE.getString("CarePlanRelatedDocument"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanRelatedDocument"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -831,7 +832,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("CarePlanComponentOf"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanComponentOf"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -889,7 +890,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_HEALTH_CONCERNS_SECTION,
-					ConsolPlugin.INSTANCE.getString("CarePlanHealthConcernsSection"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanHealthConcernsSection"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -946,7 +947,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_GOALS_SECTION,
-					ConsolPlugin.INSTANCE.getString("CarePlanGoalsSection"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanGoalsSection"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -1005,7 +1006,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION,
-					ConsolPlugin.INSTANCE.getString("CarePlanHealthStatusEvaluationsOutcomesSection"),
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanHealthStatusEvaluationsOutcomesSection"),
 					new Object[] { carePlan }));
 			}
 
@@ -1064,7 +1065,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__CARE_PLAN_INTERVENTIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("CarePlanInterventionsSection2"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInterventionsSection2"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -1138,7 +1139,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT_NAME,
-						ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipientIntendedRecipientInformationRecipientName"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipientInformationRecipientName"),
 						new Object[] { eObject }));
 				}
 
@@ -1203,7 +1204,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_ID,
-						ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipientIntendedRecipientReceivedOrganizationId"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId"),
 						new Object[] { eObject }));
 				}
 
@@ -1268,7 +1269,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_NAME,
-						ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipientIntendedRecipientReceivedOrganizationName"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName"),
 						new Object[] { eObject }));
 				}
 
@@ -1333,7 +1334,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1422,7 +1423,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1486,7 +1487,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID,
-						ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipientIntendedRecipientId"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipientId"),
 						new Object[] { eObject }));
 				}
 
@@ -1550,7 +1551,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR,
-						ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipientIntendedRecipientAddr"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipientAddr"),
 						new Object[] { eObject }));
 				}
 
@@ -1612,9 +1613,10 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM,
-						ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipientIntendedRecipientTelecom"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipientTelecom"),
 						new Object[] { eObject }));
 				}
 
@@ -1679,7 +1681,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT,
-						ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipientIntendedRecipientInformationRecipient"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipientInformationRecipient"),
 						new Object[] { eObject }));
 				}
 
@@ -1744,7 +1746,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipientIntendedRecipientReceivedOrganization"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -1808,7 +1810,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT,
-						ConsolPlugin.INSTANCE.getString("CarePlanInformationRecipientIntendedRecipient"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipient"),
 						new Object[] { eObject }));
 				}
 
@@ -1872,7 +1874,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("CarePlanAuthenticatorAssignedEntityId"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorAssignedEntityId"),
 						new Object[] { eObject }));
 				}
 
@@ -1938,7 +1940,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanAuthenticatorAssignedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2002,7 +2004,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CarePlanAuthenticatorAssignedEntityCodeP"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorAssignedEntityCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -2066,7 +2068,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_TIME,
-						ConsolPlugin.INSTANCE.getString("CarePlanAuthenticatorTime"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorTime"), new Object[] { eObject }));
 				}
 
 			}
@@ -2129,7 +2131,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_SIGNATURE_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanAuthenticatorSignatureCode"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorSignatureCode"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -2192,7 +2195,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_SDTC_SIGNATURE_TEXT,
-						ConsolPlugin.INSTANCE.getString("CarePlanAuthenticatorSDTCSignatureText"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorSDTCSignatureText"),
 						new Object[] { eObject }));
 				}
 
@@ -2256,7 +2259,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("CarePlanAuthenticatorAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -2318,9 +2321,10 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCarePlanReviewAssociatedEntityClassCode"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2384,7 +2388,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCarePlanReviewAssociatedEntityId"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityId"),
 						new Object[] { eObject }));
 				}
 
@@ -2446,9 +2450,10 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCarePlanReviewAssociatedEntityCodeP"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -2534,9 +2539,10 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCarePlanReviewAssociatedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2600,7 +2606,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCarePlanReviewTypeCode"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2666,7 +2672,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_FUNCTION_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCarePlanReviewFunctionCode"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewFunctionCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2730,7 +2736,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_FUNCTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCarePlanReviewFunctionCodeP"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewFunctionCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -2794,7 +2800,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_TIME,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCarePlanReviewTime"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewTime"),
 						new Object[] { eObject }));
 				}
 
@@ -2858,7 +2864,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCarePlanReviewAssociatedEntity"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewAssociatedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -2923,7 +2929,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName"),
 						new Object[] { eObject }));
 				}
 
@@ -2985,9 +2991,10 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCaregiverAssociatedEntityClassCodeP"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCaregiverAssociatedEntityClassCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -3073,9 +3080,10 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCaregiverAssociatedEntityClassCode"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCaregiverAssociatedEntityClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3140,7 +3148,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCaregiverAssociatedEntityAssociatedPerson"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson"),
 						new Object[] { eObject }));
 				}
 
@@ -3204,7 +3212,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCaregiverTypeCode"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCaregiverTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3268,7 +3276,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCaregiverAssociatedEntity"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCaregiverAssociatedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -3332,7 +3340,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOfServiceEventIVLTSLow"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventIVLTSLow"),
 						new Object[] { eObject }));
 				}
 
@@ -3396,7 +3404,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOfServiceEventIVLTSHigh"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventIVLTSHigh"),
 						new Object[] { eObject }));
 				}
 
@@ -3461,7 +3469,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName"),
 						new Object[] { eObject }));
 				}
 
@@ -3526,7 +3534,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOfServiceEventPerformerAssignedEntityId"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityId"),
 						new Object[] { eObject }));
 				}
 
@@ -3591,7 +3599,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOfServiceEventPerformerAssignedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3656,7 +3664,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-						ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson"),
 						new Object[] { eObject }));
 				}
 
@@ -3718,9 +3726,10 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOfServiceEventPerformerAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -3784,7 +3793,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOfServiceEventClassCode"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3848,7 +3857,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOfServiceEventEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventEffectiveTime"),
 						new Object[] { eObject }));
 				}
 
@@ -3912,7 +3921,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1,
-						ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOfServiceEventPerformer1"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventPerformer1"),
 						new Object[] { eObject }));
 				}
 
@@ -3976,7 +3985,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT,
-						ConsolPlugin.INSTANCE.getString("CarePlanDocumentationOfServiceEvent"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEvent"),
 						new Object[] { eObject }));
 				}
 
@@ -4040,7 +4049,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_SET_ID,
-						ConsolPlugin.INSTANCE.getString("CarePlanRelatedDocumentParentDocumentSetId"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanRelatedDocumentParentDocumentSetId"),
 						new Object[] { eObject }));
 				}
 
@@ -4104,7 +4113,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_VERSION_NUMBER,
-						ConsolPlugin.INSTANCE.getString("CarePlanRelatedDocumentParentDocumentVersionNumber"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanRelatedDocumentParentDocumentVersionNumber"),
 						new Object[] { eObject }));
 				}
 
@@ -4168,7 +4177,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CarePlanRelatedDocumentTypeCodeP"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanRelatedDocumentTypeCodeP"),
+						new Object[] { eObject }));
 				}
 
 				if (context != null) {
@@ -4254,7 +4264,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("CarePlanRelatedDocumentTypeCode"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanRelatedDocumentTypeCode"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -4317,7 +4328,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT,
-						ConsolPlugin.INSTANCE.getString("CarePlanRelatedDocumentParentDocument"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanRelatedDocumentParentDocument"),
 						new Object[] { eObject }));
 				}
 
@@ -4379,9 +4390,10 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("CarePlanComponentOfEncompassingEncounterEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanComponentOfEncompassingEncounterEffectiveTime"),
 						new Object[] { eObject }));
 				}
 
@@ -4445,7 +4457,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-						ConsolPlugin.INSTANCE.getString("CarePlanComponentOfEncompassingEncounter"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanComponentOfEncompassingEncounter"),
 						new Object[] { eObject }));
 				}
 
@@ -4669,7 +4681,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CARE_PLAN__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"), new Object[] { carePlan }));
+					ConsolPlugin.INSTANCE.getString("CarePlanGeneralHeaderConstraintsTemplateId"),
+					new Object[] { carePlan }));
 			}
 
 			return false;

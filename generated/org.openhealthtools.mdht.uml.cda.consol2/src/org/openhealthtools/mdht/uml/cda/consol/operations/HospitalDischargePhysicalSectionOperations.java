@@ -105,7 +105,7 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionHospitalDischargePhysicalSectionTemplateId"),
 					new Object[] { hospitalDischargePhysicalSection }));
 			}
 
@@ -165,9 +165,10 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 			hospitalDischargePhysicalSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionHospitalDischargePhysicalSectionCode"),
 					new Object[] { hospitalDischargePhysicalSection }));
 			}
 
@@ -225,9 +226,10 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 			hospitalDischargePhysicalSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionHospitalDischargePhysicalSectionCodeP"),
 					new Object[] { hospitalDischargePhysicalSection }));
 			}
 
@@ -285,9 +287,10 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 			hospitalDischargePhysicalSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionHospitalDischargePhysicalSectionTitle"),
 					new Object[] { hospitalDischargePhysicalSection }));
 			}
 
@@ -345,9 +348,10 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 			hospitalDischargePhysicalSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionText"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionHospitalDischargePhysicalSectionText"),
 					new Object[] { hospitalDischargePhysicalSection }));
 			}
 

@@ -124,7 +124,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerTemplateId"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerTemplateId"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -183,7 +183,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerClassCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerClassCode"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -242,7 +242,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerMoodCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerMoodCode"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -301,7 +301,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerStatusCodeP"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -381,7 +381,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerStatusCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerStatusCode"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -439,9 +439,10 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 			familyHistoryOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryObservation"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerFamilyHistoryObservation"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -500,7 +501,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubject"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubject"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -566,7 +567,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_ADMINISTRATIVE_GENDER_CODE,
-						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode"),
 						new Object[] { eObject }));
 				}
 
@@ -631,7 +632,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_ADMINISTRATIVE_GENDER_CODE_P,
-						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -696,7 +697,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_BIRTH_TIME,
-						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime"),
 						new Object[] { eObject }));
 				}
 
@@ -761,7 +762,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_DECEASED_IND,
-						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd"),
 						new Object[] { eObject }));
 				}
 
@@ -826,7 +827,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_DECEASED_TIME,
-						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime"),
 						new Object[] { eObject }));
 				}
 
@@ -891,7 +892,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_ID,
-						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId"),
 						new Object[] { eObject }));
 				}
 
@@ -956,7 +957,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubjectRelatedSubjectClassCode"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1023,7 +1024,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CODE,
-						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubjectRelatedSubjectCode"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1088,7 +1089,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CODE_P,
-						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubjectRelatedSubjectCodeP"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1153,7 +1154,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT,
-						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubjectRelatedSubjectSubject"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubject"),
 						new Object[] { eObject }));
 				}
 
@@ -1215,9 +1216,10 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT,
-						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubjectRelatedSubject"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubject"),
 						new Object[] { eObject }));
 				}
 

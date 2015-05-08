@@ -119,7 +119,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationTemplateId"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -181,7 +181,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationClassCode"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -243,7 +243,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationMoodCode"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -301,9 +301,10 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			numberOfPressureUlcersObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationId"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationId"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -364,7 +365,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationCodeP"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -446,9 +447,10 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			numberOfPressureUlcersObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationCode"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationCode"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -511,7 +513,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationStatusCode"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -573,7 +575,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationStatusCodeP"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -635,7 +637,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEffectiveTime"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -693,9 +695,10 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			numberOfPressureUlcersObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationValue"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationValue"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -756,7 +759,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationAuthor"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationAuthor"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -818,7 +821,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationEntryRelationship"),
+					ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationship"),
 					new Object[] { numberOfPressureUlcersObservation }));
 			}
 
@@ -883,7 +886,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationEntryRelationshipObservationClassCode"),
+						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -949,7 +952,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode"),
+						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1017,7 +1020,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationEntryRelationshipObservationValue"),
+						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationValue"),
 						new Object[] { eObject }));
 				}
 
@@ -1083,7 +1086,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationEntryRelationshipObservationValueP"),
+						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationValueP"),
 						new Object[] { eObject }));
 				}
 
@@ -1149,7 +1152,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationEntryRelationshipTypeCode"),
+						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1215,7 +1218,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationEntryRelationshipObservation"),
+						ConsolPlugin.INSTANCE.getString("NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservation"),
 						new Object[] { eObject }));
 				}
 

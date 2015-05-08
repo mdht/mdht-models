@@ -114,7 +114,8 @@ public class ActReferenceOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ACT_REFERENCE__ACT_REFERENCE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ActReferenceTemplateId"), new Object[] { actReference }));
+					ConsolPlugin.INSTANCE.getString("ActReferenceActReferenceTemplateId"),
+					new Object[] { actReference }));
 			}
 
 			return false;
@@ -171,7 +172,7 @@ public class ActReferenceOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ACT_REFERENCE__ACT_REFERENCE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ActReferenceClassCode"), new Object[] { actReference }));
+					ConsolPlugin.INSTANCE.getString("ActReferenceActReferenceClassCode"), new Object[] { actReference }));
 			}
 
 			return false;
@@ -228,7 +229,7 @@ public class ActReferenceOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ACT_REFERENCE__ACT_REFERENCE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ActReferenceMoodCode"), new Object[] { actReference }));
+					ConsolPlugin.INSTANCE.getString("ActReferenceActReferenceMoodCode"), new Object[] { actReference }));
 			}
 
 			return false;
@@ -284,8 +285,8 @@ public class ActReferenceOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ACT_REFERENCE__ACT_REFERENCE_ID, ConsolPlugin.INSTANCE.getString("ActReferenceId"),
-					new Object[] { actReference }));
+					ConsolValidator.ACT_REFERENCE__ACT_REFERENCE_ID,
+					ConsolPlugin.INSTANCE.getString("ActReferenceActReferenceId"), new Object[] { actReference }));
 			}
 
 			return false;
@@ -342,7 +343,7 @@ public class ActReferenceOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ACT_REFERENCE__ACT_REFERENCE_CODE,
-					ConsolPlugin.INSTANCE.getString("ActReferenceCode"), new Object[] { actReference }));
+					ConsolPlugin.INSTANCE.getString("ActReferenceActReferenceCode"), new Object[] { actReference }));
 			}
 
 			return false;
@@ -402,7 +403,8 @@ public class ActReferenceOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ACT_REFERENCE__ACT_REFERENCE_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ActReferenceStatusCode"), new Object[] { actReference }));
+					ConsolPlugin.INSTANCE.getString("ActReferenceActReferenceStatusCode"),
+					new Object[] { actReference }));
 			}
 
 			return false;
@@ -460,7 +462,8 @@ public class ActReferenceOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ACT_REFERENCE__ACT_REFERENCE_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ActReferenceStatusCodeP"), new Object[] { actReference }));
+					ConsolPlugin.INSTANCE.getString("ActReferenceActReferenceStatusCodeP"),
+					new Object[] { actReference }));
 			}
 
 			return false;
@@ -524,7 +527,8 @@ public class ActReferenceOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ACT_REFERENCE__ACT_REFERENCE_CD_NULL_FLAVOR,
-						ConsolPlugin.INSTANCE.getString("ActReferenceCDNullFlavor"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("ActReferenceActReferenceCDNullFlavor"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -587,7 +591,8 @@ public class ActReferenceOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ACT_REFERENCE__ACT_REFERENCE_CD_NULL_FLAVOR_P,
-						ConsolPlugin.INSTANCE.getString("ActReferenceCDNullFlavorP"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("ActReferenceActReferenceCDNullFlavorP"),
+						new Object[] { eObject }));
 				}
 
 			}

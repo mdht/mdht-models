@@ -112,7 +112,7 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationActivity2"),
+					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSection2MedicationsAdministeredSectionMedicationActivity2"),
 					new Object[] { medicationsAdministeredSection2 }));
 			}
 
@@ -215,9 +215,10 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 			medicationsAdministeredSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSection2MedicationsAdministeredSectionTemplateId"),
 					new Object[] { medicationsAdministeredSection2 }));
 			}
 
@@ -275,9 +276,10 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 			medicationsAdministeredSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSection2MedicationsAdministeredSectionCodeP"),
 					new Object[] { medicationsAdministeredSection2 }));
 			}
 
@@ -359,9 +361,10 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 			medicationsAdministeredSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSection2MedicationsAdministeredSectionCode"),
 					new Object[] { medicationsAdministeredSection2 }));
 			}
 

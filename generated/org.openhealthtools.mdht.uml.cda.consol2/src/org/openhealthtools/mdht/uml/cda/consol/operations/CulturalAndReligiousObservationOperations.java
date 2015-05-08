@@ -108,9 +108,10 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationTemplateId"),
 					new Object[] { culturalAndReligiousObservation }));
 			}
 
@@ -169,9 +170,10 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationClassCode"),
 					new Object[] { culturalAndReligiousObservation }));
 			}
 
@@ -229,9 +231,10 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationMoodCode"),
 					new Object[] { culturalAndReligiousObservation }));
 			}
 
@@ -289,9 +292,10 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationId"),
+					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationId"),
 					new Object[] { culturalAndReligiousObservation }));
 			}
 
@@ -349,9 +353,10 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationCodeP"),
 					new Object[] { culturalAndReligiousObservation }));
 			}
 
@@ -433,9 +438,10 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCode"),
+					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationCode"),
 					new Object[] { culturalAndReligiousObservation }));
 			}
 
@@ -495,9 +501,10 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationStatusCode"),
 					new Object[] { culturalAndReligiousObservation }));
 			}
 
@@ -559,7 +566,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationStatusCodeP"),
 					new Object[] { culturalAndReligiousObservation }));
 			}
 
@@ -617,9 +624,10 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationValue"),
+					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationValue"),
 					new Object[] { culturalAndReligiousObservation }));
 			}
 

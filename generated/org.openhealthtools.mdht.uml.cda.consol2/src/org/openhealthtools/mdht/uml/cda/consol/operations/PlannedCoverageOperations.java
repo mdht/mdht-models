@@ -124,7 +124,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedCoverageTemplateId"), new Object[] { plannedCoverage }));
+					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageTemplateId"),
+					new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -182,7 +183,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedCoverageClassCode"), new Object[] { plannedCoverage }));
+					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageClassCode"),
+					new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -240,7 +242,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedCoverageMoodCode"), new Object[] { plannedCoverage }));
+					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageMoodCode"),
+					new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -297,7 +300,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedCoverageId"), new Object[] { plannedCoverage }));
+					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageId"),
+					new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -355,7 +359,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedCoverageCodeP"), new Object[] { plannedCoverage }));
+					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageCodeP"),
+					new Object[] { plannedCoverage }));
 			}
 
 			if (context != null) {
@@ -434,7 +439,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedCoverageCode"), new Object[] { plannedCoverage }));
+					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageCode"),
+					new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -493,7 +499,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedCoverageStatusCode"), new Object[] { plannedCoverage }));
+					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageStatusCode"),
+					new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -551,7 +558,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedCoverageStatusCodeP"), new Object[] { plannedCoverage }));
+					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageStatusCodeP"),
+					new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -609,7 +617,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("PlannedCoverageEntryRelationship"),
+					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationship"),
 					new Object[] { plannedCoverage }));
 			}
 
@@ -672,7 +680,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedCoverageEntryRelationshipActClassCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -736,7 +744,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedCoverageEntryRelationshipActMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActMoodCode"),
 						new Object[] { eObject }));
 				}
 
@@ -800,7 +808,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID,
-						ConsolPlugin.INSTANCE.getString("PlannedCoverageEntryRelationshipActId"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActId"),
 						new Object[] { eObject }));
 				}
 
@@ -864,7 +872,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PlannedCoverageEntryRelationshipActCodeP"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -952,7 +960,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedCoverageEntryRelationshipActCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1015,9 +1023,10 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedCoverageEntryRelationshipActStatusCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActStatusCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1079,9 +1088,10 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PlannedCoverageEntryRelationshipActStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActStatusCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1145,7 +1155,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedCoverageEntryRelationshipTypeCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1209,7 +1219,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT,
-						ConsolPlugin.INSTANCE.getString("PlannedCoverageEntryRelationshipAct"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipAct"),
 						new Object[] { eObject }));
 				}
 

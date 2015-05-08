@@ -119,7 +119,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"CoverageActivity2CoverageActivityRelationshipSequenceNumber",
+								"CoverageActivity2CoverageActivity2CoverageActivityRelationshipSequenceNumber",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coverageActivity2, context) }),
 					new Object[] { coverageActivity2 }));
 			}
@@ -179,7 +179,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CoverageActivityCodeP"), new Object[] { coverageActivity2 }));
+					ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityCodeP"),
+					new Object[] { coverageActivity2 }));
 			}
 
 			if (context != null) {
@@ -249,7 +250,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("CoverageActivity2EntryRelationship"),
+					ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationship"),
 					new Object[] { coverageActivity2 }));
 			}
 
@@ -312,7 +313,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE,
-						ConsolPlugin.INSTANCE.getString("CoverageActivity2EntryRelationshipINTValue"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationshipINTValue"),
 						new Object[] { eObject }));
 				}
 
@@ -376,7 +377,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("CoverageActivity2EntryRelationshipTypeCode"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationshipTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -438,9 +439,10 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER,
-						ConsolPlugin.INSTANCE.getString("CoverageActivity2EntryRelationshipSequenceNumber"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationshipSequenceNumber"),
 						new Object[] { eObject }));
 				}
 
@@ -502,9 +504,10 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2,
-						ConsolPlugin.INSTANCE.getString("CoverageActivity2EntryRelationshipPolicyActivity2"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationshipPolicyActivity2"),
 						new Object[] { eObject }));
 				}
 
@@ -608,7 +611,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CoverageActivityTemplateId"), new Object[] { coverageActivity2 }));
+					ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityTemplateId"),
+					new Object[] { coverageActivity2 }));
 			}
 
 			return false;
@@ -676,7 +680,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_CODE,
-					ConsolPlugin.INSTANCE.getString("CoverageActivityCode"), new Object[] { coverageActivity2 }));
+					ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityCode"),
+					new Object[] { coverageActivity2 }));
 			}
 
 			return false;

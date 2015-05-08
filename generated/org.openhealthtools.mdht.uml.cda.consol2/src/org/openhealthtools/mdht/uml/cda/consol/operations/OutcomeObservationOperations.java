@@ -127,7 +127,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationTemplateId"),
 					new Object[] { outcomeObservation }));
 			}
 
@@ -186,7 +186,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationClassCode"), new Object[] { outcomeObservation }));
+					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationClassCode"),
+					new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -244,7 +245,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationMoodCode"), new Object[] { outcomeObservation }));
+					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationMoodCode"),
+					new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -302,7 +304,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationId"), new Object[] { outcomeObservation }));
+					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationId"),
+					new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -360,7 +363,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ACT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationActReference"),
+					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationActReference"),
 					new Object[] { outcomeObservation }));
 			}
 
@@ -419,7 +422,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ACT_REFERENCE2,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationActReference2"),
+					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationActReference2"),
 					new Object[] { outcomeObservation }));
 			}
 
@@ -478,7 +481,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationAuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationAuthorParticipation"),
 					new Object[] { outcomeObservation }));
 			}
 
@@ -537,7 +540,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_GOAL_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationGoalObservation"),
+					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationGoalObservation"),
 					new Object[] { outcomeObservation }));
 			}
 
@@ -595,9 +598,10 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			outcomeObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationProgressTowardGoalObservation"),
+					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationProgressTowardGoalObservation"),
 					new Object[] { outcomeObservation }));
 			}
 
@@ -656,7 +660,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_INTERVENTION_ACT,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationInterventionAct"),
+					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationInterventionAct"),
 					new Object[] { outcomeObservation }));
 			}
 
@@ -716,7 +720,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_EXTERNAL_DOCUMENT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationExternalDocumentReference"),
+					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationExternalDocumentReference"),
 					new Object[] { outcomeObservation }));
 			}
 

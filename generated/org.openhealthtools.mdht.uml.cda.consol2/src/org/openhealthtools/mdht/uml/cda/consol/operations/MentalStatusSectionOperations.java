@@ -131,7 +131,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionTemplateId"),
 					new Object[] { mentalStatusSection }));
 			}
 
@@ -192,7 +192,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionCode"), new Object[] { mentalStatusSection }));
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionCode"),
+					new Object[] { mentalStatusSection }));
 			}
 
 			return false;
@@ -250,7 +251,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionCodeP"), new Object[] { mentalStatusSection }));
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionCodeP"),
+					new Object[] { mentalStatusSection }));
 			}
 
 			return false;
@@ -308,7 +310,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionTitle"), new Object[] { mentalStatusSection }));
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionTitle"),
+					new Object[] { mentalStatusSection }));
 			}
 
 			return false;
@@ -366,7 +369,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionText"), new Object[] { mentalStatusSection }));
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionText"),
+					new Object[] { mentalStatusSection }));
 			}
 
 			return false;
@@ -425,7 +429,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_CAREGIVER_CHARACTERISTICS,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionCaregiverCharacteristics"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionCaregiverCharacteristics"),
 					new Object[] { mentalStatusSection }));
 			}
 
@@ -483,9 +487,10 @@ public class MentalStatusSectionOperations extends SectionOperations {
 			mentalStatusSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionAssessmentScaleObservation"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionAssessmentScaleObservation"),
 					new Object[] { mentalStatusSection }));
 			}
 
@@ -543,9 +548,10 @@ public class MentalStatusSectionOperations extends SectionOperations {
 			mentalStatusSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_COGNITIVE_ABILITIES_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionCognitiveAbilitiesObservation"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionCognitiveAbilitiesObservation"),
 					new Object[] { mentalStatusSection }));
 			}
 
@@ -605,7 +611,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_MENTAL_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusObservation"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionMentalStatusObservation"),
 					new Object[] { mentalStatusSection }));
 			}
 
@@ -665,7 +671,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_COGNITIVE_STATUS_ORGANIZER2,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionCognitiveStatusOrganizer2"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionCognitiveStatusOrganizer2"),
 					new Object[] { mentalStatusSection }));
 			}
 
@@ -723,9 +729,10 @@ public class MentalStatusSectionOperations extends SectionOperations {
 			mentalStatusSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_COGNITIVE_STATUS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionCognitiveStatusObservation2"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionCognitiveStatusObservation2"),
 					new Object[] { mentalStatusSection }));
 			}
 
@@ -783,9 +790,10 @@ public class MentalStatusSectionOperations extends SectionOperations {
 			mentalStatusSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("MentalStatusSectionNonMedicinalSupplyActivity2"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionNonMedicinalSupplyActivity2"),
 					new Object[] { mentalStatusSection }));
 			}
 

@@ -110,7 +110,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_ORGANIZER2__MENTAL_STATUS_ORGANIZER2_CODE_CODE_SYSTEM,
-					ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2CodeCodeSystem"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2MentalStatusOrganizer2CodeCodeSystem"),
 					new Object[] { mentalStatusOrganizer2 }));
 			}
 
@@ -168,9 +168,10 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 			mentalStatusOrganizer2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_ORGANIZER2__MENTAL_STATUS_ORGANIZER2_HAS_CODE_OR_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2HasCodeOrEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2MentalStatusOrganizer2HasCodeOrEffectiveTime"),
 					new Object[] { mentalStatusOrganizer2 }));
 			}
 
@@ -229,7 +230,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_ORGANIZER2__MENTAL_STATUS_ORGANIZER2_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2EffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2MentalStatusOrganizer2EffectiveTime"),
 					new Object[] { mentalStatusOrganizer2 }));
 			}
 
@@ -290,7 +291,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_ORGANIZER2__COGNITIVE_STATUS_RESULT_ORGANIZER_MENTAL_STATUS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerMentalStatusObservation2"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2CognitiveStatusResultOrganizerMentalStatusObservation2"),
 					new Object[] { mentalStatusOrganizer2 }));
 			}
 
@@ -353,7 +354,8 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_ORGANIZER2__MENTAL_STATUS_ORGANIZER2_CD_CODE,
-						ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2CDCode"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2MentalStatusOrganizer2CDCode"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -457,7 +459,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2ResultOrganizerTemplateId"),
 					new Object[] { mentalStatusOrganizer2 }));
 			}
 
@@ -516,7 +518,8 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerCode"), new Object[] { mentalStatusOrganizer2 }));
+					ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2ResultOrganizerCode"),
+					new Object[] { mentalStatusOrganizer2 }));
 			}
 
 			return false;

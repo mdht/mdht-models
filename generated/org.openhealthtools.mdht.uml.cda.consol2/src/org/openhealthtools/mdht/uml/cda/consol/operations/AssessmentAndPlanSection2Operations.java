@@ -110,7 +110,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_PLANNED_ACT2,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionPlannedAct2"),
+					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionPlannedAct2"),
 					new Object[] { assessmentAndPlanSection2 }));
 			}
 
@@ -214,7 +214,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionTemplateId"),
 					new Object[] { assessmentAndPlanSection2 }));
 			}
 
@@ -273,7 +273,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionCodeP"),
 					new Object[] { assessmentAndPlanSection2 }));
 			}
 
@@ -354,7 +354,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionCode"),
+					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionCode"),
 					new Object[] { assessmentAndPlanSection2 }));
 			}
 

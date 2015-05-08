@@ -169,7 +169,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2CodeP"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2CodeP"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -250,7 +250,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_CODE,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2Code"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2Code"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -309,7 +309,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2Author"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2Author"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -368,9 +368,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOf"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOf"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -429,9 +430,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2AllergiesSection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2AllergiesSection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -490,9 +492,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2MedicationsSection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2MedicationsSection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -551,9 +554,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ProblemSection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2ProblemSection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -612,9 +616,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ProceduresSection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2ProceduresSection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -673,9 +678,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ResultsSection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2ResultsSection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -737,7 +743,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -799,7 +805,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2EncountersSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2EncountersSectionEntriesOptional2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -861,7 +867,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2FunctionalStatusSection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2FunctionalStatusSection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -920,9 +926,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ImmunizationsSection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2ImmunizationsSection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -984,7 +991,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2MedicalEquipmentSection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2MedicalEquipmentSection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -1042,9 +1049,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2PayersSection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2PayersSection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -1106,7 +1114,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2PlanOfTreatmentSection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2PlanOfTreatmentSection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -1165,9 +1173,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2SocialHistorySection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2SocialHistorySection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -1226,9 +1235,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2VitalSignsSection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2VitalSignsSection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -1287,9 +1297,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2MentalStatusSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2MentalStatusSection"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -1348,9 +1359,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2NutritionSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2NutritionSection"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -1409,9 +1421,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2FamilyHistorySection2"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2FamilyHistorySection2"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 
@@ -1476,7 +1489,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -1542,7 +1555,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -1608,7 +1621,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2AuthorAssignedAuthor"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthor"),
 						new Object[] { eObject }));
 				}
 
@@ -1674,7 +1687,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow"),
 						new Object[] { eObject }));
 				}
 
@@ -1740,7 +1753,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh"),
 						new Object[] { eObject }));
 				}
 
@@ -1806,7 +1819,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier"),
 						new Object[] { eObject }));
 				}
 
@@ -1872,7 +1885,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId"),
 						new Object[] { eObject }));
 				}
 
@@ -1938,7 +1951,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson"),
 						new Object[] { eObject }));
 				}
 
@@ -2004,7 +2017,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2070,7 +2083,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -2136,7 +2149,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOfServiceEventClassCode"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2202,7 +2215,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime"),
 						new Object[] { eObject }));
 				}
 
@@ -2268,7 +2281,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOfServiceEventPerformer"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformer"),
 						new Object[] { eObject }));
 				}
 
@@ -2334,7 +2347,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2DocumentationOfServiceEvent"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEvent"),
 						new Object[] { eObject }));
 				}
 
@@ -3113,7 +3126,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2GeneralHeaderConstraintsTemplateId"),
 					new Object[] { continuityOfCareDocument2 }));
 			}
 

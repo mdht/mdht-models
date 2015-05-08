@@ -107,7 +107,7 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_DIAGNOSIS2__ENCOUNTER_DIAGNOSIS_PROBLEM_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisProblemObservation2"),
+					ConsolPlugin.INSTANCE.getString("EncounterDiagnosis2EncounterDiagnosisProblemObservation2"),
 					new Object[] { encounterDiagnosis2 }));
 			}
 
@@ -210,7 +210,7 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_DIAGNOSIS2__ENCOUNTER_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisTemplateId"),
+					ConsolPlugin.INSTANCE.getString("EncounterDiagnosis2EncounterDiagnosisTemplateId"),
 					new Object[] { encounterDiagnosis2 }));
 			}
 
@@ -269,7 +269,8 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_DIAGNOSIS2__ENCOUNTER_DIAGNOSIS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisCodeP"), new Object[] { encounterDiagnosis2 }));
+					ConsolPlugin.INSTANCE.getString("EncounterDiagnosis2EncounterDiagnosisCodeP"),
+					new Object[] { encounterDiagnosis2 }));
 			}
 
 			if (context != null) {
@@ -349,7 +350,8 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_DIAGNOSIS2__ENCOUNTER_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisCode"), new Object[] { encounterDiagnosis2 }));
+					ConsolPlugin.INSTANCE.getString("EncounterDiagnosis2EncounterDiagnosisCode"),
+					new Object[] { encounterDiagnosis2 }));
 			}
 
 			return false;

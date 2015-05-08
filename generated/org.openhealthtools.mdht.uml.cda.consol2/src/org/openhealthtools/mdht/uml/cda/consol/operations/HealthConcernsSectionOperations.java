@@ -116,7 +116,7 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionTemplateId"),
 					new Object[] { healthConcernsSection }));
 			}
 
@@ -177,7 +177,7 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionCode"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionCode"),
 					new Object[] { healthConcernsSection }));
 			}
 
@@ -236,7 +236,7 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionCodeP"),
 					new Object[] { healthConcernsSection }));
 			}
 
@@ -295,7 +295,7 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionTitle"),
 					new Object[] { healthConcernsSection }));
 			}
 
@@ -354,7 +354,7 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionText"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionText"),
 					new Object[] { healthConcernsSection }));
 			}
 
@@ -413,7 +413,7 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_HEALTH_CONCERN_ACT,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernAct"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionHealthConcernAct"),
 					new Object[] { healthConcernsSection }));
 			}
 
@@ -471,9 +471,10 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 			healthConcernsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_HEALTH_STATUS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthStatusObservation2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionHealthStatusObservation2"),
 					new Object[] { healthConcernsSection }));
 			}
 

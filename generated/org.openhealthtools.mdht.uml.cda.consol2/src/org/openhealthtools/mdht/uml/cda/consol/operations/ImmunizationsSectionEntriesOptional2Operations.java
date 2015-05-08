@@ -112,7 +112,7 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalImmunizationActivity2"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalImmunizationActivity2"),
 					new Object[] { immunizationsSectionEntriesOptional2 }));
 			}
 
@@ -219,7 +219,7 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalTemplateId"),
 					new Object[] { immunizationsSectionEntriesOptional2 }));
 			}
 
@@ -281,7 +281,7 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalCodeP"),
 					new Object[] { immunizationsSectionEntriesOptional2 }));
 			}
 
@@ -366,7 +366,7 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalCode"),
 					new Object[] { immunizationsSectionEntriesOptional2 }));
 			}
 

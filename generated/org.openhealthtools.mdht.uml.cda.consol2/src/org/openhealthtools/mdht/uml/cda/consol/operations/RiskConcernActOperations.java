@@ -219,7 +219,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActTemplateId"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActTemplateId"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -277,7 +278,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActClassCode"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActClassCode"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -335,7 +337,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActMoodCode"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMoodCode"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -392,7 +395,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActId"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActId"), new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -450,7 +453,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActCodeP"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCodeP"),
+					new Object[] { riskConcernAct }));
 			}
 
 			if (context != null) {
@@ -529,7 +533,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActCode"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCode"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -589,7 +594,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActStatusCode"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActStatusCode"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -647,7 +653,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActStatusCodeP"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActStatusCodeP"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -705,7 +712,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActEffectiveTime"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEffectiveTime"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -763,7 +771,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActAuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActAuthorParticipation"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -822,7 +830,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PROBLEM_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActProblemObservation2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActProblemObservation2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -881,7 +889,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ALLERGY_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActAllergyObservation2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActAllergyObservation2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -940,7 +948,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActEntryReferenceRelatesTo"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEntryReferenceRelatesTo"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1000,7 +1008,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActEntryReferenceHasComponent"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEntryReferenceHasComponent"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1060,7 +1068,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActAssessmentScaleObservation"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActAssessmentScaleObservation"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1119,7 +1127,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActMentalStatusObservation2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMentalStatusObservation2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1178,7 +1186,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActSelfCareActivities"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSelfCareActivities"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1238,7 +1246,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActMentalStatusObservation2B"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMentalStatusObservation2B"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1298,7 +1306,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActSmokingStatusMeaningfulUse2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSmokingStatusMeaningfulUse2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1357,7 +1365,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActEncounterDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEncounterDiagnosis2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1416,7 +1424,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActFamilyHistoryOrganizer2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActFamilyHistoryOrganizer2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1476,7 +1484,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActFunctionalStatusObservation2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActFunctionalStatusObservation2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1536,7 +1544,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActHospitalAdmissionDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActHospitalAdmissionDiagnosis2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1596,7 +1604,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActMentalStatusObservation2C"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMentalStatusObservation2C"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1655,7 +1663,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_NUTRITION_ASSESSMENT,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActNutritionAssessment"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActNutritionAssessment"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1714,7 +1722,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActNutritionAssessmentB"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActNutritionAssessmentB"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1773,7 +1781,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActPostprocedureDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPostprocedureDiagnosis2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1832,7 +1840,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PREGNANCY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActPregnancyObservation"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPregnancyObservation"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1891,7 +1899,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActPreoperativeDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPreoperativeDiagnosis2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -1950,7 +1958,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REACTION_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActReactionObservation2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActReactionObservation2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2009,7 +2017,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_RESULT_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActResultObservation2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActResultObservation2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2068,7 +2076,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SENSORY_STATUS,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActSensoryStatus"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSensoryStatus"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -2126,7 +2135,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActSocialHistoryObservation2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSocialHistoryObservation2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2184,9 +2193,10 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			riskConcernAct)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActSubstanceOrDeviceAllergyObservation2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSubstanceOrDeviceAllergyObservation2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2245,7 +2255,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_TOBACCO_USE2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActTobaccoUse2"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActTobaccoUse2"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -2303,7 +2314,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActVitalSignObservation2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActVitalSignObservation2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2362,7 +2373,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_WOUND_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActWoundObservation"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActWoundObservation"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -2421,7 +2433,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActProblemObservation2HasSupport"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActProblemObservation2HasSupport"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2480,7 +2492,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActCaregiverCharacteristics"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCaregiverCharacteristics"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2540,7 +2552,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActCulturalAndReligiousObservation"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCulturalAndReligiousObservation"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2600,7 +2612,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActCharacteristicsOfHomeEnvironment"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCharacteristicsOfHomeEnvironment"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2660,7 +2672,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActNutritionalStatusObservation"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActNutritionalStatusObservation"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2719,7 +2731,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_RESULT_ORGANIZER2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActResultOrganizer2"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActResultOrganizer2"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -2777,7 +2790,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActPriorityPreferencePatient"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPriorityPreferencePatient"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2837,7 +2850,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActPriorityPreferenceProvider"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPriorityPreferenceProvider"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2896,7 +2909,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActProblemConcernAct2"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActProblemConcernAct2"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -2956,7 +2969,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActEntryReferenceHealthConcern"),
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEntryReferenceHealthConcern"),
 					new Object[] { riskConcernAct }));
 			}
 
@@ -3015,7 +3028,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("RiskConcernActReference"), new Object[] { riskConcernAct }));
+					ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActReference"),
+					new Object[] { riskConcernAct }));
 			}
 
 			return false;
@@ -3077,7 +3091,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REFERENCE_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("RiskConcernActReferenceTypeCode"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActReferenceTypeCode"),
+						new Object[] { eObject }));
 				}
 
 			}

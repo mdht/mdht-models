@@ -173,7 +173,8 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_CODE_P,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2CodeP"), new Object[] { operativeNote2 }));
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2CodeP"),
+					new Object[] { operativeNote2 }));
 			}
 
 			if (context != null) {
@@ -252,7 +253,8 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_CODE,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2Code"), new Object[] { operativeNote2 }));
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2Code"),
+					new Object[] { operativeNote2 }));
 			}
 
 			return false;
@@ -310,7 +312,8 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOf"), new Object[] { operativeNote2 }));
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOf"),
+					new Object[] { operativeNote2 }));
 			}
 
 			return false;
@@ -368,7 +371,8 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2Authorization"), new Object[] { operativeNote2 }));
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2Authorization"),
+					new Object[] { operativeNote2 }));
 			}
 
 			return false;
@@ -426,7 +430,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_ANESTHESIA_SECTION2,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2AnesthesiaSection2"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AnesthesiaSection2"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -485,7 +489,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_COMPLICATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2ComplicationsSection2"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ComplicationsSection2"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -545,7 +549,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2PreoperativeDiagnosisSection2"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PreoperativeDiagnosisSection2"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -605,7 +609,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2ProcedureEstimatedBloodLossSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureEstimatedBloodLossSection"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -664,7 +668,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2ProcedureFindingsSection2"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureFindingsSection2"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -724,7 +728,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2ProcedureSpecimensTakenSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureSpecimensTakenSection"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -784,7 +788,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2ProcedureDescriptionSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureDescriptionSection"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -844,7 +848,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2PostoperativeDiagnosisSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PostoperativeDiagnosisSection"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -903,7 +907,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2ProcedureImplantsSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureImplantsSection"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -962,7 +966,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNoteFluidSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2OperativeNoteFluidSection"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -1020,9 +1024,10 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			operativeNote2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNoteSurgicalProcedureSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2OperativeNoteSurgicalProcedureSection"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -1081,7 +1086,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2PlanOfTreatmentSection2"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PlanOfTreatmentSection2"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -1140,7 +1145,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2PlannedProcedureSection2"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PlannedProcedureSection2"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -1200,7 +1205,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2ProcedureDispositionSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureDispositionSection"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -1260,7 +1265,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2ProcedureIndicationsSection2"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureIndicationsSection2"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -1319,7 +1324,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNote2SurgicalDrainsSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2SurgicalDrainsSection"),
 					new Object[] { operativeNote2 }));
 			}
 
@@ -1383,7 +1388,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"),
 						new Object[] { eObject }));
 				}
 
@@ -1450,7 +1455,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1515,7 +1520,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1580,7 +1585,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerTypeCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1645,7 +1650,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -1712,7 +1717,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1777,7 +1782,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1842,7 +1847,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1907,7 +1912,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -1972,7 +1977,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"),
 						new Object[] { eObject }));
 				}
 
@@ -2037,7 +2042,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth"),
 						new Object[] { eObject }));
 				}
 
@@ -2102,7 +2107,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventProcedureCodes"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventProcedureCodes"),
 						new Object[] { eObject }));
 				}
 
@@ -2164,9 +2169,10 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTime"),
 						new Object[] { eObject }));
 				}
 
@@ -2230,7 +2236,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2292,9 +2298,10 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformer"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformer"),
 						new Object[] { eObject }));
 				}
 
@@ -2359,7 +2366,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEventPerformerAssistants"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistants"),
 						new Object[] { eObject }));
 				}
 
@@ -2423,7 +2430,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2DocumentationOfServiceEvent"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEvent"),
 						new Object[] { eObject }));
 				}
 
@@ -2487,7 +2494,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2AuthorizationConsentClassCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationConsentClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2551,7 +2558,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2AuthorizationConsentMoodCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationConsentMoodCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2615,7 +2622,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2AuthorizationConsentStatusCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationConsentStatusCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2679,7 +2686,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2AuthorizationTypeCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2743,7 +2750,8 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT,
-						ConsolPlugin.INSTANCE.getString("OperativeNote2AuthorizationConsent"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationConsent"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -3475,7 +3483,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("OperativeNote2GeneralHeaderConstraintsTemplateId"),
 					new Object[] { operativeNote2 }));
 			}
 

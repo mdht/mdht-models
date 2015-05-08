@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedInterventionAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedInterventionActTemplateId PlannedInterventionActClassCode PlannedInterventionActMoodCode PlannedInterventionActId PlannedInterventionActCode PlannedInterventionActCodeP PlannedInterventionActStatusCode PlannedInterventionActStatusCodeP PlannedInterventionActEntryReferenceGoalObs PlannedInterventionActReferenceTypeCode' templateId.root='2.16.840.1.113883.10.20.22.4.146' classCode='ACT' code.code='362956003' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='procedure / intervention (navigational concept)' constraints.validation.dependOn.PlannedInterventionActCode='PlannedInterventionActCodeP' statusCode.code='active' constraints.validation.warning='PlannedInterventionActEffectiveTime PlannedInterventionActAuthorParticipation' constraints.validation.info='PlannedInterventionActAdvanceDirectiveObservation2 PlannedInterventionActImmunizationActivity2 PlannedInterventionActMedicationActivity2 PlannedInterventionActProcedureActivityAct2 PlannedInterventionActInterventionAct PlannedInterventionActProcedureActivityObservation2 PlannedInterventionActProcedureActivityProcedure2 PlannedInterventionActEncounterActivity2 PlannedInterventionActInstruction2 PlannedInterventionActNonMedicinalSupplyActivity2 PlannedInterventionActPlannedAct2 PlannedInterventionActPlannedEncounter2 PlannedInterventionActPlannedObservation2 PlannedInterventionActPlannedProcedure2 PlannedInterventionActPlannedMedicationActivity2 PlannedInterventionActPlannedSupply2 PlannedInterventionActNutritionRecommendations PlannedInterventionActEntryReferenceDocInstance PlannedInterventionActHandoffCommunicationParticipants PlannedInterventionActPlannedImmunizationActivity PlannedInterventionActReference' constraints.validation.query='PlannedInterventionActReferenceTypeCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedInterventionActTemplateId PlannedInterventionActClassCode PlannedInterventionActMoodCode PlannedInterventionActMoodCodeP PlannedInterventionActId PlannedInterventionActCode PlannedInterventionActCodeP PlannedInterventionActStatusCode PlannedInterventionActStatusCodeP PlannedInterventionActEntryReferenceGoalObs PlannedInterventionActReferenceTypeCode' templateId.root='2.16.840.1.113883.10.20.22.4.146' classCode='ACT' constraints.validation.dependOn.PlannedInterventionActMoodCode='PlannedInterventionActMoodCodeP' code.code='362956003' code.codeSystemName='' code.displayName='procedure / intervention (navigational concept)' constraints.validation.dependOn.PlannedInterventionActCode='PlannedInterventionActCodeP' statusCode.code='active' constraints.validation.warning='PlannedInterventionActEffectiveTime PlannedInterventionActAuthorParticipation' constraints.validation.info='PlannedInterventionActAdvanceDirectiveObservation2 PlannedInterventionActImmunizationActivity2 PlannedInterventionActMedicationActivity2 PlannedInterventionActProcedureActivityAct2 PlannedInterventionActInterventionAct PlannedInterventionActProcedureActivityObservation2 PlannedInterventionActProcedureActivityProcedure2 PlannedInterventionActEncounterActivity2 PlannedInterventionActInstruction2 PlannedInterventionActNonMedicinalSupplyActivity2 PlannedInterventionActPlannedAct2 PlannedInterventionActPlannedEncounter2 PlannedInterventionActPlannedObservation2 PlannedInterventionActPlannedProcedure2 PlannedInterventionActPlannedMedicationActivity2 PlannedInterventionActPlannedSupply2 PlannedInterventionActNutritionRecommendations PlannedInterventionActEntryReferenceDocInstance PlannedInterventionActHandoffCommunicationParticipants PlannedInterventionActPlannedImmunizationActivity PlannedInterventionActReference' constraints.validation.query='PlannedInterventionActReferenceTypeCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedInterventionActReference typeCode='REFR' constraints.validation.error='PlannedInterventionActReferenceTypeCode'"
  * @generated
  */
@@ -50,6 +50,18 @@ public interface PlannedInterventionAct extends Act {
 	 * @generated
 	 */
 	boolean validatePlannedInterventionActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
+	 * @generated
+	 */
+	boolean validatePlannedInterventionActMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,7 +106,7 @@ public interface PlannedInterventionAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'362956003\' and value.codeSystem = \'2.16.840.1.113883.6.96\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'362956003\')'"
 	 * @generated
 	 */
 	boolean validatePlannedInterventionActCode(DiagnosticChain diagnostics, Map<Object, Object> context);

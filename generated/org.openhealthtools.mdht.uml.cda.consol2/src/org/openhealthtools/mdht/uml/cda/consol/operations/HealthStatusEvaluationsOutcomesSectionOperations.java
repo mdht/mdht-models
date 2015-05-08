@@ -116,7 +116,7 @@ public class HealthStatusEvaluationsOutcomesSectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionHealthStatusEvaluationsOutcomesSectionTemplateId"),
 					new Object[] { healthStatusEvaluationsOutcomesSection }));
 			}
 
@@ -180,7 +180,7 @@ public class HealthStatusEvaluationsOutcomesSectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionCode"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionHealthStatusEvaluationsOutcomesSectionCode"),
 					new Object[] { healthStatusEvaluationsOutcomesSection }));
 			}
 
@@ -242,7 +242,7 @@ public class HealthStatusEvaluationsOutcomesSectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionHealthStatusEvaluationsOutcomesSectionCodeP"),
 					new Object[] { healthStatusEvaluationsOutcomesSection }));
 			}
 
@@ -304,7 +304,7 @@ public class HealthStatusEvaluationsOutcomesSectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionHealthStatusEvaluationsOutcomesSectionTitle"),
 					new Object[] { healthStatusEvaluationsOutcomesSection }));
 			}
 
@@ -366,7 +366,7 @@ public class HealthStatusEvaluationsOutcomesSectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionText"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionHealthStatusEvaluationsOutcomesSectionText"),
 					new Object[] { healthStatusEvaluationsOutcomesSection }));
 			}
 
@@ -428,7 +428,7 @@ public class HealthStatusEvaluationsOutcomesSectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_OUTCOME_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionOutcomeObservation"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsOutcomesSectionHealthStatusEvaluationsOutcomesSectionOutcomeObservation"),
 					new Object[] { healthStatusEvaluationsOutcomesSection }));
 			}
 

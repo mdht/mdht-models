@@ -123,7 +123,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2WoundObservation"),
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2WoundObservation"),
 					new Object[] { physicalExamSection2 }));
 			}
 
@@ -182,7 +182,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2Component"),
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2Component"),
 					new Object[] { physicalExamSection2 }));
 			}
 
@@ -245,9 +245,10 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2ComponentSectionCode"),
+						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionCode"),
 						new Object[] { eObject }));
 				}
 
@@ -309,9 +310,10 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2ComponentSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -373,9 +375,10 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2ComponentSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionTitle"),
 						new Object[] { eObject }));
 				}
 
@@ -437,9 +440,10 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2ComponentSectionText"),
+						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionText"),
 						new Object[] { eObject }));
 				}
 
@@ -503,7 +507,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION,
-						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2ComponentSection"),
+						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSection"),
 						new Object[] { eObject }));
 				}
 
@@ -742,7 +746,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionTemplateId"),
 					new Object[] { physicalExamSection2 }));
 			}
 
@@ -801,7 +805,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionCodeP"), new Object[] { physicalExamSection2 }));
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionCodeP"),
+					new Object[] { physicalExamSection2 }));
 			}
 
 			if (context != null) {
@@ -881,7 +886,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionCode"), new Object[] { physicalExamSection2 }));
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionCode"),
+					new Object[] { physicalExamSection2 }));
 			}
 
 			return false;

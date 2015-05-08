@@ -113,7 +113,8 @@ public class NutritionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionTemplateId"), new Object[] { nutritionSection }));
+					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionTemplateId"),
+					new Object[] { nutritionSection }));
 			}
 
 			return false;
@@ -173,7 +174,8 @@ public class NutritionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionCode"), new Object[] { nutritionSection }));
+					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionCode"),
+					new Object[] { nutritionSection }));
 			}
 
 			return false;
@@ -231,7 +233,8 @@ public class NutritionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionCodeP"), new Object[] { nutritionSection }));
+					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionCodeP"),
+					new Object[] { nutritionSection }));
 			}
 
 			return false;
@@ -289,7 +292,8 @@ public class NutritionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionTitle"), new Object[] { nutritionSection }));
+					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionTitle"),
+					new Object[] { nutritionSection }));
 			}
 
 			return false;
@@ -347,7 +351,8 @@ public class NutritionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionText"), new Object[] { nutritionSection }));
+					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionText"),
+					new Object[] { nutritionSection }));
 			}
 
 			return false;
@@ -406,7 +411,7 @@ public class NutritionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionalStatusObservation"),
+					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionNutritionalStatusObservation"),
 					new Object[] { nutritionSection }));
 			}
 

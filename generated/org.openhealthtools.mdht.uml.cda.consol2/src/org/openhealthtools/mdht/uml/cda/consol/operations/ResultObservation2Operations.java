@@ -123,7 +123,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"ResultObservation2AuthorMultiplicity",
+								"ResultObservation2ResultObservation2AuthorMultiplicity",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation2, context) }),
 					new Object[] { resultObservation2 }));
 			}
@@ -187,7 +187,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"ResultObservation2CodeValue",
+								"ResultObservation2ResultObservation2CodeValue",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation2, context) }),
 					new Object[] { resultObservation2 }));
 			}
@@ -251,7 +251,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"ResultObservation2TextReference",
+								"ResultObservation2ResultObservation2TextReference",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation2, context) }),
 					new Object[] { resultObservation2 }));
 			}
@@ -315,7 +315,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"ResultObservation2ReferenceValue",
+								"ResultObservation2ResultObservation2ReferenceValue",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation2, context) }),
 					new Object[] { resultObservation2 }));
 			}
@@ -379,7 +379,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"ResultObservation2TextReferenceValue",
+								"ResultObservation2ResultObservation2TextReferenceValue",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation2, context) }),
 					new Object[] { resultObservation2 }));
 			}
@@ -444,7 +444,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"ResultObservation2NoObservationRangeCode",
+								"ResultObservation2ResultObservation2NoObservationRangeCode",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation2, context) }),
 					new Object[] { resultObservation2 }));
 			}
@@ -504,7 +504,8 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ResultObservationCodeP"), new Object[] { resultObservation2 }));
+					ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservationCodeP"),
+					new Object[] { resultObservation2 }));
 			}
 
 			if (context != null) {
@@ -574,7 +575,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION_INTERPRETATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ResultObservationInterpretationCodeP"),
+					ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservationInterpretationCodeP"),
 					new Object[] { resultObservation2 }));
 			}
 
@@ -646,7 +647,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("ResultObservation2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservation2AuthorParticipation"),
 					new Object[] { resultObservation2 }));
 			}
 
@@ -705,7 +706,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION2_REFERENCE_RANGE,
-					ConsolPlugin.INSTANCE.getString("ResultObservation2ReferenceRange"),
+					ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservation2ReferenceRange"),
 					new Object[] { resultObservation2 }));
 			}
 
@@ -769,7 +770,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_VALUE,
-						ConsolPlugin.INSTANCE.getString("ResultObservation2ReferenceRangeObservationRangeValue"),
+						ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservation2ReferenceRangeObservationRangeValue"),
 						new Object[] { eObject }));
 				}
 
@@ -834,7 +835,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_CODE,
-						ConsolPlugin.INSTANCE.getString("ResultObservation2ReferenceRangeObservationRangeCode"),
+						ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservation2ReferenceRangeObservationRangeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -896,9 +897,10 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE,
-						ConsolPlugin.INSTANCE.getString("ResultObservation2ReferenceRangeObservationRange"),
+						ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservation2ReferenceRangeObservationRange"),
 						new Object[] { eObject }));
 				}
 
@@ -958,7 +960,8 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ResultObservationTemplateId"), new Object[] { resultObservation2 }));
+					ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservationTemplateId"),
+					new Object[] { resultObservation2 }));
 			}
 
 			return false;
@@ -1016,7 +1019,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ResultObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservationEffectiveTime"),
 					new Object[] { resultObservation2 }));
 			}
 
@@ -1085,7 +1088,8 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationCode"), new Object[] { resultObservation2 }));
+					ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservationCode"),
+					new Object[] { resultObservation2 }));
 			}
 
 			return false;
@@ -1143,7 +1147,8 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationValue"), new Object[] { resultObservation2 }));
+					ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservationValue"),
+					new Object[] { resultObservation2 }));
 			}
 
 			return false;
@@ -1211,7 +1216,7 @@ public class ResultObservation2Operations extends ResultObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION2__RESULT_OBSERVATION_INTERPRETATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationInterpretationCode"),
+					ConsolPlugin.INSTANCE.getString("ResultObservation2ResultObservationInterpretationCode"),
 					new Object[] { resultObservation2 }));
 			}
 

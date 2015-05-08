@@ -123,7 +123,7 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"AllergyConcernAct2EffectiveTimeLow",
+								"AllergyConcernAct2AllergyConcernAct2EffectiveTimeLow",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(allergyConcernAct2, context) }),
 					new Object[] { allergyConcernAct2 }));
 			}
@@ -187,7 +187,7 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"AllergyConcernAct2EffectiveTimeHigh",
+								"AllergyConcernAct2AllergyConcernAct2EffectiveTimeHigh",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(allergyConcernAct2, context) }),
 					new Object[] { allergyConcernAct2 }));
 			}
@@ -247,7 +247,7 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyConcernAct2AuthorParticipation"),
 					new Object[] { allergyConcernAct2 }));
 			}
 
@@ -306,7 +306,7 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyObservation2"),
+					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActAllergyObservation2"),
 					new Object[] { allergyConcernAct2 }));
 			}
 
@@ -369,7 +369,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_CONCERN_ACT2_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2IVLTSLow"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyConcernAct2IVLTSLow"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -432,7 +433,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_CONCERN_ACT2_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2IVLTSHigh"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyConcernAct2IVLTSHigh"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -493,9 +495,10 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_CONCERN_ACT2_CD_CODE_AND_CODE_SYSTEM_VALUES,
-						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2CDCodeAndCodeSystemValues"),
+						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyConcernAct2CDCodeAndCodeSystemValues"),
 						new Object[] { eObject }));
 				}
 
@@ -559,7 +562,7 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_CONCERN_ACT2_ALLERGY_PROBLEM_ACT_CD_CODE,
-						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActCDCode"),
+						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyConcernAct2AllergyProblemActCDCode"),
 						new Object[] { eObject }));
 				}
 
@@ -621,9 +624,10 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_CONCERN_ACT2_ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM,
-						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActCDCodeSystem"),
+						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyConcernAct2AllergyProblemActCDCodeSystem"),
 						new Object[] { eObject }));
 				}
 
@@ -727,7 +731,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActTemplateId"), new Object[] { allergyConcernAct2 }));
+					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActTemplateId"),
+					new Object[] { allergyConcernAct2 }));
 			}
 
 			return false;
@@ -785,7 +790,7 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActEffectiveTime"),
 					new Object[] { allergyConcernAct2 }));
 			}
 
@@ -844,7 +849,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActCode"), new Object[] { allergyConcernAct2 }));
+					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActCode"),
+					new Object[] { allergyConcernAct2 }));
 			}
 
 			return false;

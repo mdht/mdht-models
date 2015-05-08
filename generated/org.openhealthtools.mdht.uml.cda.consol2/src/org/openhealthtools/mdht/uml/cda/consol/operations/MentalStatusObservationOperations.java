@@ -120,7 +120,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationTemplateId"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -179,7 +179,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationClassCode"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -238,7 +238,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationMoodCode"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -297,7 +297,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationId"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationId"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -356,7 +356,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationCodeP"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -437,7 +437,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationCode"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationCode"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -497,7 +497,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationStatusCode"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -556,7 +556,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationStatusCodeP"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -615,7 +615,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationEffectiveTime"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -676,7 +676,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationValue"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationValue"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -735,7 +735,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationValueP"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationValueP"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -793,9 +793,10 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 			mentalStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationAssessmentScaleObservation"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationAssessmentScaleObservation"),
 					new Object[] { mentalStatusObservation }));
 			}
 
@@ -853,9 +854,10 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 			mentalStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("MentalStatusObservationAuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationAuthorParticipation"),
 					new Object[] { mentalStatusObservation }));
 			}
 

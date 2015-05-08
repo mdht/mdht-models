@@ -109,9 +109,10 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 			procedureFindingsSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_FINDINGS_SECTION2__PROCEDURE_FINDINGS_SECTION_PROBLEM_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionProblemObservation2"),
+					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSection2ProcedureFindingsSectionProblemObservation2"),
 					new Object[] { procedureFindingsSection2 }));
 			}
 
@@ -216,7 +217,7 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_FINDINGS_SECTION2__PROCEDURE_FINDINGS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSection2ProcedureFindingsSectionTemplateId"),
 					new Object[] { procedureFindingsSection2 }));
 			}
 
@@ -275,7 +276,7 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_FINDINGS_SECTION2__PROCEDURE_FINDINGS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSection2ProcedureFindingsSectionCodeP"),
 					new Object[] { procedureFindingsSection2 }));
 			}
 
@@ -356,7 +357,7 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_FINDINGS_SECTION2__PROCEDURE_FINDINGS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSection2ProcedureFindingsSectionCode"),
 					new Object[] { procedureFindingsSection2 }));
 			}
 

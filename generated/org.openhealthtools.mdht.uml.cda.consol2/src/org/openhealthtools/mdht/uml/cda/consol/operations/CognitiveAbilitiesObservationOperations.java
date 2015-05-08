@@ -120,9 +120,10 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			cognitiveAbilitiesObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationTemplateId"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -180,9 +181,10 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			cognitiveAbilitiesObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationClassCode"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -240,9 +242,10 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			cognitiveAbilitiesObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationMoodCode"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -302,7 +305,7 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationId"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationId"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -362,7 +365,7 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationCodeP"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -444,7 +447,7 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationCode"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -504,7 +507,7 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationText"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationText"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -563,9 +566,10 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			cognitiveAbilitiesObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationStatusCode"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -624,9 +628,10 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			cognitiveAbilitiesObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationStatusCodeP"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -685,9 +690,10 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			cognitiveAbilitiesObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationEffectiveTime"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -749,7 +755,7 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationValue"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationValue"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -807,9 +813,10 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			cognitiveAbilitiesObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationValueP"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationValueP"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -871,7 +878,7 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationAssessmentScaleObservation"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationAssessmentScaleObservation"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 
@@ -933,7 +940,7 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationAuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationCognitiveAbilitiesObservationAuthorParticipation"),
 					new Object[] { cognitiveAbilitiesObservation }));
 			}
 

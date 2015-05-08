@@ -99,7 +99,7 @@ public class CourseOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionTemplateId"),
 					new Object[] { courseOfCareSection }));
 			}
 
@@ -160,7 +160,8 @@ public class CourseOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCode"), new Object[] { courseOfCareSection }));
+					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionCode"),
+					new Object[] { courseOfCareSection }));
 			}
 
 			return false;
@@ -218,7 +219,8 @@ public class CourseOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCodeP"), new Object[] { courseOfCareSection }));
+					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionCodeP"),
+					new Object[] { courseOfCareSection }));
 			}
 
 			return false;
@@ -276,7 +278,8 @@ public class CourseOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionTitle"), new Object[] { courseOfCareSection }));
+					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionTitle"),
+					new Object[] { courseOfCareSection }));
 			}
 
 			return false;
@@ -334,7 +337,8 @@ public class CourseOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionText"), new Object[] { courseOfCareSection }));
+					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionText"),
+					new Object[] { courseOfCareSection }));
 			}
 
 			return false;

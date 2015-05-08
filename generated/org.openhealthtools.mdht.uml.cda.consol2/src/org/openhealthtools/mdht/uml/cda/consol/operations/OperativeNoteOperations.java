@@ -169,7 +169,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCodeP"), new Object[] { operativeNote }));
+					ConsolPlugin.INSTANCE.getString("OperativeNoteGeneralHeaderConstraintsCodeP"),
+					new Object[] { operativeNote }));
 			}
 
 			if (context != null) {
@@ -239,7 +240,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOf"), new Object[] { operativeNote }));
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOf"),
+					new Object[] { operativeNote }));
 			}
 
 			return false;
@@ -297,7 +299,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_ANESTHESIA_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteAnesthesiaSection"), new Object[] { operativeNote }));
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteAnesthesiaSection"),
+					new Object[] { operativeNote }));
 			}
 
 			return false;
@@ -355,7 +358,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_COMPLICATIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteComplicationsSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteComplicationsSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -415,7 +418,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNotePostoperativeDiagnosisSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNotePostoperativeDiagnosisSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -474,7 +477,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNotePreoperativeDiagnosisSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNotePreoperativeDiagnosisSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -534,7 +537,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureEstimatedBloodLossSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureEstimatedBloodLossSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -593,7 +596,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureFindingsSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureFindingsSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -653,7 +656,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureSpecimensTakenSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureSpecimensTakenSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -712,7 +715,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureDescriptionSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureDescriptionSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -771,7 +774,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureImplantsSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureImplantsSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -830,7 +833,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_FLUID_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSection"), new Object[] { operativeNote }));
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteFluidSection"),
+					new Object[] { operativeNote }));
 			}
 
 			return false;
@@ -888,7 +892,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteSurgicalProcedureSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -947,7 +951,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PLAN_OF_CARE_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNotePlanOfCareSection"), new Object[] { operativeNote }));
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNotePlanOfCareSection"),
+					new Object[] { operativeNote }));
 			}
 
 			return false;
@@ -1005,7 +1010,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNotePlannedProcedureSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNotePlannedProcedureSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -1064,7 +1069,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureDispositionSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureDispositionSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -1123,7 +1128,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureIndicationsSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureIndicationsSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -1182,7 +1187,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalDrainsSection"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteSurgicalDrainsSection"),
 					new Object[] { operativeNote }));
 			}
 
@@ -1248,7 +1253,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1313,7 +1318,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1378,7 +1383,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1443,7 +1448,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -1505,9 +1510,10 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventProcedureCodes"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventProcedureCodes"),
 						new Object[] { eObject }));
 				}
 
@@ -1572,7 +1578,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow"),
 						new Object[] { eObject }));
 				}
 
@@ -1637,7 +1643,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"),
 						new Object[] { eObject }));
 				}
 
@@ -1702,7 +1708,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth"),
 						new Object[] { eObject }));
 				}
 
@@ -1767,7 +1773,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventPreciseToTheDay"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventPreciseToTheDay"),
 						new Object[] { eObject }));
 				}
 
@@ -1832,7 +1838,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventPreciseToTheMinute"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventPreciseToTheMinute"),
 						new Object[] { eObject }));
 				}
 
@@ -1897,7 +1903,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventPreciseToTheSecond"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventPreciseToTheSecond"),
 						new Object[] { eObject }));
 				}
 
@@ -1962,7 +1968,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset"),
 						new Object[] { eObject }));
 				}
 
@@ -2026,7 +2032,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2088,9 +2094,10 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTime"),
 						new Object[] { eObject }));
 				}
 
@@ -2155,7 +2162,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventPrimaryPerformer"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformer"),
 						new Object[] { eObject }));
 				}
 
@@ -2219,7 +2226,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEvent"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEvent"),
 						new Object[] { eObject }));
 				}
 
@@ -2952,7 +2959,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteGeneralHeaderConstraintsTemplateId"),
 					new Object[] { operativeNote }));
 			}
 
@@ -3021,7 +3028,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"), new Object[] { operativeNote }));
+					ConsolPlugin.INSTANCE.getString("OperativeNoteGeneralHeaderConstraintsCode"),
+					new Object[] { operativeNote }));
 			}
 
 			return false;

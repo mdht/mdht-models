@@ -112,7 +112,7 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSectionProblemObservation2"),
+					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionProblemObservation2"),
 					new Object[] { historyOfPastIllnessSection2 }));
 			}
 
@@ -215,9 +215,10 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 			historyOfPastIllnessSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionTemplateId"),
 					new Object[] { historyOfPastIllnessSection2 }));
 			}
 
@@ -277,7 +278,7 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCodeP"),
 					new Object[] { historyOfPastIllnessSection2 }));
 			}
 
@@ -359,7 +360,7 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSectionCode"),
+					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCode"),
 					new Object[] { historyOfPastIllnessSection2 }));
 			}
 

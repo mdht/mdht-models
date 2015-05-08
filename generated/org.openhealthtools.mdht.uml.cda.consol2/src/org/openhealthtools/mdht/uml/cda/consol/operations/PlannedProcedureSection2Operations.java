@@ -107,9 +107,10 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 			plannedProcedureSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_PLANNED_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedure2"),
+					ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionPlannedProcedure2"),
 					new Object[] { plannedProcedureSection2 }));
 			}
 
@@ -212,7 +213,7 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionTemplateId"),
 					new Object[] { plannedProcedureSection2 }));
 			}
 
@@ -271,7 +272,7 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionCodeP"),
 					new Object[] { plannedProcedureSection2 }));
 			}
 
@@ -352,7 +353,7 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionCode"),
+					ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionCode"),
 					new Object[] { plannedProcedureSection2 }));
 			}
 

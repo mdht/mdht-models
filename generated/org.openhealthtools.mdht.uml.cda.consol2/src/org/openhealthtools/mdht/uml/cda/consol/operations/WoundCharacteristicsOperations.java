@@ -117,7 +117,7 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsTemplateId"),
 					new Object[] { woundCharacteristics }));
 			}
 
@@ -176,7 +176,7 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsClassCode"),
+					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsClassCode"),
 					new Object[] { woundCharacteristics }));
 			}
 
@@ -235,7 +235,7 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsMoodCode"),
+					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsMoodCode"),
 					new Object[] { woundCharacteristics }));
 			}
 
@@ -294,7 +294,8 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_ID,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsId"), new Object[] { woundCharacteristics }));
+					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsId"),
+					new Object[] { woundCharacteristics }));
 			}
 
 			return false;
@@ -352,7 +353,8 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsCodeP"), new Object[] { woundCharacteristics }));
+					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsCodeP"),
+					new Object[] { woundCharacteristics }));
 			}
 
 			if (context != null) {
@@ -431,7 +433,8 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsCode"), new Object[] { woundCharacteristics }));
+					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsCode"),
+					new Object[] { woundCharacteristics }));
 			}
 
 			return false;
@@ -490,7 +493,7 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsStatusCode"),
+					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsStatusCode"),
 					new Object[] { woundCharacteristics }));
 			}
 
@@ -549,7 +552,7 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsStatusCodeP"),
 					new Object[] { woundCharacteristics }));
 			}
 
@@ -608,7 +611,7 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsEffectiveTime"),
 					new Object[] { woundCharacteristics }));
 			}
 
@@ -669,7 +672,8 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_VALUE,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsValue"), new Object[] { woundCharacteristics }));
+					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsValue"),
+					new Object[] { woundCharacteristics }));
 			}
 
 			return false;
@@ -727,7 +731,7 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsValueP"),
+					ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsValueP"),
 					new Object[] { woundCharacteristics }));
 			}
 
@@ -790,7 +794,8 @@ public class WoundCharacteristicsOperations extends ClinicalStatementOperations 
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_CD_CODE_SYSTEM,
-						ConsolPlugin.INSTANCE.getString("WoundCharacteristicsCDCodeSystem"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicsWoundCharacteristicsCDCodeSystem"),
+						new Object[] { eObject }));
 				}
 
 			}

@@ -112,7 +112,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER2,
-					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalResultOrganizer2"),
+					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalResultOrganizer2"),
 					new Object[] { resultsSectionEntriesOptional2 }));
 			}
 
@@ -215,9 +215,10 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 			resultsSectionEntriesOptional2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalTemplateId"),
 					new Object[] { resultsSectionEntriesOptional2 }));
 			}
 
@@ -275,9 +276,10 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 			resultsSectionEntriesOptional2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalCodeP"),
 					new Object[] { resultsSectionEntriesOptional2 }));
 			}
 
@@ -360,7 +362,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalCode"),
 					new Object[] { resultsSectionEntriesOptional2 }));
 			}
 

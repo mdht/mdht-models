@@ -100,7 +100,7 @@ public class PreconditionForSubstanceAdministration2Operations extends Precondit
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCodeP"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCodeP"),
 					new Object[] { preconditionForSubstanceAdministration2 }));
 			}
 
@@ -162,7 +162,7 @@ public class PreconditionForSubstanceAdministration2Operations extends Precondit
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationValueP"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValueP"),
 					new Object[] { preconditionForSubstanceAdministration2 }));
 			}
 
@@ -224,7 +224,7 @@ public class PreconditionForSubstanceAdministration2Operations extends Precondit
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationTemplateId"),
 					new Object[] { preconditionForSubstanceAdministration2 }));
 			}
 
@@ -288,7 +288,7 @@ public class PreconditionForSubstanceAdministration2Operations extends Precondit
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCode"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCode"),
 					new Object[] { preconditionForSubstanceAdministration2 }));
 			}
 
@@ -352,7 +352,7 @@ public class PreconditionForSubstanceAdministration2Operations extends Precondit
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationValue"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValue"),
 					new Object[] { preconditionForSubstanceAdministration2 }));
 			}
 

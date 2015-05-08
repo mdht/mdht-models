@@ -106,9 +106,10 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 			socialHistoryObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_REFERENCE_ATTRIBUTE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2ReferenceAttribute"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservation2ReferenceAttribute"),
 					new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -168,7 +169,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationStatusCodeP"),
 					new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -241,7 +242,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2EffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservation2EffectiveTime"),
 					new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -300,9 +301,10 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 			socialHistoryObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservation2AuthorParticipation"),
 					new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -362,7 +364,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationTemplateId"),
 					new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -400,7 +402,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationValue"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationValue"),
 					new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -461,7 +463,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationCode"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationCode"),
 					new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -520,7 +522,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationCodeP"),
 					new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -610,7 +612,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationStatusCode"),
 					new Object[] { socialHistoryObservation2 }));
 			}
 

@@ -115,7 +115,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_INTERVENTION_ACT,
-					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionAct"),
+					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2InterventionAct"),
 					new Object[] { interventionsSection2 }));
 			}
 
@@ -174,7 +174,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION,
-					ConsolPlugin.INSTANCE.getString("InterventionsSection2HandoffCommunication"),
+					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2HandoffCommunication"),
 					new Object[] { interventionsSection2 }));
 			}
 
@@ -232,9 +232,10 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 			interventionsSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT,
-					ConsolPlugin.INSTANCE.getString("InterventionsSection2PlannedInterventionAct"),
+					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2PlannedInterventionAct"),
 					new Object[] { interventionsSection2 }));
 			}
 
@@ -425,7 +426,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("InterventionsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionTemplateId"),
 					new Object[] { interventionsSection2 }));
 			}
 
@@ -484,7 +485,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("InterventionsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCodeP"),
 					new Object[] { interventionsSection2 }));
 			}
 
@@ -565,7 +566,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("InterventionsSectionCode"), new Object[] { interventionsSection2 }));
+					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCode"),
+					new Object[] { interventionsSection2 }));
 			}
 
 			return false;

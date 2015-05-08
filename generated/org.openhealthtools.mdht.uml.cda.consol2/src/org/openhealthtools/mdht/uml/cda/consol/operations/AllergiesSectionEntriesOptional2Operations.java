@@ -112,7 +112,7 @@ public class AllergiesSectionEntriesOptional2Operations extends AllergiesSection
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL2__ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_CONCERN_ACT2,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalAllergyConcernAct2"),
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptional2AllergiesSectionEntriesOptionalAllergyConcernAct2"),
 					new Object[] { allergiesSectionEntriesOptional2 }));
 			}
 
@@ -219,7 +219,7 @@ public class AllergiesSectionEntriesOptional2Operations extends AllergiesSection
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL2__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptional2AllergiesSectionEntriesOptionalTemplateId"),
 					new Object[] { allergiesSectionEntriesOptional2 }));
 			}
 
@@ -277,9 +277,10 @@ public class AllergiesSectionEntriesOptional2Operations extends AllergiesSection
 			allergiesSectionEntriesOptional2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL2__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptional2AllergiesSectionEntriesOptionalCodeP"),
 					new Object[] { allergiesSectionEntriesOptional2 }));
 			}
 
@@ -361,9 +362,10 @@ public class AllergiesSectionEntriesOptional2Operations extends AllergiesSection
 			allergiesSectionEntriesOptional2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL2__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptional2AllergiesSectionEntriesOptionalCode"),
 					new Object[] { allergiesSectionEntriesOptional2 }));
 			}
 

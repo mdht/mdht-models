@@ -106,7 +106,7 @@ public class DischargeDiagnosisSection2Operations extends HospitalDischargeDiagn
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_DIAGNOSIS_SECTION2__HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_HOSPITAL_DISCHARGE_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("DischargeDiagnosisSection2HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2"),
 					new Object[] { dischargeDiagnosisSection2 }));
 			}
 
@@ -208,9 +208,10 @@ public class DischargeDiagnosisSection2Operations extends HospitalDischargeDiagn
 			dischargeDiagnosisSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_DIAGNOSIS_SECTION2__HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("DischargeDiagnosisSection2HospitalDischargeDiagnosisSectionTemplateId"),
 					new Object[] { dischargeDiagnosisSection2 }));
 			}
 
@@ -268,9 +269,10 @@ public class DischargeDiagnosisSection2Operations extends HospitalDischargeDiagn
 			dischargeDiagnosisSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_DIAGNOSIS_SECTION2__HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("DischargeDiagnosisSection2HospitalDischargeDiagnosisSectionCodeP"),
 					new Object[] { dischargeDiagnosisSection2 }));
 			}
 
@@ -353,7 +355,7 @@ public class DischargeDiagnosisSection2Operations extends HospitalDischargeDiagn
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_DIAGNOSIS_SECTION2__HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionCode"),
+					ConsolPlugin.INSTANCE.getString("DischargeDiagnosisSection2HospitalDischargeDiagnosisSectionCode"),
 					new Object[] { dischargeDiagnosisSection2 }));
 			}
 

@@ -106,7 +106,7 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_DIAGNOSIS_SECTION2__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("AdmissionDiagnosisSection2HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis2"),
 					new Object[] { admissionDiagnosisSection2 }));
 			}
 
@@ -208,9 +208,10 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 			admissionDiagnosisSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_DIAGNOSIS_SECTION2__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AdmissionDiagnosisSection2HospitalAdmissionDiagnosisSectionTemplateId"),
 					new Object[] { admissionDiagnosisSection2 }));
 			}
 
@@ -268,9 +269,10 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 			admissionDiagnosisSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_DIAGNOSIS_SECTION2__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("AdmissionDiagnosisSection2HospitalAdmissionDiagnosisSectionCodeP"),
 					new Object[] { admissionDiagnosisSection2 }));
 			}
 
@@ -353,7 +355,7 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_DIAGNOSIS_SECTION2__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionCode"),
+					ConsolPlugin.INSTANCE.getString("AdmissionDiagnosisSection2HospitalAdmissionDiagnosisSectionCode"),
 					new Object[] { admissionDiagnosisSection2 }));
 			}
 

@@ -146,7 +146,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"AdvanceDirectiveObservation2HasStartingTime",
+								"AdvanceDirectiveObservation2AdvanceDirectiveObservation2HasStartingTime",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									advanceDirectiveObservation2, context) }),
 					new Object[] { advanceDirectiveObservation2 }));
@@ -207,9 +207,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			advanceDirectiveObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_HAS_ENDING_TIME,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2HasEndingTime"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2HasEndingTime"),
 					new Object[] { advanceDirectiveObservation2 }));
 			}
 
@@ -269,7 +270,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_VALUE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2Value"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2Value"),
 					new Object[] { advanceDirectiveObservation2 }));
 			}
 
@@ -331,7 +332,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2AuthorParticipation"),
 					new Object[] { advanceDirectiveObservation2 }));
 			}
 
@@ -393,9 +394,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2IVLTSLow"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2IVLTSLow"),
 						new Object[] { eObject }));
 				}
 
@@ -458,9 +460,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2IVLTSHigh"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2IVLTSHigh"),
 						new Object[] { eObject }));
 				}
 
@@ -526,7 +529,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -616,7 +619,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -682,7 +685,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityName"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityName"),
 						new Object[] { eObject }));
 				}
 
@@ -748,7 +751,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_CODE_P,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2VerifierParticipantRoleCodeP"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRoleCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -838,7 +841,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_CODE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2VerifierParticipantRoleCode"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRoleCode"),
 						new Object[] { eObject }));
 				}
 
@@ -904,7 +907,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_ADDR,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2VerifierParticipantRoleAddr"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRoleAddr"),
 						new Object[] { eObject }));
 				}
 
@@ -970,7 +973,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -1036,7 +1039,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TIME,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierTime"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierTime"),
 						new Object[] { eObject }));
 				}
 
@@ -1102,7 +1105,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_PARTICIPANT_ROLE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierParticipantRole"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierParticipantRole"),
 						new Object[] { eObject }));
 				}
 
@@ -1168,7 +1171,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1258,7 +1261,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCode"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1324,7 +1327,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_NAME,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2CustodianCustodianRoleAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianCustodianRoleAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName"),
 						new Object[] { eObject }));
 				}
 
@@ -1390,7 +1393,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CODE_P,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2CustodianCustodianRoleCodeP"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianCustodianRoleCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1480,7 +1483,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CODE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2CustodianCustodianRoleCode"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianCustodianRoleCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1546,7 +1549,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_ADDR,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleAddr"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleAddr"),
 						new Object[] { eObject }));
 				}
 
@@ -1612,7 +1615,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_TELECOM,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleTelecom"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleTelecom"),
 						new Object[] { eObject }));
 				}
 
@@ -1678,7 +1681,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_PLAYING_ENTITY,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -1744,7 +1747,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianRole"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianRole"),
 						new Object[] { eObject }));
 				}
 
@@ -1812,7 +1815,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceTypeCode"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1878,7 +1881,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocument"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocument"),
 						new Object[] { eObject }));
 				}
 
@@ -1937,9 +1940,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			advanceDirectiveObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationTemplateId"),
 					new Object[] { advanceDirectiveObservation2 }));
 			}
 
@@ -1999,7 +2003,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationCodeP"),
 					new Object[] { advanceDirectiveObservation2 }));
 			}
 
@@ -2081,7 +2085,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCode"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationCode"),
 					new Object[] { advanceDirectiveObservation2 }));
 			}
 
@@ -2139,9 +2143,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			advanceDirectiveObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationEffectiveTime"),
 					new Object[] { advanceDirectiveObservation2 }));
 			}
 
@@ -2201,7 +2206,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationVerifier"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationVerifier"),
 					new Object[] { advanceDirectiveObservation2 }));
 			}
 
@@ -2259,9 +2264,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			advanceDirectiveObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCustodian"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationCustodian"),
 					new Object[] { advanceDirectiveObservation2 }));
 			}
 
@@ -2319,9 +2325,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			advanceDirectiveObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationReference"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationReference"),
 					new Object[] { advanceDirectiveObservation2 }));
 			}
 
@@ -2386,7 +2393,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_MEDIA_TYPE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationReferenceExternalDocumentTextMediaType"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocumentTextMediaType"),
 						new Object[] { eObject }));
 				}
 
@@ -2452,7 +2459,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationReferenceExternalDocumentTextReference"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocumentTextReference"),
 						new Object[] { eObject }));
 				}
 
@@ -2518,7 +2525,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_ID,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationReferenceExternalDocumentId"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocumentId"),
 						new Object[] { eObject }));
 				}
 
@@ -2584,7 +2591,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationReferenceExternalDocumentText"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocumentText"),
 						new Object[] { eObject }));
 				}
 

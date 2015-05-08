@@ -101,9 +101,10 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 			planOfCareActivityObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_OBSERVATION__PLAN_OF_CARE_ACTIVITY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationPlanOfCareActivityObservationTemplateId"),
 					new Object[] { planOfCareActivityObservation }));
 			}
 
@@ -161,9 +162,10 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 			planOfCareActivityObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_OBSERVATION__PLAN_OF_CARE_ACTIVITY_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationPlanOfCareActivityObservationClassCode"),
 					new Object[] { planOfCareActivityObservation }));
 			}
 
@@ -223,9 +225,10 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 			planOfCareActivityObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_OBSERVATION__PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationPlanOfCareActivityObservationMoodCode"),
 					new Object[] { planOfCareActivityObservation }));
 			}
 
@@ -285,7 +288,7 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_OBSERVATION__PLAN_OF_CARE_ACTIVITY_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationId"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationPlanOfCareActivityObservationId"),
 					new Object[] { planOfCareActivityObservation }));
 			}
 

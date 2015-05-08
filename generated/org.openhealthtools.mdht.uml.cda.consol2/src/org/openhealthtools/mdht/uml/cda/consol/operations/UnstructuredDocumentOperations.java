@@ -117,7 +117,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_RECORD_TARGET,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentRecordTarget"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentRecordTarget"),
 					new Object[] { unstructuredDocument }));
 			}
 
@@ -176,7 +176,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentAuthor"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentAuthor"),
 					new Object[] { unstructuredDocument }));
 			}
 
@@ -235,7 +235,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_COMPONENT,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentComponent"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentComponent"),
 					new Object[] { unstructuredDocument }));
 			}
 
@@ -294,7 +294,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentCustodian"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentCustodian"),
 					new Object[] { unstructuredDocument }));
 			}
 
@@ -355,9 +355,10 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2_ID,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentRecordTargetPatientRole2Id"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentRecordTargetPatientRole2Id"),
 						new Object[] { eObject }));
 				}
 
@@ -419,9 +420,10 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentRecordTargetPatientRole2"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentRecordTargetPatientRole2"),
 						new Object[] { eObject }));
 				}
 
@@ -483,9 +485,10 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_ADDR,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentAuthorAssignedAuthor2Addr"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentAuthorAssignedAuthor2Addr"),
 						new Object[] { eObject }));
 				}
 
@@ -547,9 +550,10 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_TELECOM,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentAuthorAssignedAuthor2Telecom"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentAuthorAssignedAuthor2Telecom"),
 						new Object[] { eObject }));
 				}
 
@@ -611,9 +615,10 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentAuthorAssignedAuthor2"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentAuthorAssignedAuthor2"),
 						new Object[] { eObject }));
 				}
 
@@ -678,7 +683,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ADDR,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr"),
 						new Object[] { eObject }));
 				}
 
@@ -743,7 +748,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ID,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId"),
 						new Object[] { eObject }));
 				}
 
@@ -808,7 +813,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_NAME,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName"),
 						new Object[] { eObject }));
 				}
 
@@ -873,7 +878,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_TELECOM,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom"),
 						new Object[] { eObject }));
 				}
 
@@ -938,7 +943,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -1000,9 +1005,10 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN2,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentCustodianAssignedCustodian2"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian2"),
 						new Object[] { eObject }));
 				}
 
@@ -1062,7 +1068,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentGeneralHeaderConstraintsTemplateId"),
 					new Object[] { unstructuredDocument }));
 			}
 

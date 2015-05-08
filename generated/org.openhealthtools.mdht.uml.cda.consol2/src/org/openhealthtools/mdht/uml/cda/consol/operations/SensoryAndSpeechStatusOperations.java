@@ -122,7 +122,7 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusTemplateId"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusTemplateId"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -181,7 +181,7 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusClassCode"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusClassCode"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -240,7 +240,7 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusMoodCode"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusMoodCode"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -299,7 +299,7 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusCodeP"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -380,7 +380,7 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusCode"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusCode"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -440,7 +440,7 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusStatusCode"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusStatusCode"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -499,7 +499,7 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusStatusCodeP"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -558,7 +558,7 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusEffectiveTime"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -619,7 +619,7 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_VALUE,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusValue"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusValue"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -678,7 +678,7 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusValueP"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusValueP"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -737,7 +737,7 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusAuthor"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusAuthor"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -795,9 +795,10 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 			sensoryAndSpeechStatus)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_ASSESSMENT_SCALE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusAssessmentScaleObservation"),
+					ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusAssessmentScaleObservation"),
 					new Object[] { sensoryAndSpeechStatus }));
 			}
 
@@ -860,7 +861,8 @@ public class SensoryAndSpeechStatusOperations extends ClinicalStatementOperation
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_AUTHOR_TIME,
-						ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusAuthorTime"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("SensoryAndSpeechStatusSensoryAndSpeechStatusAuthorTime"),
+						new Object[] { eObject }));
 				}
 
 			}

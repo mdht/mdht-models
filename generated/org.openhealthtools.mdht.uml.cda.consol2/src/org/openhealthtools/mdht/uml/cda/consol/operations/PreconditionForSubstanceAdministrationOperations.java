@@ -104,7 +104,7 @@ public class PreconditionForSubstanceAdministrationOperations extends CriterionO
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationTemplateId"),
 					new Object[] { preconditionForSubstanceAdministration }));
 			}
 
@@ -166,7 +166,7 @@ public class PreconditionForSubstanceAdministrationOperations extends CriterionO
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCode"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationCode"),
 					new Object[] { preconditionForSubstanceAdministration }));
 			}
 
@@ -228,7 +228,7 @@ public class PreconditionForSubstanceAdministrationOperations extends CriterionO
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationText"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationText"),
 					new Object[] { preconditionForSubstanceAdministration }));
 			}
 
@@ -290,7 +290,7 @@ public class PreconditionForSubstanceAdministrationOperations extends CriterionO
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationValue"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationValue"),
 					new Object[] { preconditionForSubstanceAdministration }));
 			}
 

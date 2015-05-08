@@ -111,7 +111,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentTemplateId"),
+					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentTemplateId"),
 					new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
@@ -173,7 +173,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentClassCode"),
+					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentClassCode"),
 					new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
@@ -232,9 +232,10 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentMoodCode"),
+					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentMoodCode"),
 					new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
@@ -292,9 +293,10 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentId"),
+					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentId"),
 					new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
@@ -352,9 +354,10 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCodeP"),
+					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentCodeP"),
 					new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
@@ -436,9 +439,10 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCode"),
+					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentCode"),
 					new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
@@ -501,7 +505,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentStatusCode"),
+					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentStatusCode"),
 					new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
@@ -563,7 +567,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentStatusCodeP"),
 					new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
@@ -621,9 +625,10 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentValue"),
+					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentValue"),
 					new Object[] { characteristicsOfHomeEnvironment }));
 			}
 

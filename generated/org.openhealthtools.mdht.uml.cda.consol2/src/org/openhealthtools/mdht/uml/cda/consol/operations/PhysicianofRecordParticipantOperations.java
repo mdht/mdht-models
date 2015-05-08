@@ -110,9 +110,10 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 			physicianofRecordParticipant)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantTemplateId"),
 					new Object[] { physicianofRecordParticipant }));
 			}
 
@@ -170,9 +171,10 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 			physicianofRecordParticipant)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantTypeCode"),
+					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantTypeCode"),
 					new Object[] { physicianofRecordParticipant }));
 			}
 
@@ -231,9 +233,10 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 			physicianofRecordParticipant)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY,
-					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantAssignedEntity"),
+					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntity"),
 					new Object[] { physicianofRecordParticipant }));
 			}
 
@@ -298,7 +301,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantAssignedEntityAssignedPersonName"),
+						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityAssignedPersonName"),
 						new Object[] { eObject }));
 				}
 
@@ -364,7 +367,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_DICOM_OR_NUCC_CODE,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode"),
+						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode"),
 						new Object[] { eObject }));
 				}
 
@@ -430,7 +433,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantAssignedEntityHasNationalProviderId"),
+						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityHasNationalProviderId"),
 						new Object[] { eObject }));
 				}
 
@@ -496,7 +499,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantAssignedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -562,7 +565,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantAssignedEntityId"),
+						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityId"),
 						new Object[] { eObject }));
 				}
 
@@ -628,7 +631,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantAssignedEntityAssignedPerson"),
+						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityAssignedPerson"),
 						new Object[] { eObject }));
 				}
 

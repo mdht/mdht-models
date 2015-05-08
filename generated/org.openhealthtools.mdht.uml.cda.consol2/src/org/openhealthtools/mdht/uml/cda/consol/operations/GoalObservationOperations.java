@@ -143,7 +143,8 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationClassCode"), new Object[] { goalObservation }));
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationClassCode"),
+					new Object[] { goalObservation }));
 			}
 
 			return false;
@@ -201,7 +202,8 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationMoodCode"), new Object[] { goalObservation }));
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationMoodCode"),
+					new Object[] { goalObservation }));
 			}
 
 			return false;
@@ -258,7 +260,8 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationCode"), new Object[] { goalObservation }));
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationCode"),
+					new Object[] { goalObservation }));
 			}
 
 			return false;
@@ -316,7 +319,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PATIENT_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationPatientPriorityPreference"),
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPatientPriorityPreference"),
 					new Object[] { goalObservation }));
 			}
 
@@ -374,7 +377,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("GoalObservation"), new Object[] { goalObservation }));
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservation"), new Object[] { goalObservation }));
 			}
 
 			return false;
@@ -432,7 +435,8 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ACT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationActReference"), new Object[] { goalObservation }));
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationActReference"),
+					new Object[] { goalObservation }));
 			}
 
 			return false;
@@ -490,7 +494,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("GoalObservationAuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationAuthorParticipation"),
 					new Object[] { goalObservation }));
 			}
 
@@ -549,7 +553,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_HEALTH_CONCERN_ACT,
-					ConsolPlugin.INSTANCE.getString("GoalObservationHealthConcernAct"),
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationHealthConcernAct"),
 					new Object[] { goalObservation }));
 			}
 
@@ -609,7 +613,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PROVIDER_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationProviderPriorityPreference"),
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationProviderPriorityPreference"),
 					new Object[] { goalObservation }));
 			}
 
@@ -668,7 +672,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_EXTERNAL_DOCUMENT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationExternalDocumentReference"),
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationExternalDocumentReference"),
 					new Object[] { goalObservation }));
 			}
 
@@ -727,7 +731,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PLANNED_ENCOUNTER2,
-					ConsolPlugin.INSTANCE.getString("GoalObservationPlannedEncounter2"),
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPlannedEncounter2"),
 					new Object[] { goalObservation }));
 			}
 
@@ -786,7 +790,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PLANNED_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("GoalObservationPlannedObservation2"),
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPlannedObservation2"),
 					new Object[] { goalObservation }));
 			}
 
@@ -845,7 +849,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PLANNED_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("GoalObservationPlannedProcedure2"),
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPlannedProcedure2"),
 					new Object[] { goalObservation }));
 			}
 
@@ -905,7 +909,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PLANNED_MEDICATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("GoalObservationPlannedMedicationActivity2"),
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPlannedMedicationActivity2"),
 					new Object[] { goalObservation }));
 			}
 
@@ -964,7 +968,8 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PLANNED_SUPPLY2,
-					ConsolPlugin.INSTANCE.getString("GoalObservationPlannedSupply2"), new Object[] { goalObservation }));
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPlannedSupply2"),
+					new Object[] { goalObservation }));
 			}
 
 			return false;
@@ -1022,7 +1027,8 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PLANNED_ACT2,
-					ConsolPlugin.INSTANCE.getString("GoalObservationPlannedAct2"), new Object[] { goalObservation }));
+					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPlannedAct2"),
+					new Object[] { goalObservation }));
 			}
 
 			return false;
@@ -1607,7 +1613,7 @@ public class GoalObservationOperations extends PlannedObservation2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOAL_OBSERVATION__PLAN_OF_CARE_ACTIVITY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("GoalObservationPlanOfCareActivityObservationTemplateId"),
 					new Object[] { goalObservation }));
 			}
 

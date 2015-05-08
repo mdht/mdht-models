@@ -110,7 +110,7 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionPreoperativeDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionPreoperativeDiagnosis2"),
 					new Object[] { preoperativeDiagnosisSection2 }));
 			}
 
@@ -211,9 +211,10 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 			preoperativeDiagnosisSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionTemplateId"),
 					new Object[] { preoperativeDiagnosisSection2 }));
 			}
 
@@ -273,7 +274,7 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionCodeP"),
 					new Object[] { preoperativeDiagnosisSection2 }));
 			}
 
@@ -355,7 +356,7 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionCode"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionCode"),
 					new Object[] { preoperativeDiagnosisSection2 }));
 			}
 

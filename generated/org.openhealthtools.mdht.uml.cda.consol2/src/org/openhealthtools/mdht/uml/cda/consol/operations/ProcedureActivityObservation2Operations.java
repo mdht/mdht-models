@@ -136,7 +136,7 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION2_INSTRUCTIONS_INVERSION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2InstructionsInversion"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservation2InstructionsInversion"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -195,9 +195,10 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			procedureActivityObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION2_CODE_CODE_SYSTEMS,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2CodeCodeSystems"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservation2CodeCodeSystems"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -259,7 +260,7 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION2_CODE_SUGGESTED_CODE_SYSTEMS,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2CodeSuggestedCodeSystems"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservation2CodeSuggestedCodeSystems"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -317,9 +318,10 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			procedureActivityObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationStatusCodeP"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -390,9 +392,10 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			procedureActivityObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION_INDICATION2,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservationIndication2"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationIndication2"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -454,7 +457,7 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION_MEDICATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservationMedicationActivity2"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationMedicationActivity2"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -512,9 +515,10 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			procedureActivityObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservationInstruction2"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationInstruction2"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -576,7 +580,7 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservation2AuthorParticipation"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -638,7 +642,7 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION2_REACTION_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ReactionObservation2"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservation2ReactionObservation2"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -703,7 +707,7 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION2_ANY_NULL_FLAVOR,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ANYNullFlavor"),
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservation2ANYNullFlavor"),
 						new Object[] { eObject }));
 				}
 
@@ -769,7 +773,7 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION2_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_ADDR,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr"),
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr"),
 						new Object[] { eObject }));
 				}
 
@@ -835,7 +839,7 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION2_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_TELECOM,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom"),
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom"),
 						new Object[] { eObject }));
 				}
 
@@ -901,7 +905,7 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION2_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationProcedureObservationPerformerAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservation2ProcedureActivityObservationProcedureObservationPerformerAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -1136,9 +1140,10 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			procedureActivityObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationTemplateId"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -1197,9 +1202,10 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			procedureActivityObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservationTargetSiteCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationTargetSiteCodeP"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -1282,9 +1288,10 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			procedureActivityObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservationTargetSiteCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationTargetSiteCode"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -1342,9 +1349,10 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			procedureActivityObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationMoodCode"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -1412,9 +1420,10 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			procedureActivityObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationStatusCode"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -1474,7 +1483,7 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservationValue"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationValue"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 
@@ -1532,9 +1541,10 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			procedureActivityObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_OBSERVATION2__PROCEDURE_ACTIVITY_OBSERVATION_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservationPerformer"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityObservation2ProcedureActivityObservationPerformer"),
 					new Object[] { procedureActivityObservation2 }));
 			}
 

@@ -109,7 +109,8 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionCodeP"), new Object[] { vitalSignsSection }));
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsSectionCodeP"),
+					new Object[] { vitalSignsSection }));
 			}
 
 			if (context != null) {
@@ -189,7 +190,8 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionCode"), new Object[] { vitalSignsSection }));
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsSectionCode"),
+					new Object[] { vitalSignsSection }));
 			}
 
 			return false;
@@ -247,7 +249,8 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionText"), new Object[] { vitalSignsSection }));
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsSectionText"),
+					new Object[] { vitalSignsSection }));
 			}
 
 			return false;
@@ -305,7 +308,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsOrganizer"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsSectionVitalSignsOrganizer"),
 					new Object[] { vitalSignsSection }));
 			}
 
@@ -409,7 +412,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsSectionEntriesOptionalTemplateId"),
 					new Object[] { vitalSignsSection }));
 			}
 
@@ -468,7 +471,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalTitle"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsSectionEntriesOptionalTitle"),
 					new Object[] { vitalSignsSection }));
 			}
 

@@ -108,9 +108,10 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			progressTowardGoalObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationProgressTowardGoalObservationTemplateId"),
 					new Object[] { progressTowardGoalObservation }));
 			}
 
@@ -168,9 +169,10 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			progressTowardGoalObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationProgressTowardGoalObservationClassCode"),
 					new Object[] { progressTowardGoalObservation }));
 			}
 
@@ -228,9 +230,10 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			progressTowardGoalObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationProgressTowardGoalObservationMoodCode"),
 					new Object[] { progressTowardGoalObservation }));
 			}
 
@@ -290,7 +293,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationId"),
+					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationProgressTowardGoalObservationId"),
 					new Object[] { progressTowardGoalObservation }));
 			}
 
@@ -350,7 +353,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationProgressTowardGoalObservationCodeP"),
 					new Object[] { progressTowardGoalObservation }));
 			}
 
@@ -432,7 +435,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationCode"),
+					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationProgressTowardGoalObservationCode"),
 					new Object[] { progressTowardGoalObservation }));
 			}
 
@@ -491,9 +494,10 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			progressTowardGoalObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationProgressTowardGoalObservationStatusCode"),
 					new Object[] { progressTowardGoalObservation }));
 			}
 
@@ -552,9 +556,10 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			progressTowardGoalObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationProgressTowardGoalObservationStatusCodeP"),
 					new Object[] { progressTowardGoalObservation }));
 			}
 
@@ -616,7 +621,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationValue"),
+					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationProgressTowardGoalObservationValue"),
 					new Object[] { progressTowardGoalObservation }));
 			}
 
@@ -674,9 +679,10 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			progressTowardGoalObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationValueP"),
+					ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationProgressTowardGoalObservationValueP"),
 					new Object[] { progressTowardGoalObservation }));
 			}
 

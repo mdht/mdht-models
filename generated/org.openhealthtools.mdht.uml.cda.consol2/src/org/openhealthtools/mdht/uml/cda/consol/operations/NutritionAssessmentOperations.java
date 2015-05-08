@@ -110,7 +110,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentTemplateId"),
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentTemplateId"),
 					new Object[] { nutritionAssessment }));
 			}
 
@@ -169,7 +169,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentClassCode"),
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentClassCode"),
 					new Object[] { nutritionAssessment }));
 			}
 
@@ -228,7 +228,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentMoodCode"),
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentMoodCode"),
 					new Object[] { nutritionAssessment }));
 			}
 
@@ -287,7 +287,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_ID,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentId"), new Object[] { nutritionAssessment }));
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentId"),
+					new Object[] { nutritionAssessment }));
 			}
 
 			return false;
@@ -345,7 +346,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentCodeP"), new Object[] { nutritionAssessment }));
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentCodeP"),
+					new Object[] { nutritionAssessment }));
 			}
 
 			if (context != null) {
@@ -425,7 +427,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentCode"), new Object[] { nutritionAssessment }));
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentCode"),
+					new Object[] { nutritionAssessment }));
 			}
 
 			return false;
@@ -484,7 +487,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentStatusCode"),
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentStatusCode"),
 					new Object[] { nutritionAssessment }));
 			}
 
@@ -543,7 +546,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentStatusCodeP"),
 					new Object[] { nutritionAssessment }));
 			}
 
@@ -602,7 +605,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentEffectiveTime"),
 					new Object[] { nutritionAssessment }));
 			}
 
@@ -661,7 +664,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_VALUE,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentValue"), new Object[] { nutritionAssessment }));
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentValue"),
+					new Object[] { nutritionAssessment }));
 			}
 
 			return false;
@@ -719,7 +723,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentAuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentAuthorParticipation"),
 					new Object[] { nutritionAssessment }));
 			}
 

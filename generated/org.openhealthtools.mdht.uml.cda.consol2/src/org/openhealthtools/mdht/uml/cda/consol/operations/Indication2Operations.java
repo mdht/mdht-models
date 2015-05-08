@@ -109,7 +109,7 @@ public class Indication2Operations extends IndicationOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"Indication2ProblemIndication",
+								"Indication2Indication2ProblemIndication",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(indication2, context) }),
 					new Object[] { indication2 }));
 			}
@@ -172,7 +172,7 @@ public class Indication2Operations extends IndicationOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"Indication2CodeNullFlavor",
+								"Indication2Indication2CodeNullFlavor",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(indication2, context) }),
 					new Object[] { indication2 }));
 			}
@@ -233,9 +233,8 @@ public class Indication2Operations extends IndicationOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION2__INDICATION2_CODE_NULL_FLAVOR_VALUE,
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"Indication2CodeNullFlavorValue",
+						"_UI_GenericInvariant_diagnostic", new Object[] {
+								"Indication2Indication2CodeNullFlavorValue",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(indication2, context) }),
 					new Object[] { indication2 }));
 			}
@@ -294,7 +293,7 @@ public class Indication2Operations extends IndicationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION2__INDICATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("IndicationTemplateId"), new Object[] { indication2 }));
+					ConsolPlugin.INSTANCE.getString("Indication2IndicationTemplateId"), new Object[] { indication2 }));
 			}
 
 			return false;
@@ -329,8 +328,8 @@ public class Indication2Operations extends IndicationOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INDICATION2__INDICATION_CODE_P, ConsolPlugin.INSTANCE.getString("IndicationCodeP"),
-					new Object[] { indication2 }));
+					ConsolValidator.INDICATION2__INDICATION_CODE_P,
+					ConsolPlugin.INSTANCE.getString("Indication2IndicationCodeP"), new Object[] { indication2 }));
 			}
 
 			if (context != null) {
@@ -385,7 +384,7 @@ public class Indication2Operations extends IndicationOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.INDICATION2__INDICATION_CODE,
-					ConsolPlugin.INSTANCE.getString("IndicationCode"), new Object[] { indication2 }));
+					ConsolPlugin.INSTANCE.getString("Indication2IndicationCode"), new Object[] { indication2 }));
 			}
 
 			return false;
@@ -485,7 +484,7 @@ public class Indication2Operations extends IndicationOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.INDICATION2__INDICATION_ID,
-					ConsolPlugin.INSTANCE.getString("IndicationId"), new Object[] { indication2 }));
+					ConsolPlugin.INSTANCE.getString("Indication2IndicationId"), new Object[] { indication2 }));
 			}
 
 			return false;
@@ -542,7 +541,7 @@ public class Indication2Operations extends IndicationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION2__INDICATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("IndicationValueP"), new Object[] { indication2 }));
+					ConsolPlugin.INSTANCE.getString("Indication2IndicationValueP"), new Object[] { indication2 }));
 			}
 
 			if (context != null) {
@@ -620,8 +619,8 @@ public class Indication2Operations extends IndicationOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INDICATION2__INDICATION_VALUE, ConsolPlugin.INSTANCE.getString("IndicationValue"),
-					new Object[] { indication2 }));
+					ConsolValidator.INDICATION2__INDICATION_VALUE,
+					ConsolPlugin.INSTANCE.getString("Indication2IndicationValue"), new Object[] { indication2 }));
 			}
 
 			return false;

@@ -114,7 +114,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2Instruction2InversionInd"),
+					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2InversionInd"),
 					new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 
@@ -172,9 +172,10 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCodeP"),
 					new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 
@@ -245,9 +246,10 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2Instruction2"),
+					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2"),
 					new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 
@@ -391,7 +393,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityTemplateId"),
+					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityTemplateId"),
 					new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 
@@ -461,7 +463,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityStatusCode"),
+					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCode"),
 					new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 
@@ -520,9 +522,10 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityProductInstance"),
+					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityProductInstance"),
 					new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 

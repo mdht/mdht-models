@@ -96,7 +96,7 @@ public class FetusSubjectContextOperations extends RoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FetusSubjectContextTemplateId"),
+					ConsolPlugin.INSTANCE.getString("FetusSubjectContextFetusSubjectContextTemplateId"),
 					new Object[] { fetusSubjectContext }));
 			}
 
@@ -157,7 +157,8 @@ public class FetusSubjectContextOperations extends RoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_CODE,
-					ConsolPlugin.INSTANCE.getString("FetusSubjectContextCode"), new Object[] { fetusSubjectContext }));
+					ConsolPlugin.INSTANCE.getString("FetusSubjectContextFetusSubjectContextCode"),
+					new Object[] { fetusSubjectContext }));
 			}
 
 			return false;
@@ -215,7 +216,8 @@ public class FetusSubjectContextOperations extends RoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_SUBJECT,
-					ConsolPlugin.INSTANCE.getString("FetusSubjectContextSubject"), new Object[] { fetusSubjectContext }));
+					ConsolPlugin.INSTANCE.getString("FetusSubjectContextFetusSubjectContextSubject"),
+					new Object[] { fetusSubjectContext }));
 			}
 
 			return false;

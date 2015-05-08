@@ -96,7 +96,8 @@ public class Instruction2Operations extends InstructionsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTION2__INSTRUCTIONS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("InstructionsTemplateId"), new Object[] { instruction2 }));
+					ConsolPlugin.INSTANCE.getString("Instruction2InstructionsTemplateId"),
+					new Object[] { instruction2 }));
 			}
 
 			return false;

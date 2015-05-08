@@ -93,9 +93,10 @@ public class PhysicianReadingStudyPerformer2Operations extends PhysicianReadingS
 			physicianReadingStudyPerformer2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER2__PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformerTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformer2PhysicianReadingStudyPerformerTemplateId"),
 					new Object[] { physicianReadingStudyPerformer2 }));
 			}
 

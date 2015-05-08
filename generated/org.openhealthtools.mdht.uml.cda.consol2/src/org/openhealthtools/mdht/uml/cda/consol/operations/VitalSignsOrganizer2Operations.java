@@ -90,7 +90,8 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER2__VITAL_SIGNS_ORGANIZER_CODE_P,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerCodeP"), new Object[] { vitalSignsOrganizer2 }));
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizer2VitalSignsOrganizerCodeP"),
+					new Object[] { vitalSignsOrganizer2 }));
 			}
 
 			if (context != null) {
@@ -161,7 +162,7 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER2__VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerVitalSignObservation2"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizer2VitalSignsOrganizerVitalSignObservation2"),
 					new Object[] { vitalSignsOrganizer2 }));
 			}
 
@@ -220,7 +221,7 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER2__VITAL_SIGNS_ORGANIZER2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizer2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizer2VitalSignsOrganizer2AuthorParticipation"),
 					new Object[] { vitalSignsOrganizer2 }));
 			}
 
@@ -344,7 +345,7 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER2__VITAL_SIGNS_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerTemplateId"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizer2VitalSignsOrganizerTemplateId"),
 					new Object[] { vitalSignsOrganizer2 }));
 			}
 
@@ -413,7 +414,8 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER2__VITAL_SIGNS_ORGANIZER_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerCode"), new Object[] { vitalSignsOrganizer2 }));
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizer2VitalSignsOrganizerCode"),
+					new Object[] { vitalSignsOrganizer2 }));
 			}
 
 			return false;
@@ -471,7 +473,7 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER2__VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizer2VitalSignsOrganizerEffectiveTime"),
 					new Object[] { vitalSignsOrganizer2 }));
 			}
 

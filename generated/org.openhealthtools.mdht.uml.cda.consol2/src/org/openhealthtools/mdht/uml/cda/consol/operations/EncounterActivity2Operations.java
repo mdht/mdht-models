@@ -123,7 +123,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITY2_SDTC_DDC_FROM_NUBC_OR_DD,
-					ConsolPlugin.INSTANCE.getString("EncounterActivity2SdtcDDCFromNUBCOrDD"),
+					ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivity2SdtcDDCFromNUBCOrDD"),
 					new Object[] { encounterActivity2 }));
 			}
 
@@ -182,7 +182,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_CODE_P,
-					ConsolPlugin.INSTANCE.getString("EncounterActivitiesCodeP"), new Object[] { encounterActivity2 }));
+					ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesCodeP"),
+					new Object[] { encounterActivity2 }));
 			}
 
 			return false;
@@ -240,7 +241,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_INDICATION2,
-					ConsolPlugin.INSTANCE.getString("EncounterActivitiesIndication2"),
+					ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesIndication2"),
 					new Object[] { encounterActivity2 }));
 			}
 
@@ -299,7 +300,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_ENCOUNTER_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("EncounterActivitiesEncounterDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesEncounterDiagnosis2"),
 					new Object[] { encounterActivity2 }));
 			}
 
@@ -362,7 +363,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITY2_CD_TRANSLATION,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2CDTranslation"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivity2CDTranslation"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -426,7 +428,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITY2_ENCOUNTER_PERFORMER_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP"),
+						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -502,7 +504,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITY2_ENCOUNTER_PERFORMER_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivity2EncounterPerformerEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -567,7 +569,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITY2_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivity2EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -759,7 +761,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("EncounterActivitiesTemplateId"),
+					ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesTemplateId"),
 					new Object[] { encounterActivity2 }));
 			}
 
@@ -820,7 +822,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_CODE,
-					ConsolPlugin.INSTANCE.getString("EncounterActivitiesCode"), new Object[] { encounterActivity2 }));
+					ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesCode"),
+					new Object[] { encounterActivity2 }));
 			}
 
 			return false;
@@ -877,9 +880,10 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 			encounterActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_SDTC_DISCHARGE_DISPOSITION_CODE,
-					ConsolPlugin.INSTANCE.getString("EncounterActivitiesSDTCDischargeDispositionCode"),
+					ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesSDTCDischargeDispositionCode"),
 					new Object[] { encounterActivity2 }));
 			}
 
@@ -939,7 +943,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_LOCATION,
-					ConsolPlugin.INSTANCE.getString("EncounterActivitiesServiceDeliveryLocation"),
+					ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesServiceDeliveryLocation"),
 					new Object[] { encounterActivity2 }));
 			}
 
@@ -998,7 +1002,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("EncounterActivitiesEncounterPerformer"),
+					ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesEncounterPerformer"),
 					new Object[] { encounterActivity2 }));
 			}
 

@@ -109,7 +109,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_CODE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizer2CodeValue"), new Object[] { resultOrganizer2 }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2CodeValue"),
+					new Object[] { resultOrganizer2 }));
 			}
 
 			return false;
@@ -169,9 +170,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_CLASS_CODE_VALUE,
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ResultOrganizer2ClassCodeValue",
+						"_UI_GenericInvariant_diagnostic", new Object[] {
+								"ResultOrganizer2ResultOrganizer2ClassCodeValue",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultOrganizer2, context) }),
 					new Object[] { resultOrganizer2 }));
 			}
@@ -231,7 +231,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizer2EffectiveTime"), new Object[] { resultOrganizer2 }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2EffectiveTime"),
+					new Object[] { resultOrganizer2 }));
 			}
 
 			return false;
@@ -289,7 +290,7 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_RESULT_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultObservation2"),
+					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerResultObservation2"),
 					new Object[] { resultOrganizer2 }));
 			}
 
@@ -348,7 +349,7 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizer2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2AuthorParticipation"),
 					new Object[] { resultOrganizer2 }));
 			}
 
@@ -412,7 +413,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("ResultOrganizer2IVLTSLow"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2IVLTSLow"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -476,7 +478,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("ResultOrganizer2IVLTSHigh"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2IVLTSHigh"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -579,7 +582,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerTemplateId"), new Object[] { resultOrganizer2 }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerTemplateId"),
+					new Object[] { resultOrganizer2 }));
 			}
 
 			return false;

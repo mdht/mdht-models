@@ -224,7 +224,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -285,7 +285,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"),
 					new Object[] { transferSummary }));
 			}
 
@@ -344,7 +344,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_CODE_P,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryCodeP"), new Object[] { transferSummary }));
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryCodeP"),
+					new Object[] { transferSummary }));
 			}
 
 			if (context != null) {
@@ -423,7 +424,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_CODE,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryCode"), new Object[] { transferSummary }));
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryCode"),
+					new Object[] { transferSummary }));
 			}
 
 			return false;
@@ -481,7 +483,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_TITLE,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTitle"), new Object[] { transferSummary }));
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryTitle"),
+					new Object[] { transferSummary }));
 			}
 
 			return false;
@@ -539,7 +542,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantSupport"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupport"),
 					new Object[] { transferSummary }));
 			}
 
@@ -599,7 +602,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantCallbackContact"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContact"),
 					new Object[] { transferSummary }));
 			}
 
@@ -658,7 +661,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryDocumentationOf"), new Object[] { transferSummary }));
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOf"),
+					new Object[] { transferSummary }));
 			}
 
 			return false;
@@ -716,7 +720,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryAdvanceDirectivesSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAdvanceDirectivesSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -775,7 +779,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ALLERGIES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryAllergiesSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAllergiesSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -834,7 +838,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryPhysicalExamSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryPhysicalExamSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -893,7 +897,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ENCOUNTERS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryEncountersSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryEncountersSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -952,7 +956,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryFamilyHistorySection"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryFamilyHistorySection"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1011,7 +1015,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryFunctionalStatusSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryFunctionalStatusSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1069,9 +1073,10 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 			transferSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryImmunizationsSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryImmunizationsSectionEntriesOptional2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1130,7 +1135,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryMedicalEquipmentSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryMedicalEquipmentSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1189,7 +1194,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_MEDICATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryMedicationsSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryMedicationsSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1248,7 +1253,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PAYERS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryPayersSection2"), new Object[] { transferSummary }));
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryPayersSection2"),
+					new Object[] { transferSummary }));
 			}
 
 			return false;
@@ -1306,7 +1312,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryPlanOfTreatmentSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryPlanOfTreatmentSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1365,7 +1371,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PROBLEM_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryProblemSection2"), new Object[] { transferSummary }));
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryProblemSection2"),
+					new Object[] { transferSummary }));
 			}
 
 			return false;
@@ -1423,7 +1430,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PROCEDURES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryProceduresSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryProceduresSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1482,7 +1489,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_RESULTS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryResultsSection2"), new Object[] { transferSummary }));
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryResultsSection2"),
+					new Object[] { transferSummary }));
 			}
 
 			return false;
@@ -1540,7 +1548,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummarySocialHistorySection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummarySocialHistorySection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1599,7 +1607,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryVitalSignsSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryVitalSignsSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1658,7 +1666,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_MENTAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryMentalStatusSection"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryMentalStatusSection"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1717,7 +1725,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_GENERAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryGeneralStatusSection"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryGeneralStatusSection"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1776,7 +1784,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryReviewOfSystemsSection"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryReviewOfSystemsSection"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1835,7 +1843,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_NUTRITION_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryNutritionSection"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryNutritionSection"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1895,7 +1903,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryReasonForReferralSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryReasonForReferralSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -1955,7 +1963,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryHistoryOfPastIllnessSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryHistoryOfPastIllnessSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -2015,7 +2023,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryHistoryOfPresentIllnessSection"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryHistoryOfPresentIllnessSection"),
 					new Object[] { transferSummary }));
 			}
 
@@ -2075,7 +2083,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryAssessmentAndPlanSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAssessmentAndPlanSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -2134,7 +2142,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ASSESSMENT_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryAssessmentSection"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAssessmentSection"),
 					new Object[] { transferSummary }));
 			}
 
@@ -2194,7 +2202,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryDischargeDiagnosisSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDischargeDiagnosisSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -2252,9 +2260,10 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 			transferSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryAdmissionMedicationsSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAdmissionMedicationsSectionEntriesOptional2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -2314,7 +2323,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryAdmissionDiagnosisSection2"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAdmissionDiagnosisSection2"),
 					new Object[] { transferSummary }));
 			}
 
@@ -2373,7 +2382,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryCourseOfCareSection"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryCourseOfCareSection"),
 					new Object[] { transferSummary }));
 			}
 
@@ -2437,7 +2446,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName"),
 						new Object[] { eObject }));
 				}
 
@@ -2502,7 +2511,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantSupportAssociatedEntityClassCodeP"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityClassCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -2591,7 +2600,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantSupportAssociatedEntityClassCode"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2656,7 +2665,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantSupportAssociatedEntityAssociatedPerson"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson"),
 						new Object[] { eObject }));
 				}
 
@@ -2720,7 +2729,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantSupportTypeCode"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2782,9 +2791,10 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantSupportAssociatedEntity"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -2849,7 +2859,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName"),
 						new Object[] { eObject }));
 				}
 
@@ -2914,7 +2924,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantCallbackContactAssociatedEntityClassCode"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2979,7 +2989,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantCallbackContactAssociatedEntityId"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityId"),
 						new Object[] { eObject }));
 				}
 
@@ -3044,7 +3054,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantCallbackContactAssociatedEntityAddr"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAddr"),
 						new Object[] { eObject }));
 				}
 
@@ -3109,7 +3119,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantCallbackContactAssociatedEntityTelecom"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityTelecom"),
 						new Object[] { eObject }));
 				}
 
@@ -3174,7 +3184,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson"),
 						new Object[] { eObject }));
 				}
 
@@ -3239,7 +3249,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -3301,9 +3311,10 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantCallbackContactTypeCode"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3368,7 +3379,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryParticipantCallbackContactAssociatedEntity"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -3433,7 +3444,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryDocumentationOfServiceEventPerformerTypeCode"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3498,7 +3509,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -3587,7 +3598,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryDocumentationOfServiceEventPerformerFunctionCode"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerFunctionCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3649,9 +3660,10 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryDocumentationOfServiceEventClassCode"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3713,9 +3725,10 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryDocumentationOfServiceEventCode"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3777,9 +3790,10 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryDocumentationOfServiceEventPerformer1"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformer1"),
 						new Object[] { eObject }));
 				}
 
@@ -3843,7 +3857,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryDocumentationOfServiceEvent"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEvent"),
 						new Object[] { eObject }));
 				}
 
@@ -5123,7 +5137,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TRANSFER_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("TransferSummaryGeneralHeaderConstraintsTemplateId"),
 					new Object[] { transferSummary }));
 			}
 

@@ -93,6 +93,15 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedInterventionActMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActMoodCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePlannedInterventionActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedInterventionActOperations.validatePlannedInterventionActMoodCode(this, diagnostics, context);
 	}

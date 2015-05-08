@@ -110,7 +110,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AuthorizationActivityTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityTemplateId"),
 					new Object[] { authorizationActivity }));
 			}
 
@@ -169,7 +169,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("AuthorizationActivityClassCode"),
+					ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityClassCode"),
 					new Object[] { authorizationActivity }));
 			}
 
@@ -228,7 +228,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ID,
-					ConsolPlugin.INSTANCE.getString("AuthorizationActivityId"), new Object[] { authorizationActivity }));
+					ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityId"),
+					new Object[] { authorizationActivity }));
 			}
 
 			return false;
@@ -286,7 +287,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("AuthorizationActivityMoodCode"),
+					ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityMoodCode"),
 					new Object[] { authorizationActivity }));
 			}
 
@@ -345,7 +346,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationship"),
+					ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityEntryRelationship"),
 					new Object[] { authorizationActivity }));
 			}
 
@@ -409,7 +410,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_CLINICAL_STATEMENT,
-						ConsolPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationshipHasClinicalStatement"),
+						ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityEntryRelationshipHasClinicalStatement"),
 						new Object[] { eObject }));
 				}
 
@@ -482,7 +483,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_AUTHORIZED_PERFORMERS,
-						ConsolPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationshipHasAuthorizedPerformers"),
+						ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityEntryRelationshipHasAuthorizedPerformers"),
 						new Object[] { eObject }));
 				}
 
@@ -544,9 +545,10 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationshipTypeCode"),
+						ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityEntryRelationshipTypeCode"),
 						new Object[] { eObject }));
 				}
 

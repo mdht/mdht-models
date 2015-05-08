@@ -105,7 +105,7 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_PROBLEM_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationProblemObservation2"),
+					ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationProblemObservation2"),
 					new Object[] { deceasedObservation2 }));
 			}
 
@@ -206,7 +206,7 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationTemplateId"),
 					new Object[] { deceasedObservation2 }));
 			}
 
@@ -265,7 +265,8 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationCodeP"), new Object[] { deceasedObservation2 }));
+					ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationCodeP"),
+					new Object[] { deceasedObservation2 }));
 			}
 
 			if (context != null) {
@@ -345,7 +346,8 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationCode"), new Object[] { deceasedObservation2 }));
+					ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationCode"),
+					new Object[] { deceasedObservation2 }));
 			}
 
 			return false;

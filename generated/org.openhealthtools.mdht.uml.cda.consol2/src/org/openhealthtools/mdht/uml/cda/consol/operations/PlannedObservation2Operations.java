@@ -128,7 +128,8 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2CodeP"), new Object[] { plannedObservation2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2CodeP"),
+					new Object[] { plannedObservation2 }));
 			}
 
 			if (context != null) {
@@ -208,7 +209,8 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2Code"), new Object[] { plannedObservation2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Code"),
+					new Object[] { plannedObservation2 }));
 			}
 
 			return false;
@@ -267,7 +269,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2StatusCode"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2StatusCode"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -326,7 +328,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2StatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2StatusCodeP"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -385,7 +387,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2EffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2EffectiveTime"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -444,7 +446,8 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_VALUE,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2Value"), new Object[] { plannedObservation2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Value"),
+					new Object[] { plannedObservation2 }));
 			}
 
 			return false;
@@ -502,7 +505,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_METHOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2MethodCode"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2MethodCode"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -561,7 +564,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_TARGET_SITE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2TargetSiteCodeP"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2TargetSiteCodeP"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -642,7 +645,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_TARGET_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2TargetSiteCode"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2TargetSiteCode"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -701,7 +704,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2Performer"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Performer"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -760,7 +763,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2AuthorParticipation"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -819,7 +822,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2PriorityPreference"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2PriorityPreference"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -878,7 +881,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_INDICATION2,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2Indication2"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Indication2"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -937,7 +940,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2Instruction2"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Instruction2"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -996,7 +999,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PLANNED_COVERAGE,
-					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedCoverage"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2PlannedCoverage"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -1232,7 +1235,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLAN_OF_CARE_ACTIVITY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlanOfCareActivityObservationTemplateId"),
 					new Object[] { plannedObservation2 }));
 			}
 
@@ -1293,7 +1296,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_OBSERVATION2__PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PlannedObservation2PlanOfCareActivityObservationMoodCode"),
 					new Object[] { plannedObservation2 }));
 			}
 
