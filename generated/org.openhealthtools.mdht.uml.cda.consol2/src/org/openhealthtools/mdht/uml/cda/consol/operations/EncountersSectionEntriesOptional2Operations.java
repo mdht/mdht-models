@@ -112,7 +112,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncounterActivity2"),
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptional2EncountersSectionEntriesOptionalEncounterActivity2"),
 					new Object[] { encountersSectionEntriesOptional2 }));
 			}
 
@@ -219,7 +219,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptional2EncountersSectionEntriesOptionalTemplateId"),
 					new Object[] { encountersSectionEntriesOptional2 }));
 			}
 
@@ -277,9 +277,10 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 			encountersSectionEntriesOptional2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptional2EncountersSectionEntriesOptionalCodeP"),
 					new Object[] { encountersSectionEntriesOptional2 }));
 			}
 
@@ -361,9 +362,10 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 			encountersSectionEntriesOptional2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptional2EncountersSectionEntriesOptionalCode"),
 					new Object[] { encountersSectionEntriesOptional2 }));
 			}
 

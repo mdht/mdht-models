@@ -110,7 +110,7 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSectionPostprocedureDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionPostprocedureDiagnosis2"),
 					new Object[] { postprocedureDiagnosisSection2 }));
 			}
 
@@ -211,9 +211,10 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 			postprocedureDiagnosisSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionTemplateId"),
 					new Object[] { postprocedureDiagnosisSection2 }));
 			}
 
@@ -271,9 +272,10 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 			postprocedureDiagnosisSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionCodeP"),
 					new Object[] { postprocedureDiagnosisSection2 }));
 			}
 
@@ -356,7 +358,7 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSectionCode"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionCode"),
 					new Object[] { postprocedureDiagnosisSection2 }));
 			}
 

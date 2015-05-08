@@ -111,7 +111,7 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceProviderPriorityPreferenceTemplateId"),
 					new Object[] { providerPriorityPreference }));
 			}
 
@@ -171,7 +171,7 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceClassCode"),
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceProviderPriorityPreferenceClassCode"),
 					new Object[] { providerPriorityPreference }));
 			}
 
@@ -231,7 +231,7 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceProviderPriorityPreferenceMoodCode"),
 					new Object[] { providerPriorityPreference }));
 			}
 
@@ -290,7 +290,7 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_ID,
-					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceId"),
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceProviderPriorityPreferenceId"),
 					new Object[] { providerPriorityPreference }));
 			}
 
@@ -350,7 +350,7 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceProviderPriorityPreferenceCodeP"),
 					new Object[] { providerPriorityPreference }));
 			}
 
@@ -431,7 +431,7 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_CODE,
-					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceCode"),
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceProviderPriorityPreferenceCode"),
 					new Object[] { providerPriorityPreference }));
 			}
 
@@ -489,9 +489,10 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 			providerPriorityPreference)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_PRIORITY_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferencePriorityCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceProviderPriorityPreferencePriorityCodeP"),
 					new Object[] { providerPriorityPreference }));
 			}
 
@@ -572,9 +573,10 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 			providerPriorityPreference)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_PRIORITY_CODE,
-					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferencePriorityCode"),
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceProviderPriorityPreferencePriorityCode"),
 					new Object[] { providerPriorityPreference }));
 			}
 
@@ -636,7 +638,7 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceProviderPriorityPreferenceValue"),
 					new Object[] { providerPriorityPreference }));
 			}
 
@@ -696,7 +698,7 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceValueP"),
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceProviderPriorityPreferenceValueP"),
 					new Object[] { providerPriorityPreference }));
 			}
 
@@ -755,9 +757,10 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 			providerPriorityPreference)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceAuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceProviderPriorityPreferenceAuthorParticipation"),
 					new Object[] { providerPriorityPreference }));
 			}
 

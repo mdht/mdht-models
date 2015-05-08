@@ -107,7 +107,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS2__POSTPROCEDURE_DIAGNOSIS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisCodeP"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosis2PostprocedureDiagnosisCodeP"),
 					new Object[] { postprocedureDiagnosis2 }));
 			}
 
@@ -176,9 +176,10 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 			postprocedureDiagnosis2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS2__POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisProblemObservation2"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosis2PostprocedureDiagnosisProblemObservation2"),
 					new Object[] { postprocedureDiagnosis2 }));
 			}
 
@@ -282,7 +283,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS2__POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosis2PostprocedureDiagnosisTemplateId"),
 					new Object[] { postprocedureDiagnosis2 }));
 			}
 
@@ -351,7 +352,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS2__POSTPROCEDURE_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisCode"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosis2PostprocedureDiagnosisCode"),
 					new Object[] { postprocedureDiagnosis2 }));
 			}
 

@@ -204,7 +204,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"),
 					new Object[] { referralNote }));
 			}
 
@@ -265,7 +265,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"),
 					new Object[] { referralNote }));
 			}
 
@@ -323,7 +323,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteCodeP"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteCodeP"), new Object[] { referralNote }));
 			}
 
 			if (context != null) {
@@ -402,7 +402,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_CODE,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteCode"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteCode"), new Object[] { referralNote }));
 			}
 
 			return false;
@@ -460,7 +460,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteInformationRecipient"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipient"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -518,7 +519,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCaregiver"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiver"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -576,7 +578,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCallbackContact"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContact"),
 					new Object[] { referralNote }));
 			}
 
@@ -635,7 +637,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNotePlanOfTreatmentSection2"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNotePlanOfTreatmentSection2"),
 					new Object[] { referralNote }));
 			}
 
@@ -693,9 +695,10 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			referralNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteAdvanceDirectivesSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAdvanceDirectivesSectionEntriesOptional2"),
 					new Object[] { referralNote }));
 			}
 
@@ -755,7 +758,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteHistoryOfPresentIllnessSection"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteHistoryOfPresentIllnessSection"),
 					new Object[] { referralNote }));
 			}
 
@@ -814,7 +817,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_IMMUNIZATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteImmunizationsSection2"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteImmunizationsSection2"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -872,7 +876,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PROBLEM_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteProblemSection2"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteProblemSection2"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -931,7 +936,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteProceduresSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteProceduresSectionEntriesOptional2"),
 					new Object[] { referralNote }));
 			}
 
@@ -990,7 +995,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_RESULTS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteResultsSection2"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteResultsSection2"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1048,7 +1054,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReviewOfSystemsSection"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteReviewOfSystemsSection"),
 					new Object[] { referralNote }));
 			}
 
@@ -1107,7 +1113,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteSocialHistorySection2"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteSocialHistorySection2"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1165,7 +1172,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_VITAL_SIGNS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteVitalSignsSection2"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteVitalSignsSection2"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1223,7 +1231,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteFunctionalStatusSection2"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteFunctionalStatusSection2"),
 					new Object[] { referralNote }));
 			}
 
@@ -1282,7 +1290,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNotePhysicalExamSection2"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNotePhysicalExamSection2"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1339,9 +1348,10 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			referralNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteAdvanceDirectivesSectionEntriesOptional2b"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAdvanceDirectivesSectionEntriesOptional2b"),
 					new Object[] { referralNote }));
 			}
 
@@ -1400,7 +1410,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_NUTRITION_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteNutritionSection"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteNutritionSection"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1458,7 +1469,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MENTAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteMentalStatusSection"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMentalStatusSection"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1516,7 +1528,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteMedicalEquipmentSection2"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMedicalEquipmentSection2"),
 					new Object[] { referralNote }));
 			}
 
@@ -1575,7 +1587,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ALLERGIES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteAllergiesSection2"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAllergiesSection2"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1633,7 +1646,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ASSESSMENT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteAssessmentSection"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAssessmentSection"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1691,7 +1705,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteAssessmentAndPlanSection2"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAssessmentAndPlanSection2"),
 					new Object[] { referralNote }));
 			}
 
@@ -1750,7 +1764,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteHistoryOfPastIllnessSection2"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteHistoryOfPastIllnessSection2"),
 					new Object[] { referralNote }));
 			}
 
@@ -1809,7 +1823,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_GENERAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteGeneralStatusSection"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteGeneralStatusSection"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1867,7 +1882,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MEDICATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteMedicationsSection2"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMedicationsSection2"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1925,7 +1941,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReasonForReferralSection2"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteReasonForReferralSection2"),
 					new Object[] { referralNote }));
 			}
 
@@ -1984,7 +2000,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_FAMILY_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteFamilyHistorySection2"), new Object[] { referralNote }));
+					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteFamilyHistorySection2"),
+					new Object[] { referralNote }));
 			}
 
 			return false;
@@ -2047,7 +2064,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteInformationRecipientIntendedRecipientPersonName"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipientIntendedRecipientPersonName"),
 						new Object[] { eObject }));
 				}
 
@@ -2109,9 +2126,10 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteInformationRecipientIntendedRecipientAddr"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipientIntendedRecipientAddr"),
 						new Object[] { eObject }));
 				}
 
@@ -2173,9 +2191,10 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteInformationRecipientIntendedRecipientTelecom"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipientIntendedRecipientTelecom"),
 						new Object[] { eObject }));
 				}
 
@@ -2240,7 +2259,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteInformationRecipientIntendedRecipientInformationRecipient"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipientIntendedRecipientInformationRecipient"),
 						new Object[] { eObject }));
 				}
 
@@ -2302,9 +2321,10 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteInformationRecipientIntendedRecipient"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipientIntendedRecipient"),
 						new Object[] { eObject }));
 				}
 
@@ -2369,7 +2389,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName"),
 						new Object[] { eObject }));
 				}
 
@@ -2434,7 +2454,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityClassCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -2523,7 +2543,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCaregiverAssociatedEntityClassCode"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2588,7 +2608,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson"),
 						new Object[] { eObject }));
 				}
 
@@ -2652,7 +2672,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCaregiverTypeCode"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2714,9 +2734,10 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCaregiverAssociatedEntity"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverAssociatedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -2781,7 +2802,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName"),
 						new Object[] { eObject }));
 				}
 
@@ -2843,9 +2864,10 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCallbackContactAssociatedEntityId"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityId"),
 						new Object[] { eObject }));
 				}
 
@@ -2910,7 +2932,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCallbackContactAssociatedEntityAddr"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAddr"),
 						new Object[] { eObject }));
 				}
 
@@ -2975,7 +2997,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCallbackContactAssociatedEntityTelecom"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityTelecom"),
 						new Object[] { eObject }));
 				}
 
@@ -3040,7 +3062,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCallbackContactAssociatedEntityClassCode"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3105,7 +3127,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson"),
 						new Object[] { eObject }));
 				}
 
@@ -3170,7 +3192,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -3234,7 +3256,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCallbackContactTypeCode"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3296,9 +3318,10 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteParticipantCallbackContactAssociatedEntity"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -4344,7 +4367,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERRAL_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ReferralNoteGeneralHeaderConstraintsTemplateId"),
 					new Object[] { referralNote }));
 			}
 

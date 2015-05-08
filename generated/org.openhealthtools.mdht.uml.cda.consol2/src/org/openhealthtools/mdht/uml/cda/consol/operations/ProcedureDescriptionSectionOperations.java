@@ -101,9 +101,10 @@ public class ProcedureDescriptionSectionOperations extends SectionOperations {
 			procedureDescriptionSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_DESCRIPTION_SECTION__PROCEDURE_DESCRIPTION_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureDescriptionSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureDescriptionSectionProcedureDescriptionSectionTemplateId"),
 					new Object[] { procedureDescriptionSection }));
 			}
 
@@ -165,7 +166,7 @@ public class ProcedureDescriptionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_DESCRIPTION_SECTION__PROCEDURE_DESCRIPTION_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureDescriptionSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureDescriptionSectionProcedureDescriptionSectionCode"),
 					new Object[] { procedureDescriptionSection }));
 			}
 
@@ -225,7 +226,7 @@ public class ProcedureDescriptionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_DESCRIPTION_SECTION__PROCEDURE_DESCRIPTION_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureDescriptionSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureDescriptionSectionProcedureDescriptionSectionCodeP"),
 					new Object[] { procedureDescriptionSection }));
 			}
 
@@ -285,7 +286,7 @@ public class ProcedureDescriptionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_DESCRIPTION_SECTION__PROCEDURE_DESCRIPTION_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProcedureDescriptionSectionText"),
+					ConsolPlugin.INSTANCE.getString("ProcedureDescriptionSectionProcedureDescriptionSectionText"),
 					new Object[] { procedureDescriptionSection }));
 			}
 
@@ -345,7 +346,7 @@ public class ProcedureDescriptionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_DESCRIPTION_SECTION__PROCEDURE_DESCRIPTION_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProcedureDescriptionSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ProcedureDescriptionSectionProcedureDescriptionSectionTitle"),
 					new Object[] { procedureDescriptionSection }));
 			}
 

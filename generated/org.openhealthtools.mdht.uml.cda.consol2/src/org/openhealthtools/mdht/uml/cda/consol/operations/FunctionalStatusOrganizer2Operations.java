@@ -115,9 +115,10 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 			functionalStatusOrganizer2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__FUNCTIONAL_STATUS_ORGANIZER2_CODE_CODE_SYSTEM,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2CodeCodeSystem"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2FunctionalStatusOrganizer2CodeCodeSystem"),
 					new Object[] { functionalStatusOrganizer2 }));
 			}
 
@@ -179,7 +180,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultOrganizerFunctionalStatusObservation2"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2FunctionalStatusResultOrganizerFunctionalStatusObservation2"),
 					new Object[] { functionalStatusOrganizer2 }));
 			}
 
@@ -238,9 +239,10 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 			functionalStatusOrganizer2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__FUNCTIONAL_STATUS_ORGANIZER2_SELF_CARE_ACTIVITIES,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2SelfCareActivities"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2FunctionalStatusOrganizer2SelfCareActivities"),
 					new Object[] { functionalStatusOrganizer2 }));
 			}
 
@@ -299,9 +301,10 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 			functionalStatusOrganizer2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__FUNCTIONAL_STATUS_ORGANIZER2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2FunctionalStatusOrganizer2AuthorParticipation"),
 					new Object[] { functionalStatusOrganizer2 }));
 			}
 
@@ -449,7 +452,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerTemplateId"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2ResultOrganizerTemplateId"),
 					new Object[] { functionalStatusOrganizer2 }));
 			}
 
@@ -508,7 +511,8 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerCode"), new Object[] { functionalStatusOrganizer2 }));
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2ResultOrganizerCode"),
+					new Object[] { functionalStatusOrganizer2 }));
 			}
 
 			return false;
@@ -566,7 +570,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2ResultOrganizerStatusCodeP"),
 					new Object[] { functionalStatusOrganizer2 }));
 			}
 
@@ -646,7 +650,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerStatusCode"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2ResultOrganizerStatusCode"),
 					new Object[] { functionalStatusOrganizer2 }));
 			}
 

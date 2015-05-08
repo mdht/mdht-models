@@ -204,7 +204,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -263,7 +263,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2CodeP"), new Object[] { dischargeSummary2 }));
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2CodeP"),
+					new Object[] { dischargeSummary2 }));
 			}
 
 			if (context != null) {
@@ -343,7 +344,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CODE,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2Code"), new Object[] { dischargeSummary2 }));
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2Code"),
+					new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -401,7 +403,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2Participant"), new Object[] { dischargeSummary2 }));
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2Participant"),
+					new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -459,7 +462,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOf"), new Object[] { dischargeSummary2 }));
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOf"),
+					new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -516,9 +520,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			dischargeSummary2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2AllergiesSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2AllergiesSectionEntriesOptional2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -577,7 +582,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2HospitalCourseSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HospitalCourseSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -637,7 +642,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2PlanOfTreatmentSection2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2PlanOfTreatmentSection2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -696,7 +701,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2ChiefComplaintSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ChiefComplaintSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -757,7 +762,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2ChiefComplaintAndReasonForVisitSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ChiefComplaintAndReasonForVisitSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -816,7 +821,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_NUTRITION_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2NutritionSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2NutritionSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -876,7 +881,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2FunctionalStatusSection2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2FunctionalStatusSection2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -936,7 +941,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2HistoryOfPastIllnessSection2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HistoryOfPastIllnessSection2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -994,9 +999,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			dischargeSummary2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2HistoryOfPresentIllnessSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HistoryOfPresentIllnessSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1056,7 +1062,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2HospitalConsultationsSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HospitalConsultationsSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1114,9 +1120,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			dischargeSummary2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2HospitalDischargeInstructionsSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HospitalDischargeInstructionsSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1174,9 +1181,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			dischargeSummary2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2HospitalDischargePhysicalSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HospitalDischargePhysicalSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1234,9 +1242,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			dischargeSummary2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2HospitalDischargeStudiesSummarySection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HospitalDischargeStudiesSummarySection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1294,9 +1303,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			dischargeSummary2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2ImmunizationsSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ImmunizationsSectionEntriesOptional2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1354,9 +1364,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			dischargeSummary2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2ProblemSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ProblemSectionEntriesOptional2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1414,9 +1425,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			dischargeSummary2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2ProceduresSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ProceduresSectionEntriesOptional2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1475,7 +1487,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2ReasonForVisitSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ReasonForVisitSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1534,7 +1546,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2ReviewOfSystemsSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ReviewOfSystemsSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1593,7 +1605,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2SocialHistorySection2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2SocialHistorySection2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1651,9 +1663,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			dischargeSummary2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2VitalSignsSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2VitalSignsSectionEntriesOptional2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1713,7 +1726,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeDiagnosisSection2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DischargeDiagnosisSection2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1774,7 +1787,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeMedicationsSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DischargeMedicationsSectionEntriesOptional2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1833,7 +1846,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2FamilyHistorySection2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2FamilyHistorySection2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1893,7 +1906,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2AdmissionDiagnosisSection2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2AdmissionDiagnosisSection2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -1954,7 +1967,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2AdmissionMedicationsSectionEntriesOptional2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2AdmissionMedicationsSectionEntriesOptional2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -2014,7 +2027,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeMedicationsSection2"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DischargeMedicationsSection2"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -2073,7 +2086,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeDietSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DischargeDietSection"),
 					new Object[] { dischargeSummary2 }));
 			}
 
@@ -2137,7 +2150,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow"),
 						new Object[] { eObject }));
 				}
 
@@ -2202,7 +2215,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh"),
 						new Object[] { eObject }));
 				}
 
@@ -2267,7 +2280,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson"),
 						new Object[] { eObject }));
 				}
 
@@ -2332,7 +2345,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -2397,7 +2410,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -2462,7 +2475,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -2527,7 +2540,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson"),
 						new Object[] { eObject }));
 				}
 
@@ -2592,7 +2605,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -2657,7 +2670,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -2722,7 +2735,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -2787,7 +2800,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEffectiveTime"),
 						new Object[] { eObject }));
 				}
 
@@ -2854,7 +2867,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2919,7 +2932,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -2984,7 +2997,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant"),
 						new Object[] { eObject }));
 				}
 
@@ -3049,7 +3062,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounterResponsibleParty"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsibleParty"),
 						new Object[] { eObject }));
 				}
 
@@ -3111,9 +3124,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2ComponentOfEncompassingEncounter"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounter"),
 						new Object[] { eObject }));
 				}
 
@@ -4317,7 +4331,7 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummary2GeneralHeaderConstraintsTemplateId"),
 					new Object[] { dischargeSummary2 }));
 			}
 

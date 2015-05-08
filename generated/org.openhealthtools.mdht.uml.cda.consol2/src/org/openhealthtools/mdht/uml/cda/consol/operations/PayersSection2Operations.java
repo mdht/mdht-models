@@ -109,7 +109,8 @@ public class PayersSection2Operations extends PayersSectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_COVERAGE_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("PayersSectionCoverageActivity2"), new Object[] { payersSection2 }));
+					ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCoverageActivity2"),
+					new Object[] { payersSection2 }));
 			}
 
 			return false;
@@ -211,7 +212,8 @@ public class PayersSection2Operations extends PayersSectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PayersSectionTemplateId"), new Object[] { payersSection2 }));
+					ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionTemplateId"),
+					new Object[] { payersSection2 }));
 			}
 
 			return false;
@@ -268,7 +270,8 @@ public class PayersSection2Operations extends PayersSectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PayersSectionCodeP"), new Object[] { payersSection2 }));
+					ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCodeP"),
+					new Object[] { payersSection2 }));
 			}
 
 			if (context != null) {
@@ -347,7 +350,7 @@ public class PayersSection2Operations extends PayersSectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PayersSectionCode"), new Object[] { payersSection2 }));
+					ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCode"), new Object[] { payersSection2 }));
 			}
 
 			return false;

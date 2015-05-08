@@ -117,7 +117,7 @@ public class PatientPriorityPreferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferenceTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePatientPriorityPreferenceTemplateId"),
 					new Object[] { patientPriorityPreference }));
 			}
 
@@ -177,7 +177,7 @@ public class PatientPriorityPreferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferenceClassCode"),
+					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePatientPriorityPreferenceClassCode"),
 					new Object[] { patientPriorityPreference }));
 			}
 
@@ -237,7 +237,7 @@ public class PatientPriorityPreferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferenceMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePatientPriorityPreferenceMoodCode"),
 					new Object[] { patientPriorityPreference }));
 			}
 
@@ -296,7 +296,7 @@ public class PatientPriorityPreferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_ID,
-					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferenceId"),
+					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePatientPriorityPreferenceId"),
 					new Object[] { patientPriorityPreference }));
 			}
 
@@ -355,7 +355,7 @@ public class PatientPriorityPreferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferenceCodeP"),
+					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePatientPriorityPreferenceCodeP"),
 					new Object[] { patientPriorityPreference }));
 			}
 
@@ -435,7 +435,7 @@ public class PatientPriorityPreferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferenceCode"),
+					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePatientPriorityPreferenceCode"),
 					new Object[] { patientPriorityPreference }));
 			}
 
@@ -495,7 +495,7 @@ public class PatientPriorityPreferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_PRIORITY_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePriorityCodeP"),
+					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePatientPriorityPreferencePriorityCodeP"),
 					new Object[] { patientPriorityPreference }));
 			}
 
@@ -578,7 +578,7 @@ public class PatientPriorityPreferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_PRIORITY_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePriorityCode"),
+					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePatientPriorityPreferencePriorityCode"),
 					new Object[] { patientPriorityPreference }));
 			}
 
@@ -639,7 +639,7 @@ public class PatientPriorityPreferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferenceValue"),
+					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePatientPriorityPreferenceValue"),
 					new Object[] { patientPriorityPreference }));
 			}
 
@@ -698,7 +698,7 @@ public class PatientPriorityPreferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferenceValueP"),
+					ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePatientPriorityPreferenceValueP"),
 					new Object[] { patientPriorityPreference }));
 			}
 
@@ -760,9 +760,10 @@ public class PatientPriorityPreferenceOperations extends ClinicalStatementOperat
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_CD_CODE_SYSTEM,
-						ConsolPlugin.INSTANCE.getString("PatientPriorityPreferenceCDCodeSystem"),
+						ConsolPlugin.INSTANCE.getString("PatientPriorityPreferencePatientPriorityPreferenceCDCodeSystem"),
 						new Object[] { eObject }));
 				}
 

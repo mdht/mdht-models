@@ -115,7 +115,8 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION2__PROBLEM_SECTION2_NULL_FLAVOR,
-					ConsolPlugin.INSTANCE.getString("ProblemSection2NullFlavor"), new Object[] { problemSection2 }));
+					ConsolPlugin.INSTANCE.getString("ProblemSection2ProblemSection2NullFlavor"),
+					new Object[] { problemSection2 }));
 			}
 
 			return false;
@@ -173,7 +174,8 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION2__PROBLEM_SECTION2_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProblemSection2Title"), new Object[] { problemSection2 }));
+					ConsolPlugin.INSTANCE.getString("ProblemSection2ProblemSection2Title"),
+					new Object[] { problemSection2 }));
 			}
 
 			return false;
@@ -230,7 +232,8 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION2__PROBLEM_SECTION2_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProblemSection2Text"), new Object[] { problemSection2 }));
+					ConsolPlugin.INSTANCE.getString("ProblemSection2ProblemSection2Text"),
+					new Object[] { problemSection2 }));
 			}
 
 			return false;
@@ -330,7 +333,7 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION2__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProblemSection2ProblemSectionEntriesOptionalTemplateId"),
 					new Object[] { problemSection2 }));
 			}
 
@@ -389,7 +392,7 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION2__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProblemSection2ProblemSectionEntriesOptionalCodeP"),
 					new Object[] { problemSection2 }));
 			}
 
@@ -470,7 +473,7 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION2__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemSection2ProblemSectionEntriesOptionalCode"),
 					new Object[] { problemSection2 }));
 			}
 
@@ -530,7 +533,7 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION2__PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN_ACT2,
-					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptionalProblemConcernAct2"),
+					ConsolPlugin.INSTANCE.getString("ProblemSection2ProblemSectionEntriesOptionalProblemConcernAct2"),
 					new Object[] { problemSection2 }));
 			}
 
@@ -588,9 +591,10 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 			problemSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION2__PROBLEM_SECTION_ENTRIES_OPTIONAL2_HEALTH_STATUS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptional2HealthStatusObservation2"),
+					ConsolPlugin.INSTANCE.getString("ProblemSection2ProblemSectionEntriesOptional2HealthStatusObservation2"),
 					new Object[] { problemSection2 }));
 			}
 

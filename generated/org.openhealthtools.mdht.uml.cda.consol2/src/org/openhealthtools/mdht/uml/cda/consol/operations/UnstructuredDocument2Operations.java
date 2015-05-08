@@ -115,7 +115,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocument2RecordTarget"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2RecordTarget"),
 					new Object[] { unstructuredDocument2 }));
 			}
 
@@ -174,7 +174,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocument2Custodian"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2Custodian"),
 					new Object[] { unstructuredDocument2 }));
 			}
 
@@ -233,7 +233,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocument2Component"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2Component"),
 					new Object[] { unstructuredDocument2 }));
 			}
 
@@ -294,9 +294,10 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2RecordTargetPatientRoleId"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2RecordTargetPatientRoleId"),
 						new Object[] { eObject }));
 				}
 
@@ -358,9 +359,10 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2RecordTargetPatientRole"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2RecordTargetPatientRole"),
 						new Object[] { eObject }));
 				}
 
@@ -425,7 +427,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -487,9 +489,10 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2CustodianAssignedCustodian"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2CustodianAssignedCustodian"),
 						new Object[] { eObject }));
 				}
 
@@ -554,7 +557,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2ComponentNonXMLBodyEDMediaType"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyEDMediaType"),
 						new Object[] { eObject }));
 				}
 
@@ -619,7 +622,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats"),
 						new Object[] { eObject }));
 				}
 
@@ -681,9 +684,10 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2ComponentNonXMLBodyText"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyText"),
 						new Object[] { eObject }));
 				}
 
@@ -745,9 +749,10 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2ComponentNonXMLBody"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBody"),
 						new Object[] { eObject }));
 				}
 
@@ -807,7 +812,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocument2GeneralHeaderConstraintsTemplateId"),
 					new Object[] { unstructuredDocument2 }));
 			}
 

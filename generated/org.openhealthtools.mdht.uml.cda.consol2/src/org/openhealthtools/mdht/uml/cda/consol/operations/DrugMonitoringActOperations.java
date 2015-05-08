@@ -121,7 +121,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DrugMonitoringActTemplateId"), new Object[] { drugMonitoringAct }));
+					ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActTemplateId"),
+					new Object[] { drugMonitoringAct }));
 			}
 
 			return false;
@@ -179,7 +180,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("DrugMonitoringActClassCode"), new Object[] { drugMonitoringAct }));
+					ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActClassCode"),
+					new Object[] { drugMonitoringAct }));
 			}
 
 			return false;
@@ -237,7 +239,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("DrugMonitoringActMoodCode"), new Object[] { drugMonitoringAct }));
+					ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActMoodCode"),
+					new Object[] { drugMonitoringAct }));
 			}
 
 			return false;
@@ -295,7 +298,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("DrugMonitoringActId"), new Object[] { drugMonitoringAct }));
+					ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActId"),
+					new Object[] { drugMonitoringAct }));
 			}
 
 			return false;
@@ -353,7 +357,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DrugMonitoringActCodeP"), new Object[] { drugMonitoringAct }));
+					ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActCodeP"),
+					new Object[] { drugMonitoringAct }));
 			}
 
 			if (context != null) {
@@ -433,7 +438,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("DrugMonitoringActCode"), new Object[] { drugMonitoringAct }));
+					ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActCode"),
+					new Object[] { drugMonitoringAct }));
 			}
 
 			return false;
@@ -491,7 +497,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("DrugMonitoringActStatusCode"), new Object[] { drugMonitoringAct }));
+					ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActStatusCode"),
+					new Object[] { drugMonitoringAct }));
 			}
 
 			return false;
@@ -549,7 +556,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("DrugMonitoringActEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActEffectiveTime"),
 					new Object[] { drugMonitoringAct }));
 			}
 
@@ -608,7 +615,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("DrugMonitoringActParticipant"), new Object[] { drugMonitoringAct }));
+					ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActParticipant"),
+					new Object[] { drugMonitoringAct }));
 			}
 
 			return false;
@@ -671,7 +679,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActParticipantParticipantRolePlayingEntityClassCode"),
+						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -736,7 +744,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActParticipantParticipantRolePlayingEntityName"),
+						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActParticipantParticipantRolePlayingEntityName"),
 						new Object[] { eObject }));
 				}
 
@@ -801,7 +809,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActParticipantParticipantRoleClassCode"),
+						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActParticipantParticipantRoleClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -863,9 +871,10 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_ID,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActParticipantParticipantRoleId"),
+						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActParticipantParticipantRoleId"),
 						new Object[] { eObject }));
 				}
 
@@ -930,7 +939,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActParticipantParticipantRolePlayingEntity"),
+						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActParticipantParticipantRolePlayingEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -994,7 +1003,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActParticipantTypeCode"),
+						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActParticipantTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1056,9 +1065,10 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActParticipantParticipantRole"),
+						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActParticipantParticipantRole"),
 						new Object[] { eObject }));
 				}
 

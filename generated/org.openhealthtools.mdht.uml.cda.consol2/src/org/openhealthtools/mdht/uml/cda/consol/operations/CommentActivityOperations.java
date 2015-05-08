@@ -126,7 +126,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityTextReference"), new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityTextReference"),
+					new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -184,7 +185,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityTextReferenceValue"),
 					new Object[] { commentActivity }));
 			}
 
@@ -243,7 +244,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityReferenceValue"), new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityReferenceValue"),
+					new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -301,7 +303,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CommentActivityTemplateId"), new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityTemplateId"),
+					new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -359,7 +362,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityClassCode"), new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityClassCode"),
+					new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -417,7 +421,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityMoodCode"), new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityMoodCode"),
+					new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -476,7 +481,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_CODE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityCode"), new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityCode"),
+					new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -533,7 +539,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT,
-					ConsolPlugin.INSTANCE.getString("CommentActivityText"), new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityText"),
+					new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -591,7 +598,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("CommentActivityAuthor"), new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthor"),
+					new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -654,7 +662,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet"),
 						new Object[] { eObject }));
 				}
 
@@ -698,7 +706,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity"),
 						new Object[] { eObject }));
 				}
 
@@ -742,7 +750,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry"),
 						new Object[] { eObject }));
 				}
 
@@ -786,7 +794,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode"),
 						new Object[] { eObject }));
 				}
 
@@ -830,7 +838,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState"),
 						new Object[] { eObject }));
 				}
 
@@ -874,7 +882,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
 						new Object[] { eObject }));
 				}
 
@@ -939,7 +947,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP"),
 						new Object[] { eObject }));
 				}
 
@@ -1120,7 +1128,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse"),
 						new Object[] { eObject }));
 				}
 
@@ -1185,7 +1193,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_HAS_PERSON_OR_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorHasPersonOrOrganization"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorHasPersonOrOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -1247,9 +1255,10 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ASSIGN_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorAssignPersonName"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorAssignPersonName"),
 						new Object[] { eObject }));
 				}
 
@@ -1313,7 +1322,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ADDR,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorAddr"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorAddr"),
 						new Object[] { eObject }));
 				}
 
@@ -1377,7 +1386,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ID,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthorId"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthorId"),
 						new Object[] { eObject }));
 				}
 
@@ -1441,7 +1450,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_TIME,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorTime"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorTime"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -1504,7 +1514,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR,
-						ConsolPlugin.INSTANCE.getString("CommentActivityAuthorAssignedAuthor"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorAssignedAuthor"),
 						new Object[] { eObject }));
 				}
 

@@ -119,7 +119,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerTemplateId"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -179,7 +179,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerClassCode"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerClassCode"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -239,7 +239,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMoodCode"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerMoodCode"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -298,7 +298,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_ID,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerId"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerId"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -357,7 +357,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerCode"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerCode"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -417,7 +417,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerStatusCodeP"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -500,7 +500,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerStatusCode"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerStatusCode"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -560,7 +560,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerEffectiveTime"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -622,7 +622,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerNonMedicinalSupplyActivity2"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerNonMedicinalSupplyActivity2"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -684,7 +684,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerProcedureActivityProcedure2"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerProcedureActivityProcedure2"),
 					new Object[] { medicalEquipmentOrganizer }));
 			}
 

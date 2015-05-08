@@ -174,7 +174,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TEL_USE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse"),
 						new Object[] { eObject }));
 				}
 
@@ -239,7 +239,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_FROM_PERSONAL_RELATIONSHIP_OR_RESPONSIBLE_PARTY,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty"),
 						new Object[] { eObject }));
 				}
 
@@ -304,7 +304,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -380,7 +380,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode"),
 						new Object[] { eObject }));
 				}
 
@@ -445,7 +445,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TELECOM,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom"),
 						new Object[] { eObject }));
 				}
 
@@ -510,7 +510,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -586,7 +586,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode"),
 						new Object[] { eObject }));
 				}
 
@@ -651,7 +651,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PREFERENCE_IND,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd"),
 						new Object[] { eObject }));
 				}
 
@@ -716,7 +716,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_YEAR,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToYear"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToYear"),
 						new Object[] { eObject }));
 				}
 
@@ -781,7 +781,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_DAY,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToDay"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToDay"),
 						new Object[] { eObject }));
 				}
 
@@ -846,7 +846,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_MINUTE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute"),
 						new Object[] { eObject }));
 				}
 
@@ -890,7 +890,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -978,7 +978,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1022,7 +1022,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1066,7 +1066,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime"),
 						new Object[] { eObject }));
 				}
 
@@ -1175,7 +1175,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1240,7 +1240,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian"),
 						new Object[] { eObject }));
 				}
 
@@ -1305,7 +1305,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"),
 						new Object[] { eObject }));
 				}
 
@@ -1370,7 +1370,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2RecordTargetGeneralHeaderConstraintsRecordTargetPatientRolePatient"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2RecordTargetGeneralHeaderConstraintsRecordTargetPatientRolePatient"),
 						new Object[] { eObject }));
 				}
 
@@ -1435,7 +1435,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRole"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRole"),
 						new Object[] { eObject }));
 				}
 
@@ -1500,7 +1500,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_DATA_ENTERER_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCodeP"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1576,7 +1576,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_DATA_ENTERER_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1641,7 +1641,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -1706,7 +1706,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_AUTHOR_ASSIGNED_AUTHOR_IF_ASSIGNED_PERSON_THEN_CONTAINS_CODE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2AuthorAssignedAuthorIfAssignedPersonThenContainsCode"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2AuthorAssignedAuthorIfAssignedPersonThenContainsCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1768,9 +1768,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_AUTHOR_ASSIGNED_AUTHOR_CODE_TERMINOLOGY,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2AuthorAssignedAuthorCodeTerminology"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2AuthorAssignedAuthorCodeTerminology"),
 						new Object[] { eObject }));
 				}
 
@@ -1835,7 +1836,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthor"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthor"),
 						new Object[] { eObject }));
 				}
 
@@ -1897,9 +1898,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformationRecipientIntendedRecipientId"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformationRecipientIntendedRecipientId"),
 						new Object[] { eObject }));
 				}
 
@@ -1964,7 +1966,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsInformationRecipientIntendedRecipient"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2GeneralHeaderConstraintsInformationRecipientIntendedRecipient"),
 						new Object[] { eObject }));
 				}
 
@@ -2026,9 +2028,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_LEGAL_AUTHENTICATOR_SDTC_SIGNATURE_TEXT,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2LegalAuthenticatorSDTCSignatureText"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2LegalAuthenticatorSDTCSignatureText"),
 						new Object[] { eObject }));
 				}
 
@@ -2092,7 +2095,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_AUTHENTICATOR_SDTC_SIGNATURE_TEXT,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2AuthenticatorSDTCSignatureText"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2AuthenticatorSDTCSignatureText"),
 						new Object[] { eObject }));
 				}
 
@@ -2157,7 +2160,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet"),
 						new Object[] { eObject }));
 				}
 
@@ -2222,7 +2225,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP"),
 						new Object[] { eObject }));
 				}
 
@@ -2298,7 +2301,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse"),
 						new Object[] { eObject }));
 				}
 
@@ -2363,7 +2366,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry"),
 						new Object[] { eObject }));
 				}
 
@@ -2428,7 +2431,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState"),
 						new Object[] { eObject }));
 				}
 
@@ -2493,7 +2496,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity"),
 						new Object[] { eObject }));
 				}
 
@@ -2558,7 +2561,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2623,7 +2626,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
 						new Object[] { eObject }));
 				}
 
@@ -2688,7 +2691,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCodeP"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -2764,7 +2767,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -2829,7 +2832,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_ADDR,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityAddr"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityAddr"),
 						new Object[] { eObject }));
 				}
 
@@ -2894,7 +2897,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2InformantHasAssignedEntityOrRelatedEntity"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantHasAssignedEntityOrRelatedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -2959,7 +2962,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsComponentOfEncompassingEncounter"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2GeneralHeaderConstraintsComponentOfEncompassingEncounter"),
 						new Object[] { eObject }));
 				}
 
@@ -3024,7 +3027,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -3089,7 +3092,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -3165,7 +3168,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3230,7 +3233,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_DOCUMENTATION_OF_SERVICE_EVENT_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_FUNCTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -3306,7 +3309,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_DOCUMENTATION_OF_SERVICE_EVENT_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_FUNCTION_CODE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode"),
 						new Object[] { eObject }));
 				}
 
@@ -3371,7 +3374,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_DOCUMENTATION_OF_SERVICE_EVENT_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -3436,7 +3439,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_DOCUMENTATION_OF_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2DocumentationOfGeneralHeaderConstraintsDocumentationOfServiceEventPerformer"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2DocumentationOfGeneralHeaderConstraintsDocumentationOfServiceEventPerformer"),
 						new Object[] { eObject }));
 				}
 
@@ -3501,7 +3504,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEvent"),
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEvent"),
 						new Object[] { eObject }));
 				}
 
@@ -3561,7 +3564,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsTemplateId"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -3599,7 +3602,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_TITLE,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTitle"), new Object[] { usRealmHeader2 }));
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsTitle"),
+					new Object[] { usRealmHeader2 }));
 			}
 
 			return false;
@@ -3679,7 +3683,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_REALM_CODE,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRealmCode"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsRealmCode"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -3738,7 +3742,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTarget"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsRecordTarget"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -3797,7 +3801,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsDataEnterer"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsDataEnterer"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -3856,7 +3860,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthor"), new Object[] { usRealmHeader2 }));
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsAuthor"),
+					new Object[] { usRealmHeader2 }));
 			}
 
 			return false;
@@ -3914,7 +3919,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_CUSTODIAN,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCustodian"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsCustodian"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -3974,7 +3979,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformationRecipient"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsInformationRecipient"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -4034,7 +4039,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticator"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsLegalAuthenticator"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -4093,7 +4098,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticator"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsAuthenticator"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -4152,7 +4157,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_INFORMANT,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformant"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsInformant"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -4211,7 +4216,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInFulfillmentOf"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsInFulfillmentOf"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -4270,7 +4275,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsComponentOf"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsComponentOf"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -4330,7 +4335,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_SUPPORT_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsSupportParticipant"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsSupportParticipant"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -4389,7 +4394,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsDocumentationOf"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsDocumentationOf"),
 					new Object[] { usRealmHeader2 }));
 			}
 
@@ -4448,7 +4453,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_AUTHORIZATION,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthorization"),
+					ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsAuthorization"),
 					new Object[] { usRealmHeader2 }));
 			}
 

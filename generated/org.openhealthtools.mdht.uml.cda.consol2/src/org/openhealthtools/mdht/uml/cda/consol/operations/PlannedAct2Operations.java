@@ -121,7 +121,8 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_CODE_FROM_LOINC_OR_SNOMED,
-					ConsolPlugin.INSTANCE.getString("PlannedAct2CodeFromLoincOrSnomed"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2CodeFromLoincOrSnomed"),
+					new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -178,7 +179,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedAct2Code"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2Code"), new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -236,7 +237,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedAct2StatusCode"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2StatusCode"), new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -294,7 +295,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedAct2StatusCodeP"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2StatusCodeP"), new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -352,7 +353,8 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("PlannedAct2EffectiveTime"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2EffectiveTime"),
+					new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -409,7 +411,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_INDICATION2,
-					ConsolPlugin.INSTANCE.getString("PlannedAct2Indication2"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2Indication2"), new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -466,7 +468,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("PlannedAct2Instruction2"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2Instruction2"), new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -524,7 +526,8 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("PlannedAct2AuthorParticipation"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2AuthorParticipation"),
+					new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -581,7 +584,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("PlannedAct2Performer"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2Performer"), new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -639,7 +642,8 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("PlannedAct2PriorityPreference"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2PriorityPreference"),
+					new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -826,7 +830,8 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActTemplateId"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlanOfCareActivityActTemplateId"),
+					new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -886,7 +891,8 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_ACT2__PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActMoodCode"), new Object[] { plannedAct2 }));
+					ConsolPlugin.INSTANCE.getString("PlannedAct2PlanOfCareActivityActMoodCode"),
+					new Object[] { plannedAct2 }));
 			}
 
 			return false;

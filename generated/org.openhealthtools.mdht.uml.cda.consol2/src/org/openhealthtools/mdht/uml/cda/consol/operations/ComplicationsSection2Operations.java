@@ -114,7 +114,7 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"ComplicationsSection2ExplicitComplications",
+								"ComplicationsSection2ComplicationsSection2ExplicitComplications",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									complicationsSection2, context) }), new Object[] { complicationsSection2 }));
 			}
@@ -174,7 +174,7 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_PROBLEM_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("ComplicationsSectionProblemObservation2"),
+					ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionProblemObservation2"),
 					new Object[] { complicationsSection2 }));
 			}
 
@@ -277,7 +277,7 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ComplicationsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionTemplateId"),
 					new Object[] { complicationsSection2 }));
 			}
 
@@ -336,7 +336,7 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ComplicationsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionCodeP"),
 					new Object[] { complicationsSection2 }));
 			}
 
@@ -417,7 +417,8 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ComplicationsSectionCode"), new Object[] { complicationsSection2 }));
+					ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionCode"),
+					new Object[] { complicationsSection2 }));
 			}
 
 			return false;

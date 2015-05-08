@@ -132,7 +132,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationTextReference"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationCognitiveStatusResultObservationTextReference"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -194,7 +194,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationCognitiveStatusResultObservationTextReferenceValue"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -256,7 +256,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationValueDatatype"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationCognitiveStatusResultObservationValueDatatype"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -316,7 +316,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ResultObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationCodeP"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -386,9 +386,10 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 			cognitiveStatusResultObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationAuthor"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationCognitiveStatusResultObservationAuthor"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -450,7 +451,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationNonMedicinalSupplyActivity"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationCognitiveStatusResultObservationNonMedicinalSupplyActivity"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -512,7 +513,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationCaregiverCharacteristics"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationCognitiveStatusResultObservationCaregiverCharacteristics"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -574,7 +575,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationAssessmentScaleObservation"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationCognitiveStatusResultObservationAssessmentScaleObservation"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -636,7 +637,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationReferenceRange"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationCognitiveStatusResultObservationReferenceRange"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -701,7 +702,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationReferenceRangeObservationRangeNoCode"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode"),
 						new Object[] { eObject }));
 				}
 
@@ -767,7 +768,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationReferenceRangeObservationRange"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationCognitiveStatusResultObservationReferenceRangeObservationRange"),
 						new Object[] { eObject }));
 				}
 
@@ -963,7 +964,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ResultObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationTemplateId"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1023,7 +1024,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationClassCode"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1083,7 +1084,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationMoodCode"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1143,7 +1144,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("ResultObservationId"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationId"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1214,7 +1215,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationCode"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1274,7 +1275,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ResultObservationText"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationText"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1334,7 +1335,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ResultObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationStatusCodeP"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1416,7 +1417,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationStatusCode"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1476,7 +1477,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ResultObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationEffectiveTime"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1536,7 +1537,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationValue"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationValue"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1594,9 +1595,10 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 			cognitiveStatusResultObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_INTERPRETATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationInterpretationCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationInterpretationCode"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1656,7 +1658,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationMethodCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationMethodCode"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1716,7 +1718,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TARGET_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationTargetSiteCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationTargetSiteCode"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 

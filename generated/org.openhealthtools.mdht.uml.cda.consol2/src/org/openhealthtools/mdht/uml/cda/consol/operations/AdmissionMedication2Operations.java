@@ -107,7 +107,7 @@ public class AdmissionMedication2Operations extends AdmissionMedicationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATION2__ADMISSION_MEDICATION_MEDICATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationMedicationActivity2"),
+					ConsolPlugin.INSTANCE.getString("AdmissionMedication2AdmissionMedicationMedicationActivity2"),
 					new Object[] { admissionMedication2 }));
 			}
 
@@ -210,7 +210,7 @@ public class AdmissionMedication2Operations extends AdmissionMedicationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATION2__ADMISSION_MEDICATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AdmissionMedication2AdmissionMedicationTemplateId"),
 					new Object[] { admissionMedication2 }));
 			}
 
@@ -269,7 +269,8 @@ public class AdmissionMedication2Operations extends AdmissionMedicationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATION2__ADMISSION_MEDICATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationCodeP"), new Object[] { admissionMedication2 }));
+					ConsolPlugin.INSTANCE.getString("AdmissionMedication2AdmissionMedicationCodeP"),
+					new Object[] { admissionMedication2 }));
 			}
 
 			if (context != null) {
@@ -349,7 +350,8 @@ public class AdmissionMedication2Operations extends AdmissionMedicationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATION2__ADMISSION_MEDICATION_CODE,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationCode"), new Object[] { admissionMedication2 }));
+					ConsolPlugin.INSTANCE.getString("AdmissionMedication2AdmissionMedicationCode"),
+					new Object[] { admissionMedication2 }));
 			}
 
 			return false;

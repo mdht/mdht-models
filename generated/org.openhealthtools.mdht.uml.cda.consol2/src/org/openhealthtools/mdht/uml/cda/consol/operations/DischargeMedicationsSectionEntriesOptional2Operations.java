@@ -109,7 +109,7 @@ public class DischargeMedicationsSectionEntriesOptional2Operations extends
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION2,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2"),
+					ConsolPlugin.INSTANCE.getString("DischargeMedicationsSectionEntriesOptional2HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2"),
 					new Object[] { dischargeMedicationsSectionEntriesOptional2 }));
 			}
 
@@ -216,7 +216,7 @@ public class DischargeMedicationsSectionEntriesOptional2Operations extends
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("DischargeMedicationsSectionEntriesOptional2HospitalDischargeMedicationsSectionEntriesOptionalTemplateId"),
 					new Object[] { dischargeMedicationsSectionEntriesOptional2 }));
 			}
 
@@ -278,7 +278,7 @@ public class DischargeMedicationsSectionEntriesOptional2Operations extends
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("DischargeMedicationsSectionEntriesOptional2HospitalDischargeMedicationsSectionEntriesOptionalCodeP"),
 					new Object[] { dischargeMedicationsSectionEntriesOptional2 }));
 			}
 
@@ -365,7 +365,7 @@ public class DischargeMedicationsSectionEntriesOptional2Operations extends
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("DischargeMedicationsSectionEntriesOptional2HospitalDischargeMedicationsSectionEntriesOptionalCode"),
 					new Object[] { dischargeMedicationsSectionEntriesOptional2 }));
 			}
 

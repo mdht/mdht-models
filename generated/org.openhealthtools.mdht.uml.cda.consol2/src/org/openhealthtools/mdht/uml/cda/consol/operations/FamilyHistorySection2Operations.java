@@ -102,9 +102,10 @@ public class FamilyHistorySection2Operations extends FamilyHistorySectionOperati
 			familyHistorySection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_SECTION2__FAMILY_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER2,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionFamilyHistoryOrganizer2"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistorySection2FamilyHistorySectionFamilyHistoryOrganizer2"),
 					new Object[] { familyHistorySection2 }));
 			}
 
@@ -208,7 +209,7 @@ public class FamilyHistorySection2Operations extends FamilyHistorySectionOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_SECTION2__FAMILY_HISTORY_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistorySection2FamilyHistorySectionTemplateId"),
 					new Object[] { familyHistorySection2 }));
 			}
 

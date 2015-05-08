@@ -112,7 +112,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION2_NULL_FLAVOR,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSection2NullFlavor"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSection2ImmunizationsSection2NullFlavor"),
 					new Object[] { immunizationsSection2 }));
 			}
 
@@ -171,7 +171,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION2_TITLE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSection2Title"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSection2ImmunizationsSection2Title"),
 					new Object[] { immunizationsSection2 }));
 			}
 
@@ -230,7 +230,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION2_TEXT,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSection2Text"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSection2ImmunizationsSection2Text"),
 					new Object[] { immunizationsSection2 }));
 			}
 
@@ -288,9 +288,10 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 			immunizationsSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSection2ImmunizationsSectionEntriesOptionalTemplateId"),
 					new Object[] { immunizationsSection2 }));
 			}
 
@@ -350,7 +351,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSection2ImmunizationsSectionEntriesOptionalCodeP"),
 					new Object[] { immunizationsSection2 }));
 			}
 
@@ -432,7 +433,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSection2ImmunizationsSectionEntriesOptionalCode"),
 					new Object[] { immunizationsSection2 }));
 			}
 
@@ -493,7 +494,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalImmunizationActivity2"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSection2ImmunizationsSectionEntriesOptionalImmunizationActivity2"),
 					new Object[] { immunizationsSection2 }));
 			}
 

@@ -119,7 +119,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"FunctionalStatusObservation2TextReference",
+								"FunctionalStatusObservation2FunctionalStatusObservation2TextReference",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									functionalStatusObservation2, context) }),
 					new Object[] { functionalStatusObservation2 }));
@@ -186,7 +186,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"FunctionalStatusObservation2TextReferenceValue",
+								"FunctionalStatusObservation2FunctionalStatusObservation2TextReferenceValue",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									functionalStatusObservation2, context) }),
 					new Object[] { functionalStatusObservation2 }));
@@ -250,7 +250,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2FunctionalStatusObservation2AuthorParticipation"),
 					new Object[] { functionalStatusObservation2 }));
 			}
 
@@ -312,7 +312,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationNonMedicinalSupplyActivity2"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2FunctionalStatusResultObservationNonMedicinalSupplyActivity2"),
 					new Object[] { functionalStatusObservation2 }));
 			}
 
@@ -377,7 +377,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ReferenceRangeObservationRangeNoCode"),
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2FunctionalStatusObservation2ReferenceRangeObservationRangeNoCode"),
 						new Object[] { eObject }));
 				}
 
@@ -481,7 +481,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ResultObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationTemplateId"),
 					new Object[] { functionalStatusObservation2 }));
 			}
 
@@ -540,7 +540,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ResultObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationCodeP"),
 					new Object[] { functionalStatusObservation2 }));
 			}
 
@@ -621,7 +621,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationCode"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationCode"),
 					new Object[] { functionalStatusObservation2 }));
 			}
 
@@ -683,7 +683,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationReferenceRange"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRange"),
 					new Object[] { functionalStatusObservation2 }));
 			}
 

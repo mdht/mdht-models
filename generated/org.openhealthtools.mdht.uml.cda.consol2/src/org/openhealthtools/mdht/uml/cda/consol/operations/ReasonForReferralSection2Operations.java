@@ -109,9 +109,10 @@ public class ReasonForReferralSection2Operations extends ReasonForReferralSectio
 			reasonForReferralSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_REFERRAL_SECTION2__REASON_FOR_REFERRAL_SECTION2_PATIENT_REFERRAL_ACT,
-					ConsolPlugin.INSTANCE.getString("ReasonForReferralSection2PatientReferralAct"),
+					ConsolPlugin.INSTANCE.getString("ReasonForReferralSection2ReasonForReferralSection2PatientReferralAct"),
 					new Object[] { reasonForReferralSection2 }));
 			}
 
@@ -215,7 +216,7 @@ public class ReasonForReferralSection2Operations extends ReasonForReferralSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_REFERRAL_SECTION2__REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ReasonForReferralSection2ReasonForReferralSectionTemplateId"),
 					new Object[] { reasonForReferralSection2 }));
 			}
 
@@ -274,7 +275,7 @@ public class ReasonForReferralSection2Operations extends ReasonForReferralSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_REFERRAL_SECTION2__REASON_FOR_REFERRAL_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ReasonForReferralSection2ReasonForReferralSectionCodeP"),
 					new Object[] { reasonForReferralSection2 }));
 			}
 
@@ -355,7 +356,7 @@ public class ReasonForReferralSection2Operations extends ReasonForReferralSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_REFERRAL_SECTION2__REASON_FOR_REFERRAL_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ReasonForReferralSection2ReasonForReferralSectionCode"),
 					new Object[] { reasonForReferralSection2 }));
 			}
 

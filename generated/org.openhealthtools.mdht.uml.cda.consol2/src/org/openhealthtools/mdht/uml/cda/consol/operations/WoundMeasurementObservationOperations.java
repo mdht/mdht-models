@@ -108,9 +108,10 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 			woundMeasurementObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationTemplateId"),
 					new Object[] { woundMeasurementObservation }));
 			}
 
@@ -170,7 +171,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationClassCode"),
 					new Object[] { woundMeasurementObservation }));
 			}
 
@@ -230,7 +231,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationMoodCode"),
 					new Object[] { woundMeasurementObservation }));
 			}
 
@@ -290,7 +291,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationId"),
+					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationId"),
 					new Object[] { woundMeasurementObservation }));
 			}
 
@@ -350,7 +351,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationCodeP"),
 					new Object[] { woundMeasurementObservation }));
 			}
 
@@ -432,7 +433,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationCode"),
+					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationCode"),
 					new Object[] { woundMeasurementObservation }));
 			}
 
@@ -491,9 +492,10 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 			woundMeasurementObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationStatusCode"),
 					new Object[] { woundMeasurementObservation }));
 			}
 
@@ -551,9 +553,10 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 			woundMeasurementObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationStatusCodeP"),
 					new Object[] { woundMeasurementObservation }));
 			}
 
@@ -611,9 +614,10 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 			woundMeasurementObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationEffectiveTime"),
 					new Object[] { woundMeasurementObservation }));
 			}
 
@@ -673,7 +677,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationValue"),
+					ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationValue"),
 					new Object[] { woundMeasurementObservation }));
 			}
 

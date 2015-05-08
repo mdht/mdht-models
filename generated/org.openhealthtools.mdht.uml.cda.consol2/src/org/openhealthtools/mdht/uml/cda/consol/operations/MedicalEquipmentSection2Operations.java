@@ -117,7 +117,7 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionNonMedicinalSupplyActivity2"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionNonMedicinalSupplyActivity2"),
 					new Object[] { medicalEquipmentSection2 }));
 			}
 
@@ -175,9 +175,10 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 			medicalEquipmentSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentOrganizer"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSection2MedicalEquipmentOrganizer"),
 					new Object[] { medicalEquipmentSection2 }));
 			}
 
@@ -238,7 +239,7 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2ProcedureActivityProcedure2"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSection2ProcedureActivityProcedure2"),
 					new Object[] { medicalEquipmentSection2 }));
 			}
 
@@ -432,7 +433,7 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionTemplateId"),
 					new Object[] { medicalEquipmentSection2 }));
 			}
 
@@ -491,7 +492,7 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionCodeP"),
 					new Object[] { medicalEquipmentSection2 }));
 			}
 
@@ -572,7 +573,7 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionCode"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionCode"),
 					new Object[] { medicalEquipmentSection2 }));
 			}
 

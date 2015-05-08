@@ -116,7 +116,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Operations extends
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2_ADVANCE_DIRECTIVE_ORGANIZER,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptional2AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer"),
 					new Object[] { advanceDirectivesSectionEntriesOptional2 }));
 			}
 
@@ -178,7 +178,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Operations extends
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_ADVANCE_DIRECTIVE_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation2"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptional2AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation2"),
 					new Object[] { advanceDirectivesSectionEntriesOptional2 }));
 			}
 
@@ -330,7 +330,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Operations extends
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptional2AdvanceDirectivesSectionEntriesOptionalTemplateId"),
 					new Object[] { advanceDirectivesSectionEntriesOptional2 }));
 			}
 
@@ -392,7 +392,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Operations extends
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptional2AdvanceDirectivesSectionEntriesOptionalCodeP"),
 					new Object[] { advanceDirectivesSectionEntriesOptional2 }));
 			}
 
@@ -479,7 +479,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Operations extends
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptional2AdvanceDirectivesSectionEntriesOptionalCode"),
 					new Object[] { advanceDirectivesSectionEntriesOptional2 }));
 			}
 

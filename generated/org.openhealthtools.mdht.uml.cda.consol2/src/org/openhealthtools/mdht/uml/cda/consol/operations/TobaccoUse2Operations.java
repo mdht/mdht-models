@@ -108,7 +108,7 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.TOBACCO_USE2__TOBACCO_USE2_ID,
-					ConsolPlugin.INSTANCE.getString("TobaccoUse2Id"), new Object[] { tobaccoUse2 }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUse2Id"), new Object[] { tobaccoUse2 }));
 			}
 
 			return false;
@@ -166,7 +166,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE2__TOBACCO_USE2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("TobaccoUse2AuthorParticipation"), new Object[] { tobaccoUse2 }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUse2AuthorParticipation"),
+					new Object[] { tobaccoUse2 }));
 			}
 
 			return false;
@@ -228,7 +229,7 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TOBACCO_USE2__TOBACCO_USE2_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("TobaccoUse2IVLTSHigh"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUse2IVLTSHigh"), new Object[] { eObject }));
 				}
 
 			}
@@ -286,7 +287,7 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE2__TOBACCO_USE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTemplateId"), new Object[] { tobaccoUse2 }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseTemplateId"), new Object[] { tobaccoUse2 }));
 			}
 
 			return false;
@@ -323,7 +324,7 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE2__TOBACCO_USE_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseEffectiveTime"), new Object[] { tobaccoUse2 }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseEffectiveTime"), new Object[] { tobaccoUse2 }));
 			}
 
 			return false;
@@ -380,7 +381,7 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE2__TOBACCO_USE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseCodeP"), new Object[] { tobaccoUse2 }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseCodeP"), new Object[] { tobaccoUse2 }));
 			}
 
 			if (context != null) {
@@ -479,8 +480,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TOBACCO_USE2__TOBACCO_USE_CODE, ConsolPlugin.INSTANCE.getString("TobaccoUseCode"),
-					new Object[] { tobaccoUse2 }));
+					ConsolValidator.TOBACCO_USE2__TOBACCO_USE_CODE,
+					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseCode"), new Object[] { tobaccoUse2 }));
 			}
 
 			return false;

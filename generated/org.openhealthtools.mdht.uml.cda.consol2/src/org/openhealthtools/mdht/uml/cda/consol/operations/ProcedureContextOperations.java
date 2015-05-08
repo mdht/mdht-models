@@ -103,7 +103,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextEffectiveTimeValue"),
+					ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextEffectiveTimeValue"),
 					new Object[] { procedureContext }));
 			}
 
@@ -162,7 +162,8 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextTemplateId"), new Object[] { procedureContext }));
+					ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextTemplateId"),
+					new Object[] { procedureContext }));
 			}
 
 			return false;
@@ -220,7 +221,8 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextClassCode"), new Object[] { procedureContext }));
+					ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextClassCode"),
+					new Object[] { procedureContext }));
 			}
 
 			return false;
@@ -278,7 +280,8 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextMoodCode"), new Object[] { procedureContext }));
+					ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextMoodCode"),
+					new Object[] { procedureContext }));
 			}
 
 			return false;
@@ -336,7 +339,8 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextCode"), new Object[] { procedureContext }));
+					ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextCode"),
+					new Object[] { procedureContext }));
 			}
 
 			return false;
@@ -394,7 +398,8 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextEffectiveTime"), new Object[] { procedureContext }));
+					ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextEffectiveTime"),
+					new Object[] { procedureContext }));
 			}
 
 			return false;

@@ -113,9 +113,10 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 			physicalFindingsOfSkinSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionTemplateId"),
 					new Object[] { physicalFindingsOfSkinSection }));
 			}
 
@@ -177,7 +178,7 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionCode"),
+					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionCode"),
 					new Object[] { physicalFindingsOfSkinSection }));
 			}
 
@@ -237,7 +238,7 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionCodeP"),
 					new Object[] { physicalFindingsOfSkinSection }));
 			}
 
@@ -297,7 +298,7 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionTitle"),
 					new Object[] { physicalFindingsOfSkinSection }));
 			}
 
@@ -357,7 +358,7 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionText"),
+					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionText"),
 					new Object[] { physicalFindingsOfSkinSection }));
 			}
 
@@ -419,7 +420,7 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_WOUND_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionWoundObservation"),
+					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionWoundObservation"),
 					new Object[] { physicalFindingsOfSkinSection }));
 			}
 

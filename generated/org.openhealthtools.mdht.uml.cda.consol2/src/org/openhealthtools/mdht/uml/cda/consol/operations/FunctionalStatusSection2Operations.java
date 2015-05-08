@@ -129,7 +129,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSectionCodeP"),
 					new Object[] { functionalStatusSection2 }));
 			}
 
@@ -199,9 +199,10 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			functionalStatusSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_ORGANIZER2,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionFunctionalStatusOrganizer2"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSectionFunctionalStatusOrganizer2"),
 					new Object[] { functionalStatusSection2 }));
 			}
 
@@ -262,7 +263,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionFunctionalStatusObservation2"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSectionFunctionalStatusObservation2"),
 					new Object[] { functionalStatusSection2 }));
 			}
 
@@ -323,7 +324,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionNonMedicinalSupplyActivity2"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSectionNonMedicinalSupplyActivity2"),
 					new Object[] { functionalStatusSection2 }));
 			}
 
@@ -381,9 +382,10 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			functionalStatusSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION2_SELF_CARE_ACTIVITIES,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2SelfCareActivities"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSection2SelfCareActivities"),
 					new Object[] { functionalStatusSection2 }));
 			}
 
@@ -441,9 +443,10 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			functionalStatusSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2SensoryAndSpeechStatus"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSection2SensoryAndSpeechStatus"),
 					new Object[] { functionalStatusSection2 }));
 			}
 
@@ -906,7 +909,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSectionTemplateId"),
 					new Object[] { functionalStatusSection2 }));
 			}
 
@@ -975,7 +978,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionCode"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSectionCode"),
 					new Object[] { functionalStatusSection2 }));
 			}
 

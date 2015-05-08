@@ -108,7 +108,7 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisCodeP"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosis2HospitalDischargeDiagnosisCodeP"),
 					new Object[] { hospitalDischargeDiagnosis2 }));
 			}
 
@@ -179,9 +179,10 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 			hospitalDischargeDiagnosis2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisProblemObservation2"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosis2HospitalDischargeDiagnosisProblemObservation2"),
 					new Object[] { hospitalDischargeDiagnosis2 }));
 			}
 
@@ -286,7 +287,7 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosis2HospitalDischargeDiagnosisTemplateId"),
 					new Object[] { hospitalDischargeDiagnosis2 }));
 			}
 
@@ -356,7 +357,7 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosis2HospitalDischargeDiagnosisCode"),
 					new Object[] { hospitalDischargeDiagnosis2 }));
 			}
 

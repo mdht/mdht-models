@@ -129,7 +129,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT2_INSTRUCTIONS_INVERSION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2InstructionsInversion"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityAct2InstructionsInversion"),
 					new Object[] { procedureActivityAct2 }));
 			}
 
@@ -187,9 +187,10 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 			procedureActivityAct2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT2_CODE_SUGGESTED_CODE_SYSTEMS,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2CodeSuggestedCodeSystems"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityAct2CodeSuggestedCodeSystems"),
 					new Object[] { procedureActivityAct2 }));
 			}
 
@@ -248,7 +249,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityActStatusCodeP"),
 					new Object[] { procedureActivityAct2 }));
 			}
 
@@ -319,7 +320,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActInstruction2"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityActInstruction2"),
 					new Object[] { procedureActivityAct2 }));
 			}
 
@@ -378,7 +379,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT_INDICATION2,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActIndication2"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityActIndication2"),
 					new Object[] { procedureActivityAct2 }));
 			}
 
@@ -437,7 +438,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActMedicationActivity2"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityActMedicationActivity2"),
 					new Object[] { procedureActivityAct2 }));
 			}
 
@@ -496,7 +497,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityAct2AuthorParticipation"),
 					new Object[] { procedureActivityAct2 }));
 			}
 
@@ -560,7 +561,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT2_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActPerformerProcedureActAssignedEntityProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom"),
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityAct2ProcedureActPerformerProcedureActAssignedEntityProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom"),
 						new Object[] { eObject }));
 				}
 
@@ -625,7 +626,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT2_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActPerformerProcedureActAssignedEntityProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr"),
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityAct2ProcedureActPerformerProcedureActAssignedEntityProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr"),
 						new Object[] { eObject }));
 				}
 
@@ -690,7 +691,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT2_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActPerformerProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom"),
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityAct2ProcedureActPerformerProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom"),
 						new Object[] { eObject }));
 				}
 
@@ -755,7 +756,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT2_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActPerformerProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization"),
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityAct2ProcedureActPerformerProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -820,7 +821,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT2_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityActProcedureActPerformerAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityAct2ProcedureActivityActProcedureActPerformerAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -1010,7 +1011,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityActTemplateId"),
 					new Object[] { procedureActivityAct2 }));
 			}
 
@@ -1069,7 +1070,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityActMoodCode"),
 					new Object[] { procedureActivityAct2 }));
 			}
 
@@ -1138,7 +1139,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityActStatusCode"),
 					new Object[] { procedureActivityAct2 }));
 			}
 
@@ -1197,7 +1198,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityActEffectiveTime"),
 					new Object[] { procedureActivityAct2 }));
 			}
 
@@ -1256,7 +1257,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT2__PROCEDURE_ACTIVITY_ACT_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActPerformer"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityAct2ProcedureActivityActPerformer"),
 					new Object[] { procedureActivityAct2 }));
 			}
 

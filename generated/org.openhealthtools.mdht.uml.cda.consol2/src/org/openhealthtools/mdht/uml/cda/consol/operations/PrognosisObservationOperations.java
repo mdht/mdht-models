@@ -108,7 +108,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PrognosisObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationTemplateId"),
 					new Object[] { prognosisObservation }));
 			}
 
@@ -167,7 +167,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PrognosisObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationClassCode"),
 					new Object[] { prognosisObservation }));
 			}
 
@@ -226,7 +226,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PrognosisObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationMoodCode"),
 					new Object[] { prognosisObservation }));
 			}
 
@@ -285,7 +285,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PrognosisObservationCodeP"), new Object[] { prognosisObservation }));
+					ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationCodeP"),
+					new Object[] { prognosisObservation }));
 			}
 
 			if (context != null) {
@@ -365,7 +366,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("PrognosisObservationCode"), new Object[] { prognosisObservation }));
+					ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationCode"),
+					new Object[] { prognosisObservation }));
 			}
 
 			return false;
@@ -424,7 +426,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PrognosisObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationStatusCode"),
 					new Object[] { prognosisObservation }));
 			}
 
@@ -483,7 +485,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PrognosisObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationStatusCodeP"),
 					new Object[] { prognosisObservation }));
 			}
 
@@ -542,7 +544,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("PrognosisObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationEffectiveTime"),
 					new Object[] { prognosisObservation }));
 			}
 
@@ -601,7 +603,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("PrognosisObservationValue"), new Object[] { prognosisObservation }));
+					ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationValue"),
+					new Object[] { prognosisObservation }));
 			}
 
 			return false;

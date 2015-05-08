@@ -132,7 +132,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActTemplateId"),
 					new Object[] { patientReferralAct }));
 			}
 
@@ -191,7 +191,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActClassCode"), new Object[] { patientReferralAct }));
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActClassCode"),
+					new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -249,7 +250,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActMoodCode"), new Object[] { patientReferralAct }));
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActMoodCode"),
+					new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -307,7 +309,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActId"), new Object[] { patientReferralAct }));
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActId"),
+					new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -365,7 +368,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActCodeP"), new Object[] { patientReferralAct }));
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActCodeP"),
+					new Object[] { patientReferralAct }));
 			}
 
 			if (context != null) {
@@ -445,7 +449,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActCode"), new Object[] { patientReferralAct }));
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActCode"),
+					new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -504,7 +509,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActStatusCode"),
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActStatusCode"),
 					new Object[] { patientReferralAct }));
 			}
 
@@ -563,7 +568,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActStatusCodeP"),
 					new Object[] { patientReferralAct }));
 			}
 
@@ -622,7 +627,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEffectiveTime"),
 					new Object[] { patientReferralAct }));
 			}
 
@@ -681,7 +686,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ACT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActActReference"),
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActActReference"),
 					new Object[] { patientReferralAct }));
 			}
 
@@ -740,7 +745,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActEntryRelationship"),
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationship"),
 					new Object[] { patientReferralAct }));
 			}
 
@@ -799,7 +804,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActAuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActAuthorParticipation"),
 					new Object[] { patientReferralAct }));
 			}
 
@@ -863,7 +868,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActEntryRelationshipObservationClassCode"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -928,7 +933,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActEntryRelationshipObservationMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationMoodCode"),
 						new Object[] { eObject }));
 				}
 
@@ -993,7 +998,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActEntryRelationshipObservationCodeP"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1079,9 +1084,10 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActEntryRelationshipObservationCode"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1147,7 +1153,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActEntryRelationshipObservationStatusCode"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationStatusCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1212,7 +1218,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActEntryRelationshipObservationStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationStatusCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -1279,7 +1285,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActEntryRelationshipObservationValue"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationValue"),
 						new Object[] { eObject }));
 				}
 
@@ -1344,7 +1350,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActEntryRelationshipObservationValueP"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationValueP"),
 						new Object[] { eObject }));
 				}
 
@@ -1406,9 +1412,10 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActEntryRelationshipTypeCode"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1470,9 +1477,10 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActEntryRelationshipObservation"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservation"),
 						new Object[] { eObject }));
 				}
 

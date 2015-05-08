@@ -112,7 +112,7 @@ public class AdvanceDirectivesSection2Operations extends AdvanceDirectivesSectio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION2__ADVANCE_DIRECTIVES_SECTION2_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2AdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer"),
 					new Object[] { advanceDirectivesSection2 }));
 			}
 
@@ -172,7 +172,7 @@ public class AdvanceDirectivesSection2Operations extends AdvanceDirectivesSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION2__ADVANCE_DIRECTIVES_SECTION2_NULL_FLAVOR,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2NullFlavor"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2AdvanceDirectivesSection2NullFlavor"),
 					new Object[] { advanceDirectivesSection2 }));
 			}
 
@@ -231,7 +231,7 @@ public class AdvanceDirectivesSection2Operations extends AdvanceDirectivesSectio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION2__ADVANCE_DIRECTIVES_SECTION2_ENTRY,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2Entry"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2AdvanceDirectivesSection2Entry"),
 					new Object[] { advanceDirectivesSection2 }));
 			}
 
@@ -296,7 +296,7 @@ public class AdvanceDirectivesSection2Operations extends AdvanceDirectivesSectio
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVES_SECTION2__ADVANCE_DIRECTIVES_SECTION2_ENTRY_ADVANCE_DIRECTIVE_ORGANIZER,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2EntryAdvanceDirectiveOrganizer"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2AdvanceDirectivesSection2EntryAdvanceDirectiveOrganizer"),
 						new Object[] { eObject }));
 				}
 
@@ -362,7 +362,7 @@ public class AdvanceDirectivesSection2Operations extends AdvanceDirectivesSectio
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVES_SECTION2__ADVANCE_DIRECTIVES_SECTION2_ENTRY_ADVANCE_DIRECTIVE_OBSERVATION2,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2EntryAdvanceDirectiveObservation2"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2AdvanceDirectivesSection2EntryAdvanceDirectiveObservation2"),
 						new Object[] { eObject }));
 				}
 
@@ -404,7 +404,7 @@ public class AdvanceDirectivesSection2Operations extends AdvanceDirectivesSectio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION2__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2AdvanceDirectivesSectionEntriesOptionalTemplateId"),
 					new Object[] { advanceDirectivesSection2 }));
 			}
 

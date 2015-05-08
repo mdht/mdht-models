@@ -118,7 +118,7 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HandoffCommunicationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationTemplateId"),
 					new Object[] { handoffCommunication }));
 			}
 
@@ -177,7 +177,7 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("HandoffCommunicationClassCode"),
+					ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationClassCode"),
 					new Object[] { handoffCommunication }));
 			}
 
@@ -236,7 +236,7 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("HandoffCommunicationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationMoodCode"),
 					new Object[] { handoffCommunication }));
 			}
 
@@ -295,7 +295,8 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HandoffCommunicationCodeP"), new Object[] { handoffCommunication }));
+					ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationCodeP"),
+					new Object[] { handoffCommunication }));
 			}
 
 			if (context != null) {
@@ -375,7 +376,8 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_CODE,
-					ConsolPlugin.INSTANCE.getString("HandoffCommunicationCode"), new Object[] { handoffCommunication }));
+					ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationCode"),
+					new Object[] { handoffCommunication }));
 			}
 
 			return false;
@@ -434,7 +436,7 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("HandoffCommunicationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationStatusCode"),
 					new Object[] { handoffCommunication }));
 			}
 
@@ -493,7 +495,7 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HandoffCommunicationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationStatusCodeP"),
 					new Object[] { handoffCommunication }));
 			}
 
@@ -552,7 +554,7 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("HandoffCommunicationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationEffectiveTime"),
 					new Object[] { handoffCommunication }));
 			}
 
@@ -611,7 +613,7 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipant"),
+					ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationParticipant"),
 					new Object[] { handoffCommunication }));
 			}
 
@@ -670,7 +672,7 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("HandoffCommunicationAuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationAuthorParticipation"),
 					new Object[] { handoffCommunication }));
 			}
 
@@ -734,7 +736,7 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_PARTICIPANT_PARTICIPANT_ROLE_CODE_P,
-						ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantParticipantRoleCodeP"),
+						ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationParticipantParticipantRoleCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -820,9 +822,10 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_PARTICIPANT_PARTICIPANT_ROLE_CODE,
-						ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantParticipantRoleCode"),
+						ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationParticipantParticipantRoleCode"),
 						new Object[] { eObject }));
 				}
 
@@ -886,7 +889,7 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_PARTICIPANT_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantTypeCode"),
+						ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationParticipantTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -948,9 +951,10 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_PARTICIPANT_PARTICIPANT_ROLE,
-						ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantParticipantRole"),
+						ConsolPlugin.INSTANCE.getString("HandoffCommunicationHandoffCommunicationParticipantParticipantRole"),
 						new Object[] { eObject }));
 				}
 

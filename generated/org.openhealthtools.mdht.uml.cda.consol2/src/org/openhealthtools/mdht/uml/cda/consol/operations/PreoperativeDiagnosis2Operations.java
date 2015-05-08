@@ -107,7 +107,7 @@ public class PreoperativeDiagnosis2Operations extends PreoperativeDiagnosisOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS2__PREOPERATIVE_DIAGNOSIS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisCodeP"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosis2PreoperativeDiagnosisCodeP"),
 					new Object[] { preoperativeDiagnosis2 }));
 			}
 
@@ -178,7 +178,7 @@ public class PreoperativeDiagnosis2Operations extends PreoperativeDiagnosisOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS2__PREOPERATIVE_DIAGNOSIS_PROBLEM_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisProblemObservation2"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosis2PreoperativeDiagnosisProblemObservation2"),
 					new Object[] { preoperativeDiagnosis2 }));
 			}
 
@@ -281,7 +281,7 @@ public class PreoperativeDiagnosis2Operations extends PreoperativeDiagnosisOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS2__PREOPERATIVE_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosis2PreoperativeDiagnosisTemplateId"),
 					new Object[] { preoperativeDiagnosis2 }));
 			}
 
@@ -350,7 +350,7 @@ public class PreoperativeDiagnosis2Operations extends PreoperativeDiagnosisOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS2__PREOPERATIVE_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisCode"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosis2PreoperativeDiagnosisCode"),
 					new Object[] { preoperativeDiagnosis2 }));
 			}
 

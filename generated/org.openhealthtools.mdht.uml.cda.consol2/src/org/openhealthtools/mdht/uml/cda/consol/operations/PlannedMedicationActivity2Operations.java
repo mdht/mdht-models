@@ -141,7 +141,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2StatusCode"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2StatusCode"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -201,7 +201,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2StatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2StatusCodeP"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -259,9 +259,10 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			plannedMedicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2EffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2EffectiveTime"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -319,9 +320,10 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			plannedMedicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2RepeatNumber"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2RepeatNumber"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -381,7 +383,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_ROUTE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2RouteCodeP"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2RouteCodeP"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -464,7 +466,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_ROUTE_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2RouteCode"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2RouteCode"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -523,9 +525,10 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			plannedMedicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_APPROACH_SITE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2ApproachSiteCodeP"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2ApproachSiteCodeP"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -608,9 +611,10 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			plannedMedicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_APPROACH_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2ApproachSiteCode"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2ApproachSiteCode"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -668,9 +672,10 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			plannedMedicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_DOSE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2DoseQuantity"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2DoseQuantity"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -728,9 +733,10 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			plannedMedicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_RATE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2RateQuantity"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2RateQuantity"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -789,9 +795,10 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			plannedMedicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_MAX_DOSE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2MaxDoseQuantity"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2MaxDoseQuantity"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -853,7 +860,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_ADMINISTRATION_UNIT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2AdministrationUnitCodeP"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2AdministrationUnitCodeP"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -939,7 +946,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_ADMINISTRATION_UNIT_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2AdministrationUnitCode"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2AdministrationUnitCode"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -999,7 +1006,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2Performer"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2Performer"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -1058,9 +1065,10 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			plannedMedicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2AuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2AuthorParticipation"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -1119,9 +1127,10 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			plannedMedicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PriorityPreference"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2PriorityPreference"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -1181,7 +1190,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_INDICATION2,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2Indication2"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2Indication2"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -1239,9 +1248,10 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			plannedMedicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2Instruction2"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2Instruction2"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -1301,7 +1311,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_CONSUMABLE,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2Consumable"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2Consumable"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -1359,9 +1369,10 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			plannedMedicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_PRECONDITION,
-					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2Precondition"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2Precondition"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -1426,7 +1437,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_IVLP_QDOSE_QUANTITY_UNIT,
-						ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2IVLPQdoseQuantityUnit"),
+						ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2IVLPQdoseQuantityUnit"),
 						new Object[] { eObject }));
 				}
 
@@ -1492,7 +1503,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_IVLP_QRATE_QUANTITY_UNIT,
-						ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2IVLPQrateQuantityUnit"),
+						ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2IVLPQrateQuantityUnit"),
 						new Object[] { eObject }));
 				}
 
@@ -1558,7 +1569,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_CONSUMABLE_MEDICATION_INFORMATION2,
-						ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2ConsumableMedicationInformation2"),
+						ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2ConsumableMedicationInformation2"),
 						new Object[] { eObject }));
 				}
 
@@ -1624,7 +1635,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_PRECONDITION_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PreconditionTypeCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2PreconditionTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1690,7 +1701,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2,
-						ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2"),
+						ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2"),
 						new Object[] { eObject }));
 				}
 
@@ -1886,7 +1897,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySubstanceAdministrationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlanOfCareActivitySubstanceAdministrationTemplateId"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 
@@ -1950,7 +1961,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySubstanceAdministrationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2PlanOfCareActivitySubstanceAdministrationMoodCode"),
 					new Object[] { plannedMedicationActivity2 }));
 			}
 

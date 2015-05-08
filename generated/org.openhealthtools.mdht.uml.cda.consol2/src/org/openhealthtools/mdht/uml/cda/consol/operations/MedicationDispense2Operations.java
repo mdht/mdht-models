@@ -108,9 +108,10 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			medicationDispense2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE2_CONTAINS_MEDICATION_INFORMATION2,
-					ConsolPlugin.INSTANCE.getString("MedicationDispense2ContainsMedicationInformation2"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispense2ContainsMedicationInformation2"),
 					new Object[] { medicationDispense2 }));
 			}
 
@@ -171,7 +172,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2,
-					ConsolPlugin.INSTANCE.getString("MedicationDispense2ContainsImmunizationMedicationInformation2"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispense2ContainsImmunizationMedicationInformation2"),
 					new Object[] { medicationDispense2 }));
 			}
 
@@ -229,9 +230,10 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			medicationDispense2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE2_CONTAINS_MEDICATION_OR_IMMUNIZATION,
-					ConsolPlugin.INSTANCE.getString("MedicationDispense2ContainsMedicationOrImmunization"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispense2ContainsMedicationOrImmunization"),
 					new Object[] { medicationDispense2 }));
 			}
 
@@ -290,7 +292,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseStatusCodeP"),
 					new Object[] { medicationDispense2 }));
 			}
 
@@ -361,7 +363,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER2,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationSupplyOrder2"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseMedicationSupplyOrder2"),
 					new Object[] { medicationDispense2 }));
 			}
 
@@ -462,7 +464,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseTemplateId"),
 					new Object[] { medicationDispense2 }));
 			}
 
@@ -531,7 +533,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseStatusCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseStatusCode"),
 					new Object[] { medicationDispense2 }));
 			}
 
@@ -590,7 +592,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseRepeatNumber"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseRepeatNumber"),
 					new Object[] { medicationDispense2 }));
 			}
 

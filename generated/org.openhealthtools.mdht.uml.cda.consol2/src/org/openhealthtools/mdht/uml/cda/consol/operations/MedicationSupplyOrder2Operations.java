@@ -114,7 +114,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER2_CONTAINS_MEDICATION_INFORMATION2,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2ContainsMedicationInformation2"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrder2ContainsMedicationInformation2"),
 					new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -175,7 +175,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2ContainsImmunizationMedicationInformation2"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrder2ContainsImmunizationMedicationInformation2"),
 					new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -236,7 +236,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER2_CONTAINS_MEDICATION_OR_IMMUNIZATION,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2ContainsMedicationOrImmunization"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrder2ContainsMedicationOrImmunization"),
 					new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -294,9 +294,10 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 			medicationSupplyOrder2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER2_INSTRUCTION_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2InstructionInversionInd"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrder2InstructionInversionInd"),
 					new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -355,7 +356,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrderStatusCodeP"),
 					new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -426,7 +427,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderInstruction2"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrderInstruction2"),
 					new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -527,7 +528,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrderTemplateId"),
 					new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -596,7 +597,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderStatusCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrderStatusCode"),
 					new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -655,7 +656,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderRepeatNumber"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrderRepeatNumber"),
 					new Object[] { medicationSupplyOrder2 }));
 			}
 

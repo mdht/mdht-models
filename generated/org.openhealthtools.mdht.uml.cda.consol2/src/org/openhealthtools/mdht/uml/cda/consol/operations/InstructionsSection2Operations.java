@@ -110,7 +110,7 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS_SECTION2__INSTRUCTIONS_SECTION2_NULL_FLAVOR,
-					ConsolPlugin.INSTANCE.getString("InstructionsSection2NullFlavor"),
+					ConsolPlugin.INSTANCE.getString("InstructionsSection2InstructionsSection2NullFlavor"),
 					new Object[] { instructionsSection2 }));
 			}
 
@@ -169,7 +169,7 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS_SECTION2__INSTRUCTIONS_SECTION_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("InstructionsSectionInstruction2"),
+					ConsolPlugin.INSTANCE.getString("InstructionsSection2InstructionsSectionInstruction2"),
 					new Object[] { instructionsSection2 }));
 			}
 
@@ -272,7 +272,7 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS_SECTION2__INSTRUCTIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("InstructionsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("InstructionsSection2InstructionsSectionTemplateId"),
 					new Object[] { instructionsSection2 }));
 			}
 
@@ -331,7 +331,8 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS_SECTION2__INSTRUCTIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("InstructionsSectionCodeP"), new Object[] { instructionsSection2 }));
+					ConsolPlugin.INSTANCE.getString("InstructionsSection2InstructionsSectionCodeP"),
+					new Object[] { instructionsSection2 }));
 			}
 
 			if (context != null) {
@@ -411,7 +412,8 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS_SECTION2__INSTRUCTIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("InstructionsSectionCode"), new Object[] { instructionsSection2 }));
+					ConsolPlugin.INSTANCE.getString("InstructionsSection2InstructionsSectionCode"),
+					new Object[] { instructionsSection2 }));
 			}
 
 			return false;

@@ -123,7 +123,7 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION2_HAS_PROCEDURE_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("ProceduresSection2HasProcedureActivity"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSection2HasProcedureActivity"),
 					new Object[] { proceduresSection2 }));
 			}
 
@@ -182,7 +182,7 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION2_NULL_FLAVOR,
-					ConsolPlugin.INSTANCE.getString("ProceduresSection2NullFlavor"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSection2NullFlavor"),
 					new Object[] { proceduresSection2 }));
 			}
 
@@ -241,7 +241,8 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION2_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProceduresSection2Title"), new Object[] { proceduresSection2 }));
+					ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSection2Title"),
+					new Object[] { proceduresSection2 }));
 			}
 
 			return false;
@@ -299,7 +300,8 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION2_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProceduresSection2Text"), new Object[] { proceduresSection2 }));
+					ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSection2Text"),
+					new Object[] { proceduresSection2 }));
 			}
 
 			return false;
@@ -357,7 +359,8 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION2_ENTRY,
-					ConsolPlugin.INSTANCE.getString("ProceduresSection2Entry"), new Object[] { proceduresSection2 }));
+					ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSection2Entry"),
+					new Object[] { proceduresSection2 }));
 			}
 
 			return false;
@@ -417,9 +420,10 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION2_ENTRY_PROCEDURE_ACTIVITY_ACT2,
-						ConsolPlugin.INSTANCE.getString("ProceduresSection2EntryProcedureActivityAct2"),
+						ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSection2EntryProcedureActivityAct2"),
 						new Object[] { eObject }));
 				}
 
@@ -481,9 +485,10 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION2_ENTRY_PROCEDURE_ACTIVITY_OBSERVATION2,
-						ConsolPlugin.INSTANCE.getString("ProceduresSection2EntryProcedureActivityObservation2"),
+						ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSection2EntryProcedureActivityObservation2"),
 						new Object[] { eObject }));
 				}
 
@@ -545,9 +550,10 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION2_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE2,
-						ConsolPlugin.INSTANCE.getString("ProceduresSection2EntryProcedureActivityProcedure2"),
+						ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSection2EntryProcedureActivityProcedure2"),
 						new Object[] { eObject }));
 				}
 
@@ -657,7 +663,7 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSectionEntriesOptionalTemplateId"),
 					new Object[] { proceduresSection2 }));
 			}
 
@@ -716,7 +722,7 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSectionEntriesOptionalCodeP"),
 					new Object[] { proceduresSection2 }));
 			}
 
@@ -798,7 +804,7 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSectionEntriesOptionalCode"),
 					new Object[] { proceduresSection2 }));
 			}
 
@@ -859,7 +865,7 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION2__PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalProcedureActivityProcedure2"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSection2ProceduresSectionEntriesOptionalProcedureActivityProcedure2"),
 					new Object[] { proceduresSection2 }));
 			}
 

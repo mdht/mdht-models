@@ -166,7 +166,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentCodeP"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentCodeP"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -247,7 +247,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_CODE,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentCode"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentCode"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -306,7 +306,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentLanguageCode"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentLanguageCode"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -365,7 +365,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOf"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOf"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -424,7 +424,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentAuthor"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentAuthor"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -482,9 +482,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_ALLERGIES_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentAllergiesSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentAllergiesSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -542,9 +543,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_MEDICATIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentMedicationsSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentMedicationsSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -603,7 +605,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PROBLEM_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentProblemSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentProblemSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -661,9 +663,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PROCEDURES_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentProceduresSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentProceduresSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -722,7 +725,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_RESULTS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentResultsSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentResultsSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -783,7 +786,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_ADVANCE_DIRECTIVES_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentAdvanceDirectivesSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentAdvanceDirectivesSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -841,9 +844,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_ENCOUNTERS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentEncountersSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentEncountersSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -901,9 +905,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_FAMILY_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentFamilyHistorySection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentFamilyHistorySection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -961,9 +966,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_FUNCTIONAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentFunctionalStatusSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentFunctionalStatusSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -1024,7 +1030,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentImmunizationsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentImmunizationsSectionEntriesOptional"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -1082,9 +1088,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_MEDICAL_EQUIPMENT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentMedicalEquipmentSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentMedicalEquipmentSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -1143,7 +1150,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PAYERS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentPayersSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentPayersSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -1201,9 +1208,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PLAN_OF_CARE_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentPlanOfCareSection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentPlanOfCareSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -1261,9 +1269,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_SOCIAL_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentSocialHistorySection"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentSocialHistorySection"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -1324,7 +1333,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentVitalSignsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentVitalSignsSectionEntriesOptional"),
 					new Object[] { continuityOfCareDocument }));
 			}
 
@@ -1388,7 +1397,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HIGH,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh"),
 						new Object[] { eObject }));
 				}
 
@@ -1453,7 +1462,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_LOW,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow"),
 						new Object[] { eObject }));
 				}
 
@@ -1518,7 +1527,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier"),
 						new Object[] { eObject }));
 				}
 
@@ -1585,7 +1594,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1650,7 +1659,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId"),
 						new Object[] { eObject }));
 				}
 
@@ -1715,7 +1724,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1780,7 +1789,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -1845,7 +1854,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventClassCode"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1910,7 +1919,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime"),
 						new Object[] { eObject }));
 				}
 
@@ -1975,7 +1984,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformer"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformer"),
 						new Object[] { eObject }));
 				}
 
@@ -2040,7 +2049,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEvent"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEvent"),
 						new Object[] { eObject }));
 				}
 
@@ -2105,7 +2114,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -2170,7 +2179,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -2235,7 +2244,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentAuthorAssignedAuthor"),
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentContinuityOfCareDocumentAuthorAssignedAuthor"),
 						new Object[] { eObject }));
 				}
 
@@ -2927,7 +2936,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentGeneralHeaderConstraintsTemplateId"),
 					new Object[] { continuityOfCareDocument }));
 			}
 

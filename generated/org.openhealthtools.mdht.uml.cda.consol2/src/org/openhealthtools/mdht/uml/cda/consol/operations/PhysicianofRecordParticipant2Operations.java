@@ -116,7 +116,7 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT2__PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName"),
+						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2PhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName"),
 						new Object[] { eObject }));
 				}
 
@@ -182,7 +182,7 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT2__PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION_NAME,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName"),
+						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName"),
 						new Object[] { eObject }));
 				}
 
@@ -248,7 +248,7 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT2__PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2AssignedEntityHasNationalProviderId"),
+						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2PhysicianofRecordParticipant2AssignedEntityHasNationalProviderId"),
 						new Object[] { eObject }));
 				}
 
@@ -314,7 +314,7 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT2__PHYSICIANOF_RECORD_PARTICIPANT2_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson"),
+						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson"),
 						new Object[] { eObject }));
 				}
 
@@ -380,7 +380,7 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT2__PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization"),
+						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -439,9 +439,10 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 			physicianofRecordParticipant2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT2__PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2PhysicianofRecordParticipantTemplateId"),
 					new Object[] { physicianofRecordParticipant2 }));
 			}
 
@@ -500,9 +501,10 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 			physicianofRecordParticipant2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT2__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY,
-					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantAssignedEntity"),
+					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntity"),
 					new Object[] { physicianofRecordParticipant2 }));
 			}
 

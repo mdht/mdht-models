@@ -105,7 +105,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY,
-					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationHasPlayingEntity"),
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationHasPlayingEntity"),
 					new Object[] { serviceDeliveryLocation }));
 			}
 
@@ -163,9 +163,10 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 			serviceDeliveryLocation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationHasPlayingEntityClassCode"),
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationHasPlayingEntityClassCode"),
 					new Object[] { serviceDeliveryLocation }));
 			}
 
@@ -223,9 +224,10 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 			serviceDeliveryLocation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_NAME,
-					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationHasPlayingEntityName"),
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationHasPlayingEntityName"),
 					new Object[] { serviceDeliveryLocation }));
 			}
 
@@ -284,7 +286,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationTemplateId"),
 					new Object[] { serviceDeliveryLocation }));
 			}
 
@@ -343,7 +345,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationClassCode"),
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationClassCode"),
 					new Object[] { serviceDeliveryLocation }));
 			}
 
@@ -404,7 +406,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationCode"),
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationCode"),
 					new Object[] { serviceDeliveryLocation }));
 			}
 
@@ -463,7 +465,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_ADDR,
-					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationAddr"),
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationAddr"),
 					new Object[] { serviceDeliveryLocation }));
 			}
 
@@ -522,7 +524,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TELECOM,
-					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationTelecom"),
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationTelecom"),
 					new Object[] { serviceDeliveryLocation }));
 			}
 

@@ -226,7 +226,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActTemplateId"), new Object[] { healthConcernAct }));
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActTemplateId"),
+					new Object[] { healthConcernAct }));
 			}
 
 			return false;
@@ -284,7 +285,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActClassCode"), new Object[] { healthConcernAct }));
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActClassCode"),
+					new Object[] { healthConcernAct }));
 			}
 
 			return false;
@@ -342,7 +344,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActMoodCode"), new Object[] { healthConcernAct }));
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActMoodCode"),
+					new Object[] { healthConcernAct }));
 			}
 
 			return false;
@@ -400,7 +403,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActId"), new Object[] { healthConcernAct }));
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActId"),
+					new Object[] { healthConcernAct }));
 			}
 
 			return false;
@@ -458,7 +462,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActCodeP"), new Object[] { healthConcernAct }));
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCodeP"),
+					new Object[] { healthConcernAct }));
 			}
 
 			if (context != null) {
@@ -538,7 +543,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActCode"), new Object[] { healthConcernAct }));
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCode"),
+					new Object[] { healthConcernAct }));
 			}
 
 			return false;
@@ -596,7 +602,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActStatusCode"), new Object[] { healthConcernAct }));
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActStatusCode"),
+					new Object[] { healthConcernAct }));
 			}
 
 			return false;
@@ -654,7 +661,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActEffectiveTime"), new Object[] { healthConcernAct }));
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActEffectiveTime"),
+					new Object[] { healthConcernAct }));
 			}
 
 			return false;
@@ -712,7 +720,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ACT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActActReference"), new Object[] { healthConcernAct }));
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActActReference"),
+					new Object[] { healthConcernAct }));
 			}
 
 			return false;
@@ -770,7 +779,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ACT_REFERENCE_EXTRA,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActActReferenceExtra"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActActReferenceExtra"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -830,7 +839,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActAssessmentScaleObservation"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActAssessmentScaleObservation"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -890,7 +899,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_COGNITIVE_ABILITIES_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActCognitiveAbilitiesObservation"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCognitiveAbilitiesObservation"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -949,7 +958,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActFamilyHistoryOrganizer"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActFamilyHistoryOrganizer"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1008,7 +1017,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_MENTAL_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActMentalStatusObservation"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActMentalStatusObservation"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1067,7 +1076,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_NUTRITION_ASSESSMENT,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActNutritionAssessment"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActNutritionAssessment"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1127,7 +1136,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_NUTRITION_ASSESSMENT_EXTRA,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActNutritionAssessmentExtra"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActNutritionAssessmentExtra"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1186,7 +1195,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PREGNANCY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActPregnancyObservation"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActPregnancyObservation"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1245,7 +1254,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CAREGIVER_CHARACTERISTICS,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActCaregiverCharacteristics"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCaregiverCharacteristics"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1305,7 +1314,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActCulturalAndReligiousObservation"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCulturalAndReligiousObservation"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1363,9 +1372,10 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			healthConcernAct)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActCharacteristicsOfHomeEnvironment"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCharacteristicsOfHomeEnvironment"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1425,7 +1435,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActNutritionalStatusObservation"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActNutritionalStatusObservation"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1485,7 +1495,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PATIENT_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActPatientPriorityPreference"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActPatientPriorityPreference"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1544,7 +1554,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ACT_REFERENCE_EXTRA3,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActActReferenceExtra3"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActActReferenceExtra3"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1603,7 +1613,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActAuthorParticipation"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActAuthorParticipation"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1662,7 +1672,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActSelfCareActivities"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActSelfCareActivities"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1721,7 +1731,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_SENSORY_AND_SPEECH_STATUS,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActSensoryAndSpeechStatus"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActSensoryAndSpeechStatus"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1780,7 +1790,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_WOUND_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActWoundObservation"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActWoundObservation"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1840,7 +1850,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PROVIDER_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActProviderPriorityPreference"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActProviderPriorityPreference"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1900,7 +1910,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_EXTERNAL_DOCUMENT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActExternalDocumentReference"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActExternalDocumentReference"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -1959,7 +1969,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActProblemObservation2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActProblemObservation2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2018,7 +2028,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ALLERGY_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActAllergyObservation2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActAllergyObservation2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2078,7 +2088,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_COGNITIVE_STATUS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActCognitiveStatusObservation2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCognitiveStatusObservation2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2136,9 +2146,10 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			healthConcernAct)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_COGNITIVE_STATUS_OBSERVATION2_EXTRA,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActCognitiveStatusObservation2Extra"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCognitiveStatusObservation2Extra"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2197,7 +2208,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CURRENT_SMOKING_STATUS2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActCurrentSmokingStatus2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCurrentSmokingStatus2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2256,7 +2267,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActEncounterDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActEncounterDiagnosis2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2316,7 +2327,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActFunctionalStatusObservation2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActFunctionalStatusObservation2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2376,7 +2387,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActHospitalAdmissionDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActHospitalAdmissionDiagnosis2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2435,7 +2446,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActPostprocedureDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActPostprocedureDiagnosis2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2494,7 +2505,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActPreoperativeDiagnosis2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActPreoperativeDiagnosis2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2553,7 +2564,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_REACTION_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActReactionObservation2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActReactionObservation2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2612,7 +2623,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_RESULT_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActResultObservation2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActResultObservation2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2672,7 +2683,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActSocialHistoryObservation2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActSocialHistoryObservation2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2730,9 +2741,10 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			healthConcernAct)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActSubstanceOrDeviceAllergyObservation2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActSubstanceOrDeviceAllergyObservation2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2791,7 +2803,8 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_TOBACCO_USE2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActTobaccoUse2"), new Object[] { healthConcernAct }));
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActTobaccoUse2"),
+					new Object[] { healthConcernAct }));
 			}
 
 			return false;
@@ -2849,7 +2862,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_VITAL_SIGN_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActVitalSignObservation2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActVitalSignObservation2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2909,7 +2922,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2_SUPPORT,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActProblemObservation2Support"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActProblemObservation2Support"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -2968,7 +2981,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_RESULT_ORGANIZER2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActResultOrganizer2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActResultOrganizer2"),
 					new Object[] { healthConcernAct }));
 			}
 
@@ -3027,7 +3040,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PROBLEM_CONCERN_ACT2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernActProblemConcernAct2"),
+					ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActProblemConcernAct2"),
 					new Object[] { healthConcernAct }));
 			}
 

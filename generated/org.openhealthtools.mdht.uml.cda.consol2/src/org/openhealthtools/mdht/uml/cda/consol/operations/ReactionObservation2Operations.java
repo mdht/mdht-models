@@ -128,7 +128,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"ReactionObservation2CodeValueSet",
+								"ReactionObservation2ReactionObservation2CodeValueSet",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									reactionObservation2, context) }), new Object[] { reactionObservation2 }));
 			}
@@ -190,7 +190,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION2_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ProcedureActivityProcedureInversionInd"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservation2ProcedureActivityProcedureInversionInd"),
 					new Object[] { reactionObservation2 }));
 			}
 
@@ -248,9 +248,10 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			reactionObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION2_MEDICATION_ACTIVITY_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2MedicationActivityInversionInd"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservation2MedicationActivityInversionInd"),
 					new Object[] { reactionObservation2 }));
 			}
 
@@ -308,9 +309,10 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			reactionObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION2_SEVERITY_OBSERVATION_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2SeverityObservationInversionInd"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservation2SeverityObservationInversionInd"),
 					new Object[] { reactionObservation2 }));
 			}
 
@@ -372,7 +374,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"ReactionObservation2TextReference",
+								"ReactionObservation2ReactionObservation2TextReference",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									reactionObservation2, context) }), new Object[] { reactionObservation2 }));
 			}
@@ -435,7 +437,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"ReactionObservation2TextReferenceValue",
+								"ReactionObservation2ReactionObservation2TextReferenceValue",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									reactionObservation2, context) }), new Object[] { reactionObservation2 }));
 			}
@@ -498,7 +500,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"ReactionObservation2ReferenceValue",
+								"ReactionObservation2ReactionObservation2ReferenceValue",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									reactionObservation2, context) }), new Object[] { reactionObservation2 }));
 			}
@@ -558,7 +560,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationCodeP"), new Object[] { reactionObservation2 }));
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationCodeP"),
+					new Object[] { reactionObservation2 }));
 			}
 
 			if (context != null) {
@@ -628,7 +631,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationStatusCodeP"),
 					new Object[] { reactionObservation2 }));
 			}
 
@@ -698,9 +701,10 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			reactionObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationProcedureActivityProcedure2"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationProcedureActivityProcedure2"),
 					new Object[] { reactionObservation2 }));
 			}
 
@@ -759,7 +763,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_MEDICATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationMedicationActivity2"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationMedicationActivity2"),
 					new Object[] { reactionObservation2 }));
 			}
 
@@ -818,7 +822,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_SEVERITY_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationSeverityObservation2"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationSeverityObservation2"),
 					new Object[] { reactionObservation2 }));
 			}
 
@@ -1008,7 +1012,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationTemplateId"),
 					new Object[] { reactionObservation2 }));
 			}
 
@@ -1077,7 +1081,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationCode"), new Object[] { reactionObservation2 }));
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationCode"),
+					new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -1135,7 +1140,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationId"), new Object[] { reactionObservation2 }));
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationId"),
+					new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -1202,7 +1208,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationStatusCode"),
 					new Object[] { reactionObservation2 }));
 			}
 

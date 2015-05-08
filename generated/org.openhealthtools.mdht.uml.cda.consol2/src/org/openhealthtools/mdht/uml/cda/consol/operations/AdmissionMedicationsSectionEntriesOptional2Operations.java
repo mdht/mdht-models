@@ -109,7 +109,7 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations extends
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION2,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication2"),
+					ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication2"),
 					new Object[] { admissionMedicationsSectionEntriesOptional2 }));
 			}
 
@@ -216,7 +216,7 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations extends
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId"),
 					new Object[] { admissionMedicationsSectionEntriesOptional2 }));
 			}
 
@@ -278,7 +278,7 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations extends
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalCodeP"),
 					new Object[] { admissionMedicationsSectionEntriesOptional2 }));
 			}
 
@@ -365,7 +365,7 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations extends
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalCode"),
 					new Object[] { admissionMedicationsSectionEntriesOptional2 }));
 			}
 

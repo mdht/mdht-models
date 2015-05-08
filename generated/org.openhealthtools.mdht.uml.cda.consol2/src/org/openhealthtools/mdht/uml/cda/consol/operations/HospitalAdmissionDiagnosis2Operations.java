@@ -108,7 +108,7 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisCodeP"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCodeP"),
 					new Object[] { hospitalAdmissionDiagnosis2 }));
 			}
 
@@ -179,9 +179,10 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 			hospitalAdmissionDiagnosis2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisProblemObservation2"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisProblemObservation2"),
 					new Object[] { hospitalAdmissionDiagnosis2 }));
 			}
 
@@ -286,7 +287,7 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisTemplateId"),
 					new Object[] { hospitalAdmissionDiagnosis2 }));
 			}
 
@@ -356,7 +357,7 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCode"),
 					new Object[] { hospitalAdmissionDiagnosis2 }));
 			}
 

@@ -120,7 +120,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceTemplateId"),
 					new Object[] { externalDocumentReference }));
 			}
 
@@ -180,7 +180,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceClassCode"),
+					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceClassCode"),
 					new Object[] { externalDocumentReference }));
 			}
 
@@ -240,7 +240,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceMoodCode"),
 					new Object[] { externalDocumentReference }));
 			}
 
@@ -299,7 +299,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceCodeP"),
+					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceCodeP"),
 					new Object[] { externalDocumentReference }));
 			}
 
@@ -380,7 +380,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CODE,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceCode"),
+					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceCode"),
 					new Object[] { externalDocumentReference }));
 			}
 
@@ -440,7 +440,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReference"),
+					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceReference"),
 					new Object[] { externalDocumentReference }));
 			}
 
@@ -505,7 +505,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentClassCode"),
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceReferenceExternalDocumentClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -571,7 +571,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentMoodCode"),
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceReferenceExternalDocumentMoodCode"),
 						new Object[] { eObject }));
 				}
 
@@ -637,7 +637,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_ID,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentId"),
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceReferenceExternalDocumentId"),
 						new Object[] { eObject }));
 				}
 
@@ -703,7 +703,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CODE,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentCode"),
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceReferenceExternalDocumentCode"),
 						new Object[] { eObject }));
 				}
 
@@ -769,7 +769,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_SET_ID,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentSetId"),
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceReferenceExternalDocumentSetId"),
 						new Object[] { eObject }));
 				}
 
@@ -835,7 +835,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_VERSION_NUMBER,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentVersionNumber"),
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceReferenceExternalDocumentVersionNumber"),
 						new Object[] { eObject }));
 				}
 
@@ -898,9 +898,10 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceTypeCode"),
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceReferenceTypeCode"),
 						new Object[] { eObject }));
 				}
 
@@ -966,7 +967,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocument"),
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceReferenceExternalDocument"),
 						new Object[] { eObject }));
 				}
 

@@ -102,7 +102,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_COURSE_SECTION__HOSPITAL_COURSE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionHospitalCourseSectionTemplateId"),
 					new Object[] { hospitalCourseSection }));
 			}
 
@@ -163,7 +163,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_COURSE_SECTION__HOSPITAL_COURSE_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionHospitalCourseSectionCode"),
 					new Object[] { hospitalCourseSection }));
 			}
 
@@ -222,7 +222,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_COURSE_SECTION__HOSPITAL_COURSE_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionHospitalCourseSectionCodeP"),
 					new Object[] { hospitalCourseSection }));
 			}
 
@@ -281,7 +281,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_COURSE_SECTION__HOSPITAL_COURSE_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionHospitalCourseSectionTitle"),
 					new Object[] { hospitalCourseSection }));
 			}
 
@@ -340,7 +340,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_COURSE_SECTION__HOSPITAL_COURSE_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionText"),
+					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionHospitalCourseSectionText"),
 					new Object[] { hospitalCourseSection }));
 			}
 

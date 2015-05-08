@@ -113,7 +113,8 @@ public class GoalsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOALS_SECTION__GOALS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GoalsSectionTemplateId"), new Object[] { goalsSection }));
+					ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionTemplateId"),
+					new Object[] { goalsSection }));
 			}
 
 			return false;
@@ -172,7 +173,7 @@ public class GoalsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOALS_SECTION__GOALS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("GoalsSectionCode"), new Object[] { goalsSection }));
+					ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionCode"), new Object[] { goalsSection }));
 			}
 
 			return false;
@@ -229,7 +230,7 @@ public class GoalsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOALS_SECTION__GOALS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("GoalsSectionCodeP"), new Object[] { goalsSection }));
+					ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionCodeP"), new Object[] { goalsSection }));
 			}
 
 			return false;
@@ -286,7 +287,7 @@ public class GoalsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOALS_SECTION__GOALS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("GoalsSectionTitle"), new Object[] { goalsSection }));
+					ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionTitle"), new Object[] { goalsSection }));
 			}
 
 			return false;
@@ -343,7 +344,7 @@ public class GoalsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOALS_SECTION__GOALS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("GoalsSectionText"), new Object[] { goalsSection }));
+					ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionText"), new Object[] { goalsSection }));
 			}
 
 			return false;
@@ -401,7 +402,8 @@ public class GoalsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOALS_SECTION__GOALS_SECTION_GOAL_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("GoalsSectionGoalObservation"), new Object[] { goalsSection }));
+					ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionGoalObservation"),
+					new Object[] { goalsSection }));
 			}
 
 			return false;

@@ -116,7 +116,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationTextReference"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationTextReference"),
 					new Object[] { resultObservation }));
 			}
 
@@ -175,7 +175,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationReferenceValue"),
 					new Object[] { resultObservation }));
 			}
 
@@ -234,7 +234,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationTextReferenceValue"),
 					new Object[] { resultObservation }));
 			}
 
@@ -293,7 +293,8 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationCodeValue"), new Object[] { resultObservation }));
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationCodeValue"),
+					new Object[] { resultObservation }));
 			}
 
 			return false;
@@ -351,7 +352,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationNoObservationRangeCode"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationNoObservationRangeCode"),
 					new Object[] { resultObservation }));
 			}
 
@@ -410,7 +411,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_AUTHOR_MULTIPLICITY,
-					ConsolPlugin.INSTANCE.getString("ResultObservationAuthorMultiplicity"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationAuthorMultiplicity"),
 					new Object[] { resultObservation }));
 			}
 
@@ -469,7 +470,8 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ResultObservationTemplateId"), new Object[] { resultObservation }));
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationTemplateId"),
+					new Object[] { resultObservation }));
 			}
 
 			return false;
@@ -527,7 +529,8 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationClassCode"), new Object[] { resultObservation }));
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationClassCode"),
+					new Object[] { resultObservation }));
 			}
 
 			return false;
@@ -585,7 +588,8 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationMoodCode"), new Object[] { resultObservation }));
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationMoodCode"),
+					new Object[] { resultObservation }));
 			}
 
 			return false;
@@ -643,7 +647,8 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("ResultObservationId"), new Object[] { resultObservation }));
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationId"),
+					new Object[] { resultObservation }));
 			}
 
 			return false;
@@ -701,7 +706,8 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationCode"), new Object[] { resultObservation }));
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationCode"),
+					new Object[] { resultObservation }));
 			}
 
 			return false;
@@ -759,7 +765,8 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ResultObservationText"), new Object[] { resultObservation }));
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationText"),
+					new Object[] { resultObservation }));
 			}
 
 			return false;
@@ -819,7 +826,8 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationStatusCode"), new Object[] { resultObservation }));
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationStatusCode"),
+					new Object[] { resultObservation }));
 			}
 
 			return false;
@@ -877,7 +885,8 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ResultObservationStatusCodeP"), new Object[] { resultObservation }));
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationStatusCodeP"),
+					new Object[] { resultObservation }));
 			}
 
 			return false;
@@ -935,7 +944,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ResultObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationEffectiveTime"),
 					new Object[] { resultObservation }));
 			}
 
@@ -994,7 +1003,8 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationValue"), new Object[] { resultObservation }));
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationValue"),
+					new Object[] { resultObservation }));
 			}
 
 			return false;
@@ -1052,7 +1062,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_INTERPRETATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationInterpretationCode"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationInterpretationCode"),
 					new Object[] { resultObservation }));
 			}
 
@@ -1111,7 +1121,8 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationMethodCode"), new Object[] { resultObservation }));
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationMethodCode"),
+					new Object[] { resultObservation }));
 			}
 
 			return false;
@@ -1169,7 +1180,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_TARGET_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultObservationTargetSiteCode"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationResultObservationTargetSiteCode"),
 					new Object[] { resultObservation }));
 			}
 

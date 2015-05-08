@@ -117,7 +117,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerTemplateId"),
 					new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -177,7 +177,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerClassCode"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerClassCode"),
 					new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -237,7 +237,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerMoodCode"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerMoodCode"),
 					new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -296,7 +296,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ID,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerId"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerId"),
 					new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -357,7 +357,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CODE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerCode"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCode"),
 					new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -416,7 +416,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerCodeP"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCodeP"),
 					new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -476,7 +476,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCodeP"),
 					new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -558,7 +558,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerStatusCode"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCode"),
 					new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -620,7 +620,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveObservation2"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAdvanceDirectiveObservation2"),
 					new Object[] { advanceDirectiveOrganizer }));
 			}
 

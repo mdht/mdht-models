@@ -108,9 +108,10 @@ public class ProcedureIndicationsSection2Operations extends ProcedureIndications
 			procedureIndicationsSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_INDICATIONS_SECTION2__PROCEDURE_INDICATIONS_SECTION_INDICATION2,
-					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionIndication2"),
+					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSection2ProcedureIndicationsSectionIndication2"),
 					new Object[] { procedureIndicationsSection2 }));
 			}
 
@@ -212,9 +213,10 @@ public class ProcedureIndicationsSection2Operations extends ProcedureIndications
 			procedureIndicationsSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_INDICATIONS_SECTION2__PROCEDURE_INDICATIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSection2ProcedureIndicationsSectionTemplateId"),
 					new Object[] { procedureIndicationsSection2 }));
 			}
 
@@ -274,7 +276,7 @@ public class ProcedureIndicationsSection2Operations extends ProcedureIndications
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_INDICATIONS_SECTION2__PROCEDURE_INDICATIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSection2ProcedureIndicationsSectionCodeP"),
 					new Object[] { procedureIndicationsSection2 }));
 			}
 
@@ -356,7 +358,7 @@ public class ProcedureIndicationsSection2Operations extends ProcedureIndications
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_INDICATIONS_SECTION2__PROCEDURE_INDICATIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSection2ProcedureIndicationsSectionCode"),
 					new Object[] { procedureIndicationsSection2 }));
 			}
 

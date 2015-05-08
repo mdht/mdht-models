@@ -109,9 +109,10 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 			hospitalDischargeDiagnosis)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS__HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisProblemObservation"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisHospitalDischargeDiagnosisProblemObservation"),
 					new Object[] { hospitalDischargeDiagnosis }));
 			}
 
@@ -171,7 +172,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS__HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisHospitalDischargeDiagnosisTemplateId"),
 					new Object[] { hospitalDischargeDiagnosis }));
 			}
 
@@ -231,7 +232,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS__HOSPITAL_DISCHARGE_DIAGNOSIS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisClassCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisHospitalDischargeDiagnosisClassCode"),
 					new Object[] { hospitalDischargeDiagnosis }));
 			}
 
@@ -291,7 +292,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS__HOSPITAL_DISCHARGE_DIAGNOSIS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisMoodCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisHospitalDischargeDiagnosisMoodCode"),
 					new Object[] { hospitalDischargeDiagnosis }));
 			}
 
@@ -352,7 +353,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS__HOSPITAL_DISCHARGE_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisHospitalDischargeDiagnosisCode"),
 					new Object[] { hospitalDischargeDiagnosis }));
 			}
 

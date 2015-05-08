@@ -97,7 +97,7 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION2__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservation2FamilyHistoryObservationTemplateId"),
 					new Object[] { familyHistoryObservation2 }));
 			}
 
@@ -156,7 +156,7 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION2__FAMILY_HISTORY_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservation2FamilyHistoryObservationCodeP"),
 					new Object[] { familyHistoryObservation2 }));
 			}
 
@@ -237,7 +237,7 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION2__FAMILY_HISTORY_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservation2FamilyHistoryObservationCode"),
 					new Object[] { familyHistoryObservation2 }));
 			}
 

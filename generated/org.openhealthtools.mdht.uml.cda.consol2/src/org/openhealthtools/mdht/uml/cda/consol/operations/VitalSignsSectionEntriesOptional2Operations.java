@@ -112,7 +112,7 @@ public class VitalSignsSectionEntriesOptional2Operations extends VitalSignsSecti
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGNS_ORGANIZER2,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalVitalSignsOrganizer2"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptional2VitalSignsSectionEntriesOptionalVitalSignsOrganizer2"),
 					new Object[] { vitalSignsSectionEntriesOptional2 }));
 			}
 
@@ -219,7 +219,7 @@ public class VitalSignsSectionEntriesOptional2Operations extends VitalSignsSecti
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptional2VitalSignsSectionEntriesOptionalTemplateId"),
 					new Object[] { vitalSignsSectionEntriesOptional2 }));
 			}
 
@@ -277,9 +277,10 @@ public class VitalSignsSectionEntriesOptional2Operations extends VitalSignsSecti
 			vitalSignsSectionEntriesOptional2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptional2VitalSignsSectionEntriesOptionalCodeP"),
 					new Object[] { vitalSignsSectionEntriesOptional2 }));
 			}
 
@@ -361,9 +362,10 @@ public class VitalSignsSectionEntriesOptional2Operations extends VitalSignsSecti
 			vitalSignsSectionEntriesOptional2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptional2VitalSignsSectionEntriesOptionalCode"),
 					new Object[] { vitalSignsSectionEntriesOptional2 }));
 			}
 

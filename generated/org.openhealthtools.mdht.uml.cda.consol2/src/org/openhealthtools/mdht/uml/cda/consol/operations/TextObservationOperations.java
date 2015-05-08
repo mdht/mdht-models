@@ -118,7 +118,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextReference"), new Object[] { textObservation }));
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTextReference"),
+					new Object[] { textObservation }));
 			}
 
 			return false;
@@ -176,7 +177,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTextReferenceValue"),
 					new Object[] { textObservation }));
 			}
 
@@ -235,7 +236,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("TextObservationReferenceValue"), new Object[] { textObservation }));
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationReferenceValue"),
+					new Object[] { textObservation }));
 			}
 
 			return false;
@@ -293,7 +295,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("TextObservationTemplateId"), new Object[] { textObservation }));
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTemplateId"),
+					new Object[] { textObservation }));
 			}
 
 			return false;
@@ -351,7 +354,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("TextObservationClassCode"), new Object[] { textObservation }));
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationClassCode"),
+					new Object[] { textObservation }));
 			}
 
 			return false;
@@ -409,7 +413,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("TextObservationMoodCode"), new Object[] { textObservation }));
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationMoodCode"),
+					new Object[] { textObservation }));
 			}
 
 			return false;
@@ -466,7 +471,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("TextObservationCode"), new Object[] { textObservation }));
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationCode"),
+					new Object[] { textObservation }));
 			}
 
 			return false;
@@ -524,7 +530,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("TextObservationEffectiveTime"), new Object[] { textObservation }));
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationEffectiveTime"),
+					new Object[] { textObservation }));
 			}
 
 			return false;
@@ -581,7 +588,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("TextObservationText"), new Object[] { textObservation }));
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationText"),
+					new Object[] { textObservation }));
 			}
 
 			return false;
@@ -639,7 +647,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("TextObservationValue"), new Object[] { textObservation }));
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationValue"),
+					new Object[] { textObservation }));
 			}
 
 			return false;
@@ -697,7 +706,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("TextObservationSOPInstanceObservation"),
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationSOPInstanceObservation"),
 					new Object[] { textObservation }));
 			}
 
@@ -757,7 +766,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("TextObservationQuantityMeasurementObservation"),
+					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationQuantityMeasurementObservation"),
 					new Object[] { textObservation }));
 			}
 

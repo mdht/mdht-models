@@ -116,7 +116,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionTemplateId"),
 					new Object[] { physicalExamSection }));
 			}
 
@@ -177,7 +177,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionCode"), new Object[] { physicalExamSection }));
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionCode"),
+					new Object[] { physicalExamSection }));
 			}
 
 			return false;
@@ -235,7 +236,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionCodeP"), new Object[] { physicalExamSection }));
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionCodeP"),
+					new Object[] { physicalExamSection }));
 			}
 
 			return false;
@@ -293,7 +295,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionTitle"), new Object[] { physicalExamSection }));
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionTitle"),
+					new Object[] { physicalExamSection }));
 			}
 
 			return false;
@@ -351,7 +354,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionText"), new Object[] { physicalExamSection }));
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionText"),
+					new Object[] { physicalExamSection }));
 			}
 
 			return false;
@@ -410,7 +414,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPressureUlcerObservation"),
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionPressureUlcerObservation"),
 					new Object[] { physicalExamSection }));
 			}
 
@@ -468,9 +472,10 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			physicalExamSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionNumberOfPressureUlcersObservation"),
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionNumberOfPressureUlcersObservation"),
 					new Object[] { physicalExamSection }));
 			}
 
@@ -530,7 +535,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionHighestPressureUlcerStage"),
+					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionHighestPressureUlcerStage"),
 					new Object[] { physicalExamSection }));
 			}
 
