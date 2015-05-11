@@ -860,8 +860,7 @@ The smoking status value set includes a special code to communicate if the smoki
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_MlM4IJ2GEeORR8_YW0n_jQ" name="NutritionSection">
     <ownedComment xmi:id="_bshckJ2GEeORR8_YW0n_jQ">
-      <body>The Nutrition Section represents diet and nutrition information including special diet requirements and restrictions (e.g. soft mechanical diet, liquids only, enteral feeding). It also represents the overall nutritional status of the patient, nutrition assessment findings, and diet recommendations.&#xD;
-USE THIS SECTION INSTEAD OF DISCHARGE DIET SECTION (DEPRECATED) template id:1.3.6.1.4.1.19376.1.5.3.1.3.33.2</body>
+      <body>The Nutrition Section represents diet and nutrition information including special diet requirements and restrictions (e.g., texture modified diet, liquids only, enteral feeding). It also represents the overall nutritional status of the patient and nutrition assessment findings.</body>
     </ownedComment>
     <generalization xmi:id="_MlM4IZ2GEeORR8_YW0n_jQ">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -890,29 +889,29 @@ USE THIS SECTION INSTEAD OF DISCHARGE DIET SECTION (DEPRECATED) template id:1.3.
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_hAyLgJ2GEeORR8_YW0n_jQ" base_Class="_MlM4IJ2GEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.57">
-    <ruleId>CONF:30477</ruleId>
-    <ruleId>CONF:30478</ruleId>
+    <ruleId>CONF:1098-30477</ruleId>
+    <ruleId>CONF:1098-30478</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_qwqxMJ2GEeORR8_YW0n_jQ" base_Property="_O75pwJ2GEeORR8_YW0n_jQ">
-    <ruleId>CONF:30318</ruleId>
+    <ruleId>CONF:1098-30318</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_rHgj4J2GEeORR8_YW0n_jQ" base_Property="_O75pxp2GEeORR8_YW0n_jQ">
-    <ruleId>CONF:31042</ruleId>
+    <ruleId>CONF:1098-31042</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_rjlb4J2GEeORR8_YW0n_jQ" base_Property="_O75pw52GEeORR8_YW0n_jQ">
-    <ruleId>CONF:31043</ruleId>
+    <ruleId>CONF:1098-31043</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_0WajcJ2GEeORR8_YW0n_jQ" code="61144-2" displayName="Diet and nutrition" base_Property="_O75pwJ2GEeORR8_YW0n_jQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:30319</ruleId>
-    <ruleId>CONF:30320</ruleId>
+    <ruleId>CONF:1098-30319</ruleId>
+    <ruleId>CONF:1098-30320</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_Ej1NQJ2HEeORR8_YW0n_jQ" memberEnd="_Ej0mMJ2HEeORR8_YW0n_jQ _Ej10UJ2HEeORR8_YW0n_jQ">
     <ownedEnd xmi:id="_Ej10UJ2HEeORR8_YW0n_jQ" type="_MlM4IJ2GEeORR8_YW0n_jQ" association="_Ej1NQJ2HEeORR8_YW0n_jQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_FUgcQJ2HEeORR8_YW0n_jQ" severity="WARNING" base_Association="_Ej1NQJ2HEeORR8_YW0n_jQ">
-    <ruleId>CONF:30321</ruleId>
-    <ruleId>CONF:30322</ruleId>
+    <ruleId>CONF:1098-30321</ruleId>
+    <ruleId>CONF:1098-30322</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_cg0dMK4iEeORf5eJaKt1KQ" memberEnd="_cgyA8K4iEeORf5eJaKt1KQ _cg0dMa4iEeORf5eJaKt1KQ">
     <ownedEnd xmi:id="_cg0dMa4iEeORf5eJaKt1KQ" type="_NP5zMI05EeOB0eBUISUB4Q" association="_cg0dMK4iEeORf5eJaKt1KQ"/>

@@ -1464,10 +1464,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-discharge.uml#_EHgh0J2AEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_UCEroJ2BEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-cognitive.uml#_4tfOMJ2CEeORR8_YW0n_jQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_yrYFUJ2DEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_A4xYIJ2EEeORR8_YW0n_jQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_K9QU0J2EEeORR8_YW0n_jQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_VjU7oJ2EEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_MlM4IJ2GEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-socialhistory.uml#_Ej1NQJ2HEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-exams.uml#_CDn9gJ2LEeORR8_YW0n_jQ"/>
@@ -2457,9 +2454,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_tmjVIDq2EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_KzGu4Dq3EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_AVyzwDq9EeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_H596YDq-EeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_PLsbkDq-EeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_TfTl0Dq-EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_qlWsoDrEEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_DKCIsDz8EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_h10gkDz8EeSyGa6KC25kiw"/>
@@ -2737,6 +2731,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_DQ-JMPAcEeSw2PsYr-oqaQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_K-Ov0PAcEeSw2PsYr-oqaQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_WAC3cPAcEeSw2PsYr-oqaQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_nlSbIPgEEeSx6PQhw3nAUw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_AEixwPglEeSx6PQhw3nAUw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_YkFp0PglEeSx6PQhw3nAUw"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>

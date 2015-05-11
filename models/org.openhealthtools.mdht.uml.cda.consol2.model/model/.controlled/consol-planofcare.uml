@@ -1628,11 +1628,18 @@ Intervention Acts can be related to each other, (eg. an Intervention Act with mo
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_YPOXoJ14EeORR8_YW0n_jQ" name="GoalsSection">
     <ownedComment xmi:id="_k_kdoJ14EeORR8_YW0n_jQ">
-      <body>This template represents patient Goals.????A goal is a defined outcome or condition to be achieved in the process of patient care. Goals include patient-defined goals (e.g., alleviation of health concerns, positive outcomes from interventions,??longevity, function, symptom management, comfort) and clinician-specific goals to achieve desired and agreed upon outcomes.</body>
+      <body>This template represents patient Goals. A goal is a defined outcome or condition to be achieved in the process of patient care. Goals include patient-defined over-arching goals (e.g., alleviation of health concerns, desired/intended positive outcomes from interventions, longevity, function, symptom management, comfort) and health concern-specific or intervention-specific goals to achieve desired outcomes.</body>
     </ownedComment>
     <generalization xmi:id="_YPQM0J14EeORR8_YW0n_jQ">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
+    <ownedAttribute xmi:id="_PFPwoPgAEeSx6PQhw3nAUw" name="nullFlavor" visibility="private">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PFPwofgAEeSx6PQhw3nAUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PFPwovgAEeSx6PQhw3nAUw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_XDBfgPgAEeSx6PQhw3nAUw" value="NI"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_dPsn4J14EeORR8_YW0n_jQ" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tseG4Z15EeORR8_YW0n_jQ" value="1"/>
@@ -1657,28 +1664,28 @@ Intervention Acts can be related to each other, (eg. an Intervention Act with mo
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_ng1ggJ14EeORR8_YW0n_jQ" base_Class="_YPOXoJ14EeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.60">
-    <ruleId>CONF:29584</ruleId>
-    <ruleId>CONF:29585</ruleId>
+    <ruleId>CONF:1098-29584</ruleId>
+    <ruleId>CONF:1098-29585</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_pCS2wJ15EeORR8_YW0n_jQ" base_Property="_dPsn4J14EeORR8_YW0n_jQ">
-    <ruleId>CONF:29586</ruleId>
+    <ruleId>CONF:1098-29586</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_vUIoQJ15EeORR8_YW0n_jQ" base_Property="_dPudEJ14EeORR8_YW0n_jQ">
-    <ruleId>CONF:30721</ruleId>
+    <ruleId>CONF:1098-30721</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_v2FewJ15EeORR8_YW0n_jQ" base_Property="_dPt2AJ14EeORR8_YW0n_jQ">
-    <ruleId>CONF:30722</ruleId>
+    <ruleId>CONF:1098-30722</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_WQbdwJ16EeORR8_YW0n_jQ" memberEnd="_WQa2sJ16EeORR8_YW0n_jQ _WQbdwZ16EeORR8_YW0n_jQ">
     <ownedEnd xmi:id="_WQbdwZ16EeORR8_YW0n_jQ" type="_YPOXoJ14EeORR8_YW0n_jQ" association="_WQbdwJ16EeORR8_YW0n_jQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_aQidMJ16EeORR8_YW0n_jQ" base_Association="_WQbdwJ16EeORR8_YW0n_jQ">
-    <ruleId>CONF:30719</ruleId>
-    <ruleId>CONF:30720</ruleId>
+    <ruleId>CONF:1098-30719</ruleId>
+    <ruleId>CONF:1098-30720</ruleId>
   </CDA:AssociationValidation>
   <CDA:CodeSystemConstraint xmi:id="_fir20J17EeORR8_YW0n_jQ" code="61146-7" displayName="Goals" base_Property="_dPsn4J14EeORR8_YW0n_jQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:29588</ruleId>
+    <ruleId>CONF:1098-29588</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_xWMO8KvEEeOEkquDecUlEw" memberEnd="_xWLA0KvEEeOEkquDecUlEw _xWMO8avEEeOEkquDecUlEw">
     <ownedEnd xmi:id="_xWMO8avEEeOEkquDecUlEw" type="_-miMII9TEeOB0eBUISUB4Q" association="_xWMO8KvEEeOEkquDecUlEw"/>
@@ -4534,4 +4541,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>CONF:1098-32771</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_nVZ7gPNjEeSXVvUWxGszbQ" base_Property="_oM4NQOLUEeS505YV9ux2XA"/>
+  <CDA:PropertyValidation xmi:id="_TCUDIPgAEeSx6PQhw3nAUw" severity="INFO" base_Property="_PFPwoPgAEeSx6PQhw3nAUw">
+    <ruleId>CONF:1098-32819</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
