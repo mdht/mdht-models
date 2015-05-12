@@ -34,14 +34,17 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionHealthConcernAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Health Concern Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionHealthStatusObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Health Status Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionRiskConcernAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Risk Concern Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#getHealthConcernActs() <em>Get Health Concern Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#getHealthStatusObservation2() <em>Get Health Status Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#getHealthStatusObservation2s() <em>Get Health Status Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#getRiskConcernActs() <em>Get Risk Concern Acts</em>}</li>
  * </ul>
  * </p>
  *
@@ -89,10 +92,10 @@ public class HealthConcernsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateHealthConcernsSectionCode() {
-		OperationsTestCase<HealthConcernsSection> validateHealthConcernsSectionCodeTestCase = new OperationsTestCase<HealthConcernsSection>(
-			"validateHealthConcernsSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateHealthConcernsSectionNullFlavor() {
+		OperationsTestCase<HealthConcernsSection> validateHealthConcernsSectionNullFlavorTestCase = new OperationsTestCase<HealthConcernsSection>(
+			"validateHealthConcernsSectionNullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -109,6 +112,40 @@ public class HealthConcernsSectionTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
+				return HealthConcernsSectionOperations.validateHealthConcernsSectionNullFlavor(
+					(HealthConcernsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernsSectionNullFlavorTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHealthConcernsSectionCode() {
+		OperationsTestCase<HealthConcernsSection> validateHealthConcernsSectionCodeTestCase = new OperationsTestCase<HealthConcernsSection>(
+			"validateHealthConcernsSectionCode",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernsSection target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernsSection target) {
+				target.setCode(DatatypesFactory.eINSTANCE.createCE("75310-3", LOINC_ID));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
 				return HealthConcernsSectionOperations.validateHealthConcernsSectionCode(
 					(HealthConcernsSection) objectToTest, diagnostician, map);
 			}
@@ -120,7 +157,7 @@ public class HealthConcernsSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateHealthConcernsSectionCodeP() {
@@ -131,13 +168,13 @@ public class HealthConcernsSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(HealthConcernsSection target) {
-
+				target.init();
+				target.setCode(null);
 			}
 
 			@Override
 			protected void updateToPass(HealthConcernsSection target) {
-				target.init();
-
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
@@ -240,6 +277,8 @@ public class HealthConcernsSectionTest extends CDAValidationTest {
 			@Override
 			protected void updateToFail(HealthConcernsSection target) {
 				target.init();
+				// need to remove NI as that allows pass
+				target.unsetNullFlavor();
 			}
 
 			@Override
@@ -272,12 +311,13 @@ public class HealthConcernsSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(HealthConcernsSection target) {
-
+				target.init();
+				// need to remove NI as that allows pass
+				target.unsetNullFlavor();
 			}
 
 			@Override
 			protected void updateToPass(HealthConcernsSection target) {
-				target.init();
 				target.addObservation(ConsolFactory.eINSTANCE.createHealthStatusObservation2().init());
 			}
 
@@ -291,6 +331,41 @@ public class HealthConcernsSectionTest extends CDAValidationTest {
 		};
 
 		validateHealthConcernsSectionHealthStatusObservation2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHealthConcernsSectionRiskConcernAct() {
+		OperationsTestCase<HealthConcernsSection> validateHealthConcernsSectionRiskConcernActTestCase = new OperationsTestCase<HealthConcernsSection>(
+			"validateHealthConcernsSectionRiskConcernAct",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernsSection target) {
+				target.init();
+				// need to remove NI as that allows pass
+				target.unsetNullFlavor();
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernsSection target) {
+				target.addAct(ConsolFactory.eINSTANCE.createRiskConcernAct().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernsSectionOperations.validateHealthConcernsSectionRiskConcernAct(
+					(HealthConcernsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernsSectionRiskConcernActTestCase.doValidationTest();
 	}
 
 	/**
@@ -310,10 +385,22 @@ public class HealthConcernsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHealthStatusObservation2() {
+	public void testGetHealthStatusObservation2s() {
 
 		HealthConcernsSection target = objectFactory.create();
-		target.getHealthStatusObservation2();
+		target.getHealthStatusObservation2s();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetRiskConcernActs() {
+
+		HealthConcernsSection target = objectFactory.create();
+		target.getRiskConcernActs();
 
 	}
 

@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.CarePlan;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.GoalsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection;
-import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsOutcomesSection;
+import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CarePlanOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
@@ -625,7 +625,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCarePlanHealthStatusEvaluationsOutcomesSection() {
@@ -643,11 +643,8 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToPass(CarePlan target) {
 				target.init();
 
-				/* HealthStatusEvaluationsOutcomesSection */
-				HealthStatusEvaluationsOutcomesSection section =
-
-				ConsolFactory.eINSTANCE.createHealthStatusEvaluationsOutcomesSection().init();
-
+				/* HealthStatusEvaluationsAndOutcomesSection */
+				HealthStatusEvaluationsAndOutcomesSection section = ConsolFactory.eINSTANCE.createHealthStatusEvaluationsAndOutcomesSection().init();
 				target.addSection(section);
 
 			}

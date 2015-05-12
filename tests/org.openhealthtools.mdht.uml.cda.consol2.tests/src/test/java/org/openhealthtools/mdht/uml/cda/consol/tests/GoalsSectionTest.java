@@ -34,6 +34,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Title</em>}</li>
@@ -87,10 +88,11 @@ public class GoalsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateGoalsSectionCode() {
-		OperationsTestCase<GoalsSection> validateGoalsSectionCodeTestCase = new OperationsTestCase<GoalsSection>(
-			"validateGoalsSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_GOALS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+	public void testValidateGoalsSectionNullFlavor() {
+		OperationsTestCase<GoalsSection> validateGoalsSectionNullFlavorTestCase = new OperationsTestCase<GoalsSection>(
+			"validateGoalsSectionNullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_GOALS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(GoalsSection target) {
@@ -106,6 +108,39 @@ public class GoalsSectionTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
+				return GoalsSectionOperations.validateGoalsSectionNullFlavor(
+					(GoalsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalsSectionNullFlavorTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGoalsSectionCode() {
+		OperationsTestCase<GoalsSection> validateGoalsSectionCodeTestCase = new OperationsTestCase<GoalsSection>(
+			"validateGoalsSectionCode",
+			operationsForOCL.getOCLValue("VALIDATE_GOALS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalsSection target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+			}
+
+			@Override
+			protected void updateToPass(GoalsSection target) {
+				target.setCode(DatatypesFactory.eINSTANCE.createCE("61146-7", LOINC_ID));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
 				return GoalsSectionOperations.validateGoalsSectionCode((GoalsSection) objectToTest, diagnostician, map);
 			}
 
@@ -116,7 +151,7 @@ public class GoalsSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateGoalsSectionCodeP() {
@@ -127,13 +162,13 @@ public class GoalsSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(GoalsSection target) {
-
+				target.init();
+				target.setCode(null);
 			}
 
 			@Override
 			protected void updateToPass(GoalsSection target) {
-				target.init();
-
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
@@ -231,6 +266,8 @@ public class GoalsSectionTest extends CDAValidationTest {
 			@Override
 			protected void updateToFail(GoalsSection target) {
 				target.init();
+				// need to remove NI as that allows pass
+				target.unsetNullFlavor();
 			}
 
 			@Override
