@@ -1279,8 +1279,23 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseHealthStatusEvaluationsOutcomesSection(HealthStatusEvaluationsOutcomesSection object) {
-			return createHealthStatusEvaluationsOutcomesSectionAdapter();
+		public Adapter caseRiskConcernAct(RiskConcernAct object) {
+			return createRiskConcernActAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryOrganizer2(FamilyHistoryOrganizer2 object) {
+			return createFamilyHistoryOrganizer2Adapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryObservation2(FamilyHistoryObservation2 object) {
+			return createFamilyHistoryObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseHealthStatusEvaluationsAndOutcomesSection(HealthStatusEvaluationsAndOutcomesSection object) {
+			return createHealthStatusEvaluationsAndOutcomesSectionAdapter();
 		}
 
 		@Override
@@ -1456,16 +1471,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseFamilyHistorySection2(FamilyHistorySection2 object) {
 			return createFamilyHistorySection2Adapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryOrganizer2(FamilyHistoryOrganizer2 object) {
-			return createFamilyHistoryOrganizer2Adapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryObservation2(FamilyHistoryObservation2 object) {
-			return createFamilyHistoryObservation2Adapter();
 		}
 
 		@Override
@@ -1683,11 +1688,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePhysicianReadingStudyPerformer2(PhysicianReadingStudyPerformer2 object) {
 			return createPhysicianReadingStudyPerformer2Adapter();
-		}
-
-		@Override
-		public Adapter caseRiskConcernAct(RiskConcernAct object) {
-			return createRiskConcernActAdapter();
 		}
 
 		@Override
@@ -4825,20 +4825,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsOutcomesSection <em>Health Status Evaluations Outcomes Section</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsOutcomesSection
-	 * @generated
-	 */
-	public Adapter createHealthStatusEvaluationsOutcomesSectionAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection <em>Mental Status Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -6403,6 +6389,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFamilyHistoryObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection <em>Health Status Evaluations And Outcomes Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection
+	 * @generated
+	 */
+	public Adapter createHealthStatusEvaluationsAndOutcomesSectionAdapter() {
 		return null;
 	}
 

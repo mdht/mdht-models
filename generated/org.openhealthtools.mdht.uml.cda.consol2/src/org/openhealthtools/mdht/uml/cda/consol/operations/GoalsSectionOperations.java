@@ -42,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Title</em>}</li>
@@ -114,6 +115,65 @@ public class GoalsSectionOperations extends SectionOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GOALS_SECTION__GOALS_SECTION_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionTemplateId"),
+					new Object[] { goalsSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGoalsSectionNullFlavor(GoalsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Null Flavor</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalsSectionNullFlavor(GoalsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GOALS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('nullFlavor')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGoalsSectionNullFlavor(GoalsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Null Flavor</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalsSectionNullFlavor(GoalsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_GOALS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalsSection The receiving '<em><b>Goals Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateGoalsSectionNullFlavor(GoalsSection goalsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_GOALS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.GOALS_SECTION);
+			try {
+				VALIDATE_GOALS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOALS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_GOALS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			goalsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GOALS_SECTION__GOALS_SECTION_NULL_FLAVOR,
+					ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionNullFlavor"),
 					new Object[] { goalsSection }));
 			}
 
@@ -441,7 +501,7 @@ public class GoalsSectionOperations extends SectionOperations {
 		if (GET_GOAL_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.GOALS_SECTION, ConsolPackage.Literals.GOALS_SECTION.getEAllOperations().get(61));
+				ConsolPackage.Literals.GOALS_SECTION, ConsolPackage.Literals.GOALS_SECTION.getEAllOperations().get(62));
 			try {
 				GET_GOAL_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_GOAL_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

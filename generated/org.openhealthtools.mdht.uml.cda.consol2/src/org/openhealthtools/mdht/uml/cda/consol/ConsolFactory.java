@@ -1668,15 +1668,6 @@ public interface ConsolFactory extends EFactory {
 	HealthConcernsSection createHealthConcernsSection();
 
 	/**
-	 * Returns a new object of class '<em>Health Status Evaluations Outcomes Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Health Status Evaluations Outcomes Section</em>'.
-	 * @generated
-	 */
-	HealthStatusEvaluationsOutcomesSection createHealthStatusEvaluationsOutcomesSection();
-
-	/**
 	 * Returns a new object of class '<em>Mental Status Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2683,6 +2674,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	FamilyHistoryObservation2 createFamilyHistoryObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Health Status Evaluations And Outcomes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Health Status Evaluations And Outcomes Section</em>'.
+	 * @generated
+	 */
+	HealthStatusEvaluationsAndOutcomesSection createHealthStatusEvaluationsAndOutcomesSection();
 
 	/**
 	 * Returns a new object of class '<em>Family History Organizer2</em>'.

@@ -31,7 +31,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.GoalsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection;
-import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsOutcomesSection;
+import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -963,7 +963,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_PLAN_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HealthStatusEvaluationsOutcomesSection))";
+	protected static final String VALIDATE_CARE_PLAN_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HealthStatusEvaluationsAndOutcomesSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCarePlanHealthStatusEvaluationsOutcomesSection(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Health Status Evaluations Outcomes Section</em>}' invariant operation.
@@ -4557,7 +4557,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HealthStatusEvaluationsOutcomesSection))->asSequence()->any(true).oclAsType(consol::HealthStatusEvaluationsOutcomesSection)";
+	protected static final String GET_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HealthStatusEvaluationsAndOutcomesSection))->asSequence()->any(true).oclAsType(consol::HealthStatusEvaluationsAndOutcomesSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHealthStatusEvaluationsOutcomesSection(CarePlan) <em>Get Health Status Evaluations Outcomes Section</em>}' query operation.
@@ -4575,7 +4575,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 
-	public static HealthStatusEvaluationsOutcomesSection getHealthStatusEvaluationsOutcomesSection(CarePlan carePlan) {
+	public static HealthStatusEvaluationsAndOutcomesSection getHealthStatusEvaluationsOutcomesSection(CarePlan carePlan) {
 		if (GET_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -4587,7 +4587,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__EOCL_QRY);
-		return (HealthStatusEvaluationsOutcomesSection) query.evaluate(carePlan);
+		return (HealthStatusEvaluationsAndOutcomesSection) query.evaluate(carePlan);
 	}
 
 	/**

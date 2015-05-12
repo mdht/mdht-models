@@ -534,8 +534,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createHealthConcernsSection();
 			case ConsolPackage.HEALTH_STATUS_OBSERVATION2:
 				return createHealthStatusObservation2();
-			case ConsolPackage.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION:
-				return createHealthStatusEvaluationsOutcomesSection();
+			case ConsolPackage.RISK_CONCERN_ACT:
+				return createRiskConcernAct();
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2:
+				return createFamilyHistoryOrganizer2();
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2:
+				return createFamilyHistoryObservation2();
+			case ConsolPackage.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION:
+				return createHealthStatusEvaluationsAndOutcomesSection();
 			case ConsolPackage.MENTAL_STATUS_SECTION:
 				return createMentalStatusSection();
 			case ConsolPackage.MENTAL_STATUS_ORGANIZER2:
@@ -606,10 +612,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createReasonForReferralSection2();
 			case ConsolPackage.FAMILY_HISTORY_SECTION2:
 				return createFamilyHistorySection2();
-			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2:
-				return createFamilyHistoryOrganizer2();
-			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2:
-				return createFamilyHistoryObservation2();
 			case ConsolPackage.TRANSFER_SUMMARY:
 				return createTransferSummary();
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION2:
@@ -696,8 +698,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPreconditionForSubstanceAdministration2();
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER2:
 				return createPhysicianReadingStudyPerformer2();
-			case ConsolPackage.RISK_CONCERN_ACT:
-				return createRiskConcernAct();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2710,17 +2710,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * @generated
 	 */
 	@Override
-	public HealthStatusEvaluationsOutcomesSection createHealthStatusEvaluationsOutcomesSection() {
-		HealthStatusEvaluationsOutcomesSectionImpl healthStatusEvaluationsOutcomesSection = new HealthStatusEvaluationsOutcomesSectionImpl();
-		return healthStatusEvaluationsOutcomesSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public MentalStatusSection createMentalStatusSection() {
 		MentalStatusSectionImpl mentalStatusSection = new MentalStatusSectionImpl();
 		return mentalStatusSection;
@@ -3926,6 +3915,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public FamilyHistoryObservation2 createFamilyHistoryObservation2() {
 		FamilyHistoryObservation2Impl familyHistoryObservation2 = new FamilyHistoryObservation2Impl();
 		return familyHistoryObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HealthStatusEvaluationsAndOutcomesSection createHealthStatusEvaluationsAndOutcomesSection() {
+		HealthStatusEvaluationsAndOutcomesSectionImpl healthStatusEvaluationsAndOutcomesSection = new HealthStatusEvaluationsAndOutcomesSectionImpl();
+		return healthStatusEvaluationsAndOutcomesSection;
 	}
 
 	/**

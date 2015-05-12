@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMentalStatusSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MentalStatusSectionTemplateId MentalStatusSectionCode MentalStatusSectionCodeP MentalStatusSectionTitle MentalStatusSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.56' code.code='10190-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Mental Status' constraints.validation.info='MentalStatusSectionCaregiverCharacteristics MentalStatusSectionAssessmentScaleObservation MentalStatusSectionCognitiveAbilitiesObservation MentalStatusSectionMentalStatusObservation MentalStatusSectionCognitiveStatusOrganizer2 MentalStatusSectionCognitiveStatusObservation2 MentalStatusSectionNonMedicinalSupplyActivity2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MentalStatusSectionTemplateId MentalStatusSectionCode MentalStatusSectionCodeP MentalStatusSectionTitle MentalStatusSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.56' code.code='10190-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Mental Status' constraints.validation.info='MentalStatusSectionAssessmentScaleObservation MentalStatusSectionMentalStatusOrganizer2 MentalStatusSectionMentalStatusObservation2'"
  * @generated
  */
 public interface MentalStatusSection extends Section {
@@ -97,18 +97,6 @@ public interface MentalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CaregiverCharacteristics))'"
-	 * @generated
-	 */
-	boolean validateMentalStatusSectionCaregiverCharacteristics(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AssessmentScaleObservation))'"
 	 * @generated
 	 */
@@ -122,36 +110,10 @@ public interface MentalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CognitiveAbilitiesObservation))'"
-	 * @generated
-	 */
-	boolean validateMentalStatusSectionCognitiveAbilitiesObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::MentalStatusObservation))'"
-	 * @generated
-	 */
-	boolean validateMentalStatusSectionMentalStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::MentalStatusOrganizer2))'"
 	 * @generated
 	 */
-	boolean validateMentalStatusSectionCognitiveStatusOrganizer2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMentalStatusSectionMentalStatusOrganizer2(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -163,30 +125,7 @@ public interface MentalStatusSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::MentalStatusObservation2))'"
 	 * @generated
 	 */
-	boolean validateMentalStatusSectionCognitiveStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.supply.oclIsUndefined() and entry.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2))'"
-	 * @generated
-	 */
-	boolean validateMentalStatusSectionNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CaregiverCharacteristics)).oclAsType(consol::CaregiverCharacteristics)'"
-	 * @generated
-	 */
-	EList<CaregiverCharacteristics> getCaregiverCharacteristicss();
+	boolean validateMentalStatusSectionMentalStatusObservation2(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,28 +140,10 @@ public interface MentalStatusSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveAbilitiesObservation)).oclAsType(consol::CognitiveAbilitiesObservation)'"
-	 * @generated
-	 */
-	EList<CognitiveAbilitiesObservation> getCognitiveAbilitiesObservations();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MentalStatusObservation)).oclAsType(consol::MentalStatusObservation)'"
-	 * @generated
-	 */
-	EList<MentalStatusObservation> getMentalStatusObservations();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::MentalStatusOrganizer2)).oclAsType(consol::MentalStatusOrganizer2)'"
 	 * @generated
 	 */
-	EList<MentalStatusOrganizer2> getCognitiveStatusOrganizer2s();
+	EList<MentalStatusOrganizer2> getMentalStatusOrganizer2s();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -231,16 +152,7 @@ public interface MentalStatusSection extends Section {
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MentalStatusObservation2)).oclAsType(consol::MentalStatusObservation2)'"
 	 * @generated
 	 */
-	EList<MentalStatusObservation2> getCognitiveStatusObservation2s();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2)).oclAsType(consol::NonMedicinalSupplyActivity2)'"
-	 * @generated
-	 */
-	EList<NonMedicinalSupplyActivity2> getNonMedicinalSupplyActivity2s();
+	EList<MentalStatusObservation2> getMentalStatusObservation2s();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -21,8 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.CarePlan;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GoalsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection;
-import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsOutcomesSection;
-
+import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CarePlanOperations;
 
@@ -800,7 +799,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 * @generated
 	 */
 	@Override
-	public HealthStatusEvaluationsOutcomesSection getHealthStatusEvaluationsOutcomesSection() {
+	public HealthStatusEvaluationsAndOutcomesSection getHealthStatusEvaluationsOutcomesSection() {
 		return CarePlanOperations.getHealthStatusEvaluationsOutcomesSection(this);
 	}
 

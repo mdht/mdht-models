@@ -70,6 +70,15 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateGoalsSectionNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalsSectionOperations.validateGoalsSectionNullFlavor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateGoalsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalsSectionOperations.validateGoalsSectionCode(this, diagnostics, context);
