@@ -684,13 +684,20 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <ruleId>CONF:31689</ruleId>
     <ruleId>CONF:31690</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_EHgh0J2AEeORR8_YW0n_jQ" name="HealthStatusEvaluationsOutcomesSection">
+  <uml:Class xmi:id="_EHgh0J2AEeORR8_YW0n_jQ" name="HealthStatusEvaluationsAndOutcomesSection">
     <ownedComment xmi:id="_1oCLEJ2AEeORR8_YW0n_jQ">
       <body>This template represents observations regarding the outcome of care from the interventions used to treat the patient. These observations represent status, at points in time, related to established care plan goals and/or interventions.</body>
     </ownedComment>
     <generalization xmi:id="_EHgh0Z2AEeORR8_YW0n_jQ">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
+    <ownedAttribute xmi:id="_3w5zgPgXEeSx6PQhw3nAUw" name="nullFlavor" visibility="private">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3w5zgfgXEeSx6PQhw3nAUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3w5zgvgXEeSx6PQhw3nAUw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_7WCuMPgXEeSx6PQhw3nAUw" value="NI"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_HeP0IJ2AEeORR8_YW0n_jQ" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_883qoJ2AEeORR8_YW0n_jQ" value="1"/>
@@ -715,29 +722,29 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_KNWesJ2AEeORR8_YW0n_jQ" base_Class="_EHgh0J2AEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.61">
-    <ruleId>CONF:29578</ruleId>
-    <ruleId>CONF:29579</ruleId>
+    <ruleId>CONF:1098-29578</ruleId>
+    <ruleId>CONF:1098-29579</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_5rG-8J2AEeORR8_YW0n_jQ" base_Property="_HeP0IJ2AEeORR8_YW0n_jQ">
-    <ruleId>CONF:29580</ruleId>
+    <ruleId>CONF:1098-29580</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_7DJI4J2AEeORR8_YW0n_jQ" base_Property="_HeQbM52AEeORR8_YW0n_jQ">
-    <ruleId>CONF:29589</ruleId>
+    <ruleId>CONF:1098-29589</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_7YCa0J2AEeORR8_YW0n_jQ" base_Property="_HeQbMJ2AEeORR8_YW0n_jQ">
-    <ruleId>CONF:29590</ruleId>
+    <ruleId>CONF:1098-29590</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_DtEMEJ2BEeORR8_YW0n_jQ" code="11383-7" displayName="Patient Problem Outcome" base_Property="_HeP0IJ2AEeORR8_YW0n_jQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:29581</ruleId>
-    <ruleId>CONF:29582</ruleId>
+    <ruleId>CONF:1098-29581</ruleId>
+    <ruleId>CONF:1098-29582</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_UCEroJ2BEeORR8_YW0n_jQ" memberEnd="_UCC2cJ2BEeORR8_YW0n_jQ _UCEroZ2BEeORR8_YW0n_jQ">
     <ownedEnd xmi:id="_UCEroZ2BEeORR8_YW0n_jQ" type="_EHgh0J2AEeORR8_YW0n_jQ" association="_UCEroJ2BEeORR8_YW0n_jQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_U4vN4J2BEeORR8_YW0n_jQ" base_Association="_UCEroJ2BEeORR8_YW0n_jQ">
-    <ruleId>CONF:31227</ruleId>
-    <ruleId>CONF:31228</ruleId>
+    <ruleId>CONF:1098-31227</ruleId>
+    <ruleId>CONF:1098-31228</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_xFWy4K4PEeORf5eJaKt1KQ" memberEnd="_xFRTUK4PEeORf5eJaKt1KQ _xFWy4a4PEeORf5eJaKt1KQ">
     <ownedEnd xmi:id="_xFWy4a4PEeORf5eJaKt1KQ" type="_POfwAIz7EeOoMZgUoTghIg" association="_xFWy4K4PEeORf5eJaKt1KQ"/>
@@ -1007,4 +1014,7 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-32780</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_5qNegPgXEeSx6PQhw3nAUw" severity="INFO" base_Property="_3w5zgPgXEeSx6PQhw3nAUw">
+    <ruleId>CONF:1098-32821</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

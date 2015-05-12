@@ -4779,17 +4779,83 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION: {
-				HealthStatusEvaluationsOutcomesSection healthStatusEvaluationsOutcomesSection = (HealthStatusEvaluationsOutcomesSection) theEObject;
-				T result = caseHealthStatusEvaluationsOutcomesSection(healthStatusEvaluationsOutcomesSection);
+			case ConsolPackage.RISK_CONCERN_ACT: {
+				RiskConcernAct riskConcernAct = (RiskConcernAct) theEObject;
+				T result = caseRiskConcernAct(riskConcernAct);
 				if (result == null) {
-					result = caseSection(healthStatusEvaluationsOutcomesSection);
+					result = caseCDA_Act(riskConcernAct);
 				}
 				if (result == null) {
-					result = caseAct(healthStatusEvaluationsOutcomesSection);
+					result = caseClinicalStatement(riskConcernAct);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(healthStatusEvaluationsOutcomesSection);
+					result = caseAct(riskConcernAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(riskConcernAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2: {
+				FamilyHistoryOrganizer2 familyHistoryOrganizer2 = (FamilyHistoryOrganizer2) theEObject;
+				T result = caseFamilyHistoryOrganizer2(familyHistoryOrganizer2);
+				if (result == null) {
+					result = caseFamilyHistoryOrganizer(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseOrganizer(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryOrganizer2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2: {
+				FamilyHistoryObservation2 familyHistoryObservation2 = (FamilyHistoryObservation2) theEObject;
+				T result = caseFamilyHistoryObservation2(familyHistoryObservation2);
+				if (result == null) {
+					result = caseFamilyHistoryObservation(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION: {
+				HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection = (HealthStatusEvaluationsAndOutcomesSection) theEObject;
+				T result = caseHealthStatusEvaluationsAndOutcomesSection(healthStatusEvaluationsAndOutcomesSection);
+				if (result == null) {
+					result = caseSection(healthStatusEvaluationsAndOutcomesSection);
+				}
+				if (result == null) {
+					result = caseAct(healthStatusEvaluationsAndOutcomesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(healthStatusEvaluationsAndOutcomesSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -5523,52 +5589,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(familyHistorySection2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2: {
-				FamilyHistoryOrganizer2 familyHistoryOrganizer2 = (FamilyHistoryOrganizer2) theEObject;
-				T result = caseFamilyHistoryOrganizer2(familyHistoryOrganizer2);
-				if (result == null) {
-					result = caseFamilyHistoryOrganizer(familyHistoryOrganizer2);
-				}
-				if (result == null) {
-					result = caseOrganizer(familyHistoryOrganizer2);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryOrganizer2);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryOrganizer2);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryOrganizer2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2: {
-				FamilyHistoryObservation2 familyHistoryObservation2 = (FamilyHistoryObservation2) theEObject;
-				T result = caseFamilyHistoryObservation2(familyHistoryObservation2);
-				if (result == null) {
-					result = caseFamilyHistoryObservation(familyHistoryObservation2);
-				}
-				if (result == null) {
-					result = caseObservation(familyHistoryObservation2);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryObservation2);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryObservation2);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryObservation2);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -6486,26 +6506,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(physicianReadingStudyPerformer2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.RISK_CONCERN_ACT: {
-				RiskConcernAct riskConcernAct = (RiskConcernAct) theEObject;
-				T result = caseRiskConcernAct(riskConcernAct);
-				if (result == null) {
-					result = caseCDA_Act(riskConcernAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(riskConcernAct);
-				}
-				if (result == null) {
-					result = caseAct(riskConcernAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(riskConcernAct);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -9745,21 +9745,6 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Health Status Evaluations Outcomes Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Health Status Evaluations Outcomes Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseHealthStatusEvaluationsOutcomesSection(HealthStatusEvaluationsOutcomesSection object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Mental Status Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -11436,6 +11421,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseFamilyHistoryObservation2(FamilyHistoryObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Health Status Evaluations And Outcomes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Health Status Evaluations And Outcomes Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHealthStatusEvaluationsAndOutcomesSection(HealthStatusEvaluationsAndOutcomesSection object) {
 		return null;
 	}
 

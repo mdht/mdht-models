@@ -945,11 +945,19 @@ The effectiveTime represents the clinically relevant time of the observation. Th
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_2umuYJ18EeORR8_YW0n_jQ" name="HealthConcernsSection">
     <ownedComment xmi:id="_iK49QJ19EeORR8_YW0n_jQ">
-      <body>This section contains data describing an interest or worry about a health state or process that could possibly require attention, intervention, or management.</body>
+      <body>This section contains data describing an interest or worry about a health state or process that could possibly require attention, intervention, or management. A Health Concern is a health related matter that is of interest, importance or worry to someone, who may be the patient, patient's family or patient's health care provider. Health concerns are derived from a variety of sources within an EHR (such as Problem List, Family History, Social History, Social Worker Note, etc.). Health concerns can be medical, surgical, nursing, allied health or patient-reported concerns.&#xD;
+Problem Concerns are a subset of Health Concerns that have risen to the level of importance that they typically would belong on a classic &quot;Problem List&quot;, such as &quot;Diabetes Mellitus&quot; or &quot;Family History of Melanoma&quot; or &quot;Tobacco abuse&quot;. These are of broad interest to multiple members of the care team. Examples of other Health Concerns that might not typically be considered a Problem Concern include &quot;Risk of Hyperkalemia&quot; for a patient taking an ACE-inhibitor medication, or &quot;Transportation difficulties&quot; for someone who doesn't drive and has trouble getting to appointments, or &quot;Under-insured&quot; for someone who doesn't have sufficient insurance to properly cover their medical needs such as medications. These are typically most important to just a limited number of care team members.</body>
     </ownedComment>
     <generalization xmi:id="_2unVcJ18EeORR8_YW0n_jQ">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
+    <ownedAttribute xmi:id="_Z0MfQPgDEeSx6PQhw3nAUw" name="nullFlavor" visibility="private">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z0MfQfgDEeSx6PQhw3nAUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z0MfQvgDEeSx6PQhw3nAUw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_b4ZLoPgDEeSx6PQhw3nAUw" value="NI"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_E9dZwJ19EeORR8_YW0n_jQ" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pdtDkZ19EeORR8_YW0n_jQ" value="1"/>
@@ -969,39 +977,44 @@ The effectiveTime represents the clinically relevant time of the observation. Th
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_AVxloDq9EeSyGa6KC25kiw" name="healthStatusObservation2" type="_DMvdYOEFEeOmBMTtnrPqww" association="_AVyzwDq9EeSyGa6KC25kiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EH0T4Dq9EeSyGa6KC25kiw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EHu0UDq9EeSyGa6KC25kiw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vmky0fgEEeSx6PQhw3nAUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vmky0PgEEeSx6PQhw3nAUw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_YUwwMJ1-EeORR8_YW0n_jQ" name="healthConcernAct" association="_YUzzgJ1-EeORR8_YW0n_jQ">
       <type xmi:type="uml:Class" href="consol-planofcare.uml#_An8P8I9kEeOB0eBUISUB4Q"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eL_CQZ1-EeORR8_YW0n_jQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eL_CQJ1-EeORR8_YW0n_jQ" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_nlQl8PgEEeSx6PQhw3nAUw" name="riskConcernAct" association="_nlSbIPgEEeSx6PQhw3nAUw">
+      <type xmi:type="uml:Class" href="consol-planofcare.uml#_mMk3QON1EeS_XOr-dz_KWA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlRNAPgEEeSx6PQhw3nAUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlRNAfgEEeSx6PQhw3nAUw" value="*"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_dzjJkJ19EeORR8_YW0n_jQ" base_Class="_2umuYJ18EeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.58">
-    <ruleId>CONF:28804</ruleId>
-    <ruleId>CONF:28805</ruleId>
+    <ruleId>CONF:1098-28804</ruleId>
+    <ruleId>CONF:1098-28805</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_m5KDMJ19EeORR8_YW0n_jQ" base_Property="_E9dZwJ19EeORR8_YW0n_jQ">
-    <ruleId>CONF:28806</ruleId>
+    <ruleId>CONF:1098-28806</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_nyNLEJ19EeORR8_YW0n_jQ" base_Property="_E9eA0519EeORR8_YW0n_jQ">
-    <ruleId>CONF:28809</ruleId>
+    <ruleId>CONF:1098-28809</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_oGxF0J19EeORR8_YW0n_jQ" base_Property="_E9eA0J19EeORR8_YW0n_jQ">
-    <ruleId>CONF:28810</ruleId>
+    <ruleId>CONF:1098-28810</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_sCq6sJ19EeORR8_YW0n_jQ" code="46030-3" displayName="Health Conditions Section" base_Property="_E9dZwJ19EeORR8_YW0n_jQ">
+  <CDA:CodeSystemConstraint xmi:id="_sCq6sJ19EeORR8_YW0n_jQ" code="75310-3" displayName="Health concerns document" base_Property="_E9dZwJ19EeORR8_YW0n_jQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:28807</ruleId>
-    <ruleId>CONF:28808</ruleId>
+    <ruleId>CONF:1098-28807</ruleId>
+    <ruleId>CONF:1098-28808</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_YUzzgJ1-EeORR8_YW0n_jQ" memberEnd="_YUwwMJ1-EeORR8_YW0n_jQ _YU0akJ1-EeORR8_YW0n_jQ">
     <ownedEnd xmi:id="_YU0akJ1-EeORR8_YW0n_jQ" type="_2umuYJ18EeORR8_YW0n_jQ" association="_YUzzgJ1-EeORR8_YW0n_jQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_ZVIoEJ1-EeORR8_YW0n_jQ" base_Association="_YUzzgJ1-EeORR8_YW0n_jQ">
-    <ruleId>CONF:30768</ruleId>
-    <ruleId>CONF:30769</ruleId>
+    <ruleId>CONF:1098-30768</ruleId>
+    <ruleId>CONF:1098-30769</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_DMvdYOEFEeOmBMTtnrPqww" clientDependency="_ItZpkOEFEeOmBMTtnrPqww" name="HealthStatusObservation2">
     <ownedComment xmi:id="_3pdyAOEFEeOmBMTtnrPqww">
@@ -1508,8 +1521,8 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <ownedEnd xmi:id="_AVyzwTq9EeSyGa6KC25kiw" type="_2umuYJ18EeORR8_YW0n_jQ" association="_AVyzwDq9EeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_DQKTIDq9EeSyGa6KC25kiw" severity="WARNING" base_Association="_AVyzwDq9EeSyGa6KC25kiw">
-    <ruleId>CONF:30483</ruleId>
-    <ruleId>CONF:30484</ruleId>
+    <ruleId>CONF:1098-30483</ruleId>
+    <ruleId>CONF:1098-30484</ruleId>
   </CDA:AssociationValidation>
   <CDA:TextValue xmi:id="_qGW24KcJEeSFQp5MpGZ8qw" base_Property="_szXahALYEeSyydFGYJajGA">
     <ruleId>CONF:1098-9181</ruleId>
@@ -1539,4 +1552,14 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   <CDA:PropertyValidation xmi:id="_-kpJcMm6EeSr1c1X9ACWbg" base_Property="_8NsgMMm6EeSr1c1X9ACWbg">
     <ruleId>CONF:1098-9049</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_a9gQsPgDEeSx6PQhw3nAUw" severity="INFO" base_Property="_Z0MfQPgDEeSx6PQhw3nAUw">
+    <ruleId>CONF:1098-32802</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_nlSbIPgEEeSx6PQhw3nAUw" memberEnd="_nlQl8PgEEeSx6PQhw3nAUw _nlTCMPgEEeSx6PQhw3nAUw">
+    <ownedEnd xmi:id="_nlTCMPgEEeSx6PQhw3nAUw" type="_2umuYJ18EeORR8_YW0n_jQ" association="_nlSbIPgEEeSx6PQhw3nAUw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_oen24PgEEeSx6PQhw3nAUw" severity="INFO" base_Association="_nlSbIPgEEeSx6PQhw3nAUw">
+    <ruleId>CONF:1098-32308</ruleId>
+    <ruleId>CONF:1098-32309</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

@@ -30,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation2;
+import org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
@@ -43,14 +44,17 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionHealthConcernAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Health Concern Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionHealthStatusObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Health Status Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#validateHealthConcernsSectionRiskConcernAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Risk Concern Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#getHealthConcernActs() <em>Get Health Concern Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#getHealthStatusObservation2() <em>Get Health Status Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#getHealthStatusObservation2s() <em>Get Health Status Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection#getRiskConcernActs() <em>Get Risk Concern Acts</em>}</li>
  * </ul>
  * </p>
  *
@@ -126,6 +130,65 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateHealthConcernsSectionNullFlavor(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Null Flavor</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernsSectionNullFlavor(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('nullFlavor')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateHealthConcernsSectionNullFlavor(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Null Flavor</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernsSectionNullFlavor(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param healthConcernsSection The receiving '<em><b>Health Concerns Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateHealthConcernsSectionNullFlavor(HealthConcernsSection healthConcernsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERNS_SECTION);
+			try {
+				VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			healthConcernsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_NULL_FLAVOR,
+					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionNullFlavor"),
+					new Object[] { healthConcernsSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateHealthConcernsSectionCode(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -135,7 +198,7 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	 */
 	protected static final String VALIDATE_HEALTH_CONCERNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '46030-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+			+ "value.code = '75310-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHealthConcernsSectionCode(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Code</em>}' invariant operation.
@@ -430,7 +493,7 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::HealthStatusObservation2))";
+	protected static final String VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::HealthStatusObservation2))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHealthConcernsSectionHealthStatusObservation2(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Health Status Observation2</em>}' invariant operation.
@@ -484,6 +547,65 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateHealthConcernsSectionRiskConcernAct(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Risk Concern Act</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernsSectionRiskConcernAct(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::RiskConcernAct))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateHealthConcernsSectionRiskConcernAct(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Risk Concern Act</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernsSectionRiskConcernAct(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param healthConcernsSection The receiving '<em><b>Health Concerns Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateHealthConcernsSectionRiskConcernAct(HealthConcernsSection healthConcernsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERNS_SECTION);
+			try {
+				VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			healthConcernsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT,
+					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionRiskConcernAct"),
+					new Object[] { healthConcernsSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getHealthConcernActs(HealthConcernsSection) <em>Get Health Concern Acts</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -514,7 +636,7 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERNS_SECTION,
-				ConsolPackage.Literals.HEALTH_CONCERNS_SECTION.getEAllOperations().get(62));
+				ConsolPackage.Literals.HEALTH_CONCERNS_SECTION.getEAllOperations().get(64));
 			try {
 				GET_HEALTH_CONCERN_ACTS__EOCL_QRY = helper.createQuery(GET_HEALTH_CONCERN_ACTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -528,24 +650,24 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHealthStatusObservation2(HealthConcernsSection) <em>Get Health Status Observation2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getHealthStatusObservation2s(HealthConcernsSection) <em>Get Health Status Observation2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHealthStatusObservation2(HealthConcernsSection)
+	 * @see #getHealthStatusObservation2s(HealthConcernsSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HEALTH_STATUS_OBSERVATION2__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HealthStatusObservation2))->asSequence()->any(true).oclAsType(consol::HealthStatusObservation2)";
+	protected static final String GET_HEALTH_STATUS_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HealthStatusObservation2)).oclAsType(consol::HealthStatusObservation2)";
 
 	/**
-	 * The cached OCL query for the '{@link #getHealthStatusObservation2(HealthConcernsSection) <em>Get Health Status Observation2</em>}' query operation.
+	 * The cached OCL query for the '{@link #getHealthStatusObservation2s(HealthConcernsSection) <em>Get Health Status Observation2s</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHealthStatusObservation2(HealthConcernsSection)
+	 * @see #getHealthStatusObservation2s(HealthConcernsSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_HEALTH_STATUS_OBSERVATION2__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_HEALTH_STATUS_OBSERVATION2S__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -553,20 +675,67 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	 * @generated
 	 */
 
-	public static HealthStatusObservation2 getHealthStatusObservation2(HealthConcernsSection healthConcernsSection) {
-		if (GET_HEALTH_STATUS_OBSERVATION2__EOCL_QRY == null) {
+	public static EList<HealthStatusObservation2> getHealthStatusObservation2s(
+			HealthConcernsSection healthConcernsSection) {
+		if (GET_HEALTH_STATUS_OBSERVATION2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERNS_SECTION,
-				ConsolPackage.Literals.HEALTH_CONCERNS_SECTION.getEAllOperations().get(63));
+				ConsolPackage.Literals.HEALTH_CONCERNS_SECTION.getEAllOperations().get(65));
 			try {
-				GET_HEALTH_STATUS_OBSERVATION2__EOCL_QRY = helper.createQuery(GET_HEALTH_STATUS_OBSERVATION2__EOCL_EXP);
+				GET_HEALTH_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_HEALTH_STATUS_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HEALTH_STATUS_OBSERVATION2__EOCL_QRY);
-		return (HealthStatusObservation2) query.evaluate(healthConcernsSection);
+		OCL.Query query = EOCL_ENV.createQuery(GET_HEALTH_STATUS_OBSERVATION2S__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<HealthStatusObservation2> result = (Collection<HealthStatusObservation2>) query.evaluate(healthConcernsSection);
+		return new BasicEList.UnmodifiableEList<HealthStatusObservation2>(result.size(), result.toArray());
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getRiskConcernActs(HealthConcernsSection) <em>Get Risk Concern Acts</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRiskConcernActs(HealthConcernsSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_RISK_CONCERN_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::RiskConcernAct)).oclAsType(consol::RiskConcernAct)";
+
+	/**
+	 * The cached OCL query for the '{@link #getRiskConcernActs(HealthConcernsSection) <em>Get Risk Concern Acts</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRiskConcernActs(HealthConcernsSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_RISK_CONCERN_ACTS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<RiskConcernAct> getRiskConcernActs(HealthConcernsSection healthConcernsSection) {
+		if (GET_RISK_CONCERN_ACTS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.HEALTH_CONCERNS_SECTION,
+				ConsolPackage.Literals.HEALTH_CONCERNS_SECTION.getEAllOperations().get(66));
+			try {
+				GET_RISK_CONCERN_ACTS__EOCL_QRY = helper.createQuery(GET_RISK_CONCERN_ACTS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_RISK_CONCERN_ACTS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<RiskConcernAct> result = (Collection<RiskConcernAct>) query.evaluate(healthConcernsSection);
+		return new BasicEList.UnmodifiableEList<RiskConcernAct>(result.size(), result.toArray());
 	}
 
 } // HealthConcernsSectionOperations

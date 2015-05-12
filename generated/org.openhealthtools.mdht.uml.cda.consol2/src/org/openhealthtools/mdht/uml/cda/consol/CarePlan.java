@@ -223,7 +223,7 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HealthStatusEvaluationsOutcomesSection))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HealthStatusEvaluationsAndOutcomesSection))'"
 	 * @generated
 	 */
 	boolean validateCarePlanHealthStatusEvaluationsOutcomesSection(DiagnosticChain diagnostics,
@@ -909,10 +909,10 @@ public interface CarePlan extends USRealmHeader2 {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HealthStatusEvaluationsOutcomesSection))->asSequence()->any(true).oclAsType(consol::HealthStatusEvaluationsOutcomesSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HealthStatusEvaluationsAndOutcomesSection))->asSequence()->any(true).oclAsType(consol::HealthStatusEvaluationsAndOutcomesSection)'"
 	 * @generated
 	 */
-	HealthStatusEvaluationsOutcomesSection getHealthStatusEvaluationsOutcomesSection();
+	HealthStatusEvaluationsAndOutcomesSection getHealthStatusEvaluationsOutcomesSection();
 
 	/**
 	 * <!-- begin-user-doc -->

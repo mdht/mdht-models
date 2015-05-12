@@ -84,7 +84,7 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateNutritionSectionCode() {
@@ -95,12 +95,13 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(NutritionSection target) {
-
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
 			protected void updateToPass(NutritionSection target) {
-				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE("61144-2", LOINC_ID));
 
 			}
 
@@ -118,7 +119,7 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateNutritionSectionCodeP() {
@@ -129,12 +130,13 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(NutritionSection target) {
-
+				target.init();
+				target.setCode(null);
 			}
 
 			@Override
 			protected void updateToPass(NutritionSection target) {
-				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 
 			}
 
