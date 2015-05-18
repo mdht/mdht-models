@@ -460,9 +460,9 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
   <CDA:PropertyValidation xmi:id="_FT754OYmEeGINOJ_SD9_dA" base_Property="_5F8bMCUTEeGiOPpZVnfEJA">
     <ruleId>CONF:15365</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_POfwAIz7EeOoMZgUoTghIg" name="HandoffCommunication">
+  <uml:Class xmi:id="_POfwAIz7EeOoMZgUoTghIg" name="HandoffCommunicationParticipants">
     <ownedComment xmi:id="_VONaQIz8EeOoMZgUoTghIg">
-      <body>This template represents provider hand-off communication. The 'hand-off' process involves senders, those transmitting the patient's information and releasing the care of that patient to the next clinician, and receivers, those who accept the patient information and care of that patient.</body>
+      <body>This template represents the sender (author) and receivers (participants) of a handoff communication in a plan of treatment. It does not convey details about the communication. The &quot;handoff&quot; process involves senders, those transmitting the patient's information and releasing the care of that patient to the next clinician, and receivers, those who accept the patient information and care of that patient.</body>
     </ownedComment>
     <generalization xmi:id="_POfwAYz7EeOoMZgUoTghIg">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
@@ -488,17 +488,26 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rN1IsYz7EeOoMZgUoTghIg" name="effectiveTime" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_LEb5oPtNEeSoPO_Q5cglLA">
+        <body>The effective time is the time when the handoff process took place between the sender and receiver of the patient information. This could be the time the information was transmitted, released, or verbally communicated to the next clinician.</body>
+      </ownedComment>
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_saWJsYz8EeOoMZgUoTghIg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_saWJsIz8EeOoMZgUoTghIg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_hbddYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_xFRTUK4PEeORf5eJaKt1KQ" name="authorParticipation" association="_xFWy4K4PEeORf5eJaKt1KQ">
+      <ownedComment xmi:id="_OVhP4PtNEeSoPO_Q5cglLA">
+        <body>The Author Participant contains the sender's contact information and is a resource for the Information Recipient for any follow-up questions.</body>
+      </ownedComment>
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zl-Vga4PEeORf5eJaKt1KQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zl-VgK4PEeORf5eJaKt1KQ" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_AfzKIIz_EeOoMZgUoTghIg" name="participant" visibility="private" type="_X8oA8Iz_EeOoMZgUoTghIg" aggregation="composite">
+      <ownedComment xmi:id="_SUuQYPtNEeSoPO_Q5cglLA">
+        <body>Documentation of the Information Recipient's name and address verifies that the information was exchanged.</body>
+      </ownedComment>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JPnZ8Yz_EeOoMZgUoTghIg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JPnZ8Iz_EeOoMZgUoTghIg" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_ZqOVgUxoEd6h-an5IXo-DA"/>
@@ -526,50 +535,79 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
         <generalization xmi:id="_-hGE8I0CEeOoMZgUoTghIg">
           <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
         </generalization>
+        <ownedAttribute xmi:id="_bQn0YPtNEeSoPO_Q5cglLA" name="id" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e6T34ftNEeSoPO_Q5cglLA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e6T34PtNEeSoPO_Q5cglLA" value="*"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_KfydsEreEd6FXKclYGEDCw"/>
+        </ownedAttribute>
         <ownedAttribute xmi:id="_Hog8cI0DEeOoMZgUoTghIg" name="code" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hog8co0DEeOoMZgUoTghIg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hog8cY0DEeOoMZgUoTghIg" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_MtfrYEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_tASUEPtNEeSoPO_Q5cglLA" name="addr" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vWMbgftNEeSoPO_Q5cglLA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vWMbgPtNEeSoPO_Q5cglLA" value="*"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_TCqdsEreEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_19xMcPtNEeSoPO_Q5cglLA" name="playingEntity" visibility="private" type="_EGEj4PtOEeSoPO_Q5cglLA" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19xMcftNEeSoPO_Q5cglLA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19xMcvtNEeSoPO_Q5cglLA" value="1"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1ZUk4UoaEd6c3qsAxlFHaQ"/>
+          <association href="../consol.uml#_193TEPtNEeSoPO_Q5cglLA"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_EGEj4PtOEeSoPO_Q5cglLA" name="PlayingEntity">
+          <generalization xmi:id="_EGEj4ftOEeSoPO_Q5cglLA">
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_EvXYgPtOEeSoPO_Q5cglLA" name="name" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hiu4AftOEeSoPO_Q5cglLA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hiu4APtOEeSoPO_Q5cglLA" value="*"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+        </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_WwJuIIz8EeOoMZgUoTghIg" base_Class="_POfwAIz7EeOoMZgUoTghIg" templateId="2.16.840.1.113883.10.20.22.4.141">
-    <ruleId>CONF:30834</ruleId>
-    <ruleId>CONF:30835</ruleId>
+    <ruleId>CONF:1098-30834</ruleId>
+    <ruleId>CONF:1098-30835</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_s59d4Iz8EeOoMZgUoTghIg" base_Property="_rN0hoIz7EeOoMZgUoTghIg">
-    <ruleId>CONF:30832</ruleId>
+    <ruleId>CONF:1098-30832</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_td-J4Iz8EeOoMZgUoTghIg" base_Property="_rN1ItIz7EeOoMZgUoTghIg">
-    <ruleId>CONF:30833</ruleId>
+    <ruleId>CONF:1098-30833</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_t-Bi8Iz8EeOoMZgUoTghIg" base_Property="_rN1IsIz7EeOoMZgUoTghIg">
-    <ruleId>CONF:30836</ruleId>
+    <ruleId>CONF:1098-30836</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_ubjMcIz8EeOoMZgUoTghIg" base_Property="_rN1ItYz7EeOoMZgUoTghIg">
-    <ruleId>CONF:31668</ruleId>
+    <ruleId>CONF:1098-31668</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_u6mf8Iz8EeOoMZgUoTghIg" base_Property="_rN1IsYz7EeOoMZgUoTghIg">
-    <ruleId>CONF:31670</ruleId>
+    <ruleId>CONF:1098-31670</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_XPjxgIz9EeOoMZgUoTghIg" code="completed" displayName="Completed" base_Property="_rN1ItYz7EeOoMZgUoTghIg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31669</ruleId>
+    <ruleId>CONF:1098-31669</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_RMuP4Iz-EeOoMZgUoTghIg" code="432138007" displayName="handoff communication (procedure)" base_Property="_rN1IsIz7EeOoMZgUoTghIg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:30837</ruleId>
-    <ruleId>CONF:30838</ruleId>
+    <ruleId>CONF:1098-30837</ruleId>
+    <ruleId>CONF:1098-30838</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_xj7yUIz_EeOoMZgUoTghIg" base_Property="_b6p8wIz_EeOoMZgUoTghIg">
-    <ruleId>CONF:31674</ruleId>
+    <ruleId>CONF:1098-31674</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_LTXdkI0DEeOoMZgUoTghIg" severity="WARNING" base_Property="_Hog8cI0DEeOoMZgUoTghIg"/>
   <CDA:ValueSetConstraint xmi:id="_ShwW4I0DEeOoMZgUoTghIg" base_Property="_Hog8cI0DEeOoMZgUoTghIg" severity="WARNING">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
-    <ruleId>CONF:31676</ruleId>
+    <ruleId>CONF:1098-31676</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_ihaWkI55EeOB0eBUISUB4Q" name="OutcomeObservation">
     <ownedComment xmi:id="_nN3oMI6FEeOB0eBUISUB4Q">
@@ -750,7 +788,7 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <ownedEnd xmi:id="_xFWy4a4PEeORf5eJaKt1KQ" type="_POfwAIz7EeOoMZgUoTghIg" association="_xFWy4K4PEeORf5eJaKt1KQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_0pfA8K4PEeORf5eJaKt1KQ" base_Association="_xFWy4K4PEeORf5eJaKt1KQ">
-    <ruleId>CONF:31672</ruleId>
+    <ruleId>CONF:1098-31672</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_Bpk7sK4nEeORf5eJaKt1KQ" memberEnd="_Bph4YK4nEeORf5eJaKt1KQ _BpliwK4nEeORf5eJaKt1KQ">
     <ownedEnd xmi:id="_BpliwK4nEeORf5eJaKt1KQ" type="_ihaWkI55EeOB0eBUISUB4Q" association="_Bpk7sK4nEeORf5eJaKt1KQ"/>
@@ -1016,5 +1054,14 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_5qNegPgXEeSx6PQhw3nAUw" severity="INFO" base_Property="_3w5zgPgXEeSx6PQhw3nAUw">
     <ruleId>CONF:1098-32821</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_d-JxoPtNEeSoPO_Q5cglLA" base_Property="_bQn0YPtNEeSoPO_Q5cglLA">
+    <ruleId>CONF:1098-32422</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_uPM-QPtNEeSoPO_Q5cglLA" base_Property="_tASUEPtNEeSoPO_Q5cglLA">
+    <ruleId>CONF:1098-32392</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_GaL7kPtOEeSoPO_Q5cglLA" base_Property="_EvXYgPtOEeSoPO_Q5cglLA">
+    <ruleId>CONF:1098-32394</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>

@@ -1288,13 +1288,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_np5CwInYEeOJGtGyq_dBbA" name="Residence and Accommodation Type">
-      <ownedComment xmi:id="_fEs5IInZEeOJGtGyq_dBbA">
-        <body>A value set of SNOMED-CT codes descending from &quot;365508006&quot;  &quot;Residence and accommodation circumstances - finding&quot; reflecting type of residence, status of accommodations, living situation and environment.&#xD;
-Specific URL pending&#xD;
-Valueset Source: http://vtsl.vetmed.vt.edu/</body>
-      </ownedComment>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_np5CwInYEeOJGtGyq_dBbA" name="Residence and Accommodation Type"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_hfQH0IoMEeOoMZgUoTghIg" name="Cognitive Abilities Value Set">
       <ownedComment xmi:id="_prVYcIoMEeOoMZgUoTghIg">
         <body>This Value Set identifies the specific types of cognitive abilities.</body>
@@ -2996,7 +2990,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_sCII8GK1EeOD5bEp3nNX5w" conceptName="second assistant surgeon" base_EnumerationLiteral="_sCHh4GK1EeOD5bEp3nNX5w"/>
   <term:ValueSetCode xmi:id="_vX05cWK1EeOD5bEp3nNX5w" conceptName="scrub nurse" base_EnumerationLiteral="_vX05cGK1EeOD5bEp3nNX5w"/>
   <term:ValueSetCode xmi:id="_yNuIgWK1EeOD5bEp3nNX5w" conceptName="third assistant" base_EnumerationLiteral="_yNuIgGK1EeOD5bEp3nNX5w"/>
-  <term:ValueSetVersion xmi:id="_np5CwYnYEeOJGtGyq_dBbA" identifier="2.16.840.1.113883.11.20.9.49" fullName="Residence and Accommodation Type" binding="Dynamic" base_Enumeration="_np5CwInYEeOJGtGyq_dBbA">
+  <term:ValueSetVersion xmi:id="_np5CwYnYEeOJGtGyq_dBbA" identifier="2.16.840.1.113883.11.20.9.49" fullName="Residence and Accommodation Type" source="https://vsac.nlm.nih.gov" definition="A value set of SNOMED-CT codes descending from &quot;365508006&quot;  &quot;Residence and accommodation circumstances - finding&quot; reflecting type of residence, status of accommodations, living situation and environment." binding="Dynamic" base_Enumeration="_np5CwInYEeOJGtGyq_dBbA">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_hfQH0YoMEeOoMZgUoTghIg" identifier="2.16.840.1.113883.11.20.9.48" fullName="Cognitive Abilities Value Set" binding="Dynamic" base_Enumeration="_hfQH0IoMEeOoMZgUoTghIg">

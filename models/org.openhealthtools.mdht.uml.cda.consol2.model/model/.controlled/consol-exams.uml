@@ -620,6 +620,9 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ownedComment xmi:id="_VjDKoJ2LEeORR8_YW0n_jQ">
       <body>The Skin Physical Exam section includes direct observations made by the clinician. This section includes only observations made by the examining clinician using inspection and palpation; it does not include laboratory or imaging findings. The examination may be reported as a collection of random clinical statements or it may be reported categorically.</body>
     </ownedComment>
+    <ownedComment xmi:id="_k98SkPm-EeSGHoih4Jm09A">
+      <body>REMOVED</body>
+    </ownedComment>
     <generalization xmi:id="_CDn9gZ2LEeORR8_YW0n_jQ">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>

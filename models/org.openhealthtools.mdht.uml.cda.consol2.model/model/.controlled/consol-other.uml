@@ -1767,7 +1767,18 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_rVl5AOZbEeGINOJ_SD9_dA" name="FunctionalStatusProblemObservation">
     <ownedComment xmi:id="_1PP4wObqEeGINOJ_SD9_dA">
-      <body>A functional status problem observation is a clinical statement that represents a patient's functional perfomance and ability.</body>
+      <body>&lt;p>&#xD;
+A functional status problem observation is a clinical statement that represents a patient's functional perfomance and ability.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+THIS TEMPLATE HAS BEEN DEPRECATED IN C-CDA R2 AND MAY BE DELETED FROM A FUTURE RELEASE OF THIS IMPLEMENTATION GUIDE. USE OF THIS TEMPLATE IS NOT RECOMMENDED.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Reason for deprecation: Functional Status Problem Observation has been merged, without loss of expressivity, into Functional Status Observation (2.16.840.1.113883.10.20.22.4.67:2014-06-09).&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedComment xmi:id="_CDS14Pp0EeS-CfvNxekztA">
+      <body>DEPRECATED</body>
     </ownedComment>
     <ownedRule xmi:id="_4AP2MObpEeGINOJ_SD9_dA" name="hasTextReference">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_4AP2MebpEeGINOJ_SD9_dA">
@@ -2066,10 +2077,14 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:AssociationValidation xmi:id="_hDfeoPKyEeGFUPBL8qS7yQ" base_Association="_cTQCw_KyEeGFUPBL8qS7yQ">
     <ruleId>CONF:9195</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_u_keoIkOEeOJGtGyq_dBbA" name="ActReference">
+  <uml:Class xmi:id="_u_keoIkOEeOJGtGyq_dBbA" name="EntryReference">
     <ownedComment xmi:id="_CDcekIkXEeOJGtGyq_dBbA">
-      <body>This template represents the act of referencing another entry in the same CDA document instance. Its purpose is to remove the need to repeat the complete XML representation of the referred entry when relating one entry to another. For example, in a Care Plan it is necessary to repeatedly relate Health Concerns, Goals, Interventions and Outcomes.&#xD;
-The id is required and must be the same id as the entry/id it is referencing. Act/Code is nulled to &quot;NP&quot; (Not Present).</body>
+      <body>&lt;p>&#xD;
+This template represents the act of referencing another entry in the same CDA document instance. Its purpose is to remove the need to repeat the complete XML representation of the referred entry when relating one entry to another. This template can be used to reference many types of Act class derivations, such as encounters, observations, procedures etc., as it is often necessary when authoring CDA documents to repeatedly reference other Acts of these types. For example, in a Care Plan it is necessary to repeatedly relate Health Concerns, Goals, Interventions and Outcomes.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The id is required and must be the same id as the entry/id it is referencing. The id cannot be a null value. Act/Code is set to nullFlavor=&quot;NP&quot; (Not Present). This means the value is not present in the message (in act/Code).&#xD;
+&lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_u__VYIkOEeOJGtGyq_dBbA">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
@@ -2084,13 +2099,12 @@ The id is required and must be the same id as the entry/id it is referencing. Ac
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RBZ9kIkVEeOJGtGyq_dBbA" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_bZHVEYkREeOJGtGyq_dBbA" name="id" visibility="private" aggregation="composite">
+    <ownedAttribute xmi:id="_bZHVEYkREeOJGtGyq_dBbA" name="id" visibility="private" type="_l5j9YPmqEeSGHoih4Jm09A" aggregation="composite">
       <ownedComment xmi:id="_R4edkIkXEeOJGtGyq_dBbA">
         <body>The ID must equal another entry/id in the same document instance. Application Software must be responsible for resolving the identifier back to its original object and then rendering the information in the correct place in the containing section's narrative text.</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b597MYkYEeOJGtGyq_dBbA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b597MIkYEeOJGtGyq_dBbA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hnYWgfmqEeSGHoih4Jm09A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hnYWgPmqEeSGHoih4Jm09A" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_bZHVEIkREeOJGtGyq_dBbA" name="code" visibility="private" type="_hKw8EIk8EeOJGtGyq_dBbA" aggregation="composite">
@@ -2103,6 +2117,9 @@ The id is required and must be the same id as the entry/id it is referencing. Ac
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_hKw8EIk8EeOJGtGyq_dBbA" name="CD">
+      <ownedComment xmi:id="_rGswoPmqEeSGHoih4Jm09A">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_hKxjIIk8EeOJGtGyq_dBbA">
         <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </generalization>
@@ -2113,36 +2130,50 @@ The id is required and must be the same id as the entry/id it is referencing. Ac
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_AJn3IDxkEd6JwqSGecoePg"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_l5j9YPmqEeSGHoih4Jm09A" name="II">
+      <ownedComment xmi:id="_sgRLoPmqEeSGHoih4Jm09A">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_l5j9YfmqEeSGHoih4Jm09A">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_m0kNEPmqEeSGHoih4Jm09A" name="nullFlavor" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3e9GwfmqEeSGHoih4Jm09A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3e9GwPmqEeSGHoih4Jm09A"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_AJn3IDxkEd6JwqSGecoePg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:PropertyValidation xmi:id="_Qy-8gIkUEeOJGtGyq_dBbA" base_Property="_bZGuAIkREeOJGtGyq_dBbA">
-    <ruleId>CONF:31485</ruleId>
+    <ruleId>CONF:1098-31485</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_SeHzMIkVEeOJGtGyq_dBbA" base_Property="_bZIjMIkREeOJGtGyq_dBbA">
-    <ruleId>CONF:31486</ruleId>
+    <ruleId>CONF:1098-31486</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_OcVjUIkWEeOJGtGyq_dBbA" base_Class="_u_keoIkOEeOJGtGyq_dBbA" templateId="2.16.840.1.113883.10.20.22.4.122">
-    <ruleId>CONF:31487</ruleId>
-    <ruleId>CONF:31488</ruleId>
+    <ruleId>CONF:1098-31487</ruleId>
+    <ruleId>CONF:1098-31488</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_dTD1EIkYEeOJGtGyq_dBbA" base_Property="_bZHVEYkREeOJGtGyq_dBbA">
-    <ruleId>CONF:31489</ruleId>
+    <ruleId>CONF:1098-31489</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_aoeSkIkiEeOJGtGyq_dBbA" base_Property="_bZIjMYkREeOJGtGyq_dBbA">
-    <ruleId>CONF:31498</ruleId>
+    <ruleId>CONF:1098-31498</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_tGOnUIkiEeOJGtGyq_dBbA" code="completed" base_Property="_bZIjMYkREeOJGtGyq_dBbA" severity="INFO">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31499</ruleId>
+    <ruleId>CONF:1098-31499</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_kfp0QIk8EeOJGtGyq_dBbA" base_Property="_js1QMIk8EeOJGtGyq_dBbA">
-    <ruleId>CONF:31491</ruleId>
+    <ruleId>CONF:1098-31491</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_wogccIk8EeOJGtGyq_dBbA" code="NP" displayName="Not Present" base_Property="_js1QMIk8EeOJGtGyq_dBbA">
+  <CDA:CodeSystemConstraint xmi:id="_wogccIk8EeOJGtGyq_dBbA" code="NP" displayName="Not Present" base_Property="_js1QMIk8EeOJGtGyq_dBbA" message="This code SHALL contain exactly one [1..1] @nullFlavor=&quot;NP&quot; Not Present (CodeSystem: HL7NullFlavor 2.16.840.1.113883.5.1008) (CONF:1098-31491).">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_H5J7cYkcEeOJGtGyq_dBbA"/>
-    <ruleId>CONF:31491</ruleId>
+    <ruleId>CONF:1098-31491</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_sVggwIk9EeOJGtGyq_dBbA" base_Property="_bZHVEIkREeOJGtGyq_dBbA">
-    <ruleId>CONF:31490</ruleId>
+    <ruleId>CONF:1098-31490</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_RbbCII0dEeOB0eBUISUB4Q" name="MedicalEquipmentOrganizer">
     <ownedComment xmi:id="_F36tQI0eEeOB0eBUISUB4Q">
@@ -2245,7 +2276,7 @@ Devices applied to, or placed in, the patient are represented with the Procedure
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_QcUL8JBGEeOZX935IVJfOg" name="ExternalDocumentReference">
     <ownedComment xmi:id="_v3YrsJBGEeOZX935IVJfOg">
-      <body>Where it is necessary to reference an external clinical document, the External Document Reference template can be used to reference this external document.????????However, if the containing document is replacing or appending to another document in the same set, that relationship is set in the header, using ClinicalDocument/relatedDocument.</body>
+      <body>Where it is necessary to reference an external clinical document, the External Document Reference template can be used to reference this external document. However, if the containing document is replacing or appending to another document in the same set, that relationship is set in the header, using ClinicalDocument/relatedDocument.</body>
     </ownedComment>
     <ownedRule xmi:id="_v_SO4JQ1EeO19_VQDD6jXw" name="classCodeTerminology" constrainedElement="_J1uXYK4fEeORf5eJaKt1KQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_BRevcJQ2EeO19_VQDD6jXw">
@@ -2377,7 +2408,10 @@ Devices applied to, or placed in, the patient are represented with the Procedure
   <CDA:PropertyValidation xmi:id="_IZXFUJBKEeOZX935IVJfOg" severity="WARNING" base_Property="_0CyNx5BJEeOZX935IVJfOg">
     <ruleId>CONF:31944</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_wNdFgJBKEeOZX935IVJfOg" base_Class="_QcUL8JBGEeOZX935IVJfOg" templateId="2.16.840.1.113883.10.20.22.4.115"/>
+  <CDA:CDATemplate xmi:id="_wNdFgJBKEeOZX935IVJfOg" base_Class="_QcUL8JBGEeOZX935IVJfOg" templateId="2.16.840.1.113883.10.20.22.4.115">
+    <ruleId>CONF:1098-32748</ruleId>
+    <ruleId>CONF:1098-32750</ruleId>
+  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_zQ6XsJQ1EeO19_VQDD6jXw" base_Constraint="_v_SO4JQ1EeO19_VQDD6jXw">
     <ruleId>CONF:31931</ruleId>
   </CDA:ConstraintValidation>
@@ -3352,4 +3386,5 @@ Instructions are a subset of interventions and may include self-care instruction
     <ruleId>CONF:1098-32730</ruleId>
     <ruleId>CONF:1098-32731</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_wt6QwPmqEeSGHoih4Jm09A" message="The ID cannot have Null value (e.g., nullFlavor is not allowed)." base_Property="_m0kNEPmqEeSGHoih4Jm09A"/>
 </xmi:XMI>

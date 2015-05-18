@@ -327,7 +327,18 @@ This is different from a cognitive status problem observation, which is a clinic
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_dXKPQOZbEeGINOJ_SD9_dA" name="CognitiveStatusProblemObservation">
     <ownedComment xmi:id="_FgL9oOZcEeGINOJ_SD9_dA">
-      <body>The Mental Status Observation template represents an observation about mental status that can come from a broad range of subjective and objective information (including measured data) to address those categories described in the Mental Status Section. See also Assessment Scale Observation for specific collections of observations that together yield a summary evaluation of a particular condition.</body>
+      <body>&lt;p>&#xD;
+A cognitive status problem observation is a clinical statement that describes a patient's cognitive condition, findings, or symptoms. Examples of cognitive problem observations are inability to recall, amnesia, dementia, and aggressive behavior.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+A cognitive problem observation is a finding or medical condition. This is different from a cognitive result observation, which is a response to a question that provides insight into the patient's cognitive status, judgement, comprehension ability, or response speed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF THIS IMPLEMENTATION GUIDE. USE OF THIS TEMPLATE IS NOT RECOMMENDED.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Reason for deprecation: Cognitive Status Problem Observation has been merged, without loss of expressivity, into Mental Status Observation (2.16.840.1.113883.10.20.22.4.74:2014-06-09).&#xD;
+&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_daqkUOZdEeGINOJ_SD9_dA" name="hasTextReference">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_daqkUeZdEeGINOJ_SD9_dA">
@@ -1008,6 +1019,9 @@ This is different from a cognitive status problem observation, which is a clinic
   <uml:Class xmi:id="_Y_oGkIoAEeOoMZgUoTghIg" name="CognitiveAbilitiesObservation">
     <ownedComment xmi:id="_V3xvYIoBEeOoMZgUoTghIg">
       <body>The Cognitive Abilities Observation represents a patient's ability to perform specific cognitive tasks (e.g., ability to plan, logical sequencing ability, ability to think abstractly).</body>
+    </ownedComment>
+    <ownedComment xmi:id="_bOntkPm-EeSGHoih4Jm09A">
+      <body>REMOVED</body>
     </ownedComment>
     <generalization xmi:id="_Y_otoIoAEeOoMZgUoTghIg">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
