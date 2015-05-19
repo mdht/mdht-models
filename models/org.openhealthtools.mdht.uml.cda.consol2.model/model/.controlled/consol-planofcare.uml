@@ -1258,10 +1258,25 @@ Health concerns require intervention(s) to increase the likelihood of achieving 
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_XD5vgJA8EeOZX935IVJfOg" name="InterventionAct">
     <ownedComment xmi:id="_nULqoJA9EeOZX935IVJfOg">
-      <body>This template represents an Intervention Act. It is a wrapper for intervention-type activities considered to be parts of the same intervention. For example, an activity such as 'elevate head of bed' combined with 'provide humidified O2 per nasal cannula' may be the interventions planned for a health concern of 'respiratory insufficiency' in order to attempt to achieve a goal of 'pulse oximetry greater than 92%.' These intervention activities may be newly described or derived from a variety of sources within an EHR. &#xD;
-Interventions are actions taken to address Health Concerns and increase the likelihood of achieving the patient's or providers' goals. An Intervention Act should contain a reference to a Goal Observation representing the reason for the intervention. &#xD;
-Intervention Acts can be related to each other, (eg. an Intervention Act with moodCode of INT could be related to a series of Intervention Acts with moodCode of EVN each having an effectiveTime containing the time of the intervention.)</body>
+      <body>&lt;p>&#xD;
+This template represents an Intervention Act. It is a wrapper for intervention-type activities considered to be parts of the same intervention. For example, an activity such as &quot;elevate head of bed&quot; combined with &quot;provide humidified O2 per nasal cannula&quot; may be the interventions performed for a health concern of &quot;respiratory insufficiency&quot; to achieve a goal of &quot;pulse oximetry greater than 92%&quot;. These intervention activities may be newly described or derived from a variety of sources within an EHR.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Interventions are actions taken to increase the likelihood of achieving the patient's or providers' goals. An Intervention Act should contain a reference to a Goal Observation representing the reason for the intervention.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Intervention Acts can be related to each other, or to Planned Intervention Acts. (E.g., a Planned Intervention Act with moodCode of INT could be related to a series of Intervention Acts with moodCode of EVN, each having an effectiveTime containing the time of the intervention.)&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+All interventions referenced in an Intervention Act must have a moodCode of EVN, indicating that they have occurred.&#xD;
+&lt;/p></body>
     </ownedComment>
+    <ownedRule xmi:id="_t9TooP5QEeSoDZvueq4eYw" name="entryRefIsInstanceOfGoalObs" constrainedElement="_XD5vgJA8EeOZX935IVJfOg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_yg_PMP5QEeSoDZvueq4eYw">
+        <language>Analysis</language>
+        <body>The entryReference for the entryRelationship which contains @typeCode=&quot;RSON&quot; and contains an entryReference template SHALL reference an instance of a Goal Observation template</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_XENRgJA8EeOZX935IVJfOg">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -1270,13 +1285,15 @@ Intervention Acts can be related to each other, (eg. an Intervention Act with mo
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_0ZCoEJA9EeOZX935IVJfOg" value="ACT"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_pzpzMJA8EeOZX935IVJfOg" name="moodCode" visibility="private">
+    <ownedAttribute xmi:id="_pzpzMJA8EeOZX935IVJfOg" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_1WjrMP2tEeS3qvpPe63SpA" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_pzn-BJA8EeOZX935IVJfOg" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w7dt8ZA9EeOZX935IVJfOg" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w7dt8JA9EeOZX935IVJfOg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EaWagP2uEeS3qvpPe63SpA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EaQT4P2uEeS3qvpPe63SpA" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_pzn-AJA8EeOZX935IVJfOg" name="code" visibility="private" aggregation="composite">
@@ -1320,16 +1337,9 @@ Intervention Acts can be related to each other, (eg. an Intervention Act with mo
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kh1-8DqsEeSyGa6KC25kiw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kh3NEDqsEeSyGa6KC25kiw" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_kZWUYJBBEeOZX935IVJfOg" name="goalObservation" type="_-miMII9TEeOB0eBUISUB4Q" association="_kZW7cJBBEeOZX935IVJfOg">
-      <ownedComment xmi:id="_62srMJBBEeOZX935IVJfOg">
-        <body>This entryRelationship represents the relationship between an Intervention Act and a Goal Observation (Intervention HAS REASON Goal).</body>
-      </ownedComment>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kZWUYZBBEeOZX935IVJfOg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kZWUYpBBEeOZX935IVJfOg" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_E8vuIJBCEeOZX935IVJfOg" name="interventionAct" type="_XD5vgJA8EeOZX935IVJfOg" association="_E8w8QJBCEeOZX935IVJfOg">
       <ownedComment xmi:id="_OXYckJBCEeOZX935IVJfOg">
-        <body>This entryRelationship represents the relationship between two Intervention Acts (Intervention RELATES TO Intervention).</body>
+        <body>The following entryRelationship represents the relationship between two Intervention Acts (Intervention RELATES TO Intervention).</body>
       </ownedComment>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E8wVMJBCEeOZX935IVJfOg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E8wVMZBCEeOZX935IVJfOg" value="*"/>
@@ -1359,119 +1369,122 @@ Intervention Acts can be related to each other, (eg. an Intervention Act with mo
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cMfoIDqtEeSyGa6KC25kiw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cMfoITqtEeSyGa6KC25kiw" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_9zInkDqtEeSyGa6KC25kiw" name="plannedAct2" type="_lLnRMOaYEeOmzetP5oaH3A" association="_9zJ1sDqtEeSyGa6KC25kiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9zJOoDqtEeSyGa6KC25kiw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9zJOoTqtEeSyGa6KC25kiw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="__xBQkDqtEeSyGa6KC25kiw" name="plannedEncounter2" type="_bDPFMOdXEeOqBOMhgDlycQ" association="__xB3oDqtEeSyGa6KC25kiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__xBQkTqtEeSyGa6KC25kiw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__xBQkjqtEeSyGa6KC25kiw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_BZ_ZgDquEeSyGa6KC25kiw" name="plannedObservation2" type="_jKZssOdvEeOqBOMhgDlycQ" association="_BaB1wDquEeSyGa6KC25kiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BaAAkDquEeSyGa6KC25kiw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BaAAkTquEeSyGa6KC25kiw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_DQSz0DquEeSyGa6KC25kiw" name="plannedProcedure2" type="_cs0YsOeEEeOqBOMhgDlycQ" association="_DQUpADquEeSyGa6KC25kiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DQTa4DquEeSyGa6KC25kiw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DQUB8DquEeSyGa6KC25kiw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_E7w3IDquEeSyGa6KC25kiw" name="plannedMedicationActivity2" type="_Yj45YOgREeO-iJTuAv7BKQ" association="_E7yFQDquEeSyGa6KC25kiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E7xeMDquEeSyGa6KC25kiw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E7xeMTquEeSyGa6KC25kiw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_G65dUDquEeSyGa6KC25kiw" name="plannedSupply2" type="_vEd1cOg0EeO-iJTuAv7BKQ" association="_G67SgDquEeSyGa6KC25kiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G66rcDquEeSyGa6KC25kiw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G66rcTquEeSyGa6KC25kiw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_m3DQcJBCEeOZX935IVJfOg" name="nutritionRecommendations" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_m3EekJBCEeOZX935IVJfOg">
+    <ownedAttribute xmi:id="_m3DQcJBCEeOZX935IVJfOg" name="nutritionRecommendation" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_m3EekJBCEeOZX935IVJfOg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m3D3gJBCEeOZX935IVJfOg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m3D3gZBCEeOZX935IVJfOg" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_5MR7UJBCEeOZX935IVJfOg" name="actReference" association="_5MSiYZBCEeOZX935IVJfOg">
+    <ownedAttribute xmi:id="_5MR7UJBCEeOZX935IVJfOg" name="interventionEntryReference" association="_5MSiYZBCEeOZX935IVJfOg">
       <ownedComment xmi:id="_8URnAJBCEeOZX935IVJfOg">
-        <body>Where an Intervention needs to reference another entry already described in the CDA document instance, rather than repeating the full content of the entry, the Act Relationship template may be used to reference this entry.</body>
+        <body>Where an Intervention needs to reference another entry already described in the CDA document instance, rather than repeating the full content of the entry, the Entry Reference template may be used to reference this entry.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5MR7UZBCEeOZX935IVJfOg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5MSiYJBCEeOZX935IVJfOg" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_HBMcsJBDEeOZX935IVJfOg" name="actReferenceGoal" association="_HBNq0JBDEeOZX935IVJfOg">
+    <ownedAttribute xmi:id="_HBMcsJBDEeOZX935IVJfOg" name="GoalObsEntryReference" type="_QAg9YP5TEeSoDZvueq4eYw" association="_HBNq0JBDEeOZX935IVJfOg">
       <ownedComment xmi:id="_MowiIJBDEeOZX935IVJfOg">
-        <body>Where an Intervention needs to reference a Goal Observation entry already described in the CDA document instance, rather than repeating the full content of the Goal Observation, the Act Relationship template may be used to reference this entry.</body>
+        <body>An Intervention Act should reference a Goal Observation. Because the Goal Observation is already described in the CDA document instance's Goals section, rather than repeating the full content of the Goal Observation, the Entry Reference template can be used to reference this entry. The following entryRelationship represents an Entry Reference to Goal Observation.</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HBNDwJBDEeOZX935IVJfOg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HBNDwZBDEeOZX935IVJfOg" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_ujZn8K4ZEeORf5eJaKt1KQ" name="externalDocumentReference" association="_uja2EK4ZEeORf5eJaKt1KQ">
-      <type xmi:type="uml:Class" href="consol-other.uml#_QcUL8JBGEeOZX935IVJfOg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ujZn8a4ZEeORf5eJaKt1KQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ujZn8q4ZEeORf5eJaKt1KQ" value="*"/>
+    <ownedAttribute xmi:id="_yD6KQP5TEeSoDZvueq4eYw" name="handoffCommunicationParticipants" association="_yD6KQ_5TEeSoDZvueq4eYw">
+      <type xmi:type="uml:Class" href="consol-discharge.uml#_POfwAIz7EeOoMZgUoTghIg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yD6KQf5TEeSoDZvueq4eYw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yD6KQv5TEeSoDZvueq4eYw" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_GaoLwP5UEeSoDZvueq4eYw" name="plannedInterventionAct" type="_dGARYOLSEeS505YV9ux2XA" association="_GaoLw_5UEeSoDZvueq4eYw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GaoLwf5UEeSoDZvueq4eYw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GaoLwv5UEeSoDZvueq4eYw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aBQ0IP5UEeSoDZvueq4eYw" name="reference" type="_irziYP5UEeSoDZvueq4eYw" association="_aBQ0I_5UEeSoDZvueq4eYw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aBQ0If5UEeSoDZvueq4eYw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aBQ0Iv5UEeSoDZvueq4eYw" value="*"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_QAg9YP5TEeSoDZvueq4eYw" name="GoalObsEntryReference">
+      <ownedComment xmi:id="_WUTPoP5TEeSoDZvueq4eYw">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_QAg9Yf5TEeSoDZvueq4eYw">
+        <general xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
+      </generalization>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_irziYP5UEeSoDZvueq4eYw" name="Reference">
+      <ownedComment xmi:id="_oVRFQP5UEeSoDZvueq4eYw">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_irziYf5UEeSoDZvueq4eYw">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_NDnXkEcIEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_nNQ7YP5UEeSoDZvueq4eYw" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_r4FrwP5UEeSoDZvueq4eYw" value="REFR"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7QZToErjEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-AHoIP5UEeSoDZvueq4eYw" name="externalDocumentReference" association="_-AHoI_5UEeSoDZvueq4eYw">
+        <type xmi:type="uml:Class" href="consol-other.uml#_QcUL8JBGEeOZX935IVJfOg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__6MvMP5UEeSoDZvueq4eYw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__6KS8P5UEeSoDZvueq4eYw" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_cpHPEJA9EeOZX935IVJfOg" base_Class="_XD5vgJA8EeOZX935IVJfOg" templateId="2.16.840.1.113883.10.20.22.4.131">
-    <ruleId>CONF:30973</ruleId>
-    <ruleId>CONF:30974</ruleId>
+    <ruleId>CONF:1098-30973</ruleId>
+    <ruleId>CONF:1098-30974</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_5UDwkJA9EeOZX935IVJfOg" base_Property="_pznW8JA8EeOZX935IVJfOg">
-    <ruleId>CONF:30971</ruleId>
+    <ruleId>CONF:1098-30971</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_5pvFoJA9EeOZX935IVJfOg" base_Property="_pzpzMJA8EeOZX935IVJfOg"/>
+  <CDA:PropertyValidation xmi:id="_5pvFoJA9EeOZX935IVJfOg" base_Property="_pzpzMJA8EeOZX935IVJfOg">
+    <ruleId>CONF:1098-30972</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_6YbXoJA9EeOZX935IVJfOg" base_Property="_pzn-BJA8EeOZX935IVJfOg">
-    <ruleId>CONF:30975</ruleId>
+    <ruleId>CONF:1098-30975</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_6zzFAJA9EeOZX935IVJfOg" base_Property="_pzn-AJA8EeOZX935IVJfOg">
-    <ruleId>CONF:30976</ruleId>
+    <ruleId>CONF:1098-30976</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_7gqyEJA9EeOZX935IVJfOg" base_Property="_pzpzMZA8EeOZX935IVJfOg">
-    <ruleId>CONF:30979</ruleId>
+    <ruleId>CONF:1098-30979</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_8fdVkJA9EeOZX935IVJfOg" severity="WARNING" base_Property="_pzn-AZA8EeOZX935IVJfOg">
-    <ruleId>CONF:31624</ruleId>
+    <ruleId>CONF:1098-31624</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_WNKp4JA-EeOZX935IVJfOg" code="362956003" displayName="procedure / intervention (navigational concept)" base_Property="_pzn-AJA8EeOZX935IVJfOg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:30977</ruleId>
-    <ruleId>CONF:30978</ruleId>
+    <ruleId>CONF:1098-30977</ruleId>
+    <ruleId>CONF:1098-30978</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Association xmi:id="_kZW7cJBBEeOZX935IVJfOg" memberEnd="_kZWUYJBBEeOZX935IVJfOg _kZXigJBBEeOZX935IVJfOg">
-    <ownedEnd xmi:id="_kZXigJBBEeOZX935IVJfOg" type="_XD5vgJA8EeOZX935IVJfOg" association="_kZW7cJBBEeOZX935IVJfOg"/>
-  </uml:Association>
-  <CDA:EntryRelationship xmi:id="_nnbZ8JBBEeOZX935IVJfOg" severity="WARNING" base_Association="_kZW7cJBBEeOZX935IVJfOg" typeCode="RSON">
-    <ruleId>CONF:30998</ruleId>
-    <ruleId>CONF:30999</ruleId>
-    <ruleId>CONF:31000</ruleId>
-  </CDA:EntryRelationship>
   <uml:Association xmi:id="_E8w8QJBCEeOZX935IVJfOg" memberEnd="_E8vuIJBCEeOZX935IVJfOg _E8w8QZBCEeOZX935IVJfOg">
     <ownedEnd xmi:id="_E8w8QZBCEeOZX935IVJfOg" type="_XD5vgJA8EeOZX935IVJfOg" association="_E8w8QJBCEeOZX935IVJfOg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_HPWp8JBCEeOZX935IVJfOg" severity="INFO" base_Association="_E8w8QJBCEeOZX935IVJfOg" typeCode="REFR">
-    <ruleId>CONF:31154</ruleId>
-    <ruleId>CONF:31155</ruleId>
-    <ruleId>CONF:31156</ruleId>
+    <ruleId>CONF:1098-31154</ruleId>
+    <ruleId>CONF:1098-31155</ruleId>
+    <ruleId>CONF:1098-32460</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_m3EekJBCEeOZX935IVJfOg" memberEnd="_m3DQcJBCEeOZX935IVJfOg _m3EekZBCEeOZX935IVJfOg">
     <ownedEnd xmi:id="_m3EekZBCEeOZX935IVJfOg" type="_XD5vgJA8EeOZX935IVJfOg" association="_m3EekJBCEeOZX935IVJfOg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_o5kh0JBCEeOZX935IVJfOg" severity="INFO" base_Association="_m3EekJBCEeOZX935IVJfOg">
-    <ruleId>CONF:31413</ruleId>
-    <ruleId>CONF:31414</ruleId>
+    <ruleId>CONF:1098-31413</ruleId>
+    <ruleId>CONF:1098-31414</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_5MSiYZBCEeOZX935IVJfOg" memberEnd="_5MR7UJBCEeOZX935IVJfOg _5MTJcJBCEeOZX935IVJfOg">
     <ownedEnd xmi:id="_5MTJcJBCEeOZX935IVJfOg" type="_XD5vgJA8EeOZX935IVJfOg" association="_5MSiYZBCEeOZX935IVJfOg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_6ndf4JBCEeOZX935IVJfOg" severity="INFO" base_Association="_5MSiYZBCEeOZX935IVJfOg" typeCode="REFR">
-    <ruleId>CONF:31545</ruleId>
-    <ruleId>CONF:31554</ruleId>
-    <ruleId>CONF:31555</ruleId>
+    <ruleId>CONF:1098-31545</ruleId>
+    <ruleId>CONF:1098-31554</ruleId>
+    <ruleId>CONF:1098-31555</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_HBNq0JBDEeOZX935IVJfOg" memberEnd="_HBMcsJBDEeOZX935IVJfOg _HBNq0ZBDEeOZX935IVJfOg">
     <ownedEnd xmi:id="_HBNq0ZBDEeOZX935IVJfOg" type="_XD5vgJA8EeOZX935IVJfOg" association="_HBNq0JBDEeOZX935IVJfOg"/>
   </uml:Association>
-  <CDA:EntryRelationship xmi:id="_O1h7sJBDEeOZX935IVJfOg" severity="INFO" base_Association="_HBNq0JBDEeOZX935IVJfOg" typeCode="GEVL">
-    <ruleId>CONF:31621</ruleId>
-    <ruleId>CONF:31622</ruleId>
-    <ruleId>CONF:31623</ruleId>
+  <CDA:EntryRelationship xmi:id="_O1h7sJBDEeOZX935IVJfOg" severity="WARNING" base_Association="_HBNq0JBDEeOZX935IVJfOg" typeCode="RSON">
+    <ruleId>CONF:1098-31621</ruleId>
+    <ruleId>CONF:1098-31622</ruleId>
+    <ruleId>CONF:1098-31623</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_0NewYJmVEeOLJeQez13EkQ" name="ProgressTowardGoalObservation">
     <ownedComment xmi:id="_MXrDgJmWEeOLJeQez13EkQ">
@@ -1743,24 +1756,12 @@ Intervention Acts can be related to each other, (eg. an Intervention Act with mo
     <ruleId>CONF:1098-31443</ruleId>
     <ruleId>CONF:1098-31444</ruleId>
   </CDA:EntryRelationship>
-  <CDA:ValueSetConstraint xmi:id="_5U2fsK4WEeORf5eJaKt1KQ" base_Property="_pzpzMJA8EeOZX935IVJfOg">
-    <reference href="../consol-vocab.uml#__AiVwJA-EeOZX935IVJfOg"/>
-    <ruleId>CONF:30972</ruleId>
-  </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_QTRRUK4ZEeORf5eJaKt1KQ" memberEnd="_QTQqQK4ZEeORf5eJaKt1KQ _QTR4YK4ZEeORf5eJaKt1KQ">
     <ownedEnd xmi:id="_QTR4YK4ZEeORf5eJaKt1KQ" type="_XD5vgJA8EeOZX935IVJfOg" association="_QTRRUK4ZEeORf5eJaKt1KQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_RbQNEK4ZEeORf5eJaKt1KQ" severity="WARNING" base_Association="_QTRRUK4ZEeORf5eJaKt1KQ">
-    <ruleId>CONF:31552</ruleId>
+    <ruleId>CONF:1098-31552</ruleId>
   </CDA:AssociationValidation>
-  <uml:Association xmi:id="_uja2EK4ZEeORf5eJaKt1KQ" memberEnd="_ujZn8K4ZEeORf5eJaKt1KQ _uja2Ea4ZEeORf5eJaKt1KQ">
-    <ownedEnd xmi:id="_uja2Ea4ZEeORf5eJaKt1KQ" type="_XD5vgJA8EeOZX935IVJfOg" association="_uja2EK4ZEeORf5eJaKt1KQ"/>
-  </uml:Association>
-  <CDA:EntryRelationship xmi:id="_wKKxcK4ZEeORf5eJaKt1KQ" severity="INFO" base_Association="_uja2EK4ZEeORf5eJaKt1KQ" typeCode="REFR">
-    <ruleId>CONF:31958</ruleId>
-    <ruleId>CONF:31959</ruleId>
-    <ruleId>CONF:31960</ruleId>
-  </CDA:EntryRelationship>
   <uml:Association xmi:id="_zQLTkK4uEeORf5eJaKt1KQ" memberEnd="_zQKFcK4uEeORf5eJaKt1KQ _zQL6oK4uEeORf5eJaKt1KQ">
     <ownedEnd xmi:id="_zQL6oK4uEeORf5eJaKt1KQ" type="_50a2UI62EeOB0eBUISUB4Q" association="_zQLTkK4uEeORf5eJaKt1KQ"/>
   </uml:Association>
@@ -3251,121 +3252,73 @@ The plan may also indicate that patient education will be provided.</body>
     <ownedEnd xmi:id="_oQMhATqhEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_oQMhADqhEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_poLnoDqhEeSyGa6KC25kiw" severity="INFO" base_Association="_oQMhADqhEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:30980</ruleId>
-    <ruleId>CONF:30981</ruleId>
-    <ruleId>CONF:30982</ruleId>
+    <ruleId>CONF:1098-30980</ruleId>
+    <ruleId>CONF:1098-30981</ruleId>
+    <ruleId>CONF:1098-30982</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_K3VvoDqsEeSyGa6KC25kiw" memberEnd="_K3UhgDqsEeSyGa6KC25kiw _K3WWsDqsEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_K3WWsDqsEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_K3VvoDqsEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_OsUdIDqsEeSyGa6KC25kiw" severity="INFO" base_Association="_K3VvoDqsEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:30984</ruleId>
-    <ruleId>CONF:30985</ruleId>
-    <ruleId>CONF:30986</ruleId>
+    <ruleId>CONF:1098-30984</ruleId>
+    <ruleId>CONF:1098-30985</ruleId>
+    <ruleId>CONF:1098-30986</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_ZzwEkDqsEeSyGa6KC25kiw" memberEnd="_Zzu2cDqsEeSyGa6KC25kiw _ZzwEkTqsEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_ZzwEkTqsEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_ZzwEkDqsEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_a7oSoDqsEeSyGa6KC25kiw" severity="INFO" base_Association="_ZzwEkDqsEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:30988</ruleId>
-    <ruleId>CONF:30989</ruleId>
-    <ruleId>CONF:30990</ruleId>
+    <ruleId>CONF:1098-30988</ruleId>
+    <ruleId>CONF:1098-30989</ruleId>
+    <ruleId>CONF:1098-30990</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_kh30IDqsEeSyGa6KC25kiw" memberEnd="_kh1X4DqsEeSyGa6KC25kiw _kh30ITqsEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_kh30ITqsEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_kh30IDqsEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_mOlNkDqsEeSyGa6KC25kiw" severity="INFO" base_Association="_kh30IDqsEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:30991</ruleId>
-    <ruleId>CONF:30992</ruleId>
-    <ruleId>CONF:30993</ruleId>
+    <ruleId>CONF:1098-30991</ruleId>
+    <ruleId>CONF:1098-30992</ruleId>
+    <ruleId>CONF:1098-30993</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_6q0oQDqsEeSyGa6KC25kiw" memberEnd="_6qzaIDqsEeSyGa6KC25kiw _6q0oQTqsEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_6q0oQTqsEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_6q0oQDqsEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_8PQPcDqsEeSyGa6KC25kiw" severity="INFO" base_Association="_6q0oQDqsEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:31164</ruleId>
-    <ruleId>CONF:31165</ruleId>
-    <ruleId>CONF:31166</ruleId>
+    <ruleId>CONF:1098-31164</ruleId>
+    <ruleId>CONF:1098-31165</ruleId>
+    <ruleId>CONF:1098-31166</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_FbmDMDqtEeSyGa6KC25kiw" memberEnd="_Fbk1EDqtEeSyGa6KC25kiw _FbmDMTqtEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_FbmDMTqtEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_FbmDMDqtEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_GhcQ8DqtEeSyGa6KC25kiw" severity="INFO" base_Association="_FbmDMDqtEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:31168</ruleId>
-    <ruleId>CONF:31169</ruleId>
-    <ruleId>CONF:31170</ruleId>
+    <ruleId>CONF:1098-31168</ruleId>
+    <ruleId>CONF:1098-31169</ruleId>
+    <ruleId>CONF:1098-31170</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_POoqkDqtEeSyGa6KC25kiw" memberEnd="_POnccDqtEeSyGa6KC25kiw _POpRoDqtEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_POpRoDqtEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_POoqkDqtEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_Qft38DqtEeSyGa6KC25kiw" severity="INFO" base_Association="_POoqkDqtEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:31171</ruleId>
-    <ruleId>CONF:31172</ruleId>
-    <ruleId>CONF:31173</ruleId>
+    <ruleId>CONF:1098-31171</ruleId>
+    <ruleId>CONF:1098-31172</ruleId>
+    <ruleId>CONF:1098-31173</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_cMg2QDqtEeSyGa6KC25kiw" memberEnd="_cMfBEDqtEeSyGa6KC25kiw _cMg2QTqtEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_cMg2QTqtEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_cMg2QDqtEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_dTo2YDqtEeSyGa6KC25kiw" severity="INFO" base_Association="_cMg2QDqtEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:31177</ruleId>
-    <ruleId>CONF:31178</ruleId>
-    <ruleId>CONF:31179</ruleId>
+    <ruleId>CONF:1098-31177</ruleId>
+    <ruleId>CONF:1098-31178</ruleId>
+    <ruleId>CONF:1098-31179</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_pt8a8DqtEeSyGa6KC25kiw" memberEnd="_pt5XoDqtEeSyGa6KC25kiw _pt8a8TqtEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_pt8a8TqtEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_pt8a8DqtEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_qc2IUDqtEeSyGa6KC25kiw" severity="INFO" base_Association="_pt8a8DqtEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:31174</ruleId>
-    <ruleId>CONF:31175</ruleId>
-    <ruleId>CONF:31176</ruleId>
-  </CDA:EntryRelationship>
-  <uml:Association xmi:id="_9zJ1sDqtEeSyGa6KC25kiw" memberEnd="_9zInkDqtEeSyGa6KC25kiw _9zJ1sTqtEeSyGa6KC25kiw">
-    <ownedEnd xmi:id="_9zJ1sTqtEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_9zJ1sDqtEeSyGa6KC25kiw"/>
-  </uml:Association>
-  <uml:Association xmi:id="__xB3oDqtEeSyGa6KC25kiw" memberEnd="__xBQkDqtEeSyGa6KC25kiw __xCesDqtEeSyGa6KC25kiw">
-    <ownedEnd xmi:id="__xCesDqtEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="__xB3oDqtEeSyGa6KC25kiw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_BaB1wDquEeSyGa6KC25kiw" memberEnd="_BZ_ZgDquEeSyGa6KC25kiw _BaCc0DquEeSyGa6KC25kiw">
-    <ownedEnd xmi:id="_BaCc0DquEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_BaB1wDquEeSyGa6KC25kiw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_DQUpADquEeSyGa6KC25kiw" memberEnd="_DQSz0DquEeSyGa6KC25kiw _DQVQEDquEeSyGa6KC25kiw">
-    <ownedEnd xmi:id="_DQVQEDquEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_DQUpADquEeSyGa6KC25kiw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_E7yFQDquEeSyGa6KC25kiw" memberEnd="_E7w3IDquEeSyGa6KC25kiw _E7yFQTquEeSyGa6KC25kiw">
-    <ownedEnd xmi:id="_E7yFQTquEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_E7yFQDquEeSyGa6KC25kiw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_G67SgDquEeSyGa6KC25kiw" memberEnd="_G65dUDquEeSyGa6KC25kiw _G675kDquEeSyGa6KC25kiw">
-    <ownedEnd xmi:id="_G675kDquEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_G67SgDquEeSyGa6KC25kiw"/>
-  </uml:Association>
-  <CDA:EntryRelationship xmi:id="_LcHlwDquEeSyGa6KC25kiw" severity="INFO" base_Association="_9zJ1sDqtEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:31180</ruleId>
-    <ruleId>CONF:31181</ruleId>
-    <ruleId>CONF:31182</ruleId>
-  </CDA:EntryRelationship>
-  <CDA:EntryRelationship xmi:id="_MQEyQDquEeSyGa6KC25kiw" severity="INFO" base_Association="__xB3oDqtEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:31183</ruleId>
-    <ruleId>CONF:31184</ruleId>
-    <ruleId>CONF:31185</ruleId>
-  </CDA:EntryRelationship>
-  <CDA:EntryRelationship xmi:id="_NbZV4DquEeSyGa6KC25kiw" severity="INFO" base_Association="_BaB1wDquEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:31399</ruleId>
-    <ruleId>CONF:31400</ruleId>
-    <ruleId>CONF:31401</ruleId>
-  </CDA:EntryRelationship>
-  <CDA:EntryRelationship xmi:id="_OibPYDquEeSyGa6KC25kiw" severity="INFO" base_Association="_DQUpADquEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:31402</ruleId>
-    <ruleId>CONF:31403</ruleId>
-    <ruleId>CONF:31404</ruleId>
-  </CDA:EntryRelationship>
-  <CDA:EntryRelationship xmi:id="_Pdw2QDquEeSyGa6KC25kiw" severity="INFO" base_Association="_E7yFQDquEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:31407</ruleId>
-    <ruleId>CONF:31408</ruleId>
-    <ruleId>CONF:31409</ruleId>
-  </CDA:EntryRelationship>
-  <CDA:EntryRelationship xmi:id="_QrNg0DquEeSyGa6KC25kiw" severity="INFO" base_Association="_G67SgDquEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:31410</ruleId>
-    <ruleId>CONF:31411</ruleId>
-    <ruleId>CONF:31412</ruleId>
+    <ruleId>CONF:1098-31174</ruleId>
+    <ruleId>CONF:1098-31175</ruleId>
+    <ruleId>CONF:1098-31176</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_o0RIQD3fEeSyGa6KC25kiw" memberEnd="_o0OsAD3fEeSyGa6KC25kiw _o0RvUD3fEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_o0RvUD3fEeSyGa6KC25kiw" type="_Yj45YOgREeO-iJTuAv7BKQ" association="_o0RIQD3fEeSyGa6KC25kiw"/>
@@ -3655,12 +3608,12 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
     <ruleId>CONF:1098-32679</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_EcWW4OLZEeS505YV9ux2XA" code="362956003" displayName="procedure / intervention (navigational concept)" base_Property="_oM2_IOLUEeS505YV9ux2XA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-32682</ruleId>
     <ruleId>CONF:1098-32683</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_YuBgUOLZEeS505YV9ux2XA" code="active" displayName="Active" base_Property="_oM4NQeLUEeS505YV9ux2XA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-32684</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_teHrIOLZEeS505YV9ux2XA" memberEnd="_teGdAOLZEeS505YV9ux2XA _teISMOLZEeS505YV9ux2XA">
@@ -4543,5 +4496,43 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_N_d-0P2nEeS3qvpPe63SpA" base_Association="_M1p3EP2nEeS3qvpPe63SpA">
     <ruleId>CONF:1098-32759</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CodeSystemConstraint xmi:id="_UqYTcP2uEeS3qvpPe63SpA" code="completed" displayName="Completed" base_Property="_pzpzMZA8EeOZX935IVJfOg">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-32316</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_ukNQkP5QEeSoDZvueq4eYw" base_Constraint="_t9TooP5QEeSoDZvueq4eYw">
+    <ruleId>CONF:1098-32459</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_yD6KQ_5TEeSoDZvueq4eYw" memberEnd="_yD6KQP5TEeSoDZvueq4eYw _yD6KRP5TEeSoDZvueq4eYw">
+    <ownedEnd xmi:id="_yD6KRP5TEeSoDZvueq4eYw" type="_XD5vgJA8EeOZX935IVJfOg" association="_yD6KQ_5TEeSoDZvueq4eYw"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_5Ndm4P5TEeSoDZvueq4eYw" severity="INFO" base_Association="_yD6KQ_5TEeSoDZvueq4eYw" typeCode="REFR">
+    <ruleId>CONF:1098-32317</ruleId>
+    <ruleId>CONF:1098-32318</ruleId>
+    <ruleId>CONF:1098-32319</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_GaoLw_5UEeSoDZvueq4eYw" memberEnd="_GaoLwP5UEeSoDZvueq4eYw _GaoLxP5UEeSoDZvueq4eYw">
+    <ownedEnd xmi:id="_GaoLxP5UEeSoDZvueq4eYw" type="_XD5vgJA8EeOZX935IVJfOg" association="_GaoLw_5UEeSoDZvueq4eYw"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_LyeaMP5UEeSoDZvueq4eYw" severity="INFO" base_Association="_GaoLw_5UEeSoDZvueq4eYw" typeCode="REFR">
+    <ruleId>CONF:1098-32772</ruleId>
+    <ruleId>CONF:1098-32773</ruleId>
+    <ruleId>CONF:1098-32774</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_aBQ0I_5UEeSoDZvueq4eYw" memberEnd="_aBQ0IP5UEeSoDZvueq4eYw _aBQ0JP5UEeSoDZvueq4eYw">
+    <ownedEnd xmi:id="_aBQ0JP5UEeSoDZvueq4eYw" type="_XD5vgJA8EeOZX935IVJfOg" association="_aBQ0I_5UEeSoDZvueq4eYw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_awFB8P5UEeSoDZvueq4eYw" severity="INFO" base_Association="_aBQ0I_5UEeSoDZvueq4eYw">
+    <ruleId>CONF:1098-32760</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_pNRrUP5UEeSoDZvueq4eYw" base_Property="_nNQ7YP5UEeSoDZvueq4eYw">
+    <ruleId>CONF:1098-32761</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_-AHoI_5UEeSoDZvueq4eYw" memberEnd="_-AHoIP5UEeSoDZvueq4eYw _-AHoJP5UEeSoDZvueq4eYw">
+    <ownedEnd xmi:id="_-AHoJP5UEeSoDZvueq4eYw" type="_irziYP5UEeSoDZvueq4eYw" association="_-AHoI_5UEeSoDZvueq4eYw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_-ik08P5UEeSoDZvueq4eYw" base_Association="_-AHoI_5UEeSoDZvueq4eYw">
+    <ruleId>CONF:1098-32762</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>
