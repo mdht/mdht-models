@@ -973,7 +973,15 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_4WPsZ2iaEeGYO5jeo5rr2w" name="VACEFF"/>
       <ownedLiteral xmi:id="_4WPsaGiaEeGYO5jeo5rr2w" name="VACSAF"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_I3CEIG07EeGCevFpokwODw" name="ActPriority">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_I3CEIG07EeGCevFpokwODw" name="Act Priority">
+      <ownedComment xmi:id="_VejqwAAREeWla-1cYCOuzQ">
+        <body>&lt;p>&#xD;
+Value Set: Act Priority 2.16.840.1.113883.1.11.16866&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Value Set Source: http://www.hl7.org&#xD;
+&lt;/p></body>
+      </ownedComment>
       <ownedLiteral xmi:id="_t0gdQPtpEeG3vphfH83rmA" name="A"/>
       <ownedLiteral xmi:id="_yTIksPtpEeG3vphfH83rmA" name="CR"/>
       <ownedLiteral xmi:id="_0VRbkPtpEeG3vphfH83rmA" name="CS"/>
@@ -1333,8 +1341,12 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_X9w6QI3MEeOB0eBUISUB4Q" name="Nutrition Recommendations">
       <ownedComment xmi:id="_sN4kgI3MEeOB0eBUISUB4Q">
-        <body>Types of nutritional regimes, therapies or interventions. Specific URL Pending&#xD;
-Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+        <body>&lt;p>&#xD;
+Types of nutritional regimes, therapies or interventions. Specific URL Pending&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Value Set Source: http://www.hl7.org&#xD;
+&lt;/p></body>
       </ownedComment>
       <ownedLiteral xmi:id="_F3WSAI3NEeOB0eBUISUB4Q" name="61310001"/>
       <ownedLiteral xmi:id="_leL84I3NEeOB0eBUISUB4Q" name="386373004"/>
@@ -1343,7 +1355,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       <ownedLiteral xmi:id="_q790MI3NEeOB0eBUISUB4Q" name="182922004"/>
       <ownedLiteral xmi:id="_tBum0I3NEeOB0eBUISUB4Q" name="229912004"/>
       <ownedLiteral xmi:id="_vB02UI3NEeOB0eBUISUB4Q" name="225372007"/>
-      <ownedLiteral xmi:id="_4MwU0I3NEeOB0eBUISUB4Q" name="2897151011"/>
+      <ownedLiteral xmi:id="_4MwU0I3NEeOB0eBUISUB4Q" name="448556005"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_sJV7YI3PEeOB0eBUISUB4Q" name="Planned moodCode (Act/Encounter/Procedure)">
       <ownedComment xmi:id="_9Fy1cI3PEeOB0eBUISUB4Q">
@@ -1357,8 +1369,12 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_oBAeII39EeOB0eBUISUB4Q" name="Nutritional Status">
       <ownedComment xmi:id="_BT5esI3-EeOB0eBUISUB4Q">
-        <body>A Value Set of SNOMED-CT codes representing nutrition problems.&#xD;
-Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+        <body>&lt;p>&#xD;
+A Value Set of SNOMED-CT codes representing nutrition problems.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Value Set Source: https://vsac.nlm.nih.gov&#xD;
+&lt;/p></body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Wrm0II6jEeOB0eBUISUB4Q" name="Priority Order">
@@ -1731,6 +1747,62 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_9ZCoZu9eEeSE7JpIy9Dpjg" name="GUAR"/>
       <ownedLiteral xmi:id="_9ZCoZ-9eEeSE7JpIy9Dpjg" name="ECON"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_nHn0UP5-EeSoDZvueq4eYw" name="Result Status">
+      <ownedLiteral xmi:id="_nHn0Uf5-EeSoDZvueq4eYw" name="aborted"/>
+      <ownedLiteral xmi:id="_nHn0Uv5-EeSoDZvueq4eYw" name="active"/>
+      <ownedLiteral xmi:id="_nHn0U_5-EeSoDZvueq4eYw" name="cancelled"/>
+      <ownedLiteral xmi:id="_nHn0VP5-EeSoDZvueq4eYw" name="completed"/>
+      <ownedLiteral xmi:id="_nHn0Vf5-EeSoDZvueq4eYw" name="held"/>
+      <ownedLiteral xmi:id="_nHn0Vv5-EeSoDZvueq4eYw" name="suspended"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_kX95cP8pEeS4jrgU1p4iug" name="Planned moodCode (Act/Encounter/Procedure)">
+      <ownedComment xmi:id="_kX95cf8pEeS4jrgU1p4iug">
+        <body>This value set is used to restrict the moodCode on an act, and encounter or a procedure to future moods.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_kX95cv8pEeS4jrgU1p4iug" name="INT"/>
+      <ownedLiteral xmi:id="_kX95c_8pEeS4jrgU1p4iug" name="ARQ"/>
+      <ownedLiteral xmi:id="_kX95dP8pEeS4jrgU1p4iug" name="PRMS"/>
+      <ownedLiteral xmi:id="_kX95df8pEeS4jrgU1p4iug" name="PRP"/>
+      <ownedLiteral xmi:id="_kX95dv8pEeS4jrgU1p4iug" name="RQO"/>
+      <ownedLiteral xmi:id="_r55Z0P8pEeS4jrgU1p4iug" name="APT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8JaEkAAJEeWla-1cYCOuzQ" name="Patient Referral Act moodCode">
+      <ownedComment xmi:id="_UpAnAAAKEeWla-1cYCOuzQ">
+        <body>&lt;p>&#xD;
+Value Set: Patient Referral Act moodCode 2.16.840.1.113883.11.20.9.66&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Contains all the moodCode values it is possible to have for an Patient Referral Act.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Value Set Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/vocabulary.html&#xD;
+&lt;/p></body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_ZBCXMAAKEeWla-1cYCOuzQ" name="INT"/>
+      <ownedLiteral xmi:id="_bWhn4AAKEeWla-1cYCOuzQ" name="RQO"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_FuKwoAAQEeWla-1cYCOuzQ" name="Care Model">
+      <ownedComment xmi:id="_FuKwoQAQEeWla-1cYCOuzQ">
+        <body>&lt;p>&#xD;
+Value Set: Care Model 2.16.840.1.113883.11.20.9.61&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+A value set of SNOMED-CT codes representing care management styles (e.g., shared care, full care) descending from &quot;170932006&quot;  &quot;Chronic disease - care arrangement&quot;.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Value Set Source: http://vtsl.vetmed.vt.edu/TerminologyMgt/RF2Browser/ISA.cfm?SCT_ConceptID=170932006&#xD;
+&lt;/p></body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_FuKwogAQEeWla-1cYCOuzQ" name="370985002"/>
+      <ownedLiteral xmi:id="_FuKwowAQEeWla-1cYCOuzQ" name="170941001"/>
+      <ownedLiteral xmi:id="_FuKwpAAQEeWla-1cYCOuzQ" name="170935008"/>
+      <ownedLiteral xmi:id="_FuKwpQAQEeWla-1cYCOuzQ" name="268528005"/>
+      <ownedLiteral xmi:id="_FuKwpgAQEeWla-1cYCOuzQ" name="170939002"/>
+      <ownedLiteral xmi:id="_FuKwpwAQEeWla-1cYCOuzQ" name="268529002"/>
+      <ownedLiteral xmi:id="_FuKwqAAQEeWla-1cYCOuzQ" name="170936009"/>
+      <ownedLiteral xmi:id="_FuKwqQAQEeWla-1cYCOuzQ" name="170937000"/>
+      <ownedLiteral xmi:id="_FuKwqgAQEeWla-1cYCOuzQ" name="170940000"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -2084,7 +2156,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_HJGcsGibEeGYO5jeo5rr2w" conceptName="religious objection" base_EnumerationLiteral="_4WPsZmiaEeGYO5jeo5rr2w"/>
   <term:ValueSetCode xmi:id="_IYx74GibEeGYO5jeo5rr2w" conceptName="vaccine efficacy concerns" base_EnumerationLiteral="_4WPsZ2iaEeGYO5jeo5rr2w"/>
   <term:ValueSetCode xmi:id="_JOteUGibEeGYO5jeo5rr2w" conceptName="vaccine safety concerns" base_EnumerationLiteral="_4WPsaGiaEeGYO5jeo5rr2w"/>
-  <term:ValueSetVersion xmi:id="_I5UjIG07EeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.16866" binding="Dynamic" base_Enumeration="_I3CEIG07EeGCevFpokwODw">
+  <term:ValueSetVersion xmi:id="_I5UjIG07EeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.16866" source="http://www.hl7.org" binding="Dynamic" base_Enumeration="_I3CEIG07EeGCevFpokwODw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_FTjLUGPwEeGskvPNzg7rUw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2dlRgG1DEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.63" fullName="CountryValueSet" binding="Dynamic" base_Enumeration="_2dkqcG1DEeGCevFpokwODw">
@@ -3022,7 +3094,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetVersion xmi:id="_CIGGYI07EeOB0eBUISUB4Q" identifier="2.16.840.1.113883.1.11.20.2.8" fullName="Nutrition Assessment" binding="Dynamic" base_Enumeration="_CIFfUI07EeOB0eBUISUB4Q">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_X9w6QY3MEeOB0eBUISUB4Q" identifier="2.16.840.1.113883.1.11.20.2.9" fullName="Nutrition Recommendations" binding="Dynamic" base_Enumeration="_X9w6QI3MEeOB0eBUISUB4Q">
+  <term:ValueSetVersion xmi:id="_X9w6QY3MEeOB0eBUISUB4Q" identifier="2.16.840.1.113883.1.11.20.2.9" fullName="Nutrition Recommendations" source="http://www.hl7.org" binding="Dynamic" base_Enumeration="_X9w6QI3MEeOB0eBUISUB4Q">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_F3WSAY3NEeOB0eBUISUB4Q" conceptName="nutrition education (procedure)" base_EnumerationLiteral="_F3WSAI3NEeOB0eBUISUB4Q"/>
@@ -3032,7 +3104,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_q7-bQI3NEeOB0eBUISUB4Q" conceptName="dietary regime (regime/therapy)" base_EnumerationLiteral="_q790MI3NEeOB0eBUISUB4Q"/>
   <term:ValueSetCode xmi:id="_tBvN4I3NEeOB0eBUISUB4Q" conceptName="enteral feeding (regime/therapy)" base_EnumerationLiteral="_tBum0I3NEeOB0eBUISUB4Q"/>
   <term:ValueSetCode xmi:id="_vB1dYI3NEeOB0eBUISUB4Q" conceptName="total parenteral nutrition (regime/therapy)" base_EnumerationLiteral="_vB02UI3NEeOB0eBUISUB4Q"/>
-  <term:ValueSetCode xmi:id="_4MwU0Y3NEeOB0eBUISUB4Q" conceptName="oral nutrition support (regime/therapy)" base_EnumerationLiteral="_4MwU0I3NEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_4MwU0Y3NEeOB0eBUISUB4Q" conceptName="oral nutritional support" base_EnumerationLiteral="_4MwU0I3NEeOB0eBUISUB4Q"/>
   <term:ValueSetVersion xmi:id="_sJV7YY3PEeOB0eBUISUB4Q" identifier="2.16.840.1.113883.11.20.9.23" version="2011-09-30" fullName="Planned moodCode (Act/Encounter/Procedure)" base_Enumeration="_sJV7YI3PEeOB0eBUISUB4Q">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
@@ -3041,7 +3113,7 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_YwHAYI3QEeOB0eBUISUB4Q" conceptName="Promise" base_EnumerationLiteral="_YwGZUI3QEeOB0eBUISUB4Q"/>
   <term:ValueSetCode xmi:id="_bEHqYI3QEeOB0eBUISUB4Q" conceptName="Proposal" base_EnumerationLiteral="_bEHDUI3QEeOB0eBUISUB4Q"/>
   <term:ValueSetCode xmi:id="_cIFo0Y3QEeOB0eBUISUB4Q" conceptName="Request" base_EnumerationLiteral="_cIFo0I3QEeOB0eBUISUB4Q"/>
-  <term:ValueSetVersion xmi:id="_oBBFMI39EeOB0eBUISUB4Q" identifier="2.16.840.1.113883.1.11.20.2.7" fullName="Nutritional Status" binding="Dynamic" base_Enumeration="_oBAeII39EeOB0eBUISUB4Q">
+  <term:ValueSetVersion xmi:id="_oBBFMI39EeOB0eBUISUB4Q" identifier="2.16.840.1.113883.1.11.20.2.7" fullName="Nutritional Status" source="https://vsac.nlm.nih.gov" binding="Dynamic" base_Enumeration="_oBAeII39EeOB0eBUISUB4Q">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_WrnbMI6jEeOB0eBUISUB4Q" identifier="2.16.840.1.113883.11.20.9.57" fullName="Priority Order" base_Enumeration="_Wrm0II6jEeOB0eBUISUB4Q">
@@ -3352,4 +3424,39 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_9ZCobO9eEeSE7JpIy9Dpjg" conceptName="agent" base_EnumerationLiteral="_9ZCoZe9eEeSE7JpIy9Dpjg"/>
   <term:ValueSetCode xmi:id="_9ZCobe9eEeSE7JpIy9Dpjg" conceptName="guarantor" base_EnumerationLiteral="_9ZCoZu9eEeSE7JpIy9Dpjg"/>
   <term:ValueSetCode xmi:id="_9ZCobu9eEeSE7JpIy9Dpjg" conceptName="emergency contact" base_EnumerationLiteral="_9ZCoZ-9eEeSE7JpIy9Dpjg"/>
+  <term:ValueSetVersion xmi:id="_nHn0V_5-EeSoDZvueq4eYw" identifier="2.16.840.1.113883.11.20.9.39" version="2014-09-01" source="http://www.hl7.org" definition="This value set indicates the status of the results observation or organizer" base_Enumeration="_nHn0UP5-EeSoDZvueq4eYw">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_nHn0WP5-EeSoDZvueq4eYw" conceptName="aborted" base_EnumerationLiteral="_nHn0Uf5-EeSoDZvueq4eYw"/>
+  <term:ValueSetCode xmi:id="_nHn0Wf5-EeSoDZvueq4eYw" conceptName="active" base_EnumerationLiteral="_nHn0Uv5-EeSoDZvueq4eYw"/>
+  <term:ValueSetCode xmi:id="_nHn0Wv5-EeSoDZvueq4eYw" conceptName="cancelled" base_EnumerationLiteral="_nHn0U_5-EeSoDZvueq4eYw"/>
+  <term:ValueSetCode xmi:id="_nHn0W_5-EeSoDZvueq4eYw" conceptName="completed" base_EnumerationLiteral="_nHn0VP5-EeSoDZvueq4eYw"/>
+  <term:ValueSetCode xmi:id="_nHn0XP5-EeSoDZvueq4eYw" conceptName="held" base_EnumerationLiteral="_nHn0Vf5-EeSoDZvueq4eYw"/>
+  <term:ValueSetCode xmi:id="_nHn0Xf5-EeSoDZvueq4eYw" conceptName="suspended" base_EnumerationLiteral="_nHn0Vv5-EeSoDZvueq4eYw"/>
+  <term:ValueSetVersion xmi:id="_kX95d_8pEeS4jrgU1p4iug" identifier="2.16.840.1.113883.11.20.9.23" version="2014-09-01" fullName="Planned moodCode (Act/Encounter/Procedure)" source="http://hl7.org/implement/standards/fhir/v3/ActMood/" base_Enumeration="_kX95cP8pEeS4jrgU1p4iug">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_kX95eP8pEeS4jrgU1p4iug" conceptName="Intent" base_EnumerationLiteral="_kX95cv8pEeS4jrgU1p4iug"/>
+  <term:ValueSetCode xmi:id="_kX95ef8pEeS4jrgU1p4iug" conceptName="Appointment Request" base_EnumerationLiteral="_kX95c_8pEeS4jrgU1p4iug"/>
+  <term:ValueSetCode xmi:id="_kX95ev8pEeS4jrgU1p4iug" conceptName="Promise" base_EnumerationLiteral="_kX95dP8pEeS4jrgU1p4iug"/>
+  <term:ValueSetCode xmi:id="_kX95e_8pEeS4jrgU1p4iug" conceptName="Proposal" base_EnumerationLiteral="_kX95df8pEeS4jrgU1p4iug"/>
+  <term:ValueSetCode xmi:id="_kX95fP8pEeS4jrgU1p4iug" conceptName="Request" base_EnumerationLiteral="_kX95dv8pEeS4jrgU1p4iug"/>
+  <term:ValueSetCode xmi:id="_r56A4P8pEeS4jrgU1p4iug" conceptName="Appointment" base_EnumerationLiteral="_r55Z0P8pEeS4jrgU1p4iug"/>
+  <term:ValueSetVersion xmi:id="_8JaroAAJEeWla-1cYCOuzQ" identifier="2.16.840.1.113883.11.20.9.66" version="2014-09-01" source="http://www.hl7.org/documentcenter/public/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/vocabulary.html" definition="Contains all the moodCode values it is possible to have for an Patient Referral Act." base_Enumeration="_8JaEkAAJEeWla-1cYCOuzQ">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_ZBC-QAAKEeWla-1cYCOuzQ" conceptName="Intent" base_EnumerationLiteral="_ZBCXMAAKEeWla-1cYCOuzQ"/>
+  <term:ValueSetCode xmi:id="_bWhn4QAKEeWla-1cYCOuzQ" conceptName="Request" base_EnumerationLiteral="_bWhn4AAKEeWla-1cYCOuzQ"/>
+  <term:ValueSetVersion xmi:id="_FuKwqwAQEeWla-1cYCOuzQ" identifier="2.16.840.1.113883.11.20.9.61" version="2014-06-19" fullName="Care Model" source="http://vtsl.vetmed.vt.edu/TerminologyMgt/RF2Browser/ISA.cfm?SCT_ConceptID=170932006" definition="A value set of SNOMED-CT codes representing care management styles (e.g., shared care, full care) descending from &quot;170932006&quot;  &quot;Chronic disease - care arrangement&quot;." base_Enumeration="_FuKwoAAQEeWla-1cYCOuzQ">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_FuKwrAAQEeWla-1cYCOuzQ" conceptName="care by local physician (finding)" base_EnumerationLiteral="_FuKwogAQEeWla-1cYCOuzQ"/>
+  <term:ValueSetCode xmi:id="_FuKwrQAQEeWla-1cYCOuzQ" conceptName="full care by GP (finding)" base_EnumerationLiteral="_FuKwowAQEeWla-1cYCOuzQ"/>
+  <term:ValueSetCode xmi:id="_FuKwrgAQEeWla-1cYCOuzQ" conceptName="full care by hospice (finding)" base_EnumerationLiteral="_FuKwpAAQEeWla-1cYCOuzQ"/>
+  <term:ValueSetCode xmi:id="_FuKwrwAQEeWla-1cYCOuzQ" conceptName="full care by specialist (finding)" base_EnumerationLiteral="_FuKwpQAQEeWla-1cYCOuzQ"/>
+  <term:ValueSetCode xmi:id="_FuKwsAAQEeWla-1cYCOuzQ" conceptName="full care: nurse practitioner (finding)" base_EnumerationLiteral="_FuKwpgAQEeWla-1cYCOuzQ"/>
+  <term:ValueSetCode xmi:id="_FuKwsQAQEeWla-1cYCOuzQ" conceptName="shared care - consultant and GP (finding)" base_EnumerationLiteral="_FuKwpwAQEeWla-1cYCOuzQ"/>
+  <term:ValueSetCode xmi:id="_FuKwsgAQEeWla-1cYCOuzQ" conceptName="shared care - hospice and GP (finding)" base_EnumerationLiteral="_FuKwqAAQEeWla-1cYCOuzQ"/>
+  <term:ValueSetCode xmi:id="_FuKwswAQEeWla-1cYCOuzQ" conceptName="shared care: district nurse and GP (finding)" base_EnumerationLiteral="_FuKwqQAQEeWla-1cYCOuzQ"/>
+  <term:ValueSetCode xmi:id="_FuKwtAAQEeWla-1cYCOuzQ" conceptName="shared care: practice nurse and GP (finding)" base_EnumerationLiteral="_FuKwqgAQEeWla-1cYCOuzQ"/>
 </xmi:XMI>

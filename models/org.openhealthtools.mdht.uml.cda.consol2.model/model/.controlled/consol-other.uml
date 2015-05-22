@@ -2177,9 +2177,21 @@ The id is required and must be the same id as the entry/id it is referencing. Th
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_RbbCII0dEeOB0eBUISUB4Q" name="MedicalEquipmentOrganizer">
     <ownedComment xmi:id="_F36tQI0eEeOB0eBUISUB4Q">
-      <body>This template represents a set of current or historical medical devices/equipment used by the patient. This template may contain Non-Medicinal Supply Activity (V2) (templateId: 2.16.840.1.113883.10.20.22.4.50.2) and/or Procedure Activity Procedure (V2) (templateId: 2.16.840.1.113883.10.20.22.4.14.2) templates. &#xD;
-Devices applied to, or placed in, the patient are represented with the Procedure Activity Procedure (V2) template. Equipment supplied to the patient (e.g. pumps, inhalers, wheelchairs) is represented by the Non-Medicinal Supply Activity V2 template. The organizer would probably not be used with devices applied in or on the patient but rather to organize a group of medical supplies the patient has been supplied with.</body>
+      <body>&lt;p>&#xD;
+This template represents a set of current or historical medical devices, supplies, aids and equipment used by the patient. Examples are hearing aids, orthotic devices, ostomy supplies, visual aids, diabetic supplies such as syringes and pumps, and wheelchairs.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy tube, port catheter), whether permanent or temporary, are represented within the Procedure Activity Procedure (V2) template (templateId: 2.16.840.1.113883.10.20.22.4.14.2).&#xD;
+&lt;/p></body>
     </ownedComment>
+    <ownedRule xmi:id="_0b9iwP5_EeSoDZvueq4eYw" name="hasNonMedSupActXorProcActProc" constrainedElement="_RbbCII0dEeOB0eBUISUB4Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_7JbgUP5_EeSoDZvueq4eYw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>Either Non-Medicinal Supply Activity (V2) (templateId:2.16.840.1.113883.10.20.22.4.50:2014-06-09) OR Procedure Activity Procedure (V2) (templateId:2.16.840.1.113883.10.20.22.4.14:2014-06-09) SHALL be present</body>
+        <body>self.component->exists(component : cda::Component4 | not component.supply.oclIsUndefined() and component.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2)) xor self.component->exists(component : cda::Component4 | not component.procedure.oclIsUndefined() and component.procedure.oclIsKindOf(consol::ProcedureActivityProcedure2))</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_RbdeYI0dEeOB0eBUISUB4Q">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
     </generalization>
@@ -2203,7 +2215,7 @@ Devices applied to, or placed in, the patient are represented with the Procedure
     </ownedAttribute>
     <ownedAttribute xmi:id="_cHpUQI0dEeOB0eBUISUB4Q" name="code" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_YaLSEI0fEeOB0eBUISUB4Q">
-        <body>This code can represent a category of devices.</body>
+        <body>This code can represent a category of devices. The code is strictly optional, and is not currently limited to any value set or code system. Implementers may use it if they wish to provide optional coded information about this grouping of medical equipment.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cHpUQo0dEeOB0eBUISUB4Q"/>
@@ -2211,16 +2223,18 @@ Devices applied to, or placed in, the patient are represented with the Procedure
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_cHp7U40dEeOB0eBUISUB4Q" name="statusCode" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_STF1cP5-EeSoDZvueq4eYw">
+        <body>The organizer is a collection of statuses for contained entries. The organizer remains active until all contained entries are done.</body>
+      </ownedComment>
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SaXZgErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_cHpUQ40dEeOB0eBUISUB4Q" name="effectiveTime" visibility="private" aggregation="composite">
+    <ownedAttribute xmi:id="_cHpUQ40dEeOB0eBUISUB4Q" name="effectiveTime" visibility="private" type="_CB0J4P5_EeSoDZvueq4eYw" aggregation="composite">
       <ownedComment xmi:id="_3PgngI0fEeOB0eBUISUB4Q">
         <body>The effectiveTime can be used to show the time period over which the patient will be using the set of equipment. The organizer would probably not be used with devices applied in or on the patient.</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cHpURY0dEeOB0eBUISUB4Q"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cHpURI0dEeOB0eBUISUB4Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Oy5gf5-EeSoDZvueq4eYw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Oy5gP5-EeSoDZvueq4eYw" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_VIaUIErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_k1hGgI0hEeOB0eBUISUB4Q" name="nonMedicinalSupplyActivity2" association="_k1iUoI0hEeOB0eBUISUB4Q">
@@ -2233,46 +2247,66 @@ Devices applied to, or placed in, the patient are represented with the Procedure
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZV2IwI0iEeOB0eBUISUB4Q"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZV2IwY0iEeOB0eBUISUB4Q" value="*"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_CB0J4P5_EeSoDZvueq4eYw" name="IVLTS">
+      <ownedComment xmi:id="_DntwsP5_EeSoDZvueq4eYw">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_CB0J4f5_EeSoDZvueq4eYw">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_CjvyQ_5_EeSoDZvueq4eYw" name="low" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GDpAkf5_EeSoDZvueq4eYw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GDpAkP5_EeSoDZvueq4eYw" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CjvyQP5_EeSoDZvueq4eYw" name="high" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fublkf5_EeSoDZvueq4eYw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FublkP5_EeSoDZvueq4eYw" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_GTZIUI0eEeOB0eBUISUB4Q" base_Class="_RbbCII0dEeOB0eBUISUB4Q" templateId="2.16.840.1.113883.10.20.22.4.135">
-    <ruleId>CONF:31022</ruleId>
-    <ruleId>CONF:31023</ruleId>
+    <ruleId>CONF:1098-31022</ruleId>
+    <ruleId>CONF:1098-31023</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_vkUS4I0eEeOB0eBUISUB4Q" base_Property="_cHpURo0dEeOB0eBUISUB4Q">
-    <ruleId>CONF:31024</ruleId>
+    <ruleId>CONF:1098-31024</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_3GBw0I0eEeOB0eBUISUB4Q" base_Property="_cHotMI0dEeOB0eBUISUB4Q">
-    <ruleId>CONF:31020</ruleId>
+    <ruleId>CONF:1098-31020</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_8KqIUI0eEeOB0eBUISUB4Q" base_Property="_cHp7UI0dEeOB0eBUISUB4Q">
-    <ruleId>CONF:31021</ruleId>
+    <ruleId>CONF:1098-31021</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_SFKQwI0fEeOB0eBUISUB4Q" severity="INFO" base_Property="_cHpUQI0dEeOB0eBUISUB4Q">
-    <ruleId>CONF:31025</ruleId>
+    <ruleId>CONF:1098-31025</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_kvr2MI0fEeOB0eBUISUB4Q" base_Property="_cHp7U40dEeOB0eBUISUB4Q">
-    <ruleId>CONF:31026</ruleId>
+    <ruleId>CONF:1098-31026</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_pUdB4I0fEeOB0eBUISUB4Q" base_Property="_cHp7U40dEeOB0eBUISUB4Q">
-    <reference href="../consol-vocab.uml#_NOFzsOJaEeG3cO7ebC3QuA"/>
-    <ruleId>CONF:31029</ruleId>
+    <reference href="../consol-vocab.uml#_nHn0V_5-EeSoDZvueq4eYw"/>
+    <ruleId>CONF:1098-31029</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_2T8XII0fEeOB0eBUISUB4Q" severity="WARNING" base_Property="_cHpUQ40dEeOB0eBUISUB4Q">
-    <ruleId>CONF:32136</ruleId>
+  <CDA:PropertyValidation xmi:id="_2T8XII0fEeOB0eBUISUB4Q" base_Property="_cHpUQ40dEeOB0eBUISUB4Q">
+    <ruleId>CONF:1098-32136</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_k1iUoI0hEeOB0eBUISUB4Q" memberEnd="_k1hGgI0hEeOB0eBUISUB4Q _k1iUoY0hEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_k1iUoY0hEeOB0eBUISUB4Q" type="_RbbCII0dEeOB0eBUISUB4Q" association="_k1iUoI0hEeOB0eBUISUB4Q"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_o45cYI0hEeOB0eBUISUB4Q" severity="INFO" base_Association="_k1iUoI0hEeOB0eBUISUB4Q">
-    <ruleId>CONF:31027</ruleId>
-    <ruleId>CONF:31862</ruleId>
+    <ruleId>CONF:1098-31027</ruleId>
+    <ruleId>CONF:1098-31862</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_ZV2v0I0iEeOB0eBUISUB4Q" memberEnd="_ZV1hsI0iEeOB0eBUISUB4Q _ZV2v0Y0iEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_ZV2v0Y0iEeOB0eBUISUB4Q" type="_RbbCII0dEeOB0eBUISUB4Q" association="_ZV2v0I0iEeOB0eBUISUB4Q"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_c44KoI0iEeOB0eBUISUB4Q" severity="INFO" base_Association="_ZV2v0I0iEeOB0eBUISUB4Q">
-    <ruleId>CONF:31887</ruleId>
-    <ruleId>CONF:31888</ruleId>
+    <ruleId>CONF:1098-31887</ruleId>
+    <ruleId>CONF:1098-31888</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_QcUL8JBGEeOZX935IVJfOg" name="ExternalDocumentReference">
     <ownedComment xmi:id="_v3YrsJBGEeOZX935IVJfOg">
@@ -3387,4 +3421,13 @@ Instructions are a subset of interventions and may include self-care instruction
     <ruleId>CONF:1098-32731</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_wt6QwPmqEeSGHoih4Jm09A" message="The ID cannot have Null value (e.g., nullFlavor is not allowed)." base_Property="_m0kNEPmqEeSGHoih4Jm09A"/>
+  <CDA:PropertyValidation xmi:id="_E3Yo0P5_EeSoDZvueq4eYw" base_Property="_CjvyQP5_EeSoDZvueq4eYw">
+    <ruleId>CONF:1098-32379</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_FNO9AP5_EeSoDZvueq4eYw" base_Property="_CjvyQ_5_EeSoDZvueq4eYw">
+    <ruleId>CONF:1098-32378</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_1sdhUP5_EeSoDZvueq4eYw" base_Constraint="_0b9iwP5_EeSoDZvueq4eYw">
+    <ruleId>CONF:1098-32380</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

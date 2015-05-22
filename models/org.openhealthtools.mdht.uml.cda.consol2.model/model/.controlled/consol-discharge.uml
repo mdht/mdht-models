@@ -611,13 +611,31 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_ihaWkI55EeOB0eBUISUB4Q" name="OutcomeObservation">
     <ownedComment xmi:id="_nN3oMI6FEeOB0eBUISUB4Q">
-      <body>This template represents the outcome of care resulting from the interventions used to treat the patient.&#xD;
-Often thought of as an 'actual outcome', the Outcome Observation may be related to goals, progression toward goals, and the associated interventions. For example, an observation outcome of a Pulse Ox reading of 95% is related to the goal of 'Maintain Pulse Ox greater than 92', which in turn is related to the health concern of respiratory insufficiency and the problem of pneumonia. The template makes use of the Act Reference (NEW) (templateId:2.16.840.1.113883.10.20.22.4.122) to reference the interventions and goals defined elsewhere in the Care Plan CDA instance.</body>
+      <body>&lt;p>&#xD;
+This template represents the outcome of care resulting from the interventions used to treat the patient. In the Care Planning workflow, the judgment about how well the person is progressing towards the goal is based on the observations made about the status of the patient with respect to interventions performed in the pursuit of achieving that goal.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may be related to goals, progression toward goals, and the associated interventions. For example, an observation outcome of a blood oxygen saturation level of 95% is related to the goal of &quot;Maintain Pulse Ox greater than 92&quot;, which in turn is related to the health concern of respiratory insufficiency and the problem of pneumonia. The template makes use of the Entry Reference (templateId:2.16.840.1.113883.10.20.22.4.122) to reference the interventions and goals defined elsewhere in the Care Plan CDA instance.&#xD;
+&lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_vn4UAK4qEeORf5eJaKt1KQ" name="progressTowardGoalObservationInversionIndIsTrue" constrainedElement="_8HfWsK4nEeORf5eJaKt1KQ">
+    <ownedRule xmi:id="_vn4UAK4qEeORf5eJaKt1KQ" name="progTowardGoalObsInversionIndIsTrue" constrainedElement="_8HfWsK4nEeORf5eJaKt1KQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_vn4UAa4qEeORf5eJaKt1KQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The Progress Toward Goal Observation entryRelationship, if present, SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::ProgressTowardGoalObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_YMrDcP84EeS4jrgU1p4iug" name="entryRefIsInstanceOfGoalObs">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YMrDcf84EeS4jrgU1p4iug">
+        <language>Analysis</language>
+        <body>The entryReference for the entryRelationship which contains @typeCode=&quot;GEVL&quot; and contains an entryReference template SHALL reference an instance of a Goal Observation template</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_8jTW4P87EeS4jrgU1p4iug" name="entryRefIsInstanceOfInterventionAct">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_8jTW4f87EeS4jrgU1p4iug">
+        <language>Analysis</language>
+        <body>The entryReference for the entryRelationship which contains @typeCode=&quot;RSON&quot; and contains an entryReference template SHALL reference an instance of an Intervention Act template</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_ihaWkY55EeOB0eBUISUB4Q">
@@ -635,8 +653,8 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     </ownedAttribute>
     <ownedAttribute xmi:id="_36udgY55EeOB0eBUISUB4Q" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6OmuMI6FEeOB0eBUISUB4Q" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Ok5AI6FEeOB0eBUISUB4Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AuPVAP82EeS4jrgU1p4iug" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AuOt8P82EeS4jrgU1p4iug" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bph4YK4nEeORf5eJaKt1KQ" name="authorParticipation" association="_Bpk7sK4nEeORf5eJaKt1KQ">
@@ -644,83 +662,96 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bph4Ya4nEeORf5eJaKt1KQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bph4Yq4nEeORf5eJaKt1KQ" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_rnGtkK4nEeORf5eJaKt1KQ" name="goalObservation" association="_rnHUoK4nEeORf5eJaKt1KQ">
-      <ownedComment xmi:id="_49RdcK4nEeORf5eJaKt1KQ">
-        <body>This entryRelationship represents the relationship between an Outcome Observation and an Goal Observation (Outcome Observation EVALUATES Goal Observation).</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="consol-planofcare.uml#_-miMII9TEeOB0eBUISUB4Q"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rnGtka4nEeORf5eJaKt1KQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rnGtkq4nEeORf5eJaKt1KQ" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_QjwlwI6bEeOB0eBUISUB4Q" name="actReference" association="_Qjxz4I6bEeOB0eBUISUB4Q">
+    <ownedAttribute xmi:id="_QjwlwI6bEeOB0eBUISUB4Q" name="entryReferenceGoalObs" association="_Qjxz4I6bEeOB0eBUISUB4Q">
       <ownedComment xmi:id="_UnlnkI6bEeOB0eBUISUB4Q">
-        <body>Where an Outcome Observation needs to reference a Goal Observation already described in the CDA document instance, rather than repeating the full content of the Goal Observation, the Act Reference template may be used to reference this entry.</body>
+        <body>The following entryRelationship represents the relationship between an Outcome Observation and a Goal Observation. Because the Goal Observation is already described in the CDA document instance's Goals section, rather than repeating the full content of the Goal Observation, the Entry Reference template can be used to reference this entry.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QjxM0I6bEeOB0eBUISUB4Q"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QjxM0Y6bEeOB0eBUISUB4Q" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_0VarQI6bEeOB0eBUISUB4Q" name="actReference2" association="_0Vb5YI6bEeOB0eBUISUB4Q">
-      <ownedComment xmi:id="_B1sZYI6cEeOB0eBUISUB4Q">
-        <body>Where an Outcome Observation needs to reference an Intervention Act already described in the CDA document instance, rather than repeating the full content of the Intervention Act, the Act Reference template may be used to reference this entry.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0VbSUI6bEeOB0eBUISUB4Q"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0VbSUY6bEeOB0eBUISUB4Q" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_8HfWsK4nEeORf5eJaKt1KQ" name="progressTowardGoalObservation" association="_8Hgk0K4nEeORf5eJaKt1KQ">
       <ownedComment xmi:id="_PW6Y8K4oEeORf5eJaKt1KQ">
-        <body>This entryRelationship represents the relationship between an Outcome Observation and a Progress Toward Goal Observation (Outcome Observation SUPPORTS Outcome Assessment Observation).</body>
+        <body>The following entryRelationship represents the relationship between an Outcome Observation and a Progress Toward Goal Observation (Outcome Observation SUPPORTS Progress Toward Goal Observation). In the Care Planning workflow, the judgment about how well the person is progressing towards the goal is based on the observations made about the status of the patient with respect to interventions performed in the pursuit of achieving that goal.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="consol-planofcare.uml#_0NewYJmVEeOLJeQez13EkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CsYAAK4oEeORf5eJaKt1KQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CsWx4K4oEeORf5eJaKt1KQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_rwL7oK4oEeORf5eJaKt1KQ" name="interventionAct" association="_rwNJwK4oEeORf5eJaKt1KQ">
-      <ownedComment xmi:id="_0mJPsK4oEeORf5eJaKt1KQ">
-        <body>This entryRelationship represents the relationship between an Outcome Observation and an Intervention Act (Outcome Observation HAS REASON Intervention Act).</body>
+    <ownedAttribute xmi:id="_0VarQI6bEeOB0eBUISUB4Q" name="entryReferenceInterventionAct" association="_0Vb5YI6bEeOB0eBUISUB4Q">
+      <ownedComment xmi:id="_B1sZYI6cEeOB0eBUISUB4Q">
+        <body>Where an Outcome Observation needs to reference an Intervention Act already described in the CDA document instance, rather than repeating the full content of the Intervention Act, the Entry Reference template may be used to reference this entry.</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="consol-planofcare.uml#_XD5vgJA8EeOZX935IVJfOg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rwMisK4oEeORf5eJaKt1KQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rwMisa4oEeORf5eJaKt1KQ" value="*"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0VbSUI6bEeOB0eBUISUB4Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0VbSUY6bEeOB0eBUISUB4Q" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_8pT04K4oEeORf5eJaKt1KQ" name="externalDocumentReference" association="_8pVqEK4oEeORf5eJaKt1KQ">
-      <ownedComment xmi:id="_Lvi0MK4pEeORf5eJaKt1KQ">
-        <body>Where it is necessary to reference an external clinical document such a Referral document, Discharge Summary document etc., the External Document Reference template can be used to reference this document.????However, if this Care Plan document is replacing or appending another Care Plan document in the same set, that relationship is set in the header, using ClinicalDocument/relatedDocument.</body>
+    <ownedAttribute xmi:id="_HhH-EP82EeS4jrgU1p4iug" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_S9vyYP82EeS4jrgU1p4iug" name="value" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a2LuQP82EeS4jrgU1p4iug"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a2LHMP82EeS4jrgU1p4iug" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zW3AAP88EeS4jrgU1p4iug" name="reference" type="_MWLkUP89EeS4jrgU1p4iug" association="_zW4OIP88EeS4jrgU1p4iug">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zW3AAf88EeS4jrgU1p4iug"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zW3AAv88EeS4jrgU1p4iug" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_BDR3QP8-EeS4jrgU1p4iug" name="entryRelationship" association="_BDTscP8-EeS4jrgU1p4iug">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CqLjoP8-EeS4jrgU1p4iug" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CqK8kP8-EeS4jrgU1p4iug" value="*"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_MWLkUP89EeS4jrgU1p4iug" name="Reference">
+      <ownedComment xmi:id="_N7iYkP89EeS4jrgU1p4iug">
+        <body>INLINE</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="consol-other.uml#_QcUL8JBGEeOZX935IVJfOg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8pUb8K4oEeORf5eJaKt1KQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8pUb8a4oEeORf5eJaKt1KQ" value="*"/>
-    </ownedAttribute>
+      <generalization xmi:id="_MWMycP89EeS4jrgU1p4iug">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_NDnXkEcIEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_NC0n4P89EeS4jrgU1p4iug" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Qao4QP89EeS4jrgU1p4iug" value="REFR"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7QZToErjEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_aHyTAP89EeS4jrgU1p4iug" name="externalDocumentReference" association="_aH0IMP89EeS4jrgU1p4iug">
+        <type xmi:type="uml:Class" href="consol-other.uml#_QcUL8JBGEeOZX935IVJfOg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bIWYIf89EeS4jrgU1p4iug" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bIWYIP89EeS4jrgU1p4iug" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_nwaUkI6FEeOB0eBUISUB4Q" base_Class="_ihaWkI55EeOB0eBUISUB4Q" templateId="2.16.840.1.113883.10.20.22.4.144">
-    <ruleId>CONF:31221</ruleId>
-    <ruleId>CONF:31222</ruleId>
+    <ruleId>CONF:1098-31221</ruleId>
+    <ruleId>CONF:1098-31222</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_2jzQYI6FEeOB0eBUISUB4Q" base_Property="_36udgI55EeOB0eBUISUB4Q">
-    <ruleId>CONF:31219</ruleId>
+    <ruleId>CONF:1098-31219</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_25o9gI6FEeOB0eBUISUB4Q" base_Property="_36vEkI55EeOB0eBUISUB4Q">
-    <ruleId>CONF:31220</ruleId>
+    <ruleId>CONF:1098-31220</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_3hXr4I6FEeOB0eBUISUB4Q" base_Property="_36udgY55EeOB0eBUISUB4Q">
-    <ruleId>CONF:31223</ruleId>
+    <ruleId>CONF:1098-31223</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_Qjxz4I6bEeOB0eBUISUB4Q" memberEnd="_QjwlwI6bEeOB0eBUISUB4Q _Qjxz4Y6bEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_Qjxz4Y6bEeOB0eBUISUB4Q" type="_ihaWkI55EeOB0eBUISUB4Q" association="_Qjxz4I6bEeOB0eBUISUB4Q"/>
   </uml:Association>
-  <CDA:EntryRelationship xmi:id="_Yu40II6bEeOB0eBUISUB4Q" severity="INFO" base_Association="_Qjxz4I6bEeOB0eBUISUB4Q" typeCode="GEVL">
-    <ruleId>CONF:31556</ruleId>
-    <ruleId>CONF:31557</ruleId>
-    <ruleId>CONF:31558</ruleId>
+  <CDA:EntryRelationship xmi:id="_Yu40II6bEeOB0eBUISUB4Q" severity="WARNING" base_Association="_Qjxz4I6bEeOB0eBUISUB4Q" typeCode="GEVL">
+    <ruleId>CONF:1098-31224</ruleId>
+    <ruleId>CONF:1098-31225</ruleId>
+    <ruleId>CONF:1098-32465</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_0Vb5YI6bEeOB0eBUISUB4Q" memberEnd="_0VarQI6bEeOB0eBUISUB4Q _0Vb5YY6bEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_0Vb5YY6bEeOB0eBUISUB4Q" type="_ihaWkI55EeOB0eBUISUB4Q" association="_0Vb5YI6bEeOB0eBUISUB4Q"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_46s0UI6bEeOB0eBUISUB4Q" severity="INFO" base_Association="_0Vb5YI6bEeOB0eBUISUB4Q" typeCode="RSON">
-    <ruleId>CONF:31688</ruleId>
-    <ruleId>CONF:31689</ruleId>
-    <ruleId>CONF:31690</ruleId>
+    <ruleId>CONF:1098-31688</ruleId>
+    <ruleId>CONF:1098-31689</ruleId>
+    <ruleId>CONF:1098-31690</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_EHgh0J2AEeORR8_YW0n_jQ" name="HealthStatusEvaluationsAndOutcomesSection">
     <ownedComment xmi:id="_1oCLEJ2AEeORR8_YW0n_jQ">
@@ -794,42 +825,18 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <ownedEnd xmi:id="_BpliwK4nEeORf5eJaKt1KQ" type="_ihaWkI55EeOB0eBUISUB4Q" association="_Bpk7sK4nEeORf5eJaKt1KQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_DwgL8K4nEeORf5eJaKt1KQ" severity="WARNING" base_Association="_Bpk7sK4nEeORf5eJaKt1KQ">
-    <ruleId>CONF:31553</ruleId>
+    <ruleId>CONF:1098-31553</ruleId>
   </CDA:AssociationValidation>
-  <uml:Association xmi:id="_rnHUoK4nEeORf5eJaKt1KQ" memberEnd="_rnGtkK4nEeORf5eJaKt1KQ _rnH7sK4nEeORf5eJaKt1KQ">
-    <ownedEnd xmi:id="_rnH7sK4nEeORf5eJaKt1KQ" type="_ihaWkI55EeOB0eBUISUB4Q" association="_rnHUoK4nEeORf5eJaKt1KQ"/>
-  </uml:Association>
-  <CDA:EntryRelationship xmi:id="_uJS9gK4nEeORf5eJaKt1KQ" severity="WARNING" base_Association="_rnHUoK4nEeORf5eJaKt1KQ" typeCode="GEVL">
-    <ruleId>CONF:31224</ruleId>
-    <ruleId>CONF:31225</ruleId>
-    <ruleId>CONF:31226</ruleId>
-  </CDA:EntryRelationship>
   <uml:Association xmi:id="_8Hgk0K4nEeORf5eJaKt1KQ" memberEnd="_8HfWsK4nEeORf5eJaKt1KQ _8Hgk0a4nEeORf5eJaKt1KQ">
     <ownedEnd xmi:id="_8Hgk0a4nEeORf5eJaKt1KQ" type="_ihaWkI55EeOB0eBUISUB4Q" association="_8Hgk0K4nEeORf5eJaKt1KQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_9rjxgK4nEeORf5eJaKt1KQ" severity="WARNING" base_Association="_8Hgk0K4nEeORf5eJaKt1KQ" typeCode="SPRT">
-    <ruleId>CONF:31427</ruleId>
-    <ruleId>CONF:31428</ruleId>
-    <ruleId>CONF:31430</ruleId>
-  </CDA:EntryRelationship>
-  <uml:Association xmi:id="_rwNJwK4oEeORf5eJaKt1KQ" memberEnd="_rwL7oK4oEeORf5eJaKt1KQ _rwNJwa4oEeORf5eJaKt1KQ">
-    <ownedEnd xmi:id="_rwNJwa4oEeORf5eJaKt1KQ" type="_ihaWkI55EeOB0eBUISUB4Q" association="_rwNJwK4oEeORf5eJaKt1KQ"/>
-  </uml:Association>
-  <CDA:EntryRelationship xmi:id="_tZ2oIK4oEeORf5eJaKt1KQ" severity="INFO" base_Association="_rwNJwK4oEeORf5eJaKt1KQ" typeCode="RSON">
-    <ruleId>CONF:31691</ruleId>
-    <ruleId>CONF:31692</ruleId>
-    <ruleId>CONF:31693</ruleId>
-  </CDA:EntryRelationship>
-  <uml:Association xmi:id="_8pVqEK4oEeORf5eJaKt1KQ" memberEnd="_8pT04K4oEeORf5eJaKt1KQ _8pWRIK4oEeORf5eJaKt1KQ">
-    <ownedEnd xmi:id="_8pWRIK4oEeORf5eJaKt1KQ" type="_ihaWkI55EeOB0eBUISUB4Q" association="_8pVqEK4oEeORf5eJaKt1KQ"/>
-  </uml:Association>
-  <CDA:EntryRelationship xmi:id="__i9ikK4oEeORf5eJaKt1KQ" severity="INFO" base_Association="_8pVqEK4oEeORf5eJaKt1KQ" typeCode="REFR">
-    <ruleId>CONF:31964</ruleId>
-    <ruleId>CONF:31965</ruleId>
-    <ruleId>CONF:31966</ruleId>
+    <ruleId>CONF:1098-31427</ruleId>
+    <ruleId>CONF:1098-31428</ruleId>
+    <ruleId>CONF:1098-31430</ruleId>
   </CDA:EntryRelationship>
   <CDA:ConstraintValidation xmi:id="_3jVusK4qEeORf5eJaKt1KQ" base_Constraint="_vn4UAK4qEeORf5eJaKt1KQ">
-    <ruleId>CONF:31429</ruleId>
+    <ruleId>CONF:1098-31429</ruleId>
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_EIeu8MyjEeO93sHu8pHB2g" clientDependency="_bl_s0MykEeO93sHu8pHB2g" name="DischargeMedication2">
     <ownedComment xmi:id="_QIz30MykEeO93sHu8pHB2g">
@@ -1064,4 +1071,39 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
   <CDA:PropertyValidation xmi:id="_GaL7kPtOEeSoPO_Q5cglLA" base_Property="_EvXYgPtOEeSoPO_Q5cglLA">
     <ruleId>CONF:1098-32394</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_I1V_AP82EeS4jrgU1p4iug" base_Property="_HhH-EP82EeS4jrgU1p4iug"/>
+  <CDA:CodeSystemConstraint xmi:id="_L-dsEP82EeS4jrgU1p4iug" base_Property="_HhH-EP82EeS4jrgU1p4iug" severity="WARNING">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-32746</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_aEt1EP82EeS4jrgU1p4iug" severity="WARNING" base_Property="_S9vyYP82EeS4jrgU1p4iug">
+    <ruleId>CONF:1098-32747</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_YMrqgP84EeS4jrgU1p4iug" base_Constraint="_YMrDcP84EeS4jrgU1p4iug">
+    <ruleId>CONF:1098-32461</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_8jT98P87EeS4jrgU1p4iug" base_Constraint="_8jTW4P87EeS4jrgU1p4iug">
+    <ruleId>CONF:1098-32462</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_zW4OIP88EeS4jrgU1p4iug" memberEnd="_zW3AAP88EeS4jrgU1p4iug _zW4OIf88EeS4jrgU1p4iug">
+    <ownedEnd xmi:id="_zW4OIf88EeS4jrgU1p4iug" type="_ihaWkI55EeOB0eBUISUB4Q" association="_zW4OIP88EeS4jrgU1p4iug"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_zvaC4P88EeS4jrgU1p4iug" severity="INFO" base_Association="_zW4OIP88EeS4jrgU1p4iug">
+    <ruleId>CONF:1098-32763</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_OyP-IP89EeS4jrgU1p4iug" base_Property="_NC0n4P89EeS4jrgU1p4iug">
+    <ruleId>CONF:1098-32764</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_aH0IMP89EeS4jrgU1p4iug" memberEnd="_aHyTAP89EeS4jrgU1p4iug _aH0IMf89EeS4jrgU1p4iug">
+    <ownedEnd xmi:id="_aH0IMf89EeS4jrgU1p4iug" type="_MWLkUP89EeS4jrgU1p4iug" association="_aH0IMP89EeS4jrgU1p4iug"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_aqmsMP89EeS4jrgU1p4iug" base_Association="_aH0IMP89EeS4jrgU1p4iug">
+    <ruleId>CONF:1098-32765</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_BDTscP8-EeS4jrgU1p4iug" memberEnd="_BDR3QP8-EeS4jrgU1p4iug _BDTscf8-EeS4jrgU1p4iug">
+    <ownedEnd xmi:id="_BDTscf8-EeS4jrgU1p4iug" type="_ihaWkI55EeOB0eBUISUB4Q" association="_BDTscP8-EeS4jrgU1p4iug"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_B3mQIP8-EeS4jrgU1p4iug" message="SHALL contain at least one 1..*] entryRelationships (CONF:1098-32782)" base_Association="_BDTscP8-EeS4jrgU1p4iug">
+    <ruleId>CONF:1098-32782</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

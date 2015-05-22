@@ -683,6 +683,14 @@ The smoking status value set includes a special code to communicate if the smoki
     <ownedComment xmi:id="_itqVQI05EeOB0eBUISUB4Q">
       <body>This template represents the patient's nutrition abilities and habits including intake, diet requirements or diet followed.</body>
     </ownedComment>
+    <ownedRule xmi:id="_mBQoMP6JEeSoDZvueq4eYw" name="valueOfTypeCDIsFromSnomed" constrainedElement="_NP5zMI05EeOB0eBUISUB4Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_7fQa0P6JEeSoDZvueq4eYw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If value/@xsi:type=&quot;CD&quot;, the value SHOULD contain a code from SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
+        <body>self.value->forAll(val | val.oclIsTypeOf(datatypes::CD) implies (val.isNullFlavorDefined() or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96'))</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_NP5zMY05EeOB0eBUISUB4Q">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -731,36 +739,34 @@ The smoking status value set includes a special code to communicate if the smoki
     </ownedAttribute>
   </uml:Class>
   <CDA:PropertyValidation xmi:id="_myXg0I05EeOB0eBUISUB4Q" base_Property="_TlD-cI05EeOB0eBUISUB4Q">
-    <ruleId>CONF:30328</ruleId>
+    <ruleId>CONF:1098-30328</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_q4rO4I05EeOB0eBUISUB4Q" base_Property="_TlElg405EeOB0eBUISUB4Q">
-    <ruleId>CONF:30334</ruleId>
+    <ruleId>CONF:1098-30334</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_sQdhMI05EeOB0eBUISUB4Q" base_Property="_TlDXYI05EeOB0eBUISUB4Q">
-    <ruleId>CONF:30324</ruleId>
+    <ruleId>CONF:1098-30324</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_slxp4I05EeOB0eBUISUB4Q" base_Property="_TlDXYY05EeOB0eBUISUB4Q"/>
+  <CDA:PropertyValidation xmi:id="_slxp4I05EeOB0eBUISUB4Q" base_Property="_TlDXYY05EeOB0eBUISUB4Q">
+    <ruleId>CONF:1098-30329</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_tENSUI05EeOB0eBUISUB4Q" base_Property="_TlDXYo05EeOB0eBUISUB4Q">
-    <ruleId>CONF:31666</ruleId>
+    <ruleId>CONF:1098-31666</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_tZfl0I05EeOB0eBUISUB4Q" base_Property="_TlD-c405EeOB0eBUISUB4Q">
-    <ruleId>CONF:30325</ruleId>
+    <ruleId>CONF:1098-30325</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_tywaYI05EeOB0eBUISUB4Q" base_Property="_TlElgI05EeOB0eBUISUB4Q">
-    <ruleId>CONF:30332</ruleId>
+    <ruleId>CONF:1098-30332</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_zZuC4I05EeOB0eBUISUB4Q" base_Class="_NP5zMI05EeOB0eBUISUB4Q" templateId="2.16.840.1.113883.10.20.22.4.138">
-    <ruleId>CONF:30326</ruleId>
-    <ruleId>CONF:30327</ruleId>
+    <ruleId>CONF:1098-30326</ruleId>
+    <ruleId>CONF:1098-30327</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_UroIcI06EeOB0eBUISUB4Q" code="completed" displayName="Completed" base_Property="_TlElgI05EeOB0eBUISUB4Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:30333</ruleId>
+    <ruleId>CONF:1098-30333</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_QOm4oI08EeOB0eBUISUB4Q" base_Property="_TlDXYY05EeOB0eBUISUB4Q" severity="WARNING">
-    <reference href="../consol-vocab.uml#_CIGGYI07EeOB0eBUISUB4Q"/>
-    <ruleId>CONF:30329</ruleId>
-  </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_T1dcwI37EeOB0eBUISUB4Q" name="NutritionalStatusObservation">
     <ownedComment xmi:id="_C93YEI38EeOB0eBUISUB4Q">
       <body>This template describes the overall nutritional status of the patient including findings related to nutritional status.</body>
@@ -812,48 +818,48 @@ The smoking status value set includes a special code to communicate if the smoki
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2DpkYI37EeOB0eBUISUB4Q" base_Class="_T1dcwI37EeOB0eBUISUB4Q" templateId="2.16.840.1.113883.10.20.22.4.124">
-    <ruleId>CONF:29843</ruleId>
-    <ruleId>CONF:29844</ruleId>
+    <ruleId>CONF:1098-29843</ruleId>
+    <ruleId>CONF:1098-29844</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_F7e_wI38EeOB0eBUISUB4Q" base_Property="_ci7jMI37EeOB0eBUISUB4Q">
-    <ruleId>CONF:29841</ruleId>
+    <ruleId>CONF:1098-29841</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Gj7f0I38EeOB0eBUISUB4Q" base_Property="_ci8KQI37EeOB0eBUISUB4Q">
-    <ruleId>CONF:29846</ruleId>
+    <ruleId>CONF:1098-29846</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_HHpQ4I38EeOB0eBUISUB4Q" base_Property="_ci8KQY37EeOB0eBUISUB4Q">
-    <ruleId>CONF:31867</ruleId>
+    <ruleId>CONF:1098-31867</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_HoNnUI38EeOB0eBUISUB4Q" base_Property="_ci8KRI37EeOB0eBUISUB4Q">
-    <ruleId>CONF:29845</ruleId>
+    <ruleId>CONF:1098-29845</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_IR42cI38EeOB0eBUISUB4Q" base_Property="_ci8xUI37EeOB0eBUISUB4Q">
-    <ruleId>CONF:29842</ruleId>
+    <ruleId>CONF:1098-29842</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_I4cgII38EeOB0eBUISUB4Q" base_Property="_ci8xUY37EeOB0eBUISUB4Q">
-    <ruleId>CONF:29852</ruleId>
+    <ruleId>CONF:1098-29852</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_JXw5YI38EeOB0eBUISUB4Q" base_Property="_ci8xVI37EeOB0eBUISUB4Q"/>
-  <CDA:CodeSystemConstraint xmi:id="_5Y4lYI38EeOB0eBUISUB4Q" code="87276001" displayName="nutritional status (observable entity)" base_Property="_ci8KQI37EeOB0eBUISUB4Q">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:29897</ruleId>
-    <ruleId>CONF:29898</ruleId>
+  <CDA:CodeSystemConstraint xmi:id="_5Y4lYI38EeOB0eBUISUB4Q" code="75305-3" displayName="Nutrition status" base_Property="_ci8KQI37EeOB0eBUISUB4Q">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-29897</ruleId>
+    <ruleId>CONF:1098-29898</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_OSAwYI39EeOB0eBUISUB4Q" code="completed" displayName="Completed" base_Property="_ci8xUY37EeOB0eBUISUB4Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:29853</ruleId>
+    <ruleId>CONF:1098-29853</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_2Hzu0I3_EeOB0eBUISUB4Q" base_Property="_ci8xVI37EeOB0eBUISUB4Q" severity="WARNING">
     <reference href="../consol-vocab.uml#_oBBFMI39EeOB0eBUISUB4Q"/>
-    <ruleId>CONF:29854</ruleId>
+    <ruleId>CONF:1098-29854</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_6R3NEI4CEeOB0eBUISUB4Q" memberEnd="_6R2mAI4CEeOB0eBUISUB4Q _6R30II4CEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_6R30II4CEeOB0eBUISUB4Q" type="_T1dcwI37EeOB0eBUISUB4Q" association="_6R3NEI4CEeOB0eBUISUB4Q"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_95kTkI4CEeOB0eBUISUB4Q" base_Association="_6R3NEI4CEeOB0eBUISUB4Q" typeCode="SUBJ">
-    <ruleId>CONF:30323</ruleId>
-    <ruleId>CONF:30335</ruleId>
-    <ruleId>CONF:30336</ruleId>
+    <ruleId>CONF:1098-30323</ruleId>
+    <ruleId>CONF:1098-30335</ruleId>
+    <ruleId>CONF:1098-30336</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_MlM4IJ2GEeORR8_YW0n_jQ" name="NutritionSection">
     <ownedComment xmi:id="_bshckJ2GEeORR8_YW0n_jQ">
@@ -914,7 +920,7 @@ The smoking status value set includes a special code to communicate if the smoki
     <ownedEnd xmi:id="_cg0dMa4iEeORf5eJaKt1KQ" type="_NP5zMI05EeOB0eBUISUB4Q" association="_cg0dMK4iEeORf5eJaKt1KQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_dFAvYK4iEeORf5eJaKt1KQ" severity="WARNING" base_Association="_cg0dMK4iEeORf5eJaKt1KQ">
-    <ruleId>CONF:31667</ruleId>
+    <ruleId>CONF:1098-31667</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_Hl3ScLk0EeODDJAC5t5vpw" clientDependency="_hY2vYLk0EeODDJAC5t5vpw" name="SmokingStatusMeaningfulUse2">
     <ownedComment xmi:id="_05AVQLk0EeODDJAC5t5vpw">
@@ -1243,5 +1249,13 @@ The effectiveTime element is used to describe dates associated with the patient'
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_mHAlcPpYEeSE4ZSXS7BkuA" base_Constraint="_lZRVsPpYEeSE4ZSXS7BkuA">
     <ruleId>CONF:1098-32487</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_3NoqEP6IEeSoDZvueq4eYw" code="75303-8" displayName="Nutrition assessment" base_Property="_TlDXYY05EeOB0eBUISUB4Q">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-32784</ruleId>
+    <ruleId>CONF:1098-32785</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_xOIwUP6JEeSoDZvueq4eYw" severity="WARNING" base_Constraint="_mBQoMP6JEeSoDZvueq4eYw">
+    <ruleId>CONF:1098-32433</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>
