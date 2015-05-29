@@ -2451,7 +2451,7 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_nC0xUJmzEeOLJeQez13EkQ" name="SelfCareActivities">
     <ownedComment xmi:id="_LAG4AJm0EeOLJeQez13EkQ">
-      <body>This template represents an adult patient's daily self-care ability. These activities are called Activities of Daily Living (ADL) and Instrumental Activities of Daily Living (IADL).????ADLs involve caring for and moving of the body (e.g. dressing, bathing, eating). IADLs support an independent life style (e.g. cooking, managing medications, driving, shopping).</body>
+      <body>This template represents a patient's daily self-care ability. These activities are called Activities of Daily Living (ADL) and Instrumental Activities of Daily Living (IADL). ADLs involve caring for and moving of the body (e.g., dressing, bathing, eating). IADLs support an independent life style (e.g., cooking, managing medications, driving, shopping).</body>
     </ownedComment>
     <generalization xmi:id="_nC1YYJmzEeOLJeQez13EkQ">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -2467,8 +2467,23 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rBjQsJmzEeOLJeQez13EkQ" name="code" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_fh3icAPlEeWlspDC_8d7eg">
+        <body>If more detailed ADL and IADL activities need to be recorded select the appropriate code from LOINC.</body>
+      </ownedComment>
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_z0aOkAPlEeWlspDC_8d7eg" name="statusCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3alrEAPlEeWlspDC_8d7eg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3alEAAPlEeWlspDC_8d7eg" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_clEksAPmEeWlspDC_8d7eg" name="effectiveTime" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e5VGUAPmEeWlspDC_8d7eg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e5UfQAPmEeWlspDC_8d7eg" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rBjQspmzEeOLJeQez13EkQ" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -2476,30 +2491,34 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c3meAJm0EeOLJeQez13EkQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_Bjq-cAPnEeWlspDC_8d7eg" name="authorParticipation" type="_7jqj4KrlEeOxqJAXCMXUYg" association="_BjsMkAPnEeWlspDC_8d7eg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bjq-cQPnEeWlspDC_8d7eg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bjq-cgPnEeWlspDC_8d7eg" value="*"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_ORkBsJm0EeOLJeQez13EkQ" base_Class="_nC0xUJmzEeOLJeQez13EkQ" templateId="2.16.840.1.113883.10.20.22.4.128">
-    <ruleId>CONF:28190</ruleId>
-    <ruleId>CONF:28457</ruleId>
+    <ruleId>CONF:1098-28190</ruleId>
+    <ruleId>CONF:1098-28457</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_dIVosJm0EeOLJeQez13EkQ" base_Property="_rBjQspmzEeOLJeQez13EkQ"/>
   <CDA:PropertyValidation xmi:id="_d0DfMJm0EeOLJeQez13EkQ" base_Property="_rBjQsJmzEeOLJeQez13EkQ"/>
   <CDA:PropertyValidation xmi:id="_ekWTsJm0EeOLJeQez13EkQ" base_Property="_rBjQsZmzEeOLJeQez13EkQ">
-    <ruleId>CONF:31390</ruleId>
+    <ruleId>CONF:1098-31390</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_fBuzQJm0EeOLJeQez13EkQ" base_Property="_rBipoJmzEeOLJeQez13EkQ">
-    <ruleId>CONF:31389</ruleId>
+    <ruleId>CONF:1098-31389</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_4QZJMJm2EeOLJeQez13EkQ" base_Property="_rBjQsJmzEeOLJeQez13EkQ">
+  <CDA:ValueSetConstraint xmi:id="_4QZJMJm2EeOLJeQez13EkQ" base_Property="_rBjQsJmzEeOLJeQez13EkQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_dxy_8Zm1EeOLJeQez13EkQ"/>
-    <ruleId>CONF:28153</ruleId>
+    <ruleId>CONF:1098-28153</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="__ImXIJm2EeOLJeQez13EkQ" base_Property="_rBjQspmzEeOLJeQez13EkQ">
+  <CDA:ValueSetConstraint xmi:id="__ImXIJm2EeOLJeQez13EkQ" base_Property="_rBjQspmzEeOLJeQez13EkQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_BciakZm1EeOLJeQez13EkQ"/>
-    <ruleId>CONF:28042</ruleId>
+    <ruleId>CONF:1098-28042</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_KTrEAJpdEeOK6dzbL4VoTA" name="SubstanceAdministeredAct">
     <ownedComment xmi:id="_tU2HwJpdEeOK6dzbL4VoTA">
-      <body>This template, like the Medication Administered template in QRDA, is used where there is a need to group a number of administrations into a larger act (e.g. to group all of the immunizations that are part of a series). The relationship between this template and component substance administrations can include a sequenceNumber, to indicate the component administration's ordering in the series.</body>
+      <body>This template represents the administration course in a series. The entryRelationship/sequenceNumber in the containing template shows the order of this particular administration in that medication series.</body>
     </ownedComment>
     <generalization xmi:id="_KTtgQJpdEeOK6dzbL4VoTA">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
@@ -2538,33 +2557,33 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_tzRJIJpdEeOK6dzbL4VoTA" base_Class="_KTrEAJpdEeOK6dzbL4VoTA" templateId="2.16.840.1.113883.10.20.22.4.118">
-    <ruleId>CONF:31502</ruleId>
-    <ruleId>CONF:31503</ruleId>
+    <ruleId>CONF:1098-31502</ruleId>
+    <ruleId>CONF:1098-31503</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_7q188JpdEeOK6dzbL4VoTA" base_Property="_byx_MZpdEeOK6dzbL4VoTA"/>
   <CDA:PropertyValidation xmi:id="_9xHs8JpdEeOK6dzbL4VoTA" severity="INFO" base_Property="_bywKAZpdEeOK6dzbL4VoTA">
-    <ruleId>CONF:31509</ruleId>
+    <ruleId>CONF:1098-31509</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_-c504JpdEeOK6dzbL4VoTA" base_Property="_bywKAJpdEeOK6dzbL4VoTA">
-    <ruleId>CONF:31506</ruleId>
+    <ruleId>CONF:1098-31506</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_--wkwJpdEeOK6dzbL4VoTA" base_Property="_bywKBJpdEeOK6dzbL4VoTA">
-    <ruleId>CONF:31504</ruleId>
+    <ruleId>CONF:1098-31504</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="__q-KgJpdEeOK6dzbL4VoTA" base_Property="_byx_MJpdEeOK6dzbL4VoTA">
-    <ruleId>CONF:31501</ruleId>
+    <ruleId>CONF:1098-31501</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Ag-lcJpeEeOK6dzbL4VoTA" base_Property="_byvi8JpdEeOK6dzbL4VoTA">
-    <ruleId>CONF:31500</ruleId>
+    <ruleId>CONF:1098-31500</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_iS3yoJpeEeOK6dzbL4VoTA" code="416118004" displayName="Administration" base_Property="_bywKAJpdEeOK6dzbL4VoTA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31507</ruleId>
-    <ruleId>CONF:31508</ruleId>
+    <ruleId>CONF:1098-31507</ruleId>
+    <ruleId>CONF:1098-31508</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_zIAjwJpeEeOK6dzbL4VoTA" code="completed" displayName="Completed" base_Property="_byx_MZpdEeOK6dzbL4VoTA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31505</ruleId>
+    <ruleId>CONF:1098-31505</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_7jqj4KrlEeOxqJAXCMXUYg" name="AuthorParticipation">
     <ownedComment xmi:id="_JvfwcKrmEeOxqJAXCMXUYg">
@@ -3430,4 +3449,20 @@ Instructions are a subset of interventions and may include self-care instruction
   <CDA:ConstraintValidation xmi:id="_1sdhUP5_EeSoDZvueq4eYw" base_Constraint="_0b9iwP5_EeSoDZvueq4eYw">
     <ruleId>CONF:1098-32380</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_1E7bQAPlEeWlspDC_8d7eg" base_Property="_z0aOkAPlEeWlspDC_8d7eg">
+    <ruleId>CONF:1098-32490</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_4fI4UAPlEeWlspDC_8d7eg" code="completed" base_Property="_z0aOkAPlEeWlspDC_8d7eg">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-32491</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_eZxcgAPmEeWlspDC_8d7eg" base_Property="_clEksAPmEeWlspDC_8d7eg">
+    <ruleId>CONF:1098-32492</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_BjsMkAPnEeWlspDC_8d7eg" memberEnd="_Bjq-cAPnEeWlspDC_8d7eg _BjsMkQPnEeWlspDC_8d7eg">
+    <ownedEnd xmi:id="_BjsMkQPnEeWlspDC_8d7eg" type="_nC0xUJmzEeOLJeQez13EkQ" association="_BjsMkAPnEeWlspDC_8d7eg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_CSDucAPnEeWlspDC_8d7eg" severity="WARNING" base_Association="_BjsMkAPnEeWlspDC_8d7eg">
+    <ruleId>CONF:1098-32469</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

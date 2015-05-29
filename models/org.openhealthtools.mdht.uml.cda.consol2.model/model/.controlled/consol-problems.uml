@@ -277,7 +277,15 @@ historical purposes.&#xD;
   </CDA:CDATemplate>
   <uml:Class xmi:id="_SjN_8BUzEeGbmN_W114JUw" name="ProblemStatus">
     <ownedComment xmi:id="_DRGcECA8EeG9GZYpu7WBOQ">
-      <body>The Problem Status records whether the indicated problem is active, inactive, or resolved.</body>
+      <body>&lt;p>&#xD;
+The Problem Status records whether the indicated problem is active, inactive, or resolved.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+THIS TEMPLATE HAS BEEN DEPRECATED IN C-CDA R2 AND MAY BE DELETED FROM A FUTURE RELEASE OF THIS IMPLEMENTATION GUIDE. USE OF THIS TEMPLATE IS NOT RECOMMENDED.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Reason for deprecation: Per the explanation in Volume 1, Section 3.2 &quot;Determining a Clinical Statement's Status&quot;, the status of a problem is determined based on attributes of the Problem Observation&#xD;
+&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_NGUbACp_EeGiFpKeZIy4Pg" name="textReference" constrainedElement="_SjN_8BUzEeGbmN_W114JUw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_QDaeQCp_EeGiFpKeZIy4Pg">
@@ -767,8 +775,12 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_SVZlAObqEeGINOJ_SD9_dA" base_Property="_zGb3MSAuEeGetMjKLkqR8g"/>
   <uml:Class xmi:id="_GXlxYJmLEeOeSLwbllPCyw" name="PrognosisObservation">
     <ownedComment xmi:id="_RUa14JmMEeOeSLwbllPCyw">
-      <body>This template represents the patient's prognosis, which must be associated with a problem observation. It may serve as an alert to scope intervention plans. &#xD;
-The effectiveTime represents the clinically relevant time of the observation. The observation/value is not constrained and can represent the expected life duration in PQ, an anticipated course of the disease in text, or coded term.</body>
+      <body>&lt;p>&#xD;
+This template represents the patient's prognosis, which must be associated with a problem observation. It may serve as an alert to scope intervention plans. &#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The effectiveTime represents the clinically relevant time of the observation. The observation/value is not constrained and can represent the expected life duration in PQ, an anticipated course of the disease in text, or coded term.&#xD;
+&lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_GXoNoJmLEeOeSLwbllPCyw">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -807,37 +819,37 @@ The effectiveTime represents the clinically relevant time of the observation. Th
     </ownedAttribute>
   </uml:Class>
   <CDA:PropertyValidation xmi:id="_8x83YJmLEeOeSLwbllPCyw" base_Property="_PjJiAJmLEeOeSLwbllPCyw">
-    <ruleId>CONF:29035</ruleId>
+    <ruleId>CONF:1098-29035</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_9IlOsJmLEeOeSLwbllPCyw" base_Property="_PjKJFJmLEeOeSLwbllPCyw">
-    <ruleId>CONF:29036</ruleId>
+    <ruleId>CONF:1098-29036</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_9674sJmLEeOeSLwbllPCyw" base_Property="_PjKJEJmLEeOeSLwbllPCyw">
-    <ruleId>CONF:29039</ruleId>
+    <ruleId>CONF:1098-29039</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_-twcwJmLEeOeSLwbllPCyw" base_Property="_PjKJFZmLEeOeSLwbllPCyw">
-    <ruleId>CONF:31350</ruleId>
+    <ruleId>CONF:1098-31350</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="__MNTUJmLEeOeSLwbllPCyw" base_Property="_PjKJEZmLEeOeSLwbllPCyw">
-    <ruleId>CONF:31123</ruleId>
+    <ruleId>CONF:1098-31123</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="__lq8MJmLEeOeSLwbllPCyw" base_Property="_PjKJGJmLEeOeSLwbllPCyw">
-    <ruleId>CONF:29469</ruleId>
+    <ruleId>CONF:1098-29469</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_IERgMJmMEeOeSLwbllPCyw" base_Class="_GXlxYJmLEeOeSLwbllPCyw" templateId="2.16.840.1.113883.10.20.22.4.113">
-    <ruleId>CONF:29037</ruleId>
-    <ruleId>CONF:29038</ruleId>
+    <ruleId>CONF:1098-29037</ruleId>
+    <ruleId>CONF:1098-29038</ruleId>
   </CDA:CDATemplate>
-  <CDA:CodeSystemConstraint xmi:id="_epOFEJmSEeOLJeQez13EkQ" code="170967006" displayName="prognosis/outlook" base_Property="_PjKJEJmLEeOeSLwbllPCyw">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:29468</ruleId>
-    <ruleId>CONF:31349</ruleId>
+  <CDA:CodeSystemConstraint xmi:id="_epOFEJmSEeOLJeQez13EkQ" code="75328-5" displayName="Prognosis" base_Property="_PjKJEJmLEeOeSLwbllPCyw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-29468</ruleId>
+    <ruleId>CONF:1098-31349</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_98JVcJmSEeOLJeQez13EkQ" code="completed" base_Property="_PjKJFZmLEeOeSLwbllPCyw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31351</ruleId>
+    <ruleId>CONF:1098-31351</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Class xmi:id="_D6Lm0JpnEeOK6dzbL4VoTA" name="WoundCharacteristics">
+  <uml:Class xmi:id="_D6Lm0JpnEeOK6dzbL4VoTA" name="WoundCharacteristic">
     <ownedComment xmi:id="_eeKb0JpnEeOK6dzbL4VoTA">
       <body>This template represents characteristics of a wound (e.g., integrity of suture line, odor, erythema).</body>
     </ownedComment>
@@ -860,7 +872,8 @@ The effectiveTime represents the clinically relevant time of the observation. Th
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6YPhEJpnEeOK6dzbL4VoTA" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Ja0k4ZpnEeOK6dzbL4VoTA" name="code" visibility="private" type="_k_k8kJp2EeOK6dzbL4VoTA" aggregation="composite">
+    <ownedAttribute xmi:id="_CjbAcASFEeWqeJlhkO8aqA" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Ja1zAZpnEeOK6dzbL4VoTA" name="statusCode" visibility="private" aggregation="composite">
@@ -881,68 +894,36 @@ The effectiveTime represents the clinically relevant time of the observation. Th
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5gG_MJpnEeOK6dzbL4VoTA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_k_k8kJp2EeOK6dzbL4VoTA" name="CD">
-      <ownedComment xmi:id="_1UyQcJp2EeOK6dzbL4VoTA">
-        <body>INLINE</body>
-      </ownedComment>
-      <ownedRule xmi:id="_LXKigJp3EeOK6dzbL4VoTA" name="codeSystemTerminology" constrainedElement="_gzrR8Jp4EeOK6dzbL4VoTA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_A3udQJp5EeOK6dzbL4VoTA">
-          <language>Analysis</language>
-          <body>The @codeSystem MAY=&quot;2.16.840.1.113883.5.4&quot; (CodeSystem: ActCode 2.16.840.1.113883.5.4)</body>
-        </specification>
-      </ownedRule>
-      <generalization xmi:id="_k_ljoJp2EeOK6dzbL4VoTA">
-        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      </generalization>
-      <ownedAttribute xmi:id="_gzrR8Jp4EeOK6dzbL4VoTA" name="codeSystem" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gzrR8pp4EeOK6dzbL4VoTA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gzrR8Zp4EeOK6dzbL4VoTA" value="1"/>
-        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_3fx3ADxkEd6JwqSGecoePg"/>
-      </ownedAttribute>
-    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_hPn20JpnEeOK6dzbL4VoTA" base_Class="_D6Lm0JpnEeOK6dzbL4VoTA" templateId="2.16.840.1.113883.10.20.22.4.134">
-    <ruleId>CONF:29940</ruleId>
-    <ruleId>CONF:29941</ruleId>
+    <ruleId>CONF:1098-29940</ruleId>
+    <ruleId>CONF:1098-29941</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_xestgJpnEeOK6dzbL4VoTA" base_Property="_Ja0k4JpnEeOK6dzbL4VoTA">
-    <ruleId>CONF:29938</ruleId>
+    <ruleId>CONF:1098-29938</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_x7bs0JpnEeOK6dzbL4VoTA" base_Property="_Ja1zAJpnEeOK6dzbL4VoTA">
-    <ruleId>CONF:29939</ruleId>
+    <ruleId>CONF:1098-29939</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_yw4uIJpnEeOK6dzbL4VoTA" base_Property="_Ja1L8JpnEeOK6dzbL4VoTA">
-    <ruleId>CONF:29942</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_zRWW4JpnEeOK6dzbL4VoTA" base_Property="_Ja0k4ZpnEeOK6dzbL4VoTA">
-    <ruleId>CONF:29943</ruleId>
+    <ruleId>CONF:1098-29942</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_zwtMYJpnEeOK6dzbL4VoTA" base_Property="_Ja1zAZpnEeOK6dzbL4VoTA"/>
   <CDA:PropertyValidation xmi:id="_0V3u8JpnEeOK6dzbL4VoTA" base_Property="_Ja1zBJpnEeOK6dzbL4VoTA"/>
   <CDA:PropertyValidation xmi:id="_0wDJgJpnEeOK6dzbL4VoTA" base_Property="_Ja0k4ppnEeOK6dzbL4VoTA">
-    <ruleId>CONF:29946</ruleId>
+    <ruleId>CONF:1098-29946</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_XJiEsJp0EeOK6dzbL4VoTA" code="completed" base_Property="_Ja1zAZpnEeOK6dzbL4VoTA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:29944</ruleId>
+    <ruleId>CONF:1098-29944</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_oKM68Jp1EeOK6dzbL4VoTA" base_Property="_Ja1zBJpnEeOK6dzbL4VoTA">
     <reference href="../consol-vocab.uml#_LH7ekZp1EeOK6dzbL4VoTA"/>
-    <ruleId>CONF:29947</ruleId>
+    <ruleId>CONF:1098-29947</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_9A8D0Jp2EeOK6dzbL4VoTA" severity="INFO">
     <ruleId>CONF:31541</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_Ri5PgJp4EeOK6dzbL4VoTA" code="ASSERTION" displayName="assertion" base_Property="_Ja0k4ZpnEeOK6dzbL4VoTA">
-    <ruleId>CONF:31540</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_1d-WwJp4EeOK6dzbL4VoTA" severity="INFO" base_Property="_gzrR8Jp4EeOK6dzbL4VoTA">
-    <ruleId>CONF:31541</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_58nsUJp4EeOK6dzbL4VoTA" severity="INFO" base_Constraint="_LXKigJp3EeOK6dzbL4VoTA">
-    <ruleId>CONF:31541</ruleId>
-  </CDA:ConstraintValidation>
   <uml:Class xmi:id="_2umuYJ18EeORR8_YW0n_jQ" name="HealthConcernsSection">
     <ownedComment xmi:id="_iK49QJ19EeORR8_YW0n_jQ">
       <body>This section contains data describing an interest or worry about a health state or process that could possibly require attention, intervention, or management. A Health Concern is a health related matter that is of interest, importance or worry to someone, who may be the patient, patient's family or patient's health care provider. Health concerns are derived from a variety of sources within an EHR (such as Problem List, Family History, Social History, Social Worker Note, etc.). Health concerns can be medical, surgical, nursing, allied health or patient-reported concerns.&#xD;
@@ -1562,4 +1543,12 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <ruleId>CONF:1098-32308</ruleId>
     <ruleId>CONF:1098-32309</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_Ie7VkASFEeWqeJlhkO8aqA" base_Property="_CjbAcASFEeWqeJlhkO8aqA">
+    <ruleId>CONF:1098-29943</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_IxfsQASFEeWqeJlhkO8aqA" code="ASSERTION" displayName="assertion" base_Property="_CjbAcASFEeWqeJlhkO8aqA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-31540</ruleId>
+    <ruleId>CONF:1098-31541</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
