@@ -2587,7 +2587,12 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_7jqj4KrlEeOxqJAXCMXUYg" name="AuthorParticipation">
     <ownedComment xmi:id="_JvfwcKrmEeOxqJAXCMXUYg">
-      <body>This template represents the Author Participation (including the author timestamp). CDA R2 requires that Author and Author timestamp be asserted in the document header. From there, authorship propagates to contained sections and contained entries, unless explicitly overridden.</body>
+      <body>&lt;p>&#xD;
+This template represents the Author Participation (including the author timestamp). CDA R2 requires that Author and Author timestamp be asserted in the document header. From there, authorship propagates to contained sections and contained entries, unless explicitly overridden.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The Author Participation template was added to those templates in scope for analysis in R2. Although it is not explicitly stated in all templates the Author Participation template can be used in any template.&#xD;
+&lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_7juOQKrlEeOxqJAXCMXUYg">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
@@ -2604,12 +2609,25 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
       <ownedComment xmi:id="_6YBasKrmEeOxqJAXCMXUYg">
         <body>INLINE</body>
       </ownedComment>
+      <ownedRule xmi:id="_g-lPgAY_EeWJ1IvwC3EkyA" name="codeTerminology" constrainedElement="_00b2UKrmEeOxqJAXCMXUYg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_LnPCAAZAEeWJ1IvwC3EkyA">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>code/@code SHOULD be selected from ValueSet Healthcare Provider Taxonomy (HIPAA) 2.16.840.1.114222.4.11.1066 DYNAMIC. If the content is patient authored the code/@code SHOULD be selected from Personal And Legal Relationship Role Type (2.16.840.1.113883.11.20.12.1)</body>
+          <body>code.codeSystem = '2.16.840.1.113883.6.101' or code.codeSystem = '2.16.840.1.113883.5.111'</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_00cdYKrmEeOxqJAXCMXUYg">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_z2vcQEcDEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_4YImkKrmEeOxqJAXCMXUYg" name="id" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_KHVcIKr7EeOxqJAXCMXUYg">
-          <body>Note: This id may be set equal to (a pointer to) an id on a participant elsewhere in the document (header or entries) or a new author participant can be described here. If the id is pointing to a participant already described elsewhere in the document, assignedAuthor/id is sufficient to identify this participant and none of the remaining details of assignedAuthor are required to be set. Application Software must be responsible for resolving the identifier back to its original object and then rendering the information in the correct place in the containing section's narrative text.</body>
+          <body>&lt;p>&#xD;
+Note: This id may be set equal to (a pointer to) an id on a participant elsewhere in the document (header or entries) or a new author participant can be described here. If the id is pointing to a participant already described elsewhere in the document, assignedAuthor/id is sufficient to identify this participant and none of the remaining details of assignedAuthor are required to be set. Application Software must be responsible for resolving the identifier back to its original object and then rendering the information in the correct place in the containing section's narrative text. This id must be a pointer to another author participant.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+If the ID isn't referencing an author described elsewhere in the document, then the author components required in US Realm Header are required here as well (CONF:1098-32628).&#xD;
+&lt;/p></body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4YImkqrmEeOxqJAXCMXUYg" value="1"/>
@@ -2683,55 +2701,53 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_Na0LoKrmEeOxqJAXCMXUYg" base_Class="_7jqj4KrlEeOxqJAXCMXUYg" templateId="2.16.840.1.113883.10.20.22.4.119">
-    <ruleId>CONF:32017</ruleId>
-    <ruleId>CONF:32018</ruleId>
+    <ruleId>CONF:1098-32017</ruleId>
+    <ruleId>CONF:1098-32018</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_Zns_QKrmEeOxqJAXCMXUYg" base_Property="_-mD94KrlEeOxqJAXCMXUYg">
-    <ruleId>CONF:31471</ruleId>
+    <ruleId>CONF:1098-31471</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_k_L04KrmEeOxqJAXCMXUYg" memberEnd="_k_J_sKrmEeOxqJAXCMXUYg _k_Mb8KrmEeOxqJAXCMXUYg">
     <ownedEnd xmi:id="_k_Mb8KrmEeOxqJAXCMXUYg" type="_7jqj4KrlEeOxqJAXCMXUYg" association="_k_L04KrmEeOxqJAXCMXUYg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_lhqP0KrmEeOxqJAXCMXUYg" base_Association="_k_L04KrmEeOxqJAXCMXUYg">
-    <ruleId>CONF:31472</ruleId>
+    <ruleId>CONF:1098-31472</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_F0bMkKrnEeOxqJAXCMXUYg" base_Property="_4YImkKrmEeOxqJAXCMXUYg">
-    <ruleId>CONF:31473</ruleId>
+    <ruleId>CONF:1098-31473</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_NyAHIKrnEeOxqJAXCMXUYg" severity="WARNING" base_Property="_4YH_gKrmEeOxqJAXCMXUYg"/>
-  <CDA:ValueSetConstraint xmi:id="_Q7p_sKrnEeOxqJAXCMXUYg" base_Property="_4YH_gKrmEeOxqJAXCMXUYg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
-    <ruleId>CONF:31671</ruleId>
-  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_NyAHIKrnEeOxqJAXCMXUYg" severity="WARNING" base_Property="_4YH_gKrmEeOxqJAXCMXUYg">
+    <ruleId>CONF:1098-31671</ruleId>
+  </CDA:PropertyValidation>
   <uml:Association xmi:id="_IV084KroEeOxqJAXCMXUYg" memberEnd="_IVzHsKroEeOxqJAXCMXUYg _IV084aroEeOxqJAXCMXUYg">
     <ownedEnd xmi:id="_IV084aroEeOxqJAXCMXUYg" type="_00b2UKrmEeOxqJAXCMXUYg" association="_IV084KroEeOxqJAXCMXUYg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_JViGYKroEeOxqJAXCMXUYg" severity="INFO" base_Association="_IV084KroEeOxqJAXCMXUYg">
-    <ruleId>CONF:31474</ruleId>
+    <ruleId>CONF:1098-31474</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_h6IoIKrpEeOxqJAXCMXUYg" severity="INFO" base_Property="_fgiTgKrpEeOxqJAXCMXUYg">
-    <ruleId>CONF:31475</ruleId>
+    <ruleId>CONF:1098-31475</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_98NDYKr3EeOxqJAXCMXUYg" memberEnd="_98LOMKr3EeOxqJAXCMXUYg _98NDYar3EeOxqJAXCMXUYg">
     <ownedEnd xmi:id="_98NDYar3EeOxqJAXCMXUYg" type="_00b2UKrmEeOxqJAXCMXUYg" association="_98NDYKr3EeOxqJAXCMXUYg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_A_ZHkKr4EeOxqJAXCMXUYg" severity="INFO" base_Association="_98NDYKr3EeOxqJAXCMXUYg">
-    <ruleId>CONF:31476</ruleId>
+    <ruleId>CONF:1098-31476</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_Od43kKr5EeOxqJAXCMXUYg" base_Property="_X2VDEKr4EeOxqJAXCMXUYg">
-    <ruleId>CONF:31477</ruleId>
+    <ruleId>CONF:1098-31477</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_O-Y8kKr5EeOxqJAXCMXUYg" severity="INFO" base_Property="_X2VqIKr4EeOxqJAXCMXUYg">
-    <ruleId>CONF:31478</ruleId>
+    <ruleId>CONF:1098-31478</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_PgHwoKr5EeOxqJAXCMXUYg" severity="INFO" base_Property="_X2W4QKr4EeOxqJAXCMXUYg">
-    <ruleId>CONF:31479</ruleId>
+    <ruleId>CONF:1098-31479</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_QU1yIKr5EeOxqJAXCMXUYg" severity="INFO" base_Property="_X2YGYKr4EeOxqJAXCMXUYg">
-    <ruleId>CONF:31480</ruleId>
+    <ruleId>CONF:1098-31480</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Q0DdsKr5EeOxqJAXCMXUYg" severity="INFO" base_Property="_X2UcAKr4EeOxqJAXCMXUYg">
-    <ruleId>CONF:31481</ruleId>
+    <ruleId>CONF:1098-31481</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Rq7ZEK4fEeORf5eJaKt1KQ" base_Property="_J1uXYK4fEeORf5eJaKt1KQ">
     <ruleId>CONF:31931</ruleId>
@@ -3465,4 +3481,8 @@ Instructions are a subset of interventions and may include self-care instruction
   <CDA:AssociationValidation xmi:id="_CSDucAPnEeWlspDC_8d7eg" severity="WARNING" base_Association="_BjsMkAPnEeWlspDC_8d7eg">
     <ruleId>CONF:1098-32469</ruleId>
   </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_jThtoAY_EeWJ1IvwC3EkyA" severity="WARNING" base_Constraint="_g-lPgAY_EeWJ1IvwC3EkyA">
+    <ruleId>CONF:1098-31671</ruleId>
+    <ruleId>CONF:1098-32315</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
