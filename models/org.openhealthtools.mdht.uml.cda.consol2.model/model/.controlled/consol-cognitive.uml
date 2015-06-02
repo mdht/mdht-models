@@ -327,7 +327,18 @@ This is different from a cognitive status problem observation, which is a clinic
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_dXKPQOZbEeGINOJ_SD9_dA" name="CognitiveStatusProblemObservation">
     <ownedComment xmi:id="_FgL9oOZcEeGINOJ_SD9_dA">
-      <body>The Mental Status Observation template represents an observation about mental status that can come from a broad range of subjective and objective information (including measured data) to address those categories described in the Mental Status Section. See also Assessment Scale Observation for specific collections of observations that together yield a summary evaluation of a particular condition.</body>
+      <body>&lt;p>&#xD;
+A cognitive status problem observation is a clinical statement that describes a patient's cognitive condition, findings, or symptoms. Examples of cognitive problem observations are inability to recall, amnesia, dementia, and aggressive behavior.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+A cognitive problem observation is a finding or medical condition. This is different from a cognitive result observation, which is a response to a question that provides insight into the patient's cognitive status, judgement, comprehension ability, or response speed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF THIS IMPLEMENTATION GUIDE. USE OF THIS TEMPLATE IS NOT RECOMMENDED.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Reason for deprecation: Cognitive Status Problem Observation has been merged, without loss of expressivity, into Mental Status Observation (2.16.840.1.113883.10.20.22.4.74:2014-06-09).&#xD;
+&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_daqkUOZdEeGINOJ_SD9_dA" name="hasTextReference">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_daqkUeZdEeGINOJ_SD9_dA">
@@ -1009,6 +1020,9 @@ This is different from a cognitive status problem observation, which is a clinic
     <ownedComment xmi:id="_V3xvYIoBEeOoMZgUoTghIg">
       <body>The Cognitive Abilities Observation represents a patient's ability to perform specific cognitive tasks (e.g., ability to plan, logical sequencing ability, ability to think abstractly).</body>
     </ownedComment>
+    <ownedComment xmi:id="_bOntkPm-EeSGHoih4Jm09A">
+      <body>REMOVED</body>
+    </ownedComment>
     <generalization xmi:id="_Y_otoIoAEeOoMZgUoTghIg">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -1206,7 +1220,7 @@ This is different from a cognitive status problem observation, which is a clinic
     <ruleId>CONF:29208</ruleId>
     <ruleId>CONF:29209</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_kyeGAJm4EeOLJeQez13EkQ" name="SensoryAndSpeechStatus">
+  <uml:Class xmi:id="_kyeGAJm4EeOLJeQez13EkQ" name="SensoryStatus">
     <ownedComment xmi:id="_LirAQJm5EeOLJeQez13EkQ">
       <body>This template represents a patient's sensory or speech ability. It may contain an assessment scale observations related to the sensory or speech ability.</body>
     </ownedComment>
@@ -1233,8 +1247,7 @@ This is different from a cognitive status problem observation, which is a clinic
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m7X2wJm5EeOLJeQez13EkQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_wSfzopm4EeOLJeQez13EkQ" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+    <ownedAttribute xmi:id="_wSfzopm4EeOLJeQez13EkQ" name="effectiveTime" visibility="private" type="_ZFOAYAPrEeWlspDC_8d7eg" aggregation="composite">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mUs4UJm5EeOLJeQez13EkQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mUsRQJm5EeOLJeQez13EkQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
@@ -1245,73 +1258,79 @@ This is different from a cognitive status problem observation, which is a clinic
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nwHGYJm5EeOLJeQez13EkQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_rAkqMJm8EeOLJeQez13EkQ" name="author" type="_FmA3wJm9EeOLJeQez13EkQ" association="_rAl4UJm8EeOLJeQez13EkQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1_q1AJm8EeOLJeQez13EkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1_qN8Jm8EeOLJeQez13EkQ" value="1"/>
+    <ownedAttribute xmi:id="_XSxV4APsEeWlspDC_8d7eg" name="authorParticipation" association="_XSykAAPsEeWlspDC_8d7eg">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y-IEcQPsEeWlspDC_8d7eg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y-IEcAPsEeWlspDC_8d7eg" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6SCMoJm9EeOLJeQez13EkQ" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_6SDawJm9EeOLJeQez13EkQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SCzsJm9EeOLJeQez13EkQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SCzsZm9EeOLJeQez13EkQ" value="*"/>
     </ownedAttribute>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_FmA3wJm9EeOLJeQez13EkQ" name="Author">
-      <ownedComment xmi:id="_s9kF4Jm9EeOLJeQez13EkQ">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_ZFOAYAPrEeWlspDC_8d7eg" name="IVLTS">
+      <ownedComment xmi:id="_bMOJIAPrEeWlspDC_8d7eg">
         <body>INLINE</body>
       </ownedComment>
-      <generalization xmi:id="_FmBe0Jm9EeOLJeQez13EkQ">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      <generalization xmi:id="_ZFOncAPrEeWlspDC_8d7eg">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       </generalization>
-      <ownedAttribute xmi:id="_MoMhEJm9EeOLJeQez13EkQ" name="time" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_t59eEEofEd6c3qsAxlFHaQ"/>
+      <ownedAttribute xmi:id="_Zhr58APrEeWlspDC_8d7eg" name="low" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_fKKlYAPrEeWlspDC_8d7eg">
+          <body>The effectiveTime/low (a.k.a. &quot;onset date&quot;) asserts when the condition became biologically active.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nYhG4APrEeWlspDC_8d7eg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nYgf0APrEeWlspDC_8d7eg" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ZhrS4APrEeWlspDC_8d7eg" name="high" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_jp7VQAPrEeWlspDC_8d7eg">
+          <body>The effectiveTime/high (a.k.a. &quot;resolution date&quot;) asserts when the condition became biologically resolved.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZhrS4QPrEeWlspDC_8d7eg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZhrS4gPrEeWlspDC_8d7eg" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_PYeNIJm5EeOLJeQez13EkQ" base_Class="_kyeGAJm4EeOLJeQez13EkQ" templateId="2.16.840.1.113883.10.20.22.4.127">
-    <ruleId>CONF:27959</ruleId>
-    <ruleId>CONF:27960</ruleId>
+    <ruleId>CONF:1098-27959</ruleId>
+    <ruleId>CONF:1098-27960</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_fKKkQJm5EeOLJeQez13EkQ" base_Property="_wSfzoJm4EeOLJeQez13EkQ">
-    <ruleId>CONF:31017</ruleId>
+    <ruleId>CONF:1098-31017</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_iwfKsJm5EeOLJeQez13EkQ" base_Property="_wSfzoZm4EeOLJeQez13EkQ"/>
   <CDA:PropertyValidation xmi:id="_jJ03wJm5EeOLJeQez13EkQ" base_Property="_wSfzopm4EeOLJeQez13EkQ">
-    <ruleId>CONF:31441</ruleId>
+    <ruleId>CONF:1098-31441</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_jhyEwJm5EeOLJeQez13EkQ" base_Property="_wSfzpZm4EeOLJeQez13EkQ">
-    <ruleId>CONF:31018</ruleId>
+    <ruleId>CONF:1098-31018</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_j8PMIJm5EeOLJeQez13EkQ" base_Property="_wSfzppm4EeOLJeQez13EkQ">
-    <ruleId>CONF:31437</ruleId>
+    <ruleId>CONF:1098-31437</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_kURRoJm5EeOLJeQez13EkQ" base_Property="_wSgasJm4EeOLJeQez13EkQ"/>
   <CDA:ValueSetConstraint xmi:id="_5jGKYJm6EeOLJeQez13EkQ" base_Property="_wSfzoZm4EeOLJeQez13EkQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_Sv4_cZm6EeOLJeQez13EkQ"/>
-    <ruleId>CONF:27962</ruleId>
+    <ruleId>CONF:1098-27962</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_D8_WYJm7EeOLJeQez13EkQ" code="completed" base_Property="_wSfzppm4EeOLJeQez13EkQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31438</ruleId>
+    <ruleId>CONF:1098-31438</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_bnkVUJm7EeOLJeQez13EkQ" base_Property="_wSgasJm4EeOLJeQez13EkQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
-    <ruleId>CONF:27974</ruleId>
+    <ruleId>CONF:1098-27974</ruleId>
   </CDA:ValueSetConstraint>
-  <uml:Association xmi:id="_rAl4UJm8EeOLJeQez13EkQ" memberEnd="_rAkqMJm8EeOLJeQez13EkQ _rAl4UZm8EeOLJeQez13EkQ">
-    <ownedEnd xmi:id="_rAl4UZm8EeOLJeQez13EkQ" type="_kyeGAJm4EeOLJeQez13EkQ" association="_rAl4UJm8EeOLJeQez13EkQ"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_tGrbEJm8EeOLJeQez13EkQ" severity="WARNING" base_Association="_rAl4UJm8EeOLJeQez13EkQ">
-    <ruleId>CONF:31439</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_OQiX4Jm9EeOLJeQez13EkQ" base_Property="_MoMhEJm9EeOLJeQez13EkQ">
-    <ruleId>CONF:31440</ruleId>
-  </CDA:PropertyValidation>
   <uml:Association xmi:id="_6SDawJm9EeOLJeQez13EkQ" memberEnd="_6SCMoJm9EeOLJeQez13EkQ _6SDawZm9EeOLJeQez13EkQ">
     <ownedEnd xmi:id="_6SDawZm9EeOLJeQez13EkQ" type="_kyeGAJm4EeOLJeQez13EkQ" association="_6SDawJm9EeOLJeQez13EkQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_CFFSMJm-EeOLJeQez13EkQ" severity="INFO" base_Association="_6SDawJm9EeOLJeQez13EkQ" typeCode="COMP">
-    <ruleId>CONF:27984</ruleId>
-    <ruleId>CONF:27985</ruleId>
-    <ruleId>CONF:27986</ruleId>
+    <ruleId>CONF:1098-27984</ruleId>
+    <ruleId>CONF:1098-27985</ruleId>
+    <ruleId>CONF:1098-27986</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_4tfOMJ2CEeORR8_YW0n_jQ" name="MentalStatusSection">
     <ownedComment xmi:id="_HxweoJ2DEeORR8_YW0n_jQ">
@@ -1629,5 +1648,17 @@ The Mental Status Section contains observations and evaluations related to a pat
   <CDA:AssociationValidation xmi:id="_ZBQuAPglEeSx6PQhw3nAUw" severity="INFO" base_Association="_YkFp0PglEeSx6PQhw3nAUw">
     <ruleId>CONF:1098-28305</ruleId>
     <ruleId>CONF:1098-28306</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_lLbkQAPrEeWlspDC_8d7eg" base_Property="_Zhr58APrEeWlspDC_8d7eg">
+    <ruleId>CONF:1098-32630</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mVeVgAPrEeWlspDC_8d7eg" severity="INFO" base_Property="_ZhrS4APrEeWlspDC_8d7eg">
+    <ruleId>CONF:1098-32631</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_XSykAAPsEeWlspDC_8d7eg" memberEnd="_XSxV4APsEeWlspDC_8d7eg _XSykAQPsEeWlspDC_8d7eg">
+    <ownedEnd xmi:id="_XSykAQPsEeWlspDC_8d7eg" type="_kyeGAJm4EeOLJeQez13EkQ" association="_XSykAAPsEeWlspDC_8d7eg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_X65F0APsEeWlspDC_8d7eg" severity="WARNING" base_Association="_XSykAAPsEeWlspDC_8d7eg">
+    <ruleId>CONF:1098-31439</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>

@@ -864,7 +864,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   </CDA:CDATemplate>
   <uml:Class xmi:id="_O2I3AI9DEeOB0eBUISUB4Q" name="PlannedCoverage">
     <ownedComment xmi:id="_olcGwI9DEeOB0eBUISUB4Q">
-      <body>This template represents the amount of insurance coverage that is projected to cover an act or procedure.</body>
+      <body>This template represents the insurance coverage intended to cover an act or procedure.</body>
     </ownedComment>
     <generalization xmi:id="_O2JeEI9DEeOB0eBUISUB4Q">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
@@ -894,6 +894,11 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zCRSAI9DEeOB0eBUISUB4Q" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zCQD4I9DEeOB0eBUISUB4Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ReVagACpEeWNGdLwd_3YGQ" name="authorParticipation" association="_ReWBkACpEeWNGdLwd_3YGQ">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ReVagQCpEeWNGdLwd_3YGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ReVaggCpEeWNGdLwd_3YGQ" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_nyoFkI9KEeOB0eBUISUB4Q" name="entryRelationship" visibility="private" type="_GRpMwI9LEeOB0eBUISUB4Q">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v8HVMY9KEeOB0eBUISUB4Q" value="1"/>
@@ -955,56 +960,56 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_cp6I4I9DEeOB0eBUISUB4Q" base_Class="_O2I3AI9DEeOB0eBUISUB4Q" templateId="2.16.840.1.113883.10.20.22.4.129">
-    <ruleId>CONF:31947</ruleId>
-    <ruleId>CONF:31948</ruleId>
+    <ruleId>CONF:1098-31947</ruleId>
+    <ruleId>CONF:1098-31948</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_qJq5oI9DEeOB0eBUISUB4Q" base_Property="_XfFCwY9DEeOB0eBUISUB4Q">
-    <ruleId>CONF:31950</ruleId>
+    <ruleId>CONF:1098-31950</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_zifqMI9DEeOB0eBUISUB4Q" base_Property="_XfFp0I9DEeOB0eBUISUB4Q">
-    <ruleId>CONF:31946</ruleId>
+    <ruleId>CONF:1098-31946</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_z89_sI9DEeOB0eBUISUB4Q" base_Property="_XfFp0Y9DEeOB0eBUISUB4Q">
-    <ruleId>CONF:31954</ruleId>
+    <ruleId>CONF:1098-31954</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_02yjoI9DEeOB0eBUISUB4Q" base_Property="_XfFCwI9DEeOB0eBUISUB4Q">
-    <ruleId>CONF:31951</ruleId>
+    <ruleId>CONF:1098-31951</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_1PuoEI9DEeOB0eBUISUB4Q" message="Consol Planned Coverage SHALL contain exactly one [1..1] @classCode=&quot;ACT&quot; Act (CodeSystem: 2.16.840.1.113883.5.4 ActCode) (CONF:31945)" base_Property="_XfEbsI9DEeOB0eBUISUB4Q">
-    <ruleId>CONF:31945</ruleId>
+  <CDA:PropertyValidation xmi:id="_1PuoEI9DEeOB0eBUISUB4Q" message="Consol Planned Coverage SHALL contain exactly one [1..1] @classCode=&quot;ACT&quot; Act (CodeSystem: 2.16.840.1.113883.5.4 ActCode) (CONF:1098-31945)" base_Property="_XfEbsI9DEeOB0eBUISUB4Q">
+    <ruleId>CONF:1098-31945</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_BzotMI9HEeOB0eBUISUB4Q" code="48768-6" displayName="Payment Sources" base_Property="_XfFCwI9DEeOB0eBUISUB4Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31952</ruleId>
-    <ruleId>CONF:31953</ruleId>
+    <ruleId>CONF:1098-31952</ruleId>
+    <ruleId>CONF:1098-31953</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_PTIYMI9HEeOB0eBUISUB4Q" code="active" displayName="Active" base_Property="_XfFp0Y9DEeOB0eBUISUB4Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31955</ruleId>
+    <ruleId>CONF:1098-31955</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_exTZkI9LEeOB0eBUISUB4Q" message="Consol Entry Relationship SHALL contain exactly one [1..1] @typeCode=&quot;COMP&quot; , which SHALL be selected from (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) (CONF:31968)" base_Property="_QXkT4I9LEeOB0eBUISUB4Q">
-    <ruleId>CONF:31968</ruleId>
+    <ruleId>CONF:1098-31968</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_bD7eAI9NEeOB0eBUISUB4Q" base_Property="_QZIIMI9NEeOB0eBUISUB4Q">
-    <ruleId>CONF:31970</ruleId>
+    <ruleId>CONF:1098-31970</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_ba824I9NEeOB0eBUISUB4Q" base_Property="_QZIvQI9NEeOB0eBUISUB4Q">
-    <ruleId>CONF:31971</ruleId>
+    <ruleId>CONF:1098-31971</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_cB7-YI9NEeOB0eBUISUB4Q" base_Property="_QZIIMo9NEeOB0eBUISUB4Q">
-    <ruleId>CONF:31972</ruleId>
+    <ruleId>CONF:1098-31972</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_ch0YUI9NEeOB0eBUISUB4Q" base_Property="_QZIIMY9NEeOB0eBUISUB4Q"/>
   <CDA:PropertyValidation xmi:id="_c-0dYI9NEeOB0eBUISUB4Q" base_Property="_QZIvQY9NEeOB0eBUISUB4Q">
-    <ruleId>CONF:31974</ruleId>
+    <ruleId>CONF:1098-31974</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_C58w0I9OEeOB0eBUISUB4Q" code="active" displayName="Active" base_Property="_QZIvQY9NEeOB0eBUISUB4Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31975</ruleId>
+    <ruleId>CONF:1098-31975</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_yGfTUI9QEeOB0eBUISUB4Q" base_Property="_QZIIMY9NEeOB0eBUISUB4Q">
     <reference href="../consol-vocab.uml#_8AS78Y9OEeOB0eBUISUB4Q"/>
-    <ruleId>CONF:31973</ruleId>
+    <ruleId>CONF:1098-31973</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_aJr6ULkxEeODDJAC5t5vpw" clientDependency="_wiqHcLkxEeODDJAC5t5vpw" name="CoverageActivity2">
     <ownedComment xmi:id="_-FQw0LkxEeODDJAC5t5vpw">
@@ -1362,4 +1367,10 @@ The sources of payment are represented as a Coverage Activity, which identifies 
   <CDA:ConstraintValidation xmi:id="_0Gwq0Mj1EeSUFZXOgtrJuQ" base_Constraint="_g7DD4Mj1EeSUFZXOgtrJuQ">
     <ruleId>CONF:1098-17139</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_ReWBkACpEeWNGdLwd_3YGQ" memberEnd="_ReVagACpEeWNGdLwd_3YGQ _ReWooACpEeWNGdLwd_3YGQ">
+    <ownedEnd xmi:id="_ReWooACpEeWNGdLwd_3YGQ" type="_O2I3AI9DEeOB0eBUISUB4Q" association="_ReWBkACpEeWNGdLwd_3YGQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_TS028ACpEeWNGdLwd_3YGQ" severity="INFO" base_Association="_ReWBkACpEeWNGdLwd_3YGQ">
+    <ruleId>CONF:1098-32178</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

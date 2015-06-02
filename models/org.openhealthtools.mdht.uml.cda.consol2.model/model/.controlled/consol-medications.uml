@@ -1453,7 +1453,12 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_MbKs8IqvEeOoMZgUoTghIg" name="DrugMonitoringAct">
     <ownedComment xmi:id="_OWb3EIrAEeOoMZgUoTghIg">
-      <body>This template represents the person responsible for monitoring the medication. The prescriber of the medication is not necessarily the same person as the one designated to monitor the drug.</body>
+      <body>&lt;p>&#xD;
+This template represents the act of monitoring the patient's medication and includes a participation to record the person responsible for monitoring the medication. The prescriber of the medication is not necessarily the same person or persons monitoring the drug. The effectiveTime indicates the time when the activity is intended to take place.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+For example, a cardiologist may prescribe a patient Warfarin. The patient's primary care provider may monitor the patient's INR and adjust the dosing of the Warfarin based on these lab results. Here the person designated to monitor the drug is the primary care provider.&#xD;
+&lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_MbKs8YqvEeOoMZgUoTghIg">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
@@ -1549,7 +1554,7 @@ The UDI should be sent in the participantRole/id.</body>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_nv0DUIzzEeOoMZgUoTghIg" name="name" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+            <type xmi:type="uml:Class" href="consol-documents.uml#_SmlTcJBEEeSSfIVHL_x3Xw"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2nj6sIzzEeOoMZgUoTghIg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2njToIzzEeOoMZgUoTghIg" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
@@ -1559,46 +1564,46 @@ The UDI should be sent in the participantRole/id.</body>
     </nestedClassifier>
   </uml:Class>
   <CDA:PropertyValidation xmi:id="_Df5loIqwEeOoMZgUoTghIg" base_Property="_WDrfVIqvEeOoMZgUoTghIg">
-    <ruleId>CONF:31920</ruleId>
+    <ruleId>CONF:1098-31920</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_KPWgMIqwEeOoMZgUoTghIg" base_Property="_WDq4QIqvEeOoMZgUoTghIg">
-    <ruleId>CONF:30823</ruleId>
+    <ruleId>CONF:1098-30823</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_K4I-gIqwEeOoMZgUoTghIg" base_Property="_WDrfUIqvEeOoMZgUoTghIg">
-    <ruleId>CONF:28660</ruleId>
+    <ruleId>CONF:1098-28660</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Ldr7kIqwEeOoMZgUoTghIg" base_Property="_WDrfUYqvEeOoMZgUoTghIg">
-    <ruleId>CONF:31922</ruleId>
+    <ruleId>CONF:1098-31922</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_MC6vkIqwEeOoMZgUoTghIg" base_Property="_WDsGYIqvEeOoMZgUoTghIg">
-    <ruleId>CONF:28656</ruleId>
+    <ruleId>CONF:1098-28656</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_MauLkIqwEeOoMZgUoTghIg" base_Property="_WDsGYYqvEeOoMZgUoTghIg">
-    <ruleId>CONF:31921</ruleId>
+    <ruleId>CONF:1098-31921</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_NDs3IIqwEeOoMZgUoTghIg" base_Class="_MbKs8IqvEeOoMZgUoTghIg" templateId="2.16.840.1.113883.10.20.22.4.123">
-    <ruleId>CONF:28657</ruleId>
-    <ruleId>CONF:28658</ruleId>
+    <ruleId>CONF:1098-28657</ruleId>
+    <ruleId>CONF:1098-28658</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_IpFAwIrCEeOoMZgUoTghIg" code="395170001" displayName="medication monitoring (regime/therapy)" base_Property="_WDrfUIqvEeOoMZgUoTghIg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:30818</ruleId>
-    <ruleId>CONF:30819</ruleId>
+    <ruleId>CONF:1098-30818</ruleId>
+    <ruleId>CONF:1098-30819</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_FhrGYIzwEeOoMZgUoTghIg" base_Property="_8eX54IzvEeOoMZgUoTghIg">
-    <ruleId>CONF:28663</ruleId>
+    <ruleId>CONF:1098-28663</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_xPuIwIzyEeOoMZgUoTghIg" base_Property="_ugFSsIzyEeOoMZgUoTghIg">
-    <ruleId>CONF:28664</ruleId>
+    <ruleId>CONF:1098-28664</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_DiOPwIzzEeOoMZgUoTghIg" base_Property="_ugF5wIzyEeOoMZgUoTghIg">
-    <ruleId>CONF:28665</ruleId>
+    <ruleId>CONF:1098-28665</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_0bUsoIzzEeOoMZgUoTghIg" base_Property="_nvzcQIzzEeOoMZgUoTghIg">
-    <ruleId>CONF:28668</ruleId>
+    <ruleId>CONF:1098-28668</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_3HD6IIzzEeOoMZgUoTghIg" base_Property="_nv0DUIzzEeOoMZgUoTghIg">
-    <ruleId>CONF:28669</ruleId>
+  <CDA:PropertyValidation xmi:id="_3HD6IIzzEeOoMZgUoTghIg" message="This playingEntity SHALL contain exactly one [1..1] US Realm Patient Name (PTN.US.FIELDED) (identifier: urn:oid:2.16.840.1.113883.10.20.22.5.1) (CONF:1098-28669)." base_Property="_nv0DUIzzEeOoMZgUoTghIg">
+    <ruleId>CONF:1098-28669</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_ZQpEwK-1EeO8duI_7f6kZw" clientDependency="_z821MLBkEeOtlapy2HWYww" name="AdmissionMedication2">
     <ownedComment xmi:id="_qsCkoK-1EeO8duI_7f6kZw">
@@ -2675,5 +2680,9 @@ This section requires either an entry indicating the subject is not known to be 
   <CDA:ValueSetConstraint xmi:id="_JAJr4MhDEeSU-Km0iFeHDg" base_Property="_2GHbxhSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7519</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_WpUWIPpdEeS-CfvNxekztA" base_Property="_WDsGYYqvEeOoMZgUoTghIg">
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-32358</ruleId>
   </CDA:ValueSetConstraint>
 </xmi:XMI>

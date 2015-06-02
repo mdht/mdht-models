@@ -723,8 +723,12 @@
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_KRcPwJXFEeOgXcDbh8Igkw" name="PlannedImmunizationActivity">
     <ownedComment xmi:id="_tvCUUJXGEeOgXcDbh8Igkw">
-      <body>This template represents planned immunizations. Planned Immunization Activity is very similar to Planned Medication Activity with some key differences, for example, the drug code system is constrained to CVX codes. &#xD;
-The priority of the immunization activity to the patient and provider is communicated through Patient Priority Preference and Provider Priority Preference. The effectiveTime indicates the time when the immunization activity is intended to take place and authorTime indicates when the documentation of the plan occurred.</body>
+      <body>&lt;p>&#xD;
+This template represents planned immunizations. Planned Immunization Activity is very similar to Planned Medication Activity with some key differences, for example, the drug code system is constrained to CVX codes.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The priority of the immunization activity to the patient and provider is communicated through Priority Preference. The effectiveTime indicates the time when the immunization activity is intended to take place and authorTime indicates when the documentation of the plan occurred.&#xD;
+&lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_KResAJXFEeOgXcDbh8Igkw">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_nazskEbuEd6besF9iFIJkQ"/>
@@ -757,8 +761,8 @@ The priority of the immunization activity to the patient and provider is communi
         <body>The effectiveTime in a planned immunization activity represents the time that the immunization activity should occur.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_roqTJ5XFEeOgXcDbh8Igkw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_roqTJpXFEeOgXcDbh8Igkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GyxdcQCuEeWNGdLwd_3YGQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GyxdcACuEeWNGdLwd_3YGQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_u37zEErsEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rorhQZXFEeOgXcDbh8Igkw" name="repeatNumber" visibility="private" aggregation="composite">
@@ -778,8 +782,8 @@ The priority of the immunization activity to the patient and provider is communi
     </ownedAttribute>
     <ownedAttribute xmi:id="_romowJXFEeOgXcDbh8Igkw" name="approachSiteCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T-_G0M_TEeOGjf7FaidRGw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T--fwM_TEeOGjf7FaidRGw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WECBAACuEeWNGdLwd_3YGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WEBZ8ACuEeWNGdLwd_3YGQ" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_ATlKkErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_roqTIpXFEeOgXcDbh8Igkw" name="doseQuantity" visibility="private" type="_5NpTYJXLEeOgXcDbh8Igkw" aggregation="composite">
@@ -804,14 +808,9 @@ The priority of the immunization activity to the patient and provider is communi
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F4YvUK70EeORf5eJaKt1KQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F4YvUa70EeORf5eJaKt1KQ" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_o-_WoJXPEeOgXcDbh8Igkw" name="patientPriorityPreference" association="_o-_9sJXPEeOgXcDbh8Igkw">
-      <type xmi:type="uml:Class" href="consol-planofcare.uml#_UqXAAI6hEeOB0eBUISUB4Q"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o-_WoZXPEeOgXcDbh8Igkw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o-_WopXPEeOgXcDbh8Igkw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_cityMK70EeORf5eJaKt1KQ" name="providerPriorityPreference" association="_civnYK70EeORf5eJaKt1KQ">
+    <ownedAttribute xmi:id="_cityMK70EeORf5eJaKt1KQ" name="priorityPreference" association="_civnYK70EeORf5eJaKt1KQ">
       <ownedComment xmi:id="_OQsBkK71EeORf5eJaKt1KQ">
-        <body>This entryRelationship represents the priority that a provider places on the immunization activity.</body>
+        <body>The following entryRelationship represents the priority that a patient or a provider places on the immunization activity.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="consol-planofcare.uml#_ncafYJmaEeOLJeQez13EkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cityMa70EeORf5eJaKt1KQ"/>
@@ -819,7 +818,7 @@ The priority of the immunization activity to the patient and provider is communi
     </ownedAttribute>
     <ownedAttribute xmi:id="_35uAUDqxEeSyGa6KC25kiw" name="indication2" association="_35vOcDqxEeSyGa6KC25kiw">
       <ownedComment xmi:id="_FRjkIDqyEeSyGa6KC25kiw">
-        <body>This entryRelationship represents the indication for the immunization activity.</body>
+        <body>The following entryRelationship represents the indication for the immunization activity.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="consol-other.uml#_PrEOIOHoEeO04sHNODkHmQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_35unYDqxEeSyGa6KC25kiw"/>
@@ -827,7 +826,7 @@ The priority of the immunization activity to the patient and provider is communi
     </ownedAttribute>
     <ownedAttribute xmi:id="_UXoycDqyEeSyGa6KC25kiw" name="instruction2" association="_UXqnoDqyEeSyGa6KC25kiw">
       <ownedComment xmi:id="_qoAnwDqzEeSyGa6KC25kiw">
-        <body>This entryRelationship captures any instructions associated with the planned immunization activity.</body>
+        <body>The following entryRelationship captures any instructions associated with the planned immunization activity.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="consol-other.uml#_D62NwOH7EeO04sHNODkHmQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UXpZgDqyEeSyGa6KC25kiw"/>
@@ -842,6 +841,9 @@ The priority of the immunization activity to the patient and provider is communi
         <body>INLINE</body>
       </ownedComment>
       <ownedRule xmi:id="_GSOkAJXMEeOgXcDbh8Igkw" name="unitTerminology" constrainedElement="_8MbYsJXLEeOgXcDbh8Igkw">
+        <ownedComment xmi:id="_9I8R4ACsEeWNGdLwd_3YGQ">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_TtaWwJXMEeOgXcDbh8Igkw">
           <language>Analysis</language>
           <body>The doseQuantity/@unit SHALL be selected from ValueSet UnitsOfMeasureCaseSensitive 2.16.840.1.113883.1.11.12839 DYNAMIC</body>
@@ -895,46 +897,46 @@ The priority of the immunization activity to the patient and provider is communi
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_xKmcQJXGEeOgXcDbh8Igkw" base_Class="_KRcPwJXFEeOgXcDbh8Igkw" templateId="2.16.840.1.113883.10.20.22.4.120">
-    <ruleId>CONF:32098</ruleId>
-    <ruleId>CONF:32099</ruleId>
+    <ruleId>CONF:1098-32098</ruleId>
+    <ruleId>CONF:1098-32099</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_AxDMsJXHEeOgXcDbh8Igkw" base_Property="_roqTIJXFEeOgXcDbh8Igkw">
-    <ruleId>CONF:32091</ruleId>
+    <ruleId>CONF:1098-32091</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_CYcBQJXHEeOgXcDbh8Igkw" base_Property="_roq6MJXFEeOgXcDbh8Igkw">
-    <ruleId>CONF:32100</ruleId>
+    <ruleId>CONF:1098-32100</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_C6nhQJXHEeOgXcDbh8Igkw" base_Property="_rosIUJXFEeOgXcDbh8Igkw">
-    <ruleId>CONF:32101</ruleId>
+    <ruleId>CONF:1098-32101</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_DpmuMJXHEeOgXcDbh8Igkw" severity="INFO" base_Property="_roqTJZXFEeOgXcDbh8Igkw">
-    <ruleId>CONF:32103</ruleId>
+  <CDA:PropertyValidation xmi:id="_DpmuMJXHEeOgXcDbh8Igkw" base_Property="_roqTJZXFEeOgXcDbh8Igkw">
+    <ruleId>CONF:1098-32103</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_EcarMJXHEeOgXcDbh8Igkw" severity="INFO" base_Property="_rorhQZXFEeOgXcDbh8Igkw">
-    <ruleId>CONF:32126</ruleId>
+    <ruleId>CONF:1098-32126</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_FCzVwJXHEeOgXcDbh8Igkw" severity="INFO" base_Property="_rorhRJXFEeOgXcDbh8Igkw"/>
-  <CDA:PropertyValidation xmi:id="_GUJB0JXHEeOgXcDbh8Igkw" base_Property="_romowJXFEeOgXcDbh8Igkw"/>
+  <CDA:PropertyValidation xmi:id="_GUJB0JXHEeOgXcDbh8Igkw" severity="INFO" base_Property="_romowJXFEeOgXcDbh8Igkw"/>
   <CDA:PropertyValidation xmi:id="_HYCHwJXHEeOgXcDbh8Igkw" severity="INFO" base_Property="_roqTIpXFEeOgXcDbh8Igkw">
-    <ruleId>CONF:32129</ruleId>
+    <ruleId>CONF:1098-32129</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_Hq8KwJXJEeOgXcDbh8Igkw" code="active" displayName="Active" base_Property="_rosIUJXFEeOgXcDbh8Igkw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:32102</ruleId>
+    <ruleId>CONF:1098-32102</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_jioDUJXJEeOgXcDbh8Igkw" base_Property="_rorhRJXFEeOgXcDbh8Igkw">
     <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:32127</ruleId>
+    <ruleId>CONF:1098-32127</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_-P-2wJXJEeOgXcDbh8Igkw" base_Property="_romowJXFEeOgXcDbh8Igkw">
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:32128</ruleId>
+    <ruleId>CONF:1098-32128</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_-OtZgJXLEeOgXcDbh8Igkw" severity="WARNING" base_Property="_8MbYsJXLEeOgXcDbh8Igkw">
-    <ruleId>CONF:32130</ruleId>
+    <ruleId>CONF:1098-32130</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_Mdt14JXMEeOgXcDbh8Igkw" base_Constraint="_GSOkAJXMEeOgXcDbh8Igkw">
-    <ruleId>CONF:32130</ruleId>
+    <ruleId>CONF:1098-32130</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_n2J7wJXOEeOgXcDbh8Igkw" memberEnd="_n2ItoJXOEeOgXcDbh8Igkw _n2J7wZXOEeOgXcDbh8Igkw">
     <ownedComment xmi:id="_Wd6oIJXPEeOgXcDbh8Igkw">
@@ -943,36 +945,25 @@ The priority of the immunization activity to the patient and provider is communi
     <ownedEnd xmi:id="_n2J7wZXOEeOgXcDbh8Igkw" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_n2J7wJXOEeOgXcDbh8Igkw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_rWP-YJXOEeOgXcDbh8Igkw" severity="INFO" base_Association="_n2J7wJXOEeOgXcDbh8Igkw">
-    <ruleId>CONF:32104</ruleId>
+    <ruleId>CONF:1098-32104</ruleId>
   </CDA:AssociationValidation>
-  <uml:Association xmi:id="_o-_9sJXPEeOgXcDbh8Igkw" memberEnd="_o-_WoJXPEeOgXcDbh8Igkw _o-_9sZXPEeOgXcDbh8Igkw">
-    <ownedComment xmi:id="_8rn5UJXPEeOgXcDbh8Igkw">
-      <body>This entryRelationship represents the priority that a patient places on the immunization activity.</body>
-    </ownedComment>
-    <ownedEnd xmi:id="_o-_9sZXPEeOgXcDbh8Igkw" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_o-_9sJXPEeOgXcDbh8Igkw"/>
-  </uml:Association>
-  <CDA:EntryRelationship xmi:id="_xN4DoJXPEeOgXcDbh8Igkw" severity="INFO" base_Association="_o-_9sJXPEeOgXcDbh8Igkw" typeCode="REFR">
-    <ruleId>CONF:32108</ruleId>
-    <ruleId>CONF:32109</ruleId>
-    <ruleId>CONF:32110</ruleId>
-  </CDA:EntryRelationship>
   <CDA:ValueSetConstraint xmi:id="_lbBQsJgsEeOgXcDbh8Igkw" base_Property="_rorhQJXFEeOgXcDbh8Igkw">
-    <reference href="../consol-vocab.uml#_u3o3AG1HEeGCevFpokwODw"/>
-    <ruleId>CONF:32097</ruleId>
+    <reference href="../consol-vocab.uml#_jUMsBgCtEeWNGdLwd_3YGQ"/>
+    <ruleId>CONF:1098-32097</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_F4Z9cK70EeORf5eJaKt1KQ" memberEnd="_F4W6IK70EeORf5eJaKt1KQ _F4akgK70EeORf5eJaKt1KQ">
     <ownedEnd xmi:id="_F4akgK70EeORf5eJaKt1KQ" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_F4Z9cK70EeORf5eJaKt1KQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_GdUoYK70EeORf5eJaKt1KQ" severity="INFO" base_Association="_F4Z9cK70EeORf5eJaKt1KQ">
-    <ruleId>CONF:32105</ruleId>
+    <ruleId>CONF:1098-32105</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_civnYK70EeORf5eJaKt1KQ" memberEnd="_cityMK70EeORf5eJaKt1KQ _civnYa70EeORf5eJaKt1KQ">
     <ownedEnd xmi:id="_civnYa70EeORf5eJaKt1KQ" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_civnYK70EeORf5eJaKt1KQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_4peBgK70EeORf5eJaKt1KQ" severity="INFO" base_Association="_civnYK70EeORf5eJaKt1KQ" typeCode="REFR">
-    <ruleId>CONF:32111</ruleId>
-    <ruleId>CONF:32112</ruleId>
-    <ruleId>CONF:32113</ruleId>
+    <ruleId>CONF:1098-32108</ruleId>
+    <ruleId>CONF:1098-32109</ruleId>
+    <ruleId>CONF:1098-32110</ruleId>
   </CDA:EntryRelationship>
   <CDA:PropertyValidation xmi:id="_Y1-IwK72EeORf5eJaKt1KQ" base_Property="_rorhQJXFEeOgXcDbh8Igkw"/>
   <uml:Class xmi:id="_zI6vcOE7EeOTq9XEMvvkWw" clientDependency="_uJQiEOE8EeOTq9XEMvvkWw" name="ImmunizationActivity2">
@@ -1461,44 +1452,44 @@ This information should be included in an Immunization Activity when available. 
     <ownedEnd xmi:id="_35vOcTqxEeSyGa6KC25kiw" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_35vOcDqxEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_5qW3gDqxEeSyGa6KC25kiw" severity="INFO" base_Association="_35vOcDqxEeSyGa6KC25kiw" typeCode="RSON">
-    <ruleId>CONF:32114</ruleId>
-    <ruleId>CONF:32115</ruleId>
-    <ruleId>CONF:32116</ruleId>
+    <ruleId>CONF:1098-32114</ruleId>
+    <ruleId>CONF:1098-32115</ruleId>
+    <ruleId>CONF:1098-32116</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_UXqnoDqyEeSyGa6KC25kiw" memberEnd="_UXoycDqyEeSyGa6KC25kiw _UXrOsDqyEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_UXrOsDqyEeSyGa6KC25kiw" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_UXqnoDqyEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_WED4ADqyEeSyGa6KC25kiw" severity="INFO" base_Association="_UXqnoDqyEeSyGa6KC25kiw" typeCode="SUBJ">
-    <ruleId>CONF:32117</ruleId>
-    <ruleId>CONF:32118</ruleId>
-    <ruleId>CONF:32119</ruleId>
+    <ruleId>CONF:1098-32117</ruleId>
+    <ruleId>CONF:1098-32118</ruleId>
+    <ruleId>CONF:1098-32119</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_AxfnYDq0EeSyGa6KC25kiw" memberEnd="_AxdyMDq0EeSyGa6KC25kiw _AxfnYTq0EeSyGa6KC25kiw">
     <ownedEnd xmi:id="_AxfnYTq0EeSyGa6KC25kiw" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_AxfnYDq0EeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_BQzZkDq0EeSyGa6KC25kiw" severity="INFO" base_Association="_AxfnYDq0EeSyGa6KC25kiw">
-    <ruleId>CONF:32123</ruleId>
+    <ruleId>CONF:1098-32123</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_K-TZoDq0EeSyGa6KC25kiw" base_Property="_JxWeUDq0EeSyGa6KC25kiw">
-    <ruleId>CONF:32124</ruleId>
+    <ruleId>CONF:1098-32124</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_d3xaADq0EeSyGa6KC25kiw" memberEnd="_d3u9wDq0EeSyGa6KC25kiw _d3xaATq0EeSyGa6KC25kiw">
     <ownedEnd xmi:id="_d3xaATq0EeSyGa6KC25kiw" type="_F3AvsDq0EeSyGa6KC25kiw" association="_d3xaADq0EeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_eLoxMDq0EeSyGa6KC25kiw" base_Association="_d3xaADq0EeSyGa6KC25kiw">
-    <ruleId>CONF:32125</ruleId>
+    <ruleId>CONF:1098-32125</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_tmjVIDq2EeSyGa6KC25kiw" memberEnd="_tmhf8Dq2EeSyGa6KC25kiw _tmj8MDq2EeSyGa6KC25kiw">
     <ownedEnd xmi:id="_tmj8MDq2EeSyGa6KC25kiw" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_tmjVIDq2EeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_u8sBoDq2EeSyGa6KC25kiw" base_Association="_tmjVIDq2EeSyGa6KC25kiw">
-    <ruleId>CONF:32131</ruleId>
+    <ruleId>CONF:1098-32131</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_KzGu4Dq3EeSyGa6KC25kiw" memberEnd="_KzESoDq3EeSyGa6KC25kiw _KzGu4Tq3EeSyGa6KC25kiw">
     <ownedEnd xmi:id="_KzGu4Tq3EeSyGa6KC25kiw" type="_8qRzADq2EeSyGa6KC25kiw" association="_KzGu4Dq3EeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_LuDUMDq3EeSyGa6KC25kiw" base_Association="_KzGu4Dq3EeSyGa6KC25kiw">
-    <ruleId>CONF:32132</ruleId>
+    <ruleId>CONF:1098-32132</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_6Lje0D3MEeSyGa6KC25kiw" memberEnd="_6LiQsD3MEeSyGa6KC25kiw _6LkF4D3MEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_6LkF4D3MEeSyGa6KC25kiw" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_6Lje0D3MEeSyGa6KC25kiw"/>
