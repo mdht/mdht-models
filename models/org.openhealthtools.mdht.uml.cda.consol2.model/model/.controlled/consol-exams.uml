@@ -550,7 +550,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
               <language>Analysis</language>
               <language>OCL</language>
               <body>The @code SHOULD be selected from ValueSet TargetSite Qualifiers 2.16.840.1.113883.11.20.9.37 STATIC 2014-09-01</body>
-              <body>codeSystem = '2.16.840.1.113883.6.96'</body>
+              <body>code = '2.16.840.1.113883.6.96'</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_TLQ3ET6xEeSQrqXAgqtM5g">
@@ -582,7 +582,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_UhUHcJqDEeOK6dzbL4VoTA" severity="WARNING"/>
   <CDA:CodeSystemConstraint xmi:id="_CaNisJqEEeOK6dzbL4VoTA" code="ASSERTION" displayName="assertion" base_Property="_D3928ZqAEeOK6dzbL4VoTA">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-29477</ruleId>
     <ruleId>CONF:1098-31010</ruleId>
   </CDA:CodeSystemConstraint>
@@ -792,7 +792,7 @@ The Physical Exam Section may contain multiple nested subsections.</body>
     <ruleId>CONF:1098-29493</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_HKsBID6xEeSQrqXAgqtM5g" code="272741003" displayName="laterality" base_Property="_A9KH4D6xEeSQrqXAgqtM5g">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-29492</ruleId>
     <ruleId>CONF:1098-31524</ruleId>
   </CDA:CodeSystemConstraint>
