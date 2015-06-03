@@ -29,11 +29,10 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
+import org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2;
 import org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation;
-import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -81,7 +80,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::WoundObservation))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::LongitudinalCareWoundObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSection2WoundObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Wound Observation</em>}' invariant operation.
@@ -525,7 +524,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_WOUND_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::WoundObservation)).oclAsType(consol::WoundObservation)";
+	protected static final String GET_WOUND_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::LongitudinalCareWoundObservation)).oclAsType(consol::LongitudinalCareWoundObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getWoundObservations(PhysicalExamSection2) <em>Get Wound Observations</em>}' query operation.
@@ -543,7 +542,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	 * @generated
 	 */
 
-	public static EList<WoundObservation> getWoundObservations(PhysicalExamSection2 physicalExamSection2) {
+	public static EList<LongitudinalCareWoundObservation> getWoundObservations(PhysicalExamSection2 physicalExamSection2) {
 		if (GET_WOUND_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -557,8 +556,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_WOUND_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<WoundObservation> result = (Collection<WoundObservation>) query.evaluate(physicalExamSection2);
-		return new BasicEList.UnmodifiableEList<WoundObservation>(result.size(), result.toArray());
+		Collection<LongitudinalCareWoundObservation> result = (Collection<LongitudinalCareWoundObservation>) query.evaluate(physicalExamSection2);
+		return new BasicEList.UnmodifiableEList<LongitudinalCareWoundObservation>(result.size(), result.toArray());
 	}
 
 	/**

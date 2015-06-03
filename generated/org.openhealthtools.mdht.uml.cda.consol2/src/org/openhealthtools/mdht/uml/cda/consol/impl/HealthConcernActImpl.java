@@ -18,43 +18,39 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.ActReference;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
-import org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2;
-import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
-import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer;
+import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
+import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2;
-import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation;
+import org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionalStatusObservation;
-import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis2;
+import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
-import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
+import org.openhealthtools.mdht.uml.cda.consol.SensoryStatus;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthConcernActOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
@@ -162,6 +158,15 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHealthConcernActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateHealthConcernActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActEffectiveTime(this, diagnostics, context);
@@ -172,9 +177,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateHealthConcernActActReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActActReference(this, diagnostics, context);
+	public boolean validateHealthConcernActErRefr(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActErRefr(this, diagnostics, context);
 	}
 
 	/**
@@ -182,8 +186,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthConcernActActReferenceExtra(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActActReferenceExtra(this, diagnostics, context);
+	public boolean validateHealthConcernActErComp(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActErComp(this, diagnostics, context);
 	}
 
 	/**
@@ -202,33 +206,9 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateHealthConcernActCognitiveAbilitiesObservation(DiagnosticChain diagnostics,
+	public boolean validateHealthConcernActFamilyHistoryOrganizer2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActCognitiveAbilitiesObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHealthConcernActFamilyHistoryOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActFamilyHistoryOrganizer(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHealthConcernActMentalStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActMentalStatusObservation(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActFamilyHistoryOrganizer2(this, diagnostics, context);
 	}
 
 	/**
@@ -239,16 +219,6 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	@Override
 	public boolean validateHealthConcernActNutritionAssessment(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActNutritionAssessment(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHealthConcernActNutritionAssessmentExtra(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActNutritionAssessmentExtra(this, diagnostics, context);
 	}
 
 	/**
@@ -313,19 +283,9 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateHealthConcernActPatientPriorityPreference(DiagnosticChain diagnostics,
+	public boolean validateHealthConcernActEntryReferenceGeneral(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActPatientPriorityPreference(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHealthConcernActActReferenceExtra3(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActActReferenceExtra3(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActEntryReferenceGeneral(this, diagnostics, context);
 	}
 
 	/**
@@ -353,10 +313,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateHealthConcernActSensoryAndSpeechStatus(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActSensoryAndSpeechStatus(this, diagnostics, context);
+	public boolean validateHealthConcernActSensoryStatus(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActSensoryStatus(this, diagnostics, context);
 	}
 
 	/**
@@ -364,9 +322,10 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateHealthConcernActWoundObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActWoundObservation(this, diagnostics, context);
+	public boolean validateHealthConcernActLongitudinalCareWoundObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActLongitudinalCareWoundObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -374,21 +333,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateHealthConcernActProviderPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActProviderPriorityPreference(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHealthConcernActExternalDocumentReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActExternalDocumentReference(this, diagnostics, context);
+	public boolean validateHealthConcernActPriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActPriorityPreference(this, diagnostics, context);
 	}
 
 	/**
@@ -414,10 +360,9 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthConcernActCognitiveStatusObservation2(DiagnosticChain diagnostics,
+	public boolean validateHealthConcernActMentalStatusObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActCognitiveStatusObservation2(
-			this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActMentalStatusObservation2(this, diagnostics, context);
 	}
 
 	/**
@@ -425,20 +370,10 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthConcernActCognitiveStatusObservation2Extra(DiagnosticChain diagnostics,
+	public boolean validateHealthConcernActSmokingStatusMeaningfulUse2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActCognitiveStatusObservation2Extra(
+		return HealthConcernActOperations.validateHealthConcernActSmokingStatusMeaningfulUse2(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHealthConcernActCurrentSmokingStatus2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActCurrentSmokingStatus2(this, diagnostics, context);
 	}
 
 	/**
@@ -583,9 +518,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ActReference> getActReferences() {
-		return HealthConcernActOperations.getActReferences(this);
+	public boolean validateHealthConcernActReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActReference(this, diagnostics, context);
 	}
 
 	/**
@@ -593,8 +527,19 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ActReference> getActReferenceExtras() {
-		return HealthConcernActOperations.getActReferenceExtras(this);
+	public boolean validateHealthConcernActReferenceTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActReferenceTypeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernActReferenceExternalDocumentReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActReferenceExternalDocumentReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -612,29 +557,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<CognitiveAbilitiesObservation> getCognitiveAbilitiesObservations() {
-		return HealthConcernActOperations.getCognitiveAbilitiesObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<FamilyHistoryOrganizer> getFamilyHistoryOrganizers() {
-		return HealthConcernActOperations.getFamilyHistoryOrganizers(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<MentalStatusObservation> getMentalStatusObservations() {
-		return HealthConcernActOperations.getMentalStatusObservations(this);
+	public EList<FamilyHistoryOrganizer2> getFamilyHistoryOrganizer2s() {
+		return HealthConcernActOperations.getFamilyHistoryOrganizer2s(this);
 	}
 
 	/**
@@ -645,15 +569,6 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	@Override
 	public EList<NutritionAssessment> getNutritionAssessments() {
 		return HealthConcernActOperations.getNutritionAssessments(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<NutritionAssessment> getNutritionAssessmentExtras() {
-		return HealthConcernActOperations.getNutritionAssessmentExtras(this);
 	}
 
 	/**
@@ -711,18 +626,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
-		return HealthConcernActOperations.getPatientPriorityPreferences(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<ActReference> getActReferenceExtra3s() {
-		return HealthConcernActOperations.getActReferenceExtra3s(this);
+	public EList<EntryReference> getEntryReferenceGenerals() {
+		return HealthConcernActOperations.getEntryReferenceGenerals(this);
 	}
 
 	/**
@@ -740,9 +645,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<SensoryAndSpeechStatus> getSensoryAndSpeechStatuss() {
-		return HealthConcernActOperations.getSensoryAndSpeechStatuss(this);
+	public EList<SensoryStatus> getSensoryStatuss() {
+		return HealthConcernActOperations.getSensoryStatuss(this);
 	}
 
 	/**
@@ -750,9 +654,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<WoundObservation> getWoundObservations() {
-		return HealthConcernActOperations.getWoundObservations(this);
+	public EList<LongitudinalCareWoundObservation> getLongitudinalCareWoundObservations() {
+		return HealthConcernActOperations.getLongitudinalCareWoundObservations(this);
 	}
 
 	/**
@@ -760,19 +663,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
-		return HealthConcernActOperations.getProviderPriorityPreferences(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ExternalDocumentReference> getExternalDocumentReferences() {
-		return HealthConcernActOperations.getExternalDocumentReferences(this);
+	public EList<PriorityPreference> getPriorityPreferences() {
+		return HealthConcernActOperations.getPriorityPreferences(this);
 	}
 
 	/**
@@ -798,8 +690,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MentalStatusObservation2> getCognitiveStatusObservation2s() {
-		return HealthConcernActOperations.getCognitiveStatusObservation2s(this);
+	public EList<MentalStatusObservation2> getMentalStatusObservation2s() {
+		return HealthConcernActOperations.getMentalStatusObservation2s(this);
 	}
 
 	/**
@@ -807,17 +699,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MentalStatusObservation2> getCognitiveStatusObservation2Extras() {
-		return HealthConcernActOperations.getCognitiveStatusObservation2Extras(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<SmokingStatusMeaningfulUse2> getCurrentSmokingStatus2s() {
-		return HealthConcernActOperations.getCurrentSmokingStatus2s(this);
+	public EList<SmokingStatusMeaningfulUse2> getSmokingStatusMeaningfulUse2s() {
+		return HealthConcernActOperations.getSmokingStatusMeaningfulUse2s(this);
 	}
 
 	/**

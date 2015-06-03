@@ -59,6 +59,17 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateMedicalEquipmentOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerTemplateId(
@@ -159,6 +170,25 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	public boolean validateMedicalEquipmentOrganizerProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerProcedureActivityProcedure2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizerIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerIVLTSLow(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizerIVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerIVLTSHigh(
 			this, diagnostics, context);
 	}
 

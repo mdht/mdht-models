@@ -26,7 +26,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication;
+import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipants;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
 
@@ -132,7 +132,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HandoffCommunication))";
+	protected static final String VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HandoffCommunicationParticipants))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInterventionsSection2HandoffCommunication(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Handoff Communication</em>}' invariant operation.
@@ -296,7 +296,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HANDOFF_COMMUNICATIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunication)).oclAsType(consol::HandoffCommunication)";
+	protected static final String GET_HANDOFF_COMMUNICATIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunicationParticipants)).oclAsType(consol::HandoffCommunicationParticipants)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHandoffCommunications(InterventionsSection2) <em>Get Handoff Communications</em>}' query operation.
@@ -314,7 +314,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @generated
 	 */
 
-	public static EList<HandoffCommunication> getHandoffCommunications(InterventionsSection2 interventionsSection2) {
+	public static EList<HandoffCommunicationParticipants> getHandoffCommunications(
+			InterventionsSection2 interventionsSection2) {
 		if (GET_HANDOFF_COMMUNICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -328,8 +329,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HANDOFF_COMMUNICATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<HandoffCommunication> result = (Collection<HandoffCommunication>) query.evaluate(interventionsSection2);
-		return new BasicEList.UnmodifiableEList<HandoffCommunication>(result.size(), result.toArray());
+		Collection<HandoffCommunicationParticipants> result = (Collection<HandoffCommunicationParticipants>) query.evaluate(interventionsSection2);
+		return new BasicEList.UnmodifiableEList<HandoffCommunicationParticipants>(result.size(), result.toArray());
 	}
 
 	/**

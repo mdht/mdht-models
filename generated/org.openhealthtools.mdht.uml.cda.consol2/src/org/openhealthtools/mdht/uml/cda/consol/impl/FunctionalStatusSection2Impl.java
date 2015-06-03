@@ -28,8 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
-import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
-
+import org.openhealthtools.mdht.uml.cda.consol.SensoryStatus;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusSection2Operations;
 
 /**
@@ -217,7 +216,7 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * @generated
 	 */
 	@Override
-	public EList<SensoryAndSpeechStatus> getSensoryAndSpeechStatuss() {
+	public EList<SensoryStatus> getSensoryAndSpeechStatuss() {
 		return FunctionalStatusSection2Operations.getSensoryAndSpeechStatuss(this);
 	}
 

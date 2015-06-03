@@ -19,9 +19,8 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalFindingsOfSkinSection;
-import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalFindingsOfSkinSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
@@ -129,7 +128,7 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * @generated
 	 */
 	@Override
-	public EList<WoundObservation> getWoundObservations() {
+	public EList<LongitudinalCareWoundObservation> getWoundObservations() {
 		return PhysicalFindingsOfSkinSectionOperations.getWoundObservations(this);
 	}
 

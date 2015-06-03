@@ -22,7 +22,6 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.consol.ActReference;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
@@ -31,31 +30,31 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2;
+import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2;
+import org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionalStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis2;
+import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
-import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
+import org.openhealthtools.mdht.uml.cda.consol.SensoryStatus;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
@@ -117,6 +116,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#validateRiskConcernActEntryReferenceHealthConcern(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Entry Reference Health Concern</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#validateRiskConcernActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#validateRiskConcernActReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Reference Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#validateRiskConcernActReferenceExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Reference External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#getProblemObservation2s() <em>Get Problem Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#getAllergyObservation2s() <em>Get Allergy Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#getEntryReferenceRelatesTos() <em>Get Entry Reference Relates Tos</em>}</li>
@@ -906,7 +906,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ActReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRiskConcernActEntryReferenceRelatesTo(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Entry Reference Relates To</em>}' invariant operation.
@@ -965,7 +965,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ActReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRiskConcernActEntryReferenceHasComponent(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Entry Reference Has Component</em>}' invariant operation.
@@ -2034,7 +2034,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SensoryAndSpeechStatus) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SensoryStatus) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRiskConcernActSensoryStatus(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Sensory Status</em>}' invariant operation.
@@ -2331,7 +2331,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::WoundObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::LongitudinalCareWoundObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRiskConcernActWoundObservation(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Wound Observation</em>}' invariant operation.
@@ -2748,7 +2748,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRiskConcernActPriorityPreferencePatient(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Priority Preference Patient</em>}' invariant operation.
@@ -2807,7 +2807,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRiskConcernActPriorityPreferenceProvider(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Priority Preference Provider</em>}' invariant operation.
@@ -2926,7 +2926,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ActReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRiskConcernActEntryReferenceHealthConcern(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Entry Reference Health Concern</em>}' invariant operation.
@@ -3102,6 +3102,71 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateRiskConcernActReferenceExternalDocumentReference(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Reference External Document Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateRiskConcernActReferenceExternalDocumentReference(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null)->reject(externalDocument->one(externalDocument : cda::ExternalDocument | not externalDocument.oclIsUndefined() and externalDocument.oclIsKindOf(consol::ExternalDocumentReference)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateRiskConcernActReferenceExternalDocumentReference(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Reference External Document Reference</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateRiskConcernActReferenceExternalDocumentReference(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param riskConcernAct The receiving '<em><b>Risk Concern Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateRiskConcernActReferenceExternalDocumentReference(RiskConcernAct riskConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(riskConcernAct);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActReferenceExternalDocumentReference"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getProblemObservation2s(RiskConcernAct) <em>Get Problem Observation2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3132,7 +3197,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(100));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(101));
 			try {
 				GET_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3176,7 +3241,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(101));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(102));
 			try {
 				GET_ALLERGY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_ALLERGY_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3197,7 +3262,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ActReference)).oclAsType(consol::ActReference)";
+	protected static final String GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEntryReferenceRelatesTos(RiskConcernAct) <em>Get Entry Reference Relates Tos</em>}' query operation.
@@ -3215,12 +3280,12 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<ActReference> getEntryReferenceRelatesTos(RiskConcernAct riskConcernAct) {
+	public static EList<EntryReference> getEntryReferenceRelatesTos(RiskConcernAct riskConcernAct) {
 		if (GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(102));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(103));
 			try {
 				GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3229,8 +3294,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ActReference> result = (Collection<ActReference>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<ActReference>(result.size(), result.toArray());
+		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(riskConcernAct);
+		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3241,7 +3306,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ActReference)).oclAsType(consol::ActReference)";
+	protected static final String GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEntryReferenceHasComponents(RiskConcernAct) <em>Get Entry Reference Has Components</em>}' query operation.
@@ -3259,12 +3324,12 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<ActReference> getEntryReferenceHasComponents(RiskConcernAct riskConcernAct) {
+	public static EList<EntryReference> getEntryReferenceHasComponents(RiskConcernAct riskConcernAct) {
 		if (GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(103));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(104));
 			try {
 				GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3273,8 +3338,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ActReference> result = (Collection<ActReference>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<ActReference>(result.size(), result.toArray());
+		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(riskConcernAct);
+		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3308,7 +3373,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(104));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(105));
 			try {
 				GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3352,7 +3417,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(105));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(106));
 			try {
 				GET_MENTAL_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_MENTAL_STATUS_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3396,7 +3461,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(106));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(107));
 			try {
 				GET_SELF_CARE_ACTIVITIESS__EOCL_QRY = helper.createQuery(GET_SELF_CARE_ACTIVITIESS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3440,7 +3505,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(107));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(108));
 			try {
 				GET_MENTAL_STATUS_OBSERVATION2_BS__EOCL_QRY = helper.createQuery(GET_MENTAL_STATUS_OBSERVATION2_BS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3484,7 +3549,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(108));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(109));
 			try {
 				GET_SMOKING_STATUS_MEANINGFUL_USE2S__EOCL_QRY = helper.createQuery(GET_SMOKING_STATUS_MEANINGFUL_USE2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3528,7 +3593,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(109));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(110));
 			try {
 				GET_ENCOUNTER_DIAGNOSIS2S__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_DIAGNOSIS2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3572,7 +3637,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(110));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(111));
 			try {
 				GET_FAMILY_HISTORY_ORGANIZER2S__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_ORGANIZER2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3616,7 +3681,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(111));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(112));
 			try {
 				GET_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3660,7 +3725,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(112));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(113));
 			try {
 				GET_HOSPITAL_ADMISSION_DIAGNOSIS2S__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_DIAGNOSIS2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3704,7 +3769,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(113));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(114));
 			try {
 				GET_MENTAL_STATUS_OBSERVATION2_CS__EOCL_QRY = helper.createQuery(GET_MENTAL_STATUS_OBSERVATION2_CS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3748,7 +3813,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(114));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(115));
 			try {
 				GET_NUTRITION_ASSESSMENTS__EOCL_QRY = helper.createQuery(GET_NUTRITION_ASSESSMENTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3792,7 +3857,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(115));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(116));
 			try {
 				GET_NUTRITION_ASSESSMENT_BS__EOCL_QRY = helper.createQuery(GET_NUTRITION_ASSESSMENT_BS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3836,7 +3901,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(116));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(117));
 			try {
 				GET_POSTPROCEDURE_DIAGNOSIS2S__EOCL_QRY = helper.createQuery(GET_POSTPROCEDURE_DIAGNOSIS2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3880,7 +3945,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(117));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(118));
 			try {
 				GET_PREGNANCY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3924,7 +3989,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(118));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(119));
 			try {
 				GET_PREOPERATIVE_DIAGNOSIS2S__EOCL_QRY = helper.createQuery(GET_PREOPERATIVE_DIAGNOSIS2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3968,7 +4033,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(119));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(120));
 			try {
 				GET_REACTION_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_REACTION_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4012,7 +4077,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(120));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(121));
 			try {
 				GET_RESULT_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_RESULT_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4033,7 +4098,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SENSORY_STATUSS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SensoryAndSpeechStatus)).oclAsType(consol::SensoryAndSpeechStatus)";
+	protected static final String GET_SENSORY_STATUSS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SensoryStatus)).oclAsType(consol::SensoryStatus)";
 
 	/**
 	 * The cached OCL query for the '{@link #getSensoryStatuss(RiskConcernAct) <em>Get Sensory Statuss</em>}' query operation.
@@ -4051,12 +4116,12 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<SensoryAndSpeechStatus> getSensoryStatuss(RiskConcernAct riskConcernAct) {
+	public static EList<SensoryStatus> getSensoryStatuss(RiskConcernAct riskConcernAct) {
 		if (GET_SENSORY_STATUSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(121));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(122));
 			try {
 				GET_SENSORY_STATUSS__EOCL_QRY = helper.createQuery(GET_SENSORY_STATUSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4065,8 +4130,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_SENSORY_STATUSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<SensoryAndSpeechStatus> result = (Collection<SensoryAndSpeechStatus>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<SensoryAndSpeechStatus>(result.size(), result.toArray());
+		Collection<SensoryStatus> result = (Collection<SensoryStatus>) query.evaluate(riskConcernAct);
+		return new BasicEList.UnmodifiableEList<SensoryStatus>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4100,7 +4165,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(122));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(123));
 			try {
 				GET_SOCIAL_HISTORY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4145,7 +4210,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(123));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(124));
 			try {
 				GET_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4189,7 +4254,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(124));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(125));
 			try {
 				GET_TOBACCO_USE2S__EOCL_QRY = helper.createQuery(GET_TOBACCO_USE2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4233,7 +4298,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(125));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(126));
 			try {
 				GET_VITAL_SIGN_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_VITAL_SIGN_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4254,7 +4319,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_WOUND_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::WoundObservation)).oclAsType(consol::WoundObservation)";
+	protected static final String GET_WOUND_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::LongitudinalCareWoundObservation)).oclAsType(consol::LongitudinalCareWoundObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getWoundObservations(RiskConcernAct) <em>Get Wound Observations</em>}' query operation.
@@ -4272,12 +4337,12 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<WoundObservation> getWoundObservations(RiskConcernAct riskConcernAct) {
+	public static EList<LongitudinalCareWoundObservation> getWoundObservations(RiskConcernAct riskConcernAct) {
 		if (GET_WOUND_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(126));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(127));
 			try {
 				GET_WOUND_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WOUND_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4286,8 +4351,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_WOUND_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<WoundObservation> result = (Collection<WoundObservation>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<WoundObservation>(result.size(), result.toArray());
+		Collection<LongitudinalCareWoundObservation> result = (Collection<LongitudinalCareWoundObservation>) query.evaluate(riskConcernAct);
+		return new BasicEList.UnmodifiableEList<LongitudinalCareWoundObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4321,7 +4386,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(127));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(128));
 			try {
 				GET_PROBLEM_OBSERVATION2_HAS_SUPPORTS__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION2_HAS_SUPPORTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4365,7 +4430,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(128));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(129));
 			try {
 				GET_CAREGIVER_CHARACTERISTICSS__EOCL_QRY = helper.createQuery(GET_CAREGIVER_CHARACTERISTICSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4410,7 +4475,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(129));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(130));
 			try {
 				GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4455,7 +4520,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(130));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(131));
 			try {
 				GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_QRY = helper.createQuery(GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4499,7 +4564,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(131));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(132));
 			try {
 				GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4543,7 +4608,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(132));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(133));
 			try {
 				GET_RESULT_ORGANIZER2S__EOCL_QRY = helper.createQuery(GET_RESULT_ORGANIZER2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4564,7 +4629,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)";
+	protected static final String GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)).oclAsType(consol::PriorityPreference)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPriorityPreferencePatients(RiskConcernAct) <em>Get Priority Preference Patients</em>}' query operation.
@@ -4582,12 +4647,12 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<ProviderPriorityPreference> getPriorityPreferencePatients(RiskConcernAct riskConcernAct) {
+	public static EList<PriorityPreference> getPriorityPreferencePatients(RiskConcernAct riskConcernAct) {
 		if (GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(133));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(134));
 			try {
 				GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_QRY = helper.createQuery(GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4596,8 +4661,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProviderPriorityPreference> result = (Collection<ProviderPriorityPreference>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<ProviderPriorityPreference>(result.size(), result.toArray());
+		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(riskConcernAct);
+		return new BasicEList.UnmodifiableEList<PriorityPreference>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4608,7 +4673,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)";
+	protected static final String GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)).oclAsType(consol::PriorityPreference)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPriorityPreferenceProviders(RiskConcernAct) <em>Get Priority Preference Providers</em>}' query operation.
@@ -4626,12 +4691,12 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<ProviderPriorityPreference> getPriorityPreferenceProviders(RiskConcernAct riskConcernAct) {
+	public static EList<PriorityPreference> getPriorityPreferenceProviders(RiskConcernAct riskConcernAct) {
 		if (GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(134));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(135));
 			try {
 				GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_QRY = helper.createQuery(GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4640,8 +4705,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProviderPriorityPreference> result = (Collection<ProviderPriorityPreference>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<ProviderPriorityPreference>(result.size(), result.toArray());
+		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(riskConcernAct);
+		return new BasicEList.UnmodifiableEList<PriorityPreference>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4675,7 +4740,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(135));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(136));
 			try {
 				GET_PROBLEM_CONCERN_ACT2S__EOCL_QRY = helper.createQuery(GET_PROBLEM_CONCERN_ACT2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4696,7 +4761,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ActReference)).oclAsType(consol::ActReference)";
+	protected static final String GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEntryReferenceHealthConcerns(RiskConcernAct) <em>Get Entry Reference Health Concerns</em>}' query operation.
@@ -4714,12 +4779,12 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<ActReference> getEntryReferenceHealthConcerns(RiskConcernAct riskConcernAct) {
+	public static EList<EntryReference> getEntryReferenceHealthConcerns(RiskConcernAct riskConcernAct) {
 		if (GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RISK_CONCERN_ACT,
-				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(136));
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(137));
 			try {
 				GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4728,8 +4793,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ActReference> result = (Collection<ActReference>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<ActReference>(result.size(), result.toArray());
+		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(riskConcernAct);
+		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
 	}
 
 } // RiskConcernActOperations

@@ -20,9 +20,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
-import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication;
+import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipants;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
-import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendations;
+import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2;
@@ -153,10 +153,9 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlanOfTreatmentSection2NutritionRecommendations(DiagnosticChain diagnostics,
+	public boolean validatePlanOfTreatmentSection2NutritionRecommendation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2NutritionRecommendations(
+		return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2NutritionRecommendation(
 			this, diagnostics, context);
 	}
 
@@ -258,7 +257,7 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * @generated
 	 */
 	@Override
-	public EList<HandoffCommunication> getHandoffCommunications() {
+	public EList<HandoffCommunicationParticipants> getHandoffCommunications() {
 		return PlanOfTreatmentSection2Operations.getHandoffCommunications(this);
 	}
 
@@ -267,9 +266,8 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<NutritionRecommendations> getNutritionRecommendationss() {
-		return PlanOfTreatmentSection2Operations.getNutritionRecommendationss(this);
+	public EList<NutritionRecommendation> getNutritionRecommendations() {
+		return PlanOfTreatmentSection2Operations.getNutritionRecommendations(this);
 	}
 
 	/**

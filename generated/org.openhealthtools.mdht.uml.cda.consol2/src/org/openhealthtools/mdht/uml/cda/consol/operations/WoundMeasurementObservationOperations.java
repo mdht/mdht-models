@@ -382,7 +382,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 	 */
 	protected static final String VALIDATE_WOUND_MEASUREMENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '401239006' or value.code = '401238003' or value.code = '425094009'))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '39125-0' or value.code = '39127-6' or value.code = '39126-8'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateWoundMeasurementObservationCode(WoundMeasurementObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Measurement Observation Code</em>}' invariant operation.

@@ -394,8 +394,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createFetusSubjectContext();
 			case ConsolPackage.OBSERVER_CONTEXT:
 				return createObserverContext();
-			case ConsolPackage.ACT_REFERENCE:
-				return createActReference();
+			case ConsolPackage.ENTRY_REFERENCE:
+				return createEntryReference();
 			case ConsolPackage.ADVANCE_DIRECTIVE_ORGANIZER:
 				return createAdvanceDirectiveOrganizer();
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION2:
@@ -408,8 +408,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCulturalAndReligiousObservation();
 			case ConsolPackage.DRUG_MONITORING_ACT:
 				return createDrugMonitoringAct();
-			case ConsolPackage.HANDOFF_COMMUNICATION:
-				return createHandoffCommunication();
+			case ConsolPackage.HANDOFF_COMMUNICATION_PARTICIPANTS:
+				return createHandoffCommunicationParticipants();
 			case ConsolPackage.MEDICAL_EQUIPMENT_ORGANIZER:
 				return createMedicalEquipmentOrganizer();
 			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY2:
@@ -436,42 +436,56 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createMentalStatusObservation();
 			case ConsolPackage.NUTRITION_ASSESSMENT:
 				return createNutritionAssessment();
-			case ConsolPackage.NUTRITION_RECOMMENDATIONS:
-				return createNutritionRecommendations();
+			case ConsolPackage.NUTRITION_RECOMMENDATION:
+				return createNutritionRecommendation();
+			case ConsolPackage.PLANNED_ENCOUNTER2:
+				return createPlannedEncounter2();
+			case ConsolPackage.PRIORITY_PREFERENCE:
+				return createPriorityPreference();
+			case ConsolPackage.PLANNED_MEDICATION_ACTIVITY2:
+				return createPlannedMedicationActivity2();
+			case ConsolPackage.PLANNED_OBSERVATION2:
+				return createPlannedObservation2();
+			case ConsolPackage.PLANNED_COVERAGE:
+				return createPlannedCoverage();
+			case ConsolPackage.PLANNED_PROCEDURE2:
+				return createPlannedProcedure2();
+			case ConsolPackage.PLANNED_SUPPLY2:
+				return createPlannedSupply2();
+			case ConsolPackage.PLANNED_ACT2:
+				return createPlannedAct2();
 			case ConsolPackage.NUTRITIONAL_STATUS_OBSERVATION:
 				return createNutritionalStatusObservation();
 			case ConsolPackage.OUTCOME_OBSERVATION:
 				return createOutcomeObservation();
+			case ConsolPackage.PROGRESS_TOWARD_GOAL_OBSERVATION:
+				return createProgressTowardGoalObservation();
+			case ConsolPackage.PATIENT_REFERRAL_ACT:
+				return createPatientReferralAct();
 			case ConsolPackage.GOAL_OBSERVATION:
 				return createGoalObservation();
-			case ConsolPackage.PLANNED_OBSERVATION2:
-				return createPlannedObservation2();
-			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE:
-				return createProviderPriorityPreference();
-			case ConsolPackage.PLANNED_COVERAGE:
-				return createPlannedCoverage();
-			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE:
-				return createPatientPriorityPreference();
 			case ConsolPackage.HEALTH_CONCERN_ACT:
 				return createHealthConcernAct();
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2:
+				return createFamilyHistoryOrganizer2();
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2:
+				return createFamilyHistoryObservation2();
 			case ConsolPackage.SELF_CARE_ACTIVITIES:
 				return createSelfCareActivities();
-			case ConsolPackage.SENSORY_AND_SPEECH_STATUS:
-				return createSensoryAndSpeechStatus();
-			case ConsolPackage.WOUND_OBSERVATION:
-				return createWoundObservation();
+			case ConsolPackage.SENSORY_STATUS:
+				return createSensoryStatus();
+			case ConsolPackage.LONGITUDINAL_CARE_WOUND_OBSERVATION:
+				return createLongitudinalCareWoundObservation();
 			case ConsolPackage.PROBLEM_OBSERVATION2:
 				return createProblemObservation2();
 			case ConsolPackage.PROGNOSIS_OBSERVATION:
 				return createPrognosisObservation();
 			case ConsolPackage.WOUND_MEASUREMENT_OBSERVATION:
 				return createWoundMeasurementObservation();
-			case ConsolPackage.WOUND_CHARACTERISTICS:
-				return createWoundCharacteristics();
+			case ConsolPackage.WOUND_CHARACTERISTIC:
+				return createWoundCharacteristic();
 			case ConsolPackage.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2:
 				return createNumberOfPressureUlcersObservation2();
-			case ConsolPackage.EXTERNAL_DOCUMENT_REFERENCE:
-				return createExternalDocumentReference();
 			case ConsolPackage.ALLERGY_OBSERVATION2:
 				return createAllergyObservation2();
 			case ConsolPackage.MENTAL_STATUS_OBSERVATION2:
@@ -502,18 +516,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createResultOrganizer2();
 			case ConsolPackage.PROBLEM_CONCERN_ACT2:
 				return createProblemConcernAct2();
-			case ConsolPackage.PLANNED_ENCOUNTER2:
-				return createPlannedEncounter2();
-			case ConsolPackage.PLANNED_PROCEDURE2:
-				return createPlannedProcedure2();
-			case ConsolPackage.PLANNED_MEDICATION_ACTIVITY2:
-				return createPlannedMedicationActivity2();
-			case ConsolPackage.PLANNED_SUPPLY2:
-				return createPlannedSupply2();
-			case ConsolPackage.PLANNED_ACT2:
-				return createPlannedAct2();
-			case ConsolPackage.PROGRESS_TOWARD_GOAL_OBSERVATION:
-				return createProgressTowardGoalObservation();
 			case ConsolPackage.INTERVENTION_ACT:
 				return createInterventionAct();
 			case ConsolPackage.IMMUNIZATION_ACTIVITY2:
@@ -524,10 +526,12 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedureActivityObservation2();
 			case ConsolPackage.ENCOUNTER_ACTIVITY2:
 				return createEncounterActivity2();
-			case ConsolPackage.PATIENT_REFERRAL_ACT:
-				return createPatientReferralAct();
+			case ConsolPackage.PLANNED_INTERVENTION_ACT:
+				return createPlannedInterventionAct();
 			case ConsolPackage.PLANNED_IMMUNIZATION_ACTIVITY:
 				return createPlannedImmunizationActivity();
+			case ConsolPackage.EXTERNAL_DOCUMENT_REFERENCE:
+				return createExternalDocumentReference();
 			case ConsolPackage.GOALS_SECTION:
 				return createGoalsSection();
 			case ConsolPackage.HEALTH_CONCERNS_SECTION:
@@ -536,10 +540,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createHealthStatusObservation2();
 			case ConsolPackage.RISK_CONCERN_ACT:
 				return createRiskConcernAct();
-			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2:
-				return createFamilyHistoryOrganizer2();
-			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2:
-				return createFamilyHistoryObservation2();
 			case ConsolPackage.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION:
 				return createHealthStatusEvaluationsAndOutcomesSection();
 			case ConsolPackage.MENTAL_STATUS_SECTION:
@@ -556,8 +556,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCarePlan();
 			case ConsolPackage.INTERVENTIONS_SECTION2:
 				return createInterventionsSection2();
-			case ConsolPackage.PLANNED_INTERVENTION_ACT:
-				return createPlannedInterventionAct();
 			case ConsolPackage.REFERRAL_NOTE:
 				return createReferralNote();
 			case ConsolPackage.PLAN_OF_TREATMENT_SECTION2:
@@ -2347,10 +2345,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ActReference createActReference() {
-		ActReferenceImpl actReference = new ActReferenceImpl();
-		return actReference;
+	public EntryReference createEntryReference() {
+		EntryReferenceImpl entryReference = new EntryReferenceImpl();
+		return entryReference;
 	}
 
 	/**
@@ -2413,10 +2410,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public HandoffCommunication createHandoffCommunication() {
-		HandoffCommunicationImpl handoffCommunication = new HandoffCommunicationImpl();
-		return handoffCommunication;
+	public HandoffCommunicationParticipants createHandoffCommunicationParticipants() {
+		HandoffCommunicationParticipantsImpl handoffCommunicationParticipants = new HandoffCommunicationParticipantsImpl();
+		return handoffCommunicationParticipants;
 	}
 
 	/**
@@ -2457,10 +2453,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public NutritionRecommendations createNutritionRecommendations() {
-		NutritionRecommendationsImpl nutritionRecommendations = new NutritionRecommendationsImpl();
-		return nutritionRecommendations;
+	public NutritionRecommendation createNutritionRecommendation() {
+		NutritionRecommendationImpl nutritionRecommendation = new NutritionRecommendationImpl();
+		return nutritionRecommendation;
 	}
 
 	/**
@@ -2483,17 +2478,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public OutcomeObservation createOutcomeObservation() {
 		OutcomeObservationImpl outcomeObservation = new OutcomeObservationImpl();
 		return outcomeObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PatientPriorityPreference createPatientPriorityPreference() {
-		PatientPriorityPreferenceImpl patientPriorityPreference = new PatientPriorityPreferenceImpl();
-		return patientPriorityPreference;
 	}
 
 	/**
@@ -2601,17 +2585,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * @generated
 	 */
 	@Override
-	public ProviderPriorityPreference createProviderPriorityPreference() {
-		ProviderPriorityPreferenceImpl providerPriorityPreference = new ProviderPriorityPreferenceImpl();
-		return providerPriorityPreference;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public SelfCareActivities createSelfCareActivities() {
 		SelfCareActivitiesImpl selfCareActivities = new SelfCareActivitiesImpl();
 		return selfCareActivities;
@@ -2622,10 +2595,19 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public SensoryAndSpeechStatus createSensoryAndSpeechStatus() {
-		SensoryAndSpeechStatusImpl sensoryAndSpeechStatus = new SensoryAndSpeechStatusImpl();
-		return sensoryAndSpeechStatus;
+	public SensoryStatus createSensoryStatus() {
+		SensoryStatusImpl sensoryStatus = new SensoryStatusImpl();
+		return sensoryStatus;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LongitudinalCareWoundObservation createLongitudinalCareWoundObservation() {
+		LongitudinalCareWoundObservationImpl longitudinalCareWoundObservation = new LongitudinalCareWoundObservationImpl();
+		return longitudinalCareWoundObservation;
 	}
 
 	/**
@@ -2637,17 +2619,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SubstanceAdministeredAct createSubstanceAdministeredAct() {
 		SubstanceAdministeredActImpl substanceAdministeredAct = new SubstanceAdministeredActImpl();
 		return substanceAdministeredAct;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WoundCharacteristics createWoundCharacteristics() {
-		WoundCharacteristicsImpl woundCharacteristics = new WoundCharacteristicsImpl();
-		return woundCharacteristics;
 	}
 
 	/**
@@ -2676,10 +2647,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public WoundObservation createWoundObservation() {
-		WoundObservationImpl woundObservation = new WoundObservationImpl();
-		return woundObservation;
+	public WoundCharacteristic createWoundCharacteristic() {
+		WoundCharacteristicImpl woundCharacteristic = new WoundCharacteristicImpl();
+		return woundCharacteristic;
 	}
 
 	/**
@@ -3117,6 +3087,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PlannedEncounter2 createPlannedEncounter2() {
 		PlannedEncounter2Impl plannedEncounter2 = new PlannedEncounter2Impl();
 		return plannedEncounter2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PriorityPreference createPriorityPreference() {
+		PriorityPreferenceImpl priorityPreference = new PriorityPreferenceImpl();
+		return priorityPreference;
 	}
 
 	/**

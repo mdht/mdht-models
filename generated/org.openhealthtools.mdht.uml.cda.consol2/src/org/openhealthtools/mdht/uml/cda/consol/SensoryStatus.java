@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -21,16 +17,16 @@ import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Sensory And Speech Status</b></em>'.
+ * A representation of the model object '<em><b>Sensory Status</b></em>'.
  * <!-- end-user-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSensoryAndSpeechStatus()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SensoryAndSpeechStatusTemplateId SensoryAndSpeechStatusClassCode SensoryAndSpeechStatusMoodCode SensoryAndSpeechStatusCodeP SensoryAndSpeechStatusStatusCode SensoryAndSpeechStatusStatusCodeP SensoryAndSpeechStatusEffectiveTime SensoryAndSpeechStatusValueP SensoryAndSpeechStatusAuthorTime' templateId.root='2.16.840.1.113883.10.20.22.4.127' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='SensoryAndSpeechStatusCode SensoryAndSpeechStatusValue SensoryAndSpeechStatusAuthor' constraints.validation.dependOn.SensoryAndSpeechStatusCode='SensoryAndSpeechStatusCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.info='SensoryAndSpeechStatusAssessmentScaleObservation' constraints.validation.query='SensoryAndSpeechStatusAuthorTime'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSensoryAndSpeechStatusAuthor constraints.validation.error='SensoryAndSpeechStatusAuthorTime'"
+ * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSensoryStatus()
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SensoryStatusTemplateId SensoryStatusClassCode SensoryStatusMoodCode SensoryStatusCodeP SensoryStatusStatusCode SensoryStatusStatusCodeP SensoryStatusEffectiveTime SensoryStatusValueP SensoryStatusIVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.127' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='SensoryStatusCode SensoryStatusValue SensoryStatusAuthorParticipation' constraints.validation.dependOn.SensoryStatusCode='SensoryStatusCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.info='SensoryStatusAssessmentScaleObservation SensoryStatusIVLTSHigh' constraints.validation.query='SensoryStatusIVLTSLow SensoryStatusIVLTSHigh'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSensoryStatusIVLTS constraints.validation.error='SensoryStatusIVLTSLow' constraints.validation.info='SensoryStatusIVLTSHigh'"
  * @generated
  */
-public interface SensoryAndSpeechStatus extends Observation {
+public interface SensoryStatus extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -41,7 +37,7 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.127\')'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -53,7 +49,7 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.classCode=vocab::ActClassObservation::OBS'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -65,7 +61,7 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode=vocab::x_ActMoodDocumentObservation::EVN'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -77,7 +73,7 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,10 +82,10 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'47078008\' or value.code = \'405183003\' or value.code = \'373713005\' or value.code = \'397627001\' or value.code = \'397686008\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'47078008\' or value.code = \'405183003\' or value.code = \'373713005\' or value.code = \'397627001\' or value.code = \'397686008\' or value.code = \'397624008\' or value.code = \'128542002\' or value.code = \'285567008\'))'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -101,7 +97,7 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -113,7 +109,7 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -125,7 +121,7 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,10 +130,10 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'11163003\' or value.code = \'260379002\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,19 +145,7 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))'"
-	 * @generated
-	 */
-	boolean validateSensoryAndSpeechStatusAuthor(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,8 +157,7 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AssessmentScaleObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusAssessmentScaleObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateSensoryStatusAssessmentScaleObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -183,10 +166,34 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null)->reject((time.oclIsUndefined() or time.isNullFlavorUndefined()) implies (not time.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
 	 * @generated
 	 */
-	boolean validateSensoryAndSpeechStatusAuthorTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))'"
+	 * @generated
+	 */
+	boolean validateSensoryStatusIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((high.oclIsUndefined() or high.isNullFlavorUndefined()) implies (not high.oclIsUndefined()) )))'"
+	 * @generated
+	 */
+	boolean validateSensoryStatusIVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -202,12 +209,12 @@ public interface SensoryAndSpeechStatus extends Observation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SensoryAndSpeechStatus init();
+	public SensoryStatus init();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SensoryAndSpeechStatus init(Iterable<? extends Initializer<? extends EObject>> initializers);
-} // SensoryAndSpeechStatus
+	public SensoryStatus init(Iterable<? extends Initializer<? extends EObject>> initializers);
+} // SensoryStatus

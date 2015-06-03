@@ -147,6 +147,15 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedCoverageAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedCoverageOperations.validatePlannedCoverageAuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

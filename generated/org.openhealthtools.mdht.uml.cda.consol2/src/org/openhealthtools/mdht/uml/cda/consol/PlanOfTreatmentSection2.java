@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfTreatmentSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareSectionTemplateId PlanOfCareSectionCode PlanOfCareSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.10' templateId.extension='2014-06-09' code.code='18776-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Plan of Treatment' constraints.validation.dependOn.PlanOfCareSectionCode='PlanOfCareSectionCodeP' constraints.validation.info='PlanOfCareSectionPlannedObservation2 PlanOfCareSectionPlannedEncounter2 PlanOfCareSectionPlannedAct2 PlanOfCareSectionPlannedProcedure2 PlanOfCareSectionPlannedMedicationActivity2 PlanOfCareSectionPlannedSupply2 PlanOfCareSectionInstruction2 PlanOfTreatmentSection2HandoffCommunication PlanOfTreatmentSection2NutritionRecommendations PlanOfTreatmentSection2PlannedImmunizationActivity PlanOfTreatmentSection2GoalObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareSectionTemplateId PlanOfCareSectionCode PlanOfCareSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.10' templateId.extension='2014-06-09' code.code='18776-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Plan of Treatment' constraints.validation.dependOn.PlanOfCareSectionCode='PlanOfCareSectionCodeP' constraints.validation.info='PlanOfCareSectionPlannedObservation2 PlanOfCareSectionPlannedEncounter2 PlanOfCareSectionPlannedAct2 PlanOfCareSectionPlannedProcedure2 PlanOfCareSectionPlannedMedicationActivity2 PlanOfCareSectionPlannedSupply2 PlanOfCareSectionInstruction2 PlanOfTreatmentSection2HandoffCommunication PlanOfTreatmentSection2NutritionRecommendation PlanOfTreatmentSection2PlannedImmunizationActivity PlanOfTreatmentSection2GoalObservation'"
  * @generated
  */
 public interface PlanOfTreatmentSection2 extends PlanOfCareSection {
@@ -119,7 +119,7 @@ public interface PlanOfTreatmentSection2 extends PlanOfCareSection {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HandoffCommunication))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HandoffCommunicationParticipants))'"
 	 * @generated
 	 */
 	boolean validatePlanOfTreatmentSection2HandoffCommunication(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -131,10 +131,10 @@ public interface PlanOfTreatmentSection2 extends PlanOfCareSection {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::NutritionRecommendations))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::NutritionRecommendation))'"
 	 * @generated
 	 */
-	boolean validatePlanOfTreatmentSection2NutritionRecommendations(DiagnosticChain diagnostics,
+	boolean validatePlanOfTreatmentSection2NutritionRecommendation(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
@@ -229,19 +229,19 @@ public interface PlanOfTreatmentSection2 extends PlanOfCareSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunication)).oclAsType(consol::HandoffCommunication)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunicationParticipants)).oclAsType(consol::HandoffCommunicationParticipants)'"
 	 * @generated
 	 */
-	EList<HandoffCommunication> getHandoffCommunications();
+	EList<HandoffCommunicationParticipants> getHandoffCommunications();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::NutritionRecommendations)).oclAsType(consol::NutritionRecommendations)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::NutritionRecommendation)).oclAsType(consol::NutritionRecommendation)'"
 	 * @generated
 	 */
-	EList<NutritionRecommendations> getNutritionRecommendationss();
+	EList<NutritionRecommendation> getNutritionRecommendations();
 
 	/**
 	 * <!-- begin-user-doc -->

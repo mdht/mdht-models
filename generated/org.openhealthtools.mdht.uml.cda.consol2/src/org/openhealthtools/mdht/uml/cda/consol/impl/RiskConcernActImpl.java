@@ -14,7 +14,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.ActReference;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
@@ -22,31 +21,31 @@ import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2;
+import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2;
+import org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionalStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis2;
+import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
-import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
+import org.openhealthtools.mdht.uml.cda.consol.SensoryStatus;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.RiskConcernActOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
@@ -550,6 +549,17 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateRiskConcernActReferenceExternalDocumentReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActReferenceExternalDocumentReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<ProblemObservation2> getProblemObservation2s() {
 		return RiskConcernActOperations.getProblemObservation2s(this);
 	}
@@ -568,7 +578,7 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ActReference> getEntryReferenceRelatesTos() {
+	public EList<EntryReference> getEntryReferenceRelatesTos() {
 		return RiskConcernActOperations.getEntryReferenceRelatesTos(this);
 	}
 
@@ -577,7 +587,7 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ActReference> getEntryReferenceHasComponents() {
+	public EList<EntryReference> getEntryReferenceHasComponents() {
 		return RiskConcernActOperations.getEntryReferenceHasComponents(this);
 	}
 
@@ -739,7 +749,7 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SensoryAndSpeechStatus> getSensoryStatuss() {
+	public EList<SensoryStatus> getSensoryStatuss() {
 		return RiskConcernActOperations.getSensoryStatuss(this);
 	}
 
@@ -784,7 +794,7 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<WoundObservation> getWoundObservations() {
+	public EList<LongitudinalCareWoundObservation> getWoundObservations() {
 		return RiskConcernActOperations.getWoundObservations(this);
 	}
 
@@ -847,7 +857,7 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProviderPriorityPreference> getPriorityPreferencePatients() {
+	public EList<PriorityPreference> getPriorityPreferencePatients() {
 		return RiskConcernActOperations.getPriorityPreferencePatients(this);
 	}
 
@@ -856,7 +866,7 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProviderPriorityPreference> getPriorityPreferenceProviders() {
+	public EList<PriorityPreference> getPriorityPreferenceProviders() {
 		return RiskConcernActOperations.getPriorityPreferenceProviders(this);
 	}
 
@@ -874,7 +884,7 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ActReference> getEntryReferenceHealthConcerns() {
+	public EList<EntryReference> getEntryReferenceHealthConcerns() {
 		return RiskConcernActOperations.getEntryReferenceHealthConcerns(this);
 	}
 

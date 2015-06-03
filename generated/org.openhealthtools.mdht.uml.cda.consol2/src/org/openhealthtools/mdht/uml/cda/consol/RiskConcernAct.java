@@ -22,8 +22,8 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getRiskConcernAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='RiskConcernActTemplateId RiskConcernActClassCode RiskConcernActMoodCode RiskConcernActId RiskConcernActCode RiskConcernActCodeP RiskConcernActStatusCode RiskConcernActStatusCodeP RiskConcernActReferenceTypeCode' templateId.root='2.16.840.1.113883.10.20.22.4.136' classCode='ACT' moodCode='EVN' code.code='281694009' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='At risk for' constraints.validation.dependOn.RiskConcernActCode='RiskConcernActCodeP' constraints.validation.info='RiskConcernActEffectiveTime RiskConcernActProblemObservation2 RiskConcernActAllergyObservation2 RiskConcernActEntryReferenceRelatesTo RiskConcernActEntryReferenceHasComponent RiskConcernActAssessmentScaleObservation RiskConcernActMentalStatusObservation2 RiskConcernActSelfCareActivities RiskConcernActMentalStatusObservation2B RiskConcernActSmokingStatusMeaningfulUse2 RiskConcernActEncounterDiagnosis2 RiskConcernActFamilyHistoryOrganizer2 RiskConcernActFunctionalStatusObservation2 RiskConcernActHospitalAdmissionDiagnosis2 RiskConcernActMentalStatusObservation2C RiskConcernActNutritionAssessment RiskConcernActNutritionAssessmentB RiskConcernActPostprocedureDiagnosis2 RiskConcernActPregnancyObservation RiskConcernActPreoperativeDiagnosis2 RiskConcernActReactionObservation2 RiskConcernActResultObservation2 RiskConcernActSensoryStatus RiskConcernActSocialHistoryObservation2 RiskConcernActSubstanceOrDeviceAllergyObservation2 RiskConcernActTobaccoUse2 RiskConcernActVitalSignObservation2 RiskConcernActWoundObservation RiskConcernActProblemObservation2HasSupport RiskConcernActCaregiverCharacteristics RiskConcernActCulturalAndReligiousObservation RiskConcernActCharacteristicsOfHomeEnvironment RiskConcernActNutritionalStatusObservation RiskConcernActResultOrganizer2 RiskConcernActPriorityPreferencePatient RiskConcernActPriorityPreferenceProvider RiskConcernActProblemConcernAct2 RiskConcernActEntryReferenceHealthConcern RiskConcernActReference' constraints.validation.warning='RiskConcernActAuthorParticipation' constraints.validation.query='RiskConcernActReferenceTypeCode'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolRiskConcernActReference typeCode='REFR' constraints.validation.error='RiskConcernActReferenceTypeCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='RiskConcernActTemplateId RiskConcernActClassCode RiskConcernActMoodCode RiskConcernActId RiskConcernActCode RiskConcernActCodeP RiskConcernActStatusCode RiskConcernActStatusCodeP RiskConcernActReferenceTypeCode RiskConcernActReferenceExternalDocumentReference' templateId.root='2.16.840.1.113883.10.20.22.4.136' classCode='ACT' moodCode='EVN' code.code='281694009' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='At risk for' constraints.validation.dependOn.RiskConcernActCode='RiskConcernActCodeP' constraints.validation.info='RiskConcernActEffectiveTime RiskConcernActProblemObservation2 RiskConcernActAllergyObservation2 RiskConcernActEntryReferenceRelatesTo RiskConcernActEntryReferenceHasComponent RiskConcernActAssessmentScaleObservation RiskConcernActMentalStatusObservation2 RiskConcernActSelfCareActivities RiskConcernActMentalStatusObservation2B RiskConcernActSmokingStatusMeaningfulUse2 RiskConcernActEncounterDiagnosis2 RiskConcernActFamilyHistoryOrganizer2 RiskConcernActFunctionalStatusObservation2 RiskConcernActHospitalAdmissionDiagnosis2 RiskConcernActMentalStatusObservation2C RiskConcernActNutritionAssessment RiskConcernActNutritionAssessmentB RiskConcernActPostprocedureDiagnosis2 RiskConcernActPregnancyObservation RiskConcernActPreoperativeDiagnosis2 RiskConcernActReactionObservation2 RiskConcernActResultObservation2 RiskConcernActSensoryStatus RiskConcernActSocialHistoryObservation2 RiskConcernActSubstanceOrDeviceAllergyObservation2 RiskConcernActTobaccoUse2 RiskConcernActVitalSignObservation2 RiskConcernActWoundObservation RiskConcernActProblemObservation2HasSupport RiskConcernActCaregiverCharacteristics RiskConcernActCulturalAndReligiousObservation RiskConcernActCharacteristicsOfHomeEnvironment RiskConcernActNutritionalStatusObservation RiskConcernActResultOrganizer2 RiskConcernActPriorityPreferencePatient RiskConcernActPriorityPreferenceProvider RiskConcernActProblemConcernAct2 RiskConcernActEntryReferenceHealthConcern RiskConcernActReference' constraints.validation.warning='RiskConcernActAuthorParticipation' constraints.validation.query='RiskConcernActReferenceTypeCode RiskConcernActReferenceExternalDocumentReference'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolRiskConcernActReference typeCode='REFR' constraints.validation.error='RiskConcernActReferenceTypeCode RiskConcernActReferenceExternalDocumentReference'"
  * @generated
  */
 public interface RiskConcernAct extends Act {
@@ -178,7 +178,7 @@ public interface RiskConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ActReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
 	boolean validateRiskConcernActEntryReferenceRelatesTo(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -190,7 +190,7 @@ public interface RiskConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ActReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateRiskConcernActEntryReferenceHasComponent(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -406,7 +406,7 @@ public interface RiskConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SensoryAndSpeechStatus) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SensoryStatus) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
 	boolean validateRiskConcernActSensoryStatus(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -467,7 +467,7 @@ public interface RiskConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::WoundObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::LongitudinalCareWoundObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
 	boolean validateRiskConcernActWoundObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -553,7 +553,7 @@ public interface RiskConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
 	boolean validateRiskConcernActPriorityPreferencePatient(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -565,7 +565,7 @@ public interface RiskConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
 	boolean validateRiskConcernActPriorityPreferenceProvider(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -589,7 +589,7 @@ public interface RiskConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ActReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
 	boolean validateRiskConcernActEntryReferenceHealthConcern(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -621,6 +621,19 @@ public interface RiskConcernAct extends Act {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->excluding(null)->reject(externalDocument->one(externalDocument : cda::ExternalDocument | not externalDocument.oclIsUndefined() and externalDocument.oclIsKindOf(consol::ExternalDocumentReference)))'"
+	 * @generated
+	 */
+	boolean validateRiskConcernActReferenceExternalDocumentReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2)).oclAsType(consol::ProblemObservation2)'"
 	 * @generated
@@ -640,19 +653,19 @@ public interface RiskConcernAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ActReference)).oclAsType(consol::ActReference)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)'"
 	 * @generated
 	 */
-	EList<ActReference> getEntryReferenceRelatesTos();
+	EList<EntryReference> getEntryReferenceRelatesTos();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ActReference)).oclAsType(consol::ActReference)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)'"
 	 * @generated
 	 */
-	EList<ActReference> getEntryReferenceHasComponents();
+	EList<EntryReference> getEntryReferenceHasComponents();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -811,10 +824,10 @@ public interface RiskConcernAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SensoryAndSpeechStatus)).oclAsType(consol::SensoryAndSpeechStatus)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SensoryStatus)).oclAsType(consol::SensoryStatus)'"
 	 * @generated
 	 */
-	EList<SensoryAndSpeechStatus> getSensoryStatuss();
+	EList<SensoryStatus> getSensoryStatuss();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -856,10 +869,10 @@ public interface RiskConcernAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::WoundObservation)).oclAsType(consol::WoundObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::LongitudinalCareWoundObservation)).oclAsType(consol::LongitudinalCareWoundObservation)'"
 	 * @generated
 	 */
-	EList<WoundObservation> getWoundObservations();
+	EList<LongitudinalCareWoundObservation> getWoundObservations();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -919,19 +932,19 @@ public interface RiskConcernAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)).oclAsType(consol::PriorityPreference)'"
 	 * @generated
 	 */
-	EList<ProviderPriorityPreference> getPriorityPreferencePatients();
+	EList<PriorityPreference> getPriorityPreferencePatients();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)).oclAsType(consol::PriorityPreference)'"
 	 * @generated
 	 */
-	EList<ProviderPriorityPreference> getPriorityPreferenceProviders();
+	EList<PriorityPreference> getPriorityPreferenceProviders();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -946,10 +959,10 @@ public interface RiskConcernAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ActReference)).oclAsType(consol::ActReference)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)'"
 	 * @generated
 	 */
-	EList<ActReference> getEntryReferenceHealthConcerns();
+	EList<EntryReference> getEntryReferenceHealthConcerns();
 
 	/**
 	 * <!-- begin-user-doc -->

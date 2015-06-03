@@ -163,6 +163,17 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCharacteristicsOfHomeEnvironmentValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValueP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public CharacteristicsOfHomeEnvironment init() {
 		return Initializer.Util.init(this);

@@ -1371,13 +1371,13 @@ public interface ConsolFactory extends EFactory {
 	ObserverContext createObserverContext();
 
 	/**
-	 * Returns a new object of class '<em>Act Reference</em>'.
+	 * Returns a new object of class '<em>Entry Reference</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Act Reference</em>'.
+	 * @return a new object of class '<em>Entry Reference</em>'.
 	 * @generated
 	 */
-	ActReference createActReference();
+	EntryReference createEntryReference();
 
 	/**
 	 * Returns a new object of class '<em>Advance Directive Organizer</em>'.
@@ -1425,13 +1425,13 @@ public interface ConsolFactory extends EFactory {
 	DrugMonitoringAct createDrugMonitoringAct();
 
 	/**
-	 * Returns a new object of class '<em>Handoff Communication</em>'.
+	 * Returns a new object of class '<em>Handoff Communication Participants</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Handoff Communication</em>'.
+	 * @return a new object of class '<em>Handoff Communication Participants</em>'.
 	 * @generated
 	 */
-	HandoffCommunication createHandoffCommunication();
+	HandoffCommunicationParticipants createHandoffCommunicationParticipants();
 
 	/**
 	 * Returns a new object of class '<em>Medical Equipment Organizer</em>'.
@@ -1461,13 +1461,13 @@ public interface ConsolFactory extends EFactory {
 	NutritionAssessment createNutritionAssessment();
 
 	/**
-	 * Returns a new object of class '<em>Nutrition Recommendations</em>'.
+	 * Returns a new object of class '<em>Nutrition Recommendation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Nutrition Recommendations</em>'.
+	 * @return a new object of class '<em>Nutrition Recommendation</em>'.
 	 * @generated
 	 */
-	NutritionRecommendations createNutritionRecommendations();
+	NutritionRecommendation createNutritionRecommendation();
 
 	/**
 	 * Returns a new object of class '<em>Nutritional Status Observation</em>'.
@@ -1486,15 +1486,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	OutcomeObservation createOutcomeObservation();
-
-	/**
-	 * Returns a new object of class '<em>Patient Priority Preference</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Patient Priority Preference</em>'.
-	 * @generated
-	 */
-	PatientPriorityPreference createPatientPriorityPreference();
 
 	/**
 	 * Returns a new object of class '<em>Patient Referral Act</em>'.
@@ -1578,15 +1569,6 @@ public interface ConsolFactory extends EFactory {
 	ProgressTowardGoalObservation createProgressTowardGoalObservation();
 
 	/**
-	 * Returns a new object of class '<em>Provider Priority Preference</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Provider Priority Preference</em>'.
-	 * @generated
-	 */
-	ProviderPriorityPreference createProviderPriorityPreference();
-
-	/**
 	 * Returns a new object of class '<em>Self Care Activities</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1596,13 +1578,22 @@ public interface ConsolFactory extends EFactory {
 	SelfCareActivities createSelfCareActivities();
 
 	/**
-	 * Returns a new object of class '<em>Sensory And Speech Status</em>'.
+	 * Returns a new object of class '<em>Sensory Status</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sensory And Speech Status</em>'.
+	 * @return a new object of class '<em>Sensory Status</em>'.
 	 * @generated
 	 */
-	SensoryAndSpeechStatus createSensoryAndSpeechStatus();
+	SensoryStatus createSensoryStatus();
+
+	/**
+	 * Returns a new object of class '<em>Longitudinal Care Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Longitudinal Care Wound Observation</em>'.
+	 * @generated
+	 */
+	LongitudinalCareWoundObservation createLongitudinalCareWoundObservation();
 
 	/**
 	 * Returns a new object of class '<em>Substance Administered Act</em>'.
@@ -1612,15 +1603,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	SubstanceAdministeredAct createSubstanceAdministeredAct();
-
-	/**
-	 * Returns a new object of class '<em>Wound Characteristics</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Wound Characteristics</em>'.
-	 * @generated
-	 */
-	WoundCharacteristics createWoundCharacteristics();
 
 	/**
 	 * Returns a new object of class '<em>Number Of Pressure Ulcers Observation2</em>'.
@@ -1641,13 +1623,13 @@ public interface ConsolFactory extends EFactory {
 	WoundMeasurementObservation createWoundMeasurementObservation();
 
 	/**
-	 * Returns a new object of class '<em>Wound Observation</em>'.
+	 * Returns a new object of class '<em>Wound Characteristic</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Wound Observation</em>'.
+	 * @return a new object of class '<em>Wound Characteristic</em>'.
 	 * @generated
 	 */
-	WoundObservation createWoundObservation();
+	WoundCharacteristic createWoundCharacteristic();
 
 	/**
 	 * Returns a new object of class '<em>Goals Section</em>'.
@@ -2008,6 +1990,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	PlannedEncounter2 createPlannedEncounter2();
+
+	/**
+	 * Returns a new object of class '<em>Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Priority Preference</em>'.
+	 * @generated
+	 */
+	PriorityPreference createPriorityPreference();
 
 	/**
 	 * Returns a new object of class '<em>Planned Observation2</em>'.
