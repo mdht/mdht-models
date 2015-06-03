@@ -11,7 +11,8 @@
  *     								   VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP,
  *     								   VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP,
  *     								   VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP,
- *     							       VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP
+ *     							       VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP,
+ *     								   VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP
  *     								   due to inline datatype OCL generation issues 
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
@@ -967,10 +968,10 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #validateLongitudinalCareWoundObservationCDCRCDValueTerminology(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
+	 * @generated NOT
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined()).qualifier->excluding(null)->select(isNullFlavorUndefined()).value->excluding(null)->select(isNullFlavorUndefined())->reject(codeSystem = '2.16.840.1.113883.6.96')";
+	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.targetSiteCode->excluding(null)->select(isNullFlavorUndefined()).qualifier->excluding(null)->select(isNullFlavorUndefined()).value->excluding(null)->select(isNullFlavorUndefined())->reject(code = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLongitudinalCareWoundObservationCDCRCDValueTerminology(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation CDCRCD Value Terminology</em>}' invariant operation.
