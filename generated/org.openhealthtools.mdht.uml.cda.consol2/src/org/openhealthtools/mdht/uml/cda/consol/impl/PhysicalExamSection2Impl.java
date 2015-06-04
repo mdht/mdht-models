@@ -20,11 +20,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
+import org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2;
 import org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation;
-import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSection2Operations;
 
 /**
@@ -134,7 +133,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 * @generated
 	 */
 	@Override
-	public EList<WoundObservation> getWoundObservations() {
+	public EList<LongitudinalCareWoundObservation> getWoundObservations() {
 		return PhysicalExamSection2Operations.getWoundObservations(this);
 	}
 

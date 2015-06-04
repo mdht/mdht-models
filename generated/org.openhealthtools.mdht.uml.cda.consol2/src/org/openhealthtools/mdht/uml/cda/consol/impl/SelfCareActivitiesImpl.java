@@ -108,6 +108,33 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSelfCareActivitiesStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SelfCareActivitiesOperations.validateSelfCareActivitiesStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSelfCareActivitiesStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SelfCareActivitiesOperations.validateSelfCareActivitiesStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSelfCareActivitiesEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SelfCareActivitiesOperations.validateSelfCareActivitiesEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSelfCareActivitiesValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SelfCareActivitiesOperations.validateSelfCareActivitiesValue(this, diagnostics, context);
@@ -121,6 +148,16 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	@Override
 	public boolean validateSelfCareActivitiesValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SelfCareActivitiesOperations.validateSelfCareActivitiesValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSelfCareActivitiesAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SelfCareActivitiesOperations.validateSelfCareActivitiesAuthorParticipation(this, diagnostics, context);
 	}
 
 	/**

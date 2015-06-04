@@ -22,18 +22,18 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.consol.ActReference;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2;
-import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication;
+import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
+import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipants;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
-import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendations;
+import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity;
@@ -85,13 +85,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Procedure2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Medication Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedSupply2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Supply2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActNutritionRecommendations(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Nutrition Recommendations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActNutritionRecommendation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Nutrition Recommendation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryReferenceDocInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Reference Doc Instance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryReferenceGoalObs(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Reference Goal Obs</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActHandoffCommunicationParticipants(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Handoff Communication Participants</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedImmunizationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Immunization Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Reference Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActReferenceExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Reference External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getAdvanceDirectiveObservation2s() <em>Get Advance Directive Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getImmunizationActivity2s() <em>Get Immunization Activity2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getMedicationActivity2s() <em>Get Medication Activity2s</em>}</li>
@@ -108,7 +109,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedProcedure2s() <em>Get Planned Procedure2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedMedicationActivity2s() <em>Get Planned Medication Activity2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedSupply2s() <em>Get Planned Supply2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getNutritionRecommendationss() <em>Get Nutrition Recommendationss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getNutritionRecommendations() <em>Get Nutrition Recommendations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceDocInstances() <em>Get Entry Reference Doc Instances</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceGoalObs() <em>Get Entry Reference Goal Obs</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getHandoffCommunicationParticipantss() <em>Get Handoff Communication Participantss</em>}</li>
@@ -525,7 +526,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " + "value.code = '362956003')";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '362956003' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedInterventionActCode(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Code</em>}' invariant operation.
@@ -1783,25 +1785,25 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePlannedInterventionActNutritionRecommendations(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Nutrition Recommendations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePlannedInterventionActNutritionRecommendation(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Nutrition Recommendation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePlannedInterventionActNutritionRecommendations(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePlannedInterventionActNutritionRecommendation(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::NutritionRecommendations))";
+	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::NutritionRecommendation))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePlannedInterventionActNutritionRecommendations(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Nutrition Recommendations</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validatePlannedInterventionActNutritionRecommendation(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Nutrition Recommendation</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePlannedInterventionActNutritionRecommendations(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePlannedInterventionActNutritionRecommendation(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1814,27 +1816,27 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 */
 
-	public static boolean validatePlannedInterventionActNutritionRecommendations(
+	public static boolean validatePlannedInterventionActNutritionRecommendation(
 			PlannedInterventionAct plannedInterventionAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATIONS,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActNutritionRecommendations"),
+					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION,
+					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActNutritionRecommendation"),
 					new Object[] { plannedInterventionAct }));
 			}
 
@@ -1851,7 +1853,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ActReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedInterventionActEntryReferenceDocInstance(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Reference Doc Instance</em>}' invariant operation.
@@ -1912,7 +1914,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ActReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)";
+	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedInterventionActEntryReferenceGoalObs(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Reference Goal Obs</em>}' invariant operation.
@@ -1973,7 +1975,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::HandoffCommunication) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::HandoffCommunicationParticipants) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedInterventionActHandoffCommunicationParticipants(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Handoff Communication Participants</em>}' invariant operation.
@@ -2212,6 +2214,71 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validatePlannedInterventionActReferenceExternalDocumentReference(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Reference External Document Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlannedInterventionActReferenceExternalDocumentReference(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null)->reject(externalDocument->one(externalDocument : cda::ExternalDocument | not externalDocument.oclIsUndefined() and externalDocument.oclIsKindOf(consol::ExternalDocumentReference)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePlannedInterventionActReferenceExternalDocumentReference(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Reference External Document Reference</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlannedInterventionActReferenceExternalDocumentReference(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param plannedInterventionAct The receiving '<em><b>Planned Intervention Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validatePlannedInterventionActReferenceExternalDocumentReference(
+			PlannedInterventionAct plannedInterventionAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedInterventionAct);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActReferenceExternalDocumentReference"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getAdvanceDirectiveObservation2s(PlannedInterventionAct) <em>Get Advance Directive Observation2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2243,7 +2310,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(85));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(86));
 			try {
 				GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2287,7 +2354,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(86));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(87));
 			try {
 				GET_IMMUNIZATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_IMMUNIZATION_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2331,7 +2398,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(87));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(88));
 			try {
 				GET_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2375,7 +2442,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(88));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(89));
 			try {
 				GET_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_ACT2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2419,7 +2486,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(89));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(90));
 			try {
 				GET_INTERVENTION_ACTS__EOCL_QRY = helper.createQuery(GET_INTERVENTION_ACTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2464,7 +2531,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(90));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(91));
 			try {
 				GET_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2509,7 +2576,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(91));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(92));
 			try {
 				GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2553,7 +2620,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(92));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(93));
 			try {
 				GET_ENCOUNTER_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2597,7 +2664,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(93));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(94));
 			try {
 				GET_INSTRUCTION2S__EOCL_QRY = helper.createQuery(GET_INSTRUCTION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2642,7 +2709,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(94));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(95));
 			try {
 				GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2686,7 +2753,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(95));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(96));
 			try {
 				GET_PLANNED_ACT2S__EOCL_QRY = helper.createQuery(GET_PLANNED_ACT2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2730,7 +2797,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(96));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(97));
 			try {
 				GET_PLANNED_ENCOUNTER2S__EOCL_QRY = helper.createQuery(GET_PLANNED_ENCOUNTER2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2774,7 +2841,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(97));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(98));
 			try {
 				GET_PLANNED_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_PLANNED_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2818,7 +2885,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(98));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(99));
 			try {
 				GET_PLANNED_PROCEDURE2S__EOCL_QRY = helper.createQuery(GET_PLANNED_PROCEDURE2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2863,7 +2930,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(99));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(100));
 			try {
 				GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2907,7 +2974,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(100));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(101));
 			try {
 				GET_PLANNED_SUPPLY2S__EOCL_QRY = helper.createQuery(GET_PLANNED_SUPPLY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2921,24 +2988,24 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getNutritionRecommendationss(PlannedInterventionAct) <em>Get Nutrition Recommendationss</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getNutritionRecommendations(PlannedInterventionAct) <em>Get Nutrition Recommendations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNutritionRecommendationss(PlannedInterventionAct)
+	 * @see #getNutritionRecommendations(PlannedInterventionAct)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NUTRITION_RECOMMENDATIONSS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::NutritionRecommendations)).oclAsType(consol::NutritionRecommendations)";
+	protected static final String GET_NUTRITION_RECOMMENDATIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::NutritionRecommendation)).oclAsType(consol::NutritionRecommendation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getNutritionRecommendationss(PlannedInterventionAct) <em>Get Nutrition Recommendationss</em>}' query operation.
+	 * The cached OCL query for the '{@link #getNutritionRecommendations(PlannedInterventionAct) <em>Get Nutrition Recommendations</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNutritionRecommendationss(PlannedInterventionAct)
+	 * @see #getNutritionRecommendations(PlannedInterventionAct)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_NUTRITION_RECOMMENDATIONSS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_NUTRITION_RECOMMENDATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2946,23 +3013,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 */
 
-	public static EList<NutritionRecommendations> getNutritionRecommendationss(
+	public static EList<NutritionRecommendation> getNutritionRecommendations(
 			PlannedInterventionAct plannedInterventionAct) {
-		if (GET_NUTRITION_RECOMMENDATIONSS__EOCL_QRY == null) {
+		if (GET_NUTRITION_RECOMMENDATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(101));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(102));
 			try {
-				GET_NUTRITION_RECOMMENDATIONSS__EOCL_QRY = helper.createQuery(GET_NUTRITION_RECOMMENDATIONSS__EOCL_EXP);
+				GET_NUTRITION_RECOMMENDATIONS__EOCL_QRY = helper.createQuery(GET_NUTRITION_RECOMMENDATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NUTRITION_RECOMMENDATIONSS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_NUTRITION_RECOMMENDATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<NutritionRecommendations> result = (Collection<NutritionRecommendations>) query.evaluate(plannedInterventionAct);
-		return new BasicEList.UnmodifiableEList<NutritionRecommendations>(result.size(), result.toArray());
+		Collection<NutritionRecommendation> result = (Collection<NutritionRecommendation>) query.evaluate(plannedInterventionAct);
+		return new BasicEList.UnmodifiableEList<NutritionRecommendation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -2973,7 +3040,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENTRY_REFERENCE_DOC_INSTANCES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ActReference)).oclAsType(consol::ActReference)";
+	protected static final String GET_ENTRY_REFERENCE_DOC_INSTANCES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEntryReferenceDocInstances(PlannedInterventionAct) <em>Get Entry Reference Doc Instances</em>}' query operation.
@@ -2991,12 +3058,12 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 */
 
-	public static EList<ActReference> getEntryReferenceDocInstances(PlannedInterventionAct plannedInterventionAct) {
+	public static EList<EntryReference> getEntryReferenceDocInstances(PlannedInterventionAct plannedInterventionAct) {
 		if (GET_ENTRY_REFERENCE_DOC_INSTANCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(102));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(103));
 			try {
 				GET_ENTRY_REFERENCE_DOC_INSTANCES__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_DOC_INSTANCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3005,8 +3072,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ENTRY_REFERENCE_DOC_INSTANCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ActReference> result = (Collection<ActReference>) query.evaluate(plannedInterventionAct);
-		return new BasicEList.UnmodifiableEList<ActReference>(result.size(), result.toArray());
+		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(plannedInterventionAct);
+		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3017,7 +3084,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ActReference))->asSequence()->any(true).oclAsType(consol::ActReference)";
+	protected static final String GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference))->asSequence()->any(true).oclAsType(consol::EntryReference)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEntryReferenceGoalObs(PlannedInterventionAct) <em>Get Entry Reference Goal Obs</em>}' query operation.
@@ -3035,12 +3102,12 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 */
 
-	public static ActReference getEntryReferenceGoalObs(PlannedInterventionAct plannedInterventionAct) {
+	public static EntryReference getEntryReferenceGoalObs(PlannedInterventionAct plannedInterventionAct) {
 		if (GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(103));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(104));
 			try {
 				GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3048,7 +3115,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_QRY);
-		return (ActReference) query.evaluate(plannedInterventionAct);
+		return (EntryReference) query.evaluate(plannedInterventionAct);
 	}
 
 	/**
@@ -3059,7 +3126,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HANDOFF_COMMUNICATION_PARTICIPANTSS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunication)).oclAsType(consol::HandoffCommunication)";
+	protected static final String GET_HANDOFF_COMMUNICATION_PARTICIPANTSS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunicationParticipants)).oclAsType(consol::HandoffCommunicationParticipants)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHandoffCommunicationParticipantss(PlannedInterventionAct) <em>Get Handoff Communication Participantss</em>}' query operation.
@@ -3077,13 +3144,13 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 */
 
-	public static EList<HandoffCommunication> getHandoffCommunicationParticipantss(
+	public static EList<HandoffCommunicationParticipants> getHandoffCommunicationParticipantss(
 			PlannedInterventionAct plannedInterventionAct) {
 		if (GET_HANDOFF_COMMUNICATION_PARTICIPANTSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(104));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(105));
 			try {
 				GET_HANDOFF_COMMUNICATION_PARTICIPANTSS__EOCL_QRY = helper.createQuery(GET_HANDOFF_COMMUNICATION_PARTICIPANTSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3092,8 +3159,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HANDOFF_COMMUNICATION_PARTICIPANTSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<HandoffCommunication> result = (Collection<HandoffCommunication>) query.evaluate(plannedInterventionAct);
-		return new BasicEList.UnmodifiableEList<HandoffCommunication>(result.size(), result.toArray());
+		Collection<HandoffCommunicationParticipants> result = (Collection<HandoffCommunicationParticipants>) query.evaluate(plannedInterventionAct);
+		return new BasicEList.UnmodifiableEList<HandoffCommunicationParticipants>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3128,7 +3195,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
-				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(105));
+				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(106));
 			try {
 				GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {

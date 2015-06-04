@@ -57,6 +57,17 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateNutritionAssessmentValueOfTypeCDIsFromSnomed(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NutritionAssessmentOperations.validateNutritionAssessmentValueOfTypeCDIsFromSnomed(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateNutritionAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentTemplateId(this, diagnostics, context);

@@ -160,9 +160,10 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAuthorParticipationAssignedAuthorId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorId(this, diagnostics, context);
+	public boolean validateAuthorParticipationAssignedAuthorCodeTerminology(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorCodeTerminology(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -171,9 +172,8 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * @generated
 	 */
 	@Override
-	public boolean validateAuthorParticipationAssignedAuthorCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorCodeP(this, diagnostics, context);
+	public boolean validateAuthorParticipationAssignedAuthorId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorId(this, diagnostics, context);
 	}
 
 	/**

@@ -22,8 +22,8 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedInterventionAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedInterventionActTemplateId PlannedInterventionActClassCode PlannedInterventionActMoodCode PlannedInterventionActMoodCodeP PlannedInterventionActId PlannedInterventionActCode PlannedInterventionActCodeP PlannedInterventionActStatusCode PlannedInterventionActStatusCodeP PlannedInterventionActEntryReferenceGoalObs PlannedInterventionActReferenceTypeCode' templateId.root='2.16.840.1.113883.10.20.22.4.146' classCode='ACT' constraints.validation.dependOn.PlannedInterventionActMoodCode='PlannedInterventionActMoodCodeP' code.code='362956003' code.codeSystemName='' code.displayName='procedure / intervention (navigational concept)' constraints.validation.dependOn.PlannedInterventionActCode='PlannedInterventionActCodeP' statusCode.code='active' constraints.validation.warning='PlannedInterventionActEffectiveTime PlannedInterventionActAuthorParticipation' constraints.validation.info='PlannedInterventionActAdvanceDirectiveObservation2 PlannedInterventionActImmunizationActivity2 PlannedInterventionActMedicationActivity2 PlannedInterventionActProcedureActivityAct2 PlannedInterventionActInterventionAct PlannedInterventionActProcedureActivityObservation2 PlannedInterventionActProcedureActivityProcedure2 PlannedInterventionActEncounterActivity2 PlannedInterventionActInstruction2 PlannedInterventionActNonMedicinalSupplyActivity2 PlannedInterventionActPlannedAct2 PlannedInterventionActPlannedEncounter2 PlannedInterventionActPlannedObservation2 PlannedInterventionActPlannedProcedure2 PlannedInterventionActPlannedMedicationActivity2 PlannedInterventionActPlannedSupply2 PlannedInterventionActNutritionRecommendations PlannedInterventionActEntryReferenceDocInstance PlannedInterventionActHandoffCommunicationParticipants PlannedInterventionActPlannedImmunizationActivity PlannedInterventionActReference' constraints.validation.query='PlannedInterventionActReferenceTypeCode'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedInterventionActReference typeCode='REFR' constraints.validation.error='PlannedInterventionActReferenceTypeCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedInterventionActTemplateId PlannedInterventionActClassCode PlannedInterventionActMoodCode PlannedInterventionActMoodCodeP PlannedInterventionActId PlannedInterventionActCode PlannedInterventionActCodeP PlannedInterventionActStatusCode PlannedInterventionActStatusCodeP PlannedInterventionActEntryReferenceGoalObs PlannedInterventionActReferenceTypeCode PlannedInterventionActReferenceExternalDocumentReference' templateId.root='2.16.840.1.113883.10.20.22.4.146' classCode='ACT' constraints.validation.dependOn.PlannedInterventionActMoodCode='PlannedInterventionActMoodCodeP' code.code='362956003' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='procedure / intervention (navigational concept)' constraints.validation.dependOn.PlannedInterventionActCode='PlannedInterventionActCodeP' statusCode.code='active' constraints.validation.warning='PlannedInterventionActEffectiveTime PlannedInterventionActAuthorParticipation' constraints.validation.info='PlannedInterventionActAdvanceDirectiveObservation2 PlannedInterventionActImmunizationActivity2 PlannedInterventionActMedicationActivity2 PlannedInterventionActProcedureActivityAct2 PlannedInterventionActInterventionAct PlannedInterventionActProcedureActivityObservation2 PlannedInterventionActProcedureActivityProcedure2 PlannedInterventionActEncounterActivity2 PlannedInterventionActInstruction2 PlannedInterventionActNonMedicinalSupplyActivity2 PlannedInterventionActPlannedAct2 PlannedInterventionActPlannedEncounter2 PlannedInterventionActPlannedObservation2 PlannedInterventionActPlannedProcedure2 PlannedInterventionActPlannedMedicationActivity2 PlannedInterventionActPlannedSupply2 PlannedInterventionActNutritionRecommendation PlannedInterventionActEntryReferenceDocInstance PlannedInterventionActHandoffCommunicationParticipants PlannedInterventionActPlannedImmunizationActivity PlannedInterventionActReference' constraints.validation.query='PlannedInterventionActReferenceTypeCode PlannedInterventionActReferenceExternalDocumentReference'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedInterventionActReference typeCode='REFR' constraints.validation.error='PlannedInterventionActReferenceTypeCode PlannedInterventionActReferenceExternalDocumentReference'"
  * @generated
  */
 public interface PlannedInterventionAct extends Act {
@@ -106,7 +106,7 @@ public interface PlannedInterventionAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'362956003\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'362956003\' and value.codeSystem = \'2.16.840.1.113883.6.96\')'"
 	 * @generated
 	 */
 	boolean validatePlannedInterventionActCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -363,10 +363,10 @@ public interface PlannedInterventionAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::NutritionRecommendations))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::NutritionRecommendation))'"
 	 * @generated
 	 */
-	boolean validatePlannedInterventionActNutritionRecommendations(DiagnosticChain diagnostics,
+	boolean validatePlannedInterventionActNutritionRecommendation(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
@@ -376,7 +376,7 @@ public interface PlannedInterventionAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ActReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
 	boolean validatePlannedInterventionActEntryReferenceDocInstance(DiagnosticChain diagnostics,
@@ -389,7 +389,7 @@ public interface PlannedInterventionAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ActReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
 	 * @generated
 	 */
 	boolean validatePlannedInterventionActEntryReferenceGoalObs(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -401,7 +401,7 @@ public interface PlannedInterventionAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::HandoffCommunication) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::HandoffCommunicationParticipants) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
 	boolean validatePlannedInterventionActHandoffCommunicationParticipants(DiagnosticChain diagnostics,
@@ -443,6 +443,19 @@ public interface PlannedInterventionAct extends Act {
 	 * @generated
 	 */
 	boolean validatePlannedInterventionActReferenceTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->excluding(null)->reject(externalDocument->one(externalDocument : cda::ExternalDocument | not externalDocument.oclIsUndefined() and externalDocument.oclIsKindOf(consol::ExternalDocumentReference)))'"
+	 * @generated
+	 */
+	boolean validatePlannedInterventionActReferenceExternalDocumentReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -592,37 +605,37 @@ public interface PlannedInterventionAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::NutritionRecommendations)).oclAsType(consol::NutritionRecommendations)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::NutritionRecommendation)).oclAsType(consol::NutritionRecommendation)'"
 	 * @generated
 	 */
-	EList<NutritionRecommendations> getNutritionRecommendationss();
+	EList<NutritionRecommendation> getNutritionRecommendations();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ActReference)).oclAsType(consol::ActReference)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)'"
 	 * @generated
 	 */
-	EList<ActReference> getEntryReferenceDocInstances();
+	EList<EntryReference> getEntryReferenceDocInstances();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ActReference))->asSequence()->any(true).oclAsType(consol::ActReference)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference))->asSequence()->any(true).oclAsType(consol::EntryReference)'"
 	 * @generated
 	 */
-	ActReference getEntryReferenceGoalObs();
+	EntryReference getEntryReferenceGoalObs();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunication)).oclAsType(consol::HandoffCommunication)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunicationParticipants)).oclAsType(consol::HandoffCommunicationParticipants)'"
 	 * @generated
 	 */
-	EList<HandoffCommunication> getHandoffCommunicationParticipantss();
+	EList<HandoffCommunicationParticipants> getHandoffCommunicationParticipantss();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -127,6 +127,15 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDrugMonitoringActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DrugMonitoringActOperations.validateDrugMonitoringActStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateDrugMonitoringActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActEffectiveTime(this, diagnostics, context);

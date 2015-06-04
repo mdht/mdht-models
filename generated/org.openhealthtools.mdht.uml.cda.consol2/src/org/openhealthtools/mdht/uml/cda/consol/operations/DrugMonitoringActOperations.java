@@ -47,6 +47,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Participant Participant Role Playing Entity Class Code</em>}</li>
@@ -455,7 +456,9 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DRUG_MONITORING_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+	protected static final String VALIDATE_DRUG_MONITORING_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "
+			+ "value.code = 'normal' or value.code = 'aborted' or value.code = 'active' or value.code = 'cancelled' or value.code = 'completed' or value.code = 'held' or value.code = 'new' or value.code = 'suspended' or value.code = 'nullified' or value.code = 'obsolete')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDrugMonitoringActStatusCode(DrugMonitoringAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Status Code</em>}' invariant operation.
@@ -498,6 +501,65 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_STATUS_CODE,
 					ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActStatusCode"),
+					new Object[] { drugMonitoringAct }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDrugMonitoringActStatusCodeP(DrugMonitoringAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDrugMonitoringActStatusCodeP(DrugMonitoringAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DRUG_MONITORING_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDrugMonitoringActStatusCodeP(DrugMonitoringAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDrugMonitoringActStatusCodeP(DrugMonitoringAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_DRUG_MONITORING_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param drugMonitoringAct The receiving '<em><b>Drug Monitoring Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateDrugMonitoringActStatusCodeP(DrugMonitoringAct drugMonitoringAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_DRUG_MONITORING_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DRUG_MONITORING_ACT);
+			try {
+				VALIDATE_DRUG_MONITORING_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_MONITORING_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_MONITORING_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			drugMonitoringAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_STATUS_CODE_P,
+					ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActStatusCodeP"),
 					new Object[] { drugMonitoringAct }));
 			}
 

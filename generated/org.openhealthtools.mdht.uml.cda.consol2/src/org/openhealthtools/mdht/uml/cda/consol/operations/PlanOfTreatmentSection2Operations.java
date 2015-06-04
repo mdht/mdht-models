@@ -27,9 +27,9 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
-import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication;
+import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipants;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
-import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendations;
+import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2;
@@ -57,7 +57,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlannedSupply2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Planned Supply2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2HandoffCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Handoff Communication</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2NutritionRecommendations(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Nutrition Recommendations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2NutritionRecommendation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Nutrition Recommendation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2PlannedImmunizationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Planned Immunization Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2GoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Goal Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolPlannedObservation2s() <em>Get Consol Planned Observation2s</em>}</li>
@@ -68,7 +68,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolPlannedSupply2s() <em>Get Consol Planned Supply2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolInstruction2s() <em>Get Consol Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getHandoffCommunications() <em>Get Handoff Communications</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getNutritionRecommendationss() <em>Get Nutrition Recommendationss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getNutritionRecommendations() <em>Get Nutrition Recommendations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getPlannedImmunizationActivities() <em>Get Planned Immunization Activities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getGoalObservations() <em>Get Goal Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Template Id</em>}</li>
@@ -512,7 +512,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLAN_OF_TREATMENT_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HandoffCommunication))";
+	protected static final String VALIDATE_PLAN_OF_TREATMENT_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HandoffCommunicationParticipants))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlanOfTreatmentSection2HandoffCommunication(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Handoff Communication</em>}' invariant operation.
@@ -566,25 +566,25 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePlanOfTreatmentSection2NutritionRecommendations(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Nutrition Recommendations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePlanOfTreatmentSection2NutritionRecommendation(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Nutrition Recommendation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePlanOfTreatmentSection2NutritionRecommendations(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePlanOfTreatmentSection2NutritionRecommendation(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::NutritionRecommendations))";
+	protected static final String VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::NutritionRecommendation))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePlanOfTreatmentSection2NutritionRecommendations(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Nutrition Recommendations</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validatePlanOfTreatmentSection2NutritionRecommendation(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Nutrition Recommendation</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePlanOfTreatmentSection2NutritionRecommendations(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePlanOfTreatmentSection2NutritionRecommendation(PlanOfTreatmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -597,27 +597,27 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @generated
 	 */
 
-	public static boolean validatePlanOfTreatmentSection2NutritionRecommendations(
+	public static boolean validatePlanOfTreatmentSection2NutritionRecommendation(
 			PlanOfTreatmentSection2 planOfTreatmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2);
 			try {
-				VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			planOfTreatmentSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATIONS,
-					ConsolPlugin.INSTANCE.getString("PlanOfTreatmentSection2PlanOfTreatmentSection2NutritionRecommendations"),
+					ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION,
+					ConsolPlugin.INSTANCE.getString("PlanOfTreatmentSection2PlanOfTreatmentSection2NutritionRecommendation"),
 					new Object[] { planOfTreatmentSection2 }));
 			}
 
@@ -1064,7 +1064,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HANDOFF_COMMUNICATIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunication)).oclAsType(consol::HandoffCommunication)";
+	protected static final String GET_HANDOFF_COMMUNICATIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunicationParticipants)).oclAsType(consol::HandoffCommunicationParticipants)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHandoffCommunications(PlanOfTreatmentSection2) <em>Get Handoff Communications</em>}' query operation.
@@ -1082,7 +1082,8 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @generated
 	 */
 
-	public static EList<HandoffCommunication> getHandoffCommunications(PlanOfTreatmentSection2 planOfTreatmentSection2) {
+	public static EList<HandoffCommunicationParticipants> getHandoffCommunications(
+			PlanOfTreatmentSection2 planOfTreatmentSection2) {
 		if (GET_HANDOFF_COMMUNICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1096,29 +1097,29 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HANDOFF_COMMUNICATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<HandoffCommunication> result = (Collection<HandoffCommunication>) query.evaluate(planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<HandoffCommunication>(result.size(), result.toArray());
+		Collection<HandoffCommunicationParticipants> result = (Collection<HandoffCommunicationParticipants>) query.evaluate(planOfTreatmentSection2);
+		return new BasicEList.UnmodifiableEList<HandoffCommunicationParticipants>(result.size(), result.toArray());
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getNutritionRecommendationss(PlanOfTreatmentSection2) <em>Get Nutrition Recommendationss</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getNutritionRecommendations(PlanOfTreatmentSection2) <em>Get Nutrition Recommendations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNutritionRecommendationss(PlanOfTreatmentSection2)
+	 * @see #getNutritionRecommendations(PlanOfTreatmentSection2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NUTRITION_RECOMMENDATIONSS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::NutritionRecommendations)).oclAsType(consol::NutritionRecommendations)";
+	protected static final String GET_NUTRITION_RECOMMENDATIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::NutritionRecommendation)).oclAsType(consol::NutritionRecommendation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getNutritionRecommendationss(PlanOfTreatmentSection2) <em>Get Nutrition Recommendationss</em>}' query operation.
+	 * The cached OCL query for the '{@link #getNutritionRecommendations(PlanOfTreatmentSection2) <em>Get Nutrition Recommendations</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNutritionRecommendationss(PlanOfTreatmentSection2)
+	 * @see #getNutritionRecommendations(PlanOfTreatmentSection2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_NUTRITION_RECOMMENDATIONSS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_NUTRITION_RECOMMENDATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1126,23 +1127,23 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @generated
 	 */
 
-	public static EList<NutritionRecommendations> getNutritionRecommendationss(
+	public static EList<NutritionRecommendation> getNutritionRecommendations(
 			PlanOfTreatmentSection2 planOfTreatmentSection2) {
-		if (GET_NUTRITION_RECOMMENDATIONSS__EOCL_QRY == null) {
+		if (GET_NUTRITION_RECOMMENDATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2,
 				ConsolPackage.Literals.PLAN_OF_TREATMENT_SECTION2.getEAllOperations().get(93));
 			try {
-				GET_NUTRITION_RECOMMENDATIONSS__EOCL_QRY = helper.createQuery(GET_NUTRITION_RECOMMENDATIONSS__EOCL_EXP);
+				GET_NUTRITION_RECOMMENDATIONS__EOCL_QRY = helper.createQuery(GET_NUTRITION_RECOMMENDATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NUTRITION_RECOMMENDATIONSS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_NUTRITION_RECOMMENDATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<NutritionRecommendations> result = (Collection<NutritionRecommendations>) query.evaluate(planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<NutritionRecommendations>(result.size(), result.toArray());
+		Collection<NutritionRecommendation> result = (Collection<NutritionRecommendation>) query.evaluate(planOfTreatmentSection2);
+		return new BasicEList.UnmodifiableEList<NutritionRecommendation>(result.size(), result.toArray());
 	}
 
 	/**

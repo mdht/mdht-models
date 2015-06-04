@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveOrganizerTemplateId AdvanceDirectiveOrganizerClassCode AdvanceDirectiveOrganizerMoodCode AdvanceDirectiveOrganizerId AdvanceDirectiveOrganizerCode AdvanceDirectiveOrganizerCodeP AdvanceDirectiveOrganizerStatusCode AdvanceDirectiveOrganizerStatusCodeP AdvanceDirectiveOrganizerAdvanceDirectiveObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.108' classCode='CLUSTER' moodCode='EVN' code.code='45473-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Advance directive - living will' statusCode.code='completed' constraints.validation.dependOn.AdvanceDirectiveOrganizerStatusCode='AdvanceDirectiveOrganizerStatusCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveOrganizerTemplateId AdvanceDirectiveOrganizerClassCode AdvanceDirectiveOrganizerMoodCode AdvanceDirectiveOrganizerId AdvanceDirectiveOrganizerCode AdvanceDirectiveOrganizerCodeP AdvanceDirectiveOrganizerStatusCode AdvanceDirectiveOrganizerStatusCodeP AdvanceDirectiveOrganizerAdvanceDirectiveObservation2' templateId.root='2.16.840.1.113883.10.20.22.4.108' classCode='CLUSTER' moodCode='EVN' code.code='45473-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Advance directive - living will' statusCode.code='completed' constraints.validation.dependOn.AdvanceDirectiveOrganizerStatusCode='AdvanceDirectiveOrganizerStatusCodeP' constraints.validation.warning='AdvanceDirectiveOrganizerAuthorParticipation'"
  * @generated
  */
 public interface AdvanceDirectiveOrganizer extends Organizer {
@@ -137,6 +137,19 @@ public interface AdvanceDirectiveOrganizer extends Organizer {
 	 * @generated
 	 */
 	boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
+	 * @generated
+	 */
+	boolean validateAdvanceDirectiveOrganizerAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**

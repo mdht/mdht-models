@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2;
-import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
+import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedEncounter2Operations;
@@ -191,7 +191,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProviderPriorityPreference getPriorityPreference() {
+	public PriorityPreference getPriorityPreference() {
 		return PlannedEncounter2Operations.getPriorityPreference(this);
 	}
 

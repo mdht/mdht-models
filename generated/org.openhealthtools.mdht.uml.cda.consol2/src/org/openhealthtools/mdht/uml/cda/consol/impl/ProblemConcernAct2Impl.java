@@ -19,10 +19,9 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemConcernAct2Operations;
 
 /**
@@ -119,7 +118,7 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProviderPriorityPreference> getPriorityPreferences() {
+	public EList<PriorityPreference> getPriorityPreferences() {
 		return ProblemConcernAct2Operations.getPriorityPreferences(this);
 	}
 

@@ -57,6 +57,17 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateCulturalAndReligiousObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

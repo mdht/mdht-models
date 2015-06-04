@@ -35,8 +35,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
-import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
-
+import org.openhealthtools.mdht.uml.cda.consol.SensoryStatus;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -402,7 +401,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SensoryAndSpeechStatus))";
+	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SensoryStatus))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFunctionalStatusSection2SensoryAndSpeechStatus(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Sensory And Speech Status</em>}' invariant operation.
@@ -822,7 +821,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SENSORY_AND_SPEECH_STATUSS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SensoryAndSpeechStatus)).oclAsType(consol::SensoryAndSpeechStatus)";
+	protected static final String GET_SENSORY_AND_SPEECH_STATUSS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SensoryStatus)).oclAsType(consol::SensoryStatus)";
 
 	/**
 	 * The cached OCL query for the '{@link #getSensoryAndSpeechStatuss(FunctionalStatusSection2) <em>Get Sensory And Speech Statuss</em>}' query operation.
@@ -840,8 +839,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @generated
 	 */
 
-	public static EList<SensoryAndSpeechStatus> getSensoryAndSpeechStatuss(
-			FunctionalStatusSection2 functionalStatusSection2) {
+	public static EList<SensoryStatus> getSensoryAndSpeechStatuss(FunctionalStatusSection2 functionalStatusSection2) {
 		if (GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -855,8 +853,8 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<SensoryAndSpeechStatus> result = (Collection<SensoryAndSpeechStatus>) query.evaluate(functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<SensoryAndSpeechStatus>(result.size(), result.toArray());
+		Collection<SensoryStatus> result = (Collection<SensoryStatus>) query.evaluate(functionalStatusSection2);
+		return new BasicEList.UnmodifiableEList<SensoryStatus>(result.size(), result.toArray());
 	}
 
 	/**

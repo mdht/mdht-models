@@ -22,8 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
-import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
-
+import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedAct2Operations;
 
 /**
@@ -178,7 +177,7 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProviderPriorityPreference> getPriorityPreferences() {
+	public EList<PriorityPreference> getPriorityPreferences() {
 		return PlannedAct2Operations.getPriorityPreferences(this);
 	}
 

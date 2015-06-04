@@ -23,8 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
-
+import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedObservation2Operations;
 
 /**
@@ -210,7 +209,7 @@ public class PlannedObservation2Impl extends PlanOfCareActivityObservationImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProviderPriorityPreference> getPriorityPreferences() {
+	public EList<PriorityPreference> getPriorityPreferences() {
 		return PlannedObservation2Operations.getPriorityPreferences(this);
 	}
 

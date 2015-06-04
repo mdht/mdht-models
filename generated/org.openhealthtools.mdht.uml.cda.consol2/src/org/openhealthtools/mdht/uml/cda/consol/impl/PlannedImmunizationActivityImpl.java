@@ -21,10 +21,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
-import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity;
 
-import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
+import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedImmunizationActivityOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
@@ -235,18 +234,6 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedImmunizationActivityPatientPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPatientPriorityPreference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePlannedImmunizationActivityAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityAuthorParticipation(
@@ -258,10 +245,9 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlannedImmunizationActivityProviderPriorityPreference(DiagnosticChain diagnostics,
+	public boolean validatePlannedImmunizationActivityPriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityProviderPriorityPreference(
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPriorityPreference(
 			this, diagnostics, context);
 	}
 
@@ -358,19 +344,8 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
-		return PlannedImmunizationActivityOperations.getPatientPriorityPreferences(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
-		return PlannedImmunizationActivityOperations.getProviderPriorityPreferences(this);
+	public EList<PriorityPreference> getPriorityPreferences() {
+		return PlannedImmunizationActivityOperations.getPriorityPreferences(this);
 	}
 
 	/**

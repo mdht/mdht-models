@@ -154,6 +154,17 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAdvanceDirectiveOrganizerAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAuthorParticipation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<AdvanceDirectiveObservation2> getAdvanceDirectiveObservation2s() {
 		return AdvanceDirectiveOrganizerOperations.getAdvanceDirectiveObservation2s(this);
 	}

@@ -43,6 +43,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment#validateCharacteristicsOfHomeEnvironmentStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment#validateCharacteristicsOfHomeEnvironmentStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment#validateCharacteristicsOfHomeEnvironmentValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment#validateCharacteristicsOfHomeEnvironmentValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Value P</em>}</li>
  * </ul>
  * </p>
  *
@@ -389,7 +390,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 */
 	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '224249004' and value.codeSystem = '2.16.840.1.113883.6.96')";
+			+ "value.code = '75274-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCharacteristicsOfHomeEnvironmentCode(CharacteristicsOfHomeEnvironment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Code</em>}' invariant operation.
@@ -584,7 +585,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
+	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCharacteristicsOfHomeEnvironmentValue(CharacteristicsOfHomeEnvironment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Value</em>}' invariant operation.
@@ -625,10 +628,71 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE,
 					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentValue"),
+					new Object[] { characteristicsOfHomeEnvironment }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCharacteristicsOfHomeEnvironmentValueP(CharacteristicsOfHomeEnvironment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCharacteristicsOfHomeEnvironmentValueP(CharacteristicsOfHomeEnvironment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCharacteristicsOfHomeEnvironmentValueP(CharacteristicsOfHomeEnvironment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCharacteristicsOfHomeEnvironmentValueP(CharacteristicsOfHomeEnvironment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param characteristicsOfHomeEnvironment The receiving '<em><b>Characteristics Of Home Environment</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateCharacteristicsOfHomeEnvironmentValueP(
+			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT);
+			try {
+				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			characteristicsOfHomeEnvironment)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P,
+					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentValueP"),
 					new Object[] { characteristicsOfHomeEnvironment }));
 			}
 

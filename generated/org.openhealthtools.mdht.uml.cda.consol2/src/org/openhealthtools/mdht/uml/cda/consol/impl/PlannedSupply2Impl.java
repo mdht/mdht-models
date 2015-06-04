@@ -23,9 +23,8 @@ import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2;
+import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
-import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedSupply2Operations;
 
 /**
@@ -242,7 +241,7 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProviderPriorityPreference> getPriorityPreferences() {
+	public EList<PriorityPreference> getPriorityPreferences() {
 		return PlannedSupply2Operations.getPriorityPreferences(this);
 	}
 

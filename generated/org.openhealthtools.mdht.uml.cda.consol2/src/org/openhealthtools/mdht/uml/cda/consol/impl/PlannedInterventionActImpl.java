@@ -14,17 +14,17 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.ActReference;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2;
-import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication;
+import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
+import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipants;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
-import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendations;
+import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity;
@@ -346,9 +346,9 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedInterventionActNutritionRecommendations(DiagnosticChain diagnostics,
+	public boolean validatePlannedInterventionActNutritionRecommendation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActNutritionRecommendations(
+		return PlannedInterventionActOperations.validatePlannedInterventionActNutritionRecommendation(
 			this, diagnostics, context);
 	}
 
@@ -413,6 +413,17 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	public boolean validatePlannedInterventionActReferenceTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedInterventionActOperations.validatePlannedInterventionActReferenceTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActReferenceExternalDocumentReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActReferenceExternalDocumentReference(
 			this, diagnostics, context);
 	}
 
@@ -565,8 +576,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<NutritionRecommendations> getNutritionRecommendationss() {
-		return PlannedInterventionActOperations.getNutritionRecommendationss(this);
+	public EList<NutritionRecommendation> getNutritionRecommendations() {
+		return PlannedInterventionActOperations.getNutritionRecommendations(this);
 	}
 
 	/**
@@ -574,7 +585,7 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ActReference> getEntryReferenceDocInstances() {
+	public EList<EntryReference> getEntryReferenceDocInstances() {
 		return PlannedInterventionActOperations.getEntryReferenceDocInstances(this);
 	}
 
@@ -583,7 +594,7 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActReference getEntryReferenceGoalObs() {
+	public EntryReference getEntryReferenceGoalObs() {
 		return PlannedInterventionActOperations.getEntryReferenceGoalObs(this);
 	}
 
@@ -592,7 +603,7 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<HandoffCommunication> getHandoffCommunicationParticipantss() {
+	public EList<HandoffCommunicationParticipants> getHandoffCommunicationParticipantss() {
 		return PlannedInterventionActOperations.getHandoffCommunicationParticipantss(this);
 	}
 

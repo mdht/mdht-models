@@ -29,8 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
-import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
-
+import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -600,7 +599,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_PLANNED_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedAct2PriorityPreference(PlannedAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Act2 Priority Preference</em>}' invariant operation.
@@ -745,7 +744,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PRIORITY_PREFERENCES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)";
+	protected static final String GET_PRIORITY_PREFERENCES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)).oclAsType(consol::PriorityPreference)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPriorityPreferences(PlannedAct2) <em>Get Priority Preferences</em>}' query operation.
@@ -763,7 +762,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 	 * @generated
 	 */
 
-	public static EList<ProviderPriorityPreference> getPriorityPreferences(PlannedAct2 plannedAct2) {
+	public static EList<PriorityPreference> getPriorityPreferences(PlannedAct2 plannedAct2) {
 		if (GET_PRIORITY_PREFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -776,8 +775,8 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PRIORITY_PREFERENCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProviderPriorityPreference> result = (Collection<ProviderPriorityPreference>) query.evaluate(plannedAct2);
-		return new BasicEList.UnmodifiableEList<ProviderPriorityPreference>(result.size(), result.toArray());
+		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(plannedAct2);
+		return new BasicEList.UnmodifiableEList<PriorityPreference>(result.size(), result.toArray());
 	}
 
 	/**
