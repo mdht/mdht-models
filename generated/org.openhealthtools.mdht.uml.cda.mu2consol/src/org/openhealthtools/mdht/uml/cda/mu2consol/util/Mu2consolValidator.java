@@ -7,8 +7,12 @@ import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
+import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultObservation;
+import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultOrganizer;
+import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultObservation;
+import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultOrganizer;
+import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
@@ -57,23 +61,13 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate MU2CONSOL General Header Constraints Care Team
-	 * Members' of 'General Header Constraints'. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * constraint 'Validate General Header Constraints Care Team Members' of
+	 * 'General Header Constraints'. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
 	 * 
 	 * @generated
 	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__MU2CONSOL_GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS = 1;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate MU2CONSOL General Header Constraints Record Target'
-	 * of 'General Header Constraints'. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__MU2CONSOL_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET = 2;
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS = 1;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -84,17 +78,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_TERM_CASE_INSENSITIVE = 3;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate MU2CONSOL General Header Constraints General Header
-	 * Constraints Record Target Patient Role' of 'General Header Constraints'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__MU2CONSOL_GENERAL_HEADER_CONSTRAINTS_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE = 4;
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_TERM_CASE_INSENSITIVE = 2;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -103,7 +87,17 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 5;
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 3;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
+	 * constraint 'Validate General Header Constraints Record Target' of
+	 * 'General Header Constraints'. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
+	 * @generated
+	 */
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET = 4;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -113,7 +107,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE = 6;
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE = 5;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -123,7 +117,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE = 7;
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE = 6;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -133,7 +127,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P = 8;
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P = 7;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -143,7 +137,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE = 9;
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE = 8;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -153,7 +147,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P = 10;
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P = 9;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -163,7 +157,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION = 11;
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION = 10;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -173,7 +167,17 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT = 12;
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT = 11;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
+	 * constraint 'Validate General Header Constraints Record Target Patient
+	 * Role' of 'General Header Constraints'. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE = 12;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -268,31 +272,31 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate MU2CONSOL Social History Section Smoking Status
-	 * Observation' of 'Social History Section'. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int SOCIAL_HISTORY_SECTION__MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION = 22;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Social History Section Template Id' of 'Social
 	 * History Section'. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 */
-	public static final int SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 23;
+	public static final int SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 22;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Tobacco Use Template Id' of 'Smoking Status
-	 * Observation'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * constraint 'Validate Social History Section Smoking Status Observation'
+	 * of 'Social History Section'. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
 	 * 
 	 * @generated
 	 */
-	public static final int SMOKING_STATUS_OBSERVATION__TOBACCO_USE_TEMPLATE_ID = 24;
+	public static final int SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION = 23;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
+	 * constraint 'Validate Smoking Status Observation Template Id' of 'Smoking
+	 * Status Observation'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public static final int SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_TEMPLATE_ID = 24;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -377,13 +381,13 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate MU2CONSOL Procedure Activity Procedure Code Value'
-	 * of 'Procedure Activity Procedure'. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * constraint 'Validate Procedure Activity Procedure Code Value' of
+	 * 'Procedure Activity Procedure'. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
 	 * 
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE = 34;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE = 34;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
@@ -1115,9 +1119,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
-							generalHeaderConstraints, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -1538,9 +1541,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
-							generalHeaderConstraints, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -2308,52 +2310,29 @@ public class Mu2consolValidator extends EObjectValidator {
 							generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(
-					generalHeaderConstraints, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
 					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
 					generalHeaderConstraints, diagnostics, context);
 		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(
-					generalHeaderConstraints, diagnostics, context);
-		}
 		return result;
 	}
 
 	/**
-	 * Validates the validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers
-	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+	 * Validates the validateGeneralHeaderConstraintsCareTeamMembers constraint
+	 * of '<em>General Header Constraints</em>'. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(
+	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
 			GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return generalHeaderConstraints
-				.validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(
-						diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateMU2CONSOLGeneralHeaderConstraintsRecordTarget
-	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return generalHeaderConstraints
-				.validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(
-						diagnostics, context);
+				.validateGeneralHeaderConstraintsCareTeamMembers(diagnostics,
+						context);
 	}
 
 	/**
@@ -2373,22 +2352,6 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the
-	 * validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole
-	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return generalHeaderConstraints
-				.validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(
-						diagnostics, context);
-	}
-
-	/**
 	 * Validates the validateGeneralHeaderConstraintsTemplateId constraint of '
 	 * <em>General Header Constraints</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
@@ -2400,6 +2363,21 @@ public class Mu2consolValidator extends EObjectValidator {
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return generalHeaderConstraints
 				.validateGeneralHeaderConstraintsTemplateId(diagnostics,
+						context);
+	}
+
+	/**
+	 * Validates the validateGeneralHeaderConstraintsRecordTarget constraint of
+	 * '<em>General Header Constraints</em>'. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+			GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return generalHeaderConstraints
+				.validateGeneralHeaderConstraintsRecordTarget(diagnostics,
 						context);
 	}
 
@@ -2512,6 +2490,21 @@ public class Mu2consolValidator extends EObjectValidator {
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return generalHeaderConstraints
 				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
+						diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRole
+	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+			GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return generalHeaderConstraints
+				.validateGeneralHeaderConstraintsRecordTargetPatientRole(
 						diagnostics, context);
 	}
 
@@ -2675,9 +2668,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
-							summaryOfCareRecord, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -3098,9 +3090,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
-							summaryOfCareRecord, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -3868,19 +3859,11 @@ public class Mu2consolValidator extends EObjectValidator {
 							summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(
-					summaryOfCareRecord, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
 					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
-					summaryOfCareRecord, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(
 					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -4137,36 +4120,15 @@ public class Mu2consolValidator extends EObjectValidator {
 							socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSocialHistorySection_validateSocialHistorySectionSmokingStatusObservation(
-							socialHistorySection, diagnostics, context);
+			result &= validateSocialHistorySection_validateSocialHistorySectionSmokingStatusObservation(
+					socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateSocialHistorySection_validateSocialHistorySectionTobaccoUse(
 							socialHistorySection, diagnostics, context);
 		}
-		if (result || diagnostics != null) {
-			result &= validateSocialHistorySection_validateMU2CONSOLSocialHistorySectionSmokingStatusObservation(
-					socialHistorySection, diagnostics, context);
-		}
 		return result;
-	}
-
-	/**
-	 * Validates the
-	 * validateMU2CONSOLSocialHistorySectionSmokingStatusObservation constraint
-	 * of '<em>Social History Section</em>'. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateSocialHistorySection_validateMU2CONSOLSocialHistorySectionSmokingStatusObservation(
-			SocialHistorySection socialHistorySection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return socialHistorySection
-				.validateMU2CONSOLSocialHistorySectionSmokingStatusObservation(
-						diagnostics, context);
 	}
 
 	/**
@@ -4181,6 +4143,21 @@ public class Mu2consolValidator extends EObjectValidator {
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return socialHistorySection.validateSocialHistorySectionTemplateId(
 				diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSocialHistorySectionSmokingStatusObservation
+	 * constraint of '<em>Social History Section</em>'. <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public boolean validateSocialHistorySection_validateSocialHistorySectionSmokingStatusObservation(
+			SocialHistorySection socialHistorySection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return socialHistorySection
+				.validateSocialHistorySectionSmokingStatusObservation(
+						diagnostics, context);
 	}
 
 	/**
@@ -4226,63 +4203,8 @@ public class Mu2consolValidator extends EObjectValidator {
 					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateTobaccoUse_validateTobaccoUseEffectiveTimeLow(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSmokingStatusObservation_validateTobaccoUseTemplateId(
+			result &= validateSmokingStatusObservation_validateSmokingStatusObservationTemplateId(
 					smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateTobaccoUse_validateTobaccoUseClassCode(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateTobaccoUse_validateTobaccoUseMoodCode(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateTobaccoUse_validateTobaccoUseCodeP(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateTobaccoUse_validateTobaccoUseCode(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateTobaccoUse_validateTobaccoUseEffectiveTime(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateTobaccoUse_validateTobaccoUseStatusCode(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateTobaccoUse_validateTobaccoUseStatusCodeP(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateTobaccoUse_validateTobaccoUseValue(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateTobaccoUse_validateTobaccoUseValueP(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationEffectiveTimeLow(
-							smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -4311,37 +4233,58 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationStatusCodeP(
+					.validateSmokingStatusObservation_validateSmokingStatusObservationStatusCode(
 							smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationStatusCode(
+					.validateSmokingStatusObservation_validateSmokingStatusObservationStatusCodeP(
 							smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSmokingStatusObservation_validateSmokingStatusObservationValue(
+					smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateSmokingStatusObservation_validateSmokingStatusObservationValueP(
 					smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSmokingStatusObservation_validateSmokingStatusObservationValue(
-					smokingStatusObservation, diagnostics, context);
+			result &= consolValidator
+					.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSCenter(
+							smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSHigh(
+							smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSLow(
+							smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSWidth(
+							smokingStatusObservation, diagnostics, context);
 		}
 		return result;
 	}
 
 	/**
-	 * Validates the validateTobaccoUseTemplateId constraint of '
+	 * Validates the validateSmokingStatusObservationTemplateId constraint of '
 	 * <em>Smoking Status Observation</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
 	 * 
 	 * @generated
 	 */
-	public boolean validateSmokingStatusObservation_validateTobaccoUseTemplateId(
+	public boolean validateSmokingStatusObservation_validateSmokingStatusObservationTemplateId(
 			SmokingStatusObservation smokingStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return smokingStatusObservation.validateTobaccoUseTemplateId(
-				diagnostics, context);
+		return smokingStatusObservation
+				.validateSmokingStatusObservationTemplateId(diagnostics,
+						context);
 	}
 
 	/**
@@ -5173,25 +5116,25 @@ public class Mu2consolValidator extends EObjectValidator {
 							procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProcedureActivityProcedure_validateMU2CONSOLProcedureActivityProcedureCodeValue(
+			result &= validateProcedureActivityProcedure_validateProcedureActivityProcedureCodeValue(
 					procedureActivityProcedure, diagnostics, context);
 		}
 		return result;
 	}
 
 	/**
-	 * Validates the validateMU2CONSOLProcedureActivityProcedureCodeValue
-	 * constraint of '<em>Procedure Activity Procedure</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
+	 * Validates the validateProcedureActivityProcedureCodeValue constraint of '
+	 * <em>Procedure Activity Procedure</em>'. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedure_validateMU2CONSOLProcedureActivityProcedureCodeValue(
+	public boolean validateProcedureActivityProcedure_validateProcedureActivityProcedureCodeValue(
 			ProcedureActivityProcedure procedureActivityProcedure,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return procedureActivityProcedure
-				.validateMU2CONSOLProcedureActivityProcedureCodeValue(
-						diagnostics, context);
+				.validateProcedureActivityProcedureCodeValue(diagnostics,
+						context);
 	}
 
 	/**
@@ -5383,9 +5326,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -5806,9 +5748,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -6576,19 +6517,11 @@ public class Mu2consolValidator extends EObjectValidator {
 							clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(
-					clinicalOfficeVisitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
 					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
-					clinicalOfficeVisitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(
 					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -7158,10 +7091,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -7660,10 +7591,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -8584,19 +8513,11 @@ public class Mu2consolValidator extends EObjectValidator {
 							context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(
-					transitionOfCareAmbulatorySummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
 					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
-					transitionOfCareAmbulatorySummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(
 					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -8896,10 +8817,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -9398,10 +9317,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -10322,19 +10239,11 @@ public class Mu2consolValidator extends EObjectValidator {
 							context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(
-					transitionOfCareInpatientSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
 					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
-					transitionOfCareInpatientSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(
 					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -10594,9 +10503,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -11017,9 +10925,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -11787,19 +11694,11 @@ public class Mu2consolValidator extends EObjectValidator {
 							viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(
-					viewDownloadTransmitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
 					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
-					viewDownloadTransmitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(
 					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -12098,9 +11997,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
-							vdtInpatientSummary, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -12521,9 +12419,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
-							vdtInpatientSummary, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -13291,19 +13188,11 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(
-					vdtInpatientSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
 					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
-					vdtInpatientSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(
 					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -13609,9 +13498,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -14032,9 +13920,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -14802,19 +14689,11 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(
-					vdtAmbulatorySummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
 					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
-					vdtAmbulatorySummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(
 					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {

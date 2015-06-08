@@ -57,12 +57,11 @@ public class ProcedureActivityProcedureImpl
 	 * 
 	 * @generated
 	 */
-	@Override
-	public boolean validateMU2CONSOLProcedureActivityProcedureCodeValue(
+	public boolean validateProcedureActivityProcedureCodeValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations
-				.validateMU2CONSOLProcedureActivityProcedureCodeValue(this,
-						diagnostics, context);
+				.validateProcedureActivityProcedureCodeValue(this, diagnostics,
+						context);
 	}
 
 	/**

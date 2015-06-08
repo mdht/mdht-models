@@ -140,7 +140,7 @@ public class VDTInpatientSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_ADMISSION_DATE,
 								Mu2consolPlugin.INSTANCE
-										.getString("VDTInpatientSummaryAdmissionDate"),
+										.getString("VDTInpatientSummaryVDTInpatientSummaryAdmissionDate"),
 								new Object[] { vdtInpatientSummary }));
 			}
 
@@ -217,7 +217,7 @@ public class VDTInpatientSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_DISCHARGE_DATE,
 								Mu2consolPlugin.INSTANCE
-										.getString("VDTInpatientSummaryDischargeDate"),
+										.getString("VDTInpatientSummaryVDTInpatientSummaryDischargeDate"),
 								new Object[] { vdtInpatientSummary }));
 			}
 
@@ -294,7 +294,7 @@ public class VDTInpatientSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_ADMISSION_DISCHARGE_LOCATION,
 								Mu2consolPlugin.INSTANCE
-										.getString("VDTInpatientSummaryAdmissionDischargeLocation"),
+										.getString("VDTInpatientSummaryVDTInpatientSummaryAdmissionDischargeLocation"),
 								new Object[] { vdtInpatientSummary }));
 			}
 
@@ -371,7 +371,7 @@ public class VDTInpatientSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_MEDICATIONS,
 								Mu2consolPlugin.INSTANCE
-										.getString("VDTInpatientSummaryMedications"),
+										.getString("VDTInpatientSummaryVDTInpatientSummaryMedications"),
 								new Object[] { vdtInpatientSummary }));
 			}
 
@@ -451,7 +451,7 @@ public class VDTInpatientSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_REASONFOR_HOSPITALIZATION,
 								Mu2consolPlugin.INSTANCE
-										.getString("VDTInpatientSummaryReasonforHospitalization"),
+										.getString("VDTInpatientSummaryVDTInpatientSummaryReasonforHospitalization"),
 								new Object[] { vdtInpatientSummary }));
 			}
 
@@ -530,7 +530,7 @@ public class VDTInpatientSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("VDTInpatientSummaryHospitalDischargeInstructionsSection"),
+										.getString("VDTInpatientSummaryVDTInpatientSummaryHospitalDischargeInstructionsSection"),
 								new Object[] { vdtInpatientSummary }));
 			}
 
@@ -584,7 +584,7 @@ public class VDTInpatientSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY,
 					Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY
-							.getEAllOperations().get(315));
+							.getEAllOperations().get(313));
 			try {
 				GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);

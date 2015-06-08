@@ -119,7 +119,7 @@ public class CognitiveStatusResultObservationOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
 								Mu2consolPlugin.INSTANCE
-										.getString("ResultObservationTemplateId"),
+										.getString("CognitiveStatusResultObservationResultObservationTemplateId"),
 								new Object[] { cognitiveStatusResultObservation }));
 			}
 

@@ -64,30 +64,6 @@ public class ResultOrganizerOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolResultObservations(ResultOrganizer)
-	 * <em>Get Mu2consol Result Observations</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolResultObservations(ResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MU2CONSOL_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::ResultObservation)).oclAsType(mu2consol::ResultObservation)";
-
-	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolResultObservations(ResultOrganizer)
-	 * <em>Get Mu2consol Result Observations</em>}' query operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolResultObservations(ResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_MU2CONSOL_RESULT_OBSERVATIONS__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.getObservations()->select(observation : cda::Observation | not
 	 * observation.oclIsUndefined() and
@@ -124,33 +100,6 @@ public class ResultOrganizerOperations
 		return new BasicEList.UnmodifiableEList<ResultObservation>(
 				result.size(), result.toArray());
 	}
-
-	/**
-	 * The cached OCL expression body for the '
-	 * {@link #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Result Organizer Template Id</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateResultOrganizerTemplateId(ResultOrganizer,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')";
-
-	/**
-	 * The cached OCL invariant for the '
-	 * {@link #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Result Organizer Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateResultOrganizerTemplateId(ResultOrganizer,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -193,7 +142,7 @@ public class ResultOrganizerOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
 								Mu2consolPlugin.INSTANCE
-										.getString("ResultOrganizerTemplateId"),
+										.getString("ResultOrganizerResultOrganizerTemplateId"),
 								new Object[] { resultOrganizer }));
 			}
 
@@ -201,6 +150,57 @@ public class ResultOrganizerOperations
 		}
 		return true;
 	}
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolResultObservations(ResultOrganizer)
+	 * <em>Get Mu2consol Result Observations</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolResultObservations(ResultOrganizer)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_MU2CONSOL_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::ResultObservation)).oclAsType(mu2consol::ResultObservation)";
+
+	/**
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolResultObservations(ResultOrganizer)
+	 * <em>Get Mu2consol Result Observations</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolResultObservations(ResultOrganizer)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_RESULT_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Result Organizer Template Id</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateResultOrganizerTemplateId(ResultOrganizer,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')";
+
+	/**
+	 * The cached OCL invariant for the '
+	 * {@link #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Result Organizer Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateResultOrganizerTemplateId(ResultOrganizer,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '
@@ -268,7 +268,7 @@ public class ResultOrganizerOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_RESULT_OBSERVATION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ResultOrganizerResultObservation"),
+										.getString("ResultOrganizerResultOrganizerResultObservation"),
 								new Object[] { resultOrganizer }));
 			}
 

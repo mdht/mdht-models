@@ -120,7 +120,7 @@ public class ResultObservationOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
 								Mu2consolPlugin.INSTANCE
-										.getString("ResultObservationTemplateId"),
+										.getString("ResultObservationResultObservationTemplateId"),
 								new Object[] { resultObservation }));
 			}
 

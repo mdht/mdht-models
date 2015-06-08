@@ -62,7 +62,6 @@ public class FunctionalStatusResultOrganizerImpl
 	 * 
 	 * @generated
 	 */
-	@Override
 	public EList<ResultObservation> getMu2consolResultObservations() {
 		return ResultOrganizerOperations.getMu2consolResultObservations(this);
 	}

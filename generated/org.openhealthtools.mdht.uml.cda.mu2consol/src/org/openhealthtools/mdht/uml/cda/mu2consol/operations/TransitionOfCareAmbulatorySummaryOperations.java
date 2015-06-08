@@ -134,7 +134,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO,
 								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareAmbulatorySummaryProviderNameAndContactInfo"),
+										.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo"),
 								new Object[] { transitionOfCareAmbulatorySummary }));
 			}
 
@@ -212,7 +212,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL,
 								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareAmbulatorySummaryReasonForReferral"),
+										.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryReasonForReferral"),
 								new Object[] { transitionOfCareAmbulatorySummary }));
 			}
 
@@ -289,7 +289,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_ENCOUNTER_DIAGNOSES,
 								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareAmbulatorySummaryEncounterDiagnoses"),
+										.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryEncounterDiagnoses"),
 								new Object[] { transitionOfCareAmbulatorySummary }));
 			}
 
@@ -366,7 +366,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_MEDICATIONS_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareAmbulatorySummaryMedicationsSection"),
+										.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryMedicationsSection"),
 								new Object[] { transitionOfCareAmbulatorySummary }));
 			}
 
@@ -412,7 +412,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY,
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY
-							.getEAllOperations().get(320));
+							.getEAllOperations().get(318));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);

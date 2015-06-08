@@ -60,30 +60,6 @@ public class MedicationsAdministeredSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolMedicationActivities(MedicationsAdministeredSection)
-	 * <em>Get Mu2consol Medication Activities</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolMedicationActivities(MedicationsAdministeredSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)";
-
-	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolMedicationActivities(MedicationsAdministeredSection)
-	 * <em>Get Mu2consol Medication Activities</em>}' query operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolMedicationActivities(MedicationsAdministeredSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
@@ -113,33 +89,6 @@ public class MedicationsAdministeredSectionOperations
 		return new BasicEList.UnmodifiableEList<MedicationActivity>(
 				result.size(), result.toArray());
 	}
-
-	/**
-	 * The cached OCL expression body for the '
-	 * {@link #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Medications Administered Section Template Id</em>}'
-	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.38')";
-
-	/**
-	 * The cached OCL invariant for the '
-	 * {@link #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Medications Administered Section Template Id</em>}'
-	 * invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -182,7 +131,7 @@ public class MedicationsAdministeredSectionOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID,
 								Mu2consolPlugin.INSTANCE
-										.getString("MedicationsAdministeredSectionTemplateId"),
+										.getString("MedicationsAdministeredSectionMedicationsAdministeredSectionTemplateId"),
 								new Object[] { medicationsAdministeredSection }));
 			}
 
@@ -190,6 +139,57 @@ public class MedicationsAdministeredSectionOperations
 		}
 		return true;
 	}
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolMedicationActivities(MedicationsAdministeredSection)
+	 * <em>Get Mu2consol Medication Activities</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolMedicationActivities(MedicationsAdministeredSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)";
+
+	/**
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolMedicationActivities(MedicationsAdministeredSection)
+	 * <em>Get Mu2consol Medication Activities</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolMedicationActivities(MedicationsAdministeredSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Medications Administered Section Template Id</em>}'
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.38')";
+
+	/**
+	 * The cached OCL invariant for the '
+	 * {@link #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Medications Administered Section Template Id</em>}'
+	 * invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '
@@ -259,7 +259,7 @@ public class MedicationsAdministeredSectionOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY,
 								Mu2consolPlugin.INSTANCE
-										.getString("MedicationsAdministeredSectionMedicationActivity"),
+										.getString("MedicationsAdministeredSectionMedicationsAdministeredSectionMedicationActivity"),
 								new Object[] { medicationsAdministeredSection }));
 			}
 

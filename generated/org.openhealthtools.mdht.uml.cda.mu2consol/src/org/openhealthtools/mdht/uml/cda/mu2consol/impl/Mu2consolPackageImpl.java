@@ -265,7 +265,6 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 		// Register package validator
 		EValidator.Registry.INSTANCE.put(theMu2consolPackage,
 				new EValidator.Descriptor() {
-					@Override
 					public EValidator getEValidator() {
 						return Mu2consolValidator.INSTANCE;
 					}
@@ -662,8 +661,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 
 		EOperation op = addEOperation(generalHeaderConstraintsEClass,
 				ecorePackage.getEBoolean(),
-				"validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers", 0,
-				1, IS_UNIQUE, IS_ORDERED);
+				"validateGeneralHeaderConstraintsCareTeamMembers", 0, 1,
+				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0,
 				1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
@@ -673,37 +672,10 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(generalHeaderConstraintsEClass,
-				ecorePackage.getEBoolean(),
-				"validateMU2CONSOLGeneralHeaderConstraintsRecordTarget", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0,
-				1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		op = addEOperation(
 				generalHeaderConstraintsEClass,
 				ecorePackage.getEBoolean(),
 				"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive",
-				0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0,
-				1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-				generalHeaderConstraintsEClass,
-				ecorePackage.getEBoolean(),
-				"validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole",
 				0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0,
 				1, IS_UNIQUE, IS_ORDERED);
@@ -889,20 +861,6 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 				"SocialHistorySection", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(
-				socialHistorySectionEClass,
-				ecorePackage.getEBoolean(),
-				"validateMU2CONSOLSocialHistorySectionSmokingStatusObservation",
-				0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0,
-				1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		addEOperation(socialHistorySectionEClass,
 				this.getSmokingStatusObservation(),
 				"getMu2consolSmokingStatusObservations", 1, -1, IS_UNIQUE,
@@ -945,8 +903,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 
 		op = addEOperation(procedureActivityProcedureEClass,
 				ecorePackage.getEBoolean(),
-				"validateMU2CONSOLProcedureActivityProcedureCodeValue", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
+				"validateProcedureActivityProcedureCodeValue", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0,
 				1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -1655,11 +1613,11 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 				source,
 				new String[] {
 						"constraints.validation.error",
-						"GeneralHeaderConstraintsTemplateId MU2CONSOLGeneralHeaderConstraintsCareTeamMembers MU2CONSOLGeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatient MU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole",
+						"GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsCareTeamMembers GeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole",
 						"templateId.root",
 						"2.16.840.1.113883.10.20.22.1.1",
 						"constraints.validation.query",
-						"GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient MU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole",
+						"GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole",
 						"constraints.validation.warning",
 						"GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication" });
 		addAnnotation(
@@ -1673,14 +1631,14 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 				source,
 				new String[] {
 						"constraints.validation.error",
-						"SocialHistorySectionTemplateId MU2CONSOLSocialHistorySectionSmokingStatusObservation",
+						"SocialHistorySectionTemplateId SocialHistorySectionSmokingStatusObservation",
 						"templateId.root", "2.16.840.1.113883.10.20.22.2.17" });
 		addAnnotation(
 				smokingStatusObservationEClass,
 				source,
 				new String[] {
 						"constraints.validation.error",
-						"TobaccoUseTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP",
+						"SmokingStatusObservationTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP",
 						"templateId.root",
 						"2.16.840.1.113883.10.20.22.4.78",
 						"value.codeSystem",
@@ -1714,7 +1672,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 				source,
 				new String[] {
 						"constraints.validation.error",
-						"ProcedureActivityProcedureTemplateId MU2CONSOLProcedureActivityProcedureCodeValue ProcedureActivityProcedureCode",
+						"ProcedureActivityProcedureTemplateId ProcedureActivityProcedureCodeValue ProcedureActivityProcedureCode",
 						"templateId.root", "2.16.840.1.113883.10.20.22.4.14" });
 		addAnnotation(
 				clinicalOfficeVisitSummaryEClass,

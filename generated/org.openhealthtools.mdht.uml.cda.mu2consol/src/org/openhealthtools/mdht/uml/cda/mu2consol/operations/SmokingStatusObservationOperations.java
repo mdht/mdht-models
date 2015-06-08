@@ -33,8 +33,8 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * The following operations are supported:
  * <ul>
  * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation#validateTobaccoUseTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate Tobacco Use Template Id</em>}</li>
+ * {@link org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation#validateSmokingStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+ * <em>Validate Smoking Status Observation Template Id</em>}</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation#validateSmokingStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
  * <em>Validate Smoking Status Observation Value P</em>}</li>
@@ -60,35 +60,33 @@ public class SmokingStatusObservationOperations
 
 	/**
 	 * The cached OCL expression body for the '
-	 * {@link #validateTobaccoUseTemplateId(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Tobacco Use Template Id</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
+	 * {@link #validateSmokingStatusObservationTemplateId(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Smoking Status Observation Template Id</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @see #validateTobaccoUseTemplateId(SmokingStatusObservation,
+	 * @see #validateSmokingStatusObservationTemplateId(SmokingStatusObservation,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.78')";
+	protected static final String VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.78')";
 
 	/**
 	 * The cached OCL invariant for the '
-	 * {@link #validateTobaccoUseTemplateId(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Tobacco Use Template Id</em>}' invariant operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
+	 * {@link #validateSmokingStatusObservationTemplateId(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Smoking Status Observation Template Id</em>}' invariant
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @see #validateTobaccoUseTemplateId(SmokingStatusObservation,
+	 * @see #validateSmokingStatusObservationTemplateId(SmokingStatusObservation,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root =
-	 * '2.16.840.1.113883.10.22.4.78')
 	 * 
 	 * @param smokingStatusObservation
 	 *            The receiving '<em><b>Smoking Status Observation</b></em>'
@@ -101,16 +99,16 @@ public class SmokingStatusObservationOperations
 	 * @generated
 	 */
 
-	public static boolean validateTobaccoUseTemplateId(
+	public static boolean validateSmokingStatusObservationTemplateId(
 			SmokingStatusObservation smokingStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.SMOKING_STATUS_OBSERVATION);
 			try {
-				VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
+						.createInvariant(VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(
 						pe.getLocalizedMessage());
@@ -118,16 +116,16 @@ public class SmokingStatusObservationOperations
 		}
 		if (!EOCL_ENV
 				.createQuery(
-						VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+						VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(smokingStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics
 						.add(new BasicDiagnostic(
 								Diagnostic.ERROR,
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SMOKING_STATUS_OBSERVATION__TOBACCO_USE_TEMPLATE_ID,
+								Mu2consolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_TEMPLATE_ID,
 								Mu2consolPlugin.INSTANCE
-										.getString("TobaccoUseTemplateId"),
+										.getString("SmokingStatusObservationSmokingStatusObservationTemplateId"),
 								new Object[] { smokingStatusObservation }));
 			}
 
@@ -203,7 +201,7 @@ public class SmokingStatusObservationOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE_P,
 								Mu2consolPlugin.INSTANCE
-										.getString("SmokingStatusObservationValueP"),
+										.getString("SmokingStatusObservationSmokingStatusObservationValueP"),
 								new Object[] { smokingStatusObservation }));
 			}
 
@@ -307,7 +305,7 @@ public class SmokingStatusObservationOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE,
 								Mu2consolPlugin.INSTANCE
-										.getString("SmokingStatusObservationValue"),
+										.getString("SmokingStatusObservationSmokingStatusObservationValue"),
 								new Object[] { smokingStatusObservation }));
 			}
 

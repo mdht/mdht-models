@@ -75,30 +75,6 @@ public class FunctionalStatusSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
-	 * <em>Get Mu2consol Cognitive Status Result Observations</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::CognitiveStatusResultObservation)).oclAsType(mu2consol::CognitiveStatusResultObservation)";
-
-	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
-	 * <em>Get Mu2consol Cognitive Status Result Observations</em>}' query
-	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
@@ -128,30 +104,6 @@ public class FunctionalStatusSectionOperations
 		return new BasicEList.UnmodifiableEList<CognitiveStatusResultObservation>(
 				result.size(), result.toArray());
 	}
-
-	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
-	 * <em>Get Mu2consol Cognitive Status Result Organizers</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::CognitiveStatusResultOrganizer)).oclAsType(mu2consol::CognitiveStatusResultOrganizer)";
-
-	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
-	 * <em>Get Mu2consol Cognitive Status Result Organizers</em>}' query
-	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -185,30 +137,6 @@ public class FunctionalStatusSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
-	 * <em>Get Mu2consol Functional Status Result Observations</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::FunctionalStatusResultObservation)).oclAsType(mu2consol::FunctionalStatusResultObservation)";
-
-	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
-	 * <em>Get Mu2consol Functional Status Result Observations</em>}' query
-	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
@@ -240,30 +168,6 @@ public class FunctionalStatusSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
-	 * <em>Get Mu2consol Functional Status Result Organizers</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::FunctionalStatusResultOrganizer)).oclAsType(mu2consol::FunctionalStatusResultOrganizer)";
-
-	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
-	 * <em>Get Mu2consol Functional Status Result Organizers</em>}' query
-	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_ORGANIZERS__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
@@ -293,6 +197,102 @@ public class FunctionalStatusSectionOperations
 		return new BasicEList.UnmodifiableEList<FunctionalStatusResultOrganizer>(
 				result.size(), result.toArray());
 	}
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
+	 * <em>Get Mu2consol Cognitive Status Result Observations</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::CognitiveStatusResultObservation)).oclAsType(mu2consol::CognitiveStatusResultObservation)";
+
+	/**
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
+	 * <em>Get Mu2consol Cognitive Status Result Observations</em>}' query
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
+	 * <em>Get Mu2consol Cognitive Status Result Organizers</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::CognitiveStatusResultOrganizer)).oclAsType(mu2consol::CognitiveStatusResultOrganizer)";
+
+	/**
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
+	 * <em>Get Mu2consol Cognitive Status Result Organizers</em>}' query
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
+	 * <em>Get Mu2consol Functional Status Result Observations</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::FunctionalStatusResultObservation)).oclAsType(mu2consol::FunctionalStatusResultObservation)";
+
+	/**
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
+	 * <em>Get Mu2consol Functional Status Result Observations</em>}' query
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
+	 * <em>Get Mu2consol Functional Status Result Organizers</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::FunctionalStatusResultOrganizer)).oclAsType(mu2consol::FunctionalStatusResultOrganizer)";
+
+	/**
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
+	 * <em>Get Mu2consol Functional Status Result Organizers</em>}' query
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_ORGANIZERS__EOCL_QRY;
 
 	/**
 	 * The cached OCL expression body for the '
@@ -361,7 +361,7 @@ public class FunctionalStatusSectionOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID,
 								Mu2consolPlugin.INSTANCE
-										.getString("FunctionalStatusSectionTemplateId"),
+										.getString("FunctionalStatusSectionFunctionalStatusSectionTemplateId"),
 								new Object[] { functionalStatusSection }));
 			}
 

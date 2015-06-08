@@ -64,30 +64,6 @@ public class ProceduresSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolProcedureActivityProcedures(ProceduresSection)
-	 * <em>Get Mu2consol Procedure Activity Procedures</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolProcedureActivityProcedures(ProceduresSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(mu2consol::ProcedureActivityProcedure)).oclAsType(mu2consol::ProcedureActivityProcedure)";
-
-	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolProcedureActivityProcedures(ProceduresSection)
-	 * <em>Get Mu2consol Procedure Activity Procedures</em>}' query operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolProcedureActivityProcedures(ProceduresSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.getProcedures()->select(procedure : cda::Procedure | not
 	 * procedure.oclIsUndefined() and
@@ -124,33 +100,6 @@ public class ProceduresSectionOperations
 		return new BasicEList.UnmodifiableEList<ProcedureActivityProcedure>(
 				result.size(), result.toArray());
 	}
-
-	/**
-	 * The cached OCL expression body for the '
-	 * {@link #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Procedures Section Entries Optional Template Id</em>}'
-	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.7.1')";
-
-	/**
-	 * The cached OCL invariant for the '
-	 * {@link #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Procedures Section Entries Optional Template Id</em>}'
-	 * invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -194,7 +143,7 @@ public class ProceduresSectionOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
 								Mu2consolPlugin.INSTANCE
-										.getString("ProceduresSectionEntriesOptionalTemplateId"),
+										.getString("ProceduresSectionProceduresSectionEntriesOptionalTemplateId"),
 								new Object[] { proceduresSection }));
 			}
 
@@ -202,6 +151,57 @@ public class ProceduresSectionOperations
 		}
 		return true;
 	}
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolProcedureActivityProcedures(ProceduresSection)
+	 * <em>Get Mu2consol Procedure Activity Procedures</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolProcedureActivityProcedures(ProceduresSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(mu2consol::ProcedureActivityProcedure)).oclAsType(mu2consol::ProcedureActivityProcedure)";
+
+	/**
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolProcedureActivityProcedures(ProceduresSection)
+	 * <em>Get Mu2consol Procedure Activity Procedures</em>}' query operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolProcedureActivityProcedures(ProceduresSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Procedures Section Entries Optional Template Id</em>}'
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.7.1')";
+
+	/**
+	 * The cached OCL invariant for the '
+	 * {@link #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Procedures Section Entries Optional Template Id</em>}'
+	 * invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '
@@ -270,7 +270,7 @@ public class ProceduresSectionOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE,
 								Mu2consolPlugin.INSTANCE
-										.getString("ProceduresSectionProcedureActivityProcedure"),
+										.getString("ProceduresSectionProceduresSectionProcedureActivityProcedure"),
 								new Object[] { proceduresSection }));
 			}
 

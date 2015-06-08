@@ -63,33 +63,6 @@ public class CognitiveStatusResultOrganizerOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #validateResultOrganizerTemplateId(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Result Organizer Template Id</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateResultOrganizerTemplateId(CognitiveStatusResultOrganizer,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.75')";
-
-	/**
-	 * The cached OCL invariant for the '
-	 * {@link #validateResultOrganizerTemplateId(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Result Organizer Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateResultOrganizerTemplateId(CognitiveStatusResultOrganizer,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * 
 	 * @param cognitiveStatusResultOrganizer
@@ -130,7 +103,7 @@ public class CognitiveStatusResultOrganizerOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
 								Mu2consolPlugin.INSTANCE
-										.getString("ResultOrganizerTemplateId"),
+										.getString("CognitiveStatusResultOrganizerResultOrganizerTemplateId"),
 								new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -138,6 +111,33 @@ public class CognitiveStatusResultOrganizerOperations
 		}
 		return true;
 	}
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #validateResultOrganizerTemplateId(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Result Organizer Template Id</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateResultOrganizerTemplateId(CognitiveStatusResultOrganizer,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.75')";
+
+	/**
+	 * The cached OCL invariant for the '
+	 * {@link #validateResultOrganizerTemplateId(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Result Organizer Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateResultOrganizerTemplateId(CognitiveStatusResultOrganizer,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '

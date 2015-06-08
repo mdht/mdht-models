@@ -132,7 +132,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS,
 								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareInpatientSummaryMedications"),
+										.getString("TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryMedications"),
 								new Object[] { transitionOfCareInpatientSummary }));
 			}
 
@@ -209,7 +209,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES,
 								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareInpatientSummaryEncounterDiagnoses"),
+										.getString("TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryEncounterDiagnoses"),
 								new Object[] { transitionOfCareInpatientSummary }));
 			}
 
@@ -289,7 +289,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection"),
+										.getString("TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection"),
 								new Object[] { transitionOfCareInpatientSummary }));
 			}
 
@@ -344,7 +344,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY,
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY
-							.getEAllOperations().get(319));
+							.getEAllOperations().get(317));
 			try {
 				GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);

@@ -126,7 +126,7 @@ public class VDTAmbulatorySummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO,
 								Mu2consolPlugin.INSTANCE
-										.getString("VDTAmbulatorySummaryProviderNameAndContactInfo"),
+										.getString("VDTAmbulatorySummaryVDTAmbulatorySummaryProviderNameAndContactInfo"),
 								new Object[] { vdtAmbulatorySummary }));
 			}
 
@@ -202,7 +202,7 @@ public class VDTAmbulatorySummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("VDTAmbulatorySummaryMedicationsSection"),
+										.getString("VDTAmbulatorySummaryVDTAmbulatorySummaryMedicationsSection"),
 								new Object[] { vdtAmbulatorySummary }));
 			}
 
@@ -248,7 +248,7 @@ public class VDTAmbulatorySummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY,
 					Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY
-							.getEAllOperations().get(311));
+							.getEAllOperations().get(309));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);

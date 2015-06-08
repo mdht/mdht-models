@@ -162,7 +162,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING,
 								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryCarePlanning"),
+										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryCarePlanning"),
 								new Object[] { viewDownloadTransmitSummary }));
 			}
 
@@ -239,7 +239,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS,
 								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryVitalSigns"),
+										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryVitalSigns"),
 								new Object[] { viewDownloadTransmitSummary }));
 			}
 
@@ -318,7 +318,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryAllergiesSection"),
+										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryAllergiesSection"),
 								new Object[] { viewDownloadTransmitSummary }));
 			}
 
@@ -396,7 +396,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryProblemSection"),
+										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryProblemSection"),
 								new Object[] { viewDownloadTransmitSummary }));
 			}
 
@@ -475,7 +475,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryProceduresSection"),
+										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryProceduresSection"),
 								new Object[] { viewDownloadTransmitSummary }));
 			}
 
@@ -554,7 +554,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryResultsSection"),
+										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryResultsSection"),
 								new Object[] { viewDownloadTransmitSummary }));
 			}
 
@@ -633,7 +633,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummarySocialHistorySection"),
+										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummarySocialHistorySection"),
 								new Object[] { viewDownloadTransmitSummary }));
 			}
 
@@ -687,7 +687,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(303));
+							.getEAllOperations().get(301));
 			try {
 				RETRIEVE_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -746,7 +746,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(304));
+							.getEAllOperations().get(302));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper
 						.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
@@ -803,7 +803,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(305));
+							.getEAllOperations().get(303));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper
 						.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
@@ -860,7 +860,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(306));
+							.getEAllOperations().get(304));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper
 						.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
@@ -918,7 +918,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(307));
+							.getEAllOperations().get(305));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
@@ -975,7 +975,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
 					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(308));
+							.getEAllOperations().get(306));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper
 						.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);

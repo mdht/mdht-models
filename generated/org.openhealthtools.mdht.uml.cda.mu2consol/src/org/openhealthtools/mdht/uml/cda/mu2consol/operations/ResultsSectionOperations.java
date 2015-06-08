@@ -64,30 +64,6 @@ public class ResultsSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolResultOrganizers(ResultsSection)
-	 * <em>Get Mu2consol Result Organizers</em>}' operation. <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolResultOrganizers(ResultsSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::ResultOrganizer)).oclAsType(mu2consol::ResultOrganizer)";
-
-	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolResultOrganizers(ResultsSection)
-	 * <em>Get Mu2consol Result Organizers</em>}' query operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getMu2consolResultOrganizers(ResultsSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.getOrganizers()->select(organizer : cda::Organizer | not
 	 * organizer.oclIsUndefined() and
@@ -124,33 +100,6 @@ public class ResultsSectionOperations
 		return new BasicEList.UnmodifiableEList<ResultOrganizer>(result.size(),
 				result.toArray());
 	}
-
-	/**
-	 * The cached OCL expression body for the '
-	 * {@link #validateResultsSectionEntriesOptionalTemplateId(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Results Section Entries Optional Template Id</em>}'
-	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateResultsSectionEntriesOptionalTemplateId(ResultsSection,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3.1')";
-
-	/**
-	 * The cached OCL invariant for the '
-	 * {@link #validateResultsSectionEntriesOptionalTemplateId(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Results Section Entries Optional Template Id</em>}'
-	 * invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateResultsSectionEntriesOptionalTemplateId(ResultsSection,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -193,7 +142,7 @@ public class ResultsSectionOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
 								Mu2consolPlugin.INSTANCE
-										.getString("ResultsSectionEntriesOptionalTemplateId"),
+										.getString("ResultsSectionResultsSectionEntriesOptionalTemplateId"),
 								new Object[] { resultsSection }));
 			}
 
@@ -201,6 +150,57 @@ public class ResultsSectionOperations
 		}
 		return true;
 	}
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolResultOrganizers(ResultsSection)
+	 * <em>Get Mu2consol Result Organizers</em>}' operation. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolResultOrganizers(ResultsSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::ResultOrganizer)).oclAsType(mu2consol::ResultOrganizer)";
+
+	/**
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolResultOrganizers(ResultsSection)
+	 * <em>Get Mu2consol Result Organizers</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolResultOrganizers(ResultsSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '
+	 * {@link #validateResultsSectionEntriesOptionalTemplateId(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Results Section Entries Optional Template Id</em>}'
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateResultsSectionEntriesOptionalTemplateId(ResultsSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3.1')";
+
+	/**
+	 * The cached OCL invariant for the '
+	 * {@link #validateResultsSectionEntriesOptionalTemplateId(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Results Section Entries Optional Template Id</em>}'
+	 * invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateResultsSectionEntriesOptionalTemplateId(ResultsSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '
@@ -268,7 +268,7 @@ public class ResultsSectionOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_RESULT_ORGANIZER,
 								Mu2consolPlugin.INSTANCE
-										.getString("ResultsSectionResultOrganizer"),
+										.getString("ResultsSectionResultsSectionResultOrganizer"),
 								new Object[] { resultsSection }));
 			}
 

@@ -205,7 +205,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_REASONFOR_VISIT,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryReasonforVisit"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryReasonforVisit"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -288,7 +288,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_CARE_PLANNING,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryCarePlanning"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryCarePlanning"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -365,7 +365,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_DATE_OFVISIT,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryDateOfvisit"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryDateOfvisit"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -442,7 +442,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_VISIT_LOCATION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryVisitLocation"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryVisitLocation"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -518,7 +518,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryProviderNameAndContactInfo"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryProviderNameAndContactInfo"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -595,7 +595,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_VITAL_SIGNS,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryVitalSigns"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryVitalSigns"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -671,7 +671,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION_OR_MEDICATIONS_SECTION_ER,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -723,7 +723,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_SOCIAL_HISTORY_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummarySocialHistorySection"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummarySocialHistorySection"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -801,7 +801,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PROBLEM_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryProblemSection"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryProblemSection"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -880,7 +880,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_ALLERGIES_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryAllergiesSection"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryAllergiesSection"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -958,7 +958,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_RESULTS_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryResultsSection"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryResultsSection"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -1037,7 +1037,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PROCEDURES_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryProceduresSection"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryProceduresSection"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -1116,7 +1116,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_IMMUNIZATIONS_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryImmunizationsSection"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryImmunizationsSection"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -1222,7 +1222,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION,
 								Mu2consolPlugin.INSTANCE
-										.getString("ClinicalOfficeVisitSummaryInstructionsSection"),
+										.getString("ClinicalOfficeVisitSummaryClinicalOfficeVisitSummaryInstructionsSection"),
 								new Object[] { clinicalOfficeVisitSummary }));
 			}
 
@@ -1251,7 +1251,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(310));
+							.getEAllOperations().get(308));
 			try {
 				RETRIEVE_INSTRUCTIONS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_INSTRUCTIONS_SECTION__EOCL_EXP);
@@ -1286,7 +1286,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(311));
+							.getEAllOperations().get(309));
 			try {
 				RETRIEVE_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
@@ -1369,7 +1369,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(319));
+							.getEAllOperations().get(317));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper
 						.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
@@ -1428,7 +1428,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(312));
+							.getEAllOperations().get(310));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper
 						.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
@@ -1485,7 +1485,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(313));
+							.getEAllOperations().get(311));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
@@ -1543,7 +1543,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(314));
+							.getEAllOperations().get(312));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper
 						.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
@@ -1600,7 +1600,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(315));
+							.getEAllOperations().get(313));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
@@ -1657,7 +1657,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(316));
+							.getEAllOperations().get(314));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper
 						.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
@@ -1715,7 +1715,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(317));
+							.getEAllOperations().get(315));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
@@ -1751,7 +1751,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(320));
+							.getEAllOperations().get(318));
 			try {
 				GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper
 						.createQuery(GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
@@ -1858,7 +1858,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(318));
+							.getEAllOperations().get(316));
 			try {
 				GET_INSTRUCTIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_INSTRUCTIONS_SECTION__EOCL_EXP);

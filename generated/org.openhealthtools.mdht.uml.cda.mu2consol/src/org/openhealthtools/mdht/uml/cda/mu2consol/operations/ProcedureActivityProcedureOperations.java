@@ -32,8 +32,8 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * The following operations are supported:
  * <ul>
  * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure#validateMU2CONSOLProcedureActivityProcedureCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate MU2CONSOL Procedure Activity Procedure Code Value</em>}</li>
+ * {@link org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure#validateProcedureActivityProcedureCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+ * <em>Validate Procedure Activity Procedure Code Value</em>}</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure#validateProcedureActivityProcedureTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
  * <em>Validate Procedure Activity Procedure Template Id</em>}</li>
@@ -59,30 +59,30 @@ public class ProcedureActivityProcedureOperations
 
 	/**
 	 * The cached OCL expression body for the '
-	 * {@link #validateMU2CONSOLProcedureActivityProcedureCodeValue(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate MU2CONSOL Procedure Activity Procedure Code Value</em>}'
-	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * {@link #validateProcedureActivityProcedureCodeValue(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Procedure Activity Procedure Code Value</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @see #validateMU2CONSOLProcedureActivityProcedureCodeValue(ProcedureActivityProcedure,
+	 * @see #validateProcedureActivityProcedureCodeValue(ProcedureActivityProcedure,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'";
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'";
 
 	/**
 	 * The cached OCL invariant for the '
-	 * {@link #validateMU2CONSOLProcedureActivityProcedureCodeValue(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate MU2CONSOL Procedure Activity Procedure Code Value</em>}'
-	 * invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * {@link #validateProcedureActivityProcedureCodeValue(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Procedure Activity Procedure Code Value</em>}' invariant
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @see #validateMU2CONSOLProcedureActivityProcedureCodeValue(ProcedureActivityProcedure,
+	 * @see #validateProcedureActivityProcedureCodeValue(ProcedureActivityProcedure,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -98,16 +98,16 @@ public class ProcedureActivityProcedureOperations
 	 * @generated
 	 */
 
-	public static boolean validateMU2CONSOLProcedureActivityProcedureCodeValue(
+	public static boolean validateProcedureActivityProcedureCodeValue(
 			ProcedureActivityProcedure procedureActivityProcedure,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
-				VALIDATE_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
+						.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(
 						pe.getLocalizedMessage());
@@ -115,16 +115,16 @@ public class ProcedureActivityProcedureOperations
 		}
 		if (!EOCL_ENV
 				.createQuery(
-						VALIDATE_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+						VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics
 						.add(new BasicDiagnostic(
 								Diagnostic.ERROR,
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.PROCEDURE_ACTIVITY_PROCEDURE__MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE,
+								Mu2consolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE,
 								Mu2consolPlugin.INSTANCE
-										.getString("MU2CONSOLProcedureActivityProcedureCodeValue"),
+										.getString("ProcedureActivityProcedureProcedureActivityProcedureCodeValue"),
 								new Object[] { procedureActivityProcedure }));
 			}
 
@@ -202,7 +202,7 @@ public class ProcedureActivityProcedureOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID,
 								Mu2consolPlugin.INSTANCE
-										.getString("ProcedureActivityProcedureTemplateId"),
+										.getString("ProcedureActivityProcedureProcedureActivityProcedureTemplateId"),
 								new Object[] { procedureActivityProcedure }));
 			}
 
@@ -278,7 +278,7 @@ public class ProcedureActivityProcedureOperations
 								Mu2consolValidator.DIAGNOSTIC_SOURCE,
 								Mu2consolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE,
 								Mu2consolPlugin.INSTANCE
-										.getString("ProcedureActivityProcedureCode"),
+										.getString("ProcedureActivityProcedureProcedureActivityProcedureCode"),
 								new Object[] { procedureActivityProcedure }));
 			}
 

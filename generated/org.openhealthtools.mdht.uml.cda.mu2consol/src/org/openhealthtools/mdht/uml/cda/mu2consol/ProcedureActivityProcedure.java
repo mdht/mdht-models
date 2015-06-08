@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getProcedureActivityProcedure()
  * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityProcedureTemplateId MU2CONSOLProcedureActivityProcedureCodeValue ProcedureActivityProcedureCode' templateId.root='2.16.840.1.113883.10.20.22.4.14'"
+ *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityProcedureTemplateId ProcedureActivityProcedureCodeValue ProcedureActivityProcedureCode' templateId.root='2.16.840.1.113883.10.20.22.4.14'"
  * @generated
  */
 public interface ProcedureActivityProcedure extends
@@ -41,7 +41,7 @@ public interface ProcedureActivityProcedure extends
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.isNullFlavorDefined() or self.code.codeSystem = \'2.16.840.1.113883.6.96\' xor self.code.codeSystem = \'2.16.840.1.113883.6.12\''"
 	 * @generated
 	 */
-	boolean validateMU2CONSOLProcedureActivityProcedureCodeValue(
+	boolean validateProcedureActivityProcedureCodeValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**

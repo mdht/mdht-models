@@ -58,11 +58,24 @@ public class SmokingStatusObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateTobaccoUseTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateTobaccoUseTemplateId(
-				this, diagnostics, context);
+	public boolean validateSmokingStatusObservationTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations
+				.validateSmokingStatusObservationTemplateId(this, diagnostics,
+						context);
 	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	// @Override
+	// public boolean validateTobaccoUseTemplateId(DiagnosticChain diagnostics,
+	// Map<Object, Object> context) {
+	// return SmokingStatusObservationOperations.validateTobaccoUseTemplateId(
+	// this, diagnostics, context);
+	// }
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->

@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional;
-import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
@@ -257,11 +256,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseObservation(Observation object) {
 			return createObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseTobaccoUse(TobaccoUse object) {
-			return createTobaccoUseAdapter();
 		}
 
 		@Override
@@ -604,6 +598,385 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
+	 * <em>Infrastructure Root</em>}'. <!-- begin-user-doc --> This default
+	 * implementation returns null so that we can easily ignore cases; it's
+	 * useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
+	 * @generated
+	 */
+	public Adapter createInfrastructureRootAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.hl7.rim.Act <em>Act</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we
+	 * can easily ignore cases; it's useful to ignore a case when inheritance
+	 * will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.hl7.rim.Act
+	 * @generated
+	 */
+	public Adapter createActAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.ClinicalDocument
+	 * <em>Clinical Document</em>}'. <!-- begin-user-doc --> This default
+	 * implementation returns null so that we can easily ignore cases; it's
+	 * useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ClinicalDocument
+	 * @generated
+	 */
+	public Adapter createClinicalDocumentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints
+	 * <em>General Header Constraints</em>}'. <!-- begin-user-doc --> This
+	 * default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases
+	 * anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints
+	 * @generated
+	 */
+	public Adapter createConsol_GeneralHeaderConstraintsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.Section <em>Section</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we
+	 * can easily ignore cases; it's useful to ignore a case when inheritance
+	 * will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Section
+	 * @generated
+	 */
+	public Adapter createSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection
+	 * <em>Social History Section</em>}'. <!-- begin-user-doc --> This default
+	 * implementation returns null so that we can easily ignore cases; it's
+	 * useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection
+	 * @generated
+	 */
+	public Adapter createConsol_SocialHistorySectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.ClinicalStatement
+	 * <em>Clinical Statement</em>}'. <!-- begin-user-doc --> This default
+	 * implementation returns null so that we can easily ignore cases; it's
+	 * useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ClinicalStatement
+	 * @generated
+	 */
+	public Adapter createClinicalStatementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.Observation <em>Observation</em>}
+	 * '. <!-- begin-user-doc --> This default implementation returns null so
+	 * that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Observation
+	 * @generated
+	 */
+	public Adapter createObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation
+	 * <em>Smoking Status Observation</em>}'. <!-- begin-user-doc --> This
+	 * default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases
+	 * anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation
+	 * @generated
+	 */
+	public Adapter createConsol_SmokingStatusObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional
+	 * <em>Results Section Entries Optional</em>}'. <!-- begin-user-doc --> This
+	 * default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases
+	 * anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional
+	 * @generated
+	 */
+	public Adapter createResultsSectionEntriesOptionalAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection
+	 * <em>Results Section</em>}'. <!-- begin-user-doc --> This default
+	 * implementation returns null so that we can easily ignore cases; it's
+	 * useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultsSection
+	 * @generated
+	 */
+	public Adapter createConsol_ResultsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.Organizer <em>Organizer</em>}'.
+	 * <!-- begin-user-doc --> This default implementation returns null so that
+	 * we can easily ignore cases; it's useful to ignore a case when inheritance
+	 * will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Organizer
+	 * @generated
+	 */
+	public Adapter createOrganizerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer
+	 * <em>Result Organizer</em>}'. <!-- begin-user-doc --> This default
+	 * implementation returns null so that we can easily ignore cases; it's
+	 * useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer
+	 * @generated
+	 */
+	public Adapter createConsol_ResultOrganizerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation
+	 * <em>Result Observation</em>}'. <!-- begin-user-doc --> This default
+	 * implementation returns null so that we can easily ignore cases; it's
+	 * useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultObservation
+	 * @generated
+	 */
+	public Adapter createConsol_ResultObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional
+	 * <em>Procedures Section Entries Optional</em>}'. <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the
+	 * cases anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional
+	 * @generated
+	 */
+	public Adapter createProceduresSectionEntriesOptionalAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection
+	 * <em>Procedures Section</em>}'. <!-- begin-user-doc --> This default
+	 * implementation returns null so that we can easily ignore cases; it's
+	 * useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProceduresSection
+	 * @generated
+	 */
+	public Adapter createConsol_ProceduresSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.Procedure <em>Procedure</em>}'.
+	 * <!-- begin-user-doc --> This default implementation returns null so that
+	 * we can easily ignore cases; it's useful to ignore a case when inheritance
+	 * will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Procedure
+	 * @generated
+	 */
+	public Adapter createProcedureAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure
+	 * <em>Procedure Activity Procedure</em>}'. <!-- begin-user-doc --> This
+	 * default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases
+	 * anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure
+	 * @generated
+	 */
+	public Adapter createConsol_ProcedureActivityProcedureAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection
+	 * <em>Medications Administered Section</em>}'. <!-- begin-user-doc --> This
+	 * default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases
+	 * anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection
+	 * @generated
+	 */
+	public Adapter createConsol_MedicationsAdministeredSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection
+	 * <em>Functional Status Section</em>}'. <!-- begin-user-doc --> This
+	 * default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases
+	 * anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection
+	 * @generated
+	 */
+	public Adapter createConsol_FunctionalStatusSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation
+	 * <em>Cognitive Status Result Observation</em>}'. <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the
+	 * cases anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation
+	 * @generated
+	 */
+	public Adapter createConsol_CognitiveStatusResultObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer
+	 * <em>Cognitive Status Result Organizer</em>}'. <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the
+	 * cases anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer
+	 * @generated
+	 */
+	public Adapter createConsol_CognitiveStatusResultOrganizerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation
+	 * <em>Functional Status Result Observation</em>}'. <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the
+	 * cases anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation
+	 * @generated
+	 */
+	public Adapter createConsol_FunctionalStatusResultObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
+	 * {@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer
+	 * <em>Functional Status Result Organizer</em>}'. <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the
+	 * cases anyway. <!-- end-user-doc -->
+	 * 
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer
+	 * @generated
+	 */
+	public Adapter createConsol_FunctionalStatusResultOrganizerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '
 	 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.ResultObservation
 	 * <em>Result Observation</em>}'. <!-- begin-user-doc --> This default
 	 * implementation returns null so that we can easily ignore cases; it's
@@ -711,401 +1084,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSmokingStatusObservationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
-	 * <em>Infrastructure Root</em>}'. <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
-	 * @generated
-	 */
-	public Adapter createInfrastructureRootAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.hl7.rim.Act <em>Act</em>}'. <!--
-	 * begin-user-doc --> This default implementation returns null so that we
-	 * can easily ignore cases; it's useful to ignore a case when inheritance
-	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.Act
-	 * @generated
-	 */
-	public Adapter createActAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.ClinicalDocument
-	 * <em>Clinical Document</em>}'. <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalDocument
-	 * @generated
-	 */
-	public Adapter createClinicalDocumentAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints
-	 * <em>General Header Constraints</em>}'. <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints
-	 * @generated
-	 */
-	public Adapter createConsol_GeneralHeaderConstraintsAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.Section <em>Section</em>}'. <!--
-	 * begin-user-doc --> This default implementation returns null so that we
-	 * can easily ignore cases; it's useful to ignore a case when inheritance
-	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Section
-	 * @generated
-	 */
-	public Adapter createSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection
-	 * <em>Medications Administered Section</em>}'. <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection
-	 * @generated
-	 */
-	public Adapter createConsol_MedicationsAdministeredSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection
-	 * <em>Functional Status Section</em>}'. <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection
-	 * @generated
-	 */
-	public Adapter createConsol_FunctionalStatusSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation
-	 * <em>Cognitive Status Result Observation</em>}'. <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore
-	 * cases; it's useful to ignore a case when inheritance will catch all the
-	 * cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation
-	 * @generated
-	 */
-	public Adapter createConsol_CognitiveStatusResultObservationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer
-	 * <em>Cognitive Status Result Organizer</em>}'. <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore
-	 * cases; it's useful to ignore a case when inheritance will catch all the
-	 * cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer
-	 * @generated
-	 */
-	public Adapter createConsol_CognitiveStatusResultOrganizerAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation
-	 * <em>Functional Status Result Observation</em>}'. <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore
-	 * cases; it's useful to ignore a case when inheritance will catch all the
-	 * cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation
-	 * @generated
-	 */
-	public Adapter createConsol_FunctionalStatusResultObservationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer
-	 * <em>Functional Status Result Organizer</em>}'. <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore
-	 * cases; it's useful to ignore a case when inheritance will catch all the
-	 * cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer
-	 * @generated
-	 */
-	public Adapter createConsol_FunctionalStatusResultOrganizerAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation
-	 * <em>Result Observation</em>}'. <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultObservation
-	 * @generated
-	 */
-	public Adapter createConsol_ResultObservationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional
-	 * <em>Procedures Section Entries Optional</em>}'. <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore
-	 * cases; it's useful to ignore a case when inheritance will catch all the
-	 * cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional
-	 * @generated
-	 */
-	public Adapter createProceduresSectionEntriesOptionalAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection
-	 * <em>Procedures Section</em>}'. <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.ProceduresSection
-	 * @generated
-	 */
-	public Adapter createConsol_ProceduresSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.Procedure <em>Procedure</em>}'.
-	 * <!-- begin-user-doc --> This default implementation returns null so that
-	 * we can easily ignore cases; it's useful to ignore a case when inheritance
-	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Procedure
-	 * @generated
-	 */
-	public Adapter createProcedureAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure
-	 * <em>Procedure Activity Procedure</em>}'. <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure
-	 * @generated
-	 */
-	public Adapter createConsol_ProcedureActivityProcedureAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.Organizer <em>Organizer</em>}'.
-	 * <!-- begin-user-doc --> This default implementation returns null so that
-	 * we can easily ignore cases; it's useful to ignore a case when inheritance
-	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Organizer
-	 * @generated
-	 */
-	public Adapter createOrganizerAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer
-	 * <em>Result Organizer</em>}'. <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer
-	 * @generated
-	 */
-	public Adapter createConsol_ResultOrganizerAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional
-	 * <em>Results Section Entries Optional</em>}'. <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional
-	 * @generated
-	 */
-	public Adapter createResultsSectionEntriesOptionalAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection
-	 * <em>Results Section</em>}'. <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultsSection
-	 * @generated
-	 */
-	public Adapter createConsol_ResultsSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection
-	 * <em>Social History Section</em>}'. <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection
-	 * @generated
-	 */
-	public Adapter createConsol_SocialHistorySectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.ClinicalStatement
-	 * <em>Clinical Statement</em>}'. <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalStatement
-	 * @generated
-	 */
-	public Adapter createClinicalStatementAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.Observation <em>Observation</em>}
-	 * '. <!-- begin-user-doc --> This default implementation returns null so
-	 * that we can easily ignore cases; it's useful to ignore a case when
-	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Observation
-	 * @generated
-	 */
-	public Adapter createObservationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse
-	 * <em>Tobacco Use</em>}'. <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.TobaccoUse
-	 * @generated
-	 */
-	public Adapter createTobaccoUseAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation
-	 * <em>Smoking Status Observation</em>}'. <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation
-	 * @generated
-	 */
-	public Adapter createConsol_SmokingStatusObservationAdapter() {
 		return null;
 	}
 
