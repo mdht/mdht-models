@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -245,15 +245,18 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(NutritionalStatusObservation target) {
-
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				cd.setCode(BAD_CODE_VALUE);
+				cd.setCodeSystem(SNOMEDCT_ID);
+				target.setCode(cd);
 			}
 
 			@Override
 			protected void updateToPass(NutritionalStatusObservation target) {
-				target.init();
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				cd.setCode("87276001");
-				cd.setCodeSystem("2.16.840.1.113883.6.96");
+				cd.setCode("75305-3");
+				cd.setCodeSystem(LOINC_ID);
 				target.setCode(cd);
 			}
 

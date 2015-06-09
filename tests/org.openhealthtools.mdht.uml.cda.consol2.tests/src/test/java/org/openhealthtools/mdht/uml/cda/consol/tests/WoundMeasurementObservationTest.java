@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -241,14 +241,14 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToFail(WoundMeasurementObservation target) {
 				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
+				CD code = DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, BAD_CODESYSTEM_ID);
 				target.setCode(code);
 			}
 
 			@Override
 			protected void updateToPass(WoundMeasurementObservation target) {
-				target.getCode().setCode("401239006");
-				target.getCode().setCodeSystem(SNOMEDCT_ID);
+				target.getCode().setCode("39125-0");
+				target.getCode().setCodeSystem(LOINC_ID);
 			}
 
 			@Override

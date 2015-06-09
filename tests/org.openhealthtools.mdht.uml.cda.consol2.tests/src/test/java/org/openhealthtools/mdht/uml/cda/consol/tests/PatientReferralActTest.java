@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -20,6 +20,8 @@ import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.Observation;
+import org.openhealthtools.mdht.uml.cda.Participant2;
+import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PatientReferralActOperations;
@@ -30,10 +32,12 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 import org.openhealthtools.mdht.uml.hl7.vocab.ActClassObservation;
+import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActMoodDocumentObservation;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
 
-/**
+/**xt
  * <!-- begin-user-doc -->
  * A static utility class that provides operations related to '<em><b>Patient Referral Act</b></em>' model objects.
  * <!-- end-user-doc -->
@@ -43,6 +47,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActMoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Mood Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Code P</em>}</li>
@@ -50,20 +55,28 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Act Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActPriorityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Priority Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActIndication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Indication2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Status Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipObservationPriorityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Priority Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipObservationPriorityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Priority Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActEntryRelationshipObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#getActReferences() <em>Get Act References</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActParticipantParticipantRoleCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Participant Participant Role Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActParticipantParticipantRoleCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Participant Participant Role Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActParticipantTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Participant Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#validatePatientReferralActParticipantParticipantRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Participant Participant Role</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct#getIndication2s() <em>Get Indication2s</em>}</li>
  * </ul>
  * </p>
  *
@@ -142,7 +155,40 @@ public class PatientReferralActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePatientReferralActMoodCodeP() {
+		OperationsTestCase<PatientReferralAct> validatePatientReferralActMoodCodePTestCase = new OperationsTestCase<PatientReferralAct>(
+			"validatePatientReferralActMoodCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PatientReferralAct target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PatientReferralAct target) {
+				target.setMoodCode(x_DocumentActMood.APT);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PatientReferralActOperations.validatePatientReferralActMoodCodeP(
+					(PatientReferralAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePatientReferralActMoodCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
 	*/
 	@Test
 	public void testValidatePatientReferralActMoodCode() {
@@ -153,13 +199,19 @@ public class PatientReferralActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PatientReferralAct target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(PatientReferralAct target) {
-				target.init();
+				target.setMoodCode(x_DocumentActMood.INT);
+			}
 
+			@Override
+			protected void setDependency(PatientReferralAct target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.PatientReferralActMoodCodeP", passToken);
 			}
 
 			@Override
@@ -400,36 +452,32 @@ public class PatientReferralActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidatePatientReferralActActReference() {
-		OperationsTestCase<PatientReferralAct> validatePatientReferralActActReferenceTestCase = new OperationsTestCase<PatientReferralAct>(
-			"validatePatientReferralActActReference",
-			operationsForOCL.getOCLValue("VALIDATE_PATIENT_REFERRAL_ACT_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidatePatientReferralActPriorityCode() {
+		OperationsTestCase<PatientReferralAct> validatePatientReferralActPriorityCodeTestCase = new OperationsTestCase<PatientReferralAct>(
+			"validatePatientReferralActPriorityCode",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_REFERRAL_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PatientReferralAct target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(PatientReferralAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
-				target.getEntryRelationships().add(er);
+				target.setPriorityCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PatientReferralActOperations.validatePatientReferralActActReference(
+				return PatientReferralActOperations.validatePatientReferralActPriorityCode(
 					(PatientReferralAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePatientReferralActActReferenceTestCase.doValidationTest();
+		validatePatientReferralActPriorityCodeTestCase.doValidationTest();
 	}
 
 	/**
@@ -505,6 +553,78 @@ public class PatientReferralActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidatePatientReferralActIndication2() {
+		OperationsTestCase<PatientReferralAct> validatePatientReferralActIndication2TestCase = new OperationsTestCase<PatientReferralAct>(
+			"validatePatientReferralActIndication2",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_REFERRAL_ACT_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PatientReferralAct target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected void updateToPass(PatientReferralAct target) {
+				for (EntryRelationship er : target.getEntryRelationships()) {
+					er.setObservation(ConsolFactory.eINSTANCE.createIndication2().init());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PatientReferralActOperations.validatePatientReferralActIndication2(
+					(PatientReferralAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePatientReferralActIndication2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePatientReferralActParticipant() {
+		OperationsTestCase<PatientReferralAct> validatePatientReferralActParticipantTestCase = new OperationsTestCase<PatientReferralAct>(
+			"validatePatientReferralActParticipant",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PatientReferralAct target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PatientReferralAct target) {
+				Participant2 p = CDAFactory.eINSTANCE.createParticipant2();
+				target.getParticipants().add(p);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PatientReferralActOperations.validatePatientReferralActParticipant(
+					(PatientReferralAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePatientReferralActParticipantTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidatePatientReferralActEntryRelationshipObservationClassCode() {
 		OperationsTestCase<PatientReferralAct> validatePatientReferralActEntryRelationshipObservationClassCodeTestCase = new OperationsTestCase<PatientReferralAct>(
 			"validatePatientReferralActEntryRelationshipObservationClassCode",
@@ -555,7 +675,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(PatientReferralAct target) {
-				target.getObservations().get(0).setMoodCode(x_ActMoodDocumentObservation.EVN);
+				target.getObservations().get(0).setMoodCode(x_ActMoodDocumentObservation.RQO);
 			}
 
 			@Override
@@ -719,6 +839,78 @@ public class PatientReferralActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidatePatientReferralActEntryRelationshipObservationPriorityCodeP() {
+		OperationsTestCase<PatientReferralAct> validatePatientReferralActEntryRelationshipObservationPriorityCodePTestCase = new OperationsTestCase<PatientReferralAct>(
+			"validatePatientReferralActEntryRelationshipObservationPriorityCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PatientReferralAct target) {
+				target.init();
+				Observation obs = CDAFactory.eINSTANCE.createObservation();
+				target.addObservation(obs);
+			}
+
+			@Override
+			protected void updateToPass(PatientReferralAct target) {
+				target.getObservations().get(0).setPriorityCode(DatatypesFactory.eINSTANCE.createCE());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationPriorityCodeP(
+					(PatientReferralAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePatientReferralActEntryRelationshipObservationPriorityCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePatientReferralActEntryRelationshipObservationPriorityCode() {
+		OperationsTestCase<PatientReferralAct> validatePatientReferralActEntryRelationshipObservationPriorityCodeTestCase = new OperationsTestCase<PatientReferralAct>(
+			"validatePatientReferralActEntryRelationshipObservationPriorityCode",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PatientReferralAct target) {
+				target.init();
+				Observation obs = CDAFactory.eINSTANCE.createObservation();
+				target.addObservation(obs);
+				obs.setPriorityCode(DatatypesFactory.eINSTANCE.createCE(BAD_CODE_VALUE, BAD_CODESYSTEM_ID));
+			}
+
+			@Override
+			protected void updateToPass(PatientReferralAct target) {
+				target.getObservations().get(0).setPriorityCode(
+					DatatypesFactory.eINSTANCE.createCE("A", "2.16.840.1.113883.5.7"));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationPriorityCode(
+					(PatientReferralAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePatientReferralActEntryRelationshipObservationPriorityCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidatePatientReferralActEntryRelationshipObservationValue() {
 		OperationsTestCase<PatientReferralAct> validatePatientReferralActEntryRelationshipObservationValueTestCase = new OperationsTestCase<PatientReferralAct>(
 			"validatePatientReferralActEntryRelationshipObservationValue",
@@ -862,13 +1054,168 @@ public class PatientReferralActTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePatientReferralActParticipantParticipantRoleCodeP() {
+		OperationsTestCase<PatientReferralAct> validatePatientReferralActParticipantParticipantRoleCodePTestCase = new OperationsTestCase<PatientReferralAct>(
+			"validatePatientReferralActParticipantParticipantRoleCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PatientReferralAct target) {
+				target.init();
+				Participant2 p = CDAFactory.eINSTANCE.createParticipant2();
+				target.getParticipants().add(p);
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				p.setParticipantRole(pr);
+			}
+
+			@Override
+			protected void updateToPass(PatientReferralAct target) {
+				for (Participant2 p : target.getParticipants()) {
+					p.getParticipantRole().setCode(DatatypesFactory.eINSTANCE.createCE());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PatientReferralActOperations.validatePatientReferralActParticipantParticipantRoleCodeP(
+					(PatientReferralAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePatientReferralActParticipantParticipantRoleCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePatientReferralActParticipantParticipantRoleCode() {
+		OperationsTestCase<PatientReferralAct> validatePatientReferralActParticipantParticipantRoleCodeTestCase = new OperationsTestCase<PatientReferralAct>(
+			"validatePatientReferralActParticipantParticipantRoleCode",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PatientReferralAct target) {
+				target.init();
+				Participant2 p = CDAFactory.eINSTANCE.createParticipant2();
+				target.getParticipants().add(p);
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				p.setParticipantRole(pr);
+				pr.setCode(DatatypesFactory.eINSTANCE.createCE());
+			}
+
+			@Override
+			protected void updateToPass(PatientReferralAct target) {
+				for (Participant2 p : target.getParticipants()) {
+					p.getParticipantRole().setCode(
+						DatatypesFactory.eINSTANCE.createCE("hasCode", "2.16.840.1.113883.6.101"));
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PatientReferralActOperations.validatePatientReferralActParticipantParticipantRoleCode(
+					(PatientReferralAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePatientReferralActParticipantParticipantRoleCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePatientReferralActParticipantTypeCode() {
+		OperationsTestCase<PatientReferralAct> validatePatientReferralActParticipantTypeCodeTestCase = new OperationsTestCase<PatientReferralAct>(
+			"validatePatientReferralActParticipantTypeCode",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PatientReferralAct target) {
+				target.init();
+				Participant2 p = CDAFactory.eINSTANCE.createParticipant2();
+				target.getParticipants().add(p);
+			}
+
+			@Override
+			protected void updateToPass(PatientReferralAct target) {
+				for (Participant2 p : target.getParticipants()) {
+					p.setTypeCode(ParticipationType.REFT);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PatientReferralActOperations.validatePatientReferralActParticipantTypeCode(
+					(PatientReferralAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePatientReferralActParticipantTypeCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePatientReferralActParticipantParticipantRole() {
+		OperationsTestCase<PatientReferralAct> validatePatientReferralActParticipantParticipantRoleTestCase = new OperationsTestCase<PatientReferralAct>(
+			"validatePatientReferralActParticipantParticipantRole",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PatientReferralAct target) {
+				target.init();
+				Participant2 p = CDAFactory.eINSTANCE.createParticipant2();
+				target.getParticipants().add(p);
+			}
+
+			@Override
+			protected void updateToPass(PatientReferralAct target) {
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				for (Participant2 p : target.getParticipants()) {
+					p.setParticipantRole(pr);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PatientReferralActOperations.validatePatientReferralActParticipantParticipantRole(
+					(PatientReferralAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePatientReferralActParticipantParticipantRoleTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
-	public void testGetActReferences() {
+	public void testGetIndication2s() {
 
 		PatientReferralAct target = objectFactory.create();
-		target.getActReferences();
+		target.getIndication2s();
 
 	}
 

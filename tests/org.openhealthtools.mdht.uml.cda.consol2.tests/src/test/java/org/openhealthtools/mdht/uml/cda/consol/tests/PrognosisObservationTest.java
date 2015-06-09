@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -207,7 +207,7 @@ public class PrognosisObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(PrognosisObservation target) {
-				CD code = DatatypesFactory.eINSTANCE.createCD("170967006", SNOMEDCT_ID);
+				CD code = DatatypesFactory.eINSTANCE.createCD("75328-5", LOINC_ID);
 				target.setCode(code);
 			}
 

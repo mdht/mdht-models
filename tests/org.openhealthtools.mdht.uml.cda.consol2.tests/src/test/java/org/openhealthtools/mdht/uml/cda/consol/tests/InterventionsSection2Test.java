@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -98,7 +98,7 @@ public class InterventionsSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(InterventionsSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createHandoffCommunication().init());
+				target.addAct(ConsolFactory.eINSTANCE.createHandoffCommunicationParticipants().init());
 			}
 
 			@Override

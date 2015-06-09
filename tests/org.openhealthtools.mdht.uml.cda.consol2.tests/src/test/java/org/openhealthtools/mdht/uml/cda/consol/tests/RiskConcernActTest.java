@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -87,6 +87,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#validateRiskConcernActEntryReferenceHealthConcern(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Entry Reference Health Concern</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#validateRiskConcernActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#validateRiskConcernActReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Reference Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#validateRiskConcernActReferenceExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Reference External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#getProblemObservation2s() <em>Get Problem Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#getAllergyObservation2s() <em>Get Allergy Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct#getEntryReferenceRelatesTos() <em>Get Entry Reference Relates Tos</em>}</li>
@@ -577,7 +578,7 @@ public class RiskConcernActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(RiskConcernAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
@@ -613,7 +614,7 @@ public class RiskConcernActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(RiskConcernAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
 				target.getEntryRelationships().add(er);
 			}
@@ -1261,7 +1262,7 @@ public class RiskConcernActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(RiskConcernAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createSensoryAndSpeechStatus().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createSensoryStatus().init());
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
@@ -1441,7 +1442,7 @@ public class RiskConcernActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(RiskConcernAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createWoundObservation().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createLongitudinalCareWoundObservation().init());
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
@@ -1693,7 +1694,7 @@ public class RiskConcernActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(RiskConcernAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createProviderPriorityPreference());
+				er.setObservation(ConsolFactory.eINSTANCE.createPriorityPreference());
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
@@ -1729,7 +1730,7 @@ public class RiskConcernActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(RiskConcernAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createProviderPriorityPreference());
+				er.setObservation(ConsolFactory.eINSTANCE.createPriorityPreference());
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
@@ -1801,7 +1802,7 @@ public class RiskConcernActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(RiskConcernAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
@@ -1887,6 +1888,43 @@ public class RiskConcernActTest extends CDAValidationTest {
 		};
 
 		validateRiskConcernActReferenceTypeCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateRiskConcernActReferenceExternalDocumentReference() {
+		OperationsTestCase<RiskConcernAct> validateRiskConcernActReferenceExternalDocumentReferenceTestCase = new OperationsTestCase<RiskConcernAct>(
+			"validateRiskConcernActReferenceExternalDocumentReference",
+			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(RiskConcernAct target) {
+				target.init();
+				Reference r = CDAFactory.eINSTANCE.createReference();
+				target.getReferences().add(r);
+			}
+
+			@Override
+			protected void updateToPass(RiskConcernAct target) {
+				for (Reference r : target.getReferences()) {
+					r.setExternalDocument(ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return RiskConcernActOperations.validateRiskConcernActReferenceExternalDocumentReference(
+					(RiskConcernAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateRiskConcernActReferenceExternalDocumentReferenceTestCase.doValidationTest();
 	}
 
 	/**
