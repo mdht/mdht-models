@@ -2472,4 +2472,16 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>CONF:1098-7352</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_cDKYoM27EeSEZ8MJJ3ZzLg" base_Property="_2FGu6hSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_ExE6oA7UEeWbLdDULBrUww" severity="INFO" base_Constraint="_04NdIPr1EeO3D4OxHxUkag"/>
+  <CDA:ConstraintValidation xmi:id="_FXwgIA7UEeWbLdDULBrUww" severity="INFO" base_Constraint="_OD_zUPr6EeO3D4OxHxUkag"/>
+  <CDA:ConstraintValidation xmi:id="_FxeAoA7UEeWbLdDULBrUww" severity="INFO" base_Constraint="_-QiT4Pr0EeO3D4OxHxUkag"/>
+  <CDA:ConstraintValidation xmi:id="_GOAysA7UEeWbLdDULBrUww" severity="INFO" base_Constraint="_IyzYwPr1EeO3D4OxHxUkag"/>
+  <CDA:ConstraintValidation xmi:id="_GsrEoA7UEeWbLdDULBrUww" severity="INFO" base_Constraint="_TULFwPr1EeO3D4OxHxUkag"/>
+  <CDA:ConstraintValidation xmi:id="_HfpZsA7UEeWbLdDULBrUww" severity="INFO" base_Constraint="_pMHe4Pr0EeO3D4OxHxUkag"/>
+  <CDA:ConstraintValidation xmi:id="_9YYj4A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_Hf2KQPMtEeOrR8IF-aqVyQ"/>
+  <CDA:ConstraintValidation xmi:id="_93Dc4A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_2QlMcPMtEeOrR8IF-aqVyQ"/>
+  <CDA:ConstraintValidation xmi:id="_-QFn8A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_DJD6wPMuEeOrR8IF-aqVyQ"/>
+  <CDA:ConstraintValidation xmi:id="_-wvd8A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_OlAZoPMuEeOrR8IF-aqVyQ"/>
+  <CDA:ConstraintValidation xmi:id="__K5qYA7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_tovXcPMuEeOrR8IF-aqVyQ"/>
+  <CDA:ConstraintValidation xmi:id="__rU24A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_v4cwQPMuEeOrR8IF-aqVyQ"/>
 </xmi:XMI>
