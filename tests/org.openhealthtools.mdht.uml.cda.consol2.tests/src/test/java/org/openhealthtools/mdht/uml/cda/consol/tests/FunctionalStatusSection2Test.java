@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -240,7 +240,7 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(FunctionalStatusSection2 target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createSensoryAndSpeechStatus().init());
+				target.addObservation(ConsolFactory.eINSTANCE.createSensoryStatus().init());
 			}
 
 			@Override

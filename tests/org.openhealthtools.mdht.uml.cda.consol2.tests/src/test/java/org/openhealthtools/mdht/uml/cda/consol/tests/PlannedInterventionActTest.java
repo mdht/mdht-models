@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -66,13 +66,14 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Procedure2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Medication Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedSupply2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Supply2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActNutritionRecommendations(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Nutrition Recommendations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActNutritionRecommendation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Nutrition Recommendation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryReferenceDocInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Reference Doc Instance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryReferenceGoalObs(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Reference Goal Obs</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActHandoffCommunicationParticipants(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Handoff Communication Participants</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedImmunizationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Immunization Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Reference Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActReferenceExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Reference External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getAdvanceDirectiveObservation2s() <em>Get Advance Directive Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getImmunizationActivity2s() <em>Get Immunization Activity2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getMedicationActivity2s() <em>Get Medication Activity2s</em>}</li>
@@ -89,7 +90,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedProcedure2s() <em>Get Planned Procedure2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedMedicationActivity2s() <em>Get Planned Medication Activity2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedSupply2s() <em>Get Planned Supply2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getNutritionRecommendationss() <em>Get Nutrition Recommendationss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getNutritionRecommendations() <em>Get Nutrition Recommendations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceDocInstances() <em>Get Entry Reference Doc Instances</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceGoalObs() <em>Get Entry Reference Goal Obs</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getHandoffCommunicationParticipantss() <em>Get Handoff Communication Participantss</em>}</li>
@@ -1068,10 +1069,10 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidatePlannedInterventionActNutritionRecommendations() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActNutritionRecommendationsTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActNutritionRecommendations",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidatePlannedInterventionActNutritionRecommendation() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActNutritionRecommendationTestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActNutritionRecommendation",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1082,20 +1083,20 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createNutritionRecommendations().init());
+				er.setAct(ConsolFactory.eINSTANCE.createNutritionRecommendation().init());
 				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PlannedInterventionActOperations.validatePlannedInterventionActNutritionRecommendations(
+				return PlannedInterventionActOperations.validatePlannedInterventionActNutritionRecommendation(
 					(PlannedInterventionAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePlannedInterventionActNutritionRecommendationsTestCase.doValidationTest();
+		validatePlannedInterventionActNutritionRecommendationTestCase.doValidationTest();
 	}
 
 	/**
@@ -1117,7 +1118,7 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
@@ -1153,7 +1154,7 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
 				target.getEntryRelationships().add(er);
 			}
@@ -1189,7 +1190,7 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createHandoffCommunication().init());
+				er.setAct(ConsolFactory.eINSTANCE.createHandoffCommunicationParticipants().init());
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
@@ -1311,6 +1312,43 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 		};
 
 		validatePlannedInterventionActReferenceTypeCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedInterventionActReferenceExternalDocumentReference() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActReferenceExternalDocumentReferenceTestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActReferenceExternalDocumentReference",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+				target.init();
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				target.getReferences().add(ref);
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				for (Reference r : target.getReferences()) {
+					r.setExternalDocument(ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActReferenceExternalDocumentReference(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActReferenceExternalDocumentReferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -1510,10 +1548,10 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNutritionRecommendationss() {
+	public void testGetNutritionRecommendations() {
 
 		PlannedInterventionAct target = objectFactory.create();
-		target.getNutritionRecommendationss();
+		target.getNutritionRecommendations();
 
 	}
 

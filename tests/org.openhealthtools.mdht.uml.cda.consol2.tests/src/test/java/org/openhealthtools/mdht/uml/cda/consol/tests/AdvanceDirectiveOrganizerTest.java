@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -43,6 +43,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#getAdvanceDirectiveObservation2s() <em>Get Advance Directive Observation2s</em>}</li>
  * </ul>
  * </p>
@@ -372,6 +373,40 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 		};
 
 		validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdvanceDirectiveOrganizerAuthorParticipation() {
+		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerAuthorParticipationTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
+			"validateAdvanceDirectiveOrganizerAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveOrganizer target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveOrganizer target) {
+				target.init();
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAuthorParticipation(
+					(AdvanceDirectiveOrganizer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveOrganizerAuthorParticipationTestCase.doValidationTest();
 	}
 
 	/**

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -49,6 +49,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageEntryRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Entry Relationship</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageEntryRelationshipActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Entry Relationship Act Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageEntryRelationshipActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Entry Relationship Act Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageEntryRelationshipActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Entry Relationship Act Id</em>}</li>
@@ -379,6 +380,40 @@ public class PlannedCoverageTest extends CDAValidationTest {
 		};
 
 		validatePlannedCoverageEntryRelationshipTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedCoverageAuthorParticipation() {
+		OperationsTestCase<PlannedCoverage> validatePlannedCoverageAuthorParticipationTestCase = new OperationsTestCase<PlannedCoverage>(
+			"validatePlannedCoverageAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedCoverage target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedCoverage target) {
+				target.init();
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedCoverageOperations.validatePlannedCoverageAuthorParticipation(
+					(PlannedCoverage) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedCoverageAuthorParticipationTestCase.doValidationTest();
 	}
 
 	/**

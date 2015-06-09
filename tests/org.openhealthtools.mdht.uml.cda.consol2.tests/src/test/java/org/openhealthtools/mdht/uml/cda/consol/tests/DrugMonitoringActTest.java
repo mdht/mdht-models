@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -49,6 +49,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassRoot;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Participant Participant Role Playing Entity Class Code</em>}</li>
@@ -313,6 +314,39 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 		};
 
 		validateDrugMonitoringActStatusCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateDrugMonitoringActStatusCodeP() {
+		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActStatusCodePTestCase = new OperationsTestCase<DrugMonitoringAct>(
+			"validateDrugMonitoringActStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DrugMonitoringAct target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(DrugMonitoringAct target) {
+				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DrugMonitoringActOperations.validateDrugMonitoringActStatusCodeP(
+					(DrugMonitoringAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDrugMonitoringActStatusCodePTestCase.doValidationTest();
 	}
 
 	/**

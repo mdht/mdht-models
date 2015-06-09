@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -370,7 +370,7 @@ public class PlannedEncounter2Test extends CDAValidationTest {
 			protected void updateToPass(PlannedEncounter2 target) {
 				EntryRelationship e = CDAFactory.eINSTANCE.createEntryRelationship();
 				e.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				e.setObservation(ConsolFactory.eINSTANCE.createProviderPriorityPreference().init());
+				e.setObservation(ConsolFactory.eINSTANCE.createPriorityPreference().init());
 				target.getEntryRelationships().add(e);
 			}
 

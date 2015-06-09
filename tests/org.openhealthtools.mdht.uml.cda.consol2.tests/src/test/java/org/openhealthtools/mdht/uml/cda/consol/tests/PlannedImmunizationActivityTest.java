@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -58,13 +58,12 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityRepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Repeat Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityRouteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Route Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityRouteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Route Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityApproachSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Approach Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityApproachSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Approach Site Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityApproachSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Approach Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Dose Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Performer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Patient Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Provider Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityIndication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Indication2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPrecondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Precondition</em>}</li>
@@ -73,8 +72,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityConsumableImmunizationMedicationInformation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Consumable Immunization Medication Information2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPreconditionTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Precondition Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Precondition Precondition For Substance Administration2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#getPriorityPreferences() <em>Get Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#getIndication2s() <em>Get Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#getInstruction2s() <em>Get Instruction2s</em>}</li>
  * </ul>
@@ -628,42 +626,6 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidatePlannedImmunizationActivityPatientPriorityPreference() {
-		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityPatientPriorityPreferenceTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityPatientPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedImmunizationActivity target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedImmunizationActivity target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createPatientPriorityPreference().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPatientPriorityPreference(
-					(PlannedImmunizationActivity) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedImmunizationActivityPatientPriorityPreferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidatePlannedImmunizationActivityAuthorParticipation() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityAuthorParticipationTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityAuthorParticipation",
@@ -697,10 +659,10 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidatePlannedImmunizationActivityProviderPriorityPreference() {
-		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityProviderPriorityPreferenceTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityProviderPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidatePlannedImmunizationActivityPriorityPreference() {
+		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityPriorityPreferenceTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
+			"validatePlannedImmunizationActivityPriorityPreference",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -712,20 +674,20 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 			protected void updateToPass(PlannedImmunizationActivity target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createProviderPriorityPreference().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createPriorityPreference().init());
 				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityProviderPriorityPreference(
+				return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPriorityPreference(
 					(PlannedImmunizationActivity) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePlannedImmunizationActivityProviderPriorityPreferenceTestCase.doValidationTest();
+		validatePlannedImmunizationActivityPriorityPreferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -1024,22 +986,10 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPatientPriorityPreferences() {
+	public void testGetPriorityPreferences() {
 
 		PlannedImmunizationActivity target = objectFactory.create();
-		target.getPatientPriorityPreferences();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetProviderPriorityPreferences() {
-
-		PlannedImmunizationActivity target = objectFactory.create();
-		target.getProviderPriorityPreferences();
+		target.getPriorityPreferences();
 
 	}
 

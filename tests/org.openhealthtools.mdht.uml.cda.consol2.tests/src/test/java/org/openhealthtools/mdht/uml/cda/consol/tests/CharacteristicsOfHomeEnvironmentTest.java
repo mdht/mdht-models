@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -43,6 +43,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment#validateCharacteristicsOfHomeEnvironmentStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment#validateCharacteristicsOfHomeEnvironmentStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment#validateCharacteristicsOfHomeEnvironmentValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment#validateCharacteristicsOfHomeEnvironmentValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Value P</em>}</li>
  * </ul>
  * </p>
  *
@@ -336,7 +337,7 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCharacteristicsOfHomeEnvironmentValue() {
@@ -347,16 +348,15 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(CharacteristicsOfHomeEnvironment target) {
-
+				target.init();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 			}
 
 			@Override
 			protected void updateToPass(CharacteristicsOfHomeEnvironment target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
-
+				target.getValues().clear();
+				target.getValues().add(DatatypesFactory.eINSTANCE.createCD("mustExistOnly", SNOMEDCT_ID));
 			}
 
 			@Override
@@ -369,6 +369,40 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 		};
 
 		validateCharacteristicsOfHomeEnvironmentValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCharacteristicsOfHomeEnvironmentValueP() {
+		OperationsTestCase<CharacteristicsOfHomeEnvironment> validateCharacteristicsOfHomeEnvironmentValuePTestCase = new OperationsTestCase<CharacteristicsOfHomeEnvironment>(
+			"validateCharacteristicsOfHomeEnvironmentValueP",
+			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CharacteristicsOfHomeEnvironment target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(CharacteristicsOfHomeEnvironment target) {
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValueP(
+					(CharacteristicsOfHomeEnvironment) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCharacteristicsOfHomeEnvironmentValuePTestCase.doValidationTest();
 	}
 
 	/**

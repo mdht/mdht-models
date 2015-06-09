@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -35,6 +35,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentValueOfTypeCDIsFromSnomed(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Value Of Type CD Is From Snomed</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Mood Code</em>}</li>
@@ -53,6 +54,41 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  */
 
 public class NutritionAssessmentTest extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateNutritionAssessmentValueOfTypeCDIsFromSnomed() {
+		OperationsTestCase<NutritionAssessment> validateNutritionAssessmentValueOfTypeCDIsFromSnomedTestCase = new OperationsTestCase<NutritionAssessment>(
+			"validateNutritionAssessmentValueOfTypeCDIsFromSnomed",
+			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NutritionAssessment target) {
+				target.init();
+				CD val = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(val);
+			}
+
+			@Override
+			protected void updateToPass(NutritionAssessment target) {
+				target.getValues().set(0, DatatypesFactory.eINSTANCE.createCD("hasCode", SNOMEDCT_ID));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionAssessmentOperations.validateNutritionAssessmentValueOfTypeCDIsFromSnomed(
+					(NutritionAssessment) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionAssessmentValueOfTypeCDIsFromSnomedTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -238,16 +274,19 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(NutritionAssessment target) {
-
+				target.init();
+				CD code = DatatypesFactory.eINSTANCE.createCD();
+				code.setCode(BAD_CODE_VALUE);
+				code.setCodeSystem(LOINC_ID);
+				target.setCode(code);
 			}
 
 			@Override
 			protected void updateToPass(NutritionAssessment target) {
-				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				code.setCode("230125005");
-				code.setCodeSystem("2.16.840.1.113883.6.96");
-				target.setCode(code);
+				// code.setCode("230125005");
+				// code.setCodeSystem(SNOMEDCT_ID);
+				target.getCode().setCode("75303-8");
+				target.getCode().setCodeSystem(LOINC_ID);
 			}
 
 			@Override

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -407,7 +407,7 @@ public class PlannedAct2Test extends CDAValidationTest {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				// NOTE: THIS WILL EVENTUALLY NEED TO CHANGE TO createPriorityPreference
-				er.setObservation(ConsolFactory.eINSTANCE.createProviderPriorityPreference().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createPriorityPreference().init());
 				target.getEntryRelationships().add(er);
 			}
 
