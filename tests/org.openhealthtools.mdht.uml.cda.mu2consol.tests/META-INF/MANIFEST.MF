@@ -7,6 +7,7 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: org.openhealthtools.mdht.uml.cda.mu2consol.tests
 Require-Bundle: org.eclipse.core.runtime,
  org.openhealthtools.mdht.uml.cda.mu2consol;visibility:=reexport,
  org.openhealthtools.mdht.uml.cda;visibility:=reexport,
@@ -14,6 +15,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.openhealthtools.mdht.uml.hl7.datatypes;visibility:=reexport,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.openhealthtools.mdht.uml.hl7.rim;visibility:=reexport,
+ org.eclipse.uml2.types;visibility:=reexport,
  org.openhealthtools.mdht.uml.hl7.vocab;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.junit;visibility:=reexport,
