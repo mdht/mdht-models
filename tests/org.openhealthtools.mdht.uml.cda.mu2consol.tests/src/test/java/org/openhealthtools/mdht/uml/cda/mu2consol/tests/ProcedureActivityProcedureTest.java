@@ -30,7 +30,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure#validateMU2CONSOLProcedureActivityProcedureCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate MU2CONSOL Procedure Activity Procedure Code Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure#validateProcedureActivityProcedureCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure#validateProcedureActivityProcedureTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure#validateProcedureActivityProcedureCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Code</em>}</li>
  * </ul>
@@ -43,21 +43,14 @@ public class ProcedureActivityProcedureTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateMU2CONSOLProcedureActivityProcedureCodeValue() {
-		OperationsTestCase<ProcedureActivityProcedure> validateMU2CONSOLProcedureActivityProcedureCodeValueTestCase = new OperationsTestCase<ProcedureActivityProcedure>(
-			"validateMU2CONSOLProcedureActivityProcedureCodeValue",
-			operationsForOCL.getOCLValue("VALIDATE_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateProcedureActivityProcedureCodeValue() {
+		OperationsTestCase<ProcedureActivityProcedure> validateProcedureActivityProcedureCodeValueTestCase = new OperationsTestCase<ProcedureActivityProcedure>(
+			"validateProcedureActivityProcedureCodeValue",
+			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProcedureActivityProcedureOperations.validateMU2CONSOLProcedureActivityProcedureCodeValue(
-					(ProcedureActivityProcedure) objectToTest, diagnostician, map);
-			}
 
 			@Override
 			protected void updateToFail(ProcedureActivityProcedure target) {
@@ -75,9 +68,16 @@ public class ProcedureActivityProcedureTest extends CDAValidationTest {
 
 			}
 
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureCodeValue(
+					(ProcedureActivityProcedure) objectToTest, diagnostician, map);
+			}
+
 		};
 
-		validateMU2CONSOLProcedureActivityProcedureCodeValueTestCase.doValidationTest();
+		validateProcedureActivityProcedureCodeValueTestCase.doValidationTest();
 	}
 
 	/**

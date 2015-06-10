@@ -1544,4 +1544,9 @@ This information should be included in an Immunization Activity when available. 
     <ruleId>CONF:1098-31881</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_sgESQN_KEeS_Zazavvm12Q" base_Property="_sCU5QOHVEeO04sHNODkHmQ"/>
+  <CDA:ConstraintValidation xmi:id="_h7Cd8A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_RxUs0OHkEeO04sHNODkHmQ"/>
+  <CDA:ConstraintValidation xmi:id="_iQUKYA7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_gI9gwOHkEeO04sHNODkHmQ"/>
+  <CDA:ConstraintValidation xmi:id="_ipkX4A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_g0-5QOHkEeO04sHNODkHmQ"/>
+  <CDA:ConstraintValidation xmi:id="_i_vcMA7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_hkNWwOHkEeO04sHNODkHmQ"/>
+  <CDA:ConstraintValidation xmi:id="_jWV-UA7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_YFfPAOHjEeO04sHNODkHmQ"/>
 </xmi:XMI>

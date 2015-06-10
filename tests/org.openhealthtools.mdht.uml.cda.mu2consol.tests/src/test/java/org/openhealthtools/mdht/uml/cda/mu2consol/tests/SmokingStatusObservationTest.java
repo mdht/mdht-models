@@ -32,7 +32,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation#validateTobaccoUseTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation#validateSmokingStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation#validateSmokingStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation#validateSmokingStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value</em>}</li>
  * </ul>
@@ -44,14 +44,14 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
-	 * 
-	 * @generated
-	 */
+	*
+	* @generated
+	*/
 	@Test
-	public void testValidateTobaccoUseTemplateId() {
-		OperationsTestCase<SmokingStatusObservation> validateTobaccoUseTemplateIdTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateTobaccoUseTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateSmokingStatusObservationTemplateId() {
+		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationTemplateIdTestCase = new OperationsTestCase<SmokingStatusObservation>(
+			"validateSmokingStatusObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -68,13 +68,13 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return SmokingStatusObservationOperations.validateTobaccoUseTemplateId(
+				return SmokingStatusObservationOperations.validateSmokingStatusObservationTemplateId(
 					(SmokingStatusObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateTobaccoUseTemplateIdTestCase.doValidationTest();
+		validateSmokingStatusObservationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

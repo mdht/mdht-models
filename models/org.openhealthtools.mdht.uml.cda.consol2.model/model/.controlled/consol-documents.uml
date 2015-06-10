@@ -14921,4 +14921,5 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:PropertyValidation xmi:id="_tcMQcPKbEeS1WcRYptzY3g" base_Property="_sB8gAPKbEeS1WcRYptzY3g">
     <ruleId>CONF:1098-28688</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_2TsEAA7TEeWbLdDULBrUww" severity="INFO" base_Constraint="_ildAUFP-EeSRgsl8Ss66oQ"/>
 </xmi:XMI>
