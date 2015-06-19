@@ -55,17 +55,6 @@ public class DischargeMedicationsSectionEntriesOptional2Impl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeMedicationsSectionEntriesOptional2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<DischargeMedication2> getConsolDischargeMedication2s() {
 		return DischargeMedicationsSectionEntriesOptional2Operations.getConsolDischargeMedication2s(this);
 	}
@@ -103,6 +92,18 @@ public class DischargeMedicationsSectionEntriesOptional2Impl extends
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeMedicationsSectionEntriesOptional2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeMedicationsSectionEntriesOptional2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 			this, diagnostics, context);
 	}
 

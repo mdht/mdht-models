@@ -59,26 +59,6 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemConcernAct2EffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernAct2Operations.validateProblemConcernAct2EffectiveTimeLow(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProblemConcernAct2EffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernAct2Operations.validateProblemConcernAct2EffectiveTimeHigh(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateProblemConcernActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernAct2Operations.validateProblemConcernActStatusCodeP(this, diagnostics, context);
 	}
@@ -108,16 +88,6 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateProblemConcernActProblemObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernAct2Operations.validateProblemConcernActProblemObservation2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<PriorityPreference> getPriorityPreferences() {
 		return ProblemConcernAct2Operations.getPriorityPreferences(this);
 	}
@@ -130,6 +100,26 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return ProblemConcernAct2Operations.getConsolProblemObservation2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemConcernActEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernAct2Operations.validateProblemConcernActEffectiveTimeLow(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemConcernActEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernAct2Operations.validateProblemConcernActEffectiveTimeHigh(this, diagnostics, context);
 	}
 
 	/**
@@ -180,6 +170,16 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	@Override
 	public boolean validateProblemConcernActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernAct2Operations.validateProblemConcernActCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemConcernActProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernAct2Operations.validateProblemConcernActProblemObservation(this, diagnostics, context);
 	}
 
 	/**

@@ -69,18 +69,6 @@ public class PostprocedureDiagnosis2Impl extends PostprocedureDiagnosisImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePostprocedureDiagnosisProblemObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PostprocedureDiagnosis2Operations.validatePostprocedureDiagnosisProblemObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return PostprocedureDiagnosis2Operations.getConsolProblemObservation2s(this);
 	}
@@ -103,6 +91,18 @@ public class PostprocedureDiagnosis2Impl extends PostprocedureDiagnosisImpl impl
 	@Override
 	public boolean validatePostprocedureDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosis2Operations.validatePostprocedureDiagnosisCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePostprocedureDiagnosisProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PostprocedureDiagnosis2Operations.validatePostprocedureDiagnosisProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**

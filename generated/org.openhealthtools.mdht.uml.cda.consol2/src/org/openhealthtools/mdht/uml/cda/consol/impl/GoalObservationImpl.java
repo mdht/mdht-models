@@ -152,9 +152,8 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateGoalObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GoalObservationOperations.validateGoalObservation(this, diagnostics, context);
+	public boolean validateGoalObservationGoalObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalObservationOperations.validateGoalObservationGoalObservation(this, diagnostics, context);
 	}
 
 	/**

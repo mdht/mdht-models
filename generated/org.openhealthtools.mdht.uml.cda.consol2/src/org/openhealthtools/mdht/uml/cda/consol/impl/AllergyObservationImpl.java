@@ -103,42 +103,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergyObservationAllergyStatusInversionIndicator(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergyStatusInversionIndicator(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservationReactionInversionIndicator(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationReactionInversionIndicator(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservationSeverityInversionIndicator(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationSeverityInversionIndicator(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateAllergyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationClassCode(this, diagnostics, context);
 	}
@@ -427,6 +391,42 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	@Override
 	public AllergyStatusObservation getConsolAllergyStatusObservation() {
 		return AllergyObservationOperations.getConsolAllergyStatusObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservationOperations.validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservationOperations.validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservationOperations.validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(
+			this, diagnostics, context);
 	}
 
 	/**

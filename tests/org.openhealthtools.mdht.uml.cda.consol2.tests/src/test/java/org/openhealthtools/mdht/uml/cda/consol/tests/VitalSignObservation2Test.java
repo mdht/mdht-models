@@ -35,12 +35,12 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservation2TextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation2 Text Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservation2ReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation2 Reference Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservation2TextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation2 Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationInterpretationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Interpretation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservation2PQUnit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation2 PQ Unit</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Text Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Reference Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Value</em>}</li>
@@ -52,120 +52,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
  */
 
 public class VitalSignObservation2Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateVitalSignObservation2TextReference() {
-		OperationsTestCase<VitalSignObservation2> validateVitalSignObservation2TextReferenceTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservation2TextReference",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION2_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(VitalSignObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(VitalSignObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return VitalSignObservation2Operations.validateVitalSignObservation2TextReference(
-					(VitalSignObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateVitalSignObservation2TextReferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateVitalSignObservation2ReferenceValue() {
-		OperationsTestCase<VitalSignObservation2> validateVitalSignObservation2ReferenceValueTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservation2ReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION2_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(VitalSignObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(VitalSignObservation2 target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return VitalSignObservation2Operations.validateVitalSignObservation2ReferenceValue(
-					(VitalSignObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateVitalSignObservation2ReferenceValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateVitalSignObservation2TextReferenceValue() {
-		OperationsTestCase<VitalSignObservation2> validateVitalSignObservation2TextReferenceValueTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservation2TextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION2_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(VitalSignObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(VitalSignObservation2 target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return VitalSignObservation2Operations.validateVitalSignObservation2TextReferenceValue(
-					(VitalSignObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateVitalSignObservation2TextReferenceValueTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -274,6 +160,120 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 		};
 
 		validateVitalSignObservation2PQUnitTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateVitalSignObservationTextReference() {
+		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationTextReferenceTestCase = new OperationsTestCase<VitalSignObservation2>(
+			"validateVitalSignObservationTextReference",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(VitalSignObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(VitalSignObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignObservation2Operations.validateVitalSignObservationTextReference(
+					(VitalSignObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignObservationTextReferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateVitalSignObservationReferenceValue() {
+		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationReferenceValueTestCase = new OperationsTestCase<VitalSignObservation2>(
+			"validateVitalSignObservationReferenceValue",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(VitalSignObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(VitalSignObservation2 target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignObservation2Operations.validateVitalSignObservationReferenceValue(
+					(VitalSignObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignObservationReferenceValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateVitalSignObservationTextReferenceValue() {
+		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationTextReferenceValueTestCase = new OperationsTestCase<VitalSignObservation2>(
+			"validateVitalSignObservationTextReferenceValue",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(VitalSignObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(VitalSignObservation2 target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignObservation2Operations.validateVitalSignObservationTextReferenceValue(
+					(VitalSignObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignObservationTextReferenceValueTestCase.doValidationTest();
 	}
 
 	/**

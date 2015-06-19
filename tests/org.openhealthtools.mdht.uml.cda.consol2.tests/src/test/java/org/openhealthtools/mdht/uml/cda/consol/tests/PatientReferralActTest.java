@@ -37,7 +37,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActMoodDocumentObservation;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
 
-/**xt
+/**
  * <!-- begin-user-doc -->
  * A static utility class that provides operations related to '<em><b>Patient Referral Act</b></em>' model objects.
  * <!-- end-user-doc -->

@@ -56,9 +56,17 @@ public class Indication2Impl extends IndicationImpl implements Indication2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateIndication2ProblemIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Indication2Operations.validateIndication2ProblemIndication(this, diagnostics, context);
+	public boolean validateIndicationProblemIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Indication2Operations.validateIndicationProblemIndication(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIndicationCodeNullFlavorValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Indication2Operations.validateIndicationCodeNullFlavorValue(this, diagnostics, context);
 	}
 
 	/**
@@ -67,18 +75,8 @@ public class Indication2Impl extends IndicationImpl implements Indication2 {
 	 * @generated
 	 */
 	@Override
-	public boolean validateIndication2CodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Indication2Operations.validateIndication2CodeNullFlavor(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateIndication2CodeNullFlavorValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Indication2Operations.validateIndication2CodeNullFlavorValue(this, diagnostics, context);
+	public boolean validateIndicationCodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Indication2Operations.validateIndicationCodeNullFlavor(this, diagnostics, context);
 	}
 
 	/**

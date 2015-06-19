@@ -59,30 +59,6 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * @generated
 	 */
 	@Override
-	public boolean validateFunctionalStatusObservation2TextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2TextReference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusObservation2TextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2TextReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateFunctionalStatusObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2AuthorParticipation(
@@ -95,32 +71,29 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * @generated
 	 */
 	@Override
-	public boolean validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public NonMedicinalSupplyActivity2 getConsolNonMedicinalSupplyActivity2() {
 		return FunctionalStatusObservation2Operations.getConsolNonMedicinalSupplyActivity2(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusObservation2Operations.validateResultObservationTextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusObservation2Operations.validateResultObservationTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -162,6 +135,30 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	public boolean validateFunctionalStatusResultObservationReferenceRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationReferenceRange(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
 			this, diagnostics, context);
 	}
 

@@ -56,63 +56,6 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateResultObservation2AuthorMultiplicity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservation2Operations.validateResultObservation2AuthorMultiplicity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultObservation2CodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservation2Operations.validateResultObservation2CodeValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultObservation2TextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservation2Operations.validateResultObservation2TextReference(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultObservation2ReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservation2Operations.validateResultObservation2ReferenceValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultObservation2TextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservation2Operations.validateResultObservation2TextReferenceValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultObservation2NoObservationRangeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResultObservation2Operations.validateResultObservation2NoObservationRangeCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateResultObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservationCodeP(this, diagnostics, context);
 	}
@@ -177,6 +120,67 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 			Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservation2ReferenceRangeObservationRange(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationAuthorMultiplicity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationAuthorMultiplicity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationCodeValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationTextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationTextReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationNoObservationRangeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationNoObservationRangeCode(this, diagnostics, context);
 	}
 
 	/**

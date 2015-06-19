@@ -57,54 +57,6 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * @generated
 	 */
 	@Override
-	public boolean validateCognitiveStatusProblemObservationHasTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationHasTextReference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateCognitiveStatusProblemObservationHasTextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationHasTextReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateCognitiveStatusProblemObservationHasOnsetDate(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationHasOnsetDate(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateCognitiveStatusProblemObservationHasResolutionDate(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationHasResolutionDate(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateCognitiveStatusProblemObservationMethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationMethodCode(
@@ -175,6 +127,51 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	@Override
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return CognitiveStatusProblemObservationOperations.getAssessmentScaleObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasTextReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationHasTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasTextReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationHasOnsetDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasOnsetDate(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasResolutionDate(
+			this, diagnostics, context);
 	}
 
 	/**

@@ -32,9 +32,9 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndication2ProblemIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Problem Indication</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndication2CodeNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Code Null Flavor</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndication2CodeNullFlavorValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Code Null Flavor Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationProblemIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Problem Indication</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCodeNullFlavorValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code Null Flavor Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCodeNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code P</em>}</li>
@@ -57,25 +57,25 @@ public class Indication2Operations extends IndicationOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateIndication2ProblemIndication(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Problem Indication</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateIndicationProblemIndication(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Problem Indication</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateIndication2ProblemIndication(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateIndicationProblemIndication(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INDICATION2_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
+	protected static final String VALIDATE_INDICATION_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateIndication2ProblemIndication(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Problem Indication</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateIndicationProblemIndication(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Problem Indication</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateIndication2ProblemIndication(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateIndicationProblemIndication(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INDICATION2_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_INDICATION_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,28 +88,28 @@ public class Indication2Operations extends IndicationOperations {
 	 * @generated
 	 */
 
-	public static boolean validateIndication2ProblemIndication(Indication2 indication2, DiagnosticChain diagnostics,
+	public static boolean validateIndicationProblemIndication(Indication2 indication2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INDICATION2_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_INDICATION_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION2);
 			try {
-				VALIDATE_INDICATION2_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INDICATION2_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INDICATION_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INDICATION_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INDICATION2_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_INDICATION_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			indication2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INDICATION2__INDICATION2_PROBLEM_INDICATION,
+					ConsolValidator.INDICATION2__INDICATION_PROBLEM_INDICATION,
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"Indication2Indication2ProblemIndication",
+								"Indication2IndicationProblemIndication",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(indication2, context) }),
 					new Object[] { indication2 }));
 			}
@@ -120,25 +120,25 @@ public class Indication2Operations extends IndicationOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateIndication2CodeNullFlavor(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Code Null Flavor</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateIndicationCodeNullFlavorValue(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code Null Flavor Value</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateIndication2CodeNullFlavor(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateIndicationCodeNullFlavorValue(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INDICATION2_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
+	protected static final String VALIDATE_INDICATION_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateIndication2CodeNullFlavor(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Code Null Flavor</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateIndicationCodeNullFlavorValue(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code Null Flavor Value</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateIndication2CodeNullFlavor(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateIndicationCodeNullFlavorValue(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INDICATION2_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_INDICATION_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,28 +151,28 @@ public class Indication2Operations extends IndicationOperations {
 	 * @generated
 	 */
 
-	public static boolean validateIndication2CodeNullFlavor(Indication2 indication2, DiagnosticChain diagnostics,
+	public static boolean validateIndicationCodeNullFlavorValue(Indication2 indication2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INDICATION2_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_INDICATION_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION2);
 			try {
-				VALIDATE_INDICATION2_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INDICATION2_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INDICATION_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INDICATION_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INDICATION2_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_INDICATION_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			indication2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INDICATION2__INDICATION2_CODE_NULL_FLAVOR,
+					ConsolValidator.INDICATION2__INDICATION_CODE_NULL_FLAVOR_VALUE,
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"Indication2Indication2CodeNullFlavor",
+								"Indication2IndicationCodeNullFlavorValue",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(indication2, context) }),
 					new Object[] { indication2 }));
 			}
@@ -183,25 +183,25 @@ public class Indication2Operations extends IndicationOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateIndication2CodeNullFlavorValue(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Code Null Flavor Value</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateIndicationCodeNullFlavor(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code Null Flavor</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateIndication2CodeNullFlavorValue(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateIndicationCodeNullFlavor(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INDICATION2_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
+	protected static final String VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateIndication2CodeNullFlavorValue(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Code Null Flavor Value</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateIndicationCodeNullFlavor(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code Null Flavor</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateIndication2CodeNullFlavorValue(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateIndicationCodeNullFlavor(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INDICATION2_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,27 +214,28 @@ public class Indication2Operations extends IndicationOperations {
 	 * @generated
 	 */
 
-	public static boolean validateIndication2CodeNullFlavorValue(Indication2 indication2, DiagnosticChain diagnostics,
+	public static boolean validateIndicationCodeNullFlavor(Indication2 indication2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INDICATION2_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION2);
 			try {
-				VALIDATE_INDICATION2_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INDICATION2_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INDICATION2_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			indication2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INDICATION2__INDICATION2_CODE_NULL_FLAVOR_VALUE,
+					ConsolValidator.INDICATION2__INDICATION_CODE_NULL_FLAVOR,
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"Indication2Indication2CodeNullFlavorValue",
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"Indication2IndicationCodeNullFlavor",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(indication2, context) }),
 					new Object[] { indication2 }));
 			}

@@ -58,10 +58,10 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
+	public boolean validateCoverageActivityCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CoverageActivityOperations.validateCoverageActivityRelationshipSequenceNumber(this, diagnostics, context);
+		return CoverageActivityOperations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(
+			this, diagnostics, context);
 	}
 
 	/**

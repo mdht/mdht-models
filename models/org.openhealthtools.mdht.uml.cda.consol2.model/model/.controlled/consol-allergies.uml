@@ -2484,4 +2484,6 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:ConstraintValidation xmi:id="_-wvd8A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_OlAZoPMuEeOrR8IF-aqVyQ"/>
   <CDA:ConstraintValidation xmi:id="__K5qYA7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_tovXcPMuEeOrR8IF-aqVyQ"/>
   <CDA:ConstraintValidation xmi:id="__rU24A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_v4cwQPMuEeOrR8IF-aqVyQ"/>
+  <CDA:ConstraintValidation xmi:id="_LXE4cBaOEeWCiY8iFDNBKA" severity="INFO" base_Constraint="_a4EoULbWEeOohfENwVAdzg"/>
+  <CDA:ConstraintValidation xmi:id="_L8BYkBaOEeWCiY8iFDNBKA" severity="INFO" base_Constraint="_cA2OQLbWEeOohfENwVAdzg"/>
 </xmi:XMI>

@@ -39,14 +39,14 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrder2ContainsMedicationInformation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order2 Contains Medication Information2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order2 Contains Immunization Medication Information2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrder2ContainsMedicationOrImmunization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order2 Contains Medication Or Immunization</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrder2InstructionInversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order2 Instruction Inversion Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrderStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order Status Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrderInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#getConsolInstruction2() <em>Get Consol Instruction2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrderContainsMedicationOrImmunization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order Contains Medication Or Immunization</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrderInstructionInversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order Instruction Inversion Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrderTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrderStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrderRepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order Repeat Number</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2#validateMedicationSupplyOrderInstructions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order Instructions</em>}</li>
  * </ul>
  * </p>
  *
@@ -131,10 +131,57 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateMedicationSupplyOrder2ContainsMedicationOrImmunization() {
-		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrder2ContainsMedicationOrImmunizationTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
-			"validateMedicationSupplyOrder2ContainsMedicationOrImmunization",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER2_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateMedicationSupplyOrderStatusCodeP() {
+		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderStatusCodePTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
+			"validateMedicationSupplyOrderStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationSupplyOrder2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicationSupplyOrder2 target) {
+				target.init();
+				CS cs = DatatypesFactory.eINSTANCE.createCS();
+				target.setStatusCode(cs);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderStatusCodeP(
+					(MedicationSupplyOrder2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationSupplyOrderStatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolInstruction2() {
+
+		MedicationSupplyOrder2 target = objectFactory.create();
+		target.getConsolInstruction2();
+
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateMedicationSupplyOrderContainsMedicationOrImmunization() {
+		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderContainsMedicationOrImmunizationTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
+			"validateMedicationSupplyOrderContainsMedicationOrImmunization",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -169,13 +216,13 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2ContainsMedicationOrImmunization(
+				return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderContainsMedicationOrImmunization(
 					(MedicationSupplyOrder2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateMedicationSupplyOrder2ContainsMedicationOrImmunizationTestCase.doValidationTest();
+		validateMedicationSupplyOrderContainsMedicationOrImmunizationTestCase.doValidationTest();
 	}
 
 	/**
@@ -183,10 +230,10 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateMedicationSupplyOrder2InstructionInversionInd() {
-		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrder2InstructionInversionIndTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
-			"validateMedicationSupplyOrder2InstructionInversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER2_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateMedicationSupplyOrderInstructionInversionInd() {
+		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderInstructionInversionIndTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
+			"validateMedicationSupplyOrderInstructionInversionInd",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -205,96 +252,13 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2InstructionInversionInd(
+				return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstructionInversionInd(
 					(MedicationSupplyOrder2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateMedicationSupplyOrder2InstructionInversionIndTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateMedicationSupplyOrderStatusCodeP() {
-		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderStatusCodePTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
-			"validateMedicationSupplyOrderStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MedicationSupplyOrder2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MedicationSupplyOrder2 target) {
-				target.init();
-				CS cs = DatatypesFactory.eINSTANCE.createCS();
-				target.setStatusCode(cs);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderStatusCodeP(
-					(MedicationSupplyOrder2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMedicationSupplyOrderStatusCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateMedicationSupplyOrderInstruction2() {
-		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderInstruction2TestCase = new OperationsTestCase<MedicationSupplyOrder2>(
-			"validateMedicationSupplyOrderInstruction2",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MedicationSupplyOrder2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(MedicationSupplyOrder2 target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setAct(ConsolFactory.eINSTANCE.createInstruction2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstruction2(
-					(MedicationSupplyOrder2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMedicationSupplyOrderInstruction2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetConsolInstruction2() {
-
-		MedicationSupplyOrder2 target = objectFactory.create();
-		target.getConsolInstruction2();
-
+		validateMedicationSupplyOrderInstructionInversionIndTestCase.doValidationTest();
 	}
 
 	/**
@@ -405,6 +369,42 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 		};
 
 		validateMedicationSupplyOrderRepeatNumberTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateMedicationSupplyOrderInstructions() {
+		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderInstructionsTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
+			"validateMedicationSupplyOrderInstructions",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationSupplyOrder2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(MedicationSupplyOrder2 target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
+				er.setAct(ConsolFactory.eINSTANCE.createInstruction2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstructions(
+					(MedicationSupplyOrder2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationSupplyOrderInstructionsTestCase.doValidationTest();
 	}
 
 	/**

@@ -22,6 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.Indication2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
@@ -32,9 +33,9 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndication2ProblemIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Problem Indication</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndication2CodeNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Code Null Flavor</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndication2CodeNullFlavorValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Code Null Flavor Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationProblemIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Problem Indication</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCodeNullFlavorValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code Null Flavor Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCodeNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code P</em>}</li>
@@ -56,10 +57,10 @@ public class Indication2Test extends CDAValidationTest {
 	* It always returns true and there is no reason to test it
 	*/
 	@Ignore
-	public void testValidateIndication2ProblemIndication() {
-		OperationsTestCase<Indication2> validateIndication2ProblemIndicationTestCase = new OperationsTestCase<Indication2>(
-			"validateIndication2ProblemIndication",
-			operationsForOCL.getOCLValue("VALIDATE_INDICATION2_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateIndicationProblemIndication() {
+		OperationsTestCase<Indication2> validateIndicationProblemIndicationTestCase = new OperationsTestCase<Indication2>(
+			"validateIndicationProblemIndication",
+			operationsForOCL.getOCLValue("VALIDATE_INDICATION_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -69,19 +70,20 @@ public class Indication2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(Indication2 target) {
+				target.init();
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return Indication2Operations.validateIndication2ProblemIndication(
+				return Indication2Operations.validateIndicationProblemIndication(
 					(Indication2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateIndication2ProblemIndicationTestCase.doValidationTest();
+		validateIndicationProblemIndicationTestCase.doValidationTest();
 	}
 
 	/**
@@ -91,10 +93,10 @@ public class Indication2Test extends CDAValidationTest {
 	* It always returns true and there is no reason to test it
 	*/
 	@Ignore
-	public void testValidateIndication2CodeNullFlavor() {
-		OperationsTestCase<Indication2> validateIndication2CodeNullFlavorTestCase = new OperationsTestCase<Indication2>(
-			"validateIndication2CodeNullFlavor",
-			operationsForOCL.getOCLValue("VALIDATE_INDICATION2_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateIndicationCodeNullFlavorValue() {
+		OperationsTestCase<Indication2> validateIndicationCodeNullFlavorValueTestCase = new OperationsTestCase<Indication2>(
+			"validateIndicationCodeNullFlavorValue",
+			operationsForOCL.getOCLValue("VALIDATE_INDICATION_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -104,19 +106,23 @@ public class Indication2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(Indication2 target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return Indication2Operations.validateIndication2CodeNullFlavor(
+				return Indication2Operations.validateIndicationCodeNullFlavorValue(
 					(Indication2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateIndication2CodeNullFlavorTestCase.doValidationTest();
+		validateIndicationCodeNullFlavorValueTestCase.doValidationTest();
 	}
 
 	/**
@@ -126,10 +132,10 @@ public class Indication2Test extends CDAValidationTest {
 	* It always returns true and there is no reason to test it
 	*/
 	@Ignore
-	public void testValidateIndication2CodeNullFlavorValue() {
-		OperationsTestCase<Indication2> validateIndication2CodeNullFlavorValueTestCase = new OperationsTestCase<Indication2>(
-			"validateIndication2CodeNullFlavorValue",
-			operationsForOCL.getOCLValue("VALIDATE_INDICATION2_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateIndicationCodeNullFlavor() {
+		OperationsTestCase<Indication2> validateIndicationCodeNullFlavorTestCase = new OperationsTestCase<Indication2>(
+			"validateIndicationCodeNullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -139,19 +145,20 @@ public class Indication2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(Indication2 target) {
+				target.init();
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return Indication2Operations.validateIndication2CodeNullFlavorValue(
+				return Indication2Operations.validateIndicationCodeNullFlavor(
 					(Indication2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateIndication2CodeNullFlavorValueTestCase.doValidationTest();
+		validateIndicationCodeNullFlavorTestCase.doValidationTest();
 	}
 
 	/**

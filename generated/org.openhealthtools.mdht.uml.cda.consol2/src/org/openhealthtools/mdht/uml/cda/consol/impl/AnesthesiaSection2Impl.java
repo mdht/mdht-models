@@ -60,28 +60,6 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	 * @generated
 	 */
 	@Override
-	public boolean validateAnesthesiaSectionProcedureActivityProcedure2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AnesthesiaSection2Operations.validateAnesthesiaSectionProcedureActivityProcedure2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAnesthesiaSectionMedicationActivity2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnesthesiaSection2Operations.validateAnesthesiaSectionMedicationActivity2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s() {
 		return AnesthesiaSection2Operations.getConsolProcedureActivityProcedure2s(this);
 	}
@@ -124,6 +102,28 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	@Override
 	public boolean validateAnesthesiaSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AnesthesiaSection2Operations.validateAnesthesiaSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateAnesthesiaSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AnesthesiaSection2Operations.validateAnesthesiaSectionProcedureActivityProcedure(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateAnesthesiaSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AnesthesiaSection2Operations.validateAnesthesiaSectionMedicationActivity(this, diagnostics, context);
 	}
 
 	/**

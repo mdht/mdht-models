@@ -6,23 +6,17 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSection2Operations;
 
 /**
@@ -36,6 +30,19 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSecti
  */
 public class AdvanceDirectivesSection2Impl extends AdvanceDirectivesSectionEntriesOptional2Impl implements
 		AdvanceDirectivesSection2 {
+
+	// /**
+	// * Added Override for removal manually for testing purposes -DB
+	// * <!-- begin-user-doc -->
+	// * <!-- end-user-doc -->
+	// * @generated NOT
+	// */
+	// @Override
+	// public boolean validateAdvanceDirectivesSectionEntriesOptionalText(DiagnosticChain diagnostics,
+	// Map<Object, Object> context) {
+	// return false;
+	// }
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

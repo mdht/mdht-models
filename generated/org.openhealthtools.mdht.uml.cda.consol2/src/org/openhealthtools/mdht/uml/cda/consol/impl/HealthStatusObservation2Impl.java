@@ -56,39 +56,6 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusObservation2HasTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthStatusObservation2Operations.validateHealthStatusObservation2HasTextReference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHealthStatusObservation2TextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthStatusObservation2Operations.validateHealthStatusObservation2TextReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHealthStatusObservation2HasTextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthStatusObservation2Operations.validateHealthStatusObservation2HasTextReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateHealthStatusObservation2Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservation2Operations.validateHealthStatusObservation2Id(this, diagnostics, context);
 	}
@@ -110,6 +77,42 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	 */
 	public boolean validateHealthStatusObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservation2Operations.validateHealthStatusObservationStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthStatusObservation2Operations.validateHealthStatusObservationHasTextReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateHealthStatusObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthStatusObservation2Operations.validateHealthStatusObservationTextReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateHealthStatusObservationHasTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthStatusObservation2Operations.validateHealthStatusObservationHasTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**

@@ -60,18 +60,6 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	 * @generated
 	 */
 	@Override
-	public boolean validateEncountersSectionEntriesOptionalEncounterActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalEncounterActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<EncounterActivity2> getConsolEncounterActivity2s() {
 		return EncountersSectionEntriesOptional2Operations.getConsolEncounterActivity2s(this);
 	}
@@ -108,6 +96,18 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateEncountersSectionEntriesOptionalEncounterActivities(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalEncounterActivities(
 			this, diagnostics, context);
 	}
 

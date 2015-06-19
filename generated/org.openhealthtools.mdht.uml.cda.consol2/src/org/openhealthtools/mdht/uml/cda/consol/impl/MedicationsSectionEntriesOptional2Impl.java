@@ -59,9 +59,9 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSectionEntriesOptional2AbsenceOfMedications(DiagnosticChain diagnostics,
+	public boolean validateMedicationsSectionEntriesOptionalAbsenceOfMedications(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptional2AbsenceOfMedications(
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalAbsenceOfMedications(
 			this, diagnostics, context);
 	}
 
@@ -74,18 +74,6 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	public boolean validateMedicationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity2(
 			this, diagnostics, context);
 	}
 
@@ -120,6 +108,18 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	public boolean validateMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity(
 			this, diagnostics, context);
 	}
 

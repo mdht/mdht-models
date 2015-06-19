@@ -59,18 +59,6 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureFindingsSectionProblemObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionProblemObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return ProcedureFindingsSection2Operations.getConsolProblemObservation2s(this);
 	}
@@ -104,6 +92,18 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	@Override
 	public boolean validateProcedureFindingsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureFindingsSectionProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**

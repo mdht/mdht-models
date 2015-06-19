@@ -30,13 +30,13 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional2#validateProblemSectionEntriesOptionalProblemConcernAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Problem Concern Act2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional2#validateProblemSectionEntriesOptional2HealthStatusObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional2 Health Status Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional2#getConsolProblemConcernAct2s() <em>Get Consol Problem Concern Act2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional2#getHealthStatusObservation2() <em>Get Health Status Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional2#validateProblemSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional2#validateProblemSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional2#validateProblemSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional2#validateProblemSectionEntriesOptionalProblemConcern(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Problem Concern</em>}</li>
  * </ul>
  * </p>
  *
@@ -44,39 +44,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  */
 
 public class ProblemSectionEntriesOptional2Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProblemSectionEntriesOptionalProblemConcernAct2() {
-		OperationsTestCase<ProblemSectionEntriesOptional2> validateProblemSectionEntriesOptionalProblemConcernAct2TestCase = new OperationsTestCase<ProblemSectionEntriesOptional2>(
-			"validateProblemSectionEntriesOptionalProblemConcernAct2",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProblemSectionEntriesOptional2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(ProblemSectionEntriesOptional2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createProblemConcernAct2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalProblemConcernAct2(
-					(ProblemSectionEntriesOptional2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProblemSectionEntriesOptionalProblemConcernAct2TestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -242,6 +209,39 @@ public class ProblemSectionEntriesOptional2Test extends CDAValidationTest {
 		};
 
 		validateProblemSectionEntriesOptionalCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProblemSectionEntriesOptionalProblemConcern() {
+		OperationsTestCase<ProblemSectionEntriesOptional2> validateProblemSectionEntriesOptionalProblemConcernTestCase = new OperationsTestCase<ProblemSectionEntriesOptional2>(
+			"validateProblemSectionEntriesOptionalProblemConcern",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProblemSectionEntriesOptional2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(ProblemSectionEntriesOptional2 target) {
+				target.addAct(ConsolFactory.eINSTANCE.createProblemConcernAct2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalProblemConcern(
+					(ProblemSectionEntriesOptional2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemSectionEntriesOptionalProblemConcernTestCase.doValidationTest();
 	}
 
 	/**

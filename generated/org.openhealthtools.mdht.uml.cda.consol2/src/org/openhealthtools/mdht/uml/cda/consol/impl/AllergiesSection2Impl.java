@@ -119,9 +119,9 @@ public class AllergiesSection2Impl extends AllergiesSectionEntriesOptional2Impl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergiesSectionEntriesOptionalAllergyConcernAct2(DiagnosticChain diagnostics,
+	public boolean validateAllergiesSectionEntriesOptionalAllergyProblemAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesSection2Operations.validateAllergiesSectionEntriesOptionalAllergyConcernAct2(
+		return AllergiesSection2Operations.validateAllergiesSectionEntriesOptionalAllergyProblemAct(
 			this, diagnostics, context);
 	}
 

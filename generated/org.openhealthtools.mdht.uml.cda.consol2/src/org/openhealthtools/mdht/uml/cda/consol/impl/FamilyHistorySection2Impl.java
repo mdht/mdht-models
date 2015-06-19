@@ -54,17 +54,6 @@ public class FamilyHistorySection2Impl extends FamilyHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistorySectionFamilyHistoryOrganizer2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistorySection2Operations.validateFamilyHistorySectionFamilyHistoryOrganizer2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<FamilyHistoryOrganizer2> getConsolFamilyHistoryOrganizer2s() {
 		return FamilyHistorySection2Operations.getConsolFamilyHistoryOrganizer2s(this);
 	}
@@ -77,6 +66,16 @@ public class FamilyHistorySection2Impl extends FamilyHistorySectionImpl implemen
 	@Override
 	public boolean validateFamilyHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistorySection2Operations.validateFamilyHistorySectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFamilyHistorySectionFamilyHistory(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistorySection2Operations.validateFamilyHistorySectionFamilyHistory(this, diagnostics, context);
 	}
 
 	/**

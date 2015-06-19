@@ -70,18 +70,6 @@ public class HospitalAdmissionDiagnosis2Impl extends HospitalAdmissionDiagnosisI
 	 * @generated
 	 */
 	@Override
-	public boolean validateHospitalAdmissionDiagnosisProblemObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisProblemObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return HospitalAdmissionDiagnosis2Operations.getConsolProblemObservation2s(this);
 	}
@@ -105,6 +93,18 @@ public class HospitalAdmissionDiagnosis2Impl extends HospitalAdmissionDiagnosisI
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateHospitalAdmissionDiagnosisProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**

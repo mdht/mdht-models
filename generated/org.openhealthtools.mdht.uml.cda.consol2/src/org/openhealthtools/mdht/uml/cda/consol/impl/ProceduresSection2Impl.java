@@ -196,9 +196,9 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure2(DiagnosticChain diagnostics,
+	public boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure2(
+		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure(
 			this, diagnostics, context);
 	}
 

@@ -119,9 +119,9 @@ public class DischargeMedicationsSection2Impl extends DischargeMedicationsSectio
 	 * @generated
 	 */
 	@Override
-	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2(
+	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeMedicationsSection2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2(
+		return DischargeMedicationsSection2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 			this, diagnostics, context);
 	}
 
