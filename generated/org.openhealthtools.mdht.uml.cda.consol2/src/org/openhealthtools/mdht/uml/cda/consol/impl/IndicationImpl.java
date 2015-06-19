@@ -96,6 +96,15 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateIndicationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationOperations.validateIndicationStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateIndicationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationEffectiveTime(this, diagnostics, context);

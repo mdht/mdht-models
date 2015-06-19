@@ -458,13 +458,9 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 			resultOrganizer2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_CLASS_CODE_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ResultOrganizer2ResultOrganizerClassCodeValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultOrganizer2, context) }),
+					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerClassCodeValue"),
 					new Object[] { resultOrganizer2 }));
 			}
 

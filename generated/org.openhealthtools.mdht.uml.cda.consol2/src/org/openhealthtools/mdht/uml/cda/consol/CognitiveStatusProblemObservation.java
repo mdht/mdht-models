@@ -21,10 +21,22 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCognitiveStatusProblemObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationTemplateId ProblemObservationHasTextReferenceValue ProblemObservationHasOnsetDate ProblemObservationClassCode ProblemObservationMoodCode ProblemObservationId ProblemObservationCodeP ProblemObservationStatusCode ProblemObservationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.73' constraints.validation.warning='ProblemObservationHasTextReference ProblemObservationHasResolutionDate ProblemObservationCode ProblemObservationText ProblemObservationEffectiveTime ProblemObservationValue' classCode='OBS' moodCode='EVN' constraints.validation.info='ProblemObservationNegationInd CognitiveStatusProblemObservationMethodCode CognitiveStatusProblemObservationNonMedicinalSupplyActivity CognitiveStatusProblemObservationCaregiverCharacteristics CognitiveStatusProblemObservationAssessmentScaleObservation' code.code='373930000' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Cognitive function finding' constraints.validation.dependOn.ProblemObservationCode='ProblemObservationCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.ProblemObservationValue='ProblemObservationValueP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationTemplateId ProblemObservationHasTextReferenceValue ProblemObservationHasOnsetDate ProblemObservationClassCode ProblemObservationMoodCode ProblemObservationId ProblemObservationCodeVS ProblemObservationCodeP ProblemObservationStatusCode ProblemObservationStatusCodeP ProblemObservationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.73' constraints.validation.warning='ProblemObservationHasTextReference ProblemObservationHasResolutionDate ProblemObservationCode ProblemObservationText ProblemObservationEffectiveTime ProblemObservationValue' classCode='OBS' moodCode='EVN' constraints.validation.info='ProblemObservationNegationInd CognitiveStatusProblemObservationMethodCode CognitiveStatusProblemObservationNonMedicinalSupplyActivity CognitiveStatusProblemObservationCaregiverCharacteristics CognitiveStatusProblemObservationAssessmentScaleObservation' code.code='373930000' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Cognitive function finding' constraints.validation.dependOn.ProblemObservationCode='ProblemObservationCodeP' constraints.validation.dependOn.ProblemObservationCodeVS='ProblemObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.ProblemObservationStatusCode='ProblemObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.ProblemObservationValue='ProblemObservationValueP'"
  * @generated
  */
 public interface CognitiveStatusProblemObservation extends ProblemObservation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\ntrue)'"
+	 * @generated
+	 */
+	boolean validateProblemObservationCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

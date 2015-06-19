@@ -221,7 +221,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2.getEAllOperations().get(68));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2.getEAllOperations().get(69));
 			try {
 				GET_CONSOL_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -265,7 +265,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2.getEAllOperations().get(69));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2.getEAllOperations().get(70));
 			try {
 				GET_SELF_CARE_ACTIVITIESS__EOCL_QRY = helper.createQuery(GET_SELF_CARE_ACTIVITIESS__EOCL_EXP);
 			} catch (ParserException pe) {

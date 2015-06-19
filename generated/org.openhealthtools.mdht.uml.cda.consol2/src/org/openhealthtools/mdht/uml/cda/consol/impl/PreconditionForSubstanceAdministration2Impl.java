@@ -100,6 +100,18 @@ public class PreconditionForSubstanceAdministration2Impl extends PreconditionFor
 	 * @generated
 	 */
 	@Override
+	public boolean validatePreconditionForSubstanceAdministrationText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validatePreconditionForSubstanceAdministrationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationValue(

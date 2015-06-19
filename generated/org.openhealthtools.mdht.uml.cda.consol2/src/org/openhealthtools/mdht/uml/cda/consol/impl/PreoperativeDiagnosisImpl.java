@@ -98,6 +98,15 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePreoperativeDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePreoperativeDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

@@ -391,6 +391,18 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * @generated
 	 */
 	@Override
+	public boolean validatePlanOfCareActivitySubstanceAdministrationMoodCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlanOfCareActivitySubstanceAdministrationMoodCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validatePlanOfCareActivitySubstanceAdministrationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedMedicationActivity2Operations.validatePlanOfCareActivitySubstanceAdministrationMoodCode(

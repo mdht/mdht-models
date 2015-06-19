@@ -116,6 +116,15 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCommentActivityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateCommentActivityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityCode(this, diagnostics, context);

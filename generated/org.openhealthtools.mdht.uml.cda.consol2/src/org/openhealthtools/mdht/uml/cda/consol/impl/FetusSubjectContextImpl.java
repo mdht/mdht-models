@@ -62,6 +62,15 @@ public class FetusSubjectContextImpl extends RelatedSubjectImpl implements Fetus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFetusSubjectContextCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FetusSubjectContextOperations.validateFetusSubjectContextCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateFetusSubjectContextCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FetusSubjectContextOperations.validateFetusSubjectContextCode(this, diagnostics, context);

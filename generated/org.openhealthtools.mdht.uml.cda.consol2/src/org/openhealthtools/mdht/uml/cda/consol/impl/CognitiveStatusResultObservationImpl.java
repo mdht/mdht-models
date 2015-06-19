@@ -78,6 +78,16 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultObservationStatusCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusResultObservationOperations.validateResultObservationStatusCodeVS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateCognitiveStatusResultObservationAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

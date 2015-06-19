@@ -99,6 +99,15 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDischargeMedicationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeMedicationOperations.validateDischargeMedicationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateDischargeMedicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeMedicationOperations.validateDischargeMedicationCode(this, diagnostics, context);

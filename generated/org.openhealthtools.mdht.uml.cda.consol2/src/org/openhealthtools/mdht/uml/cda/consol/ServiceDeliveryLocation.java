@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getServiceDeliveryLocation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ServiceDeliveryLocationTemplateId ServiceDeliveryLocationHasPlayingEntityClassCode ServiceDeliveryLocationClassCode ServiceDeliveryLocationCode' templateId.root='2.16.840.1.113883.10.20.22.4.32' constraints.validation.info='ServiceDeliveryLocationHasPlayingEntity ServiceDeliveryLocationHasPlayingEntityName' classCode='SDLOC' code.codeSystem='2.16.840.1.113883.6.259' code.codeSystemName='HealthcareServiceLocation' constraints.validation.warning='ServiceDeliveryLocationAddr ServiceDeliveryLocationTelecom'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ServiceDeliveryLocationTemplateId ServiceDeliveryLocationHasPlayingEntityClassCode ServiceDeliveryLocationClassCode ServiceDeliveryLocationCode ServiceDeliveryLocationCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.32' constraints.validation.info='ServiceDeliveryLocationHasPlayingEntity ServiceDeliveryLocationHasPlayingEntityName' classCode='SDLOC' code.codeSystem='2.16.840.1.113883.6.259' code.codeSystemName='HealthcareServiceLocation' constraints.validation.dependOn.ServiceDeliveryLocationCode='ServiceDeliveryLocationCodeP' constraints.validation.warning='ServiceDeliveryLocationAddr ServiceDeliveryLocationTelecom'"
  * @generated
  */
 public interface ServiceDeliveryLocation extends ParticipantRole {
@@ -97,7 +97,19 @@ public interface ServiceDeliveryLocation extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.259\' and not value.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)'"
+	 * @generated
+	 */
+	boolean validateServiceDeliveryLocationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)'"
 	 * @generated
 	 */
 	boolean validateServiceDeliveryLocationCode(DiagnosticChain diagnostics, Map<Object, Object> context);

@@ -92,9 +92,30 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistoryDeathObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateFamilyHistoryDeathObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryDeathObservationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationStatusCodeP(
 			this, diagnostics, context);
 	}
 

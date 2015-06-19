@@ -79,6 +79,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateReactionObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservationStatusCodeP(this, diagnostics, context);
 	}
@@ -208,6 +209,16 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	@Override
 	public boolean validateReactionObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservationId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateReactionObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservationText(this, diagnostics, context);
 	}
 
 	/**

@@ -76,6 +76,15 @@ public class PlanOfCareActivitySupplyImpl extends SupplyImpl implements PlanOfCa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlanOfCareActivitySupplyMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareActivitySupplyOperations.validatePlanOfCareActivitySupplyMoodCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlanOfCareActivitySupplyMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivitySupplyOperations.validatePlanOfCareActivitySupplyMoodCode(this, diagnostics, context);

@@ -101,6 +101,16 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateReferencedFramesObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateReferencedFramesObservationBoundaryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

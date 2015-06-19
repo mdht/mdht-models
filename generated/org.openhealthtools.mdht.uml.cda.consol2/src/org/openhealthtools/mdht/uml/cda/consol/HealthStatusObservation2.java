@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHealthStatusObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthStatusObservationTemplateId HealthStatusObservation2Id HealthStatusObservationCode HealthStatusObservationCodeP HealthStatusObservationStatusCode HealthStatusObservationStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.5' templateId.extension='2014-06-09' code.code='11323-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Health status' constraints.validation.dependOn.HealthStatusObservationCode='HealthStatusObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.HealthStatusObservationStatusCode='HealthStatusObservationStatusCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthStatusObservationTemplateId HealthStatusObservation2Id HealthStatusObservationCode HealthStatusObservationCodeP HealthStatusObservationText HealthStatusObservationStatusCode HealthStatusObservationStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.5' templateId.extension='2014-06-09' constraints.validation.info='HealthStatusObservationHasTextReference HealthStatusObservationTextReferenceValue HealthStatusObservationHasTextReferenceValue' code.code='11323-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Health status' constraints.validation.dependOn.HealthStatusObservationCode='HealthStatusObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.HealthStatusObservationStatusCode='HealthStatusObservationStatusCodeP'"
  * @generated
  */
 public interface HealthStatusObservation2 extends HealthStatusObservation {
@@ -38,30 +38,6 @@ public interface HealthStatusObservation2 extends HealthStatusObservation {
 	 * @generated
 	 */
 	boolean validateHealthStatusObservation2Id(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateHealthStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateHealthStatusObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

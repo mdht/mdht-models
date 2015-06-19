@@ -56,6 +56,15 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemObservationCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationCodeVS(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateCognitiveStatusProblemObservationMethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -256,6 +265,17 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	@Override
 	public boolean validateProblemObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateProblemObservationText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**

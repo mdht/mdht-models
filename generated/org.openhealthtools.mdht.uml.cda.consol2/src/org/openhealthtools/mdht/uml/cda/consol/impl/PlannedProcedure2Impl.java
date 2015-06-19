@@ -269,6 +269,16 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * @generated
 	 */
 	@Override
+	public boolean validatePlanOfCareActivityProcedureMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlanOfCareActivityProcedureMoodCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validatePlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedure2Operations.validatePlanOfCareActivityProcedureMoodCode(this, diagnostics, context);
 	}

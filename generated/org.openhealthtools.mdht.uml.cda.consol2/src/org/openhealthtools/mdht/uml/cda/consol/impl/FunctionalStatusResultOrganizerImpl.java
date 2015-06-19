@@ -65,6 +65,15 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultOrganizerStatusCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultOrganizerOperations.validateResultOrganizerStatusCodeVS(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

@@ -209,6 +209,16 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * @generated
 	 */
 	@Override
+	public boolean validateResultObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservationText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservationCode(this, diagnostics, context);
 	}

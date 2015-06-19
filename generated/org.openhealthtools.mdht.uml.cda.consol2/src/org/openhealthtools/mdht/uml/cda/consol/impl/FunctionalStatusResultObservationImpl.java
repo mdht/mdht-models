@@ -77,6 +77,16 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultObservationStatusCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateResultObservationStatusCodeVS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateFunctionalStatusResultObservationAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

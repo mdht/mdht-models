@@ -148,6 +148,15 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSeriesActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeriesActOperations.validateSeriesActCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSeriesActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActCode(this, diagnostics, context);

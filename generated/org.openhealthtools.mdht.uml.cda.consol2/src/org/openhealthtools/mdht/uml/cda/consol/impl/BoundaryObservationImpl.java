@@ -76,6 +76,15 @@ public class BoundaryObservationImpl extends ObservationImpl implements Boundary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateBoundaryObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return BoundaryObservationOperations.validateBoundaryObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateBoundaryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BoundaryObservationOperations.validateBoundaryObservationCode(this, diagnostics, context);

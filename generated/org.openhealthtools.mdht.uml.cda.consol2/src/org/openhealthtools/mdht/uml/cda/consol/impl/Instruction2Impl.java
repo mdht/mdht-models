@@ -67,6 +67,16 @@ public class Instruction2Impl extends InstructionsImpl implements Instruction2 {
 	 * @generated
 	 */
 	@Override
+	public boolean validateInstructionsText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Instruction2Operations.validateInstructionsText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Instruction2 init() {
 		return Initializer.Util.init(this);
 	}
