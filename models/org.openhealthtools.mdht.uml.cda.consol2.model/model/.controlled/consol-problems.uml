@@ -1551,4 +1551,12 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <ruleId>CONF:1098-31540</ruleId>
     <ruleId>CONF:1098-31541</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_Ij468BaVEeWPafwaDwpzXw" severity="INFO" base_Constraint="_SPweoMm6EeSr1c1X9ACWbg"/>
+  <CDA:ConstraintValidation xmi:id="_JGhG4BaVEeWPafwaDwpzXw" severity="INFO" base_Constraint="_YW_ioMm6EeSr1c1X9ACWbg"/>
+  <CDA:ConstraintValidation xmi:id="_JkQy0BaVEeWPafwaDwpzXw" severity="INFO" base_Constraint="_ZYmJkMm6EeSr1c1X9ACWbg"/>
+  <CDA:ConstraintValidation xmi:id="_KEhnQBaVEeWPafwaDwpzXw" severity="INFO" base_Constraint="_eMSAwPDOEeOKPKE9au0oug"/>
+  <CDA:ConstraintValidation xmi:id="_KwbD8BaVEeWPafwaDwpzXw" severity="INFO" base_Constraint="_3n3DQPDOEeOKPKE9au0oug"/>
+  <CDA:ConstraintValidation xmi:id="_ZOxR8BaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_RGF6oMEkEeSjB6vMjDsL5Q"/>
+  <CDA:ConstraintValidation xmi:id="_ZsFgEBaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_UJBgIMEkEeSjB6vMjDsL5Q"/>
+  <CDA:ConstraintValidation xmi:id="_cDQLwBaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_YgU3kMEkEeSjB6vMjDsL5Q"/>
 </xmi:XMI>

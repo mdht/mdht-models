@@ -736,4 +736,7 @@ Vital signs are represented in the same way as other results, but are aggregated
   <CDA:PropertyValidation xmi:id="_sClFwM9HEeSJsu9BbhWxmQ" base_Property="_2OlbFhSVEeGGzu7fmW9pXw">
     <ruleId>R2.0=CONF:1098-7284</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_SjXJ4BaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_finGcM85EeSJsu9BbhWxmQ"/>
+  <CDA:ConstraintValidation xmi:id="_S7QFcBaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_gt-tYM85EeSJsu9BbhWxmQ"/>
+  <CDA:ConstraintValidation xmi:id="_TTcjABaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_h4JacM85EeSJsu9BbhWxmQ"/>
 </xmi:XMI>
